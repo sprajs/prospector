@@ -1,0 +1,15 @@
+name: Discovery or handoff idea
+description: Propose a bounded literature investigation or better candidate handoff.
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Scientific question and scope
+      description: Topic, primary sources if known, useful distinction/test and what would make the investigation complete.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and uncertainty
+      description: Related ideas, shared observations and missing physics/data; a suggestion is not a validated result.

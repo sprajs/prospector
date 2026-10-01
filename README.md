@@ -18,3 +18,8 @@ This repository is a local project placeholder. No scraper, discovery service,
 recurring search, candidate pipeline or scientific execution has been implemented.
 
 Local project: `~/Projects/prospector`.
+
+## Contributing
+
+Repository changes use branches and coherent PRs, including agent work. See
+[CONTRIBUTING.md](CONTRIBUTING.md) and the [development workflow](docs/development.md).
