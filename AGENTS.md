@@ -170,7 +170,9 @@ uv run python scripts/build_register.py
 
 Check views, source hashes, local links, ignored storage and Git diff.
 The public Site is the primary interface. Keep it compact and scientific: topic
-trees, paper/citation links, baseline cosmologies and prospects. No agent/model
+trees, paper/citation links, baseline cosmologies and prospects. Lead with Prospects
+and show the reverse workflow to Connections, Ideas and Papers. Keep Citations
+and Reading separate from that sequence, with restrained emphasis. No agent/model
 badges, marketing or explanatory filler in the interface. Preserve scientific
 conditioning and unresolved physics in the selected record's details.
 Follow `docs/site.md` to publish updates to the same public Site; use its exact
