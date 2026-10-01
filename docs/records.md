@@ -111,7 +111,8 @@ Blocked concepts keep executable request null; runs/qualification belong to cons
 
 A dedicated Reproducible native adapter is a separate route from Irreducible's
 CLI schema. Its accepted request snapshot uses
-`passed_typed_native_adapter_at_inspected_revision` and names `validation_route`.
+`passed_at_inspected_revision` with an explicit `validation_route` and adapter
+revision. This preserves the consumer's existing status token.
 Do not label that request as an Irreducible CLI operation or generic recipe.
 
 Conditioned references preserve model assumptions, source table/column, units,

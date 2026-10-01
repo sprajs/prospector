@@ -172,7 +172,7 @@
   "executable_request": {
     "path": "requests/lcdm-baseline-native.json",
     "sha256": "5d67253917a35031b69b85272fe381da8c946007da5615300a3dcf3381f12bed",
-    "consumer_validation": "passed_typed_native_adapter_at_inspected_revision",
+    "consumer_validation": "passed_at_inspected_revision",
     "validation_route": "Reproducible experiments/lcdm-baseline/controller.py validates lcdm-baseline.native and dispatches the dedicated typed consumer; not Irreducible CLI-schema acceptance. Engine db4765838fc404a489a0115ee69713f2ea6cd2f4; adapter 98cadbb3e3bf59f5933ef977133b64453c968c0a."
   },
   "qualification": {
