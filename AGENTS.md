@@ -22,8 +22,8 @@ at most 3 simultaneous workers, respecting a lower live limit. Follow at most
 5 citation leads and one citation hop. Finish a coherent batch, save remaining
 work and stop. Two distinct empty searches may close a batch; never call the
 literature exhausted. This authorizes bounded literature work and requested
-repository publication, not endless scans, numerical experiments, schedules,
-external messages or merges.
+repository publication, not endless scans, numerical experiments, schedules or
+external messages. Ready PR merges follow the standing authorization below.
 
 ## Use the requested Codex agents
 
