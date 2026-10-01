@@ -1,0 +1,17 @@
+name: Source or record correction
+description: Report a paper identity, reading, provenance or overlap problem.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What needs correction?
+      description: Record ID/path, expected versus actual content and exact source/version.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary-source evidence and limits
+      description: Section/equation locators and what was actually checked; omit full copyrighted text and private material.
+    validations:
+      required: true
