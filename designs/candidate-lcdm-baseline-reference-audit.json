@@ -14,7 +14,7 @@
     "bao-compressed-relative-ruler",
     "sn-standardized-distance-lineage"
   ],
-  "review_id": null,
+  "review_id": "2026-10-01-lcdm-baseline-source-claims",
   "readiness": "blocked",
   "equations": [
     {
@@ -23,7 +23,7 @@
       "paper_id": "arxiv:2503.14738v3",
       "definitions": "Omega_bc=Omega_b+Omega_c. Omega_gamma describes photons; Omega_nu is present neutrino density. Their sum and Lambda close flatness. H0 in km s^-1 Mpc^-1.",
       "domain": "Homogeneous flat GR background; full neutrino thermal transition required for the Planck reference.",
-      "status": "needs_verification"
+      "status": "reviewed_transcription"
     },
     {
       "expression": "r_d = integral[z_drag,infinity] c_s(z)/H(z) dz; D_M(z)=c*integral[0,z] dzprime/H(zprime); D_H(z)=c/H(z); D_V(z)=[z*D_M(z)^2*D_H(z)]^(1/3)",
@@ -31,7 +31,7 @@
       "paper_id": "arxiv:2503.14738v3",
       "definitions": "Comoving distances and ruler in Mpc; z dimensionless; c in km/s. r_d is at drag, not r_star at last scattering. BAO constrains distance/ruler ratios.",
       "domain": "Flat FLRW distance convention; acoustic ruler needs photon-baryon/thermal closure or an explicitly supplied endpoint.",
-      "status": "needs_verification"
+      "status": "reviewed_transcription"
     },
     {
       "expression": "chi2 = DeltaD^T*(C_stat+C_syst)^(-1)*DeltaD; DeltaD_i=mu_i-mu_model(z_i); mu_model=5*log10(d_L/10 pc)",
@@ -39,7 +39,7 @@
       "paper_id": "arxiv:2202.04077v2",
       "definitions": "Distances use standardized SALT2/bias-corrected input, not raw fluxes. Matrix order follows light-curve rows, including correlated duplicate observations. M and H0 are degenerate without absolute calibration.",
       "domain": "Released SN compressed likelihood with its published selection/calibration treatment; calibrated ladder uses separate host residuals, covariance and anchor data.",
-      "status": "needs_verification"
+      "status": "reviewed_transcription"
     }
   ],
   "assumptions": [
@@ -104,7 +104,6 @@
     "recipe_runner_status": "No implemented generic recipe runner; Reproducible owns a dedicated typed experiment consumer."
   },
   "blockers": [
-    "Targeted independent scientific review pending.",
     "Faithful Planck physics and full likelihood stack are not implemented."
   ],
   "executable_request": null,
@@ -131,5 +130,12 @@
       "use": "Reference/closure inventory, not executable parameters or a Planck likelihood."
     },
     "scope": "Identify supported calculations and explicit blockers. No faithful full Planck reproduction until closure and likelihoods are implemented."
-  }
+  },
+  "source_references": [
+    {
+      "reference_id": "planck2018-base-lcdm-plik-lensing",
+      "path": "references/lcdm/planck2018-reference.json",
+      "sha256": "06c561ab2214bd028b47e03802ec3029d476a4cf61d75602bf550e5cbf1282cf"
+    }
+  ]
 }

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "sn-standardized-distance-lineage",
+  "title": "Standardized SN distances and shared calibration",
+  "family": "measurement_lineage",
+  "status": "reviewed_targeted",
+  "review_id": "2026-10-01-lcdm-baseline-source-claims",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2202.04077v2",
+      "locator": "HTML S1: 1701 light curves,1550 distinct SNe; SH0ES shares Pantheon+ distances/covariance and42 calibrator hosts; HTML S2.SS2 Eqs5–8: duplicate-light-curve statistical covariance and systematic covariance; rows are light curves; HTML S2.SS3 Eqs9–15: covariance quadratic, residual and modulus, flat luminosity distance, M/H0 degeneracy, calibrated-host residuals plus Cepheid covariance; HTML S3.SS1.SSS2: peculiar-velocity-corrected CMB-frame redshift versus heliocentric fitting redshift; calibrator redshifts not used for Cepheid comparison; HTML S4.SS3: cosmological-fit conditioning context, not accepted as independent H0 data"
+    },
+    {
+      "paper_id": "arxiv:2112.03863v2",
+      "locator": "HTML S2.SS1 Eq1: SALT2 light-curve standardization and simulation-dependent bias/host correction; HTML S2.SS2 and Table2: selection/training domain, quality/bias/systematics cuts; final1701 rows; HTML S3.SS2: duplicate identity matching, per-survey fits retained with covariance, common ladder survey ancestry"
+    },
+    {
+      "paper_id": "arxiv:2112.03864v2",
+      "locator": "HTML S2.SS2: shared CALSPEC/NGSL standards and homogenized calibration; HTML S3.SS1: simultaneous105-filter calibration offsets/priors produce covariance between surveys; HTML S4.SS3 Eq7: correlated zeropoint realizations, joint SALT2 retraining/photometry propagation to distance covariance; HTML S5.SS3: calibration/training correlated systematic uncertainty context"
+    },
+    {
+      "paper_id": "arxiv:2112.04510v3",
+      "locator": "PDF/extracted-text title and abstract: pinned v3 identity, baseline73.04±1.04 km/s/Mpc is conditioned ladder inference, not raw observation; PDF Sec2.1 pp9–12 Eqs1–6: Cepheid standardization, geometric anchor constraints, colocated SN calibration, cosmographic intercept, logH0 relation, simultaneous covariance fit; Rendered PDF p10: Eqs2–5 and covariance dependence prose; Rendered PDF p11: calibrator/Hubble-flow SNcov cross blocks; Rendered PDF p12: design matrix/free parameters and Eq6 covariance quadratic"
+    }
+  ],
+  "assumptions": [
+    "SALT2 training, photometric calibration, selection/bias corrections, object identities and full covariance are part of the supplied distances.",
+    "1701 light curves are not 1701 independent objects; duplicates and shared Pantheon+/SH0ES calibrators must retain dependence."
+  ],
+  "predictions": [
+    "SNe with a free magnitude offset constrain relative distances, not absolute H0.",
+    "A calibrated ladder needs anchor/host residuals and covariance; overlapping summary constraints cannot be multiplied as independent data."
+  ]
+}

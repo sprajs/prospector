@@ -242,5 +242,7 @@
   },
   "extraction": null,
   "review_id": null,
-  "idea_ids": []
+  "idea_ids": [
+    "planck-conditioned-base-lcdm"
+  ]
 }

@@ -12,6 +12,14 @@
     "arxiv:2112.03864v2",
     "arxiv:2112.04510v3"
   ],
-  "idea_ids": [],
-  "design_ids": []
+  "idea_ids": [
+    "planck-conditioned-base-lcdm",
+    "bao-compressed-relative-ruler",
+    "sn-standardized-distance-lineage",
+    "massless-supplied-drag-comparison"
+  ],
+  "design_ids": [
+    "candidate-lcdm-baseline-reference-audit",
+    "candidate-lcdm-massless-conditional-comparison"
+  ]
 }

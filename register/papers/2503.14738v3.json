@@ -231,5 +231,8 @@
   },
   "extraction": null,
   "review_id": null,
-  "idea_ids": []
+  "idea_ids": [
+    "bao-compressed-relative-ruler",
+    "massless-supplied-drag-comparison"
+  ]
 }

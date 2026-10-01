@@ -21,8 +21,10 @@ class RegisterIntegrity(unittest.TestCase):
         work.mkdir(exist_ok=True)
         self.temp = tempfile.TemporaryDirectory(prefix="integrity-", dir=work)
         self.root = Path(self.temp.name)
-        for folder in ["register", "schemas", "designs", "scans"]:
+        for folder in ["register", "schemas", "designs", "scans", "requests"]:
             shutil.copytree(registry.ROOT / folder, self.root / folder)
+        if (registry.ROOT / 'references').exists():
+            shutil.copytree(registry.ROOT / 'references', self.root / 'references')
         shutil.copyfile(registry.ROOT / "state.json", self.root / "state.json")
 
     def tearDown(self):
@@ -37,6 +39,13 @@ class RegisterIntegrity(unittest.TestCase):
     def validate(self):
         with patch.object(registry, "ROOT", self.root), contextlib.redirect_stdout(io.StringIO()):
             registry.validate()
+
+    def test_reference_variant_requires_explicit_acceptance(self):
+        def change(record):
+            record["accepted_records"]["reference_ids"].remove("flat-massless-synthetic-controls-v1")
+        self.mutate("register/reviews/2026-10-01-lcdm-baseline-source-claims.json", change)
+        with self.assertRaisesRegex(ValueError, "targeted review does not accept reference_ids"):
+            self.validate()
 
     def test_current_records(self):
         self.validate()
@@ -109,7 +118,8 @@ class RegisterIntegrity(unittest.TestCase):
             self.validate()
 
     def test_unfinished_scan_cannot_be_last_completed(self):
-        self.mutate("scans/2026-10-01-late-expansion.json", lambda p: p.update(status="interrupted"))
+        scan_id = json.loads((self.root / "state.json").read_text())["last_completed_scan"]
+        self.mutate(f"scans/{scan_id}.json", lambda p: p.update(status="interrupted"))
         with self.assertRaisesRegex(ValueError, "last completed scan is not completed"):
             self.validate()
 
@@ -176,6 +186,46 @@ class RegisterIntegrity(unittest.TestCase):
     def test_duplicate_citation_rejected(self):
         self.mutate('register/citations.json', lambda p: p['citations'].append(dict(p['citations'][0], id='duplicate')))
         with self.assertRaisesRegex(ValueError, 'duplicate citation'):
+            self.validate()
+
+    def test_targeted_review_cannot_accept_unlisted_idea(self):
+        self.mutate('register/reviews/2026-10-01-lcdm-baseline-source-claims.json',
+                    lambda r: r['accepted_records'].update(idea_ids=[]))
+        with self.assertRaisesRegex(ValueError, 'targeted review does not accept idea_ids'):
+            self.validate()
+
+    def test_targeted_review_requires_high_effort_confirmation(self):
+        self.mutate('register/reviews/2026-10-01-lcdm-baseline-source-claims.json',
+                    lambda r: r['model_confirmation'].update(effort='low'))
+        with self.assertRaisesRegex(ValueError, 'required model/reasoning confirmation'):
+            self.validate()
+
+    def test_targeted_review_cannot_expand_idea_source_coverage(self):
+        self.mutate('register/ideas/planck-conditioned-base-lcdm.json',
+                    lambda r: r['source_evidence'][0].update(locator='Unexamined appendix'))
+        with self.assertRaisesRegex(ValueError, 'idea locator outside targeted review'):
+            self.validate()
+
+    def test_targeted_check_is_not_a_full_paper_read(self):
+        paper = json.loads((self.root / 'register/papers/1807.06209v4.json').read_text())
+        self.assertIsNone(paper['extraction'])
+        self.assertIsNone(paper['review_id'])
+        self.assertEqual(reading_stage(paper), 'screened')
+        self.mutate('scans/2026-10-01-lcdm-baseline.json',
+                    lambda s: s['full_reads'].append(paper['paper_id']))
+        with self.assertRaisesRegex(ValueError, 'scan claims unread paper'):
+            self.validate()
+
+    def test_candidate_cannot_use_changed_reference_bytes(self):
+        self.mutate('references/lcdm/planck2018-reference.json',
+                    lambda r: r.update(conditioning=r['conditioning']+' changed'))
+        with self.assertRaisesRegex(ValueError, 'design reference digest mismatch'):
+            self.validate()
+
+    def test_reference_cannot_use_unreceipted_original_source(self):
+        self.mutate('references/lcdm/planck2018-reference.json',
+                    lambda r: r['source_sha256'].update(pdf='0'*64))
+        with self.assertRaisesRegex(ValueError, 'reference source hash lacks receipt'):
             self.validate()
 
 

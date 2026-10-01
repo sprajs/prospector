@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "id": "massless-supplied-drag-comparison",
+  "title": "Pressureless matter and massless supplied-drag comparison",
+  "family": "conditional_background",
+  "status": "reviewed_targeted",
+  "review_id": "2026-10-01-lcdm-baseline-source-claims",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2503.14738v3",
+      "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11–12: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test"
+    }
+  ],
+  "assumptions": [
+    "Flat GR with pressureless matter, permanently massless radiation and Lambda; subsets and flatness close explicitly.",
+    "The exact chosen fractional controls are synthetic; no Planck draw, fixed-temperature mapping or predicted drag is implied."
+  ],
+  "predictions": [
+    "Native background, distances and conditional ruler can be compared for the chosen controls.",
+    "With fractions and supplied drag fixed, doubling H0 halves distances and ruler while leaving BAO ratios invariant; fixed physical densities/temperature are a different control."
+  ]
+}

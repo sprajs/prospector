@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "id": "planck-conditioned-base-lcdm",
+  "title": "Planck-conditioned base ΛCDM",
+  "family": "reference_cosmology",
+  "status": "reviewed_targeted",
+  "review_id": "2026-10-01-lcdm-baseline-source-claims",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:1807.06209v4",
+      "locator": "HTML S2.SS1 (Sec2.1): six sampled parameters, adiabatic power law, 0.05 Mpc^-1 pivot, one 0.06 eV plus two massless neutrinos, BBN PArthENoPE1.1/neutron880.2s; HTML S3.T1 caption: Plik marginalized means versus best fit, massive neutrino included in Omega_m, theta_MC versus theta_star; HTML S3.SS1 footnote14: T_CMB2.7255K; PDF p16 Table2: all eleven registered values/errors and TT,TE,EE+lowE+lensing column; no BAO; tanh reionization and BBN helium caption; HTML S7.SS5.SSS2: standard Neff3.046 text; Eq62 read but not used"
+    }
+  ],
+  "assumptions": [
+    "Spatially flat GR with photons, baryons/CDM, one fixed massive neutrino and standard thermal/primordial/reionization closure.",
+    "Six sampled parameters differ from H0, Omega_m and drag quantities derived by the conditioned fit."
+  ],
+  "predictions": [
+    "The specified model and baseline likelihood yield source-reported marginal parameter constraints; they are not independent measurements.",
+    "Massive-neutrino transition and predicted ionization/drag/perturbation closure are required for faithful model comparison."
+  ]
+}

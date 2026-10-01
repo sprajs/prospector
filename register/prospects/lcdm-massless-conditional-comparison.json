@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "lcdm-massless-conditional-comparison",
+  "title": "Conditional massless background and BAO",
+  "kind": "single_mechanism",
+  "readiness": "blocked",
+  "baseline": {
+    "label": "Planck base ΛCDM comparison",
+    "role": "comparison",
+    "scope": "Changed neutrino/thermal sector and exact synthetic control point; Planck is contextual reference.",
+    "parameters": null,
+    "parameters_reason": "Exact sourced values and chosen inputs are separately pinned in the candidate numerical reference."
+  },
+  "cosmology": {
+    "gravity": "General relativity",
+    "geometry": "Spatially flat FLRW",
+    "components": [
+      "Pressureless baryons and nonbaryonic matter",
+      "Photons and permanently massless radiation",
+      "Cosmological constant"
+    ],
+    "modifications": [
+      "Replace massive-neutrino/thermal sector with explicitly chosen massless fractional controls; supplied synthetic drag endpoint."
+    ],
+    "background": "E(a)^2=Omega_r/a^4+Omega_m/a^3+Omega_Lambda; chosen fractional inputs, Lambda from flatness.",
+    "perturbations": "Not included in this limited comparison.",
+    "observables": [
+      "E(z), D_M(z) and D_L(z) at z=0,0.1,0.7,2.33,5",
+      "All 13 ordered D_M/r_d, D_H/r_d or D_V/r_d release coordinates",
+      "BAO Gaussian quadratic, log determinant, normalization and log density",
+      "Twin H0 control with fractions, supplied drag and release covariance fixed"
+    ]
+  },
+  "scope": [
+    "Reproducible experiments/lcdm-baseline: compare only the listed exported background and conditional-BAO quantities. Native H, D_H, D_V and the supplied-endpoint ruler support these computations internally; standalone values are not required exported comparison outputs. No SN profile, fit or full source inference."
+  ],
+  "unknowns": [
+    "Corrected dimensionless twin-E control acceptance and final consumer revision remain pending.",
+    "Reproducible twin E(z) control gate must enforce the original dimensionless relative budget before final immutable consumer binding."
+  ],
+  "combination_compatibility": {
+    "status": "source_coherent",
+    "basis": "One declared background; observable lineage ideas inform the investigation, not extra physical components or independent probes."
+  },
+  "idea_ids": [
+    "planck-conditioned-base-lcdm",
+    "bao-compressed-relative-ruler",
+    "massless-supplied-drag-comparison"
+  ],
+  "model_idea_ids": [
+    "massless-supplied-drag-comparison"
+  ],
+  "paper_ids": [
+    "arxiv:1807.06209v4",
+    "arxiv:2503.14738v3"
+  ],
+  "design_ids": [
+    "candidate-lcdm-massless-conditional-comparison"
+  ],
+  "topic_ids": [
+    "baseline-reference"
+  ],
+  "review_id": "2026-10-01-lcdm-baseline-source-claims",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:1807.06209v4",
+      "locator": "HTML S2.SS1 (Sec2.1): six sampled parameters, adiabatic power law, 0.05 Mpc^-1 pivot, one 0.06 eV plus two massless neutrinos, BBN PArthENoPE1.1/neutron880.2s; HTML S3.T1 caption: Plik marginalized means versus best fit, massive neutrino included in Omega_m, theta_MC versus theta_star; HTML S3.SS1 footnote14: T_CMB2.7255K; PDF p16 Table2: all eleven registered values/errors and TT,TE,EE+lowE+lensing column; no BAO; tanh reionization and BBN helium caption; HTML S7.SS5.SSS2: standard Neff3.046 text; Eq62 read but not used",
+      "url": "https://arxiv.org/abs/1807.06209v4",
+      "source_sha256": {
+        "html": "622d05fab48d935a2224afeade05b07393ec37e4e0554bb9c416f4298acb7bc0",
+        "pdf": "8e172730faf07c9f4ff3fdcc7043f76ed67df6f76066d47df30d693025b6ce77",
+        "extracted_text": "75476bdbcfeb893c3be2274cb796becf55a9a174c40b4c265a9fcc9870fa0a4d"
+      }
+    },
+    {
+      "paper_id": "arxiv:2503.14738v3",
+      "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11–12: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test",
+      "url": "https://arxiv.org/abs/2503.14738v3",
+      "source_sha256": {
+        "html": "782d7b25d5a6d7195e0dc0cfdab029e49a4b05cff8263e18f843e82e9c054c49"
+      }
+    }
+  ]
+}

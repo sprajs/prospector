@@ -169,6 +169,7 @@ def validate():
         if reference['status'] == 'targeted_reviewed':
             require(reference['review_id'] in reviews, 'reference lacks review')
             accepted_record(reference['review_id'], 'reference_ids', ident)
+            accepted_record(reference['review_id'], 'reference_ids', reference['supported_variant']['id'])
             require(reference['paper_id'] in reviews[reference['review_id']]['reviewed_papers'],
                     'reference source not reviewed')
         else:

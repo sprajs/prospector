@@ -3,19 +3,14 @@
   "kind": "candidate_design",
   "paper_ids": [
     "arxiv:1807.06209v4",
-    "arxiv:2503.14738v3",
-    "arxiv:2202.04077v2",
-    "arxiv:2112.03863v2",
-    "arxiv:2112.03864v2",
-    "arxiv:2112.04510v3"
+    "arxiv:2503.14738v3"
   ],
   "idea_ids": [
     "planck-conditioned-base-lcdm",
     "bao-compressed-relative-ruler",
-    "sn-standardized-distance-lineage",
     "massless-supplied-drag-comparison"
   ],
-  "review_id": null,
+  "review_id": "2026-10-01-lcdm-baseline-source-claims",
   "readiness": "blocked",
   "equations": [
     {
@@ -24,7 +19,7 @@
       "paper_id": "arxiv:2503.14738v3",
       "definitions": "Omega_bc=Omega_b+Omega_c. Omega_gamma describes photons; Omega_nu is present neutrino density. Their sum and Lambda close flatness. H0 in km s^-1 Mpc^-1.",
       "domain": "Homogeneous flat GR background; full neutrino thermal transition required for the Planck reference.",
-      "status": "needs_verification"
+      "status": "reviewed_transcription"
     },
     {
       "expression": "r_d = integral[z_drag,infinity] c_s(z)/H(z) dz; D_M(z)=c*integral[0,z] dzprime/H(zprime); D_H(z)=c/H(z); D_V(z)=[z*D_M(z)^2*D_H(z)]^(1/3)",
@@ -32,7 +27,7 @@
       "paper_id": "arxiv:2503.14738v3",
       "definitions": "Comoving distances and ruler in Mpc; z dimensionless; c in km/s. r_d is at drag, not r_star at last scattering. BAO constrains distance/ruler ratios.",
       "domain": "Flat FLRW distance convention; acoustic ruler needs photon-baryon/thermal closure or an explicitly supplied endpoint.",
-      "status": "needs_verification"
+      "status": "reviewed_transcription"
     },
     {
       "expression": "E(a)^2=Omega_r/a^4+Omega_m/a^3+Omega_Lambda; Omega_Lambda=1-Omega_m-Omega_r; c_s(a)=c/sqrt(3*(1+3*Omega_b*a/(4*Omega_gamma)))",
@@ -40,7 +35,7 @@
       "paper_id": "arxiv:2503.14738v3",
       "definitions": "a=1/(1+z), h=H0/100; chosen fractional densities as specified in minimal_test. Baryons/photons are subsets of matter/radiation. No mapping from Planck physical densities or fixed T_CMB/Neff.",
       "domain": "Flat GR background, positive matter/radiation/photon components, 0<=Omega_b<=Omega_m and 0<Omega_gamma<=Omega_r; nonnegative Lambda. Supplied synthetic drag endpoint; no recombination/neutrino transition/perturbations.",
-      "status": "needs_verification"
+      "status": "reviewer_derived"
     }
   ],
   "assumptions": [
@@ -65,7 +60,7 @@
     {
       "paper_id": "arxiv:2503.14738v3",
       "kind": "compressed clustering likelihood",
-      "role": "DESI DR2 Table4 marginalized BAO-fit posterior means/standard deviations, a released fitted compression with full covariance; not raw clustering or a cosmological posterior. Seven baseline samples; omit superseded LRG3/ELG1 rows. Consumer pins official 13-coordinate mean/covariance release and retains unknown cross-probe dependence.",
+      "role": "DESI DR2 Table4 marginalized BAO-fit posterior means/standard deviations, a released fitted compression with full covariance; not raw clustering or a cosmological posterior. Seven baseline samples; omit superseded LRG3/ELG1 rows. Consumer pins official 13-coordinate mean/covariance release and retains unknown cross-probe dependence. Exact release is authoritative for input precision; Lyα released D_M/r_d=38.98897396 differs from rounded printed Table4 38.988, so this is not a literal table transcription.",
       "release_repository": "CobayaSampler/bao_data",
       "release_revision": "bb0c1c9009dc76d1391300e169e8df38fd1096db",
       "assets": [
@@ -149,32 +144,10 @@
           "observable": "DM_over_rs"
         }
       ]
-    },
-    {
-      "paper_id": "arxiv:2202.04077v2",
-      "kind": "standardized SN distance likelihood",
-      "role": "Literature/conditioning context only, not an executed likelihood in this limited background/BAO slice. 1701 light curves/1550 distinct SNe with full correlated covariance, release columns and chosen selection; subset-specific results require matched scope."
-    },
-    {
-      "paper_id": "arxiv:2112.03863v2",
-      "kind": "sample and light-curve release",
-      "role": "Literature/conditioning context only, not an executed likelihood in this limited background/BAO slice. Source/object IDs, cuts, duplicates and shared sample ancestry."
-    },
-    {
-      "paper_id": "arxiv:2112.03864v2",
-      "kind": "calibration and SALT2 training",
-      "role": "Literature/conditioning context only, not an executed likelihood in this limited background/BAO slice. Correlated survey zeropoints and light-curve training; preserve dependence across SN/calibration products."
-    },
-    {
-      "paper_id": "arxiv:2112.04510v3",
-      "kind": "calibrated ladder fit",
-      "role": "Literature/conditioning context only, not an executed likelihood in this limited background/BAO slice. Comparison context only; Pantheon+ and SH0ES share SN distances/calibrators/covariance. Do not add summary H0 as an independent likelihood on overlapping samples."
     }
   ],
   "unknowns": [
-    "Complete source readings have not occurred in this targeted task.",
-    "Consumer release asset hashes, exact selections and comparison budgets belong to the Reproducible packet and are not yet accepted here.",
-    "Unknown cross-probe covariances stay unknown."
+    "Corrected dimensionless twin-E control acceptance and final consumer revision remain pending."
   ],
   "verification_gates": [
     "Independent exact gpt-6.1-sol review of listed original sources/locators and candidate scope.",
@@ -190,11 +163,15 @@
     "revision": "db4765838fc404a489a0115ee69713f2ea6cd2f4",
     "dirty": false,
     "capability_status": "Compiled shared flat matter+radiation+Lambda supplied-drag and early/late native kernels available. Native conditional BAO available. Ten CLI operations; no native early/late CLI route. The background.evaluate LCDM descriptor is a separate radiation-free late-time operation. Missing full massive-neutrino/ionization/drag/perturbation/CMB closure.",
-    "recipe_runner_status": "No implemented generic recipe runner; Reproducible owns a dedicated typed experiment consumer."
+    "recipe_runner_status": "No implemented generic recipe runner; Reproducible owns a dedicated typed experiment consumer.",
+    "adapter_repository": "sprajs/reproducible",
+    "adapter_revision": "c3193648ebd74ffd8a8d3fff8cfd20e02db36080",
+    "adapter_dirty": false,
+    "validation_route": "Reproducible experiments/lcdm-baseline/controller.py validates lcdm-baseline.native and dispatches the dedicated typed consumer; not Irreducible CLI-schema acceptance.",
+    "adapter_revision_status": "Historical inspected revision; superseding corrected gate revision pending."
   },
   "blockers": [
-    "Targeted independent source review pending.",
-    "Consumer input/release hashes, budgets and executed comparison evidence await explicit handoff acceptance."
+    "Reproducible twin E(z) control gate must enforce the original dimensionless relative budget before final immutable consumer binding."
   ],
   "executable_request": null,
   "qualification": {
@@ -254,8 +231,15 @@
         2.33,
         5.0
       ],
-      "request_validation": "Pending final Reproducible typed native adapter review; not Irreducible CLI schema acceptance."
+      "request_validation": "Typed native route inspected at historical c3193648; corrected twin-E gate revision and consumer acceptance pending."
     },
     "scope": "Reproducible experiments/lcdm-baseline: compare only the listed exported background and conditional-BAO quantities. Native H, D_H, D_V and the supplied-endpoint ruler support these computations internally; standalone values are not required exported comparison outputs. No SN profile, fit or full source inference."
-  }
+  },
+  "source_references": [
+    {
+      "reference_id": "planck2018-base-lcdm-plik-lensing",
+      "path": "references/lcdm/planck2018-reference.json",
+      "sha256": "06c561ab2214bd028b47e03802ec3029d476a4cf61d75602bf550e5cbf1282cf"
+    }
+  ]
 }

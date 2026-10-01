@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "reference_id": "planck2018-base-lcdm-plik-lensing",
-  "review_id": null,
-  "status": "pending_targeted_review",
+  "review_id": "2026-10-01-lcdm-baseline-source-claims",
+  "status": "targeted_reviewed",
   "paper_id": "arxiv:1807.06209v4",
   "source_sha256": {
     "html": "622d05fab48d935a2224afeade05b07393ec37e4e0554bb9c416f4298acb7bc0",

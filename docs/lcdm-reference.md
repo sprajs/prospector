@@ -28,8 +28,10 @@ controls: H₀=67.4 km/s/Mpc, Ωm=0.315, Ωr=0.000092, Ωb=0.049,
 and radiation; ΩΛ=1−Ωm−Ωr. Matter stays pressureless and radiation stays massless.
 This is not a Planck draw or a fixed-Tcmb/Neff conversion.
 
-The candidate covers native background, distances, supplied-endpoint ruler and
-conditional BAO ratios. It does not require an SN profile. Irreducible at pinned
+The comparison exports E(z), D_M(z), D_L(z), the 13 ordered BAO ratios and
+the Gaussian quadratic, log determinant, normalization and log density. Internal
+H, D_H, D_V and supplied-endpoint ruler values support these calculations; their
+standalone values are not required comparison outputs. No SN profile is included. Irreducible at pinned
 `db4765838fc404a489a0115ee69713f2ea6cd2f4` has native early/late and conditional
 BAO kernels, but no early/late CLI route or generic recipe runner. The separate
 late `background.evaluate` LCDM descriptor omits radiation. Full massive-neutrino
@@ -66,3 +68,9 @@ reproduction and scientific interpretation have separate acceptance gates.
 
 This audit checks selected original-source sections. It does not claim Luna full
 readings, complete bibliography coverage or independent reproduction of a paper.
+
+Two unused printed expressions need care: Planck Sec.7.5.2 Eq.62 omits the
+photon contribution while describing total radiation, and the Pantheon+ dataset
+paper Sec.III.2 has inconsistent inline covariance shorthand. Neither expression
+is used for the candidate controls or covariance. The source inconsistencies are
+recorded separately from our corrected SH0ES equation locator.

@@ -1,6 +1,6 @@
 # Register
 
-35 paper versions · 15 ideas · 8 topics · 6 candidate prospects.
+41 paper versions · 19 ideas · 9 topics · 8 candidate prospects.
 
 [Open Prospector](https://prospector-cosmology.sprajs.chatgpt.site) · [Local map](map.html)
 
@@ -8,13 +8,14 @@
 
 | Topic | Papers | Ideas |
 | --- | ---: | ---: |
+| [ΛCDM reference](topics/baseline-reference.json) | 6 | 4 |
 | [Bounces, cycles and primordial alternatives](topics/bounces-cycles.json) | 1 | 0 |
 | [Early energy and recombination](topics/early-energy.json) | 14 | 8 |
 | [Inhomogeneity, averaging and observers](topics/inhomogeneity.json) | 6 | 2 |
 | [Interactions, transitions and decays](topics/interacting-sectors.json) | 12 | 9 |
 | [Acceleration and reconstruction](topics/kinematics.json) | 3 | 2 |
 | [Late dark energy and unified histories](topics/late-dark-energy.json) | 15 | 6 |
-| [Measurements and calibration](topics/measurement-lineage.json) | 10 | 4 |
+| [Measurements and calibration](topics/measurement-lineage.json) | 15 | 4 |
 | [Gravity and quantum cosmology](topics/modified-gravity.json) | 6 | 0 |
 
 Topics are navigation groups. Membership does not establish equivalent physics.
@@ -24,6 +25,8 @@ Topics are navigation groups. Membership does not establish equivalent physics.
 | Candidate cosmology | Baseline |
 | --- | --- |
 | [Scalar early energy](prospects/ede-fixed-endpoint-ruler.json) | ΛCDM |
+| [Full ΛCDM reference](prospects/lcdm-baseline-reference-audit.json) | Planck 2018 base ΛCDM |
+| [Conditional massless background and BAO](prospects/lcdm-massless-conditional-comparison.json) | Planck base ΛCDM comparison |
 | [Triggered dark vacuum transition](prospects/nede-piecewise-background.json) | ΛCDM |
 | [Deceleration reconstruction](prospects/q-reconstruction-continuity-and-derivative-interpretation.json) | Flat ΛCDM reference |
 | [Staged dark-sector decay](prospects/staged-decay-energy-and-background-claim-audit.json) | Flat GR · radiation + matter |
@@ -36,11 +39,15 @@ Combined models require compatibility checks before promotion.
 ## Idea tree
 
 - [Approximate expansion matching does not transfer external cosmological fits](ideas/background-match-does-not-transfer-fit-evidence.json)
+- [BAO distances relative to the acoustic ruler](ideas/bao-compressed-relative-ruler.json)
 - [Constant coupling retains a percent-scale scalar tracking residue](ideas/constant-coupling-scalar-residual-floor.json)
 - [Dark-Higgs-mediated massive-vector scattering gives a separate SIDM candidate](ideas/dark-higgs-vector-sidm-candidate.json)
 - [Finite-node deceleration reconstruction tests coordinate and cutoff assumptions](ideas/lagrange-deceleration-deviation-reconstruction.json)
   - [Selected fitted q upturn requires an explicit acceleration derivative test](ideas/conditional-q-upturn-not-acceleration-endpoint.json)
+- [Pressureless matter and massless supplied-drag comparison](ideas/massless-supplied-drag-comparison.json)
+- [Planck-conditioned base ΛCDM](ideas/planck-conditioned-base-lcdm.json)
 - [Positive exponential sums cannot produce steepening followed by flattening along monotonic rolling](ideas/positive-exponential-slope-variance-obstruction.json)
+- [Standardized SN distances and shared calibration](ideas/sn-standardized-distance-lineage.json)
 - [Late dark symmetry breaking activates daughter-only quintessence coupling](ideas/staged-dark-decay-daughter-quintessence.json)
 - [Supernova reduction and selection dependence](ideas/supernova-reduction-selection-dependence.json)
 - [Timescape bare versus dressed geometry and clock](ideas/timescape-bare-dressed.json)
@@ -52,7 +59,7 @@ Combined models require compatibility checks before promotion.
 - [Tracking scalar unification requires a depletion branch between early and late energy](ideas/unified-scalar-steep-steeper-shallow.json)
 
 [Typed relationships](graph.json) preserve overlap, distinctions, critique, shared data and prospect links.
-[Bibliographic citations](citations.json): 4 explicit links; the index is incomplete.
+[Bibliographic citations](citations.json): 16 explicit links; the index is incomplete.
 
 ## Papers
 
@@ -63,16 +70,22 @@ Combined models require compatibility checks before promotion.
 | [Timescape cosmology with radiation fluid](https://arxiv.org/abs/1306.3208v2) | [1306.3208v2](papers/1306.3208v2.json) | screened |
 | [Timescape realized](https://arxiv.org/abs/1310.3124v1) | [1310.3124v1](papers/1310.3124v1.json) | screened |
 | [Cosmic microwave background anisotropies in the timescape cosmology](https://arxiv.org/abs/1410.3470v3) | [1410.3470v3](papers/1410.3470v3.json) | screened |
+| [Planck 2018 results. VI. Cosmological parameters](https://arxiv.org/abs/1807.06209v4) | [1807.06209v4](papers/1807.06209v4.json) | screened |
 | [Early Dark Energy Can Resolve The Hubble Tension](https://arxiv.org/abs/1811.04083v2) | [1811.04083v2](papers/1811.04083v2.json) | reviewed |
 | [New Early Dark Energy](https://arxiv.org/abs/1910.10739v5) | [1910.10739v5](papers/1910.10739v5.json) | reviewed |
 | [Inflaton-driven early dark energy](https://arxiv.org/abs/2111.07288v1) | [2111.07288v1](papers/2111.07288v1.json) | screened |
 | [Hot New Early Dark Energy](https://arxiv.org/abs/2112.00770v2) | [2112.00770v2](papers/2112.00770v2.json) | screened |
+| [The Pantheon+ Analysis: The Full Dataset and Light-Curve Release](https://arxiv.org/abs/2112.03863v2) | [2112.03863v2](papers/2112.03863v2.json) | screened |
+| [The Pantheon+ Analysis: SuperCal-Fragilistic Cross Calibration, Retrained SALT2 Light Curve Model, and Calibration Systematic Uncertainty](https://arxiv.org/abs/2112.03864v2) | [2112.03864v2](papers/2112.03864v2.json) | screened |
+| [A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km/s/Mpc Uncertainty from the Hubble Space Telescope and the SH0ES Team](https://arxiv.org/abs/2112.04510v3) | [2112.04510v3](papers/2112.04510v3.json) | screened |
+| [The Pantheon+ Analysis: Cosmological Constraints](https://arxiv.org/abs/2202.04077v2) | [2202.04077v2](papers/2202.04077v2.json) | screened |
 | [Microphysics of Early Dark Energy](https://arxiv.org/abs/2202.08291v3) | [2202.08291v3](papers/2202.08291v3.json) | screened |
 | [Coupled Early Dark Energy](https://arxiv.org/abs/2209.15046v1) | [2209.15046v1](papers/2209.15046v1.json) | screened |
 | [Trapped early dark energy](https://arxiv.org/abs/2401.08812v1) | [2401.08812v1](papers/2401.08812v1.json) | screened |
 | [Quintessential early dark energy](https://arxiv.org/abs/2408.03229v3) | [2408.03229v3](papers/2408.03229v3.json) | screened |
 | [Thermo-Coupled Early Dark Energy](https://arxiv.org/abs/2411.09747v2) | [2411.09747v2](papers/2411.09747v2.json) | screened |
 | [Interacting Early Dark Energy](https://arxiv.org/abs/2502.08541v2) | [2502.08541v2](papers/2502.08541v2.json) | screened |
+| [DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints](https://arxiv.org/abs/2503.14738v3) | [2503.14738v3](papers/2503.14738v3.json) | screened |
 | [Partial Relief of the Hubble Tension and a Natural Self-Interacting Dark Matter Candidate From Staged Symmetry Breaking](https://arxiv.org/abs/2602.01543v2) | [2602.01543v2](papers/2602.01543v2.json) | reviewed |
 | [Parameterizations of the Hubble Constant from the Binned Type Ia Supernova Master Sample: Logarithmic versus Power-law Forms](https://arxiv.org/abs/2603.00497v3) | [2603.00497v3](papers/2603.00497v3.json) | screened |
 | [Dispersion Measure Distribution of Unlocalized Fast Radio Bursts as a Probe of the Hubble Constant](https://arxiv.org/abs/2604.03769v2) | [2604.03769v2](papers/2604.03769v2.json) | screened |
@@ -99,6 +112,8 @@ Combined models require compatibility checks before promotion.
 | Design | Readiness |
 | --- | --- |
 | [EDE fixed-endpoint sound-horizon response](../designs/candidate-ede-fixed-endpoint-ruler.json) | blocked |
+| [Full ΛCDM reference and stack-closure audit](../designs/candidate-lcdm-baseline-reference-audit.json) | blocked |
+| [Massless supplied-drag ΛCDM comparison](../designs/candidate-lcdm-massless-conditional-comparison.json) | blocked |
 | [NEDE piecewise background conservation and matching](../designs/candidate-nede-piecewise-background.json) | blocked |
 | [Deceleration matching and derivative audit](../designs/candidate-q-reconstruction-continuity-and-derivative-interpretation.json) | blocked |
 | [Staged decay energy and claim audit](../designs/candidate-staged-decay-energy-and-background-claim-audit.json) | blocked |
@@ -128,5 +143,9 @@ Source checks and structural validation do not establish independent reproductio
 - [arxiv:2609.34239v1](reviews/2026-10-01-late-expansion-science.json): delta q=0 above cutoff does not by itself normalize H to LambdaCDM.
 - [arxiv:2609.34239v1](reviews/2026-10-01-late-expansion-science.json): Selected fitted q upturn is not a measured jerk or acceleration endpoint.
 - [arxiv:2609.34239v1](reviews/2026-10-01-late-expansion-science.json): Planck distance priors are conditional inferred summaries, not full CMB validation.
+- [arxiv:2112.04510v3](reviews/2026-10-01-lcdm-baseline-source-claims.json): SH0ES ladder Eqs.1–6 are in Sec.2.1, PDF pp.9–12; corrected the draft Sec.3 locator.
+- [2026-10-01-lcdm-baseline-source-claims](reviews/2026-10-01-lcdm-baseline-source-claims.json): Limited candidate changed before acceptance to the exact synthetic fractional controls and background/BAO-only scope. Earlier physical-density/Planck endpoint/SN-output draft is retained locally; no run evidence was transferred to it.
+- [arxiv:2503.14738v3](reviews/2026-10-01-lcdm-baseline-source-claims.json): DESI Table4 entries are marginalized BAO-fit posterior means/errors with published covariance, a released fitted compression rather than raw clustering.
+- [2026-10-01-lcdm-baseline-source-claims](reviews/2026-10-01-lcdm-baseline-source-claims.json): H0 cancellation applies only with fractional densities and supplied drag held fixed; fixed physical density/temperature is a different test.
 
 [Scan receipts](../scans/) · [Continuation queue](../state.json) · [Record conventions](../docs/records.md)
