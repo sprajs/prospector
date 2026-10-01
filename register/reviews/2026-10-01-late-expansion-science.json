@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-01-late-expansion-science",
+  "requested_model": "gpt-6.1-sol",
+  "agent_id": "/root/sol_late_science",
+  "actual_model_identity": null,
+  "actual_model_identity_note": "Requested exact Sol science role; independent backend identity is not exposed.",
+  "reviewed_utc": "2026-10-01T01:56:00.953746+00:00",
+  "reviewed_papers": [
+    "arxiv:2605.26116v2",
+    "arxiv:2602.01543v2",
+    "arxiv:2609.34239v1"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:2605.26116v2",
+      "decision": "useful_conditional_candidate; source_development_or_method_audit_required",
+      "source_hashes": {
+        ".work/scans/2026-10-01-late-expansion/objects/f28f0ffce5f4441e7670fedbcfe48e88dbfdde9f2449a0dfb4b7ae4aacb973fb.html": "f28f0ffce5f4441e7670fedbcfe48e88dbfdde9f2449a0dfb4b7ae4aacb973fb",
+        ".work/scans/2026-10-01-late-expansion/objects/a9e5d04392b126c76cfe4055d5ed9ac9be6b35ec1f5f474c3bd65cdd45a68b0c.pdf": "a9e5d04392b126c76cfe4055d5ed9ac9be6b35ec1f5f474c3bd65cdd45a68b0c",
+        ".work/scans/2026-10-01-late-expansion/2605.26116v2.txt": "82878f7f19bacbd5f6745d6a79b345d6e2979b02807dd70f0dfcc1145d42b5de"
+      },
+      "source_hash_verification": "All receipt-listed HTML, PDF and derived text hashes recomputed before review; matches.",
+      "extraction_sha256": "b0eb0a9dee18e6265c2a2d746d79055318173620c21f17b7199534505ee8c0bb",
+      "licence_status": null,
+      "licence_status_reason": "Acquisition receipt gives no established licence; no permission inference.",
+      "coverage": {
+        "main_text": "All main-text sections 1-6 and Appendix A reviewed from the source-derived layout text; equations (2.1)-(5.18) and (A.1)-(A.11) checked against original pinned HTML math. Reference entries are citation identities, not independently read sources.",
+        "visual_pdf_pages": [
+          5,
+          7,
+          12,
+          16,
+          17,
+          21,
+          29
+        ],
+        "figure_limit": "PDF page 12 Figure 5 inspected visually; Table 1 on page 17 checked. Other plots/captions reviewed through text and original HTML; no independent inspection of every plot or CLASS implementation.",
+        "checks": "Continuity/KG signs; effective-potential inconsistency; acoustic-distance convention; weighted distance sign; double-exponential slope identity; fixed-point fractions/existence; baryon perturbation sign; positive-exponential variance; shoulder asymptotics; domain of obstruction."
+      }
+    },
+    {
+      "paper_id": "arxiv:2602.01543v2",
+      "decision": "useful_conditional_candidate; source_development_or_method_audit_required",
+      "source_hashes": {
+        ".work/scans/2026-10-01-late-expansion/objects/3e7db105a02cd169f84c66ddf3e2acd19878ecfa3345308db939d5a70ed93e4a.html": "3e7db105a02cd169f84c66ddf3e2acd19878ecfa3345308db939d5a70ed93e4a",
+        ".work/scans/2026-10-01-late-expansion/objects/2670793f717ef76316cf91105d4532c8e3535b00c2b7c0147cdbd602c6c38c3f.pdf": "2670793f717ef76316cf91105d4532c8e3535b00c2b7c0147cdbd602c6c38c3f",
+        ".work/scans/2026-10-01-late-expansion/2602.01543v2.txt": "b6fde695ea504fc2b5e5e11c6222225c134973e72420597fdfb8b13dad285a2c"
+      },
+      "source_hash_verification": "All receipt-listed HTML, PDF and derived text hashes recomputed before review; matches.",
+      "extraction_sha256": "cfb896b6cfe19a806bb37127f852f9c970d1c8f569ec4c9df0d764b8bbf72014",
+      "licence_status": null,
+      "licence_status_reason": "Acquisition receipt gives no established licence; no permission inference.",
+      "coverage": {
+        "main_text": "All main-text sections I-V and Appendix VI.A-B reviewed in source-derived PDF text and original HTML equations (1)-(26). References not independently followed.",
+        "visual_pdf_pages": [
+          6,
+          7
+        ],
+        "figure_limit": "Figures 3-6 and scattering equations inspected on original PDF pages 6-7. Figure 2 background comparison and Figure 1 diagrams checked through source text/captions, not separately visually inspected.",
+        "checks": "Gauge-invariant decay operator and charges; daughter-only coupling; homogeneous energy conservation; assigned daughter EOS versus derivation; background-match fit inheritance; omitted radial-mode energy; SIDM cubic-coupling dimensions, amplitude and velocity convention."
+      }
+    },
+    {
+      "paper_id": "arxiv:2609.34239v1",
+      "decision": "useful_conditional_candidate; source_development_or_method_audit_required",
+      "source_hashes": {
+        ".work/scans/2026-10-01-late-expansion/objects/879dca4ee25ab96ddb0907f8a6e9b422a9508bac011b91a1b371fc1d77b4de5b.html": "879dca4ee25ab96ddb0907f8a6e9b422a9508bac011b91a1b371fc1d77b4de5b",
+        ".work/scans/2026-10-01-late-expansion/objects/51acde38caa9d338b209fbd09fafdeb10c3d1d6312376ad6e9547992fd735216.pdf": "51acde38caa9d338b209fbd09fafdeb10c3d1d6312376ad6e9547992fd735216",
+        ".work/scans/2026-10-01-late-expansion/2609.34239v1.txt": "928d7cc5bdf84e2624631dc080475ec03c7a3daca410e23ab365510de0e48d7a"
+      },
+      "source_hash_verification": "All receipt-listed HTML, PDF and derived text hashes recomputed before review; matches.",
+      "extraction_sha256": "1661edb081cb03ab230fbe7f330ba93e5f4cd6b878c9fadc4ee2f2e238490166",
+      "licence_status": null,
+      "licence_status_reason": "Acquisition receipt gives no established licence; no permission inference.",
+      "coverage": {
+        "main_text": "Main-text sections I-V including all displayed methodology/data equations and Tables II-IV reviewed from pinned PDF text and original HTML math. No appendix. References not independently read.",
+        "visual_pdf_pages": [
+          3,
+          12
+        ],
+        "figure_limit": "Original PDF Eq. (4)/node boundary visually checked on page 3; Figures 4 and 5 visually inspected on page 12. Other plots and full tables checked through source text/HTML, not every plot visually inspected.",
+        "checks": "n+1 nodes versus n free coefficients; q-to-H integration and high-z normalization; delta q versus plotted Delta q; q sign and time convention versus jerk/acceleration derivative; Table II Union3 q0; Table IV evidence/significance; compressed-CMB and shared-observation assumptions."
+      }
+    }
+  ],
+  "corrections": [
+    {
+      "paper_id": "arxiv:2605.26116v2",
+      "locator": "Eqs. (2.1)-(2.2),(2.7)-(2.12); HTML #S2.E7-#S2.E12; PDF p.5",
+      "issue": "Printed V_eff=V+rho_c ln A with beta=dlnA/dphi cannot yield printed KG equation ddotphi+3Hdotphi+V_phi=+beta rho_c. Holding rho_c fixed gives the opposite force; differentiating its phi dependence adds another term. The conformal action A^2g and beta sign also require reconciliation with the negative matter-continuity source.",
+      "correction": "Retain the printed equations separately. For the continuity/KG convention actually used in Eqs. (2.7)-(2.9), require V_eff,phi=V_phi-beta rho_c. At fixed scale factor rho_c=rho_c,ref a^-3 exp[-integral beta dphi], V_eff=V+rho_c gives that derivative; its scalar second derivative is V_phiphi+(beta^2-beta_phi)rho_c. This is a reviewer consistency construction, not an author-provided corrected action. A global sign/action convention must be settled before implementation.",
+      "display_summary": "Source coupling/action/effective-potential conventions conflict; do not compile them verbatim.",
+      "kind": "printed_source_inconsistency_with_conditional_repair"
+    },
+    {
+      "paper_id": "arxiv:2605.26116v2",
+      "locator": "Eqs. (3.2)-(3.4); HTML #S3.E14-#S3.E16; PDF p.7",
+      "issue": "The sound-horizon integral defines a comoving ruler, while D_A is explicitly physical angular-diameter distance; printed theta_star=r_s/D_A lacks 1+z_star.",
+      "correction": "Use theta_star=r_s/[(1+z_star)D_A]=r_s/chi in flat geometry, or use physical r_s/(1+z_star) in the numerator. At fixed z_star the missing factor cancels in fractional changes; this does not validate the inferred H0 shift or preserve that relation if recombination changes.",
+      "display_summary": "Acoustic angle needs matched comoving or physical ruler-distance conventions.",
+      "kind": "printed_source_convention_inconsistency"
+    },
+    {
+      "paper_id": "arxiv:2605.26116v2",
+      "locator": "Eq. (3.14); HTML #S3.E26; PDF p.12",
+      "issue": "pdftotext drops the absolute-value bars around delta chi/chi, making the positive right-hand side appear to contradict Eq. (3.13). The original HTML and rendered PDF both contain the bars.",
+      "correction": "Preserve |delta chi/chi| approximately +(1/2)Omega_bar times the kernel integral. The signed change is negative for a positive added fraction at fixed baseline/endpoint. This is a reading-aid failure, not a printed source error.",
+      "display_summary": "Restore source absolute-value bars in the plateau distance estimate.",
+      "kind": "reading_aid_transcription_hazard"
+    },
+    {
+      "paper_id": "arxiv:2605.26116v2",
+      "locator": "Eqs. (4.9),(4.13),(4.24),(5.12)-(5.13); HTML #S4.E40/#S4.E51/#S5.E67; PDF pp.16,21",
+      "issue": "Both original HTML and rendered PDF print Gamma-1=(lambda-lambda_early)(lambda-lambda_late)/lambda^2 and lambda_prime=-sqrt(6)x times the same product. For positive exponential amplitudes the product is negative between the slopes, whereas Gamma-1 is nonnegative.",
+      "correction": "Direct differentiation gives Gamma-1=-(lambda-lambda_early)(lambda-lambda_late)/lambda^2 and lambda_prime=+sqrt(6)x(lambda-lambda_early)(lambda-lambda_late). Equivalently d lambda/d phi=-Var_w(lambda_i), consistent with Eq. (5.13). These reviewer algebraic corrections preserve constant-slope endpoints, but stability/trajectory calculations using the printed sign are unverified.",
+      "display_summary": "Double-exponential slope equations have reversed signs; Eq. (5.13) supplies the consistent identity.",
+      "kind": "printed_source_algebra_inconsistency"
+    },
+    {
+      "paper_id": "arxiv:2605.26116v2",
+      "locator": "Table 1 point A; Eqs. (4.4)-(4.5); PDF p.17",
+      "issue": "Table 1 lists the scalar-dominated vacuum-like point A as existing for all lambda_star. Its fractions and w require x=0,y=1, which gives x_prime=sqrt(3/2)lambda_star.",
+      "correction": "An exact point with these coordinates requires lambda_star=0. At small nonzero lambda it may be an approximate frozen state, not the exact fixed point printed. No full stability proof is claimed here.",
+      "display_summary": "Table 1 vacuum-like point A is exact only at zero slope.",
+      "kind": "printed_source_fixed_point_inconsistency"
+    },
+    {
+      "paper_id": "arxiv:2605.26116v2",
+      "locator": "Eqs. (4.18)-(4.23); Appendix A Eq. (A.9) and adjacent prose; HTML #A1.E81; PDF p.29",
+      "issue": "Appendix A Eq. (A.9) gives a negative shift for beta>0 and lambda_early^2=40, while adjacent prose reports positive +0.034 Omega_b. The discussion that baryons diminish depletion is not established by that sign. Coupled floor 3/(2lambda^2) is a large-lambda approximation, not the exact benchmark minimum.",
+      "correction": "Using Eq. (A.9) literally gives a negative correction, about -0.036 Omega_b at the exact beta_star, or order -0.002 at Omega_b=0.05. At lambda^2=40, beta_star=(sqrt(40)-sqrt(34))/2 and the baryon-free boundary fraction from Eq. (4.18) is about 0.0406, rather than the asymptotic 0.0375. Preserve the qualitative percent-scale obstruction conditionally; no global baryon theorem follows from this local expansion, especially near the y=0 existence boundary where Eq. (A.8) is nonuniform. At the exact beta_star, the approximate radicand 6-4 beta_star lambda_early in Eq. (A.8) is negative, another indication that this truncated baryon expansion cannot be used at that boundary.",
+      "display_summary": "Baryon correction sign conflicts with prose; quoted 3.75% floor is asymptotic.",
+      "kind": "printed_source_sign_inconsistency_and_approximation_limit"
+    },
+    {
+      "paper_id": "arxiv:2605.26116v2",
+      "locator": "Eq. (3.15); Sec.3.5",
+      "issue": "w_phi<-1/3 is a necessary condition for a scalar to drive acceleration, but does not alone imply acceleration at Omega_phi approximately 0.68 with pressureless remaining matter.",
+      "correction": "Require w_tot=Omega_phi w_phi+Omega_r/3<-1/3. At negligible radiation and Omega_phi=0.68 this requires w_phi<-1/(3*0.68), approximately -0.49. This is a reviewer sufficiency clarification of the source necessary-condition list.",
+      "display_summary": "Acceleration depends on total EOS, not scalar EOS alone.",
+      "kind": "reviewer_domain_clarification"
+    },
+    {
+      "paper_id": "arxiv:2602.01543v2",
+      "locator": "Luna quantities: effective SIDM coupling g; source Sec.IV.B and Appendix VI.B, Eqs.(17),(26); PDF pp.6-7",
+      "issue": "Luna labels g=0.0175 dimensionless. The source scattering vertex is g h1 alpha_mu alpha^mu, and its amplitude carries g^4/m_alpha^8.",
+      "correction": "Canonical four-dimensional boson fields have mass dimension one, so the cubic effective coupling g has mass dimension one. With masses evaluated in GeV, the numeric benchmark is consistent with g=0.0175 GeV, giving g^2/(4pi m_alpha m_h1) approximately 0.024. The paper does not print an explicit g unit; preserve the source bare number, flag the unit as inferred, and do not confuse it with dimensionless gauge couplings g1,g2.",
+      "display_summary": "SIDM effective cubic coupling is dimensionful; source omits its unit.",
+      "kind": "reader_unit_error_with_source_unit_omission"
+    },
+    {
+      "paper_id": "arxiv:2602.01543v2",
+      "locator": "Appendix VI.A after Eqs.(18)-(20); Fig.4-6 captions; PDF pp.6-7",
+      "issue": "The source describes plotted v as relative velocity but uses p approximately m_alpha v. For equal masses in the nonrelativistic centre-of-mass frame this formula uses each particle speed, not their relative speed.",
+      "correction": "If v_rel is the relative speed, p approximately m_alpha v_rel/2; if v is the individual COM speed, p approximately m_alpha v. Preserve printed relation and mark the plotting-code velocity convention unresolved; do not silently rescale reported curves or claim cluster compatibility.",
+      "display_summary": "Resolve individual versus relative velocity before using SIDM curves.",
+      "kind": "printed_source_kinematic_convention_ambiguity"
+    },
+    {
+      "paper_id": "arxiv:2602.01543v2",
+      "locator": "Sec.III and III.B; Figs.2-3; Luna background-expansion-mapping-only",
+      "issue": "The source argues approximate H(z) correspondence inherits external fits and makes repeating fits redundant, while explicitly denying perturbation equivalence. Curve overlap alone does not establish equality of all likelihood observables, likelihood normalization or priors.",
+      "correction": "Record only an illustrative homogeneous H(z) comparison. Claims from Agrawal/Naidoo fits remain external, conditional results in their own models; no fit, covariance, CMB spectrum, growth/fifth-force constraint or goodness-of-fit is transferred to this EFT by overlap. The Naidoo-like EOS is imposed rather than derived from the displayed Lagrangian.",
+      "display_summary": "Approximate background match cannot transfer fitted likelihood evidence.",
+      "kind": "unsupported_source_inference"
+    },
+    {
+      "paper_id": "arxiv:2609.34239v1",
+      "locator": "Luna coverage.figure_check versus coverage.limitations; PDF p.12",
+      "issue": "Luna simultaneously lists Figures 4 and 5 as visually inspected and states Figure 4 was not inspected.",
+      "correction": "Retain the original reader packet with a visible coverage inconsistency. This Sol reviewer independently inspected original PDF page 12 including Figures 4 and 5; this reviewer coverage does not retroactively establish Luna inspection.",
+      "display_summary": "Luna corrected the figure-coverage conflict with a fresh page-12 check; coverage history is preserved.",
+      "kind": "reader_coverage_inconsistency",
+      "resolution": "Luna supplied a separate coverage amendment and reopened PDF page 12 to inspect Figures 4 and 5. Original packet and inconsistent coverage preserved in the paper coverage history; uninspected Figure 2 now named correctly. Sol coverage remains separate."
+    },
+    {
+      "paper_id": "arxiv:2609.34239v1",
+      "locator": "Luna data_dependencies final item; Sec.II.A and Sec.III end; Eq.(4); PDF p.3",
+      "issue": "Luna says fit parameters include n+1 node values, though the endpoint x_n=0 is fixed.",
+      "correction": "There are n+1 interpolation nodes, n free node deviations, and 3+n total fit parameters: H0, Omega_m h^2, Omega_b h^2 plus x_0 through x_(n-1). The source Delta nu=3 or 4 refers to additional free coefficients.",
+      "display_summary": "n+1 nodes yield n free coefficients because x_n is fixed.",
+      "kind": "reader_parameter_count_error"
+    },
+    {
+      "paper_id": "arxiv:2609.34239v1",
+      "locator": "Sec.II after Eq.(3), cutoff text; Eqs.(1)-(4); PDF pp.2-3",
+      "issue": "Setting delta q=0 for z>z_c is described as LambdaCDM expansion recovery, but equality of q does not enforce equality of H normalization.",
+      "correction": "Integrating Eq.(1) with E(0)=1 gives E(z)=E_fid(z) exp[integral_0^min(z,z_c) delta q(s)/(1+s) ds]. Above z_c, E/E_fid is a constant exp(I_c), generally not one. Exact same-parameter recovery requires I_c=0 or an explicitly different matching/normalization prescription. Abrupt resetting E to E_fid otherwise risks a discontinuity. The printed paper does not supply implementation sufficient to settle which choice was used. High-redshift radiation and recombination handling also require source-code inspection.",
+      "display_summary": "delta q=0 above cutoff does not by itself normalize H to LambdaCDM.",
+      "kind": "source_method_underspecification_with_derived_consistency_test"
+    },
+    {
+      "paper_id": "arxiv:2609.34239v1",
+      "locator": "Luna conditional-slowing-acceleration-fit; Sec.IV/Fig.5; PDF p.12",
+      "issue": "Low-z maximum/decline wording can conflate a minimum of q with a maximum of an unspecified acceleration. Figure 5 plots q, not jerk or d(ddot a)/dt.",
+      "correction": "Define time through dt/dz=-1/[(1+z)H]. q<0 indicates acceleration; qdot>0 means the dimensionless -q decreases, with qdot=-(1+z)H q_z. Jerk j=a_dddot/(aH^3)=q+2q^2+(1+z)q_z; decreasing ddot a requires j<0, while decreasing ddot a/a requires j+q<0. A local q minimum is not either acceleration-derivative criterion. Figure 5 without SH0ES supports a best-fit upturn of q toward today only in the named cubic Union3 cases; derivative uncertainty is not supplied. No measured future endpoint follows.",
+      "display_summary": "Selected fitted q upturn is not a measured jerk or acceleration endpoint.",
+      "kind": "reader_interpretation_clarification"
+    },
+    {
+      "paper_id": "arxiv:2609.34239v1",
+      "locator": "Luna Planck-distance-prior quantity; Sec.III.C Eqs.(19)-(22)",
+      "issue": "Quoted errors are called observational errors, but R,l_A,Omega_b h^2 are compressed inferred summaries with early-physics/model assumptions; source calls them a reliable substitute for full CMB.",
+      "correction": "Label them Planck-derived, model-conditioned distance summaries. Standard early expansion, radiation, recombination/drag fitting formulae, sound-horizon physics and the extraction model enter; full CMB perturbation, lensing and ISW information is not restored by the compression. Its validity for the arbitrary reconstructed history remains conditional, especially with the high-z normalization ambiguity.",
+      "display_summary": "Planck distance priors are conditional inferred summaries, not full CMB validation.",
+      "kind": "reader_observation_classification_clarification"
+    }
+  ],
+  "limitations": [
+    "Scientific/source review only: no independent numerical reproduction, current-data reassessment, likelihood refit, consumer capability inspection or scientific qualification. No executable candidate requests are proposed.",
+    "No downloads, new searches or citation hops; all original-source and reader-packet hashes verified locally. External papers/code/chains referenced by authors remain unchecked.",
+    "Direct algebraic and dimensional checks are reviewer inferences, explicitly separated from printed source claims. Proposed repairs have not been applied to author code or tested numerically.",
+    "Scalar three-slope restriction applies to a canonical field with smooth rolling depletion and successive tracking-like/quasi-autonomous regimes; constant conformal coupling where included. Dissipation, decay/phase transitions, nonadiabatic evolution, field-dependent or disformal coupling and noncanonical fields are not ruled out.",
+    "Scalar percent thresholds and lambda-squared benchmarks are schematic/conditioning choices, not measured posterior bounds. Background trajectories and an EOS resemblance do not provide perturbation closure or Hubble-tension resolution.",
+    "Baryon-free coupled F is not an exact baryon-inclusive fixed point for nonzero beta. Appendix sign issues and local/nonuniform expansion prevent treating its baryon discussion as a global proof.",
+    "Decay trigger redshift, decay rate, daughter EOS, abundance and quintessence functions are selected inputs; transition/radial-mode energetics, recoil, kinetic distributions, radiative stability, production and fifth-force constraints are not qualified.",
+    "SIDM cross section is a tree-level example for a separate massive vector, whose majority-DM abundance and stability/production are not established. No halo simulations or source-checked cluster likelihood were reviewed. Effective-coupling units, identical-particle normalization and relative-speed convention require audit before observational use.",
+    "q interpolation is a finite-parametric kinematic family tied to a fiducial background, coordinate, nodes, order, endpoint and uniform priors, despite model-independent terminology. It supplies no physical stress-energy/perturbation closure.",
+    "Repeated q fits reuse DESI DR2 BAO and Planck distance summaries. SN compilations have calibration/training/common-object dependencies; no exact object overlap or cross-analysis covariance was calculated. Optional SH0ES prior and SN calibration ancestry may be correlated; the source does not document a joint cross-covariance.",
+    "Table IV Bayesian evidence favors LambdaCDM for every listed case; frequentist sigma is the authors Wilks translation, whose regularity and calibration were not validated. The selected feature in a best-fit q curve is not a calibrated posterior detection of its time derivative.",
+    "Figure inspection is limited to listed original PDF pages. Captions/text checks are not visual inspection of all figures. Actual backend identity remains unexposed."
+  ],
+  "idea_ids": [
+    "unified-scalar-steep-steeper-shallow",
+    "positive-exponential-slope-variance-obstruction",
+    "constant-coupling-scalar-residual-floor",
+    "staged-dark-decay-daughter-quintessence",
+    "background-match-does-not-transfer-fit-evidence",
+    "dark-higgs-vector-sidm-candidate",
+    "lagrange-deceleration-deviation-reconstruction",
+    "conditional-q-upturn-not-acceleration-endpoint"
+  ],
+  "edge_ids": [
+    "late-expansion-1",
+    "late-expansion-2",
+    "late-expansion-3",
+    "late-expansion-4",
+    "late-expansion-5",
+    "late-expansion-6",
+    "late-expansion-7",
+    "late-expansion-8",
+    "late-expansion-9",
+    "late-expansion-10",
+    "late-expansion-11",
+    "late-expansion-12",
+    "late-expansion-13",
+    "late-expansion-14",
+    "late-expansion-15",
+    "late-expansion-16",
+    "late-expansion-17",
+    "late-expansion-18",
+    "late-expansion-19",
+    "late-expansion-20",
+    "late-expansion-21",
+    "late-expansion-22"
+  ],
+  "design_ids": [
+    "candidate-unified-scalar-source-consistency-and-slope-screen",
+    "candidate-staged-decay-energy-and-background-claim-audit",
+    "candidate-q-reconstruction-continuity-and-derivative-interpretation"
+  ],
+  "local_packet_sha256": "6237b5ed0d866b584dbd4240c79fd8b9b9216a41c2b0010db7ccb4a11deb8cbe",
+  "integration_notes": [
+    "The negatively titled background-match audit idea is reviewed_conditional; the reviewed_unsupported finding applies to attempted fit-evidence transfer. Sol clarified this distinction.",
+    "Daughter w_B in the Naidoo comparison is phenomenologically assigned, not quintessence EOS or a derivation from the EFT."
+  ]
+}

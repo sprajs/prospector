@@ -1,0 +1,549 @@
+{
+  "requested_model": "gpt-6.1-sol",
+  "reviewer_agent": "/root/sol_science_review",
+  "backend_model_identity": null,
+  "backend_identity_note": "Requested exact Sol role/model recorded; independent actual backend identity is not exposed by this tool harness.",
+  "reviewed_at": "2026-10-01T00:58:42.368163+00:00",
+  "reviewed_papers": [
+    "arxiv:1811.04083v2",
+    "arxiv:1910.10739v5",
+    "arxiv:1009.5855v2"
+  ],
+  "corrections": [
+    {
+      "id": "ede-density-fraction",
+      "paper_id": "arxiv:1811.04083v2",
+      "target": "ideas[ede-background-mechanism].equations[0]",
+      "status": "clarification_required",
+      "source_evidence": {
+        "paper_id": "arxiv:1811.04083v2",
+        "locators": [
+          "Eq. (1), PDF p.2",
+          "definition below Eq. (2), PDF p.2"
+        ]
+      },
+      "correction": "Eq. (1) describes a density-normalized evolution variable, not the instantaneous fraction of total density. The paper explicitly defines fEDE(ac)=Omega_phi(ac)/Omega_tot(ac). Replacing Omega_phi(a) by fEDE(a) changes the model. The precise fixed critical-density convention is not spelled out in this letter; verify the cited fluid implementation before reproducing its Omega_phi,0 parameter. For a proposed toy test use an explicitly defined physical rho_phi and normalize f at ac.",
+      "locators": [
+        "Eq. (1), PDF p.2",
+        "definition below Eq. (2), PDF p.2"
+      ],
+      "display_summary": null
+    },
+    {
+      "id": "ede-radiation-boundary",
+      "paper_id": "arxiv:1811.04083v2",
+      "target": "summary and ideas[ede-background-mechanism].description",
+      "status": "clarification_required",
+      "source_evidence": {
+        "paper_id": "arxiv:1811.04083v2",
+        "locators": [
+          "PDF pp.1-2, footnote 3"
+        ]
+      },
+      "correction": "Not every fitted variant dilutes faster than radiation: n=2 gives w=1/3 and rho~a^-4; integer n>=3 gives faster dilution; n→infinity gives w=1 and rho~a^-6. n=1 is matter-like and the paper reports a dedicated unsuccessful tension fit. Use radiation-like or faster for the broad family.",
+      "locators": [
+        "PDF pp.1-2, footnote 3"
+      ],
+      "display_summary": null
+    },
+    {
+      "id": "ede-slowroll-prescription",
+      "paper_id": "arxiv:1811.04083v2",
+      "target": "caveats[slow-roll analysis deferred]",
+      "status": "clarification_required",
+      "source_evidence": {
+        "paper_id": "arxiv:1811.04083v2",
+        "locators": [
+          "PDF p.2 before and after Eqs. (1)-(2)"
+        ]
+      },
+      "correction": "Detailed slow-roll microphysics was deferred, but the letter did include its effective-fluid limit n→infinity with rest-frame cs²=1 and states numerical scalar evolution confirms that description. Do not say the slow-roll case was wholly unanalyzed, or identify it with an n=3 oscillator. The early linear potential asymptotes to zero; its full functional form is absent.",
+      "locators": [
+        "PDF p.2 before and after Eqs. (1)-(2)"
+      ],
+      "display_summary": null
+    },
+    {
+      "id": "ede-angular-ratio",
+      "paper_id": "arxiv:1811.04083v2",
+      "target": "ideas[ede-cmb-compensation].equations",
+      "status": "source_inconsistency_flagged",
+      "source_evidence": {
+        "paper_id": "arxiv:1811.04083v2",
+        "locators": [
+          "PDF p.3 right column",
+          "HTML paragraph near angular-scale definitions"
+        ]
+      },
+      "correction": "Luna copied the printed source faithfully. The source gives ell_X=pi D_A/r_X and then ell_s/ell_D=r_s/r_D. Algebra requires ell_s/ell_D=r_D/r_s, equivalently ell_D/ell_s=r_s/r_D, if one distance/length convention is used. Preserve the printed equation as source_claim and store this reciprocal as a repaired identity. The quoted omega_cdm^0.03 scaling must be re-derived before implementation; it cannot be assigned unchanged to both ratios.",
+      "locators": [
+        "PDF p.3 right column",
+        "HTML paragraph near angular-scale definitions"
+      ],
+      "source_claim": {
+        "expression": "ell_X=pi D_A/r_X; ell_s/ell_D=r_s/r_D proportional to omega_cdm^0.03",
+        "status": "faithful_printed_source; internally_inconsistent",
+        "locator": "1811.04083v2 PDF p.3 right column"
+      },
+      "repaired_identity": {
+        "expression": "ell_s/ell_D=r_D/r_s; equivalently ell_D/ell_s=r_s/r_D",
+        "status": "algebraic_repair_under_common_distance_and_length_conventions",
+        "scaling_exponent_status": "needs_independent_rederivation_before_implementation"
+      },
+      "display_summary": "The printed angular-scale ratio contradicts its defining equation. The review preserves the source and records the reciprocal algebraic repair separately."
+    },
+    {
+      "id": "ede-transition-not-peak",
+      "paper_id": "arxiv:1811.04083v2",
+      "target": "quantities[fEDE(ac)]",
+      "status": "clarification_required",
+      "source_evidence": {
+        "paper_id": "arxiv:1811.04083v2",
+        "locators": [
+          "PDF p.2 definition; Table II p.5"
+        ]
+      },
+      "correction": "The tabulated fraction is at the transition scale ac. It is not automatically the maximum instantaneous EDE fraction; the maximum also depends on evolving total density. log10(ac)=-3.737 corresponds to zc≈5.46e3 through a0=1. The qualitative z≈5000 is consistent with this rounding.",
+      "locators": [
+        "PDF p.2 definition; Table II p.5"
+      ],
+      "display_summary": null
+    },
+    {
+      "id": "ede-uncertainty-evidence",
+      "paper_id": "arxiv:1811.04083v2",
+      "target": "quantities and inference status",
+      "status": "preserve_conditioning",
+      "source_evidence": {
+        "paper_id": "arxiv:1811.04083v2",
+        "locators": [
+          "Tables I-II, PDF p.5",
+          "PDF p.2 MultiNest paragraph"
+        ]
+      },
+      "correction": "Listed values are correctly transcribed conditional posterior means/1σ summaries, not measurements of EDE. Evidence uses the lite high-ell likelihood and priors, whereas Table I best fits use the stated combined datasets. No current resolution or likelihood reproduction is established.",
+      "locators": [
+        "Tables I-II, PDF p.5",
+        "PDF p.2 MultiNest paragraph"
+      ],
+      "display_summary": null
+    },
+    {
+      "id": "nede-jump-sign",
+      "paper_id": "arxiv:1910.10739v5",
+      "target": "ideas[ne-de-instantaneous-fluid-background].equations[2]",
+      "status": "convention_required",
+      "source_evidence": {
+        "paper_id": "arxiv:1910.10739v5",
+        "locators": [
+          "Eqs. (6)-(7), PDF p.3"
+        ]
+      },
+      "correction": "The positive jump in Eq. (7b) uses [f]_±=f_before-f_after, Eq. (6). Hence Hdot_after-Hdot_before=-4piG(1+w*)rho*. Density and H are continuous; pressure/Hdot change. Omitting the jump convention risks reversing the physical matching. Dots use cosmic time t, not conformal time.",
+      "locators": [
+        "Eqs. (6)-(7), PDF p.3"
+      ],
+      "display_summary": "NEDE uses a before-minus-after jump convention; omitting it reverses the apparent sign of the pressure-induced H-dot change."
+    },
+    {
+      "id": "nede-gauge-units",
+      "paper_id": "arxiv:1910.10739v5",
+      "target": "ideas[ne-de-trigger-perturbation-matching].equations",
+      "status": "convention_required",
+      "source_evidence": {
+        "paper_id": "arxiv:1910.10739v5",
+        "locators": [
+          "Eqs. (9)-(14), PDF p.4",
+          "PDF pp.4-5 mass parameter"
+        ]
+      },
+      "correction": "Eqs. (14a,b) are synchronous-gauge initial conditions with cosmic-time derivatives, comoving k and the paper theta convention; theta is not an arbitrary velocity scalar. delta_phi/phidot has time units, H times this is dimensionless and k²/a times this has inverse-time units when c=1. H(z*)=0.2m and log10(m×Mpc) use inverse-length/natural units: eV masses require hbar,c conversion before numerical H in km/s/Mpc.",
+      "locators": [
+        "Eqs. (9)-(14), PDF p.4",
+        "PDF pp.4-5 mass parameter"
+      ],
+      "display_summary": null
+    },
+    {
+      "id": "nede-fixed-params-no-shoes",
+      "paper_id": "arxiv:1910.10739v5",
+      "target": "quantities[H0 tension without SH0ES] and caveats",
+      "status": "conditioning_required",
+      "source_evidence": {
+        "paper_id": "arxiv:1910.10739v5",
+        "locators": [
+          "Sec. IV, PDF pp.4-5"
+        ]
+      },
+      "correction": "No-SH0ES and Planck-only fits in this letter fix log10(m×Mpc)=2.58 to avoid the fNEDE→0 sampling-volume artifact. They are not the same fully free eight-parameter model as the combined fit. The combined implementation also fixes w*=cs²=2/3, H/m=0.2 and phi_ini/Mpl=1e-4, and assumes no sizeable residual trigger oscillations. Record all before comparing significance or evidence.",
+      "locators": [
+        "Sec. IV, PDF pp.4-5"
+      ],
+      "display_summary": null
+    },
+    {
+      "id": "nede-decay-fluid-not-stiff",
+      "paper_id": "arxiv:1910.10739v5",
+      "target": "ideas[ne-de-distinct-observational-signatures]",
+      "status": "clarification_required",
+      "source_evidence": {
+        "paper_id": "arxiv:1910.10739v5",
+        "locators": [
+          "Sec. II and III.1, PDF p.3",
+          "Sec. IV, PDF p.4"
+        ]
+      },
+      "correction": "The speculative microscopic stiff contribution is discussed as a^-6, but the fitted w*=2/3 fluid scales as a^-5 after transition. The constant-w coarse graining and predicted GW signatures are hypotheses, not a numerical bubble-collision calculation or a computed GW spectrum in this letter.",
+      "locators": [
+        "Sec. II and III.1, PDF p.3",
+        "Sec. IV, PDF p.4"
+      ],
+      "display_summary": null
+    },
+    {
+      "id": "nede-log-evidence-notation",
+      "paper_id": "arxiv:1910.10739v5",
+      "target": "quantities[Bayesian evidence ΔB]",
+      "status": "notation_required",
+      "source_evidence": {
+        "paper_id": "arxiv:1910.10739v5",
+        "locators": [
+          "Sec. IV, PDF pp.4-5"
+        ]
+      },
+      "correction": "Text defines ΔlogB then reports ΔB=5.5. Preserve that source shorthand but identify 5.5 as the stated logarithmic evidence difference, not a Bayes factor of 5.5. Priors and fixed-parameter choices condition it.",
+      "locators": [
+        "Sec. IV, PDF pp.4-5"
+      ],
+      "display_summary": null
+    },
+    {
+      "id": "timescape-mlcs-exceptions",
+      "paper_id": "arxiv:1009.5855v2",
+      "target": "summary[SALT versus MLCS evidence]",
+      "status": "narrow_generalization",
+      "source_evidence": {
+        "paper_id": "arxiv:1009.5855v2",
+        "locators": [
+          "Table 6, PDF p.13",
+          "Tables 7-9, PDF pp.15-16"
+        ]
+      },
+      "correction": "Several chosen MLCS samples favor TS, but Table 6 cut Gold remains ln B=-1.18 at z>=0.033; MLCS17 +0.57 and SDSS-II +0.53 are weak positive differences. Common-object selection and further exclusions alter the evidence. Never promote a blanket MLCS-favors-TS rule or pool overlapping samples as independent support.",
+      "locators": [
+        "Table 6, PDF p.13",
+        "Tables 7-9, PDF pp.15-16"
+      ],
+      "display_summary": "The historical MLCS samples do not all favour timescape. Overlapping samples, reductions, priors and cuts must stay separate."
+    },
+    {
+      "id": "timescape-effective-not-local",
+      "paper_id": "arxiv:1009.5855v2",
+      "target": "ideas[timescape-apparent-acceleration]",
+      "status": "interpretation_required",
+      "source_evidence": {
+        "paper_id": "arxiv:1009.5855v2",
+        "locators": [
+          "Eqs. (3),(5),(10)-(11), PDF p.4",
+          "Conclusions, PDF pp.19-20"
+        ]
+      },
+      "correction": "Wall-observer acceleration is a dressed model quantity defined with wall proper time and effective geometry; it is not a direct measurement of an accelerating physical local scale factor or an exact inhomogeneous Einstein solution. The volume-average time t differs from tau. Preserve this distinction rather than mapping an inferred FLRW w(z) onto physical TS matter.",
+      "locators": [
+        "Eqs. (3),(5),(10)-(11), PDF p.4",
+        "Conclusions, PDF pp.19-20"
+      ],
+      "display_summary": null
+    },
+    {
+      "id": "timescape-nuisance-magnitude",
+      "paper_id": "arxiv:1009.5855v2",
+      "target": "ideas[timescape-supernova-fit-dependence].equations[mu_i]",
+      "status": "notation_required",
+      "source_evidence": {
+        "paper_id": "arxiv:1009.5855v2",
+        "locators": [
+          "Eqs. (21)-(22), PDF p.6",
+          "Sec.3.4, PDF pp.8-9"
+        ]
+      },
+      "correction": "Eq. (22) uses the combined nuisance normalization script M, with absolute M and H0 mixed by Eq. (21). Store it separately from intrinsic absolute magnitude M. The packet uses the same plain M symbol, which obscures this calibration degeneracy.",
+      "locators": [
+        "Eqs. (21)-(22), PDF p.6",
+        "Sec.3.4, PDF pp.8-9"
+      ],
+      "display_summary": null
+    },
+    {
+      "id": "timescape-clock-percent",
+      "paper_id": "arxiv:1009.5855v2",
+      "target": "quantities[relative clock-rate difference]",
+      "status": "units_required",
+      "source_evidence": {
+        "paper_id": "arxiv:1009.5855v2",
+        "locators": [
+          "Sec.2, PDF p.4"
+        ]
+      },
+      "correction": "Use either value 38 with unit percent or value 0.38 with unit fraction; the packet string ≈38% with unit fraction is ambiguous. This is a cited model example, not a fitted new clock-rate measurement. The lapse gamma is dimensionless.",
+      "locators": [
+        "Sec.2, PDF p.4"
+      ],
+      "display_summary": "The extracted clock-rate example mixes percent and fraction notation; it is a model illustration, not a new measurement."
+    },
+    {
+      "id": "timescape-missing-tracker-map",
+      "paper_id": "arxiv:1009.5855v2",
+      "target": "candidate executable distance prediction",
+      "status": "needs_verification",
+      "source_evidence": {
+        "paper_id": "arxiv:1009.5855v2",
+        "locators": [
+          "Eqs. (13)-(17), PDF p.5"
+        ]
+      },
+      "correction": "Eqs. (14)-(17) give a useful tracker distance expression, but an executable z→t and f_v(t) mapping and limiting-domain treatment need verification in the cited primary tracker solution. Do not fill that gap from a guessed FLRW relation; restore c when converting the geometric time-length expression to Mpc.",
+      "locators": [
+        "Eqs. (13)-(17), PDF p.5"
+      ],
+      "display_summary": null
+    },
+    {
+      "id": "timescape-estimated-shs",
+      "paper_id": "arxiv:1009.5855v2",
+      "target": "quantities[SHS cut] and H0 range",
+      "status": "preserve_conditioning",
+      "source_evidence": {
+        "paper_id": "arxiv:1009.5855v2",
+        "locators": [
+          "Sec.2, PDF pp.4-5",
+          "Sec.3.4 Fig.4 and footnote10, PDF p.9"
+        ]
+      },
+      "correction": "z≈0.033 and an up-to-17% local Hubble peak near z≈0.01 are the model consistency scale and model expectation. They are not universal measured constants. The 57-68 km/s/Mpc range comes from approximate WMAP/BAO scale matching; it is not a modern joint posterior or an absolute SN H0 measurement.",
+      "locators": [
+        "Sec.2, PDF pp.4-5",
+        "Sec.3.4 Fig.4 and footnote10, PDF p.9"
+      ],
+      "display_summary": null
+    }
+  ],
+  "consumer": {
+    "revision": "ef4cb694addac1ca25c332253cff3fbecd0cbbce",
+    "dirty": false,
+    "dirty_status": "",
+    "build_id": "c87126feebf1f7c293aa8e71fe98a5f9e3b81f5b6bcd7f4246863c8d0ef9ae6a",
+    "compiled_source_revision": "ef4cb694addac1ca25c332253cff3fbecd0cbbce",
+    "compiled_source_status": "",
+    "capabilities_checked": [
+      {
+        "id": "fixture.checked_i64_add",
+        "implementation": "implemented",
+        "qualification": "unqualified",
+        "scientific": false
+      },
+      {
+        "id": "quantity.convert",
+        "implementation": "implemented",
+        "qualification": "unqualified",
+        "scientific": true
+      },
+      {
+        "id": "numerics.scalar_batch",
+        "implementation": "implemented",
+        "qualification": "unqualified",
+        "scientific": true
+      },
+      {
+        "id": "cosmology.sound_horizon",
+        "implementation": "implemented",
+        "qualification": "unqualified",
+        "scientific": true,
+        "target": "conditional comoving sound horizon at supplied drag redshift"
+      },
+      {
+        "id": "background.evaluate",
+        "implementation": "implemented",
+        "models": [
+          "lcdm",
+          "constant_q",
+          "cpl",
+          "fixed_q5"
+        ],
+        "node_reuse": "exact z bits within each model batch; no cross-model cache",
+        "qualification": "unqualified",
+        "requested_groups": [
+          "radial",
+          "luminosity_shape",
+          "clock",
+          "physical",
+          "kinematics",
+          "expansion"
+        ],
+        "scientific": true
+      },
+      {
+        "id": "observations.prepare",
+        "implementation": "implemented",
+        "ownership": "immutable shared native source",
+        "profiles": [
+          "pantheon_plus_released_v1",
+          "gaussian_fixture_v1",
+          "typed_magnitude_covariance"
+        ],
+        "qualification": "unqualified",
+        "scientific": true
+      },
+      {
+        "id": "statistics.gaussian",
+        "implementation": "implemented",
+        "modes": [
+          "normalized_density",
+          "profile_offset_score"
+        ],
+        "qualification": "unqualified",
+        "scientific": true
+      },
+      {
+        "id": "supernova.profile",
+        "implementation": "implemented",
+        "models": [
+          "lcdm",
+          "constant_q",
+          "cpl",
+          "fixed_q5"
+        ],
+        "qualification": "unqualified",
+        "scientific": true,
+        "source_effects": [
+          "none",
+          "grey_log1p_magnitude"
+        ],
+        "target": "conditional single-offset relative profile"
+      },
+      {
+        "id": "bao.density",
+        "implementation": "implemented",
+        "models": [
+          "lcdm",
+          "constant_q",
+          "cpl",
+          "fixed_q5"
+        ],
+        "qualification": "unqualified",
+        "scientific": true,
+        "target": "conditional free-H0rd normalized Gaussian density"
+      },
+      {
+        "id": "photometry.predict",
+        "implementation": "implemented",
+        "qualification": "unqualified",
+        "requested_groups": [
+          "incident_band_flux",
+          "collected_energy",
+          "expected_transmitted_photons"
+        ],
+        "scientific": true,
+        "scope": "deterministic supplied-distance standard-redshift optical transmission; no noise, selection or detector electronics",
+        "source_models": [
+          "constant_rest_luminosity_rectangular_band"
+        ]
+      }
+    ],
+    "scientific_qualifications": [],
+    "read_only_checks": [
+      "README.md",
+      "docs/run-recipes.md",
+      "schema/run.schema.json ($defs expansion_spec/geometry/sound_horizon and operation alternatives)",
+      "target/release/irred describe --json",
+      "src/cli.rs",
+      "src/model_spec.rs",
+      "cpp/src/sound_horizon.cpp",
+      "git HEAD/status"
+    ],
+    "actual_scope": "Read-only source/schema and compiled metadata inspection; no consumer mutation, rebuild, numerical experiment or new qualification.",
+    "recipe_runner": "Proposed only, not implemented.",
+    "restriction": "No EDE, NEDE or timescape request may be relabelled LCDM/CPL/constant_q/fixed_q5.",
+    "sound_horizon_scope": "Current kernel has H²/H0²=Omega_r a^-4+Omega_m a^-3+(1-Omega_m-Omega_r) with supplied drag redshift. It integrates a comoving ruler under that fixed expansion, not arbitrary early energy or self-consistent recombination.",
+    "build_path_note": "Release build manifest retains paths from before the local directory rename. describe ran successfully at the clean recorded revision; calculation relocatability was not tested."
+  },
+  "limits": [
+    "This is a scientific/source review and original design proposal, not independent reproduction, observational confirmation, model qualification or a current Hubble-tension assessment.",
+    "No modern literature/data update, downloads, numerical cosmology run or likelihood evaluation was performed.",
+    "External reference papers, code, chains, likelihood assets and cross-analysis covariance were not acquired; unknown dependence remains unknown.",
+    "Figure checks are limited to the explicitly listed successfully displayed PDF pages."
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:1811.04083v2",
+      "extraction_sha256": "c9d527e60c1e5ab179a702529998250dc93dce2b74b05d45cc10efa943d568ee",
+      "source_hashes": {
+        ".work/sources/2026-10-01-initial-reading/1811.04083v2.txt": "e256b519abad18afa46bfe27cb5e1dc1d1543afadcfe294a4cb22f3c471076dd",
+        ".work/sources/2026-10-01-initial-reading/1811.04083v2-pdf.pdf": "dfeb28f5917368fcaa43c7050f655317ee289d4049bcbd04c42010ed9411ce53",
+        ".work/sources/2026-10-01-initial-reading/1811.04083v2-html.html": "b36bec38bc8fddabe5c70ad54f1400bf9c6272b043a9c9bbd3efdb0527310afd"
+      },
+      "decision": "useful_conditional_candidate; source_development_required",
+      "coverage": {
+        "main_text": "All main-text sections and presented equations checked in original full extracted text; source math checked in HTML for EDE/NEDE and selected original PDF pages. References are citation identities, not independently verified research.",
+        "visual_pdf_pages": [
+          3,
+          5
+        ],
+        "figure_limit": "Selected figures/tables only; no claim of independent visual inspection of every figure. A multi-image rendering failed to display; successful single-page displays are the listed pages."
+      },
+      "checks": {
+        "equations": "Eqs. (1)-(2), w_n and potential, u_phi definition, slow-roll sound-speed discussion; source angular-scale inconsistency flagged.",
+        "quantities": "Table I n=3 Δχ²=-14.5 and ΔlogB=2.51; Table II n=3 fEDE(ac)=0.050 +0.024/-0.019, log10(ac)=-3.737 +0.110/-0.094, H0=70.6±1.3. Means differ from parenthesized best fits.",
+        "data": "Planck likelihood cited to 2015 release, Pantheon, SH0ES 2018 H0 input 73.52±1.62, 6dFGS/MGS/BOSS DR12 including growth; full versus lite likelihood distinction preserved."
+      }
+    },
+    {
+      "paper_id": "arxiv:1910.10739v5",
+      "extraction_sha256": "5ed320446f4fd3a76d10d3acaba5dd917483028c91711924cc3a327e17c7f2c1",
+      "source_hashes": {
+        ".work/sources/2026-10-01-initial-reading/1910.10739v5.txt": "2fa7d750b2bbe4296c1fd849fe72cfcc009616a7a80c7a2f447769e318f76a62",
+        ".work/sources/2026-10-01-initial-reading/1910.10739v5-pdf.pdf": "ddcf5ed66426080aa5f56305748f9d5c459dbf86b6c4eec6c252b1f6a848f890",
+        ".work/sources/2026-10-01-initial-reading/1910.10739v5-html.html": "1f6e23feb42188d99739287090d4078e8adf998e06e0db34cd9c361549eeb895"
+      },
+      "decision": "useful_conditional_candidate; source_development_required",
+      "coverage": {
+        "main_text": "All main-text sections and presented equations checked in original full extracted text; source math checked in HTML for EDE/NEDE and selected original PDF pages. References are citation identities, not independently verified research.",
+        "visual_pdf_pages": [
+          4
+        ],
+        "figure_limit": "Selected figures/tables only; no claim of independent visual inspection of every figure. A multi-image rendering failed to display; successful single-page displays are the listed pages."
+      },
+      "checks": {
+        "equations": "Two-field potential and tunneling action Eqs. (1)-(3); all matching Eqs. (4)-(14) cross-checked with HTML math; Eq. (14) and gauge visibly checked in PDF p.4.",
+        "quantities": "H0=71.4±1.0 (68% C.L.), fNEDE=12.6 +3.2/-2.9 percent, z*=4920 +620/-730, Δχ²=-15.6, log-evidence difference stated ΔB=5.5 after defined ΔlogB.",
+        "data": "Planck 2018 TT/TE/EE/lensing, same Pantheon and BAO release families, SH0ES 2019 74.03±1.42, helium BBN; no-SH0ES comparisons fix trigger mass parameter."
+      }
+    },
+    {
+      "paper_id": "arxiv:1009.5855v2",
+      "extraction_sha256": "75d514cd59d40467f4e38922e6694e25a77d473c1eeede9848b8ddb5687ff23a",
+      "source_hashes": {
+        ".work/sources/2026-10-01-initial-reading/1009.5855v2.txt": "bccbaf5b48b1d2783084e5c82159770ae5dbf25d202d13416f7302c15aefd802",
+        ".work/sources/2026-10-01-initial-reading/1009.5855v2-export-pdf.pdf": "4ba8d7f2a16b2148b73ec1556fda1f4071f129f9c76e20b5b84d30086df5141d"
+      },
+      "decision": "useful_conditional_candidate; source_development_required",
+      "coverage": {
+        "main_text": "All main-text sections and presented equations checked in original full extracted text; source math checked in HTML for EDE/NEDE and selected original PDF pages. References are citation identities, not independently verified research.",
+        "visual_pdf_pages": [
+          5,
+          13
+        ],
+        "figure_limit": "Selected figures/tables only; no claim of independent visual inspection of every figure. A multi-image rendering failed to display; successful single-page displays are the listed pages."
+      },
+      "checks": {
+        "equations": "Bare/dressed Eqs. (1)-(17), tracker distance Eqs. (14)-(15) visibly checked on PDF p.5, photometric/reduction Eqs. (18)-(23) and priors/cuts checked in text. No separate appendix.",
+        "quantities": "PDF Table 6 p.13 directly confirms z>=0.033 ln B: Gold -1.18, MLCS17 +0.57, MLCS31 +1.09, SDSS-II +0.53, Union2 -3.46. Table 9 common-sample figures remain separate from Table 6.",
+        "data": "Gold07/Union/Constitution/MLCS17/MLCS31/SDSS-II/SALT2/Union2/CSP are overlapping compilations/reductions, not independent experiments. H0 normalization conditional; Figure 4 is approximate scale matching."
+      }
+    }
+  ],
+  "schema_version": 1,
+  "review_id": "2026-10-01-initial-science",
+  "agent_id": "/root/sol_science_review",
+  "local_packet_sha256": "13075e8d8e1077bcb2db60418d225bb412b44fe006f49a891adb0de697631fde"
+}

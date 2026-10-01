@@ -1,0 +1,26 @@
+{
+  "id": "transient-pre-recombination-energy",
+  "title": "Transient pre-recombination energy reduces the acoustic ruler",
+  "family": "early_expansion",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:1811.04083v2",
+      "locator": "PDF pp.1-4"
+    },
+    {
+      "paper_id": "arxiv:1910.10739v5",
+      "locator": "Sec.I-IV"
+    }
+  ],
+  "assumptions": [
+    "Positive extra energy raises H before recombination under Friedmann evolution.",
+    "Acoustic/ruler endpoint, baryon loading and recombination convention must be explicit."
+  ],
+  "predictions": [
+    "At fixed other inputs and fixed endpoint, increased H lowers the sound-horizon integral.",
+    "Matching CMB angular scales additionally changes fitted cosmological parameters."
+  ],
+  "schema_version": 1,
+  "review_id": "2026-10-01-initial-science",
+  "status": "reviewed_conditional"
+}

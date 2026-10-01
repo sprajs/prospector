@@ -1,0 +1,442 @@
+{
+  "schema_version": 1,
+  "last_completed_scan": "2026-10-01-late-expansion",
+  "next_lane": "modified-gravity",
+  "batch_limits": {
+    "new_versions": 20,
+    "luna_full_reads": 6,
+    "sol_reviewed_papers": 3,
+    "concurrent_workers": 3,
+    "citation_hops": 1,
+    "citation_leads": 5
+  },
+  "model_roles": {
+    "reader": "gpt-6-luna",
+    "reviewer": "gpt-6.1-sol",
+    "silent_substitution": false
+  },
+  "lanes": [
+    {
+      "id": "late-dark-energy",
+      "description": "Late dark energy, quintessence, vacuum evolution and expansion history",
+      "last_searched_utc": "2026-10-01T01:36:31.860062+00:00"
+    },
+    {
+      "id": "modified-gravity",
+      "description": "Modified gravity and observable distinctions",
+      "last_searched_utc": null
+    },
+    {
+      "id": "interacting-sectors",
+      "description": "Interacting/decaying sectors, neutrinos and dark radiation",
+      "last_searched_utc": null
+    },
+    {
+      "id": "inhomogeneity",
+      "description": "Backreaction, averaging, timescape and observer effects",
+      "last_searched_utc": "2026-10-01T00:44:41.451093+00:00"
+    },
+    {
+      "id": "kinematics",
+      "description": "Coasting, acceleration/deceleration, reconstruction and consistency tests",
+      "last_searched_utc": null
+    },
+    {
+      "id": "bounces-cycles",
+      "description": "Bouncing/cyclic models and early-universe alternatives",
+      "last_searched_utc": null
+    },
+    {
+      "id": "measurement-lineage",
+      "description": "Calibration, selection, distance ladder and competing measurements",
+      "last_searched_utc": null
+    },
+    {
+      "id": "early-energy",
+      "description": "Early dark energy and pre-recombination physics",
+      "last_searched_utc": "2026-10-01T00:43:43.823637+00:00"
+    }
+  ],
+  "queue": [
+    {
+      "paper_id": "arxiv:2609.37437v1",
+      "stage": "read",
+      "reason": "Priority challenge: oscillatory Einstein-Gauss-Bonnet dark energy includes stated ghost/gradient-instability domains.",
+      "prospect_ids": [
+        "late-dark-energy",
+        "modified-gravity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2605.22143v2",
+      "stage": "read",
+      "reason": "Retain Einstein-Cartan holographic model; compare equations and spin-fluid assumptions with the related recent paper.",
+      "prospect_ids": [
+        "late-dark-energy",
+        "modified-gravity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.34917v1",
+      "stage": "read",
+      "reason": "Retain quantum-gravity-condensate proposal; relational clock, mean-field approximation and observable mapping need a full read.",
+      "prospect_ids": [
+        "late-dark-energy",
+        "modified-gravity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.36853v1",
+      "stage": "read",
+      "reason": "Retain torsion/holographic dark-energy acceleration and distance-duality proposal; low-redshift domain needs checking.",
+      "prospect_ids": [
+        "late-dark-energy",
+        "modified-gravity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.37293v1",
+      "stage": "read",
+      "reason": "Retain broad scalar-tensor dissertation; choose a specific inflation/quintessence/ekpyrotic mechanism before a bounded full read.",
+      "prospect_ids": [
+        "early-energy",
+        "late-dark-energy",
+        "modified-gravity",
+        "bounces-cycles"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.39039v1",
+      "stage": "read",
+      "reason": "Retain metastable phantom-brane background with alternative decay prescriptions; full fits and regime checks pending.",
+      "prospect_ids": [
+        "late-dark-energy",
+        "modified-gravity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2202.08291v3",
+      "stage": "read",
+      "reason": "Priority challenge: alternative EDE perturbation microphysics; compare background equivalence and sound/anisotropic-stress closure.",
+      "prospect_ids": [
+        "early-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2408.03229v3",
+      "stage": "read",
+      "reason": "Priority challenge: unified scalar proposal reports limited H0 improvement and data combinations preferring LCDM.",
+      "prospect_ids": [
+        "early-energy",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1107.5596v2",
+      "stage": "read",
+      "reason": "Retain weak GRB discriminator: abstract reports systematics insufficient to distinguish the compared models.",
+      "prospect_ids": [
+        "inhomogeneity",
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1306.3208v2",
+      "stage": "read",
+      "reason": "Retain radiation-fluid timescape extension; inspect matching to recombination and early-data assumptions.",
+      "prospect_ids": [
+        "early-energy",
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1310.3124v1",
+      "stage": "read",
+      "reason": "Retain observer-redshift realization proposal; do not assume equivalence to the full timescape calculation.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1410.3470v3",
+      "stage": "read",
+      "reason": "Retain timescape CMB matching; approximation and quoted systematic uncertainty need comparison with the full model.",
+      "prospect_ids": [
+        "inhomogeneity",
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2111.07288v1",
+      "stage": "read",
+      "reason": "Retain neutrino/inflaton EDE proposal; quantum-correction and chosen inflation-scale assumptions need checking.",
+      "prospect_ids": [
+        "early-energy",
+        "late-dark-energy",
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2112.00770v2",
+      "stage": "read",
+      "reason": "Retain thermal NEDE trigger and dark-radiation embeddings; thermal and cold triggers need a sourced distinction.",
+      "prospect_ids": [
+        "early-energy",
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2209.15046v1",
+      "stage": "read",
+      "reason": "Retain lecture/review of neutrino and chameleon assistance as a mechanism and citation guide, not a new measurement.",
+      "prospect_ids": [
+        "early-energy",
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2401.08812v1",
+      "stage": "read",
+      "reason": "Retain dark-matter trapping as an EDE onset mechanism; compare initial-condition and slope assumptions.",
+      "prospect_ids": [
+        "early-energy",
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2411.09747v2",
+      "stage": "read",
+      "reason": "Retain thermal-relic-coupled EDE mechanism; abstract explicitly leaves early-time constraint calculations to follow-up.",
+      "prospect_ids": [
+        "early-energy",
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2502.08541v2",
+      "stage": "read",
+      "reason": "Retain scalar-radiation energy-transfer model; constant-transfer approximation and observational claims need checking.",
+      "prospect_ids": [
+        "early-energy",
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2603.00497v3",
+      "stage": "read",
+      "reason": "Retain binned SN-inferred H0 analysis; fitted bin values and extreme-redshift extrapolations are not direct H(z) observations.",
+      "prospect_ids": [
+        "kinematics",
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2604.03769v2",
+      "stage": "read",
+      "reason": "Retain unlocalized-FRB dispersion inference; inspect nuisance degeneracies and sample calibration before using H0.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2606.00549v2",
+      "stage": "read",
+      "reason": "Retain negative IDE comparison: abstract reports no significant interaction evidence; GRB calibration shares SN lineage.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2607.24443v2",
+      "stage": "read",
+      "reason": "Retain corrected SN distance-ladder comparison; overlapping supernovae and fixed calibration offsets require dependency checks.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.14966v3",
+      "stage": "read",
+      "reason": "Retain galaxy-spectrum coupling forecast; forecast sensitivity is not a detected coupling or independent observed constraint.",
+      "prospect_ids": [
+        "late-dark-energy",
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.25412v1",
+      "stage": "read",
+      "reason": "Retain JAGB spectral selection and contamination study as a calibration lead.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.29996v1",
+      "stage": "read",
+      "reason": "Retain geometric-anchor/TRGB ladder analysis; calibration and selection ancestry need a full read.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.31543v1",
+      "stage": "read",
+      "reason": "Retain heterogeneous-volume dark-energy proposal; full source checks needed for derivation and clock/observable definitions.",
+      "prospect_ids": [
+        "late-dark-energy",
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.33673v1",
+      "stage": "read",
+      "reason": "Retain effective negative-compressibility interpretation; inspect stability and what the jerk/EOS relations actually establish.",
+      "prospect_ids": [
+        "late-dark-energy",
+        "kinematics"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.38422v1",
+      "stage": "read",
+      "reason": "Retain interacting negative-to-positive dark-energy transition; examine stability and perturbation assumptions.",
+      "prospect_ids": [
+        "late-dark-energy",
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0601544v2",
+      "stage": "read",
+      "reason": "Retain foundational early-fraction parameterization; persistent early density differs from transient equality-era EDE.",
+      "prospect_ids": [
+        "early-energy",
+        "late-dark-energy"
+      ]
+    }
+  ],
+  "search_history": [
+    {
+      "scan_id": "2026-10-01-initial-register",
+      "query_ids": [
+        "api-title",
+        "api-topic",
+        "api-timescape"
+      ]
+    },
+    {
+      "scan_id": "2026-10-01-late-expansion",
+      "query_ids": [
+        "late-dark-energy-fresh"
+      ]
+    }
+  ],
+  "citation_leads": [
+    {
+      "arxiv_id": "1806.10608",
+      "reason": "Cited effective-fluid treatment and cosmological implications of ultra-light axion-like fields; relevant for checking the perturbation prescription.",
+      "source_paper_id": "arxiv:1811.04083v2",
+      "admission": "unverified_lead"
+    },
+    {
+      "arxiv_id": "1608.01309",
+      "reason": "Cited earlier early-dark-energy/string-axiverse proposal that motivates the transient component.",
+      "source_paper_id": "arxiv:1811.04083v2",
+      "admission": "unverified_lead"
+    },
+    {
+      "arxiv_id": null,
+      "reason": "Reference [41], Karwal et al. (2019), is cited for detailed background and perturbation dynamics of the slowly rolling realization; the bibliography gives no arXiv identifier.",
+      "source_paper_id": "arxiv:1811.04083v2",
+      "admission": "unverified_lead"
+    },
+    {
+      "arxiv_id": "arXiv:2006.06686",
+      "reason": "Authors' longer follow-up, cited as the place where they relax the fixed w and discuss model details and comparisons; primary lead for assumptions and updated fit context.",
+      "source_paper_id": "arxiv:1910.10739v5",
+      "admission": "unverified_lead"
+    },
+    {
+      "arxiv_id": "arXiv:2009.00006",
+      "reason": "Authors' cited future large-scale-structure study of NEDE, relevant to the acknowledged large-z BAO/LSS degradation and predicted signatures.",
+      "source_paper_id": "arxiv:1910.10739v5",
+      "admission": "unverified_lead"
+    },
+    {
+      "arxiv_id": "arXiv:1811.04083",
+      "reason": "Second-order oscillating EDE comparator explicitly cited and distinguished in the introduction; use to preserve the physical distinction.",
+      "source_paper_id": "arxiv:1910.10739v5",
+      "admission": "unverified_lead"
+    },
+    {
+      "arxiv_id": null,
+      "reason": "Wiltshire (2007a), New Journal of Physics 9, 377, cited for the operational timescape model and dressed observables; resolve exact arXiv record before acquisition.",
+      "source_paper_id": "arxiv:1009.5855v2",
+      "admission": "unverified_lead"
+    },
+    {
+      "arxiv_id": null,
+      "reason": "Wiltshire (2007b), Physical Review Letters 99, 251101, cited for the two-scale Buchert tracker solution; resolve exact arXiv record before acquisition.",
+      "source_paper_id": "arxiv:1009.5855v2",
+      "admission": "unverified_lead"
+    },
+    {
+      "arxiv_id": null,
+      "reason": "Wiltshire (2009), Physical Review D 80, 123512, cited for additional timescape observational tests and predictions; resolve exact arXiv record before acquisition.",
+      "source_paper_id": "arxiv:1009.5855v2",
+      "admission": "unverified_lead"
+    },
+    {
+      "arxiv_id": null,
+      "reason": "Kwan, Francis, and Lewis (2009), MNRAS 399, L6, the opposing supernova-fit analysis discussed by this paper; identify primary record before acquisition.",
+      "source_paper_id": "arxiv:1009.5855v2",
+      "admission": "unverified_lead"
+    },
+    {
+      "arxiv_id": null,
+      "reason": "Kessler et al. (2009), ApJS 185, 32, comparison of supernova light-curve fitters and reduction systematics; identify primary record before acquisition.",
+      "source_paper_id": "arxiv:1009.5855v2",
+      "admission": "unverified_lead"
+    }
+  ],
+  "design_work": [
+    {
+      "design_id": "candidate-ede-fixed-endpoint-ruler",
+      "state": "blocked",
+      "reason": "Blocked conceptual handoff; source/method development and consumer review require separate scoped work."
+    },
+    {
+      "design_id": "candidate-nede-piecewise-background",
+      "state": "blocked",
+      "reason": "Blocked conceptual handoff; source/method development and consumer review require separate scoped work."
+    },
+    {
+      "design_id": "candidate-q-reconstruction-continuity-and-derivative-interpretation",
+      "state": "blocked",
+      "reason": "Blocked conceptual handoff; source/method development and consumer review require separate scoped work."
+    },
+    {
+      "design_id": "candidate-staged-decay-energy-and-background-claim-audit",
+      "state": "blocked",
+      "reason": "Blocked conceptual handoff; source/method development and consumer review require separate scoped work."
+    },
+    {
+      "design_id": "candidate-timescape-tracker-distance-lineage",
+      "state": "blocked",
+      "reason": "Blocked conceptual handoff; source/method development and consumer review require separate scoped work."
+    },
+    {
+      "design_id": "candidate-unified-scalar-source-consistency-and-slope-screen",
+      "state": "blocked",
+      "reason": "Blocked conceptual handoff; source/method development and consumer review require separate scoped work."
+    }
+  ],
+  "notes": [
+    "Resume pending screens and reads before new searches.",
+    "Raw sources and working files stay inside ignored Prospector/.work.",
+    "Blocked numerical handoffs need a separately scoped implementation task."
+  ],
+  "next_work_mode": "foundational_or_citation_linked"
+}

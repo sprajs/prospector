@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1009.5855v2",
+  "arxiv_id": "1009.5855",
+  "version": 2,
+  "title": "Supernova tests of the timescape cosmology",
+  "authors": [
+    "Peter R. Smale",
+    "David L. Wiltshire"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "gr-qc"
+  ],
+  "published_utc": "2010-09-29T11:56:16Z",
+  "updated_utc": "2010-12-02T20:53:29Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1009.5855v2",
+    "html": "https://arxiv.org/html/1009.5855v2",
+    "pdf": "https://arxiv.org/pdf/1009.5855v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper redistribution terms not checked; public record contains links, descriptive metadata and original notes."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=1009.5855",
+      "retrieved_utc": "2026-10-01T00:47:09.285004+00:00",
+      "sha256": "ed7a95b132eacbd96385f81ef077991c752316c3c7d3b751f75df5100b948850",
+      "bytes": 3288
+    },
+    {
+      "role": "pdf",
+      "url": "https://export.arxiv.org/pdf/1009.5855v2",
+      "retrieved_utc": "2026-10-01T00:48:09.150499+00:00",
+      "sha256": "4ba8d7f2a16b2148b73ec1556fda1f4071f129f9c76e20b5b84d30086df5141d",
+      "bytes": 547903
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://export.arxiv.org/pdf/1009.5855v2",
+      "retrieved_utc": "2026-10-01T00:48:09.785395+00:00",
+      "sha256": "bccbaf5b48b1d2783084e5c82159770ae5dbf25d202d13416f7302c15aefd802",
+      "bytes": 181431,
+      "derived_from_sha256": "4ba8d7f2a16b2148b73ec1556fda1f4071f129f9c76e20b5b84d30086df5141d",
+      "tool": "pdftotext version 26.08.0 -layout"
+    }
+  ],
+  "screen": {
+    "status": "reviewed",
+    "basis": "full_text",
+    "reason": "Full text read by Luna; source/scientific and overlap checks by Sol. Conditional candidate; no numerical reproduction."
+  },
+  "extraction": {
+    "paper_id": "arxiv:1009.5855v2",
+    "requested_model": "gpt-6-luna",
+    "reading_level": "full_text",
+    "coverage": {
+      "sections_read": [
+        "Abstract",
+        "1 Introduction",
+        "2 The Timescape Model",
+        "3 Supernova Ia Data Reduction Methods",
+        "4 Supernova Analysis of the Timescape Model (4.1-4.5)",
+        "5 Discussion (5.1-5.2)",
+        "6 Conclusion",
+        "Acknowledgments",
+        "References"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "figure_check": "Rendered and inspected PDF pages 7-9, 12-18, covering Figures 1-9. Figure 4 contains schematic/approximate WMAP sound-horizon and BAO constraints, explicitly not a direct data likelihood; Figures 6-7 show redshift-cut trends; Figures 8-9 show contours. No separate appendix is present.",
+      "limitations": [
+        "The HTML route returned HTTP 406; reading used the supplied extracted text and the pinned export PDF. PDF hash: 4ba8d7f2a16b2148b73ec1556fda1f4071f129f9c76e20b5b84d30086df5141d; extracted-text hash: bccbaf5b48b1d2783084e5c82159770ae5dbf25d202d13416f7302c15aefd802.",
+        "The paper's numerical comparisons use circa-2010 supernova compilations, reductions, priors, and model implementations; they are historical conditional results, not current observational evidence.",
+        "Several analyses use published distance moduli, and SALT recalibration retains published stretch/colour values while changing the distance relation; the authors themselves identify full model-consistent light-curve refitting as unfinished."
+      ]
+    },
+    "summary": "Smale and Wiltshire compare the two-scale timescape (TS) model with spatially flat ΛCDM using then-current SN Ia compilations. In TS, Buchert volume-average evolution (“bare” quantities) is distinct from the wall-observer geometry and clock (“dressed” quantities); the authors attribute apparent acceleration to evolving clock/ruler calibration and void-wall expansion variance, not acceleration measured by a volume-average void observer. They argue that TS fits require excluding supernovae below their estimated statistical-homogeneity scale, z≈0.033. With such cuts, SALT/SALT-II compilations generally retain mild Bayesian evidence for ΛCDM, while MLCS2k2 compilations often favor TS or leave the models difficult to distinguish. The sign and size of evidence depend materially on fitter, sample selection, extinction assumptions, and whether published data reduction assumed FLRW distances. The paper reports a TS prediction of local Hubble-flow variance below homogeneity, including a possible ≈17% peak near z≈0.01, and discusses dust and intrinsic-colour evolution as unresolved confounders. These are the authors’ model claims and analyses under their stated 2010 data and procedures, not independent confirmation or a present-day assessment.",
+    "ideas": [
+      {
+        "local_id": "timescape-two-scale-bare-dressed",
+        "title": "Two-scale averaging and wall-observer dressed parameters",
+        "claim_type": "model_definition",
+        "description": "The model averages spatially flat wall regions and negatively curved voids with Buchert equations. The volume-average scale factor and bare parameters are statistical quantities; observable SN distances are assigned through an effective wall-clock metric and dressed parameters. Their distinction is central: apparent acceleration is attributed to lapse/clock calibration between volume-average time and wall proper time, alongside regional expansion variance. The paper says backreaction is <5% of total energy for its realistic parameter regime and is not alone the source of the apparent acceleration.",
+        "locators": [
+          "§2, eqs. (1)-(11), pp. 3-5"
+        ],
+        "equations": [
+          {
+            "expression": "ā³ = f_vi a_v³ + f_wi a_w³; f_v + f_w = 1",
+            "locator": "§2, eq. (2), p. 3",
+            "confidence": "high"
+          },
+          {
+            "expression": "γ̄ = dt/dτ",
+            "locator": "§2, p. 4",
+            "confidence": "high"
+          },
+          {
+            "expression": "Ω_m = γ̄³ Ω̄_m",
+            "locator": "§2, eq. (10), p. 4",
+            "confidence": "high"
+          },
+          {
+            "expression": "H = γ̄ H̄ − γ̄⁻¹ dγ̄/dτ",
+            "locator": "§2, eq. (11), p. 4",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "local_id": "timescape-apparent-acceleration",
+        "title": "Apparent acceleration without volume-average acceleration",
+        "claim_type": "model_prediction",
+        "description": "The authors state that a volume-average observer located in a void would infer no cosmic acceleration, while observers in galaxies infer apparent acceleration after wall clocks and rulers are calibrated against the volume average. They associate the onset with void fraction crossing 59%, around z≈0.9. This is an interpretive/model claim, distinct from physical acceleration of a local scale factor or direct measurement of acceleration by an observer in a void.",
+        "locators": [
+          "§1, pp. 2-3; §2, pp. 3-5"
+        ],
+        "equations": [
+          {
+            "expression": "f_v ≈ 0.59 at apparent-acceleration threshold; z ≈ 0.9 (typical model epoch)",
+            "locator": "§1, p. 2",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "local_id": "timescape-local-hubble-variance",
+        "title": "Scale-dependent local Hubble-flow variance",
+        "claim_type": "model_prediction",
+        "description": "Below the model's statistical-homogeneity scale, void-wall sampling predicts a variable locally inferred Hubble rate. The authors estimate a spherical-average peak up to 17% above the global average near z≈0.01, tending toward the global average by z≈0.033. This is an expected scale-dependent inference, not a measured universal local offset; the recommended SN cut is tied to the model's assumed coarse-graining/homogeneity scale.",
+        "locators": [
+          "§2, pp. 4-5; §3.3.1, p. 8; §4.3, pp. 13-14"
+        ],
+        "equations": [
+          {
+            "expression": "z_SHS ≈ 0.033; peak ΔH/H_global up to ≈0.17 near z≈0.01",
+            "locator": "§2, pp. 4-5",
+            "confidence": "medium"
+          },
+          {
+            "expression": "d_L = a_0(1+z) r_w",
+            "locator": "§2, eq. (12), p. 5",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "local_id": "timescape-supernova-fit-dependence",
+        "title": "SN model comparison depends on fitter and reduction assumptions",
+        "claim_type": "data_analysis_result",
+        "description": "For the circa-2010 data and priors, redshift-cut SALT/SALT-II fits generally give negative ln B for TS relative to flat ΛCDM, whereas several MLCS2k2 fits give positive ln B or weak discrimination. The paper identifies model dependence in published SALT distance reductions, different nuisance-parameter treatment, RV/extinction priors, sample exclusions, and low-redshift objects as material. Its SALT adaptation replaces the distance module but leaves other code and published stretch/colour parameters in place, so it is not a full TS-native photometric re-reduction.",
+        "locators": [
+          "§3.1-3.3, pp. 5-8; Tables 1-9, pp. 10-16; §6, pp. 19-20"
+        ],
+        "equations": [
+          {
+            "expression": "ln B = ln(E_TS/E_ΛCDM); negative values favor flat ΛCDM, positive values favor TS",
+            "locator": "Table 5 caption, p. 12; Table 6 caption and §4.3, pp. 13-14",
+            "confidence": "high"
+          },
+          {
+            "expression": "χ²_μ = Σ_i [μ_i − μ(z_i; H₀, Ω_m0)]²/σ²_μi",
+            "locator": "§3.1, eq. (20), p. 6",
+            "confidence": "high"
+          },
+          {
+            "expression": "μ_i = m^max_Bi − M + α(s_i−1) − βc_i",
+            "locator": "§3.2, eq. (22), p. 6",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "local_id": "sn-dust-intrinsic-colour-confounding",
+        "title": "Dust and intrinsic-colour systematics remain confounded",
+        "claim_type": "methodological_caveat",
+        "description": "The discussion separates host-galaxy, circumstellar, and intergalactic dust from intrinsic SN colour variation, while emphasizing degeneracies among dust laws, fitter parameters, host populations, and light-curve standardization. The authors describe population evolution (prompt/delayed events and host type) as a possible source of residuals and recommend astrophysical study; they do not establish a unique correction or quantify a validated shift in TS parameters.",
+        "locators": [
+          "§3.3, pp. 7-8; §5.1-5.2, pp. 17-19; §6, p. 20"
+        ],
+        "equations": [
+          {
+            "expression": "X_e,f′ = ζ_e,f′(α_f′ + β_f′/R_V) A′_V",
+            "locator": "§3.1, eq. (19), p. 6",
+            "confidence": "high"
+          }
+        ]
+      }
+    ],
+    "quantities": [
+      {
+        "name": "present dressed matter density Ω_m0 (tracker relation)",
+        "value": "0.5(1−f_v0)(2+f_v0)",
+        "unit": "dimensionless",
+        "uncertainty": null,
+        "conditioning": "Tracker solution; relation is internal to the paper's TS parameterization",
+        "locator": "§2, eq. (13), p. 5"
+      },
+      {
+        "name": "SHS redshift cut",
+        "value": "0.033",
+        "unit": "redshift",
+        "uncertainty": null,
+        "conditioning": "Authors' estimated ≈100 h⁻¹ Mpc scale; cut used in their TS consistency analyses",
+        "locator": "§2, p. 5; Table 6 caption, p. 13"
+      },
+      {
+        "name": "SALT Union2 ln B (TS/flat ΛCDM), z≥0.033",
+        "value": -3.46,
+        "unit": "log Bayes factor",
+        "uncertainty": null,
+        "conditioning": "Paper's 2010 Union2 SALT-II sample, SHS cut, stated parameter priors; negative favors flat ΛCDM",
+        "locator": "Table 6, p. 13"
+      },
+      {
+        "name": "MLCS17 ln B (TS/flat ΛCDM), z≥0.033",
+        "value": 0.57,
+        "unit": "log Bayes factor",
+        "uncertainty": null,
+        "conditioning": "Paper's 2010 MLCS17 sample and priors; weak evidence in the paper's characterization",
+        "locator": "Table 6, p. 13"
+      },
+      {
+        "name": "MLCS31 ln B (TS/flat ΛCDM), z≥0.033",
+        "value": 1.09,
+        "unit": "log Bayes factor",
+        "uncertainty": null,
+        "conditioning": "Paper's 2010 MLCS31 sample and priors; sample/reduction sensitivity explored in Tables 8-9",
+        "locator": "Table 6, p. 13"
+      },
+      {
+        "name": "TS-present Hubble constant range compatible with approximate WMAP/BAO contours",
+        "value": "57-68",
+        "unit": "km s⁻¹ Mpc⁻¹",
+        "uncertainty": null,
+        "conditioning": "Authors' approximate Figure 4 constraints, assuming rough matching of angular sound-horizon/BAO scales; not a direct joint likelihood",
+        "locator": "§3.4 and Fig. 4, p. 9"
+      },
+      {
+        "name": "relative clock-rate difference by present epoch",
+        "value": "≈38%",
+        "unit": "fraction",
+        "uncertainty": null,
+        "conditioning": "Cited realistic TS parameter examples; not fitted anew in this paper",
+        "locator": "§2, p. 4"
+      }
+    ],
+    "data_dependencies": [
+      "SN Ia distance moduli and light-curve parameters from Riess07 Gold, Union, Constitution, MLCS17, MLCS31, SDSS-II, SALT2, Union2, and CSP; dataset versions and selection differ.",
+      "The published SALT/Union and SALT-II/Union2 distances and uncertainties embed homogeneous FLRW/constant-w reduction assumptions; the paper's adapted simple cosfitter changes the luminosity-distance relation but does not redo all photometric inference.",
+      "MLCS2k2 results depend on training/calibration, extinction-law RV choices (including 1.7, 2.18, 3.1), priors, and excluded events; some training objects lie below the proposed SHS.",
+      "Bayes factors depend on stated priors (typically 0.01≤Ω_m0≤0.95 and, where relevant, 55≤H₀≤75 km s⁻¹ Mpc⁻¹); H₀ and SN absolute magnitude normalization are degenerate without external calibration.",
+      "The proposed SHS redshift threshold derives from the model's assumed ≈100 h⁻¹ Mpc coarse-graining scale; exact cuts change sample membership and evidence.",
+      "The approximate WMAP/BAO comparison in Figure 4 relies on sound-horizon angular scale and effective BAO scale matching and carries un-reworked standard-model data-reduction assumptions."
+    ],
+    "caveats": [
+      "Do not conflate volume-average/bare quantities with wall-observer/dressed observables; the paper explicitly says its average metrics are effective and are not exact Einstein-equation solutions.",
+      "Apparent acceleration in the wall-observer interpretation is not a claim that a volume-average observer measures physical acceleration; likewise, the local Hubble-flow prediction is scale dependent.",
+      "The paper's primary finding is conditional on historical samples, cuts, fitters, likelihood implementations, and priors. The authors conclude SN Ia data alone then could not reliably distinguish TS from ΛCDM because reduction systematics were unresolved.",
+      "The redshift-cut argument is a consistency prescription within the TS model and does not by itself demonstrate that observed low-redshift residuals are caused by timescape physics.",
+      "The authors identify full MLCS refitting under the TS model and better separation of dust from intrinsic colour/population effects as needed follow-up; they do not complete these steps.",
+      "No modern-data update, independent reproduction, model certification, or executable test design is supplied by this extraction."
+    ],
+    "usefulness": {
+      "decision": "review",
+      "reason": "Useful as a foundational, explicit example of how averaging, observer calibration, and SN-reduction assumptions enter a non-FLRW distance comparison. It supplies equations, observables, conditional historical results, and unresolved dependencies for scientific review; its old likelihood results should not be treated as current evidence or design-ready validation."
+    },
+    "citation_leads": [
+      {
+        "arxiv_id": null,
+        "reason": "Wiltshire (2007a), New Journal of Physics 9, 377, cited for the operational timescape model and dressed observables; resolve exact arXiv record before acquisition."
+      },
+      {
+        "arxiv_id": null,
+        "reason": "Wiltshire (2007b), Physical Review Letters 99, 251101, cited for the two-scale Buchert tracker solution; resolve exact arXiv record before acquisition."
+      },
+      {
+        "arxiv_id": null,
+        "reason": "Wiltshire (2009), Physical Review D 80, 123512, cited for additional timescape observational tests and predictions; resolve exact arXiv record before acquisition."
+      },
+      {
+        "arxiv_id": null,
+        "reason": "Kwan, Francis, and Lewis (2009), MNRAS 399, L6, the opposing supernova-fit analysis discussed by this paper; identify primary record before acquisition."
+      },
+      {
+        "arxiv_id": null,
+        "reason": "Kessler et al. (2009), ApJS 185, 32, comparison of supernova light-curve fitters and reduction systematics; identify primary record before acquisition."
+      }
+    ],
+    "agent_id": "/root/luna_timescape",
+    "backend_model_identity": null,
+    "backend_identity_note": "Exact requested model recorded from the Codex spawn; actual backend identity not independently exposed.",
+    "local_packet_sha256": "75d514cd59d40467f4e38922e6694e25a77d473c1eeede9848b8ddb5687ff23a",
+    "interpretation_status": "Original Luna extraction; read the linked Sol corrections before using any equation or value.",
+    "source_hashes": {
+      "pdf": "4ba8d7f2a16b2148b73ec1556fda1f4071f129f9c76e20b5b84d30086df5141d",
+      "extracted_text": "bccbaf5b48b1d2783084e5c82159770ae5dbf25d202d13416f7302c15aefd802"
+    }
+  },
+  "review_id": "2026-10-01-initial-science",
+  "idea_ids": [
+    "timescape-bare-dressed",
+    "supernova-reduction-selection-dependence"
+  ]
+}

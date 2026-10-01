@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2111.07288v1",
+  "arxiv_id": "2111.07288",
+  "version": 1,
+  "title": "Inflaton-driven early dark energy",
+  "authors": [
+    "Michael Maziashvili"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "hep-ph"
+  ],
+  "published_utc": "2021-11-14T09:19:57Z",
+  "updated_utc": "2021-11-14T09:19:57Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2111.07288v1",
+    "html": "https://arxiv.org/html/2111.07288v1",
+    "pdf": "https://arxiv.org/pdf/2111.07288v1"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper redistribution terms not checked; public record contains links, descriptive metadata and original notes."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22early+dark+energy%22&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+      "retrieved_utc": "2026-10-01T00:43:43.823637+00:00",
+      "sha256": "11cf37f0711f131eecd20c6e19f32ab0b569c7d9b40169581d63a8f428f62251",
+      "bytes": 23175
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Retain neutrino/inflaton EDE proposal; quantum-correction and chosen inflation-scale assumptions need checking."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

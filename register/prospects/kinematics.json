@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "kinematics",
+  "title": "Acceleration and reconstruction",
+  "scope": "Kinematic expansion, deceleration, jerk and coordinate/parameterization sensitivity.",
+  "membership_basis": "Topic navigation from abstracts or reviewed sources; shared membership does not establish physical equivalence.",
+  "paper_ids": [
+    "arxiv:2603.00497v3",
+    "arxiv:2609.33673v1",
+    "arxiv:2609.34239v1"
+  ],
+  "idea_ids": [
+    "conditional-q-upturn-not-acceleration-endpoint",
+    "lagrange-deceleration-deviation-reconstruction"
+  ],
+  "design_ids": [
+    "candidate-q-reconstruction-continuity-and-derivative-interpretation"
+  ]
+}

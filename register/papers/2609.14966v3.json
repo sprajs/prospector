@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2609.14966v3",
+  "arxiv_id": "2609.14966",
+  "version": 3,
+  "title": "Forecasting Coupled Dark Energy Parameters with the One-Loop Galaxy Power Spectrum",
+  "authors": [
+    "Bilal Tüdes",
+    "Luca Amendola"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2026-09-14T03:18:22Z",
+  "updated_utc": "2026-09-29T21:10:35Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2609.14966v3",
+    "html": "https://arxiv.org/html/2609.14966v3",
+    "pdf": "https://arxiv.org/pdf/2609.14966v3"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "No per-paper redistribution grant verified; publish metadata, links and original notes only."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Agr-qc%29+AND+%28ti%3A%22dark+energy%22+OR+ti%3Aquintessence%29&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+      "retrieved_utc": "2026-10-01T01:36:31.860062+00:00",
+      "sha256": "5a85b61b80a2c2a80ade9ac25275d960656b5cd99b98f74461057475f2766fae",
+      "bytes": 25287
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Retain galaxy-spectrum coupling forecast; forecast sensitivity is not a detected coupling or independent observed constraint."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

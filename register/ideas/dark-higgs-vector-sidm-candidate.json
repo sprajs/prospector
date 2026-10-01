@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "dark-higgs-vector-sidm-candidate",
+  "title": "Dark-Higgs-mediated massive-vector scattering gives a separate SIDM candidate",
+  "family": "SIDM",
+  "status": "reviewed_conditional",
+  "review_id": "2026-10-01-late-expansion-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2602.01543v2",
+      "locator": "Sec.II.A; Sec.IV.B Eq.(17); Appendix VI.A-B Eqs.(18)-(26); Figs.4-6"
+    }
+  ],
+  "assumptions": [
+    "A separate U1(1) breaking supplies massive vector alpha and light radial mediator h1; vector abundance/stability and production remain to be established.",
+    "Tree-level t/u channels and source identical-particle angular weighting; massive effective cubic g, not dimensionless gauge g1.",
+    "Source plotted-relative-velocity convention and identical-particle normalization must be resolved before interpreting numeric cross sections."
+  ],
+  "predictions": [
+    "Author plots for m_alpha=1 GeV, m_h1=1 MeV and effective g bare number 0.0175 show reduced transfer scattering at higher plotted speed.",
+    "Momentum-transfer weighting 1-|cos theta| suppresses forward/backward contributions; this is distinct from a generic total scattering cross section.",
+    "Possible galactic cores and compatibility with cluster bounds are future conditional consequences; no halo profile or abundance result follows from the curves alone."
+  ]
+}

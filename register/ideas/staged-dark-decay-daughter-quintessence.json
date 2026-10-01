@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "staged-dark-decay-daughter-quintessence",
+  "title": "Late dark symmetry breaking activates daughter-only quintessence coupling",
+  "family": "interacting_dark_sector",
+  "status": "reviewed_conditional",
+  "review_id": "2026-10-01-late-expansion-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2602.01543v2",
+      "locator": "Eq.(1), Table I; Secs.II-III.A Eqs.(2)-(12)"
+    }
+  ],
+  "assumptions": [
+    "Complex charged parent A and neutral real daughter B with H2† A B^2 gauge-invariant operator; H2 obtains a prescribed late VEV.",
+    "After A to 2B conversion only B has chi-dependent mass; the analyzed homogeneous equations treat A/B as pressureless matter apart from the mass-transfer term.",
+    "Decay onset and rapid rate, daughter kinematics, neglected radial-mode energy and the trigger completion are assumed rather than observationally qualified."
+  ],
+  "predictions": [
+    "Before daughter production, the chosen matter-quintessence interaction is absent; after activation energy transfers from B to chi through -c_tilde chi_dot rho_B.",
+    "Summing the displayed A/B continuity equations and chi energy equation cancels decay and coupling source terms, yielding total homogeneous energy conservation in the retained sectors.",
+    "Delayed daughter coupling can reduce early interaction exposure; the paper does not compute fifth-force or perturbation bounds."
+  ]
+}

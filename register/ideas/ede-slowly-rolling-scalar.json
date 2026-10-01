@@ -1,0 +1,22 @@
+{
+  "id": "ede-slowly-rolling-scalar",
+  "title": "Slowly rolling and kinetic scalar EDE",
+  "family": "EDE",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:1811.04083v2",
+      "locator": "PDF p.2 slow-roll discussion"
+    }
+  ],
+  "assumptions": [
+    "Potential linear initially and tends to zero.",
+    "Letter treats effective n→infinity limit, cs²=1; detailed potential deferred."
+  ],
+  "predictions": [
+    "Late kinetic dilution a^-6 in the effective limit.",
+    "Different perturbation propagation from finite-n oscillator despite similar early expansion."
+  ],
+  "schema_version": 1,
+  "review_id": "2026-10-01-initial-science",
+  "status": "reviewed_conditional"
+}

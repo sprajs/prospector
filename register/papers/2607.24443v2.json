@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2607.24443v2",
+  "arxiv_id": "2607.24443",
+  "version": 2,
+  "title": "Updated 1.1% Precision Values of the Hubble Constant with Corrected Pantheon+ and Dark Energy Survey (DES)-DOVEKIE Type Ia Supernovae",
+  "authors": [
+    "Shouvik Roy Choudhury"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "hep-ph"
+  ],
+  "published_utc": "2026-07-27T13:50:20Z",
+  "updated_utc": "2026-09-15T18:15:17Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2607.24443v2",
+    "html": "https://arxiv.org/html/2607.24443v2",
+    "pdf": "https://arxiv.org/pdf/2607.24443v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper redistribution terms not checked; public record contains links, descriptive metadata and original notes."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Agr-qc+OR+cat%3Ahep-th%29+AND+%28all%3A%22Hubble+tension%22+OR+all%3Atimescape+OR+ti%3Adeceleration%29&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+      "retrieved_utc": "2026-10-01T00:43:47.157910+00:00",
+      "sha256": "ae4d5b5beda6d1d785bbb5104a1f000f59d404fa96e6feb97dbd836418cb0c64",
+      "bytes": 26888
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Retain corrected SN distance-ladder comparison; overlapping supernovae and fixed calibration offsets require dependency checks."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

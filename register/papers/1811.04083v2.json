@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1811.04083v2",
+  "arxiv_id": "1811.04083",
+  "version": 2,
+  "title": "Early Dark Energy Can Resolve The Hubble Tension",
+  "authors": [
+    "Vivian Poulin",
+    "Tristan L. Smith",
+    "Tanvi Karwal",
+    "Marc Kamionkowski"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "hep-ph"
+  ],
+  "published_utc": "2018-11-09T19:00:00Z",
+  "updated_utc": "2019-06-11T10:04:20Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1811.04083v2",
+    "html": "https://arxiv.org/html/1811.04083v2",
+    "pdf": "https://arxiv.org/pdf/1811.04083v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper redistribution terms not checked; public record contains links, descriptive metadata and original notes."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=1811.04083%2C1910.10739%2C2412.15191",
+      "retrieved_utc": "2026-10-01T00:43:57.065422+00:00",
+      "sha256": "6e6ceda83fe9c7ddd471e8f35bf2e55393939a8d1ef08c8b04f1cc6c25df3ae1",
+      "bytes": 7776
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/1811.04083v2",
+      "retrieved_utc": "2026-10-01T00:44:03.561485+00:00",
+      "sha256": "b36bec38bc8fddabe5c70ad54f1400bf9c6272b043a9c9bbd3efdb0527310afd",
+      "bytes": 206711
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/1811.04083v2",
+      "retrieved_utc": "2026-10-01T00:44:06.765368+00:00",
+      "sha256": "dfeb28f5917368fcaa43c7050f655317ee289d4049bcbd04c42010ed9411ce53",
+      "bytes": 1135737
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/1811.04083v2",
+      "retrieved_utc": "2026-10-01T00:44:07.421833+00:00",
+      "sha256": "e256b519abad18afa46bfe27cb5e1dc1d1543afadcfe294a4cb22f3c471076dd",
+      "bytes": 60051,
+      "derived_from_sha256": "dfeb28f5917368fcaa43c7050f655317ee289d4049bcbd04c42010ed9411ce53",
+      "tool": "pdftotext version 26.08.0 -layout"
+    }
+  ],
+  "screen": {
+    "status": "reviewed",
+    "basis": "full_text",
+    "reason": "Full text read by Luna; source/scientific and overlap checks by Sol. Conditional candidate; no numerical reproduction."
+  },
+  "extraction": {
+    "paper_id": "arxiv:1811.04083v2",
+    "requested_model": "gpt-6-luna",
+    "reading_level": "full_text",
+    "coverage": {
+      "sections_read": [
+        "Entire letter: abstract and main text; equations (1)-(2); Figures 1-3; Tables I-II; footnotes; acknowledgements and references"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "figure_check": "Rendered and inspected PDF pages 1-5; Figures 1-3 and Tables I-II visually checked. Pages 6-8 contain references, read in extracted text.",
+      "limitations": [
+        "Reference entries were read as citation leads, not individually checked.",
+        "Reported fit and evidence are the authors' 2019 analysis conditioned on the listed data, likelihoods, priors, and model implementation; this extraction does not assess present-day status."
+      ]
+    },
+    "summary": "Two scalar-field EDE realizations raise pre-recombination expansion, reduce the sound horizon, and allow higher CMB-inferred H0 while preserving angular CMB scales. Their 2019 joint fit reports comparable BAO/SN fits, improved total fit, and testable CMB/LSS signatures.",
+    "ideas": [
+      {
+        "local_id": "ede-background-mechanism",
+        "title": "Transient EDE reduces the sound horizon",
+        "claim_type": "author_proposal_and_fit",
+        "description": "Frozen EDE later dilutes faster than radiation, raising early expansion and reducing rs; authors find about 5% energy fraction near z≈5000.",
+        "locators": [
+          "Abstract",
+          "PDF p. 1",
+          "PDF p. 4",
+          "Table II"
+        ],
+        "equations": [
+          {
+            "expression": "Ωϕ(a)=2Ωϕ(ac)/[(a/ac)^{3(wn+1)}+1]",
+            "locator": "Eq. (1), PDF p. 2",
+            "confidence": "high"
+          },
+          {
+            "expression": "wϕ(z)=(1+wn)/[1+(ac/a)^{3(1+wn)}]−1; wn=(n−1)/(n+1)",
+            "locator": "Eq. (2) and PDF p. 1",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "local_id": "ede-scalar-realizations",
+        "title": "Oscillating and slowly rolling scalar realizations",
+        "claim_type": "author_proposal",
+        "description": "An oscillating cosine-power potential yields post-onset dilution from matter-like (n=1) to faster-than-radiation (n≥3). A second, slowly rolling field has an early linear potential; its detailed analysis was deferred.",
+        "locators": [
+          "PDF pp. 1-2",
+          "Eq. (1)",
+          "Table II"
+        ],
+        "equations": [
+          {
+            "expression": "V(ϕ)∝(1−cos[ϕ/f])^n; zc=ac⁻¹−1",
+            "locator": "PDF p. 1",
+            "confidence": "high"
+          },
+          {
+            "expression": "wn=(n−1)/(n+1)",
+            "locator": "PDF p. 1",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "local_id": "ede-cmb-compensation",
+        "title": "CMB scale compensation selects onset and model shape",
+        "claim_type": "author_analysis",
+        "description": "EDE lowers rs while parameter shifts preserve CMB angular scales and peak heights. Authors favor onset near equality and models minimizing rs/rD change; n=3 has strongest reported EDE evidence.",
+        "locators": [
+          "PDF pp. 3-4",
+          "Figures 1-2",
+          "Tables I-II"
+        ],
+        "equations": [
+          {
+            "expression": "ℓX=πDA(z*)/rX(z*); ℓs/ℓD=rs/rD∝ωcdm^0.03",
+            "locator": "PDF p. 3",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "local_id": "ede-perturbation-requirement",
+        "title": "Perturbations are required for physical CMB predictions",
+        "claim_type": "author_methodological_result",
+        "description": "The effective-fluid calculation evolves EDE density and heat-flux perturbations. Authors say omitting them violates energy conservation and produces unphysical CMB features.",
+        "locators": [
+          "PDF pp. 2, 4",
+          "Figure 3"
+        ],
+        "equations": [
+          {
+            "expression": "uϕ≡(1+wϕ)θϕ",
+            "locator": "PDF p. 2",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "local_id": "ede-observational-signatures",
+        "title": "CMB residuals and structure growth provide tests",
+        "claim_type": "author_prediction",
+        "description": "The fit predicts oscillatory TT/EE residuals and matter-clustering signatures. Its higher S8 worsens the cited KiDS discrepancy.",
+        "locators": [
+          "PDF p. 4",
+          "Figure 3",
+          "Table II"
+        ],
+        "equations": [
+          {
+            "expression": "S8≡σ8(Ωm/0.3)^0.5",
+            "locator": "PDF p. 4",
+            "confidence": "high"
+          }
+        ]
+      }
+    ],
+    "quantities": [
+      {
+        "name": "SH0ES H0 used",
+        "value": 73.52,
+        "unit": "km/s/Mpc",
+        "uncertainty": "±1.62",
+        "conditioning": "SH0ES measurement cited by authors; analysis input",
+        "locator": "PDF p. 2"
+      },
+      {
+        "name": "EDE fractional density fEDE(ac), n=3",
+        "value": 0.05,
+        "unit": "fraction",
+        "uncertainty": "+0.024/-0.019 (reported 1σ)",
+        "conditioning": "Combined Planck, BAO, Pantheon, SH0ES fit; posterior mean",
+        "locator": "Table II, PDF p. 5"
+      },
+      {
+        "name": "log10(ac), n=3",
+        "value": -3.737,
+        "unit": "dimensionless",
+        "uncertainty": "+0.110/-0.094 (reported 1σ)",
+        "conditioning": "Same combined fit; posterior mean",
+        "locator": "Table II, PDF p. 5"
+      },
+      {
+        "name": "H0, n=3",
+        "value": 70.6,
+        "unit": "km/s/Mpc",
+        "uncertainty": "±1.3 (reported 1σ)",
+        "conditioning": "Same combined fit; posterior mean",
+        "locator": "Table II, PDF p. 5"
+      },
+      {
+        "name": "Δχ²min, n=3 relative to ΛCDM",
+        "value": -14.5,
+        "unit": "dimensionless",
+        "uncertainty": null,
+        "conditioning": "Authors' combined dataset and likelihood setup",
+        "locator": "Table I, PDF p. 5"
+      },
+      {
+        "name": "Δlog B, n=3 relative to ΛCDM",
+        "value": 2.51,
+        "unit": "dimensionless",
+        "uncertainty": null,
+        "conditioning": "Bayesian evidence using lite high-ℓ likelihood; authors' model comparison",
+        "locator": "Table I, PDF p. 5"
+      },
+      {
+        "name": "KiDS discrepancy change cited",
+        "value": "2.3σ to 2.5σ",
+        "unit": "σ",
+        "uncertainty": null,
+        "conditioning": "Authors' comparison for their EDE fit and cited KiDS cosmic-shear measurement",
+        "locator": "PDF p. 4"
+      }
+    ],
+    "data_dependencies": [
+      "Planck high-ℓ and low-ℓ TT, TE, EE plus lensing likelihood (Planck 2015 likelihood); neutrino model: two massless species and one massive species with Mν=0.06 eV.",
+      "SH0ES H0=73.52±1.62 km/s/Mpc; BAO: 6dFGS, SDSS MGS, BOSS DR12 (including fσ8); Pantheon 1048 SNe Ia over 0.01<z<2.3.",
+      "Inference uses modified CLASS and MontePython MCMC, stated flat priors and nuisance parameters; evidence uses MultiNest and lite high-ℓ likelihood."
+    ],
+    "caveats": [
+      "All fit claims are conditional on 2019 data and methods; they do not establish resolution today.",
+      "The slow-roll analysis was deferred; perturbation treatment is material to the result.",
+      "The fitted S8 shift worsens the cited KiDS discrepancy."
+    ],
+    "usefulness": {
+      "decision": "review",
+      "reason": "Foundational, explicit transient-EDE mechanism with background equations, perturbation requirements, fit outputs, and discriminating CMB/LSS signatures; merits current-data and overlap review before any design use."
+    },
+    "citation_leads": [
+      {
+        "arxiv_id": "1806.10608",
+        "reason": "Cited effective-fluid treatment and cosmological implications of ultra-light axion-like fields; relevant for checking the perturbation prescription."
+      },
+      {
+        "arxiv_id": "1608.01309",
+        "reason": "Cited earlier early-dark-energy/string-axiverse proposal that motivates the transient component."
+      },
+      {
+        "arxiv_id": null,
+        "reason": "Reference [41], Karwal et al. (2019), is cited for detailed background and perturbation dynamics of the slowly rolling realization; the bibliography gives no arXiv identifier."
+      }
+    ],
+    "agent_id": "/root/luna_ede",
+    "backend_model_identity": null,
+    "backend_identity_note": "Exact requested model recorded from the Codex spawn; actual backend identity not independently exposed.",
+    "local_packet_sha256": "c9d527e60c1e5ab179a702529998250dc93dce2b74b05d45cc10efa943d568ee",
+    "interpretation_status": "Original Luna extraction; read the linked Sol corrections before using any equation or value.",
+    "source_hashes": {
+      "html": "b36bec38bc8fddabe5c70ad54f1400bf9c6272b043a9c9bbd3efdb0527310afd",
+      "pdf": "dfeb28f5917368fcaa43c7050f655317ee289d4049bcbd04c42010ed9411ce53",
+      "extracted_text": "e256b519abad18afa46bfe27cb5e1dc1d1543afadcfe294a4cb22f3c471076dd"
+    }
+  },
+  "review_id": "2026-10-01-initial-science",
+  "idea_ids": [
+    "transient-pre-recombination-energy",
+    "ede-oscillating-scalar",
+    "ede-slowly-rolling-scalar"
+  ]
+}

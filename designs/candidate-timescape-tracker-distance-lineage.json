@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "design_id": "candidate-timescape-tracker-distance-lineage",
+  "title": "Timescape tracker distance and same-object reduction sensitivity",
+  "paper_ids": [
+    "arxiv:1009.5855v2"
+  ],
+  "idea_ids": [
+    "timescape-bare-dressed"
+  ],
+  "review_id": "2026-10-01-initial-science",
+  "readiness": "blocked",
+  "faithful_claim": "The tracker wall-observer distance differs from bare evolution; historical SN comparisons depend on cuts, reductions and overlapping object selections.",
+  "equations": [
+    {
+      "expression": "gamma_bar=dt/dtau; H=gamma_bar H_bar-gamma_bar^{-1} dgamma_bar/dtau; Omega_m=gamma_bar^3 Omega_bar_m",
+      "locator": "Sec.2, Eqs. (10)-(11), PDF p.4",
+      "paper_id": "arxiv:1009.5855v2",
+      "definitions": "t volume-average time; tau wall-observer proper time; bare and dressed H/Omega have distinct meanings.",
+      "domain": "Two-scale timescape effective observer prescription; not an exact inhomogeneous spacetime proof.",
+      "status": "reviewed_transcription"
+    },
+    {
+      "expression": "d_L=(1+z)^2 t^(2/3) integral_t^t0 2 dtprime/[(2+f_v(tprime)) tprime^(2/3)]",
+      "locator": "Eq. (14), PDF p.5",
+      "paper_id": "arxiv:1009.5855v2",
+      "definitions": "Tracker void fraction fv(t), dressed observed redshift z and volume-average time t; source geometric units need c to give Mpc.",
+      "domain": "Verified tracker mapping and null-cone convention required; never insert a guessed FLRW z(t).",
+      "status": "needs_verification"
+    }
+  ],
+  "assumptions": [
+    "Two-scale dust averaging; flat walls and curved voids.",
+    "Observer lapse and null-cone dressing; effective metrics, not exact spacetime solutions."
+  ],
+  "minimal_test": {
+    "question": "Dressed tracker distance implementation and conditional same-object reduction/cut sensitivity; not the full inhomogeneous theory.",
+    "observables": [
+      "Closed-form versus independently integrated d_L at matching wall redshifts.",
+      "Conditional distance-modulus residual/profile changes across preregistered common-object selections and z cuts, including 0.024 and 0.033 as source variants.",
+      "Bare and dressed H/q printed separately if derivatives are implemented."
+    ],
+    "parameter_choices": null,
+    "scope": "A verified tracker f_v(t), gamma(t), z(t) and observer convention; identified common-event release rows, redshift frames, reduction/calibration/selection, covariance and common offset convention. Inputs are currently unresolved. All choices remain to be registered; no inferred values are inserted into a runnable request."
+  },
+  "simplifications": [
+    "General Buchert initial-condition solution and proof of an exact underlying spacetime.",
+    "Detailed line-of-sight void/wall sampling and local below-SHS predictions.",
+    "Full light-curve retraining/refitting, extinction priors, selection/population evolution and any absolute H0 inference without calibration."
+  ],
+  "data_dependencies": [
+    "SN Ia distance moduli and light-curve parameters from Riess07 Gold, Union, Constitution, MLCS17, MLCS31, SDSS-II, SALT2, Union2, and CSP; dataset versions and selection differ.",
+    "The published SALT/Union and SALT-II/Union2 distances and uncertainties embed homogeneous FLRW/constant-w reduction assumptions; the paper's adapted simple cosfitter changes the luminosity-distance relation but does not redo all photometric inference.",
+    "MLCS2k2 results depend on training/calibration, extinction-law RV choices (including 1.7, 2.18, 3.1), priors, and excluded events; some training objects lie below the proposed SHS.",
+    "Bayes factors depend on stated priors (typically 0.01≤Ω_m0≤0.95 and, where relevant, 55≤H₀≤75 km s⁻¹ Mpc⁻¹); H₀ and SN absolute magnitude normalization are degenerate without external calibration.",
+    "The proposed SHS redshift threshold derives from the model's assumed ≈100 h⁻¹ Mpc coarse-graining scale; exact cuts change sample membership and evidence.",
+    "The approximate WMAP/BAO comparison in Figure 4 relies on sound-horizon angular scale and effective BAO scale matching and carries un-reworked standard-model data-reduction assumptions."
+  ],
+  "unknowns": [
+    "Tracker mapping/limits beyond this paper and independent numerical reference.",
+    "Raw photometric inputs, full selection/extinction priors, covariance and cross-reduction dependence.",
+    "Model-consistent BAO/CMB reductions and modern observational constraints."
+  ],
+  "verification_gates": [
+    "Keep numerical verification, observation lineage, inference validation and scientific interpretation as separate gates.",
+    "Freeze reference cases and consumer-derived error allocations before accepting outputs; no production tolerance is invented here.",
+    "Historical fit values are comparison targets only after matching release, likelihood, priors and implementation.",
+    "Acquire/review the primary tracker mapping; reject guessed FLRW time-redshift substitutions.",
+    "Check dimensions, dt/dtau, d_L(0)=0 and observer H0 small-z normalization in the model averaged validity domain; validate analytic/quadrature agreement.",
+    "Retain common-object identity/order; apply identical declared cuts to comparisons; do not concatenate overlapping reductions as independent data.",
+    "Identify nuisance normalization separately from absolute M/H0. Profile-score agreement is not Bayesian evidence; evidence needs declared proper priors and nuisance measure.",
+    "A causal claim about reduction dependence needs full model-consistent light-curve/source-selection reanalysis or a bounded bias demonstration."
+  ],
+  "falsification": "Inconsistent bare/dressed mapping, incorrect c restoration or failure of analytic/quadrature agreement rejects the implementation. A faithful data comparison could reject a specified TS parameter/reduction variant; an unexplained fitter difference alone establishes neither TS nor a universal astrophysical correction.",
+  "consumer": {
+    "repository": "sprajs/irreducible",
+    "revision": "ef4cb694addac1ca25c332253cff3fbecd0cbbce",
+    "dirty": false,
+    "capability_status": "No compiled EDE, NEDE or timescape model at inspected revision; all listed scientific capabilities unqualified.",
+    "recipe_runner_status": "proposed_not_implemented"
+  },
+  "blockers": [
+    "Only flat_flrw geometry and LCDM/CPL/constant_q/fixed_q5 expansion specs exist; no timescape lapse or dressed null-cone projection.",
+    "Current supernova.profile is a conditional single-offset relative profile, not SALT/MLCS retraining or Bayesian evidence.",
+    "photometry.predict has a rectangular constant-rest-luminosity source, no SN spectra/color/populations, noise, selection or detector inference.",
+    "No recipe runner; arbitrary equations cannot be executed from JSON."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Source/design review only. No compiled model, admitted data, numerical run or paper reproduction."
+  }
+}

@@ -5,5 +5,10 @@ __pycache__/
 .work/
 .pytest_cache/
 .ruff_cache/
-papers/
+/papers/
+/downloads/
+.env
+.env.*
+!.env.example
+.DS_Store
 *.partial

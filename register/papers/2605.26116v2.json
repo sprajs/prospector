@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2605.26116v2",
+  "arxiv_id": "2605.26116",
+  "version": 2,
+  "title": "Unifying Early and Late Dark Energy: Dynamical Requirements and Obstructions",
+  "authors": [
+    "William Giarè",
+    "Jeremy Sakstein"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "gr-qc",
+    "hep-ph"
+  ],
+  "published_utc": "2026-05-25T17:59:53Z",
+  "updated_utc": "2026-09-23T19:44:34Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2605.26116v2",
+    "html": "https://arxiv.org/html/2605.26116v2",
+    "pdf": "https://arxiv.org/pdf/2605.26116v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper redistribution terms not checked; public record contains links, descriptive metadata and original notes."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Agr-qc+OR+cat%3Ahep-th%29+AND+%28all%3A%22Hubble+tension%22+OR+all%3Atimescape+OR+ti%3Adeceleration%29&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+      "retrieved_utc": "2026-10-01T00:43:47.157910+00:00",
+      "sha256": "ae4d5b5beda6d1d785bbb5104a1f000f59d404fa96e6feb97dbd836418cb0c64",
+      "bytes": 26888
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/2605.26116v2",
+      "retrieved_utc": "2026-10-01T01:36:12.198333+00:00",
+      "sha256": "f28f0ffce5f4441e7670fedbcfe48e88dbfdde9f2449a0dfb4b7ae4aacb973fb",
+      "bytes": 731938
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/2605.26116v2",
+      "retrieved_utc": "2026-10-01T01:36:15.791762+00:00",
+      "sha256": "a9e5d04392b126c76cfe4055d5ed9ac9be6b35ec1f5f474c3bd65cdd45a68b0c",
+      "bytes": 1120404
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/2605.26116v2",
+      "retrieved_utc": "2026-10-01T01:36:16.234619+00:00",
+      "sha256": "82878f7f19bacbd5f6745d6a79b345d6e2979b02807dd70f0dfcc1145d42b5de",
+      "bytes": 145295,
+      "derived_from_sha256": "a9e5d04392b126c76cfe4055d5ed9ac9be6b35ec1f5f474c3bd65cdd45a68b0c",
+      "tool": "pdftotext -layout"
+    },
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2609.34239v1%2C2605.26116v2%2C2602.01543v2&max_results=3",
+      "retrieved_utc": "2026-10-01T01:36:08.844544+00:00",
+      "sha256": "09d9ccf807be6d94de923e832dc14e5fca3e86b35dd5ada4c8aec00d573ae3e4",
+      "bytes": 7954
+    }
+  ],
+  "screen": {
+    "status": "reviewed",
+    "basis": "full_text",
+    "reason": "Full Luna reading and Sol source review complete. Useful conditional prospect; source/method issues and missing numerical or likelihood checks remain explicit in the review."
+  },
+  "extraction": {
+    "paper_id": "arxiv:2605.26116v2",
+    "requested_model": "gpt-6-luna",
+    "reading_level": "full_text",
+    "coverage": {
+      "sections_read": [
+        "1 Introduction",
+        "2 Theoretical framework",
+        "3 Dynamical requirements (3.1–3.5)",
+        "4 Minimal single-field realizations (4.1–4.3)",
+        "5 Three-slope potentials (5.1)",
+        "6 Discussion and conclusions",
+        "Appendix A Effect of baryons on the coupled matter-era dynamics"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "figure_check": "Visually inspected PDF pages 19 (Fig. 6), 20 (Fig. 7), 24 (Fig. 8), and 25 (Fig. 9); plots support the described representative trajectories and schematic slope geometry. Captions and plots checked, not underlying CLASS runs/data.",
+      "limitations": [
+        "PDF has 42 pages including references; main body and Appendix A read from layout text, with equations checked in pinned HTML and rendered PDF pages. References were not individually followed. No independent derivation, code reproduction, perturbation analysis, or current-data assessment."
+      ]
+    },
+    "summary": "The authors derive a five-stage background history for one canonical scalar to act as EDE and later dark energy: frozen, transient EDE, rapid depletion, prolonged post-recombination quiescence, and late reactivation. In their tracking-like, quasi-autonomous analysis, a two-slope potential leaves too much scalar energy on the matter-era scaling branch; constant conformal coupling to dark matter cannot lower it enough. They propose an intermediate slope steeper than the EDE slope, followed by a shallow late-time slope. This is a necessary-structure argument within the stated smooth, canonical, approximately constant-slope framework, not a data-qualified model or general no-go theorem.",
+    "ideas": [
+      {
+        "local_id": "five-stage-background-conditions",
+        "title": "Unified history requires five separated scalar regimes",
+        "claim_type": "author_requirement",
+        "description": "The proposed background sequence requires early Hubble freezing, EDE around equality, depletion by recombination, post-recombination quiescence, and reactivation only at low redshift. EDE alters the sound-horizon integral; residual scalar energy changes the broader comoving-distance integral.",
+        "locators": [
+          "§3.1–3.5, Eqs. (3.6)–(3.15), pp. 5–12; Fig. 1"
+        ],
+        "equations": [
+          {
+            "expression": "δr_s/r_s ≃ −(1/2) Ω_EDE^eff; δχ/χ ≃ −(1/2)⟨Ω_φ⟩",
+            "locator": "Eqs. (3.6)–(3.7), (3.13)–(3.14), pp. 7, 11",
+            "confidence": "high",
+            "definitions": "Effective EDE and post-recombination scalar fractions are differently weighted integrals; kernels W_rs and W_χ are defined in text.",
+            "domain": "First-order perturbation about ΛCDM; schematic reduction and distance-shift estimates."
+          }
+        ]
+      },
+      {
+        "local_id": "two-slope-matter-scaling-obstruction",
+        "title": "Two constant-slope regimes retain an excessive matter-era fraction",
+        "claim_type": "author_obstruction",
+        "description": "Radiation tracking fixes λ_early²≈40 for the illustrative Ω_φ≈0.1 EDE level. The same slope gives an uncoupled matter-era scaling fraction 3/λ_early²≈0.075, retaining three quarters of the radiation-era scalar fraction. An early-to-shallow transition skips an independent rapid-depletion regime.",
+        "locators": [
+          "§4.2.1–4.3, Eqs. (4.15)–(4.17), (4.25)–(4.27), pp. 15–20; Fig. 6"
+        ],
+        "equations": [
+          {
+            "expression": "Ω_φ^(G)=4/λ_early²; Ω_φ^(F)=3/λ_early²; Ω_φ^(F)/Ω_φ^(G)=3/4",
+            "locator": "Eqs. (4.15)–(4.17), pp. 15–17",
+            "confidence": "high",
+            "definitions": "G is radiation-scaling point; F is matter-scaling point.",
+            "domain": "Canonical scalar, constant-slope fixed points; values are illustrative."
+          }
+        ]
+      },
+      {
+        "local_id": "constant-conformal-coupling-floor",
+        "title": "Constant dark-matter coupling does not sufficiently deplete the scalar",
+        "claim_type": "author_obstruction",
+        "description": "For the baryon-free coupled matter branch, existence imposes a lower bound on β and hence on the residual scalar fraction: its minimum is 3/(2λ_early²), or 3/8 of the radiation-scaling fraction. With the illustrative EDE normalization this is still ≳0.0375. Appendix A argues baryons do not remove the floor; field-dependent couplings are outside the analysis.",
+        "locators": [
+          "§4.2.2, Eqs. (4.18)–(4.23), pp. 17–19; Appendix A, Eqs. (A.1)–(A.11), pp. 27–28; Fig. 7"
+        ],
+        "equations": [
+          {
+            "expression": "Ω_φ,min^(F) ≃ 3/(2λ_early²); Ω_φ,min^(F)/Ω_φ^(G) ≃ 3/8",
+            "locator": "Eqs. (4.19)–(4.22), Appendix A (A.1)–(A.2)",
+            "confidence": "high",
+            "definitions": "β is constant conformal coupling to cold dark matter; G and F are radiation- and matter-scaling points.",
+            "domain": "Canonical scalar, constant β, fixed-point/quasi-static analysis; baryonic departures treated perturbatively."
+          }
+        ]
+      },
+      {
+        "local_id": "three-slope-requirement",
+        "title": "Intermediate steep branch supplies depletion and quiescence",
+        "claim_type": "author_model_requirement",
+        "description": "To suppress the matter-era tracking fraction to roughly one percent, the authors require λ_mid²≳300, with λ_mid≫λ_early≫λ_late. The trajectory must turn onto this branch after EDE and before settling on the early-branch matter attractor; exact arrival at the intermediate fixed point is unnecessary in their illustrative trajectory.",
+        "locators": [
+          "§5, Eqs. (5.1)–(5.6), pp. 21–22; Fig. 8"
+        ],
+        "equations": [
+          {
+            "expression": "Ω_φ^(F,mid)∼3/λ_mid²≲10⁻², hence λ_mid²≳300",
+            "locator": "Eqs. (5.2)–(5.6), pp. 21–22",
+            "confidence": "high",
+            "definitions": "F,mid is the matter-like scaling level on the intermediate branch.",
+            "domain": "Fixed-point estimate in the canonical tracking framework; order-of-magnitude threshold."
+          }
+        ]
+      },
+      {
+        "local_id": "positive-exponential-monotonic-slope",
+        "title": "Positive sums of exponentials cannot steepen along increasing field",
+        "claim_type": "author_structural_result",
+        "description": "For positive exponential amplitudes, the effective logarithmic slope is a convex weighted mean of component slopes; its field derivative is minus their weighted variance. It is non-increasing with increasing field and cannot give the required λ_early→λ_mid→λ_late ordering.",
+        "locators": [
+          "§5.1, Eqs. (5.11)–(5.13), pp. 22–24; Fig. 9"
+        ],
+        "equations": [
+          {
+            "expression": "λ=Σ_i w_iλ_i; dλ/dφ=−[Σ_iw_iλ_i²−(Σ_iw_iλ_i)²]=−Var_w(λ_i)≤0",
+            "locator": "Eqs. (5.12)–(5.13), pp. 23–24",
+            "confidence": "high",
+            "definitions": "V=Σ_iV_i exp(−λ_iφ), V_i>0; w_i=V_i exp(−λ_iφ)/V, Σ_iw_i=1.",
+            "domain": "Positive finite sum of fixed-slope exponentials, for evolution toward increasing φ."
+          }
+        ]
+      },
+      {
+        "local_id": "shoulder-potential-realization",
+        "title": "A localized shoulder can phenomenologically produce transient steepening",
+        "claim_type": "author_model_proposal",
+        "description": "A double-exponential-like potential with a logistic shoulder behaves first with λ_early and later as a sum containing λ_mid=λ_early+n/Δ and λ_late. The authors give n/Δ≈11 as a benchmark and explicitly describe this as phenomenological, not UV-derived.",
+        "locators": [
+          "§5.1, Eqs. (5.14)–(5.18), pp. 24–25; Fig. 9"
+        ],
+        "equations": [
+          {
+            "expression": "λ_mid=λ_early+n/Δ; n/Δ≈11",
+            "locator": "Eqs. (5.17)–(5.18), p. 25",
+            "confidence": "high",
+            "definitions": "n and Δ parameterize shoulder shape and width.",
+            "domain": "Asymptotic approximations on either side of φ⋆; benchmark λ_early²=40 and λ_mid²=300."
+          }
+        ]
+      }
+    ],
+    "quantities": [
+      {
+        "name": "effective EDE fraction needed for sound-horizon reduction",
+        "value": "~0.1–0.2",
+        "unit": "weighted fraction of total density",
+        "uncertainty": "order-of-magnitude perturbative estimate",
+        "conditioning": "Assumes a 5–10% sound-horizon reduction in the paper's first-order ΛCDM expansion; not a fitted value.",
+        "locator": "§3.2.2, Eqs. (3.6)–(3.7), p. 7"
+      },
+      {
+        "name": "scalar fraction at recombination relative to effective EDE",
+        "value": "≲10⁻¹",
+        "unit": "dimensionless ratio",
+        "uncertainty": "approximate bound",
+        "conditioning": "From percent-level recombination deviations and effective EDE of order 0.1; model/data-dependent estimate.",
+        "locator": "§3.3, Eq. (3.9), p. 8"
+      },
+      {
+        "name": "EDE scalar effective mass",
+        "value": "10⁻²⁸–10⁻²⁶",
+        "unit": "eV",
+        "uncertainty": "range estimate",
+        "conditioning": "Canonical rolling onset between recombination and z≈10⁴, using H(z⋆)≲m_eff≲H(z≈10⁴).",
+        "locator": "§3.2.3, Eq. (3.8), p. 8"
+      },
+      {
+        "name": "illustrative early and late slopes squared",
+        "value": "λ_early²≈40; λ_late²≈0.25",
+        "unit": "dimensionless (M_Pl=1)",
+        "uncertainty": "chosen benchmark, not inferred",
+        "conditioning": "Representative CLASS trajectories and scaling estimates.",
+        "locator": "§4.2.1, Fig. 6; §5, Fig. 8, pp. 18, 23"
+      },
+      {
+        "name": "illustrative intermediate slope squared",
+        "value": "λ_mid²≈300",
+        "unit": "dimensionless (M_Pl=1)",
+        "uncertainty": "approximate threshold/benchmark",
+        "conditioning": "Chosen to reduce the matter-like tracking fraction to order 10⁻².",
+        "locator": "§5, Eqs. (5.2)–(5.6), pp. 21–22"
+      },
+      {
+        "name": "dataset-level lineage for illustrative integrations",
+        "value": null,
+        "unit": null,
+        "uncertainty": "unknown/not reported",
+        "conditioning": "CLASS background integrations are illustrative; likelihoods, datasets, priors, and fit covariances are not specified.",
+        "locator": "§4.2.1–4.2.2 and §5, Figs. 6–8"
+      }
+    ],
+    "data_dependencies": [
+      "No new measurements or likelihood analysis. Thresholds are analytical estimates conditioned on cited CMB/BAO/SN constraints and ΛCDM background weighting; trajectories are reported modified-CLASS background integrations. Dataset ancestry, likelihood, priors, chains, and cross-covariance are not provided for those trajectories."
+    ],
+    "caveats": [
+      "The phases are necessary background conditions, not sufficient viability conditions; perturbations are not analyzed.",
+      "The argument assumes a canonical scalar, smooth rolling depletion by that field, constant conformal coupling β where included, and successive quasi-autonomous regimes with approximately constant logarithmic slope.",
+      "Phase transitions, decay, particle production or other dissipation; rapid non-adiabatic slope variations; field-dependent β(φ); noncanonical theories; and disformal couplings are outside the analysis and may evade restrictions.",
+      "The shoulder potential is phenomenological, not a UV construction; representative CLASS trajectories do not establish inference or scientific qualification."
+    ],
+    "usefulness": {
+      "decision": "review",
+      "reason": "Provides structured scalar-history requirements, explicit two-slope/coupling obstructions, and a candidate three-slope mechanism for source-level comparison. Assumptions, approximations, perturbation gap, and unqualified background examples warrant independent Sol review before idea acceptance."
+    },
+    "citation_leads": [],
+    "agent_id": "/root/read_unification",
+    "actual_model_identity": null,
+    "source_hashes": {
+      "html": "f28f0ffce5f4441e7670fedbcfe48e88dbfdde9f2449a0dfb4b7ae4aacb973fb",
+      "pdf": "a9e5d04392b126c76cfe4055d5ed9ac9be6b35ec1f5f474c3bd65cdd45a68b0c",
+      "extracted_text": "82878f7f19bacbd5f6745d6a79b345d6e2979b02807dd70f0dfcc1145d42b5de"
+    },
+    "original_packet_sha256": "b0eb0a9dee18e6265c2a2d746d79055318173620c21f17b7199534505ee8c0bb"
+  },
+  "review_id": "2026-10-01-late-expansion-science",
+  "idea_ids": [
+    "unified-scalar-steep-steeper-shallow",
+    "positive-exponential-slope-variance-obstruction",
+    "constant-coupling-scalar-residual-floor"
+  ]
+}

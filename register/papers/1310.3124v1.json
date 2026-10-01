@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1310.3124v1",
+  "arxiv_id": "1310.3124",
+  "version": 1,
+  "title": "Timescape realized",
+  "authors": [
+    "Herbert Balasin"
+  ],
+  "categories": [
+    "gr-qc"
+  ],
+  "published_utc": "2013-10-11T13:56:45Z",
+  "updated_utc": "2013-10-11T13:56:45Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1310.3124v1",
+    "html": "https://arxiv.org/html/1310.3124v1",
+    "pdf": "https://arxiv.org/pdf/1310.3124v1"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper redistribution terms not checked; public record contains links, descriptive metadata and original notes."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?search_query=ti%3Atimescape&start=0&max_results=5&sortBy=lastUpdatedDate&sortOrder=descending",
+      "retrieved_utc": "2026-10-01T00:44:41.451093+00:00",
+      "sha256": "7bcba14d2218e1d0ca8eae4772e8faeaf45d38667a7ec837539a7faeda26e3bb",
+      "bytes": 10909
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Retain observer-redshift realization proposal; do not assume equivalence to the full timescape calculation."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

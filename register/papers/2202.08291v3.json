@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2202.08291v3",
+  "arxiv_id": "2202.08291",
+  "version": 3,
+  "title": "Microphysics of Early Dark Energy",
+  "authors": [
+    "Vivian I. Sabla",
+    "Robert R. Caldwell"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "gr-qc",
+    "hep-ph"
+  ],
+  "published_utc": "2022-02-16T19:00:12Z",
+  "updated_utc": "2022-09-22T17:59:04Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2202.08291v3",
+    "html": "https://arxiv.org/html/2202.08291v3",
+    "pdf": "https://arxiv.org/pdf/2202.08291v3"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper redistribution terms not checked; public record contains links, descriptive metadata and original notes."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22early+dark+energy%22&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+      "retrieved_utc": "2026-10-01T00:43:43.823637+00:00",
+      "sha256": "11cf37f0711f131eecd20c6e19f32ab0b569c7d9b40169581d63a8f428f62251",
+      "bytes": 23175
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Priority challenge: alternative EDE perturbation microphysics; compare background equivalence and sound/anisotropic-stress closure."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

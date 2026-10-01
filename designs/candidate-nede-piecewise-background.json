@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "design_id": "candidate-nede-piecewise-background",
+  "title": "NEDE piecewise background conservation and matching",
+  "paper_ids": [
+    "arxiv:1910.10739v5"
+  ],
+  "idea_ids": [
+    "nede-triggered-first-order-transition",
+    "nede-trigger-perturbation-matching"
+  ],
+  "review_id": "2026-10-01-initial-science",
+  "readiness": "blocked",
+  "faithful_claim": "NEDE is modeled as an instantaneous false-vacuum-to-fluid transition with conserved background density and trigger-defined perturbations.",
+  "equations": [
+    {
+      "expression": "rho_N(a)=rho_* for a<a_*; rho_N(a)=rho_* (a_*/a)^{3(1+w*)} for a>a_*",
+      "locator": "Eqs. (4)-(5), PDF p.3",
+      "paper_id": "arxiv:1910.10739v5",
+      "definitions": "a* instantaneous transition scale; rho* density at transition; w*=2/3 is the paper's fixed fit choice.",
+      "domain": "Instantaneous effective-fluid background, no trigger/perturbation/microphysical qualification.",
+      "status": "reviewed_transcription"
+    },
+    {
+      "expression": "H_after=H_before; Hdot_after-Hdot_before=-4 pi G (1+w*) rho_*",
+      "locator": "Eqs. (6)-(7), PDF p.3; rewritten with explicit after-minus-before convention",
+      "paper_id": "arxiv:1910.10739v5",
+      "definitions": "Dot means cosmic-time t derivative; source jump convention is before minus after; natural units require conversion.",
+      "domain": "Paper pressure-jump matching in GR at fixed transition density.",
+      "status": "reviewer_derived"
+    }
+  ],
+  "assumptions": [
+    "Tunneling psi field, subdominant ultralight phi trigger; fast percolation.",
+    "Post-collision energy approximated as constant-w fluid; w*=2/3 chosen for fit.",
+    "Transition at constant trigger field.",
+    "Synchronous gauge; cosmic-time convention; cs²=w* closes fluid equations."
+  ],
+  "minimal_test": {
+    "question": "Piecewise background conservation, matching and fixed-endpoint ruler response for the paper effective fluid.",
+    "observables": [
+      "left/right density,H,Hdot and continuity residuals",
+      "post-transition a^-5 scaling",
+      "r_s relative to zero-NEDE matched control"
+    ],
+    "parameter_choices": null,
+    "scope": "Explicit a_*, f_*, w*=2/3 for paper branch, H0/densities/closure/units and acoustic endpoint; proposed a_* is a phenomenological input unless the trigger is implemented. All choices remain to be registered; no inferred values are inserted into a runnable request."
+  },
+  "simplifications": [
+    "Tunneling/percolation, bubble-wall collisions, microphysical realization of w*.",
+    "Trigger evolution and spatial decay-time perturbations with Eq.(14).",
+    "Observable CMB/LSS/GW prediction; the background is not the full NEDE model."
+  ],
+  "data_dependencies": [
+    "Planck 2018 TT, TE, EE and lensing likelihood with nuisance parameters (authors cite Planck likelihood reference [72]).",
+    "SH0ES H0=74.03±1.42 km s^-1 Mpc^-1 measurement (Riess et al. 2019 reference [2]).",
+    "Pantheon 1048 SNe Ia, 0.01<z<2.3 (reference [68]).",
+    "BOSS DR12 anisotropic BAO and growth at z=0.38, 0.51, 0.61; 6dF isotropic BAO at z=0.106; SDSS DR7 main-galaxy BAO at z=0.15 (references [69]–[71]).",
+    "Primordial helium abundance constraint used as BBN likelihood (reference [73]).",
+    "CLASS adapted for NEDE and MontePython parameter sampling; neutrinos modeled as two massless plus one massive species with Mν=0.06 eV.",
+    "No likelihood file hashes or machine-readable chains are supplied in the admitted paper text; lineage beyond cited dataset/release descriptions is unknown here."
+  ],
+  "unknowns": [
+    "Bubble-collision coarse-graining and finite transition corrections.",
+    "Transition hypersurface robustness and possible residual trigger dust.",
+    "Reference implementation outputs, unfixed-parameter priors and shared-data covariance."
+  ],
+  "verification_gates": [
+    "Keep numerical verification, observation lineage, inference validation and scientific interpretation as separate gates.",
+    "Freeze reference cases and consumer-derived error allocations before accepting outputs; no production tolerance is invented here.",
+    "Historical fit values are comparison targets only after matching release, likelihood, priors and implementation.",
+    "Declare before-minus-after source jump convention and cosmic time; split quadrature at a_* rather than smoothing silently.",
+    "Check f_*→0 and density/H matching; independently verify Raychaudhuri derivative.",
+    "Before calling it trigger-consistent implement phi evolution and verify H(z*)=0.2m with physical unit conversions.",
+    "Perturbation extension must satisfy synchronous junction Eqs.(12),(14), closure cs²=w* and both super/sub-horizon cases."
+  ],
+  "falsification": "Density/H discontinuity or reversed Hdot jump falsifies this matched-fluid implementation. Background agreement cannot validate the microscopic constant-w conversion, or its predicted GW spectrum.",
+  "consumer": {
+    "repository": "sprajs/irreducible",
+    "revision": "ef4cb694addac1ca25c332253cff3fbecd0cbbce",
+    "dirty": false,
+    "capability_status": "No compiled EDE, NEDE or timescape model at inspected revision; all listed scientific capabilities unqualified.",
+    "recipe_runner_status": "proposed_not_implemented"
+  },
+  "blockers": [
+    "No compiled piecewise NEDE density, trigger or transition matching model.",
+    "Existing sound-horizon operation cannot receive this expansion; no CMB/LSS/GW likelihood support or recipe runner."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Source/design review only. No compiled model, admitted data, numerical run or paper reproduction."
+  }
+}

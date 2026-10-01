@@ -1,0 +1,22 @@
+{
+  "id": "timescape-bare-dressed",
+  "title": "Timescape bare versus dressed geometry and clock",
+  "family": "timescape",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:1009.5855v2",
+      "locator": "Sec.2, Eqs.(1)-(17), PDF pp.3-5"
+    }
+  ],
+  "assumptions": [
+    "Two-scale dust averaging; flat walls and curved voids.",
+    "Observer lapse and null-cone dressing; effective metrics, not exact spacetime solutions."
+  ],
+  "predictions": [
+    "Wall distance-redshift and inferred acceleration differ from volume-average evolution.",
+    "Scale-dependent local Hubble variance below assumed homogeneity."
+  ],
+  "schema_version": 1,
+  "review_id": "2026-10-01-initial-science",
+  "status": "reviewed_conditional"
+}

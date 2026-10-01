@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "design_id": "candidate-ede-fixed-endpoint-ruler",
+  "title": "EDE fixed-endpoint sound-horizon response",
+  "paper_ids": [
+    "arxiv:1811.04083v2"
+  ],
+  "idea_ids": [
+    "ede-oscillating-scalar",
+    "ede-slowly-rolling-scalar"
+  ],
+  "review_id": "2026-10-01-initial-science",
+  "readiness": "blocked",
+  "faithful_claim": "Eqs.(1)-(2) describe frozen-then-diluting energy; the paper claims lower r_s with a suitable perturbative fit.",
+  "equations": [
+    {
+      "expression": "Omega_phi(a)=2 Omega_phi(a_c)/[1+(a/a_c)^{3(1+w_n)}]; w_n=(n-1)/(n+1)",
+      "locator": "Eqs. (1)-(2), PDF p.2",
+      "paper_id": "arxiv:1811.04083v2",
+      "definitions": "a0=1; ac transition scale; wn averaged post-transition equation of state. Omega_phi is not the instantaneous total-density fraction; fixed normalization needs source-code verification.",
+      "domain": "Paper effective-fluid background, finite-n oscillator or declared kinetic limit; no perturbation or CMB admission.",
+      "status": "needs_verification"
+    },
+    {
+      "expression": "rho_phi(a)=2 rho_phi(ac)/[1+(a/ac)^p]; p=3(1+wn); rho_phi(ac)=fc rho_standard(ac)/(1-fc)",
+      "locator": "Sol proposed minimal test, derived from source Eqs. (1)-(2)",
+      "paper_id": "arxiv:1811.04083v2",
+      "definitions": "Explicit physical density normalization; fc fraction at ac, not a peak fraction. Current density closure must be declared.",
+      "domain": "Proposed FLRW background toy test with positive densities and 0<=fc<1; not exact paper reproduction.",
+      "status": "reviewer_derived"
+    }
+  ],
+  "assumptions": [
+    "Hubble-frozen initial scalar; potential proportional to (1-cos(phi/f))^n.",
+    "Effective-fluid averaging, initial angle and potential-dependent sound speed.",
+    "Potential linear initially and tends to zero.",
+    "Letter treats effective n→infinity limit, cs²=1; detailed potential deferred."
+  ],
+  "minimal_test": {
+    "question": "Necessary background sound-horizon response at a fixed, declared endpoint, not a CMB H0 solution.",
+    "observables": [
+      "rho_phi,H,f_phi,r_s difference against matched zero-EDE control"
+    ],
+    "parameter_choices": null,
+    "scope": "Identified physical densities, a0=1, transition a_c/f_c, fixed a_end and endpoint origin, physical units and density closure. No data hashes or priors supplied. All choices remain to be registered; no inferred values are inserted into a runnable request."
+  },
+  "simplifications": [
+    "Full scalar dynamics and oscillation averaging errors.",
+    "Potential-dependent EDE perturbation sound speed, metric/fluid coupling and CMB damping/peak response.",
+    "Self-consistent recombination/drag endpoint and fitted compensation in omega_cdm, ns, As,H0."
+  ],
+  "data_dependencies": [
+    "Planck high-ℓ and low-ℓ TT, TE, EE plus lensing likelihood (Planck 2015 likelihood); neutrino model: two massless species and one massive species with Mν=0.06 eV.",
+    "SH0ES H0=73.52±1.62 km/s/Mpc; BAO: 6dFGS, SDSS MGS, BOSS DR12 (including fσ8); Pantheon 1048 SNe Ia over 0.01<z<2.3.",
+    "Inference uses modified CLASS and MontePython MCMC, stated flat priors and nuisance parameters; evidence uses MultiNest and lite high-ℓ likelihood."
+  ],
+  "unknowns": [
+    "Exact source Omega normalization and full slow-roll potential.",
+    "Scalar/fluid validity domain and reference outputs.",
+    "Model-consistent data/preprocessing/cross-covariance and inference priors."
+  ],
+  "verification_gates": [
+    "Keep numerical verification, observation lineage, inference validation and scientific interpretation as separate gates.",
+    "Freeze reference cases and consumer-derived error allocations before accepting outputs; no production tolerance is invented here.",
+    "Historical fit values are comparison targets only after matching release, likelihood, priors and implementation.",
+    "Differentiate rho and verify continuity equation with Eq.(2). Check frozen and late-power-law limits, a→0 convergence and f_c→0 control.",
+    "Independent quadrature and unit/convention checks; distinguish photon-baryon c_gamma_b from EDE rest-frame cs.",
+    "Before CMB inference implement and validate perturbations, recombination and likelihoods; resolve source angular-ratio inconsistency."
+  ],
+  "falsification": "At fixed densities/loading/endpoint a positive added rho must not increase r_s. Failure rejects the implementation or the stated background test assumptions, not all possible EDE cosmologies. A lower background r_s alone cannot pass the source claim of jointly acceptable CMB/BAO/SN fits.",
+  "consumer": {
+    "repository": "sprajs/irreducible",
+    "revision": "ef4cb694addac1ca25c332253cff3fbecd0cbbce",
+    "dirty": false,
+    "capability_status": "No compiled EDE, NEDE or timescape model at inspected revision; all listed scientific capabilities unqualified.",
+    "recipe_runner_status": "proposed_not_implemented"
+  },
+  "blockers": [
+    "Current sound-horizon function fixes a radiation+matter+Lambda expansion and accepts no EDE density parameters.",
+    "No compiled EDE model, scalar/perturbation or recombination solver, CMB likelihood or recipe runner."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Source/design review only. No compiled model, admitted data, numerical run or paper reproduction."
+  }
+}

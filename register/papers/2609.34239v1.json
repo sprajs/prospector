@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2609.34239v1",
+  "arxiv_id": "2609.34239",
+  "version": 1,
+  "title": "Reconstructing the evolution of deceleration parameter with the Lagrange interpolation method",
+  "authors": [
+    "Kaituo Zhang",
+    "Bing Xu",
+    "Hongwei Yu",
+    "Puxun Wu"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2026-09-28T03:43:06Z",
+  "updated_utc": "2026-09-28T03:43:06Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2609.34239v1",
+    "html": "https://arxiv.org/html/2609.34239v1",
+    "pdf": "https://arxiv.org/pdf/2609.34239v1"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper redistribution terms not checked; public record contains links, descriptive metadata and original notes."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Agr-qc+OR+cat%3Ahep-th%29+AND+%28all%3A%22Hubble+tension%22+OR+all%3Atimescape+OR+ti%3Adeceleration%29&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+      "retrieved_utc": "2026-10-01T00:43:47.157910+00:00",
+      "sha256": "ae4d5b5beda6d1d785bbb5104a1f000f59d404fa96e6feb97dbd836418cb0c64",
+      "bytes": 26888
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/2609.34239v1",
+      "retrieved_utc": "2026-10-01T01:36:25.456322+00:00",
+      "sha256": "879dca4ee25ab96ddb0907f8a6e9b422a9508bac011b91a1b371fc1d77b4de5b",
+      "bytes": 555396
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/2609.34239v1",
+      "retrieved_utc": "2026-10-01T01:36:28.686961+00:00",
+      "sha256": "51acde38caa9d338b209fbd09fafdeb10c3d1d6312376ad6e9547992fd735216",
+      "bytes": 2587787
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/2609.34239v1",
+      "retrieved_utc": "2026-10-01T01:36:28.903805+00:00",
+      "sha256": "928d7cc5bdf84e2624631dc080475ec03c7a3daca410e23ab365510de0e48d7a",
+      "bytes": 132297,
+      "derived_from_sha256": "51acde38caa9d338b209fbd09fafdeb10c3d1d6312376ad6e9547992fd735216",
+      "tool": "pdftotext -layout"
+    },
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2609.34239v1%2C2605.26116v2%2C2602.01543v2&max_results=3",
+      "retrieved_utc": "2026-10-01T01:36:08.844544+00:00",
+      "sha256": "09d9ccf807be6d94de923e832dc14e5fca3e86b35dd5ada4c8aec00d573ae3e4",
+      "bytes": 7954
+    }
+  ],
+  "screen": {
+    "status": "reviewed",
+    "basis": "full_text",
+    "reason": "Full Luna reading and Sol source review complete. Useful conditional prospect; source/method issues and missing numerical or likelihood checks remain explicit in the review."
+  },
+  "extraction": {
+    "paper_id": "arxiv:2609.34239v1",
+    "requested_model": "gpt-6-luna",
+    "reading_level": "full_text",
+    "coverage": {
+      "sections_read": [
+        "Abstract",
+        "I Introduction",
+        "II Methodology (including interpolation, evidence and frequentist subsections)",
+        "III Datasets (SNe Ia, BAO, CMB distance prior, SH0ES H0)",
+        "IV Analyses and Results",
+        "V Conclusion and Discussion",
+        "Acknowledgements",
+        "References (bibliographic entries inspected; cited papers not read)"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "figure_check": "Rendered and visually inspected PDF pages 9, 11, and 12 (Figures 1, 3, 4, and 5); plotted curves and credible bands were checked against the text's descriptions. Figure 2 was inspected through extracted text/caption only. No appendices are present.",
+      "limitations": [
+        "Reading text was produced with pdftotext -layout; defining reconstruction equation and node/boundary conditions were cross-checked against pinned arXiv HTML. Figures 1, 3, 4, and 5 were visually inspected; Figure 2 was not. No source TeX, chains, likelihood implementation, or independent data analysis was checked. References were not independently read."
+      ]
+    },
+    "summary": "Zhang et al. fit a kinematic reconstruction of the deviation δq from flat ΛCDM, rather than infer a dark-energy microphysics model. Cubic and quartic Lagrange polynomials are evaluated in z, y=z/(1+z), and ζ=ln(1+z), with equally spaced nodes in the chosen coordinate and δq fixed to zero at zc=2.5; the expansion is assumed to revert to ΛCDM above that cutoff. H(z) follows by integrating q(z). CosmoMC/PolyChord fits use DESI DR2 BAO, Planck 2018 compressed distance priors, and one of Pantheon+, Union3, or DES-Dovekie, with parallel analyses including the SH0ES Gaussian H0 prior. Authors report low-z departures and an oscillatory fitted δq history. The “acceleration slowing” result is specifically a best-fit/reconstruction interpretation: only cubic-y and cubic-ζ with BC+Union3 show a low-z peak followed by decline, and this feature weakens or disappears with SH0ES. It is not a direct measurement of a future acceleration endpoint; q becoming less negative means weaker acceleration, while jerk is not analyzed here. Frequentist Δχ²/Wilks comparisons favor added freedom at >2σ for BC+SNe fits, but Bayes factors favor ΛCDM throughout, more strongly with SH0ES. These are conditional fits to shared observations, not new independent measurements.",
+    "ideas": [
+      {
+        "local_id": "kinematic-lagrange-q-deviation",
+        "title": "Lagrange interpolation of deceleration deviation from flat ΛCDM",
+        "claim_type": "author_method",
+        "description": "The authors parameterize q(z)=qΛCDM(z)+δq(z), then interpolate δq with cubic (n=3) or quartic (n=4) Lagrange polynomials over n+1 nodes. The coordinate u is z, y=z/(1+z), or ζ=ln(1+z); nodes are equally spaced in u between present and cutoff, with the endpoint coefficient δq(zc)=0 at zc=2.5. They assume the ΛCDM history for z>zc and derive E(z), then H(z), by integrating q. This coordinate and cutoff choice is part of the model, not data-driven evidence for high-redshift ΛCDM recovery.",
+        "locators": [
+          "PDF pp. 2–3, Eqs. (1)–(4); HTML #S2.SS1"
+        ],
+        "equations": [
+          {
+            "expression": "q(z)=(1+z)E(z)^{-1} dE/dz − 1 = qΛCDM(z)+δq(z)",
+            "locator": "PDF pp. 2–3, Eqs. (1) and (3); HTML #S2.SS1",
+            "confidence": "high",
+            "definitions": "q=−ä/(aH²); E=H/H0; fiducial is spatially flat ΛCDM with radiation neglected.",
+            "domain": "The interpolation applies for 0≤z≤zc=2.5; authors set δq=0 above zc."
+          },
+          {
+            "expression": "δq(u)=Σ(i=0…n) xi Π(j=0…n,j≠i) (u−uj)/(ui−uj), xi=δq(ui); n=3 or 4",
+            "locator": "PDF p. 3, Eq. (4); HTML #S2.SS1",
+            "confidence": "high",
+            "definitions": "u∈{z, z/(1+z), ln(1+z)}; n is polynomial order, giving n+1 nodes; u0 is z=0 and un corresponds to zc, with xn=0.",
+            "domain": "Interior nodes uniformly spaced in u; endpoint condition at zc=2.5. Alternative cutoffs 3 and 5 reportedly do not materially change conclusions."
+          }
+        ]
+      },
+      {
+        "local_id": "conditional-slowing-acceleration-fit",
+        "title": "Conditional low-redshift slowing feature in selected fitted histories",
+        "claim_type": "reported_fit",
+        "description": "Among tested dataset-coordinate-order combinations, only cubic-y and cubic-ζ with DESI BAO+CMB+Union3 show the authors' low-z maximum/decline interpretation (Fig. 5). This describes the reconstructed q history and its fitted derivatives/shape, not a raw observable or a measured end of cosmic acceleration. Adding SH0ES moves all cubic best-fit δq curves toward zero and removes the corresponding peak in Fig. 5; quartic cases need not share the feature. The paper does not analyze jerk. The result is therefore conditional on the data compilation, reconstruction coordinate/order, prior, and cutoff.",
+        "locators": [
+          "PDF pp. 7–8, Fig. 5 and accompanying discussion; PDF p. 11, conclusion; HTML #S4 and #S5"
+        ],
+        "equations": [
+          {
+            "expression": "Δq(z)=qrec(z)−qΛCDM,best-fit(z)",
+            "locator": "PDF pp. 6–8, Fig. 1–5 captions and discussion; HTML #S4",
+            "confidence": "high",
+            "definitions": "Difference between reconstructed q and ΛCDM evaluated at its best-fit matter density; plotted bands are reported 68% and 95% confidence levels.",
+            "domain": "Figures span 0≤z≤2.5; inference conditional on listed data combination and priors."
+          }
+        ]
+      },
+      {
+        "local_id": "bayes-frequentist-model-comparison",
+        "title": "Model preference depends on Bayesian versus frequentist comparison",
+        "claim_type": "reported_fit",
+        "description": "The authors compare minimum χ² improvement using Wilks' theorem (Δν=3 for cubic, 4 for quartic) with nested-sampling Bayesian evidence. BC+SNe Ia gives frequentist preference for interpolation fits, often above 2σ, while every tabulated log Bayes factor is negative and therefore favors ΛCDM; the penalty is stronger when SH0ES is included. This discrepancy is model-selection evidence under their likelihood and priors, not an independent detection of dynamical dark energy.",
+        "locators": [
+          "PDF pp. 3–4, Eqs. (5)–(8); PDF p. 10, Table IV and discussion; HTML #S2.SS2 and #S4"
+        ],
+        "equations": [
+          {
+            "expression": "ln Bij=ln E(d|Mi)−ln E(d|MΛCDM); Δχ²min=χ²min(Mi)−χ²min(MΛCDM), Δν=3 or 4",
+            "locator": "PDF pp. 3–4, Eqs. (6)–(8); PDF p. 10, Table IV",
+            "confidence": "high",
+            "definitions": "Mi is a Lagrange reconstruction; ΛCDM is reference. Negative ln Bij favors ΛCDM; negative Δχ² indicates improved best fit for reconstruction.",
+            "domain": "Their specified data combinations, uniform parameter priors, likelihoods, and Wilks approximation."
+          }
+        ]
+      }
+    ],
+    "quantities": [
+      {
+        "name": "DESI DR2 BAO redshift coverage",
+        "value": "0.295–2.330",
+        "unit": "redshift",
+        "uncertainty": null,
+        "conditioning": "Survey coverage as reported by the authors; BAO likelihood uses 13×13 covariance across DM/rd, DH/rd, DV/rd observables.",
+        "locator": "PDF p. 5, Section III.B"
+      },
+      {
+        "name": "Planck 2018 compressed distance priors",
+        "value": "lA=301.471 (+0.089/-0.090); R=1.7502±0.0046; Ωb,0 h²=0.02236±0.00015",
+        "unit": "dimensionless (Ωb,0 h² dimensionless)",
+        "uncertainty": "Quoted 1σ observational errors as printed; covariance used in fit.",
+        "conditioning": "Three-parameter CMB distance-prior compression, not full Planck likelihood.",
+        "locator": "PDF p. 6, Section III.C, Eq. (21)–(22)"
+      },
+      {
+        "name": "SH0ES Gaussian H0 prior",
+        "value": "73.04 ± 1.04",
+        "unit": "km s−1 Mpc−1",
+        "uncertainty": "Quoted 1σ; included only in parallel +H0 runs.",
+        "conditioning": "Riess et al. Cepheid-calibrated local determination, treated as Gaussian prior in Eq. (23).",
+        "locator": "PDF pp. 5–6, Section III.D, Eq. (23)"
+      },
+      {
+        "name": "BC+Union3 cubic-y reconstructed present deceleration q0 (without SH0ES prior)",
+        "value": "−0.09",
+        "unit": "dimensionless",
+        "uncertainty": "±0.20 at 68% CL, as Table II",
+        "conditioning": "Reported fitted/derived parameter under flat ΛCDM+δq background, DESI BAO+CMB+Union3, cubic interpolation in y=z/(1+z); not a direct measurement.",
+        "locator": "PDF p. 7, Table II"
+      }
+    ],
+    "data_dependencies": [
+      "DESI DR2 BAO distance ratios DM/rd, DH/rd, DV/rd over 0.295≤z≤2.330 with the authors' 13×13 covariance; same BAO observations are reused across all SN combinations.",
+      "Planck 2018 compressed CMB distance priors (R, lA, Ωb h²) and their quoted covariance, rather than the full CMB likelihood.",
+      "One SN compilation per fit: Pantheon+ (z>0.01 cut), Union3 (UNITY1.5 binned distances), or recalibrated DES-Dovekie; each has its published covariance/processing lineage.",
+      "Optional SH0ES H0=73.04±1.04 km s−1 Mpc−1 Gaussian prior; excludes no other datasets.",
+      "Likelihood is summed as χ²SN+χ²BAO+χ²CMB+χ²H0; nuisance SN magnitude is analytically marginalized. Fit parameters include H0, Ωm h², Ωb h² and n+1 node values xi with uniform stated priors."
+    ],
+    "caveats": [
+      "Authors assume exact ΛCDM recovery above chosen cutoff; this is a boundary/model assumption. Their alternative zc=3,5 check is reported but not independently reproduced.",
+      "Coordinate transforms, node placement, polynomial order, SN compilation, and SH0ES prior affect the fitted history. Redshift-space polynomial shape is not itself a physical dark-energy model.",
+      "“Acceleration slowing” refers to the selected reconstructed q(z) best-fit curve and interpretation; it is not an observation that acceleration has ended. q is not jerk, and jerk is not fitted here.",
+      "All reconstructed histories derive from shared BAO/CMB and one of three SN datasets; repeated combinations are not independent confirmations. CMB is a compressed distance prior.",
+      "Authors quote both a frequentist improvement and Bayesian preference for ΛCDM; neither substitutes for independent reproduction, current-data reanalysis, or physical model qualification.",
+      "The printed interpolation equation's summation/product indexing is compact; it was interpreted conventionally as n+1 nodes for an nth-order polynomial, consistent with prose and node definitions."
+    ],
+    "usefulness": {
+      "decision": "review",
+      "reason": "Useful as a source for a clearly specified, prior-sensitive kinematic reconstruction and a conditional claim about late-time q(z) shape. Sol review should verify the interpolation-to-H(z) integration, the plotted peak/decline interpretation, shared data lineage/covariance, and the evidence comparison before any graph acceptance or investigation design. It establishes neither a physical dark-energy mechanism nor a qualified acceleration endpoint."
+    },
+    "citation_leads": [
+      {
+        "arxiv_id": null,
+        "reason": "DESI Collaboration extended dark-energy analysis yielding q(z) from DESI DR2, CMB and SN compilations; cited as Ref. [27], journal reference Phys. Rev. D 112, 083511 (2025)."
+      },
+      {
+        "arxiv_id": null,
+        "reason": "Wang, Yu and Wu study of late-time acceleration and jerk in flat w0waCDM with DESI DR2, cited as Ref. [31], Eur. Phys. J. C 85, 853 (2025)."
+      },
+      {
+        "arxiv_id": null,
+        "reason": "DES-Dovekie recalibration and cosmology reanalysis, cited as Ref. [49], MNRAS 548 (2026), stag632."
+      },
+      {
+        "arxiv_id": "2603.05472",
+        "reason": "Bayesian reanalysis of DESI DR2 and model evidence, cited as Ref. [66]; contextual support for the reported Bayes/frequentist discrepancy."
+      }
+    ],
+    "agent_id": "/root/read_deceleration",
+    "actual_model_identity": null,
+    "source_hashes": {
+      "html": "879dca4ee25ab96ddb0907f8a6e9b422a9508bac011b91a1b371fc1d77b4de5b",
+      "pdf": "51acde38caa9d338b209fbd09fafdeb10c3d1d6312376ad6e9547992fd735216",
+      "extracted_text": "928d7cc5bdf84e2624631dc080475ec03c7a3daca410e23ab365510de0e48d7a"
+    },
+    "coverage_amendments": [
+      {
+        "utc": "2026-10-01T01:59:01Z",
+        "requested_model": "gpt-6-luna",
+        "agent_id": "/root/read_deceleration",
+        "actual_model_identity": null,
+        "reason": "The original packet correctly listed Figures 1, 3, 4, and 5 as visually inspected, but its limitations sentence incorrectly said Figure 4 was not visually inspected. Figure 4 is on PDF page 12 and was visually inspected; Figure 2 is the figure that was not visually inspected.",
+        "new_visual_check": [
+          {
+            "pdf_page": 12,
+            "figures": [
+              4,
+              5
+            ],
+            "result": "Reopened and visually inspected the original rendered PDF page. Figure 4 is the quartic Δq reconstruction with SH0ES prior; Figure 5 shows cubic q(z) for BC+Union3 with and without that prior."
+          }
+        ],
+        "previous_coverage": {
+          "figure_check": "Rendered and visually inspected PDF pages 9, 11, and 12 (Figures 1, 3, 4, and 5); the plotted curves/credible bands are consistent with the text's descriptions. Other figures were inspected through PDF text/captions only. No appendices are present.",
+          "limitations": [
+            "Reading text was produced with pdftotext -layout; equation transcription was cross-checked against the pinned arXiv HTML for the defining reconstruction and its node/boundary conditions. Figures 2 and 4 were not visually inspected. No source TeX, chains, likelihood implementation, or independent data analysis was checked. References were not independently read."
+          ]
+        },
+        "amendment_packet_sha256": "d24c451aa2efb48a9b66e4c6e8cde28e327b2df132d8d655822281f65e7d99c8"
+      }
+    ],
+    "original_packet_sha256": "1661edb081cb03ab230fbe7f330ba93e5f4cd6b878c9fadc4ee2f2e238490166"
+  },
+  "review_id": "2026-10-01-late-expansion-science",
+  "idea_ids": [
+    "lagrange-deceleration-deviation-reconstruction",
+    "conditional-q-upturn-not-acceleration-endpoint"
+  ]
+}

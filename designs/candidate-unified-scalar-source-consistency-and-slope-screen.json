@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "design_id": "candidate-unified-scalar-source-consistency-and-slope-screen",
+  "title": "Scalar slope and source-consistency screen",
+  "paper_ids": [
+    "arxiv:2605.26116v2"
+  ],
+  "idea_ids": [
+    "unified-scalar-steep-steeper-shallow",
+    "positive-exponential-slope-variance-obstruction",
+    "constant-coupling-scalar-residual-floor"
+  ],
+  "review_id": "2026-10-01-late-expansion-science",
+  "readiness": "blocked",
+  "faithful_claim": "Positive exponential sums cannot realize the steep-steeper-shallow slope sequence; shoulder potentials can supply a background depletion branch.",
+  "equations": [
+    {
+      "expression": "lambda=-V_phi/V; d lambda/d phi=-Var_w(lambda_i)",
+      "locator": "Eqs.(5.12)-(5.13)",
+      "paper_id": "arxiv:2605.26116v2",
+      "definitions": "phi is the field in reduced-Planck units; lambda=-V_phi/V, x=phi_dot/(sqrt(6)H), prime is d/d ln a. V_i>0 and w_i=V_i exp(-lambda_i phi)/V. Gamma=V V_phiphi/V_phi^2. n,Delta,phi_star define the phenomenological shoulder.",
+      "domain": "Canonical positive-potential scalar, monotonic increasing phi and specified constant-slope regimes; no perturbation or likelihood claim.",
+      "status": "reviewed_transcription"
+    },
+    {
+      "expression": "Gamma-1=-(lambda-lambda_early)(lambda-lambda_late)/lambda^2; lambda_prime=+sqrt(6)x(lambda-lambda_early)(lambda-lambda_late)",
+      "locator": "reviewer repair of Eqs.(4.13),(4.24) using Eq.(5.13)",
+      "paper_id": "arxiv:2605.26116v2",
+      "definitions": "phi is the field in reduced-Planck units; lambda=-V_phi/V, x=phi_dot/(sqrt(6)H), prime is d/d ln a. V_i>0 and w_i=V_i exp(-lambda_i phi)/V. Gamma=V V_phiphi/V_phi^2. n,Delta,phi_star define the phenomenological shoulder.",
+      "domain": "Canonical positive-potential scalar, monotonic increasing phi and specified constant-slope regimes; no perturbation or likelihood claim.",
+      "status": "reviewer_derived"
+    },
+    {
+      "expression": "V=V_late exp(-lambda_late phi)+V_early exp(-lambda_early phi)/[1+exp((phi-phi_star)/Delta)]^n; lambda_mid=lambda_early+n/Delta",
+      "locator": "Eqs.(5.14),(5.17)",
+      "paper_id": "arxiv:2605.26116v2",
+      "definitions": "phi is the field in reduced-Planck units; lambda=-V_phi/V, x=phi_dot/(sqrt(6)H), prime is d/d ln a. V_i>0 and w_i=V_i exp(-lambda_i phi)/V. Gamma=V V_phiphi/V_phi^2. n,Delta,phi_star define the phenomenological shoulder.",
+      "domain": "Canonical positive-potential scalar, monotonic increasing phi and specified constant-slope regimes; no perturbation or likelihood claim.",
+      "status": "reviewed_transcription"
+    }
+  ],
+  "assumptions": [
+    "One canonical positive-potential scalar provides early and late energy; smooth rolling depletion is approximated by successive constant-slope regimes.",
+    "EDE normalization fixes illustrative lambda_early^2=40; residual fraction target is order 1%; lambda_late^2=0.25 is a benchmark, not a fit.",
+    "Source sign/convention corrections must precede implementation; background trajectory does not close the observational/perturbation test.",
+    "Finite sum V=sum V_i exp(-lambda_i phi) has V_i>0 and constant slopes; phi is expressed in reduced-Planck units.",
+    "The history under consideration rolls monotonically toward increasing phi. Negative coefficients, direction changes and other potentials are excluded from this identity.",
+    "Baryon-free matter-scaling fixed-point F, constant beta, physical nonnegative x/y/energy fractions and the source KG/continuity convention.",
+    "3/(2lambda^2) and 3/8 are large-lambda approximations; baryon-inclusive generality remains unresolved because of Appendix signs/nonuniformity."
+  ],
+  "minimal_test": {
+    "question": "First settle the coupling/effective-potential and double-exponential sign conventions. Then, with declared reduced-Planck field coordinate and positive amplitudes, compare direct logarithmic-slope differentiation to the weighted-variance identity and the shoulder asymptotes. Only after source reconciliation consider a separate background trajectory test with common inputs and explicit baryons.",
+    "observables": [
+      "lambda(phi) and its derivative",
+      "source continuity and sign consistency",
+      "shoulder asymptotes"
+    ],
+    "parameter_choices": null,
+    "scope": "Conceptual source/method test only. Values, implementation, production tolerances and accepted consumer inputs remain unspecified."
+  },
+  "simplifications": [
+    "No data likelihood, perturbation viability, UV construction or Hubble-tension resolution.",
+    "A slope screen alone does not establish the timing, initial-condition robustness or five-stage trajectory."
+  ],
+  "data_dependencies": [
+    "Analytic local pinned source and its reported illustrative background benchmark only; no measurement input requested."
+  ],
+  "unknowns": [
+    "Coupling action/sign convention and effective potential repair acceptance.",
+    "Author CLASS implementation, input values/initial amplitudes and numerical provenance.",
+    "Baryon stability and validity of local expansion near the existence boundary.",
+    "Consumer current capabilities have not been inspected."
+  ],
+  "verification_gates": [
+    "Reconcile source conventions and maintain the original-versus-repaired equation distinction.",
+    "Inspect current compiled consumer capabilities and freeze inputs/reference cases before constructing any executable request.",
+    "Keep analytic/numerical verification, observation lineage, inference validity and scientific interpretation separate."
+  ],
+  "falsification": "An increasing effective slope for a positive finite exponential sum at increasing phi would contradict the checked identity; first distinguish a transcription/implementation error from changed assumptions.",
+  "consumer": {
+    "repository": "sprajs/irreducible",
+    "revision": null,
+    "dirty": null,
+    "capability_status": "Not inspected for this concept; no executable request proposed.",
+    "recipe_runner_status": "Not inspected for this concept."
+  },
+  "blockers": [
+    "Coupling action/sign convention and effective potential repair acceptance.",
+    "Author CLASS implementation, input values/initial amplitudes and numerical provenance.",
+    "Baryon stability and validity of local expansion near the existence boundary.",
+    "Consumer current capabilities have not been inspected."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Source review and conceptual handoff only; no computation, refit or current-data qualification."
+  }
+}

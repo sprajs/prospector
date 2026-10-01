@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2609.36853v1",
+  "arxiv_id": "2609.36853",
+  "version": 1,
+  "title": "Holographic dark energy in Einstein-Cartan spin cosmology",
+  "authors": [
+    "Yongjun Yun",
+    "Jungjai Lee"
+  ],
+  "categories": [
+    "gr-qc"
+  ],
+  "published_utc": "2026-09-29T07:00:48Z",
+  "updated_utc": "2026-09-29T07:00:48Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2609.36853v1",
+    "html": "https://arxiv.org/html/2609.36853v1",
+    "pdf": "https://arxiv.org/pdf/2609.36853v1"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "No per-paper redistribution grant verified; publish metadata, links and original notes only."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Agr-qc%29+AND+%28ti%3A%22dark+energy%22+OR+ti%3Aquintessence%29&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+      "retrieved_utc": "2026-10-01T01:36:31.860062+00:00",
+      "sha256": "5a85b61b80a2c2a80ade9ac25275d960656b5cd99b98f74461057475f2766fae",
+      "bytes": 25287
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Retain torsion/holographic dark-energy acceleration and distance-duality proposal; low-redshift domain needs checking."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

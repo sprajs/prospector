@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2112.00770v2",
+  "arxiv_id": "2112.00770",
+  "version": 2,
+  "title": "Hot New Early Dark Energy",
+  "authors": [
+    "Florian Niedermann",
+    "Martin S. Sloth"
+  ],
+  "categories": [
+    "hep-ph",
+    "astro-ph.CO",
+    "hep-th"
+  ],
+  "published_utc": "2021-12-01T19:00:07Z",
+  "updated_utc": "2021-12-06T17:09:20Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2112.00770v2",
+    "html": "https://arxiv.org/html/2112.00770v2",
+    "pdf": "https://arxiv.org/pdf/2112.00770v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper redistribution terms not checked; public record contains links, descriptive metadata and original notes."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22early+dark+energy%22&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+      "retrieved_utc": "2026-10-01T00:43:43.823637+00:00",
+      "sha256": "11cf37f0711f131eecd20c6e19f32ab0b569c7d9b40169581d63a8f428f62251",
+      "bytes": 23175
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Retain thermal NEDE trigger and dark-radiation embeddings; thermal and cold triggers need a sourced distinction."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

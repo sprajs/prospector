@@ -1,0 +1,22 @@
+{
+  "id": "ede-oscillating-scalar",
+  "title": "Oscillating scalar EDE",
+  "family": "EDE",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:1811.04083v2",
+      "locator": "potential, PDF p.1; Eqs.(1)-(2), PDF p.2"
+    }
+  ],
+  "assumptions": [
+    "Hubble-frozen initial scalar; potential proportional to (1-cos(phi/f))^n.",
+    "Effective-fluid averaging, initial angle and potential-dependent sound speed."
+  ],
+  "predictions": [
+    "Transient density; late averaged w=(n-1)/(n+1).",
+    "CMB and matter-spectrum changes from density and perturbations."
+  ],
+  "schema_version": 1,
+  "review_id": "2026-10-01-initial-science",
+  "status": "reviewed_conditional"
+}

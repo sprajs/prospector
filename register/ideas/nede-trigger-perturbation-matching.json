@@ -1,0 +1,22 @@
+{
+  "id": "nede-trigger-perturbation-matching",
+  "title": "Trigger surface and NEDE perturbation matching",
+  "family": "NEDE",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:1910.10739v5",
+      "locator": "Eqs.(8)-(14), PDF p.4"
+    }
+  ],
+  "assumptions": [
+    "Transition at constant trigger field.",
+    "Synchronous gauge; cosmic-time convention; cs²=w* closes fluid equations."
+  ],
+  "predictions": [
+    "Trigger fluctuations seed post-transition density and velocity.",
+    "CMB/LSS signatures differ from a smooth EDE component with generic perturbations."
+  ],
+  "schema_version": 1,
+  "review_id": "2026-10-01-initial-science",
+  "status": "reviewed_conditional"
+}

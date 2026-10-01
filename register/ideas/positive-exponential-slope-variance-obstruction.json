@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "positive-exponential-slope-variance-obstruction",
+  "title": "Positive exponential sums cannot produce steepening followed by flattening along monotonic rolling",
+  "family": "scalar_unification",
+  "status": "reviewed_conditional",
+  "review_id": "2026-10-01-late-expansion-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2605.26116v2",
+      "locator": "Sec.5.1 Eqs.(5.11)-(5.13); compare Eqs.(4.13),(4.24)"
+    }
+  ],
+  "assumptions": [
+    "Finite sum V=sum V_i exp(-lambda_i phi) has V_i>0 and constant slopes; phi is expressed in reduced-Planck units.",
+    "The history under consideration rolls monotonically toward increasing phi. Negative coefficients, direction changes and other potentials are excluded from this identity."
+  ],
+  "predictions": [
+    "lambda is a convex slope average; d lambda/d phi=-Var_w(lambda_i)<=0.",
+    "A positive exponential sum cannot encounter lambda_early<lambda_mid then lambda_late along increasing phi; a separate localized feature or excluded dynamics is needed.",
+    "This is an algebraic obstruction in a restricted domain, not exclusion of all early/late unified cosmologies."
+  ]
+}
