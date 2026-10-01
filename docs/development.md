@@ -2,7 +2,7 @@
 
 Read [contributing](../CONTRIBUTING.md), [AGENTS.md](../AGENTS.md) and the current
 README. This follows Irreducible's coherent branches, checkpoint backup,
-independent review and verified cleanup. Prospector's tests should reflect its
+deliberate review and verified cleanup. Prospector's tests should reflect its
 literature/provenance responsibilities rather than Irreducible's native CI matrix.
 
 ## Validate the actual change
@@ -29,12 +29,15 @@ evidence and limitations; drafts are useful for dependencies but not required fo
 backup. Attach created PRs to the Codex chat.
 
 Explain dependencies on record formats or sibling repositories. Review and check
-the latest integrated candidate after dependencies change. Obtain independent
-review, resolve conversations and inspect all applicable CI for the current
-head/base before an authorized merge. Use merge commits when checkpoint ancestry
-matters; do not assume GitHub settings enforce a policy. Direct `main` pushes and
-force pushes require a specific request. Branch/PR publication does not itself
-authorize external messages or a merge.
+the latest integrated candidate after dependencies change. The owner gives
+standing authorization for agents to review their own PRs in a separate deliberate
+pass and merge ready changes without asking again. Inspect the complete final
+diff, fix actionable findings, resolve conversations and require applicable green
+CI on the latest integrated head and up-to-date base. No separate human reviewer
+is required. Record the review conclusion and actual checks; scientific evidence
+remains a separate gate. Verify the exact head and use a merge commit directly
+once ready; GitHub's auto-merge setting need not be enabled. Direct `main` pushes,
+force pushes and external messages still require specific authorization.
 
 ## Verify a merge and preserve work
 

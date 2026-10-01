@@ -20,8 +20,14 @@ and scientific-review instructions when those are present in this checkout.
 For requested repository changes, work on a `codex/` branch, commit coherent
 checkpoints, push them promptly and open a reviewable PR. Follow
 [CONTRIBUTING.md](CONTRIBUTING.md) and [development](docs/development.md).
-Independent review and applicable green CI on the latest head/base precede an
-authorized merge. Direct pushes to `main` and force pushes require a specific
-request. A literature batch does not authorize numerical experiments, scheduling
-or external messages. Preserve dirty/active worktrees and extra commits during
-verified post-merge cleanup; never force-delete branches.
+The owner gives standing authorization across Irreducible, Reproducible and
+Prospector to create PRs, review our own changes in a separate deliberate pass,
+and merge ready PRs without asking again. Inspect the complete final diff, fix
+actionable findings, resolve conversations and require applicable green CI on
+the latest integrated head and up-to-date base. Verify the exact head and use a
+merge commit. A separate human reviewer is not required; scientific independence
+and qualification still need their own evidence. Direct `main` pushes, force
+pushes and external messages still require specific authorization. A literature
+batch does not authorize numerical experiments or scheduling. Preserve dirty or
+active worktrees and extra commits during verified post-merge cleanup; never
+force-delete branches or bypass a failed check.
