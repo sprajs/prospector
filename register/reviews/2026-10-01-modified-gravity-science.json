@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-01-modified-gravity-science",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "high",
+  "agent_id": "/root/review_modified_gravity",
+  "actual_model_identity": null,
+  "actual_model_identity_note": "Backend identity is not exposed; exact model/reasoning were requested by the coordinator. No invented backend confirmation.",
+  "reviewed_utc": "2026-10-01T17:17:06.601166+00:00",
+  "reviewed_papers": [
+    "arxiv:2609.37437v1",
+    "arxiv:2609.36853v1"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:2609.37437v1",
+      "decision": "useful_conditional_source_audit; physical_benchmark_or_signal_not_qualified",
+      "source_hashes": {
+        "html": "62b0a576adfec55caf1e6344d6c4eae4a0a099c16a4111f2babb5d952b973883",
+        "pdf": "976dfb6140190adcff7d5a75ec081073c3fa530456cc3a80a90743e1901e5d0f",
+        "extracted_text": "15856d6e6482a63df0146b325347cc35d88b1afa791b5a9b618b2d8e69ca11f3"
+      },
+      "source_roles": {
+        "html": "62b0a576adfec55caf1e6344d6c4eae4a0a099c16a4111f2babb5d952b973883",
+        "pdf": "976dfb6140190adcff7d5a75ec081073c3fa530456cc3a80a90743e1901e5d0f",
+        "extracted_text": "15856d6e6482a63df0146b325347cc35d88b1afa791b5a9b618b2d8e69ca11f3"
+      },
+      "source_hash_verification": "All HTML/PDF/derived-text receipt hashes recomputed before review and matched.",
+      "extraction_sha256": "d9f865c3d7e46bbddf9264f414f48f56447ce6d713e371135a2a4d4ad3576301",
+      "extraction_packet_path": ".work/2026-10-01-crawl/read-gauss-bonnet/luna.json",
+      "source_identity_verified": true,
+      "source_identity_note": "Pinned v1 stamp, title/authors and body checked in original PDF/HTML; metadata identity agrees.",
+      "licence_status": "CC BY 4.0",
+      "licence_status_reason": "GB pinned HTML licence display matches reader; no licence inferred for EC. Raw sources remain local ignored.",
+      "coverage": {
+        "main_text": "Secs.I-VI and Appendix A reviewed from local derived text and original HTML math.",
+        "checked_equations": "GB background/action, local oscillator, autonomous equations and invariant constraints, tensor/scalar speed expressions, Table I/Appendix A consistency. EC Cartan/Frenkel contraction, effective Friedmann conservation, HDE closure/fit/domain, photon prescription and formal eta integral.",
+        "visual_pdf_pages": [
+          10,
+          13
+        ],
+        "visual_figures": [
+          "Fig.5 and Fig.6 on p.13, including legends, future tensor peaks and minimum-centered initial caption."
+        ],
+        "captions_only_figures": [
+          "GB Figs.1-4 not separately rendered by Sol; original HTML/math and text/captions checked, with Luna visual coverage preserved."
+        ],
+        "unread_material": [
+          "Cited papers/GW observations/data vectors and author codes not independently opened.",
+          "Full bibliography used for bounded citation identity checking only, not a cited-source review."
+        ]
+      },
+      "accepted_idea_ids": [
+        "localized-gauss-bonnet-oscillatory-dark-energy",
+        "gauss-bonnet-minimum-and-stability-consistency"
+      ],
+      "correction_ids": [
+        "gb-continuity-source-typo",
+        "gb-friedmann-normalization",
+        "gb-tensor-speed-source-and-repair",
+        "gb-initial-values-not-potential-minimum",
+        "gb-fixed-model-submanifold",
+        "gb-equilibrium-manifold-inconsistency",
+        "gb-stability-speed-vs-ghost-vs-gw",
+        "gb-scalar-kinetic-domain",
+        "gb-oscillator-and-effective-w-domain"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.36853v1",
+      "decision": "useful_conditional_source_audit; physical_benchmark_or_signal_not_qualified",
+      "source_hashes": {
+        "html": "ba0c79c9a1404936a9b3b4524cf3134e7352a21c53d5e58c6cf58865d1eebcd5",
+        "pdf": "1032dcdfbb2da6fe08e238601939d1e34e5441e06fb9097d65c8de6bcf29009a",
+        "extracted_text": "0af83cbda9df8797d4e2d47416ea26370ae80339e6538e45454e9ba934624f99"
+      },
+      "source_roles": {
+        "html": "ba0c79c9a1404936a9b3b4524cf3134e7352a21c53d5e58c6cf58865d1eebcd5",
+        "pdf": "1032dcdfbb2da6fe08e238601939d1e34e5441e06fb9097d65c8de6bcf29009a",
+        "extracted_text": "0af83cbda9df8797d4e2d47416ea26370ae80339e6538e45454e9ba934624f99"
+      },
+      "source_hash_verification": "All HTML/PDF/derived-text receipt hashes recomputed before review and matched.",
+      "extraction_sha256": "38ce4f8a3c197d3e86725a9e7f6e3fff9b75fb9c824ac6c402939daa10028f75",
+      "extraction_packet_path": ".work/2026-10-01-crawl/read-torsion/luna.json",
+      "source_identity_verified": true,
+      "source_identity_note": "Pinned v1 stamp, title/authors and body checked in original PDF/HTML; metadata identity agrees.",
+      "licence_status": null,
+      "licence_status_reason": "GB pinned HTML licence display matches reader; no licence inferred for EC. Raw sources remain local ignored.",
+      "coverage": {
+        "main_text": "Secs.I-VI and Appendices A-B reviewed from local derived text and original HTML math.",
+        "checked_equations": "GB background/action, local oscillator, autonomous equations and invariant constraints, tensor/scalar speed expressions, Table I/Appendix A consistency. EC Cartan/Frenkel contraction, effective Friedmann conservation, HDE closure/fit/domain, photon prescription and formal eta integral.",
+        "visual_pdf_pages": [
+          2,
+          5,
+          6
+        ],
+        "visual_figures": [
+          "Fig.2 reciprocal bundles on p.5; Fig.3 absolute eta curve and low-z band on p.6."
+        ],
+        "captions_only_figures": [
+          "EC Fig.1 conceptual hierarchy schematic not separately rendered by Sol."
+        ],
+        "unread_material": [
+          "Cited papers/GW observations/data vectors and author codes not independently opened.",
+          "Full bibliography used for bounded citation identity checking only, not a cited-source review."
+        ]
+      },
+      "accepted_idea_ids": [
+        "hubble-cutoff-negative-spin-background",
+        "frenkel-trace-and-maxwell-duality-closure"
+      ],
+      "correction_ids": [
+        "ec-frenkel-trace-conflict",
+        "ec-photon-conservation-prescription",
+        "ec-background-conservation-and-domains",
+        "ec-eta-branches-and-order",
+        "ec-fit-lineage-and-one-statistic"
+      ]
+    }
+  ],
+  "corrections": [
+    {
+      "id": "gb-continuity-source-typo",
+      "paper_id": "arxiv:2609.37437v1",
+      "kind": "printed_source_error",
+      "locator": "Sec.II Eqs.(2.10),(2.13)-(2.16), PDF p.4; HTML #S2.E10,#S2.E13-#S2.E16",
+      "detail": "PDF and HTML both print H²+dotH² in Eq.(2.14). Multiplying the KG equation by phidot gives −fphi phidot G=−24H² fdot(H²+dotH), which agrees with Eq.(2.15). H²+dotH² adds quantities with different natural-unit dimensions. Replace only in an explicitly labelled reviewer repair; preserve original extraction.",
+      "display_summary": "PDF and HTML both print H²+dotH² in Eq.(2.14). Multiplying the KG equation by phidot gives −fphi phidot G=−24H² fdot(H²+dotH), which agrees with Eq.(2.15). H²+dotH² adds quantities with different natural-unit dimensions. Replace only in an explicitly labelled reviewer repair; preserve original extraction."
+    },
+    {
+      "id": "gb-friedmann-normalization",
+      "paper_id": "arxiv:2609.37437v1",
+      "kind": "printed_source_normalization_gap",
+      "locator": "Eqs.(2.1),(2.4),(2.9),(2.17),(4.1)-(4.2), PDF pp.3-4,6",
+      "detail": "With kappa inverse reduced Planck mass, [phi]=M, [V]=M^4, [f]=1. Eq.(2.9) is missing the kappa² multiplying the complete energy-density sum unless an unstated Planck normalization is imposed. Eq.(2.17) and dimensionless definitions restore kappa², while Sec.V explicitly takes kappa²=1. The faithful general-units form is 3H²=kappa²(rho_phi+rho_m+rho_r+24H³ fdot).",
+      "display_summary": "With kappa inverse reduced Planck mass, [phi]=M, [V]=M^4, [f]=1. Eq.(2.9) is missing the kappa² multiplying the complete energy-density sum unless an unstated Planck normalization is imposed. Eq.(2.17) and dimensionless definitions restore kappa², while Sec.V explicitly takes kappa²=1. The faithful general-units form is 3H²=kappa²(rho_phi+rho_m+rho_r+24H³ fdot)."
+    },
+    {
+      "id": "gb-tensor-speed-source-and-repair",
+      "paper_id": "arxiv:2609.37437v1",
+      "kind": "printed_source_error_with_reviewer_consistency_relation",
+      "locator": "Eqs.(5.2),(5.5)-(5.6), PDF p.10; HTML #S5.EGx9,#S5.EGx10,#S5.E57",
+      "detail": "Eq.(5.2) has dotH fphi phidot in the denominator, instead of H fdot, and its numerator is not the chain rule fddot=fphiphi phidot²+fphi phiddot. Its terms are dimensionally inconsistent before choosing units. The tensor kinetic/gradient action-consistency relation for the sign −fG is cT²=(1−8kappa² fddot)/(1−8kappa² H fdot). Substitution of the KG equation and Eq.(4.1) gives precisely the printed Eq.(5.5). Hence Eq.(5.2) is malformed, but this alone does not establish that plots computed from Eq.(5.5) are wrong. No author code or independent quadratic-action reconstruction was examined.",
+      "display_summary": "Eq.(5.2) has dotH fphi phidot in the denominator, instead of H fdot, and its numerator is not the chain rule fddot=fphiphi phidot²+fphi phiddot. Its terms are dimensionally inconsistent before choosing units. The tensor kinetic/gradient action-consistency relation for the sign −fG is cT²=(1−8kappa² fddot)/(1−8kappa² H fdot). Substitution of the KG equation and Eq.(4.1) gives precisely the printed Eq.(5.5). Hence Eq.(5.2) is malformed, but this alone does not establish that plots computed from Eq.(5.5) are wrong. No author code or independent quadratic-action reconstruction was examined."
+    },
+    {
+      "id": "gb-initial-values-not-potential-minimum",
+      "paper_id": "arxiv:2609.37437v1",
+      "kind": "source_benchmark_incompatibility_reviewer_derived",
+      "locator": "Eqs.(3.4),(4.1); Fig.6 caption PDF p.13",
+      "detail": "At z0=zc, the source minimum relation requires A0/y0=lambda zc/2. Fig.6(i) has z0=zc=1.2, lambda=.31 and A0/y0=10^1.16≈14.45, whereas the required ratio is .186. Fig.6(ii) has ratio 10^1.15≈14.13, whereas lambda=.006 requires .0036. No normalization/H0 choice repairs these dimensionless ratios. Thus the examples do not simultaneously realize the displayed hybrid potential and a Gaussian centered on its potential minimum. A Gaussian with an independent center would be a changed branch, not a silent repair.",
+      "display_summary": "At z0=zc, the source minimum relation requires A0/y0=lambda zc/2. Fig.6(i) has z0=zc=1.2, lambda=.31 and A0/y0=10^1.16≈14.45, whereas the required ratio is .186. Fig.6(ii) has ratio 10^1.15≈14.13, whereas lambda=.006 requires .0036. No normalization/H0 choice repairs these dimensionless ratios. Thus the examples do not simultaneously realize the displayed hybrid potential and a Gaussian centered on its potential minimum. A Gaussian with an independent center would be a changed branch, not a silent repair."
+    },
+    {
+      "id": "gb-fixed-model-submanifold",
+      "paper_id": "arxiv:2609.37437v1",
+      "kind": "reviewer_derived_scope_correction",
+      "locator": "Eqs.(3.1),(3.12),(4.1),(4.6)-(4.11), Table I",
+      "detail": "For one fixed V0,m_phi,xi0,lambda,sigma,zc, A/y=[m_phi²/(2kappa²V0)]z²e^(lambda z) and uy=(8kappa^4 xi0V0/3)e^(−lambda z−(z−zc)²/(2sigma²)). These are preserved by the autonomous flow where variables are regular. Treating y,A,u,z as freely adjustable describes a larger extended space; physical equilibria/stability need restriction to this fixed-model submanifold and the minimum condition. P2 with A=0 and arbitrary finite nonzero z is not a finite-H hybrid-potential solution for nonzero m_phi. No global physical stability conclusion is accepted.",
+      "display_summary": "For one fixed V0,m_phi,xi0,lambda,sigma,zc, A/y=[m_phi²/(2kappa²V0)]z²e^(lambda z) and uy=(8kappa^4 xi0V0/3)e^(−lambda z−(z−zc)²/(2sigma²)). These are preserved by the autonomous flow where variables are regular. Treating y,A,u,z as freely adjustable describes a larger extended space; physical equilibria/stability need restriction to this fixed-model submanifold and the minimum condition. P2 with A=0 and arbitrary finite nonzero z is not a finite-H hybrid-potential solution for nonzero m_phi. No global physical stability conclusion is accepted."
+    },
+    {
+      "id": "gb-equilibrium-manifold-inconsistency",
+      "paper_id": "arxiv:2609.37437v1",
+      "kind": "printed_source_internal_conflict",
+      "locator": "Table I, Sec.IV.A and Fig.2 PDF pp.7-8; Appendix A Eqs.(A22)-(A29) PDF p.15",
+      "detail": "P1 is labelled hyperbolic in Table I/Fig.2, whereas Appendix A has two tangent zero eigenvalues along its two-parameter equilibrium family. A differentiable equilibrium family necessarily has these neutral directions. Substituting the printed P1/P2 coordinates into Eq.(4.4) gives dotH/H²=0 where denominators are regular, hence exactly w_eff=−1. Varying equilibrium-w contours in Fig.2 are therefore not reconciled with the printed coordinates. Appendix neutral-manifold argument is conditional on transverse eigenvalues, not attraction to a unique point or a global proof.",
+      "display_summary": "P1 is labelled hyperbolic in Table I/Fig.2, whereas Appendix A has two tangent zero eigenvalues along its two-parameter equilibrium family. A differentiable equilibrium family necessarily has these neutral directions. Substituting the printed P1/P2 coordinates into Eq.(4.4) gives dotH/H²=0 where denominators are regular, hence exactly w_eff=−1. Varying equilibrium-w contours in Fig.2 are therefore not reconciled with the printed coordinates. Appendix neutral-manifold argument is conditional on transverse eigenvalues, not attraction to a unique point or a global proof."
+    },
+    {
+      "id": "gb-stability-speed-vs-ghost-vs-gw",
+      "paper_id": "arxiv:2609.37437v1",
+      "kind": "review_interpretation_and_visible_extraction_correction",
+      "locator": "Sec.V Eqs.(5.3)-(5.6), Fig.6 PDF pp.10,12-14",
+      "detail": "Nonnegative c² addresses gradient sign, c²<=1 is an extra subluminality criterion, and neither replaces kinetic-sign checks. Fig.6(ii) visibly has a dashed tensor-speed peak above 2 near N≈1 despite positive minima; it fails the source <=1 condition. N=ln a with a0=1 puts that peak in the future; it alone cannot be called a GW170817 violation. A relevant low-z propagation interval must meet a quantified cT bound, not merely positive QT. The cited |cT²−1|<10^−16 is an author-cited bound; external GW data/source papers were not rechecked. Correct Luna wording for case (i): source says lower amplitude approaches zero, and the rendered plot is insufficient to prove a crossing below zero.",
+      "display_summary": "Nonnegative c² addresses gradient sign, c²<=1 is an extra subluminality criterion, and neither replaces kinetic-sign checks. Fig.6(ii) visibly has a dashed tensor-speed peak above 2 near N≈1 despite positive minima; it fails the source <=1 condition. N=ln a with a0=1 puts that peak in the future; it alone cannot be called a GW170817 violation. A relevant low-z propagation interval must meet a quantified cT bound, not merely positive QT. The cited |cT²−1|<10^−16 is an author-cited bound; external GW data/source papers were not rechecked. Correct Luna wording for case (i): source says lower amplitude approaches zero, and the rendered plot is insufficient to prove a crossing below zero."
+    },
+    {
+      "id": "gb-scalar-kinetic-domain",
+      "paper_id": "arxiv:2609.37437v1",
+      "kind": "unresolved_quadratic_action_gate",
+      "locator": "Eq.(5.3),(5.6), Sec.V.1 and VI",
+      "detail": "The source explicitly names QT but not a reduced scalar kinetic coefficient or all constraint regularity conditions. In its canonical one-scalar formula the combination K=(1−8Hfdot)phidot²+96H^4 fdot² is nonnegative if QT>0 and strictly positive away from simultaneous phidot=fdot=0; this supports a conditional kinetic sign, not a claim that a scalar ghost exists. A full reduced scalar kinetic matrix, regular constraint denominator, vanishing-K/gauge-degenerate endpoints and retained matter/radiation modes still need checking. Positive plotted cs² and small u alone do not complete that check.",
+      "display_summary": "The source explicitly names QT but not a reduced scalar kinetic coefficient or all constraint regularity conditions. In its canonical one-scalar formula the combination K=(1−8Hfdot)phidot²+96H^4 fdot² is nonnegative if QT>0 and strictly positive away from simultaneous phidot=fdot=0; this supports a conditional kinetic sign, not a claim that a scalar ghost exists. A full reduced scalar kinetic matrix, regular constraint denominator, vanishing-K/gauge-degenerate endpoints and retained matter/radiation modes still need checking. Positive plotted cs² and small u alone do not complete that check."
+    },
+    {
+      "id": "gb-oscillator-and-effective-w-domain",
+      "paper_id": "arxiv:2609.37437v1",
+      "kind": "review_interpretation",
+      "locator": "Eqs.(3.9)-(3.22), Sec.III",
+      "detail": "Damped-cosine expressions require approximately constant/adiabatic H and effective mass and an unspecified amplitude; they are not exact for arbitrary time-varying H. Intrinsic canonical w_phi, the source exchange-reassigned w_phi^eff and total kinematic w_eff differ. Effective phantom crossing is not proof of a negative canonical kinetic term, healthy perturbations or a DESI/SN fit.",
+      "display_summary": "Damped-cosine expressions require approximately constant/adiabatic H and effective mass and an unspecified amplitude; they are not exact for arbitrary time-varying H. Intrinsic canonical w_phi, the source exchange-reassigned w_phi^eff and total kinematic w_eff differ. Effective phantom crossing is not proof of a negative canonical kinetic term, healthy perturbations or a DESI/SN fit."
+    },
+    {
+      "id": "ec-frenkel-trace-conflict",
+      "paper_id": "arxiv:2609.36853v1",
+      "kind": "source_model_incompatibility_reviewer_derived",
+      "locator": "Sec.II Eq.(2); Sec.III Eq.(7), Frenkel condition, Eqs.(9),(11)-(12), PDF p.2; HTML #S2.E2,#S3.E7,#S3.E11",
+      "detail": "Contracting the displayed Cartan equation at mu=nu gives −2 S_{lambda alpha}{}^alpha=kappa s_{lambda nu}{}^nu. Weyssenhoff s_{lambda nu}{}^nu=s_{lambda nu}u^nu=0 by the stated Frenkel condition. Thus the torsion trace vanishes pointwise. The stated ansatz instead has S_{lambda alpha}{}^alpha=−3Phi u_lambda/2; it forces Phi=0 for this source. Zero linear spin average with nonzero spin² can leave quadratic effective stress, but cannot provide a coherent nonzero trace source or choose its linear sign. Eq.(12) cannot cure this contradiction. The phenomenological negative-stiff background must be kept separate from an accepted Weyssenhoff trace derivation.",
+      "display_summary": "Contracting the displayed Cartan equation at mu=nu gives −2 S_{lambda alpha}{}^alpha=kappa s_{lambda nu}{}^nu. Weyssenhoff s_{lambda nu}{}^nu=s_{lambda nu}u^nu=0 by the stated Frenkel condition. Thus the torsion trace vanishes pointwise. The stated ansatz instead has S_{lambda alpha}{}^alpha=−3Phi u_lambda/2; it forces Phi=0 for this source. Zero linear spin average with nonzero spin² can leave quadratic effective stress, but cannot provide a coherent nonzero trace source or choose its linear sign. Eq.(12) cannot cure this contradiction. The phenomenological negative-stiff background must be kept separate from an accepted Weyssenhoff trace derivation."
+    },
+    {
+      "id": "ec-photon-conservation-prescription",
+      "paper_id": "arxiv:2609.36853v1",
+      "kind": "source_closure_failure_reviewer_derived",
+      "locator": "Sec.V Eqs.(41)-(50) PDF pp.5-6; Appendix A preamble and Eqs.(A1)-(A3) PDF p.7",
+      "detail": "The source chooses connection-independent Maxwell action with F=dA and explicitly states source-free Maxwell is tilde∇_mu F^{mu nu}=0. This entails Levi-Civita stress conservation and metric null geometric-optics rays. Rewriting their equation with full affine ∇ can generate torsion terms, but does not alter the physical metric-ray path. Sec.V instead assumes full∇_mu T_rad^{mu nu}=0 for Eq.(44), without the connection conversion terms or a new photon coupling. These conditions are not generally equal for nonzero trace torsion. For the displayed minimal Maxwell sector and photon-number conservation, metric reciprocity/duality remains dL=(1+z)²dA even on a changed cosmological metric. Nonzero eta therefore needs a reconciled radiation action/conservation/reciprocity derivation; it is not accepted as a derived signal here.",
+      "display_summary": "The source chooses connection-independent Maxwell action with F=dA and explicitly states source-free Maxwell is tilde∇_mu F^{mu nu}=0. This entails Levi-Civita stress conservation and metric null geometric-optics rays. Rewriting their equation with full affine ∇ can generate torsion terms, but does not alter the physical metric-ray path. Sec.V instead assumes full∇_mu T_rad^{mu nu}=0 for Eq.(44), without the connection conversion terms or a new photon coupling. These conditions are not generally equal for nonzero trace torsion. For the displayed minimal Maxwell sector and photon-number conservation, metric reciprocity/duality remains dL=(1+z)²dA even on a changed cosmological metric. Nonzero eta therefore needs a reconciled radiation action/conservation/reciprocity derivation; it is not accepted as a derived signal here."
+    },
+    {
+      "id": "ec-background-conservation-and-domains",
+      "paper_id": "arxiv:2609.36853v1",
+      "kind": "conditional_algebra_confirmed",
+      "locator": "Eqs.(14)-(32),(37), PDF pp.3-5",
+      "detail": "Given the phenomenological equations and separate conservation, Phi²∝a^−6 is a negative stiff contribution, not dust. Differentiating Eq.(14) using Eq.(15) gives rhodot+3H(rho+p)=6Mp²Phi(Phidot+3HPhi); particle-number/adiabatic closure sets both sides zero. Eq.(28) is normalized E(0)=1; for the displayed branch 0<1−d² and Delta=Omega_m0+d²−1>=0 are required and E²>0 ends at z*. The stated fit gives z*=.249 and |Phi/H|=1 at z_wt=.194. d→0 is outside the fitted physical branch and no independent Lambda is retained. These are conditional algebraic consequences, not an established spin-source model.",
+      "display_summary": "Given the phenomenological equations and separate conservation, Phi²∝a^−6 is a negative stiff contribution, not dust. Differentiating Eq.(14) using Eq.(15) gives rhodot+3H(rho+p)=6Mp²Phi(Phidot+3HPhi); particle-number/adiabatic closure sets both sides zero. Eq.(28) is normalized E(0)=1; for the displayed branch 0<1−d² and Delta=Omega_m0+d²−1>=0 are required and E²>0 ends at z*. The stated fit gives z*=.249 and |Phi/H|=1 at z_wt=.194. d→0 is outside the fitted physical branch and no independent Lambda is retained. These are conditional algebraic consequences, not an established spin-source model."
+    },
+    {
+      "id": "ec-eta-branches-and-order",
+      "paper_id": "arxiv:2609.36853v1",
+      "kind": "conditional_algebra_confirmed_and_approximation_limit",
+      "locator": "Eqs.(30),(49)-(51), Fig.3, PDF pp.4,6",
+      "detail": "The formal integral of Eq.(30) gives the printed Eq.(51) with xi=sqrt(Delta/Omega_m0) and both signs. Eta(0)=0 only removes propagation length; the fit to Phi² does not choose a sign. Figure 3 shows |eta| only. |Phi/H|<1 is a permissive domain condition, not a controlled smallness/error bound: the quoted present ratio is .392 and increases toward the upper local interval. O(Phi²) reciprocity terms and nonlinear beta terms need an error estimate before an observed duality comparison; no eta dataset was fitted.",
+      "display_summary": "The formal integral of Eq.(30) gives the printed Eq.(51) with xi=sqrt(Delta/Omega_m0) and both signs. Eta(0)=0 only removes propagation length; the fit to Phi² does not choose a sign. Figure 3 shows |eta| only. |Phi/H|<1 is a permissive domain condition, not a controlled smallness/error bound: the quoted present ratio is .392 and increases toward the upper local interval. O(Phi²) reciprocity terms and nonlinear beta terms need an error estimate before an observed duality comparison; no eta dataset was fitted."
+    },
+    {
+      "id": "ec-fit-lineage-and-one-statistic",
+      "paper_id": "arxiv:2609.36853v1",
+      "kind": "conditioning_confirmed",
+      "locator": "Eqs.(32)-(38), Sec.IV PDF pp.4-5",
+      "detail": "Author d=.924(+.007/−.008) is a one-parameter Gaussian chi-square mapping of a cited local Pantheon q0=−1.08±.29, with Omega_m0 fixed .3. Phi0/H0 and wX0 are correlated derived outputs from that same mapping, not independent observations. The q0 summary and its source likelihood/calibration/cosmographic truncation have not been acquired here; no independent-current-data confirmation is claimed. Planck/BAO/CC mentions are motivation, not fitted likelihoods.",
+      "display_summary": "Author d=.924(+.007/−.008) is a one-parameter Gaussian chi-square mapping of a cited local Pantheon q0=−1.08±.29, with Omega_m0 fixed .3. Phi0/H0 and wX0 are correlated derived outputs from that same mapping, not independent observations. The q0 summary and its source likelihood/calibration/cosmographic truncation have not been acquired here; no independent-current-data confirmation is claimed. Planck/BAO/CC mentions are motivation, not fitted likelihoods."
+    }
+  ],
+  "neighbour_source_checks": [
+    {
+      "paper_id": "arxiv:1811.04083v2",
+      "source_hashes": {
+        "html": "b36bec38bc8fddabe5c70ad54f1400bf9c6272b043a9c9bbd3efdb0527310afd",
+        "pdf": "dfeb28f5917368fcaa43c7050f655317ee289d4049bcbd04c42010ed9411ce53",
+        "extracted_text": "e256b519abad18afa46bfe27cb5e1dc1d1543afadcfe294a4cb22f3c471076dd"
+      },
+      "hashes_verified": true,
+      "coverage": "Bounded original-source check of potential/early oscillation pp.1-2.",
+      "not_a_new_full_review": true,
+      "source_check_method": "Pinned original HTML text/math plus receipted PDF-derived layout text; no new separate rendered-neighbour-figure check."
+    },
+    {
+      "paper_id": "arxiv:2605.26116v2",
+      "source_hashes": {
+        "html": "f28f0ffce5f4441e7670fedbcfe48e88dbfdde9f2449a0dfb4b7ae4aacb973fb",
+        "pdf": "a9e5d04392b126c76cfe4055d5ed9ac9be6b35ec1f5f474c3bd65cdd45a68b0c",
+        "extracted_text": "82878f7f19bacbd5f6745d6a79b345d6e2979b02807dd70f0dfcc1145d42b5de"
+      },
+      "hashes_verified": true,
+      "coverage": "Bounded source Sec.1/3 rolling early/depletion/late sequence.",
+      "not_a_new_full_review": true,
+      "source_check_method": "Pinned original HTML text/math plus receipted PDF-derived layout text; no new separate rendered-neighbour-figure check."
+    },
+    {
+      "paper_id": "arxiv:2609.34239v1",
+      "source_hashes": {
+        "html": "879dca4ee25ab96ddb0907f8a6e9b422a9508bac011b91a1b371fc1d77b4de5b",
+        "pdf": "51acde38caa9d338b209fbd09fafdeb10c3d1d6312376ad6e9547992fd735216",
+        "extracted_text": "928d7cc5bdf84e2624631dc080475ec03c7a3daca410e23ab365510de0e48d7a"
+      },
+      "hashes_verified": true,
+      "coverage": "Bounded source Eq.(1)-(4), finite-node q reconstruction and declared fitted data. No new full review.",
+      "not_a_new_full_review": true,
+      "source_check_method": "Pinned original HTML text/math plus receipted PDF-derived layout text; no new separate rendered-neighbour-figure check."
+    }
+  ],
+  "graph_assessment": {
+    "accepted_scope": "Limited oscillation overlap and physically distinct early/late scalar histories with two source endpoints. No theory equivalence or shared-likelihood inference.",
+    "no_accepted_edges": [
+      "No physical update/citation relation to inaccessible arxiv:2605.22143v2 from same authors/metadata.",
+      "Unread arxiv:1812.04589v1 is an explicit citation only, not accepted foundational physics.",
+      "Common DESI/evolving-q motivation does not establish relation to conditional-q-upturn or shared fitted data.",
+      "Existing background-match-does-not-transfer-fit-evidence is a relevant scope principle; GB does not claim to inherit a fit and EC explicitly uses only one q summary, so no unsupported transfer-fit accusation/edge is added."
+    ],
+    "degrees_of_freedom": "GB retains one canonical scalar coupled to curvature, plus tensor and conventional fluid sectors; no extra scalar is inferred from effective phantom crossing. EC torsion is source-algebraic rather than a propagating scalar, but its stated nonzero trace source is inconsistent. HDE is phenomenological with no perturbative microphysics supplied."
+  },
+  "limitations": [
+    "This is original-source scientific review of two final Luna packets, not independent numerical reproduction, current-data reassessment or qualification.",
+    "Printed inconsistencies, extraction corrections and reviewer conditional algebra are distinct. Source criticism does not reject every modified-gravity/torsion model.",
+    "No external download, experiment, consumer execution, extra worker or public mutation occurred.",
+    "GB ghost-sign diagnostic is conditional; a complete scalar/retained-fluid kinetic derivation and degeneracy analysis remains a gate.",
+    "EC phenomenological background algebra remains useful but a source-coherent nonzero-trace Weyssenhoff model and physical eta signal are not accepted.",
+    "No normalization, covariance, priors, numerical inputs, tolerance or engine support were invented."
+  ],
+  "idea_ids": [
+    "localized-gauss-bonnet-oscillatory-dark-energy",
+    "gauss-bonnet-minimum-and-stability-consistency",
+    "hubble-cutoff-negative-spin-background",
+    "frenkel-trace-and-maxwell-duality-closure"
+  ],
+  "edge_ids": [
+    "modified-gravity-1",
+    "modified-gravity-2",
+    "modified-gravity-3",
+    "modified-gravity-4",
+    "modified-gravity-5",
+    "modified-gravity-6",
+    "modified-gravity-7",
+    "modified-gravity-8",
+    "modified-gravity-9",
+    "modified-gravity-10",
+    "modified-gravity-11",
+    "modified-gravity-12"
+  ],
+  "design_ids": [
+    "candidate-gauss-bonnet-minimum-and-stability-audit",
+    "candidate-spin-source-and-photon-duality-audit"
+  ],
+  "integration_notes": [
+    "Keep original Luna packets and their digests; integrate corrections visibly.",
+    "Both review stages may complete as source-reviewed-with-material-corrections, not scientifically qualified.",
+    "Candidate designs are blocked with null executable requests. EC prospect has compatibility not_assessed because source closure fails; do not label it source_coherent.",
+    "Related unread/failure records stay queued; foundational bibliography matches do not clear their reading stages."
+  ],
+  "packet_sha256": "00c3406875f14f6e9ef085bc46ec775d078ee9fbc0e36a89e551901d9fd92137",
+  "integration_amendments": [
+    {
+      "kind": "source_role_and_coverage_format_normalization",
+      "agent_id": "/root",
+      "utc": "2026-10-01T17:20:13.692220+00:00",
+      "reason": "Role/hash mapping taken from packet source_roles; combined main-text coverage split by paper. No new source coverage or scientific conclusion."
+    }
+  ]
+}

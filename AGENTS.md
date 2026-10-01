@@ -16,6 +16,15 @@ pending screens, acquisitions, reads and reviews before new discovery. Use the
 least recently searched topic lane; alternate fresh work with foundations,
 citation leads and challenges. Do not repeat questions already settled here.
 
+Use `scripts/crawl.py status` and the canonical `register/searches/` receipts
+before searching. Resume undecided saved results without fetching that window
+again. Exact completed query/order/direction/page/limit windows are skipped;
+refreshes and retries need a recorded reason. Advance pagination or choose a
+new mechanism/date window deliberately. Updated feeds can shift between pages:
+overlap and deduplicate, and never claim gap-free or exhaustive archive coverage.
+The ignored SQLite index is disposable; contributor-editable JSON in Git owns
+the public evidence and decisions. See `docs/crawling.md`.
+
 A normal batch admits at most 20 new versions, reads at most 6 papers with Luna
 and sends at most 3 useful papers to Sol. These are ceilings, not quotas. Use
 at most 3 simultaneous workers, respecting a lower live limit. Follow at most
@@ -27,7 +36,7 @@ external messages. Ready PR merges follow the standing authorization below.
 
 ## Use the requested Codex agents
 
-Use actual Codex subagents. **Luna is `gpt-6-luna`, medium reasoning; scientific
+Use actual Codex subagents. **Luna is `gpt-6-luna`, xhigh reasoning; scientific
 review is exactly `gpt-6.1-sol`, high reasoning.** No silent Astra/model substitution.
 If unavailable, preserve the blocked stage and report it.
 
@@ -120,6 +129,17 @@ and unknowns. Use ΛCDM as an explicitly declared working reference when no
 better specification is available; do not attribute that choice to an author or
 replace a source's different geometry or gravity. Keep comparison baselines
 separate from retained physics. Alternative branches are not simultaneous fields.
+
+Keep dated bibliometric snapshots in `register/bibliometrics/`, following
+`docs/bibliometrics.md`. Verify paper and author identities before attribution.
+Citations and author h-indices describe visibility, never scientific validity,
+author calibre or independent evidence. Do not sum coauthor h-indices. Compare
+only declared provider/time/field/first-publication-age cohorts with an evidenced
+population; otherwise leave normalized ranks null. Missing or inaccessible
+profiles do not mean zero visibility. Preserve a separate route for unusual
+ideas from authors with unresolved metrics, so visibility cannot exclude them.
+Chronological views use source publication/version dates and reviewed physical
+relationships; chronology or a bibliography link alone is not idea ancestry.
 
 A combined prospect needs explicit gravity/geometry, energy conservation,
 parameter and initial-condition compatibility, background closure, perturbation

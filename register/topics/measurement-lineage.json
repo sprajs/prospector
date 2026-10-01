@@ -7,19 +7,22 @@
   "paper_ids": [
     "arxiv:1009.5855v2",
     "arxiv:1107.5596v2",
+    "arxiv:1405.3435v1",
     "arxiv:1410.3470v3",
+    "arxiv:2112.03863v2",
+    "arxiv:2112.03864v2",
+    "arxiv:2112.04510v3",
+    "arxiv:2202.04077v2",
+    "arxiv:2503.14738v3",
     "arxiv:2603.00497v3",
     "arxiv:2604.03769v2",
+    "arxiv:2604.08393v2",
     "arxiv:2606.00549v2",
+    "arxiv:2607.05331v2",
     "arxiv:2607.24443v2",
     "arxiv:2609.25412v1",
     "arxiv:2609.29996v1",
-    "arxiv:2609.34239v1",
-    "arxiv:2503.14738v3",
-    "arxiv:2202.04077v2",
-    "arxiv:2112.03863v2",
-    "arxiv:2112.03864v2",
-    "arxiv:2112.04510v3"
+    "arxiv:2609.34239v1"
   ],
   "idea_ids": [
     "conditional-q-upturn-not-acceleration-endpoint",

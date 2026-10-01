@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "search_id": "2026-10-01-modified-gravity-fresh",
+  "lane": "modified-gravity",
+  "work_mode": "fresh",
+  "status": "completed",
+  "requested_utc": "2026-10-01T16:49:44.750755+00:00",
+  "request": {
+    "query": "(cat:astro-ph.CO OR cat:gr-qc) AND (ti:\"modified gravity\" OR ti:\"Gauss-Bonnet\")",
+    "normalized_query": "(cat:astro-ph.CO OR cat:gr-qc) AND (ti:\"modified gravity\" OR ti:\"Gauss-Bonnet\")",
+    "order": "lastUpdatedDate",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "456e3b44682f8bf347039b2843fc36409886d81aecb20ea1e1319b48c509a8f2"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Resumed queued source acquisitions and dispatched a priority challenge reader; complementary bounded mechanism/date windows while pending reads proceed.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Agr-qc%29+AND+%28ti%3A%22modified+gravity%22+OR+ti%3A%22Gauss-Bonnet%22%29&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+    "retrieved_utc": "2026-10-01T16:49:44.750755+00:00",
+    "sha256": "b78ff316e1a6575a97b22179ec66f01d525ecce32fb55cc67b14c1265d17a967",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/2026-10-01-crawl/objects/b78ff316e1a6575a97b22179ec66f01d525ecce32fb55cc67b14c1265d17a967.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:2609.39944v1",
+      "position": 0,
+      "disposition": "excluded",
+      "reason": "Outside this cosmology window after abstract screen: focused on compact-object scattering, scalarization, mergers, wormholes or disks; no cosmological mechanism selected. Scope decision, not scientific rejection.",
+      "title": "Greybody factors of large Gauss-Bonnet d-dimensional black holes",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:44.750755+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.890000+00:00",
+          "disposition": "excluded",
+          "reason": "Outside this cosmology window after abstract screen: focused on compact-object scattering, scalarization, mergers, wormholes or disks; no cosmological mechanism selected. Scope decision, not scientific rejection."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2607.05331v2",
+      "position": 1,
+      "disposition": "deferred",
+      "reason": "Forecast SGWB modified-generation/propagation signatures; astrophysical population uncertainty and degeneracies need a full read.",
+      "title": "Modeling Uncertainties in Modified Gravity Predictions for the Stochastic Gravitational-Wave Background",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:44.750755+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.895384+00:00",
+          "disposition": "deferred",
+          "reason": "Forecast SGWB modified-generation/propagation signatures; astrophysical population uncertainty and degeneracies need a full read."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.39236v1",
+      "position": 2,
+      "disposition": "excluded",
+      "reason": "Outside this cosmology window after abstract screen: focused on compact-object scattering, scalarization, mergers, wormholes or disks; no cosmological mechanism selected. Scope decision, not scientific rejection.",
+      "title": "Nonlinear scalarization and thermodynamics in Einstein-Phantom scalar-Gauss-Bonnet theory",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:44.750755+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.900663+00:00",
+          "disposition": "excluded",
+          "reason": "Outside this cosmology window after abstract screen: focused on compact-object scattering, scalarization, mergers, wormholes or disks; no cosmological mechanism selected. Scope decision, not scientific rejection."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.37437v1",
+      "position": 3,
+      "disposition": "duplicate",
+      "reason": "Exact version already registered at discovery.",
+      "title": "Oscillatory dark energy with phantom crossings in Einstein-Gauss-Bonnet gravity",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2511.19073v2",
+      "position": 4,
+      "disposition": "excluded",
+      "reason": "Outside this cosmology window after abstract screen: focused on compact-object scattering, scalarization, mergers, wormholes or disks; no cosmological mechanism selected. Scope decision, not scientific rejection.",
+      "title": "Black hole binaries in shift-symmetric Einstein-scalar-Gauss-Bonnet gravity experience a slower merger phase",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:44.750755+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.905951+00:00",
+          "disposition": "excluded",
+          "reason": "Outside this cosmology window after abstract screen: focused on compact-object scattering, scalarization, mergers, wormholes or disks; no cosmological mechanism selected. Scope decision, not scientific rejection."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.28158v2",
+      "position": 5,
+      "disposition": "excluded",
+      "reason": "Outside this cosmology window after abstract screen: focused on compact-object scattering, scalarization, mergers, wormholes or disks; no cosmological mechanism selected. Scope decision, not scientific rejection.",
+      "title": "Black Holes and Scalar Propagation in Three-Dimensional Einstein--Gauss--Bonnet Gravity",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:44.750755+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.911289+00:00",
+          "disposition": "excluded",
+          "reason": "Outside this cosmology window after abstract screen: focused on compact-object scattering, scalarization, mergers, wormholes or disks; no cosmological mechanism selected. Scope decision, not scientific rejection."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.28456v1",
+      "position": 6,
+      "disposition": "excluded",
+      "reason": "Outside this cosmology window after abstract screen: focused on compact-object scattering, scalarization, mergers, wormholes or disks; no cosmological mechanism selected. Scope decision, not scientific rejection.",
+      "title": "Scalar Gauss-Bonnet Wormholes and the Imaginary Distance Bound",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:44.750755+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.916758+00:00",
+          "disposition": "excluded",
+          "reason": "Outside this cosmology window after abstract screen: focused on compact-object scattering, scalarization, mergers, wormholes or disks; no cosmological mechanism selected. Scope decision, not scientific rejection."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.30319v1",
+      "position": 7,
+      "disposition": "excluded",
+      "reason": "Outside this cosmology window after abstract screen: focused on compact-object scattering, scalarization, mergers, wormholes or disks; no cosmological mechanism selected. Scope decision, not scientific rejection.",
+      "title": "Thin Accretion Disk and Optical Signatures in f(R,T) Modified Gravity",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:44.750755+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.922284+00:00",
+          "disposition": "excluded",
+          "reason": "Outside this cosmology window after abstract screen: focused on compact-object scattering, scalarization, mergers, wormholes or disks; no cosmological mechanism selected. Scope decision, not scientific rejection."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.24912v1",
+      "position": 8,
+      "disposition": "deferred",
+      "reason": "Retain quadratic-gravity inflation/Gauss-Bonnet running proposal; matter multiplicity, one-loop control and claimed tilt/tensor domains need checking.",
+      "title": "Gauss--Bonnet running and the de Sitter saddle of quadratic gravity inflation",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:44.750755+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.927901+00:00",
+          "disposition": "deferred",
+          "reason": "Retain quadratic-gravity inflation/Gauss-Bonnet running proposal; matter multiplicity, one-loop control and claimed tilt/tensor domains need checking."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2604.08393v2",
+      "position": 9,
+      "disposition": "deferred",
+      "reason": "Retain modified lensing/screening prescription; simulation ancestry and baryonic-feedback degeneracies need source review, not a detection claim.",
+      "title": "Ray-traced weak lensing convergence in screened modified gravity theories",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:44.750755+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.933635+00:00",
+          "disposition": "deferred",
+          "reason": "Retain modified lensing/screening prescription; simulation ancestry and baryonic-feedback degeneracies need source review, not a detection claim."
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": "2026-10-01-resumable-modified-gravity",
+    "query_id": "modified-gravity-fresh"
+  },
+  "batch_id": "2026-10-01-resumable-modified-gravity"
+}

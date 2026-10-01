@@ -1,0 +1,124 @@
+{
+  "authors": [
+    {
+      "author_identity_verified": true,
+      "google_scholar": {
+        "h_index": null,
+        "h_index_scope": null,
+        "h_index_status": "unavailable",
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero.",
+        "profile_attempt": null,
+        "profile_batch_id": null,
+        "profile_identity_evidence": null,
+        "profile_identity_verified": false,
+        "profile_link_evidence": null,
+        "profile_url": null,
+        "retrieved_utc": null,
+        "status": "unqueried"
+      },
+      "identity_evidence": "Author name and linked INSPIRE author record occur in the exact base-arXiv-ID provider record.",
+      "paper_author_name": "Saddam Hussain",
+      "source_author_id": "1852409"
+    },
+    {
+      "author_identity_verified": true,
+      "google_scholar": {
+        "h_index": null,
+        "h_index_scope": null,
+        "h_index_status": "unavailable",
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero.",
+        "profile_attempt": null,
+        "profile_batch_id": null,
+        "profile_identity_evidence": null,
+        "profile_identity_verified": false,
+        "profile_link_evidence": null,
+        "profile_url": null,
+        "retrieved_utc": null,
+        "status": "unqueried"
+      },
+      "identity_evidence": "Author name and linked INSPIRE author record occur in the exact base-arXiv-ID provider record.",
+      "paper_author_name": "Sandip Biswas",
+      "source_author_id": "2209125"
+    }
+  ],
+  "citation_snapshot": {
+    "count": 0,
+    "count_without_self_citations": 0,
+    "missing_reason": null,
+    "retrieved_utc": "2026-10-01T16:43:40.762181+00:00",
+    "source": {
+      "archive_path": ".work/2026-10-01-crawl/bibliometrics/inspire-2609.37437.json",
+      "http_status": 200,
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A2609.37437&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "response_bytes": 2181,
+      "response_sha256": "032e43dab195a8313281122e6f98e5ae5373b3f7b5393b4d607c6f8bbce1e2d3",
+      "retrieved_utc": "2026-10-01T16:43:40.762181+00:00"
+    },
+    "status": "observed"
+  },
+  "comparison": {
+    "age_days_at_snapshot": 2.1557032659837962,
+    "age_years_at_snapshot": 0.0059021150769250465,
+    "cohort": {
+      "age_band_years": {
+        "lower_inclusive": 0.0,
+        "upper_exclusive": 1.0
+      },
+      "field_definition": "arXiv primary category: gr-qc",
+      "minimum_population_size": 100,
+      "percentile": null,
+      "population_evidence": null,
+      "population_size": null,
+      "provider": "INSPIRE-HEP",
+      "reason": "No provider population was queried for this provider, snapshot batch, arXiv primary category, and publication-age band. The deliberately selected Prospector sample is not a percentile reference population.",
+      "snapshot_batch_id": "inspire-2026-10-01-bounded-five-work-snapshot",
+      "status": "not_queried"
+    },
+    "field_categories": [
+      "gr-qc"
+    ],
+    "first_publication_utc": "2026-09-29T12:59:28Z"
+  },
+  "paper_id": "arxiv:2609.37437v1",
+  "schema_version": 1,
+  "snapshot_created_utc": "2026-10-01T17:16:18.804181+00:00",
+  "snapshot_id": "20261001T171618804181Z-73ae6bbf55ea",
+  "team_visibility": {
+    "coverage_fraction": 0.0,
+    "h_index_scope": null,
+    "h_index_snapshot_batch_id": null,
+    "max_h_index": null,
+    "median_h_index": null,
+    "missing_reason": "Team maximum and median use verified, observed, same-scope h-indices only; missing author metrics are unknown.",
+    "status": "none",
+    "unique_author_count": 2,
+    "verified_h_index_author_count": 0
+  },
+  "work_identity": {
+    "arxiv_id": "2609.37437",
+    "count_scope": "provider_base_work_record",
+    "journal_metadata": [],
+    "journal_scope": "no_linked_journal_metadata_in_response",
+    "linked_dois": [],
+    "match_status": "exact",
+    "matched_arxiv_ids": [
+      "2609.37437"
+    ],
+    "provider": "INSPIRE-HEP",
+    "provider_record_id": "3209289",
+    "publication_scope_note": "Citation counts are totals for this provider literature record. They are not split between the registered arXiv version, other arXiv versions, and linked journal publication records.",
+    "registered_version": 1,
+    "source": {
+      "archive_path": ".work/2026-10-01-crawl/bibliometrics/inspire-2609.37437.json",
+      "http_status": 200,
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A2609.37437&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "response_bytes": 2181,
+      "response_sha256": "032e43dab195a8313281122e6f98e5ae5373b3f7b5393b4d607c6f8bbce1e2d3",
+      "retrieved_utc": "2026-10-01T16:43:40.762181+00:00"
+    },
+    "title": "Oscillatory dark energy with phantom crossings in Einstein-Gauss-Bonnet gravity",
+    "version_scope": "versions_not_disaggregated"
+  }
+}

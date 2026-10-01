@@ -22,6 +22,13 @@ acquires exact arXiv versions and coordinates actual subagents: `gpt-6-luna` rea
 papers; `gpt-6.1-sol` checks their science, baselines and relationships. Each bounded
 batch saves its evidence and updates the register and public site.
 
+The [crawl ledger](docs/crawling.md) remembers exact search windows and every
+result's disposition. Git JSON records are authoritative and accept ordinary
+PRs; an ignored local SQLite index supports fast search and can be rebuilt.
+No remote database or account is required. [Bibliometric snapshots](docs/bibliometrics.md)
+track dated citation counts and verified author visibility separately from
+scientific review. The Connections view also offers a source-publication timeline.
+
 Read [AGENTS.md](AGENTS.md) for the procedure and [record conventions](docs/records.md)
 for the scientific and provenance requirements. Source review is distinct from
 independent reproduction, current-data inference and scientific qualification.
@@ -38,6 +45,7 @@ drag endpoint do not reproduce Planck physics or a cosmological posterior.
 - [Candidate investigations](designs/), [source reviews](register/reviews/) and [scan receipts](scans/)
 - [Conditioned numerical references](references/)
 - [Saved continuation](state.json) and [generated register](register/README.md)
+- [Search windows](register/searches/) and [bibliometric snapshots](register/bibliometrics/)
 
 Git stores metadata, links and compact original scientific notes. Downloaded
 sources, extracts, images, working scripts and logs stay inside Prospector under

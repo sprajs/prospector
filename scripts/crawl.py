@@ -180,12 +180,13 @@ def save_snapshot(entries, source_receipt, query, *, lane=None, work_mode='fresh
 def backfill(root=ROOT):
     """Recover recorded queries; never reconstruct missing screens or timestamps."""
     created = []
+    known = {record['search_id']: record for record in receipts(root)}
     for scan_path in sorted((root / 'scans').glob('*.json')):
         scan = strict_load(scan_path)
         for index, query in enumerate(scan.get('queries', [])):
             query_id = query.get('id', str(index))
             search_id = re.sub(r'[^A-Za-z0-9_.-]', '-', scan['scan_id'] + '--' + query_id)
-            if (root / 'register/searches' / (search_id + '.json')).exists():
+            if not query.get('search_id') and search_id in known:
                 continue
             params = urllib.parse.parse_qs(urllib.parse.urlsplit(query.get('url', '')).query)
             value = lambda name, default=None: params.get(name, [default])[0]
@@ -194,6 +195,20 @@ def backfill(root=ROOT):
                 continue  # Known-ID acquisition is not a topic search.
             limit = int(query.get('max_results', value('max_results', 10)))
             start = int(query.get('start', value('start', 0)))
+            if query.get('search_id'):
+                linked = known.get(query['search_id'])
+                expected = request_window(expression, query.get('order', value('sortBy', 'lastUpdatedDate')),
+                                          query.get('direction', value('sortOrder', 'descending')), start, limit)
+                if linked is None or linked['request'] != expected:
+                    raise ValueError('scan links a missing or different search window')
+                if linked['provenance']['scan_id'] != scan['scan_id'] or linked['provenance']['query_id'] != query_id:
+                    raise ValueError('linked search scan/query provenance mismatch')
+                for field in ['url', 'retrieved_utc', 'sha256']:
+                    if query.get(field) is not None and query[field] != linked['source'][field]:
+                        raise ValueError('linked search original-source identity mismatch')
+                if 'result_ids' in query and query['result_ids'] != [r['paper_id'] for r in linked['results']]:
+                    raise ValueError('linked search result order differs from scan')
+                continue
             entries = [{'versioned_id': ident.removeprefix('arxiv:')} for ident in query.get('result_ids', [])]
             source = dict(url=query.get('url'), retrieved_utc=query.get('retrieved_utc'),
                           sha256=query.get('sha256'), http_status=None, error=query.get('error'))
@@ -303,7 +318,7 @@ def queue(root=ROOT):
     return dict(registered=state.get('queue', []),
                 screens=[dict(search_id=record['search_id'], **result)
                          for record in saved for result in record['results']
-                         if result['disposition'] == 'pending'],
+                         if result['disposition'] in {'pending', 'unknown'}],
                 failed_searches=[record['search_id'] for record in saved if record['status'] != 'completed' and record['search_id'] not in superseded])
 
 
@@ -344,7 +359,10 @@ def screen(search_id, paper_id, disposition, reason, root=ROOT):
 
 def search(query, *, root=ROOT, lane=None, work_mode='fresh', order='lastUpdatedDate',
            direction='descending', start=0, limit=10, refresh_reason=None, retry_reason=None,
-           discovery_reason=None, client=None):
+           discovery_reason=None, client=None, batch_id=None):
+    batch_id = batch_id or datetime.now(timezone.utc).strftime('%Y-%m-%d')
+    if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]{0,63}', batch_id):
+        raise ValueError('invalid acquisition batch identifier')
     request = request_window(query, order, direction, start, limit)
     prior = sorted([record for record in receipts(root) if record['request']['window_sha256'] == request['window_sha256']],
                    key=lambda record: (record['requested_utc'], record['search_id']))
@@ -370,7 +388,9 @@ def search(query, *, root=ROOT, lane=None, work_mode='fresh', order='lastUpdated
                 raise ValueError('retry needs a concrete reason')
             if latest['retry_of']:
                 raise ValueError('one retry already used; defer or change route/request')
-            if latest['source']['http_status'] in {403, 406, 429}:
+            if latest['source']['http_status'] in {403, 406} or (
+                    latest['source']['http_status'] == 429
+                    and (not latest.get('batch_id') or latest['batch_id'] == batch_id)):
                 raise ValueError('403/406 requires changed route; 429 stops acquisition')
             time_text = latest['source']['retrieved_utc'] or latest['requested_utc']
             elapsed = (datetime.now(timezone.utc) - datetime.fromisoformat(time_text.replace('Z', '+00:00'))).total_seconds()
@@ -392,13 +412,15 @@ def search(query, *, root=ROOT, lane=None, work_mode='fresh', order='lastUpdated
     pending = queue(root)
     if any(pending.values()) and not (discovery_reason and discovery_reason.strip()):
         raise ValueError('resume existing queue first; a new window needs --discovery-reason to document its bounded exception')
-    client = client or arxiv.Client(root / '.work/crawl-acquisition')
+    client = client or arxiv.Client(root / '.work/crawl-acquisition' / batch_id)
     requested_utc = arxiv.now()
     parameters = dict(search_query=query, start=start, max_results=limit, sortBy=order, sortOrder=direction)
     attempt = save_snapshot([], dict(url='https://export.arxiv.org/api/query?' + urllib.parse.urlencode(parameters)), query,
                             lane=lane, work_mode=work_mode, order=order, direction=direction, start=start, limit=limit,
                             refresh=refresh, retry_of=retry_of, retry_reason=retry_reason, discovery_reason=discovery_reason,
                             requested_utc=requested_utc, root=root, status='interrupted')
+    attempt['batch_id'] = batch_id
+    write_receipt(attempt, root, replace=True)
     receipt_offset = len(client.receipts)
     try:
         entries, receipt = client.search(query, limit=limit, order=order, start=start, direction=direction)
@@ -409,12 +431,16 @@ def search(query, *, root=ROOT, lane=None, work_mode='fresh', order='lastUpdated
                                direction=direction, start=start, limit=limit, refresh=refresh, retry_of=retry_of,
                                requested_utc=requested_utc, retry_reason=retry_reason, discovery_reason=discovery_reason,
                                search_id=attempt['search_id'], replace=True, root=root, status='failed')
+        record['batch_id'] = batch_id
+        write_receipt(record, root, replace=True)
         return dict(action='failed', receipt=record)
     record = save_snapshot(entries, receipt, query, lane=lane,
                            work_mode=work_mode, order=order,
                            direction=direction, start=start, limit=limit, refresh=refresh, retry_of=retry_of,
                            requested_utc=requested_utc, retry_reason=retry_reason, discovery_reason=discovery_reason,
                            search_id=attempt['search_id'], replace=True, root=root)
+    record['batch_id'] = batch_id
+    write_receipt(record, root, replace=True)
     return dict(action='searched', receipt=record)
 
 
@@ -500,6 +526,7 @@ def main():
     discovery.add_argument('--refresh-reason')
     discovery.add_argument('--retry-reason')
     discovery.add_argument('--discovery-reason')
+    discovery.add_argument('--batch-id', help='Authorized bounded acquisition batch; defaults to UTC date')
     screening = sub.add_parser('screen')
     screening.add_argument('search_id')
     screening.add_argument('paper_id')

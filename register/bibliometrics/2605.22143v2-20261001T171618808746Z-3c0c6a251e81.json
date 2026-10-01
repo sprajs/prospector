@@ -1,0 +1,125 @@
+{
+  "authors": [
+    {
+      "author_identity_verified": true,
+      "google_scholar": {
+        "h_index": null,
+        "h_index_scope": null,
+        "h_index_status": "unavailable",
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero.",
+        "profile_attempt": null,
+        "profile_batch_id": null,
+        "profile_identity_evidence": null,
+        "profile_identity_verified": false,
+        "profile_link_evidence": null,
+        "profile_url": null,
+        "retrieved_utc": null,
+        "status": "unqueried"
+      },
+      "identity_evidence": "Author name and linked INSPIRE author record occur in the exact base-arXiv-ID provider record.",
+      "paper_author_name": "Yongjun Yun",
+      "source_author_id": "2091011"
+    },
+    {
+      "author_identity_verified": true,
+      "google_scholar": {
+        "h_index": null,
+        "h_index_scope": null,
+        "h_index_status": "unavailable",
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero.",
+        "profile_attempt": null,
+        "profile_batch_id": null,
+        "profile_identity_evidence": null,
+        "profile_identity_verified": false,
+        "profile_link_evidence": null,
+        "profile_url": null,
+        "retrieved_utc": null,
+        "status": "unqueried"
+      },
+      "identity_evidence": "Author name and linked INSPIRE author record occur in the exact base-arXiv-ID provider record.",
+      "paper_author_name": "Jungjai Lee",
+      "source_author_id": "1189038"
+    }
+  ],
+  "citation_snapshot": {
+    "count": 3,
+    "count_without_self_citations": 2,
+    "missing_reason": null,
+    "retrieved_utc": "2026-10-01T16:43:41.875177+00:00",
+    "source": {
+      "archive_path": ".work/2026-10-01-crawl/bibliometrics/inspire-2605.22143.json",
+      "http_status": 200,
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A2605.22143&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "response_bytes": 2197,
+      "response_sha256": "057eada0b4e93bb821f9bcf0651ab0ab58cdbb90d5527d98f29b0f1c44ca141f",
+      "retrieved_utc": "2026-10-01T16:43:41.875177+00:00"
+    },
+    "status": "observed"
+  },
+  "comparison": {
+    "age_days_at_snapshot": 133.35330874047455,
+    "age_years_at_snapshot": 0.36510895840564705,
+    "cohort": {
+      "age_band_years": {
+        "lower_inclusive": 0.0,
+        "upper_exclusive": 1.0
+      },
+      "field_definition": "arXiv primary category: gr-qc",
+      "minimum_population_size": 100,
+      "percentile": null,
+      "population_evidence": null,
+      "population_size": null,
+      "provider": "INSPIRE-HEP",
+      "reason": "No provider population was queried for this provider, snapshot batch, arXiv primary category, and publication-age band. The deliberately selected Prospector sample is not a percentile reference population.",
+      "snapshot_batch_id": "inspire-2026-10-01-bounded-five-work-snapshot",
+      "status": "not_queried"
+    },
+    "field_categories": [
+      "gr-qc",
+      "hep-th"
+    ],
+    "first_publication_utc": "2026-05-21T08:14:56Z"
+  },
+  "paper_id": "arxiv:2605.22143v2",
+  "schema_version": 1,
+  "snapshot_created_utc": "2026-10-01T17:16:18.808746+00:00",
+  "snapshot_id": "20261001T171618808746Z-3c0c6a251e81",
+  "team_visibility": {
+    "coverage_fraction": 0.0,
+    "h_index_scope": null,
+    "h_index_snapshot_batch_id": null,
+    "max_h_index": null,
+    "median_h_index": null,
+    "missing_reason": "Team maximum and median use verified, observed, same-scope h-indices only; missing author metrics are unknown.",
+    "status": "none",
+    "unique_author_count": 2,
+    "verified_h_index_author_count": 0
+  },
+  "work_identity": {
+    "arxiv_id": "2605.22143",
+    "count_scope": "provider_base_work_record",
+    "journal_metadata": [],
+    "journal_scope": "no_linked_journal_metadata_in_response",
+    "linked_dois": [],
+    "match_status": "exact",
+    "matched_arxiv_ids": [
+      "2605.22143"
+    ],
+    "provider": "INSPIRE-HEP",
+    "provider_record_id": "3158572",
+    "publication_scope_note": "Citation counts are totals for this provider literature record. They are not split between the registered arXiv version, other arXiv versions, and linked journal publication records.",
+    "registered_version": 2,
+    "source": {
+      "archive_path": ".work/2026-10-01-crawl/bibliometrics/inspire-2605.22143.json",
+      "http_status": 200,
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A2605.22143&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "response_bytes": 2197,
+      "response_sha256": "057eada0b4e93bb821f9bcf0651ab0ab58cdbb90d5527d98f29b0f1c44ca141f",
+      "retrieved_utc": "2026-10-01T16:43:41.875177+00:00"
+    },
+    "title": "Holographic Dark Energy with Hubble Radius as an Infrared Cutoff in Einstein-Cartan Gravity",
+    "version_scope": "versions_not_disaggregated"
+  }
+}

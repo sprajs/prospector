@@ -5,13 +5,34 @@
   "scope": "Modified gravity, torsion, branes and quantum-gravity effective backgrounds.",
   "membership_basis": "Topic navigation from abstracts or reviewed sources; shared membership does not establish physical equivalence.",
   "paper_ids": [
+    "arxiv:1308.2877v2",
+    "arxiv:1405.3435v1",
+    "arxiv:1406.7555v2",
+    "arxiv:1507.07571v3",
+    "arxiv:1605.00552v2",
+    "arxiv:1607.01128v2",
+    "arxiv:1611.07878v3",
+    "arxiv:1812.04589v1",
+    "arxiv:2604.08393v2",
     "arxiv:2605.22143v2",
+    "arxiv:2607.05331v2",
+    "arxiv:2609.24912v1",
     "arxiv:2609.34917v1",
     "arxiv:2609.36853v1",
     "arxiv:2609.37293v1",
     "arxiv:2609.37437v1",
-    "arxiv:2609.39039v1"
+    "arxiv:2609.39039v1",
+    "arxiv:astro-ph/0009150v1",
+    "arxiv:gr-qc/0202022v1"
   ],
-  "idea_ids": [],
-  "design_ids": []
+  "idea_ids": [
+    "localized-gauss-bonnet-oscillatory-dark-energy",
+    "gauss-bonnet-minimum-and-stability-consistency",
+    "hubble-cutoff-negative-spin-background",
+    "frenkel-trace-and-maxwell-duality-closure"
+  ],
+  "design_ids": [
+    "candidate-gauss-bonnet-minimum-and-stability-audit",
+    "candidate-spin-source-and-photon-duality-audit"
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "last_completed_scan": "2026-10-01-lcdm-baseline",
-  "next_lane": "modified-gravity",
+  "last_completed_scan": "2026-10-01-resumable-modified-gravity",
+  "next_lane": "interacting-sectors",
   "batch_limits": {
     "new_versions": 20,
     "luna_full_reads": 6,
@@ -13,7 +13,9 @@
   "model_roles": {
     "reader": "gpt-6-luna",
     "reviewer": "gpt-6.1-sol",
-    "silent_substitution": false
+    "silent_substitution": false,
+    "reader_reasoning": "xhigh",
+    "reviewer_reasoning": "high"
   },
   "lanes": [
     {
@@ -24,7 +26,7 @@
     {
       "id": "modified-gravity",
       "description": "Modified gravity and observable distinctions",
-      "last_searched_utc": null
+      "last_searched_utc": "2026-10-01T16:49:48.245649+00:00"
     },
     {
       "id": "interacting-sectors",
@@ -59,18 +61,9 @@
   ],
   "queue": [
     {
-      "paper_id": "arxiv:2609.37437v1",
-      "stage": "read",
-      "reason": "Priority challenge: oscillatory Einstein-Gauss-Bonnet dark energy includes stated ghost/gradient-instability domains.",
-      "prospect_ids": [
-        "late-dark-energy",
-        "modified-gravity"
-      ]
-    },
-    {
       "paper_id": "arxiv:2605.22143v2",
-      "stage": "read",
-      "reason": "Retain Einstein-Cartan holographic model; compare equations and spin-fluid assumptions with the related recent paper.",
+      "stage": "acquire",
+      "reason": "Previously screened pinned version; HTML406 and main/export PDF404 on2026-10-01. Save failed routes; lawful source recovery pending, not a scientific rejection.",
       "prospect_ids": [
         "late-dark-energy",
         "modified-gravity"
@@ -80,15 +73,6 @@
       "paper_id": "arxiv:2609.34917v1",
       "stage": "read",
       "reason": "Retain quantum-gravity-condensate proposal; relational clock, mean-field approximation and observable mapping need a full read.",
-      "prospect_ids": [
-        "late-dark-energy",
-        "modified-gravity"
-      ]
-    },
-    {
-      "paper_id": "arxiv:2609.36853v1",
-      "stage": "read",
-      "reason": "Retain torsion/holographic dark-energy acceleration and distance-duality proposal; low-redshift domain needs checking.",
       "prospect_ids": [
         "late-dark-energy",
         "modified-gravity"
@@ -363,6 +347,124 @@
       "prospect_ids": [
         "baseline-reference"
       ]
+    },
+    {
+      "paper_id": "arxiv:2607.05331v2",
+      "stage": "read",
+      "reason": "Forecast SGWB modified-generation/propagation signatures; astrophysical population uncertainty and degeneracies need a full read.",
+      "prospect_ids": [
+        "modified-gravity",
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.24912v1",
+      "stage": "read",
+      "reason": "Retain quadratic-gravity inflation/Gauss-Bonnet running proposal; matter multiplicity, one-loop control and claimed tilt/tensor domains need checking.",
+      "prospect_ids": [
+        "modified-gravity",
+        "early-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2604.08393v2",
+      "stage": "read",
+      "reason": "Retain modified lensing/screening prescription; simulation ancestry and baryonic-feedback degeneracies need source review, not a detection claim.",
+      "prospect_ids": [
+        "modified-gravity",
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1507.07571v3",
+      "stage": "read",
+      "reason": "Retain torsion-coupled negative-kinetic spinor proposal as a challenge; no singularity or phantom crossing is not a quantum/perturbative stability proof.",
+      "prospect_ids": [
+        "modified-gravity",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1812.04589v1",
+      "stage": "read",
+      "reason": "Retain Einstein-Cartan Lagrangian alternatives and nonsingular/inflating branches; separate torsion invariants and closures rather than assume equivalence.",
+      "prospect_ids": [
+        "modified-gravity",
+        "bounces-cycles",
+        "early-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1405.3435v1",
+      "stage": "read",
+      "reason": "Retain torsion/clustered angular-momentum Planck-era proposal; anisotropy, negative effective density and CMB data ancestry need checking against exact source.",
+      "prospect_ids": [
+        "modified-gravity",
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1607.01128v2",
+      "stage": "read",
+      "reason": "Retain external torsion/vacuum-energy conservation argument; check assumptions behind claimed model independence and whether conservation implies metric proportionality.",
+      "prospect_ids": [
+        "modified-gravity",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1406.7555v2",
+      "stage": "read",
+      "reason": "Retain low-Hubble Einstein-Cartan modification; Lorentz violation, characteristic scale and dark-matter replacement claims need a complete sourced closure.",
+      "prospect_ids": [
+        "modified-gravity",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1611.07878v3",
+      "stage": "read",
+      "reason": "Retain foundational torsion kinematics and Weyssenhoff limits; geometric observer equations differ from a dynamical spin-matter closure.",
+      "prospect_ids": [
+        "modified-gravity",
+        "kinematics"
+      ]
+    },
+    {
+      "paper_id": "arxiv:gr-qc/0202022v1",
+      "stage": "read",
+      "reason": "Retain foundational metric stability/perturbation discussion; check background/anisotropic domain, gauge conventions and spin-torsion wave inference.",
+      "prospect_ids": [
+        "modified-gravity",
+        "early-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1308.2877v2",
+      "stage": "read",
+      "reason": "Retain Weyssenhoff spin-contact signature transition; degenerate metric, boundary conditions and bounce interpretation require source review.",
+      "prospect_ids": [
+        "modified-gravity",
+        "bounces-cycles"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0009150v1",
+      "stage": "read",
+      "reason": "Retain early anisotropic two-fluid structure-formation proposal; matching surfaces, shear and superhorizon validity need source checks.",
+      "prospect_ids": [
+        "modified-gravity",
+        "early-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1605.00552v2",
+      "stage": "read",
+      "reason": "Retain emergent-expansion/spin degrees-of-freedom construction; thermodynamic bookkeeping and entropy-bound assumptions need a full read.",
+      "prospect_ids": [
+        "modified-gravity",
+        "late-dark-energy"
+      ]
     }
   ],
   "search_history": [
@@ -384,6 +486,17 @@
       "scan_id": "2026-10-01-lcdm-baseline",
       "query_ids": [],
       "mode": "known_primary_ids_only"
+    },
+    {
+      "scan_id": "2026-10-01-resumable-modified-gravity",
+      "query_ids": [
+        "modified-gravity-fresh",
+        "einstein-cartan-foundations"
+      ],
+      "search_ids": [
+        "2026-10-01-modified-gravity-fresh",
+        "2026-10-01-einstein-cartan-foundations"
+      ]
     }
   ],
   "citation_leads": [
@@ -452,6 +565,34 @@
       "reason": "Kessler et al. (2009), ApJS 185, 32, comparison of supernova light-curve fitters and reduction systematics; identify primary record before acquisition.",
       "source_paper_id": "arxiv:1009.5855v2",
       "admission": "unverified_lead"
+    },
+    {
+      "arxiv_id": null,
+      "reason": "Recorded bibliography lead; not followed.",
+      "source_paper_id": "arxiv:2609.37437v1",
+      "admission": "unverified_lead",
+      "reference": "[123]"
+    },
+    {
+      "arxiv_id": null,
+      "reason": "Recorded bibliography lead; not followed.",
+      "source_paper_id": "arxiv:2609.37437v1",
+      "admission": "unverified_lead",
+      "reference": "[101]"
+    },
+    {
+      "arxiv_id": null,
+      "reason": "The target directly relies on this source for torsion-modified area-distance reciprocity and eta; compare conventions and scope in a later bounded source review. Not followed here.",
+      "source_paper_id": "arxiv:2609.36853v1",
+      "admission": "unverified_lead",
+      "reference": "[35] K. Bolejko, M. Cinus and B.F. Roukema (2020), Cosmological signatures of torsion and how to distinguish torsion from the dark sector, Phys. Rev. D 101, 104046"
+    },
+    {
+      "arxiv_id": null,
+      "reason": "The target invokes this source when motivating its U(1)-preserving F=dA treatment and Maxwell/torsion assumptions. Not followed here.",
+      "source_paper_id": "arxiv:2609.36853v1",
+      "admission": "unverified_lead",
+      "reference": "[37] R. Fresneda, M.C. Baldiotti and T.S. Pereira (2015), Maxwell field with torsion, Braz. J. Phys. 45, 353-358"
     }
   ],
   "design_work": [
@@ -501,7 +642,7 @@
     "Raw sources and working files stay inside ignored Prospector/.work.",
     "Blocked numerical handoffs need a separately scoped implementation task."
   ],
-  "next_work_mode": "foundational_or_citation_linked",
+  "next_work_mode": "fresh_after_queued_reads",
   "coordinated_baseline": {
     "state": "limited_candidate_ready_for_consumer_review",
     "engine_revision": "db4765838fc404a489a0115ee69713f2ea6cd2f4",
@@ -522,5 +663,6 @@
     "reference_sha256": "06c561ab2214bd028b47e03802ec3029d476a4cf61d75602bf550e5cbf1282cf",
     "adapter_revision": "98cadbb3e3bf59f5933ef977133b64453c968c0a",
     "request_sha256": "5d67253917a35031b69b85272fe381da8c946007da5615300a3dcf3381f12bed"
-  }
+  },
+  "continuation_note": "Resume saved acquisitions/reads before a new bounded window. Least-searched lane interacting-sectors; preserve foundational spin citations and blocked source-audit designs. No scheduled or endless crawl."
 }

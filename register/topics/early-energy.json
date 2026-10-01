@@ -7,6 +7,7 @@
   "paper_ids": [
     "arxiv:1306.3208v2",
     "arxiv:1811.04083v2",
+    "arxiv:1812.04589v1",
     "arxiv:1910.10739v5",
     "arxiv:2111.07288v1",
     "arxiv:2112.00770v2",
@@ -17,8 +18,11 @@
     "arxiv:2411.09747v2",
     "arxiv:2502.08541v2",
     "arxiv:2605.26116v2",
+    "arxiv:2609.24912v1",
     "arxiv:2609.37293v1",
-    "arxiv:astro-ph/0601544v2"
+    "arxiv:astro-ph/0009150v1",
+    "arxiv:astro-ph/0601544v2",
+    "arxiv:gr-qc/0202022v1"
   ],
   "idea_ids": [
     "constant-coupling-scalar-residual-floor",

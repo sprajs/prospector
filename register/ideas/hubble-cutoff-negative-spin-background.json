@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "hubble-cutoff-negative-spin-background",
+  "title": "Conditional negative-spin background with Hubble-cutoff holographic energy",
+  "family": "torsion_holographic_background",
+  "status": "reviewed_conditional",
+  "review_id": "2026-10-01-modified-gravity-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2609.36853v1",
+      "locator": "Eqs.(14)-(32),(37)-(38), PDF pp.3-5"
+    }
+  ],
+  "assumptions": [
+    "Phenomenological flat-FLRW Friedmann pair with negative 3Mp²Phi² density, Phi∝a^−3, separately conserved dust and rhoX=3d²Mp²H²; radiation neglected and no separate Lambda.",
+    "The claimed Frenkel/Weyssenhoff nonzero trace source is internally inconsistent; retained background equations are a conditional ansatz pending source reconciliation.",
+    "Quoted d fit fixes Omega_m0=.3 and uses one cited local Pantheon q0 summary; it is not a multi-probe/current-data fit."
+  ],
+  "predictions": [
+    "Conditional expansion has E²=[Omega_m0(1+z)³−Delta(1+z)^6]/(1−d²), Delta=Omega_m0+d²−1, and wX=−Delta(1+z)³/[Omega_m0−Delta(1+z)³].",
+    "Negative stiff scaling can yield a negative q locally, but the quoted branch ceases to have E²>0 beyond z*=.249 and cannot represent a full cosmological history.",
+    "Torsion-free Hubble-cutoff noninteracting energy returns to dust; d→0 is not a continuous LambdaCDM recovery in the displayed physical branch."
+  ]
+}

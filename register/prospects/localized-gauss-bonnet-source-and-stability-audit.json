@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "localized-gauss-bonnet-source-and-stability-audit",
+  "title": "Localized Gauss–Bonnet dark energy",
+  "kind": "single_mechanism",
+  "readiness": "blocked",
+  "baseline": {
+    "label": "LambdaCDM",
+    "role": "comparison",
+    "scope": "Declared working comparison convention only; this source changes gravity/energy closure and does not retain a separate Lambda. No source reference posterior is adopted.",
+    "parameters": null,
+    "parameters_reason": "No candidate numerical inputs or covariance are accepted in this source-audit prospect."
+  },
+  "cosmology": {
+    "gravity": "Einstein-Hilbert plus canonical scalar and −f(phi)G; source Eq.(2.1).",
+    "geometry": "Spatially flat FLRW in the source.",
+    "components": [
+      "Minimally coupled dust and radiation.",
+      "Canonical hybrid-potential scalar; Gaussian scalar–GB coupling."
+    ],
+    "modifications": [
+      "Curvature coupling replaces GR-only dark-energy dynamics; no independent Lambda.",
+      "Minimum relation must constrain coupling center and potential parameters."
+    ],
+    "background": "Action/KG/Friedmann define a conditional background after labelled source repairs; Fig.6 printed initial values do not obey the declared minimum condition.",
+    "perturbations": "Linear sound-speed expressions do not complete fixed-model scalar/retained-fluid kinetic closure; QT and Eq.(5.5) are checked only as conditional consistency relations.",
+    "observables": [
+      "Potential-center residual and fixed-model equilibrium domain.",
+      "Scalar/tensor kinetic/gradient regularity.",
+      "Possible later H(z), w_eff and observed-path tensor speed."
+    ]
+  },
+  "scope": [
+    "Source reconciliation first; no accepted ready trajectory.",
+    "Lost scope: multi-probe inference, independent reproduction, UV completion and global stability."
+  ],
+  "unknowns": [
+    "Author benchmark source code/inputs and acceptance of formula repairs.",
+    "A corrected genuine-minimum initial set and fixed-model constraint surface.",
+    "Scalar/matter/radiation kinetic closure and observed-redshift GW conditions.",
+    "Consumer capability and acceptance uninspected."
+  ],
+  "combination_compatibility": {
+    "status": "source_coherent",
+    "basis": "The displayed action sectors define a single proposed branch; accepted constraints are audit conditions, not added components."
+  },
+  "idea_ids": [
+    "localized-gauss-bonnet-oscillatory-dark-energy",
+    "gauss-bonnet-minimum-and-stability-consistency"
+  ],
+  "model_idea_ids": [
+    "localized-gauss-bonnet-oscillatory-dark-energy"
+  ],
+  "design_ids": [
+    "candidate-gauss-bonnet-minimum-and-stability-audit"
+  ],
+  "topic_ids": [
+    "late-dark-energy",
+    "modified-gravity"
+  ],
+  "paper_ids": [
+    "arxiv:2609.37437v1"
+  ],
+  "review_id": "2026-10-01-modified-gravity-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2609.37437v1",
+      "locator": "Eqs.(2.1)-(2.18),(3.1)-(3.22),(4.1)-(4.11),(5.2)-(5.6); Fig.6 and Appendix A",
+      "url": "https://arxiv.org/abs/2609.37437v1",
+      "source_sha256": {
+        "html": "62b0a576adfec55caf1e6344d6c4eae4a0a099c16a4111f2babb5d952b973883",
+        "pdf": "976dfb6140190adcff7d5a75ec081073c3fa530456cc3a80a90743e1901e5d0f"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "frenkel-trace-and-maxwell-duality-closure",
+  "title": "Trace spin source and photon prescription must close before a duality signal",
+  "family": "source_consistency",
+  "status": "reviewed_conditional",
+  "review_id": "2026-10-01-modified-gravity-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2609.36853v1",
+      "locator": "Eqs.(2),(7),(11)-(12),(41)-(51); Appendix A preamble/Eqs.(A1)-(A3), Appendix B"
+    }
+  ],
+  "assumptions": [
+    "Source Frenkel condition and Cartan equation are imposed as printed; no new spin current is invented.",
+    "Electromagnetism uses connection-independent gauge-invariant F=dA; opacity/nonminimal photon coupling has not been supplied.",
+    "Formal eta expansion retains both Phi-sign branches; |Phi/H|<1 is not a quantified truncation-error guarantee."
+  ],
+  "predictions": [
+    "Cartan trace contraction gives −2 S_lambda=kappa s_lambda_nu u^nu=0, while the homogeneous trace ansatz gives S_lambda=−3Phi u_lambda/2. Nonzero Phi requires changing or completing the source.",
+    "Minimal Maxwell equations imply Levi-Civita stress conservation/geometric optics; the assumed full-connection conservation in Eq.(44) needs conversion terms. Nonzero eta is not established by the stated photon sector.",
+    "The author formal integral has signed eta≈±(2/3)sqrt(1−d²)[asin(xi(1+z)^(3/2))−asin(xi)], xi=sqrt(Delta/Omega_m0); its algebra does not certify a physical duality violation."
+  ]
+}

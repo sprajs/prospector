@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "localized-gauss-bonnet-oscillatory-dark-energy",
+  "title": "Localized Gauss–Bonnet coupling around a hybrid scalar minimum",
+  "family": "modified_gravity",
+  "status": "reviewed_conditional",
+  "review_id": "2026-10-01-modified-gravity-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2609.37437v1",
+      "locator": "Eqs.(2.1),(2.10),(2.15),(3.1),(3.4),(3.12)-(3.22); Sec.V and Fig.6"
+    }
+  ],
+  "assumptions": [
+    "Canonical scalar with V=V0 exp(−kappa lambda phi)+m_phi²phi²/2 and −f(phi)G; minimally coupled pressureless matter and radiation in flat FLRW.",
+    "Gaussian f has a source-declared center at the actual potential minimum; illustrative Fig.6 initial values violate this relation and cannot serve as a faithful benchmark.",
+    "Effective pressure reallocates GB exchange; intrinsic canonical w_phi, exchange-assigned w_phi^eff and total w_eff remain distinct."
+  ],
+  "predictions": [
+    "Near a genuine minimum, local damped oscillations can occur when an approximately constant effective mass exceeds 3H/2; a localized curvature coupling changes the local restoring term.",
+    "The source proposes transient effective phantom crossings. Its action defines a useful conditional mechanism, while the displayed fixed-model/stability and data-viability claims remain unestablished.",
+    "Late modified-gravity oscillations do not supply the EDE pre-recombination depletion history or a unified early/late tracking scalar."
+  ]
+}

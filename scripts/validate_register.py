@@ -64,6 +64,30 @@ def validate():
     topics = records("register/topics", "id")
     prospects = records("register/prospects", "id")
     require(papers, "empty paper register")
+    from bibliometrics import validate_sidecar, finalize_snapshot
+    metric_ids = set()
+    for path in sorted((ROOT / 'register/bibliometrics').glob('*.json')):
+        metric = strict_load(path)
+        errors = validate_sidecar(metric)
+        require(not errors, f"invalid bibliometric snapshot {path.name}: {errors}")
+        require(metric['paper_id'] in papers, 'bibliometric snapshot references missing paper')
+        paper = papers[metric['paper_id']]
+        work = metric['work_identity']
+        require(work['arxiv_id'] == paper['arxiv_id'] and work['registered_version'] == paper['version'],
+                'bibliometric snapshot paper identity mismatch')
+        require(metric['comparison']['first_publication_utc'] == paper['published_utc'],
+                'bibliometric age uses a different first-publication date')
+        require(work['title'] == paper['title'], 'bibliometric title differs from registered source')
+        require({a['paper_author_name'] for a in metric['authors']} == set(paper['authors']),
+                'bibliometric author coverage differs from registered source')
+        ident = metric['snapshot_id']
+        key = (metric['paper_id'], work['provider'], ident)
+        require(key not in metric_ids, 'duplicate bibliometric snapshot')
+        metric_ids.add(key)
+        require(finalize_snapshot(dict(metric))['snapshot_id'] == ident,
+                'bibliometric snapshot ID differs from its immutable contents')
+        filename = metric['paper_id'].removeprefix('arxiv:').replace('/', '__') + '-' + ident + '.json'
+        require(path.name == filename, 'noncanonical bibliometric snapshot filename')
     # Durable discovery coverage is independent of admission into the paper register.
     from crawl import receipts as search_receipts
     searches = search_receipts(ROOT)

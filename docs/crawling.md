@@ -63,6 +63,13 @@ stops acquisition. A retry that fails is retained and cannot be retried again
 through the same chain. Changing request parameters is recorded as a different
 window; this is not permission to evade rate limits or repeatedly scrape failures.
 
+Acquisition logs are kept under `.work/crawl-acquisition/<batch-id>/`, defaulting
+to the UTC date. A 429 stops all further requests in that batch, including other
+query windows. Use `--batch-id` only for a later, newly authorized bounded batch;
+changing it does not authorize continuing around a 429 in the same batch. Old
+logs and failed receipts remain intact. All batches share the repository's
+single arXiv connection/rate-limit lock.
+
 Before networking, the tool writes an interrupted-attempt placeholder. Success
 or failure atomically replaces that placeholder under the same search ID. A
 process interruption therefore leaves the exact intended request visible. Cached

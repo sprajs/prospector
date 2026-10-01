@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "spin-holographic-source-and-photon-audit",
+  "title": "Spin and holographic dark-energy source audit",
+  "kind": "single_mechanism",
+  "readiness": "blocked",
+  "baseline": {
+    "label": "LambdaCDM",
+    "role": "comparison",
+    "scope": "Declared working comparison convention only; this source changes gravity/energy closure and does not retain a separate Lambda. No source reference posterior is adopted.",
+    "parameters": null,
+    "parameters_reason": "No candidate numerical inputs or covariance are accepted in this source-audit prospect."
+  },
+  "cosmology": {
+    "gravity": "Author Einstein-Cartan action with algebraic torsion; claimed nonzero trace Weyssenhoff/Frenkel source is not reconciled.",
+    "geometry": "Spatially flat FLRW in the source.",
+    "components": [
+      "Separately conserved dust.",
+      "Phenomenological Hubble-cutoff holographic energy rhoX=3d²Mp²H².",
+      "Conditional negative spin² stiff contribution; a coherent nonzero linear trace is not accepted."
+    ],
+    "modifications": [
+      "No separately retained Lambda; radiation omitted in low-z scope.",
+      "Trace-source completion and photon conservation are audit gates, not new added physics."
+    ],
+    "background": "Conditional Friedmann pair and negative a^−6 contribution close an algebraic low-z background; this is not a verified derivation from the stated microscopic spin source.",
+    "perturbations": "No perturbation closure in the source. Connection-independent photon action conflicts with imposed affine radiation conservation; nonzero duality signal is blocked.",
+    "observables": [
+      "Cartan trace and photon-conservation consistency.",
+      "Conditional H(z), q(z), wX(z) and domain endpoints.",
+      "Formal signed eta integral only after source and photon closure."
+    ]
+  },
+  "scope": [
+    "Local effective branch only; z*≈.249 at the source fit.",
+    "Lost scope: radiation era, CMB, growth, spin perturbations, a direct duality detection and current-data inference."
+  ],
+  "unknowns": [
+    "No compatible nonzero trace spin source under the printed Frenkel condition.",
+    "Affine stress conservation is not reconciled with the connection-independent Maxwell action.",
+    "Omitted reciprocity/nonlinear flux terms lack an error bound.",
+    "External local-q source and source-foundation claims are not independently checked.",
+    "Consumer capability/acceptance uninspected."
+  ],
+  "combination_compatibility": {
+    "status": "not_assessed",
+    "basis": "Source equations furnish a conditional phenomenological branch but stated spin trace and photon prescriptions are inconsistent. A source-coherent nonzero-trace cosmology cannot be accepted without explicit reconciliation."
+  },
+  "idea_ids": [
+    "hubble-cutoff-negative-spin-background",
+    "frenkel-trace-and-maxwell-duality-closure"
+  ],
+  "model_idea_ids": [
+    "hubble-cutoff-negative-spin-background"
+  ],
+  "design_ids": [
+    "candidate-spin-source-and-photon-duality-audit"
+  ],
+  "topic_ids": [
+    "late-dark-energy",
+    "modified-gravity"
+  ],
+  "paper_ids": [
+    "arxiv:2609.36853v1"
+  ],
+  "review_id": "2026-10-01-modified-gravity-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2609.36853v1",
+      "locator": "Eqs.(2),(7)-(32),(37)-(51); Appendix A-B",
+      "url": "https://arxiv.org/abs/2609.36853v1",
+      "source_sha256": {
+        "html": "ba0c79c9a1404936a9b3b4524cf3134e7352a21c53d5e58c6cf58865d1eebcd5",
+        "pdf": "1032dcdfbb2da6fe08e238601939d1e34e5441e06fb9097d65c8de6bcf29009a"
+      }
+    }
+  ]
+}

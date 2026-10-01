@@ -7,6 +7,7 @@ import shutil
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import crawl
@@ -124,6 +125,47 @@ class CrawlTests(unittest.TestCase):
         self.assertEqual(records[0]['status'], 'interrupted')
         self.assertFalse(records[0]['coverage']['result_ids_complete'])
 
+    def test_rate_limited_batch_stays_stopped_and_new_batch_retains_log(self):
+        folder = self.root / '.work/crawl-acquisition/first'
+        folder.mkdir(parents=True)
+        log = folder / 'acquisition.jsonl'
+        log.write_text('{"http_status":429}\n')
+        created = []
+        def client_for(path):
+            created.append(path)
+            if (path / 'acquisition.jsonl').exists():
+                client = FakeClient(failure=True)
+                def stopped(*args, **kwargs):
+                    raise RuntimeError('Acquisition stopped after HTTP 429')
+                client.search = stopped
+                return client
+            return FakeClient()
+        with patch.object(crawl.arxiv, 'Client', side_effect=client_for):
+            result = crawl.search('ti:blocked', root=self.root, batch_id='first')
+            self.assertEqual(result['action'], 'failed')
+            self.assertIn('stopped after HTTP 429', result['receipt']['source']['error'])
+            later = crawl.search('ti:later', root=self.root, batch_id='later-authorized', discovery_reason='Later separately authorized batch.')
+            self.assertEqual(later['action'], 'searched')
+        self.assertTrue(log.exists())
+        self.assertEqual(later['receipt']['batch_id'], 'later-authorized')
+        self.assertEqual(created, [folder, self.root / '.work/crawl-acquisition/later-authorized'])
+        with self.assertRaisesRegex(ValueError, 'batch identifier'):
+            crawl.search('ti:invalid', root=self.root, batch_id='../elsewhere')
+
+    def test_same_window_429_recovery_requires_later_explicit_batch_and_reason(self):
+        failed = crawl.save_snapshot([], dict(self.source, http_status=429, error='HTTP 429',
+                                    retrieved_utc=(datetime.now(timezone.utc)-timedelta(seconds=40)).isoformat()),
+                                     'ti:limited', root=self.root, status='failed', search_id='limited')
+        failed['batch_id']='first'
+        crawl.write_receipt(failed,self.root,replace=True)
+        with self.assertRaisesRegex(ValueError,'stops acquisition'):
+            crawl.search('ti:limited',root=self.root,client=FakeClient(),batch_id='first',retry_reason='Retry',discovery_reason='Retry')
+        later = crawl.search('ti:limited',root=self.root,client=FakeClient(),batch_id='later-authorized',
+                             retry_reason='Later authorized batch after cooldown.',discovery_reason='Resume failed window only.')
+        self.assertEqual(later['action'],'searched')
+        self.assertEqual(later['receipt']['retry_of'],'limited')
+        self.assertEqual(later['receipt']['batch_id'],'later-authorized')
+
     def test_pending_work_requires_explicit_discovery_rationale(self):
         self.snapshot(search_id='first')
         with self.assertRaisesRegex(ValueError, 'resume existing queue first'):
@@ -193,6 +235,21 @@ class CrawlTests(unittest.TestCase):
         self.assertFalse(record['coverage']['dispositions_complete'])
         self.assertEqual(record['request']['direction'], 'ascending')
         self.assertEqual(crawl.backfill(self.root), [])
+
+    def test_backfill_preserves_explicit_live_search_and_decisions(self):
+        record = self.snapshot(search_id='live', provenance=dict(kind='live', scan_id='batch', query_id='query'))
+        crawl.screen('live', 'arxiv:2202.08291v3', 'excluded', 'Outside scope.', self.root)
+        query = dict(id='query', search_id='live', query=record['request']['query'],
+                     url=self.source['url'], retrieved_utc=self.source['retrieved_utc'],
+                     sha256=self.source['sha256'], result_ids=['arxiv:2202.08291v3'])
+        self.write('scans/batch.json', dict(scan_id='batch', started_utc=self.source['retrieved_utc'], queries=[query]))
+        self.assertEqual(crawl.backfill(self.root), [])
+        self.assertEqual(len(crawl.receipts(self.root)), 1)
+        self.assertEqual(crawl.receipts(self.root)[0]['results'][0]['disposition'], 'excluded')
+        query['sha256'] = '2' * 64
+        self.write('scans/batch.json', dict(scan_id='batch', started_utc=self.source['retrieved_utc'], queries=[query]))
+        with self.assertRaisesRegex(ValueError, 'source identity mismatch'):
+            crawl.backfill(self.root)
 
     def test_receipt_predecessor_order_rejects_cycles(self):
         first = self.snapshot(search_id='first')
