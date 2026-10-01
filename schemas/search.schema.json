@@ -1,0 +1,343 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "search_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]*$"
+    },
+    "lane": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "work_mode": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "completed",
+        "failed",
+        "interrupted"
+      ]
+    },
+    "requested_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "query": {
+          "type": "string",
+          "minLength": 1
+        },
+        "normalized_query": {
+          "type": "string",
+          "minLength": 1
+        },
+        "order": {
+          "enum": [
+            "lastUpdatedDate",
+            "submittedDate",
+            "relevance"
+          ]
+        },
+        "direction": {
+          "enum": [
+            "ascending",
+            "descending"
+          ]
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "window_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "query",
+        "normalized_query",
+        "order",
+        "direction",
+        "start",
+        "limit",
+        "window_sha256"
+      ]
+    },
+    "refresh": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            },
+            "previous_search_id": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "reason",
+            "previous_search_id"
+          ]
+        }
+      ]
+    },
+    "retry_of": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retry_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "discovery_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "retrieved_utc": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "http_status": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 100,
+          "maximum": 599
+        },
+        "error": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "local_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retry_after": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "url",
+        "retrieved_utc",
+        "sha256",
+        "http_status",
+        "error",
+        "local_path",
+        "retry_after"
+      ]
+    },
+    "results": {
+      "type": "array",
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "paper_id": {
+            "type": "string",
+            "pattern": "^arxiv:.+v[1-9][0-9]*$"
+          },
+          "position": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "disposition": {
+            "enum": [
+              "pending",
+              "duplicate",
+              "selected",
+              "excluded",
+              "deferred",
+              "unknown"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "decision_history": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "utc": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "disposition": {
+                  "enum": [
+                    "pending",
+                    "duplicate",
+                    "selected",
+                    "excluded",
+                    "deferred",
+                    "unknown"
+                  ]
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "utc",
+                "disposition",
+                "reason"
+              ]
+            }
+          }
+        },
+        "required": [
+          "paper_id",
+          "position",
+          "disposition",
+          "reason",
+          "title",
+          "decision_history"
+        ]
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "result_ids_complete": {
+          "type": "boolean"
+        },
+        "dispositions_complete": {
+          "type": "boolean"
+        },
+        "metadata_complete": {
+          "type": "boolean"
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "result_ids_complete",
+        "dispositions_complete",
+        "metadata_complete",
+        "limitations"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "live",
+            "legacy_scan"
+          ]
+        },
+        "scan_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "query_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "scan_id",
+        "query_id"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "search_id",
+    "lane",
+    "work_mode",
+    "status",
+    "requested_utc",
+    "request",
+    "refresh",
+    "retry_of",
+    "retry_reason",
+    "discovery_reason",
+    "source",
+    "results",
+    "coverage",
+    "provenance"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bounded arXiv search snapshot and screening receipt"
+}

@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "search_id": "2026-10-01-initial-register--api-title",
+  "lane": null,
+  "work_mode": "legacy_unknown",
+  "status": "completed",
+  "requested_utc": "2026-10-01T00:43:43.823637+00:00",
+  "request": {
+    "query": "ti:\"early dark energy\"",
+    "normalized_query": "ti:\"early dark energy\"",
+    "order": "relevance",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "6f2c5e55fa297f71ce471851c3c3f7f9c70b43e3c153320ef4fa743a0b27612a"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": null,
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22early+dark+energy%22&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+    "retrieved_utc": null,
+    "sha256": null,
+    "http_status": null,
+    "error": null,
+    "local_path": null,
+    "retry_after": null
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:1910.10739v5",
+      "position": 0,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2401.08812v1",
+      "position": 1,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2209.15046v1",
+      "position": 2,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0601544v2",
+      "position": 3,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2502.08541v2",
+      "position": 4,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2408.03229v3",
+      "position": 5,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2411.09747v2",
+      "position": 6,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2112.00770v2",
+      "position": 7,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2111.07288v1",
+      "position": 8,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2202.08291v3",
+      "position": 9,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": false,
+    "metadata_complete": false,
+    "limitations": [
+      "Backfilled from an existing scan, not a new query.",
+      "Missing source time/hash and per-hit screens remain unknown; batch start is only the request-time fallback."
+    ]
+  },
+  "provenance": {
+    "kind": "legacy_scan",
+    "scan_id": "2026-10-01-initial-register",
+    "query_id": "api-title"
+  }
+}

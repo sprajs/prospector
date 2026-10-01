@@ -64,6 +64,19 @@ def validate():
     topics = records("register/topics", "id")
     prospects = records("register/prospects", "id")
     require(papers, "empty paper register")
+    # Durable discovery coverage is independent of admission into the paper register.
+    from crawl import receipts as search_receipts
+    searches = search_receipts(ROOT)
+    for search in searches:
+        require(search['lane'] is None or search['lane'] in topics,
+                'search references missing topic lane')
+        if search['provenance']['scan_id']:
+            require(search['provenance']['scan_id'] in scans,
+                    'search references missing scan receipt')
+        for hit in search['results']:
+            if hit['disposition'] == 'duplicate':
+                require(hit['paper_id'] in papers,
+                        'search claims registered disposition for missing paper')
     targeted = lambda review: review.get("review_kind") == "targeted_source_claims"
     def accepted_record(review_id, kind, ident):
         review = reviews[review_id]

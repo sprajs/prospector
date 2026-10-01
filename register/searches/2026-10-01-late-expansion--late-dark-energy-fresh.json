@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "search_id": "2026-10-01-late-expansion--late-dark-energy-fresh",
+  "lane": "late-dark-energy",
+  "work_mode": "fresh_with_queued_reads",
+  "status": "completed",
+  "requested_utc": "2026-10-01T01:36:31.860062+00:00",
+  "request": {
+    "query": "(cat:astro-ph.CO OR cat:gr-qc) AND (ti:\"dark energy\" OR ti:quintessence)",
+    "normalized_query": "(cat:astro-ph.CO OR cat:gr-qc) AND (ti:\"dark energy\" OR ti:quintessence)",
+    "order": "lastUpdatedDate",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "30b78d647af70dd419d5fcbc52abea7f1d9ea5b97552739a6215b143798f20ea"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": null,
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Agr-qc%29+AND+%28ti%3A%22dark+energy%22+OR+ti%3Aquintessence%29&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+    "retrieved_utc": "2026-10-01T01:36:31.860062+00:00",
+    "sha256": "5a85b61b80a2c2a80ade9ac25275d960656b5cd99b98f74461057475f2766fae",
+    "http_status": null,
+    "error": null,
+    "local_path": null,
+    "retry_after": null
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:2609.39039v1",
+      "position": 0,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.14966v3",
+      "position": 1,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.38422v1",
+      "position": 2,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.37437v1",
+      "position": 3,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.37293v1",
+      "position": 4,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.36853v1",
+      "position": 5,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2605.22143v2",
+      "position": 6,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.34917v1",
+      "position": 7,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.33673v1",
+      "position": 8,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.31543v1",
+      "position": 9,
+      "disposition": "duplicate",
+      "reason": "Exact version already registered; metadata hit retained as a duplicate, not admitted or reread.",
+      "title": null,
+      "decision_history": []
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": false,
+    "metadata_complete": false,
+    "limitations": [
+      "Backfilled from an existing scan, not a new query.",
+      "Missing source time/hash and per-hit screens remain unknown; batch start is only the request-time fallback."
+    ]
+  },
+  "provenance": {
+    "kind": "legacy_scan",
+    "scan_id": "2026-10-01-late-expansion",
+    "query_id": "late-dark-energy-fresh"
+  }
+}
