@@ -19,9 +19,9 @@
     "pdf": "https://arxiv.org/pdf/2609.37437v1"
   },
   "license": {
-    "status": "unknown",
+    "status": "CC_BY_4.0_declared_in_pinned_arxiv_html",
     "redistribution": "links_and_original_notes_only",
-    "reason": "No per-paper redistribution grant verified; publish metadata, links and original notes only."
+    "reason": "Pinned HTML #license-tr declares License: CC BY 4.0; source hash 62b0a576adfec55caf1e6344d6c4eae4a0a099c16a4111f2babb5d952b973883. Public records retain metadata, links and original notes."
   },
   "artifacts": [
     {
@@ -30,14 +30,524 @@
       "retrieved_utc": "2026-10-01T01:36:31.860062+00:00",
       "sha256": "5a85b61b80a2c2a80ade9ac25275d960656b5cd99b98f74461057475f2766fae",
       "bytes": 25287
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/2609.37437v1",
+      "retrieved_utc": "2026-10-01T16:43:06.568497+00:00",
+      "sha256": "62b0a576adfec55caf1e6344d6c4eae4a0a099c16a4111f2babb5d952b973883",
+      "bytes": 598232
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/2609.37437v1",
+      "retrieved_utc": "2026-10-01T16:43:09.808445+00:00",
+      "sha256": "976dfb6140190adcff7d5a75ec081073c3fa530456cc3a80a90743e1901e5d0f",
+      "bytes": 4689066
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/2609.37437v1",
+      "retrieved_utc": "2026-10-01T16:43:10.572858+00:00",
+      "sha256": "15856d6e6482a63df0146b325347cc35d88b1afa791b5a9b618b2d8e69ca11f3",
+      "bytes": 158530,
+      "derived_from_sha256": "976dfb6140190adcff7d5a75ec081073c3fa530456cc3a80a90743e1901e5d0f",
+      "tool": "pdftotext -layout"
     }
   ],
   "screen": {
-    "status": "deferred",
-    "basis": "abstract",
-    "reason": "Priority challenge: oscillatory Einstein-Gauss-Bonnet dark energy includes stated ghost/gradient-instability domains."
+    "status": "reviewed",
+    "basis": "full_text",
+    "reason": "Complete Luna reading and exact Sol original-source review; useful conditional mechanisms with material source corrections, no scientific qualification."
   },
-  "extraction": null,
-  "review_id": null,
-  "idea_ids": []
+  "extraction": {
+    "paper_id": "arxiv:2609.37437v1",
+    "requested_model": "gpt-6-luna",
+    "requested_reasoning": "xhigh",
+    "backend_identity": "unknown_unexposed",
+    "agent_id": "/root/read_gauss_bonnet",
+    "reading_level": "full_text",
+    "source_hashes": {
+      "html": "62b0a576adfec55caf1e6344d6c4eae4a0a099c16a4111f2babb5d952b973883",
+      "pdf": "976dfb6140190adcff7d5a75ec081073c3fa530456cc3a80a90743e1901e5d0f",
+      "extracted_text": "15856d6e6482a63df0146b325347cc35d88b1afa791b5a9b618b2d8e69ca11f3"
+    },
+    "source_identity": {
+      "verified": true,
+      "pinned_version": "2609.37437v1",
+      "title_html": "Oscillatory dark energy with phantom crossings in Einstein–Gauss–Bonnet gravity",
+      "title_pdf": "Oscillatory dark energy with phantom crossings in Einstein–Gauss–Bonnet gravity",
+      "authors": [
+        "Saddam Hussain",
+        "Sandip Biswas"
+      ],
+      "identity_note": "HTML watermark and PDF arXiv stamp identify v1; title and author list agree with the registered metadata. The PDF's internal compilation date is 30 September 2026; the v1 posting stamp is 29 September 2026.",
+      "access_license": "The pinned HTML displays 'License: CC BY 4.0'. The existing paper record says unknown; no public record was changed by this reader."
+    },
+    "coverage": {
+      "sections_read": [
+        "Abstract",
+        "I Introduction",
+        "II Background Equations",
+        "III Analytical Analysis of the Model, including III.1 and III.2",
+        "IV Dynamical System and Stability Analysis, including IV.1 and IV.2",
+        "V Linear Perturbation and Model's Stability, including V.1",
+        "VI Conclusion",
+        "Appendix A Center Manifold Theorem"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "appendices_read": [
+        "Appendix A, PDF pages 14-15; no other appendix is present"
+      ],
+      "math_crosschecked_in_original_html_and_pdf": [
+        "Action, Gauss-Bonnet invariant, background equations and continuity equations: PDF p.3-4; HTML #S2.E1-#S2.E18",
+        "Hybrid potential, minimum, oscillator and Gaussian coupling: PDF p.5-6; HTML #S3.E19-#S3.E40",
+        "Autonomous variables, Friedmann constraint and evolution system: PDF p.6-8; HTML #S4.E41-#S4.E51",
+        "Linear tensor/scalar speeds and stated stability condition: PDF p.10; HTML #S5.E53-#S5.E57"
+      ],
+      "visual_figure_checks": [
+        {
+          "figure": "Fig. 1",
+          "pdf_page": 5,
+          "coverage": "Rendered and visually checked both potential panels and axes."
+        },
+        {
+          "figure": "Fig. 2",
+          "pdf_page": 8,
+          "coverage": "Rendered and visually checked P1/P2 stability regions and effective-w contours."
+        },
+        {
+          "figure": "Fig. 3",
+          "pdf_page": 9,
+          "coverage": "Rendered and visually checked three reduced-phase-space panels; gray algebraic curves distinguished from integrated trajectories by the caption/text."
+        },
+        {
+          "figure": "Fig. 4",
+          "pdf_page": 11,
+          "coverage": "Rendered and visually checked all trajectory panels, including plotted c_s^2 and c_T^2 histories."
+        },
+        {
+          "figure": "Fig. 5",
+          "pdf_page": 13,
+          "coverage": "Rendered and visually checked minimally coupled evolution panels."
+        },
+        {
+          "figure": "Fig. 6",
+          "pdf_page": 13,
+          "coverage": "Rendered at high resolution and visually checked both parameter cases, including the sound-speed curves and inset u histories."
+        }
+      ],
+      "captions_only_figure_checks": [],
+      "unread_material": [
+        "The 137 bibliography entries were scanned for explicit IDs matching currently registered paper base IDs, but the cited works were not opened or independently checked.",
+        "No observational likelihoods, underlying DESI/supernova data products, or external gravitational-wave constraint sources were re-read."
+      ],
+      "coverage_note": "No main-text or Appendix A material was left unread. The HTML's arXiv reporting-errors boilerplate after References is not paper content.",
+      "pdf_pages_read_original": "1-18, all content pages; page 19 is empty",
+      "figure_check": "All six figures visually inspected on rendered pinned PDF pages as listed in visual_figure_checks; no captions-only figures claimed.",
+      "limitations": [
+        "The 137 bibliography entries were scanned for explicit IDs matching currently registered paper base IDs, but the cited works were not opened or independently checked.",
+        "No observational likelihoods, underlying DESI/supernova data products, or external gravitational-wave constraint sources were re-read."
+      ]
+    },
+    "summary": "The authors propose a canonical scalar in flat FLRW Einstein-scalar-Gauss-Bonnet gravity, with V(phi)=V0 exp(-kappa lambda phi)+m_phi^2 phi^2/2 and a Gaussian f(phi) centered at the potential minimum. A transient nonminimal coupling is claimed to amplify late-time scalar oscillations so the effective equation of state crosses -1 before tending to a de Sitter-like future. The paper combines background autonomous-system numerics with linear scalar/tensor sound-speed expressions. Its displayed examples are initial-condition and parameter trajectories, not fits to DESI, supernova, CMB, or gravitational-wave data. The model's useful claim is conditional on a narrow stability domain and on resolving source-level equation inconsistencies recorded below.",
+    "ideas": [
+      {
+        "local_id": "local-hybrid-exponential-quadratic-esgb",
+        "title": "A hybrid exponential-quadratic scalar potential produces a temporary oscillatory epoch",
+        "author_proposal": "The potential V(phi)=V0 exp(-kappa lambda phi)+m_phi^2 phi^2/2 has a tunable minimum. A field initially Hubble-frozen can roll toward it and oscillate for a finite interval; the exponential term can later carry it toward a de Sitter-like branch.",
+        "reported_fit_or_measurement": "None. Figure 1 uses illustrative parameter choices, including V0=10^-60 and kappa=1; these are not inferred values.",
+        "equations": [
+          {
+            "expression": "V(phi)=V0 exp(-kappa lambda phi)+(1/2)m_phi^2 phi^2; kappa lambda V0=m_phi^2 phi_c/exp(-kappa lambda phi_c); V_{,phi phi}(phi_c)=m_phi^2(1+lambda kappa phi_c)>0.",
+            "locator": "PDF p.4-5, Eqs. (3.1), (3.4)-(3.5); HTML #S3.E19, #S3.E22-#S3.E23",
+            "definitions_and_domain": "phi_c is a stationary point; the final inequality is the local-minimum condition. kappa is the inverse Planck mass in the action; lambda and m_phi are model parameters. No posterior or physical-unit calibration is supplied.",
+            "confidence": "high"
+          },
+          {
+            "expression": "delta_phi proportional to exp(-3Ht/2) cos(omega_phi t+varphi), omega_phi=sqrt(m_eff^2-9H^2/4), m_eff^2=m_phi^2(1+lambda kappa phi_c).",
+            "locator": "PDF p.5-6, Eqs. (3.9)-(3.11); HTML #S3.E27-#S3.E29",
+            "definitions_and_domain": "Local homogeneous perturbation around phi_c; H and effective mass are treated as approximately constant for the damped-oscillator expression. Oscillations require m_eff>3H/2. The displayed solution fixes an unstated amplitude normalization.",
+            "confidence": "high"
+          }
+        ],
+        "reader_inference": "The oscillation is a late-time transient mechanism rather than an early-dark-energy component or a unified early/late scalar history. Its existence alone does not determine a data-preferred trajectory.",
+        "locators": [
+          "PDF Sec. III.1, pp.4-6",
+          "HTML #S3.E19-#S3.E29",
+          "Fig. 1, PDF p.5"
+        ],
+        "claim_type": "author_proposal",
+        "description": "The potential V(phi)=V0 exp(-kappa lambda phi)+m_phi^2 phi^2/2 has a tunable minimum. A field initially Hubble-frozen can roll toward it and oscillate for a finite interval; the exponential term can later carry it toward a de Sitter-like branch."
+      },
+      {
+        "local_id": "local-gaussian-esgb-phantom-crossing",
+        "title": "A localized Gauss-Bonnet coupling changes the effective pressure near the scalar minimum",
+        "author_proposal": "A Gaussian coupling f(phi)=xi0 exp[-kappa^2(phi-phi_c)^2/(2 sigma^2)] is largest near the minimum and weakens as the field leaves it. Through the effective pressure term, the authors propose that it can amplify oscillations and produce repeated crossings of w_eff=-1 even though the canonical scalar's uncoupled w_phi stays at or above -1.",
+        "reported_fit_or_measurement": "The paper reports numerical trajectories in selected parameter/initial-condition ranges; it reports no observational fit or measured phantom-crossing parameters.",
+        "equations": [
+          {
+            "expression": "f(phi)=xi0 exp[-kappa^2(phi-phi_c)^2/(2 sigma^2)]; f_{,phi}=-kappa^2(phi-phi_c)f/sigma^2.",
+            "locator": "PDF p.6, Eqs. (3.12)-(3.13); HTML #S3.E30-#S3.E31",
+            "definitions_and_domain": "sigma is the coupling width, xi0 its amplitude, and phi_c the potential minimum. The source does not provide a fitted value or uncertainty for either coupling parameter.",
+            "confidence": "high"
+          },
+          {
+            "expression": "w_phi^eff=[(1/2)dot(phi)^2-V+8H f_{,phi} dot(phi)(dot(H)+H^2)]/[(1/2)dot(phi)^2+V]. Near the minimum the source writes w_phi^eff approximately -1+[8H/V](kappa^2 delta(phi)/sigma^2) f dot(delta(phi)) H^2 q.",
+            "locator": "PDF p.4 and p.6, Eqs. (2.15), (3.20)-(3.22); HTML #S2.E15, #S3.E38-#S3.E40",
+            "definitions_and_domain": "The approximation assumes a transition epoch with potential energy dominating kinetic energy, homogeneous delta(phi), and the local Gaussian expansion. q=-1-dot(H)/H^2; the authors discuss q<0 near the acceleration transition. This does not establish a fitted history.",
+            "confidence": "high, subject to the separate Eq. (2.14) source inconsistency"
+          }
+        ],
+        "reader_inference": "The coupling can produce an effective phantom equation of state without a negative canonical kinetic term, but this is a modified-gravity background statement; it does not establish a healthy complete scalar perturbation sector or UV completion.",
+        "locators": [
+          "PDF Sec. III.2, p.6",
+          "HTML #S3.E30-#S3.E40",
+          "Figs. 3-4, PDF pp.9,11"
+        ],
+        "claim_type": "author_proposal",
+        "description": "A Gaussian coupling f(phi)=xi0 exp[-kappa^2(phi-phi_c)^2/(2 sigma^2)] is largest near the minimum and weakens as the field leaves it. Through the effective pressure term, the authors propose that it can amplify oscillations and produce repeated crossings of w_eff=-1 even though the canonical scalar's uncoupled w_phi stays at or above -1."
+      },
+      {
+        "local_id": "local-esgb-background-equilibrium-manifolds",
+        "title": "The autonomous background system has radiation/matter saddles and scalar-dominated equilibrium manifolds",
+        "author_proposal": "The authors define a six-variable autonomous system and use its critical points plus numerical trajectories to describe a radiation-to-matter-to-scalar history.",
+        "reported_fit_or_measurement": "P3 (radiation) and P4 (matter) are reported as saddles. P1 is scalar dominated with y_*+A_*=1 and free z,u; P2 has A_*=0 and a free z. The Appendix argues these are equilibrium manifolds with transverse attraction and neutral tangent directions where the nonzero eigenvalues are negative. Numerical trajectories approach de Sitter-like w_eff=-1 in selected domains. These are not a global proof or data fit.",
+        "equations": [
+          {
+            "expression": "x=kappa dot(phi)/(sqrt(6)H), y=kappa^2 V0 exp(-kappa lambda phi)/(3H^2), A=kappa^2 m_phi^2 phi^2/(6H^2), z=kappa phi, u=8kappa^2 H^2 f; Omega_r=kappa^2 rho_r/(3H^2), Omega_m=kappa^2 rho_m/(3H^2), z_c=kappa phi_c.",
+            "locator": "PDF p.6-7, Eq. (4.1); HTML #S4.E41",
+            "definitions_and_domain": "Prime is d/dN for N=ln(a). The paper also uses A for the lapse perturbation in Sec. V and explicitly warns these are different A variables in a footnote.",
+            "confidence": "high"
+          },
+          {
+            "expression": "1=x^2+y+A+Omega_r+Omega_m-sqrt(6)ux(z-z_c)/sigma^2; Omega_phi=x^2+y+A; Omega_GB=-sqrt(6)ux(z-z_c)/sigma^2.",
+            "locator": "PDF p.6-7, Eqs. (4.2)-(4.3); HTML #S4.E42-#S4.E43",
+            "definitions_and_domain": "The Friedmann constraint eliminates Omega_r and requires 0<=Omega_r<=1 for the physical trajectories discussed.",
+            "confidence": "high"
+          },
+          {
+            "expression": "The autonomous evolution equations are Eqs. (4.6)-(4.11), with z'=sqrt(6)x and Omega_m'=-2 Omega_m dot(H)/H^2-3Omega_m; dot(H)/H^2 is closed by Eqs. (4.3)-(4.4).",
+            "locator": "PDF p.7; HTML #S4.E44-#S4.E51",
+            "definitions_and_domain": "The vector field contains 1/z in x' and A', and the authors note apparent divergence as z->0 unless A->0; numerical solver stiffness is also reported for some initial conditions.",
+            "confidence": "medium; the long rational vector field was checked against HTML MathML/TeX and PDF layout but is not recopied here"
+          }
+        ],
+        "reader_inference": "Appendix A's equilibrium-manifold argument gives transverse attraction, not convergence to one fixed point along neutral directions. Fig. 3's gray algebraic curves are not integrated cosmological histories; the blue/red curves are the ODE trajectories.",
+        "locators": [
+          "PDF Sec. IV and Table I, pp.7-9",
+          "Appendix A, pp.14-15",
+          "Figs. 2-4, pp.8-11"
+        ],
+        "claim_type": "reported_numerical_and_analytic_result",
+        "description": "The authors define a six-variable autonomous system and use its critical points plus numerical trajectories to describe a radiation-to-matter-to-scalar history."
+      },
+      {
+        "local_id": "local-esgb-linear-stability-window",
+        "title": "Phantom-crossing trajectories occupy a parameter-dependent sound-speed and tensor-kinetic domain",
+        "author_proposal": "The authors use linear scalar and tensor perturbations to identify trajectories they describe as free from ghosts and gradient instabilities.",
+        "reported_fit_or_measurement": "For the Fig. 6(i) example lambda=0.31, the text reports -1.5<w_eff<-0.5 and c_s^2 roughly 0.5-1, while c_T^2 rapidly varies and crosses zero and values above 1; it cites this case as violating |c_T^2-1|<10^-16. For Fig. 6(ii), lambda=0.006 and the stated initial conditions give w_eff near -1.2, c_T^2 minimum about 0.5 and c_s^2 close to 1; the authors report Q_T>0 and no negative sound speeds for this trajectory. No observational data fit establishes preference for either branch.",
+        "equations": [
+          {
+            "expression": "The PDF/HTML prints c_T^2=[1-8 dot(H) f_{,phi} dot(phi)-8H^2 f_{,phiphi} dot(phi)^2]/[1-8 dot(H) f_{,phi} dot(phi)] in Eq. (5.2); Eq. (5.6) separately defines Q_T=1-8H dot(f)>0 and Eq. (5.3) uses factors of (1-8H dot(f)).",
+            "locator": "PDF p.10, Eqs. (5.2)-(5.6); HTML #S5.E53-#S5.E57",
+            "definitions_and_domain": "The source says these expressions assume kappa^2=1. The denominator discrepancy between Eq. (5.2) and Q_T/Eq. (5.3) is preserved as printed and blocks unqualified use.",
+            "confidence": "high"
+          },
+          {
+            "expression": "The source's stated condition is 0<=c_s^2,c_T^2<=1 and Q_T=1-8H dot(f)>0; c_s^2 and c_T^2 are presented as ratios N/D in Eqs. (5.4)-(5.5).",
+            "locator": "PDF p.10, Eqs. (5.4)-(5.6); HTML #S5.E55-#S5.E57",
+            "definitions_and_domain": "Negative squared speed is identified with gradient instability. The upper bound of 1 is an additional subluminality requirement, not the nonnegative-speed condition itself. No current-data qualification is supplied.",
+            "confidence": "high"
+          }
+        ],
+        "reader_inference": "The lambda=0.006 curve is the least problematic displayed example, but its acceptability still depends on the printed equations being correct and on an explicit scalar kinetic/ghost check. Eq. (5.6) does not name a separate scalar kinetic coefficient; Sol should determine whether the paper's QT-only ghost statement is sufficient. The lambda=0.31 plotted tensor speed is visibly outside the cited GW bound and exceeds unity for part of the plotted interval.",
+        "locators": [
+          "PDF Sec. V.1, pp.10-14",
+          "HTML #S5.E53-#S5.E57",
+          "Figs. 4 and 6, PDF pp.11,13"
+        ],
+        "claim_type": "reported_numerical_result_with_author_interpretation",
+        "description": "The authors use linear scalar and tensor perturbations to identify trajectories they describe as free from ghosts and gradient instabilities."
+      }
+    ],
+    "quantities": [
+      {
+        "name": "Potential illustration settings",
+        "value": "V0=10^-60, kappa=1; upper panel varies log10(m_phi), lower panel fixes m_phi=10^-31 and varies lambda",
+        "unit": "dimensionless/Planck-unit presentation as plotted",
+        "conditioning": "Figure 1 potential plot; not fitted to observations.",
+        "locator": "PDF p.5, Fig. 1 caption",
+        "uncertainty": "No statistical uncertainty; illustrative plot choices only."
+      },
+      {
+        "name": "Stability-map benchmark",
+        "value": "lambda=0.1, sigma=0.01, z_c=0.2",
+        "unit": "dimensionless variables in the source convention",
+        "conditioning": "Figure 2 P1/P2 stability regions.",
+        "locator": "PDF p.8, Fig. 2 caption",
+        "uncertainty": "No uncertainty; selected benchmark."
+      },
+      {
+        "name": "Fig. 6(i) illustrative coupled trajectory",
+        "value": "lambda=0.31; A0=10^-29.56; y0=10^-30.72; z0=z_c=1.2; x0=10^-20; u0=1.19; sigma=0.099; N_init=-20; reported w_eff range about -1.5 to -0.5 and u around 0.005 near N~1",
+        "unit": "dimensionless model variables; N=ln(a)",
+        "conditioning": "Figure 6(i); text says this case's c_T^2 rapidly crosses zero and above 1, and violates the cited GW speed bound.",
+        "locator": "PDF pp.12-13, Fig. 6 and Sec. V.1",
+        "uncertainty": "No uncertainties; one numerical trajectory/benchmark, not a fitted interval."
+      },
+      {
+        "name": "Fig. 6(ii) illustrative small-phantom trajectory",
+        "value": "lambda=0.006; A0=10^-29.57; remaining initial conditions as Fig. 6(i); reported minimum w_eff about -1.2, minimum c_T^2 about 0.5, c_s^2 close to 1, u of order 10^-7",
+        "unit": "dimensionless model variables; N=ln(a)",
+        "conditioning": "Figure 6(ii), with the same z0, z_c, x0, u0 and sigma as case (i).",
+        "locator": "PDF pp.12-13, Fig. 6 and Sec. V.1",
+        "uncertainty": "No uncertainties; one numerical trajectory/benchmark, not a posterior or selected observational solution."
+      },
+      {
+        "name": "Cited tensor-speed constraint",
+        "value": "|c_T^2-1|<10^-16",
+        "unit": "dimensionless",
+        "conditioning": "Used by the authors to reject the lambda=0.31 example's rapid tensor-speed variation.",
+        "locator": "PDF p.12, Sec. V.1",
+        "uncertainty": "A bound cited by the authors from references [133]-[137], not rederived or independently checked in this reading."
+      }
+    ],
+    "data_dependencies": [
+      {
+        "role": "context_only",
+        "source_statement": "The introduction cites a 2.6-3.9 sigma preference for CPL over a cosmological constant in DESI BAO combined with supernova observations and discusses evolving-w hints.",
+        "source_locator": "PDF pp.2-3, Sec. I, references [80]-[83]",
+        "use_in_this_paper": "Motivation only; the proposed Einstein-scalar-GB model is not fitted to these data."
+      },
+      {
+        "role": "qualifying_context_only",
+        "source_statement": "A tensor propagation-speed bound is cited in Sec. V.1.",
+        "source_locator": "PDF p.12, references [133]-[137]",
+        "use_in_this_paper": "Compared to a plotted illustrative trajectory; not independently re-evaluated from the source datasets here."
+      },
+      {
+        "role": "actual_fit_lineage",
+        "source_statement": null,
+        "source_locator": null,
+        "use_in_this_paper": "No observational likelihood, data vector, covariance, prior, posterior, best fit, or measured parameter value for this model is supplied. The plotted H/H0 comparison with a dashed LambdaCDM curve is illustrative and has no stated data conditioning."
+      }
+    ],
+    "caveats": [
+      {
+        "type": "source_internal_equation_inconsistency",
+        "locator": "PDF p.4 Eq. (2.14); compare Eqs. (2.13) and (2.15); HTML #S2.E13-#S2.E15",
+        "detail": "Eq. (2.14) prints the energy-transfer factor (H^2+dot(H)^2), while Eq. (2.13) defines G=24H^2(H^2+dot(H)) and Eq. (2.15) uses (H^2+dot(H)). The PDF rendering and HTML TeX both show the squared dot(H) in Eq. (2.14). This is retained as a printed source inconsistency, not silently repaired."
+      },
+      {
+        "type": "source_convention_or_normalization_gap",
+        "locator": "PDF pp.3-4 Eqs. (2.1), (2.4), (2.9), and p.10 note before Eq. (5.2)",
+        "detail": "The action and metric equation state G_mu_nu=kappa^2 T_mu_nu, but Eq. (2.9) prints 3H^2=rho_phi+rho_m+rho_r+24H^3 dot(f) without an overall kappa^2. A later perturbation calculation explicitly assumes kappa^2=1, but the background section does not state that convention. The equation may use an unstated normalization; this needs source review."
+      },
+      {
+        "type": "source_internal_stability_formula_mismatch",
+        "locator": "PDF p.10 Eqs. (5.2), (5.3), (5.6); HTML #S5.E53-#S5.E57",
+        "detail": "Eq. (5.2) prints the tensor-speed denominator as 1-8 dot(H) f_{,phi} dot(phi), while Eq. (5.6) defines Q_T=1-8H dot(f) and Eq. (5.3) uses 1-8H dot(f). The paper's stability evaluation must be checked against the action before accepting the plotted stability window."
+      },
+      {
+        "type": "source_internal_terminology_or_condition_mismatch",
+        "locator": "PDF p.10 Eq. (5.6), p.12 Sec. V.1, and Fig. 6(i) on p.13",
+        "detail": "Eq. (5.6) groups 0<=c_s^2,c_T^2<=1 under ghost/gradient avoidance, although the text and Fig. 6(i) discuss c_T^2 above 1 as superluminal. Negative squared speed is the gradient-instability condition; the upper bound is a separate subluminality criterion. The text also says the higher amplitude crosses the superluminal regime c_s^2>1 and then says c_s^2 stays in 0.5<=c_s^2<1; the plotted legend/curve identify the rapidly superluminal quantity as c_T^2, suggesting a source symbol typo."
+      },
+      {
+        "type": "ghost_check_scope",
+        "locator": "PDF p.10 Eq. (5.6), pp.12-14 Sec. V.1 and conclusion",
+        "detail": "The explicit kinetic-sign quantity named in Eq. (5.6) is Q_T. The paper does not separately state a scalar kinetic coefficient/positivity condition there. The authors infer ghost absence for the displayed cases from small coupling and positive Q_T; Sol should check whether the scalar sector is fully covered by the equations used."
+      },
+      {
+        "type": "interpretation_and_coverage",
+        "locator": "PDF pp.7-13, Table I and Figs. 2-6",
+        "detail": "Stability evidence is local to selected critical-point domains or numerical examples. Appendix A establishes transverse attraction to equilibrium manifolds with neutral tangent directions, not attraction to a unique point. Figure 3's gray curves are algebraic expressions, not integrated trajectories. None of the examples establishes observational preference, a CMB Hubble-tension solution, or a data-qualified history."
+      },
+      {
+        "type": "source_label_overload",
+        "locator": "PDF p.10 footnote 1",
+        "detail": "A is used both for the quadratic-potential dynamical variable and for the lapse perturbation; the authors flag this in a footnote. Preserve the distinction when transcribing equations."
+      }
+    ],
+    "usefulness": {
+      "assessment": "A useful, clearly scoped Einstein-scalar-GB mechanism and a strong source-review target. It overlaps the registered oscillating-scalar literature at the level of transient field oscillations, while adding a late-time localized curvature coupling and effective phantom crossing. It is not yet suitable for graph acceptance or candidate-design promotion because the displayed background/perturbation equations have source inconsistencies, scalar ghost coverage needs review, and the paper has no model-data fit.",
+      "minimal_test": "Before any numerical use, have Sol reconcile the printed Eq. (2.14), the Friedmann normalization, and the tensor-speed denominator in Eq. (5.2) against the action and original MathML/PDF; then check the scalar and tensor kinetic/sound-speed conditions along the explicitly shown lambda=0.006 trajectory. This reader performed no experiment or numerical reproduction.",
+      "lost_scope": "The paper gives no observational likelihood or fit, no uncertainty-qualified model parameters, no perturbation/data pipeline for CMB or structure constraints, and no demonstrated UV completion. The DESI/SN and GW statements are motivation or cited comparison only.",
+      "readiness": "needs_source_review"
+    },
+    "citations_to_registered": [
+      {
+        "citing_paper_id": "arxiv:2609.37437v1",
+        "cited_base_id": "2503.14738",
+        "cited_version": null,
+        "reference_label": "[3]",
+        "html_anchor": "https://arxiv.org/html/2609.37437v1#bib.bib53",
+        "anchor_id": "bib.bib53",
+        "cited_record_selected_for_navigation": "arxiv:2503.14738v3",
+        "version_note": "The bibliography prints base ID 2503.14738 without a version; selecting our registered v3 record is navigation only and does not assert that v3 was cited.",
+        "source_role": "original_html_bibliography",
+        "original_source_sha256": "62b0a576adfec55caf1e6344d6c4eae4a0a099c16a4111f2babb5d952b973883"
+      },
+      {
+        "citing_paper_id": "arxiv:2609.37437v1",
+        "cited_base_id": "1807.06209",
+        "cited_version": null,
+        "reference_label": "[6]",
+        "html_anchor": "https://arxiv.org/html/2609.37437v1#bib.bib37",
+        "anchor_id": "bib.bib37",
+        "cited_record_selected_for_navigation": "arxiv:1807.06209v4",
+        "version_note": "The bibliography prints base ID 1807.06209 without a version; selecting our registered v4 record is navigation only and does not assert that v4 was cited.",
+        "source_role": "original_html_bibliography",
+        "original_source_sha256": "62b0a576adfec55caf1e6344d6c4eae4a0a099c16a4111f2babb5d952b973883"
+      }
+    ],
+    "citation_coverage": {
+      "method": "Scanned the full HTML References list and matched explicit printed arXiv base IDs against the currently registered paper records; HTML bibliography anchors were retained.",
+      "reference_entries_scanned": 137,
+      "registered_base_id_matches": 2,
+      "registered_matches": [
+        "2503.14738 at [3]",
+        "1807.06209 at [6]"
+      ],
+      "version_coverage": "Neither registered citation prints a version. A base ID is not evidence that the registered version was cited.",
+      "scope_limit": "This bounded bibliography scan does not establish that unmatched references are absent from the register by every possible alias, and no cited paper was source-checked."
+    },
+    "citation_leads": [
+      {
+        "cited_base_id": "2307.06163",
+        "printed_version": null,
+        "reference_label": "[123]",
+        "html_anchor": "https://arxiv.org/html/2609.37437v1#bib.bib14",
+        "title_as_printed": "Gauss-Bonnet Dark Energy and the speed of gravitational waves",
+        "why_lead": "Directly relevant to the paper's Gauss-Bonnet/tensor-speed discussion and cited in Sec. V.1.",
+        "followed": false
+      },
+      {
+        "cited_base_id": "2503.17342",
+        "printed_version": null,
+        "reference_label": "[101]",
+        "html_anchor": "https://arxiv.org/html/2609.37437v1#bib.bib67",
+        "title_as_printed": "Comparison of dynamical dark energy with Lambda CDM in light of DESI DR2",
+        "why_lead": "Cited for the phenomenological oscillatory dark-energy parametrization discussed in the introduction.",
+        "followed": false
+      }
+    ],
+    "packet_sha256": "d9f865c3d7e46bbddf9264f414f48f56447ce6d713e371135a2a4d4ad3576301",
+    "coverage_amendments": [
+      {
+        "updated_utc": "2026-10-01T17:09:23.494174+00:00",
+        "agent_id": "/root",
+        "kind": "schema_format_normalization",
+        "reason": "Normalize explicit PDF pages 1–18, reading label, source-hash list, claim/description, equation-confidence and uncertainty field names to the canonical schema. Original packet/digest retained; no new reading coverage or scientific correction claimed."
+      }
+    ],
+    "review_amendments": [
+      {
+        "review_id": "2026-10-01-modified-gravity-science",
+        "review_packet_sha256": "00c3406875f14f6e9ef085bc46ec775d078ee9fbc0e36a89e551901d9fd92137",
+        "integrated_utc": "2026-10-01T17:20:13.692220+00:00",
+        "agent_id": "/root",
+        "reason": "Original Luna extraction retained as author-proposal extraction; independent source review visibly qualifies or corrects the following claims.",
+        "corrections": [
+          {
+            "id": "gb-continuity-source-typo",
+            "paper_id": "arxiv:2609.37437v1",
+            "kind": "printed_source_error",
+            "locator": "Sec.II Eqs.(2.10),(2.13)-(2.16), PDF p.4; HTML #S2.E10,#S2.E13-#S2.E16",
+            "detail": "PDF and HTML both print H²+dotH² in Eq.(2.14). Multiplying the KG equation by phidot gives −fphi phidot G=−24H² fdot(H²+dotH), which agrees with Eq.(2.15). H²+dotH² adds quantities with different natural-unit dimensions. Replace only in an explicitly labelled reviewer repair; preserve original extraction.",
+            "display_summary": "PDF and HTML both print H²+dotH² in Eq.(2.14). Multiplying the KG equation by phidot gives −fphi phidot G=−24H² fdot(H²+dotH), which agrees with Eq.(2.15). H²+dotH² adds quantities with different natural-unit dimensions. Replace only in an explicitly labelled reviewer repair; preserve original extraction."
+          },
+          {
+            "id": "gb-friedmann-normalization",
+            "paper_id": "arxiv:2609.37437v1",
+            "kind": "printed_source_normalization_gap",
+            "locator": "Eqs.(2.1),(2.4),(2.9),(2.17),(4.1)-(4.2), PDF pp.3-4,6",
+            "detail": "With kappa inverse reduced Planck mass, [phi]=M, [V]=M^4, [f]=1. Eq.(2.9) is missing the kappa² multiplying the complete energy-density sum unless an unstated Planck normalization is imposed. Eq.(2.17) and dimensionless definitions restore kappa², while Sec.V explicitly takes kappa²=1. The faithful general-units form is 3H²=kappa²(rho_phi+rho_m+rho_r+24H³ fdot).",
+            "display_summary": "With kappa inverse reduced Planck mass, [phi]=M, [V]=M^4, [f]=1. Eq.(2.9) is missing the kappa² multiplying the complete energy-density sum unless an unstated Planck normalization is imposed. Eq.(2.17) and dimensionless definitions restore kappa², while Sec.V explicitly takes kappa²=1. The faithful general-units form is 3H²=kappa²(rho_phi+rho_m+rho_r+24H³ fdot)."
+          },
+          {
+            "id": "gb-tensor-speed-source-and-repair",
+            "paper_id": "arxiv:2609.37437v1",
+            "kind": "printed_source_error_with_reviewer_consistency_relation",
+            "locator": "Eqs.(5.2),(5.5)-(5.6), PDF p.10; HTML #S5.EGx9,#S5.EGx10,#S5.E57",
+            "detail": "Eq.(5.2) has dotH fphi phidot in the denominator, instead of H fdot, and its numerator is not the chain rule fddot=fphiphi phidot²+fphi phiddot. Its terms are dimensionally inconsistent before choosing units. The tensor kinetic/gradient action-consistency relation for the sign −fG is cT²=(1−8kappa² fddot)/(1−8kappa² H fdot). Substitution of the KG equation and Eq.(4.1) gives precisely the printed Eq.(5.5). Hence Eq.(5.2) is malformed, but this alone does not establish that plots computed from Eq.(5.5) are wrong. No author code or independent quadratic-action reconstruction was examined.",
+            "display_summary": "Eq.(5.2) has dotH fphi phidot in the denominator, instead of H fdot, and its numerator is not the chain rule fddot=fphiphi phidot²+fphi phiddot. Its terms are dimensionally inconsistent before choosing units. The tensor kinetic/gradient action-consistency relation for the sign −fG is cT²=(1−8kappa² fddot)/(1−8kappa² H fdot). Substitution of the KG equation and Eq.(4.1) gives precisely the printed Eq.(5.5). Hence Eq.(5.2) is malformed, but this alone does not establish that plots computed from Eq.(5.5) are wrong. No author code or independent quadratic-action reconstruction was examined."
+          },
+          {
+            "id": "gb-initial-values-not-potential-minimum",
+            "paper_id": "arxiv:2609.37437v1",
+            "kind": "source_benchmark_incompatibility_reviewer_derived",
+            "locator": "Eqs.(3.4),(4.1); Fig.6 caption PDF p.13",
+            "detail": "At z0=zc, the source minimum relation requires A0/y0=lambda zc/2. Fig.6(i) has z0=zc=1.2, lambda=.31 and A0/y0=10^1.16≈14.45, whereas the required ratio is .186. Fig.6(ii) has ratio 10^1.15≈14.13, whereas lambda=.006 requires .0036. No normalization/H0 choice repairs these dimensionless ratios. Thus the examples do not simultaneously realize the displayed hybrid potential and a Gaussian centered on its potential minimum. A Gaussian with an independent center would be a changed branch, not a silent repair.",
+            "display_summary": "At z0=zc, the source minimum relation requires A0/y0=lambda zc/2. Fig.6(i) has z0=zc=1.2, lambda=.31 and A0/y0=10^1.16≈14.45, whereas the required ratio is .186. Fig.6(ii) has ratio 10^1.15≈14.13, whereas lambda=.006 requires .0036. No normalization/H0 choice repairs these dimensionless ratios. Thus the examples do not simultaneously realize the displayed hybrid potential and a Gaussian centered on its potential minimum. A Gaussian with an independent center would be a changed branch, not a silent repair."
+          },
+          {
+            "id": "gb-fixed-model-submanifold",
+            "paper_id": "arxiv:2609.37437v1",
+            "kind": "reviewer_derived_scope_correction",
+            "locator": "Eqs.(3.1),(3.12),(4.1),(4.6)-(4.11), Table I",
+            "detail": "For one fixed V0,m_phi,xi0,lambda,sigma,zc, A/y=[m_phi²/(2kappa²V0)]z²e^(lambda z) and uy=(8kappa^4 xi0V0/3)e^(−lambda z−(z−zc)²/(2sigma²)). These are preserved by the autonomous flow where variables are regular. Treating y,A,u,z as freely adjustable describes a larger extended space; physical equilibria/stability need restriction to this fixed-model submanifold and the minimum condition. P2 with A=0 and arbitrary finite nonzero z is not a finite-H hybrid-potential solution for nonzero m_phi. No global physical stability conclusion is accepted.",
+            "display_summary": "For one fixed V0,m_phi,xi0,lambda,sigma,zc, A/y=[m_phi²/(2kappa²V0)]z²e^(lambda z) and uy=(8kappa^4 xi0V0/3)e^(−lambda z−(z−zc)²/(2sigma²)). These are preserved by the autonomous flow where variables are regular. Treating y,A,u,z as freely adjustable describes a larger extended space; physical equilibria/stability need restriction to this fixed-model submanifold and the minimum condition. P2 with A=0 and arbitrary finite nonzero z is not a finite-H hybrid-potential solution for nonzero m_phi. No global physical stability conclusion is accepted."
+          },
+          {
+            "id": "gb-equilibrium-manifold-inconsistency",
+            "paper_id": "arxiv:2609.37437v1",
+            "kind": "printed_source_internal_conflict",
+            "locator": "Table I, Sec.IV.A and Fig.2 PDF pp.7-8; Appendix A Eqs.(A22)-(A29) PDF p.15",
+            "detail": "P1 is labelled hyperbolic in Table I/Fig.2, whereas Appendix A has two tangent zero eigenvalues along its two-parameter equilibrium family. A differentiable equilibrium family necessarily has these neutral directions. Substituting the printed P1/P2 coordinates into Eq.(4.4) gives dotH/H²=0 where denominators are regular, hence exactly w_eff=−1. Varying equilibrium-w contours in Fig.2 are therefore not reconciled with the printed coordinates. Appendix neutral-manifold argument is conditional on transverse eigenvalues, not attraction to a unique point or a global proof.",
+            "display_summary": "P1 is labelled hyperbolic in Table I/Fig.2, whereas Appendix A has two tangent zero eigenvalues along its two-parameter equilibrium family. A differentiable equilibrium family necessarily has these neutral directions. Substituting the printed P1/P2 coordinates into Eq.(4.4) gives dotH/H²=0 where denominators are regular, hence exactly w_eff=−1. Varying equilibrium-w contours in Fig.2 are therefore not reconciled with the printed coordinates. Appendix neutral-manifold argument is conditional on transverse eigenvalues, not attraction to a unique point or a global proof."
+          },
+          {
+            "id": "gb-stability-speed-vs-ghost-vs-gw",
+            "paper_id": "arxiv:2609.37437v1",
+            "kind": "review_interpretation_and_visible_extraction_correction",
+            "locator": "Sec.V Eqs.(5.3)-(5.6), Fig.6 PDF pp.10,12-14",
+            "detail": "Nonnegative c² addresses gradient sign, c²<=1 is an extra subluminality criterion, and neither replaces kinetic-sign checks. Fig.6(ii) visibly has a dashed tensor-speed peak above 2 near N≈1 despite positive minima; it fails the source <=1 condition. N=ln a with a0=1 puts that peak in the future; it alone cannot be called a GW170817 violation. A relevant low-z propagation interval must meet a quantified cT bound, not merely positive QT. The cited |cT²−1|<10^−16 is an author-cited bound; external GW data/source papers were not rechecked. Correct Luna wording for case (i): source says lower amplitude approaches zero, and the rendered plot is insufficient to prove a crossing below zero.",
+            "display_summary": "Nonnegative c² addresses gradient sign, c²<=1 is an extra subluminality criterion, and neither replaces kinetic-sign checks. Fig.6(ii) visibly has a dashed tensor-speed peak above 2 near N≈1 despite positive minima; it fails the source <=1 condition. N=ln a with a0=1 puts that peak in the future; it alone cannot be called a GW170817 violation. A relevant low-z propagation interval must meet a quantified cT bound, not merely positive QT. The cited |cT²−1|<10^−16 is an author-cited bound; external GW data/source papers were not rechecked. Correct Luna wording for case (i): source says lower amplitude approaches zero, and the rendered plot is insufficient to prove a crossing below zero."
+          },
+          {
+            "id": "gb-scalar-kinetic-domain",
+            "paper_id": "arxiv:2609.37437v1",
+            "kind": "unresolved_quadratic_action_gate",
+            "locator": "Eq.(5.3),(5.6), Sec.V.1 and VI",
+            "detail": "The source explicitly names QT but not a reduced scalar kinetic coefficient or all constraint regularity conditions. In its canonical one-scalar formula the combination K=(1−8Hfdot)phidot²+96H^4 fdot² is nonnegative if QT>0 and strictly positive away from simultaneous phidot=fdot=0; this supports a conditional kinetic sign, not a claim that a scalar ghost exists. A full reduced scalar kinetic matrix, regular constraint denominator, vanishing-K/gauge-degenerate endpoints and retained matter/radiation modes still need checking. Positive plotted cs² and small u alone do not complete that check.",
+            "display_summary": "The source explicitly names QT but not a reduced scalar kinetic coefficient or all constraint regularity conditions. In its canonical one-scalar formula the combination K=(1−8Hfdot)phidot²+96H^4 fdot² is nonnegative if QT>0 and strictly positive away from simultaneous phidot=fdot=0; this supports a conditional kinetic sign, not a claim that a scalar ghost exists. A full reduced scalar kinetic matrix, regular constraint denominator, vanishing-K/gauge-degenerate endpoints and retained matter/radiation modes still need checking. Positive plotted cs² and small u alone do not complete that check."
+          },
+          {
+            "id": "gb-oscillator-and-effective-w-domain",
+            "paper_id": "arxiv:2609.37437v1",
+            "kind": "review_interpretation",
+            "locator": "Eqs.(3.9)-(3.22), Sec.III",
+            "detail": "Damped-cosine expressions require approximately constant/adiabatic H and effective mass and an unspecified amplitude; they are not exact for arbitrary time-varying H. Intrinsic canonical w_phi, the source exchange-reassigned w_phi^eff and total kinematic w_eff differ. Effective phantom crossing is not proof of a negative canonical kinetic term, healthy perturbations or a DESI/SN fit.",
+            "display_summary": "Damped-cosine expressions require approximately constant/adiabatic H and effective mass and an unspecified amplitude; they are not exact for arbitrary time-varying H. Intrinsic canonical w_phi, the source exchange-reassigned w_phi^eff and total kinematic w_eff differ. Effective phantom crossing is not proof of a negative canonical kinetic term, healthy perturbations or a DESI/SN fit."
+          }
+        ]
+      }
+    ]
+  },
+  "review_id": "2026-10-01-modified-gravity-science",
+  "idea_ids": [
+    "localized-gauss-bonnet-oscillatory-dark-energy",
+    "gauss-bonnet-minimum-and-stability-consistency"
+  ]
 }

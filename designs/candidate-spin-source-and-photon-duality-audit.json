@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "design_id": "candidate-spin-source-and-photon-duality-audit",
+  "title": "Spin source and photon duality audit",
+  "paper_ids": [
+    "arxiv:2609.36853v1"
+  ],
+  "idea_ids": [
+    "hubble-cutoff-negative-spin-background",
+    "frenkel-trace-and-maxwell-duality-closure"
+  ],
+  "review_id": "2026-10-01-modified-gravity-science",
+  "readiness": "blocked",
+  "faithful_claim": "The source proposes nonzero homogeneous trace torsion from a Frenkel spin fluid and a corresponding weak-torsion luminosity/area-distance deviation.",
+  "equations": [
+    {
+      "paper_id": "arxiv:2609.36853v1",
+      "expression": "−2 S_{lambda alpha}{}^alpha=kappa s_{lambda nu}u^nu=0; S_{lambda alpha}{}^alpha=−3Phi u_lambda/2",
+      "locator": "reviewer contraction of Eqs.(2),(7),(11), Frenkel condition",
+      "definitions": "Here kappa=8piG, unlike the GB inverse-Planck kappa.",
+      "domain": "Source Weyssenhoff/Frenkel trace branch.",
+      "status": "reviewer_derived"
+    },
+    {
+      "paper_id": "arxiv:2609.36853v1",
+      "expression": "L_EM=−F²/4, F=dA; tilde∇_mu F^{mu nu}=0",
+      "locator": "Eq.(41), Appendix A preamble",
+      "definitions": "tilde∇ is Levi-Civita; full∇ stress assumption before Eq.(44) is separately disputed.",
+      "domain": "Flat FLRW in the declared source model.",
+      "status": "reviewed_transcription"
+    },
+    {
+      "paper_id": "arxiv:2609.36853v1",
+      "expression": "eta≈±(2/3)sqrt(1−d²)[asin(xi(1+z)^(3/2))−asin(xi)]; xi=sqrt(Delta/Omega_m0)",
+      "locator": "Eq.(51)",
+      "definitions": "Delta=Omega_m0+d²−1; formal author integral, both signs preserved.",
+      "domain": "Formal weak-torsion, z<z_wt<z*; not an accepted photon signal.",
+      "status": "reviewed_transcription"
+    }
+  ],
+  "assumptions": [
+    "Do not replace a microscopic trace source by an unsigned spin² background without explicit new physics.",
+    "Use the same photon action, stress conservation, rays and local source luminosity."
+  ],
+  "minimal_test": {
+    "question": "Does a nonzero trace source and duality deviation follow from one consistent spin-plus-Maxwell action?",
+    "observables": [
+      "Cartan trace residual",
+      "Levi-Civita versus affine photon-stress conversion",
+      "Metric reciprocity and distance-duality residual",
+      "Weak-expansion remainder"
+    ],
+    "parameter_choices": null,
+    "scope": "Analytic consistency audit before any optical prediction, observational likelihood or model expansion."
+  },
+  "simplifications": [
+    "No early-Universe continuation, spin perturbations, q0 re-fit or direct duality inference.",
+    "No comparison with inaccessible related model or unread spin-foundation source."
+  ],
+  "data_dependencies": [],
+  "unknowns": [
+    "No compatible nonzero trace spin source under the printed Frenkel condition.",
+    "Affine stress conservation is not reconciled with the connection-independent Maxwell action.",
+    "Omitted reciprocity/nonlinear flux terms lack an error bound.",
+    "External local-q source and source-foundation claims are not independently checked.",
+    "Consumer capability/acceptance uninspected."
+  ],
+  "verification_gates": [
+    "Settle pointwise Cartan source and coarse-graining roles.",
+    "Derive radiation stress/rays/flux from the declared action with connection conversions.",
+    "Only then control approximation errors and retain both sign branches."
+  ],
+  "falsification": "A vanishing Cartan trace for the stated source blocks the nonzero-Phi branch; with minimal conserved Maxwell photons, an eta signal requires additional justified physics.",
+  "consumer": {
+    "repository": "sprajs/irreducible",
+    "revision": null,
+    "dirty": null,
+    "capability_status": "Uninspected; no engine execution offered. Source audit precedes any capability handoff.",
+    "recipe_runner_status": "Uninspected; executable request remains null."
+  },
+  "blockers": [
+    "No compatible nonzero trace spin source under the printed Frenkel condition.",
+    "Affine stress conservation is not reconciled with the connection-independent Maxwell action.",
+    "Omitted reciprocity/nonlinear flux terms lack an error bound.",
+    "External local-q source and source-foundation claims are not independently checked.",
+    "Consumer capability/acceptance uninspected."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Source review and proposed algebra checks only; no numerical reproduction, consumer acceptance or data reassessment."
+  }
+}

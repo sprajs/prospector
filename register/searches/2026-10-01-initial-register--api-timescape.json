@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "search_id": "2026-10-01-initial-register--api-timescape",
+  "lane": null,
+  "work_mode": "legacy_unknown",
+  "status": "completed",
+  "requested_utc": "2026-10-01T00:43:43.823637+00:00",
+  "request": {
+    "query": "ti:timescape",
+    "normalized_query": "ti:timescape",
+    "order": "lastUpdatedDate",
+    "direction": "descending",
+    "start": 0,
+    "limit": 5,
+    "window_sha256": "6a5403f0b0461d87e52d1fe8c58cabfb342beb51d4336baa7d5ba3f85b849d63"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": null,
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=ti%3Atimescape&start=0&max_results=5&sortBy=lastUpdatedDate&sortOrder=descending",
+    "retrieved_utc": null,
+    "sha256": null,
+    "http_status": null,
+    "error": null,
+    "local_path": null,
+    "retry_after": null
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:1410.3470v3",
+      "position": 0,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1310.3124v1",
+      "position": 1,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1306.3208v2",
+      "position": 2,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1107.5596v2",
+      "position": 3,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1009.5855v2",
+      "position": 4,
+      "disposition": "selected",
+      "reason": "Listed as registered/worked on in original scan; precise screen decision not preserved here.",
+      "title": null,
+      "decision_history": []
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": false,
+    "metadata_complete": false,
+    "limitations": [
+      "Backfilled from an existing scan, not a new query.",
+      "Missing source time/hash and per-hit screens remain unknown; batch start is only the request-time fallback."
+    ]
+  },
+  "provenance": {
+    "kind": "legacy_scan",
+    "scan_id": "2026-10-01-initial-register",
+    "query_id": "api-timescape"
+  }
+}

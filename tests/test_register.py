@@ -230,6 +230,10 @@ class RegisterIntegrity(unittest.TestCase):
 
 
 class AcquisitionBoundaries(unittest.TestCase):
+    def test_xml_error_cannot_be_reported_as_an_empty_search(self):
+        with self.assertRaisesRegex(ValueError, "not an Atom feed"):
+            arxiv.atom_entries(b'<error>Temporarily unavailable</error>')
+
     def test_version_required_in_atom(self):
         body = b'<feed xmlns="http://www.w3.org/2005/Atom"><entry><id>http://arxiv.org/abs/1811.04083</id></entry></feed>'
         with self.assertRaisesRegex(ValueError, "versioned paper identity"):

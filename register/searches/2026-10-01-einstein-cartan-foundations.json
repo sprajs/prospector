@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "search_id": "2026-10-01-einstein-cartan-foundations",
+  "lane": "modified-gravity",
+  "work_mode": "foundational",
+  "status": "completed",
+  "requested_utc": "2026-10-01T16:49:48.245649+00:00",
+  "request": {
+    "query": "(cat:gr-qc OR cat:astro-ph.CO OR cat:astro-ph) AND ti:\"Einstein-Cartan\" AND (abs:cosmology OR abs:\"dark energy\") AND submittedDate:[199001010000 TO 201912312359]",
+    "normalized_query": "(cat:gr-qc OR cat:astro-ph.CO OR cat:astro-ph) AND ti:\"Einstein-Cartan\" AND (abs:cosmology OR abs:\"dark energy\") AND submittedDate:[199001010000 TO 201912312359]",
+    "order": "relevance",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "b2d0247c7e2b716a220baa3a4636797debf74f2c5fb7e207d14c22eab3458bc2"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Resumed queued source acquisitions and dispatched a priority challenge reader; complementary bounded mechanism/date windows while pending reads proceed.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Agr-qc+OR+cat%3Aastro-ph.CO+OR+cat%3Aastro-ph%29+AND+ti%3A%22Einstein-Cartan%22+AND+%28abs%3Acosmology+OR+abs%3A%22dark+energy%22%29+AND+submittedDate%3A%5B199001010000+TO+201912312359%5D&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+    "retrieved_utc": "2026-10-01T16:49:48.245649+00:00",
+    "sha256": "db664410a052d4c98f811c3fdf2ec1591e96cb62f7976fed3f6c10427e49ff57",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/2026-10-01-crawl/objects/db664410a052d4c98f811c3fdf2ec1591e96cb62f7976fed3f6c10427e49ff57.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:1507.07571v3",
+      "position": 0,
+      "disposition": "deferred",
+      "reason": "Retain torsion-coupled negative-kinetic spinor proposal as a challenge; no singularity or phantom crossing is not a quantum/perturbative stability proof.",
+      "title": "Phantom Dark Ghost in Einstein-Cartan Gravity",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:48.245649+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.939578+00:00",
+          "disposition": "deferred",
+          "reason": "Retain torsion-coupled negative-kinetic spinor proposal as a challenge; no singularity or phantom crossing is not a quantum/perturbative stability proof."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1812.04589v1",
+      "position": 1,
+      "disposition": "deferred",
+      "reason": "Retain Einstein-Cartan Lagrangian alternatives and nonsingular/inflating branches; separate torsion invariants and closures rather than assume equivalence.",
+      "title": "Einstein-Cartan Cosmologies",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:48.245649+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.945067+00:00",
+          "disposition": "deferred",
+          "reason": "Retain Einstein-Cartan Lagrangian alternatives and nonsingular/inflating branches; separate torsion invariants and closures rather than assume equivalence."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1405.3435v1",
+      "position": 2,
+      "disposition": "deferred",
+      "reason": "Retain torsion/clustered angular-momentum Planck-era proposal; anisotropy, negative effective density and CMB data ancestry need checking against exact source.",
+      "title": "On the Einstein-Cartan cosmology vs. Planck data",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:48.245649+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.950601+00:00",
+          "disposition": "deferred",
+          "reason": "Retain torsion/clustered angular-momentum Planck-era proposal; anisotropy, negative effective density and CMB data ancestry need checking against exact source."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1607.01128v2",
+      "position": 3,
+      "disposition": "deferred",
+      "reason": "Retain external torsion/vacuum-energy conservation argument; check assumptions behind claimed model independence and whether conservation implies metric proportionality.",
+      "title": "Einstein-Cartan Gravity with Torsion Field Serving as Origin for Cosmological Constant or Dark Energy Density",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:48.245649+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.956214+00:00",
+          "disposition": "deferred",
+          "reason": "Retain external torsion/vacuum-energy conservation argument; check assumptions behind claimed model independence and whether conservation implies metric proportionality."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1406.7555v2",
+      "position": 4,
+      "disposition": "deferred",
+      "reason": "Retain low-Hubble Einstein-Cartan modification; Lorentz violation, characteristic scale and dark-matter replacement claims need a complete sourced closure.",
+      "title": "Modified Einstein-Cartan Gravity and its Implications for Cosmology",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:48.245649+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.961930+00:00",
+          "disposition": "deferred",
+          "reason": "Retain low-Hubble Einstein-Cartan modification; Lorentz violation, characteristic scale and dark-matter replacement claims need a complete sourced closure."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1611.07878v3",
+      "position": 5,
+      "disposition": "deferred",
+      "reason": "Retain foundational torsion kinematics and Weyssenhoff limits; geometric observer equations differ from a dynamical spin-matter closure.",
+      "title": "Kinematics of Einstein-Cartan universes",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:48.245649+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.967722+00:00",
+          "disposition": "deferred",
+          "reason": "Retain foundational torsion kinematics and Weyssenhoff limits; geometric observer equations differ from a dynamical spin-matter closure."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:gr-qc/0202022v1",
+      "position": 6,
+      "disposition": "deferred",
+      "reason": "Retain foundational metric stability/perturbation discussion; check background/anisotropic domain, gauge conventions and spin-torsion wave inference.",
+      "title": "Metric perturbations in Einstein-Cartan Cosmology",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:48.245649+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.973601+00:00",
+          "disposition": "deferred",
+          "reason": "Retain foundational metric stability/perturbation discussion; check background/anisotropic domain, gauge conventions and spin-torsion wave inference."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1308.2877v2",
+      "position": 7,
+      "disposition": "deferred",
+      "reason": "Retain Weyssenhoff spin-contact signature transition; degenerate metric, boundary conditions and bounce interpretation require source review.",
+      "title": "Signature transition in Einstein-Cartan cosmology",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:48.245649+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.979564+00:00",
+          "disposition": "deferred",
+          "reason": "Retain Weyssenhoff spin-contact signature transition; degenerate metric, boundary conditions and bounce interpretation require source review."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0009150v1",
+      "position": 8,
+      "disposition": "deferred",
+      "reason": "Retain early anisotropic two-fluid structure-formation proposal; matching surfaces, shear and superhorizon validity need source checks.",
+      "title": "Structure formation in anisotropic Einstein-Cartan cosmologies",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:48.245649+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.985586+00:00",
+          "disposition": "deferred",
+          "reason": "Retain early anisotropic two-fluid structure-formation proposal; matching surfaces, shear and superhorizon validity need source checks."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1605.00552v2",
+      "position": 9,
+      "disposition": "deferred",
+      "reason": "Retain emergent-expansion/spin degrees-of-freedom construction; thermodynamic bookkeeping and entropy-bound assumptions need a full read.",
+      "title": "Emergent Cosmos in Einstein-Cartan Theory",
+      "decision_history": [
+        {
+          "utc": "2026-10-01T16:49:48.245649+00:00",
+          "disposition": "pending",
+          "reason": "Screen this saved metadata snapshot."
+        },
+        {
+          "utc": "2026-10-01T16:52:01.991690+00:00",
+          "disposition": "deferred",
+          "reason": "Retain emergent-expansion/spin degrees-of-freedom construction; thermodynamic bookkeeping and entropy-bound assumptions need a full read."
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": "2026-10-01-resumable-modified-gravity",
+    "query_id": "einstein-cartan-foundations"
+  },
+  "batch_id": "2026-10-01-resumable-modified-gravity"
+}

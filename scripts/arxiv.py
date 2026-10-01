@@ -40,6 +40,8 @@ def now():
 
 def atom_entries(body):
     root = ET.fromstring(body)
+    if root.tag != "{http://www.w3.org/2005/Atom}feed":
+        raise ValueError("arXiv response is not an Atom feed")
     entries = []
     for item in root.findall("a:entry", NS):
         vid = item.findtext("a:id", namespaces=NS).split("/abs/")[-1]
@@ -169,10 +171,12 @@ class Client:
             raise ValueError("Metadata identities do not match the lookup")
         return entries, receipt
 
-    def search(self, query, limit=10, order="lastUpdatedDate", start=0):
-        if not 1 <= limit <= 20 or start < 0 or order not in {"lastUpdatedDate", "submittedDate", "relevance"}:
+    def search(self, query, limit=10, order="lastUpdatedDate", start=0, direction="descending"):
+        if (not 1 <= limit <= 20 or start < 0
+                or order not in {"lastUpdatedDate", "submittedDate", "relevance"}
+                or direction not in {"ascending", "descending"}):
             raise ValueError("Invalid bounded search parameters")
-        params = {"search_query": query, "start": start, "max_results": limit, "sortBy": order, "sortOrder": "descending"}
+        params = {"search_query": query, "start": start, "max_results": limit, "sortBy": order, "sortOrder": direction}
         body, receipt = self.fetch("search", "https://export.arxiv.org/api/query?" + urllib.parse.urlencode(params), ".xml")
         if body is None:
             raise RuntimeError(receipt["error"])

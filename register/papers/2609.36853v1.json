@@ -30,14 +30,418 @@
       "retrieved_utc": "2026-10-01T01:36:31.860062+00:00",
       "sha256": "5a85b61b80a2c2a80ade9ac25275d960656b5cd99b98f74461057475f2766fae",
       "bytes": 25287
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/2609.36853v1",
+      "retrieved_utc": "2026-10-01T16:43:22.967797+00:00",
+      "sha256": "ba0c79c9a1404936a9b3b4524cf3134e7352a21c53d5e58c6cf58865d1eebcd5",
+      "bytes": 288432
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/2609.36853v1",
+      "retrieved_utc": "2026-10-01T16:43:26.226628+00:00",
+      "sha256": "1032dcdfbb2da6fe08e238601939d1e34e5441e06fb9097d65c8de6bcf29009a",
+      "bytes": 436434
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/2609.36853v1",
+      "retrieved_utc": "2026-10-01T16:43:26.416656+00:00",
+      "sha256": "0af83cbda9df8797d4e2d47416ea26370ae80339e6538e45454e9ba934624f99",
+      "bytes": 62318,
+      "derived_from_sha256": "1032dcdfbb2da6fe08e238601939d1e34e5441e06fb9097d65c8de6bcf29009a",
+      "tool": "pdftotext -layout"
     }
   ],
   "screen": {
-    "status": "deferred",
-    "basis": "abstract",
-    "reason": "Retain torsion/holographic dark-energy acceleration and distance-duality proposal; low-redshift domain needs checking."
+    "status": "reviewed",
+    "basis": "full_text",
+    "reason": "Complete Luna reading and exact Sol original-source review; useful conditional mechanisms with material source corrections, no scientific qualification."
   },
-  "extraction": null,
-  "review_id": null,
-  "idea_ids": []
+  "extraction": {
+    "paper_id": "arxiv:2609.36853v1",
+    "requested_model": "gpt-6-luna",
+    "requested_reasoning": "xhigh",
+    "agent_id": "/root/read_torsion",
+    "reading_level": "full_text",
+    "coverage": {
+      "sections_read": [
+        "Abstract",
+        "I Introduction",
+        "II Einstein-Cartan Gravity",
+        "III Einstein-Cartan Spin Cosmology",
+        "IV Holographic Dark Energy and Late-Time Cosmic Acceleration",
+        "V Cosmic Distance Duality Relation in the Present Model",
+        "VI Conclusions",
+        "Appendix A: Light propagation and redshift",
+        "Appendix B: Cross-section",
+        "References [1]-[39] (identity and bounded citation extraction)"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "figure_check": "Visually inspected PDF Fig. 1 (p. 1, conceptual quantum-gravity → Einstein-Cartan → GR classical-limit schematic), Fig. 2 (p. 5, reciprocal null bundles and source/observer cross-sections), and Fig. 3 (p. 6, plotted |eta| rising over 0 <= z <= 0.15 with the 0.023-0.15 band). Captions and plotted content agree at this level; Fig. 3 shows only |eta|, not the sign branch. Visually checked key equations on pp. 2-8 against PDF rendering, including (10)-(12), (14)-(17), (23)-(38), (39)-(51), and (A1)-(A10), (B1)-(B7).",
+      "limitations": [
+        "No part of the target paper was left unread. PDF p. 9 is references and was read as text; no scientific figure or equation appears there.",
+        "The extracted PDF text was used as a reading aid; original pinned HTML MathML/TeX annotations and rendered PDF pages were checked for the equations central to the mechanisms.",
+        "This is source extraction, not an independent derivation, numerical reproduction, current-data reassessment, or Sol review.",
+        "The related arXiv:2605.22143v2 full text was not read: the saved acquisition record reports HTML HTTP 406 and PDF HTTP 404 on both arXiv routes. Only its registered metadata was compared."
+      ],
+      "unread_material": []
+    },
+    "summary": "Yun and Lee propose a late-time, spatially flat FLRW Einstein-Cartan model with a semiclassical unpolarized Weyssenhoff spin fluid, retaining only a trace-sector torsion scalar Phi. Cartan's equations make torsion algebraically sourced by spin rather than an independent propagating degree of freedom. With radiation neglected and separately conserved dust plus phenomenological holographic dark energy rho_X = 3 d^2 M_p^2 H^2 (Hubble-radius cutoff), the torsion contribution is negative and scales as Phi^2 proportional to a^-6; it shifts the dust-like holographic component to negative w_X and can yield q_0 < 0 without a dark-matter/dark-energy interaction. For fixed Omega_m0 = 0.3, a single Gaussian chi-square fit to the local Pantheon cosmographic q_0 = -1.08 +/- 0.29 gives d_best = 0.924 (+0.007/-0.008); the paper derives |Phi_0/H_0| = 0.392 (+0.016/-0.019) and w_X0 = -1.05 (+0.19/-0.20). This is a one-observable, one-parameter consistency estimate, not a multi-probe or current-data fit. The solution requires z < z_* = 0.249 for E^2 > 0 and |Phi/H| < 1 only to z_wt = 0.194 at that fit; the fitted local interval 0.023-0.15 lies inside both. Separately, using the same background and a torsion-aware geometric-optics/null-bundle calculation for test radiation, the authors derive d_L = d_A (1+z)^2 (1+eta), with weak-torsion eta approximately the line integral of Phi/H. Its plotted absolute magnitude grows with redshift over the same low-z interval. These remain source-level proposals: the background is not extended to early times, perturbations are not treated, the photon stress conservation and test-field assumptions matter, and no distance-duality data are fitted.",
+    "ideas": [
+      {
+        "local_id": "weyssenhoff-trace-torsion-background",
+        "title": "Weyssenhoff spin sources an algebraic trace-sector torsion in FLRW",
+        "claim_type": "author_model_assumption",
+        "description": "The authors use a semiclassical Weyssenhoff spin fluid with the Frenkel condition, random spin orientation (zero linear spin average but nonzero quadratic average), and a homogeneous/isotropic ansatz restricted to the trace sector S_{mu nu rho} = Phi h_{rho[mu} u_{nu]}. The Cartan equation relates the squared spin density to Phi^2, so Phi is not introduced as an independent propagating field. With their adiabatic particle-number and noninteracting-fluid assumptions, dot(Phi)+3H Phi=0; hence Phi scales as a^-3, while its quadratic contribution to the background scales as a^-6. This is a model closure at homogeneous/isotropic background level; perturbations and microscopic spin dynamics are not developed.",
+        "locators": [
+          "HTML Sec. III, Eqs. (7)-(12), #S3.E7-#S3.E12; PDF pp. 2-3",
+          "HTML Sec. III, Eqs. (18)-(22), #S3.E18-#S3.E22; PDF p. 3"
+        ],
+        "equations": [
+          {
+            "expression": "S_{mu nu rho} = Phi(t) h_{rho[mu} u_{nu]}; in the comoving frame S^1_{01}=S^2_{02}=S^3_{03}=Phi/2",
+            "locator": "Eq. (11), HTML #S3.E11; PDF p. 2",
+            "conventions": "Metric-compatible connection; u^mu u_mu=-1; h_{mu nu}=g_{mu nu}+u_mu u_nu; antisymmetrization convention is implicit in the source and its stated component fixes the factor.",
+            "domain": "Spatially homogeneous and isotropic, flat FLRW; analysis restricts torsion to the trace sector.",
+            "confidence": "high"
+          },
+          {
+            "expression": "s^2 = 12 M_p^4 Phi^2; M_p = 1/sqrt(8 pi G)",
+            "locator": "Eq. (12), HTML #S3.E12; PDF p. 2",
+            "conventions": "Natural units c=hbar=1; s^2 is the squared fluid spin density. The preceding average is <s_{mu nu} s^{mu nu}> = s^2/2.",
+            "domain": "Unpolarized Weyssenhoff fluid under the paper's Cartan equation and torsion ansatz.",
+            "confidence": "high"
+          },
+          {
+            "expression": "(a_dot/a)^2 = (rho - 3 M_p^2 Phi^2)/(3 M_p^2); a_ddot/a = -(rho+3p-12 M_p^2 Phi^2)/(6 M_p^2)",
+            "locator": "Eqs. (14)-(15), HTML #S3.E14-#S3.E15; PDF p. 3",
+            "conventions": "H=a_dot/a; rho and p are total fluid density and pressure; torsion terms enter with the signs printed.",
+            "domain": "Flat FLRW homogeneous/isotropic background.",
+            "confidence": "high"
+          },
+          {
+            "expression": "dot(Phi)+3H Phi=0; for dust rho_m proportional to a^-3 and Phi^2 proportional to a^-6",
+            "locator": "Eqs. (19)-(22), HTML #S3.E19-#S3.E22; PDF p. 3",
+            "conventions": "Separate matter and dark-energy conservation is imposed after total conservation; the paper says the Phi equation is not an independent field equation.",
+            "domain": "The paper's homogeneous background and dust case only.",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "local_id": "hubble-cutoff-hde-torsion-acceleration",
+        "title": "Trace torsion shifts Hubble-cutoff holographic dark energy away from dust",
+        "claim_type": "author_prediction",
+        "description": "The authors adopt rho_X=3 d^2 M_p^2 H^2 with L=H^-1 and no explicit dark-sector interaction, set Omega_X=d^2, neglect radiation, and separately conserve dust and X. Their derived w_X = -(Phi/H)^2/(1-d^2) for dust is negative for the physical branch, allowing q<0; in the torsion-free limit the noninteracting Hubble-cutoff component returns to dust and does not accelerate. For Omega_m0=0.3, the present constraint requires d >= about 0.837 and the E^2 background exists only for 0 <= z < z_*=0.249 at the quoted fit. The |Phi/H|<1 weak-torsion domain ends earlier at z_wt=0.194. The parameter d -> 0 is outside this physical solution and makes rho_X vanish; the authors explicitly say this is not a continuous LCDM limit because there is no separate cosmological constant. The late-time q comparison fixes Omega_m0=0.3 and fits one parameter to one local cosmographic estimate.",
+        "locators": [
+          "HTML Sec. IV, Eqs. (23)-(38), #S4.E23-#S4.E38; PDF pp. 3-5",
+          "Abstract and Sec. VI; PDF pp. 1, 6"
+        ],
+        "equations": [
+          {
+            "expression": "rho_X=3 d^2 M_p^2 H^2; Omega_X=d^2; w_X=[1+(Phi/H)^2/(1-d^2)] w_m-(Phi/H)^2/(1-d^2)",
+            "locator": "Eqs. (23), (26), HTML #S4.E23 and #S4.E26; PDF p. 3",
+            "conventions": "d is a free dimensionless holographic parameter; H is the Hubble rate; w_i=p_i/rho_i. For the paper's dust assumption w_m=0, w_X=-(Phi/H)^2/(1-d^2).",
+            "domain": "Hubble-radius IR cutoff; noninteracting matter and dark energy; radiation neglected.",
+            "confidence": "high"
+          },
+          {
+            "expression": "E^2(z)=[Omega_m0(1+z)^3-(Omega_m0+d^2-1)(1+z)^6]/(1-d^2); (Phi_0/H_0)^2=Omega_m0+d^2-1 >= 0",
+            "locator": "Eqs. (27)-(28), HTML #S4.E27-#S4.E28; PDF p. 4",
+            "conventions": "E=H/H_0; the second numerator term is the negative torsion term. Redshift uses 1+z=a_0/a.",
+            "domain": "For Omega_m0=0.3 and d_best=0.924, E^2>0 only for 0<=z<z_*=0.249; weak torsion |Phi/H|<1 only to z_wt=0.194.",
+            "confidence": "high"
+          },
+          {
+            "expression": "chi^2(d)=[q_0(d)-q_0^local]^2/(sigma_{q_0^local})^2; d_best=0.924^{+0.007}_{-0.008}",
+            "locator": "Eqs. (32)-(35), HTML #S4.E32-#S4.E35; PDF p. 4",
+            "conventions": "Author fit: q_0^local=-1.08 +/- 0.29 from a cited low-redshift Pantheon cosmographic estimate over 0.023<=z<=0.15; Omega_m0 fixed at 0.3; Gaussian one-parameter Delta chi^2=1 interval.",
+            "domain": "A one-observable consistency fit; the quoted redshift interval lies within both z_wt and z_* for the best fit.",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "local_id": "trace-torsion-distance-duality",
+        "title": "Trace torsion modifies null-bundle reciprocity and luminosity flux",
+        "claim_type": "author_prediction",
+        "description": "Using the same background, the authors derive a reciprocity correction alpha between source/observer area distances and a path-integrated torsion correction beta to radiation flux, leading to d_L=d_A(1+z)^2(1+eta), eta=sqrt((1+alpha)/(1+beta))-1. For weak torsion alpha is quadratic and dropped at leading order; their trace-sector calculation gives eta approximately integral_0^z [Phi/H] dz/(1+z). They preserve U(1) gauge invariance by taking F=dA, so the Maxwell Lagrangian is affine-connection independent and its spin tensor vanishes. In geometric optics the phase covector is metric-null and its propagation law is written with the full affine covariant derivative, including torsion. They separately assume the canonical radiation stress tensor is covariantly conserved with that connection and treat radiation as a test field decoupled from matter. For the chosen flat-FLRW trace ansatz, the torsion term in the frequency-redshift equation cancels (I=0), leaving a=(1+z)^-1; this is a special result of their ansatz, not asserted for arbitrary torsion. The sign of eta follows the +/- Phi/H branch in Eq. (30); Eq. (51) retains +/- and Fig. 3 displays only |eta|.",
+        "locators": [
+          "HTML Sec. V, Eqs. (39)-(51), #S5.E39-#S5.E51; PDF pp. 5-6",
+          "HTML Appendix A, Eqs. (A1)-(A10), #A1.E52-#A1.E61; PDF p. 7",
+          "HTML Appendix B, Eqs. (B1)-(B7), #A2.E62-#A2.E68; PDF pp. 7-8"
+        ],
+        "equations": [
+          {
+            "expression": "k_mu k^mu=0; k^mu nabla_mu k_nu=2 S_{mu nu rho} k^mu k^rho",
+            "locator": "Appendix A, Eqs. (A2)-(A3), HTML #A1.E53-#A1.E54; PDF p. 7",
+            "conventions": "k^mu=g^{mu nu} nabla_tilde_nu phi is the wave vector; nabla is the full metric-compatible affine derivative, and the displayed torsion sign follows the paper's S^rho_{mu nu}=Gamma^rho_[mu nu] convention.",
+            "domain": "Source-free Maxwell geometric-optics limit. This is the authors' torsion-aware propagation equation, not a blanket statement that light follows Levi-Civita metric geodesics.",
+            "confidence": "high"
+          },
+          {
+            "expression": "f_S/f_O=1+z; I=-(2/3)S_{nu mu}{}^mu u^nu+2S_{mu alpha nu} n^mu u^alpha(u^nu+n^nu); for flat FLRW with Eq. (11), I=0 and a=1/(1+z)",
+            "locator": "Appendix A, Eqs. (A7)-(A10), HTML #A1.E58-#A1.E61; PDF p. 7",
+            "conventions": "f=-k_alpha u^alpha; u^mu is comoving four-velocity; n^mu is the spatial propagation direction. Eq. (A9) evaluates the two terms with opposite signs.",
+            "domain": "The paper's trace-sector torsion ansatz on flat FLRW.",
+            "confidence": "high"
+          },
+          {
+            "expression": "r_S^2=r_O^2(1+z)^2(1+alpha); d_L=d_A(1+z)^2(1+eta); eta approximately +/- (2/3)sqrt(1-d^2)[asin(xi(1+z)^(3/2))-asin(xi)]",
+            "locator": "Eqs. (39), (49)-(51), HTML #S5.E39, #S5.E49-#S5.E51; PDF pp. 5-6",
+            "conventions": "xi=sqrt((Omega_m0+d^2-1)/Omega_m0); eta is dimensionless. Eq. (51) carries +/- because Eq. (30) has both Phi/H branches; Figure 3 plots |eta|.",
+            "domain": "Leading weak-torsion approximation, alpha neglected, same background and low-z physical/weak-torsion interval. No luminosity-distance data are fit.",
+            "confidence": "high"
+          },
+          {
+            "expression": "(1+z)^2 F dA/(1+beta) approximately constant, where dA is a null-bundle cross-sectional area element; beta is the source-to-observer integral of the four torsion terms in Eq. (46); eta approximately -beta/2 approximately integral_0^z [Phi/H] dz/(1+z)",
+            "locator": "Eqs. (45)-(50), HTML #S5.E45-#S5.E50; PDF pp. 5-6",
+            "conventions": "F is measured radiation flux; alpha describes area-distance reciprocity, beta describes flux propagation. Natural units; beta is dimensionless after integration over time.",
+            "domain": "Test radiation, isotropic emission, weak torsion; assumes full-affine covariant conservation of the canonical radiation energy-momentum tensor.",
+            "confidence": "high"
+          }
+        ]
+      }
+    ],
+    "quantities": [
+      {
+        "name": "local cosmographic present deceleration benchmark",
+        "value": "-1.08 +/- 0.29",
+        "unit": "dimensionless",
+        "uncertainty": "quoted 1 sigma uncertainty in the cited local cosmographic estimate",
+        "conditioning": "Pantheon supernova sample; cited source states 0.023 <= z <= 0.15. Used here as a phenomenological reference, not a joint fit to the supernova likelihood.",
+        "locator": "Sec. IV, Eq. (33) discussion; PDF p. 4; cited ref. [33]"
+      },
+      {
+        "name": "best-fit holographic parameter d",
+        "value": "0.924 (+0.007/-0.008)",
+        "unit": "dimensionless",
+        "uncertainty": "one-parameter Delta chi^2=1 interval",
+        "conditioning": "Gaussian chi-square to q_0^local=-1.08 +/-0.29, with Omega_m0 fixed at 0.3; no multi-probe likelihood.",
+        "locator": "Eq. (34), PDF p. 4"
+      },
+      {
+        "name": "best-fit absolute present torsion ratio",
+        "value": "|Phi_0/H_0| = 0.392 (+0.016/-0.019)",
+        "unit": "dimensionless",
+        "uncertainty": "derived from the fitted d and fixed Omega_m0; quoted 1 sigma interval",
+        "conditioning": "d_best=0.924 and Omega_m0=0.3; absolute value suppresses torsion-sign branch.",
+        "locator": "Eq. (36), PDF p. 4"
+      },
+      {
+        "name": "best-fit present holographic equation of state",
+        "value": "w_X0 = -1.05 (+0.19/-0.20)",
+        "unit": "dimensionless",
+        "uncertainty": "derived 1 sigma interval; the source says -1 lies within it",
+        "conditioning": "Dust w_m=0, d_best=0.924, Omega_m0=0.3; derived from the same one-parameter consistency fit.",
+        "locator": "Eq. (38), PDF p. 5"
+      },
+      {
+        "name": "physical background upper redshift z_*",
+        "value": "0.249",
+        "unit": "redshift",
+        "uncertainty": null,
+        "conditioning": "d_best=0.924 and Omega_m0=0.3; defined by E^2(z_*)=0, with physical background only below it.",
+        "locator": "Eqs. (29), (35), PDF p. 4"
+      },
+      {
+        "name": "weak-torsion upper redshift z_wt",
+        "value": "0.194",
+        "unit": "redshift",
+        "uncertainty": null,
+        "conditioning": "d_best=0.924 and Omega_m0=0.3; defined by |Phi/H|=1; the weak-torsion treatment applies below this value.",
+        "locator": "Eqs. (31), (35), PDF p. 4"
+      }
+    ],
+    "data_dependencies": [
+      {
+        "item": "Local deceleration estimate q_0^local=-1.08 +/-0.29",
+        "source": "Camarena and Marra, reference [33], cited as using low-redshift Pantheon SNe Ia",
+        "use_in_paper": "Single Gaussian summary-statistic chi-square for d, with Omega_m0 fixed to 0.3.",
+        "overlap_or_conditioning": "This is a cosmographic estimate derived from supernovae, not an independent data set relative to Pantheon; no joint covariance or likelihood combination is performed here.",
+        "locator": "Sec. IV, Eq. (33), PDF p. 4"
+      },
+      {
+        "item": "Planck, BAO, CC and CMB observations",
+        "source": "Motivating examples in the introduction; refs. [3]-[8], [16]",
+        "use_in_paper": "Context only; the paper explicitly leaves a consistent multi-probe analysis for future work.",
+        "overlap_or_conditioning": "No Planck, BAO, cosmic-chronometer or CMB likelihood is fitted in this paper.",
+        "locator": "Introduction and Sec. IV closing paragraph, PDF pp. 1, 5"
+      },
+      {
+        "item": "Holographic cutoff and Weyssenhoff spin-fluid relations",
+        "source": "Phenomenological holographic density (refs. [19]-[24]) and Einstein-Cartan/spin literature (refs. [25]-[32])",
+        "use_in_paper": "Model assumptions and theoretical motivation for the background equations.",
+        "overlap_or_conditioning": "No new external observational dataset constrains the torsion or spin density; d is inferred only through the local q statistic under fixed Omega_m0.",
+        "locator": "Secs. II-IV, PDF pp. 2-4"
+      }
+    ],
+    "caveats": [
+      "This is explicitly an effective late-time model. Radiation is neglected, the solution fails at z >= z_* for the quoted fit, weak torsion ends at z_wt, and perturbations are out of scope. It cannot establish early-universe or full CMB behavior.",
+      "The acceleration result is a one-observable, one-free-parameter consistency estimate: q_0^local is treated as Gaussian, Omega_m0 is fixed at 0.3, and no SNe likelihood, BAO, CC or CMB likelihood/covariance is jointly fit.",
+      "The holographic density is adopted phenomenologically from the Hubble-radius cutoff; its microphysical origin remains open in the paper. There is no separate cosmological constant, and d -> 0 is outside the physical solution rather than a recovery of LCDM.",
+      "The spin-fluid relation and trace-sector torsion ansatz are model closures. The authors say torsion is algebraically determined by spin, not a propagating scalar, and do not provide perturbation closure or a test of the fluid approximation.",
+      "For distance duality, the source assumes radiation is a decoupled test field, its canonical energy-momentum is covariantly conserved using the full affine connection, and emission is isotropic. The result depends on the stated U(1)-preserving F=dA Maxwell prescription and weak-torsion expansion; it is not a fit to observed distance-duality data.",
+      "Photon propagation is derived from a metric-null eikonal with a torsion-bearing affine equation (A3), and frequency and beam-area propagation use affine covariant derivatives. The special trace-sector FLRW calculation yields I=0 and the standard a(z) relation; do not generalize that cancellation to arbitrary torsion or silently replace the derivation with a metric-geodesic assumption.",
+      "The Phi/H and eta expressions have a +/- sign branch. The paper quotes absolute torsion in its fit and plots |eta|, so the distance-duality sign is not selected by those results.",
+      "A closely related registered record, arXiv:2605.22143v2, has the same authors and a metadata title about Hubble-radius holographic dark energy in Einstein-Cartan gravity. Its saved pinned-source attempts failed (HTML 406, PDF 404 on arXiv.org and export.arxiv.org); no scientific claim about what this v1 updates or changes can be made from metadata alone. It is not cited in this target bibliography."
+    ],
+    "usefulness": {
+      "decision": "review",
+      "reason": "The paper contains a distinct, clearly stated late-time trace-torsion/Hubble-cutoff mechanism and a separate torsion-sensitive distance-duality derivation worth source review. Before either is accepted as an idea or combined with a prospect, Sol should check the spin-fluid/Cartan closure, the domains and fit algebra, and the full-connection photon/area-distance derivation and assumptions. No prospect or executable design follows from this Luna extraction."
+    },
+    "citation_leads": [
+      {
+        "reference": "[35] K. Bolejko, M. Cinus and B.F. Roukema (2020), Cosmological signatures of torsion and how to distinguish torsion from the dark sector, Phys. Rev. D 101, 104046",
+        "reason": "The target directly relies on this source for torsion-modified area-distance reciprocity and eta; compare conventions and scope in a later bounded source review. Not followed here."
+      },
+      {
+        "reference": "[37] R. Fresneda, M.C. Baldiotti and T.S. Pereira (2015), Maxwell field with torsion, Braz. J. Phys. 45, 353-358",
+        "reason": "The target invokes this source when motivating its U(1)-preserving F=dA treatment and Maxwell/torsion assumptions. Not followed here."
+      }
+    ],
+    "citations_to_registered": [
+      {
+        "citing_paper_id": "arxiv:2609.36853v1",
+        "cited_arxiv_id": "1807.06209",
+        "cited_version": null,
+        "reference": "4",
+        "title_as_printed": "Planck 2018 results. VI. Cosmological parameters",
+        "registered_match": "arxiv:1807.06209v4",
+        "source": {
+          "role": "html",
+          "sha256": "ba0c79c9a1404936a9b3b4524cf3134e7352a21c53d5e58c6cf58865d1eebcd5",
+          "locator": "HTML References [4], bib.bib4; PDF reference [4], p. 8",
+          "url": "https://arxiv.org/html/2609.36853v1#bib.bib4"
+        }
+      },
+      {
+        "citing_paper_id": "arxiv:2609.36853v1",
+        "cited_arxiv_id": "1812.04589",
+        "cited_version": null,
+        "reference": "30",
+        "title_as_printed": "Einstein-Cartan cosmologies",
+        "registered_match": "arxiv:1812.04589v1",
+        "source": {
+          "role": "html",
+          "sha256": "ba0c79c9a1404936a9b3b4524cf3134e7352a21c53d5e58c6cf58865d1eebcd5",
+          "locator": "HTML References [30], bib.bib30; PDF reference [30], p. 8",
+          "url": "https://arxiv.org/html/2609.36853v1#bib.bib30"
+        },
+        "note": "The printed journal title/authors/year match the registered arXiv identity; cited version was not printed."
+      }
+    ],
+    "citation_coverage": {
+      "method": "Inspected all 39 bibliography entries in the pinned HTML and PDF text, then matched explicit printed title/author/publication identity against the current register.",
+      "registered_matches": [
+        "1807.06209",
+        "1812.04589"
+      ],
+      "bounded": true,
+      "limitations": [
+        "Only explicit bibliography identity matches are recorded; overlap in subject matter is not a citation.",
+        "The target prints no cited arXiv versions. Registered website versions are lookup targets only, not claims about which version the authors cited.",
+        "The registered 1812.04589 Einstein-Cartan Cosmologies identity is explicitly cited as reference [30]. Foundational references [26] and [27] are separate Hehl publications and were not silently mapped to a registered paper.",
+        "arXiv:2605.22143v2 is not in this paper's bibliography; same authors/topic metadata does not establish a citation or an update relation."
+      ]
+    },
+    "unread_material": [
+      "Related arXiv:2605.22143v2 full text: not obtained after recorded 406/404 failures; metadata only, no scientific updating comparison."
+    ],
+    "provenance": {
+      "requested_model": "gpt-6-luna",
+      "requested_reasoning": "xhigh",
+      "agent_id": "/root/read_torsion",
+      "backend_model_identity": null,
+      "backend_identity_note": "Actual backend identity is not exposed to this worker; no claim is made beyond the requested model and reasoning effort.",
+      "sources_manifest": ".work/2026-10-01-crawl/2609.36853v1-sources.json",
+      "source_hashes": {
+        "metadata": "5a85b61b80a2c2a80ade9ac25275d960656b5cd99b98f74461057475f2766fae",
+        "html": "ba0c79c9a1404936a9b3b4524cf3134e7352a21c53d5e58c6cf58865d1eebcd5",
+        "pdf": "1032dcdfbb2da6fe08e238601939d1e34e5441e06fb9097d65c8de6bcf29009a",
+        "extracted_text": "0af83cbda9df8797d4e2d47416ea26370ae80339e6538e45454e9ba934624f99"
+      },
+      "source_paths": {
+        "html": ".work/2026-10-01-crawl/objects/ba0c79c9a1404936a9b3b4524cf3134e7352a21c53d5e58c6cf58865d1eebcd5.html",
+        "pdf": ".work/2026-10-01-crawl/objects/1032dcdfbb2da6fe08e238601939d1e34e5441e06fb9097d65c8de6bcf29009a.pdf",
+        "extracted_text": ".work/2026-10-01-crawl/objects/0af83cbda9df8797d4e2d47416ea26370ae80339e6538e45454e9ba934624f99.txt"
+      },
+      "source_identity": "Pinned PDF page 1 prints arXiv:2609.36853v1 [gr-qc], 29 Sep 2026. PDF title/authors and HTML title/h1 agree with register metadata: Holographic dark energy in Einstein-Cartan spin cosmology; Yongjun Yun and Jungjai Lee. HTML includes the full article, sections I-VI, Appendices A-B, equations (1)-(51), appendix equations (A1)-(A10) and (B1)-(B7), and 39 bibliography entries; PDF is 9 pages."
+    },
+    "packet_sha256": "38ce4f8a3c197d3e86725a9e7f6e3fff9b75fb9c824ac6c402939daa10028f75",
+    "source_hashes": {
+      "html": "ba0c79c9a1404936a9b3b4524cf3134e7352a21c53d5e58c6cf58865d1eebcd5",
+      "pdf": "1032dcdfbb2da6fe08e238601939d1e34e5441e06fb9097d65c8de6bcf29009a",
+      "extracted_text": "0af83cbda9df8797d4e2d47416ea26370ae80339e6538e45454e9ba934624f99"
+    },
+    "review_amendments": [
+      {
+        "review_id": "2026-10-01-modified-gravity-science",
+        "review_packet_sha256": "00c3406875f14f6e9ef085bc46ec775d078ee9fbc0e36a89e551901d9fd92137",
+        "integrated_utc": "2026-10-01T17:20:13.692220+00:00",
+        "agent_id": "/root",
+        "reason": "Original Luna extraction retained as author-proposal extraction; independent source review visibly qualifies or corrects the following claims.",
+        "corrections": [
+          {
+            "id": "ec-frenkel-trace-conflict",
+            "paper_id": "arxiv:2609.36853v1",
+            "kind": "source_model_incompatibility_reviewer_derived",
+            "locator": "Sec.II Eq.(2); Sec.III Eq.(7), Frenkel condition, Eqs.(9),(11)-(12), PDF p.2; HTML #S2.E2,#S3.E7,#S3.E11",
+            "detail": "Contracting the displayed Cartan equation at mu=nu gives −2 S_{lambda alpha}{}^alpha=kappa s_{lambda nu}{}^nu. Weyssenhoff s_{lambda nu}{}^nu=s_{lambda nu}u^nu=0 by the stated Frenkel condition. Thus the torsion trace vanishes pointwise. The stated ansatz instead has S_{lambda alpha}{}^alpha=−3Phi u_lambda/2; it forces Phi=0 for this source. Zero linear spin average with nonzero spin² can leave quadratic effective stress, but cannot provide a coherent nonzero trace source or choose its linear sign. Eq.(12) cannot cure this contradiction. The phenomenological negative-stiff background must be kept separate from an accepted Weyssenhoff trace derivation.",
+            "display_summary": "Contracting the displayed Cartan equation at mu=nu gives −2 S_{lambda alpha}{}^alpha=kappa s_{lambda nu}{}^nu. Weyssenhoff s_{lambda nu}{}^nu=s_{lambda nu}u^nu=0 by the stated Frenkel condition. Thus the torsion trace vanishes pointwise. The stated ansatz instead has S_{lambda alpha}{}^alpha=−3Phi u_lambda/2; it forces Phi=0 for this source. Zero linear spin average with nonzero spin² can leave quadratic effective stress, but cannot provide a coherent nonzero trace source or choose its linear sign. Eq.(12) cannot cure this contradiction. The phenomenological negative-stiff background must be kept separate from an accepted Weyssenhoff trace derivation."
+          },
+          {
+            "id": "ec-photon-conservation-prescription",
+            "paper_id": "arxiv:2609.36853v1",
+            "kind": "source_closure_failure_reviewer_derived",
+            "locator": "Sec.V Eqs.(41)-(50) PDF pp.5-6; Appendix A preamble and Eqs.(A1)-(A3) PDF p.7",
+            "detail": "The source chooses connection-independent Maxwell action with F=dA and explicitly states source-free Maxwell is tilde∇_mu F^{mu nu}=0. This entails Levi-Civita stress conservation and metric null geometric-optics rays. Rewriting their equation with full affine ∇ can generate torsion terms, but does not alter the physical metric-ray path. Sec.V instead assumes full∇_mu T_rad^{mu nu}=0 for Eq.(44), without the connection conversion terms or a new photon coupling. These conditions are not generally equal for nonzero trace torsion. For the displayed minimal Maxwell sector and photon-number conservation, metric reciprocity/duality remains dL=(1+z)²dA even on a changed cosmological metric. Nonzero eta therefore needs a reconciled radiation action/conservation/reciprocity derivation; it is not accepted as a derived signal here.",
+            "display_summary": "The source chooses connection-independent Maxwell action with F=dA and explicitly states source-free Maxwell is tilde∇_mu F^{mu nu}=0. This entails Levi-Civita stress conservation and metric null geometric-optics rays. Rewriting their equation with full affine ∇ can generate torsion terms, but does not alter the physical metric-ray path. Sec.V instead assumes full∇_mu T_rad^{mu nu}=0 for Eq.(44), without the connection conversion terms or a new photon coupling. These conditions are not generally equal for nonzero trace torsion. For the displayed minimal Maxwell sector and photon-number conservation, metric reciprocity/duality remains dL=(1+z)²dA even on a changed cosmological metric. Nonzero eta therefore needs a reconciled radiation action/conservation/reciprocity derivation; it is not accepted as a derived signal here."
+          },
+          {
+            "id": "ec-background-conservation-and-domains",
+            "paper_id": "arxiv:2609.36853v1",
+            "kind": "conditional_algebra_confirmed",
+            "locator": "Eqs.(14)-(32),(37), PDF pp.3-5",
+            "detail": "Given the phenomenological equations and separate conservation, Phi²∝a^−6 is a negative stiff contribution, not dust. Differentiating Eq.(14) using Eq.(15) gives rhodot+3H(rho+p)=6Mp²Phi(Phidot+3HPhi); particle-number/adiabatic closure sets both sides zero. Eq.(28) is normalized E(0)=1; for the displayed branch 0<1−d² and Delta=Omega_m0+d²−1>=0 are required and E²>0 ends at z*. The stated fit gives z*=.249 and |Phi/H|=1 at z_wt=.194. d→0 is outside the fitted physical branch and no independent Lambda is retained. These are conditional algebraic consequences, not an established spin-source model.",
+            "display_summary": "Given the phenomenological equations and separate conservation, Phi²∝a^−6 is a negative stiff contribution, not dust. Differentiating Eq.(14) using Eq.(15) gives rhodot+3H(rho+p)=6Mp²Phi(Phidot+3HPhi); particle-number/adiabatic closure sets both sides zero. Eq.(28) is normalized E(0)=1; for the displayed branch 0<1−d² and Delta=Omega_m0+d²−1>=0 are required and E²>0 ends at z*. The stated fit gives z*=.249 and |Phi/H|=1 at z_wt=.194. d→0 is outside the fitted physical branch and no independent Lambda is retained. These are conditional algebraic consequences, not an established spin-source model."
+          },
+          {
+            "id": "ec-eta-branches-and-order",
+            "paper_id": "arxiv:2609.36853v1",
+            "kind": "conditional_algebra_confirmed_and_approximation_limit",
+            "locator": "Eqs.(30),(49)-(51), Fig.3, PDF pp.4,6",
+            "detail": "The formal integral of Eq.(30) gives the printed Eq.(51) with xi=sqrt(Delta/Omega_m0) and both signs. Eta(0)=0 only removes propagation length; the fit to Phi² does not choose a sign. Figure 3 shows |eta| only. |Phi/H|<1 is a permissive domain condition, not a controlled smallness/error bound: the quoted present ratio is .392 and increases toward the upper local interval. O(Phi²) reciprocity terms and nonlinear beta terms need an error estimate before an observed duality comparison; no eta dataset was fitted.",
+            "display_summary": "The formal integral of Eq.(30) gives the printed Eq.(51) with xi=sqrt(Delta/Omega_m0) and both signs. Eta(0)=0 only removes propagation length; the fit to Phi² does not choose a sign. Figure 3 shows |eta| only. |Phi/H|<1 is a permissive domain condition, not a controlled smallness/error bound: the quoted present ratio is .392 and increases toward the upper local interval. O(Phi²) reciprocity terms and nonlinear beta terms need an error estimate before an observed duality comparison; no eta dataset was fitted."
+          },
+          {
+            "id": "ec-fit-lineage-and-one-statistic",
+            "paper_id": "arxiv:2609.36853v1",
+            "kind": "conditioning_confirmed",
+            "locator": "Eqs.(32)-(38), Sec.IV PDF pp.4-5",
+            "detail": "Author d=.924(+.007/−.008) is a one-parameter Gaussian chi-square mapping of a cited local Pantheon q0=−1.08±.29, with Omega_m0 fixed .3. Phi0/H0 and wX0 are correlated derived outputs from that same mapping, not independent observations. The q0 summary and its source likelihood/calibration/cosmographic truncation have not been acquired here; no independent-current-data confirmation is claimed. Planck/BAO/CC mentions are motivation, not fitted likelihoods.",
+            "display_summary": "Author d=.924(+.007/−.008) is a one-parameter Gaussian chi-square mapping of a cited local Pantheon q0=−1.08±.29, with Omega_m0 fixed .3. Phi0/H0 and wX0 are correlated derived outputs from that same mapping, not independent observations. The q0 summary and its source likelihood/calibration/cosmographic truncation have not been acquired here; no independent-current-data confirmation is claimed. Planck/BAO/CC mentions are motivation, not fitted likelihoods."
+          }
+        ]
+      }
+    ]
+  },
+  "review_id": "2026-10-01-modified-gravity-science",
+  "idea_ids": [
+    "hubble-cutoff-negative-spin-background",
+    "frenkel-trace-and-maxwell-duality-closure"
+  ]
 }

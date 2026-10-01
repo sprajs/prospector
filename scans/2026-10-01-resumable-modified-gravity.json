@@ -1,0 +1,449 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-01-resumable-modified-gravity",
+  "status": "completed",
+  "started_utc": "2026-10-01T16:43:06.568497+00:00",
+  "completed_utc": "2026-10-01T17:22:46.840894+00:00",
+  "lane": "modified-gravity",
+  "work_mode": "queued_challenges_with_fresh_and_foundational_windows",
+  "queries": [
+    {
+      "id": "modified-gravity-fresh",
+      "search_id": "2026-10-01-modified-gravity-fresh",
+      "query": "(cat:astro-ph.CO OR cat:gr-qc) AND (ti:\"modified gravity\" OR ti:\"Gauss-Bonnet\")",
+      "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Agr-qc%29+AND+%28ti%3A%22modified+gravity%22+OR+ti%3A%22Gauss-Bonnet%22%29&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+      "order": "lastUpdatedDate",
+      "direction": "descending",
+      "start": 0,
+      "max_results": 10,
+      "retrieved_utc": "2026-10-01T16:49:44.750755+00:00",
+      "sha256": "b78ff316e1a6575a97b22179ec66f01d525ecce32fb55cc67b14c1265d17a967",
+      "result_ids": [
+        "arxiv:2609.39944v1",
+        "arxiv:2607.05331v2",
+        "arxiv:2609.39236v1",
+        "arxiv:2609.37437v1",
+        "arxiv:2511.19073v2",
+        "arxiv:2609.28158v2",
+        "arxiv:2609.28456v1",
+        "arxiv:2609.30319v1",
+        "arxiv:2609.24912v1",
+        "arxiv:2604.08393v2"
+      ]
+    },
+    {
+      "id": "einstein-cartan-foundations",
+      "search_id": "2026-10-01-einstein-cartan-foundations",
+      "query": "(cat:gr-qc OR cat:astro-ph.CO OR cat:astro-ph) AND ti:\"Einstein-Cartan\" AND (abs:cosmology OR abs:\"dark energy\") AND submittedDate:[199001010000 TO 201912312359]",
+      "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Agr-qc+OR+cat%3Aastro-ph.CO+OR+cat%3Aastro-ph%29+AND+ti%3A%22Einstein-Cartan%22+AND+%28abs%3Acosmology+OR+abs%3A%22dark+energy%22%29+AND+submittedDate%3A%5B199001010000+TO+201912312359%5D&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+      "order": "relevance",
+      "direction": "descending",
+      "start": 0,
+      "max_results": 10,
+      "retrieved_utc": "2026-10-01T16:49:48.245649+00:00",
+      "sha256": "db664410a052d4c98f811c3fdf2ec1591e96cb62f7976fed3f6c10427e49ff57",
+      "result_ids": [
+        "arxiv:1507.07571v3",
+        "arxiv:1812.04589v1",
+        "arxiv:1405.3435v1",
+        "arxiv:1607.01128v2",
+        "arxiv:1406.7555v2",
+        "arxiv:1611.07878v3",
+        "arxiv:gr-qc/0202022v1",
+        "arxiv:1308.2877v2",
+        "arxiv:astro-ph/0009150v1",
+        "arxiv:1605.00552v2"
+      ]
+    }
+  ],
+  "known_id_lookups": [
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=2607.05331v2%2C2609.24912v1%2C2604.08393v2%2C1507.07571v3%2C1812.04589v1%2C1405.3435v1%2C1607.01128v2%2C1406.7555v2%2C1611.07878v3%2Cgr-qc%2F0202022v1%2C1308.2877v2%2Castro-ph%2F0009150v1%2C1605.00552v2&max_results=13",
+      "retrieved_utc": "2026-10-01T16:50:47.913678+00:00",
+      "sha256": "aae525f5bc62e0e44134f946208d18a316d74e3c06deff104615b1d1c63e6e04",
+      "result_ids": [
+        "arxiv:1812.04589v1",
+        "arxiv:1405.3435v1",
+        "arxiv:gr-qc/0202022v1",
+        "arxiv:1607.01128v2",
+        "arxiv:1605.00552v2",
+        "arxiv:1507.07571v3",
+        "arxiv:2609.24912v1",
+        "arxiv:1406.7555v2",
+        "arxiv:1308.2877v2",
+        "arxiv:astro-ph/0009150v1",
+        "arxiv:2604.08393v2",
+        "arxiv:2607.05331v2",
+        "arxiv:1611.07878v3"
+      ]
+    }
+  ],
+  "registered_papers": [
+    "arxiv:2607.05331v2",
+    "arxiv:2609.24912v1",
+    "arxiv:2604.08393v2",
+    "arxiv:1507.07571v3",
+    "arxiv:1812.04589v1",
+    "arxiv:1405.3435v1",
+    "arxiv:1607.01128v2",
+    "arxiv:1406.7555v2",
+    "arxiv:1611.07878v3",
+    "arxiv:gr-qc/0202022v1",
+    "arxiv:1308.2877v2",
+    "arxiv:astro-ph/0009150v1",
+    "arxiv:1605.00552v2",
+    "arxiv:2609.37437v1",
+    "arxiv:2609.36853v1",
+    "arxiv:2605.22143v2"
+  ],
+  "new_versions": [
+    "arxiv:2607.05331v2",
+    "arxiv:2609.24912v1",
+    "arxiv:2604.08393v2",
+    "arxiv:1507.07571v3",
+    "arxiv:1812.04589v1",
+    "arxiv:1405.3435v1",
+    "arxiv:1607.01128v2",
+    "arxiv:1406.7555v2",
+    "arxiv:1611.07878v3",
+    "arxiv:gr-qc/0202022v1",
+    "arxiv:1308.2877v2",
+    "arxiv:astro-ph/0009150v1",
+    "arxiv:1605.00552v2"
+  ],
+  "abstract_screens": [
+    "arxiv:2607.05331v2",
+    "arxiv:2609.24912v1",
+    "arxiv:2604.08393v2",
+    "arxiv:1507.07571v3",
+    "arxiv:1812.04589v1",
+    "arxiv:1405.3435v1",
+    "arxiv:1607.01128v2",
+    "arxiv:1406.7555v2",
+    "arxiv:1611.07878v3",
+    "arxiv:gr-qc/0202022v1",
+    "arxiv:1308.2877v2",
+    "arxiv:astro-ph/0009150v1",
+    "arxiv:1605.00552v2"
+  ],
+  "duplicates": [
+    {
+      "paper_id": "arxiv:2609.37437v1",
+      "reason": "Already admitted exact version; queued reading resumed."
+    }
+  ],
+  "full_reads": [
+    "arxiv:2609.37437v1",
+    "arxiv:2609.36853v1"
+  ],
+  "reviewed_papers": [
+    "arxiv:2609.37437v1",
+    "arxiv:2609.36853v1"
+  ],
+  "idea_ids": [
+    "localized-gauss-bonnet-oscillatory-dark-energy",
+    "gauss-bonnet-minimum-and-stability-consistency",
+    "hubble-cutoff-negative-spin-background",
+    "frenkel-trace-and-maxwell-duality-closure"
+  ],
+  "design_ids": [
+    "candidate-gauss-bonnet-minimum-and-stability-audit",
+    "candidate-spin-source-and-photon-duality-audit"
+  ],
+  "prospect_ids": [
+    "localized-gauss-bonnet-source-and-stability-audit",
+    "spin-holographic-source-and-photon-audit"
+  ],
+  "edge_ids": [
+    "modified-gravity-1",
+    "modified-gravity-2",
+    "modified-gravity-3",
+    "modified-gravity-4",
+    "modified-gravity-5",
+    "modified-gravity-6",
+    "modified-gravity-7",
+    "modified-gravity-8",
+    "modified-gravity-9",
+    "modified-gravity-10",
+    "modified-gravity-11",
+    "modified-gravity-12"
+  ],
+  "citation_leads_followed": [],
+  "acquisition_failures": [
+    {
+      "label": "2605.22143v2-html",
+      "url": "https://arxiv.org/html/2605.22143v2",
+      "retrieved_utc": "2026-10-01T16:43:13.257391+00:00",
+      "timeout_seconds": 20,
+      "byte_limit": 10485760,
+      "error": "HTTPError: HTTP Error 406: Not Acceptable",
+      "http_status": 406,
+      "retry_after": null,
+      "elapsed_seconds": 0.124
+    },
+    {
+      "label": "2605.22143v2-pdf",
+      "url": "https://arxiv.org/pdf/2605.22143v2",
+      "retrieved_utc": "2026-10-01T16:43:16.481523+00:00",
+      "timeout_seconds": 20,
+      "byte_limit": 10485760,
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "http_status": 404,
+      "retry_after": null,
+      "elapsed_seconds": 0.107
+    },
+    {
+      "label": "2605.22143v2-pdf",
+      "url": "https://export.arxiv.org/pdf/2605.22143v2",
+      "retrieved_utc": "2026-10-01T16:43:19.688586+00:00",
+      "timeout_seconds": 20,
+      "byte_limit": 10485760,
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "http_status": 404,
+      "retry_after": "0",
+      "elapsed_seconds": 0.179
+    }
+  ],
+  "pending": [
+    {
+      "paper_id": "arxiv:2605.22143v2",
+      "stage": "acquire",
+      "reason": "Previously screened pinned version; HTML406 and main/export PDF404 on2026-10-01. Save failed routes; lawful source recovery pending, not a scientific rejection.",
+      "prospect_ids": [
+        "late-dark-energy",
+        "modified-gravity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2607.05331v2",
+      "stage": "read",
+      "reason": "Forecast SGWB modified-generation/propagation signatures; astrophysical population uncertainty and degeneracies need a full read.",
+      "prospect_ids": [
+        "modified-gravity",
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.24912v1",
+      "stage": "read",
+      "reason": "Retain quadratic-gravity inflation/Gauss-Bonnet running proposal; matter multiplicity, one-loop control and claimed tilt/tensor domains need checking.",
+      "prospect_ids": [
+        "modified-gravity",
+        "early-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2604.08393v2",
+      "stage": "read",
+      "reason": "Retain modified lensing/screening prescription; simulation ancestry and baryonic-feedback degeneracies need source review, not a detection claim.",
+      "prospect_ids": [
+        "modified-gravity",
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1507.07571v3",
+      "stage": "read",
+      "reason": "Retain torsion-coupled negative-kinetic spinor proposal as a challenge; no singularity or phantom crossing is not a quantum/perturbative stability proof.",
+      "prospect_ids": [
+        "modified-gravity",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1812.04589v1",
+      "stage": "read",
+      "reason": "Retain Einstein-Cartan Lagrangian alternatives and nonsingular/inflating branches; separate torsion invariants and closures rather than assume equivalence.",
+      "prospect_ids": [
+        "modified-gravity",
+        "bounces-cycles",
+        "early-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1405.3435v1",
+      "stage": "read",
+      "reason": "Retain torsion/clustered angular-momentum Planck-era proposal; anisotropy, negative effective density and CMB data ancestry need checking against exact source.",
+      "prospect_ids": [
+        "modified-gravity",
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1607.01128v2",
+      "stage": "read",
+      "reason": "Retain external torsion/vacuum-energy conservation argument; check assumptions behind claimed model independence and whether conservation implies metric proportionality.",
+      "prospect_ids": [
+        "modified-gravity",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1406.7555v2",
+      "stage": "read",
+      "reason": "Retain low-Hubble Einstein-Cartan modification; Lorentz violation, characteristic scale and dark-matter replacement claims need a complete sourced closure.",
+      "prospect_ids": [
+        "modified-gravity",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1611.07878v3",
+      "stage": "read",
+      "reason": "Retain foundational torsion kinematics and Weyssenhoff limits; geometric observer equations differ from a dynamical spin-matter closure.",
+      "prospect_ids": [
+        "modified-gravity",
+        "kinematics"
+      ]
+    },
+    {
+      "paper_id": "arxiv:gr-qc/0202022v1",
+      "stage": "read",
+      "reason": "Retain foundational metric stability/perturbation discussion; check background/anisotropic domain, gauge conventions and spin-torsion wave inference.",
+      "prospect_ids": [
+        "modified-gravity",
+        "early-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1308.2877v2",
+      "stage": "read",
+      "reason": "Retain Weyssenhoff spin-contact signature transition; degenerate metric, boundary conditions and bounce interpretation require source review.",
+      "prospect_ids": [
+        "modified-gravity",
+        "bounces-cycles"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0009150v1",
+      "stage": "read",
+      "reason": "Retain early anisotropic two-fluid structure-formation proposal; matching surfaces, shear and superhorizon validity need source checks.",
+      "prospect_ids": [
+        "modified-gravity",
+        "early-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1605.00552v2",
+      "stage": "read",
+      "reason": "Retain emergent-expansion/spin degrees-of-freedom construction; thermodynamic bookkeeping and entropy-bound assumptions need a full read.",
+      "prospect_ids": [
+        "modified-gravity",
+        "late-dark-energy"
+      ]
+    }
+  ],
+  "limits": [
+    "Two ten-result windows; 13 new versions admitted after exact known-ID verification;6 scope exclusions and 1 existing-version duplicate.",
+    "Bibliometrics are visibility metadata and do not qualify scientific claims.",
+    "Pinned 2605.22143v2 HTML returned 406 and both PDF routes 404; acquisition remains pending rather than scientifically rejected."
+  ],
+  "idea_assessment": {
+    "new_conditional_mechanisms": 2,
+    "new_source_consistency_audits": 2,
+    "reviewed_partial_overlap_edges": 1,
+    "reviewed_physical_distinction_edges": 1,
+    "accepted_equivalence_edges": 0,
+    "ready_for_consumer_review": 0,
+    "blocked_prospects": 2,
+    "blocked_designs": 2
+  },
+  "limitations": [
+    "This is original-source scientific review of two final Luna packets, not independent numerical reproduction, current-data reassessment or qualification.",
+    "Printed inconsistencies, extraction corrections and reviewer conditional algebra are distinct. Source criticism does not reject every modified-gravity/torsion model.",
+    "Sol reviewer scope: No external download, experiment, consumer execution, extra worker or public mutation occurred.",
+    "GB ghost-sign diagnostic is conditional; a complete scalar/retained-fluid kinetic derivation and degeneracy analysis remains a gate.",
+    "EC phenomenological background algebra remains useful but a source-coherent nonzero-trace Weyssenhoff model and physical eta signal are not accepted.",
+    "No normalization, covariance, priors, numerical inputs, tolerance or engine support were invented."
+  ],
+  "worker_packets": [
+    {
+      "role": "reader",
+      "requested_model": "gpt-6-luna",
+      "requested_reasoning": "xhigh",
+      "agent_id": "/root/read_gauss_bonnet",
+      "paper_id": "arxiv:2609.37437v1",
+      "packet_sha256": "d9f865c3d7e46bbddf9264f414f48f56447ce6d713e371135a2a4d4ad3576301",
+      "backend_identity": null
+    },
+    {
+      "role": "reader",
+      "requested_model": "gpt-6-luna",
+      "requested_reasoning": "xhigh",
+      "agent_id": "/root/read_torsion",
+      "paper_id": "arxiv:2609.36853v1",
+      "packet_sha256": "38ce4f8a3c197d3e86725a9e7f6e3fff9b75fb9c824ac6c402939daa10028f75",
+      "backend_identity": null
+    },
+    {
+      "role": "scientific_reviewer",
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "high",
+      "agent_id": "/root/review_modified_gravity",
+      "review_id": "2026-10-01-modified-gravity-science",
+      "packet_sha256": "00c3406875f14f6e9ef085bc46ec775d078ee9fbc0e36a89e551901d9fd92137",
+      "backend_identity": null
+    },
+    {
+      "role": "bibliometric_tooling_and_source_observations",
+      "requested_model": "gpt-6-luna",
+      "requested_reasoning": "xhigh",
+      "agent_id": "/root/bibliometrics",
+      "backend_identity": null,
+      "full_paper_reads": 0,
+      "scope": "Five direct INSPIRE work observations; no verified Scholar h-index. Tooling/sample provenance is separate from scientific paper review."
+    }
+  ],
+  "bibliometric_snapshots": [
+    {
+      "paper_id": "arxiv:1009.5855v2",
+      "snapshot_id": "20261001T171618799672Z-d56f95d1fad3",
+      "path": "register/bibliometrics/1009.5855v2-20261001T171618799672Z-d56f95d1fad3.json"
+    },
+    {
+      "paper_id": "arxiv:1811.04083v2",
+      "snapshot_id": "20261001T171618789596Z-4952d35972b0",
+      "path": "register/bibliometrics/1811.04083v2-20261001T171618789596Z-4952d35972b0.json"
+    },
+    {
+      "paper_id": "arxiv:1910.10739v5",
+      "snapshot_id": "20261001T171618795020Z-007170eb02ff",
+      "path": "register/bibliometrics/1910.10739v5-20261001T171618795020Z-007170eb02ff.json"
+    },
+    {
+      "paper_id": "arxiv:2605.22143v2",
+      "snapshot_id": "20261001T171618808746Z-3c0c6a251e81",
+      "path": "register/bibliometrics/2605.22143v2-20261001T171618808746Z-3c0c6a251e81.json"
+    },
+    {
+      "paper_id": "arxiv:2609.37437v1",
+      "snapshot_id": "20261001T171618804181Z-73ae6bbf55ea",
+      "path": "register/bibliometrics/2609.37437v1-20261001T171618804181Z-73ae6bbf55ea.json"
+    }
+  ],
+  "citation_coverage": {
+    "new_explicit_registered_links": 4,
+    "target_bibliographies_inspected": [
+      "arxiv:2609.37437v1",
+      "arxiv:2609.36853v1"
+    ],
+    "cited_versions_unprinted": true,
+    "citation_leads_saved_not_followed": 4,
+    "full_citation_network": false
+  },
+  "software_review": {
+    "agent_id": "/root/crawl_tooling",
+    "requested_model": "gpt-6.1-sol",
+    "requested_reasoning": "high",
+    "backend_identity": null,
+    "packet_sha256": "114dcc336c9336dc44068d3eff7c0914c4901dbdb8f141af113ade876376be11",
+    "outcome": "No actionable findings remain after seven fixes; scientific source review is separate.",
+    "coordinator_final_checks": {
+      "python_tests_passed": 79,
+      "node_tests_passed": 8,
+      "register_validation": "passed",
+      "generated_views": "current",
+      "local_preview": "timeline, reviewed connections and zero-versus-unknown metrics visually checked"
+    }
+  }
+}

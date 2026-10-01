@@ -8,19 +8,50 @@ ORDER = ['baseline-reference', 'early-energy', 'late-dark-energy', 'interacting-
          'kinematics', 'modified-gravity', 'bounces-cycles', 'measurement-lineage']
 
 
+def visibility_snapshots():
+    """Latest per-paper/provider metrics, excluding acquisition and worker details."""
+    latest = {}
+    for path in sorted((ROOT / 'register/bibliometrics').glob('*.json')):
+        item = strict_load(path)
+        key = (item['paper_id'], item['work_identity']['provider'])
+        old = latest.get(key)
+        if old is None or (item['snapshot_created_utc'], item['snapshot_id']) > (old['snapshot_created_utc'], old['snapshot_id']):
+            latest[key] = item
+    public = {}
+    for (ident, provider), item in sorted(latest.items()):
+        citation, cohort, team = item['citation_snapshot'], item['comparison']['cohort'], item['team_visibility']
+        public.setdefault(ident, []).append({
+            'provider': provider, 'date': citation['retrieved_utc'],
+            'url': 'https://inspirehep.net/literature/' + item['work_identity']['provider_record_id'] if provider == 'INSPIRE-HEP' and item['work_identity']['provider_record_id'] else citation['source']['request_url'],
+            'citation_count': citation['count'], 'count_without_self_citations': citation['count_without_self_citations'],
+            'count_scope': item['work_identity']['count_scope'],
+            'version_scope': item['work_identity']['version_scope'],
+            'age_days': item['comparison']['age_days_at_snapshot'],
+            'cohort_percentile': cohort['percentile'], 'cohort_reason': cohort['reason'],
+            'author_count': team['unique_author_count'],
+            'verified_author_metrics': team['verified_h_index_author_count'],
+            'max_h_index': team['max_h_index'], 'median_h_index': team['median_h_index'],
+            'author_metric_reason': team['missing_reason'],
+        })
+    return public
+
+
 def website_data(papers, ideas, prospects, graph):
     citations_path = ROOT / 'register/citations.json'
     citations = strict_load(citations_path)['citations'] if citations_path.exists() else []
     by_base = {}
     for ident, p in sorted(papers.items(), key=lambda item: item[1]['version']):
         by_base[p['arxiv_id']] = ident
+    metrics = visibility_snapshots()
     return {
-        'prospects': [{k: strict_load(p)[k] for k in ['id','title','kind','baseline','cosmology','scope','unknowns','idea_ids','model_idea_ids','topic_ids','source_evidence']} for p in sorted((ROOT / 'register/prospects').glob('*.json'))],
+        'prospects': [{k: strict_load(p)[k] for k in ['id','title','kind','readiness','baseline','cosmology','scope','unknowns','idea_ids','model_idea_ids','topic_ids','source_evidence']} for p in sorted((ROOT / 'register/prospects').glob('*.json'))],
         'groups': [{k: prospects[id][k] for k in ['id', 'title', 'paper_ids', 'idea_ids']}
                    for id in ORDER],
         'papers': [{'id': id, 'base_id': p['arxiv_id'], 'title': p['title'],
                     'authors': p['authors'], 'date': p['published_utc'][:10],
+                    'updated_date': p['updated_utc'][:10],
                     'url': p['urls']['abstract'], 'pdf': p['urls']['pdf'],
+                    'visibility': metrics.get(id, []),
                     'read': bool(p['extraction'] and p['extraction']['reading_level'] == 'full_text')}
                    for id, p in sorted(papers.items())],
         'ideas': [{'id': id, 'title': p['title'], 'family': p['family'],
@@ -30,6 +61,11 @@ def website_data(papers, ideas, prospects, graph):
         'edges': [{k: e[k] for k in ['from', 'to', 'type', 'rationale', 'evidence']}
                   for e in graph['edges'] if e['status'] == 'reviewed'
                   and e['from'] in ideas and e['to'] in ideas],
+        'timeline': [{'idea_id': ident,
+                      'first_source_date': min(papers[s['paper_id']]['published_utc'][:10]
+                                               for s in idea['source_evidence']),
+                      'source_paper_ids': sorted({s['paper_id'] for s in idea['source_evidence']})}
+                     for ident, idea in sorted(ideas.items())],
         'citations': [{'from': c['from_paper_id'], 'to': (f"arxiv:{c['cited_arxiv_id']}v{c['cited_version']}" if c['cited_version'] else by_base[c['cited_arxiv_id']]),
                        'reference': c['reference'], 'cited_version': c['cited_version']}
                       for c in citations],

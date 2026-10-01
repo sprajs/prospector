@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "design_id": "candidate-gauss-bonnet-minimum-and-stability-audit",
+  "title": "Gauss–Bonnet minimum and stability audit",
+  "paper_ids": [
+    "arxiv:2609.37437v1"
+  ],
+  "idea_ids": [
+    "localized-gauss-bonnet-oscillatory-dark-energy",
+    "gauss-bonnet-minimum-and-stability-consistency"
+  ],
+  "review_id": "2026-10-01-modified-gravity-science",
+  "readiness": "blocked",
+  "faithful_claim": "A Gaussian curvature coupling centered on a hybrid scalar minimum is proposed to yield stable transient effective phantom crossing.",
+  "equations": [
+    {
+      "paper_id": "arxiv:2609.37437v1",
+      "expression": "V=V0 exp(−kappa lambda phi)+m_phi²phi²/2; f=xi0 exp[−(kappa phi−zc)²/(2sigma²)]",
+      "locator": "Eqs.(3.1),(3.12)",
+      "definitions": "zc=kappa phi_c; potential minimum must satisfy Eq.(3.4).",
+      "domain": "Flat FLRW in the declared source model.",
+      "status": "reviewed_transcription"
+    },
+    {
+      "paper_id": "arxiv:2609.37437v1",
+      "expression": "A/y=[m_phi²/(2kappa²V0)]z²exp(lambda z); at z=zc, A/y=lambda zc/2",
+      "locator": "reviewer algebra from Eqs.(3.4),(4.1)",
+      "definitions": "A,y,z as Eq.(4.1); fixed positive potential coefficients.",
+      "domain": "Finite H,y with genuine minimum.",
+      "status": "reviewer_derived"
+    },
+    {
+      "paper_id": "arxiv:2609.37437v1",
+      "expression": "QT=1−8kappa²Hfdot; cT²=(1−8kappa²fddot)/QT",
+      "locator": "reviewer consistency relation supported by Eq.(5.5); printed Eq.(5.2) conflicts",
+      "definitions": "Sign −fG; fddot=fphiphi phidot²+fphi phiddot.",
+      "domain": "QT>0 and regular background; scalar matrix separately checked.",
+      "status": "reviewer_derived"
+    }
+  ],
+  "assumptions": [
+    "Preserve source potential/coupling minimum and all unit conventions.",
+    "Positive speed does not establish complete kinetic health, subluminality or a data fit."
+  ],
+  "minimal_test": {
+    "question": "Can one fixed-action benchmark satisfy the potential minimum, background conservation and regular scalar/tensor stability simultaneously?",
+    "observables": [
+      "Dimensionless minimum residual",
+      "Continuity/Friedmann residual",
+      "Tensor kinetic/gradient and scalar kinetic eigenvalues/constraint regularity"
+    ],
+    "parameter_choices": null,
+    "scope": "First analytic source reconciliation and fixed-parameter constraints; numerical trajectory is a later consumer task after inputs are accepted."
+  },
+  "simplifications": [
+    "No observed-data fit or Hubble-tension result.",
+    "No initial-condition robustness/global stability proof or GW likelihood comparison."
+  ],
+  "data_dependencies": [],
+  "unknowns": [
+    "Author benchmark source code/inputs and acceptance of formula repairs.",
+    "A corrected genuine-minimum initial set and fixed-model constraint surface.",
+    "Scalar/matter/radiation kinetic closure and observed-redshift GW conditions.",
+    "Consumer capability and acceptance uninspected."
+  ],
+  "verification_gates": [
+    "Reconcile printed formulas and center condition against one declared action.",
+    "Restrict equilibria and initial values to fixed-model invariant relations.",
+    "Check full kinetic/gradient coefficients and regular endpoints before data comparison."
+  ],
+  "falsification": "Failure of the exact A/y=lambda zc/2 condition rejects a proposed minimum-centered benchmark as specified; it does not disprove all scalar–GB actions.",
+  "consumer": {
+    "repository": "sprajs/irreducible",
+    "revision": null,
+    "dirty": null,
+    "capability_status": "Uninspected; no engine execution offered. Source audit precedes any capability handoff.",
+    "recipe_runner_status": "Uninspected; executable request remains null."
+  },
+  "blockers": [
+    "Author benchmark source code/inputs and acceptance of formula repairs.",
+    "A corrected genuine-minimum initial set and fixed-model constraint surface.",
+    "Scalar/matter/radiation kinetic closure and observed-redshift GW conditions.",
+    "Consumer capability and acceptance uninspected."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Source review and proposed algebra checks only; no numerical reproduction, consumer acceptance or data reassessment."
+  }
+}

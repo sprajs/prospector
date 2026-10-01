@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:astro-ph/0009150v1",
+  "arxiv_id": "astro-ph/0009150",
+  "version": 1,
+  "title": "Structure formation in anisotropic Einstein-Cartan cosmologies",
+  "authors": [
+    "L. C. Garcia de Andrade"
+  ],
+  "categories": [
+    "astro-ph"
+  ],
+  "published_utc": "2000-09-10T19:07:34Z",
+  "updated_utc": "2000-09-10T19:07:34Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/astro-ph/0009150v1",
+    "html": "https://arxiv.org/html/astro-ph/0009150v1",
+    "pdf": "https://arxiv.org/pdf/astro-ph/0009150v1"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper grant unverified; metadata, links and original notes only."
+  },
+  "artifacts": [
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Agr-qc+OR+cat%3Aastro-ph.CO+OR+cat%3Aastro-ph%29+AND+ti%3A%22Einstein-Cartan%22+AND+%28abs%3Acosmology+OR+abs%3A%22dark+energy%22%29+AND+submittedDate%3A%5B199001010000+TO+201912312359%5D&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+      "retrieved_utc": "2026-10-01T16:49:48.245649+00:00",
+      "sha256": "db664410a052d4c98f811c3fdf2ec1591e96cb62f7976fed3f6c10427e49ff57",
+      "bytes": 21251,
+      "role": "metadata"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=2607.05331v2%2C2609.24912v1%2C2604.08393v2%2C1507.07571v3%2C1812.04589v1%2C1405.3435v1%2C1607.01128v2%2C1406.7555v2%2C1611.07878v3%2Cgr-qc%2F0202022v1%2C1308.2877v2%2Castro-ph%2F0009150v1%2C1605.00552v2&max_results=13",
+      "retrieved_utc": "2026-10-01T16:50:47.913678+00:00",
+      "sha256": "aae525f5bc62e0e44134f946208d18a316d74e3c06deff104615b1d1c63e6e04",
+      "bytes": 29319,
+      "role": "metadata"
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Retain early anisotropic two-fluid structure-formation proposal; matching surfaces, shear and superhorizon validity need source checks."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

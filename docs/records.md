@@ -10,6 +10,8 @@ source identity and decisions so Codex can continue without a transcript.
 | `register/topics/<id>.json` | Topic navigation groups |
 | `register/prospects/<id>.json` | Baseline cosmologies, modifications, scope and candidate investigations |
 | `register/citations.json` | Explicit bibliographic links and source evidence |
+| `register/searches/<id>.json` | Exact archive windows, failures, per-hit dispositions and refresh reasons |
+| `register/bibliometrics/<snapshot>.json` | Provider-specific citation counts and verified author visibility snapshots |
 | `register/reviews/<id>.json` | Sol source checks, corrections, overlap and limits |
 | `register/graph.json` | Typed evidence relationships |
 | `register/README.md`, `register/map.html` | Generated tree and interactive map |
@@ -125,6 +127,19 @@ Scan records retain exact queries/order/offset, UTC times, result IDs, admitted
 versions, screens, full reads, reviews, changes, failed access and pending stages.
 Counts name actual stages. State queues existing IDs and next action. Updated-date
 feeds require overlap and deduplication; small batches cannot claim gap-free coverage.
+
+Search receipts retain all result identities, including hits never admitted as
+papers. Resume undecided hits from the saved snapshot; changing a disposition
+does not rewrite the original query/source identity. Refreshes and retries are
+new attempts linked to the earlier receipt with a reason. Historical backfills
+mark unknown dispositions explicitly. See [crawling](crawling.md).
+
+Citation counts and h-indices live in separate dated provider snapshots, with
+identity checks, source hashes, null reasons and declared coverage. They support
+visibility filters, not scientific promotion. Normalized comparisons need an
+explicit cohort; missing author metrics remain unresolved. See
+[bibliometrics](bibliometrics.md). SQLite under `.work/` is a rebuilt search
+index of the public JSON, never an extra authoritative record store.
 
 `registered_papers` lists records admitted or worked on in that batch;
 `new_versions` lists first admissions only. Reused records and duplicate search

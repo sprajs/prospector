@@ -7,6 +7,12 @@
 the tree but uses external arXiv links for abstracts. The public Worker provides
 the on-demand abstract endpoint.
 
+Connections includes a source-publication timeline using reviewed relationships.
+It labels version updates separately; it does not infer idea ancestry from dates.
+Paper details show available dated citation/author visibility snapshots, with
+unmeasured values and insufficient comparison cohorts explicit. Bibliography
+links within this register remain separate from provider-wide citation counts.
+
 ## Build and preview
 
 ```bash

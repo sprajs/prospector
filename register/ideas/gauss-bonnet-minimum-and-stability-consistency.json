@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "gauss-bonnet-minimum-and-stability-consistency",
+  "title": "Gauss–Bonnet benchmark and stability must agree with one fixed action",
+  "family": "source_consistency",
+  "status": "reviewed_conditional",
+  "review_id": "2026-10-01-modified-gravity-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2609.37437v1",
+      "locator": "Eqs.(2.14),(3.4),(4.1),(4.4), Table I/Fig.2, Eqs.(5.2)-(5.6), Fig.6; Appendix A"
+    }
+  ],
+  "assumptions": [
+    "Printed sources are preserved; repairs of continuity/Friedmann/tensor formulas are labelled reviewer-derived.",
+    "Fixed potential and coupling constants impose algebraic invariant relations among autonomous variables.",
+    "Gradient sign, scalar/tensor kinetic signs, subluminality and observed-path GW speed are separate requirements."
+  ],
+  "predictions": [
+    "At z0=zc, A0/y0=lambda zc/2; both Fig.6 examples fail this exact source minimum condition.",
+    "Eq.(5.5) agrees algebraically with (1−8kappa²fddot)/(1−8kappa²Hfdot), despite malformed Eq.(5.2). Figure6(ii) still exceeds the printed subluminal tensor bound in the future.",
+    "Equilibrium families have neutral tangent modes; varying equilibrium EOS contours/hyperbolic P1 labels conflict with Table I plus Eq.(4.4)/Appendix A. Physical-submanifold and regular scalar-kinetic checks are required before implementing a stable branch."
+  ]
+}

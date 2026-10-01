@@ -35,3 +35,19 @@ Follow the scientific working instructions in [AGENTS.md](AGENTS.md) and the
 [development workflow](docs/development.md). Where record schemas/validators are
 implemented, run their current checks and explain their structural limits. Never
 invent files, implemented features, reading coverage or validation success.
+
+Contribute ordinary JSON and short original notes through PRs; no shared
+database credentials are needed. Search windows and per-result decisions live
+in `register/searches/`; dated citation/author-visibility snapshots live in
+`register/bibliometrics/`. Verify identities and preserve unknown values and
+earlier snapshots. Physical connections still require located source evidence
+and scientific review. Rebuild the ignored SQLite index with
+`uv run python scripts/crawl.py rebuild` after changing public records.
+
+You can propose a connection between existing nodes as a `provisional` edge
+with a rationale and exact paper locators, or contribute a corrected paper
+identity, search screen or explicit bibliography link. Mark what you actually
+checked and keep unread material visible. New mechanisms can first be proposed
+in reading packets; acceptance into the reviewed idea graph follows the source
+review gates in AGENTS.md. Contributor PRs need no access to the local database
+or ignored paper cache.

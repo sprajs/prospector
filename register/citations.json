@@ -208,6 +208,58 @@
         "locator": "HTML bibliography [74]; bib.bib74; base arXiv identity only",
         "url": "https://arxiv.org/html/2112.03864v2#bib.bib74"
       }
+    },
+    {
+      "id": "cite-2609.36853-1807.06209",
+      "from_paper_id": "arxiv:2609.36853v1",
+      "cited_arxiv_id": "1807.06209",
+      "cited_version": null,
+      "reference": "4",
+      "source": {
+        "role": "html",
+        "sha256": "ba0c79c9a1404936a9b3b4524cf3134e7352a21c53d5e58c6cf58865d1eebcd5",
+        "locator": "HTML References [4], bib.bib4; PDF reference [4], p. 8",
+        "url": "https://arxiv.org/html/2609.36853v1#bib.bib4"
+      }
+    },
+    {
+      "id": "cite-2609.36853-1812.04589",
+      "from_paper_id": "arxiv:2609.36853v1",
+      "cited_arxiv_id": "1812.04589",
+      "cited_version": null,
+      "reference": "30",
+      "source": {
+        "role": "html",
+        "sha256": "ba0c79c9a1404936a9b3b4524cf3134e7352a21c53d5e58c6cf58865d1eebcd5",
+        "locator": "HTML References [30], bib.bib30; PDF reference [30], p. 8",
+        "url": "https://arxiv.org/html/2609.36853v1#bib.bib30"
+      }
+    },
+    {
+      "id": "cite-2609.37437-2503.14738",
+      "from_paper_id": "arxiv:2609.37437v1",
+      "cited_arxiv_id": "2503.14738",
+      "cited_version": null,
+      "reference": "3",
+      "source": {
+        "role": "html",
+        "sha256": "62b0a576adfec55caf1e6344d6c4eae4a0a099c16a4111f2babb5d952b973883",
+        "locator": "HTML bibliography [3]; bib.bib53; PDF numeric reference [3]; printed base ID without version",
+        "url": "https://arxiv.org/html/2609.37437v1#bib.bib53"
+      }
+    },
+    {
+      "id": "cite-2609.37437-1807.06209",
+      "from_paper_id": "arxiv:2609.37437v1",
+      "cited_arxiv_id": "1807.06209",
+      "cited_version": null,
+      "reference": "6",
+      "source": {
+        "role": "html",
+        "sha256": "62b0a576adfec55caf1e6344d6c4eae4a0a099c16a4111f2babb5d952b973883",
+        "locator": "HTML bibliography [6]; bib.bib37; PDF numeric reference [6]; printed base ID without version",
+        "url": "https://arxiv.org/html/2609.37437v1#bib.bib37"
+      }
     }
   ],
   "inspected_paper_ids": [
@@ -219,13 +271,16 @@
     "arxiv:2609.34239v1",
     "arxiv:2503.14738v3",
     "arxiv:2202.04077v2",
-    "arxiv:2112.03864v2"
+    "arxiv:2112.03864v2",
+    "arxiv:2609.36853v1",
+    "arxiv:2609.37437v1"
   ],
   "limitations": [
     "Four explicit bibliography links to registered paper identities were verified in pinned original HTML. This is a bounded extraction, not a complete citation index.",
     "References print base arXiv IDs; cited_version is null because the version was not specified. Website targets select a registered version for reading, without asserting that version was cited.",
     "HTML uses author-year labels for 2605.26116v2; its anchors differ from the numeric PDF bibliography. Both locators are retained.",
     "No registered-ID match found in an inspected source does not establish an absence of citations; discovery and extraction remain incomplete.",
-    "Core-reference audit adds twelve registered-ID bibliography links checked in pinned HTML. Bibliography inspection is separate from full reading and scientific source review."
+    "Core-reference audit adds twelve registered-ID bibliography links checked in pinned HTML. Bibliography inspection is separate from full reading and scientific source review.",
+    "2026-10-01: bounded full-bibliography identity inspection for pinned 2609.37437v1 and 2609.36853v1; registered base-ID matches do not establish the cited version. PDF reference labels remain distinct from HTML bibliography anchors."
   ]
 }
