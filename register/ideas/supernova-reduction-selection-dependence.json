@@ -1,0 +1,22 @@
+{
+  "id": "supernova-reduction-selection-dependence",
+  "title": "Supernova reduction and selection dependence",
+  "family": "observation_lineage",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:1009.5855v2",
+      "locator": "Sec.3-6; Tables5-9"
+    }
+  ],
+  "assumptions": [
+    "Published fitted summaries inherit calibration, color/extinction and selection.",
+    "Common objects and calibrators couple compilations."
+  ],
+  "predictions": [
+    "Conditional cosmological comparisons can change with fitter and cuts.",
+    "A distance-module replacement alone need not remove reduction dependence."
+  ],
+  "schema_version": 1,
+  "review_id": "2026-10-01-initial-science",
+  "status": "reviewed_conditional"
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "lagrange-deceleration-deviation-reconstruction",
+  "title": "Finite-node deceleration reconstruction tests coordinate and cutoff assumptions",
+  "family": "kinematic_reconstruction",
+  "status": "reviewed_conditional",
+  "review_id": "2026-10-01-late-expansion-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2609.34239v1",
+      "locator": "Secs.II-III Eqs.(1)-(4),(15)-(24); Tables II-IV"
+    }
+  ],
+  "assumptions": [
+    "Flat LambdaCDM fiducial with radiation omitted in the displayed late-time q formula; cubic/quartic finite interpolation in z, y or ln(1+z).",
+    "Uniform nodes in chosen coordinate; n+1 nodes, n free deviations and endpoint zero at z_c=2.5; uniform node priors [-1,1].",
+    "DESI DR2 BAO plus Planck compressed distance summaries and one SN compilation; high-z matching normalization is underspecified, and physical/perturbation closure is absent."
+  ],
+  "predictions": [
+    "With E(0)=1, reconstructed E/E_fid is exp[integral delta q/(1+z) dz]; setting delta q zero above cutoff leaves a generally nonunit high-z normalization.",
+    "Coordinate/node/order choices and optional SH0ES prior change the fitted q history; reused BAO/CMB combinations are not independent confirmation.",
+    "All tabulated log Bayes factors are negative, favoring LambdaCDM under the source priors, despite negative minimum-chi-square differences and authors conditional Wilks significances."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "unified-scalar-steep-steeper-shallow",
+  "title": "Tracking scalar unification requires a depletion branch between early and late energy",
+  "family": "scalar_unification",
+  "status": "reviewed_conditional",
+  "review_id": "2026-10-01-late-expansion-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2605.26116v2",
+      "locator": "Secs.3-6; Eqs.(3.6)-(3.15),(4.15)-(4.17),(5.2)-(5.6),(5.14)-(5.18)"
+    }
+  ],
+  "assumptions": [
+    "One canonical positive-potential scalar provides early and late energy; smooth rolling depletion is approximated by successive constant-slope regimes.",
+    "EDE normalization fixes illustrative lambda_early^2=40; residual fraction target is order 1%; lambda_late^2=0.25 is a benchmark, not a fit.",
+    "Source sign/convention corrections must precede implementation; background trajectory does not close the observational/perturbation test."
+  ],
+  "predictions": [
+    "Uncoupled same-slope radiation and matter tracking fractions are 4/lambda^2 and 3/lambda^2; their ratio 3/4 leaves excessive residual early energy in the paper framework.",
+    "Intermediate lambda_mid^2 about 300 lowers the matter-tracking level to order 0.01; a logistic shoulder gives lambda_mid=lambda_early+n/Delta and later shallow behavior.",
+    "Predicted five-regime history is a conditional background possibility, not a full CMB solution or demonstrated UV model."
+  ]
+}

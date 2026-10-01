@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1910.10739v5",
+  "arxiv_id": "1910.10739",
+  "version": 5,
+  "title": "New Early Dark Energy",
+  "authors": [
+    "Florian Niedermann",
+    "Martin S. Sloth"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "hep-ph",
+    "hep-th"
+  ],
+  "published_utc": "2019-10-23T18:00:15Z",
+  "updated_utc": "2021-02-22T15:07:04Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1910.10739v5",
+    "html": "https://arxiv.org/html/1910.10739v5",
+    "pdf": "https://arxiv.org/pdf/1910.10739v5"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper redistribution terms not checked; public record contains links, descriptive metadata and original notes."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=1811.04083%2C1910.10739%2C2412.15191",
+      "retrieved_utc": "2026-10-01T00:43:57.065422+00:00",
+      "sha256": "6e6ceda83fe9c7ddd471e8f35bf2e55393939a8d1ef08c8b04f1cc6c25df3ae1",
+      "bytes": 7776
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/1910.10739v5",
+      "retrieved_utc": "2026-10-01T00:44:13.552148+00:00",
+      "sha256": "1f6e23feb42188d99739287090d4078e8adf998e06e0db34cd9c361549eeb895",
+      "bytes": 172924
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/1910.10739v5",
+      "retrieved_utc": "2026-10-01T00:44:16.751336+00:00",
+      "sha256": "ddcf5ed66426080aa5f56305748f9d5c459dbf86b6c4eec6c252b1f6a848f890",
+      "bytes": 1360883
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/1910.10739v5",
+      "retrieved_utc": "2026-10-01T00:44:16.873820+00:00",
+      "sha256": "2fa7d750b2bbe4296c1fd849fe72cfcc009616a7a80c7a2f447769e318f76a62",
+      "bytes": 51232,
+      "derived_from_sha256": "ddcf5ed66426080aa5f56305748f9d5c459dbf86b6c4eec6c252b1f6a848f890",
+      "tool": "pdftotext version 26.08.0 -layout"
+    }
+  ],
+  "screen": {
+    "status": "reviewed",
+    "basis": "full_text",
+    "reason": "Full text read by Luna; source/scientific and overlap checks by Sol. Conditional candidate; no numerical reproduction."
+  },
+  "extraction": {
+    "paper_id": "arxiv:1910.10739v5",
+    "requested_model": "gpt-6-luna",
+    "reading_level": "full_text",
+    "coverage": {
+      "sections_read": [
+        "Abstract",
+        "I Introduction",
+        "II The Model",
+        "III Matching conditions",
+        "III.1 Background Matching",
+        "III.2 Perturbation Matching",
+        "IV Data Analysis and Results",
+        "V Conclusions",
+        "Acknowledgements",
+        "References (identity and citation leads)"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "figure_check": "Captions and nearby discussion for Figs. 1 and 2 read; figure pixels not inspected. Figure 1 is a schematic potential, Fig. 2 posterior/covariance contours.",
+      "limitations": [
+        "No visual inspection of figures.",
+        "The paper's cited longer follow-up (arXiv:2006.06686) and supplemental material were not read as part of this extraction.",
+        "Results are the authors' 2021-version analysis with its stated data, likelihoods and simplifying assumptions; this is not a current-data reassessment."
+      ]
+    },
+    "summary": "Authors propose New Early Dark Energy (NEDE): a dark-sector first-order vacuum transition shortly before recombination, triggered by a subdominant ultralight scalar. The released vacuum energy is approximated as an instantaneous transition from w=-1 to a constant-w fluid (1/3≤w≤1); trigger-field fluctuations set the transition surface and are covariantly matched into fluid perturbations. This differs physically from the oscillating, second-order scalar EDE models discussed in the introduction. A simplified CLASS implementation, with w=cs²=2/3 and H(z*)=0.2m, was fit to Planck 2018, BAO, Pantheon, BBN and SH0ES. With SH0ES the reported best-fit improvement is Δχ²=-15.6 and H0=71.4±1.0 km s⁻¹ Mpc⁻¹; without SH0ES they report reduced, not eliminated, tension. Authors propose distinct LSS/CMB and gravitational-wave signatures, while acknowledging the microphysical post-collision fluid picture needs numerical substantiation. These historical, model-conditional fits do not establish a present-day resolution of the Hubble tension.",
+    "ideas": [
+      {
+        "local_id": "ne-de-first-order-triggered-transition",
+        "title": "Triggered first-order vacuum transition as a short NEDE episode",
+        "claim_type": "author_proposal",
+        "description": "A tunneling field ψ has a false vacuum whose decay is initially suppressed by a subdominant trigger field φ. When H falls below φ's mass, φ rolls and changes the tunneling action, causing efficient bubble nucleation/percolation. The liberated vacuum energy is modeled as a short early dark-energy contribution before recombination. Authors estimate an illustrative hierarchy M~eV and m~10⁻²⁷ eV for z~5000 and fNEDE~0.1, with an axion-monodromy construction suggested as a possible origin. This is a proposed mechanism, not a demonstrated UV completion.",
+        "locators": [
+          "Sec. II, Eq. (1), PDF pp. 2–3",
+          "Sec. II, Eqs. (2)–(3), PDF p. 2",
+          "Sec. II, PDF p. 3"
+        ],
+        "equations": [
+          {
+            "expression": "V(ψ,φ)=λψ⁴/4 +(βM²/2)ψ² -(αM/3)ψ³ +(m²/2)φ² +(λ̃/2)φ²ψ²",
+            "locator": "Eq. (1), PDF p. 2",
+            "confidence": "high"
+          },
+          {
+            "expression": "Γ=K exp(-S_E); p=Γ/H⁴≈(M⁴/m⁴) exp(-S_E)",
+            "locator": "Sec. II, PDF pp. 2–3",
+            "confidence": "high"
+          },
+          {
+            "expression": "f_NEDE=ΔV/ρ̄(t*)",
+            "locator": "Sec. II, PDF p. 2",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "local_id": "ne-de-instantaneous-fluid-background",
+        "title": "Instantaneous background matching to a constant-w decay fluid",
+        "claim_type": "author_model_assumption",
+        "description": "The phenomenological background switches NEDE from a non-fluctuating cosmological constant to a constant-equation-of-state fluid at t*. Energy density and H are continuous, while H-dot jumps according to the post-transition pressure. The authors expect 1/3≤w*≤1 from the microscopic picture but use a fixed midpoint value in the fit.",
+        "locators": [
+          "Sec. III.1, Eqs. (4)–(7), PDF p. 3",
+          "Sec. IV, PDF p. 4"
+        ],
+        "equations": [
+          {
+            "expression": "w_NEDE(t)=-1 (t<t*); w_NEDE(t)=w*_NEDE (t>t*)",
+            "locator": "Eq. (4), PDF p. 3",
+            "confidence": "high"
+          },
+          {
+            "expression": "ρ̄_NEDE(t)=ρ̄*_NEDE [a(t*)/a(t)]^{3[1+w_NEDE(t)]}",
+            "locator": "Eq. (5), PDF p. 3",
+            "confidence": "high"
+          },
+          {
+            "expression": "[H]±=0; [H-dot]±=4πG(1+w*_NEDE)ρ̄*_NEDE",
+            "locator": "Eqs. (7a)–(7b), PDF p. 3",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "local_id": "ne-de-trigger-perturbation-matching",
+        "title": "Trigger-defined transition surface seeds post-transition fluid perturbations",
+        "claim_type": "author_model_prediction",
+        "description": "The transition hypersurface is defined by fixed φ. Spatial trigger fluctuations therefore shift the local decay time and initialize NEDE density and velocity perturbations through junction conditions. Authors set the post-transition rest-frame sound speed to cs²=w* to close the fluid equations. This is a specific perturbation prescription requiring scrutiny alongside the assumed instantaneous matching.",
+        "locators": [
+          "Sec. III.2, Eqs. (8)–(14), PDF pp. 3–4"
+        ],
+        "equations": [
+          {
+            "expression": "φ(t*,x)|Σ=const",
+            "locator": "Eq. (8), PDF p. 3",
+            "confidence": "high"
+          },
+          {
+            "expression": "δ*_NEDE=-3(1+w*_NEDE)H(t*)δφ(t*,k)/φ-dot(t*)",
+            "locator": "Eq. (14a), PDF p. 4",
+            "confidence": "high"
+          },
+          {
+            "expression": "θ*_NEDE=k²δφ(t*,k)/[a(t*)φ-dot(t*)]",
+            "locator": "Eq. (14b), PDF p. 4",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "local_id": "ne-de-distinct-observational-signatures",
+        "title": "Potential CMB, large-scale-structure and gravitational-wave signatures",
+        "claim_type": "author_qualitative_prediction",
+        "description": "The authors expect first-order-transition signatures in CMB and large-scale structure details and gravitational waves. They argue bubbles reach sub-Mpc physical sizes today and thus do not generate directly observable large-scale anisotropies; collision energy is conjectured to become small-scale anisotropic stress and gravitational radiation, potentially leaving a stiff component scaling as a⁻⁶. They explicitly leave numerical substantiation of the post-collision picture for future work.",
+        "locators": [
+          "Sec. II, PDF pp. 2–3",
+          "Sec. V, PDF pp. 5–6"
+        ],
+        "equations": []
+      },
+      {
+        "local_id": "ne-de-conditional-cosmological-fit",
+        "title": "Simplified NEDE fit improves the paper's historical combined-data fit",
+        "claim_type": "author_fit_result",
+        "description": "The authors report a combined Planck 2018+BAO+Pantheon+BBN+SH0ES fit with Δχ²=-15.6 relative to ΛCDM, H0=71.4±1.0, fNEDE nonzero at 4.3σ, and Bayesian ΔB=5.5. The gain is mostly from SH0ES; the other datasets contribute Δχ²=-1.8, and large-z BAO/LSS slightly degrades (Δχ²=0.9). Without SH0ES, their reported tension falls to 2.5σ, not zero. These are fit outcomes conditional on this paper's model, priors, likelihood implementation and 2018/2019-era data.",
+        "locators": [
+          "Sec. IV, PDF pp. 4–5",
+          "Fig. 2 caption, PDF p. 5",
+          "Sec. V, PDF p. 5"
+        ],
+        "equations": []
+      }
+    ],
+    "quantities": [
+      {
+        "name": "NEDE pre-decay fraction f_NEDE",
+        "value": "12.6 (+3.2/-2.9)%",
+        "unit": "% of total density at t*",
+        "uncertainty": "68% interval as reported",
+        "conditioning": "Combined Planck 2018+BAO+Pantheon+BBN+SH0ES; simplified fit",
+        "locator": "Sec. IV, PDF p. 5"
+      },
+      {
+        "name": "decay redshift z*",
+        "value": "4920 (+620/-730)",
+        "unit": "redshift",
+        "uncertainty": "68% interval as reported",
+        "conditioning": "Combined Planck 2018+BAO+Pantheon+BBN+SH0ES; simplified fit",
+        "locator": "Sec. IV, PDF p. 5"
+      },
+      {
+        "name": "H0",
+        "value": "71.4 ± 1.0",
+        "unit": "km s^-1 Mpc^-1",
+        "uncertainty": "68% interval as reported",
+        "conditioning": "Combined Planck 2018+BAO+Pantheon+BBN+SH0ES; simplified fit",
+        "locator": "Abstract; Sec. IV, PDF pp. 1, 5"
+      },
+      {
+        "name": "H0 tension without SH0ES",
+        "value": "2.5",
+        "unit": "sigma",
+        "uncertainty": null,
+        "conditioning": "Authors' comparison of paper's no-SH0ES fits to SH0ES; dataset/model conditional",
+        "locator": "Sec. IV, PDF p. 5"
+      },
+      {
+        "name": "best-fit Δχ²",
+        "value": "-15.6",
+        "unit": "dimensionless",
+        "uncertainty": null,
+        "conditioning": "NEDE minus ΛCDM, combined datasets including SH0ES",
+        "locator": "Sec. IV, PDF p. 5"
+      },
+      {
+        "name": "Bayesian evidence ΔB",
+        "value": "5.5",
+        "unit": "log evidence difference",
+        "uncertainty": null,
+        "conditioning": "NEDE minus ΛCDM; MultiNest, tolerance 0.1, 1000 live points, combined fit",
+        "locator": "Sec. IV, PDF p. 5"
+      },
+      {
+        "name": "post-transition equation of state in fitted implementation",
+        "value": "2/3",
+        "unit": "dimensionless",
+        "uncertainty": null,
+        "conditioning": "Fixed choice; also cs²=2/3",
+        "locator": "Sec. IV, PDF p. 4"
+      },
+      {
+        "name": "trigger condition",
+        "value": "H(z*)=0.2m",
+        "unit": "Hubble rate relative to trigger mass",
+        "uncertainty": null,
+        "conditioning": "Fixed in fitted implementation",
+        "locator": "Sec. IV, PDF p. 4"
+      },
+      {
+        "name": "illustrative tunneling scale M",
+        "value": "~1",
+        "unit": "eV",
+        "uncertainty": null,
+        "conditioning": "Order-of-magnitude illustration for z~5000, λ~0.1, α~β~O(1), f_NEDE~0.1",
+        "locator": "Sec. II, PDF p. 3"
+      },
+      {
+        "name": "illustrative trigger mass m",
+        "value": "~10^-27",
+        "unit": "eV",
+        "uncertainty": null,
+        "conditioning": "Same order-of-magnitude illustration; not a posterior constraint",
+        "locator": "Sec. II, PDF p. 3"
+      }
+    ],
+    "data_dependencies": [
+      "Planck 2018 TT, TE, EE and lensing likelihood with nuisance parameters (authors cite Planck likelihood reference [72]).",
+      "SH0ES H0=74.03±1.42 km s^-1 Mpc^-1 measurement (Riess et al. 2019 reference [2]).",
+      "Pantheon 1048 SNe Ia, 0.01<z<2.3 (reference [68]).",
+      "BOSS DR12 anisotropic BAO and growth at z=0.38, 0.51, 0.61; 6dF isotropic BAO at z=0.106; SDSS DR7 main-galaxy BAO at z=0.15 (references [69]–[71]).",
+      "Primordial helium abundance constraint used as BBN likelihood (reference [73]).",
+      "CLASS adapted for NEDE and MontePython parameter sampling; neutrinos modeled as two massless plus one massive species with Mν=0.06 eV.",
+      "No likelihood file hashes or machine-readable chains are supplied in the admitted paper text; lineage beyond cited dataset/release descriptions is unknown here."
+    ],
+    "caveats": [
+      "The short paper explicitly simplifies post-transition dynamics to a constant-w fluid and fixes w*=cs²=2/3 for the principal fit; it says this is relaxed in the longer follow-up.",
+      "The microscopic bubble-collision conversion to anisotropic stress/gravitational radiation and a stiff a^-6 component is an expectation left for future numerical study.",
+      "Authors acknowledge slight degradation of large-z BAO+LSS (Δχ²=0.9) and that SH0ES is needed to select NEDE as favored in the approximate fNEDE-H0 degeneracy.",
+      "Trigger initial value and trigger condition are fixed; authors also assume no sizeable oscillations of φ about its true vacuum.",
+      "The reported improvement and 2.5σ residual tension are conditional historical inference results, not evidence that NEDE currently resolves the Hubble tension.",
+      "Do not identify this first-order triggered NEDE mechanism with oscillating, second-order EDE; the introduction explicitly distinguishes them."
+    ],
+    "usefulness": {
+      "decision": "review",
+      "reason": "Useful foundational, mechanism-distinct comparator for early-universe changes to pre-recombination expansion and H0 inference. Sol review should examine the vacuum-decay/fluid approximation, junction perturbation prescription, fit conditioning and observational overlap before any idea promotion."
+    },
+    "citation_leads": [
+      {
+        "arxiv_id": "arXiv:2006.06686",
+        "reason": "Authors' longer follow-up, cited as the place where they relax the fixed w and discuss model details and comparisons; primary lead for assumptions and updated fit context."
+      },
+      {
+        "arxiv_id": "arXiv:2009.00006",
+        "reason": "Authors' cited future large-scale-structure study of NEDE, relevant to the acknowledged large-z BAO/LSS degradation and predicted signatures."
+      },
+      {
+        "arxiv_id": "arXiv:1811.04083",
+        "reason": "Second-order oscillating EDE comparator explicitly cited and distinguished in the introduction; use to preserve the physical distinction."
+      }
+    ],
+    "provenance": {
+      "source_hashes": {
+        "html_sha256": "1f6e23feb42188d99739287090d4078e8adf998e06e0db34cd9c361549eeb895",
+        "pdf_sha256": "ddcf5ed66426080aa5f56305748f9d5c459dbf86b6c4eec6c252b1f6a848f890",
+        "text_sha256": "2fa7d750b2bbe4296c1fd849fe72cfcc009616a7a80c7a2f447769e318f76a62"
+      },
+      "backend_model_identity": null
+    },
+    "agent_id": "/root/luna_nede",
+    "backend_model_identity": null,
+    "backend_identity_note": "Exact requested model recorded from the Codex spawn; actual backend identity not independently exposed.",
+    "local_packet_sha256": "5ed320446f4fd3a76d10d3acaba5dd917483028c91711924cc3a327e17c7f2c1",
+    "interpretation_status": "Original Luna extraction; read the linked Sol corrections before using any equation or value.",
+    "source_hashes": {
+      "html": "1f6e23feb42188d99739287090d4078e8adf998e06e0db34cd9c361549eeb895",
+      "pdf": "ddcf5ed66426080aa5f56305748f9d5c459dbf86b6c4eec6c252b1f6a848f890",
+      "extracted_text": "2fa7d750b2bbe4296c1fd849fe72cfcc009616a7a80c7a2f447769e318f76a62"
+    }
+  },
+  "review_id": "2026-10-01-initial-science",
+  "idea_ids": [
+    "transient-pre-recombination-energy",
+    "nede-triggered-first-order-transition",
+    "nede-trigger-perturbation-matching"
+  ]
+}

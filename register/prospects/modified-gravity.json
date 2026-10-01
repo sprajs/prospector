@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "modified-gravity",
+  "title": "Gravity and quantum cosmology",
+  "scope": "Modified gravity, torsion, branes and quantum-gravity effective backgrounds.",
+  "membership_basis": "Topic navigation from abstracts or reviewed sources; shared membership does not establish physical equivalence.",
+  "paper_ids": [
+    "arxiv:2605.22143v2",
+    "arxiv:2609.34917v1",
+    "arxiv:2609.36853v1",
+    "arxiv:2609.37293v1",
+    "arxiv:2609.37437v1",
+    "arxiv:2609.39039v1"
+  ],
+  "idea_ids": [],
+  "design_ids": []
+}

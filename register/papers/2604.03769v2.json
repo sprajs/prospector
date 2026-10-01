@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2604.03769v2",
+  "arxiv_id": "2604.03769",
+  "version": 2,
+  "title": "Dispersion Measure Distribution of Unlocalized Fast Radio Bursts as a Probe of the Hubble Constant",
+  "authors": [
+    "Yang Liu",
+    "Jun-Jie Wei",
+    "Puxun Wu",
+    "Xue-Feng Wu"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "astro-ph.HE",
+    "gr-qc"
+  ],
+  "published_utc": "2026-04-04T15:41:30Z",
+  "updated_utc": "2026-09-24T06:51:42Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2604.03769v2",
+    "html": "https://arxiv.org/html/2604.03769v2",
+    "pdf": "https://arxiv.org/pdf/2604.03769v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper redistribution terms not checked; public record contains links, descriptive metadata and original notes."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Agr-qc+OR+cat%3Ahep-th%29+AND+%28all%3A%22Hubble+tension%22+OR+all%3Atimescape+OR+ti%3Adeceleration%29&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+      "retrieved_utc": "2026-10-01T00:43:47.157910+00:00",
+      "sha256": "ae4d5b5beda6d1d785bbb5104a1f000f59d404fa96e6feb97dbd836418cb0c64",
+      "bytes": 26888
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Retain unlocalized-FRB dispersion inference; inspect nuisance degeneracies and sample calibration before using H0."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

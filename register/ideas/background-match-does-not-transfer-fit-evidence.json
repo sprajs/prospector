@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "background-match-does-not-transfer-fit-evidence",
+  "title": "Approximate expansion matching does not transfer external cosmological fits",
+  "family": "inference_limit",
+  "status": "reviewed_conditional",
+  "review_id": "2026-10-01-late-expansion-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2602.01543v2",
+      "locator": "Sec.III, Sec.III.B Eqs.(13)-(16); Figs.2-3"
+    }
+  ],
+  "assumptions": [
+    "The source shows chosen curves for homogeneous H(z) only; external likelihoods, data and priors are not evaluated in this EFT.",
+    "The Naidoo comparison assigns a daughter EOS and constant Lambda rather than deriving those functions from the displayed quintessence EFT."
+  ],
+  "predictions": [
+    "Background overlap alone leaves perturbation, growth, CMB/ISW, fifth-force and likelihood/parameter-prior differences undetermined.",
+    "The source inference that detailed fits need not be repeated is unsupported for the full model; external fit results retain their original model conditioning.",
+    "A narrower controlled comparison can establish similarity of selected distance integrals only, after common normalization and inputs are fixed."
+  ],
+  "status_reason": "The methodological distinction is supported; the transferred-fit claim is unsupported. Status clarified with the reviewing Sol agent."
+}

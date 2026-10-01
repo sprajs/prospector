@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "conditional-q-upturn-not-acceleration-endpoint",
+  "title": "Selected fitted q upturn requires an explicit acceleration derivative test",
+  "family": "kinematic_reconstruction",
+  "status": "reviewed_conditional",
+  "review_id": "2026-10-01-late-expansion-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2609.34239v1",
+      "locator": "Sec.IV Fig.5; Table II; source Eq.(1)"
+    }
+  ],
+  "assumptions": [
+    "q=-a_ddot/(aH^2); z increases toward the past, dt/dz=-1/[(1+z)H].",
+    "Named best-fit feature occurs for BC+Union3 cubic-y/cubic-log without SH0ES and disappears in the corresponding plus-H0 curves.",
+    "No jerk posterior, derivative covariance or physical theory is supplied; weaker-than-fiducial q0 and time evolution of acceleration are distinct claims."
+  ],
+  "predictions": [
+    "q<0 establishes acceleration conditionally on reconstructed kinematics; qdot>0 means decreasing dimensionless -q.",
+    "j=q+2q^2+(1+z)dq/dz governs a_dddot; decreasing a_ddot requires j<0, and decreasing a_ddot/a requires j+q<0.",
+    "Figure 5 alone establishes a conditional best-fit q-shape feature, not a calibrated detection of decreasing a_ddot or a future end of acceleration. BC+Union3 cubic-y q0=-0.09 +/-0.20 includes zero at 68% CL."
+  ]
+}

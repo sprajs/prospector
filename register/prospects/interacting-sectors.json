@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "interacting-sectors",
+  "title": "Interactions, transitions and decays",
+  "scope": "Energy transfer, triggered transitions, particle-sector couplings and their observable consequences.",
+  "membership_basis": "Topic navigation from abstracts or reviewed sources; shared membership does not establish physical equivalence.",
+  "paper_ids": [
+    "arxiv:1910.10739v5",
+    "arxiv:2111.07288v1",
+    "arxiv:2112.00770v2",
+    "arxiv:2209.15046v1",
+    "arxiv:2401.08812v1",
+    "arxiv:2411.09747v2",
+    "arxiv:2502.08541v2",
+    "arxiv:2602.01543v2",
+    "arxiv:2605.26116v2",
+    "arxiv:2606.00549v2",
+    "arxiv:2609.14966v3",
+    "arxiv:2609.38422v1"
+  ],
+  "idea_ids": [
+    "background-match-does-not-transfer-fit-evidence",
+    "constant-coupling-scalar-residual-floor",
+    "dark-higgs-vector-sidm-candidate",
+    "nede-trigger-perturbation-matching",
+    "nede-triggered-first-order-transition",
+    "positive-exponential-slope-variance-obstruction",
+    "staged-dark-decay-daughter-quintessence",
+    "transient-pre-recombination-energy",
+    "unified-scalar-steep-steeper-shallow"
+  ],
+  "design_ids": [
+    "candidate-nede-piecewise-background",
+    "candidate-staged-decay-energy-and-background-claim-audit",
+    "candidate-unified-scalar-source-consistency-and-slope-screen"
+  ]
+}

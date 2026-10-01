@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2602.01543v2",
+  "arxiv_id": "2602.01543",
+  "version": 2,
+  "title": "Partial Relief of the Hubble Tension and a Natural Self-Interacting Dark Matter Candidate From Staged Symmetry Breaking",
+  "authors": [
+    "Zachary J. Hoelscher",
+    "Thomas W. Kephart",
+    "Robert J. Scherrer",
+    "Kelly Holley-Bockelmann"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "hep-th"
+  ],
+  "published_utc": "2026-02-02T02:21:35Z",
+  "updated_utc": "2026-09-25T04:48:34Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2602.01543v2",
+    "html": "https://arxiv.org/html/2602.01543v2",
+    "pdf": "https://arxiv.org/pdf/2602.01543v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper redistribution terms not checked; public record contains links, descriptive metadata and original notes."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Agr-qc+OR+cat%3Ahep-th%29+AND+%28all%3A%22Hubble+tension%22+OR+all%3Atimescape+OR+ti%3Adeceleration%29&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+      "retrieved_utc": "2026-10-01T00:43:47.157910+00:00",
+      "sha256": "ae4d5b5beda6d1d785bbb5104a1f000f59d404fa96e6feb97dbd836418cb0c64",
+      "bytes": 26888
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/2602.01543v2",
+      "retrieved_utc": "2026-10-01T01:36:19.092622+00:00",
+      "sha256": "3e7db105a02cd169f84c66ddf3e2acd19878ecfa3345308db939d5a70ed93e4a",
+      "bytes": 265612
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/2602.01543v2",
+      "retrieved_utc": "2026-10-01T01:36:22.310544+00:00",
+      "sha256": "2670793f717ef76316cf91105d4532c8e3535b00c2b7c0147cdbd602c6c38c3f",
+      "bytes": 451071
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/2602.01543v2",
+      "retrieved_utc": "2026-10-01T01:36:22.456023+00:00",
+      "sha256": "b6fde695ea504fc2b5e5e11c6222225c134973e72420597fdfb8b13dad285a2c",
+      "bytes": 68060,
+      "derived_from_sha256": "2670793f717ef76316cf91105d4532c8e3535b00c2b7c0147cdbd602c6c38c3f",
+      "tool": "pdftotext -layout"
+    },
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2609.34239v1%2C2605.26116v2%2C2602.01543v2&max_results=3",
+      "retrieved_utc": "2026-10-01T01:36:08.844544+00:00",
+      "sha256": "09d9ccf807be6d94de923e832dc14e5fca3e86b35dd5ada4c8aec00d573ae3e4",
+      "bytes": 7954
+    }
+  ],
+  "screen": {
+    "status": "reviewed",
+    "basis": "full_text",
+    "reason": "Full Luna reading and Sol source review complete. Useful conditional prospect; source/method issues and missing numerical or likelihood checks remain explicit in the review."
+  },
+  "extraction": {
+    "paper_id": "arxiv:2602.01543v2",
+    "requested_model": "gpt-6-luna",
+    "reading_level": "full_text",
+    "coverage": {
+      "sections_read": [
+        "Abstract",
+        "I. Introduction",
+        "II. Our Model",
+        "II.A. Self-Interacting Dark Matter Candidate",
+        "III. Methods",
+        "III.A. Comparison to Agrawal et al.",
+        "III.B. Comparison to Naidoo et al.",
+        "IV. Results and Discussion",
+        "IV.A. Effect on H(z)",
+        "IV.B. SIDM Cross Section",
+        "V. Conclusion",
+        "VI.A. Justification for Neglecting the s-Channel for SIDM",
+        "VI.B. S-Matrix Amplitude for Tree-Level Scattering"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "figure_check": "Rendered and visually inspected PDF pages 6-7 (Figures 3-6; source renders at .work/scans/2026-10-01-late-expansion/renders/2602.01543v2/page-06.png and page-07.png). Page 6 plots agree with captions: background H/H_LCDM curves nearly overlap in the shown examples; momentum-transfer cross section decreases with velocity; differential angular cross section differs between 200 and 1000 km/s. Figure 1 diagrams were checked through paper text/caption, not separately rendered.",
+      "limitations": [
+        "HTML and PDF identity confirmed from pinned v2 title/authors and matching body; HTML SHA-256 3e7db105a02cd169f84c66ddf3e2acd19878ecfa3345308db939d5a70ed93e4a; PDF SHA-256 2670793f717ef76316cf91105d4532c8e3535b00c2b7c0147cdbd602c6c38c3f; extracted text SHA-256 b6fde695ea504fc2b5e5e11c6222225c134973e72420597fdfb8b13dad285a2c derived from that PDF with pdftotext -layout.",
+        "Figures 1-2 were not visually rendered; figure 1 was checked via caption and discussion, figure 2 via text and surrounding discussion.",
+        "No independent numerical reproduction, current-data refit, perturbation evolution, or scientific qualification was performed. Bibliography is not fully transcribed; several citation leads lack confidently recoverable arXiv identifiers."
+      ]
+    },
+    "summary": "The authors propose a complex scalar parent A decaying to two real scalar daughters B after late spontaneous breaking of a dark U(1); an ultralight scalar χ couples to B but not A, so the dark-energy interaction and associated fifth-force exposure switch on only for the daughter subcomponent. Their U(1)×U(1) EFT uses dark Higgs fields H1,H2 and gauge bosons αμ,βμ; H2 breaking opens A→2B, while H1 breaking can give α a mass and enable scalar-mediated αα scattering. For a chosen phenomenological potential and coupling, numerical background evolution approximately reproduces H(z) histories of Agrawal et al. and Naidoo et al. under rapid decay. The paper explicitly does not establish perturbation-level equivalence or independently refit the inherited data analyses. A tree-level example with mα=1 GeV, mh1=1 MeV, g=0.0175 has velocity-decreasing momentum-transfer scattering; halo-core formation and consistency with cluster limits are possibilities, not demonstrated structure-formation results. The UV-completion motivation is partial: the authors sketch a gauge-invariant field content and suggest density- or slowly rolling-field-induced late breaking, while acknowledging unmodelled radial-mode energy transfer and future production/constraint work.",
+    "ideas": [
+      {
+        "local_id": "staged-u1-decay-dark-energy-daughter",
+        "title": "Late symmetry breaking activates parent-to-daughter decay and daughter-only quintessence coupling",
+        "claim_type": "author_proposal_with_background_calculation",
+        "description": "A and B are respectively complex and real scalars; A carries U2(1) charge and H2 carries the matching charge. The gauge-invariant interaction gAB H†2 A B² + h.c. is inactive before H2 obtains a VEV and then permits A→2B. χ-dependent B mass m²(χ) and potential V(χ) transfer energy between the B sector and quintessence, while A remains uncoupled. The authors suggest density-dependent or slowly rolling-field-induced Higgs mass changes as mechanisms for late symmetry breaking, but do not construct or test a UV completion. A separate early H1 breaking and an A-producing earlier decay are optional extensions.",
+        "locators": [
+          "PDF pp. 2-3, Eq. (1), Table I and discussion of staged breaking; PDF pp. 4-5, Eqs. (2)-(12), z-break prescription; PDF p. 5, Eqs. (14)-(16)"
+        ],
+        "equations": [
+          {
+            "expression": "L ⊃ -g_AB H_2^† A B^2 + h.c.; m_B^2(χ)=m_0^2 exp[-2 c̃(χ-χ_0)]; V(χ)=κ_1 exp(-bχ)+κ_2 exp(-cχ)",
+            "locator": "PDF p. 2, Eq. (1) and adjacent text",
+            "confidence": "high transcription; sign/convention follows printed Lagrangian",
+            "definitions": "A complex parent, B real daughter, H2 dark Higgs, χ ultralight quintessence scalar; g_AB coupling; c̃,b,c,κ_i model parameters",
+            "domain": "Proposed EFT; the displayed potential and mass function are the specific numerical-analysis choice, not a fitted general result."
+          },
+          {
+            "expression": "ρ̇_A+3Hρ_A=-Γ_Aρ_A Θ(t-t_2); ρ̇_B+3Hρ_B=-c̃χ̇ρ_B+Γ_Aρ_A Θ(t-t_2); χ̈+3Hχ̇-bκ_1e^{-bχ}-cκ_2e^{-cχ}=c̃ρ_B; H²=(ρ_A+ρ_B+ρ_O+ρ_r+ρ_χ)/3",
+            "locator": "PDF pp. 4-5, Eqs. (2)-(5); reduced Planck units",
+            "confidence": "high transcription",
+            "definitions": "ρ_O is baryons plus other dark matter; Θ activates at t2; χ coupling only appears in B continuity/equation; ρ_χ included in Friedmann sum",
+            "domain": "Homogeneous background system, reduced Planck units; no perturbation closure supplied."
+          },
+          {
+            "expression": "ρ̇_A+3H(1+w_A)ρ_A=-Θ(t-t_2)Γ_Aρ_A; ρ̇_B+3H(1+w_B)ρ_B=Θ(t-t_2)Γ_Aρ_A; H²=(8πG/3)(ρ_A+ρ_B+ρ_O+ρ_r+ρ_Λ)",
+            "locator": "PDF p. 5, Eqs. (14)-(16)",
+            "confidence": "high transcription",
+            "definitions": "Phenomenological comparison system; A parent, B daughter, ρ_Λ constant dark-energy density",
+            "domain": "Background comparison to Naidoo et al.; explicitly not perturbation-equivalent to the scalar-coupled model."
+          }
+        ]
+      },
+      {
+        "local_id": "background-expansion-mapping-only",
+        "title": "Rapid-decay background histories approximately map to prior interacting-dark-energy parametrizations",
+        "claim_type": "author_reported_numerical_background_comparison",
+        "description": "Integrating from zrec=1090, the authors show near-overlap in plotted H(z)/H_LCDM between their cascade and Agrawal et al. for f=0.2, and between the cascade and Naidoo et al. for one chosen parameter set. They rely on existing papers for detailed data fits; this is inherited model-to-model background agreement, not a new joint likelihood analysis. For Naidoo's parametrization their decay mechanism motivates only the sudden wdm change, not the subsequent functional form. The authors state background agreement does not carry to perturbations.",
+        "locators": [
+          "PDF pp. 3-5, Methods and Eqs. (2)-(16); PDF p. 6, Figs. 2-3 and captions"
+        ],
+        "equations": [
+          {
+            "expression": "ρ̇_A+3Hρ_A=-Γ_Aρ_A Θ(t-t_2); ρ̇_B+3H(1+w_B)ρ_B=Γ_Aρ_A Θ(t-t_2); H²=(8πG/3)Σ_iρ_i",
+            "locator": "PDF p. 5, Eqs. (14)-(16)",
+            "confidence": "high transcription",
+            "definitions": "Σ_i covers A,B, other matter, radiation and constant dark energy as specified by authors",
+            "domain": "Phenomenological background comparison only; w_B is assigned for the Naidoo-like comparison."
+          }
+        ]
+      },
+      {
+        "local_id": "gauge-vector-sidm-side-candidate",
+        "title": "First dark U(1) breaking permits scalar-mediated vector self-scattering",
+        "claim_type": "author_calculation_and_conjectural_astrophysical_application",
+        "description": "H1 breaking gives αμ a mass and its kinetic term yields an h1αμαμ vertex. The paper computes tree-level t/u-channel αα→αα scattering, neglecting the s channel in the stated low-velocity regime. At mα=1 GeV, mh1=0.001 GeV and g=0.0175 the plotted momentum-transfer cross section falls with velocity; the authors propose this may allow galaxy-scale cores while evading cluster constraints. The plots are tree-level calculations, not halo simulations or observational fits; non-perturbative regions require partial-wave treatment.",
+        "locators": [
+          "PDF p. 3, §II.A and Fig. 1; PDF pp. 6-7, Fig. 4-6, Eq. (17); PDF pp. 7-8, Appendix Eqs. (18)-(26)"
+        ],
+        "equations": [
+          {
+            "expression": "σ_T = 2 ∫ dΩ (1-|cos θ|) |M|²/(64π² E_cm²)",
+            "locator": "PDF p. 6, Eq. (17)",
+            "confidence": "high transcription",
+            "definitions": "θ scattering angle; Ω solid angle; E_cm center-of-mass energy; M tree-level amplitude",
+            "domain": "Identical-vector scattering as defined by authors; tree-level approximation."
+          },
+          {
+            "expression": "s=E_cm²; t=-2p²(1-cos θ); u=-2p²(1+cos θ); E_cm²≈4m_α² and p≈m_αv for v≪1",
+            "locator": "PDF p. 7, Eqs. (18)-(20) and preceding text",
+            "confidence": "high transcription",
+            "definitions": "Mandelstam variables, center-of-mass momentum p, relative velocity v",
+            "domain": "Nonrelativistic regime v≪1, with mα≫mh1 for the stated channel comparison."
+          },
+          {
+            "expression": "(g²/4π)(1/(m_α m_h1))≈0.024",
+            "locator": "PDF p. 6, §IV.B",
+            "confidence": "medium; dimensionful normalization is printed as shown and not independently assessed",
+            "definitions": "g effective coupling; mα vector mass; mh1 scalar mediator mass",
+            "domain": "Authors use this estimate to argue perturbation theory is a reasonable approximation for the selected parameters."
+          }
+        ]
+      }
+    ],
+    "quantities": [
+      {
+        "name": "fraction f in decaying cascade at recombination",
+        "value": 0.2,
+        "unit": "fraction",
+        "uncertainty": null,
+        "conditioning": "Illustrative Agrawal-background comparison; authors set f=2/10, not a fitted constraint",
+        "locator": "PDF p. 4, end of §III.A; PDF p. 6, Fig. 2 caption"
+      },
+      {
+        "name": "symmetry-breaking/decay onset redshift",
+        "value": 15,
+        "unit": "redshift",
+        "uncertainty": null,
+        "conditioning": "Illustrative Agrawal comparison assumption",
+        "locator": "PDF p. 4, §III.A"
+      },
+      {
+        "name": "parent decay rate Γ_A",
+        "value": 1e-15,
+        "unit": "s^-1",
+        "uncertainty": null,
+        "conditioning": "Illustrative Agrawal comparison; model input",
+        "locator": "PDF p. 4, §III.A"
+      },
+      {
+        "name": "Naidoo-like comparison w0 (cascade parameter)",
+        "value": -0.04,
+        "unit": "dimensionless",
+        "uncertainty": null,
+        "conditioning": "Illustrative background comparison with z_BREAK=1, Γ_A=1e-16 s^-1 and f=1/4",
+        "locator": "PDF p. 6, Fig. 3 caption"
+      },
+      {
+        "name": "vector mass mα",
+        "value": 1,
+        "unit": "GeV",
+        "uncertainty": null,
+        "conditioning": "Illustrative tree-level SIDM cross-section plot",
+        "locator": "PDF p. 6, §IV.B and Fig. 4-6 captions"
+      },
+      {
+        "name": "scalar mediator mass mh1",
+        "value": 0.001,
+        "unit": "GeV",
+        "uncertainty": null,
+        "conditioning": "Illustrative tree-level SIDM cross-section plot",
+        "locator": "PDF p. 6, §IV.B and Fig. 4-6 captions"
+      },
+      {
+        "name": "effective SIDM coupling g",
+        "value": 0.0175,
+        "unit": "dimensionless",
+        "uncertainty": null,
+        "conditioning": "Illustrative tree-level SIDM cross-section plot",
+        "locator": "PDF p. 6, §IV.B"
+      },
+      {
+        "name": "Hubble parameter ratio plot amplitude",
+        "value": null,
+        "unit": null,
+        "uncertainty": {
+          "reason": "No fitted parameter value or uncertainty reported for the figure-level excess; numerical points are not tabulated."
+        },
+        "conditioning": "Visual, illustrative H(z)/H_LCDM curves in Figs. 2-3",
+        "locator": "PDF p. 6, Figs. 2-3"
+      }
+    ],
+    "data_dependencies": [
+      "No new likelihood/data fit is performed in this paper. The authors say the near-background mapping to Agrawal et al. inherits that work's fits (ref. 76); mapping to Naidoo et al. uses their earlier fit parametrization (ref. 86). The paper does not provide datasets, likelihood definitions, covariance, chains, or cross-covariances for these inherited results.",
+      "SIDM observational compatibility is asserted as potential and tied to external constraints in refs. 71-73; this paper reports tree-level scattering curves rather than a refit or halo simulation.",
+      "Reported initial-condition examples use zrec=1090 and fixed Ωh² inputs; these are methodological choices, not results independently constrained here."
+    ],
+    "caveats": [
+      "No claim here establishes full resolution of the Hubble tension; the authors characterize the proposed effect as partial and present illustrative background histories, not a new combined data analysis.",
+      "Background H(z) correspondence does not imply equivalence of perturbations, structure growth, CMB/BAO observables, or fifth-force constraints. Those are not calculated in this paper.",
+      "The late transition is represented by a Heaviside step for simplicity; a smooth transition is mentioned but not analysed.",
+      "The paper explicitly neglects energy transfer to the massive H2 radial mode through h2AB² three-body decays; including it could alter the energy budget.",
+      "The proposed density-induced or slowly rolling-field-induced symmetry breaking is a suggested route, not a constructed or demonstrated UV completion. Production mechanisms and acceptable particle-mass ranges remain future work.",
+      "The claimed SIDM halo benefits are prospective; the cross-section calculation is tree-level. The authors note partial-wave analysis is needed in the non-perturbative regime.",
+      "The assumed rapid decay and assigned daughter equation of state are modeling choices. The cascade does not derive Naidoo et al.'s post-transition wdm(a) dynamics or its phenomenological dark-energy bookkeeping.",
+      "Source does not supply uncertainty estimates for the illustrative parameter choices or plotted curves."
+    ],
+    "usefulness": {
+      "decision": "review",
+      "reason": "Distinct staged-symmetry-breaking mechanism links a concrete gauge-invariant decay operator to daughter-only quintessence coupling and supplies reproducible-background equations plus a separate SIDM scattering calculation. It is useful for Sol review of field content, energy bookkeeping, transition implementation, omitted channels, and the boundary between inherited fits and new calculation. It is not ready for observational or perturbative qualification from this paper alone."
+    },
+    "citation_leads": [
+      {
+        "arxiv_id": null,
+        "reason": "Ref. 76, Agrawal, Obied and Vafa, 'H0 tension, swampland conjectures, and the epoch of fading dark matter' (Phys. Rev. D 103, 043523, 2021): source of the background model and inherited fits; arXiv identifier not established from the local paper text."
+      },
+      {
+        "arxiv_id": null,
+        "reason": "Ref. 86, Naidoo et al., 'Dark matter solution to the H0 and S8 tensions, and the integrated Sachs-Wolfe void anomaly' (Phys. Rev. D 109, 083511, 2024): background parametrization whose sudden onset the mechanism is intended to motivate; arXiv identifier not established locally."
+      },
+      {
+        "arxiv_id": "2510.13436",
+        "reason": "Ref. 91, Yao et al., 'Examining a new form of non-standard dark matter using DESI DR2 data': cited for related late-time negative-pressure dark-matter discussion; useful citation lead, not an independent confirmation of this cascade."
+      },
+      {
+        "arxiv_id": "2601.01340",
+        "reason": "Ref. 92, Xu and Meng, 'Effective dark matter component presents a robust signature of negative pressure by the DESI observations': related negative-pressure dark-matter context; distinct model and data analysis."
+      }
+    ],
+    "agent_id": "/root/read_dark_decay",
+    "actual_model_identity": null,
+    "source_hashes": {
+      "html": "3e7db105a02cd169f84c66ddf3e2acd19878ecfa3345308db939d5a70ed93e4a",
+      "pdf": "2670793f717ef76316cf91105d4532c8e3535b00c2b7c0147cdbd602c6c38c3f",
+      "extracted_text": "b6fde695ea504fc2b5e5e11c6222225c134973e72420597fdfb8b13dad285a2c"
+    },
+    "original_packet_sha256": "cfb896b6cfe19a806bb37127f852f9c970d1c8f569ec4c9df0d764b8bbf72014"
+  },
+  "review_id": "2026-10-01-late-expansion-science",
+  "idea_ids": [
+    "staged-dark-decay-daughter-quintessence",
+    "background-match-does-not-transfer-fit-evidence",
+    "dark-higgs-vector-sidm-candidate"
+  ]
+}

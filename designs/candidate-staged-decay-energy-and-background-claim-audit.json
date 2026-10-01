@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "design_id": "candidate-staged-decay-energy-and-background-claim-audit",
+  "title": "Staged decay energy and claim audit",
+  "paper_ids": [
+    "arxiv:2602.01543v2"
+  ],
+  "idea_ids": [
+    "staged-dark-decay-daughter-quintessence",
+    "background-match-does-not-transfer-fit-evidence",
+    "dark-higgs-vector-sidm-candidate"
+  ],
+  "review_id": "2026-10-01-late-expansion-science",
+  "readiness": "blocked",
+  "faithful_claim": "Late daughter production activates quintessence exchange and reproduces selected external homogeneous expansion histories.",
+  "equations": [
+    {
+      "expression": "rho_A_dot+3Hrho_A=-Gamma_A rho_A Theta; rho_B_dot+3Hrho_B=-c_tilde chi_dot rho_B+Gamma_A rho_A Theta",
+      "locator": "Eqs.(2)-(3)",
+      "paper_id": "arxiv:2602.01543v2",
+      "definitions": "A is the parent and B the daughter; chi is the canonical quintessence field, Gamma_A the decay rate, c_tilde a dimensionless coupling in reduced-Planck conventions. Theta selects after the trigger. w_B is the phenomenologically assigned daughter EOS, not w_chi; w0 is an illustrative chosen coefficient and a=(1+z)^-1.",
+      "domain": "Homogeneous retained-sector continuity; source omits specified recoil/transition/radial-mode closure. The Naidoo comparison EOS is imposed rather than EFT-derived.",
+      "status": "reviewed_transcription"
+    },
+    {
+      "expression": "rho_chi_dot+3H(rho_chi+p_chi)=c_tilde chi_dot rho_B; sum of retained-sector source terms=0",
+      "locator": "derived from Eq.(4) and canonical scalar energy definition",
+      "paper_id": "arxiv:2602.01543v2",
+      "definitions": "A is the parent and B the daughter; chi is the canonical quintessence field, Gamma_A the decay rate, c_tilde a dimensionless coupling in reduced-Planck conventions. Theta selects after the trigger. w_B is the phenomenologically assigned daughter EOS, not w_chi; w0 is an illustrative chosen coefficient and a=(1+z)^-1.",
+      "domain": "Homogeneous retained-sector continuity; source omits specified recoil/transition/radial-mode closure. The Naidoo comparison EOS is imposed rather than EFT-derived.",
+      "status": "reviewer_derived"
+    },
+    {
+      "expression": "w_B=2w0[1/(1+z)-1/2] for the chosen phenomenological comparison",
+      "locator": "Sec.III.B between Eqs.(13)-(14)",
+      "paper_id": "arxiv:2602.01543v2",
+      "definitions": "A is the parent and B the daughter; chi is the canonical quintessence field, Gamma_A the decay rate, c_tilde a dimensionless coupling in reduced-Planck conventions. Theta selects after the trigger. w_B is the phenomenologically assigned daughter EOS, not w_chi; w0 is an illustrative chosen coefficient and a=(1+z)^-1.",
+      "domain": "Homogeneous retained-sector continuity; source omits specified recoil/transition/radial-mode closure. The Naidoo comparison EOS is imposed rather than EFT-derived.",
+      "status": "reviewed_transcription"
+    }
+  ],
+  "assumptions": [
+    "Complex charged parent A and neutral real daughter B with H2† A B^2 gauge-invariant operator; H2 obtains a prescribed late VEV.",
+    "After A to 2B conversion only B has chi-dependent mass; the analyzed homogeneous equations treat A/B as pressureless matter apart from the mass-transfer term.",
+    "Decay onset and rapid rate, daughter kinematics, neglected radial-mode energy and the trigger completion are assumed rather than observationally qualified.",
+    "The source shows chosen curves for homogeneous H(z) only; external likelihoods, data and priors are not evaluated in this EFT.",
+    "The Naidoo comparison assigns a daughter EOS and constant Lambda rather than deriving those functions from the displayed quintessence EFT.",
+    "A separate U1(1) breaking supplies massive vector alpha and light radial mediator h1; vector abundance/stability and production remain to be established.",
+    "Tree-level t/u channels and source identical-particle angular weighting; massive effective cubic g, not dimensionless gauge g1.",
+    "Source plotted-relative-velocity convention and identical-particle normalization must be resolved before interpreting numeric cross sections."
+  ],
+  "minimal_test": {
+    "question": "Derive the retained-sector continuity system from stated mass function and operator, establish cancellation of all source terms, and specify decay recoil/energy allocation and transition/radial-mode contributions before comparing a common-normalization H(z). Audit any claimed fit transfer against the actual set of observables in the source likelihood. Treat SIDM as a separate follow-up requiring cubic-coupling units, velocity definition and identical-particle normalization.",
+    "observables": [
+      "sum of retained-sector energy source terms",
+      "common-normalization H(z)",
+      "likelihood scope of claimed external fit match"
+    ],
+    "parameter_choices": null,
+    "scope": "Conceptual source/method test only. Values, implementation, production tolerances and accepted consumer inputs remain unspecified."
+  },
+  "simplifications": [
+    "Background conservation does not establish perturbation equivalence, data fit, fifth-force viability or a transition UV completion.",
+    "No transfer of Agrawal/Naidoo likelihood results or core-formation claims."
+  ],
+  "data_dependencies": [
+    "Pinned EFT paper and local source equations. External fit papers, code, chains, data likelihoods and exact ancestry are unacquired/unverified here."
+  ],
+  "unknowns": [
+    "Higgs-trigger dynamics and transition energy budget.",
+    "Parent/daughter masses, recoil, pressure and production distributions.",
+    "Radial-mode channel branching and coupling radiative stability.",
+    "Perturbation closure and observational likelihood differences.",
+    "Consumer capabilities uninspected."
+  ],
+  "verification_gates": [
+    "Reconcile source conventions and maintain the original-versus-repaired equation distinction.",
+    "Inspect current compiled consumer capabilities and freeze inputs/reference cases before constructing any executable request.",
+    "Keep analytic/numerical verification, observation lineage, inference validity and scientific interpretation separate."
+  ],
+  "falsification": "Failure of retained-sector source cancellation rejects that specified system; a successful background match still cannot validate transfer of CMB/BAO/SN likelihood evidence or SIDM structure formation.",
+  "consumer": {
+    "repository": "sprajs/irreducible",
+    "revision": null,
+    "dirty": null,
+    "capability_status": "Not inspected for this concept; no executable request proposed.",
+    "recipe_runner_status": "Not inspected for this concept."
+  },
+  "blockers": [
+    "Higgs-trigger dynamics and transition energy budget.",
+    "Parent/daughter masses, recoil, pressure and production distributions.",
+    "Radial-mode channel branching and coupling radiative stability.",
+    "Perturbation closure and observational likelihood differences.",
+    "Consumer capabilities uninspected."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Source review and conceptual handoff only; no computation, refit or current-data qualification."
+  }
+}

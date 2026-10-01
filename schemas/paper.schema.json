@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Prospector versioned paper record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "paper_id", "arxiv_id", "version", "title", "authors", "categories", "published_utc", "updated_utc", "urls", "license", "artifacts", "screen", "extraction", "review_id", "idea_ids"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "paper_id": {"type": "string", "pattern": "^arxiv:.+v[1-9][0-9]*$"},
+    "arxiv_id": {"type": "string", "pattern": "^([0-9]{4}\\.[0-9]{4,5}|[a-z-]+(\\.[A-Z]{2})?/[0-9]{7})$"},
+    "version": {"type": "integer", "minimum": 1},
+    "title": {"type": "string", "minLength": 1},
+    "authors": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "categories": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "published_utc": {"type": "string", "format": "date-time"},
+    "updated_utc": {"type": "string", "format": "date-time"},
+    "urls": {
+      "type": "object", "additionalProperties": false,
+      "required": ["abstract", "html", "pdf"],
+      "properties": {
+        "abstract": {"type": "string", "format": "uri"},
+        "html": {"type": "string", "format": "uri"},
+        "pdf": {"type": "string", "format": "uri"}
+      }
+    },
+    "license": {"type": "object", "required": ["status", "redistribution", "reason"], "properties": {"status": {"type": "string"}, "redistribution": {"const": "links_and_original_notes_only"}, "reason": {"type": "string"}}},
+    "artifacts": {
+      "type": "array", "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["role", "url", "retrieved_utc", "sha256", "bytes"],
+        "properties": {
+          "role": {"enum": ["metadata", "html", "pdf", "extracted_text"]},
+          "url": {"type": "string", "format": "uri"},
+          "retrieved_utc": {"type": "string", "format": "date-time"},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "bytes": {"type": "integer", "minimum": 0},
+          "derived_from_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "tool": {"type": "string"}
+        }
+      }
+    },
+    "screen": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "basis", "reason"],
+      "properties": {
+        "status": {"enum": ["discovered", "selected", "excluded", "deferred", "reviewed"]},
+        "basis": {"enum": ["metadata", "abstract", "full_text"]},
+        "reason": {"type": "string", "minLength": 1}
+      }
+    },
+    "extraction": {
+      "oneOf": [{"type": "null"}, {
+        "type": "object", "required": ["paper_id", "requested_model", "agent_id", "reading_level", "coverage", "summary", "ideas", "quantities", "data_dependencies", "caveats", "usefulness", "citation_leads"],
+        "properties": {
+          "paper_id": {"type": "string"},
+          "requested_model": {"const": "gpt-6-luna"},
+          "agent_id": {"type": "string", "minLength": 1},
+          "reading_level": {"enum": ["abstract", "partial", "full_text"]},
+          "coverage": {"type": "object", "required": ["sections_read", "pdf_pages_read", "figure_check", "limitations"], "properties": {"sections_read": {"type": "array", "minItems": 1}, "pdf_pages_read": {"type": "array", "items": {"type": "integer", "minimum": 1}}, "figure_check": {"type": "string"}, "limitations": {"type": "array"}}},
+          "summary": {"type": "string"},
+          "ideas": {"type": "array", "items": {"type": "object", "required": ["local_id", "title", "claim_type", "description", "locators", "equations"], "properties": {"locators": {"type": "array", "minItems": 1}, "equations": {"type": "array", "items": {"type": "object", "required": ["expression", "locator", "confidence"]}}}}},
+          "quantities": {"type": "array", "items": {"type": "object", "required": ["name", "value", "unit", "uncertainty", "conditioning", "locator"]}},
+          "data_dependencies": {"type": "array"},
+          "caveats": {"type": "array"},
+          "usefulness": {"type": "object"},
+          "citation_leads": {"type": "array"}
+        }
+      }]
+    },
+    "review_id": {"type": ["string", "null"]},
+    "idea_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}
+  }
+}

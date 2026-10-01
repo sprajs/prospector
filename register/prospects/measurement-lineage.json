@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "measurement-lineage",
+  "title": "Measurements and calibration",
+  "scope": "Distance indicators, selection, calibration, likelihood ancestry and non-independent observations.",
+  "membership_basis": "Topic navigation from abstracts or reviewed sources; shared membership does not establish physical equivalence.",
+  "paper_ids": [
+    "arxiv:1009.5855v2",
+    "arxiv:1107.5596v2",
+    "arxiv:1410.3470v3",
+    "arxiv:2603.00497v3",
+    "arxiv:2604.03769v2",
+    "arxiv:2606.00549v2",
+    "arxiv:2607.24443v2",
+    "arxiv:2609.25412v1",
+    "arxiv:2609.29996v1",
+    "arxiv:2609.34239v1"
+  ],
+  "idea_ids": [
+    "conditional-q-upturn-not-acceleration-endpoint",
+    "lagrange-deceleration-deviation-reconstruction",
+    "supernova-reduction-selection-dependence",
+    "timescape-bare-dressed"
+  ],
+  "design_ids": [
+    "candidate-q-reconstruction-continuity-and-derivative-interpretation",
+    "candidate-timescape-tracker-distance-lineage"
+  ]
+}

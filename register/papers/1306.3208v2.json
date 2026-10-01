@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1306.3208v2",
+  "arxiv_id": "1306.3208",
+  "version": 2,
+  "title": "Timescape cosmology with radiation fluid",
+  "authors": [
+    "James A. G. Duley",
+    "M. Ahsan Nazer",
+    "David L. Wiltshire"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "gr-qc"
+  ],
+  "published_utc": "2013-06-13T19:46:17Z",
+  "updated_utc": "2013-07-07T19:19:39Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1306.3208v2",
+    "html": "https://arxiv.org/html/1306.3208v2",
+    "pdf": "https://arxiv.org/pdf/1306.3208v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper redistribution terms not checked; public record contains links, descriptive metadata and original notes."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?search_query=ti%3Atimescape&start=0&max_results=5&sortBy=lastUpdatedDate&sortOrder=descending",
+      "retrieved_utc": "2026-10-01T00:44:41.451093+00:00",
+      "sha256": "7bcba14d2218e1d0ca8eae4772e8faeaf45d38667a7ec837539a7faeda26e3bb",
+      "bytes": 10909
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Retain radiation-fluid timescape extension; inspect matching to recombination and early-data assumptions."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

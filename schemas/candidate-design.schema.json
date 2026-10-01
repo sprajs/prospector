@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Prospector candidate investigation handoff",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "kind", "design_id", "title", "paper_ids", "idea_ids", "review_id", "readiness", "faithful_claim", "equations", "assumptions", "minimal_test", "simplifications", "data_dependencies", "unknowns", "verification_gates", "falsification", "consumer", "blockers", "executable_request", "qualification"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "kind": {"const": "candidate_design"},
+    "design_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]+$"},
+    "title": {"type": "string", "minLength": 1},
+    "paper_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "idea_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "review_id": {"type": ["string", "null"]},
+    "readiness": {"enum": ["needs_review", "blocked", "ready_for_consumer_review"]},
+    "faithful_claim": {"type": "string", "minLength": 1},
+    "equations": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["expression", "locator", "paper_id", "definitions", "domain", "status"], "properties": {"expression": {"type": "string"}, "locator": {"type": "string"}, "paper_id": {"type": "string"}, "definitions": {"type": "string"}, "domain": {"type": "string"}, "status": {"enum": ["reviewed_transcription", "needs_verification", "reviewer_derived"]}}}},
+    "assumptions": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "minimal_test": {"type": "object", "required": ["question", "observables", "parameter_choices", "scope"], "properties": {"question": {"type": "string"}, "observables": {"type": "array", "minItems": 1}, "parameter_choices": {"type": ["object", "null"]}, "scope": {"type": "string"}}},
+    "simplifications": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "data_dependencies": {"type": "array"},
+    "unknowns": {"type": "array", "items": {"type": "string"}},
+    "verification_gates": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "falsification": {"type": "string", "minLength": 1},
+    "consumer": {"type": "object", "required": ["repository", "revision", "dirty", "capability_status", "recipe_runner_status"], "properties": {"repository": {"const": "sprajs/irreducible"}, "revision": {"type": ["string", "null"], "pattern": "^[0-9a-f]{40}$"}, "dirty": {"type": ["boolean", "null"]}, "capability_status": {"type": "string"}, "recipe_runner_status": {"type": "string"}}},
+    "blockers": {"type": "array", "items": {"type": "string"}},
+    "executable_request": {"oneOf": [{"type": "null"}, {"type": "object", "additionalProperties": false, "required": ["path", "sha256", "consumer_validation"], "properties": {"path": {"type": "string"}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "consumer_validation": {"const": "passed_at_inspected_revision"}}}]},
+    "qualification": {"type": "object", "additionalProperties": false, "required": ["numerically_executed", "scientifically_qualified", "reason"], "properties": {"numerically_executed": {"const": false}, "scientifically_qualified": {"const": false}, "reason": {"type": "string"}}}
+  },
+  "allOf": [
+    {"if": {"properties": {"readiness": {"const": "ready_for_consumer_review"}}}, "then": {"properties": {"review_id": {"type": "string"}, "blockers": {"maxItems": 0}, "unknowns": {"maxItems": 0}, "executable_request": {"type": "object"}, "consumer": {"properties": {"revision": {"type": "string"}, "dirty": {"const": false}}}}}},
+    {"if": {"properties": {"readiness": {"const": "blocked"}}}, "then": {"properties": {"blockers": {"minItems": 1}, "executable_request": {"type": "null"}}}}
+  ]
+}

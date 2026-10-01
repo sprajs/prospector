@@ -1,0 +1,707 @@
+{
+  "schema_version": 1,
+  "nodes": [
+    "arxiv:1009.5855v2",
+    "arxiv:1107.5596v2",
+    "arxiv:1306.3208v2",
+    "arxiv:1310.3124v1",
+    "arxiv:1410.3470v3",
+    "arxiv:1811.04083v2",
+    "arxiv:1910.10739v5",
+    "arxiv:2111.07288v1",
+    "arxiv:2112.00770v2",
+    "arxiv:2202.08291v3",
+    "arxiv:2209.15046v1",
+    "arxiv:2401.08812v1",
+    "arxiv:2408.03229v3",
+    "arxiv:2411.09747v2",
+    "arxiv:2502.08541v2",
+    "arxiv:2602.01543v2",
+    "arxiv:2603.00497v3",
+    "arxiv:2604.03769v2",
+    "arxiv:2605.22143v2",
+    "arxiv:2605.26116v2",
+    "arxiv:2606.00549v2",
+    "arxiv:2607.24443v2",
+    "arxiv:2609.14966v3",
+    "arxiv:2609.25412v1",
+    "arxiv:2609.29996v1",
+    "arxiv:2609.31543v1",
+    "arxiv:2609.33673v1",
+    "arxiv:2609.34239v1",
+    "arxiv:2609.34917v1",
+    "arxiv:2609.36853v1",
+    "arxiv:2609.37293v1",
+    "arxiv:2609.37437v1",
+    "arxiv:2609.38422v1",
+    "arxiv:2609.39039v1",
+    "arxiv:astro-ph/0601544v2",
+    "background-match-does-not-transfer-fit-evidence",
+    "conditional-q-upturn-not-acceleration-endpoint",
+    "constant-coupling-scalar-residual-floor",
+    "dark-higgs-vector-sidm-candidate",
+    "ede-oscillating-scalar",
+    "ede-slowly-rolling-scalar",
+    "lagrange-deceleration-deviation-reconstruction",
+    "nede-trigger-perturbation-matching",
+    "nede-triggered-first-order-transition",
+    "positive-exponential-slope-variance-obstruction",
+    "staged-dark-decay-daughter-quintessence",
+    "supernova-reduction-selection-dependence",
+    "timescape-bare-dressed",
+    "transient-pre-recombination-energy",
+    "unified-scalar-steep-steeper-shallow"
+  ],
+  "edges": [
+    {
+      "type": "specializes",
+      "rationale": "Oscillating EDE is one realization of transient energy; specialization applies to mechanism only, not fit equivalence.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1811.04083v2",
+          "locator": "PDF pp.1-2"
+        }
+      ],
+      "status": "reviewed",
+      "id": "initial-edge-1",
+      "from": "ede-oscillating-scalar",
+      "to": "transient-pre-recombination-energy",
+      "source_review_status": "reviewed_conditional",
+      "review_id": "2026-10-01-initial-science"
+    },
+    {
+      "type": "specializes",
+      "rationale": "The slow-roll effective limit realizes the shared background mechanism.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1811.04083v2",
+          "locator": "PDF p.2"
+        }
+      ],
+      "status": "reviewed",
+      "id": "initial-edge-2",
+      "from": "ede-slowly-rolling-scalar",
+      "to": "transient-pre-recombination-energy",
+      "source_review_status": "reviewed_conditional",
+      "review_id": "2026-10-01-initial-science"
+    },
+    {
+      "type": "specializes",
+      "rationale": "NEDE supplies transient early energy through vacuum decay.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1910.10739v5",
+          "locator": "Sec.I-III"
+        }
+      ],
+      "status": "reviewed",
+      "id": "initial-edge-3",
+      "from": "nede-triggered-first-order-transition",
+      "to": "transient-pre-recombination-energy",
+      "source_review_status": "reviewed_conditional",
+      "review_id": "2026-10-01-initial-science"
+    },
+    {
+      "type": "physically_distinct",
+      "rationale": "Finite-n averaged oscillations and the n→infinity kinetic/slow-roll branch use different potential and sound-speed assumptions.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1811.04083v2",
+          "locator": "PDF p.2"
+        }
+      ],
+      "status": "reviewed",
+      "id": "initial-edge-4",
+      "from": "ede-oscillating-scalar",
+      "to": "ede-slowly-rolling-scalar",
+      "source_review_status": "reviewed_conditional",
+      "review_id": "2026-10-01-initial-science"
+    },
+    {
+      "type": "partial_overlap",
+      "rationale": "Both change early H and the ruler; similar post-decay w can be chosen. This is background overlap, not equivalence of potentials, time profiles or perturbations.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1811.04083v2",
+          "locator": "Eqs.(1)-(2)"
+        },
+        {
+          "paper_id": "arxiv:1910.10739v5",
+          "locator": "Eqs.(1),(4)-(7)"
+        }
+      ],
+      "status": "reviewed",
+      "id": "initial-edge-5",
+      "from": "ede-oscillating-scalar",
+      "to": "nede-triggered-first-order-transition",
+      "source_review_status": "reviewed_conditional",
+      "review_id": "2026-10-01-initial-science"
+    },
+    {
+      "type": "physically_distinct",
+      "rationale": "Single-field oscillations versus two-field triggered tunneling and first-order bubble conversion.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1811.04083v2",
+          "locator": "PDF pp.1-2"
+        },
+        {
+          "paper_id": "arxiv:1910.10739v5",
+          "locator": "Sec.I-II"
+        }
+      ],
+      "status": "reviewed",
+      "id": "initial-edge-6",
+      "from": "ede-oscillating-scalar",
+      "to": "nede-triggered-first-order-transition",
+      "source_review_status": "reviewed_conditional",
+      "review_id": "2026-10-01-initial-science"
+    },
+    {
+      "type": "specializes",
+      "rationale": "This is the letter-specific perturbative implementation of that transition, not a generic smooth EDE prescription.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1910.10739v5",
+          "locator": "Sec.III.2"
+        }
+      ],
+      "status": "reviewed",
+      "id": "initial-edge-7",
+      "from": "nede-trigger-perturbation-matching",
+      "to": "nede-triggered-first-order-transition",
+      "source_review_status": "reviewed_conditional",
+      "review_id": "2026-10-01-initial-science"
+    },
+    {
+      "type": "shares_data",
+      "rationale": "Fits reuse Pantheon, BOSS DR12 and other BAO families. Planck releases and SH0ES calibrations differ but inherit observations/calibrators. Fits are not independent confirmations; exact cross-analysis covariance remains unknown.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1811.04083v2",
+          "locator": "PDF p.2 datasets"
+        },
+        {
+          "paper_id": "arxiv:1910.10739v5",
+          "locator": "PDF p.5 datasets"
+        }
+      ],
+      "status": "reviewed",
+      "id": "initial-edge-8",
+      "from": "ede-oscillating-scalar",
+      "to": "nede-triggered-first-order-transition",
+      "source_review_status": "reviewed_conditional",
+      "review_id": "2026-10-01-initial-science"
+    },
+    {
+      "type": "physically_distinct",
+      "rationale": "Timescape modifies averaging/observer-distance interpretation at late epochs; it is not an added pre-recombination fluid or EDE potential.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1009.5855v2",
+          "locator": "Sec.2"
+        },
+        {
+          "paper_id": "arxiv:1811.04083v2",
+          "locator": "Eqs.(1)-(2)"
+        },
+        {
+          "paper_id": "arxiv:1910.10739v5",
+          "locator": "Eqs.(4)-(7)"
+        }
+      ],
+      "status": "reviewed",
+      "id": "initial-edge-9",
+      "from": "timescape-bare-dressed",
+      "to": "transient-pre-recombination-energy",
+      "source_review_status": "reviewed_conditional",
+      "review_id": "2026-10-01-initial-science"
+    },
+    {
+      "type": "critiques",
+      "rationale": "Historical TS comparisons depend on reduction and cuts; this limits cosmological interpretation without proving either model.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1009.5855v2",
+          "locator": "Sec.4.2-4.5; Sec.6"
+        }
+      ],
+      "status": "reviewed",
+      "id": "initial-edge-10",
+      "from": "supernova-reduction-selection-dependence",
+      "to": "timescape-bare-dressed",
+      "source_review_status": "reviewed_conditional",
+      "review_id": "2026-10-01-initial-science"
+    },
+    {
+      "type": "motivates",
+      "rationale": "The historical reduction study motivates checking supernova lineage in EDE fits. Its old samples do not establish a bias in the EDE Pantheon likelihood.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1009.5855v2",
+          "locator": "Sec.3,6"
+        },
+        {
+          "paper_id": "arxiv:1811.04083v2",
+          "locator": "PDF p.2"
+        }
+      ],
+      "status": "provisional",
+      "id": "initial-edge-11",
+      "from": "supernova-reduction-selection-dependence",
+      "to": "ede-oscillating-scalar",
+      "source_review_status": "provisional_methodological_transfer",
+      "review_id": "2026-10-01-initial-science"
+    },
+    {
+      "id": "describes-1009.5855v2-timescape-bare-dressed",
+      "from": "arxiv:1009.5855v2",
+      "to": "timescape-bare-dressed",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-initial-science",
+      "rationale": "This version contains the reviewed mechanism or methodological idea at the cited location.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1009.5855v2",
+          "locator": "Sec.2, Eqs.(1)-(17), PDF pp.3-5"
+        }
+      ]
+    },
+    {
+      "id": "describes-1009.5855v2-supernova-reduction-selection-dependence",
+      "from": "arxiv:1009.5855v2",
+      "to": "supernova-reduction-selection-dependence",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-initial-science",
+      "rationale": "This version contains the reviewed mechanism or methodological idea at the cited location.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1009.5855v2",
+          "locator": "Sec.3-6; Tables5-9"
+        }
+      ]
+    },
+    {
+      "id": "describes-1811.04083v2-transient-pre-recombination-energy",
+      "from": "arxiv:1811.04083v2",
+      "to": "transient-pre-recombination-energy",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-initial-science",
+      "rationale": "This version contains the reviewed mechanism or methodological idea at the cited location.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1811.04083v2",
+          "locator": "PDF pp.1-4"
+        }
+      ]
+    },
+    {
+      "id": "describes-1811.04083v2-ede-oscillating-scalar",
+      "from": "arxiv:1811.04083v2",
+      "to": "ede-oscillating-scalar",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-initial-science",
+      "rationale": "This version contains the reviewed mechanism or methodological idea at the cited location.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1811.04083v2",
+          "locator": "potential, PDF p.1; Eqs.(1)-(2), PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "describes-1811.04083v2-ede-slowly-rolling-scalar",
+      "from": "arxiv:1811.04083v2",
+      "to": "ede-slowly-rolling-scalar",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-initial-science",
+      "rationale": "This version contains the reviewed mechanism or methodological idea at the cited location.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1811.04083v2",
+          "locator": "PDF p.2 slow-roll discussion"
+        }
+      ]
+    },
+    {
+      "id": "describes-1910.10739v5-transient-pre-recombination-energy",
+      "from": "arxiv:1910.10739v5",
+      "to": "transient-pre-recombination-energy",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-initial-science",
+      "rationale": "This version contains the reviewed mechanism or methodological idea at the cited location.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1910.10739v5",
+          "locator": "Sec.I-IV"
+        }
+      ]
+    },
+    {
+      "id": "describes-1910.10739v5-nede-triggered-first-order-transition",
+      "from": "arxiv:1910.10739v5",
+      "to": "nede-triggered-first-order-transition",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-initial-science",
+      "rationale": "This version contains the reviewed mechanism or methodological idea at the cited location.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1910.10739v5",
+          "locator": "Eqs.(1)-(7), PDF pp.2-3"
+        }
+      ]
+    },
+    {
+      "id": "describes-1910.10739v5-nede-trigger-perturbation-matching",
+      "from": "arxiv:1910.10739v5",
+      "to": "nede-trigger-perturbation-matching",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-initial-science",
+      "rationale": "This version contains the reviewed mechanism or methodological idea at the cited location.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1910.10739v5",
+          "locator": "Eqs.(8)-(14), PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "late-expansion-1",
+      "from": "arxiv:2605.26116v2",
+      "to": "unified-scalar-steep-steeper-shallow",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2605.26116v2",
+          "locator": "Secs.3-6; Eqs.(3.6)-(3.15),(4.15)-(4.17),(5.2)-(5.6),(5.14)-(5.18)"
+        }
+      ],
+      "rationale": "This version contains the sourced proposal/result or explicit methodological challenge at the cited locator; idea status preserves the review limit."
+    },
+    {
+      "id": "late-expansion-2",
+      "from": "arxiv:2605.26116v2",
+      "to": "positive-exponential-slope-variance-obstruction",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2605.26116v2",
+          "locator": "Sec.5.1 Eqs.(5.11)-(5.13); compare Eqs.(4.13),(4.24)"
+        }
+      ],
+      "rationale": "This version contains the sourced proposal/result or explicit methodological challenge at the cited locator; idea status preserves the review limit."
+    },
+    {
+      "id": "late-expansion-3",
+      "from": "arxiv:2605.26116v2",
+      "to": "constant-coupling-scalar-residual-floor",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2605.26116v2",
+          "locator": "Sec.4.2.2 Eqs.(4.18)-(4.23); Appendix A; source correction at Eq.(A.9)"
+        }
+      ],
+      "rationale": "This version contains the sourced proposal/result or explicit methodological challenge at the cited locator; idea status preserves the review limit."
+    },
+    {
+      "id": "late-expansion-4",
+      "from": "arxiv:2602.01543v2",
+      "to": "staged-dark-decay-daughter-quintessence",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2602.01543v2",
+          "locator": "Eq.(1), Table I; Secs.II-III.A Eqs.(2)-(12)"
+        }
+      ],
+      "rationale": "This version contains the sourced proposal/result or explicit methodological challenge at the cited locator; idea status preserves the review limit."
+    },
+    {
+      "id": "late-expansion-5",
+      "from": "arxiv:2602.01543v2",
+      "to": "background-match-does-not-transfer-fit-evidence",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2602.01543v2",
+          "locator": "Sec.III, Sec.III.B Eqs.(13)-(16); Figs.2-3"
+        }
+      ],
+      "rationale": "This version contains the sourced proposal/result or explicit methodological challenge at the cited locator; idea status preserves the review limit."
+    },
+    {
+      "id": "late-expansion-6",
+      "from": "arxiv:2602.01543v2",
+      "to": "dark-higgs-vector-sidm-candidate",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2602.01543v2",
+          "locator": "Sec.II.A; Sec.IV.B Eq.(17); Appendix VI.A-B Eqs.(18)-(26); Figs.4-6"
+        }
+      ],
+      "rationale": "This version contains the sourced proposal/result or explicit methodological challenge at the cited locator; idea status preserves the review limit."
+    },
+    {
+      "id": "late-expansion-7",
+      "from": "arxiv:2609.34239v1",
+      "to": "lagrange-deceleration-deviation-reconstruction",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2609.34239v1",
+          "locator": "Secs.II-III Eqs.(1)-(4),(15)-(24); Tables II-IV"
+        }
+      ],
+      "rationale": "This version contains the sourced proposal/result or explicit methodological challenge at the cited locator; idea status preserves the review limit."
+    },
+    {
+      "id": "late-expansion-8",
+      "from": "arxiv:2609.34239v1",
+      "to": "conditional-q-upturn-not-acceleration-endpoint",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2609.34239v1",
+          "locator": "Sec.IV Fig.5; Table II; source Eq.(1)"
+        }
+      ],
+      "rationale": "This version contains the sourced proposal/result or explicit methodological challenge at the cited locator; idea status preserves the review limit."
+    },
+    {
+      "id": "late-expansion-9",
+      "from": "unified-scalar-steep-steeper-shallow",
+      "to": "transient-pre-recombination-energy",
+      "type": "partial_overlap",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2605.26116v2",
+          "locator": "Sec.3.2 Eqs.(3.2),(3.6)-(3.7)"
+        }
+      ],
+      "rationale": "The early segment shares positive extra energy reducing a fixed-endpoint sound-horizon integral. The unified late phase and tracking history are not equivalent to the parent background mechanism over all epochs."
+    },
+    {
+      "id": "late-expansion-10",
+      "from": "unified-scalar-steep-steeper-shallow",
+      "to": "ede-oscillating-scalar",
+      "type": "physically_distinct",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2605.26116v2",
+          "locator": "Sec.3.3 and footnote 4; Secs.4-6"
+        }
+      ],
+      "rationale": "Here one smoothly rolling tracking scalar must retain a late-dark-energy role via slope features. Existing oscillating EDE depletes around a potential minimum; matching an early averaged EOS or ruler shift is not equality of potential, trajectory or perturbations."
+    },
+    {
+      "id": "late-expansion-11",
+      "from": "unified-scalar-steep-steeper-shallow",
+      "to": "nede-triggered-first-order-transition",
+      "type": "physically_distinct",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2605.26116v2",
+          "locator": "Sec.6 domain-of-validity discussion"
+        }
+      ],
+      "rationale": "The reviewed unified mechanism uses smooth scalar rolling; first-order phase conversion with a separate trigger is explicitly outside its obstruction. The restriction is not a critique excluding NEDE."
+    },
+    {
+      "id": "late-expansion-12",
+      "from": "positive-exponential-slope-variance-obstruction",
+      "to": "unified-scalar-steep-steeper-shallow",
+      "type": "critiques",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2605.26116v2",
+          "locator": "Sec.5.1 Eqs.(5.11)-(5.14)"
+        }
+      ],
+      "rationale": "The variance identity excludes positive exponential sums as a realization of the required nonmonotonic slope ordering in this domain; it does not exclude the shoulder example."
+    },
+    {
+      "id": "late-expansion-13",
+      "from": "constant-coupling-scalar-residual-floor",
+      "to": "unified-scalar-steep-steeper-shallow",
+      "type": "motivates",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2605.26116v2",
+          "locator": "Secs.4.2.2,5"
+        }
+      ],
+      "rationale": "The percent-scale baryon-free scaling residue motivates an independent depletion slope; Appendix sign and baryon limitations remain explicit."
+    },
+    {
+      "id": "late-expansion-14",
+      "from": "staged-dark-decay-daughter-quintessence",
+      "to": "unified-scalar-steep-steeper-shallow",
+      "type": "physically_distinct",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2602.01543v2",
+          "locator": "Secs.II-III; Eqs.(1)-(5)"
+        }
+      ],
+      "rationale": "A late Higgs-triggered parent-to-daughter conversion and daughter-only interaction is not single-scalar early/late tracking unification. Decays are an excluded extra process in the scalar obstruction; this paper does not thereby furnish a unified EDE scenario."
+    },
+    {
+      "id": "late-expansion-15",
+      "from": "staged-dark-decay-daughter-quintessence",
+      "to": "nede-triggered-first-order-transition",
+      "type": "physically_distinct",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2602.01543v2",
+          "locator": "Table I, Sec.II and Eqs.(2)-(5)"
+        }
+      ],
+      "rationale": "Both use transition language, but this converts late dark-matter species after symmetry breaking. It is not the established early false-vacuum energy release/bubble-percolation mechanism, and no equivalence of transitions or perturbations is accepted."
+    },
+    {
+      "id": "late-expansion-16",
+      "from": "background-match-does-not-transfer-fit-evidence",
+      "to": "staged-dark-decay-daughter-quintessence",
+      "type": "critiques",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2602.01543v2",
+          "locator": "Sec.III and Sec.III.B; Figs.2-3"
+        }
+      ],
+      "rationale": "Challenges promotion of chosen background overlap to inherited full cosmological fits; does not reject the gauge-invariant decay operator itself."
+    },
+    {
+      "id": "late-expansion-17",
+      "from": "dark-higgs-vector-sidm-candidate",
+      "to": "staged-dark-decay-daughter-quintessence",
+      "type": "physically_distinct",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2602.01543v2",
+          "locator": "Sec.II.A and Sec.IV.B"
+        }
+      ],
+      "rationale": "The interacting vector is a separate proposed majority dark-matter component, whereas A/B form the decaying subcomponent. SIDM is an optional gauge extension, not evidence for the expansion mechanism."
+    },
+    {
+      "id": "late-expansion-18",
+      "from": "lagrange-deceleration-deviation-reconstruction",
+      "to": "unified-scalar-steep-steeper-shallow",
+      "type": "physically_distinct",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2609.34239v1",
+          "locator": "Eqs.(1)-(4); Sec.II"
+        }
+      ],
+      "rationale": "q interpolation specifies kinematics without a scalar action, stress-energy or perturbation closure; matching a late q curve would not identify a unified scalar theory."
+    },
+    {
+      "id": "late-expansion-19",
+      "from": "lagrange-deceleration-deviation-reconstruction",
+      "to": "staged-dark-decay-daughter-quintessence",
+      "type": "physically_distinct",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2609.34239v1",
+          "locator": "Eqs.(1)-(4); Sec.II"
+        }
+      ],
+      "rationale": "Finite-node q is not a decay operator or derived interacting species dynamics; a background-fit resemblance cannot identify microphysics."
+    },
+    {
+      "id": "late-expansion-20",
+      "from": "conditional-q-upturn-not-acceleration-endpoint",
+      "to": "lagrange-deceleration-deviation-reconstruction",
+      "type": "specializes",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2609.34239v1",
+          "locator": "Sec.IV/Fig.5"
+        }
+      ],
+      "rationale": "This is the narrowly selected derivative/interpretation question within the reconstruction family, conditional on the named Union3 cubic-coordinate fit. It is not a general prediction of all interpolation cases."
+    },
+    {
+      "id": "late-expansion-21",
+      "from": "supernova-reduction-selection-dependence",
+      "to": "lagrange-deceleration-deviation-reconstruction",
+      "type": "motivates",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2609.34239v1",
+          "locator": "Secs.III.A,IV; Tables II-III"
+        }
+      ],
+      "rationale": "The current source explicitly uses differing reduction/calibration pipelines and obtains compilation-dependent q constraints. The historical neighbour motivates a lineage audit; its older results do not demonstrate a specific bias in these current releases."
+    },
+    {
+      "id": "late-expansion-22",
+      "from": "lagrange-deceleration-deviation-reconstruction",
+      "to": "nede-triggered-first-order-transition",
+      "type": "shares_data",
+      "status": "reviewed",
+      "review_id": "2026-10-01-late-expansion-science",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2609.34239v1",
+          "locator": "Sec.III.C Planck 2018 priors; compare existing review 2026-10-01-initial-science NEDE dataset detail"
+        }
+      ],
+      "rationale": "Both inherit Planck-2018 observations, although compressed distance summaries here differ from the existing NEDE full anisotropy/lensing likelihood. Shared observed sky is not independent confirmation; compression cross-covariance and SN common-object overlap are uncomputed."
+    }
+  ]
+}

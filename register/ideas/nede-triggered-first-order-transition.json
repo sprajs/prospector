@@ -1,0 +1,22 @@
+{
+  "id": "nede-triggered-first-order-transition",
+  "title": "Triggered first-order dark vacuum transition",
+  "family": "NEDE",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:1910.10739v5",
+      "locator": "Eqs.(1)-(7), PDF pp.2-3"
+    }
+  ],
+  "assumptions": [
+    "Tunneling psi field, subdominant ultralight phi trigger; fast percolation.",
+    "Post-collision energy approximated as constant-w fluid; w*=2/3 chosen for fit."
+  ],
+  "predictions": [
+    "Abrupt pressure change with continuous H and energy density.",
+    "First-order transition can yield GW signatures; their spectrum is not computed here."
+  ],
+  "schema_version": 1,
+  "review_id": "2026-10-01-initial-science",
+  "status": "reviewed_conditional"
+}

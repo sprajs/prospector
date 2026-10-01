@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "design_id": "candidate-q-reconstruction-continuity-and-derivative-interpretation",
+  "title": "Deceleration matching and derivative audit",
+  "paper_ids": [
+    "arxiv:2609.34239v1"
+  ],
+  "idea_ids": [
+    "lagrange-deceleration-deviation-reconstruction",
+    "conditional-q-upturn-not-acceleration-endpoint"
+  ],
+  "review_id": "2026-10-01-late-expansion-science",
+  "readiness": "blocked",
+  "faithful_claim": "Selected Union3 cubic-y/log reconstructions show a low-z best-fit feature interpreted as slowing acceleration.",
+  "equations": [
+    {
+      "expression": "E(z)=E_fid(z) exp[integral_0^min(z,z_c) delta q(s)/(1+s) ds]; exact same-parameter high-z recovery requires I_c=0",
+      "locator": "reviewer integration of source Eqs.(1),(3), cutoff after Eq.(3)",
+      "paper_id": "arxiv:2609.34239v1",
+      "definitions": "E=H/H0, E_fid is the same-parameter fiducial LCDM H/H0; delta q=q-q_fid. z_c is the imposed cutoff, I_c the integral to that cutoff. Cosmic proper time satisfies dt/dz=-1/[(1+z)H]; j=a_dddot/(aH^3), q=-a_ddot/(aH^2).",
+      "domain": "Expanding FLRW kinematics with a0=1 and matched fiducial normalization. Early radiation/recombination and statistical derivative validity remain unresolved.",
+      "status": "reviewer_derived"
+    },
+    {
+      "expression": "qdot=-(1+z)H q_z; j=q+2q^2+(1+z)q_z; a_dddot=aH^3j; d(a_ddot/a)/dt=H^3(j+q)",
+      "locator": "reviewer identities from source Eq.(1), not jerk equations presented by authors",
+      "paper_id": "arxiv:2609.34239v1",
+      "definitions": "E=H/H0, E_fid is the same-parameter fiducial LCDM H/H0; delta q=q-q_fid. z_c is the imposed cutoff, I_c the integral to that cutoff. Cosmic proper time satisfies dt/dz=-1/[(1+z)H]; j=a_dddot/(aH^3), q=-a_ddot/(aH^2).",
+      "domain": "Expanding FLRW kinematics with a0=1 and matched fiducial normalization. Early radiation/recombination and statistical derivative validity remain unresolved.",
+      "status": "reviewer_derived"
+    }
+  ],
+  "assumptions": [
+    "Flat LambdaCDM fiducial with radiation omitted in the displayed late-time q formula; cubic/quartic finite interpolation in z, y or ln(1+z).",
+    "Uniform nodes in chosen coordinate; n+1 nodes, n free deviations and endpoint zero at z_c=2.5; uniform node priors [-1,1].",
+    "DESI DR2 BAO plus Planck compressed distance summaries and one SN compilation; high-z matching normalization is underspecified, and physical/perturbation closure is absent.",
+    "q=-a_ddot/(aH^2); z increases toward the past, dt/dz=-1/[(1+z)H].",
+    "Named best-fit feature occurs for BC+Union3 cubic-y/cubic-log without SH0ES and disappears in the corresponding plus-H0 curves.",
+    "No jerk posterior, derivative covariance or physical theory is supplied; weaker-than-fiducial q0 and time evolution of acceleration are distinct claims."
+  ],
+  "minimal_test": {
+    "question": "Recover the author q-to-H implementation and high-z normalization before inference. At fixed fiducial parameters check E(0)=1, continuity at z_c, integrated I_c and radiation/early-physics matching. Then evaluate qdot, j and j+q separately across coordinate/order/cutoff/SH0ES choices using complete joint parameter samples; test derivative claims with uncertainty, rather than differentiating only a best-fit plot.",
+    "observables": [
+      "E(0), E(z_c) and I_c",
+      "qdot, j and j+q separately",
+      "coordinate/order/cutoff sensitivity with joint uncertainty"
+    ],
+    "parameter_choices": null,
+    "scope": "Conceptual source/method test only. Values, implementation, production tolerances and accepted consumer inputs remain unspecified."
+  },
+  "simplifications": [
+    "No physical dark-energy theory or perturbation closure.",
+    "No CMB likelihood validation, numerical refit or claimed detection/end of acceleration from this source review."
+  ],
+  "data_dependencies": [
+    "DESI DR2 BAO ratios/covariance; Planck-derived distance-prior compression; one published SN reduction at a time; optional SH0ES Gaussian prior. Assets and joint cross-covariance are not supplied locally."
+  ],
+  "unknowns": [
+    "Author high-z integration/matching implementation and radiation handling.",
+    "Full posterior samples/derivative covariance and statistical regularity.",
+    "SN/SH0ES common-object/calibrator covariance.",
+    "Distance-prior compression validity for the chosen continuation.",
+    "Consumer capabilities uninspected."
+  ],
+  "verification_gates": [
+    "Reconcile source conventions and maintain the original-versus-repaired equation distinction.",
+    "Inspect current compiled consumer capabilities and freeze inputs/reference cases before constructing any executable request.",
+    "Keep analytic/numerical verification, observation lineage, inference validity and scientific interpretation separate."
+  ],
+  "falsification": "A discontinuous E at the cutoff or claimed exact same-parameter recovery with nonzero I_c rejects that matching prescription. A q upturn alone cannot establish j<0, j+q<0 or an acceleration endpoint.",
+  "consumer": {
+    "repository": "sprajs/irreducible",
+    "revision": null,
+    "dirty": null,
+    "capability_status": "Not inspected for this concept; no executable request proposed.",
+    "recipe_runner_status": "Not inspected for this concept."
+  },
+  "blockers": [
+    "Author high-z integration/matching implementation and radiation handling.",
+    "Full posterior samples/derivative covariance and statistical regularity.",
+    "SN/SH0ES common-object/calibrator covariance.",
+    "Distance-prior compression validity for the chosen continuation.",
+    "Consumer capabilities uninspected."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Source review and conceptual handoff only; no computation, refit or current-data qualification."
+  }
+}

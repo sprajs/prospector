@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-01-late-expansion",
+  "status": "completed",
+  "started_utc": "2026-10-01T01:36:08.844544+00:00",
+  "completed_utc": "2026-10-01T02:00:37.430445+00:00",
+  "lane": "late-dark-energy",
+  "work_mode": "fresh_with_queued_reads",
+  "queries": [
+    {
+      "id": "late-dark-energy-fresh",
+      "query": "(cat:astro-ph.CO OR cat:gr-qc) AND (ti:\"dark energy\" OR ti:quintessence)",
+      "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Agr-qc%29+AND+%28ti%3A%22dark+energy%22+OR+ti%3Aquintessence%29&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+      "order": "lastUpdatedDate",
+      "direction": "descending",
+      "start": 0,
+      "max_results": 10,
+      "retrieved_utc": "2026-10-01T01:36:31.860062+00:00",
+      "sha256": "5a85b61b80a2c2a80ade9ac25275d960656b5cd99b98f74461057475f2766fae",
+      "result_ids": [
+        "arxiv:2609.39039v1",
+        "arxiv:2609.14966v3",
+        "arxiv:2609.38422v1",
+        "arxiv:2609.37437v1",
+        "arxiv:2609.37293v1",
+        "arxiv:2609.36853v1",
+        "arxiv:2605.22143v2",
+        "arxiv:2609.34917v1",
+        "arxiv:2609.33673v1",
+        "arxiv:2609.31543v1"
+      ]
+    }
+  ],
+  "known_id_lookups": [
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=2609.34239v1%2C2605.26116v2%2C2602.01543v2&max_results=3",
+      "retrieved_utc": "2026-10-01T01:36:08.844544+00:00",
+      "sha256": "09d9ccf807be6d94de923e832dc14e5fca3e86b35dd5ada4c8aec00d573ae3e4",
+      "result_ids": [
+        "arxiv:2605.26116v2",
+        "arxiv:2602.01543v2",
+        "arxiv:2609.34239v1"
+      ]
+    }
+  ],
+  "registered_papers": [
+    "arxiv:2609.34239v1",
+    "arxiv:2605.26116v2",
+    "arxiv:2602.01543v2",
+    "arxiv:2609.31543v1",
+    "arxiv:2609.29996v1",
+    "arxiv:2604.03769v2",
+    "arxiv:2609.25412v1",
+    "arxiv:2603.00497v3",
+    "arxiv:2606.00549v2",
+    "arxiv:2607.24443v2",
+    "arxiv:2408.03229v3",
+    "arxiv:2411.09747v2",
+    "arxiv:2502.08541v2",
+    "arxiv:2401.08812v1",
+    "arxiv:2209.15046v1",
+    "arxiv:2202.08291v3",
+    "arxiv:2112.00770v2",
+    "arxiv:2111.07288v1",
+    "arxiv:1410.3470v3",
+    "arxiv:1310.3124v1",
+    "arxiv:1306.3208v2",
+    "arxiv:1107.5596v2",
+    "arxiv:astro-ph/0601544v2",
+    "arxiv:2609.39039v1",
+    "arxiv:2609.14966v3",
+    "arxiv:2609.38422v1",
+    "arxiv:2609.37437v1",
+    "arxiv:2609.37293v1",
+    "arxiv:2609.36853v1",
+    "arxiv:2605.22143v2",
+    "arxiv:2609.34917v1",
+    "arxiv:2609.33673v1"
+  ],
+  "new_versions": [
+    "arxiv:2609.39039v1",
+    "arxiv:2609.14966v3",
+    "arxiv:2609.38422v1",
+    "arxiv:2609.37437v1",
+    "arxiv:2609.37293v1",
+    "arxiv:2609.36853v1",
+    "arxiv:2605.22143v2",
+    "arxiv:2609.34917v1",
+    "arxiv:2609.33673v1"
+  ],
+  "abstract_screens": [
+    "arxiv:2609.34239v1",
+    "arxiv:2605.26116v2",
+    "arxiv:2602.01543v2",
+    "arxiv:2609.31543v1",
+    "arxiv:2609.29996v1",
+    "arxiv:2604.03769v2",
+    "arxiv:2609.25412v1",
+    "arxiv:2603.00497v3",
+    "arxiv:2606.00549v2",
+    "arxiv:2607.24443v2",
+    "arxiv:2408.03229v3",
+    "arxiv:2411.09747v2",
+    "arxiv:2502.08541v2",
+    "arxiv:2401.08812v1",
+    "arxiv:2209.15046v1",
+    "arxiv:2202.08291v3",
+    "arxiv:2112.00770v2",
+    "arxiv:2111.07288v1",
+    "arxiv:1410.3470v3",
+    "arxiv:1310.3124v1",
+    "arxiv:1306.3208v2",
+    "arxiv:1107.5596v2",
+    "arxiv:astro-ph/0601544v2",
+    "arxiv:2609.39039v1",
+    "arxiv:2609.14966v3",
+    "arxiv:2609.38422v1",
+    "arxiv:2609.37437v1",
+    "arxiv:2609.37293v1",
+    "arxiv:2609.36853v1",
+    "arxiv:2605.22143v2",
+    "arxiv:2609.34917v1",
+    "arxiv:2609.33673v1"
+  ],
+  "duplicates": [
+    {
+      "paper_id": "arxiv:2609.31543v1",
+      "reason": "Exact version already registered; metadata hit retained as a duplicate, not admitted or reread."
+    }
+  ],
+  "full_reads": [
+    "arxiv:2605.26116v2",
+    "arxiv:2602.01543v2",
+    "arxiv:2609.34239v1"
+  ],
+  "reviewed_papers": [
+    "arxiv:2605.26116v2",
+    "arxiv:2602.01543v2",
+    "arxiv:2609.34239v1"
+  ],
+  "idea_ids": [
+    "unified-scalar-steep-steeper-shallow",
+    "positive-exponential-slope-variance-obstruction",
+    "constant-coupling-scalar-residual-floor",
+    "staged-dark-decay-daughter-quintessence",
+    "background-match-does-not-transfer-fit-evidence",
+    "dark-higgs-vector-sidm-candidate",
+    "lagrange-deceleration-deviation-reconstruction",
+    "conditional-q-upturn-not-acceleration-endpoint"
+  ],
+  "design_ids": [
+    "candidate-unified-scalar-source-consistency-and-slope-screen",
+    "candidate-staged-decay-energy-and-background-claim-audit",
+    "candidate-q-reconstruction-continuity-and-derivative-interpretation"
+  ],
+  "prospect_ids": [
+    "bounces-cycles",
+    "early-energy",
+    "inhomogeneity",
+    "interacting-sectors",
+    "kinematics",
+    "late-dark-energy",
+    "measurement-lineage",
+    "modified-gravity"
+  ],
+  "edge_ids": [
+    "late-expansion-1",
+    "late-expansion-2",
+    "late-expansion-3",
+    "late-expansion-4",
+    "late-expansion-5",
+    "late-expansion-6",
+    "late-expansion-7",
+    "late-expansion-8",
+    "late-expansion-9",
+    "late-expansion-10",
+    "late-expansion-11",
+    "late-expansion-12",
+    "late-expansion-13",
+    "late-expansion-14",
+    "late-expansion-15",
+    "late-expansion-16",
+    "late-expansion-17",
+    "late-expansion-18",
+    "late-expansion-19",
+    "late-expansion-20",
+    "late-expansion-21",
+    "late-expansion-22"
+  ],
+  "citation_leads_followed": [],
+  "acquisition_failures": [],
+  "pending": [
+    {
+      "paper_id": "arxiv:2609.31543v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2609.29996v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2604.03769v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2609.25412v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2603.00497v3",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2606.00549v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2607.24443v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2408.03229v3",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2411.09747v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2502.08541v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2401.08812v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2209.15046v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2202.08291v3",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2112.00770v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2111.07288v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:1410.3470v3",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:1310.3124v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:1306.3208v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:1107.5596v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0601544v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2609.39039v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2609.14966v3",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2609.38422v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2609.37437v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2609.37293v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2609.36853v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2605.22143v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2609.34917v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2609.33673v1",
+      "stage": "read"
+    }
+  ],
+  "limits": [
+    "Nine new versions and one exact-version duplicate in a ten-result fresh API window; no claim of gap-free discovery.",
+    "Three papers fully read by explicitly selected gpt-6-luna, then reviewed by exactly gpt-6.1-sol. Requested identities recorded; backend model identity not exposed.",
+    "Fifteen corrections cover source inconsistencies, reading-aid errors and fit interpretation; Luna amended a figure-coverage conflict with a new page-12 check, retaining original history.",
+    "Three new conceptual designs blocked on source/method/data/consumer work. No numerical run, independent fit reproduction or scientific qualification."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1410.3470v3",
+  "arxiv_id": "1410.3470",
+  "version": 3,
+  "title": "Cosmic microwave background anisotropies in the timescape cosmology",
+  "authors": [
+    "M. Ahsan Nazer",
+    "David L. Wiltshire"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "gr-qc",
+    "hep-ph"
+  ],
+  "published_utc": "2014-10-13T20:00:03Z",
+  "updated_utc": "2015-03-13T19:55:35Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1410.3470v3",
+    "html": "https://arxiv.org/html/1410.3470v3",
+    "pdf": "https://arxiv.org/pdf/1410.3470v3"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper redistribution terms not checked; public record contains links, descriptive metadata and original notes."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?search_query=ti%3Atimescape&start=0&max_results=5&sortBy=lastUpdatedDate&sortOrder=descending",
+      "retrieved_utc": "2026-10-01T00:44:41.451093+00:00",
+      "sha256": "7bcba14d2218e1d0ca8eae4772e8faeaf45d38667a7ec837539a7faeda26e3bb",
+      "bytes": 10909
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Retain timescape CMB matching; approximation and quoted systematic uncertainty need comparison with the full model."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

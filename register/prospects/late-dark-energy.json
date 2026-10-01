@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "late-dark-energy",
+  "title": "Late dark energy and unified histories",
+  "scope": "Late acceleration, evolving vacuum/scalars and attempts to connect early and late energy.",
+  "membership_basis": "Topic navigation from abstracts or reviewed sources; shared membership does not establish physical equivalence.",
+  "paper_ids": [
+    "arxiv:2111.07288v1",
+    "arxiv:2408.03229v3",
+    "arxiv:2602.01543v2",
+    "arxiv:2605.22143v2",
+    "arxiv:2605.26116v2",
+    "arxiv:2609.14966v3",
+    "arxiv:2609.31543v1",
+    "arxiv:2609.33673v1",
+    "arxiv:2609.34917v1",
+    "arxiv:2609.36853v1",
+    "arxiv:2609.37293v1",
+    "arxiv:2609.37437v1",
+    "arxiv:2609.38422v1",
+    "arxiv:2609.39039v1",
+    "arxiv:astro-ph/0601544v2"
+  ],
+  "idea_ids": [
+    "background-match-does-not-transfer-fit-evidence",
+    "constant-coupling-scalar-residual-floor",
+    "dark-higgs-vector-sidm-candidate",
+    "positive-exponential-slope-variance-obstruction",
+    "staged-dark-decay-daughter-quintessence",
+    "unified-scalar-steep-steeper-shallow"
+  ],
+  "design_ids": [
+    "candidate-staged-decay-energy-and-background-claim-audit",
+    "candidate-unified-scalar-source-consistency-and-slope-screen"
+  ]
+}

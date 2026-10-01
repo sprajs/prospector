@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "constant-coupling-scalar-residual-floor",
+  "title": "Constant coupling retains a percent-scale scalar tracking residue",
+  "family": "scalar_unification",
+  "status": "reviewed_conditional",
+  "review_id": "2026-10-01-late-expansion-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2605.26116v2",
+      "locator": "Sec.4.2.2 Eqs.(4.18)-(4.23); Appendix A; source correction at Eq.(A.9)"
+    }
+  ],
+  "assumptions": [
+    "Baryon-free matter-scaling fixed-point F, constant beta, physical nonnegative x/y/energy fractions and the source KG/continuity convention.",
+    "3/(2lambda^2) and 3/8 are large-lambda approximations; baryon-inclusive generality remains unresolved because of Appendix signs/nonuniformity."
+  ],
+  "predictions": [
+    "On F, Omega_phi=(beta^2-beta lambda+3)/(lambda-beta)^2 with beta^2-beta lambda+3>=3/2.",
+    "At the illustrative lambda^2=40 the baryon-free existence boundary gives approximately 0.0406; the asymptotic floor is 0.0375, still above the source order-1% quiescence target.",
+    "A constant coupling cannot generate an additional potential slope, though it changes trajectory speed and the residue; no global theorem is claimed for field-dependent couplings or baryon transients."
+  ]
+}
