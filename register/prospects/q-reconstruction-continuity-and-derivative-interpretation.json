@@ -1,0 +1,87 @@
+{
+  "id": "q-reconstruction-continuity-and-derivative-interpretation",
+  "title": "Deceleration reconstruction",
+  "baseline": {
+    "label": "Flat ΛCDM reference",
+    "role": "working_assumption",
+    "scope": "ΛCDM supplies q_fid and the comparison likelihood model, not retained physical dark-energy equations after delta q is added. Standard early-physics continuation and compressed CMB summaries are extra conditional assumptions.",
+    "parameters": null,
+    "parameters_reason": "No candidate input set is registered. Source illustrative or fitted values are not adopted as prospect parameters."
+  },
+  "cosmology": {
+    "gravity": "Unspecified physical dynamics for the reconstruction. GR belongs to the fiducial interpretation; adding delta q does not specify stress-energy or a gravity theory.",
+    "geometry": "Flat homogeneous distance/FLRW kinematic framework, a0=1 and E=H/H0. This is a kinematic family, not a closed physical cosmology.",
+    "components": [
+      "Reference: pressureless matter and Λ in the displayed late-time q_fid; radiation is explicitly omitted there.",
+      "Baryon/matter densities and conventional radiation/recombination assumptions enter BAO/CMB-distance calculations, but do not close the reconstructed low-z stress-energy.",
+      "No independently defined added dark-energy field, fluid or modified-gravity sector."
+    ],
+    "modifications": [
+      "Finite-node cubic/quartic delta q in z, z/(1+z) or log(1+z), with a fixed-zero endpoint and cutoff.",
+      "The implied H(z) must be integrated and matched consistently; setting delta q=0 above cutoff only recovers q, not necessarily the same H normalization."
+    ],
+    "background": "With E(0)=1, E/E_fid=exp[integral delta q/(1+z) dz]. Exact same-parameter high-z recovery requires the integrated deviation to vanish or an explicit alternative matching prescription.",
+    "perturbations": "Absent: no physical fluid sound speed, stress, field or modified-gravity closure. Planck-derived compressed summaries do not restore full CMB perturbation information.",
+    "observables": [
+      "Minimal test: E(0), cutoff continuity and integrated deviation.",
+      "Separately evaluate qdot, jerk j and j+q with joint derivative uncertainty.",
+      "Source fits: DESI DR2 BAO, one SN compilation and Planck-derived distance summaries, with optional SH0ES; shared data are not independent evidence."
+    ]
+  },
+  "scope": [
+    "Audit author q→H matching/early radiation before interpretation or inference.",
+    "Lost scope: physical cosmology, perturbations, full CMB likelihood, numerical refit and acceleration-endpoint claims.",
+    "A fitted q upturn is not a calibrated finding of decreasing a_ddot, decreasing a_ddot/a or a future end of acceleration."
+  ],
+  "unknowns": [
+    "Author cutoff/radiation/recombination implementation.",
+    "Joint samples, derivative covariance and statistical regularity.",
+    "SN/SH0ES common-object/calibration covariance and validity of distance compression.",
+    "Current consumer capabilities uninspected."
+  ],
+  "combination_compatibility": {
+    "status": "not_assessed",
+    "basis": "Unchecked beyond the explicitly sourced branch; shared topic membership does not authorize mixing mechanisms."
+  },
+  "idea_ids": [
+    "lagrange-deceleration-deviation-reconstruction",
+    "conditional-q-upturn-not-acceleration-endpoint"
+  ],
+  "design_ids": [
+    "candidate-q-reconstruction-continuity-and-derivative-interpretation"
+  ],
+  "topic_ids": [
+    "kinematics",
+    "measurement-lineage"
+  ],
+  "paper_ids": [
+    "arxiv:2609.34239v1"
+  ],
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2609.34239v1",
+      "locator": "Sec.II, PDF pp.2-3, Eqs.(1)-(4): explicit flat ΛCDM q reference, radiation omission, finite interpolation and cutoff; original HTML q_fid/cutoff text.",
+      "url": "https://arxiv.org/abs/2609.34239v1",
+      "source_sha256": {
+        "html": "879dca4ee25ab96ddb0907f8a6e9b422a9508bac011b91a1b371fc1d77b4de5b",
+        "pdf": "51acde38caa9d338b209fbd09fafdeb10c3d1d6312376ad6e9547992fd735216"
+      }
+    },
+    {
+      "paper_id": "arxiv:2609.34239v1",
+      "locator": "Sec.III.C Eqs.(19)-(22): conditional CMB summaries; Sec.IV Fig.5 and Tables II-IV for conditional fitted feature and comparison evidence.",
+      "url": "https://arxiv.org/abs/2609.34239v1",
+      "source_sha256": {
+        "html": "879dca4ee25ab96ddb0907f8a6e9b422a9508bac011b91a1b371fc1d77b4de5b",
+        "pdf": "51acde38caa9d338b209fbd09fafdeb10c3d1d6312376ad6e9547992fd735216"
+      }
+    }
+  ],
+  "schema_version": 1,
+  "readiness": "blocked",
+  "review_id": "2026-10-01-prospect-baselines",
+  "kind": "single_mechanism",
+  "model_idea_ids": [
+    "lagrange-deceleration-deviation-reconstruction"
+  ]
+}

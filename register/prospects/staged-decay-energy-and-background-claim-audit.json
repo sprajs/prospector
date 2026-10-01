@@ -1,0 +1,89 @@
+{
+  "id": "staged-decay-energy-and-background-claim-audit",
+  "title": "Staged dark-sector decay",
+  "baseline": {
+    "label": "Flat GR · radiation + matter",
+    "role": "retained",
+    "scope": "Retain conventional radiation and matter outside a chosen dark cascade. In the primary Agrawal-like branch quintessence replaces Λ; ΛCDM is a comparison. The distinct Naidoo-like branch retains constant Λ and imposes a daughter EOS instead of deriving quintessence exchange.",
+    "parameters": null,
+    "parameters_reason": "No candidate input set is registered. Source illustrative or fitted values are not adopted as prospect parameters."
+  },
+  "cosmology": {
+    "gravity": "Conventional GR Friedmann equation in reduced-Planck units; no modified-gravity sector proposed.",
+    "geometry": "Flat homogeneous expansion is inferred from Eq.(5), H^2=sum(rho)/3 without a curvature term; the source does not give an explicit metric.",
+    "components": [
+      "Retained radiation and baryons plus other pressureless dark matter in rho_O.",
+      "A selected dark-matter fraction is a charged parent A that decays to neutral daughter B.",
+      "Primary branch: canonical quintessence chi, with a double-exponential potential and daughter-only mass dependence."
+    ],
+    "modifications": [
+      "Prescribed late dark-Higgs symmetry breaking activates A→2B; B then exchanges energy with chi.",
+      "Separate phenomenological Naidoo comparison: assigned w_B(a) and constant Λ; do not simultaneously retain that Λ and the primary quintessence branch.",
+      "Massive-vector SIDM sector and radial mediator are a separate proposed follow-up, not an established replacement for the cosmological dark-matter abundance."
+    ],
+    "background": "Retained A/B/chi source terms cancel in the displayed homogeneous system. Higgs/radial energy, recoil and pressure distributions are omitted; a closed trigger/transition energy budget is unresolved.",
+    "perturbations": "Source explicitly restricts the asserted Naidoo correspondence to background expansion. Growth, CMB/ISW, fifth-force and microscopic transition closure are not supplied by H(z) overlap.",
+    "observables": [
+      "Minimal test: retained-sector energy-source cancellation and common-normalization H(z).",
+      "Audit which observables/likelihoods actually match; no external fit evidence transfers automatically.",
+      "Separate SIDM follow-up: scattering only after units, velocity and identical-particle conventions are settled."
+    ]
+  },
+  "scope": [
+    "Audit conservation and branch identity before any controlled H(z) comparison.",
+    "Lost scope: Higgs dynamics, full transition energy budget, perturbations, likelihood refitting, fifth-force viability and halo formation.",
+    "The three associated ideas include a mechanism, an inference limit and a separate SIDM candidate; they do not establish one qualified combined cosmology."
+  ],
+  "unknowns": [
+    "Higgs trigger/transition/radial energy and branching.",
+    "Parent/daughter masses, recoil, pressure and production.",
+    "Perturbations, radiative stability, vector abundance/stability and statistical lineage.",
+    "Source SIDM units/relative velocity and current consumer capability."
+  ],
+  "combination_compatibility": {
+    "status": "not_assessed",
+    "basis": "Unchecked beyond the explicitly sourced branch; shared topic membership does not authorize mixing mechanisms."
+  },
+  "idea_ids": [
+    "staged-dark-decay-daughter-quintessence",
+    "background-match-does-not-transfer-fit-evidence",
+    "dark-higgs-vector-sidm-candidate"
+  ],
+  "design_ids": [
+    "candidate-staged-decay-energy-and-background-claim-audit"
+  ],
+  "topic_ids": [
+    "interacting-sectors",
+    "late-dark-energy"
+  ],
+  "paper_ids": [
+    "arxiv:2602.01543v2"
+  ],
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2602.01543v2",
+      "locator": "Secs.II-III.A, PDF pp.2-4, Eq.(1), Eqs.(2)-(12): fields, retained-sector sum and primary quintessence branch; original HTML Eq.(5).",
+      "url": "https://arxiv.org/abs/2602.01543v2",
+      "source_sha256": {
+        "html": "3e7db105a02cd169f84c66ddf3e2acd19878ecfa3345308db939d5a70ed93e4a",
+        "pdf": "2670793f717ef76316cf91105d4532c8e3535b00c2b7c0147cdbd602c6c38c3f"
+      }
+    },
+    {
+      "paper_id": "arxiv:2602.01543v2",
+      "locator": "Sec.III.B and IV.A, PDF pp.4-5, Eqs.(13)-(16): separate constant-Λ/daughter-EOS branch and explicit lack of perturbation correspondence; Sec.IV.B/Appendix for separate SIDM.",
+      "url": "https://arxiv.org/abs/2602.01543v2",
+      "source_sha256": {
+        "html": "3e7db105a02cd169f84c66ddf3e2acd19878ecfa3345308db939d5a70ed93e4a",
+        "pdf": "2670793f717ef76316cf91105d4532c8e3535b00c2b7c0147cdbd602c6c38c3f"
+      }
+    }
+  ],
+  "schema_version": 1,
+  "readiness": "blocked",
+  "review_id": "2026-10-01-prospect-baselines",
+  "kind": "single_mechanism",
+  "model_idea_ids": [
+    "staged-dark-decay-daughter-quintessence"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "unified-scalar-source-consistency-and-slope-screen",
+  "title": "Unified scalar dark energy",
+  "baseline": {
+    "label": "Flat GR · radiation + matter",
+    "role": "retained",
+    "scope": "Retain the source gravity, geometry and conventional matter/radiation. One canonical scalar supplies both early and late dark energy; a separate cosmological constant is absent from the displayed source closure. ΛCDM is a ruler/distance benchmark.",
+    "parameters": null,
+    "parameters_reason": "No candidate input set is registered. Source illustrative or fitted values are not adopted as prospect parameters."
+  },
+  "cosmology": {
+    "gravity": "Einstein-Hilbert action with canonical scalar; CDM may have a conformal coupling while other species remain minimally coupled. Printed action/sign conventions require reconciliation.",
+    "geometry": "Explicit spatially flat FLRW, source Sec.2 Eqs.(2.3)-(2.4).",
+    "components": [
+      "Retained uncoupled radiation and baryons.",
+      "Retained pressureless CDM, uncoupled in the minimal branch or exchanging energy with the scalar in the constant-coupling branch.",
+      "Scalar supplies early and late energy; no independently retained Λ in the source Friedmann sum."
+    ],
+    "modifications": [
+      "A positive canonical potential with an intermediate steepening shoulder is a proposed route between early tracking, depletion and late shallow behavior.",
+      "Positive finite exponential sums and constant coupling are separate restricted obstruction checks; they are not independently viable mechanisms being combined."
+    ],
+    "background": "Friedmann, continuity and Klein-Gordon equations define a proposed background after source sign conflicts are settled. The slope-variance identity and shoulder asymptotes alone do not establish timing or a complete trajectory.",
+    "perturbations": "Action suggests a perturbation framework but no admitted, validated CMB/likelihood closure follows from the slope screen. Constant-coupling baryon-free fixed points are not full baryon-inclusive solutions.",
+    "observables": [
+      "Minimal test: logarithmic potential slope/derivative, source continuity/sign consistency and shoulder asymptotes.",
+      "Possible later background test: energy fractions/H and distance/ruler effects after explicit initial inputs; no execution authorized by this record."
+    ]
+  },
+  "scope": [
+    "First settle printed coupling/effective-potential and double-exponential sign inconsistencies.",
+    "Lost scope: data inference, perturbation viability, UV completion, trajectory robustness and a demonstrated Hubble-tension resolution.",
+    "The algebraic obstruction applies only to positive exponential sums along monotonic increasing field motion; constant coupling conclusions have restricted fixed-point domains."
+  ],
+  "unknowns": [
+    "Globally consistent action/coupling signs and acceptance of reviewer-derived repairs.",
+    "Author CLASS/source inputs, initial amplitudes and numerical provenance.",
+    "Baryon expansion/stability validity and consumer capabilities."
+  ],
+  "combination_compatibility": {
+    "status": "not_assessed",
+    "basis": "Unchecked beyond the explicitly sourced branch; shared topic membership does not authorize mixing mechanisms."
+  },
+  "idea_ids": [
+    "unified-scalar-steep-steeper-shallow",
+    "positive-exponential-slope-variance-obstruction",
+    "constant-coupling-scalar-residual-floor"
+  ],
+  "design_ids": [
+    "candidate-unified-scalar-source-consistency-and-slope-screen"
+  ],
+  "topic_ids": [
+    "early-energy",
+    "interacting-sectors",
+    "late-dark-energy"
+  ],
+  "paper_ids": [
+    "arxiv:2605.26116v2"
+  ],
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2605.26116v2",
+      "locator": "Sec.2, PDF pp.3-4, Eqs.(2.1)-(2.12): explicit action, flat FLRW and radiation+baryon+CDM+scalar sum; original HTML #S2.E1-#S2.E12.",
+      "url": "https://arxiv.org/abs/2605.26116v2",
+      "source_sha256": {
+        "html": "f28f0ffce5f4441e7670fedbcfe48e88dbfdde9f2449a0dfb4b7ae4aacb973fb",
+        "pdf": "a9e5d04392b126c76cfe4055d5ed9ac9be6b35ec1f5f474c3bd65cdd45a68b0c"
+      }
+    },
+    {
+      "paper_id": "arxiv:2605.26116v2",
+      "locator": "Secs.4-5 and Appendix A: slope/fixed-point branches, Eqs.(5.11)-(5.18), reviewer correction record 2026-10-01-late-expansion-science.",
+      "url": "https://arxiv.org/abs/2605.26116v2",
+      "source_sha256": {
+        "html": "f28f0ffce5f4441e7670fedbcfe48e88dbfdde9f2449a0dfb4b7ae4aacb973fb",
+        "pdf": "a9e5d04392b126c76cfe4055d5ed9ac9be6b35ec1f5f474c3bd65cdd45a68b0c"
+      }
+    }
+  ],
+  "schema_version": 1,
+  "readiness": "blocked",
+  "review_id": "2026-10-01-prospect-baselines",
+  "kind": "single_mechanism",
+  "model_idea_ids": [
+    "unified-scalar-steep-steeper-shallow"
+  ]
+}

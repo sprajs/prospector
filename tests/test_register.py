@@ -55,7 +55,7 @@ class RegisterIntegrity(unittest.TestCase):
                 registry.strict_load(file)
 
     def test_missing_prospect_member_rejected(self):
-        self.mutate("register/prospects/early-energy.json", lambda p: p["paper_ids"].append("arxiv:0000.00000v1"))
+        self.mutate("register/topics/early-energy.json", lambda p: p["paper_ids"].append("arxiv:0000.00000v1"))
         with self.assertRaisesRegex(ValueError, "prospect missing paper"):
             self.validate()
 
@@ -135,6 +135,48 @@ class RegisterIntegrity(unittest.TestCase):
         paper["review_id"] = None
         paper["extraction"]["reading_level"] = "partial"
         self.assertEqual(reading_stage(paper), "partial")
+
+    def test_prospect_review_must_cover_its_sources(self):
+        self.mutate('register/prospects/ede-fixed-endpoint-ruler.json', lambda p: p.update(review_id='2026-10-01-late-expansion-science'))
+        with self.assertRaisesRegex(ValueError, 'prospect review does not cover'):
+            self.validate()
+
+    def test_prospect_cannot_attach_an_unrelated_design(self):
+        self.mutate('register/prospects/ede-fixed-endpoint-ruler.json', lambda p: p.update(design_ids=['candidate-timescape-tracker-distance-lineage']))
+        with self.assertRaisesRegex(ValueError, 'prospect design uses unrelated'):
+            self.validate()
+
+    def test_prospect_links_must_have_the_composition_review(self):
+        def change(g):
+            edge=next(e for e in g['edges'] if e['type']=='informs')
+            edge.update(status='provisional', review_id=None)
+        self.mutate('register/graph.json', change)
+        with self.assertRaisesRegex(ValueError, 'prospect accepted link lacks'):
+            self.validate()
+
+    def test_combined_prospect_cannot_skip_compatibility(self):
+        def change(p):
+            p.update(kind='combination', readiness='ready_for_consumer_review', unknowns=[])
+        self.mutate('register/prospects/ede-fixed-endpoint-ruler.json', change)
+        with self.assertRaisesRegex(ValueError, 'combined prospect has unchecked compatibility'):
+            self.validate()
+
+    def test_citation_cannot_use_metadata_as_original_evidence(self):
+        def change(p):
+            p['citations'][0]['source']['sha256'] = '0' * 64
+        self.mutate('register/citations.json', change)
+        with self.assertRaisesRegex(ValueError, 'citation lacks original-source receipt'):
+            self.validate()
+
+    def test_citation_cannot_claim_an_unregistered_version(self):
+        self.mutate('register/citations.json', lambda p: p['citations'][0].update(cited_version=99))
+        with self.assertRaisesRegex(ValueError, 'cited version missing'):
+            self.validate()
+
+    def test_duplicate_citation_rejected(self):
+        self.mutate('register/citations.json', lambda p: p['citations'].append(dict(p['citations'][0], id='duplicate')))
+        with self.assertRaisesRegex(ValueError, 'duplicate citation'):
+            self.validate()
 
 
 class AcquisitionBoundaries(unittest.TestCase):

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "citations": [
+    {
+      "id": "cite-1910.10739-1811.04083",
+      "from_paper_id": "arxiv:1910.10739v5",
+      "cited_arxiv_id": "1811.04083",
+      "cited_version": null,
+      "reference": "12",
+      "source": {
+        "role": "html",
+        "sha256": "1f6e23feb42188d99739287090d4078e8adf998e06e0db34cd9c361549eeb895",
+        "locator": "HTML References: [12]; bib.bib12; PDF reference [12]",
+        "url": "https://arxiv.org/html/1910.10739v5#bib.bib12"
+      }
+    },
+    {
+      "id": "cite-2605.26116-1811.04083",
+      "from_paper_id": "arxiv:2605.26116v2",
+      "cited_arxiv_id": "1811.04083",
+      "cited_version": null,
+      "reference": "59",
+      "source": {
+        "role": "html",
+        "sha256": "f28f0ffce5f4441e7670fedbcfe48e88dbfdde9f2449a0dfb4b7ae4aacb973fb",
+        "locator": "HTML References: Poulin et al. (2019); bib.bib58; PDF reference [59]",
+        "url": "https://arxiv.org/html/2605.26116v2#bib.bib58"
+      }
+    },
+    {
+      "id": "cite-2605.26116-2202.08291",
+      "from_paper_id": "arxiv:2605.26116v2",
+      "cited_arxiv_id": "2202.08291",
+      "cited_version": null,
+      "reference": "94",
+      "source": {
+        "role": "html",
+        "sha256": "f28f0ffce5f4441e7670fedbcfe48e88dbfdde9f2449a0dfb4b7ae4aacb973fb",
+        "locator": "HTML References: Sabla and Caldwell (2022); bib.bib93; PDF reference [94]",
+        "url": "https://arxiv.org/html/2605.26116v2#bib.bib93"
+      }
+    },
+    {
+      "id": "cite-2605.26116-2408.03229",
+      "from_paper_id": "arxiv:2605.26116v2",
+      "cited_arxiv_id": "2408.03229",
+      "cited_version": null,
+      "reference": "239",
+      "source": {
+        "role": "html",
+        "sha256": "f28f0ffce5f4441e7670fedbcfe48e88dbfdde9f2449a0dfb4b7ae4aacb973fb",
+        "locator": "HTML References: Sohail et al. (2025a); bib.bib232; PDF reference [239]",
+        "url": "https://arxiv.org/html/2605.26116v2#bib.bib232"
+      }
+    }
+  ],
+  "inspected_paper_ids": [
+    "arxiv:1811.04083v2",
+    "arxiv:1910.10739v5",
+    "arxiv:1009.5855v2",
+    "arxiv:2605.26116v2",
+    "arxiv:2602.01543v2",
+    "arxiv:2609.34239v1"
+  ],
+  "limitations": [
+    "Four explicit bibliography links to registered paper identities were verified in pinned original HTML. This is a bounded extraction, not a complete citation index.",
+    "References print base arXiv IDs; cited_version is null because the version was not specified. Website targets select a registered version for reading, without asserting that version was cited.",
+    "HTML uses author-year labels for 2605.26116v2; its anchors differ from the numeric PDF bibliography. Both locators are retained.",
+    "No registered-ID match found in an inspected source does not establish an absence of citations; discovery and extraction remain incomplete."
+  ]
+}

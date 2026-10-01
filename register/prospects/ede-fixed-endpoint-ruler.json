@@ -1,0 +1,85 @@
+{
+  "id": "ede-fixed-endpoint-ruler",
+  "title": "Scalar early energy",
+  "baseline": {
+    "label": "ΛCDM",
+    "role": "retained",
+    "scope": "The source retains the conventional cosmological sector and compares EDE fits with ΛCDM. The proposed minimal test uses a matched zero-EDE control; it does not reproduce those fitted cosmologies.",
+    "parameters": null,
+    "parameters_reason": "No candidate input set is registered. Source illustrative or fitted values are not adopted as prospect parameters."
+  },
+  "cosmology": {
+    "gravity": "Conventional Einstein/GR cosmology is the working interpretation of the source CLASS extension; no modified-gravity sector is proposed. Exact implementation still needs inspection.",
+    "geometry": "FLRW background for the proposed test. Flatness is a conventional interpretation of the source six-parameter fit without a curvature parameter, not an explicitly printed metric in this letter.",
+    "components": [
+      "Retained baryons and cold dark matter.",
+      "Retained photon/radiation and the source specified free-streaming neutrino sector.",
+      "Retained conventional late-time Λ sector; early scalar energy is additional."
+    ],
+    "modifications": [
+      "Alternative branch: Hubble-frozen scalar with (1-cos(phi/f))^n potential, followed by averaged oscillatory dilution.",
+      "Alternative branch: initially linear potential rolling toward zero, treated in the kinetic n→infinity limit. These alternatives are not two coexisting added fields."
+    ],
+    "background": "Source Eqs.(1)-(2) supply a frozen-then-diluting effective density/EOS. The proposed rho-normalized toy test is reviewer derived; Omega normalization and present closure remain unresolved.",
+    "perturbations": "Source model uses effective density/heat-flux perturbations and potential-dependent rest-frame sound speed. The minimal ruler test omits this closure, recombination and the fitted parameter compensation.",
+    "observables": [
+      "Minimal test: rho_phi, H, fractional early energy and fixed-endpoint r_s versus matched zero-EDE control.",
+      "Source fit: CMB spectra/lensing, BAO/growth, SN distances and H0 likelihood; no current-data reassessment."
+    ]
+  },
+  "scope": [
+    "Compare a necessary background ruler response at declared fixed densities, loading and endpoint.",
+    "Lost scope: exact scalar evolution/averaging, EDE perturbations, self-consistent recombination/drag and likelihood inference.",
+    "No Hubble-tension solution is established by lowering this ruler alone."
+  ],
+  "unknowns": [
+    "Exact source Omega normalization and code curvature/density closure.",
+    "Detailed slow-roll potential and validity of effective-fluid averaging.",
+    "Matched input set, endpoint, implementation, likelihood lineage and unknown shared covariance."
+  ],
+  "combination_compatibility": {
+    "status": "not_assessed",
+    "basis": "Unchecked beyond the explicitly sourced branch; shared topic membership does not authorize mixing mechanisms."
+  },
+  "idea_ids": [
+    "ede-oscillating-scalar",
+    "ede-slowly-rolling-scalar"
+  ],
+  "design_ids": [
+    "candidate-ede-fixed-endpoint-ruler"
+  ],
+  "topic_ids": [
+    "early-energy"
+  ],
+  "paper_ids": [
+    "arxiv:1811.04083v2"
+  ],
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:1811.04083v2",
+      "locator": "PDF pp.1-2: potential alternatives, Eqs.(1)-(2), perturbation paragraph and MCMC parameter/neutrino paragraph; original HTML Eqs.(1)-(2).",
+      "url": "https://arxiv.org/abs/1811.04083v2",
+      "source_sha256": {
+        "html": "b36bec38bc8fddabe5c70ad54f1400bf9c6272b043a9c9bbd3efdb0527310afd",
+        "pdf": "dfeb28f5917368fcaa43c7050f655317ee289d4049bcbd04c42010ed9411ce53"
+      }
+    },
+    {
+      "paper_id": "arxiv:1811.04083v2",
+      "locator": "PDF pp.3-5: compensation discussion, Tables I-II; ΛCDM is the model-comparison reference.",
+      "url": "https://arxiv.org/abs/1811.04083v2",
+      "source_sha256": {
+        "html": "b36bec38bc8fddabe5c70ad54f1400bf9c6272b043a9c9bbd3efdb0527310afd",
+        "pdf": "dfeb28f5917368fcaa43c7050f655317ee289d4049bcbd04c42010ed9411ce53"
+      }
+    }
+  ],
+  "schema_version": 1,
+  "readiness": "blocked",
+  "review_id": "2026-10-01-prospect-baselines",
+  "kind": "alternative_branches",
+  "model_idea_ids": [
+    "ede-oscillating-scalar",
+    "ede-slowly-rolling-scalar"
+  ]
+}

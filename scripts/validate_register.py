@@ -51,7 +51,7 @@ def records(folder, key):
 
 def validate():
     schemas = {name: strict_load(ROOT / "schemas" / (name + ".schema.json"))
-               for name in ["paper", "candidate-design", "prospect"]}
+               for name in ["paper", "candidate-design", "topic", "prospect", "citations"]}
     validators = {}
     for name, schema in schemas.items():
         Draft202012Validator.check_schema(schema)
@@ -61,6 +61,7 @@ def validate():
     reviews = records("register/reviews", "review_id")
     designs = records("designs", "design_id")
     scans = records("scans", "scan_id")
+    topics = records("register/topics", "id")
     prospects = records("register/prospects", "id")
     require(papers, "empty paper register")
     for ident, review in reviews.items():
@@ -119,19 +120,41 @@ def validate():
             require(evidence["paper_id"] in papers and evidence.get("locator"), f"invalid idea evidence: {ident}")
             require(evidence["paper_id"] in reviews[idea["review_id"]]["reviewed_papers"],
                     f"idea source was not reviewed: {ident}")
+    citations = strict_load(ROOT / "register/citations.json")
+    validators["citations"].validate(citations)
+    require(set(citations['inspected_paper_ids']).issubset(papers), "citation inspection references missing paper")
+    base_ids = {p['arxiv_id'] for p in papers.values()}
+    citation_ids, citation_pairs = set(), set()
+    for citation in citations['citations']:
+        ident, base = citation['from_paper_id'], citation['cited_arxiv_id']
+        require(ident in papers and base in base_ids, "citation references missing paper")
+        require(ident in citations['inspected_paper_ids'], "citation source was not inspected")
+        if citation['cited_version'] is not None:
+            require(f"arxiv:{base}v{citation['cited_version']}" in papers, "cited version missing from register")
+        require(base != papers[ident]['arxiv_id'], "self citation")
+        pair = (ident, base, citation['cited_version'])
+        require(citation['id'] not in citation_ids and pair not in citation_pairs, "duplicate citation")
+        citation_ids.add(citation['id']); citation_pairs.add(pair)
+        source = citation['source']
+        require(any(a['role'] == source['role'] and a['sha256'] == source['sha256']
+                    for a in papers[ident]['artifacts']), "citation lacks original-source receipt")
+        require(source['url'].split('#')[0] == papers[ident]['urls'][source['role']]
+                and '#' in source['url'], "citation source URL is not pinned or located")
     graph = strict_load(ROOT / "register/graph.json")
-    nodes = set(papers) | set(ideas)
+    nodes = set(papers) | set(ideas) | set(prospects)
     require(len(graph["nodes"]) == len(set(graph["nodes"])), "duplicate graph node")
     require(set(graph["nodes"]) == nodes, "graph node inventory mismatch")
     edge_ids = set()
     parents = {}
-    types = {"describes", "motivates", "specializes", "partial_overlap", "physically_distinct", "shares_data", "critiques", "updates"}
+    types = {"describes", "motivates", "specializes", "partial_overlap", "physically_distinct", "shares_data", "critiques", "updates", "informs"}
     for edge in graph["edges"]:
         require(edge["id"] not in edge_ids, "duplicate graph edge")
         edge_ids.add(edge["id"])
         require(edge["from"] in nodes and edge["to"] in nodes and edge["from"] != edge["to"], "invalid edge endpoints")
         require(edge["type"] in types and edge["status"] in {"reviewed", "provisional"}, "invalid edge type/status")
         require(edge.get("rationale") and edge.get("evidence"), "edge lacks evidence")
+        if edge["type"] == "informs":
+            require(edge["from"] in ideas and edge["to"] in prospects, "invalid prospect edge")
         if edge["status"] == "reviewed":
             require(edge.get("review_id") in reviews, "reviewed edge lacks Sol review")
         for evidence in edge["evidence"]:
@@ -169,9 +192,51 @@ def validate():
             path = (ROOT / request["path"]).resolve()
             require(path.is_relative_to(ROOT) and path.is_file(), f"invalid executable path: {ident}")
             require(hashlib.sha256(path.read_bytes()).hexdigest() == request["sha256"], f"request digest mismatch: {ident}")
-    grouped = set()
     for ident, prospect in prospects.items():
-        validators["prospect"].validate(prospect)
+        validators['prospect'].validate(prospect)
+        require(set(prospect['model_idea_ids']).issubset(prospect['idea_ids']), 'prospect model idea is outside its evidence ideas')
+        require(set(prospect['idea_ids']).issubset(ideas), 'prospect references missing idea')
+        require(set(prospect['paper_ids']).issubset(papers), 'prospect references missing paper')
+        require(set(prospect['design_ids']).issubset(designs), 'prospect references missing design')
+        require(set(prospect['topic_ids']).issubset(topics), 'prospect references missing topic')
+        if prospect['review_id'] is not None:
+            require(prospect['review_id'] in reviews, 'prospect lacks scientific review')
+            require(set(prospect['paper_ids']).issubset(reviews[prospect['review_id']]['reviewed_papers']),
+                    'prospect review does not cover its papers')
+        for source in prospect['source_evidence']:
+            require(source['paper_id'] in prospect['paper_ids'], 'prospect evidence outside its paper set')
+            paper = papers[source['paper_id']]
+            require(source['url'] == paper['urls']['abstract'], 'prospect source URL is not pinned')
+            hashes = source['source_sha256']
+            require(any(role in {'pdf','html'} for role in hashes), 'prospect lacks original source')
+            for role, digest in hashes.items():
+                require(any(a['role'] == role and a['sha256'] == digest for a in paper['artifacts']),
+                        'prospect source hash lacks receipt')
+        for design_id in prospect['design_ids']:
+            design = designs[design_id]
+            require(set(design['paper_ids']).issubset(prospect['paper_ids'])
+                    and set(design['idea_ids']).issubset(prospect['idea_ids']),
+                    'prospect design uses unrelated sources or ideas')
+        for edge in graph['edges']:
+            if edge['type'] != 'informs' or edge['to'] != ident:
+                continue
+            require(all(s['paper_id'] in prospect['paper_ids'] for s in edge['evidence']),
+                    'prospect edge uses unrelated source evidence')
+            if prospect['review_id'] is not None:
+                require(edge['status'] == 'reviewed' and edge['review_id'] == prospect['review_id'],
+                        'prospect accepted link lacks its scientific review')
+        links = {e['from'] for e in graph['edges'] if e['type'] == 'informs' and e['to'] == ident}
+        require(links == set(prospect['idea_ids']), 'prospect graph links disagree with ideas')
+        if prospect['readiness'] == 'ready_for_consumer_review':
+            require(prospect['review_id'] is not None and not prospect['unknowns'], 'prospect promotion has unresolved science')
+            if prospect['kind'] == 'combination':
+                require(prospect['combination_compatibility']['status'] == 'checked_compatible',
+                        'combined prospect has unchecked compatibility')
+            require(all(designs[d]['readiness'] == 'ready_for_consumer_review' for d in prospect['design_ids']),
+                    'prospect promotion lacks accepted design')
+    grouped = set()
+    for ident, prospect in topics.items():
+        validators["topic"].validate(prospect)
         require(set(prospect["paper_ids"]).issubset(papers), f"prospect missing paper: {ident}")
         require(set(prospect["idea_ids"]).issubset(ideas), f"prospect missing idea: {ident}")
         require(set(prospect["design_ids"]).issubset(designs), f"prospect missing design: {ident}")
@@ -217,7 +282,7 @@ def validate():
         if "new_versions" in scan:
             require(set(scan["new_versions"]).issubset(scan["registered_papers"]), "scan new version not registered")
     print(f"Valid register: {len(papers)} paper versions, {len(ideas)} ideas, "
-          f"{len(graph['edges'])} edges, {len(prospects)} prospects, {len(designs)} designs, {len(scans)} scans.")
+          f"{len(graph['edges'])} edges, {len(topics)} topics, {len(prospects)} prospects, {len(designs)} designs, {len(scans)} scans.")
 
 
 if __name__ == "__main__":

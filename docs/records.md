@@ -7,7 +7,9 @@ source identity and decisions so Codex can continue without a transcript.
 | --- | --- |
 | `register/papers/<version>.json` | Metadata, source receipts, screen, Luna extraction and review |
 | `register/ideas/<id>.json` | Reviewed mechanisms, assumptions, predictions and locators |
-| `register/prospects/<id>.json` | Navigation groups linking papers, ideas and investigations |
+| `register/topics/<id>.json` | Topic navigation groups |
+| `register/prospects/<id>.json` | Baseline cosmologies, modifications, scope and candidate investigations |
+| `register/citations.json` | Explicit bibliographic links and source evidence |
 | `register/reviews/<id>.json` | Sol source checks, corrections, overlap and limits |
 | `register/graph.json` | Typed evidence relationships |
 | `register/README.md`, `register/map.html` | Generated tree and interactive map |
@@ -54,15 +56,37 @@ with visible review corrections; accepted ideas/designs use the reviewed reading
 A printed source error and an algebraic repair have separate identities.
 
 Ideas have stable slug, title, family, source evidence, assumptions, predictions
-and review ID. Prospects have stable slug, title, scope and paper/idea/design ID
-arrays. Prospect membership is navigation, not a theory-equivalence judgement.
+and review ID. Topics have stable slug, title, scope and paper/idea/design ID
+arrays. Topic membership is navigation, not a theory-equivalence judgement.
 
-Graph nodes are all paper and idea IDs. Edges have unique ID, `from`, `to`, type,
+Prospects record baseline role (retained, comparison or working assumption),
+gravity, geometry, retained and modified sectors, background/perturbation closure,
+observables, scope and unknowns. Null parameters are intentional; registered
+numerical inputs belong to a candidate design. Source alternatives remain separate
+branches. Combining ideas requires conservation, equation/domain and input-lineage
+compatibility, not just shared topic membership. Constraint ideas may inform an
+investigation without becoming physical components.
+
+Graph nodes are all paper, idea and prospect IDs. Edges have unique ID, `from`, `to`, type,
 status, rationale, evidence and review ID. Types: `describes`, `motivates`,
 `specializes`, `partial_overlap`, `physically_distinct`, `shares_data`, `critiques`,
-`updates`. Reviewed edges require Sol provenance; uncertainty stays provisional.
+`updates`, `informs` (idea to prospect). Reviewed edges require Sol provenance; uncertainty stays provisional.
 Specialization points child to parent and must be acyclic. Other relationships
 can form cycles. Shared data is not an independent confirmation.
+
+## Citations and the site
+
+The citation schema requires explicit original-source evidence. Retain citing
+version, cited base ID, cited version only if printed, bibliography reference,
+source role/hash and pinned URL/anchor. Verify the reference directly; bibliography
+anchors and reference numbering can differ between HTML and PDF. Website links
+may select a registered version for reading, without asserting it was the cited
+version. The bounded citation index is incomplete; no link does not mean no citation.
+
+`site/data.json` projects scientific fields into the interface. Workflow/model
+provenance remains in canonical Git records. The site does not bundle abstracts;
+its bounded endpoint loads pinned arXiv descriptive metadata on demand, with an
+external abstract link when unavailable. See [site publication](site.md).
 
 ## Candidate investigations and continuation
 
