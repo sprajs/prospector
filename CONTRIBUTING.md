@@ -16,9 +16,11 @@ or handover. Requested repository changes should finish as reviewable PRs; split
 unrelated changes and explain dependencies. A large coherent change is welcome.
 Describe the problem, resulting behavior, source coverage and checks actually run.
 
-Before merging, obtain independent review and green applicable CI on the latest
-head and up-to-date base. A merge needs user authorization, including any standing
-authorization given for this repository. No additional reviewer count is imposed.
+The owner authorizes agents to review their own PRs in a separate deliberate
+pass and merge ready changes without another confirmation. Inspect the final
+diff, fix actionable findings and require green applicable CI on the latest
+integrated head and up-to-date base. A separate human reviewer is not required;
+scientific qualification and independence still need their own evidence.
 Do not push directly to `main` or force-push without a specific request. Literature
 search or batch authorization does not authorize an endless search, numerical
 experiment, scheduled automation or external message.
