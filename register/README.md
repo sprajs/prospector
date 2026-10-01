@@ -2,7 +2,7 @@
 
 35 paper versions · 15 ideas · 8 topics · 6 candidate prospects.
 
-[Open Prospector](https://prospector-cosmology.cocoa-bear-1707.chatgpt.site) · [Local map](map.html)
+[Open Prospector](https://prospector-cosmology.sprajs.chatgpt.site) · [Local map](map.html)
 
 ## Topics
 

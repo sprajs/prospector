@@ -36,7 +36,7 @@ def build():
     citations = strict_load(ROOT / 'register/citations.json')
     lines = ['# Register', '',
              f'{len(papers)} paper versions · {len(ideas)} ideas · {len(topics)} topics · {len(prospects)} candidate prospects.', '',
-             '[Open Prospector](https://prospector-cosmology.cocoa-bear-1707.chatgpt.site) · [Local map](map.html)', '',
+             '[Open Prospector](https://prospector-cosmology.sprajs.chatgpt.site) · [Local map](map.html)', '',
              '## Topics', '', '| Topic | Papers | Ideas |', '| --- | ---: | ---: |']
     for ident, topic in sorted(topics.items()):
         lines.append(f"| [{topic['title']}](topics/{ident}.json) | {len(topic['paper_ids'])} | {len(topic['idea_ids'])} |")

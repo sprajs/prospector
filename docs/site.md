@@ -1,6 +1,6 @@
 # Public site
 
-[Open Prospector](https://prospector-cosmology.cocoa-bear-1707.chatgpt.site).
+[Open Prospector](https://prospector-cosmology.sprajs.chatgpt.site).
 
 `site/` holds the source interface, scientific data projection and abstract loader.
 `register/map.html` is the generated local mirror; a plain file server can display

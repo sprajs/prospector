@@ -1,4 +1,4 @@
-[**Open Prospector →**](https://prospector-cosmology.cocoa-bear-1707.chatgpt.site)
+[**Open Prospector →**](https://prospector-cosmology.sprajs.chatgpt.site)
 
 # Prospector
 

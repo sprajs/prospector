@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "project_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8",
+  "url": "https://prospector-cosmology.sprajs.chatgpt.site",
+  "access_mode": "public",
+  "source_commit_sha": "74e5ecb105dc5c6203d8525ed3bed2f145c1d90c",
+  "version_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8~appgver_844063e94be081919ba6e4f18315941d",
+  "version_number": 1,
+  "deployment_id": "appgdep_6abe3a078a1c81919eeebf00fa429618",
+  "deployment_status": "succeeded",
+  "published_utc": "2026-10-01T10:48:09.851352+00:00",
+  "artifact_sha256": "sha256:daea8136c2a06ed903d14fc66bc95669a0d9a609466cfe1cee93850380e3b743"
+}
