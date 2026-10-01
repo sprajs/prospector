@@ -103,10 +103,29 @@ copied abstracts, large tables, chains, credentials and complete worker logs loc
 and ignored. Public local paths are relative. Ignore rules do not grant rights
 or remove previously tracked files.
 
-Group papers under `register/prospects/` by question/mechanism. Groups are
-navigation aids, not equivalence claims. Papers/ideas can have multiple groups.
-The source of relationships is `register/graph.json`; generate the browsing tree
-and map from it. Use stable idea IDs and reviewed source evidence.
+Group papers under `register/topics/` by question/mechanism. Topics are
+navigation aids, not equivalence claims. Papers/ideas can have multiple topics.
+Actual `register/prospects/` records describe candidate cosmologies: explicit
+baseline, added/replaced/retained sectors, source ideas, observables, lost scope
+and unknowns. Use ΛCDM as an explicitly declared working reference when no
+better specification is available; do not attribute that choice to an author or
+replace a source's different geometry or gravity. Keep comparison baselines
+separate from retained physics. Alternative branches are not simultaneous fields.
+
+A combined prospect needs explicit gravity/geometry, energy conservation,
+parameter and initial-condition compatibility, background closure, perturbation
+closure and observation lineage. Record unresolved compatibility and block
+promotion. Source criticism and constraints can inform a prospect without being
+added physical components. Use `informs` edges from ideas to prospects.
+
+During each reading, collect explicit bibliography links to registered papers
+in `register/citations.json`: citing pinned version, cited base ID/version if
+printed, reference label, original-source hash and bibliography anchor. Do not
+infer citation from overlap. A base ID is not proof that our registered version
+was cited. Keep HTML author-year anchors distinct from PDF reference numbering.
+Record bounded citation coverage; missing links are unknown, not absent.
+The source of physical relationships is `register/graph.json`; bibliography
+links live in `register/citations.json`. Generate the tree and site from these. Use stable idea IDs and reviewed source evidence.
 
 Sol checks degrees of freedom, equations, parameterization, domains, background
 and perturbation closure, and observables before accepting equivalence. Edges
@@ -149,7 +168,14 @@ uv run python scripts/validate_register.py
 uv run python scripts/build_register.py
 ```
 
-Check views, source hashes, local links, ignored storage and Git diff. Structural
+Check views, source hashes, local links, ignored storage and Git diff.
+The public Site is the primary interface. Keep it compact and scientific: topic
+trees, paper/citation links, baseline cosmologies and prospects. No agent/model
+badges, marketing or explanatory filler in the interface. Preserve scientific
+conditioning and unresolved physics in the selected record's details.
+Follow `docs/site.md` to publish updates to the same public Site; use its exact
+saved project ID, public-only export and ignored build/source checkout. Never
+publish `.work`, papers, raw abstracts, full sources or worker transcripts. Structural
 validation is not scientific validation. Report new versions, actual Luna reads,
 Sol reviews, new/overlapping ideas, readiness and material limitations.
 

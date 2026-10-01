@@ -1,0 +1,85 @@
+{
+  "id": "nede-piecewise-background",
+  "title": "Triggered dark vacuum transition",
+  "baseline": {
+    "label": "ΛCDM",
+    "role": "retained",
+    "scope": "Source adds NEDE to the six conventional parameters and compares with ΛCDM. The minimal test replaces the microscopic transition by a declared instantaneous fluid branch and uses a matched zero-NEDE control.",
+    "parameters": null,
+    "parameters_reason": "No candidate input set is registered. Source illustrative or fitted values are not adopted as prospect parameters."
+  },
+  "cosmology": {
+    "gravity": "GR Friedmann evolution and covariant metric/fluid matching; source Eqs.(7),(12)-(14).",
+    "geometry": "Homogeneous FLRW background with synchronous-gauge perturbations. Standard flat ΛCDM implementation is inferred from the six-parameter set; exact code configuration is uninspected.",
+    "components": [
+      "Retained baryons, CDM, photons/radiation, the specified neutrino sector and conventional late Λ.",
+      "Added tunneling field psi and subdominant ultralight trigger phi."
+    ],
+    "modifications": [
+      "False-vacuum energy converts into an effective constant-w fluid at a trigger-defined transition.",
+      "The source fit fixes the post-transition EOS branch; the minimal background test does not derive it from bubble collisions."
+    ],
+    "background": "Continuous density and H with a pressure-induced Hdot jump. Source normalizes NEDE relative to the true vacuum; the extra false-vacuum energy must not be confused with the retained late Λ.",
+    "perturbations": "Source closes the effective fluid with rest-frame sound speed squared equal to its EOS and matches fluctuations on a constant-trigger surface. The minimal piecewise test omits trigger evolution and perturbation matching.",
+    "observables": [
+      "Minimal test: density/H matching, signed Hdot jump, continuity residuals, post-transition dilution and fixed-endpoint r_s.",
+      "Source: CMB/lensing, BAO/growth, SN, BBN and H0 likelihoods; GW consequences are proposed rather than computed here."
+    ]
+  },
+  "scope": [
+    "Audit conservation and junction conventions in a piecewise background.",
+    "Lost scope: tunneling/percolation, bubble coarse-graining, trigger fluctuations, finite transition corrections and CMB/LSS/GW inference.",
+    "Background NEDE is not the full trigger-consistent model."
+  ],
+  "unknowns": [
+    "Microscopic realization of the post-collision EOS and finite-duration corrections.",
+    "Residual trigger dust and hypersurface robustness.",
+    "Exact code curvature/closure, initial data, reference outputs, likelihood files and cross-covariance."
+  ],
+  "combination_compatibility": {
+    "status": "not_assessed",
+    "basis": "Unchecked beyond the explicitly sourced branch; shared topic membership does not authorize mixing mechanisms."
+  },
+  "idea_ids": [
+    "nede-triggered-first-order-transition",
+    "nede-trigger-perturbation-matching"
+  ],
+  "design_ids": [
+    "candidate-nede-piecewise-background"
+  ],
+  "topic_ids": [
+    "early-energy",
+    "interacting-sectors"
+  ],
+  "paper_ids": [
+    "arxiv:1910.10739v5"
+  ],
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:1910.10739v5",
+      "locator": "PDF pp.2-4: field potential, Eqs.(4)-(7) and (8)-(14); original HTML matching sections.",
+      "url": "https://arxiv.org/abs/1910.10739v5",
+      "source_sha256": {
+        "html": "1f6e23feb42188d99739287090d4078e8adf998e06e0db34cd9c361549eeb895",
+        "pdf": "ddcf5ed66426080aa5f56305748f9d5c459dbf86b6c4eec6c252b1f6a848f890"
+      }
+    },
+    {
+      "paper_id": "arxiv:1910.10739v5",
+      "locator": "PDF pp.4-5, Data Analysis: added versus six conventional parameters, trigger relation, neutrinos and dataset descriptions.",
+      "url": "https://arxiv.org/abs/1910.10739v5",
+      "source_sha256": {
+        "html": "1f6e23feb42188d99739287090d4078e8adf998e06e0db34cd9c361549eeb895",
+        "pdf": "ddcf5ed66426080aa5f56305748f9d5c459dbf86b6c4eec6c252b1f6a848f890"
+      }
+    }
+  ],
+  "schema_version": 1,
+  "readiness": "blocked",
+  "review_id": "2026-10-01-prospect-baselines",
+  "kind": "single_mechanism",
+  "model_idea_ids": [
+    "nede-triggered-first-order-transition",
+    "nede-trigger-perturbation-matching"
+  ]
+}

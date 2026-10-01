@@ -1,0 +1,31 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Bibliographic citation evidence",
+  "type":"object","additionalProperties":false,
+  "required":["schema_version","citations","inspected_paper_ids","limitations"],
+  "properties":{
+    "schema_version":{"const":1},
+    "inspected_paper_ids":{"type":"array","uniqueItems":true,"items":{"type":"string"}},
+    "limitations":{"type":"array","items":{"type":"string","minLength":1}},
+    "citations":{"type":"array","items":{
+      "type":"object","additionalProperties":false,
+      "required":["id","from_paper_id","cited_arxiv_id","cited_version","reference","source"],
+      "properties":{
+        "id":{"type":"string","minLength":1},
+        "from_paper_id":{"type":"string"},
+        "cited_arxiv_id":{"type":"string","pattern":"^(?:[0-9]{4}\\.[0-9]{4,5}|[a-z-]+/[0-9]{7})$"},
+        "cited_version":{"type":["integer","null"],"minimum":1},
+        "reference":{"type":"string","minLength":1},
+        "source":{"type":"object","additionalProperties":false,
+          "required":["role","sha256","locator","url"],
+          "properties":{
+            "role":{"enum":["html","pdf"]},
+            "sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"},
+            "locator":{"type":"string","minLength":1},
+            "url":{"type":"string","format":"uri"}
+          }
+        }
+      }
+    }}
+  }
+}

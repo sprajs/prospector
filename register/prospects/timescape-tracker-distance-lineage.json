@@ -1,0 +1,83 @@
+{
+  "id": "timescape-tracker-distance-lineage",
+  "title": "Timescape distances",
+  "baseline": {
+    "label": "Two-scale dust tracker",
+    "role": "retained",
+    "scope": "Retain the source timescape background and observer prescription. Spatially flat ΛCDM is a comparison cosmology for SN fits, not a retained physical sector or a substitution for timescape.",
+    "parameters": null,
+    "parameters_reason": "No candidate input set is registered. Source illustrative or fitted values are not adopted as prospect parameters."
+  },
+  "cosmology": {
+    "gravity": "Statistical Buchert averaging of Einstein equations for dust, plus an operational clock/observer prescription. The effective metrics are explicitly not exact Einstein-equation solutions.",
+    "geometry": "Spatially flat wall regions, negatively curved voids, evolving volume fractions, volume-average time t and wall proper time tau. The dressed null cone is not a global flat FLRW geometry.",
+    "components": [
+      "Retained coarse-grained pressureless matter/dust; this distance model does not independently resolve a baryon/CDM split.",
+      "Bare curvature and kinematic backreaction enter averaged closure.",
+      "No homogeneous Λ or dark-energy fluid in the timescape dust closure; radiation-era perturbation/recombination physics is not supplied by this SN model."
+    ],
+    "modifications": [
+      "Two-region averaging and lapse dt/dtau distinguish bare from dressed H and matter parameters.",
+      "Tracker specialization supplies the proposed distance test; source general solutions remain broader."
+    ],
+    "background": "Bare matter+curvature+backreaction closure and wall-observer dressing are linked by source Eqs.(7)-(11). Verified tracker f_v(t), lapse and observed z(t) are still required; no FLRW time-redshift substitution is permissible.",
+    "perturbations": "No closed general perturbation/CMB/line-of-sight system is admitted for this candidate. Effective average metrics do not establish a unique underlying spacetime or all observations.",
+    "observables": [
+      "Minimal test: dressed luminosity distance and conditional common-object SN reduction/cut sensitivity.",
+      "Bare and dressed H/q may be compared only with their respective clock conventions.",
+      "Approximate source CMB/BAO matching carries unreworked standard-model reduction assumptions."
+    ]
+  },
+  "scope": [
+    "Test analytic versus independently integrated tracker distances with model-consistent redshift mapping.",
+    "Lost scope: general Buchert initial conditions, exact spacetime, local line-of-sight structure and full SN retraining/selection.",
+    "Conditional relative SN comparison does not establish absolute H0 or causal reduction bias."
+  ],
+  "unknowns": [
+    "Primary tracker mapping/reference and c restoration.",
+    "Common-event photometry, calibrations, extinction priors, selection, covariance and nuisance normalization.",
+    "Full model-consistent BAO/CMB reductions and modern observational constraints."
+  ],
+  "combination_compatibility": {
+    "status": "not_assessed",
+    "basis": "Unchecked beyond the explicitly sourced branch; shared topic membership does not authorize mixing mechanisms."
+  },
+  "idea_ids": [
+    "timescape-bare-dressed"
+  ],
+  "design_ids": [
+    "candidate-timescape-tracker-distance-lineage"
+  ],
+  "topic_ids": [
+    "inhomogeneity",
+    "measurement-lineage"
+  ],
+  "paper_ids": [
+    "arxiv:1009.5855v2"
+  ],
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:1009.5855v2",
+      "locator": "Sec.2, PDF pp.3-4: regional geometry/dust, Eqs.(1)-(11) and explicit effective-metric limitation; original PDF pages visually checked in this pass.",
+      "url": "https://arxiv.org/abs/1009.5855v2",
+      "source_sha256": {
+        "pdf": "4ba8d7f2a16b2148b73ec1556fda1f4071f129f9c76e20b5b84d30086df5141d"
+      }
+    },
+    {
+      "paper_id": "arxiv:1009.5855v2",
+      "locator": "Sec.2, PDF p.5: tracker specialization, Eqs.(12)-(17), SN-scale domain; Secs.3-5 for fitter/data dependencies.",
+      "url": "https://arxiv.org/abs/1009.5855v2",
+      "source_sha256": {
+        "pdf": "4ba8d7f2a16b2148b73ec1556fda1f4071f129f9c76e20b5b84d30086df5141d"
+      }
+    }
+  ],
+  "schema_version": 1,
+  "readiness": "blocked",
+  "review_id": "2026-10-01-prospect-baselines",
+  "kind": "single_mechanism",
+  "model_idea_ids": [
+    "timescape-bare-dressed"
+  ]
+}

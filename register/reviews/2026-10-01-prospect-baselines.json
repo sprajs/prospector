@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-01-prospect-baselines",
+  "review_kind": "targeted_baseline_and_candidate_composition",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "high",
+  "agent_id": "/root/prospect_baselines",
+  "actual_backend_identity": null,
+  "reviewed_utc": "2026-10-01T10:10:30.634541+00:00",
+  "packet_sha256": "b4d4cd809af074f5040f6472114bc2577dfce6cf6767c7f3e4750ee54f60bef7",
+  "reviewed_papers": [
+    "arxiv:1811.04083v2",
+    "arxiv:1910.10739v5",
+    "arxiv:1009.5855v2",
+    "arxiv:2605.26116v2",
+    "arxiv:2602.01543v2",
+    "arxiv:2609.34239v1"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:1811.04083v2",
+      "source_hashes": {
+        "html": "b36bec38bc8fddabe5c70ad54f1400bf9c6272b043a9c9bbd3efdb0527310afd",
+        "pdf": "dfeb28f5917368fcaa43c7050f655317ee289d4049bcbd04c42010ed9411ce53",
+        "extracted_text": "e256b519abad18afa46bfe27cb5e1dc1d1543afadcfe294a4cb22f3c471076dd"
+      },
+      "coverage": {
+        "main_text": "Targeted baseline, gravity, geometry, components and closure passages; no new full reading claim.",
+        "limits": "Existing complete readings and original-source science reviews remain the wider coverage evidence."
+      }
+    },
+    {
+      "paper_id": "arxiv:1910.10739v5",
+      "source_hashes": {
+        "html": "1f6e23feb42188d99739287090d4078e8adf998e06e0db34cd9c361549eeb895",
+        "pdf": "ddcf5ed66426080aa5f56305748f9d5c459dbf86b6c4eec6c252b1f6a848f890",
+        "extracted_text": "2fa7d750b2bbe4296c1fd849fe72cfcc009616a7a80c7a2f447769e318f76a62"
+      },
+      "coverage": {
+        "main_text": "Targeted baseline, gravity, geometry, components and closure passages; no new full reading claim.",
+        "limits": "Existing complete readings and original-source science reviews remain the wider coverage evidence."
+      }
+    },
+    {
+      "paper_id": "arxiv:1009.5855v2",
+      "source_hashes": {
+        "pdf": "4ba8d7f2a16b2148b73ec1556fda1f4071f129f9c76e20b5b84d30086df5141d",
+        "extracted_text": "bccbaf5b48b1d2783084e5c82159770ae5dbf25d202d13416f7302c15aefd802"
+      },
+      "coverage": {
+        "main_text": "Targeted baseline, gravity, geometry, components and closure passages; no new full reading claim.",
+        "limits": "Existing complete readings and original-source science reviews remain the wider coverage evidence."
+      }
+    },
+    {
+      "paper_id": "arxiv:2605.26116v2",
+      "source_hashes": {
+        "html": "f28f0ffce5f4441e7670fedbcfe48e88dbfdde9f2449a0dfb4b7ae4aacb973fb",
+        "pdf": "a9e5d04392b126c76cfe4055d5ed9ac9be6b35ec1f5f474c3bd65cdd45a68b0c",
+        "extracted_text": "82878f7f19bacbd5f6745d6a79b345d6e2979b02807dd70f0dfcc1145d42b5de"
+      },
+      "coverage": {
+        "main_text": "Targeted baseline, gravity, geometry, components and closure passages; no new full reading claim.",
+        "limits": "Existing complete readings and original-source science reviews remain the wider coverage evidence."
+      }
+    },
+    {
+      "paper_id": "arxiv:2602.01543v2",
+      "source_hashes": {
+        "html": "3e7db105a02cd169f84c66ddf3e2acd19878ecfa3345308db939d5a70ed93e4a",
+        "pdf": "2670793f717ef76316cf91105d4532c8e3535b00c2b7c0147cdbd602c6c38c3f",
+        "extracted_text": "b6fde695ea504fc2b5e5e11c6222225c134973e72420597fdfb8b13dad285a2c"
+      },
+      "coverage": {
+        "main_text": "Targeted baseline, gravity, geometry, components and closure passages; no new full reading claim.",
+        "limits": "Existing complete readings and original-source science reviews remain the wider coverage evidence."
+      }
+    },
+    {
+      "paper_id": "arxiv:2609.34239v1",
+      "source_hashes": {
+        "html": "879dca4ee25ab96ddb0907f8a6e9b422a9508bac011b91a1b371fc1d77b4de5b",
+        "pdf": "51acde38caa9d338b209fbd09fafdeb10c3d1d6312376ad6e9547992fd735216",
+        "extracted_text": "928d7cc5bdf84e2624631dc080475ec03c7a3daca410e23ab365510de0e48d7a"
+      },
+      "coverage": {
+        "main_text": "Targeted baseline, gravity, geometry, components and closure passages; no new full reading claim.",
+        "limits": "Existing complete readings and original-source science reviews remain the wider coverage evidence."
+      }
+    }
+  ],
+  "corrections": [],
+  "limitations": [
+    "Targeted source and composition checks; no numerical run, independent reproduction, likelihood refit or mixed-model compatibility established.",
+    "Null parameters are deliberate: no candidate input set is adopted from fitted or illustrative values."
+  ]
+}

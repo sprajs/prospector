@@ -1,17 +1,227 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Prospector navigation group",
+  "title": "Candidate cosmology prospect",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "id", "title", "scope", "membership_basis", "paper_ids", "idea_ids", "design_ids"],
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "kind",
+    "readiness",
+    "baseline",
+    "cosmology",
+    "scope",
+    "unknowns",
+    "combination_compatibility",
+    "idea_ids",
+    "design_ids",
+    "topic_ids",
+    "paper_ids",
+    "review_id",
+    "source_evidence",
+    "model_idea_ids"
+  ],
   "properties": {
-    "schema_version": {"const": 1},
-    "id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
-    "title": {"type": "string", "minLength": 1},
-    "scope": {"type": "string", "minLength": 1},
-    "membership_basis": {"type": "string", "minLength": 1},
-    "paper_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
-    "idea_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
-    "design_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}
+    "schema_version": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": [
+        "single_mechanism",
+        "alternative_branches",
+        "combination"
+      ]
+    },
+    "readiness": {
+      "enum": [
+        "blocked",
+        "needs_review",
+        "ready_for_consumer_review"
+      ]
+    },
+    "baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "role",
+        "scope",
+        "parameters",
+        "parameters_reason"
+      ],
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "enum": [
+            "retained",
+            "comparison",
+            "working_assumption"
+          ]
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parameters": {
+          "type": "null"
+        },
+        "parameters_reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "cosmology": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gravity",
+        "geometry",
+        "components",
+        "modifications",
+        "background",
+        "perturbations",
+        "observables"
+      ],
+      "properties": {
+        "gravity": {
+          "type": "string",
+          "minLength": 1
+        },
+        "geometry": {
+          "type": "string",
+          "minLength": 1
+        },
+        "components": {
+          "$ref": "#/$defs/notes"
+        },
+        "modifications": {
+          "$ref": "#/$defs/notes"
+        },
+        "background": {
+          "type": "string",
+          "minLength": 1
+        },
+        "perturbations": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observables": {
+          "$ref": "#/$defs/notes"
+        }
+      }
+    },
+    "scope": {
+      "$ref": "#/$defs/notes"
+    },
+    "unknowns": {
+      "$ref": "#/$defs/notes"
+    },
+    "combination_compatibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "basis"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "not_assessed",
+            "source_coherent",
+            "checked_compatible"
+          ]
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "idea_ids": {
+      "$ref": "#/$defs/ids"
+    },
+    "design_ids": {
+      "$ref": "#/$defs/ids"
+    },
+    "topic_ids": {
+      "$ref": "#/$defs/ids"
+    },
+    "paper_ids": {
+      "$ref": "#/$defs/ids"
+    },
+    "review_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "paper_id",
+          "locator",
+          "url",
+          "source_sha256"
+        ],
+        "properties": {
+          "paper_id": {
+            "type": "string"
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "source_sha256": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        }
+      }
+    },
+    "model_idea_ids": {
+      "$ref": "#/$defs/ids"
+    }
+  },
+  "$defs": {
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    }
   }
 }

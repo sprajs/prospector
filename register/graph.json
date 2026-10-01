@@ -50,7 +50,13 @@
     "supernova-reduction-selection-dependence",
     "timescape-bare-dressed",
     "transient-pre-recombination-energy",
-    "unified-scalar-steep-steeper-shallow"
+    "unified-scalar-steep-steeper-shallow",
+    "ede-fixed-endpoint-ruler",
+    "nede-piecewise-background",
+    "timescape-tracker-distance-lineage",
+    "unified-scalar-source-consistency-and-slope-screen",
+    "staged-decay-energy-and-background-claim-audit",
+    "q-reconstruction-continuity-and-derivative-interpretation"
   ],
   "edges": [
     {
@@ -702,6 +708,253 @@
         }
       ],
       "rationale": "Both inherit Planck-2018 observations, although compressed distance summaries here differ from the existing NEDE full anisotropy/lensing likelihood. Shared observed sky is not independent confirmation; compression cross-covariance and SN common-object overlap are uncomputed."
+    },
+    {
+      "id": "informs-ede-oscillating-scalar-ede-fixed-endpoint-ruler",
+      "from": "ede-oscillating-scalar",
+      "to": "ede-fixed-endpoint-ruler",
+      "type": "informs",
+      "status": "reviewed",
+      "review_id": "2026-10-01-prospect-baselines",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1811.04083v2",
+          "locator": "PDF pp.1-2: potential alternatives, Eqs.(1)-(2), perturbation paragraph and MCMC parameter/neutrino paragraph; original HTML Eqs.(1)-(2)."
+        },
+        {
+          "paper_id": "arxiv:1811.04083v2",
+          "locator": "PDF pp.3-5: compensation discussion, Tables I-II; ΛCDM is the model-comparison reference."
+        }
+      ],
+      "rationale": "This idea informs the candidate investigation. Scope, alternative branches, baseline and unresolved closure are recorded in the prospect; this does not assert a complete or tested combined cosmology."
+    },
+    {
+      "id": "informs-ede-slowly-rolling-scalar-ede-fixed-endpoint-ruler",
+      "from": "ede-slowly-rolling-scalar",
+      "to": "ede-fixed-endpoint-ruler",
+      "type": "informs",
+      "status": "reviewed",
+      "review_id": "2026-10-01-prospect-baselines",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1811.04083v2",
+          "locator": "PDF pp.1-2: potential alternatives, Eqs.(1)-(2), perturbation paragraph and MCMC parameter/neutrino paragraph; original HTML Eqs.(1)-(2)."
+        },
+        {
+          "paper_id": "arxiv:1811.04083v2",
+          "locator": "PDF pp.3-5: compensation discussion, Tables I-II; ΛCDM is the model-comparison reference."
+        }
+      ],
+      "rationale": "This idea informs the candidate investigation. Scope, alternative branches, baseline and unresolved closure are recorded in the prospect; this does not assert a complete or tested combined cosmology."
+    },
+    {
+      "id": "informs-nede-triggered-first-order-transition-nede-piecewise-background",
+      "from": "nede-triggered-first-order-transition",
+      "to": "nede-piecewise-background",
+      "type": "informs",
+      "status": "reviewed",
+      "review_id": "2026-10-01-prospect-baselines",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1910.10739v5",
+          "locator": "PDF pp.2-4: field potential, Eqs.(4)-(7) and (8)-(14); original HTML matching sections."
+        },
+        {
+          "paper_id": "arxiv:1910.10739v5",
+          "locator": "PDF pp.4-5, Data Analysis: added versus six conventional parameters, trigger relation, neutrinos and dataset descriptions."
+        }
+      ],
+      "rationale": "This idea informs the candidate investigation. Scope, alternative branches, baseline and unresolved closure are recorded in the prospect; this does not assert a complete or tested combined cosmology."
+    },
+    {
+      "id": "informs-nede-trigger-perturbation-matching-nede-piecewise-background",
+      "from": "nede-trigger-perturbation-matching",
+      "to": "nede-piecewise-background",
+      "type": "informs",
+      "status": "reviewed",
+      "review_id": "2026-10-01-prospect-baselines",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1910.10739v5",
+          "locator": "PDF pp.2-4: field potential, Eqs.(4)-(7) and (8)-(14); original HTML matching sections."
+        },
+        {
+          "paper_id": "arxiv:1910.10739v5",
+          "locator": "PDF pp.4-5, Data Analysis: added versus six conventional parameters, trigger relation, neutrinos and dataset descriptions."
+        }
+      ],
+      "rationale": "This idea informs the candidate investigation. Scope, alternative branches, baseline and unresolved closure are recorded in the prospect; this does not assert a complete or tested combined cosmology."
+    },
+    {
+      "id": "informs-timescape-bare-dressed-timescape-tracker-distance-lineage",
+      "from": "timescape-bare-dressed",
+      "to": "timescape-tracker-distance-lineage",
+      "type": "informs",
+      "status": "reviewed",
+      "review_id": "2026-10-01-prospect-baselines",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1009.5855v2",
+          "locator": "Sec.2, PDF pp.3-4: regional geometry/dust, Eqs.(1)-(11) and explicit effective-metric limitation; original PDF pages visually checked in this pass."
+        },
+        {
+          "paper_id": "arxiv:1009.5855v2",
+          "locator": "Sec.2, PDF p.5: tracker specialization, Eqs.(12)-(17), SN-scale domain; Secs.3-5 for fitter/data dependencies."
+        }
+      ],
+      "rationale": "This idea informs the candidate investigation. Scope, alternative branches, baseline and unresolved closure are recorded in the prospect; this does not assert a complete or tested combined cosmology."
+    },
+    {
+      "id": "informs-unified-scalar-steep-steeper-shallow-unified-scalar-source-consistency-and-slope-screen",
+      "from": "unified-scalar-steep-steeper-shallow",
+      "to": "unified-scalar-source-consistency-and-slope-screen",
+      "type": "informs",
+      "status": "reviewed",
+      "review_id": "2026-10-01-prospect-baselines",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2605.26116v2",
+          "locator": "Sec.2, PDF pp.3-4, Eqs.(2.1)-(2.12): explicit action, flat FLRW and radiation+baryon+CDM+scalar sum; original HTML #S2.E1-#S2.E12."
+        },
+        {
+          "paper_id": "arxiv:2605.26116v2",
+          "locator": "Secs.4-5 and Appendix A: slope/fixed-point branches, Eqs.(5.11)-(5.18), reviewer correction record 2026-10-01-late-expansion-science."
+        }
+      ],
+      "rationale": "This idea informs the candidate investigation. Scope, alternative branches, baseline and unresolved closure are recorded in the prospect; this does not assert a complete or tested combined cosmology."
+    },
+    {
+      "id": "informs-positive-exponential-slope-variance-obstruction-unified-scalar-source-consistency-and-slope-screen",
+      "from": "positive-exponential-slope-variance-obstruction",
+      "to": "unified-scalar-source-consistency-and-slope-screen",
+      "type": "informs",
+      "status": "reviewed",
+      "review_id": "2026-10-01-prospect-baselines",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2605.26116v2",
+          "locator": "Sec.2, PDF pp.3-4, Eqs.(2.1)-(2.12): explicit action, flat FLRW and radiation+baryon+CDM+scalar sum; original HTML #S2.E1-#S2.E12."
+        },
+        {
+          "paper_id": "arxiv:2605.26116v2",
+          "locator": "Secs.4-5 and Appendix A: slope/fixed-point branches, Eqs.(5.11)-(5.18), reviewer correction record 2026-10-01-late-expansion-science."
+        }
+      ],
+      "rationale": "This idea informs the candidate investigation. Scope, alternative branches, baseline and unresolved closure are recorded in the prospect; this does not assert a complete or tested combined cosmology."
+    },
+    {
+      "id": "informs-constant-coupling-scalar-residual-floor-unified-scalar-source-consistency-and-slope-screen",
+      "from": "constant-coupling-scalar-residual-floor",
+      "to": "unified-scalar-source-consistency-and-slope-screen",
+      "type": "informs",
+      "status": "reviewed",
+      "review_id": "2026-10-01-prospect-baselines",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2605.26116v2",
+          "locator": "Sec.2, PDF pp.3-4, Eqs.(2.1)-(2.12): explicit action, flat FLRW and radiation+baryon+CDM+scalar sum; original HTML #S2.E1-#S2.E12."
+        },
+        {
+          "paper_id": "arxiv:2605.26116v2",
+          "locator": "Secs.4-5 and Appendix A: slope/fixed-point branches, Eqs.(5.11)-(5.18), reviewer correction record 2026-10-01-late-expansion-science."
+        }
+      ],
+      "rationale": "This idea informs the candidate investigation. Scope, alternative branches, baseline and unresolved closure are recorded in the prospect; this does not assert a complete or tested combined cosmology."
+    },
+    {
+      "id": "informs-staged-dark-decay-daughter-quintessence-staged-decay-energy-and-background-claim-audit",
+      "from": "staged-dark-decay-daughter-quintessence",
+      "to": "staged-decay-energy-and-background-claim-audit",
+      "type": "informs",
+      "status": "reviewed",
+      "review_id": "2026-10-01-prospect-baselines",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2602.01543v2",
+          "locator": "Secs.II-III.A, PDF pp.2-4, Eq.(1), Eqs.(2)-(12): fields, retained-sector sum and primary quintessence branch; original HTML Eq.(5)."
+        },
+        {
+          "paper_id": "arxiv:2602.01543v2",
+          "locator": "Sec.III.B and IV.A, PDF pp.4-5, Eqs.(13)-(16): separate constant-Λ/daughter-EOS branch and explicit lack of perturbation correspondence; Sec.IV.B/Appendix for separate SIDM."
+        }
+      ],
+      "rationale": "This idea informs the candidate investigation. Scope, alternative branches, baseline and unresolved closure are recorded in the prospect; this does not assert a complete or tested combined cosmology."
+    },
+    {
+      "id": "informs-background-match-does-not-transfer-fit-evidence-staged-decay-energy-and-background-claim-audit",
+      "from": "background-match-does-not-transfer-fit-evidence",
+      "to": "staged-decay-energy-and-background-claim-audit",
+      "type": "informs",
+      "status": "reviewed",
+      "review_id": "2026-10-01-prospect-baselines",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2602.01543v2",
+          "locator": "Secs.II-III.A, PDF pp.2-4, Eq.(1), Eqs.(2)-(12): fields, retained-sector sum and primary quintessence branch; original HTML Eq.(5)."
+        },
+        {
+          "paper_id": "arxiv:2602.01543v2",
+          "locator": "Sec.III.B and IV.A, PDF pp.4-5, Eqs.(13)-(16): separate constant-Λ/daughter-EOS branch and explicit lack of perturbation correspondence; Sec.IV.B/Appendix for separate SIDM."
+        }
+      ],
+      "rationale": "This idea informs the candidate investigation. Scope, alternative branches, baseline and unresolved closure are recorded in the prospect; this does not assert a complete or tested combined cosmology."
+    },
+    {
+      "id": "informs-lagrange-deceleration-deviation-reconstruction-q-reconstruction-continuity-and-derivative-interpretation",
+      "from": "lagrange-deceleration-deviation-reconstruction",
+      "to": "q-reconstruction-continuity-and-derivative-interpretation",
+      "type": "informs",
+      "status": "reviewed",
+      "review_id": "2026-10-01-prospect-baselines",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2609.34239v1",
+          "locator": "Sec.II, PDF pp.2-3, Eqs.(1)-(4): explicit flat ΛCDM q reference, radiation omission, finite interpolation and cutoff; original HTML q_fid/cutoff text."
+        },
+        {
+          "paper_id": "arxiv:2609.34239v1",
+          "locator": "Sec.III.C Eqs.(19)-(22): conditional CMB summaries; Sec.IV Fig.5 and Tables II-IV for conditional fitted feature and comparison evidence."
+        }
+      ],
+      "rationale": "This idea informs the candidate investigation. Scope, alternative branches, baseline and unresolved closure are recorded in the prospect; this does not assert a complete or tested combined cosmology."
+    },
+    {
+      "id": "informs-conditional-q-upturn-not-acceleration-endpoint-q-reconstruction-continuity-and-derivative-interpretation",
+      "from": "conditional-q-upturn-not-acceleration-endpoint",
+      "to": "q-reconstruction-continuity-and-derivative-interpretation",
+      "type": "informs",
+      "status": "reviewed",
+      "review_id": "2026-10-01-prospect-baselines",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2609.34239v1",
+          "locator": "Sec.II, PDF pp.2-3, Eqs.(1)-(4): explicit flat ΛCDM q reference, radiation omission, finite interpolation and cutoff; original HTML q_fid/cutoff text."
+        },
+        {
+          "paper_id": "arxiv:2609.34239v1",
+          "locator": "Sec.III.C Eqs.(19)-(22): conditional CMB summaries; Sec.IV Fig.5 and Tables II-IV for conditional fitted feature and comparison evidence."
+        }
+      ],
+      "rationale": "This idea informs the candidate investigation. Scope, alternative branches, baseline and unresolved closure are recorded in the prospect; this does not assert a complete or tested combined cosmology."
+    },
+    {
+      "id": "informs-dark-higgs-vector-sidm-candidate-staged-decay-energy-and-background-claim-audit",
+      "from": "dark-higgs-vector-sidm-candidate",
+      "to": "staged-decay-energy-and-background-claim-audit",
+      "type": "informs",
+      "status": "reviewed",
+      "review_id": "2026-10-01-prospect-baselines",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2602.01543v2",
+          "locator": "Secs.II-III.A, PDF pp.2-4, Eq.(1), Eqs.(2)-(12): fields, retained-sector sum and primary quintessence branch; original HTML Eq.(5)."
+        },
+        {
+          "paper_id": "arxiv:2602.01543v2",
+          "locator": "Sec.III.B and IV.A, PDF pp.4-5, Eqs.(13)-(16): separate constant-Λ/daughter-EOS branch and explicit lack of perturbation correspondence; Sec.IV.B/Appendix for separate SIDM."
+        }
+      ],
+      "rationale": "Related source evidence informs the investigation; this does not add the idea as a physical model component."
     }
   ]
 }
