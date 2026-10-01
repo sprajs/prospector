@@ -1,0 +1,9 @@
+# Local environments, caches and downloaded paper copies.
+.venv/
+__pycache__/
+*.py[cod]
+.work/
+.pytest_cache/
+.ruff_cache/
+papers/
+*.partial
