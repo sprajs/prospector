@@ -53,6 +53,15 @@ or `downloads/`, including renders, temporary scripts and logs. Never use a
 sibling checkout or `/tmp`. Acquire centrally before parallel reading; readers
 reuse local sources rather than launching competing download loops.
 
+For an explicitly scoped source/reference audit, an existing verified Sol worker
+may check selected original-source claims directly. Record it as
+`targeted_source_claims`, with exact checked locators, hashes, unread material,
+model confirmation and the specific ideas/designs/prospects accepted. This is
+separate from the ordinary Luna full-paper pipeline: leave extraction and paper
+review stage untouched, retain unfinished full readings in the queue, and count
+zero new full reads. Targeted review cannot certify unexamined claims or promote
+a paper to fully reviewed. Do not launch a worker merely to fill a stage.
+
 ## Search and acquire arXiv efficiently
 
 Use the HTTPS Atom API at `https://export.arxiv.org/api/query`, through
@@ -138,6 +147,13 @@ to shared observations are not independent; unknown cross-covariance stays
 unknown. Keep negative and corrected records. A printed source inconsistency
 is distinct from our transcription error and any suggested repair.
 
+A reference cosmology is a comparison convention. Preserve its complete source
+model, fitted-data conditioning and unknown covariance. Give an engine-supported
+approximation a separate identity and lost-scope statement. In particular, Planck
+base ΛCDM includes a fixed massive neutrino: a permanently massless comparison
+must derive matter from its declared baryon/CDM inputs rather than silently copy
+the reported total matter density. Supplied drag redshift is not predicted drag.
+
 ## Prepare a candidate investigation
 
 A candidate-design JSON names an exact sourced claim, equations, minimal test,
@@ -158,6 +174,18 @@ redshift and observable conventions. Keep observational, numerical, inference
 and interpretation qualification separate.
 
 ## Close and publish a batch
+
+For coordinated work with Reproducible and Irreducible, appoint one integration
+owner per repository and one coordinating reviewer. Pass exact candidate/source
+hashes and repository revisions; each consumer explicitly accepts the handoff.
+Share the live resource budget across chats and worktrees: the baseline audit
+allows four local compiler/compute jobs total, with at most one light job here.
+Reading and independent review need no compiler jobs. Resource ceilings do not
+authorize extra worker launches. Scientific source review, consumer numerical
+acceptance, PR review and exact-main CI are separate gates. A coordinated task
+may require independent final review before the standing merge authorization.
+Publish the existing public Site after that task's repository merge; retain the
+deployed source identity and leave unrelated research queues and alternatives intact.
 
 Integrate valid records, write a scan receipt and update state last. Preserve
 pending stages on interruption; save screen/defer/exclude decisions to prevent

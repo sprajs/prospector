@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from validate_register import ROOT, strict_load
 
-ORDER = ['early-energy', 'late-dark-energy', 'interacting-sectors', 'inhomogeneity',
+ORDER = ['baseline-reference', 'early-energy', 'late-dark-energy', 'interacting-sectors', 'inhomogeneity',
          'kinematics', 'modified-gravity', 'bounces-cycles', 'measurement-lineage']
 
 

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "baseline-reference",
+  "title": "ΛCDM reference",
+  "scope": "Full conditioned baseline and explicitly changed, limited implementation comparisons; calibrated/compressed input ancestry. Reference status is not a verdict on alternative cosmologies.",
+  "membership_basis": "Explicit core-reference audit; source identity and targeted evidence, not equivalence or full-paper reading.",
+  "paper_ids": [
+    "arxiv:1807.06209v4",
+    "arxiv:2503.14738v3",
+    "arxiv:2202.04077v2",
+    "arxiv:2112.03863v2",
+    "arxiv:2112.03864v2",
+    "arxiv:2112.04510v3"
+  ],
+  "idea_ids": [],
+  "design_ids": []
+}

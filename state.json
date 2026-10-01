@@ -315,6 +315,54 @@
         "early-energy",
         "late-dark-energy"
       ]
+    },
+    {
+      "paper_id": "arxiv:1807.06209v4",
+      "stage": "read",
+      "reason": "Targeted baseline source checks do not complete the ordinary Luna full-paper reading/review pipeline. Resume only when a fuller paper-specific investigation is warranted.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2503.14738v3",
+      "stage": "read",
+      "reason": "Targeted baseline source checks do not complete the ordinary Luna full-paper reading/review pipeline. Resume only when a fuller paper-specific investigation is warranted.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2202.04077v2",
+      "stage": "read",
+      "reason": "Targeted baseline source checks do not complete the ordinary Luna full-paper reading/review pipeline. Resume only when a fuller paper-specific investigation is warranted.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2112.03863v2",
+      "stage": "read",
+      "reason": "Targeted baseline source checks do not complete the ordinary Luna full-paper reading/review pipeline. Resume only when a fuller paper-specific investigation is warranted.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2112.03864v2",
+      "stage": "read",
+      "reason": "Targeted baseline source checks do not complete the ordinary Luna full-paper reading/review pipeline. Resume only when a fuller paper-specific investigation is warranted.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2112.04510v3",
+      "stage": "read",
+      "reason": "Targeted baseline source checks do not complete the ordinary Luna full-paper reading/review pipeline. Resume only when a fuller paper-specific investigation is warranted.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
     }
   ],
   "search_history": [
@@ -438,5 +486,22 @@
     "Raw sources and working files stay inside ignored Prospector/.work.",
     "Blocked numerical handoffs need a separately scoped implementation task."
   ],
-  "next_work_mode": "foundational_or_citation_linked"
+  "next_work_mode": "foundational_or_citation_linked",
+  "coordinated_baseline": {
+    "state": "independent_source_review_pending",
+    "engine_revision": "db4765838fc404a489a0115ee69713f2ea6cd2f4",
+    "consumer_repository": "sprajs/reproducible",
+    "consumer_packet": "experiments/lcdm-baseline",
+    "source_review_mode": "targeted_source_claims",
+    "full_reads": 0,
+    "resource_budget": {
+      "shared_local_jobs": 4,
+      "prospector_local_jobs": 1
+    },
+    "publication_owner": "One integration owner per repository; coordinating reviewer gates this PR before merge.",
+    "candidate_ids": [
+      "candidate-lcdm-baseline-reference-audit",
+      "candidate-lcdm-massless-conditional-comparison"
+    ]
+  }
 }
