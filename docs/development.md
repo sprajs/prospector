@@ -39,6 +39,17 @@ remains a separate gate. Verify the exact head and use a merge commit directly
 once ready; GitHub's auto-merge setting need not be enabled. Direct `main` pushes,
 force pushes and external messages still require specific authorization.
 
+## Coordinate a consumer handoff
+
+One owner integrates each repository; the coordinator controls shared interfaces
+and independent final review. Pin Prospector candidate/reference hashes in the
+Reproducible experiment, then pin its inputs and Irreducible revision/build.
+Keep source review, numerical acceptance, PR review and exact-main CI distinct.
+The current baseline audit shares four local compiler/compute jobs across all
+chats and worktrees, with at most one light job in Prospector. It adds no worker
+launch entitlement. Preserve the bounded research queue and existing alternatives.
+Publish this task's Site changes only after the reviewed repository merge.
+
 ## Verify a merge and preserve work
 
 After an authorized merge, verify PR state, exact head and merge SHA. Wait for

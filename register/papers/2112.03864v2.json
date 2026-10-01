@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2112.03864v2",
+  "arxiv_id": "2112.03864",
+  "version": 2,
+  "title": "The Pantheon+ Analysis: SuperCal-Fragilistic Cross Calibration, Retrained SALT2 Light Curve Model, and Calibration Systematic Uncertainty",
+  "authors": [
+    "Dillon Brout",
+    "Georgie Taylor",
+    "Dan Scolnic",
+    "Charlotte M. Wood",
+    "Benjamin M. Rose",
+    "Maria Vincenzi",
+    "Arianna Dwomoh",
+    "Christopher Lidman",
+    "Adam Riess",
+    "Noor Ali",
+    "Helen Qu",
+    "Mi Dai"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "astro-ph.IM"
+  ],
+  "published_utc": "2021-12-07T17:57:24Z",
+  "updated_utc": "2022-11-14T21:29:39Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2112.03864v2",
+    "html": "https://arxiv.org/html/2112.03864v2",
+    "pdf": "https://arxiv.org/pdf/2112.03864v2"
+  },
+  "license": {
+    "status": "unreported in retrieved Atom metadata",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Only links, metadata and short original notes published; raw sources stay ignored. Public accessibility alone is not redistribution permission."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=1807.06209%2C2503.14738%2C2202.04077%2C2112.03863%2C2112.03864%2C2112.04510&max_results=6",
+      "retrieved_utc": "2026-10-01T15:05:28.214522+00:00",
+      "sha256": "7a7e87dad3d215a26af3e471add7c44d2b6d2589e02dc32b535334898d8563e0",
+      "bytes": 45217
+    },
+    {
+      "bytes": 426034,
+      "role": "html",
+      "url": "https://arxiv.org/html/2112.03864v2",
+      "retrieved_utc": "2026-10-01T15:05:31.566601+00:00",
+      "sha256": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805"
+    },
+    {
+      "bytes": 1431273,
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/2112.03864v2",
+      "retrieved_utc": "2026-10-01T15:05:34.717527+00:00",
+      "sha256": "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74"
+    },
+    {
+      "bytes": 177293,
+      "tool": "pdftotext -layout",
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/2112.03864v2",
+      "derived_from_sha256": "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74",
+      "retrieved_utc": "2026-10-01T15:05:35.126502+00:00",
+      "sha256": "506a368e04799fc73ef511dae88c15a11a85610e19ad25e36af76ff60831c6d4"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "full_text",
+    "reason": "Explicitly requested baseline reference source; targeted original-source checks only. No Luna extraction, full-paper reading or full-paper review claimed."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": [
+    "sn-standardized-distance-lineage"
+  ]
+}

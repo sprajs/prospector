@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_completed_scan": "2026-10-01-late-expansion",
+  "last_completed_scan": "2026-10-01-lcdm-baseline",
   "next_lane": "modified-gravity",
   "batch_limits": {
     "new_versions": 20,
@@ -315,6 +315,54 @@
         "early-energy",
         "late-dark-energy"
       ]
+    },
+    {
+      "paper_id": "arxiv:1807.06209v4",
+      "stage": "read",
+      "reason": "Targeted baseline source checks do not complete the ordinary Luna full-paper reading/review pipeline. Resume only when a fuller paper-specific investigation is warranted.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2503.14738v3",
+      "stage": "read",
+      "reason": "Targeted baseline source checks do not complete the ordinary Luna full-paper reading/review pipeline. Resume only when a fuller paper-specific investigation is warranted.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2202.04077v2",
+      "stage": "read",
+      "reason": "Targeted baseline source checks do not complete the ordinary Luna full-paper reading/review pipeline. Resume only when a fuller paper-specific investigation is warranted.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2112.03863v2",
+      "stage": "read",
+      "reason": "Targeted baseline source checks do not complete the ordinary Luna full-paper reading/review pipeline. Resume only when a fuller paper-specific investigation is warranted.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2112.03864v2",
+      "stage": "read",
+      "reason": "Targeted baseline source checks do not complete the ordinary Luna full-paper reading/review pipeline. Resume only when a fuller paper-specific investigation is warranted.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2112.04510v3",
+      "stage": "read",
+      "reason": "Targeted baseline source checks do not complete the ordinary Luna full-paper reading/review pipeline. Resume only when a fuller paper-specific investigation is warranted.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
     }
   ],
   "search_history": [
@@ -331,6 +379,11 @@
       "query_ids": [
         "late-dark-energy-fresh"
       ]
+    },
+    {
+      "scan_id": "2026-10-01-lcdm-baseline",
+      "query_ids": [],
+      "mode": "known_primary_ids_only"
     }
   ],
   "citation_leads": [
@@ -431,6 +484,16 @@
       "design_id": "candidate-unified-scalar-source-consistency-and-slope-screen",
       "state": "blocked",
       "reason": "Blocked conceptual handoff; source/method development and consumer review require separate scoped work."
+    },
+    {
+      "design_id": "candidate-lcdm-baseline-reference-audit",
+      "state": "blocked",
+      "reason": "Full closure or explicit consumer acceptance pending; separate from source review."
+    },
+    {
+      "design_id": "candidate-lcdm-massless-conditional-comparison",
+      "state": "ready_for_consumer_review",
+      "reason": "Source-scoped controls and corrected exact typed native adapter/request bound; Reproducible owns immutable acceptance and execution."
     }
   ],
   "notes": [
@@ -438,5 +501,26 @@
     "Raw sources and working files stay inside ignored Prospector/.work.",
     "Blocked numerical handoffs need a separately scoped implementation task."
   ],
-  "next_work_mode": "foundational_or_citation_linked"
+  "next_work_mode": "foundational_or_citation_linked",
+  "coordinated_baseline": {
+    "state": "limited_candidate_ready_for_consumer_review",
+    "engine_revision": "db4765838fc404a489a0115ee69713f2ea6cd2f4",
+    "consumer_repository": "sprajs/reproducible",
+    "consumer_packet": "experiments/lcdm-baseline",
+    "source_review_mode": "targeted_source_claims",
+    "full_reads": 0,
+    "resource_budget": {
+      "shared_local_jobs": 4,
+      "prospector_local_jobs": 1
+    },
+    "publication_owner": "One integration owner per repository; coordinating reviewer gates this PR before merge.",
+    "candidate_ids": [
+      "candidate-lcdm-baseline-reference-audit",
+      "candidate-lcdm-massless-conditional-comparison"
+    ],
+    "review_id": "2026-10-01-lcdm-baseline-source-claims",
+    "reference_sha256": "06c561ab2214bd028b47e03802ec3029d476a4cf61d75602bf550e5cbf1282cf",
+    "adapter_revision": "98cadbb3e3bf59f5933ef977133b64453c968c0a",
+    "request_sha256": "5d67253917a35031b69b85272fe381da8c946007da5615300a3dcf3381f12bed"
+  }
 }

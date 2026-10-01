@@ -52,6 +52,162 @@
         "locator": "HTML References: Sohail et al. (2025a); bib.bib232; PDF reference [239]",
         "url": "https://arxiv.org/html/2605.26116v2#bib.bib232"
       }
+    },
+    {
+      "id": "cite-2503.14738-1807.06209",
+      "from_paper_id": "arxiv:2503.14738v3",
+      "cited_arxiv_id": "1807.06209",
+      "cited_version": null,
+      "reference": "24",
+      "source": {
+        "role": "html",
+        "sha256": "782d7b25d5a6d7195e0dc0cfdab029e49a4b05cff8263e18f843e82e9c054c49",
+        "locator": "HTML bibliography [24]; bib.bib24; base arXiv identity only",
+        "url": "https://arxiv.org/html/2503.14738v3#bib.bib24"
+      }
+    },
+    {
+      "id": "cite-2503.14738-2112.03863",
+      "from_paper_id": "arxiv:2503.14738v3",
+      "cited_arxiv_id": "2112.03863",
+      "cited_version": null,
+      "reference": "29",
+      "source": {
+        "role": "html",
+        "sha256": "782d7b25d5a6d7195e0dc0cfdab029e49a4b05cff8263e18f843e82e9c054c49",
+        "locator": "HTML bibliography [29]; bib.bib29; base arXiv identity only",
+        "url": "https://arxiv.org/html/2503.14738v3#bib.bib29"
+      }
+    },
+    {
+      "id": "cite-2503.14738-2202.04077",
+      "from_paper_id": "arxiv:2503.14738v3",
+      "cited_arxiv_id": "2202.04077",
+      "cited_version": null,
+      "reference": "113",
+      "source": {
+        "role": "html",
+        "sha256": "782d7b25d5a6d7195e0dc0cfdab029e49a4b05cff8263e18f843e82e9c054c49",
+        "locator": "HTML bibliography [113]; bib.bib113; base arXiv identity only",
+        "url": "https://arxiv.org/html/2503.14738v3#bib.bib113"
+      }
+    },
+    {
+      "id": "cite-2503.14738-2112.04510",
+      "from_paper_id": "arxiv:2503.14738v3",
+      "cited_arxiv_id": "2112.04510",
+      "cited_version": null,
+      "reference": "129",
+      "source": {
+        "role": "html",
+        "sha256": "782d7b25d5a6d7195e0dc0cfdab029e49a4b05cff8263e18f843e82e9c054c49",
+        "locator": "HTML bibliography [129]; bib.bib129; base arXiv identity only",
+        "url": "https://arxiv.org/html/2503.14738v3#bib.bib129"
+      }
+    },
+    {
+      "id": "cite-2202.04077-2112.03864",
+      "from_paper_id": "arxiv:2202.04077v2",
+      "cited_arxiv_id": "2112.03864",
+      "cited_version": null,
+      "reference": "12",
+      "source": {
+        "role": "html",
+        "sha256": "7580cd8300bf5bf53119735a06c94f7240a7426c37a4f2e8fdbf9915905ecb38",
+        "locator": "HTML bibliography [12]; bib.bib12; base arXiv identity only",
+        "url": "https://arxiv.org/html/2202.04077v2#bib.bib12"
+      }
+    },
+    {
+      "id": "cite-2202.04077-1807.06209",
+      "from_paper_id": "arxiv:2202.04077v2",
+      "cited_arxiv_id": "1807.06209",
+      "cited_version": null,
+      "reference": "29",
+      "source": {
+        "role": "html",
+        "sha256": "7580cd8300bf5bf53119735a06c94f7240a7426c37a4f2e8fdbf9915905ecb38",
+        "locator": "HTML bibliography [29]; bib.bib29; base arXiv identity only",
+        "url": "https://arxiv.org/html/2202.04077v2#bib.bib29"
+      }
+    },
+    {
+      "id": "cite-2202.04077-2112.04510",
+      "from_paper_id": "arxiv:2202.04077v2",
+      "cited_arxiv_id": "2112.04510",
+      "cited_version": null,
+      "reference": "95",
+      "source": {
+        "role": "html",
+        "sha256": "7580cd8300bf5bf53119735a06c94f7240a7426c37a4f2e8fdbf9915905ecb38",
+        "locator": "HTML bibliography [95]; bib.bib95; base arXiv identity only",
+        "url": "https://arxiv.org/html/2202.04077v2#bib.bib95"
+      }
+    },
+    {
+      "id": "cite-2202.04077-2112.03863",
+      "from_paper_id": "arxiv:2202.04077v2",
+      "cited_arxiv_id": "2112.03863",
+      "cited_version": null,
+      "reference": "112",
+      "source": {
+        "role": "html",
+        "sha256": "7580cd8300bf5bf53119735a06c94f7240a7426c37a4f2e8fdbf9915905ecb38",
+        "locator": "HTML bibliography [112]; bib.bib112; base arXiv identity only",
+        "url": "https://arxiv.org/html/2202.04077v2#bib.bib112"
+      }
+    },
+    {
+      "id": "cite-2112.03864-2202.04077",
+      "from_paper_id": "arxiv:2112.03864v2",
+      "cited_arxiv_id": "2202.04077",
+      "cited_version": null,
+      "reference": "13",
+      "source": {
+        "role": "html",
+        "sha256": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+        "locator": "HTML bibliography [13]; bib.bib13; base arXiv identity only",
+        "url": "https://arxiv.org/html/2112.03864v2#bib.bib13"
+      }
+    },
+    {
+      "id": "cite-2112.03864-1807.06209",
+      "from_paper_id": "arxiv:2112.03864v2",
+      "cited_arxiv_id": "1807.06209",
+      "cited_version": null,
+      "reference": "23",
+      "source": {
+        "role": "html",
+        "sha256": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+        "locator": "HTML bibliography [23]; bib.bib23; base arXiv identity only",
+        "url": "https://arxiv.org/html/2112.03864v2#bib.bib23"
+      }
+    },
+    {
+      "id": "cite-2112.03864-2112.04510",
+      "from_paper_id": "arxiv:2112.03864v2",
+      "cited_arxiv_id": "2112.04510",
+      "cited_version": null,
+      "reference": "67",
+      "source": {
+        "role": "html",
+        "sha256": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+        "locator": "HTML bibliography [67]; bib.bib67; base arXiv identity only",
+        "url": "https://arxiv.org/html/2112.03864v2#bib.bib67"
+      }
+    },
+    {
+      "id": "cite-2112.03864-2112.03863",
+      "from_paper_id": "arxiv:2112.03864v2",
+      "cited_arxiv_id": "2112.03863",
+      "cited_version": null,
+      "reference": "74",
+      "source": {
+        "role": "html",
+        "sha256": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+        "locator": "HTML bibliography [74]; bib.bib74; base arXiv identity only",
+        "url": "https://arxiv.org/html/2112.03864v2#bib.bib74"
+      }
     }
   ],
   "inspected_paper_ids": [
@@ -60,12 +216,16 @@
     "arxiv:1009.5855v2",
     "arxiv:2605.26116v2",
     "arxiv:2602.01543v2",
-    "arxiv:2609.34239v1"
+    "arxiv:2609.34239v1",
+    "arxiv:2503.14738v3",
+    "arxiv:2202.04077v2",
+    "arxiv:2112.03864v2"
   ],
   "limitations": [
     "Four explicit bibliography links to registered paper identities were verified in pinned original HTML. This is a bounded extraction, not a complete citation index.",
     "References print base arXiv IDs; cited_version is null because the version was not specified. Website targets select a registered version for reading, without asserting that version was cited.",
     "HTML uses author-year labels for 2605.26116v2; its anchors differ from the numeric PDF bibliography. Both locators are retained.",
-    "No registered-ID match found in an inspected source does not establish an absence of citations; discovery and extraction remain incomplete."
+    "No registered-ID match found in an inspected source does not establish an absence of citations; discovery and extraction remain incomplete.",
+    "Core-reference audit adds twelve registered-ID bibliography links checked in pinned HTML. Bibliography inspection is separate from full reading and scientific source review."
   ]
 }

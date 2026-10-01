@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "reference_id": "planck2018-base-lcdm-plik-lensing",
+  "review_id": "2026-10-01-lcdm-baseline-source-claims",
+  "status": "targeted_reviewed",
+  "paper_id": "arxiv:1807.06209v4",
+  "source_sha256": {
+    "html": "622d05fab48d935a2224afeade05b07393ec37e4e0554bb9c416f4298acb7bc0",
+    "pdf": "8e172730faf07c9f4ff3fdcc7043f76ed67df6f76066d47df30d693025b6ce77",
+    "extracted_text": "75476bdbcfeb893c3be2274cb796becf55a9a174c40b4c265a9fcc9870fa0a4d"
+  },
+  "locator": "Table 2, TT,TE,EE+lowE+lensing column (also Table 1 Plik posterior column); PDF p.16",
+  "conditioning": "Spatially flat six-parameter base ΛCDM; Planck TT,TE,EE+lowE+lensing with baseline Plik high-ell likelihood, fixed 0.06 eV neutrino; no BAO. Marginalized 1D posterior summaries, not independent measurements or a joint best-fit parameter vector.",
+  "covariance": null,
+  "covariance_reason": "Table summaries provide marginal limits, not joint parameter covariance. Do not build diagonal measurement constraints from them.",
+  "model": {
+    "gravity": "General relativity",
+    "geometry": "Spatially flat FLRW",
+    "components": [
+      "Baryons",
+      "Cold dark matter",
+      "Photons",
+      "Two effectively massless neutrino states",
+      "One 0.06 eV neutrino state",
+      "Cosmological constant"
+    ],
+    "primordial": "Purely adiabatic scalar power-law curvature spectrum; pivot k=0.05 Mpc^-1. No primordial tensor/running/isocurvature extension in base model.",
+    "thermal": "Standard photon/neutrino thermal history and Neff=3.046; massive neutrino must transition between relativistic and nonrelativistic energy density.",
+    "helium": "BBN-consistent YP from PArthENoPE 1.1 grid, neutron lifetime 880.2 s, per Sec.2.1; no freely chosen helium parameter.",
+    "reionization": "Simple tanh hydrogen and first-helium reionization; tau is sampled. Not determined by the background integral.",
+    "recombination": "Requires ionization/recombination and drag-epoch closure used by the Planck Boltzmann calculation; the current engine does not predict these."
+  },
+  "fixed_assumptions": [
+    {
+      "name": "T_CMB",
+      "value": 2.7255,
+      "unit": "K",
+      "locator": "Sec.3.1 footnote14",
+      "role": "fixed assumption; cited observational temperature error is not propagated here"
+    },
+    {
+      "name": "N_eff",
+      "value": 3.046,
+      "unit": "1",
+      "locator": "Sec.7.5.2 baseline standard-model discussion",
+      "role": "fixed relativistic abundance convention"
+    },
+    {
+      "name": "sum_m_nu",
+      "value": 0.06,
+      "unit": "eV",
+      "locator": "Sec.2.1",
+      "role": "fixed one massive plus two massless approximation"
+    },
+    {
+      "name": "k_pivot",
+      "value": 0.05,
+      "unit": "Mpc^-1",
+      "locator": "Sec.2.1",
+      "role": "fixed primordial pivot"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "omega_b",
+      "value": 0.02237,
+      "unit": "1",
+      "uncertainty": {
+        "minus": 0.00015,
+        "plus": 0.00015,
+        "interpretation": "Reported symmetric 68% marginal posterior limits"
+      },
+      "role": "sampled",
+      "locator": "Table 2 column TT,TE,EE+lowE+lensing"
+    },
+    {
+      "name": "omega_c",
+      "value": 0.12,
+      "unit": "1",
+      "uncertainty": {
+        "minus": 0.0012,
+        "plus": 0.0012,
+        "interpretation": "Reported symmetric 68% marginal posterior limits"
+      },
+      "role": "sampled",
+      "locator": "Table 2 column TT,TE,EE+lowE+lensing"
+    },
+    {
+      "name": "100theta_MC",
+      "value": 1.04092,
+      "unit": "1",
+      "uncertainty": {
+        "minus": 0.00031,
+        "plus": 0.00031,
+        "interpretation": "Reported symmetric 68% marginal posterior limits"
+      },
+      "role": "sampled",
+      "locator": "Table 2 column TT,TE,EE+lowE+lensing"
+    },
+    {
+      "name": "tau",
+      "value": 0.0544,
+      "unit": "1",
+      "uncertainty": {
+        "minus": 0.0073,
+        "plus": 0.0073,
+        "interpretation": "Reported symmetric 68% marginal posterior limits"
+      },
+      "role": "sampled",
+      "locator": "Table 2 column TT,TE,EE+lowE+lensing"
+    },
+    {
+      "name": "ln_1e10_A_s",
+      "value": 3.044,
+      "unit": "1",
+      "uncertainty": {
+        "minus": 0.014,
+        "plus": 0.014,
+        "interpretation": "Reported symmetric 68% marginal posterior limits"
+      },
+      "role": "sampled",
+      "locator": "Table 2 column TT,TE,EE+lowE+lensing"
+    },
+    {
+      "name": "n_s",
+      "value": 0.9649,
+      "unit": "1",
+      "uncertainty": {
+        "minus": 0.0042,
+        "plus": 0.0042,
+        "interpretation": "Reported symmetric 68% marginal posterior limits"
+      },
+      "role": "sampled",
+      "locator": "Table 2 column TT,TE,EE+lowE+lensing"
+    },
+    {
+      "name": "H0",
+      "value": 67.36,
+      "unit": "km s^-1 Mpc^-1",
+      "uncertainty": {
+        "minus": 0.54,
+        "plus": 0.54,
+        "interpretation": "Reported symmetric 68% marginal posterior limits"
+      },
+      "role": "derived",
+      "locator": "Table 2 column TT,TE,EE+lowE+lensing"
+    },
+    {
+      "name": "Omega_m",
+      "value": 0.3153,
+      "unit": "1",
+      "uncertainty": {
+        "minus": 0.0073,
+        "plus": 0.0073,
+        "interpretation": "Reported symmetric 68% marginal posterior limits"
+      },
+      "role": "derived",
+      "locator": "Table 2 column TT,TE,EE+lowE+lensing"
+    },
+    {
+      "name": "z_drag",
+      "value": 1059.94,
+      "unit": "1",
+      "uncertainty": {
+        "minus": 0.3,
+        "plus": 0.3,
+        "interpretation": "Reported symmetric 68% marginal posterior limits"
+      },
+      "role": "derived",
+      "locator": "Table 2 column TT,TE,EE+lowE+lensing"
+    },
+    {
+      "name": "r_drag",
+      "value": 147.09,
+      "unit": "Mpc",
+      "uncertainty": {
+        "minus": 0.26,
+        "plus": 0.26,
+        "interpretation": "Reported symmetric 68% marginal posterior limits"
+      },
+      "role": "derived",
+      "locator": "Table 2 column TT,TE,EE+lowE+lensing"
+    },
+    {
+      "name": "100theta_star",
+      "value": 1.0411,
+      "unit": "1",
+      "uncertainty": {
+        "minus": 0.00031,
+        "plus": 0.00031,
+        "interpretation": "Reported symmetric 68% marginal posterior limits"
+      },
+      "role": "derived",
+      "locator": "Table 2 column TT,TE,EE+lowE+lensing"
+    }
+  ],
+  "bookkeeping": [
+    "omega_b=Omega_b*h^2 and omega_c=Omega_c*h^2, h=H0/100 in km s^-1 Mpc^-1.",
+    "Reported Omega_m includes massive neutrino energy today (Table1 caption). It is not (omega_b+omega_c)/h^2.",
+    "100theta_MC is a sampling approximation; 100theta_star is the numerical derived acoustic angle. Neither is a BAO observable.",
+    "Marginal means need not form an exact internally closed posterior sample; use them only as declared comparison anchors."
+  ],
+  "supported_variant": {
+    "id": "flat-massless-synthetic-controls-v1",
+    "identity": "Flat GR pressureless matter plus permanently massless radiation plus Lambda; exact chosen controls for the limited background/conditional-BAO experiment, not a Planck posterior draw or fixed-temperature mapping.",
+    "anchors": [
+      "Chosen fractional controls, not a transcription of Planck Table2.",
+      "H0=67.4 km s^-1 Mpc^-1; Omega_m=0.315; Omega_r=0.000092; Omega_b=0.049; Omega_gamma=0.0000545; supplied z_drag=1059."
+    ],
+    "matter_rule": "Declared Omega_m=0.315 includes baryons as a subset; the matter sector is pressureless. No separate massive-neutrino contribution or Planck omega_b/omega_c mapping.",
+    "radiation_rule": "Declared Omega_r=0.000092 includes Omega_gamma=0.0000545 as a subset; all radiation stays massless. No T_CMB/Neff conversion is claimed.",
+    "flatness_rule": "Omega_Lambda=1-Omega_m-Omega_r; baryons are a subset of matter, photons a subset of radiation.",
+    "lost_scope": [
+      "Massive-neutrino thermal transition",
+      "Predicted drag/recombination epoch",
+      "Primordial perturbations, CMB spectra, growth and lensing",
+      "Planck likelihood/posterior reproduction"
+    ],
+    "numerical_values": {
+      "H0": 67.4,
+      "Omega_m": 0.315,
+      "Omega_r": 9.2e-05,
+      "Omega_b": 0.049,
+      "Omega_gamma": 5.45e-05,
+      "z_drag": 1059
+    },
+    "numerical_values_reason": "Reviewer-derived synthetic controls supplied by the coordinated Reproducible experiment; not source posterior values. Consumer pins input bytes and numerical policy separately."
+  }
+}

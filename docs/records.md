@@ -14,6 +14,7 @@ source identity and decisions so Codex can continue without a transcript.
 | `register/graph.json` | Typed evidence relationships |
 | `register/README.md`, `register/map.html` | Generated tree and interactive map |
 | `designs/<id>.json` | Candidate investigation handoffs |
+| `references/<topic>/<name>.json` | Sourced, conditioned numerical references with separate supported variants |
 | `scans/<id>.json`, `state.json` | Actual batch records and continuation queue |
 | `.work/`, root `papers/`, root `downloads/` | Ignored full sources, rendering and working material |
 
@@ -54,6 +55,15 @@ Sol checks original sources and the extraction. Retain checked coverage, source
 hashes, corrections, data ancestry, overlap and limits. Keep original extraction
 with visible review corrections; accepted ideas/designs use the reviewed reading.
 A printed source error and an algebraic repair have separate identities.
+
+An explicitly requested reference audit can use `targeted_source_claims` from an
+existing verified Sol worker. Such a review names exact checked locators, original
+source hashes, unread material, the immutable worker packet and model confirmation.
+Its `accepted_records` limits the ideas, designs, prospects and references it
+accepts. Idea evidence must point to its checked locators. It cannot populate a
+paper's full-review field or remove its outstanding Luna reading. Scans record
+these checks in `targeted_source_reviews`, separately from `full_reads` and
+`reviewed_papers`. The ordinary full-paper gates remain in force.
 
 Ideas have stable slug, title, family, source evidence, assumptions, predictions
 and review ID. Topics have stable slug, title, scope and paper/idea/design ID
@@ -98,6 +108,18 @@ Readiness is `needs_review`, `blocked` or `ready_for_consumer_review`. The last
 requires Sol review, no blockers/unknowns and a separate consumer-validated request
 with digest and inspected revision. It still needs Reproducible acceptance.
 Blocked concepts keep executable request null; runs/qualification belong to consumers.
+
+A dedicated Reproducible native adapter is a separate route from Irreducible's
+CLI schema. Its accepted request snapshot uses
+`passed_at_inspected_revision` with an explicit `validation_route` and adapter
+revision. This preserves the consumer's existing status token.
+Do not label that request as an Irreducible CLI operation or generic recipe.
+
+Conditioned references preserve model assumptions, source table/column, units,
+uncertainty interpretation and missing covariance. Candidate `source_references`
+pin their path, reference identity and SHA-256. A consumer accepts those exact
+bytes and repository revision. A changed supported variant has its own identity,
+chosen-input origin and lost scope; a reference posterior is not another dataset.
 
 Scan records retain exact queries/order/offset, UTC times, result IDs, admitted
 versions, screens, full reads, reviews, changes, failed access and pending stages.

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2202.04077v2",
+  "arxiv_id": "2202.04077",
+  "version": 2,
+  "title": "The Pantheon+ Analysis: Cosmological Constraints",
+  "authors": [
+    "Dillon Brout",
+    "Dan Scolnic",
+    "Brodie Popovic",
+    "Adam G. Riess",
+    "Joe Zuntz",
+    "Rick Kessler",
+    "Anthony Carr",
+    "Tamara M. Davis",
+    "Samuel Hinton",
+    "David Jones",
+    "W. D'Arcy Kenworthy",
+    "Erik R. Peterson",
+    "Khaled Said",
+    "Georgie Taylor",
+    "Noor Ali",
+    "Patrick Armstrong",
+    "Pranav Charvu",
+    "Arianna Dwomoh",
+    "Antonella Palmese",
+    "Helen Qu",
+    "Benjamin M. Rose",
+    "Christopher W. Stubbs",
+    "Maria Vincenzi",
+    "Charlotte M. Wood",
+    "Peter J. Brown",
+    "Rebecca Chen",
+    "Ken Chambers",
+    "David A. Coulter",
+    "Mi Dai",
+    "Georgios Dimitriadis",
+    "Alexei V. Filippenko",
+    "Ryan J. Foley",
+    "Saurabh W. Jha",
+    "Lisa Kelsey",
+    "Robert P. Kirshner",
+    "Anais Möller",
+    "Jessie Muir",
+    "Seshadri Nadathur",
+    "Yen-Chen Pan",
+    "Armin Rest",
+    "Cesar Rojas-Bravo",
+    "Masao Sako",
+    "Matthew R. Siebert",
+    "Mat Smith",
+    "Benjamin E. Stahl",
+    "Phil Wiseman"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2022-02-08T19:00:00Z",
+  "updated_utc": "2022-11-14T21:28:25Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2202.04077v2",
+    "html": "https://arxiv.org/html/2202.04077v2",
+    "pdf": "https://arxiv.org/pdf/2202.04077v2"
+  },
+  "license": {
+    "status": "unreported in retrieved Atom metadata",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Only links, metadata and short original notes published; raw sources stay ignored. Public accessibility alone is not redistribution permission."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=1807.06209%2C2503.14738%2C2202.04077%2C2112.03863%2C2112.03864%2C2112.04510&max_results=6",
+      "retrieved_utc": "2026-10-01T15:05:28.214522+00:00",
+      "sha256": "7a7e87dad3d215a26af3e471add7c44d2b6d2589e02dc32b535334898d8563e0",
+      "bytes": 45217
+    },
+    {
+      "bytes": 518758,
+      "role": "html",
+      "url": "https://arxiv.org/html/2202.04077v2",
+      "retrieved_utc": "2026-10-01T15:06:05.008680+00:00",
+      "sha256": "7580cd8300bf5bf53119735a06c94f7240a7426c37a4f2e8fdbf9915905ecb38"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "full_text",
+    "reason": "Explicitly requested baseline reference source; targeted original-source checks only. No Luna extraction, full-paper reading or full-paper review claimed."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": [
+    "sn-standardized-distance-lineage"
+  ]
+}

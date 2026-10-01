@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Conditioned scientific reference",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "reference_id",
+    "review_id",
+    "status",
+    "paper_id",
+    "source_sha256",
+    "locator",
+    "conditioning",
+    "covariance",
+    "covariance_reason",
+    "model",
+    "fixed_assumptions",
+    "parameters",
+    "bookkeeping",
+    "supported_variant"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "reference_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "review_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "pending_targeted_review",
+        "targeted_reviewed"
+      ]
+    },
+    "paper_id": {
+      "type": "string"
+    },
+    "source_sha256": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "enum": [
+          "html",
+          "pdf",
+          "extracted_text"
+        ]
+      },
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "conditioning": {
+      "type": "string",
+      "minLength": 1
+    },
+    "covariance": {
+      "type": "null"
+    },
+    "covariance_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model": {
+      "type": "object",
+      "required": [
+        "gravity",
+        "geometry",
+        "components",
+        "primordial",
+        "thermal",
+        "helium",
+        "reionization",
+        "recombination"
+      ]
+    },
+    "fixed_assumptions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "value",
+          "unit",
+          "locator",
+          "role"
+        ],
+        "properties": {
+          "value": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "parameters": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "value",
+          "unit",
+          "uncertainty",
+          "role",
+          "locator"
+        ],
+        "properties": {
+          "value": {
+            "type": "number"
+          },
+          "role": {
+            "enum": [
+              "sampled",
+              "derived"
+            ]
+          },
+          "uncertainty": {
+            "type": "object",
+            "required": [
+              "minus",
+              "plus",
+              "interpretation"
+            ],
+            "properties": {
+              "minus": {
+                "type": "number",
+                "minimum": 0
+              },
+              "plus": {
+                "type": "number",
+                "minimum": 0
+              },
+              "interpretation": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "bookkeeping": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "supported_variant": {
+      "type": "object",
+      "required": [
+        "id",
+        "identity",
+        "anchors",
+        "matter_rule",
+        "radiation_rule",
+        "flatness_rule",
+        "lost_scope",
+        "numerical_values",
+        "numerical_values_reason"
+      ],
+      "properties": {
+        "numerical_values": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "lost_scope": {
+          "type": "array",
+          "minItems": 1
+        }
+      }
+    }
+  }
+}

@@ -26,11 +26,17 @@ Read [AGENTS.md](AGENTS.md) for the procedure and [record conventions](docs/reco
 for the scientific and provenance requirements. Source review is distinct from
 independent reproduction, current-data inference and scientific qualification.
 
+The [ΛCDM reference](docs/lcdm-reference.md) preserves the full Planck model and
+its fitted-data conditioning. A separate candidate matches Reproducible's limited
+massless background/conditional-BAO comparison. Its chosen controls and supplied
+drag endpoint do not reproduce Planck physics or a cosmological posterior.
+
 ## Records
 
 - [Papers](register/papers/), [ideas](register/ideas/) and [topics](register/topics/)
 - [Prospects](register/prospects/), [relationships](register/graph.json) and [citations](register/citations.json)
 - [Candidate investigations](designs/), [source reviews](register/reviews/) and [scan receipts](scans/)
+- [Conditioned numerical references](references/)
 - [Saved continuation](state.json) and [generated register](register/README.md)
 
 Git stores metadata, links and compact original scientific notes. Downloaded

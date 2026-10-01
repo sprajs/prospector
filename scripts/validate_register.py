@@ -51,7 +51,7 @@ def records(folder, key):
 
 def validate():
     schemas = {name: strict_load(ROOT / "schemas" / (name + ".schema.json"))
-               for name in ["paper", "candidate-design", "topic", "prospect", "citations"]}
+               for name in ["paper", "candidate-design", "topic", "prospect", "citations", "reference"]}
     validators = {}
     for name, schema in schemas.items():
         Draft202012Validator.check_schema(schema)
@@ -64,9 +64,25 @@ def validate():
     topics = records("register/topics", "id")
     prospects = records("register/prospects", "id")
     require(papers, "empty paper register")
+    targeted = lambda review: review.get("review_kind") == "targeted_source_claims"
+    def accepted_record(review_id, kind, ident):
+        review = reviews[review_id]
+        if targeted(review):
+            require(ident in review.get('accepted_records', {}).get(kind, []),
+                    f"targeted review does not accept {kind}: {ident}")
     for ident, review in reviews.items():
         require(review["requested_model"] == "gpt-6.1-sol", f"wrong review model: {ident}")
         require(review.get("agent_id"), f"missing review agent: {ident}")
+        if targeted(review):
+            require(review.get('packet_sha256') and review.get('model_confirmation'),
+                    f"targeted review lacks packet/model provenance: {ident}")
+            confirmation = review['model_confirmation']
+            require(review.get('requested_reasoning') == 'high'
+                    and confirmation.get('model') == 'gpt-6.1-sol'
+                    and confirmation.get('effort') == 'high',
+                    f"targeted review lacks required model/reasoning confirmation: {ident}")
+            require(review.get('limitations') and review.get('accepted_records'),
+                    f"targeted review lacks claim scope/limits: {ident}")
         require(len(review["reviewed_papers"]) == len(set(review["reviewed_papers"])), "duplicate reviewed paper")
         details = review.get("reviewed_paper_details", [])
         require({d["paper_id"] for d in details} == set(review["reviewed_papers"])
@@ -81,8 +97,15 @@ def validate():
             require(hashes and hashes.issubset(receipts) and hashes & sources,
                     f"review lacks receipted original-source hashes: {ident}")
             require(detail.get("coverage", {}).get("main_text"), f"review lacks coverage: {ident}")
-            require(paper["extraction"] and paper["extraction"]["reading_level"] == "full_text",
-                    f"review detail refers to unread paper: {ident}")
+            if targeted(review):
+                for role, digest in detail.get('source_hashes', {}).items():
+                    require(any(a['role'] == role and a['sha256'] == digest for a in paper['artifacts']),
+                            f"review source role/hash mismatch: {ident}")
+                require(detail['coverage'].get('checked_locators') and detail['coverage'].get('unread'),
+                        f"targeted review lacks located coverage/unread scope: {ident}")
+            else:
+                require(paper["extraction"] and paper["extraction"]["reading_level"] == "full_text",
+                        f"review detail refers to unread paper: {ident}")
     for ident, paper in papers.items():
         validators["paper"].validate(paper)
         require(ident == f"arxiv:{paper['arxiv_id']}v{paper['version']}", f"paper identity mismatch: {ident}")
@@ -108,6 +131,8 @@ def validate():
             require(extraction is not None and extraction["reading_level"] == "full_text",
                     f"reviewed paper lacks a full-text reading packet: {ident}")
             require(paper["review_id"] in reviews, f"missing review: {ident}")
+            require(not targeted(reviews[paper['review_id']]),
+                    f"targeted review cannot promote full-paper stage: {ident}")
             require(ident in reviews[paper["review_id"]]["reviewed_papers"], f"review doesn't cover {ident}")
         if paper["screen"]["status"] == "reviewed":
             require(paper["review_id"] is not None, f"reviewed state without review: {ident}")
@@ -116,10 +141,39 @@ def validate():
     for ident, idea in ideas.items():
         require(idea.get("title") and idea.get("family") and idea.get("source_evidence"), f"incomplete idea: {ident}")
         require(idea["review_id"] in reviews, f"idea lacks review: {ident}")
+        accepted_record(idea['review_id'], 'idea_ids', ident)
         for evidence in idea["source_evidence"]:
             require(evidence["paper_id"] in papers and evidence.get("locator"), f"invalid idea evidence: {ident}")
             require(evidence["paper_id"] in reviews[idea["review_id"]]["reviewed_papers"],
                     f"idea source was not reviewed: {ident}")
+            review = reviews[idea['review_id']]
+            if targeted(review):
+                detail = next(d for d in review['reviewed_paper_details'] if d['paper_id'] == evidence['paper_id'])
+                require(evidence['locator'] in detail['coverage']['checked_locators'],
+                        f"idea locator outside targeted review: {ident}")
+    references = {}
+    for path in sorted((ROOT / 'references').rglob('*.json')):
+        reference = strict_load(path)
+        validators['reference'].validate(reference)
+        ident = reference['reference_id']
+        require(ident not in references, 'duplicate reference identity')
+        references[ident] = (path, reference)
+        require(reference['paper_id'] in papers, 'reference missing source paper')
+        paper = papers[reference['paper_id']]
+        require(any(r in {'html', 'pdf'} for r in reference['source_sha256']), 'reference lacks original source')
+        for role, digest in reference['source_sha256'].items():
+            require(any(a['role'] == role and a['sha256'] == digest for a in paper['artifacts']),
+                    'reference source hash lacks receipt')
+        require(len({p['name'] for p in reference['parameters']}) == len(reference['parameters']),
+                'duplicate reference parameter')
+        if reference['status'] == 'targeted_reviewed':
+            require(reference['review_id'] in reviews, 'reference lacks review')
+            accepted_record(reference['review_id'], 'reference_ids', ident)
+            accepted_record(reference['review_id'], 'reference_ids', reference['supported_variant']['id'])
+            require(reference['paper_id'] in reviews[reference['review_id']]['reviewed_papers'],
+                    'reference source not reviewed')
+        else:
+            require(reference['review_id'] is None, 'pending reference has review')
     citations = strict_load(ROOT / "register/citations.json")
     validators["citations"].validate(citations)
     require(set(citations['inspected_paper_ids']).issubset(papers), "citation inspection references missing paper")
@@ -184,9 +238,19 @@ def validate():
         require(all(i in ideas for i in design["idea_ids"]), f"design missing idea: {ident}")
         require(design["review_id"] is None or design["review_id"] in reviews, f"design missing review: {ident}")
         if design["review_id"]:
+            accepted_record(design['review_id'], 'design_ids', ident)
             require(set(design["paper_ids"]).issubset(reviews[design["review_id"]]["reviewed_papers"]), f"design sources not reviewed: {ident}")
         for equation in design["equations"]:
             require(equation["paper_id"] in design["paper_ids"], f"design equation source mismatch: {ident}")
+        for source in design.get('source_references', []):
+            require(source['reference_id'] in references, 'design missing source reference')
+            path, reference = references[source['reference_id']]
+            require(source['path'] == str(path.relative_to(ROOT)), 'noncanonical reference path')
+            require(hashlib.sha256(path.read_bytes()).hexdigest() == source['sha256'],
+                    'design reference digest mismatch')
+            require(reference['paper_id'] in design['paper_ids'], 'design reference source mismatch')
+            if design['review_id']:
+                require(reference['review_id'] == design['review_id'], 'design reference review mismatch')
         request = design["executable_request"]
         if request:
             path = (ROOT / request["path"]).resolve()
@@ -201,6 +265,7 @@ def validate():
         require(set(prospect['topic_ids']).issubset(topics), 'prospect references missing topic')
         if prospect['review_id'] is not None:
             require(prospect['review_id'] in reviews, 'prospect lacks scientific review')
+            accepted_record(prospect['review_id'], 'prospect_ids', ident)
             require(set(prospect['paper_ids']).issubset(reviews[prospect['review_id']]['reviewed_papers']),
                     'prospect review does not cover its papers')
         for source in prospect['source_evidence']:
@@ -275,6 +340,8 @@ def validate():
             require(extraction and extraction["reading_level"] == "full_text", "scan claims unread paper as full read")
         for paper_id in scan["reviewed_papers"]:
             require(papers[paper_id]["review_id"], "scan claims unreviewed paper as reviewed")
+        for review_id in scan.get('targeted_source_reviews', []):
+            require(review_id in reviews and targeted(reviews[review_id]), 'scan lacks targeted review')
         require(all(i in ideas for i in scan["idea_ids"]), "scan missing idea")
         require(all(i in designs for i in scan["design_ids"]), "scan missing design")
         if "abstract_screens" in scan:
