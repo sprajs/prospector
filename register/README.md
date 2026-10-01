@@ -113,7 +113,7 @@ Combined models require compatibility checks before promotion.
 | --- | --- |
 | [EDE fixed-endpoint sound-horizon response](../designs/candidate-ede-fixed-endpoint-ruler.json) | blocked |
 | [Full ΛCDM reference and stack-closure audit](../designs/candidate-lcdm-baseline-reference-audit.json) | blocked |
-| [Massless supplied-drag ΛCDM comparison](../designs/candidate-lcdm-massless-conditional-comparison.json) | blocked |
+| [Massless supplied-drag ΛCDM comparison](../designs/candidate-lcdm-massless-conditional-comparison.json) | ready_for_consumer_review |
 | [NEDE piecewise background conservation and matching](../designs/candidate-nede-piecewise-background.json) | blocked |
 | [Deceleration matching and derivative audit](../designs/candidate-q-reconstruction-continuity-and-derivative-interpretation.json) | blocked |
 | [Staged decay energy and claim audit](../designs/candidate-staged-decay-energy-and-background-claim-audit.json) | blocked |
@@ -147,5 +147,6 @@ Source checks and structural validation do not establish independent reproductio
 - [2026-10-01-lcdm-baseline-source-claims](reviews/2026-10-01-lcdm-baseline-source-claims.json): Limited candidate changed before acceptance to the exact synthetic fractional controls and background/BAO-only scope. Earlier physical-density/Planck endpoint/SN-output draft is retained locally; no run evidence was transferred to it.
 - [arxiv:2503.14738v3](reviews/2026-10-01-lcdm-baseline-source-claims.json): DESI Table4 entries are marginalized BAO-fit posterior means/errors with published covariance, a released fitted compression rather than raw clustering.
 - [2026-10-01-lcdm-baseline-source-claims](reviews/2026-10-01-lcdm-baseline-source-claims.json): H0 cancellation applies only with fractional densities and supplied drag held fixed; fixed physical density/temperature is a different test.
+- [2026-10-01-lcdm-baseline-source-claims](reviews/2026-10-01-lcdm-baseline-source-claims.json): Reproducible corrected twin-E comparison to the declared dimensionless 2e-11 relative allocation. Its fresh clean run and negative control were reviewed independently; old receipts remain historical. Request bytes and external budgets are unchanged.
 
 [Scan receipts](../scans/) · [Continuation queue](../state.json) · [Record conventions](../docs/records.md)

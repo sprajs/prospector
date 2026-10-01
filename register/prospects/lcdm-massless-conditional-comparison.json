@@ -3,7 +3,7 @@
   "id": "lcdm-massless-conditional-comparison",
   "title": "Conditional massless background and BAO",
   "kind": "single_mechanism",
-  "readiness": "blocked",
+  "readiness": "ready_for_consumer_review",
   "baseline": {
     "label": "Planck base ΛCDM comparison",
     "role": "comparison",
@@ -34,10 +34,7 @@
   "scope": [
     "Reproducible experiments/lcdm-baseline: compare only the listed exported background and conditional-BAO quantities. Native H, D_H, D_V and the supplied-endpoint ruler support these computations internally; standalone values are not required exported comparison outputs. No SN profile, fit or full source inference."
   ],
-  "unknowns": [
-    "Corrected dimensionless twin-E control acceptance and final consumer revision remain pending.",
-    "Reproducible twin E(z) control gate must enforce the original dimensionless relative budget before final immutable consumer binding."
-  ],
+  "unknowns": [],
   "combination_compatibility": {
     "status": "source_coherent",
     "basis": "One declared background; observable lineage ideas inform the investigation, not extra physical components or independent probes."

@@ -11,7 +11,7 @@
     "massless-supplied-drag-comparison"
   ],
   "review_id": "2026-10-01-lcdm-baseline-source-claims",
-  "readiness": "blocked",
+  "readiness": "ready_for_consumer_review",
   "equations": [
     {
       "expression": "H(z)^2/H0^2 = Omega_bc*(1+z)^3 + Omega_gamma*(1+z)^4 + Omega_nu*rho_nu(z)/rho_nu(0) + Omega_Lambda",
@@ -146,9 +146,7 @@
       ]
     }
   ],
-  "unknowns": [
-    "Corrected dimensionless twin-E control acceptance and final consumer revision remain pending."
-  ],
+  "unknowns": [],
   "verification_gates": [
     "Independent exact gpt-6.1-sol review of listed original sources/locators and candidate scope.",
     "Consumer accepts immutable candidate/reference hashes and pins engine revision/build/input identities.",
@@ -165,15 +163,18 @@
     "capability_status": "Compiled shared flat matter+radiation+Lambda supplied-drag and early/late native kernels available. Native conditional BAO available. Ten CLI operations; no native early/late CLI route. The background.evaluate LCDM descriptor is a separate radiation-free late-time operation. Missing full massive-neutrino/ionization/drag/perturbation/CMB closure.",
     "recipe_runner_status": "No implemented generic recipe runner; Reproducible owns a dedicated typed experiment consumer.",
     "adapter_repository": "sprajs/reproducible",
-    "adapter_revision": "c3193648ebd74ffd8a8d3fff8cfd20e02db36080",
+    "adapter_revision": "98cadbb3e3bf59f5933ef977133b64453c968c0a",
     "adapter_dirty": false,
     "validation_route": "Reproducible experiments/lcdm-baseline/controller.py validates lcdm-baseline.native and dispatches the dedicated typed consumer; not Irreducible CLI-schema acceptance.",
-    "adapter_revision_status": "Historical inspected revision; superseding corrected gate revision pending."
+    "adapter_revision_status": "Clean tested revision with dimensionless twin-E gate corrected; independent high-effort review accepted the typed boundary."
   },
-  "blockers": [
-    "Reproducible twin E(z) control gate must enforce the original dimensionless relative budget before final immutable consumer binding."
-  ],
-  "executable_request": null,
+  "blockers": [],
+  "executable_request": {
+    "path": "requests/lcdm-baseline-native.json",
+    "sha256": "5d67253917a35031b69b85272fe381da8c946007da5615300a3dcf3381f12bed",
+    "consumer_validation": "passed_typed_native_adapter_at_inspected_revision",
+    "validation_route": "Reproducible experiments/lcdm-baseline/controller.py validates lcdm-baseline.native and dispatches the dedicated typed consumer; not Irreducible CLI-schema acceptance. Engine db4765838fc404a489a0115ee69713f2ea6cd2f4; adapter 98cadbb3e3bf59f5933ef977133b64453c968c0a."
+  },
   "qualification": {
     "numerically_executed": false,
     "scientifically_qualified": false,
@@ -231,7 +232,7 @@
         2.33,
         5.0
       ],
-      "request_validation": "Typed native route inspected at historical c3193648; corrected twin-E gate revision and consumer acceptance pending."
+      "request_validation": "Reproducible experiments/lcdm-baseline/controller.py validates lcdm-baseline.native and dispatches the dedicated typed consumer; not Irreducible CLI-schema acceptance. Engine db4765838fc404a489a0115ee69713f2ea6cd2f4; adapter 98cadbb3e3bf59f5933ef977133b64453c968c0a."
     },
     "scope": "Reproducible experiments/lcdm-baseline: compare only the listed exported background and conditional-BAO quantities. Native H, D_H, D_V and the supplied-endpoint ruler support these computations internally; standalone values are not required exported comparison outputs. No SN profile, fit or full source inference."
   },

@@ -180,11 +180,26 @@
     {
       "kind": "administrative_gates",
       "action": "Replace pending review placeholders and attach immutable final candidate/reference/request hashes and typednative consumer handoff before promoting limited readiness. Keep full-model blockers and qualificationfalse."
+    },
+    {
+      "kind": "consumer_dimensional_gate",
+      "display_summary": "Reproducible corrected twin-E comparison to the declared dimensionless 2e-11 relative allocation. Its fresh clean run and negative control were reviewed independently; old receipts remain historical. Request bytes and external budgets are unchanged."
     }
   ],
   "limitations": [
     "Accepted narrow source claims and blocked candidate scope only; full-paper readings remain pending.",
     "No new numerical run, covariance reconstruction, fit/posterior reproduction or scientific qualification here.",
     "Earlier independent pass recorded low reasoning; only the subsequent verified high-effort pass supports this acceptance."
-  ]
+  ],
+  "independent_boundary_review": {
+    "agent_id": "/root/baseline_source_high",
+    "requested_model": "gpt-6.1-sol",
+    "requested_reasoning": "high",
+    "runtime_session_id": "01a0f82e-0382-7582-9ce2-9b57bb8349a7",
+    "packet_sha256": "ff0100ebed8631dbfdf5dede683e04edfb5398914bfd9faf47b0a1f2e5fe18ee",
+    "status": "accepted_minimal_source_and_corrected_consumer_prerequisites_final_canonical_binding_pending",
+    "scope": "Independent final candidate/reference/request/engine-boundary and original DESI Table4 axes/sample/source-role review. Secondary bounded source checks are recorded, but the Prospector primary high worker owns the canonical six-source stage.",
+    "adapter_revision": "98cadbb3e3bf59f5933ef977133b64453c968c0a",
+    "independent_numerical_reproduction": false
+  }
 }
