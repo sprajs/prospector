@@ -17,7 +17,7 @@
     {
       "contract_id": "standard-model-source-gates-v1",
       "path": "register/contracts/standard-model-source-gates-v1.json",
-      "sha256": "0464d5fca09a38537071595beaa952f0260c898c966599aaeee76792c322f575"
+      "sha256": "ca0ed970215f151d372da450dec7d1f0f24bd307b09d53e6df98c30a30122597"
     }
   ],
   "faithful_claim": "Can one declared thermal background and supplied drag input be compared conditionally with the exact13-point DESI fitted compression and its full covariance?",

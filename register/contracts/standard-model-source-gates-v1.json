@@ -317,7 +317,7 @@
       "bytes": 48781440,
       "retrieved_utc": null,
       "retrieval_time_reason": "Reused exact source bytes from the frozen consumer packet; original per-file retrieval time not supplied.",
-      "role": "released_compact_product",
+      "role": "released_reduced_product",
       "conditioning": "Frozen release c447f0fea703fcd0fff57de5000947b5ca81286b; original3492-row/47-column ladder identity. FITS headers, all47 prior rows, likelihood/prior definitions and wrapper configuration checked; no numerical fit or physical label for index44 established."
     },
     {
@@ -327,7 +327,7 @@
       "bytes": 659520,
       "retrieved_utc": null,
       "retrieval_time_reason": "Reused exact source bytes from the frozen consumer packet; original per-file retrieval time not supplied.",
-      "role": "released_compact_product",
+      "role": "released_reduced_product",
       "conditioning": "Frozen release c447f0fea703fcd0fff57de5000947b5ca81286b; original3492-row/47-column ladder identity. FITS headers, all47 prior rows, likelihood/prior definitions and wrapper configuration checked; no numerical fit or physical label for index44 established."
     },
     {
@@ -337,7 +337,7 @@
       "bytes": 17280,
       "retrieved_utc": null,
       "retrieval_time_reason": "Reused exact source bytes from the frozen consumer packet; original per-file retrieval time not supplied.",
-      "role": "released_compact_product",
+      "role": "released_reduced_product",
       "conditioning": "Frozen release c447f0fea703fcd0fff57de5000947b5ca81286b; original3492-row/47-column ladder identity. FITS headers, all47 prior rows, likelihood/prior definitions and wrapper configuration checked; no numerical fit or physical label for index44 established."
     },
     {

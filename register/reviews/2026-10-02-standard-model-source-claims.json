@@ -14,8 +14,8 @@
     "evidence_kind": "runtime_turn_context",
     "actual_backend_identity": null
   },
-  "reviewed_utc": "2026-10-02T23:26:50.004634+00:00",
-  "packet_sha256": "e909bcb12626d935f6ee22a07683532b3bbed5ca333f080046af05d67b6c3ee9",
+  "reviewed_utc": "2026-10-02T23:28:26.582186+00:00",
+  "packet_sha256": "4b572521200e297c36de11ca5479771f72e63f81f5584ffe7ddadd66996c24de",
   "supporting_packets": [
     {
       "agent_id": "/root/thermal_source_audit",
