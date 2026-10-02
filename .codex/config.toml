@@ -1,5 +1,5 @@
-# Project-scoped defaults. Explicit Sol review spawns override Luna.
+# Project-scoped defaults. Explicit reader model and effort requests override these.
 [agents]
-default_subagent_model = "gpt-6-luna"
-default_subagent_reasoning_effort = "medium"
-max_concurrent_threads_per_session = 3
+default_subagent_model = "gpt-6.1-sol"
+default_subagent_reasoning_effort = "xhigh"
+max_concurrent_threads_per_session = 32
