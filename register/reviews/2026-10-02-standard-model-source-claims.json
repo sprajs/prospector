@@ -14,8 +14,8 @@
     "evidence_kind": "runtime_turn_context",
     "actual_backend_identity": null
   },
-  "reviewed_utc": "2026-10-02T22:59:52.891408+00:00",
-  "packet_sha256": "c9d124544b2cc4a50374e0f78d85252cf94a89ceecf5b58c53e71c3b656d70c4",
+  "reviewed_utc": "2026-10-02T23:26:50.004634+00:00",
+  "packet_sha256": "e909bcb12626d935f6ee22a07683532b3bbed5ca333f080046af05d67b6c3ee9",
   "supporting_packets": [
     {
       "agent_id": "/root/thermal_source_audit",
@@ -521,6 +521,11 @@
     {
       "kind": "integration_metadata_precision_correction",
       "display_summary": "SDSS photometry TUNIT cards are present but blank; EXPTIME is absent. Missing declared units are not missing header cards."
+    },
+    {
+      "kind": "integration_source_identity_correction",
+      "paper_id": "arxiv:2112.04510v3",
+      "display_summary": "Retract our NEXT02 count/index conflation: the original released ladder has47 columns, with zero-based index44 fixed0 and46 active coordinates; the older compact44-dimensional route is a separate target. This was an integration error, not a printed-source error; the physical meaning of index44 remains unresolved."
     }
   ],
   "limitations": [

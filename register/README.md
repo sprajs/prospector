@@ -216,5 +216,6 @@ Source checks and structural validation do not establish independent reproductio
 - [2026-10-02-standard-model-source-claims](reviews/2026-10-02-standard-model-source-claims.json): Correct canonical worker names and per-paper figure coverage; scope actual candidate assets and minimal outputs separately from future drag/CMB gates.
 - [2026-10-02-standard-model-source-claims](reviews/2026-10-02-standard-model-source-claims.json): The bounded thermal candidate now states the shared-temperature equation and separately requires exact independently accepted H1/B2/NIST atomic-data bindings; no drag or CMB output is admitted.
 - [2026-10-02-standard-model-source-claims](reviews/2026-10-02-standard-model-source-claims.json): SDSS photometry TUNIT cards are present but blank; EXPTIME is absent. Missing declared units are not missing header cards.
+- [arxiv:2112.04510v3](reviews/2026-10-02-standard-model-source-claims.json): Retract our NEXT02 count/index conflation: the original released ladder has47 columns, with zero-based index44 fixed0 and46 active coordinates; the older compact44-dimensional route is a separate target. This was an integration error, not a printed-source error; the physical meaning of index44 remains unresolved.
 
 [Scan receipts](../scans/) · [Continuation queue](../state.json) · [Record conventions](../docs/records.md)

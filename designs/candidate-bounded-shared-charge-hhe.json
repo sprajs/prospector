@@ -17,7 +17,7 @@
     {
       "contract_id": "standard-model-source-gates-v1",
       "path": "register/contracts/standard-model-source-gates-v1.json",
-      "sha256": "87ff4bc5e7aab52d4c651d7eba8493d88de63323df1e8db84c7dfe65d79c8ad5"
+      "sha256": "0464d5fca09a38537071595beaa952f0260c898c966599aaeee76792c322f575"
     }
   ],
   "faithful_claim": "Can a separately named F_H1/NIST/RecfastCLASS-convention finite HII/HeII-singlet initial-value model maintain shared charge, matter-temperature rates and declared omissions?",
