@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1606.00439v2",
+  "arxiv_id": "1606.00439",
+  "version": 2,
+  "title": "The clustering of galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: RSD measurement from the power spectrum and bispectrum of the DR12 BOSS galaxies",
+  "authors": [
+    "Héctor Gil-Marín",
+    "Will J. Percival",
+    "Licia Verde",
+    "Joel R. Brownstein",
+    "Chia-Hsun Chuang",
+    "Francisco-Shu Kitaura",
+    "Sergio A. Rodríguez-Torres",
+    "Matthew D. Olmstead"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2016-06-01T20:00:03Z",
+  "updated_utc": "2016-10-26T12:46:50Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1606.00439v2",
+    "html": "https://arxiv.org/html/1606.00439v2",
+    "pdf": "https://arxiv.org/pdf/1606.00439v2"
+  },
+  "license": {
+    "status": "Unreported in retrieved Atom metadata",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public accessibility does not establish redistribution rights. Sources, copied abstracts and worker packets stay ignored."
+  },
+  "artifacts": [
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=astro-ph%2F9506072%2Castro-ph%2F9909275%2Castro-ph%2F9603033%2Castro-ph%2F9709112%2C1104.2933%2Castro-ph%2F9911177%2C1907.12875%2C2112.01471%2C2110.03487%2C1606.00439%2C0910.2773%2Castro-ph%2F0701828%2C1801.08023&max_results=13",
+      "retrieved_utc": "2026-10-02T21:49:20.413721+00:00",
+      "sha256": "6e164a90b318339054952d52ef87039f99e27702268159e0d972efa7e2c6c4cd",
+      "bytes": 46475,
+      "role": "metadata"
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/1606.00439v2",
+      "retrieved_utc": "2026-10-02T21:50:15.269148+00:00",
+      "sha256": "d3538b300d0b0490dee538b4c5327f694b78bec515e9ed8c820f96466baf560d",
+      "bytes": 926527
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/1606.00439v2",
+      "retrieved_utc": "2026-10-02T21:50:18.675077+00:00",
+      "sha256": "7026e8dd7e51a07adde8940c380dded16391ad90a49c6ba321393d0fde1fe823",
+      "bytes": 5141259
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/1606.00439v2",
+      "retrieved_utc": "2026-10-02T21:50:19.504987+00:00",
+      "sha256": "eb9b18366cd8ca0e4e4de415ccbe504d777ab8b016db941e3e4dcb156b908b7b",
+      "bytes": 301588,
+      "tool": "pdftotext -layout",
+      "derived_from_sha256": "7026e8dd7e51a07adde8940c380dded16391ad90a49c6ba321393d0fde1fe823"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "metadata",
+    "reason": "Known primary identity admitted for explicitly scoped standard-model source audit. Located Sol checks are separate; complete Luna reading remains pending."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

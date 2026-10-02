@@ -33,13 +33,15 @@
     ]
   },
   "scope": [
-    "Identify supported calculations and explicit blockers. No faithful full Planck reproduction until closure and likelihoods are implemented."
+    "Identify supported calculations and explicit blockers. No faithful full Planck reproduction until closure and likelihoods are implemented.",
+    "Located source requirements cover the existing19 scopes; changed finite H/He and perfect-fluid comparisons are separate blocked designs, not retained Planck physics."
   ],
   "unknowns": [
     "Complete source readings have not occurred in this targeted task.",
     "Consumer release asset hashes, exact selections and comparison budgets belong to the Reproducible packet and are not yet accepted here.",
     "Unknown cross-probe covariances stay unknown.",
-    "Faithful Planck physics and full likelihood stack are not implemented."
+    "Faithful Planck physics and full likelihood stack are not implemented.",
+    "The102 calibration covariance axes are structurally resolved;105 count/filter aliases, physical exposure/selection laws, and complete lens/RSD/CMB asset and physics closure remain open."
   ],
   "combination_compatibility": {
     "status": "source_coherent",
@@ -54,20 +56,34 @@
     "planck-conditioned-base-lcdm"
   ],
   "paper_ids": [
+    "arxiv:0910.2773v2",
+    "arxiv:1104.2933v3",
+    "arxiv:1606.00439v2",
+    "arxiv:1801.08023v3",
     "arxiv:1807.06209v4",
-    "arxiv:2503.14738v3",
-    "arxiv:2202.04077v2",
+    "arxiv:1907.12875v2",
+    "arxiv:2110.03487v2",
+    "arxiv:2112.01471v2",
     "arxiv:2112.03863v2",
     "arxiv:2112.03864v2",
-    "arxiv:2112.04510v3"
+    "arxiv:2112.04510v3",
+    "arxiv:2202.04077v2",
+    "arxiv:2503.14738v3",
+    "arxiv:astro-ph/0701828v1",
+    "arxiv:astro-ph/9506072v1",
+    "arxiv:astro-ph/9603033v1",
+    "arxiv:astro-ph/9909275v2"
   ],
   "design_ids": [
-    "candidate-lcdm-baseline-reference-audit"
+    "candidate-lcdm-baseline-reference-audit",
+    "candidate-desi-dr2-full-compression-contract",
+    "candidate-bounded-shared-charge-hhe",
+    "candidate-perfect-fluid-band-transfer"
   ],
   "topic_ids": [
     "baseline-reference"
   ],
-  "review_id": "2026-10-01-lcdm-baseline-source-claims",
+  "review_id": "2026-10-02-standard-model-source-claims",
   "source_evidence": [
     {
       "paper_id": "arxiv:1807.06209v4",
@@ -123,6 +139,113 @@
         "pdf": "572e5d2c0f32bf6e80a118eec13ed0107e1e2830f9ebe90b5bc4e9d1b7fa5df1",
         "extracted_text": "cb075a9089294197178ea49385657839a15554b32b497f15e490782c48589c5e"
       }
+    },
+    {
+      "paper_id": "arxiv:0910.2773v2",
+      "locator": "Original PDF p3 Eqs1–7 lens/Fermat/time-delay/mass-sheet definitions; p8 Sec4 redshifts and relative-delay table; p12 Sec5.2 aperture/template kinematics and environment sections",
+      "url": "https://arxiv.org/abs/0910.2773v2",
+      "source_sha256": {
+        "pdf": "49713641ce2c8c82994f6365b112dc349b1388b048819f712ab565a4043feeff",
+        "extracted_text": "b66de6042d23830b383f5a1f87625b073295b487bed81815277f7011b1e63c53"
+      }
+    },
+    {
+      "paper_id": "arxiv:1104.2933v3",
+      "locator": "Sec.1 scope/version paragraphs: CLASS v1.1 and January 2011 CAMB",
+      "url": "https://arxiv.org/abs/1104.2933v3",
+      "source_sha256": {
+        "html": "b078d2fc319cbc381d887dcbc1e015950c4a98712eb86530ca75dcb69d442509",
+        "pdf": "748b2c1bced36e6dd106226b32839da619f17854b2c42cbf2e0b4b273c1a3ebb",
+        "extracted_text": "d219b6a06bc14d35c3328d45a79031b1b9bf7037c305605dd0a424e9dc1d2649"
+      }
+    },
+    {
+      "paper_id": "arxiv:1606.00439v2",
+      "locator": "PDF first page title/authors/version; HTML Sec2 fiducial model; Sec3 Eqs9–10 AP map; Table3 P+B and Table5 BAO+RSD; source window/mocks/nonlinear nuisance conditioning",
+      "url": "https://arxiv.org/abs/1606.00439v2",
+      "source_sha256": {
+        "html": "d3538b300d0b0490dee538b4c5327f694b78bec515e9ed8c820f96466baf560d",
+        "pdf": "7026e8dd7e51a07adde8940c380dded16391ad90a49c6ba321393d0fde1fe823",
+        "extracted_text": "eb9b18366cd8ca0e4e4de415ccbe504d777ab8b016db941e3e4dcb156b908b7b"
+      }
+    },
+    {
+      "paper_id": "arxiv:1801.08023v3",
+      "locator": "Original HTML SecI S1.E1-S1.E2 and S1.p5.1-S1.p5.4",
+      "url": "https://arxiv.org/abs/1801.08023v3",
+      "source_sha256": {
+        "html": "571a8f3a2e56eedfdad53a2986316125fc108bb6c1f92cdc5f10325843ccf1f5",
+        "pdf": "a3689b113a913ae8012b218e7b3a0250b5f8b1e185a91aa8b2172d1d53a2819e",
+        "extracted_text": "5bc2396dc8c4424acd96e5e7159d1f451b3e0327567193bea8c1d2fa97095325"
+      }
+    },
+    {
+      "paper_id": "arxiv:1907.12875v2",
+      "locator": "HTML title",
+      "url": "https://arxiv.org/abs/1907.12875v2",
+      "source_sha256": {
+        "html": "889ccbfd79f5e2e41e84b835e4bd5889a590319eb540dac453cb411db722be54"
+      }
+    },
+    {
+      "paper_id": "arxiv:2110.03487v2",
+      "locator": "HTML S1 Eqs1–6 and reconstruction assumptions",
+      "url": "https://arxiv.org/abs/2110.03487v2",
+      "source_sha256": {
+        "html": "130b154d16078b7b406ac192da8c19db2cafef90a1dd6105be43edf55114c9dd",
+        "pdf": "6f623f4f8e84bebfd03ecf9cb6480ff20d430459b2aadb7b0dd5883b67864666",
+        "extracted_text": "7887033ec46dd4816c0f1a681d9d15c51ea30d1563c77c6e01236edbeae05049"
+      }
+    },
+    {
+      "paper_id": "arxiv:2112.01471v2",
+      "locator": "HTML S2 Tables1,2,2a and coordinate/bookkeeping paragraphs",
+      "url": "https://arxiv.org/abs/2112.01471v2",
+      "source_sha256": {
+        "html": "eb5c7d943ff293f09c11784e10e0931d8810546936d808e5d67857a24a6395b9"
+      }
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0701828v1",
+      "locator": "HTML S2 Eq1, rest-frame phase/wavelength/color definitions and model basis",
+      "url": "https://arxiv.org/abs/astro-ph/0701828v1",
+      "source_sha256": {
+        "html": "bab88504c4bce299c5a765c722b3c4fa040eed3830c924a6438762e0a7985952",
+        "pdf": "a89d6be7eb6b76fe9a83fce8e2f3a8eda99ca35c0d20c71c580d2a83a99b42e3",
+        "extracted_text": "c9656eb1c2b2730bb8fd38710c54152e36327a5899353682f3bf5db88da9aac3"
+      }
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9506072v1",
+      "locator": "Sec.2 opening conventions; Eqs.4-6",
+      "url": "https://arxiv.org/abs/astro-ph/9506072v1",
+      "source_sha256": {
+        "html": "8508ecb368ef8fc64c2163c5441c23386f9c7265fa2eeb8d508bd86a293b44c5",
+        "pdf": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+        "extracted_text": "6d20a4d613f84696f7bf870823e5acb9b63383da0f2dc3fff4e0f93ec59d7933"
+      }
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9603033v1",
+      "locator": "PDF title page: exact title/authors/version watermark",
+      "url": "https://arxiv.org/abs/astro-ph/9603033v1",
+      "source_sha256": {
+        "pdf": "3448860571b777a199bee2e8ef08e2cc7b181b5ab68ba47eb4b20dae8aa18f8b",
+        "extracted_text": "3511a46acf736743d06e8d572ad2301e300b21f594e59937df1adc91587f90c7"
+      }
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9909275v2",
+      "locator": "PDF p3 Sec3 Eqs1-4 and validity paragraph; Figure2 visual qualitative check",
+      "url": "https://arxiv.org/abs/astro-ph/9909275v2",
+      "source_sha256": {
+        "html": "46c33e2159ef030f42670a7af2e548e461a1e89ac43326e9dd3e11da52c46921",
+        "pdf": "fe4232be14d12ccad7ad46f795dd21c4fa1f66d6aba18c6e512c4341cc70bc07",
+        "extracted_text": "e08d51849e69fe85b79c98c0915a4eac6b867d5ad64d773894a016ebae12306e"
+      }
     }
+  ],
+  "source_contract_ids": [
+    "standard-model-source-gates-v1"
   ]
 }

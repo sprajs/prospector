@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:astro-ph/9506072v1",
+  "arxiv_id": "astro-ph/9506072",
+  "version": 1,
+  "title": "Cosmological Perturbation Theory in the Synchronous and Conformal Newtonian Gauges",
+  "authors": [
+    "Chung-Pei Ma",
+    "Edmund Bertschinger"
+  ],
+  "categories": [
+    "astro-ph",
+    "hep-ph"
+  ],
+  "published_utc": "1995-06-11T21:40:56Z",
+  "updated_utc": "1995-06-11T21:40:56Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/astro-ph/9506072v1",
+    "html": "https://arxiv.org/html/astro-ph/9506072v1",
+    "pdf": "https://arxiv.org/pdf/astro-ph/9506072v1"
+  },
+  "license": {
+    "status": "Unreported in retrieved Atom metadata",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public accessibility does not establish redistribution rights. Sources, copied abstracts and worker packets stay ignored."
+  },
+  "artifacts": [
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=astro-ph%2F9506072%2Castro-ph%2F9909275%2Castro-ph%2F9603033%2Castro-ph%2F9709112%2C1104.2933%2Castro-ph%2F9911177%2C1907.12875%2C2112.01471%2C2110.03487%2C1606.00439%2C0910.2773%2Castro-ph%2F0701828%2C1801.08023&max_results=13",
+      "retrieved_utc": "2026-10-02T21:49:20.413721+00:00",
+      "sha256": "6e164a90b318339054952d52ef87039f99e27702268159e0d972efa7e2c6c4cd",
+      "bytes": 46475,
+      "role": "metadata"
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/astro-ph/9506072v1",
+      "retrieved_utc": "2026-10-02T21:50:28.353719+00:00",
+      "sha256": "8508ecb368ef8fc64c2163c5441c23386f9c7265fa2eeb8d508bd86a293b44c5",
+      "bytes": 833058
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/astro-ph/9506072v1",
+      "retrieved_utc": "2026-10-02T21:50:31.569363+00:00",
+      "sha256": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+      "bytes": 710665
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/astro-ph/9506072v1",
+      "retrieved_utc": "2026-10-02T21:50:31.920044+00:00",
+      "sha256": "6d20a4d613f84696f7bf870823e5acb9b63383da0f2dc3fff4e0f93ec59d7933",
+      "bytes": 137747,
+      "tool": "pdftotext -layout",
+      "derived_from_sha256": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "metadata",
+    "reason": "Known primary identity admitted for explicitly scoped standard-model source audit. Located Sol checks are separate; complete Luna reading remains pending."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

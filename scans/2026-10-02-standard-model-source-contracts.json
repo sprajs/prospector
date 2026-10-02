@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-02-standard-model-source-contracts",
+  "status": "completed",
+  "started_utc": "2026-10-02T21:49:20.413721+00:00",
+  "completed_utc": "2026-10-02T22:59:52.891408+00:00",
+  "lane": "baseline-reference",
+  "work_mode": "explicit_targeted_source_contract_audit",
+  "queries": [
+    {
+      "mode": "known_primary_ids_only",
+      "receipt": {
+        "label": "metadata",
+        "url": "https://export.arxiv.org/api/query?id_list=astro-ph%2F9506072%2Castro-ph%2F9909275%2Castro-ph%2F9603033%2Castro-ph%2F9709112%2C1104.2933%2Castro-ph%2F9911177%2C1907.12875%2C2112.01471%2C2110.03487%2C1606.00439%2C0910.2773%2Castro-ph%2F0701828%2C1801.08023&max_results=13",
+        "retrieved_utc": "2026-10-02T21:49:20.413721+00:00",
+        "timeout_seconds": 20,
+        "byte_limit": 10485760,
+        "http_status": 200,
+        "final_url": "https://export.arxiv.org/api/query?id_list=astro-ph%2F9506072%2Castro-ph%2F9909275%2Castro-ph%2F9603033%2Castro-ph%2F9709112%2C1104.2933%2Castro-ph%2F9911177%2C1907.12875%2C2112.01471%2C2110.03487%2C1606.00439%2C0910.2773%2Castro-ph%2F0701828%2C1801.08023&max_results=13",
+        "content_type": "application/atom+xml; charset=utf-8",
+        "bytes": 46475,
+        "sha256": "6e164a90b318339054952d52ef87039f99e27702268159e0d972efa7e2c6c4cd",
+        "path": ".work/standard-lcdm-contracts/acquisition/objects/6e164a90b318339054952d52ef87039f99e27702268159e0d972efa7e2c6c4cd.xml",
+        "elapsed_seconds": 0.319
+      }
+    }
+  ],
+  "registered_papers": [
+    "arxiv:0910.2773v2",
+    "arxiv:1104.2933v3",
+    "arxiv:1606.00439v2",
+    "arxiv:1801.08023v3",
+    "arxiv:1807.06209v4",
+    "arxiv:1907.12875v2",
+    "arxiv:2110.03487v2",
+    "arxiv:2112.01471v2",
+    "arxiv:2112.03863v2",
+    "arxiv:2112.03864v2",
+    "arxiv:2112.04510v3",
+    "arxiv:2202.04077v2",
+    "arxiv:2503.14738v3",
+    "arxiv:astro-ph/0701828v1",
+    "arxiv:astro-ph/9506072v1",
+    "arxiv:astro-ph/9603033v1",
+    "arxiv:astro-ph/9709112v1",
+    "arxiv:astro-ph/9909275v2",
+    "arxiv:astro-ph/9911177v2"
+  ],
+  "new_versions": [
+    "arxiv:2112.01471v2",
+    "arxiv:2110.03487v2",
+    "arxiv:1907.12875v2",
+    "arxiv:0910.2773v2",
+    "arxiv:1104.2933v3",
+    "arxiv:astro-ph/9709112v1",
+    "arxiv:astro-ph/0701828v1",
+    "arxiv:1606.00439v2",
+    "arxiv:astro-ph/9603033v1",
+    "arxiv:astro-ph/9506072v1",
+    "arxiv:astro-ph/9911177v2",
+    "arxiv:astro-ph/9909275v2",
+    "arxiv:1801.08023v3"
+  ],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [
+    "2026-10-02-standard-model-source-claims"
+  ],
+  "idea_ids": [],
+  "design_ids": [
+    "candidate-desi-dr2-full-compression-contract",
+    "candidate-bounded-shared-charge-hhe",
+    "candidate-perfect-fluid-band-transfer"
+  ],
+  "prospect_ids": [
+    "lcdm-baseline-reference-audit"
+  ],
+  "edge_ids": [],
+  "acquisition_failures": [
+    {
+      "paper_id": "arxiv:2112.01471v2",
+      "reason": "HTTP200 PDF incomplete; originalHTML used, incompletePDF excluded."
+    },
+    {
+      "paper_id": "arxiv:1907.12875v2",
+      "reason": "HTTP200 PDF incomplete; originalHTML used, incompletePDF excluded."
+    }
+  ],
+  "pending": [
+    {
+      "paper_id": "arxiv:2112.01471v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2110.03487v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:1907.12875v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:0910.2773v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:1104.2933v3",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9709112v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0701828v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:1606.00439v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9603033v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9506072v1",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9911177v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9909275v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:1801.08023v3",
+      "stage": "read"
+    }
+  ],
+  "limits": [
+    "13 new metadata versions, zero actual Luna full reads,3 fresh exactSol source workers plus coordinator; zero normal full-paper Sol reviews.",
+    "Three separate blocked candidates; existing numerical candidate/reference bytes unchanged; no science run or engine compilation here.",
+    "Known-ID metadata batch is a changing snapshot; no discovery-window or archive coverage claim. Interrupted source work resumed from rehashed receipts.",
+    "Up to12 explicit bibliography links checked locally; no new citation-hop acquisition or physical ancestry inferred."
+  ]
+}

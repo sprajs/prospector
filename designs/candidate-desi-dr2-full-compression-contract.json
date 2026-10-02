@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "design_id": "candidate-desi-dr2-full-compression-contract",
+  "title": "DESI DR2 full compressed-vector contract",
+  "paper_ids": [
+    "arxiv:2503.14738v3",
+    "arxiv:1807.06209v4"
+  ],
+  "idea_ids": [
+    "bao-compressed-relative-ruler",
+    "planck-conditioned-base-lcdm"
+  ],
+  "review_id": "2026-10-02-standard-model-source-claims",
+  "readiness": "blocked",
+  "source_contracts": [
+    {
+      "contract_id": "standard-model-source-gates-v1",
+      "path": "register/contracts/standard-model-source-gates-v1.json",
+      "sha256": "ca0ed970215f151d372da450dec7d1f0f24bd307b09d53e6df98c30a30122597"
+    }
+  ],
+  "faithful_claim": "Can one declared thermal background and supplied drag input be compared conditionally with the exact13-point DESI fitted compression and its full covariance?",
+  "equations": [
+    {
+      "expression": "alpha_parallel=(D_H/r_d)/(D_H_fid/r_d_fid); alpha_perp=(D_M/r_d)/(D_M_fid/r_d_fid)",
+      "paper_id": "arxiv:2503.14738v3",
+      "locator": "HTML S3.SS1.p3 Eq11",
+      "definitions": "D_H=c/H; D_M comoving transverse distance; all distances and comoving drag ruler in consistent units.",
+      "domain": "Fiducial-template/reconstruction-conditioned compressed BAO domain.",
+      "status": "reviewed_transcription"
+    },
+    {
+      "expression": "D_V=[z D_M^2 D_H]^(1/3)",
+      "paper_id": "arxiv:2503.14738v3",
+      "locator": "HTML S3.SS1 Eq12 adjacent D_V definition",
+      "definitions": "BGS uses D_V/r_d; six other pairs use D_M/r_d,D_H/r_d in exact released order.",
+      "domain": "No raw galaxy reconstruction or physical drag prediction.",
+      "status": "reviewed_transcription"
+    }
+  ],
+  "assumptions": [
+    "Exact source version, input order, units, species and changed-model choices are part of the comparison identity.",
+    "A source convention check is separate from native implementation, consumer numerical acceptance and scientific qualification."
+  ],
+  "minimal_test": {
+    "question": "Can one declared thermal background and supplied drag input be compared conditionally with the exact13-point DESI fitted compression and its full covariance?",
+    "observables": [
+      "All13 ordered compressed distance/ruler residuals",
+      "Full frozen169-entry covariance quadratic"
+    ],
+    "parameter_choices": null,
+    "scope": "Freeze all13 order keys and169 covariance entries, no superseded LRG3/ELG1 duplication; separately diagnose ruler and compression conditioning."
+  },
+  "simplifications": [
+    "A conditional supplied-drag ruler is not predicted physical drag. Template/reconstruction/model domain, covariance conditioning and independent source/consumer acceptance remain required; cross-probe covariance is unknown."
+  ],
+  "data_dependencies": [
+    {
+      "scope_id": "NEXT-11",
+      "title": "Thermal BAO compression",
+      "paper_ids": [
+        "arxiv:2503.14738v3",
+        "arxiv:1807.06209v4"
+      ],
+      "checked_claim": "The pinned DESI DR2 fitted compression has13 ordered ratios with all169 covariance entries; the final Lyalpha pair is DH then DM. Table4 reports marginalized posterior means/stddev under reconstruction and nuisance assumptions.",
+      "unresolved": "A conditional supplied-drag ruler is not predicted physical drag. Template/reconstruction/model domain, covariance conditioning and independent source/consumer acceptance remain required; cross-probe covariance is unknown."
+    },
+    {
+      "kind": "immutable_source_assets",
+      "assets": [
+        {
+          "url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/bb0c1c9009dc76d1391300e169e8df38fd1096db/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+          "sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+          "retrieved_utc": "2026-10-02T22:49:07.269833+00:00",
+          "bytes": 472,
+          "id": "desi_gaussian_bao_ALL_GCcomb_mean.txt",
+          "role": "provider_released_fitted_compression",
+          "conditioning": "13 DESI DR2 fitted ratios, exact provider order; retain all169 covariance entries. The released Lyalpha DM mean38.98897396 differs in last printed digit from Table4 38.988; source forms remain distinct."
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/bb0c1c9009dc76d1391300e169e8df38fd1096db/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+          "sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509",
+          "retrieved_utc": "2026-10-02T22:49:07.488668+00:00",
+          "bytes": 2547,
+          "id": "desi_gaussian_bao_ALL_GCcomb_cov.txt",
+          "role": "provider_released_fitted_compression",
+          "conditioning": "13 DESI DR2 fitted ratios, exact provider order; retain all169 covariance entries. The released Lyalpha DM mean38.98897396 differs in last printed digit from Table4 38.988; source forms remain distinct."
+        }
+      ]
+    }
+  ],
+  "unknowns": [
+    "A conditional supplied-drag ruler is not predicted physical drag. Template/reconstruction/model domain, covariance conditioning and independent source/consumer acceptance remain required; cross-probe covariance is unknown."
+  ],
+  "verification_gates": [
+    "Consumer explicitly accepts this candidate, source-contract hash and exact native/build/request identity before execution.",
+    "Independent signed/unit/analytic controls and separate source, initial, numerical and observation allocations; preserve failed gates.",
+    "No fitted product or shared source is counted as an independent observation; no source inconsistency is silently repaired."
+  ],
+  "falsification": "A source/order/convention mismatch or a failed frozen numerical gate refuses that comparison; retain the mismatch and do not relax budgets or replace missing physics.",
+  "consumer": {
+    "repository": "sprajs/irreducible",
+    "revision": "1d6a6e58c07e17b5346dc281c9b7827e260f8bb7",
+    "dirty": false,
+    "capability_status": "Clean primary source/schema/docs inspected at this revision. Bounded H/He and transfer owner contracts are separately evolving worker branches; no current native implementation or compiled numerical acceptance is certified by this source packet.",
+    "recipe_runner_status": "docs/run-recipes.md remains a strict-JSON proposal; no recipe schema or runner is implemented. A dedicated typed native consumer needs its own exact acceptance."
+  },
+  "blockers": [
+    "A conditional supplied-drag ruler is not predicted physical drag. Template/reconstruction/model domain, covariance conditioning and independent source/consumer acceptance remain required; cross-probe covariance is unknown."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Located source preparation only; pending physics, asset and consumer gates retained."
+  }
+}

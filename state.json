@@ -465,6 +465,110 @@
         "modified-gravity",
         "late-dark-energy"
       ]
+    },
+    {
+      "paper_id": "arxiv:2112.01471v2",
+      "stage": "read",
+      "reason": "Targeted source checks leave complete Luna reading and ordinary full-paper review pending.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2110.03487v2",
+      "stage": "read",
+      "reason": "Targeted source checks leave complete Luna reading and ordinary full-paper review pending.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1907.12875v2",
+      "stage": "read",
+      "reason": "Targeted source checks leave complete Luna reading and ordinary full-paper review pending.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:0910.2773v2",
+      "stage": "read",
+      "reason": "Targeted source checks leave complete Luna reading and ordinary full-paper review pending.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1104.2933v3",
+      "stage": "read",
+      "reason": "Targeted source checks leave complete Luna reading and ordinary full-paper review pending.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9709112v1",
+      "stage": "read",
+      "reason": "Targeted source checks leave complete Luna reading and ordinary full-paper review pending.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0701828v1",
+      "stage": "read",
+      "reason": "Targeted source checks leave complete Luna reading and ordinary full-paper review pending.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1606.00439v2",
+      "stage": "read",
+      "reason": "Targeted source checks leave complete Luna reading and ordinary full-paper review pending.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9603033v1",
+      "stage": "read",
+      "reason": "Targeted source checks leave complete Luna reading and ordinary full-paper review pending.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9506072v1",
+      "stage": "read",
+      "reason": "Targeted source checks leave complete Luna reading and ordinary full-paper review pending.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9911177v2",
+      "stage": "read",
+      "reason": "Targeted source checks leave complete Luna reading and ordinary full-paper review pending.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9909275v2",
+      "stage": "read",
+      "reason": "Targeted source checks leave complete Luna reading and ordinary full-paper review pending.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1801.08023v3",
+      "stage": "read",
+      "reason": "Targeted source checks leave complete Luna reading and ordinary full-paper review pending.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
     }
   ],
   "search_history": [
@@ -645,6 +749,21 @@
       "design_id": "candidate-wfc3-optical-response-contract",
       "state": "blocked",
       "reason": "Targeted source/asset contract accepted; complete event/frame or measured joint optical law blockers retained."
+    },
+    {
+      "design_id": "candidate-desi-dr2-full-compression-contract",
+      "state": "blocked",
+      "reason": "Source contract accepted within located scope; physics/assets/native numerical consumer gates retained."
+    },
+    {
+      "design_id": "candidate-bounded-shared-charge-hhe",
+      "state": "blocked",
+      "reason": "Source contract accepted within located scope; physics/assets/native numerical consumer gates retained."
+    },
+    {
+      "design_id": "candidate-perfect-fluid-band-transfer",
+      "state": "blocked",
+      "reason": "Source contract accepted within located scope; physics/assets/native numerical consumer gates retained."
     }
   ],
   "notes": [
@@ -675,5 +794,5 @@
     "request_sha256": "5d67253917a35031b69b85272fe381da8c946007da5615300a3dcf3381f12bed"
   },
   "continuation_note": "Resume saved acquisitions/reads before a new bounded window. Least-searched lane interacting-sectors; preserve foundational spin citations and blocked source-audit designs. No scheduled or endless crawl.",
-  "last_completed_source_audit": "2026-10-02-sn-passband-source-contracts"
+  "last_completed_source_audit": "2026-10-02-standard-model-source-contracts"
 }

@@ -260,6 +260,136 @@
         "locator": "HTML bibliography [6]; bib.bib37; PDF numeric reference [6]; printed base ID without version",
         "url": "https://arxiv.org/html/2609.37437v1#bib.bib37"
       }
+    },
+    {
+      "id": "cite-1104.2933v3-astro-ph__9603033",
+      "from_paper_id": "arxiv:1104.2933v3",
+      "cited_arxiv_id": "astro-ph/9603033",
+      "cited_version": null,
+      "reference": "[2]",
+      "source": {
+        "role": "html",
+        "sha256": "b078d2fc319cbc381d887dcbc1e015950c4a98712eb86530ca75dcb69d442509",
+        "locator": "HTML References [2], bib.bib2; printed astro-ph/9603033, no version",
+        "url": "https://arxiv.org/html/1104.2933v3#bib.bib2"
+      }
+    },
+    {
+      "id": "cite-1104.2933v3-astro-ph__9911177",
+      "from_paper_id": "arxiv:1104.2933v3",
+      "cited_arxiv_id": "astro-ph/9911177",
+      "cited_version": null,
+      "reference": "[3]",
+      "source": {
+        "role": "html",
+        "sha256": "b078d2fc319cbc381d887dcbc1e015950c4a98712eb86530ca75dcb69d442509",
+        "locator": "HTML References [3], bib.bib3; printed astro-ph/9911177, no version",
+        "url": "https://arxiv.org/html/1104.2933v3#bib.bib3"
+      }
+    },
+    {
+      "id": "cite-1104.2933v3-astro-ph__9506072",
+      "from_paper_id": "arxiv:1104.2933v3",
+      "cited_arxiv_id": "astro-ph/9506072",
+      "cited_version": null,
+      "reference": "[10]",
+      "source": {
+        "role": "html",
+        "sha256": "b078d2fc319cbc381d887dcbc1e015950c4a98712eb86530ca75dcb69d442509",
+        "locator": "HTML References [10], bib.bib10; printed astro-ph/9506072, no version",
+        "url": "https://arxiv.org/html/1104.2933v3#bib.bib10"
+      }
+    },
+    {
+      "id": "cite-astro-ph__9911177v2-astro-ph__9506072",
+      "from_paper_id": "arxiv:astro-ph/9911177v2",
+      "cited_arxiv_id": "astro-ph/9506072",
+      "cited_version": null,
+      "reference": "Ma & Bertschinger (1995)",
+      "source": {
+        "role": "html",
+        "sha256": "285808e85fcb62a9fea5650b49ef16f15a7e1bb4d7ec877d5a7197058fcae57b",
+        "locator": "HTML References author-year item bib.bib19; ApJ455,7, no printed arXiv ID/version",
+        "url": "https://arxiv.org/html/astro-ph/9911177v2#bib.bib19"
+      }
+    },
+    {
+      "id": "cite-astro-ph__9911177v2-astro-ph__9603033",
+      "from_paper_id": "arxiv:astro-ph/9911177v2",
+      "cited_arxiv_id": "astro-ph/9603033",
+      "cited_version": null,
+      "reference": "Seljak & Zaldarriaga (1996)",
+      "source": {
+        "role": "html",
+        "sha256": "285808e85fcb62a9fea5650b49ef16f15a7e1bb4d7ec877d5a7197058fcae57b",
+        "locator": "HTML References author-year item bib.bib21; ApJ469,437, no printed arXiv ID/version",
+        "url": "https://arxiv.org/html/astro-ph/9911177v2#bib.bib21"
+      }
+    },
+    {
+      "id": "cite-astro-ph__9603033v1-astro-ph__9506072",
+      "from_paper_id": "arxiv:astro-ph/9603033v1",
+      "cited_arxiv_id": "astro-ph/9506072",
+      "cited_version": null,
+      "reference": "Ma, C.-P., & Bertschinger, E. (1995)",
+      "source": {
+        "role": "pdf",
+        "sha256": "3448860571b777a199bee2e8ef08e2cc7b181b5ab68ba47eb4b20dae8aa18f8b",
+        "locator": "PDF p.20 References: Ma,C.-P., & Bertschinger,E.1995,ApJ455,7; unnumbered author-year bibliography, no HTML anchor or printed arXiv ID/version",
+        "url": "https://arxiv.org/pdf/astro-ph/9603033v1#page=20"
+      }
+    },
+    {
+      "id": "cite-1807.06209v4-1104.2933",
+      "from_paper_id": "arxiv:1807.06209v4",
+      "cited_arxiv_id": "1104.2933",
+      "cited_version": null,
+      "reference": "Blas et al. (2011)",
+      "source": {
+        "role": "html",
+        "sha256": "622d05fab48d935a2224afeade05b07393ec37e4e0554bb9c416f4298acb7bc0",
+        "locator": "HTML References bib.bib56; title/authors/JCAP1107,034 and printed1104.2933, no version",
+        "url": "https://arxiv.org/html/1807.06209v4#bib.bib56"
+      }
+    },
+    {
+      "id": "cite-1807.06209v4-astro-ph__9911177",
+      "from_paper_id": "arxiv:1807.06209v4",
+      "cited_arxiv_id": "astro-ph/9911177",
+      "cited_version": null,
+      "reference": "Lewis et al. (2000)",
+      "source": {
+        "role": "html",
+        "sha256": "622d05fab48d935a2224afeade05b07393ec37e4e0554bb9c416f4298acb7bc0",
+        "locator": "HTML References bib.bib221; exact title/authors/ApJ538,473 and printedastro-ph/9911177, no version",
+        "url": "https://arxiv.org/html/1807.06209v4#bib.bib221"
+      }
+    },
+    {
+      "id": "cite-2112.03864v2-2112.01471",
+      "from_paper_id": "arxiv:2112.03864v2",
+      "cited_arxiv_id": "2112.01471",
+      "cited_version": null,
+      "reference": "[19]",
+      "source": {
+        "role": "html",
+        "sha256": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+        "locator": "HTML bibliography bib.bib19",
+        "url": "https://arxiv.org/html/2112.03864v2#bib.bib19"
+      }
+    },
+    {
+      "id": "cite-2112.03864v2-2110.03487",
+      "from_paper_id": "arxiv:2112.03864v2",
+      "cited_arxiv_id": "2110.03487",
+      "cited_version": null,
+      "reference": "[59]",
+      "source": {
+        "role": "html",
+        "sha256": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+        "locator": "HTML bibliography bib.bib59",
+        "url": "https://arxiv.org/html/2112.03864v2#bib.bib59"
+      }
     }
   ],
   "inspected_paper_ids": [
@@ -273,7 +403,11 @@
     "arxiv:2202.04077v2",
     "arxiv:2112.03864v2",
     "arxiv:2609.36853v1",
-    "arxiv:2609.37437v1"
+    "arxiv:2609.37437v1",
+    "arxiv:1104.2933v3",
+    "arxiv:astro-ph/9911177v2",
+    "arxiv:astro-ph/9603033v1",
+    "arxiv:1807.06209v4"
   ],
   "limitations": [
     "Four explicit bibliography links to registered paper identities were verified in pinned original HTML. This is a bounded extraction, not a complete citation index.",

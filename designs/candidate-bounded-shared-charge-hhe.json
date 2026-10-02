@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "design_id": "candidate-bounded-shared-charge-hhe",
+  "title": "Bounded shared-charge H/He singlet history",
+  "paper_ids": [
+    "arxiv:astro-ph/9909275v2",
+    "arxiv:1801.08023v3",
+    "arxiv:1807.06209v4"
+  ],
+  "idea_ids": [
+    "planck-conditioned-base-lcdm"
+  ],
+  "review_id": "2026-10-02-standard-model-source-claims",
+  "readiness": "blocked",
+  "source_contracts": [
+    {
+      "contract_id": "standard-model-source-gates-v1",
+      "path": "register/contracts/standard-model-source-gates-v1.json",
+      "sha256": "ca0ed970215f151d372da450dec7d1f0f24bd307b09d53e6df98c30a30122597"
+    }
+  ],
+  "faithful_claim": "Can a separately named F_H1/NIST/RecfastCLASS-convention finite HII/HeII-singlet initial-value model maintain shared charge, matter-temperature rates and declared omissions?",
+  "equations": [
+    {
+      "expression": "n_e=n_H*y_H+n_He*y_He; n_i=n_i0*(1+z)^3",
+      "paper_id": "arxiv:astro-ph/9909275v2",
+      "locator": "PDF p4 species definitions and Saha Eqs6–7; checked64bbab rate normalization",
+      "definitions": "y_H and y_He are fractions per their own nuclei; independent n_H0,n_He0 in m^-3. Source x_HeII/n_H has a different denominator.",
+      "domain": "HeI/HeII/H I/H II comparison; HeIII omitted and separately gated.",
+      "status": "reviewer_derived"
+    },
+    {
+      "expression": "dy_i/dz=[n_e*y_i*alpha_i-beta_i*(1-y_i)*exp(-E_i2s/k_B/T_m)]*C_i/[H*(1+z)]",
+      "paper_id": "arxiv:astro-ph/9909275v2",
+      "locator": "PDF p3 Eqs1–2; RecfastCLASS64bbab wrap_recfast.c227–349",
+      "definitions": "Rates at T_m; alpha m^3/s, beta and H s^-1. He beta factor4 and positive inhibition select code conventions; F_H1 and NIST ionization energies change identity.",
+      "domain": "Artificial jointly solved shared-charge LTE boundary; finite interval; no full RECFAST or physical drag claim.",
+      "status": "reviewer_derived"
+    },
+    {
+      "expression": "dT_m/dz=2*T_m/(1+z)+Gamma_Compton*(T_m-T_gamma)/[H*(1+z)]; Gamma_Compton=8*sigma_T*a_R*T_gamma^4/(3*m_e*c)*n_e/(n_H+n_He+n_e)",
+      "paper_id": "arxiv:astro-ph/9909275v2",
+      "locator": "Original PDF p4 Eq5; shared-charge singlet hybrid abundance conversion",
+      "definitions": "T_gamma=T0*(1+z), temperatures K; H and Gamma s^-1; a_R photon energy-density constant J m^-3 K^-4; n_i m^-3; helium fraction uses nuclei inventory.",
+      "domain": "Compton plus adiabatic temperature evolution on the supplied finite interval; omitted HeIII/late history/rate uncertainty retained.",
+      "status": "reviewer_derived"
+    }
+  ],
+  "assumptions": [
+    "Exact source version, input order, units, species and changed-model choices are part of the comparison identity.",
+    "A source convention check is separate from native implementation, consumer numerical acceptance and scientific qualification."
+  ],
+  "minimal_test": {
+    "question": "Can a separately named F_H1/NIST/RecfastCLASS-convention finite HII/HeII-singlet initial-value model maintain shared charge, matter-temperature rates and declared omissions?",
+    "observables": [
+      "HII fraction",
+      "HeII fraction",
+      "Shared electron number density",
+      "Matter temperature",
+      "Finite-interval Thomson opacity per redshift"
+    ],
+    "parameter_choices": null,
+    "scope": "Freeze the hybrid identity and shared nuclei/temperature inventory; retain source-sign variants, fit range, HeIII omission and late-history gates."
+  },
+  "simplifications": [
+    "Supplied independent nucleus inventories and temperature histories do not implement BBN. Planck PArthENoPE1.1/neutron880.2s conditioning cannot silently become PRIMAT or an unrelated mass convention.",
+    "Ground-state LTE is an artificial supplied initial boundary, not the preceding physical He history. Omitted HeIII, fit extrapolation below4000K, rate/atomic uncertainty and numerical controls remain explicit.",
+    "An interval ending at z300–600 omits the late opacity contribution. A qualified late/reionization continuation and tail/boundary budget are required; visibility and drag are distinct."
+  ],
+  "data_dependencies": [
+    {
+      "scope_id": "NEXT-12",
+      "title": "Abundance and temperature law",
+      "paper_ids": [
+        "arxiv:1801.08023v3",
+        "arxiv:1807.06209v4"
+      ],
+      "checked_claim": "Pitrou X_i=A_i*n_i/n_b is a pseudo-mass fraction; rho_b, average baryon mass, eta and thermal history specify the conversion to number densities.",
+      "unresolved": "Supplied independent nucleus inventories and temperature histories do not implement BBN. Planck PArthENoPE1.1/neutron880.2s conditioning cannot silently become PRIMAT or an unrelated mass convention."
+    },
+    {
+      "scope_id": "NEXT-15",
+      "title": "Coupled non-LTE H/He kinetics",
+      "paper_ids": [
+        "arxiv:astro-ph/9909275v2",
+        "arxiv:1801.08023v3"
+      ],
+      "checked_claim": "The separately named F_H1/NIST/RecfastCLASS singlet hybrid uses independent nuclei densities, shared electron charge, matter-temperature rates and Compton/adiabatic temperature evolution on a finite interval.",
+      "unresolved": "Ground-state LTE is an artificial supplied initial boundary, not the preceding physical He history. Omitted HeIII, fit extrapolation below4000K, rate/atomic uncertainty and numerical controls remain explicit. Independently pinned H1/B2 and NIST atomic-data acceptance/serialization hashes are not certified by this source review."
+    },
+    {
+      "scope_id": "NEXT-16",
+      "title": "Physical drag endpoint",
+      "paper_ids": [
+        "arxiv:astro-ph/9909275v2",
+        "arxiv:2503.14738v3"
+      ],
+      "checked_claim": "Physical drag uses baryon-weighted Thomson depth from today and tau_drag(z_d)=1; comoving r_d is the sound horizon at that predicted endpoint.",
+      "unresolved": "An interval ending at z300–600 omits the late opacity contribution. A qualified late/reionization continuation and tail/boundary budget are required; visibility and drag are distinct.",
+      "role": "future_lost_scope_gate; not a minimal output"
+    },
+    {
+      "kind": "immutable_source_assets",
+      "assets": [
+        {
+          "url": "https://raw.githubusercontent.com/lesgourg/class_public/64bbab707faf4de4779a9e04edd180fef18d98fa/external/RecfastCLASS/wrap_recfast.c",
+          "sha256": "e5ea80edd4652eb1a752cb4a2b835f4b74db91ca90248e5b5d04a8a3eada7cd5",
+          "bytes": 14848,
+          "id": "recfast-class-wrap_recfast.c",
+          "role": "pinned_equation_conventions",
+          "retrieved_utc": null,
+          "retrieval_time_reason": "Original receipt supplies creation time, not per-file retrieval time; preserved without guessing.",
+          "conditioning": "64bbab707faf4de4779a9e04edd180fef18d98fa isolated singlet rate/excitation conventions only; NIST energy substitution and F_H1 are changed model choices. Licence retrieval failed404; no raw redistribution."
+        },
+        {
+          "url": "https://raw.githubusercontent.com/lesgourg/class_public/64bbab707faf4de4779a9e04edd180fef18d98fa/external/RecfastCLASS/wrap_recfast.h",
+          "sha256": "1e5609a3e5b1ddd8f7ad99df336311a9f769867e52f203e0cb6481b617e2de73",
+          "bytes": 4754,
+          "id": "recfast-class-wrap_recfast.h",
+          "role": "pinned_equation_conventions",
+          "retrieved_utc": null,
+          "retrieval_time_reason": "Original receipt supplies creation time, not per-file retrieval time; preserved without guessing.",
+          "conditioning": "64bbab707faf4de4779a9e04edd180fef18d98fa isolated singlet rate/excitation conventions only; NIST energy substitution and F_H1 are changed model choices. Licence retrieval failed404; no raw redistribution."
+        }
+      ]
+    }
+  ],
+  "unknowns": [
+    "Supplied independent nucleus inventories and temperature histories do not implement BBN. Planck PArthENoPE1.1/neutron880.2s conditioning cannot silently become PRIMAT or an unrelated mass convention.",
+    "Ground-state LTE is an artificial supplied initial boundary, not the preceding physical He history. Omitted HeIII, fit extrapolation below4000K, rate/atomic uncertainty and numerical controls remain explicit.",
+    "An interval ending at z300–600 omits the late opacity contribution. A qualified late/reionization continuation and tail/boundary budget are required; visibility and drag are distinct.",
+    "Explicitly accept independently pinned H1/B2 hydrogen rate/quantum-density and NIST atomic-data contracts, exact serialization/SHA and coherent SI/uncertainty conventions. This review certifies He code rate shape/excitations, not those original atomic-source values or the complete H1/B2 contract."
+  ],
+  "verification_gates": [
+    "Explicitly accept independently pinned H1/B2 hydrogen rate/quantum-density and NIST atomic-data contracts, exact serialization/SHA and coherent SI/uncertainty conventions. This review certifies He code rate shape/excitations, not those original atomic-source values or the complete H1/B2 contract.",
+    "Consumer explicitly accepts this candidate, source-contract hash and exact native/build/request identity before execution.",
+    "Independent signed/unit/analytic controls and separate source, initial, numerical and observation allocations; preserve failed gates.",
+    "No fitted product or shared source is counted as an independent observation; no source inconsistency is silently repaired."
+  ],
+  "falsification": "A source/order/convention mismatch or a failed frozen numerical gate refuses that comparison; retain the mismatch and do not relax budgets or replace missing physics.",
+  "consumer": {
+    "repository": "sprajs/irreducible",
+    "revision": "1d6a6e58c07e17b5346dc281c9b7827e260f8bb7",
+    "dirty": false,
+    "capability_status": "Clean primary source/schema/docs inspected at this revision. Bounded H/He and transfer owner contracts are separately evolving worker branches; no current native implementation or compiled numerical acceptance is certified by this source packet.",
+    "recipe_runner_status": "docs/run-recipes.md remains a strict-JSON proposal; no recipe schema or runner is implemented. A dedicated typed native consumer needs its own exact acceptance."
+  },
+  "blockers": [
+    "Supplied independent nucleus inventories and temperature histories do not implement BBN. Planck PArthENoPE1.1/neutron880.2s conditioning cannot silently become PRIMAT or an unrelated mass convention.",
+    "Ground-state LTE is an artificial supplied initial boundary, not the preceding physical He history. Omitted HeIII, fit extrapolation below4000K, rate/atomic uncertainty and numerical controls remain explicit.",
+    "An interval ending at z300–600 omits the late opacity contribution. A qualified late/reionization continuation and tail/boundary budget are required; visibility and drag are distinct.",
+    "Explicitly accept independently pinned H1/B2 hydrogen rate/quantum-density and NIST atomic-data contracts, exact serialization/SHA and coherent SI/uncertainty conventions. This review certifies He code rate shape/excitations, not those original atomic-source values or the complete H1/B2 contract."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Located source preparation only; pending physics, asset and consumer gates retained."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1104.2933v3",
+  "arxiv_id": "1104.2933",
+  "version": 3,
+  "title": "The Cosmic Linear Anisotropy Solving System (CLASS) II: Approximation schemes",
+  "authors": [
+    "Diego Blas",
+    "Julien Lesgourgues",
+    "Thomas Tram"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2011-04-14T22:06:43Z",
+  "updated_utc": "2011-08-17T09:25:04Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1104.2933v3",
+    "html": "https://arxiv.org/html/1104.2933v3",
+    "pdf": "https://arxiv.org/pdf/1104.2933v3"
+  },
+  "license": {
+    "status": "Unreported in retrieved Atom metadata",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public accessibility does not establish redistribution rights. Sources, copied abstracts and worker packets stay ignored."
+  },
+  "artifacts": [
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=astro-ph%2F9506072%2Castro-ph%2F9909275%2Castro-ph%2F9603033%2Castro-ph%2F9709112%2C1104.2933%2Castro-ph%2F9911177%2C1907.12875%2C2112.01471%2C2110.03487%2C1606.00439%2C0910.2773%2Castro-ph%2F0701828%2C1801.08023&max_results=13",
+      "retrieved_utc": "2026-10-02T21:49:20.413721+00:00",
+      "sha256": "6e164a90b318339054952d52ef87039f99e27702268159e0d972efa7e2c6c4cd",
+      "bytes": 46475,
+      "role": "metadata"
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/1104.2933v3",
+      "retrieved_utc": "2026-10-02T21:49:55.707707+00:00",
+      "sha256": "b078d2fc319cbc381d887dcbc1e015950c4a98712eb86530ca75dcb69d442509",
+      "bytes": 582823
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/1104.2933v3",
+      "retrieved_utc": "2026-10-02T21:49:58.955694+00:00",
+      "sha256": "748b2c1bced36e6dd106226b32839da619f17854b2c42cbf2e0b4b273c1a3ebb",
+      "bytes": 806335
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/1104.2933v3",
+      "retrieved_utc": "2026-10-02T21:49:59.346719+00:00",
+      "sha256": "d219b6a06bc14d35c3328d45a79031b1b9bf7037c305605dd0a424e9dc1d2649",
+      "bytes": 135016,
+      "tool": "pdftotext -layout",
+      "derived_from_sha256": "748b2c1bced36e6dd106226b32839da619f17854b2c42cbf2e0b4b273c1a3ebb"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "metadata",
+    "reason": "Known primary identity admitted for explicitly scoped standard-model source audit. Located Sol checks are separate; complete Luna reading remains pending."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

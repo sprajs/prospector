@@ -1,0 +1,540 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-02-standard-model-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "agent_id": "/root",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "session_id": "01a0fe95-2303-7b10-8d1c-d67645fdb25d",
+    "turn_id": "01a0fec0-0560-7080-b48e-220e0654063d",
+    "evidence_kind": "runtime_turn_context",
+    "actual_backend_identity": null
+  },
+  "reviewed_utc": "2026-10-02T23:28:26.582186+00:00",
+  "packet_sha256": "4b572521200e297c36de11ca5479771f72e63f81f5584ffe7ddadd66996c24de",
+  "supporting_packets": [
+    {
+      "agent_id": "/root/thermal_source_audit",
+      "packet_sha256": "f61b10817196fbc59b6beecbdff52eb4b90fb5d83ed3fc3ceb2107270305a012",
+      "model_confirmation": {
+        "model": "gpt-6.1-sol",
+        "effort": "xhigh",
+        "session_id": "01a0fec1-0810-7361-a598-b20696ba4a64",
+        "turn_id": "01a0fec1-0853-7833-8ebb-8c2e1e22a5b6",
+        "evidence_kind": "runtime_turn_context",
+        "actual_backend_identity": null
+      }
+    },
+    {
+      "agent_id": "/root/thermal_source_audit",
+      "packet_sha256": "09f1b1535d01671daea16b40f48b2c4b4d38bda8cca66af84dd2628e5e4492a2",
+      "model_confirmation": {
+        "model": "gpt-6.1-sol",
+        "effort": "xhigh",
+        "session_id": "01a0fec1-0810-7361-a598-b20696ba4a64",
+        "turn_id": "01a0fec1-0853-7833-8ebb-8c2e1e22a5b6",
+        "evidence_kind": "runtime_turn_context",
+        "actual_backend_identity": null
+      }
+    },
+    {
+      "agent_id": "/root/observation_source_audit",
+      "packet_sha256": "2bcd514e8ae263eaad2c500b6560a5b6e9fe86cd925667fa3ee4527a61839216",
+      "model_confirmation": {
+        "model": "gpt-6.1-sol",
+        "effort": "xhigh",
+        "session_id": "01a0fec1-bc32-7423-8594-b5a5fe128456",
+        "turn_id": "01a0fec1-bc66-71c1-b429-7187371766ee",
+        "evidence_kind": "runtime_turn_context",
+        "actual_backend_identity": null
+      }
+    },
+    {
+      "agent_id": "/root/perturbation_source_audit",
+      "packet_sha256": "c6dcc683cda351e4f5a10a9992d203b69c3a1f34b68bd015f80171ad8cd0d951",
+      "model_confirmation": {
+        "model": "gpt-6.1-sol",
+        "effort": "xhigh",
+        "session_id": "01a0fec1-578e-7712-ba9d-1707e70bb91c",
+        "turn_id": "01a0fec1-57df-7aa1-858a-c9e769cb2a26",
+        "evidence_kind": "runtime_turn_context",
+        "actual_backend_identity": null
+      }
+    }
+  ],
+  "reviewed_papers": [
+    "arxiv:0910.2773v2",
+    "arxiv:1104.2933v3",
+    "arxiv:1606.00439v2",
+    "arxiv:1801.08023v3",
+    "arxiv:1807.06209v4",
+    "arxiv:1907.12875v2",
+    "arxiv:2110.03487v2",
+    "arxiv:2112.01471v2",
+    "arxiv:2112.03863v2",
+    "arxiv:2112.03864v2",
+    "arxiv:2112.04510v3",
+    "arxiv:2202.04077v2",
+    "arxiv:2503.14738v3",
+    "arxiv:astro-ph/0701828v1",
+    "arxiv:astro-ph/9506072v1",
+    "arxiv:astro-ph/9603033v1",
+    "arxiv:astro-ph/9909275v2",
+    "arxiv:astro-ph/9911177v2"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:0910.2773v2",
+      "source_hashes": {
+        "pdf": "49713641ce2c8c82994f6365b112dc349b1388b048819f712ab565a4043feeff",
+        "extracted_text": "b66de6042d23830b383f5a1f87625b073295b487bed81815277f7011b1e63c53"
+      },
+      "coverage": {
+        "main_text": "Targeted original-source checks only; no complete reading.",
+        "checked_locators": [
+          "Original PDF p3 Eqs1–7 lens/Fermat/time-delay/mass-sheet definitions; p8 Sec4 redshifts and relative-delay table; p12 Sec5.2 aperture/template kinematics and environment sections"
+        ],
+        "unread": "Unlisted main text, appendices, likelihood assets and raw observation reductions unchecked. No complete paper reading.",
+        "figures": "Original PDF p8 scientific image inspected; p12 text/caption only; other figures unchecked."
+      }
+    },
+    {
+      "paper_id": "arxiv:1104.2933v3",
+      "source_hashes": {
+        "html": "b078d2fc319cbc381d887dcbc1e015950c4a98712eb86530ca75dcb69d442509",
+        "pdf": "748b2c1bced36e6dd106226b32839da619f17854b2c42cbf2e0b4b273c1a3ebb",
+        "extracted_text": "d219b6a06bc14d35c3328d45a79031b1b9bf7037c305605dd0a424e9dc1d2649"
+      },
+      "coverage": {
+        "main_text": "Targeted original-source checks only; no complete reading.",
+        "checked_locators": [
+          "Sec.1 scope/version paragraphs: CLASS v1.1 and January 2011 CAMB",
+          "Sec.2 Eqs.1-10,21-26 and polarization omission discussion",
+          "Sec.2.7 initial-time/TCA/source-start trigger definitions",
+          "Sec.3.1-3.4 hierarchy/truncation/UFA discussion and Eqs.30-33",
+          "Sec.4.5 two simultaneous RSA trigger conditions",
+          "HTML References [2], bib.bib2; printed astro-ph/9603033, no version",
+          "HTML References [3], bib.bib3; printed astro-ph/9911177, no version",
+          "HTML References [10], bib.bib10; printed astro-ph/9506072, no version"
+        ],
+        "unread": "Appendices A/B, complete second-order slip derivation, RSA equations, scientific plots and performance results not fully reviewed. No massive-relic fluid approximation review; that is delegated by this paper to its companion.",
+        "figures": "[]"
+      }
+    },
+    {
+      "paper_id": "arxiv:1606.00439v2",
+      "source_hashes": {
+        "html": "d3538b300d0b0490dee538b4c5327f694b78bec515e9ed8c820f96466baf560d",
+        "pdf": "7026e8dd7e51a07adde8940c380dded16391ad90a49c6ba321393d0fde1fe823",
+        "extracted_text": "eb9b18366cd8ca0e4e4de415ccbe504d777ab8b016db941e3e4dcb156b908b7b"
+      },
+      "coverage": {
+        "main_text": "Targeted original-source checks only; no complete reading.",
+        "checked_locators": [
+          "PDF first page title/authors/version; HTML Sec2 fiducial model; Sec3 Eqs9–10 AP map; Table3 P+B and Table5 BAO+RSD; source window/mocks/nonlinear nuisance conditioning"
+        ],
+        "unread": "Unlisted main text, appendices, likelihood assets and raw observation reductions unchecked. No complete paper reading.",
+        "figures": "Original equations/tables checked; scientific figures not visually inspected."
+      }
+    },
+    {
+      "paper_id": "arxiv:1801.08023v3",
+      "source_hashes": {
+        "html": "571a8f3a2e56eedfdad53a2986316125fc108bb6c1f92cdc5f10325843ccf1f5",
+        "pdf": "a3689b113a913ae8012b218e7b3a0250b5f8b1e185a91aa8b2172d1d53a2819e",
+        "extracted_text": "5bc2396dc8c4424acd96e5e7159d1f451b3e0327567193bea8c1d2fa97095325"
+      },
+      "coverage": {
+        "main_text": "Targeted original-source checks only; no complete reading.",
+        "checked_locators": [
+          "Original HTML SecI S1.E1-S1.E2 and S1.p5.1-S1.p5.4",
+          "Original HTML SecII.3 S2.E33-S2.E38, with Eq37 at S2.EGx1",
+          "Original HTML Appendix C.2 A3.E251,A3.EGx39 Eqs252-253,A3.E254-A3.E257 and adjoining paragraphs",
+          "Original HTML Appendix D A4.T10 masses, temperature and conditioned parameter values; preceding neutron-lifetime provenance",
+          "Original HTML Eq24 photon number/energy-density natural-unit conventions, selected context only"
+        ],
+        "unread": "Other main text, results, figures and appendices not checked by this bounded audit. No full-paper review.",
+        "figures": "Selected original HTML math/table checked; scientific figure images not inspected."
+      }
+    },
+    {
+      "paper_id": "arxiv:1807.06209v4",
+      "source_hashes": {
+        "html": "622d05fab48d935a2224afeade05b07393ec37e4e0554bb9c416f4298acb7bc0",
+        "pdf": "8e172730faf07c9f4ff3fdcc7043f76ed67df6f76066d47df30d693025b6ce77",
+        "extracted_text": "75476bdbcfeb893c3be2274cb796becf55a9a174c40b4c265a9fcc9870fa0a4d"
+      },
+      "coverage": {
+        "main_text": "Targeted located scientific claims; no complete paper read.",
+        "checked_locators": [
+          "HTML S2.SS1 (Sec2.1): six sampled parameters, adiabatic power law, 0.05 Mpc^-1 pivot, one 0.06 eV plus two massless neutrinos, BBN PArthENoPE1.1/neutron880.2s; HTML S3.T1 caption: Plik marginalized means versus best fit, massive neutrino included in Omega_m, theta_MC versus theta_star; HTML S3.SS1 footnote14: T_CMB2.7255K; PDF p16 Table2: all eleven registered values/errors and TT,TE,EE+lowE+lensing column; no BAO; tanh reionization and BBN helium caption; HTML S7.SS5.SSS2: standard Neff3.046 text; Eq62 read but not used",
+          "Original HTML S2.I1.i2.p1.1 (Sec2.1 historical BBN grid, neutron lifetime, mass versus nucleon fraction)",
+          "Original HTML S3.SS1.p2.2, footnote14 (T0)",
+          "PDF-derived Sec2.1 p4 and selected footnote14 p14; no posterior-table re-audit",
+          "Sec.2.1 baseline model and primordial pivot paragraph",
+          "Sec.3.1 footnote14 fixed T_CMB=2.7255 K",
+          "Table1 caption: Omega_m includes the massive neutrino; posterior means/limits versus best fit and modelling uncertainty",
+          "Sec.3.3 primordial A_s, reionization suppression and conditioned sigma8 Eq.20",
+          "Sec.7.2.1 Eqs.38a-38b primordial curvature law",
+          "HTML References bib.bib56; title/authors/JCAP1107,034 and printed1104.2933, no version",
+          "HTML References bib.bib221; exact title/authors/ApJ538,473 and printedastro-ph/9911177, no version"
+        ],
+        "unread": "No current-data, likelihood, recombination/reionization implementation or full-paper review. Exact printed top-hat sigma8/gauge/total-matter weighting definition not located in checked passages.",
+        "figures": "[]",
+        "provenance": "Preserved prior exact-Sol located baseline review, incorporated with current cache rehash; no new complete reading."
+      }
+    },
+    {
+      "paper_id": "arxiv:1907.12875v2",
+      "source_hashes": {
+        "html": "889ccbfd79f5e2e41e84b835e4bd5889a590319eb540dac453cb411db722be54"
+      },
+      "coverage": {
+        "main_text": "Targeted original-source checks only; no complete reading.",
+        "checked_locators": [
+          "HTML title",
+          "Sec.3.1 opening high-ell likelihood and masking/noise/covariance discussion, anchors S3.SS1.p1.1-p1.2"
+        ],
+        "unread": "Almost all paper, detailed data pipeline/likelihoods/figures/appendices unreviewed. The supplied 8388608-byte PDF is explicitly rejected as incomplete in central validity amendment and is not used.",
+        "figures": "[]"
+      }
+    },
+    {
+      "paper_id": "arxiv:2110.03487v2",
+      "source_hashes": {
+        "html": "130b154d16078b7b406ac192da8c19db2cafef90a1dd6105be43edf55114c9dd",
+        "pdf": "6f623f4f8e84bebfd03ecf9cb6480ff20d430459b2aadb7b0dd5883b67864666",
+        "extracted_text": "7887033ec46dd4816c0f1a681d9d15c51ea30d1563c77c6e01236edbeae05049"
+      },
+      "coverage": {
+        "main_text": "Targeted original-source checks only; no complete reading.",
+        "checked_locators": [
+          "HTML S1 Eqs1–6 and reconstruction assumptions",
+          "HTML S2.SS1 Eq7 coordinate convention",
+          "HTML S2.SS2 cuts/Tripp/uncertainty roles",
+          "HTML S3 group methods and discrete membership",
+          "HTML S4 2M++ variants, Eq10 and prior",
+          "HTML A1 first two paragraphs: posterior variable redshift uncertainty"
+        ],
+        "unread": "Most results/comparisons, original velocity/density grids, detailed group catalogues, Stan implementation, remaining appendices and scientific figure images.",
+        "figures": "No figure images or rendered PDF equations inspected in this worker."
+      }
+    },
+    {
+      "paper_id": "arxiv:2112.01471v2",
+      "source_hashes": {
+        "html": "eb5c7d943ff293f09c11784e10e0931d8810546936d808e5d67857a24a6395b9"
+      },
+      "coverage": {
+        "main_text": "Targeted original-source checks only; no complete reading.",
+        "checked_locators": [
+          "HTML S2 Tables1,2,2a and coordinate/bookkeeping paragraphs",
+          "HTML S3 redshift measurement/host source selection",
+          "HTML S4 uncertainties including SDSS repeat spectra",
+          "HTML S5 Eqs1–7 and sign prose",
+          "HTML S6 Eqs8–9, 2M++ redshift-space/bulk-flow conditioning"
+        ],
+        "unread": "Remaining main text, impact-fit details, appendices including exact redshift-space interpolation recipe, most bibliography, all scientific figure images. Carr PDF c613f783... is incomplete and excluded; no claims supported by that PDF.",
+        "figures": "No figure images inspected; relevant captions do not count as visual checks."
+      }
+    },
+    {
+      "paper_id": "arxiv:2112.03863v2",
+      "source_hashes": {
+        "html": "2c853a30cad35cd63a3097520235e5e772c645f717aba847708eecc2e5cb98a0",
+        "pdf": "c42406c774a1f09ba520238b4bbe6bbcba81fec6171fdf0064d7c4dca583b9c9",
+        "extracted_text": "7da8e4b3109fad1c207199775bc0a7ff6376fa33e979681cbd58b0f4a367b528"
+      },
+      "coverage": {
+        "main_text": "Targeted located scientific claims; no complete paper read.",
+        "checked_locators": [
+          "HTML S2.SS1 Eq1: SALT2 light-curve standardization and simulation-dependent bias/host correction; HTML S2.SS2 and Table2: selection/training domain, quality/bias/systematics cuts; final1701 rows; HTML S3.SS2: duplicate identity matching, per-survey fits retained with covariance, common ladder survey ancestry",
+          "HTML S2.SS1 fit frames/wavelength/phase domain and Eq1",
+          "HTML S2.SS2 and Table2 cuts",
+          "HTML S3.SS2 duplicate identity/retained survey fits",
+          "PDF text pp5–7 and10 as reading aids"
+        ],
+        "unread": "Remaining main text/appendices, most bibliography and all scientific figure images.",
+        "figures": "No scientific figure image inspection claimed.",
+        "provenance": "Preserved prior exact-Sol located baseline review, incorporated with current cache rehash; no new complete reading."
+      }
+    },
+    {
+      "paper_id": "arxiv:2112.03864v2",
+      "source_hashes": {
+        "html": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+        "pdf": "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74",
+        "extracted_text": "506a368e04799fc73ef511dae88c15a11a85610e19ad25e36af76ff60831c6d4"
+      },
+      "coverage": {
+        "main_text": "Targeted located scientific claims; no complete paper read.",
+        "checked_locators": [
+          "HTML S2.SS2: shared CALSPEC/NGSL standards and homogenized calibration; HTML S3.SS1: simultaneous105-filter calibration offsets/priors produce covariance between surveys; HTML S4.SS3 Eq7: correlated zeropoint realizations, joint SALT2 retraining/photometry propagation to distance covariance; HTML S5.SS3: calibration/training correlated systematic uncertainty context",
+          "HTML S2 Eq1 literal AB sign, Eqs2–3 offset conventions",
+          "HTML S2.SS4 PS1 catalog branches",
+          "HTML S2.SS7 CfA filters",
+          "HTML S2.SS12 HST exclusion",
+          "HTML S3 Eqs4–5 priors/weights/floors and Table3 numerical rows",
+          "HTML S4.SS1/S4.SS3 B21 retraining, nine correlated variants and Eq7",
+          "AppendixA/Table7 explanation only"
+        ],
+        "unread": "Full appendix filter details/Table7 cells, complete training data, figures/plots, most bibliography; no direct visual inspection of Fig3 covariance heatmap.",
+        "figures": "No scientific figure image inspection claimed.",
+        "provenance": "Preserved prior exact-Sol located baseline review, incorporated with current cache rehash; no new complete reading."
+      }
+    },
+    {
+      "paper_id": "arxiv:2112.04510v3",
+      "source_hashes": {
+        "pdf": "572e5d2c0f32bf6e80a118eec13ed0107e1e2830f9ebe90b5bc4e9d1b7fa5df1",
+        "extracted_text": "cb075a9089294197178ea49385657839a15554b32b497f15e490782c48589c5e"
+      },
+      "coverage": {
+        "main_text": "Targeted located scientific claims; no complete paper read.",
+        "checked_locators": [
+          "PDF/extracted-text title and abstract: pinned v3 identity, baseline73.04±1.04 km/s/Mpc is conditioned ladder inference, not raw observation; PDF Sec2.1 pp9–12 Eqs1–6: Cepheid standardization, geometric anchor constraints, colocated SN calibration, cosmographic intercept, logH0 relation, simultaneous covariance fit; Rendered PDF p10: Eqs2–5 and covariance dependence prose; Rendered PDF p11: calibrator/Hubble-flow SNcov cross blocks; Rendered PDF p12: design matrix/free parameters and Eq6 covariance quadratic",
+          "PDF pp9–12 Sec2.1 Eqs1–6; anchor/calibrator design and full cross-covariance roles; released-axis gaps remain unresolved"
+        ],
+        "unread": "Unlisted main text, appendices, likelihood assets and raw observation reductions unchecked. No complete paper reading.",
+        "figures": "Preserved prior original-PDF equation/matrix checks pp10–12; no new scientific figure inspection.",
+        "provenance": "Preserved prior exact-Sol located baseline review, incorporated with current cache rehash; no new complete reading."
+      }
+    },
+    {
+      "paper_id": "arxiv:2202.04077v2",
+      "source_hashes": {
+        "html": "7580cd8300bf5bf53119735a06c94f7240a7426c37a4f2e8fdbf9915905ecb38"
+      },
+      "coverage": {
+        "main_text": "Targeted located scientific claims; no complete paper read.",
+        "checked_locators": [
+          "HTML S1: 1701 light curves,1550 distinct SNe; SH0ES shares Pantheon+ distances/covariance and42 calibrator hosts; HTML S2.SS2 Eqs5–8: duplicate-light-curve statistical covariance and systematic covariance; rows are light curves; HTML S2.SS3 Eqs9–15: covariance quadratic, residual and modulus, flat luminosity distance, M/H0 degeneracy, calibrated-host residuals plus Cepheid covariance; HTML S3.SS1.SSS2: peculiar-velocity-corrected CMB-frame redshift versus heliocentric fitting redshift; calibrator redshifts not used for Cepheid comparison; HTML S4.SS3: cosmological-fit conditioning context, not accepted as independent H0 data",
+          "HTML S1 simulation products/shared ladder context",
+          "HTML S2.SS1 Eq1 and bias-sign footnote",
+          "HTML S2.SS2 Eqs5–8 and common sample procedure",
+          "HTML S3.SS1 redshift/peculiar velocity distinction",
+          "Released readme and CosmoSIS source roles, no cosmology execution"
+        ],
+        "unread": "Detailed bias/selection AppendixA implementation, source simulation release, fitted cosmology results, most bibliography and all scientific figure images.",
+        "figures": "No scientific figure image inspection claimed.",
+        "provenance": "Preserved prior exact-Sol located baseline review, incorporated with current cache rehash; no new complete reading."
+      }
+    },
+    {
+      "paper_id": "arxiv:2503.14738v3",
+      "source_hashes": {
+        "html": "782d7b25d5a6d7195e0dc0cfdab029e49a4b05cff8263e18f843e82e9c054c49"
+      },
+      "coverage": {
+        "main_text": "Targeted located scientific claims; no complete paper read.",
+        "checked_locators": [
+          "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11–12: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test",
+          "HTML S3.SS1.p1–p3 Eqs11–12; S3.SS3.p1 and Table4 caption/used seven rows; AppendixB A2.p1 systematic cross-bin assumption"
+        ],
+        "unread": "Unlisted main text, appendices, likelihood assets and raw observation reductions unchecked. No complete paper reading.",
+        "figures": "Original HTML Table4 and equations checked; scientific figures not visually inspected.",
+        "provenance": "Preserved prior exact-Sol located baseline review, incorporated with current cache rehash; no new complete reading."
+      }
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0701828v1",
+      "source_hashes": {
+        "html": "bab88504c4bce299c5a765c722b3c4fa040eed3830c924a6438762e0a7985952",
+        "pdf": "a89d6be7eb6b76fe9a83fce8e2f3a8eda99ca35c0d20c71c580d2a83a99b42e3",
+        "extracted_text": "c9656eb1c2b2730bb8fd38710c54152e36327a5899353682f3bf5db88da9aac3"
+      },
+      "coverage": {
+        "main_text": "Targeted original-source checks only; no complete reading.",
+        "checked_locators": [
+          "HTML S2 Eq1, rest-frame phase/wavelength/color definitions and model basis",
+          "HTML S2.SS2 spectral recalibration/errors",
+          "HTML S3 training sample/coverage and free normalization",
+          "HTML S4 regularization/resolution",
+          "HTML S5 component scaling",
+          "HTML S6 jackknife/error support"
+        ],
+        "unread": "Full training tables, trained numerical surfaces, exact release B21 files, subsequent cosmology application/results, most bibliography and all scientific figure images.",
+        "figures": "Figure1/2/4/6 coverage/error discussion checked as prose/captions only."
+      }
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9506072v1",
+      "source_hashes": {
+        "html": "8508ecb368ef8fc64c2163c5441c23386f9c7265fa2eeb8d508bd86a293b44c5",
+        "pdf": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+        "extracted_text": "6d20a4d613f84696f7bf870823e5acb9b63383da0f2dc3fff4e0f93ec59d7933"
+      },
+      "coverage": {
+        "main_text": "Targeted original-source checks only; no complete reading.",
+        "checked_locators": [
+          "Sec.2 opening conventions; Eqs.4-6",
+          "Sec.3 Eqs.17-18",
+          "Sec.4 Eqs.19-30, including density/momentum/shear signs and component sums",
+          "Sec.5 Eqs.35-43,46-58,59-75; photon polarization, thermal momentum dependence, closures and tight-coupling limits",
+          "Sec.6 Eqs.82-90 and gauge invariance statement for ell>1",
+          "Sec.7 Eqs.92-98 and radiation/relativistic/regular-mode assumptions"
+        ],
+        "unread": "Not a complete main-text read; detailed recombination Sec.5.8, numerical results Sec.8 and scientific plot images unreviewed. Selected equations and surrounding derivations only.",
+        "figures": "['PDF p.22 Eq.64 and Eq.65', 'PDF p.31 Eq.98']"
+      }
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9603033v1",
+      "source_hashes": {
+        "pdf": "3448860571b777a199bee2e8ef08e2cc7b181b5ab68ba47eb4b20dae8aa18f8b",
+        "extracted_text": "3511a46acf736743d06e8d572ad2301e300b21f594e59937df1adc91587f90c7"
+      },
+      "coverage": {
+        "main_text": "Targeted original-source checks only; no complete reading.",
+        "checked_locators": [
+          "PDF title page: exact title/authors/version watermark",
+          "Sec.2.1 PDF pp.4-6 Eqs.1-6 and p.6 Eq.9",
+          "Sec.2.2 PDF pp.7-8 Eqs.11-13 and boundary-term prose",
+          "PDF p.20 References: Ma,C.-P., & Bertschinger,E.1995,ApJ455,7; unnumbered author-year bibliography, no HTML anchor or printed arXiv ID/version"
+        ],
+        "unread": "Implementation Sec.3, conclusion Sec.4, tensor-specific claims and scientific figures unreviewed. No full-paper reading.",
+        "figures": "['PDF p.4 Eq.1 and temperature Eq.2', 'PDF p.5 polarization Eq.2 and hierarchy Eq.3, fluids Eqs.4-5', 'PDF p.7 Eqs.11-12, duplicate attenuation and coefficients', 'PDF p.8 Eq.13 and interpretation prose']"
+      }
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9909275v2",
+      "source_hashes": {
+        "html": "46c33e2159ef030f42670a7af2e548e461a1e89ac43326e9dd3e11da52c46921",
+        "pdf": "fe4232be14d12ccad7ad46f795dd21c4fa1f66d6aba18c6e512c4341cc70bc07",
+        "extracted_text": "e08d51849e69fe85b79c98c0915a4eac6b867d5ad64d773894a016ebae12306e"
+      },
+      "coverage": {
+        "main_text": "Targeted original-source checks only; no complete reading.",
+        "checked_locators": [
+          "PDF p3 Sec3 Eqs1-4 and validity paragraph; Figure2 visual qualitative check",
+          "PDF p4 Eq5 matter temperature, Eqs6-7 Saha, species definitions, atomic wavelengths/rates, recombination fits/beta paragraph, primordial inputs, stiff-start discussion",
+          "HTML S3.EGx1,S3.E2,S3.Ex2,S3.E3,S3.E4,S3.Ex3,S3.p8,S3.p9.1-S3.p15.1,S3.E5,S3.E6; numbering differs from PDF",
+          "Selected Sec2.1/2.2 text explaining effective 3-level versus full multilevel approximation and fudge F"
+        ],
+        "unread": "Other main text, results, figures and appendices not checked by this bounded audit. No full-paper review.",
+        "figures": "Seager original PDF pp3–4 inspected; remaining scientific images not checked in this thermal audit."
+      }
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9911177v2",
+      "source_hashes": {
+        "html": "285808e85fcb62a9fea5650b49ef16f15a7e1bb4d7ec877d5a7197058fcae57b",
+        "pdf": "16422d65ab246a0a1a783e917c0946e1931fbe8e49651430c6676f428ca03df0",
+        "extracted_text": "463991841228a468a5832ec848fd2ee4abfff27fa7448dab538ad7de5d3af9fb"
+      },
+      "coverage": {
+        "main_text": "Targeted original-source checks only; no complete reading.",
+        "checked_locators": [
+          "Title page/arXiv watermark and introduction: implementation ancestry from CMBFAST",
+          "Sec.2.1 covariant multipole closure context",
+          "Sec.2.2 closed scalar mode definition, CDM frame, hyperspherical geometry and comparison ancestry",
+          "HTML References author-year item bib.bib19; ApJ455,7, no printed arXiv ID/version",
+          "HTML References author-year item bib.bib21; ApJ469,437, no printed arXiv ID/version"
+        ],
+        "unread": "No complete reading or acceptance of closed-universe harmonic normalization, tensor/polarization spectrum or numerical plots. The PDF internal draft date is 2024-11-26 while its arXiv watermark is v2, 2000-06-01; retain both, do not silently rewrite paper identity.",
+        "figures": "[]"
+      }
+    }
+  ],
+  "accepted_records": {
+    "idea_ids": [
+      "planck-conditioned-base-lcdm",
+      "bao-compressed-relative-ruler",
+      "sn-standardized-distance-lineage"
+    ],
+    "design_ids": [
+      "candidate-desi-dr2-full-compression-contract",
+      "candidate-bounded-shared-charge-hhe",
+      "candidate-perfect-fluid-band-transfer"
+    ],
+    "prospect_ids": [
+      "lcdm-baseline-reference-audit"
+    ],
+    "reference_ids": [],
+    "contract_ids": [
+      "standard-model-source-gates-v1"
+    ]
+  },
+  "corrections": [
+    {
+      "kind": "reader_locator_correction",
+      "paper_id": "arxiv:2110.03487v2",
+      "display_summary": "The preliminary Peterson Eq10 PDF locator p7 is corrected to p8; the final immutable worker packet is authoritative."
+    },
+    {
+      "kind": "source_rendering_variant",
+      "paper_id": "arxiv:astro-ph/9909275v2",
+      "display_summary": "Original PDF numbers matter temperature5 and Saha6–7; HTML numbering/references differ. Retract an unqualified original-PDF duplicate-Eq3 claim."
+    },
+    {
+      "kind": "literal_source_vs_code",
+      "paper_id": "arxiv:astro-ph/9909275v2",
+      "display_summary": "Literal negative He inhibition exponent and ambiguous beta excitation/statistical notation remain separate from the positive pinned-code singlet convention."
+    },
+    {
+      "kind": "code_comment_unit_error",
+      "source_asset_id": "recfast-class-wrap_recfast.h",
+      "display_summary": "He wavenumber comments say eV; dimensions are m^-1 from hcL. The contract uses explicit SI dimensions."
+    },
+    {
+      "kind": "printed_source_requires_clarification",
+      "paper_id": "arxiv:2112.03864v2",
+      "display_summary": "Eq1 prints positive2.5 log for AB magnitude; a conventional negative-sign repair is separate and no numerical impact is established."
+    },
+    {
+      "kind": "printed_source_requires_clarification",
+      "paper_id": "arxiv:2110.03487v2",
+      "display_summary": "Eq10 divides a squared dimensionless residual by a stated250km/s dispersion squared without an explicit unit bridge. No repaired posterior or impact is claimed."
+    },
+    {
+      "kind": "printed_source_table_inconsistency",
+      "paper_id": "arxiv:2112.03863v2",
+      "display_summary": "Table2 prints1909 after removing98 from1907;1809 is an arithmetic inference, not replacement selection membership."
+    },
+    {
+      "kind": "printed_source_vs_reviewer_derivation",
+      "paper_id": "arxiv:astro-ph/9603033v1",
+      "display_summary": "Original Eq11 duplicate attenuation and collision-sign inconsistencies, and Eq12 cross-derivative coefficient, remain separate from an MB-consistent reviewer-derived projection."
+    },
+    {
+      "kind": "source_approximation_omission",
+      "paper_id": "arxiv:astro-ph/9506072v1",
+      "display_summary": "CLASS II explicitly restores polarization terms omitted by MB tight-coupling Eq73; an approximation is not the full hierarchy."
+    },
+    {
+      "kind": "source_header_variant",
+      "paper_id": "arxiv:0910.2773v2",
+      "display_summary": "PDF draft header says November26,2024 while its arXiv watermark/version and metadata say January28,2010. Exact bytes and both dates preserved; no new version inferred."
+    },
+    {
+      "kind": "integration_provenance_and_scope_correction",
+      "display_summary": "Correct canonical worker names and per-paper figure coverage; scope actual candidate assets and minimal outputs separately from future drag/CMB gates."
+    },
+    {
+      "kind": "integration_dependency_correction",
+      "display_summary": "The bounded thermal candidate now states the shared-temperature equation and separately requires exact independently accepted H1/B2/NIST atomic-data bindings; no drag or CMB output is admitted."
+    },
+    {
+      "kind": "integration_metadata_precision_correction",
+      "display_summary": "SDSS photometry TUNIT cards are present but blank; EXPTIME is absent. Missing declared units are not missing header cards."
+    },
+    {
+      "kind": "integration_source_identity_correction",
+      "paper_id": "arxiv:2112.04510v3",
+      "display_summary": "Retract our NEXT02 count/index conflation: the original released ladder has47 columns, with zero-based index44 fixed0 and46 active coordinates; the older compact44-dimensional route is a separate target. This was an integration error, not a printed-source error; the physical meaning of index44 remains unresolved."
+    }
+  ],
+  "limitations": [
+    "A source-gate snapshot for the existing Irreducible 19-scope audit; no priorities, implementation plan, numerical execution or observational qualification.",
+    "Exact-Sol targeted checks and preserved source review; zero Luna full reads and zero full-paper promotions.",
+    "Raw sources, full worker packets and code remain ignored. Current-data reassessment and independent numerical reproduction have not occurred.",
+    "Unknown event identity, calibration/selection dependence and cross-probe covariance remain unknown.",
+    "Consumer-reported ladder reductions and321 joins were not numerically rederived; source mathematical meanings remain gated.",
+    "NIST energy values and cited independent Sobolev/Malik–Wands sources were not acquired by these workers; no independent certification of them is claimed."
+  ],
+  "conclusion": "Accepted located definitions, changed-model identities and explicit blocked source gates only; no new accepted physical mechanism, execution readiness or full-paper promotion."
+}

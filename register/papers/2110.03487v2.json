@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2110.03487v2",
+  "arxiv_id": "2110.03487",
+  "version": 2,
+  "title": "The Pantheon+ Analysis: Evaluating Peculiar Velocity Corrections in Cosmological Analyses with Nearby Type Ia Supernovae",
+  "authors": [
+    "Erik R. Peterson",
+    "W. D'Arcy Kenworthy",
+    "Daniel Scolnic",
+    "Adam G. Riess",
+    "Dillon Brout",
+    "Anthony Carr",
+    "Helene Courtois",
+    "Tamara Davis",
+    "Arianna Dwomoh",
+    "David O. Jones",
+    "Brodie Popovic",
+    "Benjamin M. Rose",
+    "Khaled Said"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2021-10-07T14:14:05Z",
+  "updated_utc": "2022-01-13T19:34:14Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2110.03487v2",
+    "html": "https://arxiv.org/html/2110.03487v2",
+    "pdf": "https://arxiv.org/pdf/2110.03487v2"
+  },
+  "license": {
+    "status": "Unreported in retrieved Atom metadata",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public accessibility does not establish redistribution rights. Sources, copied abstracts and worker packets stay ignored."
+  },
+  "artifacts": [
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=astro-ph%2F9506072%2Castro-ph%2F9909275%2Castro-ph%2F9603033%2Castro-ph%2F9709112%2C1104.2933%2Castro-ph%2F9911177%2C1907.12875%2C2112.01471%2C2110.03487%2C1606.00439%2C0910.2773%2Castro-ph%2F0701828%2C1801.08023&max_results=13",
+      "retrieved_utc": "2026-10-02T21:49:20.413721+00:00",
+      "sha256": "6e164a90b318339054952d52ef87039f99e27702268159e0d972efa7e2c6c4cd",
+      "bytes": 46475,
+      "role": "metadata"
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/2110.03487v2",
+      "retrieved_utc": "2026-10-02T21:49:30.417910+00:00",
+      "sha256": "130b154d16078b7b406ac192da8c19db2cafef90a1dd6105be43edf55114c9dd",
+      "bytes": 416822
+    },
+    {
+      "role": "pdf",
+      "url": "https://export.arxiv.org/pdf/2110.03487v2",
+      "retrieved_utc": "2026-10-02T21:49:36.850709+00:00",
+      "sha256": "6f623f4f8e84bebfd03ecf9cb6480ff20d430459b2aadb7b0dd5883b67864666",
+      "bytes": 1467939
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://export.arxiv.org/pdf/2110.03487v2",
+      "retrieved_utc": "2026-10-02T21:49:38.052140+00:00",
+      "sha256": "7887033ec46dd4816c0f1a681d9d15c51ea30d1563c77c6e01236edbeae05049",
+      "bytes": 144602,
+      "tool": "pdftotext -layout",
+      "derived_from_sha256": "6f623f4f8e84bebfd03ecf9cb6480ff20d430459b2aadb7b0dd5883b67864666"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "metadata",
+    "reason": "Known primary identity admitted for explicitly scoped standard-model source audit. Located Sol checks are separate; complete Luna reading remains pending."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

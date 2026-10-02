@@ -50,6 +50,30 @@ class RegisterIntegrity(unittest.TestCase):
     def test_current_records(self):
         self.validate()
 
+    def test_contract_requires_explicit_acceptance(self):
+        self.mutate('register/reviews/2026-10-02-standard-model-source-claims.json',
+                    lambda r: r['accepted_records']['contract_ids'].clear())
+        with self.assertRaisesRegex(ValueError, 'targeted review does not accept contract_ids'):
+            self.validate()
+
+    def test_duplicate_contract_scope_rejected(self):
+        self.mutate('register/contracts/standard-model-source-gates-v1.json',
+                    lambda r: r['scopes'].append(r['scopes'][0]))
+        with self.assertRaisesRegex(ValueError, 'duplicate source contract scope'):
+            self.validate()
+
+    def test_contract_scope_cannot_add_unreviewed_paper(self):
+        self.mutate('register/contracts/standard-model-source-gates-v1.json',
+                    lambda r: r['scopes'][0]['paper_ids'].append('arxiv:astro-ph/9709112v1'))
+        with self.assertRaisesRegex(ValueError, 'source scope outside contract papers'):
+            self.validate()
+
+    def test_changed_contract_invalidates_candidate_binding(self):
+        self.mutate('register/contracts/standard-model-source-gates-v1.json',
+                    lambda r: r['limitations'].append('Changed source scope'))
+        with self.assertRaisesRegex(ValueError, 'design source contract digest mismatch'):
+            self.validate()
+
     def test_duplicate_keys_rejected(self):
         file = self.root / "duplicate.json"
         file.write_text('{"id":1,"id":2}')
@@ -197,6 +221,19 @@ class RegisterIntegrity(unittest.TestCase):
     def test_targeted_review_requires_high_effort_confirmation(self):
         self.mutate('register/reviews/2026-10-01-lcdm-baseline-source-claims.json',
                     lambda r: r['model_confirmation'].update(effort='low'))
+        with self.assertRaisesRegex(ValueError, 'required model/reasoning confirmation'):
+            self.validate()
+
+    def test_targeted_review_accepts_confirmed_xhigh(self):
+        def update(review):
+            review['requested_reasoning'] = 'xhigh'
+            review['model_confirmation']['effort'] = 'xhigh'
+        self.mutate('register/reviews/2026-10-01-lcdm-baseline-source-claims.json', update)
+        self.validate()
+
+    def test_targeted_review_rejects_mismatched_effort(self):
+        self.mutate('register/reviews/2026-10-01-lcdm-baseline-source-claims.json',
+                    lambda r: r.update(requested_reasoning='xhigh'))
         with self.assertRaisesRegex(ValueError, 'required model/reasoning confirmation'):
             self.validate()
 

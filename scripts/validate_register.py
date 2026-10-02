@@ -51,7 +51,7 @@ def records(folder, key):
 
 def validate():
     schemas = {name: strict_load(ROOT / "schemas" / (name + ".schema.json"))
-               for name in ["paper", "candidate-design", "topic", "prospect", "citations", "reference"]}
+               for name in ["paper", "candidate-design", "topic", "prospect", "citations", "reference", "source-contract"]}
     validators = {}
     for name, schema in schemas.items():
         Draft202012Validator.check_schema(schema)
@@ -114,9 +114,9 @@ def validate():
             require(review.get('packet_sha256') and review.get('model_confirmation'),
                     f"targeted review lacks packet/model provenance: {ident}")
             confirmation = review['model_confirmation']
-            require(review.get('requested_reasoning') == 'high'
+            require(review.get('requested_reasoning') in {'high', 'xhigh'}
                     and confirmation.get('model') == 'gpt-6.1-sol'
-                    and confirmation.get('effort') == 'high',
+                    and confirmation.get('effort') == review.get('requested_reasoning'),
                     f"targeted review lacks required model/reasoning confirmation: {ident}")
             require(review.get('limitations') and review.get('accepted_records'),
                     f"targeted review lacks claim scope/limits: {ident}")
@@ -211,6 +211,21 @@ def validate():
                     'reference source not reviewed')
         else:
             require(reference['review_id'] is None, 'pending reference has review')
+    contracts = records('register/contracts', 'contract_id')
+    for ident, contract in contracts.items():
+        validators['source-contract'].validate(contract)
+        require(contract['review_id'] in reviews, 'source contract lacks review')
+        accepted_record(contract['review_id'], 'contract_ids', ident)
+        require(set(contract['paper_ids']).issubset(papers), 'source contract missing paper')
+        require(set(contract['paper_ids']).issubset(reviews[contract['review_id']]['reviewed_papers']),
+                'source contract sources not reviewed')
+        scope_ids = [scope['scope_id'] for scope in contract['scopes']]
+        require(len(scope_ids) == len(set(scope_ids)), 'duplicate source contract scope')
+        for scope in contract['scopes']:
+            require(set(scope['paper_ids']).issubset(contract['paper_ids']),
+                    'source scope outside contract papers')
+        asset_ids = [asset['id'] for asset in contract['source_assets']]
+        require(len(asset_ids) == len(set(asset_ids)), 'duplicate source contract asset')
     citations = strict_load(ROOT / "register/citations.json")
     validators["citations"].validate(citations)
     require(set(citations['inspected_paper_ids']).issubset(papers), "citation inspection references missing paper")
@@ -288,6 +303,15 @@ def validate():
             require(reference['paper_id'] in design['paper_ids'], 'design reference source mismatch')
             if design['review_id']:
                 require(reference['review_id'] == design['review_id'], 'design reference review mismatch')
+        for source in design.get('source_contracts', []):
+            require(source['contract_id'] in contracts, 'design missing source contract')
+            contract = contracts[source['contract_id']]
+            path = ROOT / 'register/contracts' / (source['contract_id'] + '.json')
+            require(source['path'] == str(path.relative_to(ROOT)), 'noncanonical source contract path')
+            require(hashlib.sha256(path.read_bytes()).hexdigest() == source['sha256'],
+                    'design source contract digest mismatch')
+            require(set(design['paper_ids']).issubset(contract['paper_ids']), 'design source contract paper mismatch')
+            require(design['review_id'] == contract['review_id'], 'design source contract review mismatch')
         request = design["executable_request"]
         if request:
             path = (ROOT / request["path"]).resolve()
@@ -300,6 +324,12 @@ def validate():
         require(set(prospect['paper_ids']).issubset(papers), 'prospect references missing paper')
         require(set(prospect['design_ids']).issubset(designs), 'prospect references missing design')
         require(set(prospect['topic_ids']).issubset(topics), 'prospect references missing topic')
+        for contract_id in prospect.get('source_contract_ids', []):
+            require(contract_id in contracts, 'prospect missing source contract')
+            require(set(contracts[contract_id]['paper_ids']).issubset(prospect['paper_ids']),
+                    'prospect source contract paper mismatch')
+            require(contracts[contract_id]['review_id'] == prospect['review_id'],
+                    'prospect source contract review mismatch')
         if prospect['review_id'] is not None:
             require(prospect['review_id'] in reviews, 'prospect lacks scientific review')
             accepted_record(prospect['review_id'], 'prospect_ids', ident)

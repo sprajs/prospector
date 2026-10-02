@@ -1,0 +1,364 @@
+{
+  "schema_version": 1,
+  "contract_id": "standard-model-source-gates-v1",
+  "title": "Standard-model source requirements",
+  "review_id": "2026-10-02-standard-model-source-claims",
+  "paper_ids": [
+    "arxiv:0910.2773v2",
+    "arxiv:1104.2933v3",
+    "arxiv:1606.00439v2",
+    "arxiv:1801.08023v3",
+    "arxiv:1807.06209v4",
+    "arxiv:1907.12875v2",
+    "arxiv:2110.03487v2",
+    "arxiv:2112.01471v2",
+    "arxiv:2112.03863v2",
+    "arxiv:2112.03864v2",
+    "arxiv:2112.04510v3",
+    "arxiv:2202.04077v2",
+    "arxiv:2503.14738v3",
+    "arxiv:astro-ph/0701828v1",
+    "arxiv:astro-ph/9506072v1",
+    "arxiv:astro-ph/9603033v1",
+    "arxiv:astro-ph/9909275v2"
+  ],
+  "scopes": [
+    {
+      "scope_id": "NEXT-01",
+      "title": "Fixed-design repeated predictive conditioning",
+      "paper_ids": [
+        "arxiv:2112.04510v3"
+      ],
+      "checked_claim": "Retain the fixed released design and complete joint covariance; repeated conditioning is a declared statistical comparison.",
+      "unresolved": "Source selection/calibration dependence and the predictive data law are not established by a matrix fit."
+    },
+    {
+      "scope_id": "NEXT-02",
+      "title": "Original ladder target with column 44 fixed",
+      "paper_ids": [
+        "arxiv:2112.04510v3"
+      ],
+      "checked_claim": "The frozen release has 3492 rows and 47 original columns. Fixing zero-based column index44 to literal0 leaves 46 active original coordinates (0–43,45,46), retaining every row and the full covariance. The older compact44-dimensional target is a separate identity.",
+      "unresolved": "The released prior row44 has zero center and width, but its physical meaning remains unresolved. The frozen finite box uses source center±10width on the 46 active coordinates and a point mass at index44; original-coordinate units, source reduction lineage and normalized-measure interpretation remain distinct gates."
+    },
+    {
+      "scope_id": "NEXT-03",
+      "title": "Supplied optical law through detector and censoring",
+      "paper_ids": [
+        "arxiv:2112.03864v2"
+      ],
+      "checked_claim": "A finite supplied-state optical law can be tested with separately specified detector and censoring rules.",
+      "unresolved": "Nine systematic perturbations do not supply observed probability masses or a measured joint optical-response law."
+    },
+    {
+      "scope_id": "NEXT-04",
+      "title": "Ladder axis and reduction identity",
+      "paper_ids": [
+        "arxiv:2112.04510v3"
+      ],
+      "checked_claim": "Sec2.1 Eqs1–6 preserve geometric anchors, Cepheid/SN calibration and the simultaneous covariance fit.",
+      "unresolved": "Column44; failed M31/LMC reductions; SMC/LMC count discrepancies; several constraint meanings remain unresolved. Structural eliminability is not a physical label."
+    },
+    {
+      "scope_id": "NEXT-05",
+      "title": "Ladder held-out dependence or changed model",
+      "paper_ids": [
+        "arxiv:2112.04510v3",
+        "arxiv:2202.04077v2"
+      ],
+      "checked_claim": "A held-out test needs a frozen object/host/calibrator lineage and conditional covariance including the cross blocks.",
+      "unresolved": "No independent held-out population or changed selection/calibration law is supplied by the existing ladder fit."
+    },
+    {
+      "scope_id": "NEXT-06",
+      "title": "SDSS event, observer and velocity lineage",
+      "paper_ids": [
+        "arxiv:2112.01471v2",
+        "arxiv:2110.03487v2",
+        "arxiv:2112.03863v2",
+        "arxiv:2202.04077v2"
+      ],
+      "checked_claim": "Heliocentric spectral/time redshift, CMB-frame redshift and peculiar-velocity corrected expansion redshift have separate roles; use exact multiplicative relations.",
+      "unresolved": "The prior 321 structural joins and consumer event ledger do not establish complete physical event/frame identity; retain coordinate failures, source velocity-model ancestry and unknown cross-covariance."
+    },
+    {
+      "scope_id": "NEXT-07",
+      "title": "Calibrated light curve to exposure units",
+      "paper_ids": [
+        "arxiv:2112.03863v2",
+        "arxiv:astro-ph/0701828v1"
+      ],
+      "checked_claim": "Released FLUXCAL and its error are calibrated light-curve quantities. Preserve all source flags and epochs.",
+      "unresolved": "Selected FITS photometry TUNIT cards are present with blank unit values; EXPTIME is absent. Clock standard, zero point, wavelength convention, extraction covariance and physical flux/electron bridge remain incomplete."
+    },
+    {
+      "scope_id": "NEXT-08",
+      "title": "Calibration summaries to optical-state law",
+      "paper_ids": [
+        "arxiv:2112.03864v2"
+      ],
+      "checked_claim": "Original Table3 contains102 numerical rows and8 NA rows; the pinned NPZ has102 ordered labels and a102x102 fitted-offset covariance.",
+      "unresolved": "The105 prose count and PS1/CFA3S filter aliases are unresolved. Fitted magnitude-offset covariance does not define transmission curves or measured state probabilities."
+    },
+    {
+      "scope_id": "NEXT-09",
+      "title": "Empirical temporal template",
+      "paper_ids": [
+        "arxiv:astro-ph/0701828v1",
+        "arxiv:2112.03863v2",
+        "arxiv:2112.03864v2"
+      ],
+      "checked_claim": "SALT2 uses trained rest-frame phase/wavelength surfaces, per-event amplitude/shape/color and an empirical color law.",
+      "unresolved": "B21 release training surfaces, exact units/support/interpolation, training uncertainty and physical detector bridge remain incomplete; color is not automatically a dust parameter."
+    },
+    {
+      "scope_id": "NEXT-10",
+      "title": "Measured detector law",
+      "paper_ids": [
+        "arxiv:2112.03863v2",
+        "arxiv:2112.03864v2"
+      ],
+      "checked_claim": "Gain/readnoise and calibrated extraction errors have separate detector and reduction roles.",
+      "unresolved": "Raw exposure electrons, detector response/censoring/extraction covariance and a measured joint detector law are not supplied by these reduced products."
+    },
+    {
+      "scope_id": "NEXT-11",
+      "title": "Thermal BAO compression",
+      "paper_ids": [
+        "arxiv:2503.14738v3",
+        "arxiv:1807.06209v4"
+      ],
+      "checked_claim": "The pinned DESI DR2 fitted compression has13 ordered ratios with all169 covariance entries; the final Lyalpha pair is DH then DM. Table4 reports marginalized posterior means/stddev under reconstruction and nuisance assumptions.",
+      "unresolved": "A conditional supplied-drag ruler is not predicted physical drag. Template/reconstruction/model domain, covariance conditioning and independent source/consumer acceptance remain required; cross-probe covariance is unknown."
+    },
+    {
+      "scope_id": "NEXT-12",
+      "title": "Abundance and temperature law",
+      "paper_ids": [
+        "arxiv:1801.08023v3",
+        "arxiv:1807.06209v4"
+      ],
+      "checked_claim": "Pitrou X_i=A_i*n_i/n_b is a pseudo-mass fraction; rho_b, average baryon mass, eta and thermal history specify the conversion to number densities.",
+      "unresolved": "Supplied independent nucleus inventories and temperature histories do not implement BBN. Planck PArthENoPE1.1/neutron880.2s conditioning cannot silently become PRIMAT or an unrelated mass convention."
+    },
+    {
+      "scope_id": "NEXT-13",
+      "title": "Observed RSD estimator and AP contract",
+      "paper_ids": [
+        "arxiv:1606.00439v2"
+      ],
+      "checked_claim": "BOSS DR12 uses explicit fiducial geometry, AP mappings, nonlinear power/bispectrum modelling, nuisance parameters, window and mocks. Table3 P+B and Table5 BAO+RSD f*sigma8 are different products.",
+      "unresolved": "Window/mask/mocks/full covariance and estimator validation are not acquired. The same galaxy samples underlie BAO and RSD, so the compressed fits are not independent data."
+    },
+    {
+      "scope_id": "NEXT-14",
+      "title": "Linear transfer and amplitude",
+      "paper_ids": [
+        "arxiv:astro-ph/9506072v1",
+        "arxiv:1104.2933v3",
+        "arxiv:1807.06209v4"
+      ],
+      "checked_claim": "Original Newtonian-gauge Einstein/fluid equations support the separately declared perfect self-interacting radiation+CDM+Lambda transfer and finite primordial-band variance. Its initial expansions are reviewer-derived.",
+      "unresolved": "This removes baryons, collisionless relics, anisotropic stress and the photon hierarchy. Ordinary full-spectrum sigma8, faithful Planck transfer and independent numerical acceptance remain open."
+    },
+    {
+      "scope_id": "NEXT-15",
+      "title": "Coupled non-LTE H/He kinetics",
+      "paper_ids": [
+        "arxiv:astro-ph/9909275v2",
+        "arxiv:1801.08023v3"
+      ],
+      "checked_claim": "The separately named F_H1/NIST/RecfastCLASS singlet hybrid uses independent nuclei densities, shared electron charge, matter-temperature rates and Compton/adiabatic temperature evolution on a finite interval.",
+      "unresolved": "Ground-state LTE is an artificial supplied initial boundary, not the preceding physical He history. Omitted HeIII, fit extrapolation below4000K, rate/atomic uncertainty and numerical controls remain explicit. Independently pinned H1/B2 and NIST atomic-data acceptance/serialization hashes are not certified by this source review."
+    },
+    {
+      "scope_id": "NEXT-16",
+      "title": "Physical drag endpoint",
+      "paper_ids": [
+        "arxiv:astro-ph/9909275v2",
+        "arxiv:2503.14738v3"
+      ],
+      "checked_claim": "Physical drag uses baryon-weighted Thomson depth from today and tau_drag(z_d)=1; comoving r_d is the sound horizon at that predicted endpoint.",
+      "unresolved": "An interval ending at z300–600 omits the late opacity contribution. A qualified late/reionization continuation and tail/boundary budget are required; visibility and drag are distinct."
+    },
+    {
+      "scope_id": "NEXT-17",
+      "title": "Selected source population",
+      "paper_ids": [
+        "arxiv:2112.03863v2",
+        "arxiv:2202.04077v2",
+        "arxiv:astro-ph/0701828v1"
+      ],
+      "checked_claim": "Observed sample cuts, light-curve fitting, simulated bias correction and systematic variant selection belong to the population law.",
+      "unresolved": "S21 all-cuts across40 perturbations and B22 baseline-cuts plus BBC intersection are distinct source descriptions. Parent population, selection/censoring efficiency and variant execution ancestry remain incomplete."
+    },
+    {
+      "scope_id": "NEXT-18",
+      "title": "Named strong-lens likelihood",
+      "paper_ids": [
+        "arxiv:0910.2773v2"
+      ],
+      "checked_claim": "B1608+656 uses lens/source redshifts, relative delays, imaging/PSF/dust/potential, aperture stellar kinematics and an environment-conditioned external-convergence prior.",
+      "unresolved": "Full pixel/PSF/kinematic aperture data, delay covariance and line-of-sight prior assets remain missing. The template-derived velocity dispersion is not an SIS parameter; simulation prior is not a direct convergence measurement."
+    },
+    {
+      "scope_id": "NEXT-19",
+      "title": "Primary CMB observable",
+      "paper_ids": [
+        "arxiv:astro-ph/9506072v1",
+        "arxiv:astro-ph/9603033v1",
+        "arxiv:1104.2933v3",
+        "arxiv:1907.12875v2",
+        "arxiv:1807.06209v4"
+      ],
+      "checked_claim": "A primary projection needs a closed photon/baryon/polarization/species/metric system, primordial normalization and sourced full visibility history. Dimensionless and Kelvin spectra are separate identities.",
+      "unresolved": "Printed LOS survival/sign/coefficient issues are preserved separately from reviewer-derived MB-consistent repairs. Perfect-fluid transfer and finite thermal opacity supply neither primary spectra nor a measured Planck likelihood."
+    }
+  ],
+  "source_assets": [
+    {
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/Pantheon%2BSH0ES.dat",
+      "sha256": "1cb0fc379ef066afdc2ffd1857681cc478024570d8a3eba284fb645775198cf8",
+      "retrieved_utc": "2026-10-02T01:02:34.910581+00:00",
+      "bytes": 579283,
+      "id": "sn-table.dat",
+      "role": "released_reduced_product",
+      "conditioning": "Frozen light-curve row order and calibrated distances; rows are not all distinct physical events."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/Pantheon%2BSH0ES_STAT%2BSYS.cov",
+      "sha256": "abf806d966485e64afdb359c87bffc0ecc00d05eff0a31ced66f247385df0fdc",
+      "retrieved_utc": "2026-10-02T01:02:37.947871+00:00",
+      "bytes": 33284960,
+      "id": "sn-covariance.cov",
+      "role": "released_reduced_product",
+      "conditioning": "Same full source row order; shared-event/calibrator dependence remains."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/FRAGILISTIC_COVARIANCE.npz",
+      "sha256": "c58704e80061f1aa1b74d97861c5b115ee412bea685e4fef88545525d16dfc70",
+      "retrieved_utc": "2026-10-02T01:02:35.710836+00:00",
+      "bytes": 90672,
+      "id": "fragilistic-covariance.npz",
+      "role": "released_reduced_product",
+      "conditioning": "102 ordered fitted magnitude-offset axes; aliases/105 count and physical optical-law bridge unresolved."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/1_DATA/photometry/JLA2014_SDSS_DS17/SDSS_allCandidates%2BBOSS_PHOT.FITS.gz",
+      "sha256": "0b143978c068c0b93b78eb582701bf77286b1930cfa93ce436ef30b5722a5a05",
+      "retrieved_utc": "2026-10-02T01:22:01.880740+00:00",
+      "bytes": 40919338,
+      "id": "SDSS_allCandidates+BOSS_PHOT.FITS.gz",
+      "role": "released_reduced_product",
+      "conditioning": "Calibrated PHOT data; undocumented physical units and exposure/clock bridges remain."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/bb0c1c9009dc76d1391300e169e8df38fd1096db/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+      "sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+      "retrieved_utc": "2026-10-02T22:49:07.269833+00:00",
+      "bytes": 472,
+      "id": "desi_gaussian_bao_ALL_GCcomb_mean.txt",
+      "role": "provider_released_fitted_compression",
+      "conditioning": "13 DESI DR2 fitted ratios, exact provider order; retain all169 covariance entries. The released Lyalpha DM mean38.98897396 differs in last printed digit from Table4 38.988; source forms remain distinct."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/bb0c1c9009dc76d1391300e169e8df38fd1096db/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+      "sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509",
+      "retrieved_utc": "2026-10-02T22:49:07.488668+00:00",
+      "bytes": 2547,
+      "id": "desi_gaussian_bao_ALL_GCcomb_cov.txt",
+      "role": "provider_released_fitted_compression",
+      "conditioning": "13 DESI DR2 fitted ratios, exact provider order; retain all169 covariance entries. The released Lyalpha DM mean38.98897396 differs in last printed digit from Table4 38.988; source forms remain distinct."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/64bbab707faf4de4779a9e04edd180fef18d98fa/external/RecfastCLASS/wrap_recfast.c",
+      "sha256": "e5ea80edd4652eb1a752cb4a2b835f4b74db91ca90248e5b5d04a8a3eada7cd5",
+      "bytes": 14848,
+      "id": "recfast-class-wrap_recfast.c",
+      "role": "pinned_equation_conventions",
+      "retrieved_utc": null,
+      "retrieval_time_reason": "Original receipt supplies creation time, not per-file retrieval time; preserved without guessing.",
+      "conditioning": "64bbab707faf4de4779a9e04edd180fef18d98fa isolated singlet rate/excitation conventions only; NIST energy substitution and F_H1 are changed model choices. Licence retrieval failed404; no raw redistribution."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/64bbab707faf4de4779a9e04edd180fef18d98fa/external/RecfastCLASS/wrap_recfast.h",
+      "sha256": "1e5609a3e5b1ddd8f7ad99df336311a9f769867e52f203e0cb6481b617e2de73",
+      "bytes": 4754,
+      "id": "recfast-class-wrap_recfast.h",
+      "role": "pinned_equation_conventions",
+      "retrieved_utc": null,
+      "retrieval_time_reason": "Original receipt supplies creation time, not per-file retrieval time; preserved without guessing.",
+      "conditioning": "64bbab707faf4de4779a9e04edd180fef18d98fa isolated singlet rate/excitation conventions only; NIST energy substitution and F_H1 are changed model choices. Licence retrieval failed404; no raw redistribution."
+    },
+    {
+      "id": "ladder-original-MCMC_utils.py",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/MCMC_utils.py",
+      "sha256": "e6ec3d83a9b126d7772ec6dd0d1b58ca757b820acd853fb89218c379cf873841",
+      "bytes": 2730,
+      "retrieved_utc": null,
+      "retrieval_time_reason": "Reused exact source bytes from the frozen consumer packet; original per-file retrieval time not supplied.",
+      "role": "primary_release_code_or_document",
+      "conditioning": "Frozen release c447f0fea703fcd0fff57de5000947b5ca81286b; original3492-row/47-column ladder identity. FITS headers, all47 prior rows, likelihood/prior definitions and wrapper configuration checked; no numerical fit or physical label for index44 established."
+    },
+    {
+      "id": "ladder-original-lstsq_results.txt",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/lstsq_results.txt",
+      "sha256": "37d2d423d06b6a2100c47578eb9b1c566a575caf6ade0ed61f6b9586d2a35c95",
+      "bytes": 721,
+      "retrieved_utc": null,
+      "retrieval_time_reason": "Reused exact source bytes from the frozen consumer packet; original per-file retrieval time not supplied.",
+      "role": "primary_release_code_or_document",
+      "conditioning": "Frozen release c447f0fea703fcd0fff57de5000947b5ca81286b; original3492-row/47-column ladder identity. FITS headers, all47 prior rows, likelihood/prior definitions and wrapper configuration checked; no numerical fit or physical label for index44 established."
+    },
+    {
+      "id": "ladder-original-allc_shoes_ceph_topantheonwt6.0_112221.fits",
+      "url": "https://media.githubusercontent.com/media/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/allc_shoes_ceph_topantheonwt6.0_112221.fits",
+      "sha256": "a42778672d25df7a559bd2949b1e412b99b2e35dd9a36895f6b38828be019172",
+      "bytes": 48781440,
+      "retrieved_utc": null,
+      "retrieval_time_reason": "Reused exact source bytes from the frozen consumer packet; original per-file retrieval time not supplied.",
+      "role": "released_reduced_product",
+      "conditioning": "Frozen release c447f0fea703fcd0fff57de5000947b5ca81286b; original3492-row/47-column ladder identity. FITS headers, all47 prior rows, likelihood/prior definitions and wrapper configuration checked; no numerical fit or physical label for index44 established."
+    },
+    {
+      "id": "ladder-original-alll_shoes_ceph_topantheonwt6.0_112221.fits",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/alll_shoes_ceph_topantheonwt6.0_112221.fits",
+      "sha256": "9a2ce872dd20ed4fdf5005ce62a805d3eefbbb0b20b0c614013e7c0094009db8",
+      "bytes": 659520,
+      "retrieved_utc": null,
+      "retrieval_time_reason": "Reused exact source bytes from the frozen consumer packet; original per-file retrieval time not supplied.",
+      "role": "released_reduced_product",
+      "conditioning": "Frozen release c447f0fea703fcd0fff57de5000947b5ca81286b; original3492-row/47-column ladder identity. FITS headers, all47 prior rows, likelihood/prior definitions and wrapper configuration checked; no numerical fit or physical label for index44 established."
+    },
+    {
+      "id": "ladder-original-ally_shoes_ceph_topantheonwt6.0_112221.fits",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/ally_shoes_ceph_topantheonwt6.0_112221.fits",
+      "sha256": "10bb034ca3fff53f6625c9fe47ebd054b37ef45d1140af1c766831cfa6871433",
+      "bytes": 17280,
+      "retrieved_utc": null,
+      "retrieval_time_reason": "Reused exact source bytes from the frozen consumer packet; original per-file retrieval time not supplied.",
+      "role": "released_reduced_product",
+      "conditioning": "Frozen release c447f0fea703fcd0fff57de5000947b5ca81286b; original3492-row/47-column ladder identity. FITS headers, all47 prior rows, likelihood/prior definitions and wrapper configuration checked; no numerical fit or physical label for index44 established."
+    },
+    {
+      "id": "ladder-original-run_mcmc.py",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/run_mcmc.py",
+      "sha256": "00546b9de2d73cd6315c0333b5f7b07a8b948f9e73056a88e76abe0249464c85",
+      "bytes": 2020,
+      "retrieved_utc": null,
+      "retrieval_time_reason": "Reused exact source bytes from the frozen consumer packet; original per-file retrieval time not supplied.",
+      "role": "primary_release_code_or_document",
+      "conditioning": "Frozen release c447f0fea703fcd0fff57de5000947b5ca81286b; original3492-row/47-column ladder identity. FITS headers, all47 prior rows, likelihood/prior definitions and wrapper configuration checked; no numerical fit or physical label for index44 established."
+    }
+  ],
+  "limitations": [
+    "A source-gate snapshot for the existing Irreducible 19-scope audit; no priorities, implementation plan, numerical execution or observational qualification.",
+    "Exact-Sol targeted checks and preserved source review; zero Luna full reads and zero full-paper promotions.",
+    "Raw sources, full worker packets and code remain ignored. Current-data reassessment and independent numerical reproduction have not occurred.",
+    "Unknown event identity, calibration/selection dependence and cross-probe covariance remain unknown."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}
