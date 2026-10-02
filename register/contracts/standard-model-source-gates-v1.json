@@ -89,7 +89,7 @@
         "arxiv:astro-ph/0701828v1"
       ],
       "checked_claim": "Released FLUXCAL and its error are calibrated light-curve quantities. Preserve all source flags and epochs.",
-      "unresolved": "Selected FITS photometry columns lack TUNIT and EXPTIME. Clock standard, zero point, wavelength convention, extraction covariance and physical flux/electron bridge remain incomplete."
+      "unresolved": "Selected FITS photometry TUNIT cards are present with blank unit values; EXPTIME is absent. Clock standard, zero point, wavelength convention, extraction covariance and physical flux/electron bridge remain incomplete."
     },
     {
       "scope_id": "NEXT-08",
