@@ -1,6 +1,6 @@
 # Register
 
-54 paper versions · 23 ideas · 9 topics · 10 candidate prospects.
+67 paper versions · 23 ideas · 9 topics · 10 candidate prospects.
 
 [Open Prospector](https://prospector-cosmology.sprajs.chatgpt.site) · [Local map](map.html)
 
@@ -8,14 +8,14 @@
 
 | Topic | Papers | Ideas |
 | --- | ---: | ---: |
-| [ΛCDM reference](topics/baseline-reference.json) | 6 | 4 |
+| [ΛCDM reference](topics/baseline-reference.json) | 19 | 4 |
 | [Bounces, cycles and primordial alternatives](topics/bounces-cycles.json) | 3 | 0 |
 | [Early energy and recombination](topics/early-energy.json) | 18 | 8 |
 | [Inhomogeneity, averaging and observers](topics/inhomogeneity.json) | 6 | 2 |
 | [Interactions, transitions and decays](topics/interacting-sectors.json) | 12 | 9 |
 | [Acceleration and reconstruction](topics/kinematics.json) | 4 | 2 |
 | [Late dark energy and unified histories](topics/late-dark-energy.json) | 19 | 10 |
-| [Measurements and calibration](topics/measurement-lineage.json) | 18 | 4 |
+| [Measurements and calibration](topics/measurement-lineage.json) | 24 | 4 |
 | [Gravity and quantum cosmology](topics/modified-gravity.json) | 19 | 4 |
 
 Topics are navigation groups. Membership does not establish equivalent physics.
@@ -65,13 +65,15 @@ Combined models require compatibility checks before promotion.
 - [Tracking scalar unification requires a depletion branch between early and late energy](ideas/unified-scalar-steep-steeper-shallow.json)
 
 [Typed relationships](graph.json) preserve overlap, distinctions, critique, shared data and prospect links.
-[Bibliographic citations](citations.json): 20 explicit links; the index is incomplete.
+[Bibliographic citations](citations.json): 30 explicit links; the index is incomplete.
 
 ## Papers
 
 | Paper | Version | Reading |
 | --- | --- | --- |
+| [Dissecting the Gravitational Lens B1608+656. II. Precision Measurements of the Hubble Constant, Spatial Curvature, and the Dark Energy Equation of State](https://arxiv.org/abs/0910.2773v2) | [0910.2773v2](papers/0910.2773v2.json) | discovered |
 | [Supernova tests of the timescape cosmology](https://arxiv.org/abs/1009.5855v2) | [1009.5855v2](papers/1009.5855v2.json) | reviewed |
+| [The Cosmic Linear Anisotropy Solving System (CLASS) II: Approximation schemes](https://arxiv.org/abs/1104.2933v3) | [1104.2933v3](papers/1104.2933v3.json) | discovered |
 | [Gamma ray burst distances and the timescape cosmology](https://arxiv.org/abs/1107.5596v2) | [1107.5596v2](papers/1107.5596v2.json) | screened |
 | [Timescape cosmology with radiation fluid](https://arxiv.org/abs/1306.3208v2) | [1306.3208v2](papers/1306.3208v2.json) | screened |
 | [Signature transition in Einstein-Cartan cosmology](https://arxiv.org/abs/1308.2877v2) | [1308.2877v2](papers/1308.2877v2.json) | screened |
@@ -81,14 +83,19 @@ Combined models require compatibility checks before promotion.
 | [Cosmic microwave background anisotropies in the timescape cosmology](https://arxiv.org/abs/1410.3470v3) | [1410.3470v3](papers/1410.3470v3.json) | screened |
 | [Phantom Dark Ghost in Einstein-Cartan Gravity](https://arxiv.org/abs/1507.07571v3) | [1507.07571v3](papers/1507.07571v3.json) | screened |
 | [Emergent Cosmos in Einstein-Cartan Theory](https://arxiv.org/abs/1605.00552v2) | [1605.00552v2](papers/1605.00552v2.json) | screened |
+| [The clustering of galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: RSD measurement from the power spectrum and bispectrum of the DR12 BOSS galaxies](https://arxiv.org/abs/1606.00439v2) | [1606.00439v2](papers/1606.00439v2.json) | discovered |
 | [Einstein-Cartan Gravity with Torsion Field Serving as Origin for Cosmological Constant or Dark Energy Density](https://arxiv.org/abs/1607.01128v2) | [1607.01128v2](papers/1607.01128v2.json) | screened |
 | [Kinematics of Einstein-Cartan universes](https://arxiv.org/abs/1611.07878v3) | [1611.07878v3](papers/1611.07878v3.json) | screened |
+| [Precision big bang nucleosynthesis with improved Helium-4 predictions](https://arxiv.org/abs/1801.08023v3) | [1801.08023v3](papers/1801.08023v3.json) | discovered |
 | [Planck 2018 results. VI. Cosmological parameters](https://arxiv.org/abs/1807.06209v4) | [1807.06209v4](papers/1807.06209v4.json) | screened |
 | [Early Dark Energy Can Resolve The Hubble Tension](https://arxiv.org/abs/1811.04083v2) | [1811.04083v2](papers/1811.04083v2.json) | reviewed |
 | [Einstein-Cartan Cosmologies](https://arxiv.org/abs/1812.04589v1) | [1812.04589v1](papers/1812.04589v1.json) | screened |
+| [Planck 2018 results. V. CMB power spectra and likelihoods](https://arxiv.org/abs/1907.12875v2) | [1907.12875v2](papers/1907.12875v2.json) | discovered |
 | [New Early Dark Energy](https://arxiv.org/abs/1910.10739v5) | [1910.10739v5](papers/1910.10739v5.json) | reviewed |
+| [The Pantheon+ Analysis: Evaluating Peculiar Velocity Corrections in Cosmological Analyses with Nearby Type Ia Supernovae](https://arxiv.org/abs/2110.03487v2) | [2110.03487v2](papers/2110.03487v2.json) | discovered |
 | [Inflaton-driven early dark energy](https://arxiv.org/abs/2111.07288v1) | [2111.07288v1](papers/2111.07288v1.json) | screened |
 | [Hot New Early Dark Energy](https://arxiv.org/abs/2112.00770v2) | [2112.00770v2](papers/2112.00770v2.json) | screened |
+| [The Pantheon+ Analysis: Improving the Redshifts and Peculiar Velocities of Type Ia Supernovae Used in Cosmological Analyses](https://arxiv.org/abs/2112.01471v2) | [2112.01471v2](papers/2112.01471v2.json) | discovered |
 | [The Pantheon+ Analysis: The Full Dataset and Light-Curve Release](https://arxiv.org/abs/2112.03863v2) | [2112.03863v2](papers/2112.03863v2.json) | screened |
 | [The Pantheon+ Analysis: SuperCal-Fragilistic Cross Calibration, Retrained SALT2 Light Curve Model, and Calibration Systematic Uncertainty](https://arxiv.org/abs/2112.03864v2) | [2112.03864v2](papers/2112.03864v2.json) | screened |
 | [A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km/s/Mpc Uncertainty from the Hubble Space Telescope and the SH0ES Team](https://arxiv.org/abs/2112.04510v3) | [2112.04510v3](papers/2112.04510v3.json) | screened |
@@ -124,17 +131,26 @@ Combined models require compatibility checks before promotion.
 | [Metastable Dark Energy on the Phantom Brane](https://arxiv.org/abs/2609.39039v1) | [2609.39039v1](papers/2609.39039v1.json) | screened |
 | [Structure formation in anisotropic Einstein-Cartan cosmologies](https://arxiv.org/abs/astro-ph/0009150v1) | [astro-ph/0009150v1](papers/astro-ph__0009150v1.json) | screened |
 | [Early Dark Energy Cosmologies](https://arxiv.org/abs/astro-ph/0601544v2) | [astro-ph/0601544v2](papers/astro-ph__0601544v2.json) | screened |
+| [SALT2: using distant supernovae to improve the use of Type Ia supernovae as distance indicators](https://arxiv.org/abs/astro-ph/0701828v1) | [astro-ph/0701828v1](papers/astro-ph__0701828v1.json) | discovered |
+| [Cosmological Perturbation Theory in the Synchronous and Conformal Newtonian Gauges](https://arxiv.org/abs/astro-ph/9506072v1) | [astro-ph/9506072v1](papers/astro-ph__9506072v1.json) | discovered |
+| [A Line of Sight Approach to Cosmic Microwave Background Anisotropies](https://arxiv.org/abs/astro-ph/9603033v1) | [astro-ph/9603033v1](papers/astro-ph__9603033v1.json) | discovered |
+| [Baryonic Features in the Matter Transfer Function](https://arxiv.org/abs/astro-ph/9709112v1) | [astro-ph/9709112v1](papers/astro-ph__9709112v1.json) | discovered |
+| [A New Calculation of the Recombination Epoch](https://arxiv.org/abs/astro-ph/9909275v2) | [astro-ph/9909275v2](papers/astro-ph__9909275v2.json) | discovered |
+| [Efficient Computation of CMB anisotropies in closed FRW models](https://arxiv.org/abs/astro-ph/9911177v2) | [astro-ph/9911177v2](papers/astro-ph__9911177v2.json) | discovered |
 | [Metric perturbations in Einstein-Cartan Cosmology](https://arxiv.org/abs/gr-qc/0202022v1) | [gr-qc/0202022v1](papers/gr-qc__0202022v1.json) | screened |
 
 ## Investigations
 
 | Design | Readiness |
 | --- | --- |
+| [Bounded shared-charge H/He singlet history](../designs/candidate-bounded-shared-charge-hhe.json) | blocked |
+| [DESI DR2 full compressed-vector contract](../designs/candidate-desi-dr2-full-compression-contract.json) | blocked |
 | [EDE fixed-endpoint sound-horizon response](../designs/candidate-ede-fixed-endpoint-ruler.json) | blocked |
 | [Gauss–Bonnet minimum and stability audit](../designs/candidate-gauss-bonnet-minimum-and-stability-audit.json) | blocked |
 | [Full ΛCDM reference and stack-closure audit](../designs/candidate-lcdm-baseline-reference-audit.json) | blocked |
 | [Massless supplied-drag ΛCDM comparison](../designs/candidate-lcdm-massless-conditional-comparison.json) | ready_for_consumer_review |
 | [NEDE piecewise background conservation and matching](../designs/candidate-nede-piecewise-background.json) | blocked |
+| [Perfect-fluid finite-band transfer](../designs/candidate-perfect-fluid-band-transfer.json) | blocked |
 | [Deceleration matching and derivative audit](../designs/candidate-q-reconstruction-continuity-and-derivative-interpretation.json) | blocked |
 | [SDSS released observer and covariance contract](../designs/candidate-sdss-released-observer-contract.json) | blocked |
 | [Spin source and photon duality audit](../designs/candidate-spin-source-and-photon-duality-audit.json) | blocked |
@@ -187,5 +203,17 @@ Source checks and structural validation do not establish independent reproductio
 - [arxiv:2609.36853v1](reviews/2026-10-01-modified-gravity-science.json): Author d=.924(+.007/−.008) is a one-parameter Gaussian chi-square mapping of a cited local Pantheon q0=−1.08±.29, with Omega_m0 fixed .3. Phi0/H0 and wX0 are correlated derived outputs from that same mapping, not independent observations. The q0 summary and its source likelihood/calibration/cosmographic truncation have not been acquired here; no independent-current-data confirmation is claimed. Planck/BAO/CC mentions are motivation, not fitted likelihoods.
 - [2026-10-02-sn-passband-source-claims](reviews/2026-10-02-sn-passband-source-claims.json): 1,543 distinct CID strings cannot be compared directly to 1,550 physical events. The source uses sky position and peak epoch to match aliases; no full-release deduplication is claimed.
 - [2026-10-02-sn-passband-source-claims](reviews/2026-10-02-sn-passband-source-claims.json): The published joint covariance of 102 magnitude offsets and nine calibration systematic variants were acquired. They do not identify a joint WFC3 optical transmission law. No independent Gaussian calibration errors were fabricated.
+- [arxiv:2110.03487v2](reviews/2026-10-02-standard-model-source-claims.json): The preliminary Peterson Eq10 PDF locator p7 is corrected to p8; the final immutable worker packet is authoritative.
+- [arxiv:astro-ph/9909275v2](reviews/2026-10-02-standard-model-source-claims.json): Original PDF numbers matter temperature5 and Saha6–7; HTML numbering/references differ. Retract an unqualified original-PDF duplicate-Eq3 claim.
+- [arxiv:astro-ph/9909275v2](reviews/2026-10-02-standard-model-source-claims.json): Literal negative He inhibition exponent and ambiguous beta excitation/statistical notation remain separate from the positive pinned-code singlet convention.
+- [2026-10-02-standard-model-source-claims](reviews/2026-10-02-standard-model-source-claims.json): He wavenumber comments say eV; dimensions are m^-1 from hcL. The contract uses explicit SI dimensions.
+- [arxiv:2112.03864v2](reviews/2026-10-02-standard-model-source-claims.json): Eq1 prints positive2.5 log for AB magnitude; a conventional negative-sign repair is separate and no numerical impact is established.
+- [arxiv:2110.03487v2](reviews/2026-10-02-standard-model-source-claims.json): Eq10 divides a squared dimensionless residual by a stated250km/s dispersion squared without an explicit unit bridge. No repaired posterior or impact is claimed.
+- [arxiv:2112.03863v2](reviews/2026-10-02-standard-model-source-claims.json): Table2 prints1909 after removing98 from1907;1809 is an arithmetic inference, not replacement selection membership.
+- [arxiv:astro-ph/9603033v1](reviews/2026-10-02-standard-model-source-claims.json): Original Eq11 duplicate attenuation and collision-sign inconsistencies, and Eq12 cross-derivative coefficient, remain separate from an MB-consistent reviewer-derived projection.
+- [arxiv:astro-ph/9506072v1](reviews/2026-10-02-standard-model-source-claims.json): CLASS II explicitly restores polarization terms omitted by MB tight-coupling Eq73; an approximation is not the full hierarchy.
+- [arxiv:0910.2773v2](reviews/2026-10-02-standard-model-source-claims.json): PDF draft header says November26,2024 while its arXiv watermark/version and metadata say January28,2010. Exact bytes and both dates preserved; no new version inferred.
+- [2026-10-02-standard-model-source-claims](reviews/2026-10-02-standard-model-source-claims.json): Correct canonical worker names and per-paper figure coverage; scope actual candidate assets and minimal outputs separately from future drag/CMB gates.
+- [2026-10-02-standard-model-source-claims](reviews/2026-10-02-standard-model-source-claims.json): The bounded thermal candidate now states the shared-temperature equation and separately requires exact independently accepted H1/B2/NIST atomic-data bindings; no drag or CMB output is admitted.
 
 [Scan receipts](../scans/) · [Continuation queue](../state.json) · [Record conventions](../docs/records.md)

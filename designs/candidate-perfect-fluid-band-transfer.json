@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "design_id": "candidate-perfect-fluid-band-transfer",
+  "title": "Perfect-fluid finite-band transfer",
+  "paper_ids": [
+    "arxiv:astro-ph/9506072v1",
+    "arxiv:1104.2933v3",
+    "arxiv:1807.06209v4"
+  ],
+  "idea_ids": [
+    "planck-conditioned-base-lcdm"
+  ],
+  "review_id": "2026-10-02-standard-model-source-claims",
+  "readiness": "blocked",
+  "source_contracts": [
+    {
+      "contract_id": "standard-model-source-gates-v1",
+      "path": "register/contracts/standard-model-source-gates-v1.json",
+      "sha256": "49adfda3a60db2598e273fecf2f760c59ed2042e5a02ff03012aef43cf82f7b2"
+    }
+  ],
+  "faithful_claim": "Can the explicitly supplied perfect self-interacting radiation+CDM+smooth-Lambda model predict a signed CDM comoving-density transfer and finite primordial-band variance?",
+  "equations": [
+    {
+      "expression": "delta_c_prime=-theta_c+3*phi_prime; theta_c_prime=-mathcalH*theta_c+k^2*psi",
+      "paper_id": "arxiv:astro-ph/9506072v1",
+      "locator": "Original Eqs23,30,43; be0789c bounded reduction",
+      "definitions": "Conformal time in Mpc, k Mpc^-1, mathcalH=aH/c; e^(+ikx), theta=i*k.v, deltaT00=-delta_rho. Zero anisotropic stress gives phi=psi.",
+      "domain": "No baryons, collisionless relics or photon hierarchy.",
+      "status": "reviewed_transcription"
+    },
+    {
+      "expression": "zeta=-phi+delta_rho/[3*(rho+P)]; T_c=Delta_c/zeta; sigma_R,band^2=integral_band dlnk P_zeta*T_c^2*[3*(sin(kR)-kR*cos(kR))/(kR)^3]^2",
+      "paper_id": "arxiv:astro-ph/9506072v1",
+      "locator": "Original metric/Einstein/fluid Eqs5,23,30,43; reviewed be0789c independent reduced algebra",
+      "definitions": "Delta_c=delta_c+3*mathcalH*theta_c/k^2; zeta1 gives phi_rad=-2/3, phi_matter=-3/5; R=8/h Mpc for explicitly named sigma8_band.",
+      "domain": "Finite declared primordial support, zero outside; full-spectrum sigma8 and signed R renaming refused.",
+      "status": "reviewer_derived"
+    }
+  ],
+  "assumptions": [
+    "Exact source version, input order, units, species and changed-model choices are part of the comparison identity.",
+    "A source convention check is separate from native implementation, consumer numerical acceptance and scientific qualification."
+  ],
+  "minimal_test": {
+    "question": "Can the explicitly supplied perfect self-interacting radiation+CDM+smooth-Lambda model predict a signed CDM comoving-density transfer and finite primordial-band variance?",
+    "observables": [
+      "Signed CDM comoving-density transfer",
+      "Finite-band density variance",
+      "Einstein constraint residual"
+    ],
+    "parameter_choices": null,
+    "scope": "Source applicability to be0789c is accepted; independent start/time/k/window/constraint and native numerical controls remain separate."
+  },
+  "simplifications": [
+    "This removes baryons, collisionless relics, anisotropic stress and the photon hierarchy. Ordinary full-spectrum sigma8, faithful Planck transfer and independent numerical acceptance remain open.",
+    "Printed LOS survival/sign/coefficient issues are preserved separately from reviewer-derived MB-consistent repairs. Perfect-fluid transfer and finite thermal opacity supply neither primary spectra nor a measured Planck likelihood."
+  ],
+  "data_dependencies": [
+    {
+      "scope_id": "NEXT-14",
+      "title": "Linear transfer and amplitude",
+      "paper_ids": [
+        "arxiv:astro-ph/9506072v1",
+        "arxiv:1104.2933v3",
+        "arxiv:1807.06209v4"
+      ],
+      "checked_claim": "Original Newtonian-gauge Einstein/fluid equations support the separately declared perfect self-interacting radiation+CDM+Lambda transfer and finite primordial-band variance. Its initial expansions are reviewer-derived.",
+      "unresolved": "This removes baryons, collisionless relics, anisotropic stress and the photon hierarchy. Ordinary full-spectrum sigma8, faithful Planck transfer and independent numerical acceptance remain open."
+    },
+    {
+      "scope_id": "NEXT-19",
+      "title": "Primary CMB observable",
+      "paper_ids": [
+        "arxiv:astro-ph/9506072v1",
+        "arxiv:astro-ph/9603033v1",
+        "arxiv:1104.2933v3",
+        "arxiv:1907.12875v2",
+        "arxiv:1807.06209v4"
+      ],
+      "checked_claim": "A primary projection needs a closed photon/baryon/polarization/species/metric system, primordial normalization and sourced full visibility history. Dimensionless and Kelvin spectra are separate identities.",
+      "unresolved": "Printed LOS survival/sign/coefficient issues are preserved separately from reviewer-derived MB-consistent repairs. Perfect-fluid transfer and finite thermal opacity supply neither primary spectra nor a measured Planck likelihood.",
+      "role": "future_lost_scope_gate; not a minimal output"
+    },
+    {
+      "kind": "immutable_source_assets",
+      "assets": []
+    }
+  ],
+  "unknowns": [
+    "This removes baryons, collisionless relics, anisotropic stress and the photon hierarchy. Ordinary full-spectrum sigma8, faithful Planck transfer and independent numerical acceptance remain open.",
+    "Printed LOS survival/sign/coefficient issues are preserved separately from reviewer-derived MB-consistent repairs. Perfect-fluid transfer and finite thermal opacity supply neither primary spectra nor a measured Planck likelihood."
+  ],
+  "verification_gates": [
+    "Consumer explicitly accepts this candidate, source-contract hash and exact native/build/request identity before execution.",
+    "Independent signed/unit/analytic controls and separate source, initial, numerical and observation allocations; preserve failed gates.",
+    "No fitted product or shared source is counted as an independent observation; no source inconsistency is silently repaired."
+  ],
+  "falsification": "A source/order/convention mismatch or a failed frozen numerical gate refuses that comparison; retain the mismatch and do not relax budgets or replace missing physics.",
+  "consumer": {
+    "repository": "sprajs/irreducible",
+    "revision": "1d6a6e58c07e17b5346dc281c9b7827e260f8bb7",
+    "dirty": false,
+    "capability_status": "Clean primary source/schema/docs inspected at this revision. Bounded H/He and transfer owner contracts are separately evolving worker branches; no current native implementation or compiled numerical acceptance is certified by this source packet.",
+    "recipe_runner_status": "docs/run-recipes.md remains a strict-JSON proposal; no recipe schema or runner is implemented. A dedicated typed native consumer needs its own exact acceptance."
+  },
+  "blockers": [
+    "This removes baryons, collisionless relics, anisotropic stress and the photon hierarchy. Ordinary full-spectrum sigma8, faithful Planck transfer and independent numerical acceptance remain open.",
+    "Printed LOS survival/sign/coefficient issues are preserved separately from reviewer-derived MB-consistent repairs. Perfect-fluid transfer and finite thermal opacity supply neither primary spectra nor a measured Planck likelihood."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Located source preparation only; pending physics, asset and consumer gates retained."
+  }
+}

@@ -10,7 +10,20 @@
     "arxiv:2202.04077v2",
     "arxiv:2112.03863v2",
     "arxiv:2112.03864v2",
-    "arxiv:2112.04510v3"
+    "arxiv:2112.04510v3",
+    "arxiv:2112.01471v2",
+    "arxiv:2110.03487v2",
+    "arxiv:1907.12875v2",
+    "arxiv:0910.2773v2",
+    "arxiv:1104.2933v3",
+    "arxiv:astro-ph/9709112v1",
+    "arxiv:astro-ph/0701828v1",
+    "arxiv:1606.00439v2",
+    "arxiv:astro-ph/9603033v1",
+    "arxiv:astro-ph/9506072v1",
+    "arxiv:astro-ph/9911177v2",
+    "arxiv:astro-ph/9909275v2",
+    "arxiv:1801.08023v3"
   ],
   "idea_ids": [
     "planck-conditioned-base-lcdm",
@@ -20,6 +33,9 @@
   ],
   "design_ids": [
     "candidate-lcdm-baseline-reference-audit",
-    "candidate-lcdm-massless-conditional-comparison"
+    "candidate-lcdm-massless-conditional-comparison",
+    "candidate-desi-dr2-full-compression-contract",
+    "candidate-bounded-shared-charge-hhe",
+    "candidate-perfect-fluid-band-transfer"
   ]
 }

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Located source contract and unresolved gates",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "contract_id", "title", "review_id", "paper_ids", "scopes", "source_assets", "limitations", "qualification"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "contract_id": {"type": "string", "pattern": "^[a-z][a-z0-9-]+$"},
+    "title": {"type": "string", "minLength": 1},
+    "review_id": {"type": "string", "minLength": 1},
+    "paper_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "scopes": {"type": "array", "minItems": 1, "items": {
+      "type": "object", "additionalProperties": false,
+      "required": ["scope_id", "title", "paper_ids", "checked_claim", "unresolved"],
+      "properties": {
+        "scope_id": {"type": "string", "pattern": "^NEXT-[0-9]{2}$"},
+        "title": {"type": "string", "minLength": 1},
+        "paper_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "checked_claim": {"type": "string", "minLength": 1},
+        "unresolved": {"type": "string", "minLength": 1}
+      }}},
+    "source_assets": {"type": "array", "items": {"type": "object", "required": ["id", "url", "sha256", "role", "conditioning"], "properties": {
+      "id": {"type": "string"}, "url": {"type": "string", "format": "uri"},
+      "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+      "role": {"type": "string"}, "conditioning": {"type": "string"}
+    }}},
+    "limitations": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "qualification": {"type": "object", "additionalProperties": false, "required": ["numerically_executed", "scientifically_qualified"], "properties": {
+      "numerically_executed": {"const": false}, "scientifically_qualified": {"const": false}
+    }}
+  }
+}

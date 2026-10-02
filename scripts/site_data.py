@@ -43,8 +43,16 @@ def website_data(papers, ideas, prospects, graph):
     for ident, p in sorted(papers.items(), key=lambda item: item[1]['version']):
         by_base[p['arxiv_id']] = ident
     metrics = visibility_snapshots()
+    contracts = {p.stem: strict_load(p) for p in (ROOT / 'register/contracts').glob('*.json')}
+    def public_prospect(path):
+        item = strict_load(path)
+        public = {k: item[k] for k in ['id','title','kind','readiness','baseline','cosmology','scope','unknowns','idea_ids','model_idea_ids','topic_ids','source_evidence']}
+        public['source_gates'] = [{k: scope[k] for k in ['scope_id','title','paper_ids','checked_claim','unresolved']}
+                                 for ident in item.get('source_contract_ids', [])
+                                 for scope in contracts[ident]['scopes']]
+        return public
     return {
-        'prospects': [{k: strict_load(p)[k] for k in ['id','title','kind','readiness','baseline','cosmology','scope','unknowns','idea_ids','model_idea_ids','topic_ids','source_evidence']} for p in sorted((ROOT / 'register/prospects').glob('*.json'))],
+        'prospects': [public_prospect(p) for p in sorted((ROOT / 'register/prospects').glob('*.json'))],
         'groups': [{k: prospects[id][k] for k in ['id', 'title', 'paper_ids', 'idea_ids']}
                    for id in ORDER],
         'papers': [{'id': id, 'base_id': p['arxiv_id'], 'title': p['title'],

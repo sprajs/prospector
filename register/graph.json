@@ -87,7 +87,20 @@
     "hubble-cutoff-negative-spin-background",
     "frenkel-trace-and-maxwell-duality-closure",
     "localized-gauss-bonnet-source-and-stability-audit",
-    "spin-holographic-source-and-photon-audit"
+    "spin-holographic-source-and-photon-audit",
+    "arxiv:2112.01471v2",
+    "arxiv:2110.03487v2",
+    "arxiv:1907.12875v2",
+    "arxiv:0910.2773v2",
+    "arxiv:1104.2933v3",
+    "arxiv:astro-ph/9709112v1",
+    "arxiv:astro-ph/0701828v1",
+    "arxiv:1606.00439v2",
+    "arxiv:astro-ph/9603033v1",
+    "arxiv:astro-ph/9506072v1",
+    "arxiv:astro-ph/9911177v2",
+    "arxiv:astro-ph/9909275v2",
+    "arxiv:1801.08023v3"
   ],
   "edges": [
     {
@@ -1143,7 +1156,7 @@
           "locator": "HTML S2.SS1 (Sec2.1): six sampled parameters, adiabatic power law, 0.05 Mpc^-1 pivot, one 0.06 eV plus two massless neutrinos, BBN PArthENoPE1.1/neutron880.2s; HTML S3.T1 caption: Plik marginalized means versus best fit, massive neutrino included in Omega_m, theta_MC versus theta_star; HTML S3.SS1 footnote14: T_CMB2.7255K; PDF p16 Table2: all eleven registered values/errors and TT,TE,EE+lowE+lensing column; no BAO; tanh reionization and BBN helium caption; HTML S7.SS5.SSS2: standard Neff3.046 text; Eq62 read but not used"
         }
       ],
-      "review_id": "2026-10-01-lcdm-baseline-source-claims"
+      "review_id": "2026-10-02-standard-model-source-claims"
     },
     {
       "id": "baseline-11",
@@ -1158,7 +1171,7 @@
           "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11–12: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test"
         }
       ],
-      "review_id": "2026-10-01-lcdm-baseline-source-claims"
+      "review_id": "2026-10-02-standard-model-source-claims"
     },
     {
       "id": "baseline-12",
@@ -1185,7 +1198,7 @@
           "locator": "PDF/extracted-text title and abstract: pinned v3 identity, baseline73.04±1.04 km/s/Mpc is conditioned ladder inference, not raw observation; PDF Sec2.1 pp9–12 Eqs1–6: Cepheid standardization, geometric anchor constraints, colocated SN calibration, cosmographic intercept, logH0 relation, simultaneous covariance fit; Rendered PDF p10: Eqs2–5 and covariance dependence prose; Rendered PDF p11: calibrator/Hubble-flow SNcov cross blocks; Rendered PDF p12: design matrix/free parameters and Eq6 covariance quadratic"
         }
       ],
-      "review_id": "2026-10-01-lcdm-baseline-source-claims"
+      "review_id": "2026-10-02-standard-model-source-claims"
     },
     {
       "id": "baseline-13",

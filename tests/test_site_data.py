@@ -37,6 +37,16 @@ class PublicChronology(unittest.TestCase):
         with tempfile.TemporaryDirectory(dir=work) as folder:
             root = Path(folder)
             (root / "register/prospects").mkdir(parents=True)
+            (root / 'register/contracts').mkdir()
+            (root / 'register/contracts/example.json').write_text(json.dumps({'scopes': [{
+                'scope_id': 'NEXT-01', 'title': 'Located convention', 'paper_ids': ['arxiv:1009.5855v2'],
+                'checked_claim': 'Checked definition', 'unresolved': 'Unknown covariance',
+                'agent_id': 'PRIVATE_WORKER', 'raw_source': '.work/source.html',
+            }]}))
+            (root / 'register/prospects/example.json').write_text(json.dumps(dict(
+                id='example',title='Example',kind='single_mechanism',readiness='blocked',
+                baseline={},cosmology={},scope=[],unknowns=[],idea_ids=[],model_idea_ids=[],topic_ids=[],source_evidence=[],
+                source_contract_ids=['example'])))
             (root / "register/citations.json").write_text(json.dumps({"citations": [{
                 "from_paper_id": "arxiv:1009.5855v2", "cited_arxiv_id": "1811.04083",
                 "cited_version": None, "reference": "example",
@@ -66,6 +76,8 @@ class PublicChronology(unittest.TestCase):
             self.assertEqual(data["edges"], [])
             self.assertEqual(len(data["citations"]), 1)
             self.assertNotIn(".work/", json.dumps(data))
+            self.assertEqual(data['prospects'][0]['source_gates'][0]['unresolved'], 'Unknown covariance')
+            self.assertNotIn('PRIVATE_WORKER', json.dumps(data))
 
 
 if __name__ == "__main__":

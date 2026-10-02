@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:astro-ph/0701828v1",
+  "arxiv_id": "astro-ph/0701828",
+  "version": 1,
+  "title": "SALT2: using distant supernovae to improve the use of Type Ia supernovae as distance indicators",
+  "authors": [
+    "J. Guy",
+    "P. Astier",
+    "S. Baumont",
+    "D. Hardin",
+    "R. Pain",
+    "N. Regnault",
+    "S. Basa",
+    "R. G. Carlberg",
+    "A. Conley",
+    "S. Fabbro",
+    "D. Fouchez",
+    "I. M. Hook",
+    "D. A. Howell",
+    "K. Perrett",
+    "C. J. Pritchet",
+    "J. Rich",
+    "M. Sullivan",
+    "P. Antilogus",
+    "E. Aubourg",
+    "G. Bazin",
+    "J. Bronder",
+    "M. Filiol",
+    "N. Palanque-Delabrouille",
+    "P. Ripoche",
+    "V. Ruhlmann-Kleider"
+  ],
+  "categories": [
+    "astro-ph"
+  ],
+  "published_utc": "2007-01-29T16:04:43Z",
+  "updated_utc": "2007-01-29T16:04:43Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/astro-ph/0701828v1",
+    "html": "https://arxiv.org/html/astro-ph/0701828v1",
+    "pdf": "https://arxiv.org/pdf/astro-ph/0701828v1"
+  },
+  "license": {
+    "status": "Unreported in retrieved Atom metadata",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public accessibility does not establish redistribution rights. Sources, copied abstracts and worker packets stay ignored."
+  },
+  "artifacts": [
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=astro-ph%2F9506072%2Castro-ph%2F9909275%2Castro-ph%2F9603033%2Castro-ph%2F9709112%2C1104.2933%2Castro-ph%2F9911177%2C1907.12875%2C2112.01471%2C2110.03487%2C1606.00439%2C0910.2773%2Castro-ph%2F0701828%2C1801.08023&max_results=13",
+      "retrieved_utc": "2026-10-02T21:49:20.413721+00:00",
+      "sha256": "6e164a90b318339054952d52ef87039f99e27702268159e0d972efa7e2c6c4cd",
+      "bytes": 46475,
+      "role": "metadata"
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/astro-ph/0701828v1",
+      "retrieved_utc": "2026-10-02T21:50:08.790582+00:00",
+      "sha256": "bab88504c4bce299c5a765c722b3c4fa040eed3830c924a6438762e0a7985952",
+      "bytes": 293981
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/astro-ph/0701828v1",
+      "retrieved_utc": "2026-10-02T21:50:12.024604+00:00",
+      "sha256": "a89d6be7eb6b76fe9a83fce8e2f3a8eda99ca35c0d20c71c580d2a83a99b42e3",
+      "bytes": 681848
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/astro-ph/0701828v1",
+      "retrieved_utc": "2026-10-02T21:50:12.334218+00:00",
+      "sha256": "c9656eb1c2b2730bb8fd38710c54152e36327a5899353682f3bf5db88da9aac3",
+      "bytes": 95473,
+      "tool": "pdftotext -layout",
+      "derived_from_sha256": "a89d6be7eb6b76fe9a83fce8e2f3a8eda99ca35c0d20c71c580d2a83a99b42e3"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "metadata",
+    "reason": "Known primary identity admitted for explicitly scoped standard-model source audit. Located Sol checks are separate; complete Luna reading remains pending."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

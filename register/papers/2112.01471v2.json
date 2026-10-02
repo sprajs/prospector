@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2112.01471v2",
+  "arxiv_id": "2112.01471",
+  "version": 2,
+  "title": "The Pantheon+ Analysis: Improving the Redshifts and Peculiar Velocities of Type Ia Supernovae Used in Cosmological Analyses",
+  "authors": [
+    "Anthony Carr",
+    "Tamara M. Davis",
+    "Daniel Scolnic",
+    "Khaled Said",
+    "Dillon Brout",
+    "Erik R. Peterson",
+    "Richard Kessler"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2021-12-02T18:15:50Z",
+  "updated_utc": "2022-10-11T10:05:42Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2112.01471v2",
+    "html": "https://arxiv.org/html/2112.01471v2",
+    "pdf": "https://arxiv.org/pdf/2112.01471v2"
+  },
+  "license": {
+    "status": "Unreported in retrieved Atom metadata",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public accessibility does not establish redistribution rights. Sources, copied abstracts and worker packets stay ignored."
+  },
+  "artifacts": [
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=astro-ph%2F9506072%2Castro-ph%2F9909275%2Castro-ph%2F9603033%2Castro-ph%2F9709112%2C1104.2933%2Castro-ph%2F9911177%2C1907.12875%2C2112.01471%2C2110.03487%2C1606.00439%2C0910.2773%2Castro-ph%2F0701828%2C1801.08023&max_results=13",
+      "retrieved_utc": "2026-10-02T21:49:20.413721+00:00",
+      "sha256": "6e164a90b318339054952d52ef87039f99e27702268159e0d972efa7e2c6c4cd",
+      "bytes": 46475,
+      "role": "metadata"
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/2112.01471v2",
+      "retrieved_utc": "2026-10-02T21:49:23.832769+00:00",
+      "sha256": "eb5c7d943ff293f09c11784e10e0931d8810546936d808e5d67857a24a6395b9",
+      "bytes": 687226
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "metadata",
+    "reason": "Known primary identity admitted for explicitly scoped standard-model source audit. Located Sol checks are separate; complete Luna reading remains pending."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

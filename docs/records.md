@@ -13,6 +13,7 @@ source identity and decisions so Codex can continue without a transcript.
 | `register/searches/<id>.json` | Exact archive windows, failures, per-hit dispositions and refresh reasons |
 | `register/bibliometrics/<snapshot>.json` | Provider-specific citation counts and verified author visibility snapshots |
 | `register/reviews/<id>.json` | Sol source checks, corrections, overlap and limits |
+| `register/contracts/<id>.json` | Located source requirements, pinned reduced/code assets and unresolved gates |
 | `register/graph.json` | Typed evidence relationships |
 | `register/README.md`, `register/map.html` | Generated tree and interactive map |
 | `designs/<id>.json` | Candidate investigation handoffs |
@@ -66,6 +67,15 @@ accepts. Idea evidence must point to its checked locators. It cannot populate a
 paper's full-review field or remove its outstanding Luna reading. Scans record
 these checks in `targeted_source_reviews`, separately from `full_reads` and
 `reviewed_papers`. The ordinary full-paper gates remain in force.
+
+Source contracts preserve definitions, reduced-data conditioning and unresolved
+requirements across a scoped audit. They are distinct from numerical references,
+physical mechanisms and executable recipes. A targeted review explicitly accepts
+the contract ID and covers its paper identities. Candidate `source_contracts`
+bindings pin the canonical path and SHA-256; any content change invalidates the
+binding. Prospect details can expose the checked claims and unresolved physics,
+without worker provenance or raw source material. A source contract does not
+qualify a native implementation, statistical law or measured likelihood.
 
 Ideas have stable slug, title, family, source evidence, assumptions, predictions
 and review ID. Topics have stable slug, title, scope and paper/idea/design ID
