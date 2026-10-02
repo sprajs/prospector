@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-02-sn-passband-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "high",
+  "agent_id": "/root/ladder_constraints_wave",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "model": "gpt-6.1-sol",
+    "effort": "high",
+    "evidence_kind": "root_recorded_spawn_tool_accepted_requested_model_and_task",
+    "fork_turns": "none",
+    "task": "/root/ladder_constraints_wave",
+    "reuse": "same canonical worker via followup_task; no model substitution",
+    "actual_backend_identity": null,
+    "runtime_session_id": null,
+    "limitation": "Tool accepted explicitly requestedmodel/effort; actual backend/session identity not exposed. Root launch receipt evidence/project-review/science/waves-20261002/launches.json."
+  },
+  "reviewed_utc": "2026-10-02T01:26:16.433039+00:00",
+  "packet_sha256": "31c66805db56666ebb77c7d16678883dd42b4ae044d31e04c0d07cd7419fe76b",
+  "reviewed_papers": [
+    "arxiv:2112.03863v2",
+    "arxiv:2112.03864v2",
+    "arxiv:2202.04077v2"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:2202.04077v2",
+      "source_hashes": {
+        "html": "7580cd8300bf5bf53119735a06c94f7240a7426c37a4f2e8fdbf9915905ecb38"
+      },
+      "coverage": {
+        "main_text": "Targeted selected original-source sections and equations, verified cached hashes; zero complete paper reads.",
+        "checked_locators": [
+          "HTML S2.SS2 Eqs5\u20138: light-curve-row covariance and shared systematic derivation; S2.SS3 Eqs9\u201315: distance and calibrator residuals; S3.SS1.SSS2: heliocentric spectral fits and peculiar-velocity-corrected CMB distance redshifts; S3.SS1.SSS3: 2M++ and group corrections, 240 km/s floor; released Pantheon+ only CosmoSIS build_data/extract_theory_points: zHD>0.01 and (1+zHD)(1+zHEL)D_A."
+        ],
+        "unread": "Remaining paper text/figures/appendices and supporting Carr/Peterson original equations unexamined. Source acquisition429 stops further arXiv requests.",
+        "figures": "No scientific figure image inspection; relevant original HTML equations/tables checked"
+      }
+    },
+    {
+      "paper_id": "arxiv:2112.03863v2",
+      "source_hashes": {
+        "html": "2c853a30cad35cd63a3097520235e5e772c645f717aba847708eecc2e5cb98a0",
+        "pdf": "c42406c774a1f09ba520238b4bbe6bbcba81fec6171fdf0064d7c4dca583b9c9",
+        "extracted_text": "7da8e4b3109fad1c207199775bc0a7ff6376fa33e979681cbd58b0f4a367b528"
+      },
+      "coverage": {
+        "main_text": "Targeted selected original-source sections and equations, verified cached hashes; zero complete paper reads.",
+        "checked_locators": [
+          "HTML S2.SS1 Eq1: calibrated light curve and SALT2 standardization roles; S2.SS2 Table2: final selection; S3.SS2: event aliases matched by RA, DEC and peak epoch, retaining duplicate fits and covariance."
+        ],
+        "unread": "Remaining paper text/figures/appendices and supporting Carr/Peterson original equations unexamined. Source acquisition429 stops further arXiv requests.",
+        "figures": "No scientific figure image inspection; relevant original HTML equations/tables checked"
+      }
+    },
+    {
+      "paper_id": "arxiv:2112.03864v2",
+      "source_hashes": {
+        "html": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+        "pdf": "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74",
+        "extracted_text": "506a368e04799fc73ef511dae88c15a11a85610e19ad25e36af76ff60831c6d4"
+      },
+      "coverage": {
+        "main_text": "Targeted selected original-source sections and equations, verified cached hashes; zero complete paper reads.",
+        "checked_locators": [
+          "HTML S2.SS12: HST not recalibrated; S3.SS1 Eqs4\u20135: 105 offset parameters, survey priors and MCMC covariance; S3.SS3 Fig3 prose: released fitted offset covariance; S4.SS3: Cholesky realizations of nine correlated zeropoint offsets plus uncorrelated wavelength shifts, joint SALT2 retraining and photometry; Appendix Table7: Gaussian wavelength uncertainties; released fit options use systematic scale 0.3."
+        ],
+        "unread": "Remaining paper text/figures/appendices and supporting Carr/Peterson original equations unexamined. Source acquisition429 stops further arXiv requests.",
+        "figures": "No scientific figure image inspection; relevant original HTML equations/tables checked"
+      }
+    }
+  ],
+  "accepted_records": {
+    "idea_ids": [],
+    "design_ids": [
+      "candidate-sdss-released-observer-contract",
+      "candidate-wfc3-optical-response-contract"
+    ],
+    "prospect_ids": [],
+    "reference_ids": []
+  },
+  "corrections": [
+    {
+      "kind": "event_identity",
+      "display_summary": "1,543 distinct CID strings cannot be compared directly to 1,550 physical events. The source uses sky position and peak epoch to match aliases; no full-release deduplication is claimed."
+    },
+    {
+      "kind": "joint_distribution",
+      "display_summary": "The published joint covariance of 102 magnitude offsets and nine calibration systematic variants were acquired. They do not identify a joint WFC3 optical transmission law. No independent Gaussian calibration errors were fabricated."
+    }
+  ],
+  "limitations": [
+    "Both faithful observation/measured-law candidates remainblocked with owned gaps; only conditional deterministic sourcevalidity is accepted.",
+    "No fullreading/extraction stage promotion, independent numerical reproduction or inferencequalification.",
+    "429knownIDmetadata failure preserved; no alternate acquisition attempted afterrate limit.",
+    "Rawassets ignored; no source redistributionpermission assumed."
+  ]
+}

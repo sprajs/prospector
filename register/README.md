@@ -136,10 +136,12 @@ Combined models require compatibility checks before promotion.
 | [Massless supplied-drag ΛCDM comparison](../designs/candidate-lcdm-massless-conditional-comparison.json) | ready_for_consumer_review |
 | [NEDE piecewise background conservation and matching](../designs/candidate-nede-piecewise-background.json) | blocked |
 | [Deceleration matching and derivative audit](../designs/candidate-q-reconstruction-continuity-and-derivative-interpretation.json) | blocked |
+| [SDSS released observer and covariance contract](../designs/candidate-sdss-released-observer-contract.json) | blocked |
 | [Spin source and photon duality audit](../designs/candidate-spin-source-and-photon-duality-audit.json) | blocked |
 | [Staged decay energy and claim audit](../designs/candidate-staged-decay-energy-and-background-claim-audit.json) | blocked |
 | [Timescape tracker distance and same-object reduction sensitivity](../designs/candidate-timescape-tracker-distance-lineage.json) | blocked |
 | [Scalar slope and source-consistency screen](../designs/candidate-unified-scalar-source-consistency-and-slope-screen.json) | blocked |
+| [Historical WFC3 optical response and calibration-law boundary](../designs/candidate-wfc3-optical-response-contract.json) | blocked |
 
 Source checks and structural validation do not establish independent reproduction or scientific qualification.
 
@@ -183,5 +185,7 @@ Source checks and structural validation do not establish independent reproductio
 - [arxiv:2609.36853v1](reviews/2026-10-01-modified-gravity-science.json): Given the phenomenological equations and separate conservation, Phi²∝a^−6 is a negative stiff contribution, not dust. Differentiating Eq.(14) using Eq.(15) gives rhodot+3H(rho+p)=6Mp²Phi(Phidot+3HPhi); particle-number/adiabatic closure sets both sides zero. Eq.(28) is normalized E(0)=1; for the displayed branch 0<1−d² and Delta=Omega_m0+d²−1>=0 are required and E²>0 ends at z*. The stated fit gives z*=.249 and /Phi/H/=1 at z_wt=.194. d→0 is outside the fitted physical branch and no independent Lambda is retained. These are conditional algebraic consequences, not an established spin-source model.
 - [arxiv:2609.36853v1](reviews/2026-10-01-modified-gravity-science.json): The formal integral of Eq.(30) gives the printed Eq.(51) with xi=sqrt(Delta/Omega_m0) and both signs. Eta(0)=0 only removes propagation length; the fit to Phi² does not choose a sign. Figure 3 shows /eta/ only. /Phi/H/<1 is a permissive domain condition, not a controlled smallness/error bound: the quoted present ratio is .392 and increases toward the upper local interval. O(Phi²) reciprocity terms and nonlinear beta terms need an error estimate before an observed duality comparison; no eta dataset was fitted.
 - [arxiv:2609.36853v1](reviews/2026-10-01-modified-gravity-science.json): Author d=.924(+.007/−.008) is a one-parameter Gaussian chi-square mapping of a cited local Pantheon q0=−1.08±.29, with Omega_m0 fixed .3. Phi0/H0 and wX0 are correlated derived outputs from that same mapping, not independent observations. The q0 summary and its source likelihood/calibration/cosmographic truncation have not been acquired here; no independent-current-data confirmation is claimed. Planck/BAO/CC mentions are motivation, not fitted likelihoods.
+- [2026-10-02-sn-passband-source-claims](reviews/2026-10-02-sn-passband-source-claims.json): 1,543 distinct CID strings cannot be compared directly to 1,550 physical events. The source uses sky position and peak epoch to match aliases; no full-release deduplication is claimed.
+- [2026-10-02-sn-passband-source-claims](reviews/2026-10-02-sn-passband-source-claims.json): The published joint covariance of 102 magnitude offsets and nine calibration systematic variants were acquired. They do not identify a joint WFC3 optical transmission law. No independent Gaussian calibration errors were fabricated.
 
 [Scan receipts](../scans/) · [Continuation queue](../state.json) · [Record conventions](../docs/records.md)
