@@ -635,6 +635,16 @@
       "design_id": "candidate-lcdm-massless-conditional-comparison",
       "state": "ready_for_consumer_review",
       "reason": "Source-scoped controls and corrected exact typed native adapter/request bound; Reproducible owns immutable acceptance and execution."
+    },
+    {
+      "design_id": "candidate-sdss-released-observer-contract",
+      "state": "blocked",
+      "reason": "Targeted source/asset contract accepted; complete event/frame or measured joint optical law blockers retained."
+    },
+    {
+      "design_id": "candidate-wfc3-optical-response-contract",
+      "state": "blocked",
+      "reason": "Targeted source/asset contract accepted; complete event/frame or measured joint optical law blockers retained."
     }
   ],
   "notes": [
@@ -664,5 +674,6 @@
     "adapter_revision": "98cadbb3e3bf59f5933ef977133b64453c968c0a",
     "request_sha256": "5d67253917a35031b69b85272fe381da8c946007da5615300a3dcf3381f12bed"
   },
-  "continuation_note": "Resume saved acquisitions/reads before a new bounded window. Least-searched lane interacting-sectors; preserve foundational spin citations and blocked source-audit designs. No scheduled or endless crawl."
+  "continuation_note": "Resume saved acquisitions/reads before a new bounded window. Least-searched lane interacting-sectors; preserve foundational spin citations and blocked source-audit designs. No scheduled or endless crawl.",
+  "last_completed_source_audit": "2026-10-02-sn-passband-source-contracts"
 }

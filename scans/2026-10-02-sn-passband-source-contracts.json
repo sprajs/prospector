@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-02-sn-passband-source-contracts",
+  "status": "completed",
+  "started_utc": "2026-10-02T01:00:00+00:00",
+  "completed_utc": "2026-10-02T01:26:16.433039+00:00",
+  "lane": "measurement-lineage",
+  "work_mode": "explicit_targeted_source_contract_audit",
+  "queries": [],
+  "registered_papers": [
+    "arxiv:2112.03863v2",
+    "arxiv:2112.03864v2",
+    "arxiv:2202.04077v2"
+  ],
+  "new_versions": [],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [
+    "2026-10-02-sn-passband-source-claims"
+  ],
+  "idea_ids": [],
+  "design_ids": [
+    "candidate-sdss-released-observer-contract",
+    "candidate-wfc3-optical-response-contract"
+  ],
+  "prospect_ids": [],
+  "edge_ids": [],
+  "acquisition_failures": [
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=2112.01471v2,2110.03487v2",
+      "http_status": 429,
+      "action": "stop arXiv acquisition; retained ignoredreceipt"
+    }
+  ],
+  "pending": [
+    {
+      "paper_id": "arxiv:2112.03863v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2112.03864v2",
+      "stage": "read"
+    },
+    {
+      "paper_id": "arxiv:2202.04077v2",
+      "stage": "read"
+    }
+  ],
+  "limits": [
+    "Reused requestedhighSolworker;zero newfullreads.",
+    "Exact321SDSSheader/update/photpointerjoins;physicalskyframeclosureblocked.",
+    "Pinnedgroundopticalcomponent;actual jointzeropointcovariance/variants acquired, measuredopticallawblocked."
+  ]
+}
