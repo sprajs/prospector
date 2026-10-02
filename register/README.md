@@ -215,5 +215,6 @@ Source checks and structural validation do not establish independent reproductio
 - [arxiv:0910.2773v2](reviews/2026-10-02-standard-model-source-claims.json): PDF draft header says November26,2024 while its arXiv watermark/version and metadata say January28,2010. Exact bytes and both dates preserved; no new version inferred.
 - [2026-10-02-standard-model-source-claims](reviews/2026-10-02-standard-model-source-claims.json): Correct canonical worker names and per-paper figure coverage; scope actual candidate assets and minimal outputs separately from future drag/CMB gates.
 - [2026-10-02-standard-model-source-claims](reviews/2026-10-02-standard-model-source-claims.json): The bounded thermal candidate now states the shared-temperature equation and separately requires exact independently accepted H1/B2/NIST atomic-data bindings; no drag or CMB output is admitted.
+- [2026-10-02-standard-model-source-claims](reviews/2026-10-02-standard-model-source-claims.json): SDSS photometry TUNIT cards are present but blank; EXPTIME is absent. Missing declared units are not missing header cards.
 
 [Scan receipts](../scans/) · [Continuation queue](../state.json) · [Record conventions](../docs/records.md)
