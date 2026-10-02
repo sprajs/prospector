@@ -200,6 +200,19 @@ class RegisterIntegrity(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'required model/reasoning confirmation'):
             self.validate()
 
+    def test_targeted_review_accepts_confirmed_xhigh(self):
+        def update(review):
+            review['requested_reasoning'] = 'xhigh'
+            review['model_confirmation']['effort'] = 'xhigh'
+        self.mutate('register/reviews/2026-10-01-lcdm-baseline-source-claims.json', update)
+        self.validate()
+
+    def test_targeted_review_rejects_mismatched_effort(self):
+        self.mutate('register/reviews/2026-10-01-lcdm-baseline-source-claims.json',
+                    lambda r: r.update(requested_reasoning='xhigh'))
+        with self.assertRaisesRegex(ValueError, 'required model/reasoning confirmation'):
+            self.validate()
+
     def test_targeted_review_cannot_expand_idea_source_coverage(self):
         self.mutate('register/ideas/planck-conditioned-base-lcdm.json',
                     lambda r: r['source_evidence'][0].update(locator='Unexamined appendix'))

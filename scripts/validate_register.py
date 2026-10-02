@@ -114,9 +114,9 @@ def validate():
             require(review.get('packet_sha256') and review.get('model_confirmation'),
                     f"targeted review lacks packet/model provenance: {ident}")
             confirmation = review['model_confirmation']
-            require(review.get('requested_reasoning') == 'high'
+            require(review.get('requested_reasoning') in {'high', 'xhigh'}
                     and confirmation.get('model') == 'gpt-6.1-sol'
-                    and confirmation.get('effort') == 'high',
+                    and confirmation.get('effort') == review.get('requested_reasoning'),
                     f"targeted review lacks required model/reasoning confirmation: {ident}")
             require(review.get('limitations') and review.get('accepted_records'),
                     f"targeted review lacks claim scope/limits: {ident}")
