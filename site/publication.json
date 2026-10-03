@@ -3,20 +3,20 @@
   "project_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8",
   "url": "https://prospector-cosmology.sprajs.chatgpt.site",
   "access_mode": "public",
-  "source_commit_sha": "60ef9d0adc7cb146dc49ecb9d82a4afcf36a2fdb",
-  "version_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8~appgver_e8aafeec3ac08191a6d3031e964f668d",
-  "version_number": 10,
-  "deployment_id": "appgdep_6ac0ad7f7f6c8191a6a1d5c9cfa0046d",
+  "source_commit_sha": "40b3ce5f37c77765fc31be43511ed75b9d3517ff",
+  "version_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8~appgver_b64a405733f081919aef58c277d75e74",
+  "version_number": 11,
+  "deployment_id": "appgdep_6ac0c3bad8f4819198a66b3fdb6fabfa",
   "deployment_status": "succeeded",
-  "published_utc": "2026-10-03T07:23:56.210606+00:00",
-  "artifact_sha256": "sha256:6bc440fe0d18326e24ec8790510837855556f2116ceaae193b773efbd5e341ce",
-  "local_archive_sha256": "sha256:5695743b21b5103fb3807adb392e58d57b1958844c8c75ec91f14546cc94f82c",
-  "repository_revision": "ac57f9b9d60de23bded9589b3c22f0e552916422",
-  "repository_ci_run": "https://github.com/sprajs/prospector/actions/runs/37105990457",
-  "scan_id": "2026-10-03-all19-source-wave5",
+  "published_utc": "2026-10-03T08:58:48.006665+00:00",
+  "artifact_sha256": "sha256:72070ba485a0c0099182db8bedb1d63024d6237b5afcfeaab2fd79601ff5485b",
+  "local_archive_sha256": "sha256:7e36d78eddc5d4675852678ed37413431b4838ff11caff8854016d31d34e0746",
+  "repository_revision": "c418d1b465e56d30cd1b3c71eef0530f8c8434f2",
+  "repository_ci_run": "https://github.com/sprajs/prospector/actions/runs/37111313156",
+  "scan_id": "2026-10-03-all19-source-wave6",
   "source_contract_sha256": "a5c22039fd165d8261bba49b179d96942a236e60a9066ccc7109a0c5d7de8644",
   "scalar_serialization_sha256": "d5c189e4623b5eadc2f44f5035dc959e95ff85df69fc199cf8fc0f57ca9c1839",
-  "independent_final_review_sha256": "db01f0ce90e91571f6b31358db71a413e05972cf06e24f6aea5bfbfea5a71cb7",
+  "independent_final_review_sha256": "de465590c66f583327b2273fc6da2bc2451fe1b18b3a2f7a2bfcb56559a6725f",
   "additional_source_contracts": [
     {
       "contract_id": "next05-released-fixed44-row3213-conditional-source-v1",
@@ -69,6 +69,10 @@
     {
       "contract_id": "b1608-go10158-calibrated-asset-source-contract-v1",
       "sha256": "23d6cf9a4eb7159087abd093856ab23a0af9413738df5f3db9619986f74e6dac"
+    },
+    {
+      "contract_id": "sdss-run5566-legacy-calibration-header-source-contract-v1",
+      "sha256": "afb0b2b4afc2daec78a1ac69e68f35c5ddf7c06c972d2de028c783be4648d08e"
     }
   ],
   "candidate_design": {
@@ -84,6 +88,14 @@
     {
       "role": "Independent selected NEXT18 original cards, official definitions and42 original log rows; complete integration review with own BOSS science excluded",
       "sha256": "17c38711babcfb8edbdc85469eeb30463df86cf9840ef174f1a5feb1118cd873"
+    },
+    {
+      "role": "Independent selected SDSS original-source claims; representative partial header, literal source units and unread scopes retained",
+      "sha256": "d48965a0303f96f71c6db7b1365f1847452eaedbf8a8c1d40fd0ce5131c01c2d"
+    },
+    {
+      "role": "Independent complete seven-file wave6 integration diff, retaining source and NEXT05 conditioning/refusal boundaries",
+      "sha256": "de465590c66f583327b2273fc6da2bc2451fe1b18b3a2f7a2bfcb56559a6725f"
     }
   ],
   "additional_scalar_serializations": [
@@ -97,7 +109,16 @@
     "dist/.openai/hosting.json"
   ],
   "artifact_hash_scope": "artifact_sha256 is the native provider-reported saved artifact hash. local_archive_sha256 binds the local packaged archive; they are distinct representations. The local archive's two file members were verified byte-for-byte against the pushed source/build. No provider/local hash equality is asserted.",
-  "publication_scope": "Three bounded canonical targeted source audits and one separate source-owner synthetic clarification; zero new admitted versions, Luna/full-paper reads, full-paper reviews, graph/design promotions or experiments. Independent source/candidate reviews, exact repository merge/main CI, source parent, archive members and native public deployment verified. HST peer42-row original coverage remains separate from author216. Consumer, numerical, physical and full observation-law qualification remain open. This receipt-only commit does not change the deployed public export.",
-  "public_data_sha256": "e47cfb3b625920fc7590e04975c64ffd5cf50d4f6bb81dc25faf3888af22533b",
-  "source_parent_commit_sha": "af7eb08764d3fdb46cd7ea5276b043d3631f63b7"
+  "publication_scope": "One new bounded canonical SDSS NEXT07/NEXT10 targeted source audit plus a separate supplied-coordinate NEXT05 measure clarification. Zero new versions, Luna/full-paper reads, full-paper reviews, new ideas, graph/design/prospect promotions or numerical experiments. The public data changes only by one conditioned SDSS source-contract insertion. Partial FITS digest covers bytes0–2879 only; event exposure, reduction equivalence, physical units, detector/statistical law, selection and covariance remain unresolved. Independent source/full-diff review, exact repository merge/main CI, exact public source parent, two archive members and native public deployment verified. Consumer admission, numerical, physical and observation-law qualification remain separate; readiness remains blocked. This receipt-only commit does not change the deployed public export.",
+  "public_data_sha256": "46cdf8047591dfa9f3a713860490ed98969d89183ad0570a02ed40c38d93eba5",
+  "source_parent_commit_sha": "60ef9d0adc7cb146dc49ecb9d82a4afcf36a2fdb",
+  "previous_publication": {
+    "version_number": 10,
+    "source_commit_sha": "60ef9d0adc7cb146dc49ecb9d82a4afcf36a2fdb",
+    "version_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8~appgver_e8aafeec3ac08191a6d3031e964f668d",
+    "deployment_id": "appgdep_6ac0ad7f7f6c8191a6a1d5c9cfa0046d",
+    "receipt_sha256": "ca4709e7c82a51dc2167e18e9684d81aed28a699ca9297f57d466d8899a57b73",
+    "repository_receipt_revision": "8ecd8e97c7a1201442927718ce1f8586ddb79090",
+    "scope": "Prior source identities and consumer receipts remain bound to their prior revisions."
+  }
 }
