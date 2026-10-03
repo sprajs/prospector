@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "contract_id": "next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v3",
+  "title": "Massless FD transfer: conditional centered angular and trace method",
+  "review_id": "2026-10-03-next14-collisionless-v3-source-claims",
+  "paper_ids": [
+    "arxiv:astro-ph/9506072v1",
+    "arxiv:1104.2933v3"
+  ],
+  "scopes": [
+    {
+      "scope_id": "NEXT-14",
+      "title": "Conditional v3 method and nominal caller specification",
+      "paper_ids": [
+        "arxiv:astro-ph/9506072v1",
+        "arxiv:1104.2933v3"
+      ],
+      "checked_claim": "MB PDFp7 Eq5, p10 Eq22, p11 Eqs23a-d/25, p16 Eq43, p17 Eqs46-48, p18 Eqs50-51 and p31 Eq98 locate the retained metric, signs, transport, approximate endpoint and leading mode. CLASSII Sec3/3.1/3.3-3.4 locates shared massless transport and closure caveats. Selected v3 hand algebra supports centered angular transport, actual-moment product integration and Gram translations, ordered projected initialization with original metric derivative retained, and constant trace damping of the original Einstein residual. The two nonautonomous homogeneous residual proofs are conditional on the exact nonnegative radiation/CDM/Lambda background; actual forcing remains charged. The concrete caller has nominal source-domain margins only.",
+      "unresolved": "All G01-G07 remain open: initial bias; shared background; age/phase; time/hierarchy; actual independent peer/discrete/forward stability; allocations/resources; compiled/installed consumer and CI. The original trace-peer instability report remains preserved. Conditional damping does not resolve those gates; no source-output or execution success follows."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "astro-ph__9506072v1-pdf",
+      "url": "https://arxiv.org/pdf/astro-ph/9506072v1",
+      "sha256": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+      "role": "pdf",
+      "conditioning": "Selected original Newtonian Einstein, CDM and massless brightness equations and leading mode only; new centered/Gram/damping algebra is reader-derived."
+    },
+    {
+      "id": "1104.2933v3-pdf",
+      "url": "https://arxiv.org/pdf/1104.2933v3",
+      "sha256": "748b2c1bced36e6dd106226b32839da619f17854b2c42cbf2e0b4b273c1a3ebb",
+      "role": "pdf",
+      "conditioning": "Selected fully decoupled massless transport and approximate hierarchy/UFA context only; no approximation or source-output reproduction accepted."
+    }
+  ],
+  "limitations": [
+    "The centered angular and trace methods have conditional acceptance as reader derivations. The original physical model and finite-start prescription retain their separate source acceptance and remain unchanged.",
+    "Pure explicit exactly mass-zero FD radiation with positive CDM and smooth nonnegative Lambda only; supplied photons, baryons and unidentified massless fractions are zero. Retain original ordered mass/temperature/statistical-weight tuples, background status/method/units and wide normalization/accessor errors. No species name or role field is invented.",
+    "Centered angular/Gram/scaled-state/damping formulas, asymptotic unit-zeta mapping and nominal-domain bounds are reader-derived. Selected kappa2 and the synthetic tuple H0=70 km/s/Mpc, CDM fraction0.3 and FD tuple(0,0.0002 eV,2) are chosen inputs, not author facts, measurements or an observed cosmology.",
+    "Damping uses original E; the production comoving Hamiltonian is3(E-W). Both original residual equations are affected. Original trace correction and original constraint/conservation gates remain; modified-trace agreement alone cannot pass them.",
+    "Pointwise nodal brightness preservation is distinct from hybrid moment preservation. Actual Gram/parity/loading-moment and recentering changes, shared derivative/cast/closure forcing, finite-event effects and output sensitivities consume existing allocations. No hidden reclosure or alternative background is permitted.",
+    "Retain the original ideal projected witness and original Z through actual-Gram translation and hybrid readout. Projected-leading7/19 differs from regular1/4; no regular-start substitution, constraint reset, finite-zeta renormalization or inferred growing-mode purity. Damping cannot remove constraint-satisfying initial modes.",
+    "The homogeneous continuum proofs cover two residual modes only. Zero k has a separate regular-limit proof and is a mathematical fixture outside the caller band. Forced, finite-stage, all-peer-mode and forward stability, undamped precision feasibility and resource adequacy remain unqualified.",
+    "Per-output native and reference contributions, correction/kappa/start/Gram/background/age effects and all attempted/rejected/refused work remain within original whole budgets and caps. Bounded external stage ledgers and refusal snapshots are proposed obligations, not existing storage or earned cap admission.",
+    "The caller and new SDK surface are specifications, not installed or compiled evidence. Ordinary full-support sigma8, massive perturbations, photon/baryon/opacity physics, primary CMB, observations and inference are outside this scope."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}

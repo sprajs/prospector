@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-03-all19-source-wave4",
+  "status": "completed",
+  "started_utc": "2026-10-03T03:48:31.841950+00:00",
+  "completed_utc": "2026-10-03T04:45:38.512951+00:00",
+  "started_utc_basis": "First persisted wave4 central FDv3 acquisition receipt; earlier coordination is not assigned an invented start time.",
+  "lane": "baseline-reference",
+  "work_mode": "bounded_targeted_source_audit_no_new_full_reads",
+  "queries": [
+    {
+      "mode": "bounded_primary_source_asset_web_leads",
+      "literal_queries": [
+        "site:github.com/PantheonPlusSH0ES/DataRelease SH0ES parameter labels FITS generator",
+        "site:sdss.org \"1606.00439\" data covariance bispectrum",
+        "site:archive.stsci.edu MAST HST download products API retrieve"
+      ],
+      "request_boundary_utc": "2026-10-03 03:52:14 UTC",
+      "scope": "Three selected asset-navigation queries; no new arXiv window, version admission or exhaustive-source claim.",
+      "receipt_sha256": "73cdeaa6fd5dc482da7fa78e2764153574723ceb4c158e743791f976498040ec"
+    },
+    {
+      "mode": "bounded_BOSS_asset_leads",
+      "literal_queries": [
+        "\"Gil-Mar\u00edn\" \"CMASS\" bispectrum data download covariance",
+        "site:sdss.org dr12 galaxy clustering measurements \"bispectrum\""
+      ],
+      "search_utc": null,
+      "utc_null_reason": "Not independently captured; no invented timestamp",
+      "scope": "Two source-navigation queries resolved to author/official products; no literature discovery or archive-coverage claim."
+    },
+    {
+      "mode": "exact_selected_MAST_product_metadata",
+      "observation_window": "GO10158/HST/page1/limit40, 40 of51 observation rows; selected j93501010/obsid24824324 only",
+      "product_window": "obsid24824324/page1/limit100, 81 of81 returned; four selected RAW/SPT/LOG/ASN products only",
+      "receipts": [
+        "2e25f3d77f847a338e9074060b796496658ad7e3b3abd25373a681bdc3112bc5",
+        "2ba2b53cac1efbf1b6c0ee8f19a2159fe16ddbddfbfb45ddefb4dadf3a313f18"
+      ],
+      "scope": "Current archive metadata snapshots; not complete program exposures or author processing."
+    },
+    {
+      "mode": "exact_selected_public_release_acquisition",
+      "receipts": [
+        "0c9dab22f61236e0734d811f71c4b3fdf25ab18ad25dbc3381e64e95fbfde0f5",
+        "da65942495652ce64b2c621d5f36f47a9bbd69fda965a66f85d016591553ae45",
+        "89b18ca74b222fd741b41ef40473e594b859d379ee0b98c01440db5fe3e65612",
+        "25fe25ea7d989b076ef15efd207a97e7ae247da2b265b416b083bb95ae7f7e86"
+      ],
+      "source_manifest_sha256": "c855f82763dc3a044c3c59ee59d83f622a84d69fdfa1229037258c377b23e8c9",
+      "scope": "Selected original public bytes and safe bounded archive members. RAW allowance40MiB explicitly recorded; other selected calls use10MiB. No mock download or raw-source redistribution."
+    },
+    {
+      "mode": "source_cache_and_context_reuse",
+      "receipt_sha256": "102144601cf76674d7298531c67b4e12581a753be3ecb62e811186fa4ab06e44",
+      "checked_bindings": 214,
+      "scope": "Pinned source/proposal/context/render bytes; copies of the same source are not independent evidence. Existing crawl windows/undecided receipts and full-reading queues preserved."
+    },
+    {
+      "mode": "unchanged_pinned_release_identity",
+      "receipt_sha256": "0f8091bbb6c862f58f1fe781a7809111daa6be1996ca4da9d1e1869218aa941b",
+      "release_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "repeated_full_tree_fetches": 0,
+      "scope": "Prior bounded3223-entry tree receipt retained; physical44 dictionary/generator and four failed joins remain unresolved, with no coverage/absence claim."
+    }
+  ],
+  "registered_papers": [
+    "arxiv:1606.00439v2",
+    "arxiv:astro-ph/9506072v1",
+    "arxiv:1104.2933v3",
+    "arxiv:0910.2773v2",
+    "arxiv:2112.03863v2",
+    "arxiv:2112.03864v2"
+  ],
+  "new_versions": [],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [
+    "2026-10-03-next13-boss-public-array-source-claims",
+    "2026-10-03-next14-collisionless-v3-source-claims",
+    "2026-10-03-next14-ideal-acoustic-source-claims",
+    "2026-10-03-sdss-b1608-native-source-assets"
+  ],
+  "idea_ids": [],
+  "design_ids": [],
+  "prospect_ids": [],
+  "edge_ids": [],
+  "source_contract_ids": [
+    "next13-boss-dr12-cmass-public-array-assets-v1",
+    "next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v3",
+    "next14-ideal-photon-cold-baryon-cdm-lambda-acoustic-v1",
+    "sdss-detector-b1608-native-asset-source-contract-v2"
+  ],
+  "public_projection_receipts": [
+    {
+      "role": "FDv3_corrected_exact_projection",
+      "sha256": "52b7dab1eb3ab02d2b4e152e7bd93778ecdb7911144157249656d0bc8f4565d3"
+    },
+    {
+      "role": "BOSS_asset_exact_projection",
+      "sha256": "e118c80adbf040b859c8048685af405c53a5f2478fc0ad59a21d4198b24d4457"
+    },
+    {
+      "role": "native_asset_precision_corrected_v2",
+      "sha256": "f7b2bbaa39c80099f21cd8d8b6de1346e6d39f548deaad5ccddbc95b55eb7330"
+    },
+    {
+      "role": "separate_ideal_acoustic_projection",
+      "sha256": "fbbcacf42751294240d02ce81602e27a02bc05afbf5ba8926c00563bd31e2ce0"
+    }
+  ],
+  "source_handoffs": [
+    {
+      "scope_id": "NEXT-14",
+      "source_method_sha256": "3fd9154dc4fab24c75fb5f95a8991e855021f8b41a7890e044097b56d5d6598c",
+      "source_request_sha256": "dddec336b4e25d4f7a722e1b3b3fdd9f5c4f416e5deb4c03525618b24b871883",
+      "packet_sha256": "8eefadc824cbae35655937355a43c098c516e413ce3dcd56d55ec7675a4c5213",
+      "scope": "Conditional selected continuum source/method and nominal chosen caller only; all G01\u2013G07 and actual peer/installed/numerical qualification remain open."
+    },
+    {
+      "scope_id": "NEXT-14/NEXT-19",
+      "source_candidate_sha256": "78b043f55043e4f19153277d1ab048276e0a7ec7318389980a8d68d5f9081e6c",
+      "source_request_sha256": "15024929fc13bbe16ccb21e8ca2a061aeccad10fb15f0281f351937437447911",
+      "packet_sha256": "5564b6134e1516ba3c206ad1b35b3b325ab99797643f540b78ac182247ad5a6e",
+      "scope": "Distinct ideal common photon/cold-baryon/CDM/Lambda proposal; printed source/conditional derived algebra only. Helper self-refusal and actual consumer admission blocked; background defect forcing must be charged; all G01\u2013G07 open."
+    },
+    {
+      "scope_id": "NEXT-17",
+      "original_candidate_sha256": "bf6828e5eaac4e06cccbe1b653bb5f9a240316754513da2f253a4250d65aff5f",
+      "original_source_acceptance_sha256": "69e681d106d830beceb2475170f0d44411ccedff5de011dcbaf125b23d864503",
+      "clarification_sha256": "fe26aee5e34448738897a89684b6a69621141d0aa32495d7b0f1bb1c1f3109aa",
+      "scope": "New explicitly chosen six marginal semantics conditionally source-compatible, with historical sign/set ambiguity. No successor byte, executable, witness pass, numerical/model/cap/budget change or literature association."
+    }
+  ],
+  "acquisition_failures": [
+    {
+      "route": "BOSS connector streamedfile materialization",
+      "status": 403,
+      "receipt_sha256": "3b09b657f99e7fdd3b4777640d6706222fc9a354a1cfd4bdb10e20724d7d2c33",
+      "disposition": "Failed materialization retained without bearer URL; lawful author-public file view supplied a distinct successful anonymous route. Neither absence nor licence denial inferred."
+    },
+    {
+      "route": "web ZIP open",
+      "disposition": "tool unsupported binary type; direct HTTPS succeeded, not source absence"
+    },
+    {
+      "route": "web author PDF",
+      "disposition": "tool HTML unavailable page; direct HTTPS returned original PDF, not absence"
+    },
+    {
+      "route": "https://archive.stsci.edu/stpr/search.php",
+      "disposition": "wrong navigation link, timeout; corrected official API link103"
+    }
+  ],
+  "visible_corrections": [
+    "Native asset v1 local proposal superseded by exact v2: RAW NAXIS0 ERR/DQ are header-encoded constant-zero placeholders with NPIX/PIXVALUE, not absent arrays, measured zero error or cleanDQ; exact identity-card locators corrected.",
+    "BOSS worker withdrew its alleged missing continuation plus in Eqs13/14 after original-page reinspection; Eq14 internal juxtaposition remains separately literal. No source repair applied.",
+    "FDv3 source locator corrected to /conventions_and_source_original_equations; original transposed locator retained in separate amendment. Required review coverage/limits metadata supplied in corrected exact public projection.",
+    "Ideal acoustic copied helper does not itself reject nonzero baryons; existing caller does. Compatible-background cancellation is conditional; R_bg supplies native3R_bg Vc and raw constraint forcing. Rejected3B coefficient/growing raw TRACE caveat preserved.",
+    "NEXT17 original latent marginal change has no printed sign/six-coordinate enumeration; supplied signed convention and six-coordinate choice explicitly new, never silently historical."
+  ],
+  "pending": [
+    {
+      "scope_id": "NEXT-04",
+      "stage": "source",
+      "reason": "Physical44/full author dictionary/generator/four joins/counts/reduction/calibration remain unresolved."
+    },
+    {
+      "scope_id": "NEXT-05",
+      "stage": "consumer_and_physical_source",
+      "reason": "Distinct frozen-product conditional diagnostic only; physical refit/sign and new numerical target acceptance remain blocked. Reproducible reported a separate full-target v4 conditioning-budget refusal (receipt7822fbbb20e3bbe1aeb9fa6b60d299a9f535b007f149fcaab2a02993da6dc07a); this source wave did not reproduce it or change tolerances."
+    },
+    {
+      "scope_id": "NEXT-08",
+      "stage": "source",
+      "reason": "105/102 and machine alias/passband/probability-law bridge unresolved."
+    },
+    {
+      "scope_id": "NEXT-09",
+      "stage": "source",
+      "reason": "Complete MODEL000 decoding/support/units/color-law/error map and physical optical likelihood remain unresolved."
+    },
+    {
+      "scope_id": "NEXT-10",
+      "stage": "physical_source_and_consumer",
+      "reason": "Literal legacy2005 SN6057 first-g-epoch RUN5566/82N and official run metadata checked; distinct c447 HEAD row/declared PHOTFILE preserved. Native camcol/field/pixels, clock/QE/gain/extraction/selection law, covariance and legacy-to-SMPv8 reduction equivalence remain unresolved."
+    },
+    {
+      "scope_id": "NEXT-14",
+      "stage": "consumer_stability_and_numerical",
+      "reason": "Separate FDv3 centered-angular/damped-residual source algebra and ideal photon/cold-baryon acoustic source derivations accepted only conditionally. All G01\u2013G07 remain open. Original39cf/de5/0610 proposal, projected-versus-regular start and raw growing TRACE caveat remain. Actual background/derivative/conservation forcing and forward/work/storage effects are unqualified; old conformal helper lacks total-matter extension and self-baryon refusal. No installed/compiled/numerical/model-equivalence promotion."
+    },
+    {
+      "scope_id": "NEXT-18",
+      "stage": "physical_source_and_joint_likelihood",
+      "reason": "One current GO10158 ACS-WFC/F606W RAW count product, SPT, LOG and five-row ASN acquired and bounded headers/layout checked; image and telemetry values unread. RAW ERR/DQ header-encoded zeros are placeholders, not measured error or cleanDQ. Current2026 processing is not established equal to2010 author reduction. Other exposures/band, calibration bodies, PSF/Keck/radio/environment products, rights and joint likelihood/covariance remain open."
+    },
+    {
+      "scope_id": "NEXT-13",
+      "stage": "source_assets_and_consumer",
+      "reason": "Current author-public CMASS cap P/B/density/mask assets and separate2016a/b power archive acquired; selected release-note math visually checked. Historical2017 byte/estimator identity, full support/order, paired mock IDs/2048 mocks, joint auto/cross covariance, complete window, likelihood/prior/code and ordinary sigma8 compatibility remain unqualified. Printed note issues and public-access-versus-licence distinction retained."
+    },
+    {
+      "scope_id": "NEXT-12",
+      "stage": "chosen_inputs_and_consumer",
+      "reason": "Selected constants and mass conventions source-checked. Joint uncertainty/covariance, underlying isotope evaluation and consistent native chosen-input qualification remain open."
+    },
+    {
+      "scope_id": "NEXT-16",
+      "stage": "physical_late_input",
+      "reason": "Today opacity/visibility need a qualified matching late-electron history or deterministic depth enclosure; actual L/U remain null. Drag requires a distinct weighted tail."
+    },
+    {
+      "scope_id": "NEXT-17",
+      "stage": "consumer_protocol_and_execution",
+      "reason": "Original bf6828/69e681 source/algebra and caps remain unchanged. Separate source clarification conditionally permits an explicitly new fixed-mask165 six-one-coordinate-marginal successor design, retaining all eight joint masses/nulls, parent priors and alternative-denominator witness. Historical marginal sign/set ambiguity is explicit; signed convention is a new design choice. No successor bytes, executable, useful-witness pass or numerical admission accepted."
+    },
+    {
+      "scope_id": "NEXT-07",
+      "stage": "physical_source_and_consumer",
+      "reason": "Legacy asinh/AB-corrected microJy/error-component units and selected released HEAD pointer link checked. Native event/exposure/operator/clock bridge, complete transformations, full selection and covariance remain unknown; HST cannot replace SDSS."
+    },
+    {
+      "scope_id": "NEXT-19",
+      "stage": "physical_history_and_primary_CMB",
+      "reason": "Intrinsic signed delta_gamma/4 per asymptotic unit zeta belongs only to the separate ideal acoustic model. MB99\u2013101 are an approximate no-shear formal control, not a loaded physical history; opacity, visibility, diffusion, polarization, line-of-sight CMB and observed likelihood remain absent from this specification."
+    }
+  ],
+  "limits": [
+    "Four targeted canonical source reviews and one separate synthetic-source clarification; zero new versions, Luna/full readings, full-paper reviews, ideas, edges, prospects, designs, reference promotions or numerical experiments. Existing exact Sol workers reused, actual xhigh disclosed, backend unexposed/null; ordinary high policy unchanged.",
+    "All existing canonical source/design/reference/graph/measurement identities and ordinary reading queue preserved. Source contracts are additive navigation/provenance, not accepted combined physics or a Reproducible experiment.",
+    "Original source math, reader derivations, chosen synthetic inputs, archive headers, fitted reductions and measurements remain distinct. Shared calibrators/masks/mocks/reductions and unknown covariance remain explicit; access does not establish source-specific licence.",
+    "Raw PDFs/HTML/FITS/arrays/worker transcripts and temporary aids remain local and ignored inside Prospector. Public records contain metadata, primary links/hashes and short original notes only.",
+    "Selected acquisition, static proofs and structural validation do not establish historical product equivalence, physical law, implementation/resource bounds, ordinary sigma8, CMB or scientific/numerical qualification.",
+    "Consumer source acceptance, implementation/numerical acceptance, final PR review, latest integrated-head CI, exact-main CI and same-Site publication remain separate gates. No numerical experiments, external communication beyond authorized coordination, schedules or endless crawl."
+  ],
+  "presentation_amendments": [
+    {
+      "role": "FD_and_acoustic_public_details_only",
+      "acceptance_sha256": "5643d1bf39430ecef928030cb3305924c24d21c8f30e93a7789cf1237df9328e",
+      "copy_receipt_sha256": "eeacdd6ea3713a91b6efb9f2e3150f6fe8a3dccf6bced7424ff6e1f07a4aa04e",
+      "scope": "Four agreed public text pointers plus review bindings/additive presentation provenance. Original scientific packets/runtime/source claims, closures, readcoverage and all gates unchanged; old projections preserved."
+    },
+    {
+      "role": "BOSS_public_details_only",
+      "acceptance_sha256": "6c9a58c76f5639e7991f79ec0ec60c1d586b3ac1a3bf897dbcb1f9fcd0583114",
+      "copy_receipt_sha256": "8f7ad3373619986ecd83a68b47c9eec41049ebb3ceaf8da698bd617cf062e0b3",
+      "scope": "Remove final queue-workflow sentence in contract/review limitation8; update hash binding only. Original source packet, claims, coverage, rights and qualifications preserved."
+    }
+  ]
+}

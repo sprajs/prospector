@@ -1,0 +1,740 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-next13-boss-public-array-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "requested_reasoning_basis": "Coordinator explicitly reused this existing verified worker with inherited xhigh; no fresh override or launch. Ordinary AGENTS scientific-review policy says high; actual inherited xhigh is exposed and not relabelled high.",
+  "agent_id": "/root/thermal_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "runtime_effort_key": "reasoning_effort",
+    "session_id": "01a0fec1-0810-7361-a598-b20696ba4a64",
+    "turn_id": "01a0ffef-2729-7e20-9e0b-0d6ab4482657",
+    "evidence_kind": "runtime_turn_context",
+    "actual_backend_identity": null,
+    "companion_sha256": "b57203f86957182a6d88ebacb5a52f1065b62dd14a9541ffbbce169e5b8d156e"
+  },
+  "model_confirmation_companion_sha256": "b57203f86957182a6d88ebacb5a52f1065b62dd14a9541ffbbce169e5b8d156e",
+  "reviewed_utc": "2026-10-03T04:22:38.476897+00:00",
+  "packet_sha256": "f027909f6d43395925294f4b7afcbd066a7f7f9bb0c48f819b877304531b3897",
+  "reviewed_papers": [],
+  "reviewed_paper_details": [],
+  "reviewed_source_assets": [
+    {
+      "id": "boss-release-home-navigation",
+      "url": "https://www.ub.edu/bispectrum/",
+      "sha256": "e035a17f07eb2152586c082c12d793779225ccf3fe001893de4e60e11b1ba395",
+      "role": "html",
+      "conditioning": "HTML title and author/home navigation only; no product ownership inferred.",
+      "retrieved_utc": "2026-10-03T04:03:47.819567+00:00",
+      "licence": null,
+      "licence_reason": "No explicit source-specific reuse licence established in checked notes/README/pages; citation requests and public download access do not grant redistribution rights. Local source storage only.",
+      "access": "Centrally acquired original GET body; independent identity/selected coverage checked.",
+      "final_url": "https://www.ub.edu/bispectrum/",
+      "http_status": 200,
+      "get_headers": {
+        "Content-Type": "text/html",
+        "Content-Length": "14365",
+        "ETag": "\"381d-649ae9868ca88\"",
+        "Last-Modified": "Sat, 31 Jan 2026 12:54:50 GMT",
+        "Date": "Sat, 03 Oct 2026 04:03:48 GMT"
+      },
+      "bytes": 14365
+    },
+    {
+      "id": "boss-release-data-navigation",
+      "url": "https://www.ub.edu/bispectrum/page6.html",
+      "sha256": "ddf108752cb34d4852799e32ed58e4d1c88dcac1476bfcf307198631007e7cf3",
+      "role": "html",
+      "conditioning": "HTML lines 95–108: actual Data page to page10 link; only release navigation.",
+      "retrieved_utc": "2026-10-03T04:05:25.524629+00:00",
+      "licence": null,
+      "licence_reason": "No explicit source-specific reuse licence established in checked notes/README/pages; citation requests and public download access do not grant redistribution rights. Local source storage only.",
+      "access": "Centrally acquired original GET body; independent identity/selected coverage checked.",
+      "final_url": "https://www.ub.edu/bispectrum/page6.html",
+      "http_status": 200,
+      "get_headers": {
+        "Content-Type": "text/html",
+        "Content-Length": "12531",
+        "ETag": "\"30f3-649ae98716977\"",
+        "Last-Modified": "Sat, 31 Jan 2026 12:54:50 GMT",
+        "Date": "Sat, 03 Oct 2026 04:05:25 GMT"
+      },
+      "bytes": 12531
+    },
+    {
+      "id": "boss-release-dr12-page",
+      "url": "https://www.ub.edu/bispectrum/page10.html",
+      "sha256": "6b10cd354876a5ad1a7f3fcb224e3487aba01ea78937a8d3c6116f475c318560",
+      "role": "html",
+      "conditioning": "Selected HTML title/description, lines 100/116, 154–173, 191–241, 363 and 378; analysis roles, author date and exact linked route. Images not inspected; fit/fiducial files unacquired.",
+      "retrieved_utc": "2026-10-03T04:06:08.890447+00:00",
+      "licence": null,
+      "licence_reason": "No explicit source-specific reuse licence established in checked notes/README/pages; citation requests and public download access do not grant redistribution rights. Local source storage only.",
+      "access": "Centrally acquired original GET body; independent identity/selected coverage checked.",
+      "final_url": "https://www.ub.edu/bispectrum/page10.html",
+      "http_status": 200,
+      "get_headers": {
+        "Content-Type": "text/html",
+        "Content-Length": "22975",
+        "ETag": "\"59bf-649ae986aca43\"",
+        "Last-Modified": "Sat, 31 Jan 2026 12:54:50 GMT",
+        "Date": "Sat, 03 Oct 2026 04:06:09 GMT"
+      },
+      "bytes": 22975
+    },
+    {
+      "id": "boss-release-products-page",
+      "url": "https://www.ub.edu/bispectrum/page11.html",
+      "sha256": "2bb06c42a121c3037c20fa17ddbba8807c17bd45f103aea27115426b52237be1",
+      "role": "html",
+      "conditioning": "Selected HTML lines 99–103, 130–211, 253–296 and 344–400; exact pre-recon data archive IDs and mock labels. Mock bodies and other catalogues unacquired; line278 reconstruction label conflict retained.",
+      "retrieved_utc": "2026-10-03T04:07:11.347559+00:00",
+      "licence": null,
+      "licence_reason": "No explicit source-specific reuse licence established in checked notes/README/pages; citation requests and public download access do not grant redistribution rights. Local source storage only.",
+      "access": "Centrally acquired original GET body; independent identity/selected coverage checked.",
+      "final_url": "https://www.ub.edu/bispectrum/page11.html",
+      "http_status": 200,
+      "get_headers": {
+        "Content-Type": "text/html",
+        "Content-Length": "25103",
+        "ETag": "\"620f-649ae986c1a23\"",
+        "Last-Modified": "Sat, 31 Jan 2026 12:54:50 GMT",
+        "Date": "Sat, 03 Oct 2026 04:07:11 GMT"
+      },
+      "bytes": 25103
+    },
+    {
+      "id": "boss-release-original-page",
+      "url": "https://www.ub.edu/bispectrum/bispectrum_public/boss_public.html",
+      "sha256": "95b7e24af651832f6efb85cc748f678a5d6bc04cdfb976499a828dfe34b64760",
+      "role": "html",
+      "conditioning": "Selected HTML title and lines 26, 42–57, 62 and68: exact notes/Public Files link, analysis roles and source date. Figures uninspected.",
+      "retrieved_utc": "2026-10-03T04:07:08.054685+00:00",
+      "licence": null,
+      "licence_reason": "No explicit source-specific reuse licence established in checked notes/README/pages; citation requests and public download access do not grant redistribution rights. Local source storage only.",
+      "access": "Centrally acquired original GET body; independent identity/selected coverage checked.",
+      "final_url": "https://www.ub.edu/bispectrum/bispectrum_public/boss_public.html",
+      "http_status": 200,
+      "get_headers": {
+        "Content-Type": "text/html",
+        "Content-Length": "7185",
+        "ETag": "\"1c11-649ae939763df\"",
+        "Last-Modified": "Sat, 31 Jan 2026 12:53:29 GMT",
+        "Date": "Sat, 03 Oct 2026 04:07:08 GMT"
+      },
+      "bytes": 7185
+    },
+    {
+      "id": "boss-release-notes-20200213",
+      "url": "https://www.ub.edu/bispectrum/bispectrum_public/bispectrum_notes.pdf",
+      "sha256": "57a97fab74f0d2cf3ede8055254e0093cf349b45796b5296b82557de99b5cd22",
+      "role": "pdf",
+      "conditioning": "Author release notes; selected pp1–8 sections and bibliography entries4/5/7, original pp1–7 visually checked. Printed math/table issues remain literal; no full-paper review.",
+      "retrieved_utc": "2026-10-03T03:56:54.012842+00:00",
+      "licence": null,
+      "licence_reason": "No explicit source-specific reuse licence established in checked notes/README/pages; citation requests and public download access do not grant redistribution rights. Local source storage only.",
+      "access": "Centrally acquired original GET body; independent identity/selected coverage checked.",
+      "final_url": "https://www.ub.edu/bispectrum/bispectrum_public/bispectrum_notes.pdf",
+      "http_status": 200,
+      "get_headers": {
+        "Content-Type": "application/pdf",
+        "Content-Length": "223509",
+        "ETag": "\"36915-649ae93b2e6e9\"",
+        "Last-Modified": "Sat, 31 Jan 2026 12:53:31 GMT",
+        "Date": "Sat, 03 Oct 2026 03:56:54 GMT"
+      },
+      "bytes": 223509
+    },
+    {
+      "id": "boss-release-2016ab-power-archive",
+      "url": "https://data.sdss.org/sas/dr12/boss/papers/clustering/GilMarin_etal_2016ab_DR12CMASSLOWZ_powspec.zip",
+      "sha256": "124a14c3ae3ff4d495208889b803ef2fa3e6dfccdc496bbbb7b918d7cffadd4b",
+      "role": "archive",
+      "conditioning": "Source-owned June2016 pre-recon RSD/post-recon BAO power products. README fully read, CMASS prefixes checked; 49 extracted member hashes checked, no array algebra/count/dimension validation.",
+      "retrieved_utc": "2026-10-03T03:56:32.768533+00:00",
+      "licence": null,
+      "licence_reason": "No explicit source-specific reuse licence established in checked notes/README/pages; citation requests and public download access do not grant redistribution rights. Local source storage only.",
+      "access": "Centrally acquired original GET body; independent identity/selected coverage checked.",
+      "final_url": "https://data.sdss.org/sas/dr12/boss/papers/clustering/GilMarin_etal_2016ab_DR12CMASSLOWZ_powspec.zip",
+      "http_status": 200,
+      "get_headers": {
+        "Content-Type": "application/zip",
+        "Content-Length": "1343243",
+        "ETag": "\"57802230-147f0b\"",
+        "Last-Modified": "Fri, 08 Jul 2016 21:59:12 GMT",
+        "Date": "Sat, 03 Oct 2026 03:56:41 GMT"
+      },
+      "bytes": 1343243
+    },
+    {
+      "id": "boss-release-pb-power-archive",
+      "url": "https://drive.usercontent.google.com/uc?id=15rqW8lNmlbcPFSBWGfIMmISf4mDi_PuM&export=download",
+      "sha256": "4a2c4b960366cae0e9e52f31b61cd005ff7d6d14f385aefb3b3f65242274317c",
+      "role": "archive",
+      "conditioning": "Exact current author-linked pre-reconstruction P data archive; four CMASS linear/log prefixes and two density/mask prefixes checked. Historical byte/estimator equivalence to2017 analysis unestablished.",
+      "retrieved_utc": "2026-10-03T04:11:39.276616+00:00",
+      "licence": null,
+      "licence_reason": "No explicit source-specific reuse licence established in checked notes/README/pages; citation requests and public download access do not grant redistribution rights. Local source storage only.",
+      "access": "Centrally acquired original GET body; independent identity/selected coverage checked.",
+      "final_url": "https://drive.usercontent.google.com/download?id=15rqW8lNmlbcPFSBWGfIMmISf4mDi_PuM&export=download",
+      "http_status": 200,
+      "get_headers": {
+        "Content-Type": "application/octet-stream",
+        "Content-Length": "299360",
+        "ETag": null,
+        "Last-Modified": "Tue, 06 Apr 2021 14:24:06 GMT",
+        "Date": "Sat, 03 Oct 2026 04:11:40 GMT"
+      },
+      "bytes": 299360
+    },
+    {
+      "id": "boss-release-pb-bispectrum-archive",
+      "url": "https://drive.usercontent.google.com/uc?id=1MsTXL1UXY7gmysaoxOaTVONOvN0aF7F4&export=download",
+      "sha256": "17b1cceb1f6d00edc057ff8d270854758b9f43de77c90438320cc8290d12b1db",
+      "role": "archive",
+      "conditioning": "Exact current author-linked pre-reconstruction B0 data archive; selected two CMASS cap members checked first three literal rows only, linked format supplied by notes; no full support/count/numerical validation.",
+      "retrieved_utc": "2026-10-03T04:11:34.830979+00:00",
+      "licence": null,
+      "licence_reason": "No explicit source-specific reuse licence established in checked notes/README/pages; citation requests and public download access do not grant redistribution rights. Local source storage only.",
+      "access": "Centrally acquired original GET body; independent identity/selected coverage checked.",
+      "final_url": "https://drive.usercontent.google.com/download?id=1MsTXL1UXY7gmysaoxOaTVONOvN0aF7F4&export=download",
+      "http_status": 200,
+      "get_headers": {
+        "Content-Type": "application/octet-stream",
+        "Content-Length": "132580",
+        "ETag": null,
+        "Last-Modified": "Tue, 06 Apr 2021 14:24:31 GMT",
+        "Date": "Sat, 03 Oct 2026 04:11:36 GMT"
+      },
+      "bytes": 132580
+    },
+    {
+      "id": "boss-release-bis-drive-view",
+      "url": "https://drive.google.com/file/d/1MsTXL1UXY7gmysaoxOaTVONOvN0aF7F4/view?usp=drivesdk",
+      "sha256": "e9319ae24d265a2f901fa9ac1c52f1e17d1791f62b165b400cde5ab35df574fd",
+      "role": "html",
+      "conditioning": "Title and escaped public-download URL/ID only; platform metadata is not a licence.",
+      "retrieved_utc": "2026-10-03T04:10:54.449814+00:00",
+      "licence": null,
+      "licence_reason": "No explicit source-specific reuse licence established in checked notes/README/pages; citation requests and public download access do not grant redistribution rights. Local source storage only.",
+      "access": "Centrally acquired original GET body; independent identity/selected coverage checked.",
+      "final_url": "https://drive.google.com/file/d/1MsTXL1UXY7gmysaoxOaTVONOvN0aF7F4/view?usp=drivesdk",
+      "http_status": 200,
+      "get_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": null,
+        "ETag": null,
+        "Last-Modified": null,
+        "Date": "Sat, 03 Oct 2026 04:10:54 GMT"
+      },
+      "bytes": 82044
+    },
+    {
+      "id": "boss-release-power-drive-view",
+      "url": "https://drive.google.com/file/d/15rqW8lNmlbcPFSBWGfIMmISf4mDi_PuM/view?usp=drivesdk",
+      "sha256": "1ff187d806dacb4ef1461634c50a2ed247388aca1c4ca52f0bda1db4de21303b",
+      "role": "html",
+      "conditioning": "Title and escaped public-download URL/ID only; platform metadata is not a licence.",
+      "retrieved_utc": "2026-10-03T04:10:57.973206+00:00",
+      "licence": null,
+      "licence_reason": "No explicit source-specific reuse licence established in checked notes/README/pages; citation requests and public download access do not grant redistribution rights. Local source storage only.",
+      "access": "Centrally acquired original GET body; independent identity/selected coverage checked.",
+      "final_url": "https://drive.google.com/file/d/15rqW8lNmlbcPFSBWGfIMmISf4mDi_PuM/view?usp=drivesdk",
+      "http_status": 200,
+      "get_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": null,
+        "ETag": null,
+        "Last-Modified": null,
+        "Date": "Sat, 03 Oct 2026 04:10:58 GMT"
+      },
+      "bytes": 82293
+    },
+    {
+      "id": "boss-release-2016ab-readme",
+      "url": "https://data.sdss.org/sas/dr12/boss/papers/clustering/GilMarin_etal_2016ab_DR12CMASSLOWZ_powspec.zip",
+      "sha256": "74101f26fc1bc01f0bbe39e764d08fc7f7f67a2b15be65a426c4f7f47365b22e",
+      "role": "archive_member",
+      "archive_member": "GilMarin_boss_data/README",
+      "archive_sha256": "124a14c3ae3ff4d495208889b803ef2fa3e6dfccdc496bbbb7b918d7cffadd4b",
+      "conditioning": "README lines1–36 fully checked. Source title Hector Gil Marin, June2016; separate measured/bestfit/window/covariance roles.",
+      "retrieved_utc": "2026-10-03T03:56:32.768533+00:00",
+      "licence": null,
+      "licence_reason": "Citation request only; no explicit reuse licence located."
+    },
+    {
+      "id": "boss-release-cmass-bis-cmass-ngc-dk6",
+      "url": "https://drive.usercontent.google.com/uc?id=1MsTXL1UXY7gmysaoxOaTVONOvN0aF7F4&export=download",
+      "sha256": "3d0d84c2e8384cb8b9c656742649d57b3aeeba7e92b308d0fca85919cbe37dea",
+      "role": "archive_member",
+      "archive_member": "Bis_cmass_ngc_Dk6.txt",
+      "archive_sha256": "17b1cceb1f6d00edc057ff8d270854758b9f43de77c90438320cc8290d12b1db",
+      "conditioning": "Headerless first three literal seven-field rows checked; no numerical interpretation; column meanings come from notes p3, not an intrinsic header.",
+      "retrieved_utc": "2026-10-03T04:11:34.830979+00:00",
+      "licence": null,
+      "licence_reason": "Same unresolved source-specific rights as original archive; public download is not permission to redistribute."
+    },
+    {
+      "id": "boss-release-cmass-bis-cmass-sgc-dk6",
+      "url": "https://drive.usercontent.google.com/uc?id=1MsTXL1UXY7gmysaoxOaTVONOvN0aF7F4&export=download",
+      "sha256": "582f8b48dbb0010a4a696bf1b6c3c18a278e8e9f5bb36f8010770d65f8c91643",
+      "role": "archive_member",
+      "archive_member": "Bis_cmass_sgc_Dk6.txt",
+      "archive_sha256": "17b1cceb1f6d00edc057ff8d270854758b9f43de77c90438320cc8290d12b1db",
+      "conditioning": "Headerless first three literal seven-field rows checked; no numerical interpretation; column meanings come from notes p3, not an intrinsic header.",
+      "retrieved_utc": "2026-10-03T04:11:34.830979+00:00",
+      "licence": null,
+      "licence_reason": "Same unresolved source-specific rights as original archive; public download is not permission to redistribute."
+    },
+    {
+      "id": "boss-release-cmass-density-density-galaxies-cmass-ngc-v5",
+      "url": "https://drive.usercontent.google.com/uc?id=15rqW8lNmlbcPFSBWGfIMmISf4mDi_PuM&export=download",
+      "sha256": "733f3d9c7c7aad021c4da94f0940620565b0fc6ddaf1f6becf21974a0a0b7c58",
+      "role": "archive_member",
+      "archive_member": "density/Density_galaxies_cmass_ngc_v5.txt",
+      "archive_sha256": "4a2c4b960366cae0e9e52f31b61cd005ff7d6d14f385aefb3b3f65242274317c",
+      "conditioning": "Lines1–3 literal only: interval/column headers and first numeric row; remaining body unread.",
+      "retrieved_utc": "2026-10-03T04:11:39.276616+00:00",
+      "licence": null,
+      "licence_reason": "Same unresolved source-specific rights as original archive; public download is not permission to redistribute."
+    },
+    {
+      "id": "boss-release-cmass-density-density-galaxies-cmass-sgc-v5",
+      "url": "https://drive.usercontent.google.com/uc?id=15rqW8lNmlbcPFSBWGfIMmISf4mDi_PuM&export=download",
+      "sha256": "a7ab52e52b957f225e1e51808680897bcad5c093e91fb9b0a2ae49a9ca667261",
+      "role": "archive_member",
+      "archive_member": "density/Density_galaxies_cmass_sgc_v5.txt",
+      "archive_sha256": "4a2c4b960366cae0e9e52f31b61cd005ff7d6d14f385aefb3b3f65242274317c",
+      "conditioning": "Lines1–3 literal only: interval/column headers and first numeric row; remaining body unread.",
+      "retrieved_utc": "2026-10-03T04:11:39.276616+00:00",
+      "licence": null,
+      "licence_reason": "Same unresolved source-specific rights as original archive; public download is not permission to redistribute."
+    },
+    {
+      "id": "boss-release-cmass-lin-power-spectrum-cmass-sgc-v5",
+      "url": "https://drive.usercontent.google.com/uc?id=15rqW8lNmlbcPFSBWGfIMmISf4mDi_PuM&export=download",
+      "sha256": "889a8baf853a5f98472fc3fec04b31b77c835a8bdd1a20045825fc712c5811a7",
+      "role": "archive_member",
+      "archive_member": "lin/Power_Spectrum_cmass_sgc_v5.txt",
+      "archive_sha256": "4a2c4b960366cae0e9e52f31b61cd005ff7d6d14f385aefb3b3f65242274317c",
+      "conditioning": "Comment prefix lines1–25 checked; first noncomment line26 read only to stop prefix inspection and uninterpreted; scientific body otherwise unread.",
+      "retrieved_utc": "2026-10-03T04:11:39.276616+00:00",
+      "licence": null,
+      "licence_reason": "Same unresolved source-specific rights as original archive; public download is not permission to redistribute."
+    },
+    {
+      "id": "boss-release-cmass-lin-power-spectrum-cmass-ngc-v5",
+      "url": "https://drive.usercontent.google.com/uc?id=15rqW8lNmlbcPFSBWGfIMmISf4mDi_PuM&export=download",
+      "sha256": "681accf9adb52c3076361721e9af091af71b18a9edc7d4f4c2c071067f5ef9b9",
+      "role": "archive_member",
+      "archive_member": "lin/Power_Spectrum_cmass_ngc_v5.txt",
+      "archive_sha256": "4a2c4b960366cae0e9e52f31b61cd005ff7d6d14f385aefb3b3f65242274317c",
+      "conditioning": "Comment prefix lines1–25 checked; first noncomment line26 read only to stop prefix inspection and uninterpreted; scientific body otherwise unread.",
+      "retrieved_utc": "2026-10-03T04:11:39.276616+00:00",
+      "licence": null,
+      "licence_reason": "Same unresolved source-specific rights as original archive; public download is not permission to redistribute."
+    },
+    {
+      "id": "boss-release-cmass-log-power-spectrum-cmass-sgc-v5",
+      "url": "https://drive.usercontent.google.com/uc?id=15rqW8lNmlbcPFSBWGfIMmISf4mDi_PuM&export=download",
+      "sha256": "373fcb4b0ac3d9deab2943163047b6f111d457b1bd48a9b09da22f56f3fa0993",
+      "role": "archive_member",
+      "archive_member": "log/Power_Spectrum_cmass_sgc_v5.txt",
+      "archive_sha256": "4a2c4b960366cae0e9e52f31b61cd005ff7d6d14f385aefb3b3f65242274317c",
+      "conditioning": "Comment prefix lines1–25 checked; first noncomment line26 read only to stop prefix inspection and uninterpreted; scientific body otherwise unread.",
+      "retrieved_utc": "2026-10-03T04:11:39.276616+00:00",
+      "licence": null,
+      "licence_reason": "Same unresolved source-specific rights as original archive; public download is not permission to redistribute."
+    },
+    {
+      "id": "boss-release-cmass-log-power-spectrum-cmass-ngc-v5",
+      "url": "https://drive.usercontent.google.com/uc?id=15rqW8lNmlbcPFSBWGfIMmISf4mDi_PuM&export=download",
+      "sha256": "848a1894361a08e36cc8fb431de97f230afad7dcb7a0a4020a4e220970c4929f",
+      "role": "archive_member",
+      "archive_member": "log/Power_Spectrum_cmass_ngc_v5.txt",
+      "archive_sha256": "4a2c4b960366cae0e9e52f31b61cd005ff7d6d14f385aefb3b3f65242274317c",
+      "conditioning": "Comment prefix lines1–25 checked; first noncomment line26 read only to stop prefix inspection and uninterpreted; scientific body otherwise unread.",
+      "retrieved_utc": "2026-10-03T04:11:39.276616+00:00",
+      "licence": null,
+      "licence_reason": "Same unresolved source-specific rights as original archive; public download is not permission to redistribute."
+    },
+    {
+      "id": "boss-release-cmass-mask-mask-cmass-sgc",
+      "url": "https://drive.usercontent.google.com/uc?id=15rqW8lNmlbcPFSBWGfIMmISf4mDi_PuM&export=download",
+      "sha256": "5f80888327e198befad6d8518286a3ca1a48f1d83737ac891d0af3060e711c99",
+      "role": "archive_member",
+      "archive_member": "mask/mask_cmass_sgc.txt",
+      "archive_sha256": "4a2c4b960366cae0e9e52f31b61cd005ff7d6d14f385aefb3b3f65242274317c",
+      "conditioning": "Headerless first three literal six-field rows checked; no numerical interpretation; column meanings come from notes p6, not an intrinsic header.",
+      "retrieved_utc": "2026-10-03T04:11:39.276616+00:00",
+      "licence": null,
+      "licence_reason": "Same unresolved source-specific rights as original archive; public download is not permission to redistribute."
+    },
+    {
+      "id": "boss-release-cmass-mask-mask-cmass-ngc",
+      "url": "https://drive.usercontent.google.com/uc?id=15rqW8lNmlbcPFSBWGfIMmISf4mDi_PuM&export=download",
+      "sha256": "b66d232d8e5e819dedafb3ff850ae7fe123beba541911c1f4050d8b863e0b26f",
+      "role": "archive_member",
+      "archive_member": "mask/mask_cmass_ngc.txt",
+      "archive_sha256": "4a2c4b960366cae0e9e52f31b61cd005ff7d6d14f385aefb3b3f65242274317c",
+      "conditioning": "Headerless first three literal six-field rows checked; no numerical interpretation; column meanings come from notes p6, not an intrinsic header.",
+      "retrieved_utc": "2026-10-03T04:11:39.276616+00:00",
+      "licence": null,
+      "licence_reason": "Same unresolved source-specific rights as original archive; public download is not permission to redistribute."
+    }
+  ],
+  "accepted_records": {
+    "contract_ids": [
+      "next13-boss-dr12-cmass-public-array-assets-v1"
+    ],
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": []
+  },
+  "source_contract_associations": [
+    {
+      "contract_id": "next13-boss-dr12-cmass-public-array-assets-v1",
+      "paper_ids": [
+        "arxiv:1606.00439v2"
+      ],
+      "source_asset_ids": [
+        "boss-release-notes-20200213",
+        "boss-release-dr12-page",
+        "boss-release-products-page",
+        "boss-release-original-page"
+      ],
+      "reason": "Asset-only release navigation: selected author notes/pages identify the journal2017 P+B analysis already associated with registered1606.00439v2. No new paper body coverage/version claim;2016a/b journal/baseID mentions remain distinct unregistered references, not invented version associations."
+    }
+  ],
+  "source_contract_binding": {
+    "contract_id": "next13-boss-dr12-cmass-public-array-assets-v1",
+    "path": "register/contracts/next13-boss-dr12-cmass-public-array-assets-v1.json",
+    "sha256": "c8f73e414bd85ee245cfcc066a912cb0c5c0c8bf4a35701c33b01f0bc3b2bb79"
+  },
+  "accepted_claims": [
+    {
+      "id": "NEXT13-RA01-release-ownership",
+      "origin": "source",
+      "claim": "The exact author page11 direct IDs, page10/old-style links, notes and local archive/member hashes establish ownership of current pre-recon cap P data and B0 data releases. Printed notes date13Feb2020 and web author date17Feb2020 differ;2026 HTTP Last-Modified and2021 Drive metadata do not date the scientific analysis or prove revision identity.",
+      "evidence": [
+        "boss-release-dr12-page",
+        "boss-release-products-page",
+        "boss-release-original-page",
+        "boss-release-notes-20200213",
+        "boss-release-pb-power-archive",
+        "boss-release-pb-bispectrum-archive"
+      ],
+      "acceptance": "Located source reporting/asset identity only, within explicit unresolved gates."
+    },
+    {
+      "id": "NEXT13-RA02-power-format",
+      "origin": "source",
+      "claim": "Selected CMASS P headers define column order k-centerbin,k-eff,Monopole-Pshotnoise,Quadrupole,Hexadecapole,number-of-modes,Pshotnoise. Notes locate k in h/Mpc and P in(Mpc/h)^3, with shot noise already removed from P0. Linear/log are alternative reductions. Headers preserve cap-specific Om=.31,4000Mpc/h box,512 grid cells,P5S,GridCenter,two interlacing steps and correction flags as released processing metadata; no estimator derivation/implementation equivalence is accepted.",
+      "evidence": [
+        "boss-release-notes-20200213",
+        "boss-release-pb-power-archive"
+      ],
+      "acceptance": "Located source reporting/asset identity only, within explicit unresolved gates."
+    },
+    {
+      "id": "NEXT13-RA03-bispectrum-format",
+      "origin": "source_with_reader_mapping",
+      "claim": "Headerless selected B files have seven literal fields in the first three rows. Notes map them to k1,k2,k3,B,Bnoise,Ntri_eff,Ntri_theo, with k h/Mpc and B(Mpc/h)^6. B shot noise is already removed and is shape/scale dependent. This cross-source mapping does not validate every row, ordering, discrete cuts, count normalization or units from intrinsic file headers.",
+      "evidence": [
+        "boss-release-notes-20200213",
+        "boss-release-pb-bispectrum-archive"
+      ],
+      "acceptance": "Located source reporting/asset identity only, within explicit unresolved gates."
+    },
+    {
+      "id": "NEXT13-RA04-density-mask",
+      "origin": "source_with_reader_mapping",
+      "claim": "Density headers specify z,<nobs>,<wc*nobs>,<wc*wfkp*nobs> and source interval labels1.5Mpc/h NGC/2.5Mpc/h SGC. Notes explain raw/collision/FKP roles; density physical units are not explicitly located. Headerless masks are mapped by notes to r,W0^2,W2^2,W4^2,W6^2,W8^2; these W-functions are already squared. r length and dimensionless W reasoning is a reader dimensional inference, not a new explicit file-unit statement. No complete B survey-window law is provided.",
+      "evidence": [
+        "boss-release-notes-20200213",
+        "boss-release-pb-power-archive"
+      ],
+      "acceptance": "Located source reporting/asset identity only, within explicit unresolved gates."
+    },
+    {
+      "id": "NEXT13-RA05-distinct2016-power",
+      "origin": "source",
+      "claim": "June2016 README attributes pre-recon power RSD and post-recon power BAO to separate2016a/b sources; it identifies weighted NGC+SGC estimates/diagonal errors separately from bestfit curves, power-only covariance and window matrices. Stated CMASS55-bin/covariance110-square/window55-by1000 dimensions are source declarations only, not counted/validated. Rectangular windows are not likelihood covariance despite README repeated word covariances.",
+      "evidence": [
+        "boss-release-2016ab-readme",
+        "boss-release-2016ab-power-archive"
+      ],
+      "acceptance": "Located source reporting/asset identity only, within explicit unresolved gates."
+    },
+    {
+      "id": "NEXT13-RA06-joint-covariance",
+      "origin": "source",
+      "claim": "Notes Sec3.3 do not supply a single joint covariance file: they prescribe a named-entry P0/P2/B0 data vector and all within/cross blocks using paired2048 MD-Patchy realizations. Mean and sample covariance formulas use Nreal and Nreal−1; inverse correction Eq10 is source-reported only. No P+B covariance may be synthesized from2016 power-only covariance by inserting zero cross blocks.",
+      "evidence": [
+        "boss-release-notes-20200213",
+        "boss-release-2016ab-readme"
+      ],
+      "acceptance": "Located source reporting/asset identity only, within explicit unresolved gates."
+    },
+    {
+      "id": "NEXT13-RA07-conditioning-overlap",
+      "origin": "source_and_reader_implication",
+      "claim": "Author descriptions distinguish pre-reconstruction RSD, pre-reconstruction P+B RSD and post-reconstruction BAO/bestfit products, sharing the same galaxy/fiducial/mock lineage. Reconstruction assumes f,b1 and15Mpc/h smoothing. The source asserts cap/sample independence, but external cross-analysis independence is not established. Reader implication: alternative binning, contained P statistics and shared-galaxy BAO cannot be multiplied as independent evidence without a declared joint law.",
+      "evidence": [
+        "boss-release-notes-20200213",
+        "boss-release-dr12-page",
+        "boss-release-original-page"
+      ],
+      "acceptance": "Located source reporting/asset identity only, within explicit unresolved gates."
+    },
+    {
+      "id": "NEXT13-RA08-acceptance-boundary",
+      "origin": "reader_contract_boundary",
+      "claim": "Located file identities, source roles, units and source covariance requirements are accepted. Their likelihood, full physics, priors, calibration, native implementation, numerical support and historical2017 exact-input equivalence are not. Author as-is/citation requests and successful GET access confer no checked redistribution licence; connector403 is a materialization failure, not source absence/licence denial.",
+      "evidence": [
+        "boss-release-notes-20200213",
+        "boss-release-2016ab-readme",
+        "boss-release-dr12-page",
+        "boss-release-products-page"
+      ],
+      "acceptance": "Located source reporting/asset identity only, within explicit unresolved gates."
+    }
+  ],
+  "checked_source_locators": [
+    {
+      "asset_id": "boss-release-notes-20200213",
+      "locator": "Original PDF p1 title, author Hector Gil-Marin, footnote date13February2020; Sec1 Eqs1–4 and incomplete-physics caveat; textaid lines1–42",
+      "visual": true
+    },
+    {
+      "asset_id": "boss-release-notes-20200213",
+      "locator": "Original PDF p2 Sec2 dataset/reconstruction and Sec3.1 cap/sample, fiducial and linear/log alternatives; textaid lines43–87",
+      "visual": true
+    },
+    {
+      "asset_id": "boss-release-notes-20200213",
+      "locator": "Original PDF p3 Sec3.1 P/B file paths and seven-column formats, units, shot noise, Eq5, box sizes and bin-width paragraph; textaid lines88–130",
+      "visual": true
+    },
+    {
+      "asset_id": "boss-release-notes-20200213",
+      "locator": "Original PDF p4 Sec3.2 density and Sec3.3 covariance/data-vector Eqs6–8; textaid lines131–179",
+      "visual": true
+    },
+    {
+      "asset_id": "boss-release-notes-20200213",
+      "locator": "Original PDF p5 Sec3.3 cap/sample independence assertion, Eq9, Eq10, covariance footnote and mock paths; Sec3.4 mask introduction; textaid lines180–225",
+      "visual": true
+    },
+    {
+      "asset_id": "boss-release-notes-20200213",
+      "locator": "Original PDF p6 Sec3.4 Eqs11–15, six-column already-squared W_l^2 files and partial B-window approximation; textaid lines226–282",
+      "visual": true
+    },
+    {
+      "asset_id": "boss-release-notes-20200213",
+      "locator": "Original PDF p7 Table1 literal Patchy sigma8^0=8288, Sec4 Nseries84 pseudo-independent realizations/validation/covariance advice; textaid lines285–319",
+      "visual": true
+    },
+    {
+      "asset_id": "boss-release-notes-20200213",
+      "locator": "Original PDF pp7–8 Sec5 selected fitting-range/cut and large-scale systematics caveats; textaid lines321–347; p8 not visually inspected",
+      "visual": false
+    },
+    {
+      "asset_id": "boss-release-notes-20200213",
+      "locator": "Original PDF p8 Sec6 citations/as-is disclaimer and opening acknowledgement; textaid lines351–372 only; p8 not visually inspected",
+      "visual": false
+    },
+    {
+      "asset_id": "boss-release-notes-20200213",
+      "locator": "Original PDF pp9–10 bibliography entries[4],[5],[7], textaid lines399–422; selected journal identities only, no cited-paper body reading/version inference; pages9/10 not visually inspected",
+      "visual": false
+    },
+    {
+      "asset_id": "boss-release-home-navigation",
+      "locator": "HTML title line13, author identity lines90–108 and Data navigation lines62–64; homepage only",
+      "visual": false
+    },
+    {
+      "asset_id": "boss-release-data-navigation",
+      "locator": "HTML title line13 and lines95–108, page10 exact anchor106",
+      "visual": false
+    },
+    {
+      "asset_id": "boss-release-dr12-page",
+      "locator": "HTML title13; main title100; dataset116; notes/Public Files154–173; analysis/bestfit roles191–241; alpha-fiducial conversion statement363; author/date/old-style link378",
+      "visual": false
+    },
+    {
+      "asset_id": "boss-release-original-page",
+      "locator": "HTML title7; title26; dataset42; notes/Public Files link45; analysis roles48–57; citation links62 and author/date68",
+      "visual": false
+    },
+    {
+      "asset_id": "boss-release-products-page",
+      "locator": "HTML99–103 title/backlink;130–150 exact pre/post P file IDs;160–211 mock-source labels;253–260 exact B0 data ID and pre-recon label;271–296 mock labels including literal line278 post-recon conflict;344–400 selected catalogue-role context",
+      "visual": false
+    },
+    {
+      "asset_id": "boss-release-2016ab-readme",
+      "locator": "Archive GilMarin_boss_data/README lines1–36 fully checked: title/date, source DOI/baseIDs, selection/fiducial, cap weighting, measured/bestfit/covariance/window roles",
+      "visual": false
+    },
+    {
+      "asset_id": "boss-release-pb-power-archive",
+      "locator": "Each four selected CMASS lin/log Power_Spectrum file comment prefix1–25; first noncomment26 unread scientifically. Selected density1–3 and mask1–3 literal only; member locators and hashes in source inventory",
+      "visual": false
+    },
+    {
+      "asset_id": "boss-release-pb-bispectrum-archive",
+      "locator": "Both selected CMASS cap files lines1–3 literal, headerless; format mapped from original notes p3; remaining rows unread",
+      "visual": false
+    },
+    {
+      "asset_id": "boss-release-2016ab-power-archive",
+      "locator": "Each selected CMASS text member first three ASCII lines only; initial long headerless matrix-prefix output was truncated/uninterpreted, then bounded comment-header inspection corrected. All49 extracted selected members independently byte-rehashed; LOWZ bodies unread",
+      "visual": false
+    },
+    {
+      "asset_id": "boss-release-bis-drive-view",
+      "locator": "HTML title and escaped exact drive.usercontent public-download URL with fileID1MsTXL1UXY7gmysaoxOaTVONOvN0aF7F4 only",
+      "visual": false
+    },
+    {
+      "asset_id": "boss-release-power-drive-view",
+      "locator": "HTML title and escaped exact drive.usercontent public-download URL with fileID15rqW8lNmlbcPFSBWGfIMmISf4mDi_PuM only",
+      "visual": false
+    }
+  ],
+  "corrections": [
+    {
+      "id": "NEXT13-RA-C01-homepage-owner",
+      "category": "coordinator_label_corrected_by_original_source",
+      "statement": "The asset initially called release-index is an author homepage: titleHome, author and navigation only. Product ownership is evidenced by actual page10/page11/old-style pages and exact archive links, not homepage presence.",
+      "source_locator": "Homepage title13/author90–108/Data62–64; data-page6 anchor106; page10/page11 locators above",
+      "repair_applied": false
+    },
+    {
+      "id": "NEXT13-RA-C02-inspection-error-withdrawn",
+      "category": "worker_visual_inspection_error_corrected",
+      "statement": "Visible correction to preliminary page-6 notes: reinspection confirms the '+' before the continued xi4 term is present in both Eqs13 and14. Those two alleged missing operators are withdrawn as my inspection error. The remaining literal issue is only Eq14's juxtaposition of (20/77) W2^2 and (162/1001) W4^2 inside the xi4 bracket, where no intervening '+' is printed. No repair is applied.",
+      "source_locator": "Original PDF p6 Eqs13/14; notes-06.png",
+      "repair_applied": false
+    },
+    {
+      "id": "NEXT13-RA-C03-file-prefix-coverage",
+      "category": "worker_output_bounding_correction",
+      "statement": "Initial2016 CMASS prefix inspection read three ASCII lines per file and printed long headerless covariance/window row prefixes; tool output was truncated. Those literal rows were not scientifically interpreted. Follow-up restricted output to comment headers. Coverage explicitly includes these first three lines; no zero-numeric-row-read claim, array load, covariance computation or validation is made.",
+      "source_locator": "Selected2016 CMASS members first three lines; source inventory",
+      "repair_applied": false
+    }
+  ],
+  "source_internal_issues": [
+    {
+      "id": "NEXT13-RA-S01-Fourier",
+      "locator": "Original notes PDF p1 Eq2 versus Eq1/4",
+      "literal": "Eq2 prints 1/(2*pi^3) integral dk delta(x) exp(+i*k.x), while formal P/B definitions use(2*pi)^3. Integration variable/measure and normalization are unresolved.",
+      "interpretation": "Source-internal printed convention/error, distinct from extraction and any proposed repair. No engine Fourier law accepted."
+    },
+    {
+      "id": "NEXT13-RA-S02-triangle-count",
+      "locator": "Original notes PDF p3 Eq5 and declared k/Delta_k units",
+      "literal": "Ntri_theo=8*pi^2*k1*k2*k3*Delta_k^3.",
+      "interpretation": "Reader dimensional check gives inverse length^6 for physical k units; no phase-cell normalization to a dimensionless count is located. No kf normalization repair accepted."
+    },
+    {
+      "id": "NEXT13-RA-S03-linear-bin-unit",
+      "locator": "Original notes PDF p2 Sec3.1 versus p3 final paragraph",
+      "literal": "p2 linear Delta_k=.01 h/Mpc; p3 prints .01[Mpc/h].",
+      "interpretation": "Printed unit conflict preserved; no silent inversion."
+    },
+    {
+      "id": "NEXT13-RA-S04-likelihood",
+      "locator": "Original notes PDF p5 Eq9",
+      "literal": "Residual quadratic is labelled L itself; no exponential or probability normalization is printed.",
+      "interpretation": "No normalized likelihood accepted; distinct from earlier2017 paper Eq28 missing-half issue inherited as unresolved."
+    },
+    {
+      "id": "NEXT13-RA-S05-window-operator",
+      "locator": "Original notes PDF p6 Eq14 inside xi4 bracket",
+      "literal": "(20/77)W2^2(r) (162/1001)W4^2(r) juxtaposed without intervening plus.",
+      "interpretation": "Internal printed operator remains unresolved. Eqs13/14 continuation plus signs are present; my contrary preliminary statement was withdrawn."
+    },
+    {
+      "id": "NEXT13-RA-S06-Patchy-sigma8",
+      "locator": "Original notes PDF p7 Table1",
+      "literal": "Patchy sigma8^0 cell is8288.",
+      "interpretation": "Original visual confirms literal, not0.8288; no atomic scalar/input serialization or source repair accepted."
+    },
+    {
+      "id": "NEXT13-RA-S07-mock-reconstruction",
+      "locator": "Author page11 HTML278 versus253–260 and notes Sec3.3",
+      "literal": "Linked bispectrum MD-Patchy description says post-recon; B data and notes describe pre-recon.",
+      "interpretation": "Mock body not acquired, so actual reconstruction/pairing unresolved; do not relabel automatically."
+    },
+    {
+      "id": "NEXT13-RA-S08-effective-redshift",
+      "locator": "Four current pre-recon CMASS P headers7–8 versus notes p2 and page10 dataset116",
+      "literal": "NGC/SGC data effective-redshift headers .589341/.590627; randoms .547267/.547683; analysis effective redshift .57.",
+      "interpretation": "Different source labels/possible weighting definitions are preserved. No proof of contradiction or substitution into historical fit."
+    },
+    {
+      "id": "NEXT13-RA-S09-release-path-variants",
+      "locator": "Notes p2–4 paths versus exact extracted members",
+      "literal": "Notes use PS_data/linear; actual archive uses lin; notes density names omit_v5; actual selected density names include_v5.",
+      "interpretation": "Navigation/filename variant retained; matched ownership uses exact author-linked archive/member names, not literal-path equality."
+    }
+  ],
+  "coverage": {
+    "full_reads": 0,
+    "luna_reads": 0,
+    "papers_promoted": 0,
+    "reviewed_papers": [],
+    "existing_paper_navigation": [
+      "arxiv:1606.00439v2"
+    ],
+    "original_pdf_pages_visual": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "figures": "No source data figure images inspected or digitized; author web plot thumbnails not fetched/viewed. Table1 original render visually checked only for literal entries; no quantitative use.",
+    "derived_renders": "Seven original notes page PNGs from one brief Poppler source-only I/O process, about1second; hashes bound in source inventory.",
+    "unread": "Complete2016a/b and2017 papers, complete acknowledgements/bibliography and references beyond selected4/5/7; original notes pp8–10 not visually inspected; unrelated author webpage sections/images, author-code/fit/fiducial/chain files; mock/Nseries/catalogue archives; unselected LOWZ archive bodies;2016 selected LOWZ bodies hash-only; every selected scientific array body beyond stated prefixes, full support/dimensions/permutation/positivity/covariance and all fit outputs remain unexamined. Platform page scripts/irrelevant account/UI metadata were not interpreted."
+  },
+  "limitations": [
+    "Released pre-reconstruction cap P/B estimates and separate2016a/b power products are source-owned reductions. They are not raw galaxy observations, an independent amplitude measurement, a qualified likelihood, or an executable native model.",
+    "2016 archive contains weighted NGC+SGC power estimates, diagonal errors, bestfit curves, power-only covariance and window matrices. Its covariance cannot replace the P0/P2/B0 joint auto/cross covariance. Arrays/dimensions/interleaving were not numerically validated.",
+    "Current release pre-reconstruction P headers report cap data effective redshifts0.589341/0.590627 and randoms0.547267/0.547683, distinct from analysis zeff0.57. Definitions are preserved; no automatic replacement or proof of contradiction. Historical estimator/byte equality to the2017 paper is unestablished.",
+    "Exact selected bin/triangle order and paired mock realization IDs are required for all auto/cross covariance blocks. No mocks were downloaded/read, no covariance constructed or inverted, no Hartlap likelihood correction executed. Page11 line278 labels B mocks post-recon while notes/data say pre-recon; pairing/reconstruction is unresolved.",
+    "Masks supply already-squared W_l^2, not a complete bispectrum survey window. Notes offer only a partial individual-power approximation with squeezed-triangle limitations. Density units and intrinsic headerless B/mask self-description remain unlocated; dimensional reader deductions are separate.",
+    "Formal notes are incomplete on RSD/AP/selection/LOS physics. Printed Eq2 Fourier normalization/measure, Eq5 triangle count normalization, p3 linear-bin units, Eq9 likelihood label, Eq14 internal operator and Table1 Patchy sigma8=8288 issues remain literal. No silent repair or author-code equivalence is accepted.",
+    "Source claims of independent sky-cap/sample likelihoods and arbitrary high-k validity are reported assertions, not verified independence or scientific qualification. Same galaxy, random, fiducial, mask and mock ancestry links power-only RSD, P+B RSD and post-reconstruction BAO; cross-analysis covariance remains unknown. Linear/log P are alternative reductions, not independent samples.",
+    "Source-specific redistribution licences are unresolved. Citation requests, as-is disclaimers, successful public GETs and a failed connector materialization establish no licence or licence denial. Only metadata, links and original short review notes may be public; raw sources stay local.",
+    "Asset-only targeted review; navigation association to existing1606.00439v2 does not review that paper anew. Zero Luna/full-paper reads, promotions, experiments, fits, compiler jobs, native execution or numerical/scientific acceptance."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "full_paper_review": false,
+    "native_executable_accepted": false,
+    "observed_likelihood_accepted": false
+  },
+  "source_error_semantics": {
+    "2016_power_errorbars": "README reports diagonal errorbars from Patchy mocks; no coverage probability or distribution established.",
+    "uncertainty_coverage": null,
+    "uncertainty_distribution": null,
+    "unknown_cross_covariance": null,
+    "null_reason": "No presumed1sigma/Gaussian or independent-noise interpretation; source model/covariance law and qualification remain separate."
+  }
+}
