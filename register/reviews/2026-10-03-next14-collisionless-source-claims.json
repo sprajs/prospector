@@ -1,0 +1,432 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-next14-collisionless-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "agent_id": "/root/perturbation_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "runtime_session_id": "01a0fec1-578e-7712-ba9d-1707e70bb91c",
+    "turn_id": "01a0ffb1-8ebf-7481-b9f5-4599a194de17",
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "evidence_kind": "runtime_turn_context",
+    "actual_backend_identity": null
+  },
+  "model_confirmation_companion_sha256": "676c0c3b2d0eb7669fbb3d6c274aadbe1344aad1065e236bf0f1b2319b05fdbc",
+  "reviewed_utc": "2026-10-03T03:01:34.249777+00:00",
+  "packet_sha256": "ccde2d0a297d088ea19140ad7497576f5b37fe34e8a7a785f7ace7822a124a7d",
+  "reviewed_papers": [
+    "arxiv:astro-ph/9506072v1",
+    "arxiv:1104.2933v3"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:astro-ph/9506072v1",
+      "source_hashes": {
+        "pdf": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+        "extracted_text": "6d20a4d613f84696f7bf870823e5acb9b63383da0f2dc3fff4e0f93ec59d7933"
+      },
+      "coverage": {
+        "main_text": "Selected original equations/nearby conventions inherited from frozen FINAL audit; no complete reading or new source campaign.",
+        "checked_locators": [
+          "p1 title/version/author identity only; abstract incidentally visible, no abstract claims accepted",
+          "p6 conformal-time/flat background paragraph and Eq4",
+          "p7 Eq5 metric and surrounding scalar/potential conventions",
+          "p10 Eq19–22 background/velocity/shear definitions",
+          "p11 Eq23a–d,25 and enthalpy species sums",
+          "p12 Eq27a–d for comoving CDM; Eqs28–30 incidentally visible",
+          "p16 §5.2 CDM Eq43; adjacent Eq41/axial-symmetry paragraphs incidentally visible",
+          "p17 §5.3 Eqs44–48",
+          "p18 Eqs49–51, reflection and time-dependent-potential closure caveats",
+          "p31 Eq98 and finite-gradient/velocity caveats",
+          "p32 §8 finite-start constraint and metric-method paragraph; neighboring example parameter/integrator/L paragraphs incidentally visible"
+        ],
+        "original_equation_visual_pages": [
+          6,
+          7,
+          10,
+          11,
+          12,
+          16,
+          17,
+          18,
+          31
+        ],
+        "unread": "Remaining MB main text, massive-neutrino/momentum/photon/baryon/polarization sections, appendices/numerical figures/results and bibliography beyond selected source equations",
+        "figures": "No scientific figure visually inspected in original NEXT14 audit; CLASS Fig4/5 captions/nearby text only."
+      }
+    },
+    {
+      "paper_id": "arxiv:1104.2933v3",
+      "source_hashes": {
+        "pdf": "748b2c1bced36e6dd106226b32839da619f17854b2c42cbf2e0b4b273c1a3ebb",
+        "extracted_text": "d219b6a06bc14d35c3328d45a79031b1b9bf7037c305605dd0a424e9dc1d2649"
+      },
+      "coverage": {
+        "main_text": "Selected original equations/nearby conventions inherited from frozen FINAL audit; no complete reading or new source campaign.",
+        "checked_locators": [
+          "PDFp1 title/version/author identity only",
+          "§3 opening PDFp14/printedp13",
+          "§3.1 PDFp15/printedp14 and continuation PDFp16/printedp15",
+          "§3.2 introduction/continuation PDFpp16–17/printedpp15–16 incidentally visible; no UFA implementation acceptance",
+          "§§3.3–3.4 PDFpp17–18/printedpp16–17 Eqs3.1–3.4 and closure limits; adjacent §3.5 text incidentally visible",
+          "References[10], PDFp29/printedp28, selected entry only"
+        ],
+        "original_equation_visual_pages": [
+          17,
+          18
+        ],
+        "unread": "Remaining CLASS TCA/RSA sections, appendices including UFA derivation, numerical benchmarks/figures, references except[10]",
+        "figures": "No scientific figure visually inspected in original NEXT14 audit; CLASS Fig4/5 captions/nearby text only."
+      }
+    }
+  ],
+  "reviewed_source_assets": [
+    {
+      "id": "astro-ph__9506072v1-pdf",
+      "url": "https://arxiv.org/pdf/astro-ph/9506072v1",
+      "sha256": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+      "role": "pdf",
+      "conditioning": "Pinned original selected MB equations/gauge/initial-mode or CLASS massless-closure claims; source audit distinguishes author equations from new reader algebra and numerical choices."
+    },
+    {
+      "id": "1104.2933v3-pdf",
+      "url": "https://arxiv.org/pdf/1104.2933v3",
+      "sha256": "748b2c1bced36e6dd106226b32839da619f17854b2c42cbf2e0b4b273c1a3ebb",
+      "role": "pdf",
+      "conditioning": "Pinned original selected MB equations/gauge/initial-mode or CLASS massless-closure claims; source audit distinguishes author equations from new reader algebra and numerical choices."
+    }
+  ],
+  "projection_kind": "Compact exact-byte public projection of frozen selected-source audit; no new source campaign",
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "full_paper_review": false
+  },
+  "supporting_packets": [
+    {
+      "role": "immutable_private_proposal",
+      "sha256": "39cf0ba782f51ea7403a8f473de71961b38f03dffdc1e700e95c14192c0ff127"
+    },
+    {
+      "role": "immutable_root_conditional_source_algebra_acceptance",
+      "sha256": "de5f81f93d7184e54ea794fd6965db3a8ae55be0cf4f59f5dec354dfebbd3d91"
+    },
+    {
+      "role": "immutable_coordinator_source_handoff",
+      "sha256": "0a35b98bb314883c6db9b90022bd4a23e3b9ac509583b6d38989deee97d2367d"
+    },
+    {
+      "role": "immutable_Lambda_domain_amendment",
+      "sha256": "d5b0e32eb44fd786bcfcc50ec90305b04570392863f21d4fb448de82fe8feb1b"
+    },
+    {
+      "role": "immutable_source_rehash",
+      "sha256": "460341bfc74089b846c0c11f954be39d6b6c53e5ac9f6820421e01dd10086be1"
+    }
+  ],
+  "accepted_records": {
+    "contract_ids": [
+      "next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v2"
+    ],
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": []
+  },
+  "source_contract_binding": {
+    "contract_id": "next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v2",
+    "path": "register/contracts/next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v2.json",
+    "sha256": "0610d5bc33e5b26122e5de782d5ca0b2a8c0874d25cee11d123e5a8ca7837f8a"
+  },
+  "private_proposal_identity": {
+    "contract_id": "candidate-pure-massless-FD-CDM-lambda-unit-zeta-transfer/v2",
+    "sha256": "39cf0ba782f51ea7403a8f473de71961b38f03dffdc1e700e95c14192c0ff127",
+    "public_slug": "next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v2",
+    "mapping": "Public lowercase hyphenated source-contract slug is a compact projection of the private slash/v2 identity, not a revised proposal or new numerical model."
+  },
+  "accepted_claim_ids": [
+    "NEXT14-MB04-conformal-Fourier",
+    "NEXT14-MB05-two-potentials",
+    "NEXT14-MB22-23-Einstein-signs",
+    "NEXT14-MB27-comoving-CDM",
+    "NEXT14-MB43-CDM",
+    "NEXT14-MB46-50-massless-transport",
+    "NEXT14-MB51-endpoint-approximation",
+    "NEXT14-MB98-leading-mode",
+    "NEXT14-MB8-start-constraint-warning",
+    "NEXT14-CLASS3-common-massless-and-UFA",
+    "NEXT14-actual-thermal-owner-and-units",
+    "NEXT14-derived-unit-zeta-and-Rplus",
+    "NEXT14-derived-stable-state",
+    "NEXT14-derived-projected-leading-start",
+    "NEXT14-derived-pure-radiation-controls",
+    "NEXT14-derived-conformal-age-and-tail",
+    "NEXT14-derived-RK4-endpoint-guard",
+    "NEXT14-derived-angular-peer-and-characteristics"
+  ],
+  "source_printed_claims": [
+    {
+      "id": "NEXT14-MB04-conformal-Fourier",
+      "kind": "source_printed",
+      "claim": "MB uses flat comoving coordinates, dτ=dt/a with c=1, dots=d/dτ, and positive exp(+ik·x) Fourier phase. Eq4 prints d^3k with normalization absorbed, while the proposal explicitly declares the canonical d^3k/(2π)^3 convention.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:astro-ph/9506072v1",
+          "sha256": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+          "url": "https://arxiv.org/pdf/astro-ph/9506072v1",
+          "locator": "§2 printed/PDF p6, conformal-time paragraph and Eq4"
+        }
+      ],
+      "limit": "a(today)=1 and canonical spectrum normalization are declared consumer conventions; no primordial amplitude or Planck covariance source is accepted here."
+    },
+    {
+      "id": "NEXT14-MB05-two-potentials",
+      "kind": "source_printed",
+      "claim": "ds²=a²[−(1+2ψ)dτ²+(1−2φ)dx²]; ψ is lapse/Newtonian potential, φ is spatial potential. Scalar modes only; shear generally separates the potentials.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:astro-ph/9506072v1",
+          "sha256": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+          "url": "https://arxiv.org/pdf/astro-ph/9506072v1",
+          "locator": "printed/PDF p7 Eq5 and following paragraphs"
+        }
+      ],
+      "limit": "No single-potential perfect-fluid substitution."
+    },
+    {
+      "id": "NEXT14-MB22-23-Einstein-signs",
+      "kind": "source_printed",
+      "claim": "The proposed time-time, momentum, trace and shear Einstein equations agree with MB22/23 when δT00=−δρ, δTii=3δP and all source densities/G use compatible c=1 geometric units. Momentum and shear are enthalpy-weighted sums over retained species.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:astro-ph/9506072v1",
+          "sha256": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+          "url": "https://arxiv.org/pdf/astro-ph/9506072v1",
+          "locator": "printed/PDF p10 Eq22 and p11 Eqs23a–d,25 and species-sum paragraph"
+        }
+      ],
+      "limit": "No SI energy density inserted unchanged into the geometric equations; the common thermal owner supplies the conversion once."
+    },
+    {
+      "id": "NEXT14-MB43-CDM",
+      "kind": "source_printed",
+      "claim": "Pressureless CDM obeys δc′=−θc+3φ′ and θc′=−Hcal θc+k²ψ in conformal Newtonian gauge.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:astro-ph/9506072v1",
+          "sha256": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+          "url": "https://arxiv.org/pdf/astro-ph/9506072v1",
+          "locator": "printed/PDF p16 §5.2 Eq43"
+        }
+      ],
+      "limit": null
+    },
+    {
+      "id": "NEXT14-MB46-50-massless-transport",
+      "kind": "source_printed",
+      "claim": "Exactly massless collisionless brightness integrates out momentum: F=sum_l (−i)^l(2l+1)Fl Pl; δr=F0, θr=3kF1/4, σr=F2/2; F′+ikμF=4(φ′−ikμψ), with MB50 Newtonian continuity/Euler and l≥2 hierarchy.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:astro-ph/9506072v1",
+          "sha256": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+          "url": "https://arxiv.org/pdf/astro-ph/9506072v1",
+          "locator": "printed/PDF p17 Eqs44–48 and p18 Eqs49–50"
+        }
+      ],
+      "limit": "No positive mass—even tiny or temporarily relativistic—is admitted to this momentum-integrated exact equation. MB49 is synchronous and is not silently used as Newtonian."
+    },
+    {
+      "id": "NEXT14-CLASS3-common-massless-and-UFA",
+      "kind": "source_printed",
+      "claim": "CLASSII §3 treats fully decoupled massless relic transport in common brightness equations. §3.3–3.4 distinguishes synchronous UFA/class, MB and Hu closures; the approximation remains an imperfect fluid with shear.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1104.2933v3",
+          "sha256": "748b2c1bced36e6dd106226b32839da619f17854b2c42cbf2e0b4b273c1a3ebb",
+          "url": "https://arxiv.org/pdf/1104.2933v3",
+          "locator": "§3 opening PDFp14 printedp13; §3.1 PDFp15 printedp14; §§3.3–3.4 PDFpp17–18 printedpp16–17 Eqs3.1–3.4"
+        }
+      ],
+      "limit": "The proposal selects no UFA/RSA. Aggregation is exact here only for mass0 species with identical regular adiabatic brightness, common metric transport and time-independent background weights; species tuples/order remain retained."
+    }
+  ],
+  "reader_algebra_summary": {
+    "accepted_scope": "Conditional identities only; no source author attribution or complete stability/error guarantee.",
+    "unit_zeta": "zeta=-phi+delta_rho/[3(rho+P)] is declared; Rrel1 unitzeta gives C=-1/2,psi0=-10/19,phi0=-14/19. Rplus=-zeta only in regular superhorizon limit.",
+    "state_and_domain": "Stable comoving/shear variables and common-angular characteristic identity follow from the located MB equations for exact mass0/CDM/Lambda with consistent shared background.",
+    "finite_start": "Projected leading Delta=(7/19)zeta*x_i^2,dV0 differs from regular O(x^2) growing Delta=zeta*x_i^2/4,dV=-3psi0*x_i^2/40; freeze original start and require earned bias allocation.",
+    "age_and_step": "Conformal-age radiation/matter formula and one-sided early Lambda tail need nonnegative Lambda and inherited errors; MB51 endpoint diagonal guard is only local precaution, not coupled/peer stability.",
+    "evidence": [
+      {
+        "paper_id": "arxiv:astro-ph/9506072v1",
+        "sha256": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+        "url": "https://arxiv.org/pdf/astro-ph/9506072v1",
+        "locator": "Eqs19-23,43,46-51,98, PDFpp10-11,16-18,31; finite-start warningp32"
+      }
+    ]
+  },
+  "copied_consumer_source_conditioning": {
+    "head": "8bccb6cca7c1fa61179bb22478496658743644f9",
+    "dirty_at_copy": false,
+    "current_live_state_claimed": false,
+    "selected_files": [
+      {
+        "id": "thermal_neutrino.hpp",
+        "sha256": "68b5eacbef3d9f7dbeb4da03736816fa6f155705b909acf4c8a751776fc0442c"
+      },
+      {
+        "id": "thermal_neutrino.cpp",
+        "sha256": "a828631af05ea8f7d47b3358f4a02d67d90ddedfcda8966c6c34dd1ca5c16cc7"
+      },
+      {
+        "id": "quantities.hpp",
+        "sha256": "15ece3b41b91e8744c2d9ea228f75e97afef225f08a2109a813a8ebfca2ae0e3"
+      },
+      {
+        "id": "quantities.cpp",
+        "sha256": "51caa3e466bb9959c30ae0ec461a85476a88c388afefdbe9a1c6c2e951394674"
+      },
+      {
+        "id": "thermal_constants.hpp",
+        "sha256": "069ad38e2e7aba72a4dc41e9ce2d182ea328ce7bb9eb4300c2731bd678cbc9e5"
+      },
+      {
+        "id": "linear_transfer.hpp",
+        "sha256": "07d2ab01d7220678eb57c6f9d9c9b2e1699467c5b23d40821200ed09714e106d"
+      },
+      {
+        "id": "linear_transfer.cpp",
+        "sha256": "d0f4af532bd0c47b6cd37accd227f06b2bb073edc0615dfb5a93d73bf4ada8fc"
+      }
+    ],
+    "checked_locators": [
+      {
+        "file": "thermal_neutrino.hpp",
+        "locator": "lines9–14 species fields,45–59 source model separation,70–74 scaled coordinate,101–119 owner/accessors/normalization"
+      },
+      {
+        "file": "thermal_neutrino.cpp",
+        "locator": "species_status54–61; mass0 moments144–149; physical mapping289–331; preparation333–393; accessors416–422; scaled_expansion424–458"
+      },
+      {
+        "file": "quantities.hpp",
+        "locator": "lines7–12 exact SI constants;21 comoving_a0_one"
+      },
+      {
+        "file": "quantities.cpp",
+        "locator": "lines8–19 unit definitions;53–54 authoritative wide Mpc and rounded pc accessors"
+      },
+      {
+        "file": "thermal_constants.hpp",
+        "locator": "lines5–14 fixedG, critical energy density and mass density"
+      },
+      {
+        "file": "linear_transfer.cpp",
+        "locator": "lines15,31–49 same c/H0/P conventions;218–234 existing perfect-fluid admission excludes explicit species"
+      },
+      {
+        "file": "linear_transfer.hpp",
+        "locator": "lines4–5 existing masks and class PerfectFluidTransfer/modelidentity; no new collisionless API exists"
+      }
+    ],
+    "unknowns": "Only copied selected source inspected. No current compiled capability, live sibling inspection or new implementation accepted. Preserve original species tuples/order/implicit roles and shared normalization/status/unit methods."
+  },
+  "corrections": [
+    {
+      "id": "NEXT14-C01-projected-versus-growing-Delta",
+      "category": "reader_derived_initial_approximation_caveat",
+      "statement": "Projected leading Delta=(7/19)zeta*x_i^2,dV0 differs from regular O(x^2) growing Delta=zeta*x_i^2/4,dV=-3psi0*x_i^2/40; freeze original start and require earned bias allocation.",
+      "repair_applied": false
+    },
+    {
+      "id": "NEXT14-C02-no-role-field",
+      "category": "actual_source_identity_clarification",
+      "statement": "ThermalSpecies exposes mass_ev,temperature_today_ev,statistical_weight only; no name/role field is invented.",
+      "repair_applied": false
+    },
+    {
+      "id": "NEXT14-C03-normalization-endpoints",
+      "category": "actual_source_diagnostic_limit",
+      "statement": "scaled_expansion(0) retains wide radiation/error; normalizedP1/error0 at a1 does not erase inherited component/accessor sensitivity.",
+      "repair_applied": false
+    },
+    {
+      "id": "NEXT14-Lambda-domain",
+      "category": "copied_source_domain_and_reader_tail_limit",
+      "statement": "Inspected successful preparation restricts Lambda>=0; one-sided age ceiling cannot extend to signed Lambda by an absolute-value repair.",
+      "repair_applied": false
+    }
+  ],
+  "external_stability_report": {
+    "origin": "Root coordinator report,2026-10-03T02:43 context; subsequently authorized in projection task",
+    "report": "Raw trace angular peer has a growing Hamiltonian residual mode; centered shear alone does not admit it.",
+    "status": "open_external_stability_blocker",
+    "locally_reproduced": false,
+    "independent_derivation_checked_in_this_projection": false,
+    "pending_alternatives": "Damping or higher precision remain proposed and await independent source derivations; no execution or acceptance here.",
+    "impact": "Blocks peer/reference/numerical admission. Does not amend frozen39cf/de5 source-equation/conditional-algebra acceptance.",
+    "new_local_numeric_job": false
+  },
+  "blocked_gates": [
+    {
+      "id": "NEXT14-G01-initial-bias",
+      "requirement": "Record every leading/projected initial state and correction, enforce formal omitted-order admission, and charge native/peer smaller-start differences and shared initialization ancestry. Preserve refusal if bias allocations fail."
+    },
+    {
+      "id": "NEXT14-G02-common-background",
+      "requirement": "Retain wide radiation limit/error from scaled0, own P at every stage, original Ω fractions/species/order/method, Lambda accessor-cast/normalization diagnostics, a1 normalization semantics, and forward sensitivity. No hidden flat reclosure or unit conversion."
+    },
+    {
+      "id": "NEXT14-G03-age-and-phase",
+      "requirement": "Actual Big-Bang conformal age, analytic early-Lambda ceiling plus inherited numerical/background error, lower-age endpoint stability and upper-age phase admission, independently refined endpoint quadrature. No empirical estimator called certificate."
+    },
+    {
+      "id": "NEXT14-G04-time-and-hierarchy",
+      "requirement": "Native L32/64/128 and common129-constrained RK4 mesh with half/quarter refinement; coupled stability, closure reflection and forward error are unexecuted. Full phase≤20 is a chosen domain, not proof of L32 truncation accuracy."
+    },
+    {
+      "id": "NEXT14-G05-peer",
+      "requirement": "Implement independent angular64/128/256, trace metric and eta-DP5(4) route with separate initial/time/angle/background/rounding uncertainty inside reference allocation; common source/mode is disclosed."
+    },
+    {
+      "id": "NEXT14-G06-allocations-and-resources",
+      "requirement": "Root/consumer must freeze exact chosen budgets/caps/controls and verify all-attempt RHS/background/scalar updates/payload; no tests or resource admission run here."
+    },
+    {
+      "id": "NEXT14-G07-implementation-consumer",
+      "requirement": "Compiled new two-potential collisionless SDK capability, installed consumer, independent controls/reference, current revision/build flags, and exact-public/CI acceptance are separate future gates. Existing perfect-fluid identity/outputs/qualification remain unchanged."
+    }
+  ],
+  "limitations": [
+    "The public slug identifies a compact projection of private candidate-pure-massless-FD-CDM-lambda-unit-zeta-transfer/v2, SHA39cf0ba782f51ea7403a8f473de71961b38f03dffdc1e700e95c14192c0ff127. It does not replace or modify the private proposal/source acceptance.",
+    "Exact-mass0 FD species with identical regular adiabatic brightness may share transport, while original mass/temperature/statistical-weight tuples and order remain retained. Positive mass, supplied photons, baryons and unidentified nonphoton massless sectors are excluded; no full Planck/standard transfer or CMB identity.",
+    "Retain the inspected ThermalBackground ownership, implicit sector roles, wide normalization/error/status/method semantics and conversions. Species has no name/role field. Successful copied preparation at8bccb6c enforces nonnegative Lambda; the one-sided age tail applies only in that domain with positive radiation and positive lower-age denominator.",
+    "Unit zeta=-phi+delta_rho/[3(rho+P)], stable coordinates, conformal-age envelope, initial projection and RK4 guards are reader-derived algebra, not printed MB/CLASS prescriptions. Source MB51 endpoint is approximate; no UFA/RSA is selected.",
+    "Projected-leading pure-radiation Delta=(7/19)zeta*x_i^2 with dV=0 differs from regular growing Delta=zeta*x_i^2/4 and dV=-3psi0*x_i^2/40. A satisfied Hamiltonian does not certify growing-mode purity, finite-start bias or forward error.",
+    "Chosen phase<=20, k1e-7..1e-2 Mpc^-1, target a1e-4..1, L32/64/128 and endpoint step guards remain proposed/unqualified. Initial, background, age, time, hierarchy, peer, resource and consumer gates remain blocked; empirical refinement is not a forward certificate.",
+    "Root externally reports at2026-10-03T02:43 context that the raw trace angular peer has a growing Hamiltonian residual mode and centered shear alone does not admit it. This report is not locally reproduced; damping and higher-precision alternatives are pending independent source derivations, with no acceptance or execution in this projection.",
+    "Shared MB equations/thermal/mode ancestry remains disclosed for native and angular-peer proposals. Frozen39cf proposal, ccde source packet and de5 root conditional algebra acceptance remain unchanged; reported instability blocks reference/numerical admission.",
+    "Targeted source claims only; no new source campaign, full/Luna reading, numerical/native job, paper-stage change or graph/prospect promotion. Ordinary full-spectrum matter amplitude and later primordial/window normalization are not accepted."
+  ],
+  "bibliography_coverage": {
+    "checked": [
+      {
+        "citing_paper": "arxiv:1104.2933v3",
+        "cited_base_id": "astro-ph/9506072",
+        "cited_version": null,
+        "cited_version_null_reason": "Bibliography prints basearXivID only; not evidence that registeredv1 was cited.",
+        "reference_label": "[10]",
+        "bibliography_anchor": "References[10], PDFp29/printedp28",
+        "source_sha256": "748b2c1bced36e6dd106226b32839da619f17854b2c42cbf2e0b4b273c1a3ebb",
+        "source_url": "https://arxiv.org/pdf/1104.2933v3",
+        "printed_identity": "C.P.Ma and E.Bertschinger, Astrophys.J.455(1995)7, arXiv:astro-ph/9506072",
+        "coverage": "One explicit checked bibliography link; other links unknown/unread, not absent."
+      }
+    ],
+    "unread": "Remaining original bibliographies; citing base ID is not proof that registered MBv1 was cited."
+  },
+  "conclusion": "Accept the exact public slug/contract as a bounded projection of the original selected-source and conditional reader algebra. All numerical/consumer gates and the externally reported trace-peer instability remain open; no scientific or graph promotion."
+}

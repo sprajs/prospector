@@ -121,6 +121,19 @@ def validate():
             require(review.get('limitations') and review.get('accepted_records'),
                     f"targeted review lacks claim scope/limits: {ident}")
         require(len(review["reviewed_papers"]) == len(set(review["reviewed_papers"])), "duplicate reviewed paper")
+        associations = review.get('source_contract_associations', [])
+        require(len({a['contract_id'] for a in associations}) == len(associations),
+                'duplicate source contract association')
+        for association in associations:
+            require(targeted(review) and association['contract_id'] in
+                    review.get('accepted_records', {}).get('contract_ids', []),
+                    'source contract association lacks targeted acceptance')
+            ids = association['paper_ids']
+            require(ids and len(ids) == len(set(ids)) and set(ids).issubset(papers)
+                    and not set(ids) & set(review['reviewed_papers']),
+                    'invalid source contract navigation papers')
+            require(association.get('reason', '').strip() and association.get('source_asset_ids'),
+                    'source contract association lacks reason/evidence')
         details = review.get("reviewed_paper_details", [])
         require({d["paper_id"] for d in details} == set(review["reviewed_papers"])
                 and len(details) == len(review["reviewed_papers"]), f"review details do not cover papers: {ident}")
@@ -234,7 +247,23 @@ def validate():
         require(contract['review_id'] in reviews, 'source contract lacks review')
         accepted_record(contract['review_id'], 'contract_ids', ident)
         require(set(contract['paper_ids']).issubset(papers), 'source contract missing paper')
-        require(set(contract['paper_ids']).issubset(reviews[contract['review_id']]['reviewed_papers']),
+        review = reviews[contract['review_id']]
+        association = next((a for a in review.get('source_contract_associations', [])
+                            if a['contract_id'] == ident), None)
+        navigation = set(association['paper_ids']) if association else set()
+        if association:
+            require(navigation == set(contract['paper_ids']) - set(review['reviewed_papers']),
+                    'source contract navigation does not match unreviewed associations')
+            reviewed_assets = {a['id']: a for a in review.get('reviewed_source_assets', [])}
+            contract_assets = {a['id']: a for a in contract['source_assets']}
+            ids = association['source_asset_ids']
+            require(len(ids) == len(set(ids)), 'duplicate source contract association asset')
+            for asset_id in ids:
+                checked, source = reviewed_assets.get(asset_id), contract_assets.get(asset_id)
+                require(checked is not None and source is not None
+                        and checked['sha256'] == source['sha256'] and checked['url'] == source['url'],
+                        'source contract association asset not reviewed')
+        require(set(contract['paper_ids']).issubset(set(review['reviewed_papers']) | navigation),
                 'source contract sources not reviewed')
         scope_ids = [scope['scope_id'] for scope in contract['scopes']]
         require(len(scope_ids) == len(set(scope_ids)), 'duplicate source contract scope')
@@ -249,6 +278,11 @@ def validate():
             require(source['path'] == str(path.relative_to(ROOT)), 'noncanonical source serialization path')
             require(hashlib.sha256(path.read_bytes()).hexdigest() == source['sha256'],
                     'source serialization digest mismatch')
+    for review in reviews.values():
+        for association in review.get('source_contract_associations', []):
+            require(association['contract_id'] in contracts and
+                    contracts[association['contract_id']]['review_id'] == review['review_id'],
+                    'source contract association has no matching contract')
     citations = strict_load(ROOT / "register/citations.json")
     validators["citations"].validate(citations)
     require(set(citations['inspected_paper_ids']).issubset(papers), "citation inspection references missing paper")

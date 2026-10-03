@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "contract_id": "next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v2",
+  "title": "Pure massless FD/CDM/Lambda conditional transfer source algebra",
+  "review_id": "2026-10-03-next14-collisionless-source-claims",
+  "paper_ids": [
+    "arxiv:astro-ph/9506072v1",
+    "arxiv:1104.2933v3"
+  ],
+  "scopes": [
+    {
+      "scope_id": "NEXT-14",
+      "title": "Two-potential exact-massless collisionless source proposal",
+      "paper_ids": [
+        "arxiv:astro-ph/9506072v1",
+        "arxiv:1104.2933v3"
+      ],
+      "checked_claim": "MB Eqs4-5,22-23,27,43,46-51,98 and finite-start warning locate Newtonian metric/conservation/transport/constraint signs, CDM comoving density, approximate hierarchy endpoint and leading regular adiabatic mode. CLASSII Sec3,3.1,3.3-3.4 locates common massless transport and closure caveats. The frozen exact-mass0 FD+positive-CDM+smooth-Lambda proposal retains the inspected shared ThermalBackground source/order/units/normalization and admits only its stated nonnegative-Lambda domain. Declared unit-zeta mapping, stable-state transformation, projected-leading start, regular pure-radiation controls, age-tail envelope and local endpoint guard were accepted only as conditional reader algebra.",
+      "unresolved": "Finite-start bias, inherited background/age uncertainty, coupled time/hierarchy stability, independent angular peer, exact numerical/resource allocations and consumer implementation remain blocked. Root reports growing trace-peer Hamiltonian residuals; centered shear alone is insufficient, and proposed damping/higher precision awaits independent derivation. Original algebra acceptance is unchanged; no reference or numerical admission follows."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "astro-ph__9506072v1-pdf",
+      "url": "https://arxiv.org/pdf/astro-ph/9506072v1",
+      "sha256": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+      "role": "pdf",
+      "conditioning": "Pinned original selected MB equations/gauge/initial-mode or CLASS massless-closure claims; source audit distinguishes author equations from new reader algebra and numerical choices."
+    },
+    {
+      "id": "1104.2933v3-pdf",
+      "url": "https://arxiv.org/pdf/1104.2933v3",
+      "sha256": "748b2c1bced36e6dd106226b32839da619f17854b2c42cbf2e0b4b273c1a3ebb",
+      "role": "pdf",
+      "conditioning": "Pinned original selected MB equations/gauge/initial-mode or CLASS massless-closure claims; source audit distinguishes author equations from new reader algebra and numerical choices."
+    }
+  ],
+  "limitations": [
+    "The public slug identifies a compact projection of private candidate-pure-massless-FD-CDM-lambda-unit-zeta-transfer/v2, SHA39cf0ba782f51ea7403a8f473de71961b38f03dffdc1e700e95c14192c0ff127. It does not replace or modify the private proposal/source acceptance.",
+    "Exact-mass0 FD species with identical regular adiabatic brightness may share transport, while original mass/temperature/statistical-weight tuples and order remain retained. Positive mass, supplied photons, baryons and unidentified nonphoton massless sectors are excluded; no full Planck/standard transfer or CMB identity.",
+    "Retain the inspected ThermalBackground ownership, implicit sector roles, wide normalization/error/status/method semantics and conversions. Species has no name/role field. Successful copied preparation at8bccb6c enforces nonnegative Lambda; the one-sided age tail applies only in that domain with positive radiation and positive lower-age denominator.",
+    "Unit zeta=-phi+delta_rho/[3(rho+P)], stable coordinates, conformal-age envelope, initial projection and RK4 guards are reader-derived algebra, not printed MB/CLASS prescriptions. Source MB51 endpoint is approximate; no UFA/RSA is selected.",
+    "Projected-leading pure-radiation Delta=(7/19)zeta*x_i^2 with dV=0 differs from regular growing Delta=zeta*x_i^2/4 and dV=-3psi0*x_i^2/40. A satisfied Hamiltonian does not certify growing-mode purity, finite-start bias or forward error.",
+    "Chosen phase<=20, k1e-7..1e-2 Mpc^-1, target a1e-4..1, L32/64/128 and endpoint step guards remain proposed/unqualified. Initial, background, age, time, hierarchy, peer, resource and consumer gates remain blocked; empirical refinement is not a forward certificate.",
+    "Root externally reports at2026-10-03T02:43 context that the raw trace angular peer has a growing Hamiltonian residual mode and centered shear alone does not admit it. This report is not locally reproduced; damping and higher-precision alternatives are pending independent source derivations, with no acceptance or execution in this projection.",
+    "Shared MB equations/thermal/mode ancestry remains disclosed for native and angular-peer proposals. Frozen39cf proposal, ccde source packet and de5 root conditional algebra acceptance remain unchanged; reported instability blocks reference/numerical admission.",
+    "Targeted source claims only; no new source campaign, full/Luna reading, numerical/native job, paper-stage change or graph/prospect promotion. Ordinary full-spectrum matter amplitude and later primordial/window normalization are not accepted."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}

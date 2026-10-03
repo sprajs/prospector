@@ -78,12 +78,22 @@ binding. Prospect details can expose the checked claims and unresolved physics,
 without worker provenance or raw source material. A source contract does not
 qualify a native implementation, statistical law or measured likelihood.
 
+For an asset-only audit, existing paper IDs can identify release navigation without
+being newly reviewed. A targeted review explicitly lists these in
+`source_contract_associations`, bound to one accepted contract ID, its unreviewed
+paper IDs, matching reviewed source-asset IDs and a reason. This exception applies
+only to contract navigation; idea, design, prospect and full-paper review gates
+still require actual paper coverage. Keep these IDs outside `reviewed_papers`.
+
 Scalar source serializations retain exact decimal strings, provider versions,
 checked locators, theory flags and uncertainty interpretation. Null distribution,
 coverage or covariance means unknown, rather than an assumed Gaussian law.
 Contracts bind these records by canonical path and SHA-256. Each serialization
 requires its own explicit review acceptance; fixed central model choices remain
 separate from primary source facts and numerical error diagnostics.
+`reported_compilation_value` identifies a value quoted in a source compilation,
+with its underlying evaluation and uncertainty still unexamined; it does not
+reclassify that value as a new measurement or a CODATA recommendation.
 
 Ideas have stable slug, title, family, source evidence, assumptions, predictions
 and review ID. Topics have stable slug, title, scope and paper/idea/design ID

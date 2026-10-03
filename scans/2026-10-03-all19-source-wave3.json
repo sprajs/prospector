@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-03-all19-source-wave3",
+  "status": "completed",
+  "started_utc": "2026-10-03T02:04:24.068156+00:00",
+  "completed_utc": "2026-10-03T03:06:54.848800+00:00",
+  "lane": "baseline-reference",
+  "work_mode": "bounded_targeted_source_audit_no_new_full_reads",
+  "queries": [
+    {
+      "mode": "bounded_web_metadata_leads",
+      "literal_queries": [
+        "site.classic.sdss.org supernova Holtzman scene modeling photometry data release corrected images",
+        "site.shsuyu.github.io H0LiCOW B1608 data download imaging time delays",
+        "site.archive.stsci.edu B1608",
+        "site.archive.stsci.edu 1608 10158"
+      ],
+      "search_utc": null,
+      "utc_null_reason": "Exact search-call timestamps unexposed in the frozen worker discovery receipt; request recorded at 2026-10-03T02:11:29Z.",
+      "scope_correction": "These literal site-dot phrases were not valid site-colon restrictions. Only selected official pages support findings; search scope was broader than intended and cannot support coverage or absence claims.",
+      "disposition": {
+        "search_queries_literal": [
+          "site.classic.sdss.org supernova Holtzman scene modeling photometry data release corrected images",
+          "site.shsuyu.github.io H0LiCOW B1608 data download imaging time delays",
+          "site.archive.stsci.edu B1608",
+          "site.archive.stsci.edu 1608 10158"
+        ],
+        "query_limit": "Two bounded web calls; no repeated windows or pagination.",
+        "query_caveat": "These literal site-dot phrases were not valid site-colon restrictions. Only selected official pages support findings; search scope was broader than intended and cannot support coverage or absence claims.",
+        "search_hit_only_unchecked": [
+          {
+            "base_id_candidate": "0908.4277",
+            "description": "Search hit associated with Holtzman/SDSS2005 photometry title; exact title/authors/version and correspondence to AJ1362306 not verified; do not acquire as an admitted version without central identity check."
+          },
+          {
+            "base_id_candidate": "1401.3317",
+            "description": "Search hit associated with Sako SDSS-II data release; exact authors/version/product match unverified, not read or admitted."
+          }
+        ],
+        "failed_access": [],
+        "failed_access_interpretation": "Selected official pages were readable. Unfollowed archive links/unresolved asset routes are unexamined, not failed HTTP requests or evidence that assets are absent. Prior rejected arXiv HTML is preserved separately in original receipt.",
+        "stop_reason": "Five primary discovery pages and one hop reached; central exact selected-body snapshots requested. No open-ended source search."
+      },
+      "receipt_sha256": "05465cd4d65663a7aa3a672790c6f4cfa0fa80f0fb2fc20d9674a451853d5f33"
+    },
+    {
+      "mode": "selected_official_constants_and_archive_assets",
+      "receipt_sha256": "54b1cecf2a97b116fe44e378d6341c125da4951b2deb39a689cedc1045b111cd",
+      "source_scope": "Official CODATA2018 G row; official IAU2015 replacement route after the recorded static URL404. Selected source locators only; no new literature window."
+    },
+    {
+      "mode": "verified_pinned_source_cache_reuse",
+      "receipt_sha256": "0f66ae256753384a1c896be064d623c896360e42cac4f4bf9953430ac269c26f",
+      "checked_source_and_render_bindings": 104,
+      "scope": "Changing historical documentation contexts remain separate from source byte identity. No archive-coverage claim."
+    }
+  ],
+  "registered_papers": [
+    "arxiv:1801.08023v3",
+    "arxiv:1606.00439v2",
+    "arxiv:astro-ph/9506072v1",
+    "arxiv:1104.2933v3",
+    "arxiv:0910.2773v2",
+    "arxiv:2112.03863v2",
+    "arxiv:2112.03864v2"
+  ],
+  "new_versions": [],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [
+    "2026-10-03-next13-boss-rsd-source-claims",
+    "2026-10-03-next14-collisionless-source-claims",
+    "2026-10-03-sdss-b1608-targeted-source-claims-v1",
+    "review-thermal-constants-late-tail-20261003-v1"
+  ],
+  "idea_ids": [],
+  "design_ids": [],
+  "prospect_ids": [],
+  "edge_ids": [],
+  "source_contract_ids": [
+    "next13-boss-dr12-cmass-pre-rec-p0-p2-b0-conditioned-v1",
+    "next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v2",
+    "sdss-detector-b1608-asset-source-contract-v1",
+    "thermal-constants-late-tail-source-contract-v1"
+  ],
+  "source_serialization_ids": [
+    "thermal-opacity-density-constants-si9-iau2015-codata2018-2022-v1"
+  ],
+  "public_projection_amendments": [
+    {
+      "role": "NEXT13_NEXT14_exact_public_projection",
+      "sha256": "5ec09fd1d72c76d703ea03900e10bf39009503eb3a49d70253745de1f324793f"
+    },
+    {
+      "role": "NEXT10_NEXT18_exact_contract_scoped_navigation_projection",
+      "sha256": "702cd20f8ce6e1053b963c5da8eddbc89dbb055213b06cc8d927cdaaab9b4f51"
+    },
+    {
+      "role": "NEXT12_NEXT16_exact_public_projection",
+      "sha256": "f567316ac5fa6961f492a313c8269085fa0462274521c676276691e517064586"
+    }
+  ],
+  "source_handoffs": [
+    {
+      "scope_id": "NEXT-17",
+      "source_candidate_sha256": "bf6828e5eaac4e06cccbe1b653bb5f9a240316754513da2f253a4250d65aff5f",
+      "source_acceptance_sha256": "69e681d106d830beceb2475170f0d44411ccedff5de011dcbaf125b23d864503",
+      "packet_sha256": "bb9e66f9b6874b0a5df2dfafc9542f194b8f02b63e4c816932d1f73828d6ed68",
+      "manifest_sha256": "5c8f8886b78cf9750ce6b829cb011f04a062fcc698daa2a5552a43ba288c47da",
+      "coordinator_rehash_sha256": "98b4668413f8addb5d3713395db2a91d7b1aae80f3c4cf13899269d1256bffec",
+      "scope": "Synthetic source/algebra and unchanged proposed budgets/caps only, checked against 17 pinned SDK source members at6f869532c1951ed1afd9f2506b5d05c6cfd03c82. No experiment, numerical/native acceptance or measured population law. Identity residuals have zero coherent sensitivity; individual selected masses/recovery entries generally do not. This synthetic source handoff has no invented literature-paper association.",
+      "consumer_admission": "Reproducible externally reported exact source-only admission507ff25fd90a40ee3fe0ea44bb582269c42aebcf800de7e796bf58856f6c90a8; numerical/protocol gates remain separate."
+    }
+  ],
+  "acquisition_failures": [
+    {
+      "url": "https://www.iau.org/static/resolutions/IAU2015_English.pdf",
+      "status": 404,
+      "disposition": "Original failed route retained; official current index supplies a separately receipted replacement, not source rejection."
+    }
+  ],
+  "pending": [
+    {
+      "scope_id": "NEXT-04",
+      "stage": "source",
+      "reason": "Physical44/full author dictionary/generator/four joins/counts/reduction/calibration remain unresolved."
+    },
+    {
+      "scope_id": "NEXT-05",
+      "stage": "consumer_and_physical_source",
+      "reason": "Distinct frozen-product conditional diagnostic only; physical refit/sign and new numerical target acceptance remain blocked. Reproducible reported a separate full-target v4 conditioning-budget refusal (receipt7822fbbb20e3bbe1aeb9fa6b60d299a9f535b007f149fcaab2a02993da6dc07a); this source wave did not reproduce it or change tolerances."
+    },
+    {
+      "scope_id": "NEXT-08",
+      "stage": "source",
+      "reason": "105/102 and machine alias/passband/probability-law bridge unresolved."
+    },
+    {
+      "scope_id": "NEXT-09",
+      "stage": "source",
+      "reason": "Complete MODEL000 decoding/support/units/color-law/error map and physical optical likelihood remain unresolved."
+    },
+    {
+      "scope_id": "NEXT-10",
+      "stage": "physical_source_and_consumer",
+      "reason": "Selected SDSS release/format metadata checked. No CID/epoch-to-raw-exposure/reduction join, calibrated arrival/QE/gain/extraction/selection law or covariance is qualified."
+    },
+    {
+      "scope_id": "NEXT-14",
+      "stage": "consumer_stability_and_numerical",
+      "reason": "Frozen39cf conditional source algebra remains accepted; native and numerical gates are open. Projected zero-velocity start differs from regular growing mode. Root reported instability in the earlier raw trace peer. A separate root v3 centered-angular/constant-kappa method3fd9154dc4fab24c75fb5f95a8991e855021f8b41a7890e044097b56d5d6598c and requestdddec336b4e25d4f7a722e1b3b3fdd9f5c4f416e5deb4c03525618b24b871883 have externally reported conditional derived-method admission d84b2246bce75d0a4bec8d775695eb5fa9d596320f55d7b3f32474c6ec981d3b; exact independent Prospector source checking is pending. No numerical, SDK or full-physics promotion."
+    },
+    {
+      "scope_id": "NEXT-18",
+      "stage": "physical_source_and_joint_likelihood",
+      "reason": "Correct HST GO-10158 metadata identified, first four of 30 dataset rows checked; older WFPC2 product remains distinct. Raw pixels, author reductions/PSF, delays/spectra/environment, timing/rights and joint covariance remain unqualified."
+    },
+    {
+      "scope_id": "NEXT-13",
+      "stage": "source_assets_and_consumer",
+      "reason": "Selected BOSS DR12 CMASS pre-reconstruction P0/P2/B0 source contract checked. Printed likelihood half-factor/AP normalization and triangle conventions remain explicit; actual estimator arrays/window/full covariance/prior/ordinary sigma8 compatibility remain unresolved."
+    },
+    {
+      "scope_id": "NEXT-12",
+      "stage": "chosen_inputs_and_consumer",
+      "reason": "Selected constants and mass conventions source-checked. Joint uncertainty/covariance, underlying isotope evaluation and consistent native chosen-input qualification remain open."
+    },
+    {
+      "scope_id": "NEXT-16",
+      "stage": "physical_late_input",
+      "reason": "Today opacity/visibility need a qualified matching late-electron history or deterministic depth enclosure; actual L/U remain null. Drag requires a distinct weighted tail."
+    },
+    {
+      "scope_id": "NEXT-17",
+      "stage": "consumer_protocol_and_execution",
+      "reason": "Exact synthetic v2 source/algebra and proposed unchanged caps accepted. Parent protocol, executable identity, positivity/admission, raw certainty-law agreement and numerical acceptance remain separate; no measured population/selection qualification."
+    }
+  ],
+  "limits": [
+    "Four targeted canonical source reviews and one separate synthetic source/code-law handoff; zero new versions, Luna/full readings, full-paper reviews, ideas, graph edges, prospects or experiments. Existing exact Sol workers reused; no new launches, exposed xhigh effort retained, backend identity null.",
+    "Public records contain short original scientific notes, source links/hashes and bounded coverage. Raw PDFs/HTML/arrays/worker transcripts remain ignored inside Prospector; rights gaps retained.",
+    "Conditional algebra, fitted summaries, reported compilations, fixed engine inputs, metadata and measurements remain distinct. Unknown covariance remains unknown; no CMB, ordinary sigma8, native numerical or physical likelihood qualification.",
+    "Independent PR review, consumer acceptance, numerical acceptance and exact-main CI are separate gates. Old master/atomic/design pins and unrelated full-reading queues/alternative prospects are preserved.",
+    "Scoped source snapshots and limited metadata leads do not prove complete archive coverage or source absence. No future schedule or numerical experiment is authorized."
+  ]
+}

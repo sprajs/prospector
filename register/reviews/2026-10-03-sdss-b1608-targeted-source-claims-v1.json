@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-sdss-b1608-targeted-source-claims-v1",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "agent_id": "/root/observation_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "agent_id": "/root/observation_source_audit",
+    "runtime_session_id": "01a0fec1-bc32-7423-8594-b5a5fe128456",
+    "turn_id": "01a0ffb2-ee27-7932-933d-1551c657555d",
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "evidence_kind": "runtime_turn_context",
+    "companion_sha256": "c7a62b4466de2bf7a90d019d93f13ede3f4ea2ea409ad3092e99f279b33777b7",
+    "actual_backend_identity": null
+  },
+  "reviewed_utc": "2026-10-03T02:59:58Z",
+  "packet_sha256": "bb0af2c717bb5b4f814efd111b80d284059c796d4c6bbbae86057b3e352bb0b2",
+  "supporting_packets": [
+    {"role": "unchanged accepted source-contract proposal", "sha256": "ad779cddb703eff9edc04fafa8718f2cc3f7e3cebdd95d3e692a2b80c2f6edab"},
+    {"role": "central selected-source freeze", "sha256": "6df146c1dbc9cebf0bbfbcd938b6805ad200aced836045dcf9f6224323c451d8"},
+    {"role": "central selected-source acquisition receipt", "sha256": "c6040b4d826d43b59e1828bfbb6360fe04a0dfbd99c357d7c501e9732f6855a7"},
+    {"role": "original source-review runtime confirmation", "sha256": "2981f76eabd36213cf1ba7153d0dceb85a5f40db2a8a52e62b245ba44f53f002"},
+    {"role": "preserved v1 canonical review projection", "sha256": "6cbc25f0b5af935936887bcf8036ae8638512c05770cf041845f9ce8d8473448"},
+    {"role": "preserved v1 exact-byte acceptance", "sha256": "84d469753d89f996ac9fcd3c7b484705643eb79da205076e46a678c341d41aa9"}
+  ],
+  "reviewed_papers": ["arxiv:0910.2773v2"],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:0910.2773v2",
+      "source_hashes": {"pdf": "49713641ce2c8c82994f6365b112dc349b1388b048819f712ab565a4043feeff", "extracted_text": "b66de6042d23830b383f5a1f87625b073295b487bed81815277f7011b1e63c53"},
+      "coverage": {
+        "main_text": "Selected original identity and data-description claims only, inherited from the immutable source packet; this amendment adds no reading campaign.",
+        "checked_locators": [
+          "p1 title, eight authors, v2 watermark and GO10158 footnote; aid lines1-67",
+          "Sec3.1 named radio-delay, ACS and stellar-kinematic datasets; aid385-412",
+          "Original p8 Sec4.1 and Figure1: F606W/F814W, representative PSF/dust/lens-light reductions and modeled ring",
+          "Sec5.1 Keck1 LRIS observation/extraction description; aid775-809",
+          "Selected Sec5.2 template/rest-wavelength/uncertainty prose; aid809-826 and874-886",
+          "Sec6.2 first number-count/environment paragraphs and footnote15; aid956-987",
+          "Selected Fassnacht1999/2002/2009 and Suyu2009 bibliography entries; aid1634-1652 and1676-1680"
+        ],
+        "unread": "Unselected main text, full equation/table qualification, complete appendices and remaining bibliography; PaperI original source; actual ACS pixels and product headers, PSF/dust/masks/potential reductions, original radio light curves and delay covariance, LRIS spectra/templates/aperture likelihood, environment catalogs and simulated sightline assets.",
+        "figures": {"1": "Retained original p8 render visually inspected in source audit; presentation/caption only, not original detector pixels.", "2": "p12 caption only; spectrum image not visually inspected.", "3-8": "Not visually inspected."}
+      }
+    }
+  ],
+  "source_contract_associations": [
+    {
+      "contract_id": "sdss-detector-b1608-asset-source-contract-v1",
+      "paper_ids": ["arxiv:2112.03863v2", "arxiv:2112.03864v2"],
+      "source_asset_ids": ["JLA2014_SDSS_DS17.README", "SDSS_allCandidates+BOSS_PHOT.FITS.gz", "kcor_SDSS.input"],
+      "reason": "Existing Pantheon+ source-paper navigation for this exact contract's c447 released SDSS product and reduction/calibration documentation; the listed assets have the same reviewed URL/hash in this review and contract. Only their source roles are checked here. Scolnic/Brout paper content is not reviewed; the association grants no idea, design, prospect, reference or full-paper acceptance."
+    }
+  ],
+  "reviewed_source_assets": [
+    {"id": "sdss-dr17-supernova-entry", "url": "https://www.sdss4.org/dr17/data_access/supernovae/", "sha256": "14800c48c8d23384dbedf70f3cf9dd8fde50deb152f8e21cffd5aafb527a09b7", "role": "official historical-data route metadata", "coverage": "Title/main HTML159-164 only; linked images/catalogs/coadds/lightcurves unexamined.", "licence": null, "licence_null_reason": "Source-specific rights unexamined."},
+    {"id": "sdss-drsn-release-entry", "url": "https://classic.sdss.org/drsn/DRSN_data_release.php", "sha256": "cd117897c8b87ea1a7e8eba58f369f2dfffb8927b10038cef86f8430b5c80125", "role": "official SDSS-II release and quality documentation", "coverage": "Title/main content14-131; linked runlist/plots/catalogs/terms unexamined.", "licence": null, "licence_null_reason": "Credit/noncommercial acknowledgements link is not a checked complete licence."},
+    {"id": "sdss-fpc-format", "url": "https://classic.sdss.org/dr7/dm/flatFiles/fpC.php", "sha256": "75e865c133a82b567bd212a52270a3fe207ae22e8b43a921773b6a577a38108b", "role": "version-specific corrected-frame format/example", "coverage": "HTML3-152 and obsolete-template warning155-159; actual2005-2007 image/header and tsField file unexamined.", "licence": null, "licence_null_reason": "No source-specific licence checked."},
+    {"id": "SDSS_allCandidates+BOSS_PHOT.FITS.gz", "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/1_DATA/photometry/JLA2014_SDSS_DS17/SDSS_allCandidates%2BBOSS_PHOT.FITS.gz", "sha256": "0b143978c068c0b93b78eb582701bf77286b1930cfa93ce436ef30b5722a5a05", "role": "released_reduced_product", "coverage": "Original compressed byte identity and retained header transcription; no new decode or array reading.", "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b", "licence": null, "licence_null_reason": "Release redistribution rights unverified."},
+    {"id": "JLA2014_SDSS_DS17.README", "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/1_DATA/photometry/JLA2014_SDSS_DS17/JLA2014_SDSS_DS17.README", "sha256": "653e5ca44de6f29265923bf24b1ade3d9ec7b6586a7c49f278163ea59b2b426a", "role": "pinned reduction/error-treatment description", "coverage": "Lines1-108 and191-212 only; original Holtz products/code and remaining warnings unexamined.", "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b", "licence": null, "licence_null_reason": "Release redistribution rights unverified."},
+    {"id": "kcor_SDSS.input", "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/SNANA_kcor/kcor_SDSS.input", "sha256": "b27008fc0be2dd94c21bafc38bee49d08cea38d9ff157777b14376705a2b93c1", "role": "pinned calibration configuration", "coverage": "All41 literal configuration lines without execution; referenced filter/SED bodies and reader implementation unexamined.", "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b", "licence": null, "licence_null_reason": "Release redistribution rights unverified."},
+    {"id": "b1608-0910.2773v2-original", "url": "https://arxiv.org/pdf/0910.2773v2", "sha256": "49713641ce2c8c82994f6365b112dc349b1388b048819f712ab565a4043feeff", "role": "pinned original paper, selected claims", "coverage": "Exact selected locators and unread scope are in reviewed_paper_details; no full-paper acceptance.", "licence": null, "licence_null_reason": "Original saved licence metadata unresolved."},
+    {"id": "b1608-go10158-proposal", "url": "https://archive.stsci.edu/proposal_search.php?id=10158&mission=hst", "sha256": "42b8b56a184e3f6e32a8c0a76b767d6b53ed3d2e88ae05f4439c29c1d7c32620", "role": "matched official proposal/selected dataset metadata", "coverage": "Title/PI/type/status173-176; declared30row count/proprietary instruction203-221; headers241-258; first4 rows260-335; header labels833-850 and copyright link885. Remaining26 rows and linked product/rights pages unexamined.", "licence": null, "licence_null_reason": "Proprietary-marker instruction and copyright link do not establish pixel-product redistribution rights."},
+    {"id": "b1608-older-wfpc2-6555", "url": "https://esdcdoi.esac.esa.int/doi/html/data/astronomy/hst/6555.html", "sha256": "00920c25c9b3de8a10c89e00ba579786a20fd10af110063f6e6ce1b910fbfd6a", "role": "distinct historical WFPC2 dataset metadata", "coverage": "Structured version/publisher/licence41-54 and displayed dataset65-138; archive query and actual products unexamined.", "licence": "CC BY-NC3.0IGO as printed for ESA-hosted data", "licence_scope": "No rights inferred for STScI or author-reduction products."},
+    {"id": "h0licow-pinned-readme", "url": "https://raw.githubusercontent.com/shsuyu/H0LiCOW-public/57cf97357e16a94ba0065472bd4185cfbc604aa3/README.md", "sha256": "e4804af66b108488ad8b56459119d652fb43992aec135c9f121b310c64420b5c", "role": "pinned inference-product description", "coverage": "Complete short README1-17 only; chains/notebooks/linked papers and inference implementations unexamined.", "pinned_revision": "57cf97357e16a94ba0065472bd4185cfbc604aa3", "provider_git_blob_sha1": "7c7098ee4a6a5fdab0256c0b4de01d055a9a27e6", "licence": null, "licence_null_reason": "Source-citation instructions are not a verified redistribution licence."},
+    {"id": "b1608-original-metadata-atom", "url": "https://export.arxiv.org/api/query?id_list=astro-ph%2F9506072%2Castro-ph%2F9909275%2Castro-ph%2F9603033%2Castro-ph%2F9709112%2C1104.2933%2Castro-ph%2F9911177%2C1907.12875%2C2112.01471%2C2110.03487%2C1606.00439%2C0910.2773%2Castro-ph%2F0701828%2C1801.08023&max_results=13", "sha256": "6e164a90b318339054952d52ef87039f99e27702268159e0d972efa7e2c6c4cd", "role": "saved original known-ID metadata, selected identity only", "coverage": "B1608 entry617-655 title/eightauthors/v2/time/category/DOI only; no new feed fetch or paper version.", "licence": null, "licence_null_reason": "Selected entry provides no verified licence."}
+  ],
+  "accepted_records": {"contract_ids": ["sdss-detector-b1608-asset-source-contract-v1"]},
+  "checked_claims": [
+    {"id": "SDSS-versioned-detector-reduction-route", "status": "accepted_targeted_source_claim", "claim": "SDSS-II documentation distinguishes corrected fpC, uncalibrated fpObjc and calibrated tsObj. fpC DR1/EDR sky handling differs; DR1 example units/TAI/exposure/row clock and later aa/kk calibration are version-specific. The pinned reduced release instead retains blank TUNIT values and absent EXPTIME, with SMPv8+BOSS/Holtz reduction/error ancestry and literal kcor passband/SED references.", "evidence": [{"sha256": "cd117897c8b87ea1a7e8eba58f369f2dfffb8927b10038cef86f8430b5c80125", "locator": "HTML40-61,94-131"}, {"sha256": "75e865c133a82b567bd212a52270a3fe207ae22e8b43a921773b6a577a38108b", "locator": "HTML33-72,82-143"}, {"sha256": "653e5ca44de6f29265923bf24b1ade3d9ec7b6586a7c49f278163ea59b2b426a", "locator": "lines1-108,191-212"}, {"sha256": "b27008fc0be2dd94c21bafc38bee49d08cea38d9ff157777b14376705a2b93c1", "locator": "lines1-41"}], "limit": "No PHOT event/epoch→native exposure join, clock/units transformation, raw electron/gain/noise/extraction/censoring law, complete selection or covariance established. No HST replacement for the named SDSS bridge."},
+    {"id": "B1608-actual-GO10158-route", "status": "accepted_targeted_source_claim", "claim": "Selected Suyu source names ACS GO10158, PI Fassnacht, F606W/F814W. Official returned body matches the proposal/title/PI and first4 of30 declared archive rows: J93501010/20/30/40 for B1608+656, ACS/WFC and those filters.", "evidence": [{"sha256": "49713641ce2c8c82994f6365b112dc349b1388b048819f712ab565a4043feeff", "locator": "p1 program footnote; Sec3.1; p8 Sec4.1/Fig1"}, {"sha256": "42b8b56a184e3f6e32a8c0a76b767d6b53ed3d2e88ae05f4439c29c1d7c32620", "locator": "HTML173-176,203-221,241-335"}], "limit": "Dataset metadata is not raw pixels or author PSF/dust/mask/potential products. Remaining26 rows, product versions, units/clock standard, covariance and full rights remain unverified."},
+    {"id": "B1608-observation-reduction-prior-roles", "status": "accepted_targeted_source_claim", "claim": "Relative radio delays have unitdays; modeled F814W ring depends on PSF/dust/lens-light choices. Source-described Keck1 LRIS exposures/extraction and rest-frame template fitting yield aperture stellar dispersion with statistical plus template-mismatch uncertainty. OBS external convergence conditions simulations on selected galaxy counts, including an approximate simulated F814W magnitude from i/z.", "evidence": [{"sha256": "49713641ce2c8c82994f6365b112dc349b1388b048819f712ab565a4043feeff", "locator": "p8/Sec4.1; selected Sec5.1-5.2; p12 Fig2 caption only; Sec6.2/footnote15"}], "limit": "No raw monitoring/Keck/catalog/simulation arrays or joint likelihood/covariance verified. Stellar dispersion is not an SIS parameter; simulation-conditioned convergence prior is not direct convergence measurement. Unknown cross-covariances are not zero."},
+    {"id": "B1608-historical-product-separation", "status": "accepted_targeted_source_claim", "claim": "ESA6555 version1.0 is an older WFPC2 dataset, distinct from GO10158 ACS. Pinned H0LiCOW README57cf973 describes B1608 Suyu2010/Jee2019 analytical distance fits as inference products.", "evidence": [{"sha256": "00920c25c9b3de8a10c89e00ba579786a20fd10af110063f6e6ce1b910fbfd6a", "locator": "HTML65-138"}, {"sha256": "e4804af66b108488ad8b56459119d652fb43992aec135c9f121b310c64420b5c", "locator": "README1-7,15-17"}], "limit": "Historical WFPC2 does not substitute for deep ACS or SDSS. Distance fits do not replace original pixels, delay time series, spectral likelihood or environment inputs; provider identity/source citations are not ownership or licence proof."}
+  ],
+  "corrections": [
+    {"kind": "printed_source_variant", "display_summary": "The captured original prints a November26,2024 draft header and January28,2010 arXiv v2 watermark. Preserve both literally; the discrepancy is unresolved and no new version is inferred."},
+    {"kind": "metadata_identity_precision", "display_summary": "Returned original DRSN title is SDSS-II Supernova Survey Data Release, correcting the shorter phase1 descriptive label. Older ESA6555 WFPC2 remains a distinct historical source and fails the later deep-ACS identity match."}
+  ],
+  "limitations": [
+    "Accepted records contain only the exact source-contract ID. No idea, design, prospect, numerical reference or full-paper stage is accepted or changed.",
+    "Suyu coverage is limited to named selected locators; Scolnic/Brout are existing release associations, not newly audited papers. PaperI, remaining Suyu content and unlisted figures remain unread.",
+    "Only4 of30 GO10158 metadata rows were checked. Raw/calibrated/drizzled product versions, pixel units/clock, original PSF/reduction files and full redistribution rights remain unverified.",
+    "The SDSS actual event/exposure/version join, physical units and clock bridge, readout/extraction/calibration/censoring law, passband bodies and full selection information remain unresolved. Example exposure/TAI values cannot be transplanted into PHOT.",
+    "Pixel/extraction/calibration, delay/kinematic/environment and cross-probe covariances remain unknown. No Gaussian/Poisson/native detector or optical-state law is inferred from gain/read-noise, uncertainty bars or fitted offset covariance.",
+    "No complete physical history, complete lens likelihood, numerical qualification or native implementation is accepted; unacquired assets are not demonstrated absent."
+  ],
+  "accounting": {"new_versions": 0, "Luna_reads": 0, "full_reads": 0, "paper_promotions": 0, "new_source_acquisitions_or_campaign_reads_in_amendment": 0, "array_extractions_or_jobs": 0, "public_edits_by_worker": 0},
+  "conclusion": "Accept the unchanged exact source-contract bytes for these bounded original-source and product-role claims only. A separate immutable amendment binds this proposed canonical review's bytes; coordinator integration and final public-diff/CI review remain separate gates."
+}

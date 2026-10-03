@@ -51,6 +51,30 @@ class PublicChronology(unittest.TestCase):
         for private in ['.work/', 'SECRET_TEST_VALUE']:
             self.assertNotIn(private, json.dumps(public))
 
+    def test_transfer_export_preserves_limits_without_packet_bookkeeping(self):
+        source = json.loads((site_data.ROOT / 'register/contracts/next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v2.json').read_text())
+        public = site_data.public_contract(source)
+        limits = ' '.join(public['limitations'])
+        self.assertIn('Shared MB equations/thermal/mode ancestry', limits)
+        self.assertIn('growing Hamiltonian residual', limits)
+        self.assertIn('differs from regular growing', limits)
+        for private in ['39cf0ba', 'ccde', 'de5', 'private proposal', 'public slug', 'Root externally']:
+            self.assertNotIn(private, json.dumps(public))
+
+    def test_navigation_projects_bound_scalars_without_duplicates(self):
+        from validate_register import records, strict_load
+        data = site_data.website_data(records('register/papers', 'paper_id'),
+                    records('register/ideas', 'id'), records('register/topics', 'id'),
+                    strict_load(site_data.ROOT / 'register/graph.json'))
+        prospect = next(p for p in data['prospects'] if p['id'] == 'lcdm-baseline-reference-audit')
+        scalars = [s for record in prospect['scalar_sources'] for s in record['scalars']]
+        self.assertEqual(sum(s['id'] == 'sigma_T_CODATA2022' for s in scalars), 1)
+        hydrogen = next(s for s in scalars if s['id'] == 'm_H1_Pitrou_reported')
+        self.assertEqual(hydrogen['value_class'], 'reported_compilation_value')
+        self.assertIsNone(hydrogen['uncertainty']['decimal_value'])
+        unrelated = next(p for p in data['prospects'] if p['id'] == 'ede-fixed-endpoint-ruler')
+        self.assertNotIn('sigma_T_CODATA2022', json.dumps(unrelated['scalar_sources']))
+
     def test_scalar_export_preserves_uncertainty_and_omits_private_fields(self):
         path = site_data.ROOT / 'register/source-data/hhe-atomic-central-asd512-codata2022-v1.json'
         source = json.loads(path.read_text())

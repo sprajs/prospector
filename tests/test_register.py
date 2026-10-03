@@ -92,6 +92,35 @@ class RegisterIntegrity(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'source scope outside contract papers'):
             self.validate()
 
+    def test_navigation_association_does_not_claim_paper_review(self):
+        review = json.loads((self.root / 'register/reviews/2026-10-03-sdss-b1608-targeted-source-claims-v1.json').read_text())
+        self.assertEqual(review['reviewed_papers'], ['arxiv:0910.2773v2'])
+        self.validate()
+
+    def test_navigation_requires_explicit_contract_association(self):
+        self.mutate('register/reviews/2026-10-03-sdss-b1608-targeted-source-claims-v1.json',
+                    lambda r: r.pop('source_contract_associations'))
+        with self.assertRaisesRegex(ValueError, 'source contract sources not reviewed'):
+            self.validate()
+
+    def test_navigation_association_requires_matching_source_evidence(self):
+        self.mutate('register/reviews/2026-10-03-sdss-b1608-targeted-source-claims-v1.json',
+                    lambda r: r['reviewed_source_assets'][3].update(sha256='0' * 64))
+        with self.assertRaisesRegex(ValueError, 'source contract association asset not reviewed'):
+            self.validate()
+
+    def test_navigation_association_cannot_extend_to_another_contract(self):
+        self.mutate('register/reviews/2026-10-03-sdss-b1608-targeted-source-claims-v1.json',
+                    lambda r: r['source_contract_associations'][0].update(contract_id='standard-model-source-gates-v1'))
+        with self.assertRaisesRegex(ValueError, 'source contract association lacks targeted acceptance'):
+            self.validate()
+
+    def test_navigation_association_must_match_unreviewed_contract_ids(self):
+        self.mutate('register/reviews/2026-10-03-sdss-b1608-targeted-source-claims-v1.json',
+                    lambda r: r['source_contract_associations'][0]['paper_ids'].pop())
+        with self.assertRaisesRegex(ValueError, 'source contract navigation does not match unreviewed associations'):
+            self.validate()
+
     def test_changed_contract_invalidates_candidate_binding(self):
         self.mutate('register/contracts/standard-model-source-gates-v1.json',
                     lambda r: r['limitations'].append('Changed source scope'))
