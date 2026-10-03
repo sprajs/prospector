@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "contract_id": "next13-boss-dr12-historical-method-mock-ancestry-source-contract-v1",
+  "title": "BOSS DR12 historical estimator and mock-population ancestry",
+  "review_id": "2026-10-03-next13-boss-historical-source-claims",
+  "paper_ids": ["arxiv:1606.00439v2"],
+  "scopes": [
+    {
+      "scope_id": "NEXT-13",
+      "title": "Pre-reconstruction method, population roles and historical code identity",
+      "paper_ids": ["arxiv:1606.00439v2"],
+      "checked_claim": "Original Sec 2–3 describes weighted galaxy/random catalogues, distinct power/bispectrum normalizers, a closed-triangle bispectrum monopole estimator, varying-LOS power multipoles, FFT/bin choices and area-weighted caps. The analysis uses a fixed fiducial cosmology distinct from mock-generating cosmologies. Its 2048 MD-Patchy realizations support covariance/model checks; 1000 QPM realizations test fibre-collision effects; 20 periodic halo catalogues test models without survey selection. Sec 5.3–6.2 locates AP transformations, an approximate bispectrum window, P0/P2/B0 auto/cross covariance and a conditioned Gaussian-fit assumption. Sec 8.4/Appendix C describes dependent compressed RSD/BAO products. The current author Codes page retrospectively associates RUSTICO with the 2016 paper; that link does not identify the actual historical code version.",
+      "unresolved": "Exact contemporaneous code/parameter/build/output provenance, historical randoms/masks/windows, discrete bin/triangle ownership, shot-noise/Fourier normalization and complete likelihood/covariance assets are unverified. Current RUSTICO/BRASS snapshots and released filename suffixes do not establish historical 2016/2017 implementation, paired realizations or reconstruction identity. A verified adapter and matching physical, fiducial, selection, normalization and covariance conventions remain required."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "boss1606-00439v2-pdf",
+      "url": "https://arxiv.org/pdf/1606.00439v2",
+      "sha256": "7026e8dd7e51a07adde8940c380dded16391ad90a49c6ba321393d0fde1fe823",
+      "role": "pdf",
+      "conditioning": "Pinned 26 Oct 2016 v2 with 27 Oct 2016 preprint header; selected original identity/method/mock/AP/window/covariance passages checked. Journal-version equivalence is unresolved; this is selected-source coverage.",
+      "licence": null,
+      "licence_reason": "Source-specific redistribution grant is not established; raw source remains local."
+    },
+    {
+      "id": "boss1606-00439v2-html",
+      "url": "https://arxiv.org/html/1606.00439v2",
+      "sha256": "d3538b300d0b0490dee538b4c5327f694b78bec515e9ed8c820f96466baf560d",
+      "role": "html",
+      "conditioning": "Pinned original source anchors support selected claims; important estimator/AP/window equations checked against original-PDF renders. Unselected sections, references and arrays remain unexamined.",
+      "licence": null,
+      "licence_reason": "Public access does not establish source redistribution permission."
+    },
+    {
+      "id": "boss-author-codes-navigation-snapshot",
+      "url": "https://www.ub.edu/bispectrum/page9.html",
+      "sha256": "f60a8e33ab047494f77ff1e436a2b7661be94e96dc5142a432eb5c25e1aaeec5",
+      "role": "author_navigation_snapshot",
+      "conditioning": "Selected RUSTICO/BRASS paragraphs and literal links only. RUSTICO lists a paper under 2016 and links Rustico_old documentation/current code; selected BRASS usage links name 2020. This is retrospective navigation; contemporaneous implementation/version identity remains unverified.",
+      "licence": null,
+      "licence_reason": "Public author-page access does not establish code/data redistribution rights."
+    }
+  ],
+  "limitations": [
+    "Historical code commit, build/configuration and actual producer/output ancestry remain unknown. Current 2023/2025 code, a repository named Rustico_old or a retrospective Papers where used link cannot fill that gap. The linked old documentation and journal bodies were unavailable; cached arXiv v2 identity is retained.",
+    "The paper's 2048 MD-Patchy, 1000 QPM and 20 selection-free halo populations have different roles and cosmologies. Published counts do not identify released files, valid paired IDs, reconstruction status or an independent mock population.",
+    "The fixed analysis fiducial model differs from mock-generating cosmologies; AP and fixed spectral-shape/nuisance conditioning must be preserved. No full Planck-species model or native engine defaults are inferred.",
+    "Binned P0/P2/B0 covariance is distinct from the later compressed 8x8 RSD/BAO covariance. The latter combines mock correlations with data-fit variance estimates. Shared galaxies/mocks/BAO geometry imply dependence; unknown cross-covariance remains unknown.",
+    "The bispectrum window is an approximation that neglects window action on the shape factor; source tests and low-k exclusions are conditional. Actual W2/W3, random/mask support, positive normalization, shot-noise and historical output conventions remain unverified.",
+    "Printed grid/boundary, AP k/q/triangle-closure/angular-normalization and compressed-likelihood/diagonal terminology issues remain preserved. No source repair, current-code correction or historical result reproduction is accepted.",
+    "Source fσ8 is a fitted summary. The checked σ8(z)=D(z)σ80 relation leaves the complete 8 h^-1 Mpc top-hat/full-k/matter-species definition unresolved and does not admit a finite-band reduced-sector variance under that name.",
+    "All current-to-released output adapters, full windows/auto-cross covariance, likelihood/prior/selection/calibration ownership and consumer/numerical/physical gates remain open. Public availability and unknown licences do not grant raw redistribution."
+  ],
+  "qualification": {"numerically_executed": false, "scientifically_qualified": false}
+}

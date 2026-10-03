@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-03-all19-source-wave7",
+  "status": "completed",
+  "started_utc": "2026-10-03T09:33:23.436703+00:00",
+  "completed_utc": "2026-10-03T10:50:01.413757+00:00",
+  "lane": "measurement-lineage",
+  "work_mode": "explicit_scoped_source_audit",
+  "queries": [],
+  "registered_papers": [
+    "arxiv:2112.04510v3",
+    "arxiv:1606.00439v2",
+    "arxiv:0910.2773v2"
+  ],
+  "new_versions": [],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [
+    "2026-10-03-next04-primary-shoes-conditioning-source-claims",
+    "2026-10-03-next13-boss-historical-source-claims",
+    "2026-10-03-b1608-author-observation-source-claims"
+  ],
+  "idea_ids": [],
+  "design_ids": [],
+  "prospect_ids": [
+    "lcdm-baseline-reference-audit"
+  ],
+  "edge_ids": [],
+  "source_contract_ids": [
+    "next04-primary-shoes-compact-conditioning-source-v1",
+    "next13-boss-dr12-historical-method-mock-ancestry-source-contract-v1",
+    "b1608-author-observation-conditioning-source-contract-v1"
+  ],
+  "source_leads": [
+    {
+      "arxiv_id": "2203.06681",
+      "versioned_id": "2203.06681v1",
+      "title": "Absolute Calibration of Cepheid Period-Luminosity Relations in NGC 4258",
+      "admission": "selected_source_asset_unadmitted_full_read_deferred",
+      "reason": "Producer bibliography lead; selected optical Cepheid-method passages only. No registered paper or full reading.",
+      "source_sha256": "d4d146b9d00c774fc819297465ec70dadded062516a954cc70e31240a650f7cf",
+      "authors": [
+        "Wenlong Yuan",
+        "Lucas M. Macri",
+        "Adam G. Riess",
+        "Thomas G. Brink",
+        "Stefano Casertano",
+        "Alexei V. Filippenko",
+        "Samantha L. Hoffmann",
+        "Caroline D. Huang",
+        "Dan Scolnic"
+      ],
+      "metadata_source_sha256": "7e6572a1df02c19f99ebe1a4ada4ad51f1b9df93a8787760abcb0c068a6a6fda"
+    },
+    {
+      "arxiv_id": "0909.4301",
+      "versioned_id": "0909.4301v1",
+      "admission": "selected_source_asset_unadmitted_full_read_deferred",
+      "reason": "Printed bibliography base ID does not prove cited version. Historical2009v1 selected exposure/catalogue/selection passages; latest2011v2 metadata retained separately without body reading.",
+      "source_sha256": "47ab01248116a91074dcb8eb8ebb9854a419612e2483735bc2c86054bbb5cf41"
+    },
+    {
+      "arxiv_id": "astro-ph/0208420",
+      "versioned_id": "astro-ph/0208420v1",
+      "admission": "selected_source_asset_unadmitted_full_read_deferred",
+      "reason": "Primary delay reference identity matched DOI/title/authors/year; selected Monte Carlo/error-interval methods only. Signed delay translation and empirical joint law remain unknown.",
+      "source_sha256": "1afd058be7e605705e88eff517888cc6c52a11abcd34c97e7443499eb9fe48b7"
+    }
+  ],
+  "pending": [
+    {
+      "scope_id": "NEXT-04",
+      "stage": "source",
+      "reason": "Selected Riess aperture/PSF same-image lineage, iterative metallicity covariance and Wesenheit conventions, plus Yuan optical NGC4258 methods, accepted only as located source claims. Original47 dictionary/generator, coordinate44 physical label/unit/fixed rationale/prior, compact constraints3207–3214, four failed physical joins2630/2744/2745/2754, nine Skara conflicts and joint selection/covariance remain unresolved. Prior printed variants and matrix/sign/count issues retained."
+    },
+    {
+      "scope_id": "NEXT-05",
+      "stage": "consumer_and_physical_source",
+      "reason": "Existing16c5 frozen-product source contract unchanged. Separate cached-source clarification accepts only explicitly supplied Lebesgue measure on unchanged original row3213 numerical coordinate, conditionally on separate model/normalization gates. Physical row unit/event/anchor and author normalized-density witness remain unknown. Exact sealed consumer experiment, current implementation and numerical/physical qualification are not accepted here. Reproducible's earlier separate full-target v4 conditioning-budget refusal (receipt7822fbbb20e3bbe1aeb9fa6b60d299a9f535b007f149fcaab2a02993da6dc07a) remains preserved; this source clarification does not reproduce it or change tolerances."
+    },
+    {
+      "scope_id": "NEXT-08",
+      "stage": "source",
+      "reason": "105/102 and machine alias/passband/probability-law bridge unresolved."
+    },
+    {
+      "scope_id": "NEXT-09",
+      "stage": "source",
+      "reason": "Complete MODEL000 decoding/support/units/color-law/error map and physical optical likelihood remain unresolved."
+    },
+    {
+      "scope_id": "NEXT-10",
+      "stage": "physical_source_and_consumer",
+      "reason": "Official run5566/rerun40 QA and calibration routes checked; representative camcol3/field11 is not SN6057 assignment. QA613 versus listed612 product count reconciliation unknown. Legacy/current unit labels and conditional frame error recipe preserved; actual pixels/PSF/masks/QE/gain/error distributions, native extraction/selection law and reduction equivalence remain unqualified."
+    },
+    {
+      "scope_id": "NEXT-14",
+      "stage": "consumer_stability_and_numerical",
+      "reason": "Separate FDv3 centered-angular/damped-residual source algebra and ideal photon/cold-baryon acoustic source derivations accepted only conditionally. All G01–G07 remain open. Original39cf/de5/0610 proposal, projected-versus-regular start and raw growing TRACE caveat remain. Actual background/derivative/conservation forcing and forward/work/storage effects are unqualified; old conformal helper lacks total-matter extension and self-baryon refusal. No installed/compiled/numerical/model-equivalence promotion."
+    },
+    {
+      "scope_id": "NEXT-18",
+      "stage": "physical_source_and_joint_likelihood",
+      "reason": "Selected author radio-delay Monte Carlo conditioning and non-Gaussian recovered distributions, Keck aperture/template fitting, imaging-conditioned slope prior, M5 substitution, four-exposure F814W count selection and OBS-versus-MS simulated priors accepted as source claims only. Raw radio/Keck/imaging/catalogue/simulation identities, products, empirical noise/joint covariance, author2010 reduction and current2026 equivalence remain unknown. Delay symbol order, source date/count/interval variants and earlier distinct native-header/trailer coverage retained."
+    },
+    {
+      "scope_id": "NEXT-13",
+      "stage": "source_assets_and_consumer",
+      "reason": "Selected original BOSS weights, normalization, FFT/bins/cap combination, analysis-versus-mock fiducials, 2048 MD-Patchy/1000 QPM/20 periodic-halo roles, AP/window approximations and raw-versus-compressed covariance ancestry accepted conditionally. Current2023/2025 code and named mock files do not establish historical2016/2017 implementation, pairing, reconstruction, actual W2/W3, full support/order, priors, joint covariance or ordinary full-k sigma8. All B01–B08 and prior printed-source issues remain open."
+    },
+    {
+      "scope_id": "NEXT-12",
+      "stage": "chosen_inputs_and_consumer",
+      "reason": "Selected constants and mass conventions source-checked. Joint uncertainty/covariance, underlying isotope evaluation and consistent native chosen-input qualification remain open."
+    },
+    {
+      "scope_id": "NEXT-16",
+      "stage": "physical_late_input",
+      "reason": "Today opacity/visibility need a qualified matching late-electron history or deterministic depth enclosure; actual L/U remain null. Drag requires a distinct weighted tail."
+    },
+    {
+      "scope_id": "NEXT-17",
+      "stage": "consumer_protocol_and_execution",
+      "reason": "Originalbf6828/69e681/fe26 unchanged. Separately sealed NEW weighted-Gram source algebra/reference/count choice conditionally compatible;58800 is contribution-plus-reconstruction accounting, not scalarops or measuredwork. Completecoupled v4 wire source blocked F1–F5; parent cap-unit admission, actualABI/capacity/arithmetic/support/refinement/runtime/implementation/numerical gates open. Separate v5 reported in preparation, unread/unaccepted here."
+    },
+    {
+      "scope_id": "NEXT-07",
+      "stage": "physical_source_and_consumer",
+      "reason": "Exact legacy run5566/rerun40 representative tsField primary header and row-clock/filter/pipeline metadata checked; no EXPTIME, full FITS digest or event camcol/field join. Legacy source5.04, DR7photo v5_4_28/export v6_0 and c447 SMPv8 remain distinct. Native MJD clock/exposure/operator bridge, actual calibration values, selection and covariance unresolved; HST cannot replace SDSS."
+    },
+    {
+      "scope_id": "NEXT-19",
+      "stage": "physical_history_and_primary_CMB",
+      "reason": "Intrinsic signed delta_gamma/4 per asymptotic unit zeta belongs only to the separate ideal acoustic model. MB99–101 are an approximate no-shear formal control, not a loaded physical history; opacity, visibility, diffusion, polarization, line-of-sight CMB and observed likelihood remain absent from this specification."
+    }
+  ],
+  "search_receipts": [
+    "register/searches/2026-10-03-wave7-fassnacht-delay-primary-title.json"
+  ],
+  "independent_source_reviews": [
+    {
+      "path": ".work/all19-source-wave7-20261003/workers/peer-shoes/acceptance-final-v1.json",
+      "sha256": "e338d3477a969e041b4f07fc469d329c28d9673fee13624072ccd0d788805dd9",
+      "scope": "Exact selected original-source claims only; complete final integration review is a separate gate."
+    },
+    {
+      "path": ".work/all19-source-wave7-20261003/workers/peer-boss/acceptance-final-v1.json",
+      "sha256": "28e0a05c21d4254f997aa28e9eb170fdcca8920ee67ad5966ff398b7aef30580",
+      "scope": "Exact selected original-source claims only; complete final integration review is a separate gate."
+    },
+    {
+      "path": ".work/all19-source-wave7-20261003/workers/peer-b1608/acceptance-final-v1.json",
+      "sha256": "718634d0569f0bf8e411cb3fa5d7cfdd90cbe54bc3ff3bf33482e9e7975a2b16",
+      "scope": "Exact selected original-source claims only; complete final integration review is a separate gate."
+    }
+  ],
+  "acquisition_failures": [
+    {
+      "route": "Historical author Codes URL",
+      "status": 404,
+      "disposition": "Cached pinned arXiv original used; historical code equivalence remains unknown."
+    },
+    {
+      "route": "Author-linked journal body",
+      "status": 403,
+      "disposition": "Changed lawful route; no journal/arXiv equivalence claimed."
+    },
+    {
+      "route": "Fassnacht DOI publisher redirect",
+      "status": 302,
+      "disposition": "Access-challenge Location not followed; matching pinned arXiv source used."
+    }
+  ],
+  "deferred_assets": [
+    "astro-ph/9907257v1 metadata hit remains unadmitted and unfollowed.",
+    "Original producer dictionaries/generators, historical code/configuration/windows, raw observation/catalogue/simulation bodies and joint likelihoods remain deferred."
+  ],
+  "corrections": [
+    "Coordinator render receipt v1 used incorrect dotted-ID paths; additive v2 binds actual eight successful90dpi outputs without rerendering. This is a receipt/path error, not a printed-source inconsistency.",
+    "Interim reader Riess Eq9 page22 corrected to original page21; retained as reader locator error.",
+    "BOSS public projection aliases and requested_reasoning token corrected additively in finalv3; scientific packet unchanged.",
+    "SH0ES finalv2 corrects title/author spacing only; contract and source claims unchanged.",
+    "Fassnacht delay HTML strict-title screen amended after Unicode mathematical H normalization and body/identity checking; original source and failed screen retained.",
+    "Coordinator provisional source-lead title corrected to exact verified Yuan metadata title before final integration freeze; six accepted author contract/review projections unchanged."
+  ],
+  "resource_receipt": {
+    "new_central_requests": 12,
+    "new_source_body_bytes": 817216,
+    "received_source_bodies": 8,
+    "one_hop_citation_leads": 5,
+    "new_pdf_text_aids": 0,
+    "selected_original_render_pages": 8,
+    "render_dpi": 90,
+    "compiler_jobs": 0,
+    "science_jobs": 0,
+    "full_scientific_arrays_or_pixels_read": 0,
+    "receipt": ".work/all19-source-wave7-20261003/receipts/documentary-lease-release-v1.json",
+    "receipt_sha256": "93343c174bf55a9459e829a9be6818b92cf968e4c5eec9c0eb06a5422520a8b3"
+  },
+  "limits": [
+    "Three bounded canonical targeted source contracts and three independent selected-source peer passes; zero new versions, Luna/full-paper reads, full-paper reviews, ideas, edges, design promotions or experiments.",
+    "Selected primary methods and fitted summaries retain their data/model conditioning; unknown event identities, units, native distributions and cross-covariance remain unknown.",
+    "Ordinary59-stage queue, discovery lanes and all prior canonical science JSON retained. Existing prospect paper-set navigation exposes the new source contracts without a physical relationship or prospect promotion.",
+    "Exact Sol/xhigh workers reused with runtime turn-context confirmation; backend identity remains null, ordinary Sol/high policy unchanged.",
+    "Raw sources, full text, metadata bodies, renders and complete worker packets stay ignored inside Prospector.",
+    "Source acceptance, consumer admission, independent final PR review, latest-head CI, exact-main CI and deployment are distinct gates. All19 remains open; no automatic execution or endless crawl."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "contract_id": "next04-primary-shoes-compact-conditioning-source-v1",
+  "title": "Primary SH0ES photometry and covariance conditioning",
+  "review_id": "2026-10-03-next04-primary-shoes-conditioning-source-claims",
+  "paper_ids": ["arxiv:2112.04510v3"],
+  "scopes": [{
+    "scope_id": "NEXT-04",
+    "title": "Primary reduction evidence and compact-input boundaries",
+    "paper_ids": ["arxiv:2112.04510v3"],
+    "checked_claim": "Riess v3 Appendix B.1 compares aperture and PSF photometry using the same images and fixed Cepheid positions, with a selected low-background subset and a PSF-derived aperture correction. Section3.5 Eq9 and Appendix C propagate mean-versus-PP04 abundance-scale differences through Z_W squared; the source requires iteration with the coefficient from the global fit. Appendix D defines the Wesenheit coordinate as dereddened and conditions its relative-distance use on intrinsic color and sample assumptions. The explicitly linked Yuan2203.06681v1 source supplies an NGC4258 optical image/photometry/calibration pipeline and selected-cut ancestry, and directs NIR results to Riess. These are primary source definitions and conditioning, not a complete released-row generator.",
+    "unresolved": "Producer original47-axis dictionary and serialization/reduction program; original zero-based slot44 physical meaning, unit, fixed-coordinate rationale and physical-prior interpretation; exact compact constraints3207–3214 ancestry and units; four failed physical joins2630/2744/2745/2754; literal source conflicts and aliases; physical joint covariance/selection/extraction law; numerical, observational and inference qualification."
+  }],
+  "source_assets": [
+    {
+      "id": "riess-2112-04510v3-primary-conditioning",
+      "url": "https://arxiv.org/pdf/2112.04510v3",
+      "sha256": "572e5d2c0f32bf6e80a118eec13ed0107e1e2830f9ebe90b5bc4e9d1b7fa5df1",
+      "role": "primary_paper_selected_claims",
+      "conditioning": "Selected original pp21,59–60,62–64; important Eq9/Eq22 and shared-input statements checked on original page images. Main formalism and existing fixed44 reconstruction are contextual ancestry; no new fit or full-paper review."
+    },
+    {
+      "id": "riess-c447-primary-release-readme",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/README.md",
+      "sha256": "fd845e484a184ad9740dddf26550db9d6d154d1631c1b30622dcecefe8ee7174",
+      "role": "primary_release_document",
+      "conditioning": "Pinned producer high-level y/L/C release and explicit Yuan link; no complete original numerical-axis or rowwise dictionary inferred from these source pointers."
+    },
+    {
+      "id": "yuan-2203-06681v1-optical-reduction",
+      "url": "https://arxiv.org/html/2203.06681v1",
+      "sha256": "d4d146b9d00c774fc819297465ec70dadded062516a954cc70e31240a650f7cf",
+      "role": "primary_one_hop_source_selected_claims",
+      "conditioning": "Title/authors/version checked against primary metadata; selected HTML S2.SS1.p1.1, S2.SS2.p1.1–p2.1 and S3.p1.1 only. NGC4258 optical ancestry, not NIR/all-host reduction, a complete source dictionary or a new paper admission."
+    }
+  ],
+  "limitations": [
+    "The aperture cross-check is a different extraction method with shared images, positions, PSF correction and selected sample ancestry. It supplies neither independent observations nor a full arrival, quantum-efficiency, gain, extraction or censoring likelihood. Artificial-star realizations and underlying images remain unexamined.",
+    "The metallicity covariance expression has units mag squared when Z_W is expressed in mag/dex and abundance differences in dex. Its dependence on fitted Z_W and on calibration choices does not provide a rowwise generator for altering the released covariance, independent Gaussian row noises, or known confidence coverage and covariance for the underlying calibration summaries.",
+    "The Wesenheit definition is a calibrated color/magnitude convention with stated source assumptions. It assigns neither a physical unit to slot44 or row3213 nor a normalized coordinate-density measure. The authors’ warning about varying host reddening coefficients is retained as an attributed argument, without adopting a replacement model or independently qualifying competing analyses.",
+    "The Yuan source documents historical optical processing, Vega calibration and selected-cut ancestry for NGC4258. The remaining selection stages, completeness, NIR reduction, original events and mapping into every released compact row are unexamined. Software versions identify the reported historical pipeline; they are not current capability claims.",
+    "Original47/fixed44 and the older compact44 target remain separate conditioned identities. The third-party Skara ordering and ordinal witnesses do not become producer definitions. All four failed joins, the nine recorded Skara literal conflicts, the Riess Eq2/displayed-matrix sign issue and selection-count discrepancies remain unrepaired. Physical meaning, unit, prior and generator for original44 remain unknown."
+  ],
+  "qualification": {"numerically_executed": false, "scientifically_qualified": false}
+}
