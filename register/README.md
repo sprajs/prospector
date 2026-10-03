@@ -1,6 +1,6 @@
 # Register
 
-68 paper versions · 23 ideas · 9 topics · 10 candidate prospects.
+70 paper versions · 23 ideas · 9 topics · 10 candidate prospects.
 
 [Open Prospector](https://prospector-cosmology.sprajs.chatgpt.site) · [Local map](map.html)
 
@@ -8,7 +8,7 @@
 
 | Topic | Papers | Ideas |
 | --- | ---: | ---: |
-| [ΛCDM reference](topics/baseline-reference.json) | 20 | 4 |
+| [ΛCDM reference](topics/baseline-reference.json) | 22 | 4 |
 | [Bounces, cycles and primordial alternatives](topics/bounces-cycles.json) | 3 | 0 |
 | [Early energy and recombination](topics/early-energy.json) | 18 | 8 |
 | [Inhomogeneity, averaging and observers](topics/inhomogeneity.json) | 6 | 2 |
@@ -71,8 +71,10 @@ Combined models require compatibility checks before promotion.
 
 | Paper | Version | Reading |
 | --- | --- | --- |
+| [Dissecting the Gravitational Lens B1608+656. I. Lens Potential Reconstruction](https://arxiv.org/abs/0804.2827v3) | [0804.2827v3](papers/0804.2827v3.json) | discovered |
 | [Dissecting the Gravitational Lens B1608+656. II. Precision Measurements of the Hubble Constant, Spatial Curvature, and the Dark Energy Equation of State](https://arxiv.org/abs/0910.2773v2) | [0910.2773v2](papers/0910.2773v2.json) | discovered |
 | [Supernova tests of the timescape cosmology](https://arxiv.org/abs/1009.5855v2) | [1009.5855v2](papers/1009.5855v2.json) | reviewed |
+| [HyRec: A fast and highly accurate primordial hydrogen and helium recombination code](https://arxiv.org/abs/1011.3758v2) | [1011.3758v2](papers/1011.3758v2.json) | discovered |
 | [The Cosmic Linear Anisotropy Solving System (CLASS) II: Approximation schemes](https://arxiv.org/abs/1104.2933v3) | [1104.2933v3](papers/1104.2933v3.json) | discovered |
 | [Gamma ray burst distances and the timescape cosmology](https://arxiv.org/abs/1107.5596v2) | [1107.5596v2](papers/1107.5596v2.json) | screened |
 | [Timescape cosmology with radiation fluid](https://arxiv.org/abs/1306.3208v2) | [1306.3208v2](papers/1306.3208v2.json) | screened |

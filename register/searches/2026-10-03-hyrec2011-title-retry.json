@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-10-03-hyrec-and-b1608-primary-source-checkpoint",
+  "search_id": "2026-10-03-hyrec2011-title-retry",
+  "lane": "baseline-reference",
+  "work_mode": "targeted_primary_source_resolution",
+  "status": "completed",
+  "requested_utc": "2026-10-03T17:23:32.693799+00:00",
+  "request": {
+    "query": "ti:HyRec",
+    "normalized_query": "ti:HyRec",
+    "order": "relevance",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "37d140925d54b63cd712708672f5e548e8b279c2c5ff0fe4e2f7af64f1623867"
+  },
+  "refresh": null,
+  "retry_of": "2026-10-03-hyrec2011-title-timeout",
+  "retry_reason": "Single permitted retry after more than30seconds; original timeout is not an empty result. No query broadening or guessed identifier.",
+  "discovery_reason": "Resume the exact failed metadata window under a fresh finite lease, reusing successful Crossref/terms rather than refetching them.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=ti%3AHyRec&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+    "retrieved_utc": "2026-10-03T17:23:32.693799+00:00",
+    "sha256": "88a237e9eb805dda9536ef2f43eaea406b1eba50266cb10271e44f5fc6e3a4e3",
+    "http_status": 200,
+    "error": null,
+    "local_path": ".work/next15-hyrec-minimum-acquisition-20261003/attempt-v2/arxiv/objects/88a237e9eb805dda9536ef2f43eaea406b1eba50266cb10271e44f5fc6e3a4e3.xml",
+    "retry_after": null
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:2506.21913v1",
+      "position": 0,
+      "disposition": "excluded",
+      "reason": "Chinese information-retrieval paper outside the cosmology source scope; metadata-only decision, no body acquired.",
+      "title": "HyReC: Exploring Hybrid-based Retriever for Chinese",
+      "decision_history": [
+        {
+          "utc": "2026-10-03T18:39:49.738082+00:00",
+          "disposition": "excluded",
+          "reason": "Chinese information-retrieval paper outside the cosmology source scope; metadata-only decision, no body acquired."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2007.14114v2",
+      "position": 1,
+      "disposition": "deferred",
+      "reason": "Later HYREC-2 paper is a distinct source target. Saved metadata only, no body acquired or variant equivalence accepted.",
+      "title": "HYREC-2: a highly accurate sub-millisecond recombination code",
+      "decision_history": [
+        {
+          "utc": "2026-10-03T18:39:49.738082+00:00",
+          "disposition": "deferred",
+          "reason": "Later HYREC-2 paper is a distinct source target. Saved metadata only, no body acquired or variant equivalence accepted."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1011.3758v2",
+      "position": 2,
+      "disposition": "selected",
+      "reason": "Unique title/authors/DOI match for the requested 2011 primary law; admitted as pending full reading with separately scoped source review.",
+      "title": "HyRec: A fast and highly accurate primordial hydrogen and helium recombination code",
+      "decision_history": [
+        {
+          "utc": "2026-10-03T18:39:49.738082+00:00",
+          "disposition": "selected",
+          "reason": "Unique title/authors/DOI match for the requested 2011 primary law; admitted as pending full reading with separately scoped source review."
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One bounded relevance window; no exhaustive or gap-free archive claim.",
+      "Source bodies, abstracts and complete feeds stay private; admitted identities remain pending full readings."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": "2026-10-03-hyrec-and-b1608-primary-source-checkpoint",
+    "query_id": "2026-10-03-hyrec2011-title-retry"
+  }
+}
