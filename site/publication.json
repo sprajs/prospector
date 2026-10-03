@@ -3,20 +3,20 @@
   "project_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8",
   "url": "https://prospector-cosmology.sprajs.chatgpt.site",
   "access_mode": "public",
-  "source_commit_sha": "af7eb08764d3fdb46cd7ea5276b043d3631f63b7",
-  "version_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8~appgver_0d8ead7e2980819195f0727e6fa25bb4",
-  "version_number": 9,
-  "deployment_id": "appgdep_6ac0903215e481918cc7ff6e7fc6507b",
+  "source_commit_sha": "60ef9d0adc7cb146dc49ecb9d82a4afcf36a2fdb",
+  "version_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8~appgver_e8aafeec3ac08191a6d3031e964f668d",
+  "version_number": 10,
+  "deployment_id": "appgdep_6ac0ad7f7f6c8191a6a1d5c9cfa0046d",
   "deployment_status": "succeeded",
-  "published_utc": "2026-10-03T05:18:54.434367+00:00",
-  "artifact_sha256": "sha256:d67eb42ffddecc28cc6f061a6b565629ff688f8044eb02201961fa7716cde532",
-  "local_archive_sha256": "sha256:a5f515854b55609911414009a0c1c9648422c45b2eb9d09fe67bf3a7475d0c4f",
-  "repository_revision": "6453f33771fd13b9f13b763972f1c43495b1e24e",
-  "repository_ci_run": "https://github.com/sprajs/prospector/actions/runs/37098993251",
-  "scan_id": "2026-10-03-all19-source-wave4",
+  "published_utc": "2026-10-03T07:23:56.210606+00:00",
+  "artifact_sha256": "sha256:6bc440fe0d18326e24ec8790510837855556f2116ceaae193b773efbd5e341ce",
+  "local_archive_sha256": "sha256:5695743b21b5103fb3807adb392e58d57b1958844c8c75ec91f14546cc94f82c",
+  "repository_revision": "ac57f9b9d60de23bded9589b3c22f0e552916422",
+  "repository_ci_run": "https://github.com/sprajs/prospector/actions/runs/37105990457",
+  "scan_id": "2026-10-03-all19-source-wave5",
   "source_contract_sha256": "a5c22039fd165d8261bba49b179d96942a236e60a9066ccc7109a0c5d7de8644",
   "scalar_serialization_sha256": "d5c189e4623b5eadc2f44f5035dc959e95ff85df69fc199cf8fc0f57ca9c1839",
-  "independent_final_review_sha256": "3fda6e169796a2ad1eacda0e04b6840cbfbfc8ce4e7933b27c392b14be372c0c",
+  "independent_final_review_sha256": "db01f0ce90e91571f6b31358db71a413e05972cf06e24f6aea5bfbfea5a71cb7",
   "additional_source_contracts": [
     {
       "contract_id": "next05-released-fixed44-row3213-conditional-source-v1",
@@ -57,6 +57,18 @@
     {
       "contract_id": "sdss-detector-b1608-native-asset-source-contract-v2",
       "sha256": "10921b6e198b172af589d39a6a44c9ec0b07eb6822356aa33f67bcc53e4fefc5"
+    },
+    {
+      "contract_id": "next04-skara-shoes-reconstruction-source-v1",
+      "sha256": "e4605a368266aefdf73f30e6d72b1ed2fab22a91b2978d3be6c0405f5d7ecbfa"
+    },
+    {
+      "contract_id": "next13-boss-dr12-current-estimator-mock-source-contract-v1",
+      "sha256": "646f8fa41888e5b2590efa999b770f69a7d89c8df53c7cba5ace2f0b44fd1196"
+    },
+    {
+      "contract_id": "b1608-go10158-calibrated-asset-source-contract-v1",
+      "sha256": "23d6cf9a4eb7159087abd093856ab23a0af9413738df5f3db9619986f74e6dac"
     }
   ],
   "candidate_design": {
@@ -66,12 +78,12 @@
   },
   "independent_final_reviews": [
     {
-      "role": "Independent FD/acoustic/BOSS source projection and complete integration review; authored observation claims excluded",
-      "sha256": "3fda6e169796a2ad1eacda0e04b6840cbfbfc8ce4e7933b27c392b14be372c0c"
+      "role": "Independent selected BOSS original sources, unchanged independent NEXT04 acceptance and complete integration review; own NEXT18 science excluded",
+      "sha256": "db01f0ce90e91571f6b31358db71a413e05972cf06e24f6aea5bfbfea5a71cb7"
     },
     {
-      "role": "Independent FD/acoustic/observation source projection and complete integration review; authored BOSS and NEXT17 claims excluded",
-      "sha256": "2f7df5e87c47da95e52f257f6751ee9370f68f53fcfbc980edcf50e38a1e988c"
+      "role": "Independent selected NEXT18 original cards, official definitions and42 original log rows; complete integration review with own BOSS science excluded",
+      "sha256": "17c38711babcfb8edbdc85469eeb30463df86cf9840ef174f1a5feb1118cd873"
     }
   ],
   "additional_scalar_serializations": [
@@ -85,7 +97,7 @@
     "dist/.openai/hosting.json"
   ],
   "artifact_hash_scope": "artifact_sha256 is the native provider-reported saved artifact hash. local_archive_sha256 binds the local packaged archive; they are distinct representations. The local archive's two file members were verified byte-for-byte against the pushed source/build. No provider/local hash equality is asserted.",
-  "publication_scope": "Bounded selected source claims and native asset identities only. Four targeted audits; zero new versions, Luna full reads, full-paper reviews, idea or design promotions, or experiments. Exact repository merge/main CI, source parent, archive members and native public deployment verified; numerical, consumer and physical qualification remain separate open gates. This receipt-only commit does not change the deployed public export.",
-  "public_data_sha256": "320393e8f725b5a6a46ed45928da1ad25c7842524eccfed07c1fb7fbe985eb7a",
-  "source_parent_commit_sha": "14feb56b18a4afd69de8f1d541d5a123ac40596f"
+  "publication_scope": "Three bounded canonical targeted source audits and one separate source-owner synthetic clarification; zero new admitted versions, Luna/full-paper reads, full-paper reviews, graph/design promotions or experiments. Independent source/candidate reviews, exact repository merge/main CI, source parent, archive members and native public deployment verified. HST peer42-row original coverage remains separate from author216. Consumer, numerical, physical and full observation-law qualification remain open. This receipt-only commit does not change the deployed public export.",
+  "public_data_sha256": "e47cfb3b625920fc7590e04975c64ffd5cf50d4f6bb81dc25faf3888af22533b",
+  "source_parent_commit_sha": "af7eb08764d3fdb46cd7ea5276b043d3631f63b7"
 }
