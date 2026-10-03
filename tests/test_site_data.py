@@ -22,6 +22,9 @@ class PublicChronology(unittest.TestCase):
         self.assertIsNone(hydrogen['uncertainty']['distribution'])
         self.assertIsNone(hydrogen['uncertainty']['coverage'])
         self.assertEqual(hydrogen['decimal_value'], '13.598434599702')
+        helium = next(s for s in public['sources'] if s['id'] == 'HeII_levels')
+        self.assertIn('ASD5.10', helium['dataset_provenance'])
+        self.assertIn('CODATA2018', helium['dataset_provenance'])
         self.assertNotIn('PRIVATE_WORKER', json.dumps(public))
         self.assertNotIn('.work/', json.dumps(public))
 

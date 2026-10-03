@@ -19,7 +19,9 @@ def public_serialization(item):
                        ['decimal_value', 'interpretation', 'distribution', 'coverage', 'reason']}}
                     for scalar in item['scalars']],
         'sources': [{k: source[k] for k in ['id', 'title', 'url', 'sha256', 'source_version',
-                    'coverage', 'unread']} for source in item['source_assets']],
+                    'coverage', 'unread']}
+                    | {'dataset_provenance': source.get('dataset_provenance')}
+                    for source in item['source_assets']],
     }
 
 
