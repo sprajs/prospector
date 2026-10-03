@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-03-atomic-source-serialization",
+  "status": "completed",
+  "started_utc": "2026-10-02T23:37:30.903779+00:00",
+  "completed_utc": "2026-10-02T23:59:43.535993+00:00",
+  "lane": "baseline-reference",
+  "work_mode": "explicit_targeted_atomic_scalar_source_audit",
+  "queries": [
+    {
+      "mode": "official_scalar_sources",
+      "receipts": [
+        {
+          "name": "nist-h-ionization.html",
+          "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?at_num_out=on&biblio=on&e_out=0&el_name_out=on&level_out=on&shells_out=on&spectra=H-DS+i&unc_out=on&units=1",
+          "retrieved_utc": "2026-10-02T23:37:30.903779+00:00",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "role": "primary_official_source_snapshot",
+          "http_status": 200,
+          "final_url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?at_num_out=on&biblio=on&e_out=0&el_name_out=on&level_out=on&shells_out=on&spectra=H-DS+i&unc_out=on&units=1",
+          "content_type": "text/html; charset=ISO-8859-1",
+          "path": ".work/atomic-source-20261003/sources/nist-h-ionization.html",
+          "bytes": 130232,
+          "sha256": "0789b0d775c2bc6aef7f5479fd214fa3eba6e6e7a53b3d73d8dcb1c9babe8704"
+        },
+        {
+          "name": "nist-he-ionization.html",
+          "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?at_num_out=on&biblio=on&e_out=0&el_name_out=on&level_out=on&seq_out=on&shells_out=on&spectra=He&unc_out=on&units=1",
+          "retrieved_utc": "2026-10-02T23:37:34.468018+00:00",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "role": "primary_official_source_snapshot",
+          "http_status": 200,
+          "final_url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?at_num_out=on&biblio=on&e_out=0&el_name_out=on&level_out=on&seq_out=on&shells_out=on&spectra=He&unc_out=on&units=1",
+          "content_type": "text/html; charset=ISO-8859-1",
+          "path": ".work/atomic-source-20261003/sources/nist-he-ionization.html",
+          "bytes": 13935,
+          "sha256": "fa5277775d0c9972584a09dddd0c3da167f46428aad4663ac680fae04e048bd7"
+        },
+        {
+          "name": "nist-he1-levels.html",
+          "url": "https://physics.nist.gov/cgi-bin/ASD/energy1.pl?biblio=1&conf_out=1&j_out=1&lande_out=1&level_out=1&perc_out=1&spectrum=He+I&term_out=1",
+          "retrieved_utc": "2026-10-02T23:37:37.895779+00:00",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "role": "primary_official_source_snapshot",
+          "http_status": 200,
+          "final_url": "https://physics.nist.gov/cgi-bin/ASD/energy1.pl?biblio=1&conf_out=1&j_out=1&lande_out=1&level_out=1&perc_out=1&spectrum=He+I&term_out=1",
+          "content_type": "text/html; charset=ISO-8859-1",
+          "path": ".work/atomic-source-20261003/sources/nist-he1-levels.html",
+          "bytes": 989498,
+          "sha256": "764b8ae6d891e1778f6e2831db5ddc6ebdc023c94f1730aa95b8923442a895d9"
+        },
+        {
+          "name": "nist-he2-levels.html",
+          "url": "https://physics.nist.gov/cgi-bin/ASD/energy1.pl?biblio=1&conf_out=1&j_out=1&lande_out=1&level_out=1&perc_out=1&spectrum=He+II&term_out=1",
+          "retrieved_utc": "2026-10-02T23:37:41.687251+00:00",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "role": "primary_official_source_snapshot",
+          "http_status": 200,
+          "final_url": "https://physics.nist.gov/cgi-bin/ASD/energy1.pl?biblio=1&conf_out=1&j_out=1&lande_out=1&level_out=1&perc_out=1&spectrum=He+II&term_out=1",
+          "content_type": "text/html; charset=ISO-8859-1",
+          "path": ".work/atomic-source-20261003/sources/nist-he2-levels.html",
+          "bytes": 237856,
+          "sha256": "a874e89f9024c22fa8e4e8ccfc64002d1356751de030c408482ac7be6e090c48"
+        },
+        {
+          "name": "codata-2022-all.pdf",
+          "url": "https://physics.nist.gov/cuu/pdf/all.pdf",
+          "retrieved_utc": "2026-10-02T23:37:45.305679+00:00",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "role": "primary_official_source_snapshot",
+          "http_status": 200,
+          "final_url": "https://physics.nist.gov/cuu/pdf/all.pdf",
+          "content_type": "application/pdf",
+          "path": ".work/atomic-source-20261003/sources/codata-2022-all.pdf",
+          "bytes": 193554,
+          "sha256": "5c4a2c8127a80698d05f4d682bd4cac200dabcd9c2e9dd783661a0aa60f4bb1c"
+        },
+        {
+          "name": "si-brochure-9.pdf",
+          "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9.pdf",
+          "retrieved_utc": "2026-10-02T23:37:48.753712+00:00",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "role": "primary_official_source_snapshot",
+          "http_status": 200,
+          "final_url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9.pdf",
+          "content_type": "application/pdf",
+          "path": ".work/atomic-source-20261003/sources/si-brochure-9.pdf",
+          "bytes": 3503078,
+          "sha256": "1122cf38e25b23d780a30607c68f7350b2b6d1f9970a89947aaa87a45ecbb20a"
+        },
+        {
+          "name": "nist-asd-help.html",
+          "url": "https://physics.nist.gov/PhysRefData/ASD/Html/help.html",
+          "reason": "Query outputs show parenthesized energies but no legend; inspect official theory/uncertainty interpretation.",
+          "retrieved_utc": "2026-10-02T23:44:57.755214+00:00",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "role": "primary_official_or_author_source_snapshot",
+          "http_status": 200,
+          "final_url": "https://physics.nist.gov/PhysRefData/ASD/Html/help.html",
+          "path": ".work/atomic-source-20261003/sources/nist-asd-help.html",
+          "sha256": "5f2611253491e0932e583caa7b942b4118e526c2bce968e8c8cee72463fbe2ff",
+          "bytes": 34967
+        },
+        {
+          "name": "hirata-lecture6.pdf",
+          "url": "https://www.tapir.caltech.edu/~chirata/ph217/lec06.pdf",
+          "reason": "Original primary ground-state Saha derivation linked by engine H1 docs; source prefactor comparison, no broader lecture reading.",
+          "retrieved_utc": "2026-10-02T23:45:01.147828+00:00",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "role": "primary_official_or_author_source_snapshot",
+          "failure": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: EE certificate key too weak (_ssl.c:1127)>"
+        },
+        {
+          "name": "nist-gsie-help.html",
+          "url": "https://physics.nist.gov/PhysRefData/ASD/Html/iehelp.html",
+          "reason": "Exact official query legend and uncertainty interpretation needed; located via NIST help link.",
+          "retrieved_utc": "2026-10-02T23:45:45.059339+00:00",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "role": "primary_official_source_snapshot",
+          "http_status": 200,
+          "final_url": "https://physics.nist.gov/PhysRefData/ASD/Html/iehelp.html",
+          "path": ".work/atomic-source-20261003/sources/nist-gsie-help.html",
+          "sha256": "ec11d40bcbb312df5e38ff1e12420855314f124670493870e409194868453a08",
+          "bytes": 21650
+        },
+        {
+          "name": "nist-codata-uncertainty.html",
+          "url": "https://physics.nist.gov/cuu/Uncertainty/index.html",
+          "reason": "Official CODATA uncertainty definition supplementary to PDF std uncertainty header.",
+          "retrieved_utc": "2026-10-02T23:45:48.445492+00:00",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "role": "primary_official_source_snapshot",
+          "http_status": 200,
+          "final_url": "https://physics.nist.gov/cuu/Uncertainty/index.html",
+          "path": ".work/atomic-source-20261003/sources/nist-codata-uncertainty.html",
+          "sha256": "0d4879d686ca5de1fb7ea237cfe9c923a13dfd84cd081b36590319d6ea9f726a",
+          "bytes": 6691
+        },
+        {
+          "name": "nist-electron-mass.html",
+          "url": "https://physics.nist.gov/cgi-bin/cuu/Value?me",
+          "reason": "Narrow official CODATA2022 electron-mass value and explicit absolute standard uncertainty, avoiding inference solely from PDF parenthesis notation.",
+          "retrieved_utc": "2026-10-02T23:46:26.069047+00:00",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "role": "primary_official_source_snapshot",
+          "http_status": 200,
+          "final_url": "https://physics.nist.gov/cgi-bin/cuu/Value?me",
+          "path": ".work/atomic-source-20261003/sources/nist-electron-mass.html",
+          "sha256": "703091e7fb6ef44da2363f1e7cd3f1463f6efc3ad3b2cb9337ff33b263ccbc76",
+          "bytes": 8199
+        }
+      ]
+    }
+  ],
+  "registered_papers": [],
+  "new_versions": [],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [
+    "2026-10-03-atomic-source-claims"
+  ],
+  "idea_ids": [],
+  "design_ids": [
+    "candidate-bounded-shared-charge-hhe"
+  ],
+  "prospect_ids": [],
+  "edge_ids": [],
+  "acquisition_failures": [
+    {
+      "url": "https://www.tapir.caltech.edu/~chirata/ph217/lec06.pdf",
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: EE certificate key too weak (_ssl.c:1127)>"
+    }
+  ],
+  "pending": [],
+  "limits": [
+    "One reused exactSol/xhigh reader; zero full-paper reads, promotions, new mechanisms or numerical experiments.",
+    "Seven scalar facts and conditional electronic counts; no inferred atomic Gaussian likelihood, independent noise or complete H1/B2 certification.",
+    "Official endpoints are changing snapshots; original byte hashes, actual provider/dataset versions, flags and bounded unread coverage preserved.",
+    "Unrelated literature queues, alternatives and candidate records are unchanged; the three source-contract consumers receive explicit new hash bindings."
+  ]
+}

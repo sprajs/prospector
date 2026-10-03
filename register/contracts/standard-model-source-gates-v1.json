@@ -168,8 +168,8 @@
         "arxiv:astro-ph/9909275v2",
         "arxiv:1801.08023v3"
       ],
-      "checked_claim": "The separately named F_H1/NIST/RecfastCLASS singlet hybrid uses independent nuclei densities, shared electron charge, matter-temperature rates and Compton/adiabatic temperature evolution on a finite interval.",
-      "unresolved": "Ground-state LTE is an artificial supplied initial boundary, not the preceding physical He history. Omitted HeIII, fit extrapolation below4000K, rate/atomic uncertainty and numerical controls remain explicit. Independently pinned H1/B2 and NIST atomic-data acceptance/serialization hashes are not certified by this source review."
+      "checked_claim": "The separately named F_H1/NIST/RecfastCLASS singlet hybrid uses independent nuclei densities, shared electron charge, matter-temperature rates and Compton/adiabatic temperature evolution on a finite interval. A separate reviewed serialization pins seven H/He ionization, electron-mass and exact SI scalar facts; H I and He II are ASD theory-marked.",
+      "unresolved": "Ground-state LTE remains an artificial supplied boundary. The seven-scalar subset leaves ASD uncertainty distribution/coverage and covariance unknown; original complete H1/B2 pins, isotope/mass conventions, excitation and rate closure, sigma_T/G/unlisted constants, HeIII omission, fit extrapolation and numerical/consumer history gates remain unresolved."
     },
     {
       "scope_id": "NEXT-16",
@@ -360,5 +360,12 @@
   "qualification": {
     "numerically_executed": false,
     "scientifically_qualified": false
-  }
+  },
+  "source_serializations": [
+    {
+      "serialization_id": "hhe-atomic-central-asd512-codata2022-v1",
+      "path": "register/source-data/hhe-atomic-central-asd512-codata2022-v1.json",
+      "sha256": "d5c189e4623b5eadc2f44f5035dc959e95ff85df69fc199cf8fc0f57ca9c1839"
+    }
+  ]
 }

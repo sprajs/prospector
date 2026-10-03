@@ -17,7 +17,7 @@
     {
       "contract_id": "standard-model-source-gates-v1",
       "path": "register/contracts/standard-model-source-gates-v1.json",
-      "sha256": "ca0ed970215f151d372da450dec7d1f0f24bd307b09d53e6df98c30a30122597"
+      "sha256": "a5c22039fd165d8261bba49b179d96942a236e60a9066ccc7109a0c5d7de8644"
     }
   ],
   "faithful_claim": "Can a separately named F_H1/NIST/RecfastCLASS-convention finite HII/HeII-singlet initial-value model maintain shared charge, matter-temperature rates and declared omissions?",
@@ -86,8 +86,8 @@
         "arxiv:astro-ph/9909275v2",
         "arxiv:1801.08023v3"
       ],
-      "checked_claim": "The separately named F_H1/NIST/RecfastCLASS singlet hybrid uses independent nuclei densities, shared electron charge, matter-temperature rates and Compton/adiabatic temperature evolution on a finite interval.",
-      "unresolved": "Ground-state LTE is an artificial supplied initial boundary, not the preceding physical He history. Omitted HeIII, fit extrapolation below4000K, rate/atomic uncertainty and numerical controls remain explicit. Independently pinned H1/B2 and NIST atomic-data acceptance/serialization hashes are not certified by this source review."
+      "checked_claim": "The separately named F_H1/NIST/RecfastCLASS singlet hybrid uses independent nuclei densities, shared electron charge, matter-temperature rates and Compton/adiabatic temperature evolution on a finite interval. A separate reviewed serialization pins seven H/He ionization, electron-mass and exact SI scalar facts; H I and He II are ASD theory-marked.",
+      "unresolved": "Ground-state LTE remains an artificial supplied boundary. The seven-scalar subset leaves ASD uncertainty distribution/coverage and covariance unknown; original complete H1/B2 pins, isotope/mass conventions, excitation and rate closure, sigma_T/G/unlisted constants, HeIII omission, fit extrapolation and numerical/consumer history gates remain unresolved."
     },
     {
       "scope_id": "NEXT-16",
@@ -124,16 +124,23 @@
           "conditioning": "64bbab707faf4de4779a9e04edd180fef18d98fa isolated singlet rate/excitation conventions only; NIST energy substitution and F_H1 are changed model choices. Licence retrieval failed404; no raw redistribution."
         }
       ]
+    },
+    {
+      "kind": "reviewed_scalar_source_serialization",
+      "serialization_id": "hhe-atomic-central-asd512-codata2022-v1",
+      "path": "register/source-data/hhe-atomic-central-asd512-codata2022-v1.json",
+      "sha256": "d5c189e4623b5eadc2f44f5035dc959e95ff85df69fc199cf8fc0f57ca9c1839",
+      "scope": "Seven scalar strings/source flags only; no whole H1/B2 or numerical/physical-history qualification."
     }
   ],
   "unknowns": [
     "Supplied independent nucleus inventories and temperature histories do not implement BBN. Planck PArthENoPE1.1/neutron880.2s conditioning cannot silently become PRIMAT or an unrelated mass convention.",
     "Ground-state LTE is an artificial supplied initial boundary, not the preceding physical He history. Omitted HeIII, fit extrapolation below4000K, rate/atomic uncertainty and numerical controls remain explicit.",
     "An interval ending at z300–600 omits the late opacity contribution. A qualified late/reionization continuation and tail/boundary budget are required; visibility and drag are distinct.",
-    "Explicitly accept independently pinned H1/B2 hydrogen rate/quantum-density and NIST atomic-data contracts, exact serialization/SHA and coherent SI/uncertainty conventions. This review certifies He code rate shape/excitations, not those original atomic-source values or the complete H1/B2 contract."
+    "The exact reviewed seven-scalar serialization is a new bounded source subset. Original complete H1/B2 source pins, excitation/energy/rate closure, sigma_T/G/unlisted constants and joint uncertainty remain unresolved; consumer storage/rounding/bit and native acceptance are separate gates."
   ],
   "verification_gates": [
-    "Explicitly accept independently pinned H1/B2 hydrogen rate/quantum-density and NIST atomic-data contracts, exact serialization/SHA and coherent SI/uncertainty conventions. This review certifies He code rate shape/excitations, not those original atomic-source values or the complete H1/B2 contract.",
+    "The exact reviewed seven-scalar serialization is a new bounded source subset. Original complete H1/B2 source pins, excitation/energy/rate closure, sigma_T/G/unlisted constants and joint uncertainty remain unresolved; consumer storage/rounding/bit and native acceptance are separate gates.",
     "Consumer explicitly accepts this candidate, source-contract hash and exact native/build/request identity before execution.",
     "Independent signed/unit/analytic controls and separate source, initial, numerical and observation allocations; preserve failed gates.",
     "No fitted product or shared source is counted as an independent observation; no source inconsistency is silently repaired."
@@ -150,7 +157,7 @@
     "Supplied independent nucleus inventories and temperature histories do not implement BBN. Planck PArthENoPE1.1/neutron880.2s conditioning cannot silently become PRIMAT or an unrelated mass convention.",
     "Ground-state LTE is an artificial supplied initial boundary, not the preceding physical He history. Omitted HeIII, fit extrapolation below4000K, rate/atomic uncertainty and numerical controls remain explicit.",
     "An interval ending at z300–600 omits the late opacity contribution. A qualified late/reionization continuation and tail/boundary budget are required; visibility and drag are distinct.",
-    "Explicitly accept independently pinned H1/B2 hydrogen rate/quantum-density and NIST atomic-data contracts, exact serialization/SHA and coherent SI/uncertainty conventions. This review certifies He code rate shape/excitations, not those original atomic-source values or the complete H1/B2 contract."
+    "The exact reviewed seven-scalar serialization is a new bounded source subset. Original complete H1/B2 source pins, excitation/energy/rate closure, sigma_T/G/unlisted constants and joint uncertainty remain unresolved; consumer storage/rounding/bit and native acceptance are separate gates."
   ],
   "executable_request": null,
   "qualification": {

@@ -11,6 +11,23 @@ import site_data
 
 
 class PublicChronology(unittest.TestCase):
+    def test_scalar_export_preserves_uncertainty_and_omits_private_fields(self):
+        path = site_data.ROOT / 'register/source-data/hhe-atomic-central-asd512-codata2022-v1.json'
+        source = json.loads(path.read_text())
+        source['agent_id'] = 'PRIVATE_WORKER'
+        source['source_assets'][0]['archive_path'] = '.work/private-source.html'
+        public = site_data.public_serialization(source)
+        hydrogen = next(s for s in public['scalars'] if s['id'] == 'chi_HI')
+        self.assertTrue(hydrogen['asd_parenthesized_theory_flag'])
+        self.assertIsNone(hydrogen['uncertainty']['distribution'])
+        self.assertIsNone(hydrogen['uncertainty']['coverage'])
+        self.assertEqual(hydrogen['decimal_value'], '13.598434599702')
+        helium = next(s for s in public['sources'] if s['id'] == 'HeII_levels')
+        self.assertIn('ASD5.10', helium['dataset_provenance'])
+        self.assertIn('CODATA2018', helium['dataset_provenance'])
+        self.assertNotIn('PRIVATE_WORKER', json.dumps(public))
+        self.assertNotIn('.work/', json.dumps(public))
+
     def test_metrics_export_preserves_missingness_and_omits_private_receipts(self):
         work = site_data.ROOT / '.work'
         work.mkdir(exist_ok=True)

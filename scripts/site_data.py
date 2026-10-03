@@ -8,6 +8,23 @@ ORDER = ['baseline-reference', 'early-energy', 'late-dark-energy', 'interacting-
          'kinematics', 'modified-gravity', 'bounces-cycles', 'measurement-lineage']
 
 
+def public_serialization(item):
+    """Publish scalar conditioning and primary links, excluding worker/acquisition fields."""
+    return {
+        'title': item['title'], 'unknowns': item['unknowns'],
+        'scalars': [{k: scalar[k] for k in ['id', 'decimal_value', 'unit', 'value_class',
+                    'source_asset_ids', 'locator']}
+                    | {'asd_parenthesized_theory_flag': scalar.get('asd_parenthesized_theory_flag'),
+                       'uncertainty': {k: scalar['uncertainty'][k] for k in
+                       ['decimal_value', 'interpretation', 'distribution', 'coverage', 'reason']}}
+                    for scalar in item['scalars']],
+        'sources': [{k: source[k] for k in ['id', 'title', 'url', 'sha256', 'source_version',
+                    'coverage', 'unread']}
+                    | {'dataset_provenance': source.get('dataset_provenance')}
+                    for source in item['source_assets']],
+    }
+
+
 def visibility_snapshots():
     """Latest per-paper/provider metrics, excluding acquisition and worker details."""
     latest = {}
@@ -44,12 +61,17 @@ def website_data(papers, ideas, prospects, graph):
         by_base[p['arxiv_id']] = ident
     metrics = visibility_snapshots()
     contracts = {p.stem: strict_load(p) for p in (ROOT / 'register/contracts').glob('*.json')}
+    serializations = {p.stem: public_serialization(strict_load(p))
+                      for p in (ROOT / 'register/source-data').glob('*.json')}
     def public_prospect(path):
         item = strict_load(path)
         public = {k: item[k] for k in ['id','title','kind','readiness','baseline','cosmology','scope','unknowns','idea_ids','model_idea_ids','topic_ids','source_evidence']}
         public['source_gates'] = [{k: scope[k] for k in ['scope_id','title','paper_ids','checked_claim','unresolved']}
                                  for ident in item.get('source_contract_ids', [])
                                  for scope in contracts[ident]['scopes']]
+        public['scalar_sources'] = [serializations[ident] for ident in sorted({
+            source['serialization_id'] for contract in item.get('source_contract_ids', [])
+            for source in contracts[contract].get('source_serializations', [])})]
         return public
     return {
         'prospects': [public_prospect(p) for p in sorted((ROOT / 'register/prospects').glob('*.json'))],

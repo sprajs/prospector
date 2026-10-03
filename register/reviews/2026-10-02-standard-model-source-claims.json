@@ -14,8 +14,8 @@
     "evidence_kind": "runtime_turn_context",
     "actual_backend_identity": null
   },
-  "reviewed_utc": "2026-10-02T23:28:26.582186+00:00",
-  "packet_sha256": "4b572521200e297c36de11ca5479771f72e63f81f5584ffe7ddadd66996c24de",
+  "reviewed_utc": "2026-10-03T00:05:17.740467+00:00",
+  "packet_sha256": "ee7e352616c51142fbbbdbce408669bf0a2d41627c0737ccb1d459a23eba7bae",
   "supporting_packets": [
     {
       "agent_id": "/root/thermal_source_audit",
@@ -61,6 +61,30 @@
         "effort": "xhigh",
         "session_id": "01a0fec1-578e-7712-ba9d-1707e70bb91c",
         "turn_id": "01a0fec1-57df-7aa1-858a-c9e769cb2a26",
+        "evidence_kind": "runtime_turn_context",
+        "actual_backend_identity": null
+      }
+    },
+    {
+      "agent_id": "/root/thermal_source_audit",
+      "packet_sha256": "c0152fdc89e6d4b7736f78d44c2e1557819bc574dd3cf56e0230dfea57d0c26f",
+      "model_confirmation": {
+        "turn_id": "01a0ff00-2df2-7530-9b0e-ddeb646a6c3b",
+        "model": "gpt-6.1-sol",
+        "effort": "xhigh",
+        "session_id": "01a0fec1-0810-7361-a598-b20696ba4a64",
+        "evidence_kind": "runtime_turn_context",
+        "actual_backend_identity": null
+      }
+    },
+    {
+      "agent_id": "/root/thermal_source_audit",
+      "packet_sha256": "802fa5e6d50a2357107328f275d81a7b4303434d92fe2d61a0b33bfd004b4a7d",
+      "model_confirmation": {
+        "turn_id": "01a0ff00-2df2-7530-9b0e-ddeb646a6c3b",
+        "model": "gpt-6.1-sol",
+        "effort": "xhigh",
+        "session_id": "01a0fec1-0810-7361-a598-b20696ba4a64",
         "evidence_kind": "runtime_turn_context",
         "actual_backend_identity": null
       }
@@ -526,6 +550,10 @@
       "kind": "integration_source_identity_correction",
       "paper_id": "arxiv:2112.04510v3",
       "display_summary": "Retract our NEXT02 count/index conflation: the original released ladder has47 columns, with zero-based index44 fixed0 and46 active coordinates; the older compact44-dimensional route is a separate target. This was an integration error, not a printed-source error; the physical meaning of index44 remains unresolved."
+    },
+    {
+      "kind": "bounded_atomic_source_followup",
+      "display_summary": "The earlier unacquired NIST scalar gap now has a separately reviewed seven-value serialization. H I and He II are theory-marked; ASD uncertainty coverage/distribution and covariance remain unknown. Full H1/B2, atomic-rate and physical-history gates remain open."
     }
   ],
   "limitations": [
@@ -534,7 +562,7 @@
     "Raw sources, full worker packets and code remain ignored. Current-data reassessment and independent numerical reproduction have not occurred.",
     "Unknown event identity, calibration/selection dependence and cross-probe covariance remain unknown.",
     "Consumer-reported ladder reductions and321 joins were not numerically rederived; source mathematical meanings remain gated.",
-    "NIST energy values and cited independent Sobolev/Malik–Wands sources were not acquired by these workers; no independent certification of them is claimed."
+    "The initial NIST gap is superseded only by the separately reviewed seven-scalar subset. Independent Sobolev/Malik–Wands sources, whole H1/B2 pins, rates/opacity constants and full physical-history qualification remain unexamined."
   ],
   "conclusion": "Accepted located definitions, changed-model identities and explicit blocked source gates only; no new accepted physical mechanism, execution readiness or full-paper promotion."
 }

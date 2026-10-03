@@ -56,6 +56,30 @@ class RegisterIntegrity(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'targeted review does not accept contract_ids'):
             self.validate()
 
+    def test_scalar_serialization_requires_explicit_acceptance(self):
+        self.mutate('register/reviews/2026-10-03-atomic-source-claims.json',
+                    lambda r: r['accepted_records']['serialization_ids'].clear())
+        with self.assertRaisesRegex(ValueError, 'targeted review does not accept serialization_ids'):
+            self.validate()
+
+    def test_changed_scalar_serialization_invalidates_contract_binding(self):
+        self.mutate('register/source-data/hhe-atomic-central-asd512-codata2022-v1.json',
+                    lambda r: r['unknowns'].append('Changed interpretation'))
+        with self.assertRaisesRegex(ValueError, 'source serialization digest mismatch'):
+            self.validate()
+
+    def test_scalar_cannot_claim_unlisted_source_asset(self):
+        self.mutate('register/source-data/hhe-atomic-central-asd512-codata2022-v1.json',
+                    lambda r: r['scalars'][0]['source_asset_ids'].append('unacquired-source'))
+        with self.assertRaisesRegex(ValueError, 'scalar source outside serialization assets'):
+            self.validate()
+
+    def test_scalar_asset_must_match_reviewed_source(self):
+        self.mutate('register/source-data/hhe-atomic-central-asd512-codata2022-v1.json',
+                    lambda r: r['source_assets'][0].update(sha256='0' * 64))
+        with self.assertRaisesRegex(ValueError, 'serialization source asset not reviewed'):
+            self.validate()
+
     def test_duplicate_contract_scope_rejected(self):
         self.mutate('register/contracts/standard-model-source-gates-v1.json',
                     lambda r: r['scopes'].append(r['scopes'][0]))

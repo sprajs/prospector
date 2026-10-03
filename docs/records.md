@@ -14,6 +14,7 @@ source identity and decisions so Codex can continue without a transcript.
 | `register/bibliometrics/<snapshot>.json` | Provider-specific citation counts and verified author visibility snapshots |
 | `register/reviews/<id>.json` | Sol source checks, corrections, overlap and limits |
 | `register/contracts/<id>.json` | Located source requirements, pinned reduced/code assets and unresolved gates |
+| `register/source-data/<id>.json` | Reviewed decimal scalar facts, units, source flags and unresolved uncertainty meaning |
 | `register/graph.json` | Typed evidence relationships |
 | `register/README.md`, `register/map.html` | Generated tree and interactive map |
 | `designs/<id>.json` | Candidate investigation handoffs |
@@ -76,6 +77,13 @@ bindings pin the canonical path and SHA-256; any content change invalidates the
 binding. Prospect details can expose the checked claims and unresolved physics,
 without worker provenance or raw source material. A source contract does not
 qualify a native implementation, statistical law or measured likelihood.
+
+Scalar source serializations retain exact decimal strings, provider versions,
+checked locators, theory flags and uncertainty interpretation. Null distribution,
+coverage or covariance means unknown, rather than an assumed Gaussian law.
+Contracts bind these records by canonical path and SHA-256. Each serialization
+requires its own explicit review acceptance; fixed central model choices remain
+separate from primary source facts and numerical error diagnostics.
 
 Ideas have stable slug, title, family, source evidence, assumptions, predictions
 and review ID. Topics have stable slug, title, scope and paper/idea/design ID

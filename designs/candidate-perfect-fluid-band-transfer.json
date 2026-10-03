@@ -17,7 +17,7 @@
     {
       "contract_id": "standard-model-source-gates-v1",
       "path": "register/contracts/standard-model-source-gates-v1.json",
-      "sha256": "ca0ed970215f151d372da450dec7d1f0f24bd307b09d53e6df98c30a30122597"
+      "sha256": "a5c22039fd165d8261bba49b179d96942a236e60a9066ccc7109a0c5d7de8644"
     }
   ],
   "faithful_claim": "Can the explicitly supplied perfect self-interacting radiation+CDM+smooth-Lambda model predict a signed CDM comoving-density transfer and finite primordial-band variance?",
