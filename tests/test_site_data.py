@@ -11,6 +11,46 @@ import site_data
 
 
 class PublicChronology(unittest.TestCase):
+    def test_contract_export_keeps_conditioning_and_excludes_acquisition(self):
+        path = site_data.ROOT / 'register/contracts/next05-released-fixed44-row3213-conditional-source-v1.json'
+        source = json.loads(path.read_text())
+        source['agent_id'] = 'PRIVATE_WORKER'
+        source['source_assets'][0]['credential'] = 'SECRET_TEST_VALUE'
+        public = site_data.public_contract(source)
+        self.assertIn('full-fit', ' '.join(public['limitations']))
+        self.assertIn('C_TT', public['scopes'][1]['checked_claim'])
+        self.assertEqual(public['sources'][0]['sha256'], source['source_assets'][0]['sha256'])
+        for private in ['.work/', 'PRIVATE_WORKER', 'SECRET_TEST_VALUE', 'local_path', 'Luna', 'stage promotion']:
+            self.assertNotIn(private, json.dumps(public))
+
+    def test_optical_export_keeps_unread_coverage_and_physical_limits(self):
+        path = site_data.ROOT / 'register/contracts/optical-calibration-template-source-contract-v1.json'
+        source = json.loads(path.read_text())
+        public = site_data.public_contract(source)
+        limits = ' '.join(public['limitations'])
+        self.assertIn('are unread', limits)
+        self.assertIn('sigma_k=1/3', limits)
+        self.assertIn('shift_0.dat has nonzero', limits)
+        self.assertIn('not measured quantum efficiency', limits)
+        self.assertIn('Covariances/uncertainties depend on training', limits)
+        for private in ['Luna', 'paper promotions', '.work/']:
+            self.assertNotIn(private, json.dumps(public))
+
+    def test_investigation_export_keeps_formal_and_physical_limits(self):
+        path = site_data.ROOT / 'designs/next05-released-fixed44-row3213-conditional-diagnostic-20261003.json'
+        source = json.loads(path.read_text())
+        source['consumer']['credential'] = 'SECRET_TEST_VALUE'
+        public = site_data.public_investigation(source)
+        self.assertEqual(public['readiness'], 'blocked')
+        self.assertIn('C_FT', public['equations'][1]['expression'])
+        self.assertIn('full-fit', ' '.join(public['unknowns']).lower())
+        self.assertEqual(set(public['test']), {'question', 'observables'})
+        self.assertNotIn('consumer', public)
+        self.assertNotIn('executable_request', public)
+        self.assertNotIn('parameter_choices', public['test'])
+        for private in ['.work/', 'SECRET_TEST_VALUE']:
+            self.assertNotIn(private, json.dumps(public))
+
     def test_scalar_export_preserves_uncertainty_and_omits_private_fields(self):
         path = site_data.ROOT / 'register/source-data/hhe-atomic-central-asd512-codata2022-v1.json'
         source = json.loads(path.read_text())

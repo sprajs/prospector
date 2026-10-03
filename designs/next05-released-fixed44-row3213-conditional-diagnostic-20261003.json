@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "design_id": "next05-released-fixed44-row3213-conditional-diagnostic-20261003",
+  "title": "Released row-3213 conditional diagnostic",
+  "paper_ids": [
+    "arxiv:2112.04510v3"
+  ],
+  "idea_ids": [
+    "sn-standardized-distance-lineage"
+  ],
+  "review_id": "2026-10-03-next05-source-claims",
+  "readiness": "blocked",
+  "source_contracts": [
+    {
+      "contract_id": "next05-released-fixed44-row3213-conditional-source-v1",
+      "path": "register/contracts/next05-released-fixed44-row3213-conditional-source-v1.json",
+      "sha256": "16c5de924b39a1d71b24ecb50d17a8243200137df858349ab2e5f54302b8bee2"
+    }
+  ],
+  "faithful_claim": "Riess v3 compares an anchor with a fit omitting its geometric constraint but retaining its Cepheids. This candidate instead proposes a conditional density for supplied row3213 under frozen released products. It does not claim source-equivalent Fit15 or an independent heldout prediction.",
+  "equations": [
+    {
+      "paper_id": "arxiv:2112.04510v3",
+      "domain": "Declared released-data Gaussian hypothesis and same fixed normalized finite box; no physical reduction or author Fit15 equivalence.",
+      "status": "reviewer_derived",
+      "expression": "p_pi(beta|y_T) proportional N(y_T|X_T beta,C_TT) pi_box(beta)",
+      "locator": "Riess v3 §2.1 pp10–12 and pinned MCMC_utils.py lines13–21,35–38,56–65; reviewer-derived marginal posterior.",
+      "definitions": "T=ordered original rows0–3212 then3214–3491; F=[3213]; X=L.T restricted to active original axes0–43,45,46; beta44=0. C_TT is the principal covariance, not a subblock of full precision. pi_box=1/Vol(B) on the frozen active46 box."
+    },
+    {
+      "paper_id": "arxiv:2112.04510v3",
+      "domain": "Declared released-data Gaussian hypothesis and same fixed normalized finite box; no physical reduction or author Fit15 equivalence.",
+      "status": "reviewer_derived",
+      "expression": "m_F(beta,y_T)=X_F beta+C_FT C_TT^-1(y_T-X_T beta); V_F=C_FF-C_FT C_TT^-1 C_TF",
+      "locator": "Reviewer-derived joint Gaussian conditioning of the same supplied released target; not a printed paper equation.",
+      "definitions": "All blocks select the same original C, without dropped cross-covariances or jitter. y values/units and coordinate meaning remain those of the frozen supplied compact target. Future one-row density has units inverse of that supplied y coordinate."
+    },
+    {
+      "paper_id": "arxiv:2112.04510v3",
+      "domain": "Declared released-data Gaussian hypothesis and same fixed normalized finite box; no physical reduction or author Fit15 equivalence.",
+      "status": "reviewer_derived",
+      "expression": "p_pi(y_F|y_T)=integral_B N(y_F|m_F(beta,y_T),V_F) p_pi(beta|y_T) d beta_active = Z_joint(y_T,y_F)/Z_train(y_T)",
+      "locator": "Reviewer-derived normalized conditional density; source log_prior=1 and likelihood without normalizing constants are insufficient.",
+      "definitions": "Z_joint and Z_train include each Gaussian observation-density normalization and the identical normalized prior. Both use the frozen source-derived box; no proper-Gaussian prior substitution. log density is log Z_joint−log Z_train."
+    }
+  ],
+  "assumptions": [
+    "Joint multivariate Gaussian N_3492(y | X_active beta_active,C_original), declared hypothesis. This is not evidence that physical measurements are independent.",
+    "Normalized uniform measure on the frozen closed46-coordinate finite box, with pointmass beta44=0; not the source log_prior constant1.",
+    "Supplied full-baseline least-squares fit, not a training-only fit.",
+    "Same source bytes, binary64 finite-box transport, index order and all covariance blocks; no changed prior, jitter, physical relabeling or updated reduction."
+  ],
+  "minimal_test": {
+    "question": "Under an explicitly declared joint Gaussian observation model and the frozen source-derived46-coordinate finite box, what density does the training target assign to heldout original compact observation3213?",
+    "observables": [
+      "Normalized conditional density/log density of original supplied y3213"
+    ],
+    "parameter_choices": {
+      "model_variant": "released-fixed44-row3213-conditional-diagnostic/v1",
+      "origin": "New mathematical model choice applied to supplied frozen compact target; not an author-printed modelvariant ID.",
+      "index_base": 0,
+      "observations_total": 3492,
+      "parameters_total": 47,
+      "training_row_inclusive_ranges": [
+        [
+          0,
+          3212
+        ],
+        [
+          3214,
+          3491
+        ]
+      ],
+      "future_rows": [
+        3213
+      ],
+      "active_parameter_inclusive_ranges": [
+        [
+          0,
+          43
+        ],
+        [
+          45,
+          46
+        ]
+      ],
+      "fixed_coordinates": [
+        {
+          "original_index": 44,
+          "value": "0"
+        }
+      ],
+      "frozen_box_transport": {
+        "path": ".work/standard-lcdm-contracts/cache/ladder-original/consumer-contract.json",
+        "sha256": "ee885213f48cdb04d3b6d0bada41fea3d65524feb9f33b0d3bda985645aa0741",
+        "subobject": "all_original_prior_rows lower_binary64_hex/upper_binary64_hex and transport.active_original_indices/fixed_coordinates",
+        "status": "Existing consumer byte identity only; no new derived-array/numerical verification."
+      },
+      "private_exact_proposal_sha256": "0db654b13d00dffe256d97c7e8e7248d439d658f7eaaa8c9cc55cf4550788eaa",
+      "derived_block_hashes": null,
+      "derived_block_hashes_null_reason": "No arrays decoded/extracted or numeric blocks computed in this source wave.",
+      "physical_mu_prediction": null,
+      "physical_mu_null_reason": "Eq2 versus displayed matrix sign inconsistency; partial original row mapping/reduction; unreconstructed calibration/selection/preprocessing; no physical refit accepted.",
+      "predictive_acceptance_threshold": null,
+      "threshold_null_reason": "Requires separate consumer preregistration; no threshold invented."
+    },
+    "scope": "Blocked source preparation; exact private proposal indices are summarized by identical ordered public ranges. No execution request is accepted."
+  },
+  "simplifications": [
+    "Independent measurement of N4258 distance",
+    "Paper Fit15 reproduction",
+    "Observational or cosmological qualification",
+    "Changed period/color/host selection",
+    "Changed luminosity relation or crowding recalibration",
+    "Full unreduced event likelihood",
+    "Independent cosmological tension significance"
+  ],
+  "data_dependencies": [
+    {
+      "kind": "immutable_released_source_assets",
+      "assets": [
+        {
+          "id": "README.md",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/README.md",
+          "sha256": "fd845e484a184ad9740dddf26550db9d6d154d1631c1b30622dcecefe8ee7174",
+          "role": "primary_release_code_or_document"
+        },
+        {
+          "id": "read_chains_example.py",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/read_chains_example.py",
+          "sha256": "2cf388a78dd1a53d91fdc0b18451ca77b907679e9d59f05061195c78ddf93dcc",
+          "role": "primary_release_code_or_document"
+        },
+        {
+          "id": "Riess-2112.04510v3.pdf",
+          "url": "https://arxiv.org/pdf/2112.04510v3",
+          "sha256": "572e5d2c0f32bf6e80a118eec13ed0107e1e2830f9ebe90b5bc4e9d1b7fa5df1",
+          "role": "primary_paper"
+        },
+        {
+          "id": "table2.tex",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/table2.tex",
+          "sha256": "d4b9af2b5d65118f7ac44a41b7e8cd662dfd42a63b5c359ca402d8be3b4dbba4",
+          "role": "primary_rounded_photometry_table"
+        },
+        {
+          "id": "MCMC_utils.py",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/MCMC_utils.py",
+          "sha256": "e6ec3d83a9b126d7772ec6dd0d1b58ca757b820acd853fb89218c379cf873841",
+          "role": "primary_release_code_or_document"
+        },
+        {
+          "id": "lstsq_results.txt",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/lstsq_results.txt",
+          "sha256": "37d2d423d06b6a2100c47578eb9b1c566a575caf6ade0ed61f6b9586d2a35c95",
+          "role": "primary_release_code_or_document"
+        },
+        {
+          "id": "allc_shoes_ceph_topantheonwt6.0_112221.fits",
+          "url": "https://media.githubusercontent.com/media/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/allc_shoes_ceph_topantheonwt6.0_112221.fits",
+          "sha256": "a42778672d25df7a559bd2949b1e412b99b2e35dd9a36895f6b38828be019172",
+          "role": "released_compact_product"
+        },
+        {
+          "id": "alll_shoes_ceph_topantheonwt6.0_112221.fits",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/alll_shoes_ceph_topantheonwt6.0_112221.fits",
+          "sha256": "9a2ce872dd20ed4fdf5005ce62a805d3eefbbb0b20b0c614013e7c0094009db8",
+          "role": "released_compact_product"
+        },
+        {
+          "id": "ally_shoes_ceph_topantheonwt6.0_112221.fits",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/ally_shoes_ceph_topantheonwt6.0_112221.fits",
+          "sha256": "10bb034ca3fff53f6625c9fe47ebd054b37ef45d1140af1c766831cfa6871433",
+          "role": "released_compact_product"
+        },
+        {
+          "id": "run_mcmc.py",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/run_mcmc.py",
+          "sha256": "00546b9de2d73cd6315c0333b5f7b07a8b948f9e73056a88e76abe0249464c85",
+          "role": "primary_release_code_or_document"
+        }
+      ]
+    },
+    {
+      "kind": "prior_and_reduction_conditioning",
+      "mu0_preprocessing": "Riessv3 Eq2 p10 and y vector p11 subtract the adopted N4258 maser mu0 from retained Cepheid data. A reference subtraction may be an affine coordinate convention only if likelihood and prior transforms are consistent.",
+      "fullfit_prior": "README line6 and run_mcmc/MCMC_utils use lstsq full-fit centers/widths; retaining this box makes the heldout diagnostic conditional on full-fit information.",
+      "MW_summary": "Riessv3 §4.1 pp23–24 uses global b,Z in parallax-derived zeropoint summaries; a true source refit must update or justify freezing them.",
+      "background_and_covariance": "Riessv3 p20 item2/Eq8 iterative trial P–L calibration and within-host covariance floor; relation or selection change may alter both y and C.",
+      "selection": "Baseline clipping uses global-fit residuals, p38 §6.1; no unclipped/outlier/refit-selection release examined here.",
+      "artificial_star_uncertainty": "table2.tex line3143 explicitly warns new selections may necessitate new simulations. No new photometric selection is made by this formal diagnostic, but physical refit/selection independence cannot be inferred.",
+      "SN_covariance": "Riessv3 pp10,26; retain all source calibrator/HF cross-covariance and repeated-SN intrinsic-scatter dependence.",
+      "external_covariance": null,
+      "external_covariance_null_reason": "No original maser/DEB/parallax reduction calibration covariance audited; unknown is not zero."
+    },
+    {
+      "kind": "source_printed_inconsistency",
+      "id": "Riess-v3-Eq2-versus-displayed-L-anchor-sign",
+      "source_sha256": "572e5d2c0f32bf6e80a118eec13ed0107e1e2830f9ebe90b5bc4e9d1b7fa5df1",
+      "locator": "Eq1 p9, Eq2 p10, displayed y p11 and L/q p12",
+      "literal_Eq2": "M_H,j^W = m_H,N4258,j^W - mu_0,N4258 + Delta_mu_N4258",
+      "literal_matrix_prediction": "(Lq)_N4258 includes +M_H,1^W +Delta_mu_N4258 plus slope and metallicity terms",
+      "algebraic_consequence": "Using the Eq1 distance-modulus definition, Eq2 identifies physical mu_true=mu_ref−Delta_mu, whereas the displayed y=Lq matrix identifies mu_true=mu_ref+Delta_mu for the same named coordinate.",
+      "decision": "Printed source inconsistency, distinct from a transcription error. No repair chosen or applied."
+    }
+  ],
+  "unknowns": [
+    "Consumer must explicitly accept the separate frozen NEXT04 partial mapping of row3213/axis37 and the unchanged four failed table joins. Full event identity and reduction remain unresolved.",
+    "Resolve or explicitly contract the visually verified Eq2 versus y/L sign issue before projecting beta37 to physical N4258 mu.",
+    "Retain compact row3213 uncertainty versus paper0.032mag difference; do not replace covariance or claim exact Fit15 reproduction.",
+    "Full-fit-derived frozen box is allowed only as declared conditioning. An independent heldout prediction requires a training-only or independently justified proper prior with accepted physical coordinate transformations.",
+    "Obtain source-supported generator/refit data for global MW constraints, Cepheid background/photometry covariance, and clipping/selection; otherwise block physical source-equivalent refit.",
+    "Explicitly accept full supplied joint Gaussian/noise model, covariance block semantics, prior measure and exact row/axis maps; derive source blocks with frozen byte/index receipts, no independence shortcut.",
+    "Independent consumer review of the new46D training/posterior/future target, normalized evidence ratio, covariance SPD/rank/refinement and compiled adapter request; full-target sourcefixed46 normalization does not qualify this new target."
+  ],
+  "verification_gates": [
+    "Consumer explicitly accepts exact public candidate/contract bytes, original y/L/C and unchanged box transport before preparing the new target.",
+    "Verify ordered training/future/active indices, principal C_TT SPD and training rank, all cross-covariance blocks and original-to-active transport; preserve refusals.",
+    "Freeze predictive numerical allocations and an independent reference before execution. Full-target finite-box qualification does not qualify the new training or ratio target.",
+    "Keep physical-source/observational, normalized statistical-model, native numerical and cosmological interpretation gates separate. No Gaussian-prior replacement."
+  ],
+  "falsification": "A mismatched source/index/normalization or a failed preregistered consumer budget refuses the diagnostic. A discrepancy conditional on frozen products is not independently a physical source-fit failure or cosmological significance.",
+  "consumer": {
+    "repository": "sprajs/irreducible",
+    "revision": "5f17ba7625d3be125c02691cdf9ebec8aaa85fd2",
+    "dirty": false,
+    "capability_status": "Current source/schema and native Gaussian-predictive/finite-box documentation inspected only. The proper-Gaussian route and finite-box route are distinct; no compiled new compound row3213 request, capability or acceptance is certified.",
+    "recipe_runner_status": "docs/run-recipes.md remains proposed; no recipe schema/runner implemented. A dedicated native consumer route needs separately pinned review and validation."
+  },
+  "blockers": [
+    "Consumer must explicitly accept the separate frozen NEXT04 partial mapping of row3213/axis37 and the unchanged four failed table joins. Full event identity and reduction remain unresolved.",
+    "Resolve or explicitly contract the visually verified Eq2 versus y/L sign issue before projecting beta37 to physical N4258 mu.",
+    "Retain compact row3213 uncertainty versus paper0.032mag difference; do not replace covariance or claim exact Fit15 reproduction.",
+    "Full-fit-derived frozen box is allowed only as declared conditioning. An independent heldout prediction requires a training-only or independently justified proper prior with accepted physical coordinate transformations.",
+    "Obtain source-supported generator/refit data for global MW constraints, Cepheid background/photometry covariance, and clipping/selection; otherwise block physical source-equivalent refit.",
+    "Explicitly accept full supplied joint Gaussian/noise model, covariance block semantics, prior measure and exact row/axis maps; derive source blocks with frozen byte/index receipts, no independence shortcut.",
+    "Independent consumer review of the new46D training/posterior/future target, normalized evidence ratio, covariance SPD/rank/refinement and compiled adapter request; full-target sourcefixed46 normalization does not qualify this new target."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Targeted source claims and formal conditional proposal only; unresolved physical and new consumer gates retained."
+  }
+}

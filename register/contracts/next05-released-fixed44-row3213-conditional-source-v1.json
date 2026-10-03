@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "contract_id": "next05-released-fixed44-row3213-conditional-source-v1",
+  "title": "Released row-3213 conditional source contract",
+  "review_id": "2026-10-03-next05-source-claims",
+  "paper_ids": [
+    "arxiv:2112.04510v3"
+  ],
+  "scopes": [
+    {
+      "scope_id": "NEXT-04",
+      "title": "Partial original-coordinate identity",
+      "paper_ids": [
+        "arxiv:2112.04510v3"
+      ],
+      "checked_claim": "The source box has 47 original coordinates. Coordinate44 has zero center/width and no checked physical label; this diagnostic fixes it to literal0 and retains active0–43,45,46. The four failed original photometry joins remain unchanged.",
+      "unresolved": "This packet does not reconstruct the FITS generator, supply event identities or resolve compact-versus-paper reductions. Separate NEXT04 consumer evidence must be explicitly accepted."
+    },
+    {
+      "scope_id": "NEXT-05",
+      "title": "One withheld released observation",
+      "paper_ids": [
+        "arxiv:2112.04510v3"
+      ],
+      "checked_claim": "The paper compares an anchor geometric distance with a fit omitting that geometric constraint while retaining its Cepheids (§6.2 pp38,41; Table5 Fit15 p28; Figure19 p40). The separately declared diagnostic withholds only original row3213, retaining the remaining3491 released rows, full joint covariance and same normalized46-coordinate finite box. Training uses the principal covariance marginal C_TT, not a deleted precision block.",
+      "unresolved": "The diagnostic retains full-fit prior, reference-modulus preprocessing, globally conditioned MW summaries and photometry/clipping. Eq2 versus displayed y/L sign, physical row/reduction joins, true refit/selection/calibration, train rank/SPD, finite-box evidence ratio budgets and native consumer acceptance remain open."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "README.md",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/README.md",
+      "sha256": "fd845e484a184ad9740dddf26550db9d6d154d1631c1b30622dcecefe8ee7174",
+      "role": "primary_release_code_or_document",
+      "bytes": 2454,
+      "local_path": ".work/all19-source-wave2-20261003/sources/README.md",
+      "conditioning": "Pinned original paper v3 or release c447f0fea703fcd0fff57de5000947b5ca81286b; selected source checks only. FITS whole-byte hashes are not decoded-array or physical reduction verification.",
+      "licence": "Unknown; original files remain ignored and are not redistributed.",
+      "access": "Lawful public original source, locally rehashed before reuse.",
+      "reuse_verified_utc": "2026-10-03T00:47:23.753500+00:00"
+    },
+    {
+      "id": "read_chains_example.py",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/read_chains_example.py",
+      "sha256": "2cf388a78dd1a53d91fdc0b18451ca77b907679e9d59f05061195c78ddf93dcc",
+      "role": "primary_release_code_or_document",
+      "bytes": 1138,
+      "local_path": ".work/all19-source-wave2-20261003/sources/read_chains_example.py",
+      "conditioning": "Pinned original paper v3 or release c447f0fea703fcd0fff57de5000947b5ca81286b; selected source checks only. FITS whole-byte hashes are not decoded-array or physical reduction verification.",
+      "licence": "Unknown; original files remain ignored and are not redistributed.",
+      "access": "Lawful public original source, locally rehashed before reuse.",
+      "reuse_verified_utc": "2026-10-03T00:47:23.753500+00:00"
+    },
+    {
+      "id": "Riess-2112.04510v3.pdf",
+      "url": "https://arxiv.org/pdf/2112.04510v3",
+      "sha256": "572e5d2c0f32bf6e80a118eec13ed0107e1e2830f9ebe90b5bc4e9d1b7fa5df1",
+      "role": "primary_paper",
+      "bytes": 9544553,
+      "local_path": ".work/all19-source-wave2-20261003/sources/Riess-2112.04510v3.pdf",
+      "conditioning": "Pinned original paper v3 or release c447f0fea703fcd0fff57de5000947b5ca81286b; selected source checks only. FITS whole-byte hashes are not decoded-array or physical reduction verification.",
+      "licence": "Unknown; original files remain ignored and are not redistributed.",
+      "access": "Lawful public original source, locally rehashed before reuse.",
+      "reuse_verified_utc": "2026-10-03T00:47:23.753500+00:00"
+    },
+    {
+      "id": "table2.tex",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/table2.tex",
+      "sha256": "d4b9af2b5d65118f7ac44a41b7e8cd662dfd42a63b5c359ca402d8be3b4dbba4",
+      "role": "primary_rounded_photometry_table",
+      "bytes": 329678,
+      "local_path": ".work/all19-source-wave2-20261003/sources/table2.tex",
+      "conditioning": "Pinned original paper v3 or release c447f0fea703fcd0fff57de5000947b5ca81286b; selected source checks only. FITS whole-byte hashes are not decoded-array or physical reduction verification.",
+      "licence": "Unknown; original files remain ignored and are not redistributed.",
+      "access": "Lawful public original source, locally rehashed before reuse.",
+      "reuse_verified_utc": "2026-10-03T00:47:23.753500+00:00"
+    },
+    {
+      "id": "MCMC_utils.py",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/MCMC_utils.py",
+      "sha256": "e6ec3d83a9b126d7772ec6dd0d1b58ca757b820acd853fb89218c379cf873841",
+      "role": "primary_release_code_or_document",
+      "bytes": 2730,
+      "local_path": ".work/standard-lcdm-contracts/cache/ladder-original/MCMC_utils.py",
+      "conditioning": "Pinned original paper v3 or release c447f0fea703fcd0fff57de5000947b5ca81286b; selected source checks only. FITS whole-byte hashes are not decoded-array or physical reduction verification.",
+      "licence": "Unknown; original files remain ignored and are not redistributed.",
+      "access": "Lawful public original source, locally rehashed before reuse.",
+      "reuse_verified_utc": "2026-10-03T00:47:23.753500+00:00"
+    },
+    {
+      "id": "lstsq_results.txt",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/lstsq_results.txt",
+      "sha256": "37d2d423d06b6a2100c47578eb9b1c566a575caf6ade0ed61f6b9586d2a35c95",
+      "role": "primary_release_code_or_document",
+      "bytes": 721,
+      "local_path": ".work/standard-lcdm-contracts/cache/ladder-original/lstsq_results.txt",
+      "conditioning": "Pinned original paper v3 or release c447f0fea703fcd0fff57de5000947b5ca81286b; selected source checks only. FITS whole-byte hashes are not decoded-array or physical reduction verification.",
+      "licence": "Unknown; original files remain ignored and are not redistributed.",
+      "access": "Lawful public original source, locally rehashed before reuse.",
+      "reuse_verified_utc": "2026-10-03T00:47:23.753500+00:00"
+    },
+    {
+      "id": "allc_shoes_ceph_topantheonwt6.0_112221.fits",
+      "url": "https://media.githubusercontent.com/media/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/allc_shoes_ceph_topantheonwt6.0_112221.fits",
+      "sha256": "a42778672d25df7a559bd2949b1e412b99b2e35dd9a36895f6b38828be019172",
+      "role": "released_compact_product",
+      "bytes": 48781440,
+      "local_path": ".work/standard-lcdm-contracts/cache/ladder-original/allc_shoes_ceph_topantheonwt6.0_112221.fits",
+      "conditioning": "Pinned original paper v3 or release c447f0fea703fcd0fff57de5000947b5ca81286b; selected source checks only. FITS whole-byte hashes are not decoded-array or physical reduction verification.",
+      "licence": "Unknown; original files remain ignored and are not redistributed.",
+      "access": "Lawful public original source, locally rehashed before reuse.",
+      "reuse_verified_utc": "2026-10-03T00:47:23.753500+00:00"
+    },
+    {
+      "id": "alll_shoes_ceph_topantheonwt6.0_112221.fits",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/alll_shoes_ceph_topantheonwt6.0_112221.fits",
+      "sha256": "9a2ce872dd20ed4fdf5005ce62a805d3eefbbb0b20b0c614013e7c0094009db8",
+      "role": "released_compact_product",
+      "bytes": 659520,
+      "local_path": ".work/standard-lcdm-contracts/cache/ladder-original/alll_shoes_ceph_topantheonwt6.0_112221.fits",
+      "conditioning": "Pinned original paper v3 or release c447f0fea703fcd0fff57de5000947b5ca81286b; selected source checks only. FITS whole-byte hashes are not decoded-array or physical reduction verification.",
+      "licence": "Unknown; original files remain ignored and are not redistributed.",
+      "access": "Lawful public original source, locally rehashed before reuse.",
+      "reuse_verified_utc": "2026-10-03T00:47:23.753500+00:00"
+    },
+    {
+      "id": "ally_shoes_ceph_topantheonwt6.0_112221.fits",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/ally_shoes_ceph_topantheonwt6.0_112221.fits",
+      "sha256": "10bb034ca3fff53f6625c9fe47ebd054b37ef45d1140af1c766831cfa6871433",
+      "role": "released_compact_product",
+      "bytes": 17280,
+      "local_path": ".work/standard-lcdm-contracts/cache/ladder-original/ally_shoes_ceph_topantheonwt6.0_112221.fits",
+      "conditioning": "Pinned original paper v3 or release c447f0fea703fcd0fff57de5000947b5ca81286b; selected source checks only. FITS whole-byte hashes are not decoded-array or physical reduction verification.",
+      "licence": "Unknown; original files remain ignored and are not redistributed.",
+      "access": "Lawful public original source, locally rehashed before reuse.",
+      "reuse_verified_utc": "2026-10-03T00:47:23.753500+00:00"
+    },
+    {
+      "id": "run_mcmc.py",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/run_mcmc.py",
+      "sha256": "00546b9de2d73cd6315c0333b5f7b07a8b948f9e73056a88e76abe0249464c85",
+      "role": "primary_release_code_or_document",
+      "bytes": 2020,
+      "local_path": ".work/standard-lcdm-contracts/cache/ladder-original/run_mcmc.py",
+      "conditioning": "Pinned original paper v3 or release c447f0fea703fcd0fff57de5000947b5ca81286b; selected source checks only. FITS whole-byte hashes are not decoded-array or physical reduction verification.",
+      "licence": "Unknown; original files remain ignored and are not redistributed.",
+      "access": "Lawful public original source, locally rehashed before reuse.",
+      "reuse_verified_utc": "2026-10-03T00:47:23.753500+00:00"
+    }
+  ],
+  "limitations": [
+    "Targeted source claims and reviewer-derived formal diagnostic only: zero Luna/full-paper reads, no extraction/review stage promotion.",
+    "The finite box and released preprocessing retain full-fit/withheld information. This is conditional on those frozen products, with no independent physical heldout interpretation.",
+    "Riess v3 Eq2 and displayed y/L have an unrepaired anchor-offset sign inconsistency. No physical distance projection is accepted.",
+    "No FITS decoding, array extraction, rank/SPD calculation, table rejoin, refit, density/evidence computation or numerical qualification occurred.",
+    "No source-equivalent Fit15 reproduction, new H0 measurement or cosmological tension significance. Missing cross-covariances remain unknown."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}

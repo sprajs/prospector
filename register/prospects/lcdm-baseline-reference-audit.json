@@ -78,7 +78,8 @@
     "candidate-lcdm-baseline-reference-audit",
     "candidate-desi-dr2-full-compression-contract",
     "candidate-bounded-shared-charge-hhe",
-    "candidate-perfect-fluid-band-transfer"
+    "candidate-perfect-fluid-band-transfer",
+    "next05-released-fixed44-row3213-conditional-diagnostic-20261003"
   ],
   "topic_ids": [
     "baseline-reference"
