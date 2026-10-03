@@ -1,6 +1,7 @@
 """Project scientific values into the public interface; leave workflow records in Git."""
 import base64
 import json
+import re
 from pathlib import Path
 from validate_register import ROOT, strict_load
 
@@ -10,11 +11,21 @@ ORDER = ['baseline-reference', 'early-energy', 'late-dark-energy', 'interacting-
 
 def public_contract(item):
     """Expose checked source scope without local storage or worker provenance."""
+    limits = []
+    workflow = ['luna', 'paper promotion', 'stage promotion', 'private proposal',
+                'private candidate', 'source packet', 'root conditional algebra acceptance', 'public slug']
+    for limit in item['limitations']:
+        sentences = [sentence for sentence in re.split(r'(?<=[.!?])\s+', limit)
+                     if not any(term in sentence.lower() for term in workflow)]
+        if sentences:
+            limits.append(' '.join(sentences).replace('Root externally reports',
+                          'A separate consumer review reports'))
     return {
         'title': item['title'],
-        'limitations': [limit for limit in item['limitations']
-                        if not any(term in limit for term in ['Luna', 'paper promotion', 'stage promotion'])],
-        'scopes': [{k: scope[k] for k in ['scope_id', 'title', 'paper_ids', 'checked_claim', 'unresolved']}
+        'limitations': limits,
+        'scopes': [{k: (scope[k].replace('Root reports', 'A separate consumer review reports')
+                       if isinstance(scope[k], str) else scope[k])
+                   for k in ['scope_id', 'title', 'paper_ids', 'checked_claim', 'unresolved']}
                    for scope in item['scopes']],
         'sources': [{k: source[k] for k in ['id', 'url', 'sha256', 'role', 'conditioning']}
                     for source in item['source_assets']],
@@ -92,15 +103,18 @@ def website_data(papers, ideas, prospects, graph):
         public['source_gates'] = [{k: scope[k] for k in ['scope_id','title','paper_ids','checked_claim','unresolved']}
                                  for ident in item.get('source_contract_ids', [])
                                  for scope in contracts[ident]['scopes']]
-        public['scalar_sources'] = [serializations[ident] for ident in sorted({
-            source['serialization_id'] for contract in item.get('source_contract_ids', [])
-            for source in contracts[contract].get('source_serializations', [])})]
         # Paper-set association is navigation, not a new physical graph relation.
-        public['additional_source_contracts'] = [public_contract(contract)
+        associated_contracts = [ident
             for ident, contract in sorted(contracts.items())
             if ident not in item.get('source_contract_ids', [])
             and contract.get('paper_ids')
             and set(contract['paper_ids']).issubset(item.get('paper_ids', []))]
+        public['additional_source_contracts'] = [public_contract(contracts[ident])
+                                                 for ident in associated_contracts]
+        public['scalar_sources'] = [serializations[ident] for ident in sorted({
+            source['serialization_id']
+            for contract in item.get('source_contract_ids', []) + associated_contracts
+            for source in contracts[contract].get('source_serializations', [])})]
         public['investigations'] = [public_investigation(designs[ident])
                                     for ident in item.get('design_ids', [])]
         return public
