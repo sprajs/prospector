@@ -1,6 +1,6 @@
 # Register
 
-67 paper versions · 23 ideas · 9 topics · 10 candidate prospects.
+68 paper versions · 23 ideas · 9 topics · 10 candidate prospects.
 
 [Open Prospector](https://prospector-cosmology.sprajs.chatgpt.site) · [Local map](map.html)
 
@@ -8,7 +8,7 @@
 
 | Topic | Papers | Ideas |
 | --- | ---: | ---: |
-| [ΛCDM reference](topics/baseline-reference.json) | 19 | 4 |
+| [ΛCDM reference](topics/baseline-reference.json) | 20 | 4 |
 | [Bounces, cycles and primordial alternatives](topics/bounces-cycles.json) | 3 | 0 |
 | [Early energy and recombination](topics/early-energy.json) | 18 | 8 |
 | [Inhomogeneity, averaging and observers](topics/inhomogeneity.json) | 6 | 2 |
@@ -82,6 +82,7 @@ Combined models require compatibility checks before promotion.
 | [Modified Einstein-Cartan Gravity and its Implications for Cosmology](https://arxiv.org/abs/1406.7555v2) | [1406.7555v2](papers/1406.7555v2.json) | screened |
 | [Cosmic microwave background anisotropies in the timescape cosmology](https://arxiv.org/abs/1410.3470v3) | [1410.3470v3](papers/1410.3470v3.json) | screened |
 | [Phantom Dark Ghost in Einstein-Cartan Gravity](https://arxiv.org/abs/1507.07571v3) | [1507.07571v3](papers/1507.07571v3.json) | screened |
+| [The clustering of galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: RSD measurement from the LOS-dependent power spectrum of DR12 BOSS galaxies](https://arxiv.org/abs/1509.06386v2) | [1509.06386v2](papers/1509.06386v2.json) | discovered |
 | [Emergent Cosmos in Einstein-Cartan Theory](https://arxiv.org/abs/1605.00552v2) | [1605.00552v2](papers/1605.00552v2.json) | screened |
 | [The clustering of galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: RSD measurement from the power spectrum and bispectrum of the DR12 BOSS galaxies](https://arxiv.org/abs/1606.00439v2) | [1606.00439v2](papers/1606.00439v2.json) | discovered |
 | [Einstein-Cartan Gravity with Torsion Field Serving as Origin for Cosmological Constant or Dark Energy Density](https://arxiv.org/abs/1607.01128v2) | [1607.01128v2](papers/1607.01128v2.json) | screened |

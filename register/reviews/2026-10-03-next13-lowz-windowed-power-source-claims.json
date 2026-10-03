@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-next13-lowz-windowed-power-source-claims",
+  "review_kind": "targeted_source_claims",
+  "packet_sha256": "41c6f6a94e893ec80c577b080bba28a4b5a6ef909f668d56f66226ba327e7be2",
+  "reviewed_papers": [
+    "arxiv:1509.06386v2"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:1509.06386v2",
+      "source_hashes": {
+        "html": "f90073722add2c4c9f8c76ce37610a5c0cc85dab00ad345f971c2985b1282a3d"
+      },
+      "coverage": {
+        "main_text": "Selected original HTML paragraphs/equations listed below, release README/header coverage from preserved v1, and copied native statistics source passages. This is targeted original-source review, not full-section/full-paper review or reproduction.",
+        "checked_locators": [
+          "HTML title/body authors; pinned official route and Atom version/update identity",
+          "S2.SS2.p1.1-p3.1 (mock schemes and different underlying cosmologies; no realization count admitted)",
+          "S2.SS3.p1.1 (analysis fiducial tuple and ruler)",
+          "S3.E3,E4,EGx1,E6; S3.p1.4-p1.5,p3.1,p4.1 (selected normalization/shot-noise/LOS/bins/lower cuts)",
+          "S5.SS2.p3.1 (non-Poisson monopole nuisance)",
+          "S5.SS3.p1.1-p1.2,p2.1,p3.1; S5.EGx2 (ruler-conditioned AP definitions and fiducial distances)",
+          "S5.SS4.p1.1-p5.1; S5.E10,E11,E12,E13,EGx3,EGx4/Ex5/Ex6 (window convolution/action, approximation/calibration and no integral constraint)",
+          "S6.SS1.p1.1-p2.1; S6.EGx5,E17 (mock covariance/block convention and finite-mock correction prose)",
+          "S6.SS2.p1.1-p3.2; S6.I1.i1-i6; S6.E18 (eight free parameters, fixed shape and Gaussian-fit assumption)",
+          "S7.p1.1-p2.1 (published table-fit kmax .24); S7.p4.1-p5.1 and S7.I2.i2.p1.1 were incidentally read and supply no newly accepted result",
+          "README:1-36",
+          "P0/P2 and kinput comment headers:1-2",
+          "statistics.hpp:1-154,238-255; statistics.cpp:328-443",
+          "HTML #license-tr:224-226 (article licence metadata only)"
+        ],
+        "unread": "Most original introduction/data/weight details, complete bias/TNS/RSD kernels, systematic tests, scientific table cells, plots/figures/images/captions, appendices and references; original PDF/printed-number alignment; nuisance priors/bounds and exact code/producer history. All numeric data/grid/window/covariance bodies remain uninterpreted by this worker; structural counters are reused from the separate central receipt, not recalculated. Native helper implementations/CLASS theory and target caller remain unexamined.",
+        "figures": "Author textual discussions of Fig2/9 were read; no visual/caption-only figure verification, digitization or render.",
+        "new_full_reads": 0,
+        "paper_stage_untouched": true
+      }
+    }
+  ],
+  "source_contract_binding": {
+    "contract_id": "next13-lowz-pre-recon-windowed-power-source-target-v1",
+    "path": "register/contracts/next13-lowz-pre-recon-windowed-power-source-target-v1.json",
+    "sha256": "3932ad0c242ea292e3b8f0128b647ca3e6315dc48ff0a95c49d1b59985b6c700"
+  },
+  "worker_packet": {
+    "path": ".work/windowed-clustering-target-20261003/workers/source/packet-final-v3.json",
+    "sha256": "41c6f6a94e893ec80c577b080bba28a4b5a6ef909f668d56f66226ba327e7be2",
+    "status": "FINAL"
+  },
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "requested_reasoning_note": "Ordinary scientific review policy is high; ROOT authorized this existing exact Sol worker at its actual xhigh effort.",
+  "agent_id": "/root/perturbation_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "session_id": "01a0fec1-578e-7712-ba9d-1707e70bb91c",
+    "turn_id": "01a10269-7012-78c2-a31c-cef809194e48",
+    "backend": null,
+    "path": ".work/windowed-clustering-target-20261003/source-worker-runtime-v1.json",
+    "sha256": "68f7779bc163e736a8936ff86b933427119b7991c9321ed348740dfca4cf29d0"
+  },
+  "source_contract_associations": [],
+  "reviewed_source_assets": [
+    {
+      "id": "lowz1509-06386v2-primary-html",
+      "url": "https://arxiv.org/html/1509.06386v2",
+      "sha256": "f90073722add2c4c9f8c76ce37610a5c0cc85dab00ad345f971c2985b1282a3d",
+      "role": "html",
+      "conditioning": "Pinned original source; selected identity, fiducial/AP, window block action, fit cuts, noise/nuisance and covariance assumptions only. No full-paper reading, image inspection or numerical reproduction. The HTML infobox labels arXiv.org perpetual non-exclusive licence; archive/source redistribution grants are not inferred."
+    },
+    {
+      "id": "lowz-2016ab-original-archive",
+      "url": "https://data.sdss.org/sas/dr12/boss/papers/clustering/GilMarin_etal_2016ab_DR12CMASSLOWZ_powspec.zip",
+      "sha256": "124a14c3ae3ff4d495208889b803ef2fa3e6dfccdc496bbbb7b918d7cffadd4b",
+      "role": "archive",
+      "conditioning": "Exact author release archive. June2016 pre-reconstruction LOWZ power products selected; no new extraction or payload array calculation. Source-specific licence unknown."
+    },
+    {
+      "id": "lowz-pre-rec-p0-p2-covariance",
+      "url": "https://data.sdss.org/sas/dr12/boss/papers/clustering/GilMarin_etal_2016ab_DR12CMASSLOWZ_powspec.zip",
+      "sha256": "edb46a3c1a71c86d8df6b52ac1a9c063eed11c946669212cfdf4c4e9ca243faa",
+      "role": "archive_member",
+      "conditioning": "GilMarin_boss_data/pre-recon/lowz/GilMarin_2016_LOWZDR12_covariance_power_spectrum_monopole_quadrupole_pre_recon_patchy_mocks.txt. Headerless member, full-file hash only by this source worker; central finite-token/shape/diagonal inspection is separately receipted; README25–26,34 identifies role/claimed dimension and mock origin. Numeric body not parsed by this source worker; central finite-token/shape/diagonal inspection is separately receipted."
+    },
+    {
+      "id": "lowz-pre-rec-window-kinput",
+      "url": "https://data.sdss.org/sas/dr12/boss/papers/clustering/GilMarin_etal_2016ab_DR12CMASSLOWZ_powspec.zip",
+      "sha256": "509066f86887fb3522d5aa5bc60c557e5ab94f2ac1403bbce3abb7d5842ff946",
+      "role": "archive_member",
+      "conditioning": "GilMarin_boss_data/pre-recon/lowz/GilMarin_2016_LOWZDR12_kinput_window.txt. Original comment header lines1–2 only: input-k grid role and h Mpc^-1 units; numeric support unparsed."
+    },
+    {
+      "id": "lowz-pre-rec-p0-measurement",
+      "url": "https://data.sdss.org/sas/dr12/boss/papers/clustering/GilMarin_etal_2016ab_DR12CMASSLOWZ_powspec.zip",
+      "sha256": "471e5b2de4f01bbd97a3b4c0608d04ea9bdbb2f22689310cf5decd90639f06ec",
+      "role": "archive_member",
+      "conditioning": "GilMarin_boss_data/pre-recon/lowz/GilMarin_2016_LOWZDR12_measurement_power_spectrum_monopole_pre_recon.txt. Original comment header lines1–2 only: declared measurement, k and P/error units. Numeric body not parsed by this source worker; central finite-token/shape/diagonal inspection is separately receipted."
+    },
+    {
+      "id": "lowz-pre-rec-p2-measurement",
+      "url": "https://data.sdss.org/sas/dr12/boss/papers/clustering/GilMarin_etal_2016ab_DR12CMASSLOWZ_powspec.zip",
+      "sha256": "287edba379c37902eabcf89d00219d888adc6c6721c7c66ce548adbf05b54684",
+      "role": "archive_member",
+      "conditioning": "GilMarin_boss_data/pre-recon/lowz/GilMarin_2016_LOWZDR12_measurement_power_spectrum_quadrupole_pre_recon.txt. Original comment header lines1–2 only: declared measurement, k and P/error units. Numeric body not parsed by this source worker; central finite-token/shape/diagonal inspection is separately receipted."
+    },
+    {
+      "id": "lowz-pre-rec-window-w00",
+      "url": "https://data.sdss.org/sas/dr12/boss/papers/clustering/GilMarin_etal_2016ab_DR12CMASSLOWZ_powspec.zip",
+      "sha256": "86c9596ab9766a9a4b4ee5abe7e3f8b5209117e15f4a746ab8229e1099324979",
+      "role": "archive_member",
+      "conditioning": "GilMarin_boss_data/pre-recon/lowz/GilMarin_2016_LOWZDR12_window_power_spectrum_monopole_monopole_pre_recon_W00.txt. Headerless member, full-file hash only by this source worker; central finite-token/shape/diagonal inspection is separately receipted; README28–32 declares four window blocks and row/column grid roles. Released numerical window body/calibration normalization unexamined; primary block action checked separately."
+    },
+    {
+      "id": "lowz-pre-rec-window-w02",
+      "url": "https://data.sdss.org/sas/dr12/boss/papers/clustering/GilMarin_etal_2016ab_DR12CMASSLOWZ_powspec.zip",
+      "sha256": "2f84380c38b5164fe4f9f383f168c26bdce98ec595db0d15218452112ab2014e",
+      "role": "archive_member",
+      "conditioning": "GilMarin_boss_data/pre-recon/lowz/GilMarin_2016_LOWZDR12_window_power_spectrum_monopole_quadrupole_pre_recon_W02.txt. Headerless member, full-file hash only by this source worker; central finite-token/shape/diagonal inspection is separately receipted; README28–32 declares four window blocks and row/column grid roles. Released numerical window body/calibration normalization unexamined; primary block action checked separately."
+    },
+    {
+      "id": "lowz-pre-rec-window-w20",
+      "url": "https://data.sdss.org/sas/dr12/boss/papers/clustering/GilMarin_etal_2016ab_DR12CMASSLOWZ_powspec.zip",
+      "sha256": "00b856a5b7f2619b66edddee918ca616a9192a572356648dfc8a7dfe4629f5ed",
+      "role": "archive_member",
+      "conditioning": "GilMarin_boss_data/pre-recon/lowz/GilMarin_2016_LOWZDR12_window_power_spectrum_quadrupole_monopole_pre_recon_W20.txt. Headerless member, full-file hash only by this source worker; central finite-token/shape/diagonal inspection is separately receipted; README28–32 declares four window blocks and row/column grid roles. Released numerical window body/calibration normalization unexamined; primary block action checked separately."
+    },
+    {
+      "id": "lowz-pre-rec-window-w22",
+      "url": "https://data.sdss.org/sas/dr12/boss/papers/clustering/GilMarin_etal_2016ab_DR12CMASSLOWZ_powspec.zip",
+      "sha256": "f0760ffed4dfd460506ac61acf4a8666d3f2704c1a6e3a76bc5a254ea3287e4b",
+      "role": "archive_member",
+      "conditioning": "GilMarin_boss_data/pre-recon/lowz/GilMarin_2016_LOWZDR12_window_power_spectrum_quadrupole_quadrupole_pre_recon_W22.txt. Headerless member, full-file hash only by this source worker; central finite-token/shape/diagonal inspection is separately receipted; README28–32 declares four window blocks and row/column grid roles. Released numerical window body/calibration normalization unexamined; primary block action checked separately."
+    },
+    {
+      "id": "lowz-2016ab-readme",
+      "url": "https://data.sdss.org/sas/dr12/boss/papers/clustering/GilMarin_etal_2016ab_DR12CMASSLOWZ_powspec.zip",
+      "sha256": "74101f26fc1bc01f0bbe39e764d08fc7f7f67a2b15be65a426c4f7f47365b22e",
+      "role": "archive_member",
+      "conditioning": "GilMarin_boss_data/README. README lines1–36 fully read; source-reported counts/order and primary Eq15 pointer."
+    }
+  ],
+  "accepted_claim_ids": [
+    "L01",
+    "L02",
+    "L03",
+    "L04",
+    "L05",
+    "L06"
+  ],
+  "accepted_records": {
+    "contract_ids": [
+      "next13-lowz-pre-recon-windowed-power-source-target-v1"
+    ],
+    "scope_ids": [
+      "NEXT-13"
+    ],
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": []
+  },
+  "coverage": {
+    "main_text": "Selected original HTML paragraphs/equations listed below, release README/header coverage from preserved v1, and copied native statistics source passages. This is targeted original-source review, not full-section/full-paper review or reproduction.",
+    "checked_locators": [
+      "HTML title/body authors; pinned official route and Atom version/update identity",
+      "S2.SS2.p1.1-p3.1 (mock schemes and different underlying cosmologies; no realization count admitted)",
+      "S2.SS3.p1.1 (analysis fiducial tuple and ruler)",
+      "S3.E3,E4,EGx1,E6; S3.p1.4-p1.5,p3.1,p4.1 (selected normalization/shot-noise/LOS/bins/lower cuts)",
+      "S5.SS2.p3.1 (non-Poisson monopole nuisance)",
+      "S5.SS3.p1.1-p1.2,p2.1,p3.1; S5.EGx2 (ruler-conditioned AP definitions and fiducial distances)",
+      "S5.SS4.p1.1-p5.1; S5.E10,E11,E12,E13,EGx3,EGx4/Ex5/Ex6 (window convolution/action, approximation/calibration and no integral constraint)",
+      "S6.SS1.p1.1-p2.1; S6.EGx5,E17 (mock covariance/block convention and finite-mock correction prose)",
+      "S6.SS2.p1.1-p3.2; S6.I1.i1-i6; S6.E18 (eight free parameters, fixed shape and Gaussian-fit assumption)",
+      "S7.p1.1-p2.1 (published table-fit kmax .24); S7.p4.1-p5.1 and S7.I2.i2.p1.1 were incidentally read and supply no newly accepted result",
+      "README:1-36",
+      "P0/P2 and kinput comment headers:1-2",
+      "statistics.hpp:1-154,238-255; statistics.cpp:328-443",
+      "HTML #license-tr:224-226 (article licence metadata only)"
+    ],
+    "unread": "Most original introduction/data/weight details, complete bias/TNS/RSD kernels, systematic tests, scientific table cells, plots/figures/images/captions, appendices and references; original PDF/printed-number alignment; nuisance priors/bounds and exact code/producer history. All numeric data/grid/window/covariance bodies remain uninterpreted by this worker; structural counters are reused from the separate central receipt, not recalculated. Native helper implementations/CLASS theory and target caller remain unexamined.",
+    "figures": "Author textual discussions of Fig2/9 were read; no visual/caption-only figure verification, digitization or render.",
+    "new_full_reads": 0,
+    "paper_stage_untouched": true
+  },
+  "native_source_comparison": {
+    "source_only": true,
+    "revision": "7c22cb250cab930b2ab6ef468b432f135eaee10a",
+    "sources": [
+      {
+        "source_path": "cpp/include/irred/statistics.hpp",
+        "source_revision": "7c22cb250cab930b2ab6ef468b432f135eaee10a",
+        "source_dirty": false,
+        "path": ".work/windowed-clustering-target-20261003/source-courier-v1/statistics.hpp",
+        "bytes": 11722,
+        "sha256": "7243e57e195d02c6a061c8784545eb92731a9fd1b63bc0109794810a798a9f7f",
+        "checked_line_ranges_inclusive": [
+          [
+            1,
+            154
+          ],
+          [
+            238,
+            255
+          ]
+        ],
+        "source_repository": "irreducible"
+      },
+      {
+        "source_path": "cpp/src/statistics.cpp",
+        "source_revision": "7c22cb250cab930b2ab6ef468b432f135eaee10a",
+        "source_dirty": false,
+        "path": ".work/windowed-clustering-target-20261003/source-courier-v1/statistics.cpp",
+        "bytes": 35532,
+        "sha256": "ccf245caa244f96aacad21a534db917f976798e7ef4ecc2bf2a1a4b041332e2f",
+        "checked_line_ranges_inclusive": [
+          [
+            328,
+            443
+          ]
+        ],
+        "source_repository": "irreducible"
+      }
+    ],
+    "installed_or_executed_clustering_acceptance": false
+  },
+  "prerequisites": [
+    {
+      "id": "P01",
+      "status": "PARTLY_RESOLVED",
+      "requirement": "Exact primary/discrete action located; window-calibration/index/normalization ancestry and released operator adequacy remain open. No re-derivation or synthesis admitted."
+    },
+    {
+      "id": "P02",
+      "status": "BLOCKING",
+      "requirement": "Covariance axis/error ownership must be reconciled with producer/source evidence before claiming this released observational Gaussian target. Only6/106 diagonal/error intervals match candidate allP0thenP2; no reordering/rescaling accepted. Exact cut-row map still requires a bounded admitted structural selection."
+    },
+    {
+      "id": "P03",
+      "status": "BLOCKING",
+      "requirement": "Choose and source an explicit galaxy/RSD/shot-noise/FoG model and priors. Historical model uses fixed shape and8 free parameters; a simpler CLASS-compatible model has distinct approximation/lost-scope identity. Ruler/AP/h/unit conventions require explicit mapping."
+    },
+    {
+      "id": "P04",
+      "status": "BLOCKING",
+      "requirement": "Consumer-owned CLASS matter P(k,z=.32) units/species/epoch/interpolation/support and galaxy/window adapter must be verified; continuous CMB projection is inapplicable."
+    },
+    {
+      "id": "P05",
+      "status": "BLOCKING",
+      "requirement": "Retain conditional Gaussian assumption and determine released C/precision/finite-mock correction ownership. No measured noise law, covariance numerical acceptance, installed caller or likelihood score is accepted."
+    }
+  ],
+  "one_next_executable_action": {
+    "id": "A02",
+    "owner": "central data/consumer owner",
+    "action": "Resolve and freeze the released covariance axis/error ownership against exact original producer/source evidence, preserving the6/106 negative check; return an explicit justified ordered-row/covariance and historical-cut map, or retain refusal. No permutation or covariance rescaling may be silently substituted.",
+    "reason": "Shapes and source Eq17 do not establish the headerless release mapping; this must precede claiming an observational covariance likelihood.",
+    "execution_by_this_worker": false,
+    "new_numerical_or_acquisition_grant_inferred": false
+  },
+  "limitations": [
+    "One released LOWZ power-only target is selected. Its galaxy multipoles are reductions conditioned on catalogues, selection, randoms, fiducial geometry and mocks; they are not a direct matter spectrum or independent amplitude measurement. This is not a Planck or historical full-shape-fit reproduction.",
+    "The primary discrete window action and release row/column roles are located. Higher angular multipoles are excluded by the source approximation; integral-constraint correction is omitted. Window-calibration dependence, literal index/normalization ambiguities in the preceding primary expression and missing HTML equation-number tags are preserved. No new weights, transpose, renormalization or source repair is inferred.",
+    "All53 supplied bins differ from the historical fit selection: P0 k>0.02, P2 k>0.04, reported table fits kmax0.24 h Mpc^-1. README nominal0.0015–0.3 support differs from the central inspected data endpoints0.002342–0.317660; the two descriptions do not determine the exact fit-row selection.",
+    "Structural shape/finite-token inspection is not covariance validity or producer ownership. Under the candidate all-P0-then-P2 order, only6 of106 covariance diagonals match the printed-error-square intervals. The central Every diagonal matches sentence was withdrawn additively. Covariance axis/error reconciliation remains blocked; no permutation, rescaling, substitute diagonal covariance or likelihood is accepted.",
+    "Original analysis uses a fixed fiducial spectral shape and eight free parameters, with non-Poisson shot-noise and Fingers-of-God freedom. Exact nuisance priors, historical galaxy/RSD implementation, finite-mock correction ownership and compatibility with a changing CLASS full-state model remain open. A simple bias/RSD choice would require a distinct declared approximation.",
+    "Any native Gaussian target must declare a conditional statistical model and exact ordered common-unit residual/covariance. Copied native source provides whole-matrix preparation and whole-residual evaluation, not galaxy/window physics, observed Gaussian law or installed/compiled target acceptance. Continuous CMB projection geometry supplies no matter/window adapter.",
+    "Shared BOSS objects, randoms, masks, mocks and fiducial geometry imply dependent analysis ancestry. Cross-covariance with other BOSS, BAO or compressed products remains unknown. Public source access and citation requests do not establish redistribution rights. No full-paper stage, scientific qualification or numerical experiment is promoted.",
+    "Next action: the source/consumer owner reconciles exact released covariance axes/error semantics and the historical cut map, or retains refusal, before scoring."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  },
+  "resource_accounting": {
+    "new_versions": 0,
+    "new_full_reads": 0,
+    "new_agents": 0,
+    "new_network_requests": 0,
+    "archive_extractions": 0,
+    "numeric_body_parses": 0,
+    "matrix_operations": 0,
+    "build_test_science_validator_jobs": 0,
+    "public_edits": 0
+  },
+  "corrections": [
+    {
+      "kind": "source_prerequisite_resolved",
+      "statement": "V1 missing-primary conclusion was true at its pre-acquisition freeze. Exact1509.06386v2 was subsequently acquired centrally; selected source claims now added without rewriting v1."
+    },
+    {
+      "kind": "coordinator_receipt_interpretation_error",
+      "statement": "Central resultv2 said Every diagonal matches despite its6/106 raw counters. Additive amendment db0fa5c3 withdraws that prose;6/106 and unaccepted axis ownership are preserved. This is not a printed-paper or worker transcription error."
+    },
+    {
+      "kind": "original_HTML_numbering_and_index_qualification",
+      "statement": "README calls the action Eq15; original HTML S5.EGx4 has Ex5/Ex6 but no visible numeric tag and contains missing-label references. S5.EGx3 projects ellprime, contains P^ell with a k_i input top-hat and divides by P^ellprime(k_j), whereas the next block action uses first superscript as output and second as input. Literal source expressions are preserved; original-PDF index/number reconciliation is unread. No transpose, repair or reconstructed window definition is accepted."
+    },
+    {
+      "kind": "source_support_distinction",
+      "statement": "README0.0015..0.3 support, central data0.002342..0.317660 and original historical cuts are separate definitions. No source error or numerical covariance repair inferred."
+    }
+  ],
+  "supporting_packets": [
+    {
+      "path": ".work/windowed-clustering-target-20261003/acquisition-inspection-result-v2.json",
+      "sha256": "847d61974c2d63c8962e9934f3ed9ea1d677ea5a19d672bcc901ad097e5c22c2"
+    },
+    {
+      "path": ".work/windowed-clustering-target-20261003/inspection-interpretation-amendment-v1.json",
+      "sha256": "db0fa5c329f545d9016482c8d796712f1cf011d5e454788fe7ce6482bb1fdbdc"
+    }
+  ],
+  "original_scientific_runtime_preserved": true,
+  "paper_licence_observation": {
+    "literal_label": "License: arXiv.org perpetual non-exclusive license",
+    "href": "https://info.arxiv.org/help/license/index.html#licenses-available",
+    "locator": "HTML #license-tr, source lines224–226",
+    "source_sha256": "f90073722add2c4c9f8c76ce37610a5c0cc85dab00ad345f971c2985b1282a3d",
+    "scope": "Observed original pinned-HTML infobox metadata, not a new legal grant analysis. Atom metadata license_url remains null. No archive/code redistribution rights or permission inferred."
+  },
+  "projection_amendment": {
+    "old_contract_sha256": "cb01ec98c5e803f22acd69d6602d69f23740ef796615c42ac4abd96caa1ebff9",
+    "old_packet_sha256": "40f066b4120dfba23520171a7d210753f109f15bbac62c915d5236046de7a664",
+    "old_review_sha256": "6030ee1b7aab03f6399f4a30bef30d673569a839ff6a334365a3d96d8590f841",
+    "scope": "Asset coverage descriptions, repository-relative public source origins, explicit next action and article licence label; source science unchanged."
+  }
+}
