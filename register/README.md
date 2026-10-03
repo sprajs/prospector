@@ -158,6 +158,7 @@ Combined models require compatibility checks before promotion.
 | [Timescape tracker distance and same-object reduction sensitivity](../designs/candidate-timescape-tracker-distance-lineage.json) | blocked |
 | [Scalar slope and source-consistency screen](../designs/candidate-unified-scalar-source-consistency-and-slope-screen.json) | blocked |
 | [Historical WFC3 optical response and calibration-law boundary](../designs/candidate-wfc3-optical-response-contract.json) | blocked |
+| [Released row-3213 conditional diagnostic](../designs/next05-released-fixed44-row3213-conditional-diagnostic-20261003.json) | blocked |
 
 Source checks and structural validation do not establish independent reproduction or scientific qualification.
 

@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-next04-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "high",
+  "agent_id": "/root/build_identity_owner",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "session_id": "01a0fecf-6232-7f71-965e-3d32a359b3d6",
+    "turn_id": "01a0ff3c-de36-76e0-91e8-f6d5c0f842d9",
+    "model": "gpt-6.1-sol",
+    "effort": "high",
+    "evidence_kind": "runtime_turn_context",
+    "raw_line_sha256": "763cebd963b7096f0510dc9b31a3127cb7c2177639139d23ca91f72938f99a97",
+    "actual_backend_identity": null
+  },
+  "reviewed_utc": "2026-10-03T00:53:59.767150+00:00",
+  "packet_sha256": "e2f2473250998bcf1cc84c83a957fd254db55a7cb30bc1c3ce3b3a65f6764141",
+  "reviewed_papers": [],
+  "reviewed_paper_details": [],
+  "reviewed_source_assets": [
+    {
+      "name": "README.md",
+      "role": "primary_release_code_or_document",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/README.md",
+      "sha256": "fd845e484a184ad9740dddf26550db9d6d154d1631c1b30622dcecefe8ee7174",
+      "bytes": 2454,
+      "local_path": ".work/all19-source-wave2-20261003/sources/README.md",
+      "coverage": "Whole-byte identity verified. Only the explicitly listed selected header/code/table claims are accepted; remaining file bodies and paper text are not covered by this review.",
+      "licence": "Unknown; raw files remain ignored."
+    },
+    {
+      "name": "MCMC_utils.py",
+      "role": "primary_release_code_or_document",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/MCMC_utils.py",
+      "sha256": "e6ec3d83a9b126d7772ec6dd0d1b58ca757b820acd853fb89218c379cf873841",
+      "bytes": 2730,
+      "local_path": ".work/standard-lcdm-contracts/cache/ladder-original/MCMC_utils.py",
+      "coverage": "Whole-byte identity verified. Only the explicitly listed selected header/code/table claims are accepted; remaining file bodies and paper text are not covered by this review.",
+      "licence": "Unknown; raw files remain ignored."
+    },
+    {
+      "name": "lstsq_results.txt",
+      "role": "primary_release_code_or_document",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/lstsq_results.txt",
+      "sha256": "37d2d423d06b6a2100c47578eb9b1c566a575caf6ade0ed61f6b9586d2a35c95",
+      "bytes": 721,
+      "local_path": ".work/standard-lcdm-contracts/cache/ladder-original/lstsq_results.txt",
+      "coverage": "Whole-byte identity verified. Only the explicitly listed selected header/code/table claims are accepted; remaining file bodies and paper text are not covered by this review.",
+      "licence": "Unknown; raw files remain ignored."
+    },
+    {
+      "name": "allc_shoes_ceph_topantheonwt6.0_112221.fits",
+      "role": "released_compact_product",
+      "url": "https://media.githubusercontent.com/media/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/allc_shoes_ceph_topantheonwt6.0_112221.fits",
+      "sha256": "a42778672d25df7a559bd2949b1e412b99b2e35dd9a36895f6b38828be019172",
+      "bytes": 48781440,
+      "local_path": ".work/standard-lcdm-contracts/cache/ladder-original/allc_shoes_ceph_topantheonwt6.0_112221.fits",
+      "coverage": "Whole-byte identity verified. Only the explicitly listed selected header/code/table claims are accepted; remaining file bodies and paper text are not covered by this review.",
+      "licence": "Unknown; raw files remain ignored."
+    },
+    {
+      "name": "alll_shoes_ceph_topantheonwt6.0_112221.fits",
+      "role": "released_compact_product",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/alll_shoes_ceph_topantheonwt6.0_112221.fits",
+      "sha256": "9a2ce872dd20ed4fdf5005ce62a805d3eefbbb0b20b0c614013e7c0094009db8",
+      "bytes": 659520,
+      "local_path": ".work/standard-lcdm-contracts/cache/ladder-original/alll_shoes_ceph_topantheonwt6.0_112221.fits",
+      "coverage": "Whole-byte identity verified. Only the explicitly listed selected header/code/table claims are accepted; remaining file bodies and paper text are not covered by this review.",
+      "licence": "Unknown; raw files remain ignored."
+    },
+    {
+      "name": "ally_shoes_ceph_topantheonwt6.0_112221.fits",
+      "role": "released_compact_product",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/ally_shoes_ceph_topantheonwt6.0_112221.fits",
+      "sha256": "10bb034ca3fff53f6625c9fe47ebd054b37ef45d1140af1c766831cfa6871433",
+      "bytes": 17280,
+      "local_path": ".work/standard-lcdm-contracts/cache/ladder-original/ally_shoes_ceph_topantheonwt6.0_112221.fits",
+      "coverage": "Whole-byte identity verified. Only the explicitly listed selected header/code/table claims are accepted; remaining file bodies and paper text are not covered by this review.",
+      "licence": "Unknown; raw files remain ignored."
+    },
+    {
+      "name": "read_chains_example.py",
+      "role": "primary_release_code_or_document",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/read_chains_example.py",
+      "sha256": "2cf388a78dd1a53d91fdc0b18451ca77b907679e9d59f05061195c78ddf93dcc",
+      "bytes": 1138,
+      "local_path": ".work/all19-source-wave2-20261003/sources/read_chains_example.py",
+      "coverage": "Whole-byte identity verified. Only the explicitly listed selected header/code/table claims are accepted; remaining file bodies and paper text are not covered by this review.",
+      "licence": "Unknown; raw files remain ignored."
+    },
+    {
+      "name": "run_mcmc.py",
+      "role": "primary_release_code_or_document",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/run_mcmc.py",
+      "sha256": "00546b9de2d73cd6315c0333b5f7b07a8b948f9e73056a88e76abe0249464c85",
+      "bytes": 2020,
+      "local_path": ".work/standard-lcdm-contracts/cache/ladder-original/run_mcmc.py",
+      "coverage": "Whole-byte identity verified. Only the explicitly listed selected header/code/table claims are accepted; remaining file bodies and paper text are not covered by this review.",
+      "licence": "Unknown; raw files remain ignored."
+    },
+    {
+      "name": "Riess-2112.04510v3.pdf",
+      "role": "primary_paper",
+      "url": "https://arxiv.org/pdf/2112.04510v3",
+      "sha256": "572e5d2c0f32bf6e80a118eec13ed0107e1e2830f9ebe90b5bc4e9d1b7fa5df1",
+      "bytes": 9544553,
+      "local_path": ".work/all19-source-wave2-20261003/sources/Riess-2112.04510v3.pdf",
+      "coverage": "Whole-byte identity verified. Only the explicitly listed selected header/code/table claims are accepted; remaining file bodies and paper text are not covered by this review.",
+      "licence": "Unknown; raw files remain ignored."
+    },
+    {
+      "name": "table2.tex",
+      "role": "primary_rounded_photometry_table",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/table2.tex",
+      "sha256": "d4b9af2b5d65118f7ac44a41b7e8cd662dfd42a63b5c359ca402d8be3b4dbba4",
+      "bytes": 329678,
+      "local_path": ".work/all19-source-wave2-20261003/sources/table2.tex",
+      "coverage": "Whole-byte identity verified. Only the explicitly listed selected header/code/table claims are accepted; remaining file bodies and paper text are not covered by this review.",
+      "licence": "Unknown; raw files remain ignored."
+    },
+    {
+      "name": "table2.README",
+      "role": "secondary_primary_release_audit_only",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/table2.README",
+      "sha256": "3747acd166dcb77eab2e6145a17116bc04f1d7283e972ec2db0ff823bcfcb8bf",
+      "bytes": 815,
+      "local_path": ".work/all19-source-wave2-20261003/sources/table2.README",
+      "coverage": "Whole-byte identity verified. Only the explicitly listed selected header/code/table claims are accepted; remaining file bodies and paper text are not covered by this review.",
+      "licence": "Unknown; raw files remain ignored."
+    },
+    {
+      "name": "R22_orig19_NIR.wm31.out",
+      "role": "secondary_primary_release_audit_only",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/R22_orig19_NIR.wm31.out",
+      "sha256": "5323e38c813e56e08f36034858a3384378b6385cd705959a74ade42c020728e0",
+      "bytes": 134077,
+      "local_path": ".work/all19-source-wave2-20261003/sources/R22_orig19_NIR.wm31.out",
+      "coverage": "Whole-byte identity verified. Only the explicitly listed selected header/code/table claims are accepted; remaining file bodies and paper text are not covered by this review.",
+      "licence": "Unknown; raw files remain ignored."
+    }
+  ],
+  "accepted_records": {
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": [],
+    "contract_ids": [],
+    "source_audit_ids": [
+      "all19-NEXT04-source-only-20261003/v1"
+    ]
+  },
+  "checked_asset_claims": [
+    {
+      "claim": "All three primary headers say Written by IDL Mon Nov22 10:18:24 2021 and BITPIX=-32. No axis labels exist in these primary headers.",
+      "locators": "Original first-HDU 80-byte cards through END; y NAXIS1=3492, L NAXIS1=3492/NAXIS2=47, C3492x3492. No decoded payload recomputation.",
+      "limit": "Stored zero, isolated-coordinate structure, tiny Cii and prior support do not establish a physical label or producer rationale."
+    },
+    {
+      "claim": "Pinned complete SH0ES_Data release has three matrix-consuming MCMC/sample-reading Python scripts and no original source-generating IDL code or complete author axis dictionary. Scoped recovered464-code-member inventory contains those same three scripts and no IDL-named/.pro/.sav member.",
+      "locators": "Pinned c447 complete SH0ES_Data member inventory and separately scoped464-code-member inventory; selected README/MCMC/sample-reader original line locators.",
+      "limit": "No global absence asserted. Only these frozen release/code inventories were inspected. Header writer identity does not identify an unprovided source-generating program."
+    }
+  ],
+  "preserved_failures": {
+    "failed_original_rows": [
+      2630,
+      2744,
+      2745,
+      2754
+    ],
+    "join_execution_in_this_audit": false,
+    "reduction_and_axis44": "Unknown; no tolerance relaxation, invented identity or repaired join.",
+    "remaining_gates": [
+      "physical index44 definition and fixed-coordinate rationale",
+      "complete author original47-axis dictionary",
+      "original reduction/serialization code and compact constraint ancestry",
+      "four preserved M31/LMC joins",
+      "N1365/SMC/HST-LMC selection count discrepancies",
+      "selection/calibration/covariance and observational qualification"
+    ]
+  },
+  "source_epoch_binding": {
+    "repository": "sprajs/prospector",
+    "commit": "b8a50b8d742bd4abbda96f8d4985d3ecd22e465d",
+    "path": "register/contracts/standard-model-source-gates-v1.json",
+    "sha256": "ca0ed970215f151d372da450dec7d1f0f24bd307b09d53e6df98c30a30122597",
+    "status": "Historical accepted bytes at inspection; separate source-pin correction distinguishes later a5 draft. No implicit rebinding to the later atomic merge."
+  },
+  "supporting_packets": [
+    {
+      "name": "accepted-source-gate.json",
+      "sha256": "ca0ed970215f151d372da450dec7d1f0f24bd307b09d53e6df98c30a30122597"
+    },
+    {
+      "name": "original-header-byte-extraction.json",
+      "sha256": "a11e79c04400d70ced8b410ac774090b250924a55aca852c6f97fa436fd95eac"
+    },
+    {
+      "name": "reconstructed-dictionary-and-preserved-gaps.json",
+      "sha256": "4fe31fecd3c89a330611e4dfb8c021b593a16a83dd8916912252cdccd4c95956"
+    },
+    {
+      "name": "scoped-release-and-code-inventory.json",
+      "sha256": "f8e1ed6bbd987b8bed2292a6497cd87c76f44d5386f3c7cb8f749c5f44ff656e"
+    },
+    {
+      "name": "source-pin-correction.json",
+      "sha256": "50639145b27cb6831d4fb249f8983dd609db4925e24b49576a70541fb1438c9c"
+    },
+    {
+      "name": "worker-model-confirmation.json",
+      "sha256": "7d37b358db6ed44d02fba7ca35236983b45408b974bebf7acd320a1407437dea"
+    }
+  ],
+  "limitations": [
+    "Targeted original-asset source audit; no new full/Luna readings or paper-stage promotions. No new physical mechanism, target promotion or numerical/observational qualification.",
+    "Original byte/header and bounded code inventory inspection is distinct from reconstructing the source generator. The recovered inventory scope does not prove global absence.",
+    "Dictionary/reduction and join failures remain as frozen consumer reconstruction/context. This audit executed no joins, arrays, fits, experiments or download loops.",
+    "Root frozen bundle is retained byte-identically inside ignored Prospector storage. Accepted old source epoch remains distinct from current public source bindings."
+  ],
+  "conclusion": "Selected header/code evidence and unresolved source requirements preserved. Physical44, complete original dictionary, four joins and source reduction/selection/covariance remain blocked."
+}

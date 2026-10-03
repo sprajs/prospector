@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-03-all19-source-wave2",
+  "status": "completed",
+  "started_utc": "2026-10-03T00:13:34.403971+00:00",
+  "completed_utc": "2026-10-03T01:04:00.227718+00:00",
+  "lane": "baseline-reference",
+  "work_mode": "explicit_targeted_source_audit_no_new_discovery",
+  "queries": [
+    {
+      "mode": "pinned_release_asset_acquisition",
+      "receipts": [
+        {
+          "source_member": "Pantheon+_Data/2_CALIBRATION/README",
+          "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/README",
+          "retrieved_utc": "2026-10-03T00:35:28.341333+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/README",
+          "path": ".work/all19-source-wave2-20261003/sources/cal-README",
+          "bytes": 261,
+          "sha256": "7ebef75c87d80e9bee72e1b2010e449b32ad6e1060a6cdf0886078898b685cfe",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "provider_git_blob_sha1": "a2b273443a6593fd614a5139aa6fbff7ce269103",
+          "actual_git_blob_sha1": "a2b273443a6593fd614a5139aa6fbff7ce269103",
+          "identity_status": "pinned_git_blob_verified; scientific source reading pending"
+        },
+        {
+          "source_member": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_PS1.input",
+          "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/SNANA_kcor/kcor_PS1.input",
+          "retrieved_utc": "2026-10-03T00:35:31.665644+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/SNANA_kcor/kcor_PS1.input",
+          "path": ".work/all19-source-wave2-20261003/sources/cal-kcor_PS1.input",
+          "bytes": 948,
+          "sha256": "ca5664cca2108328fa9e1104e1de4e6d804253f8ed6d0c89ccf9d875104ddc65",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "provider_git_blob_sha1": "18a9dbee2c3f9d77a193a3201974439b7f5e7150",
+          "actual_git_blob_sha1": "18a9dbee2c3f9d77a193a3201974439b7f5e7150",
+          "identity_status": "pinned_git_blob_verified; scientific source reading pending"
+        },
+        {
+          "source_member": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_Foundation.input",
+          "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/SNANA_kcor/kcor_Foundation.input",
+          "retrieved_utc": "2026-10-03T00:35:34.978873+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/SNANA_kcor/kcor_Foundation.input",
+          "path": ".work/all19-source-wave2-20261003/sources/cal-kcor_Foundation.input",
+          "bytes": 944,
+          "sha256": "b76ab3b5b1822d882213f2ee20da055490010327aec08c2de3424f0e30a1c4a1",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "provider_git_blob_sha1": "284aced6cb05d64af37bdedbf592f54c71a5e66f",
+          "actual_git_blob_sha1": "284aced6cb05d64af37bdedbf592f54c71a5e66f",
+          "identity_status": "pinned_git_blob_verified; scientific source reading pending"
+        },
+        {
+          "source_member": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_PS1_CFA_COMBINED.input",
+          "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/SNANA_kcor/kcor_PS1_CFA_COMBINED.input",
+          "retrieved_utc": "2026-10-03T00:35:38.309496+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/SNANA_kcor/kcor_PS1_CFA_COMBINED.input",
+          "path": ".work/all19-source-wave2-20261003/sources/cal-kcor_PS1_CFA_COMBINED.input",
+          "bytes": 3648,
+          "sha256": "555d26cacc1e19f0af11cc7fcbb4b567b8997d4bf2c57da4b5eea0edd9f0af6f",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "provider_git_blob_sha1": "7eee1570b3108e2fd1f4af99d1896c072bf2d8df",
+          "actual_git_blob_sha1": "7eee1570b3108e2fd1f4af99d1896c072bf2d8df",
+          "identity_status": "pinned_git_blob_verified; scientific source reading pending"
+        },
+        {
+          "source_member": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/SALT2.INFO",
+          "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/SALT2.INFO",
+          "retrieved_utc": "2026-10-03T00:35:41.624208+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/SALT2.INFO",
+          "path": ".work/all19-source-wave2-20261003/sources/b21-SALT2.INFO",
+          "bytes": 513,
+          "sha256": "6cb38b88565eec41cb4e18eb7a973a58da02223af0f1579d6ead37f9ec330dfa",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "provider_git_blob_sha1": "9509481cd0af5aae1968ec1d770e6dcbeac4c827",
+          "actual_git_blob_sha1": "9509481cd0af5aae1968ec1d770e6dcbeac4c827",
+          "identity_status": "pinned_git_blob_verified; scientific source reading pending"
+        },
+        {
+          "source_member": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_template_0.dat.gz",
+          "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_template_0.dat.gz",
+          "retrieved_utc": "2026-10-03T00:35:44.929384+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_template_0.dat.gz",
+          "path": ".work/all19-source-wave2-20261003/sources/b21-salt2_template_0.dat.gz",
+          "bytes": 885064,
+          "sha256": "d5b0bf83a46d12a974991bb40fe64793e87ad25f80caea53af23f25eaeef4e6d",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "provider_git_blob_sha1": "069eec038d07dd782edf0cba9d699cbb67efbaec",
+          "actual_git_blob_sha1": "069eec038d07dd782edf0cba9d699cbb67efbaec",
+          "identity_status": "pinned_git_blob_verified; scientific source reading pending"
+        },
+        {
+          "source_member": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_template_1.dat.gz",
+          "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_template_1.dat.gz",
+          "retrieved_utc": "2026-10-03T00:35:48.335700+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_template_1.dat.gz",
+          "path": ".work/all19-source-wave2-20261003/sources/b21-salt2_template_1.dat.gz",
+          "bytes": 908112,
+          "sha256": "e36af8f43db6d339530efe4a4613ef314a433adc97a1075d4172a17c4836889c",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "provider_git_blob_sha1": "3d1f6a2227c1ce994d8ec4893601f28c4b98c170",
+          "actual_git_blob_sha1": "3d1f6a2227c1ce994d8ec4893601f28c4b98c170",
+          "identity_status": "pinned_git_blob_verified; scientific source reading pending"
+        },
+        {
+          "source_member": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_color_correction.dat.gz",
+          "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_color_correction.dat.gz",
+          "retrieved_utc": "2026-10-03T00:35:51.712052+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_color_correction.dat.gz",
+          "path": ".work/all19-source-wave2-20261003/sources/b21-salt2_color_correction.dat.gz",
+          "bytes": 137,
+          "sha256": "16e5a036de62ece6e10ff3c3bbded12ed4b4fb7c6a22699945213af7858f5817",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "provider_git_blob_sha1": "d7a547a98207cdb99be4b84fdd60d6184554e196",
+          "actual_git_blob_sha1": "d7a547a98207cdb99be4b84fdd60d6184554e196",
+          "identity_status": "pinned_git_blob_verified; scientific source reading pending"
+        },
+        {
+          "source_member": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_color_dispersion.dat.gz",
+          "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_color_dispersion.dat.gz",
+          "retrieved_utc": "2026-10-03T00:35:55.017937+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_color_dispersion.dat.gz",
+          "path": ".work/all19-source-wave2-20261003/sources/b21-salt2_color_dispersion.dat.gz",
+          "bytes": 4374,
+          "sha256": "a66d8d3d11295a8687c950cb7974743311f7d211ec1db2a41e911895f4002cee",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "provider_git_blob_sha1": "151d5fc8f7f3568e412c464ccec7da4d7c2e5f5d",
+          "actual_git_blob_sha1": "151d5fc8f7f3568e412c464ccec7da4d7c2e5f5d",
+          "identity_status": "pinned_git_blob_verified; scientific source reading pending"
+        },
+        {
+          "source_member": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_relative_variance_0.dat.gz",
+          "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_relative_variance_0.dat.gz",
+          "retrieved_utc": "2026-10-03T00:35:58.321780+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_relative_variance_0.dat.gz",
+          "path": ".work/all19-source-wave2-20261003/sources/b21-salt2_lc_relative_variance_0.dat.gz",
+          "bytes": 420773,
+          "sha256": "9e84c3a8b7c9c781f8f0d778f79b5c2c261fe8b0378e183c29e4eef90bf59775",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "provider_git_blob_sha1": "40f69152709a15fbd15df0b46ed43808ef14df4a",
+          "actual_git_blob_sha1": "40f69152709a15fbd15df0b46ed43808ef14df4a",
+          "identity_status": "pinned_git_blob_verified; scientific source reading pending"
+        },
+        {
+          "source_member": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_relative_variance_1.dat.gz",
+          "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_relative_variance_1.dat.gz",
+          "retrieved_utc": "2026-10-03T00:36:01.673058+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_relative_variance_1.dat.gz",
+          "path": ".work/all19-source-wave2-20261003/sources/b21-salt2_lc_relative_variance_1.dat.gz",
+          "bytes": 420160,
+          "sha256": "b5f33ca30ca374e21ced97c83a135f984929439049c9f699f57dc5ac645599e5",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "provider_git_blob_sha1": "a99b83bf6e2ee5bcd0e4299aab50a822a850f7f0",
+          "actual_git_blob_sha1": "a99b83bf6e2ee5bcd0e4299aab50a822a850f7f0",
+          "identity_status": "pinned_git_blob_verified; scientific source reading pending"
+        },
+        {
+          "source_member": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_relative_covariance_01.dat.gz",
+          "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_relative_covariance_01.dat.gz",
+          "retrieved_utc": "2026-10-03T00:36:05.014076+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_relative_covariance_01.dat.gz",
+          "path": ".work/all19-source-wave2-20261003/sources/b21-salt2_lc_relative_covariance_01.dat.gz",
+          "bytes": 431289,
+          "sha256": "b27529d86855af14b919e13bf55eff66a3a27fc0256fc27c9bb8a0ce449c562e",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "provider_git_blob_sha1": "656ebce44cd53fddd3ce252cb05d99a680771e60",
+          "actual_git_blob_sha1": "656ebce44cd53fddd3ce252cb05d99a680771e60",
+          "identity_status": "pinned_git_blob_verified; scientific source reading pending"
+        },
+        {
+          "source_member": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_dispersion_scaling.dat.gz",
+          "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+          "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_dispersion_scaling.dat.gz",
+          "retrieved_utc": "2026-10-03T00:36:08.349119+00:00",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_dispersion_scaling.dat.gz",
+          "path": ".work/all19-source-wave2-20261003/sources/b21-salt2_lc_dispersion_scaling.dat.gz",
+          "bytes": 40558,
+          "sha256": "93bf231f27f7029f547ce3d6b66801d87722be5ddb5691942b92091786bd2ad3",
+          "timeout_seconds": 20,
+          "byte_limit": 10485760,
+          "provider_git_blob_sha1": "d694b9e00780b2935560e360ae5c1f6694c8e401",
+          "actual_git_blob_sha1": "d694b9e00780b2935560e360ae5c1f6694c8e401",
+          "identity_status": "pinned_git_blob_verified; scientific source reading pending"
+        }
+      ]
+    },
+    {
+      "mode": "bounded_git_release_inventory",
+      "receipt_path": ".work/all19-source-wave2-20261003/release-tree-receipt.json",
+      "receipt_sha256": "fe477b60c3f9d03d776729724a4931597189c37e9bff9221e89c00c9b16bb024",
+      "scope": "Exact returned c447 release tree, not gap-free literature/archive coverage."
+    },
+    {
+      "mode": "verified_local_primary_cache_reuse",
+      "receipt_path": ".work/all19-source-wave2-20261003/reuse-receipt.json",
+      "receipt_sha256": "040422c73f7416f68adb558372b2c7100489e0a874fc90a0cbeecf762b10d0e8"
+    },
+    {
+      "mode": "root_frozen_asset_only_source_audit",
+      "packet_sha256": "e2f2473250998bcf1cc84c83a957fd254db55a7cb30bc1c3ce3b3a65f6764141",
+      "packet_path": ".work/all19-source-wave2-20261003/root-next04/packet.json"
+    }
+  ],
+  "registered_papers": [
+    "arxiv:2112.04510v3",
+    "arxiv:2112.03864v2",
+    "arxiv:astro-ph/0701828v1"
+  ],
+  "new_versions": [],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [
+    "2026-10-03-next04-source-claims",
+    "2026-10-03-next05-source-claims",
+    "review-optical-calibration-template-source-20261003-v1"
+  ],
+  "idea_ids": [],
+  "design_ids": [
+    "next05-released-fixed44-row3213-conditional-diagnostic-20261003"
+  ],
+  "prospect_ids": [],
+  "edge_ids": [],
+  "acquisition_failures": [],
+  "pending": [
+    {
+      "scope_id": "NEXT-04",
+      "stage": "source",
+      "reason": "Physical44/full author dictionary/generator/four joins/counts/reduction/calibration remain unresolved."
+    },
+    {
+      "scope_id": "NEXT-05",
+      "stage": "consumer_and_physical_source",
+      "reason": "Distinct frozen-product conditional diagnostic only; physical refit/sign and new numerical target acceptance remain blocked. Reproducible reported a separate full-target v4 conditioning-budget refusal (receipt7822fbbb20e3bbe1aeb9fa6b60d299a9f535b007f149fcaab2a02993da6dc07a); this source wave did not reproduce it or change tolerances."
+    },
+    {
+      "scope_id": "NEXT-08",
+      "stage": "source",
+      "reason": "105/102 and machine alias/passband/probability-law bridge unresolved."
+    },
+    {
+      "scope_id": "NEXT-09",
+      "stage": "source",
+      "reason": "Complete MODEL000 decoding/support/units/color-law/error map and physical optical likelihood remain unresolved."
+    },
+    {
+      "scope_id": "NEXT-10",
+      "stage": "source_acquisition",
+      "reason": "Named SDSS arrival/QE/gain/exposure/extraction/selection source contract pending after final review; no instrument substitution."
+    },
+    {
+      "scope_id": "NEXT-14",
+      "stage": "targeted_source_review",
+      "reason": "Root collisionless FD+CDM+Lambda v2 proposal39cf0ba... centrally preserved and original sources rehashed; existing Sol dispatch pending NEXT05 final review. No code or numerical acceptance."
+    },
+    {
+      "scope_id": "NEXT-18",
+      "stage": "source_acquisition",
+      "reason": "B1608 original imaging/PSF/time-delay/kinematics/environment asset discovery/lineage pending; no summary-as-measurement claim."
+    }
+  ],
+  "limits": [
+    "Three bounded exact-Sol source packets (two existing Pro workers plus one root source worker); zero new worker launches, full/Luna readings or paper stage promotions. Independent final PR review is a separate gate.",
+    "Thirteen selected pinned release assets acquired centrally; raw sources/reading aids/full packets remain ignored. Existing five atomic/source consumer record byte identities and all unrelated literature queues/alternative prospects are preserved.",
+    "No numerical experiments, covariance recomputation, physical refit, softened failed join, new probability mass or cosmological qualification. Source facts, declared hypotheses and reviewer derivations remain distinct.",
+    "Scoped feed/tree/code inventories do not establish exhausted literature or global source absence. NEXT13/16/18/19 and full standard-model gates remain visible."
+  ]
+}

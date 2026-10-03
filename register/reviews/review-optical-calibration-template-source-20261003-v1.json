@@ -1,0 +1,413 @@
+{
+  "schema_version": 1,
+  "review_id": "review-optical-calibration-template-source-20261003-v1",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "agent_id": "/root/thermal_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "agent_id": "/root/thermal_source_audit",
+    "session_id": "01a0fec1-0810-7361-a598-b20696ba4a64",
+    "turn_id": "01a0ff36-d5a0-7011-ad48-03226f6ae0c8",
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "evidence_kind": "runtime_turn_context",
+    "actual_backend_identity": null,
+    "path": ".work/all19-source-wave2-20261003/thermal-model-confirmation.json",
+    "sha256": "2dd996a5c4a01dad1c122ef775e7e3b6a4d44fc02a0f399406619911d1c3449d",
+    "actual_backend_null_reason": "Serving backend identity is not exposed; runtime-selected model/effort/session/turn are confirmed."
+  },
+  "reviewed_utc": "2026-10-03T00:54:58.081163+00:00",
+  "packet_sha256": "c739d8b330e81eb98a078ffda7cbcc318426155cd769e56589cae1b5fcf4efae",
+  "supporting_packets": [
+    {
+      "role": "accepted_exact_contract",
+      "sha256": "52b0c6c31437a4a27a67a56516230a218c25ed9af521ec10f286ba8ab3e1eb46"
+    },
+    {
+      "role": "source_rehash_and_per_asset_coverage",
+      "sha256": "96d23029e89b9053cd71c6235e00ff614e0fd57f95dc1368036aff27cb0efeff"
+    }
+  ],
+  "reviewed_papers": [
+    "arxiv:2112.03864v2",
+    "arxiv:astro-ph/0701828v1"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:2112.03864v2",
+      "source_hashes": {
+        "html": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+        "pdf": "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74"
+      },
+      "coverage": {
+        "main_text": "Targeted original-source locators only, no complete reading.",
+        "checked_locators": [
+          "HTML Sec2.1/2.3/2.4/2.7; Sec3.1 Eqs4–5; Sec3.2 selection; Sec3.3/Table3 S3.T3 all literal rows; Sec4.1/4.3; AppendixA",
+          "Original PDF7 selection/Eq5/105 prose; PDF8 Table3 visually checked"
+        ],
+        "unread": "HTML sections2.1/2.3/2.4/2.7/3.1–3.3/4.1/4.3 and AppendixA only; selectedTable3 all literal records. Other papers/full source appendices/training implementation/cosmology results unread or unaccepted.",
+        "figures": "Original PDF7 and8 visually checked; other figures unchecked."
+      }
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0701828v1",
+      "source_hashes": {
+        "html": "bab88504c4bce299c5a765c722b3c4fa040eed3830c924a6438762e0a7985952",
+        "pdf": "a89d6be7eb6b76fe9a83fce8e2f3a8eda99ca35c0d20c71c580d2a83a99b42e3"
+      },
+      "coverage": {
+        "main_text": "Targeted original-source locators only, no complete reading.",
+        "checked_locators": [
+          "Sec2 Eq1/2.1/2.2, selected3.1/3.2 ancestry,4.1–4.3 construction/regularization,5 normalization,6/6.1/6.2 error roles",
+          "Original PDF2,4,5,6 visually checked equations/domains/error roles"
+        ],
+        "unread": "Eq1/2.1/2.2; selected3.1/3.2 ancestry;4.1–4.3;5 normalization;6/6.1/6.2 error roles; historicalfit/cosmologySections7–8 and trainingTable2 unread, no result acceptance.",
+        "figures": "Original PDF2,4,5,6 selected equations/text visually checked; figures unchecked."
+      }
+    }
+  ],
+  "reviewed_source_assets": [
+    {
+      "id": "Pantheon+_Data/2_CALIBRATION/README",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/README",
+      "sha256": "7ebef75c87d80e9bee72e1b2010e449b32ad6e1060a6cdf0886078898b685cfe",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-03T00:35:28.341333+00:00",
+      "bytes": 261,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "complete short configuration/README. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_PS1.input",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/SNANA_kcor/kcor_PS1.input",
+      "sha256": "ca5664cca2108328fa9e1104e1de4e6d804253f8ed6d0c89ccf9d875104ddc65",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-03T00:35:31.665644+00:00",
+      "bytes": 948,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "complete short configuration/README. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_Foundation.input",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/SNANA_kcor/kcor_Foundation.input",
+      "sha256": "b76ab3b5b1822d882213f2ee20da055490010327aec08c2de3424f0e30a1c4a1",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-03T00:35:34.978873+00:00",
+      "bytes": 944,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "complete short configuration/README. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_PS1_CFA_COMBINED.input",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/SNANA_kcor/kcor_PS1_CFA_COMBINED.input",
+      "sha256": "555d26cacc1e19f0af11cc7fcbb4b567b8997d4bf2c57da4b5eea0edd9f0af6f",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-03T00:35:38.309496+00:00",
+      "bytes": 3648,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "complete short configuration/README. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/SALT2.INFO",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/SALT2.INFO",
+      "sha256": "6cb38b88565eec41cb4e18eb7a973a58da02223af0f1579d6ead37f9ec330dfa",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-03T00:35:41.624208+00:00",
+      "bytes": 513,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "complete short configuration/README. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_template_0.dat.gz",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_template_0.dat.gz",
+      "sha256": "d5b0bf83a46d12a974991bb40fe64793e87ad25f80caea53af23f25eaeef4e6d",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-03T00:35:44.929384+00:00",
+      "bytes": 885064,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "first8 gzip text lines only. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_template_1.dat.gz",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_template_1.dat.gz",
+      "sha256": "e36af8f43db6d339530efe4a4613ef314a433adc97a1075d4172a17c4836889c",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-03T00:35:48.335700+00:00",
+      "bytes": 908112,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "first8 gzip text lines only. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_color_correction.dat.gz",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_color_correction.dat.gz",
+      "sha256": "16e5a036de62ece6e10ff3c3bbded12ed4b4fb7c6a22699945213af7858f5817",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-03T00:35:51.712052+00:00",
+      "bytes": 137,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "first8 gzip text lines only. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_color_dispersion.dat.gz",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_color_dispersion.dat.gz",
+      "sha256": "a66d8d3d11295a8687c950cb7974743311f7d211ec1db2a41e911895f4002cee",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-03T00:35:55.017937+00:00",
+      "bytes": 4374,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "first8 gzip text lines only. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_relative_variance_0.dat.gz",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_relative_variance_0.dat.gz",
+      "sha256": "9e84c3a8b7c9c781f8f0d778f79b5c2c261fe8b0378e183c29e4eef90bf59775",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-03T00:35:58.321780+00:00",
+      "bytes": 420773,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "first8 gzip text lines only. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_relative_variance_1.dat.gz",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_relative_variance_1.dat.gz",
+      "sha256": "b5f33ca30ca374e21ced97c83a135f984929439049c9f699f57dc5ac645599e5",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-03T00:36:01.673058+00:00",
+      "bytes": 420160,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "first8 gzip text lines only. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_relative_covariance_01.dat.gz",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_relative_covariance_01.dat.gz",
+      "sha256": "b27529d86855af14b919e13bf55eff66a3a27fc0256fc27c9bb8a0ce449c562e",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-03T00:36:05.014076+00:00",
+      "bytes": 431289,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "first8 gzip text lines only. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_dispersion_scaling.dat.gz",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/salt2_lc_dispersion_scaling.dat.gz",
+      "sha256": "93bf231f27f7029f547ce3d6b66801d87722be5ddb5691942b92091786bd2ad3",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-03T00:36:08.349119+00:00",
+      "bytes": 40558,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "first8 gzip text lines only. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "2112.03864v2-html",
+      "url": "https://arxiv.org/html/2112.03864v2",
+      "sha256": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+      "role": "html",
+      "retrieved_utc": "2026-10-01T15:05:31.566601+00:00",
+      "bytes": 426034,
+      "pinned_revision": null,
+      "licence": "not verified; ignored source only",
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "selected original-paper locators listed in packet; text aid is not original authority. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "2112.03864v2-pdf",
+      "url": "https://arxiv.org/pdf/2112.03864v2",
+      "sha256": "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74",
+      "role": "pdf",
+      "retrieved_utc": "2026-10-01T15:05:34.717527+00:00",
+      "bytes": 1431273,
+      "pinned_revision": null,
+      "licence": "not verified; ignored source only",
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "selected original-paper locators listed in packet; text aid is not original authority. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "astro-ph/0701828v1-html",
+      "url": "https://arxiv.org/html/astro-ph/0701828v1",
+      "sha256": "bab88504c4bce299c5a765c722b3c4fa040eed3830c924a6438762e0a7985952",
+      "role": "html",
+      "retrieved_utc": "2026-10-02T21:50:08.790582+00:00",
+      "bytes": 293981,
+      "pinned_revision": null,
+      "licence": "not verified; ignored source only",
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "selected original-paper locators listed in packet; text aid is not original authority. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "astro-ph/0701828v1-pdf",
+      "url": "https://arxiv.org/pdf/astro-ph/0701828v1",
+      "sha256": "a89d6be7eb6b76fe9a83fce8e2f3a8eda99ca35c0d20c71c580d2a83a99b42e3",
+      "role": "pdf",
+      "retrieved_utc": "2026-10-02T21:50:12.024604+00:00",
+      "bytes": 681848,
+      "pinned_revision": null,
+      "licence": "not verified; ignored source only",
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "selected original-paper locators listed in packet; text aid is not original authority. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "Pantheon+_Data/2_CALIBRATION/FRAGILISTIC_COVARIANCE.npz",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/FRAGILISTIC_COVARIANCE.npz",
+      "sha256": "c58704e80061f1aa1b74d97861c5b115ee412bea685e4fef88545525d16dfc70",
+      "role": "pending_source_semantic_audit",
+      "retrieved_utc": "2026-10-02T01:02:35.710836+00:00",
+      "bytes": 90672,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": "not verified; assets ignored only",
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "rehash only; previous immutable NPZ schema review inherited, no new array loading. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "Pantheon+_Data/3_SALT2/README",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/README",
+      "sha256": "7b14123f47ea879afe59b68de23983fd93376392bc9c58c91bc487af44c8468a",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-02T01:15:40.971332+00:00",
+      "bytes": 373,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": "notverified; ignoredonly",
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "conditioning": "complete short configuration/README. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    }
+  ],
+  "accepted_records": {
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": [],
+    "contract_ids": [
+      "optical-calibration-template-source-contract-v1"
+    ]
+  },
+  "checked_source_identities": [
+    {
+      "paper_id": "arxiv:2112.03864v2",
+      "title": "The Pantheon+ Analysis: SuperCal-Fragilistic Cross Calibration, Retrained SALT2 Light Curve Model, and Calibration Systematic Uncertainty",
+      "authors_checked": "Dillon Brout; Georgie Taylor; Dan Scolnic; Charlotte M. Wood; Benjamin M. Rose; Maria Vincenzi; Arianna Dwomoh; Christopher Lidman; Adam Riess; Noor Ali; Helen Qu; Mi Dai",
+      "identity_locator": "Original HTML title and original PDF page1 title/author text aid; pinned v2 URL/hash"
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0701828v1",
+      "title": "SALT2: using distant supernovae to improve the use of Type Ia supernovae as distance indicators",
+      "authors_checked": "J. Guy et al., SNLS Collaboration; original page1 author list in text aid and HTML personname metadata checked",
+      "identity_locator": "Original HTML title/watermark and original PDF page1 title/author text aid; watermark29 Jan2007/v1",
+      "source_variant_note": "Captured pinned v1 PDF header also prints November26,2024 and ESO2024 while retaining v1/29Jan2007 watermark. Preserve literal captured source variant and hash; do not silently treat compilation header as new paper-version identity."
+    },
+    {
+      "release": "PantheonPlusSH0ES/DataRelease",
+      "revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "members": "13 newly cached selected CALIBRATION and SALT2.MODEL000 assets; provider Git-blob hashes verified centrally and SHA256 independently rechecked."
+    }
+  ],
+  "source_equations": [
+    {
+      "paper_id": "arxiv:astro-ph/0701828v1",
+      "locator": "Sec2 Eq1, PDF2",
+      "expression": "F(SN,p,lambda)=x0*[M0(p,lambda)+x1*M1(p,lambda)+...]*exp[c*CL(lambda)]",
+      "definitions": "p rest-frame time since B-band maximum (days); lambda rest-frame wavelength (Angstrom); global Mk/CL, per-event x0/xk/c. c=(B-V)_MAX-<B-V>; color variation may be intrinsic or dust or both.",
+      "origin": "Source equation and definitions, visually checked.",
+      "units_limit": "Source equation does not by itself fix MODEL000 absolute flux normalization or emitted luminosity; x0 is freely fitted."
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0701828v1",
+      "locator": "Sec6.1, PDF5–6 (unnumbered displayed equations)",
+      "expression": "V_MODEL=S(p,lambda)*V_MEAN; V_MEAN=H0^T*V0*H0+x1^2*H1^T*V1*H1+2*x1*H0^T*C01*H1",
+      "meaning": "Historical training-component variance/covariance projected by basis H and empirically rescaled by S; jackknife residual correlation acknowledged and diagonal simplification assumed.",
+      "origin": "Original visually checked empirical model, not relative-grid normalization decoder."
+    }
+  ],
+  "inherited_mapping_evidence": {
+    "prior_dictionary": {
+      "path": ".work/standard-lcdm-contracts/workers/observations/mapping-dictionary.json",
+      "sha256": "a96e3837a6197031e33935b8f1f0f1ca197b7cb823f9cc9be77f35a95c00bfd1"
+    },
+    "PS1_Public_to_PS1": "candidate archive-coordinate alias only; paperSec2.4 directly establishes role",
+    "PS1_SNe_to_oldPS1": "candidate archive-coordinate alias only; paperSec2.4 directly establishes role",
+    "Foundation_to_newPS1": "candidate archive-coordinate alias only; paperSec2.4 directly establishes role",
+    "CFA3S": "Preserve Table3 r/i (S3.T3.2.1.12/.13), NPZ R/I in prior dictionary, Sec2.7 UBVRI, and new combined-kcor20–21 explicit R/I filter filenames. No global case folding or physical passband equivalence accepted.",
+    "configuration_collision": "PS1 and Foundation short configs both SURVEY PS1MD; filenames/g-filter choices/offset expressions differ. This is not a unique physical-survey identifier."
+  },
+  "corrections": [
+    {
+      "category": "literal_source_or_release_issue",
+      "statement": "Original Table3 CFA3S lowercase r/i is confirmed visually; the discrepancy with uppercaseR/I is a printed/release issue, not our transcription error. No silent repair.",
+      "repair_applied": false
+    },
+    {
+      "category": "literal_source_or_release_issue",
+      "statement": "The independent original Table3 row classification matches prior102 count.105 prose remains unreconciled, not downgraded to a proven typo.",
+      "repair_applied": false
+    },
+    {
+      "category": "literal_source_or_release_issue",
+      "statement": "Generic rest-frame phase/wavelength definitions are source-owned; assigning headerless release columns and absolute units is reader inference requiring a source-reader gate.",
+      "repair_applied": false
+    },
+    {
+      "category": "literal_source_or_release_issue",
+      "statement": "Historical Guy2007 construction2000–9200 Angstrom/−20..+50 days, BroutB21 fitting3000–7000 Angstrom and INFO2800–7000 values remain separate domains.",
+      "repair_applied": false
+    },
+    {
+      "category": "literal_source_or_release_issue",
+      "statement": "Brout4.3 sigma_k1/3 and ALL.fitopts literal0.3 are distinct source choices; no probability masses inferred or normalization repaired.",
+      "repair_applied": false
+    },
+    {
+      "category": "literal_source_or_release_issue",
+      "statement": "shift_0.dat nonzero values and MODEL000 nominal nomenclature require an uninspected generator/index bridge; suffix0 is not zero perturbation.",
+      "repair_applied": false
+    },
+    {
+      "category": "literal_source_or_release_issue",
+      "statement": "B21 version1 has4 printed color coefficients; Guy2007 describes a cubic with2 free coefficients and2 normalizations. They are not silently the same executable convention.",
+      "repair_applied": false
+    }
+  ],
+  "training_selection_calibration_ancestry": {
+    "source_facts": "Guy2.1/2.2 and selected3.1/3.2 use heterogeneous nearby/SNLS light curves and spectra, quality/premaximum sampling and host-contamination selection, photometric spectral recalibration, regularization and arbitrary spectral weighting. Brout2.1/3.1/3.2/4.1/4.3 ties B21 to CALSPEC/NGSL, overlapping tertiary catalogs, filter functions/extinction, priors/floors/weights and retraining.",
+    "inference_limit": "These shared reductions and empirical choices preclude treating released template/error grids as independent optical arrival or luminosity measurements. Full training set, selection probability, underlying standards and cross-covariance remain unexamined."
+  },
+  "limitations": [
+    "Targeted original-source claims only; zero new Luna/full-paper reads or paper promotions. Existing queues and original assets remain intact.",
+    "Paper locators: Brout2112.03864v2 Sec2.1/2.3/2.4/2.7, Sec3.1 Eqs4–5, Sec3.2, Sec3.3/Table3, Sec4.1/4.3 and AppendixA; Guyastro-ph/0701828v1 Sec2 Eq1/2.1/2.2, selected Sec3.1/3.2, Sec4.1–4.3, Sec5 and Sec6/6.1/6.2. Coverage is bounded; training tables, cited primary calibrator/survey papers and Taylor2112.03863v2 are unread in this wave.",
+    "Calibration ancestry includes overlapping tertiary stars, CALSPEC/NGSL synthetic magnitudes, passbands, extinction correction, zero-centered priors, relative survey weights and uncertainty floors. Brout Sec3.2 selection cuts are conditioning, not a complete survey selection probability.",
+    "Nine correlated zeropoint/effective-wavelength mock realizations are systematic perturbations propagated jointly through retraining and fitting. Paper Sec4.3 sigma_k=1/3 and selected ALL.fitopts literal0.3 are kept distinct; neither is an observed probability mass.",
+    "shift_0.dat has nonzero perturbations; its suffix does not certify a zero shift or a mapping to nominal MODEL000. Generator/index bridge unexamined.",
+    "The original Guy color-law convention CL(lambda_B)=0 and CL(lambda_V)=0.4 log(10) is historical context; no silent mapping to the later version1 four-coefficient release convention.",
+    "Release FILTSYSTEM COUNT and MAGSYSTEM AB/BD17 are configuration literals, not measured quantum efficiency, gain or extraction/censoring laws. Both PS1 and Foundation configs use SURVEY PS1MD, with differing g-filter filenames and offsets.",
+    "Covariances/uncertainties depend on training, calibration and selection. No independent datasets, stochastic optical-state law, global empirical-template accuracy or held-out validation are established.",
+    "See per-asset coverage in source-rehash; unopened bodies of shift1–8 remain hash-only. Actual filter curves, KCOR FITS bodies, Hsiao07/CALSPEC spectra and allother MODEL/reader code remain unread/unacquired.",
+    "Prior JSON schema/labels viewed as retained evidence; covariance diagonal/asymmetry values were not accepted or recomputed."
+  ],
+  "bibliography_coverage": "No new original bibliography entries linking registered versions were checked in this bounded wave; no new citation link inferred.",
+  "conclusion": "Exact bounded calibration/template source contract accepted, with coordinate aliases, complete format/units/support and physical probability/detector/censoring law gates retained. Zero full-paper readings, promotion, numerical execution or observational qualification."
+}

@@ -13,6 +13,12 @@ Paper details show available dated citation/author visibility snapshots, with
 unmeasured values and insufficient comparison cohorts explicit. Bibliography
 links within this register remain separate from provider-wide citation counts.
 
+Prospect details expose their candidate investigations with equations, conditioning
+and unresolved gates. Additional source contracts are associated by an exact
+subset of the prospect's registered paper identities. This is navigation, not
+an accepted physical component or graph relationship. Both projections exclude
+worker records, local source paths and consumer requests.
+
 ## Build and preview
 
 ```bash

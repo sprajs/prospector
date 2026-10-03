@@ -8,6 +8,26 @@ ORDER = ['baseline-reference', 'early-energy', 'late-dark-energy', 'interacting-
          'kinematics', 'modified-gravity', 'bounces-cycles', 'measurement-lineage']
 
 
+def public_contract(item):
+    """Expose checked source scope without local storage or worker provenance."""
+    return {
+        'title': item['title'], 'limitations': item['limitations'],
+        'scopes': [{k: scope[k] for k in ['scope_id', 'title', 'paper_ids', 'checked_claim', 'unresolved']}
+                   for scope in item['scopes']],
+        'sources': [{k: source[k] for k in ['id', 'url', 'sha256', 'role', 'conditioning']}
+                    for source in item['source_assets']],
+    }
+
+
+def public_investigation(item):
+    """Export scientific conditioning, omitting consumer requests and private input paths."""
+    return ({k: item[k] for k in ['title', 'readiness', 'faithful_claim', 'assumptions',
+                                'simplifications', 'unknowns']}
+           | {'test': {k: item['minimal_test'][k] for k in ['question', 'observables', 'scope']},
+              'equations': [{k: eq[k] for k in ['expression', 'locator', 'paper_id', 'definitions', 'domain', 'status']}
+                            for eq in item['equations']]})
+
+
 def public_serialization(item):
     """Publish scalar conditioning and primary links, excluding worker/acquisition fields."""
     return {
@@ -61,6 +81,7 @@ def website_data(papers, ideas, prospects, graph):
         by_base[p['arxiv_id']] = ident
     metrics = visibility_snapshots()
     contracts = {p.stem: strict_load(p) for p in (ROOT / 'register/contracts').glob('*.json')}
+    designs = {p.stem: strict_load(p) for p in (ROOT / 'designs').glob('*.json')}
     serializations = {p.stem: public_serialization(strict_load(p))
                       for p in (ROOT / 'register/source-data').glob('*.json')}
     def public_prospect(path):
@@ -72,6 +93,14 @@ def website_data(papers, ideas, prospects, graph):
         public['scalar_sources'] = [serializations[ident] for ident in sorted({
             source['serialization_id'] for contract in item.get('source_contract_ids', [])
             for source in contracts[contract].get('source_serializations', [])})]
+        # Paper-set association is navigation, not a new physical graph relation.
+        public['additional_source_contracts'] = [public_contract(contract)
+            for ident, contract in sorted(contracts.items())
+            if ident not in item.get('source_contract_ids', [])
+            and contract.get('paper_ids')
+            and set(contract['paper_ids']).issubset(item.get('paper_ids', []))]
+        public['investigations'] = [public_investigation(designs[ident])
+                                    for ident in item.get('design_ids', [])]
         return public
     return {
         'prospects': [public_prospect(p) for p in sorted((ROOT / 'register/prospects').glob('*.json'))],
