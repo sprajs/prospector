@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "contract_id": "b1608-go10158-calibrated-asset-source-contract-v1",
+  "title": "B1608+656 GO10158 calibrated exposure and astrometric asset boundaries",
+  "review_id": "2026-10-03-b1608-calibrated-source-assets",
+  "paper_ids": [
+    "arxiv:0910.2773v2"
+  ],
+  "scopes": [
+    {
+      "scope_id": "NEXT-18",
+      "title": "Current GO10158 calibrated image, error and WCS identities",
+      "paper_ids": [
+        "arxiv:0910.2773v2"
+      ],
+      "checked_claim": "Matched H9Q F606W current FLT bytes declare two4096×2048 electron SCI/ERR images and unitless DQ images, populated gain/read-noise and named calibration references under CALACS10.4.1 processing in2026. Twenty extensions include additional astrometric/distortion metadata. Current handbook documents conditional simple ERR initialization and photometric conversion with pixel-area requirements. Active SCI WCS has a GAIAeDR3 fit label but literal FK5 frame; ERR/DQ retain older TAN labels. Trailer separates the pre-CTE FLT branch and CTE-corrected FLC branches; an FLC-named headerlet is not FLC image acquisition.",
+      "unresolved": "All SCI/ERR/DQ/distortion values, reference bodies, actual measured noise/covariance, headerlet application/alignment quality, clock conversion/precision, remaining GO10158 exposures/F814W and FLC/drizzled pixels remain unexamined or unacquired. Current processing is not established equivalent to the2010 author PSF/dust/lens-light/potential reduction. Keck/radio/environment products, selection and joint likelihood stay unresolved."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "j93501h9q-flt-2026",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AHST%2Fproduct%2Fj93501h9q_flt.fits",
+      "sha256": "0da871043764cde8e2364e8b71ca564dff404cc864f606ed2644926eec734dc4",
+      "role": "current archival calibrated FLT image product",
+      "retrieved_utc": "2026-10-03T05:42:36.615860+00:00",
+      "bytes": 168442560,
+      "licence": "PUBLIC MAST product rows; general public-domain policy with stated exceptions",
+      "licence_null_reason": null,
+      "conditioning": "Exact j93501h9q/B1608+656/GO10158/ACS-WFC/F606W+CLEAR2L, observation2004-08-24 at UT-labelled05:30:18, EXPTIME609s; EXPSTART53241.22938523 and EXPEND53241.23644588 labelled MJD. File DATE2026-05-20, OPUS_VER HSTDP2026_1, CAL_VER10.4.1(08-Aug-2025). Twenty extensions plus primary: two SCI, two ERR, two DQ, five HDRLET, one WCSCORR and eight distortion-grid extensions. SCI/ERR are BITPIX−32,4096×2048,ELECTRONS; DQ is BITPIX16,4096×2048,UNITLESS. CCDCHIP2/1 belongs to SCI EXTVER1/2. Calibrated gain A/B/C/D0.99989998/0.97210002/1.0107000/1.0180000 e/DN and read-noise4.9699998/4.8499999/5.2399998/4.8499999 electrons are reference-populated header metadata; their uncertainty/distribution/covariance are unknown. CCDTAB jref$72m1821ij_ccd.fits; BIASFILE6631810bj_bia, DARKFILE78f1819gj_drk, PFLTFILEnar1136pj_pfl, IMPHTTAB4af1559ij_imp, PCTETAB8ch1518tj_cte, BPIXTAB25g1256nj_bpx, OSCNTAB17717071j_osc. IDCTAB4bb1536oj_idc, NPOLFILE4bb1536ej_npl and D2IMFILE4bb15371j_d2i pin named reference identities only; their bodies are unexamined. SCI PHOTFLAM7.7686063E−20 erg/cm²/Å/electron, PHOTPLAM5919.7769Å and PHOTBW672.45972Å are calibration metadata. PCTECORR is literally PERFORM; the acquired FLT is not identified as an acquired FLC by an FLC-named headerlet. SCI active RA/DEC TAN-SIP WCS is named IDC_4bb1536oj-FIT_REL_GAIAeDR3, while RADESYS remains FK5; the catalog name is not a frame substitution. ERR/DQ retain TAN/IDC_4bb1536oj WCS labels and older CRVALs. This metadata difference does not establish pixel misalignment or alignment qualification.",
+      "coverage": "Whole168442560B hash; selected original80-byte cards across all21 HDUs independently checked at central offsets. No SCI/ERR/DQ values, embedded headerlet bytes, WCSCORR rows or distortion-grid values interpreted; full layout remains central-aid-derived.",
+      "checked_locators": [
+        "Primary card9/NEXTEND, cards10/20/26–28/32/48–52/73/77/87–89/107–118/125–149/195–212/220–221/226–227; zero-based byte offsets retained in source-card receipt.",
+        "SCI HDUs1/4 structural/unit/CCDCHIP/PHOTFLAM/CTYPE/CUNIT/CRVAL/WCSNAME/RADESYS/HDRNAME cards; ERR/DQ HDUs2/3/5/6 structural/unit/CTYPE/CRVAL cards; additional HDUs7–20 selected structural/identity cards."
+      ],
+      "dataset_id": "HST GO10158/j93501h9q",
+      "archive_product_version": "CALACS10.4.1(08-Aug-2025); file2026-05-20",
+      "uncertainty_covariance": null,
+      "uncertainty_covariance_null_reason": "Header gain/read-noise and ERR storage do not provide measured error or joint likelihood qualification."
+    },
+    {
+      "id": "j93501h9q-flt-headerlet-2026",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AHST%2Fproduct%2Fj93501h9q_flt_hlet.fits",
+      "sha256": "3f227ddcc166601486f5bc96f79670809490495d9cc981eace2966706c79f807",
+      "role": "current archival auxiliary astrometric headerlet",
+      "retrieved_utc": "2026-10-03T05:41:21.085383+00:00",
+      "bytes": 112320,
+      "licence": "PUBLIC MAST product rows; general public-domain policy with stated exceptions",
+      "licence_null_reason": null,
+      "conditioning": "DESTIMj93501h9q; HDRNAME literally j93501h9q_flc_IDC_4bb1536oj-FIT_REL_GAIAeDR3-hlet.fits, DATE2026-05-20T14:36:04, CATALOGGAIAeDR3, FITMETHrelative, UPWCSVER1.7.7 and PYWCSVER7.2.0. Primary RMS_RA13.649763350200747mas, RMS_DEC32.475394640601905mas, FIT_RMS25.828534521458256mas and NMATCH13 are provider fit diagnostics, not a joint astrometric covariance or physical uncertainty law. Both SIPWCS headers target SCI EXTVER1/2, retain RADESYSFK5, degree units and current TAN-SIP CRVALs; the shared reference names agree with the FLT primary. Eleven HDUs comprise primary, two header-only SIPWCS and eight64×32 distortion arrays. External headerlet metadata agrees with selected FLT SCI labels; equality of embedded headerlet bytes, application correctness, reference-grid units/support and pixel alignment are unverified.",
+      "coverage": "Whole112320B hash; selected original header cards from all11 HDUs independently checked. No distortion-grid values or numerical coordinate transformations.",
+      "checked_locators": [
+        "Primary cards5–23 and HISTORY24–30; SIPWCS HDUs1/6 CTYPE/CUNIT/CRVAL/RADESYS/WCSNAME/TG_ENAME/TG_EVER; all11 HDU structural cards."
+      ],
+      "uncertainty_covariance": null,
+      "uncertainty_covariance_null_reason": "RMS/CRDER metadata has no checked joint covariance or probability distribution."
+    },
+    {
+      "id": "j93501h9q-trl-2026",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AHST%2Fproduct%2Fj93501h9q_trl.fits",
+      "sha256": "9b21f46bdbf762665f8cbba740290ee8b9aa688eecc2e1bf4a3796591fb0b811",
+      "role": "current archival calibration trailer with historical processing entries",
+      "retrieved_utc": "2026-10-03T05:41:24.829443+00:00",
+      "bytes": 69120,
+      "licence": "PUBLIC MAST product rows; general public-domain policy with stated exceptions",
+      "licence_null_reason": null,
+      "conditioning": "Primary DATE2026-05-21/FILENAMEj93501h9q_trl.fits; one ASCII TABLE TEXT_FILE/A132/TBCOL1=1,466 rows. Historical2013 partitioning and2026 support/calibration entries coexist. Log CALACS10.4.1 and named CCDTAB/gain agree with FLT. BLV_TMP→BLC_TMP ACSCTE branch reports PCTECORR COMPLETE; BLV_TMP→FLT and BLC_TMP→FLC are distinct output branches. FLC uses a CTE-corrected dark78g0300gj_dkc distinct from FLT78f1819gj_drk. FLC pixels are unacquired. Preserve flat-offset warning row49, missing-keyword ERROR labels rows202–207 explicitly declared nonfatal fallback in rows200–201, and row210 replacement of PCTERNOI by amplifier-dependent CCDTAB values. Reported processing completion and diagnostics do not qualify calibrated image/noise/CTE accuracy or recreate the2010 author reduction.",
+      "coverage": "Whole69120B hash; both original headers and216 selected original132-character log rows independently checked at central exact offsets. Remaining250 row contents unexamined; no processing rerun or reported pixel statistics re-evaluated.",
+      "checked_locators": [
+        "HDU1 ASCII TABLE header cards1–13, data offset5760; row n begins5760+132(n−1).",
+        "Selected rows1/17/42/49/56/78–81/92–95/142/155–156/171–174/200–210/273/282–285/305–310/317–319/376–379/399–404/411–413."
+      ]
+    },
+    {
+      "id": "acs-calacs-processing-steps-20261003",
+      "url": "https://hst-docs.stsci.edu/acsdhb/chapter-3-acs-calibration-pipeline/3-4-calacs-processing-steps",
+      "sha256": "1035acbc272325fa4e2a293dc0f08841b53831887817977837b5aeeb77c4a288",
+      "role": "official current ACS calibration-method documentation",
+      "retrieved_utc": "2026-10-03T05:52:41.956843+00:00",
+      "bytes": 236702,
+      "licence": null,
+      "licence_null_reason": "No source-specific redistribution licence checked in selected documentation sections.",
+      "conditioning": "STScI ACS Data Handbook section3.4 documents amplifier gain conversion DN→electrons, RAW zero-placeholder ERR initialization, a simple conditional CCD noise estimate, bad-pixel flags, bias/overscan trimming, dark/flat/reference corrections and photometric-keyword lookup. Literal non-bias Eq1 σ_CCD=√[(SCI−bias)+σ_RN²] is a pipeline initialization model; the source prose calls σ_RN² read noise while header definitions give READNSE units electrons. No repair, Gaussian/Poisson distribution or measured covariance is imported. Already-expanded nonzero ERR is left by doNoise; unread acquired ERR values do not establish which initialization branch applied. Pre-SM4 constant-bias and post-SM4 bias-gradient cases are distinguished; the2004 exposure is not silently assigned post-SM4 electronics. FLT calibrated electrons and drizzled electrons/s are different products. Source describes divide by EXPTIME then multiply by PHOTFLAM for calibrated flux units, and requires a pixel-area correction for point-source photometry on flat-fielded images. Those documented operations are unexecuted and do not supply PSF/dust/lens-light/extraction likelihood or reference uncertainty.",
+      "coverage": "Selected section3.4 introduction and toElectrons/doNoise/doDQI/doBias/pre-SM4 doBlev/acscte/doDark/doFlat/doPhot passages, original HTML Eq1/2 TeX markup and selected keyword conditioning. Unselected acsrej/MAMA details, linked ISRs/reference bodies, linked pixel-area notebook and figures unread.",
+      "checked_locators": [
+        "#id-3.4calacsProcessingSteps-toElectrons–UnitConversionFromDNtoElectrons",
+        "#id-3.4calacsProcessingSteps-errorarraydoNoise-ErrorArrayInitialization Eq1/2; HTMLline240 onward",
+        "#id-3.4calacsProcessingSteps-doFlat–Flat-FieldImage(s)Correction",
+        "#id-3.4calacsProcessingSteps-doPhot–PhotometryKeywordCalculation"
+      ],
+      "title": "3.4 calacs Processing Steps - HST User Documentation",
+      "provider": "STScI",
+      "dataset_version": null,
+      "version_null_reason": "Current retrieved HTML snapshot/hash; Confluence content-version3 is publishing metadata, not a calibrated physical-law/code version."
+    },
+    {
+      "id": "acs-headers-and-keywords-20261003",
+      "url": "https://hst-docs.stsci.edu/acsdhb/chapter-2-acs-data-structure/2-4-headers-and-keywords",
+      "sha256": "efdc94d0ea733cb89ac1a7a95e1f3793ed05abbbe45d8209407bd34677d85e18",
+      "role": "official current ACS header-keyword definitions",
+      "retrieved_utc": "2026-10-03T05:52:43.590032+00:00",
+      "bytes": 170368,
+      "licence": null,
+      "licence_null_reason": "No source-specific redistribution licence checked in selected documentation sections.",
+      "conditioning": "Selected Tables2.6/2.7 define ATODGNA–D as calibrated electrons/DN, READNSEA–D as calibrated electrons, EXPTIME as executed calculated seconds, DARKTIME as calculated dark integration seconds, EXPSTART/EXPEND as MJD, and PHOTFLAM as erg/cm²/Å/electron. RA_TARG/DEC_TARG are target J2000degrees. WCS/headerlet/distortion/reference keywords identify their roles. These definitions do not establish clock timescale conversion/precision, detector parameter uncertainty or joint coordinate/noise covariance.",
+      "coverage": "Selected keyword rows in Tables2.6 and2.7 plus primary/extension header role prose. Other keyword definitions and linked documentation unexamined.",
+      "checked_locators": [
+        "#id-2.4HeadersandKeywords-table2.6 selected ATODGN/READNSE/EXPTIME/DARKTIME/EXPSTART/EXPEND/CAL_VER/PCTECORR/reference rows",
+        "#id-2.4HeadersandKeywords-table2.7 selected BUNIT/PHOTFLAM/CCDCHIP/RADESYS/HDRNAME/WCSNAME rows"
+      ],
+      "title": "2.4 Headers and Keywords - HST User Documentation",
+      "provider": "STScI",
+      "dataset_version": null,
+      "version_null_reason": "Current retrieved HTML snapshot/hash; no publication edition inferred from internal content-version3."
+    },
+    {
+      "id": "mast-j93501010-products",
+      "url": "https://mast.stsci.edu/api/v0/invoke?request=%7B%22service%22%3A%22Mast.Caom.Products%22%2C%22params%22%3A%7B%22obsid%22%3A24824324%7D%2C%22format%22%3A%22json%22%2C%22pagesize%22%3A100%2C%22page%22%3A1%2C%22timeout%22%3A20%7D",
+      "sha256": "860942150ee2f94319f3251f21e37a778db1439fe1d8fcdd03f9893d1d85bb65",
+      "role": "official selected association product metadata",
+      "retrieved_utc": "2026-10-03T04:04:37.701933+00:00",
+      "bytes": 45418,
+      "licence": null,
+      "licence_null_reason": "Source-specific ownership/redistribution licence not established by selected body.",
+      "conditioning": "Selected current archive rows productFilenamej93501h9q_flt.fits/flt_hlet.fits/trl.fits: obsID24031772,parent24824324,GO10158,F606W,PUBLIC; FLT and HLET projectCALACS/prvversion10.4.1/calib_level2, TRLprvversionnull/calib_level1. Selected sizes match newly acquired exact bytes. Listing is not whole-program or2010 author-reduction qualification.",
+      "coverage": "Whole hash rechecked; three newly selected FLT/HLET/TRL product rows, paging81/81; prior RAW/SPT/LOG/ASN row coverage retained as ancestry, other rows unread."
+    },
+    {
+      "id": "j93501h9q-raw",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AHST%2Fproduct%2Fj93501h9q_raw.fits",
+      "sha256": "dc7e5529f13682e9b93b8681d6568acfbcd8ab2190030f855fb544e67c62f737",
+      "role": "native archival RAW count-image product",
+      "retrieved_utc": "2026-10-03T04:07:14.683797+00:00",
+      "bytes": 34344000,
+      "licence": "PUBLIC archival access; MAST general public-domain policy with exceptions",
+      "licence_null_reason": null,
+      "dataset_id": "HST GO10158/j93501h9q",
+      "archive_product_version": null,
+      "version_null_reason": "Selected RAW product row prvversion null and RAW CAL_VER blank; dated bytes/hash pin this snapshot.",
+      "licence_scope": "Selected MAST PUBLIC rows and policy checked separately; legal ownership of author products is not certified.",
+      "conditioning": "Same H9Q/GO10158/F606W exposure ancestry retained: native RAW SCI4144×2068 counts, zero-encoded ERR/DQ placeholders via NPIX1/2 and PIXVALUE0, blank CAL_VER and zero gain/read-noise/PHOT metadata. Placeholders are not measured zero uncertainty or verified clean flags. Current FLT is a distinct calibrated product, with populated reference gain/read-noise and full-size ERR/DQ payloads.",
+      "coverage": "Whole original hash rechecked; earlier selected RAW header/layout coverage retained. No RAW pixel values or telemetry newly interpreted."
+    },
+    {
+      "id": "mast-data-use-policy",
+      "url": "https://archive.stsci.edu/publishing/data-use",
+      "sha256": "f309e1b4708217eafff51feab3fc9780e5b0c7fef79452e6fde486030b37e2c3",
+      "role": "official archive access and data-use policy",
+      "retrieved_utc": "2026-10-03T03:56:22.041357+00:00",
+      "bytes": 81786,
+      "licence": "MAST public-data policy with stated exceptions; source-specific PUBLIC rows independently checked",
+      "licence_null_reason": null,
+      "conditioning": "Selected PUBLIC product rows are distinct from the previously checked MAST general policy: most MAST data public domain with collection-specific exceptions and acknowledgement expectations. No author-product or2010 reduction rights follow from archive access.",
+      "coverage": "Whole original hash rechecked; selected policy HTML270–339 coverage retained. Other policy and linked attribution/licence destinations remain unexamined."
+    }
+  ],
+  "limitations": [
+    "Dataset baseline is one current archival H9Q/GO10158/F606W calibrated FLT plus associated headerlet/trailer, separate from native RAW counts, CTE-corrected FLC/drizzled products, other exposures/filters and the2010 author reduction. Acquired declared ERR payloads do not qualify actual error values or a physical likelihood.",
+    "Calibration gain/read-noise, photometric keywords and fit RMS/CRDER are conditioned provider metadata. Their uncertainty distributions, reference covariance, pixel/error covariance and cross-probe covariance remain unknown, not zero or Gaussian/Poisson. The documented simple noise formula is not accepted as a measured detector law.",
+    "SCI FK5 with GAIAeDR3 catalog-labelled WCS and older ERR/DQ WCS cards are preserved literally. Neither a frame conversion nor pixel alignment/misalignment, distortion-grid units/support, headerlet application or astrometric covariance is qualified.",
+    "The calibrated conversion and pixel-area requirement are documentation, not an executed extraction. PSF ensembles, masks/censoring, dust/lens-light treatment, Keck spectra/templates/aperture/seeing, radio time series/delay covariance and environment selection/sightlines/full joint likelihood remain unverified. Current2026 archive processing is not a reconstruction of the2010 paper data analysis.",
+    "Selected archive rows are PUBLIC under a separately checked general MAST policy with exceptions; author-product rights and specific documentation redistribution licences remain unverified. Unread or unacquired material is not proven absent.",
+    "SDSS legacy RUN5566/82N and reduced-release coordinates remain a separate observation lineage; no HST exposure, clock, electron units or noise model supplies the missing SDSS event/frame/readout/extraction bridge."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}

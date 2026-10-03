@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-03-all19-source-wave5",
+  "status": "completed",
+  "started_utc": "2026-10-03T05:33:24.657758+00:00",
+  "completed_utc": "2026-10-03T06:51:44.665293+00:00",
+  "started_utc_basis": "First persisted wave5 plan; no invented earlier boundary.",
+  "lane": "baseline-reference",
+  "work_mode": "bounded_targeted_source_audit_no_new_full_reads",
+  "queries": [
+    {
+      "mode": "bounded_primary_source_terminology_leads",
+      "requests": [
+        {
+          "utc": "2026-10-03T05:36:39.841Z",
+          "call_id": "call_yndp4aR7brw3mMrH4DLATn5A",
+          "literal_queries": [
+            "\"SH0ES\" \"IDL\" \"47\" fits",
+            "Riess 2022 Cepheid table2 \"coordinate\" \"44\" data reduction",
+            "\"Gil-Mar\u00edn\" bispectrum github estimator code",
+            "\"B1608\" \"LRIS\" \"2007\" spectra data archive"
+          ],
+          "exact_call_input_sha256": "d7617dc3d9f0e7d430db38e59979f59ae41013a3b2a309b094c79194f4d59dff",
+          "scope": "Primary source/terminology leads only; exactmetadata/body receipts bind source identity; not archivecoverage."
+        },
+        {
+          "utc": "2026-10-03T05:50:03.378Z",
+          "call_id": "call_42KWblr1WeCPrh6O2LLCivJn",
+          "literal_queries": [
+            "site:hst-docs.stsci.edu/acsdhb \"calacs\" \"ERR\" \"gain\"",
+            "site:classic.sdss.org \"run 5566\" \"6057\"",
+            "site:classic.sdss.org \"Field\" \"camcol\" \"photoField\" \"tsField\""
+          ],
+          "exact_call_input_sha256": "b0f360bab7a0a37d1a9c5f53b4dd59fc9bad39fbd097d316c1a85e2095b9ab62",
+          "scope": "Primary source/terminology leads only; exactmetadata/body receipts bind source identity; not archivecoverage."
+        },
+        {
+          "utc": "2026-10-03T05:50:58.293Z",
+          "call_id": "call_yVaTx9iCkBoRiVwhH0kFDDkz",
+          "literal_queries": [
+            "\"A Reanalysis of the Latest SH0ES Data\" github",
+            "\"SH0ES\" \"IDL constraint\" \"44\"",
+            "\"Riess\" \"SH0ES\" \"alll_shoes\" \"parameter\""
+          ],
+          "exact_call_input_sha256": "8208c4283702ef57722fa4cca7a4ac6d8704918069336e55e516d0dd257b7b7f",
+          "scope": "Primary source/terminology leads only; exactmetadata/body receipts bind source identity; not archivecoverage."
+        }
+      ],
+      "receipt_sha256": "5b8e20a8b53a8b7312578cc2b43813c0d2bb349e58b1fbed9efa68c026b26301",
+      "scope": "Exact saved query strings recovered from calling-thread tool inputs; primary source asset leads only, no archive completeness claim."
+    },
+    {
+      "mode": "known_id_primary_metadata_lookup",
+      "id_list": [
+        "2208.11169"
+      ],
+      "url": "https://export.arxiv.org/api/query?id_list=2208.11169&max_results=1",
+      "retrieved_utc": "2026-10-03T05:54:05.048375+00:00",
+      "http_status": 200,
+      "bytes": 3920,
+      "sha256": "1a0dcd5ec185332cd5d33cc4e07157a26b9af945bce24324a6c75930865492ab",
+      "ordering": null,
+      "ordering_null_reason": "Exact id_list lookup did not request sort/order/pagination; never relabelled as a searched archive window.",
+      "disposition": "Deferred ordinary admission/full reading; selected journal DOI and pinned reconstruction assets remain separately identified."
+    },
+    {
+      "mode": "selected_pinned_source_acquisition",
+      "receipts": [
+        {
+          "receipt_sha256": "aebe2a9f703c4d1e6935b5372947df5c37f1e3c694afcea80135169a63e4692c",
+          "attempts": 2
+        },
+        {
+          "receipt_sha256": "8f4f2c36a7c76680dc22dbc6cefc8a0823329e68554378822c1a9d4cf62b1f2b",
+          "attempts": 1
+        },
+        {
+          "receipt_sha256": "fe75904716dbde86adcd2b0cafcb8ec6c0855b41b1d838932374a7d4e20884cb",
+          "attempts": 2
+        },
+        {
+          "receipt_sha256": "34dcf22acf375d89dc4183c8940991db8f1d94e89cfd3d5ebd5e6c08a1aa83ca",
+          "attempts": 1
+        },
+        {
+          "receipt_sha256": "13b51ba8a6b7e18a5d1280e496ed20caa74a593ac273e8ebf334b23be29066b0",
+          "attempts": 7
+        },
+        {
+          "receipt_sha256": "535e1c75de58cb6505924e0dfe8dfa513fc26d70f7a7d1cbff381dec0d840d73",
+          "attempts": 5
+        },
+        {
+          "receipt_sha256": "b1f33270386f5532a3953d787bb70d1ae51c1b285c590f9bbfa06c02f61813b5",
+          "attempts": 5
+        },
+        {
+          "receipt_sha256": "b9ea93a3d7a0cb2a135eee6e9da126a1a5ae704a8cadf1f18b9e1303fbef14ac",
+          "attempts": 7
+        }
+      ],
+      "source_manifest_sha256": "f3b6da6afebc2383ae29b6db49d618480601a3d79cf398f6946007de66e1aa0d",
+      "scope": "88 local byte bindings including archives, safe selected code members and reading aids;81 predecessor bindings rehashed unchanged. Duplicate representations are not independent sources. Wrong bodies retained and separately classified."
+    },
+    {
+      "mode": "bounded_source_archive_structure",
+      "receipt_sha256": "bdeb7f2ba80d2ea0e1b6b45a3e70aa10cb3ef264110f23e36767ef769b8a8438",
+      "visited_uncompressed_bytes": 469882880,
+      "member_headers": 4112,
+      "selected_bodies": 4,
+      "scope": "All top-level and named CMASS/NGC nested headers only; other nested bodies unread. No array/covariance/fit or pairing qualification."
+    }
+  ],
+  "registered_papers": [
+    "arxiv:0910.2773v2",
+    "arxiv:1606.00439v2",
+    "arxiv:2112.04510v3"
+  ],
+  "new_versions": [],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [
+    "2026-10-03-next04-skara-reconstruction-source-claims",
+    "2026-10-03-next13-boss-estimator-mock-source-claims",
+    "2026-10-03-b1608-calibrated-source-assets"
+  ],
+  "idea_ids": [],
+  "design_ids": [],
+  "prospect_ids": [],
+  "edge_ids": [],
+  "source_contract_ids": [
+    "next04-skara-shoes-reconstruction-source-v1",
+    "next13-boss-dr12-current-estimator-mock-source-contract-v1",
+    "b1608-go10158-calibrated-asset-source-contract-v1"
+  ],
+  "source_leads": [
+    {
+      "arxiv_id": "2208.11169",
+      "versioned_id": "2208.11169v3",
+      "title": "A reanalysis of the latest SH0ES data for $H_0$: Effects of new degrees of freedom on the Hubble tension",
+      "authors": [
+        "Leandros Perivolaropoulos",
+        "Foteini Skara"
+      ],
+      "published_utc": "2022-08-23T19:52:11Z",
+      "updated_utc": "2022-09-19T14:59:04Z",
+      "admission": "verified_metadata_deferred_unadmitted",
+      "metadata_source_sha256": "1a0dcd5ec185332cd5d33cc4e07157a26b9af945bce24324a6c75930865492ab",
+      "journal_doi": "10.3390/universe8100502",
+      "reason": "Useful third-party reduced-input reconstruction/challenge. Journal selected-source audit does not read or prove identity of pinned arxivv3; retain saved metadata rather than repeat lookup. No inverse-distance-ladder prior/model or fitted H0 admitted."
+    }
+  ],
+  "acquisition_failures": [
+    {
+      "source": "sdss-dr7-das-structure.html",
+      "http_status": 301,
+      "status": "http_access_failure",
+      "reason": "HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Permanently"
+    },
+    {
+      "source": "sdss-dr7-imaging-quality.html",
+      "http_status": 301,
+      "status": "http_access_failure",
+      "reason": "HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Permanently"
+    },
+    {
+      "source": "acs-calacs-steps.html",
+      "http_status": 404,
+      "status": "http_access_failure",
+      "reason": "HTTP Error 404: "
+    },
+    {
+      "source": "suyu-iop-source.html",
+      "http_status": 200,
+      "status": "captcha_body_not_paper",
+      "sha256": "94b10defda465e0d73cb33044990190342a882615fece92143f924f80ca789a1",
+      "reason": "Radware Bot Manager Captcha title; retained failed body, no challenge bypass; earlier verified arxiv original reused."
+    },
+    {
+      "source": "boss-bis-mocks.gz",
+      "http_status": 200,
+      "status": "public_download_confirmation_not_archive",
+      "sha256": "80d0fabc07a15568469ca7b14fce2edc2f6ac34de90a6f4c5140fdb99b621bf1",
+      "reason": "Initial2446B public large-file warning retained; exact observed normal anonymous form led to separate complete confirmed archive receipt."
+    }
+  ],
+  "deferred_assets": [
+    {
+      "source": "Skara pinned NUMERICAL_ANALYSIS/data/data.zip",
+      "declared_bytes": 24647080,
+      "default_allowance": 10485760,
+      "reason": "Not acquired; no size exception, producer inputs already cached and third-party generating lineage unqualified."
+    },
+    {
+      "source": "Separate postreconstruction BOSS power mock archive",
+      "declared_bytes": 21607267,
+      "reason": "Metadata only; named exceptions cover only selected power and bispectrum archive identities."
+    }
+  ],
+  "corrections": [
+    "Preliminary central FLT aid assumed RAW seven-HDU structure; failed assumption visibly corrected to21 actualHDUs. No fixed total-count inference retained.",
+    "Initial TRL aid handled BINTABLE only and falsely claimed selected text lines for actual ASCII TABLE. Immutablev1 retained; correctedv2 contains exact216 declared term-selected rows and original byte/row locators.",
+    "BOSS first FINAL-named draft bytes retained; separately versioned final contract/review add unresolved W0 denominator and expose actual runtime effort key. No original scientific packet hidden by replacement.",
+    "NEXT04 within-host ranking differs from original global ordinal; explicit one-header ordinal locators accepted only as reduced-data witnesses, never physical joins.",
+    "Initial NEXT17 FINAL-named local v1 was written before its freeze completed; exactv1 retained. Separate finalv2 adds all five explicit consumer/source wireblockers and removes apparent complete causal-wire compatibility. Only preferred new arithmetic/counting/algebra source sections conditionally accepted."
+  ],
+  "resource_receipt": {
+    "sha256": "3c9171e203b58045ed5562d78e1a29536121a60657a3091703430cd259ebf37f",
+    "active_jobs_after_acquisition": 0,
+    "caps_bytes": {
+      "HST_one_FLT": 201326592,
+      "BOSS_named_power": 33554432,
+      "BOSS_named_bispectrum": 301989888,
+      "all_other_requests": 10485760
+    },
+    "archive_limits": {
+      "uncompressed_bytes": 1073741824,
+      "member_headers": 50000,
+      "seconds": 120,
+      "selected_bodies": 4,
+      "per_selected_body_bytes": 10485760
+    },
+    "qualification": "Three existing readers perform ordinary source IO only; no compiler/scientific jobs. Brief early cached metadata overlap during yieldedFLTtransfer explicitly recorded; subsequent processing strictlyserial. LifetimeRSS launch-history metric is not certified transfer-only memory."
+  },
+  "pending": [
+    {
+      "scope_id": "NEXT-04",
+      "stage": "source",
+      "reason": "Selected Perivolaropoulos/Skara journal/notebook ordering and four literal ordinal witnesses checked as third-party reconstruction. Original coordinate44 physical meaning/unit/rationale, producer dictionary/generator, four physical joins and original covariance/reduction/selection remain unresolved; all printed variants retained."
+    },
+    {
+      "scope_id": "NEXT-05",
+      "stage": "consumer_and_physical_source",
+      "reason": "Distinct frozen-product conditional diagnostic only; physical refit/sign and new numerical target acceptance remain blocked. Reproducible reported a separate full-target v4 conditioning-budget refusal (receipt7822fbbb20e3bbe1aeb9fa6b60d299a9f535b007f149fcaab2a02993da6dc07a); this source wave did not reproduce it or change tolerances."
+    },
+    {
+      "scope_id": "NEXT-08",
+      "stage": "source",
+      "reason": "105/102 and machine alias/passband/probability-law bridge unresolved."
+    },
+    {
+      "scope_id": "NEXT-09",
+      "stage": "source",
+      "reason": "Complete MODEL000 decoding/support/units/color-law/error map and physical optical likelihood remain unresolved."
+    },
+    {
+      "scope_id": "NEXT-10",
+      "stage": "physical_source_and_consumer",
+      "reason": "Literal legacy2005 SN6057 first-g-epoch RUN5566/82N and official run metadata checked; distinct c447 HEAD row/declared PHOTFILE preserved. Native camcol/field/pixels, clock/QE/gain/extraction/selection law, covariance and legacy-to-SMPv8 reduction equivalence remain unresolved."
+    },
+    {
+      "scope_id": "NEXT-14",
+      "stage": "consumer_stability_and_numerical",
+      "reason": "Separate FDv3 centered-angular/damped-residual source algebra and ideal photon/cold-baryon acoustic source derivations accepted only conditionally. All G01\u2013G07 remain open. Original39cf/de5/0610 proposal, projected-versus-regular start and raw growing TRACE caveat remain. Actual background/derivative/conservation forcing and forward/work/storage effects are unqualified; old conformal helper lacks total-matter extension and self-baryon refusal. No installed/compiled/numerical/model-equivalence promotion."
+    },
+    {
+      "scope_id": "NEXT-18",
+      "stage": "physical_source_and_joint_likelihood",
+      "reason": "One current matched GO10158/F606W FLT, external headerlet and trailer acquired; selected21/11/2-HDU original headers and216 ASCII trailer rows checked. RAW zero ERR/DQ placeholders remain separate. Electron SCI/ERR storage and gain/read-noise cards do not qualify pixel values/covariance. FLT/FLC branches, printed FK5/Gaia naming and2026-versus2010 processing preserved. Reference bodies, other exposures/filter, PSF/Keck/radio/environment and joint likelihood remain open."
+    },
+    {
+      "scope_id": "NEXT-13",
+      "stage": "source_assets_and_consumer",
+      "reason": "Current pinned2023/2025 RUSTICO/BRASS and full named current mock archive bytes acquired; selected CMASS/NGC nested headers and four small candidate1000/1001 text bodies checked. Seven-field B versus eleven-field reader and distinct current RR-mask conventions require verified adaptation. Historical2017 implementation, paired valid IDs/reconstruction, full support/order/window, joint auto/cross covariance, likelihood/prior and ordinary sigma8 remain unqualified."
+    },
+    {
+      "scope_id": "NEXT-12",
+      "stage": "chosen_inputs_and_consumer",
+      "reason": "Selected constants and mass conventions source-checked. Joint uncertainty/covariance, underlying isotope evaluation and consistent native chosen-input qualification remain open."
+    },
+    {
+      "scope_id": "NEXT-16",
+      "stage": "physical_late_input",
+      "reason": "Today opacity/visibility need a qualified matching late-electron history or deterministic depth enclosure; actual L/U remain null. Drag requires a distinct weighted tail."
+    },
+    {
+      "scope_id": "NEXT-17",
+      "stage": "consumer_protocol_and_execution",
+      "reason": "Originalbf6828/69e681/fe26 unchanged. Separately sealed NEW weighted-Gram source algebra/reference/count choice conditionally compatible;58800 is contribution-plus-reconstruction accounting, not scalarops or measuredwork. Completecoupled v4 wire source blocked F1\u2013F5; parent cap-unit admission, actualABI/capacity/arithmetic/support/refinement/runtime/implementation/numerical gates open. Separate v5 reported in preparation, unread/unaccepted here."
+    },
+    {
+      "scope_id": "NEXT-07",
+      "stage": "physical_source_and_consumer",
+      "reason": "Legacy asinh/AB-corrected microJy/error-component units and selected released HEAD pointer link checked. Native event/exposure/operator/clock bridge, complete transformations, full selection and covariance remain unknown; HST cannot replace SDSS."
+    },
+    {
+      "scope_id": "NEXT-19",
+      "stage": "physical_history_and_primary_CMB",
+      "reason": "Intrinsic signed delta_gamma/4 per asymptotic unit zeta belongs only to the separate ideal acoustic model. MB99\u2013101 are an approximate no-shear formal control, not a loaded physical history; opacity, visibility, diffusion, polarization, line-of-sight CMB and observed likelihood remain absent from this specification."
+    }
+  ],
+  "limits": [
+    "Three bounded targeted canonical original-source contracts and one separate explicitly requested synthetic source-owner clarification; zero newly admitted versions, Luna/full readings, full-paper reviews, ideas, edges, prospects, designs, numerical references, experiments or scientific promotion. Existing exactSol/xhigh workers reused with backendnull and configuredeffort disclosed; ordinaryhigh policy unchanged.",
+    "One new metadata-verified criticism/reconstruction lead remains unadmitted for ordinary Luna reading; selected journal and arxivversion identities remain separate. Existing59 reading/acquisition stages and discovery lanes preserved.",
+    "All earlier canonical source/design/reference/graph/paper bytes retained. New contracts add source navigation and conditioning, not accepted physical components, experiments or measured joint laws.",
+    "Source-declared reduced inputs, calibrated/reference headers, current implementation choices, reader algebra and physical measurements remain distinct. Reused sources/masks/mocks/catalogs are not independent evidence; unlocated covariance, uncertainty law and rights remain unknown.",
+    "Raw papers, HTML, FITS, archives, source code, tables, renders and completeworkerlogs remain ignored locally inside Prospector. Public JSON carries short original notes, identities/hashes and stable links only; no transient confirmation credential/UUID URL.",
+    "Source review, independent final review, consumer/source admission, implementation/numerical qualification, latest-headCI, exact-mainCI and same-Site deployment are separate gates. Remaining hard gaps are saved; no numerical experiments, schedules or endless crawl."
+  ],
+  "public_projection_receipts": [
+    {
+      "role": "exact_three_new_contract_scientific_projection",
+      "sha256": "b297bf6731fb35c3b0f05e33a35786be1c9c5f09cba5de65885cfd2f669ce55a",
+      "public_data_sha256": "e47cfb3b625920fc7590e04975c64ffd5cf50d4f6bb81dc25faf3888af22533b"
+    }
+  ],
+  "source_handoffs": [
+    {
+      "scope_id": "NEXT-17",
+      "source_disposition_id": "next17-weighted-gram-source-disposition-v2",
+      "packet_sha256": "a9d8cb4efed3a696951e2cdcbea89a42fcc53348e1ed96985ea39a7e133f16f3",
+      "manifest_sha256": "fed690b5ada83c249ef7749f091a98827132b01d2ff09467b9383e76111a484a",
+      "original_candidate_sha256": "bf6828e5eaac4e06cccbe1b653bb5f9a240316754513da2f253a4250d65aff5f",
+      "original_source_acceptance_sha256": "69e681d106d830beceb2475170f0d44411ccedff5de011dcbaf125b23d864503",
+      "original_signed_six_clarification_sha256": "fe26aee5e34448738897a89684b6a69621141d0aa32495d7b0f1bb1c1f3109aa",
+      "new_earning_proposal_sha256": "ff0819ef10ad71c72e8733688e6cecb3b08054364fc9be5e5097545846748f19",
+      "coupled_v4_request_sha256": "75f273fd137e622ac2b386f2f30c617d5d381945e1386bcefdab210c49b6946b",
+      "scope": "Conditional preferred NEW weighted-Gram real finite-law/reference/counting compatibility only.58800 contribution-plus-reconstruction units are not scalaroperations; actualcounts null. All15proposal plus2consumer rejection reports read,24localbindings rehashed; SDKclaimsconsumer-attributed. Fullcoupled v4 wire BLOCKED F1\u2013F5; parent unitadmission/privateABI/capacity/runtime/implementation/numerical/science open. No v5 read/acceptance; earlier apparentFINALv1 preserved and explicitlysuperseded. Counterpart exactpacket acceptance pending at this source scan cutoff."
+    }
+  ],
+  "independent_source_reviews": [
+    {
+      "scope_id": "NEXT-04",
+      "packet_sha256": "2a44787f08b477c1d9a70f329432e02d51c3d740124677d37341f3f7203c5722",
+      "acceptance_sha256": "2f541e7db663482d266107765eff64f5ef4422c2c71fb811aabd71e1909c3869",
+      "scope": "Independent selected originalsource check supports exact new NEXT04 contract/review; own NEXT18 and whole-wave acceptance excluded. Final complete candidate review remains a separate publication gate."
+    }
+  ]
+}

@@ -799,15 +799,15 @@
     "request_sha256": "5d67253917a35031b69b85272fe381da8c946007da5615300a3dcf3381f12bed"
   },
   "continuation_note": "Resume saved acquisitions/reads before a new bounded window. Least-searched lane interacting-sectors; preserve foundational spin citations and blocked source-audit designs. No scheduled or endless crawl.",
-  "last_completed_source_audit": "2026-10-03-all19-source-wave4",
+  "last_completed_source_audit": "2026-10-03-all19-source-wave5",
   "coordinated_source_continuation": {
-    "scan_id": "2026-10-03-all19-source-wave4",
+    "scan_id": "2026-10-03-all19-source-wave5",
     "mode": "bounded_targeted_source_work",
     "pending": [
       {
         "scope_id": "NEXT-04",
         "stage": "source",
-        "reason": "Physical44/full author dictionary/generator/four joins/counts/reduction/calibration remain unresolved."
+        "reason": "Selected Perivolaropoulos/Skara journal/notebook ordering and four literal ordinal witnesses checked as third-party reconstruction. Original coordinate44 physical meaning/unit/rationale, producer dictionary/generator, four physical joins and original covariance/reduction/selection remain unresolved; all printed variants retained."
       },
       {
         "scope_id": "NEXT-05",
@@ -837,12 +837,12 @@
       {
         "scope_id": "NEXT-18",
         "stage": "physical_source_and_joint_likelihood",
-        "reason": "One current GO10158 ACS-WFC/F606W RAW count product, SPT, LOG and five-row ASN acquired and bounded headers/layout checked; image and telemetry values unread. RAW ERR/DQ header-encoded zeros are placeholders, not measured error or cleanDQ. Current2026 processing is not established equal to2010 author reduction. Other exposures/band, calibration bodies, PSF/Keck/radio/environment products, rights and joint likelihood/covariance remain open."
+        "reason": "One current matched GO10158/F606W FLT, external headerlet and trailer acquired; selected21/11/2-HDU original headers and216 ASCII trailer rows checked. RAW zero ERR/DQ placeholders remain separate. Electron SCI/ERR storage and gain/read-noise cards do not qualify pixel values/covariance. FLT/FLC branches, printed FK5/Gaia naming and2026-versus2010 processing preserved. Reference bodies, other exposures/filter, PSF/Keck/radio/environment and joint likelihood remain open."
       },
       {
         "scope_id": "NEXT-13",
         "stage": "source_assets_and_consumer",
-        "reason": "Current author-public CMASS cap P/B/density/mask assets and separate2016a/b power archive acquired; selected release-note math visually checked. Historical2017 byte/estimator identity, full support/order, paired mock IDs/2048 mocks, joint auto/cross covariance, complete window, likelihood/prior/code and ordinary sigma8 compatibility remain unqualified. Printed note issues and public-access-versus-licence distinction retained."
+        "reason": "Current pinned2023/2025 RUSTICO/BRASS and full named current mock archive bytes acquired; selected CMASS/NGC nested headers and four small candidate1000/1001 text bodies checked. Seven-field B versus eleven-field reader and distinct current RR-mask conventions require verified adaptation. Historical2017 implementation, paired valid IDs/reconstruction, full support/order/window, joint auto/cross covariance, likelihood/prior and ordinary sigma8 remain unqualified."
       },
       {
         "scope_id": "NEXT-12",
@@ -857,7 +857,7 @@
       {
         "scope_id": "NEXT-17",
         "stage": "consumer_protocol_and_execution",
-        "reason": "Original bf6828/69e681 source/algebra and caps remain unchanged. Separate source clarification conditionally permits an explicitly new fixed-mask165 six-one-coordinate-marginal successor design, retaining all eight joint masses/nulls, parent priors and alternative-denominator witness. Historical marginal sign/set ambiguity is explicit; signed convention is a new design choice. No successor bytes, executable, useful-witness pass or numerical admission accepted."
+        "reason": "Originalbf6828/69e681/fe26 unchanged. Separately sealed NEW weighted-Gram source algebra/reference/count choice conditionally compatible;58800 is contribution-plus-reconstruction accounting, not scalarops or measuredwork. Completecoupled v4 wire source blocked F1\u2013F5; parent cap-unit admission, actualABI/capacity/arithmetic/support/refinement/runtime/implementation/numerical gates open. Separate v5 reported in preparation, unread/unaccepted here."
       },
       {
         "scope_id": "NEXT-07",
@@ -870,6 +870,24 @@
         "reason": "Intrinsic signed delta_gamma/4 per asymptotic unit zeta belongs only to the separate ideal acoustic model. MB99\u2013101 are an approximate no-shear formal control, not a loaded physical history; opacity, visibility, diffusion, polarization, line-of-sight CMB and observed likelihood remain absent from this specification."
       }
     ],
-    "no_automatic_execution": true
+    "no_automatic_execution": true,
+    "source_leads": [
+      {
+        "arxiv_id": "2208.11169",
+        "versioned_id": "2208.11169v3",
+        "title": "A reanalysis of the latest SH0ES data for $H_0$: Effects of new degrees of freedom on the Hubble tension",
+        "authors": [
+          "Leandros Perivolaropoulos",
+          "Foteini Skara"
+        ],
+        "published_utc": "2022-08-23T19:52:11Z",
+        "updated_utc": "2022-09-19T14:59:04Z",
+        "admission": "verified_metadata_deferred_unadmitted",
+        "metadata_source_sha256": "1a0dcd5ec185332cd5d33cc4e07157a26b9af945bce24324a6c75930865492ab",
+        "journal_doi": "10.3390/universe8100502",
+        "reason": "Useful third-party reduced-input reconstruction/challenge. Journal selected-source audit does not read or prove identity of pinned arxivv3; retain saved metadata rather than repeat lookup. No inverse-distance-ladder prior/model or fitted H0 admitted."
+      }
+    ],
+    "scope_limit": "Coherent source-only wave5 complete; all19 scientific program remains open. Resume saved hard source gaps and ordinary uncompleted reads; no automatic numericalexecution or endlessscan."
   }
 }
