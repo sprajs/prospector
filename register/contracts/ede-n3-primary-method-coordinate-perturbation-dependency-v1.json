@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "contract_id": "ede-n3-primary-method-coordinate-perturbation-dependency-v1",
+  "title": "Finite-n=3 scalar coordinates and approximate perturbation dependencies",
+  "review_id": "2026-10-03-ede-primary-method-targeted-source-claims",
+  "paper_ids": [
+    "arxiv:1806.10608v1"
+  ],
+  "scopes": [
+    {
+      "scope_id": "NEXT-14",
+      "title": "Method-specific scalar inputs and linear prediction closure",
+      "paper_ids": [
+        "arxiv:1806.10608v1"
+      ],
+      "checked_claim": "This method explicitly defines Theta=phi/f, Theta_i=phi_i/f, alpha=f/M_P, mu=m/H0, m=Lambda^2/f and x=H0 t, with reduced M_P and Omega_X=rho_X/(3H0^2 M_P^2) (#S2.SS1.p2.5, #S2.SS4.p1.1). Its numerical homogeneous start uses 0<Theta_i<pi, radiation domination and the regular early expansion (Eq9, #S2.SS1.p3.3). Eqs13–16 describe an averaged dilution/interpolation, and Eq27 relates transition density to theory coordinates within that approximation; #S2.SS4.p4.1 restricts the analytic mapping to a small transition fraction and Theta_i approximately below pi-0.1. Eqs26/70 give a scale- and time-dependent sound speed in the averaged axion rest frame, assuming rapid oscillations near the potential minimum; n=3 is the separately chosen finite branch. Section III.1 specifies synchronous fluid variables, subdominant superhorizon attractor modes, and a zero density/heat-flux numerical start. These located method facts do not identify the later letter's sampled coordinate or producer code.",
+      "unresolved": "The original modified CLASS fork/branch/commit/patch/configuration, mapping to the 2019 literal phi_i and Omega_phi,0, exact oscillation/onset matching and unit-zeta normalization remain unbound. The subsequent printed-source comparison in ede-primary-method-printed-equation-conflicts-source-v1 confirms the selected period, entropy-density and clock conflicts in the PDF. Equation interpretation and producer reconciliation remain open. Neither generic CLASS nor the independent compensated-density background supplies this source implementation. Thermal/species, primordial, observable and likelihood compatibility and numerical error controls remain open."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "ede-method-1806-10608-v1-original-html",
+      "url": "https://arxiv.org/html/1806.10608v1",
+      "sha256": "ba5b329123418f34caef286f54d22238904cfdca6e7d6556a6b2c4d4f00baacf",
+      "role": "html",
+      "conditioning": "Original selected MathML, TeX alttext and paragraph/bibliography anchors checked. The independently matched v1 is a method dependency, not an established consumed version or 2019 producer identity. No PDF, figures, code or linked legal text checked; displayed arXiv perpetual non-exclusive licence is navigation only."
+    }
+  ],
+  "limitations": [
+    "The method's physical phi and f have compatible energy dimensions; Theta is dimensionless. Its bulk velocity theta_a and heat flux u_a=(1+w_a)theta_a are separate variables. No numerical angle, amplitude, transition, prior or tolerance is selected.",
+    "Omega_X uses the fixed today critical normalizer in this method. Omega_a,0 in the averaged late power law and literal Omega_Theta,0 in Eq20 are not silently identified. Evaluating the interpolator today differs from extrapolating its late power-law coefficient; neither conversion establishes the later letter's code convention. The transition fraction is an instantaneous ratio, not a certified peak.",
+    "For n=3 the rest-frame oscillatory sound speed specializes to (4 a^2 varpi^2+k^2)/(8 a^2 varpi^2+k^2), with varpi evolving in time. This is an approximate potential-specific closure, not a universal c_s^2=1 fluid. The authors explicitly distinguish the parametrized early adiabatic sound speed from the generic slow-roll value. Rapid-oscillation validity, transition transients and late accelerated evolution need independent controls.",
+    "The synchronous subdominant attractor and the source's zero delta_a,u_a start are distinct prescriptions; no regular finite-start bias, C-to-zeta conversion, Fourier phase convention or complete isocurvature closure is admitted here.",
+    "The earlier selected HTML review observed H0^-1 in Eq17 versus H0 in Eq18, one conformal H in the entropy terms of Eqs22/32, and conformal-time prose before a cosmic-form appendix equation. The separate later printed-source contract confirms those expressions on original PDF pages 4, 5 and 18 and distinguishes printed A4 from HTML converted 53. No repaired formula or implemented producer equation is established.",
+    "Section I footnote2 supplies http://class-code.net, and footnote3 supplies MontePython navigation; CLASS bibliography references print base IDs without source-code versions. No author EDE repository or commit was located in the selected text/link search. Exact producer identity remains unknown rather than proved globally unavailable.",
+    "This dependency does not replace the distinct background-only reviewer model, promote the existing candidate, close its executable gate or establish an EDE CMB/H0 solution. No numerical, native, consumer or statistical qualification is conferred."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}
