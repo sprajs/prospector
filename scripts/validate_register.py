@@ -51,7 +51,7 @@ def records(folder, key):
 
 def validate():
     schemas = {name: strict_load(ROOT / "schemas" / (name + ".schema.json"))
-               for name in ["paper", "candidate-design", "topic", "prospect", "citations", "reference", "source-contract"]}
+               for name in ["paper", "candidate-design", "topic", "prospect", "citations", "reference", "source-contract", "source-serialization"]}
     validators = {}
     for name, schema in schemas.items():
         Draft202012Validator.check_schema(schema)
@@ -211,6 +211,23 @@ def validate():
                     'reference source not reviewed')
         else:
             require(reference['review_id'] is None, 'pending reference has review')
+    serializations = records('register/source-data', 'serialization_id')
+    for ident, serialization in serializations.items():
+        validators['source-serialization'].validate(serialization)
+        require(serialization['review_id'] in reviews, 'source serialization lacks review')
+        accepted_record(serialization['review_id'], 'serialization_ids', ident)
+        reviewed_assets = {asset['id']: asset for asset in
+                           reviews[serialization['review_id']].get('reviewed_source_assets', [])}
+        asset_ids = [asset['id'] for asset in serialization['source_assets']]
+        require(len(asset_ids) == len(set(asset_ids)), 'duplicate serialization source asset')
+        for asset in serialization['source_assets']:
+            reviewed = reviewed_assets.get(asset['id'])
+            require(reviewed is not None and reviewed['sha256'] == asset['sha256']
+                    and reviewed['url'] == asset['url'], 'serialization source asset not reviewed')
+        scalar_ids = [scalar['id'] for scalar in serialization['scalars']]
+        require(len(scalar_ids) == len(set(scalar_ids)), 'duplicate serialization scalar')
+        for scalar in serialization['scalars']:
+            require(set(scalar['source_asset_ids']).issubset(asset_ids), 'scalar source outside serialization assets')
     contracts = records('register/contracts', 'contract_id')
     for ident, contract in contracts.items():
         validators['source-contract'].validate(contract)
@@ -226,6 +243,12 @@ def validate():
                     'source scope outside contract papers')
         asset_ids = [asset['id'] for asset in contract['source_assets']]
         require(len(asset_ids) == len(set(asset_ids)), 'duplicate source contract asset')
+        for source in contract.get('source_serializations', []):
+            require(source['serialization_id'] in serializations, 'contract missing source serialization')
+            path = ROOT / 'register/source-data' / (source['serialization_id'] + '.json')
+            require(source['path'] == str(path.relative_to(ROOT)), 'noncanonical source serialization path')
+            require(hashlib.sha256(path.read_bytes()).hexdigest() == source['sha256'],
+                    'source serialization digest mismatch')
     citations = strict_load(ROOT / "register/citations.json")
     validators["citations"].validate(citations)
     require(set(citations['inspected_paper_ids']).issubset(papers), "citation inspection references missing paper")

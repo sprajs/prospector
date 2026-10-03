@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-atomic-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "agent_id": "/root/thermal_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "turn_id": "01a0ff00-2df2-7530-9b0e-ddeb646a6c3b",
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "session_id": "01a0fec1-0810-7361-a598-b20696ba4a64",
+    "evidence_kind": "runtime_turn_context",
+    "actual_backend_identity": null
+  },
+  "reviewed_utc": "2026-10-02T23:54:32.864616+00:00",
+  "packet_sha256": "c0152fdc89e6d4b7736f78d44c2e1557819bc574dd3cf56e0230dfea57d0c26f",
+  "supporting_packets": [
+    {
+      "agent_id": "/root/thermal_source_audit",
+      "packet_sha256": "802fa5e6d50a2357107328f275d81a7b4303434d92fe2d61a0b33bfd004b4a7d",
+      "model_confirmation": {
+        "turn_id": "01a0ff00-2df2-7530-9b0e-ddeb646a6c3b",
+        "model": "gpt-6.1-sol",
+        "effort": "xhigh",
+        "session_id": "01a0fec1-0810-7361-a598-b20696ba4a64",
+        "evidence_kind": "runtime_turn_context",
+        "actual_backend_identity": null
+      }
+    }
+  ],
+  "reviewed_papers": [],
+  "reviewed_paper_details": [],
+  "reviewed_source_assets": [
+    {
+      "id": "H_ASD",
+      "title": "NIST Atomic Spectra Database: Ground States and Ionization Energies, neutral H–Ds range",
+      "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?at_num_out=on&biblio=on&e_out=0&el_name_out=on&level_out=on&shells_out=on&spectra=H-DS+i&unc_out=on&units=1",
+      "sha256": "0789b0d775c2bc6aef7f5479fd214fa3eba6e6e7a53b3d73d8dcb1c9babe8704",
+      "retrieved_utc": "2026-10-02T23:37:30.903779+00:00",
+      "source_version": "ASD 5.12 (2024), as explicitly cited in query result",
+      "coverage": "Title/citation/version; headers; Hydrogen row140–148 and neutral-He row150–158 only; footer uncertainty note. Exact original HTML math markup read.",
+      "unread": "Remaining 106 neutral-element rows of the 108-row H–Ds query and HDEL original underlying data; external scripts not executed.",
+      "licence": "unknown; raw source kept local and not redistributed",
+      "access": "Lawful public original source snapshot; changing endpoints are not immutable archives.",
+      "literal_html_title": "NIST Atomic Ionization Energies Output"
+    },
+    {
+      "id": "He_ASD",
+      "title": "NIST Atomic Spectra Database: Ground States and Ionization Energies, He I and He II",
+      "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?at_num_out=on&biblio=on&e_out=0&el_name_out=on&level_out=on&seq_out=on&shells_out=on&spectra=He&unc_out=on&units=1",
+      "sha256": "fa5277775d0c9972584a09dddd0c3da167f46428aad4663ac680fae04e048bd7",
+      "retrieved_utc": "2026-10-02T23:37:34.468018+00:00",
+      "source_version": "ASD 5.12 (2024), as explicitly cited in query result",
+      "coverage": "Title/citation/version; headers; both rows142–162; energy/uncertainty math markup and flags.",
+      "unread": "Underlying L17714/L19200 papers and bibliography popup contents.",
+      "licence": "unknown; raw source kept local and not redistributed",
+      "access": "Lawful public original source snapshot; changing endpoints are not immutable archives.",
+      "literal_html_title": "NIST Atomic Ionization Energies Output"
+    },
+    {
+      "id": "HeI_levels",
+      "title": "NIST Atomic Spectra Database: He I energy levels",
+      "url": "https://physics.nist.gov/cgi-bin/ASD/energy1.pl?biblio=1&conf_out=1&j_out=1&lande_out=1&level_out=1&perc_out=1&spectrum=He+I&term_out=1",
+      "sha256": "764b8ae6d891e1778f6e2831db5ddc6ebdc023c94f1730aa95b8923442a895d9",
+      "retrieved_utc": "2026-10-02T23:37:37.895779+00:00",
+      "source_version": "ASD 5.12 (2024), as explicitly cited in query result",
+      "coverage": "Citation lines138–139; ancestry note178; headers196–200; ground row212–219 (configuration, term, J).",
+      "unread": "All excited level values, fit methods, uncertainty derivations and cited papers. Ground level numerical zero/bracket is not accepted as a new scalar.",
+      "licence": "unknown; raw source kept local and not redistributed",
+      "access": "Lawful public original source snapshot; changing endpoints are not immutable archives.",
+      "literal_html_title": "NIST ASD Levels Output",
+      "dataset_provenance": "Level note says prepared for ASD5.11 (October2023); current query citation is5.12. Ground ionization experimental attribution is a database statement; underlying paper unread."
+    },
+    {
+      "id": "HeII_levels",
+      "title": "NIST Atomic Spectra Database: He II energy levels",
+      "url": "https://physics.nist.gov/cgi-bin/ASD/energy1.pl?biblio=1&conf_out=1&j_out=1&lande_out=1&level_out=1&perc_out=1&spectrum=He+II&term_out=1",
+      "sha256": "a874e89f9024c22fa8e4e8ccfc64002d1356751de030c408482ac7be6e090c48",
+      "retrieved_utc": "2026-10-02T23:37:41.687251+00:00",
+      "source_version": "ASD 5.12 (2024), as explicitly cited in query result",
+      "coverage": "Citation lines138–139; ancestry note178; headers197–202; ground row221–235 (configuration, term, J).",
+      "unread": "All excited level values, theory details and cited papers.",
+      "licence": "unknown; raw source kept local and not redistributed",
+      "access": "Lawful public original source snapshot; changing endpoints are not immutable archives.",
+      "literal_html_title": "NIST ASD Levels Output",
+      "dataset_provenance": "Level note says prepared for ASD5.10 (September2022) and mentions CODATA2018; current query citation is5.12. Not a joint CODATA2022 atomic adjustment."
+    },
+    {
+      "id": "CODATA2022_pdf",
+      "title": "Fundamental Physical Constants — Extensive Listing; 2022 CODATA adjustment",
+      "url": "https://physics.nist.gov/cuu/pdf/all.pdf",
+      "sha256": "5c4a2c8127a80698d05f4d682bd4cac200dabcd9c2e9dd783661a0aa60f4bb1c",
+      "retrieved_utc": "2026-10-02T23:37:45.305679+00:00",
+      "source_version": "2022 CODATA adjustment",
+      "coverage": "PDF page2 electron-mass kg row and standard-uncertainty header visually; selected page1 exact-h/elementary-charge and page6 k rows in text aid only, accepted exact SI evidence is the BIPM original table.",
+      "unread": "All unlisted constants, detailed CODATA adjustment, correlations and primary measurement papers.",
+      "licence": "unknown; raw source kept local and not redistributed",
+      "access": "Lawful public original source snapshot; changing endpoints are not immutable archives."
+    },
+    {
+      "id": "SI9_v4_01",
+      "title": "The International System of Units (SI), 9th edition, V4.01, June 2026",
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9.pdf",
+      "sha256": "1122cf38e25b23d780a30607c68f7350b2b6d1f9970a89947aaa87a45ecbb20a",
+      "retrieved_utc": "2026-10-02T23:37:48.753712+00:00",
+      "source_version": "9th edition, V4.01, June 2026",
+      "coverage": "Version V4.01 June2026 and BIPM identity; English Section2.2 selected text; original PDF126/printed124 Table1 h/k/e and no-uncertainty statement; PDF142/printed140 Table8 eV row; PDF143/printed141 footnote(l).",
+      "unread": "Broader French/English main text, historical appendices, all unlisted constants and unit definitions outside selected facts.",
+      "licence": "unknown; raw source kept local and not redistributed",
+      "access": "Lawful public original source snapshot; changing endpoints are not immutable archives."
+    },
+    {
+      "id": "ASD_GSIE_help",
+      "title": "NIST ASD Help: Ground States and Ionization Energies (GSIE)",
+      "url": "https://physics.nist.gov/PhysRefData/ASD/Html/iehelp.html",
+      "sha256": "ec11d40bcbb312df5e38ff1e12420855314f124670493870e409194868453a08",
+      "retrieved_utc": "2026-10-02T23:45:45.059339+00:00",
+      "source_version": null,
+      "coverage": "Ground-state and ionization-energy definitions, #IEIE lines238–263, #IEUNC lines280–306; summation description contextual only.",
+      "unread": "Other search-help/input topics; no total binding energies accepted.",
+      "licence": "unknown; raw source kept local and not redistributed",
+      "access": "Lawful public original source snapshot; changing endpoints are not immutable archives.",
+      "literal_html_title": "NIST: Atomic Spectra Database - Ground States and Ionization Energies Help File",
+      "source_version_null_reason": "Help body has no version assignment; captured bytes and acquisition receipt define this snapshot."
+    },
+    {
+      "id": "CODATA2022_me",
+      "title": "CODATA Value: electron mass",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?me",
+      "sha256": "703091e7fb6ef44da2363f1e7cd3f1463f6efc3ad3b2cb9337ff33b263ccbc76",
+      "retrieved_utc": "2026-10-02T23:46:26.069047+00:00",
+      "source_version": "2022 CODATA recommended values",
+      "coverage": "Title line6; central kg value75–76, explicit absolute standard uncertainty82–83, relative uncertainty89–90, concise form96–97, 2022 source110–111.",
+      "unread": "Linked uncertainty definition, correlation coefficients and underlying adjustment papers.",
+      "licence": "unknown; raw source kept local and not redistributed",
+      "access": "Lawful public original source snapshot; changing endpoints are not immutable archives.",
+      "literal_html_title": "CODATA Value:    electron mass"
+    }
+  ],
+  "accepted_records": {
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": [],
+    "contract_ids": [],
+    "serialization_ids": [
+      "hhe-atomic-central-asd512-codata2022-v1"
+    ]
+  },
+  "source_support_for": [
+    {
+      "design_id": "candidate-bounded-shared-charge-hhe",
+      "scope": "Only the seven scalar/source-flag subset and declared ground-count algebra; no broader design or engine qualification."
+    }
+  ],
+  "corrections": [
+    {
+      "kind": "targeted_atomic_source_precision",
+      "display_summary": "H I is parenthesized as well as He II; frozen policy emphasized only He II theory verification. Preserve the H I theory flag explicitly in integrated metadata."
+    },
+    {
+      "kind": "targeted_atomic_source_precision",
+      "display_summary": "NIST supplied ionization uncertainty is not certified one-sigma, standard uncertainty or Gaussian by the checked GSIE help. Leave these meanings null; do not borrow CODATA standard uncertainty meaning."
+    },
+    {
+      "kind": "targeted_atomic_source_precision",
+      "display_summary": "H–Ds I query contains108 neutral-element rows. Only the H/He rows were reviewed; this is not an H-only or comprehensive atomic-data read."
+    },
+    {
+      "kind": "targeted_atomic_source_precision",
+      "display_summary": "CODATA concise parentheses (28) encode last digits of standard uncertainty; they are distinct from ASD parentheses enclosing an energy as a theory flag."
+    },
+    {
+      "kind": "targeted_atomic_source_precision",
+      "display_summary": "ASD query citation version5.12(2024) differs from HeI levels dataset prepared for5.11(October2023) and HeII dataset for5.10(September2022). The HeII level note mentions CODATA2018. Do not claim all seven values share a fresh2022 joint atomic adjustment."
+    },
+    {
+      "kind": "targeted_atomic_source_precision",
+      "display_summary": "Scalar source support and convention algebra do not certify LTE, kinetics, full source-derived Saha history or older engine asset independence."
+    },
+    {
+      "kind": "targeted_atomic_source_precision",
+      "display_summary": "Engine source literals use long double declarations in the snapshot; this does not certify an actual binary64 rounding rule or bit pattern."
+    },
+    {
+      "kind": "targeted_atomic_source_precision",
+      "display_summary": "Hirata Eq24 primary acquisition failed default TLS due weak certificate; no bypass. That equation and the Sales2023 linked derivation were not checked; no source certification is attached to those docs citations."
+    }
+  ],
+  "limitations": [
+    "Previously independently accepted original H1/B2 serialization source pins are unavailable. This is a new bounded source-owned proposal, not a reconstruction or certification of those missing contracts.",
+    "No joint covariance among these scalar entries was established by the checked sources. Repeated ASD query rows and CODATA page/PDF are duplicate representations, not independent data. Do not assume independence or form quadrature noise.",
+    "H isotope not identified in the selected query; He4 ancestry comes from separate level notes, not a complete isotopic-model qualification.",
+    "Underlying atomic papers, Hirata Eq24 (TLS acquisition failure) and Sales2023 derivation unread; no full primary Saha/LTE certification.",
+    "Thomson cross section, G, all unlisted constants, excitation/wavelength closure, rate normalization/fit validity, atomic-rate uncertainty and covariance remain outside this scalar audit.",
+    "LTE/ground-state applicability, nuclear-spin and translational mass corrections, BBN/abundance mapping, kinetics/history, physical drag/CMB, and numerical/consumer qualification remain separate gates.",
+    "Zero new paper versions, full reads or full-paper reviews. Original selected PDF pages visually checked; all other source coverage remains bounded.",
+    "Original six GET receipts retained content type but not other headers; later HEAD snapshots are distinct metadata, not evidence of original GET headers."
+  ],
+  "conclusion": "Accept the exact seven scalar strings, units, source flags and separately conditional ground electronic counts only. No physical history, atomic joint likelihood or numerical implementation is qualified."
+}

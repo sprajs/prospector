@@ -1,0 +1,518 @@
+{
+  "schema_version": 1,
+  "serialization_id": "hhe-atomic-central-asd512-codata2022-v1",
+  "title": "H/He ionization and SI/CODATA central source facts",
+  "review_id": "2026-10-03-atomic-source-claims",
+  "source_assets": [
+    {
+      "id": "H_ASD",
+      "title": "NIST Atomic Spectra Database: Ground States and Ionization Energies, neutral H–Ds range",
+      "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?at_num_out=on&biblio=on&e_out=0&el_name_out=on&level_out=on&shells_out=on&spectra=H-DS+i&unc_out=on&units=1",
+      "sha256": "0789b0d775c2bc6aef7f5479fd214fa3eba6e6e7a53b3d73d8dcb1c9babe8704",
+      "retrieved_utc": "2026-10-02T23:37:30.903779+00:00",
+      "source_version": "ASD 5.12 (2024), as explicitly cited in query result",
+      "coverage": "Title/citation/version; headers; Hydrogen row140–148 and neutral-He row150–158 only; footer uncertainty note. Exact original HTML math markup read.",
+      "unread": "Remaining 106 neutral-element rows of the 108-row H–Ds query and HDEL original underlying data; external scripts not executed.",
+      "licence": "unknown; raw source kept local and not redistributed",
+      "access": "Lawful public original source snapshot; changing endpoints are not immutable archives.",
+      "literal_html_title": "NIST Atomic Ionization Energies Output"
+    },
+    {
+      "id": "He_ASD",
+      "title": "NIST Atomic Spectra Database: Ground States and Ionization Energies, He I and He II",
+      "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?at_num_out=on&biblio=on&e_out=0&el_name_out=on&level_out=on&seq_out=on&shells_out=on&spectra=He&unc_out=on&units=1",
+      "sha256": "fa5277775d0c9972584a09dddd0c3da167f46428aad4663ac680fae04e048bd7",
+      "retrieved_utc": "2026-10-02T23:37:34.468018+00:00",
+      "source_version": "ASD 5.12 (2024), as explicitly cited in query result",
+      "coverage": "Title/citation/version; headers; both rows142–162; energy/uncertainty math markup and flags.",
+      "unread": "Underlying L17714/L19200 papers and bibliography popup contents.",
+      "licence": "unknown; raw source kept local and not redistributed",
+      "access": "Lawful public original source snapshot; changing endpoints are not immutable archives.",
+      "literal_html_title": "NIST Atomic Ionization Energies Output"
+    },
+    {
+      "id": "HeI_levels",
+      "title": "NIST Atomic Spectra Database: He I energy levels",
+      "url": "https://physics.nist.gov/cgi-bin/ASD/energy1.pl?biblio=1&conf_out=1&j_out=1&lande_out=1&level_out=1&perc_out=1&spectrum=He+I&term_out=1",
+      "sha256": "764b8ae6d891e1778f6e2831db5ddc6ebdc023c94f1730aa95b8923442a895d9",
+      "retrieved_utc": "2026-10-02T23:37:37.895779+00:00",
+      "source_version": "ASD 5.12 (2024), as explicitly cited in query result",
+      "coverage": "Citation lines138–139; ancestry note178; headers196–200; ground row212–219 (configuration, term, J).",
+      "unread": "All excited level values, fit methods, uncertainty derivations and cited papers. Ground level numerical zero/bracket is not accepted as a new scalar.",
+      "licence": "unknown; raw source kept local and not redistributed",
+      "access": "Lawful public original source snapshot; changing endpoints are not immutable archives.",
+      "literal_html_title": "NIST ASD Levels Output",
+      "dataset_provenance": "Level note says prepared for ASD5.11 (October2023); current query citation is5.12. Ground ionization experimental attribution is a database statement; underlying paper unread."
+    },
+    {
+      "id": "HeII_levels",
+      "title": "NIST Atomic Spectra Database: He II energy levels",
+      "url": "https://physics.nist.gov/cgi-bin/ASD/energy1.pl?biblio=1&conf_out=1&j_out=1&lande_out=1&level_out=1&perc_out=1&spectrum=He+II&term_out=1",
+      "sha256": "a874e89f9024c22fa8e4e8ccfc64002d1356751de030c408482ac7be6e090c48",
+      "retrieved_utc": "2026-10-02T23:37:41.687251+00:00",
+      "source_version": "ASD 5.12 (2024), as explicitly cited in query result",
+      "coverage": "Citation lines138–139; ancestry note178; headers197–202; ground row221–235 (configuration, term, J).",
+      "unread": "All excited level values, theory details and cited papers.",
+      "licence": "unknown; raw source kept local and not redistributed",
+      "access": "Lawful public original source snapshot; changing endpoints are not immutable archives.",
+      "literal_html_title": "NIST ASD Levels Output",
+      "dataset_provenance": "Level note says prepared for ASD5.10 (September2022) and mentions CODATA2018; current query citation is5.12. Not a joint CODATA2022 atomic adjustment."
+    },
+    {
+      "id": "CODATA2022_pdf",
+      "title": "Fundamental Physical Constants — Extensive Listing; 2022 CODATA adjustment",
+      "url": "https://physics.nist.gov/cuu/pdf/all.pdf",
+      "sha256": "5c4a2c8127a80698d05f4d682bd4cac200dabcd9c2e9dd783661a0aa60f4bb1c",
+      "retrieved_utc": "2026-10-02T23:37:45.305679+00:00",
+      "source_version": "2022 CODATA adjustment",
+      "coverage": "PDF page2 electron-mass kg row and standard-uncertainty header visually; selected page1 exact-h/elementary-charge and page6 k rows in text aid only, accepted exact SI evidence is the BIPM original table.",
+      "unread": "All unlisted constants, detailed CODATA adjustment, correlations and primary measurement papers.",
+      "licence": "unknown; raw source kept local and not redistributed",
+      "access": "Lawful public original source snapshot; changing endpoints are not immutable archives."
+    },
+    {
+      "id": "SI9_v4_01",
+      "title": "The International System of Units (SI), 9th edition, V4.01, June 2026",
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9.pdf",
+      "sha256": "1122cf38e25b23d780a30607c68f7350b2b6d1f9970a89947aaa87a45ecbb20a",
+      "retrieved_utc": "2026-10-02T23:37:48.753712+00:00",
+      "source_version": "9th edition, V4.01, June 2026",
+      "coverage": "Version V4.01 June2026 and BIPM identity; English Section2.2 selected text; original PDF126/printed124 Table1 h/k/e and no-uncertainty statement; PDF142/printed140 Table8 eV row; PDF143/printed141 footnote(l).",
+      "unread": "Broader French/English main text, historical appendices, all unlisted constants and unit definitions outside selected facts.",
+      "licence": "unknown; raw source kept local and not redistributed",
+      "access": "Lawful public original source snapshot; changing endpoints are not immutable archives."
+    },
+    {
+      "id": "ASD_GSIE_help",
+      "title": "NIST ASD Help: Ground States and Ionization Energies (GSIE)",
+      "url": "https://physics.nist.gov/PhysRefData/ASD/Html/iehelp.html",
+      "sha256": "ec11d40bcbb312df5e38ff1e12420855314f124670493870e409194868453a08",
+      "retrieved_utc": "2026-10-02T23:45:45.059339+00:00",
+      "source_version": null,
+      "coverage": "Ground-state and ionization-energy definitions, #IEIE lines238–263, #IEUNC lines280–306; summation description contextual only.",
+      "unread": "Other search-help/input topics; no total binding energies accepted.",
+      "licence": "unknown; raw source kept local and not redistributed",
+      "access": "Lawful public original source snapshot; changing endpoints are not immutable archives.",
+      "literal_html_title": "NIST: Atomic Spectra Database - Ground States and Ionization Energies Help File",
+      "source_version_null_reason": "Help body has no version assignment; captured bytes and acquisition receipt define this snapshot."
+    },
+    {
+      "id": "CODATA2022_me",
+      "title": "CODATA Value: electron mass",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?me",
+      "sha256": "703091e7fb6ef44da2363f1e7cd3f1463f6efc3ad3b2cb9337ff33b263ccbc76",
+      "retrieved_utc": "2026-10-02T23:46:26.069047+00:00",
+      "source_version": "2022 CODATA recommended values",
+      "coverage": "Title line6; central kg value75–76, explicit absolute standard uncertainty82–83, relative uncertainty89–90, concise form96–97, 2022 source110–111.",
+      "unread": "Linked uncertainty definition, correlation coefficients and underlying adjustment papers.",
+      "licence": "unknown; raw source kept local and not redistributed",
+      "access": "Lawful public original source snapshot; changing endpoints are not immutable archives.",
+      "literal_html_title": "CODATA Value:    electron mass"
+    }
+  ],
+  "scalars": [
+    {
+      "unit": "kg",
+      "exact": false,
+      "uncertainty": {
+        "unit": "kg",
+        "source_display": "0.000 000 0028 × 10^-31 kg",
+        "interpretation": "CODATA 2022 standard uncertainty explicitly labelled by the official electron-mass page.",
+        "coverage_probability": null,
+        "coverage_probability_null_reason": "No coverage probability is asserted in the checked source locators.",
+        "sigma_multiplier": null,
+        "sigma_multiplier_null_reason": "No one-sigma or other sigma-multiplier claim is made.",
+        "probability_distribution": null,
+        "probability_distribution_null_reason": "No probability law is established by this scalar audit.",
+        "decimal_value": "2.8e-40",
+        "distribution": null,
+        "coverage": null,
+        "reason": "Probability law and coverage not established; preserve provider uncertainty without inventing independent noise or covariance.",
+        "standard_uncertainty": true
+      },
+      "source_quantity_kind": "CODATA recommended central value; not a newly measured datum in this audit",
+      "asd_parenthesized_theory_flag": null,
+      "flag_null_reason": "Not an ASD ionization-energy entry.",
+      "evidence": [
+        {
+          "source_id": "CODATA2022_me",
+          "original_asset_sha256": "703091e7fb6ef44da2363f1e7cd3f1463f6efc3ad3b2cb9337ff33b263ccbc76",
+          "locator": "HTML title line6; numerical value lines75–76, standard uncertainty lines82–83, concise form lines96–97, source2022 lines110–111"
+        },
+        {
+          "source_id": "CODATA2022_pdf",
+          "original_asset_sha256": "5c4a2c8127a80698d05f4d682bd4cac200dabcd9c2e9dd783661a0aa60f4bb1c",
+          "locator": "PDF page2, Electron subsection, electron mass row; visually checked original render"
+        }
+      ],
+      "id": "m_e",
+      "decimal_value": "9.1093837139e-31",
+      "source_asset_ids": [
+        "CODATA2022_me",
+        "CODATA2022_pdf"
+      ],
+      "locator": "CODATA2022_me: HTML title line6; numerical value lines75–76, standard uncertainty lines82–83, concise form lines96–97, source2022 lines110–111; CODATA2022_pdf: PDF page2, Electron subsection, electron mass row; visually checked original render",
+      "value_class": "evaluated_codata_central",
+      "model_choice": "Fixed central numeric representation is a separate consumer choice; storage type, rounding and bits are not qualified by this source audit. Definitional exactness is separate from finite representation."
+    },
+    {
+      "unit": "eV",
+      "exact": false,
+      "uncertainty": {
+        "unit": "eV",
+        "source_display": "0.000000000012",
+        "interpretation": "ASD supplied uncertainty; checked GSIE help does not specify standard uncertainty, a sigma multiplier or coverage.",
+        "coverage_probability": null,
+        "coverage_probability_null_reason": "No coverage probability is asserted in the checked source locators.",
+        "sigma_multiplier": null,
+        "sigma_multiplier_null_reason": "No one-sigma or other sigma-multiplier claim is made.",
+        "probability_distribution": null,
+        "probability_distribution_null_reason": "No probability law is established by this scalar audit.",
+        "decimal_value": "1.2e-11",
+        "distribution": null,
+        "coverage": null,
+        "reason": "Probability law and coverage not established; preserve provider uncertainty without inventing independent noise or covariance.",
+        "standard_uncertainty": null,
+        "standard_uncertainty_null_reason": "Checked GSIE source gives displayed uncertainty without certifying standard-deviation interpretation."
+      },
+      "source_quantity_kind": "ASD ground-state ionization-energy compilation entry",
+      "source_display": "(13.598434599702)",
+      "asd_parenthesized_theory_flag": true,
+      "flag_meaning": "Parentheses identify ab-initio calculation or otherwise not derived from evaluated experimental data, per official GSIE legend. Do not label this row as an experimental measurement.",
+      "isotope": null,
+      "isotope_null_reason": "Selected H ionization row does not print an isotope tag; HDEL underlying data were not read.",
+      "reference_label": "HDEL",
+      "underlying_reference_checked": false,
+      "evidence": [
+        {
+          "source_id": "H_ASD",
+          "original_asset_sha256": "0789b0d775c2bc6aef7f5479fd214fa3eba6e6e7a53b3d73d8dcb1c9babe8704",
+          "locator": "HTML citation lines99–104; energy/uncertainty eV headers134–135; Hydrogen ground2S1/2 row140–148, energy145, uncertainty146"
+        },
+        {
+          "source_id": "ASD_GSIE_help",
+          "original_asset_sha256": "ec11d40bcbb312df5e38ff1e12420855314f124670493870e409194868453a08",
+          "locator": "#IEIE lines254–263 (parenthesis legend); #IEUNC lines280–295 (uncertainty meaning)"
+        }
+      ],
+      "id": "chi_HI",
+      "decimal_value": "13.598434599702",
+      "source_asset_ids": [
+        "H_ASD",
+        "ASD_GSIE_help"
+      ],
+      "locator": "H_ASD: HTML citation lines99–104; energy/uncertainty eV headers134–135; Hydrogen ground2S1/2 row140–148, energy145, uncertainty146; ASD_GSIE_help: #IEIE lines254–263 (parenthesis legend); #IEUNC lines280–295 (uncertainty meaning)",
+      "value_class": "nist_asd_central",
+      "model_choice": "Fixed central numeric representation is a separate consumer choice; storage type, rounding and bits are not qualified by this source audit. Definitional exactness is separate from finite representation."
+    },
+    {
+      "unit": "eV",
+      "exact": false,
+      "uncertainty": {
+        "unit": "eV",
+        "source_display": "0.000000025",
+        "interpretation": "ASD supplied uncertainty; checked GSIE help does not specify standard uncertainty, a sigma multiplier or coverage.",
+        "coverage_probability": null,
+        "coverage_probability_null_reason": "No coverage probability is asserted in the checked source locators.",
+        "sigma_multiplier": null,
+        "sigma_multiplier_null_reason": "No one-sigma or other sigma-multiplier claim is made.",
+        "probability_distribution": null,
+        "probability_distribution_null_reason": "No probability law is established by this scalar audit.",
+        "decimal_value": "2.5e-8",
+        "distribution": null,
+        "coverage": null,
+        "reason": "Probability law and coverage not established; preserve provider uncertainty without inventing independent noise or covariance.",
+        "standard_uncertainty": null,
+        "standard_uncertainty_null_reason": "Checked GSIE source gives displayed uncertainty without certifying standard-deviation interpretation."
+      },
+      "source_quantity_kind": "ASD ground-state ionization-energy compilation entry",
+      "source_display": "24.587389011",
+      "asd_parenthesized_theory_flag": false,
+      "flag_meaning": "No parenthesis theory marker is displayed. Absence of that marker is not by itself certification of an independently measured likelihood.",
+      "reference_label": "L17714",
+      "underlying_reference_checked": false,
+      "isotope_conditioning": "4He ancestry is stated in the separate He I level-table note; the ionization query itself has no isotope column.",
+      "ancestry_statement": "ASD He I levels note calls the ground ionization energy reported by Kandula et al.2010 experimental. This is the database statement, not an independent check of that paper.",
+      "evidence": [
+        {
+          "source_id": "He_ASD",
+          "original_asset_sha256": "fa5277775d0c9972584a09dddd0c3da167f46428aad4663ac680fae04e048bd7",
+          "locator": "HTML energy/uncertainty eV headers136–137; neutral-He row142–151, ground1S0 line147, energy148, uncertainty149, reference150"
+        },
+        {
+          "source_id": "H_ASD",
+          "original_asset_sha256": "0789b0d775c2bc6aef7f5479fd214fa3eba6e6e7a53b3d73d8dcb1c9babe8704",
+          "locator": "HTML neutral-He duplicate row150–158; same database fact, not independent evidence"
+        },
+        {
+          "source_id": "HeI_levels",
+          "original_asset_sha256": "764b8ae6d891e1778f6e2831db5ddc6ebdc023c94f1730aa95b8923442a895d9",
+          "locator": "HTML line178 isotope4He and ground-ionization ancestry note"
+        },
+        {
+          "source_id": "ASD_GSIE_help",
+          "original_asset_sha256": "ec11d40bcbb312df5e38ff1e12420855314f124670493870e409194868453a08",
+          "locator": "#IEUNC lines280–295"
+        }
+      ],
+      "id": "chi_HeI",
+      "decimal_value": "24.587389011",
+      "source_asset_ids": [
+        "He_ASD",
+        "H_ASD",
+        "HeI_levels",
+        "ASD_GSIE_help"
+      ],
+      "locator": "He_ASD: HTML energy/uncertainty eV headers136–137; neutral-He row142–151, ground1S0 line147, energy148, uncertainty149, reference150; H_ASD: HTML neutral-He duplicate row150–158; same database fact, not independent evidence; HeI_levels: HTML line178 isotope4He and ground-ionization ancestry note; ASD_GSIE_help: #IEUNC lines280–295",
+      "value_class": "nist_asd_central",
+      "model_choice": "Fixed central numeric representation is a separate consumer choice; storage type, rounding and bits are not qualified by this source audit. Definitional exactness is separate from finite representation."
+    },
+    {
+      "unit": "eV",
+      "exact": false,
+      "uncertainty": {
+        "unit": "eV",
+        "source_display": "0.0000000010",
+        "interpretation": "ASD supplied uncertainty; checked GSIE help does not specify standard uncertainty, a sigma multiplier or coverage.",
+        "coverage_probability": null,
+        "coverage_probability_null_reason": "No coverage probability is asserted in the checked source locators.",
+        "sigma_multiplier": null,
+        "sigma_multiplier_null_reason": "No one-sigma or other sigma-multiplier claim is made.",
+        "probability_distribution": null,
+        "probability_distribution_null_reason": "No probability law is established by this scalar audit.",
+        "decimal_value": "1e-9",
+        "distribution": null,
+        "coverage": null,
+        "reason": "Probability law and coverage not established; preserve provider uncertainty without inventing independent noise or covariance.",
+        "standard_uncertainty": null,
+        "standard_uncertainty_null_reason": "Checked GSIE source gives displayed uncertainty without certifying standard-deviation interpretation."
+      },
+      "source_quantity_kind": "ASD ground-state ionization-energy compilation entry",
+      "source_display": "(54.4177655282)",
+      "asd_parenthesized_theory_flag": true,
+      "flag_meaning": "Parentheses identify ab-initio calculation or otherwise not derived from evaluated experimental data, per official GSIE legend.",
+      "reference_label": "L19200",
+      "underlying_reference_checked": false,
+      "isotope_conditioning": "4He ancestry is stated in the separate He II level-table note; the ionization query itself has no isotope column.",
+      "evidence": [
+        {
+          "source_id": "He_ASD",
+          "original_asset_sha256": "fa5277775d0c9972584a09dddd0c3da167f46428aad4663ac680fae04e048bd7",
+          "locator": "HTML He II row153–162; ground2S1/2 line158, parenthesized energy159, uncertainty160, reference161"
+        },
+        {
+          "source_id": "HeII_levels",
+          "original_asset_sha256": "a874e89f9024c22fa8e4e8ccfc64002d1356751de030c408482ac7be6e090c48",
+          "locator": "HTML line178 isotope4He and dataset ancestry note"
+        },
+        {
+          "source_id": "ASD_GSIE_help",
+          "original_asset_sha256": "ec11d40bcbb312df5e38ff1e12420855314f124670493870e409194868453a08",
+          "locator": "#IEIE lines254–263; #IEUNC lines280–295"
+        }
+      ],
+      "id": "chi_HeII",
+      "decimal_value": "54.4177655282",
+      "source_asset_ids": [
+        "He_ASD",
+        "HeII_levels",
+        "ASD_GSIE_help"
+      ],
+      "locator": "He_ASD: HTML He II row153–162; ground2S1/2 line158, parenthesized energy159, uncertainty160, reference161; HeII_levels: HTML line178 isotope4He and dataset ancestry note; ASD_GSIE_help: #IEIE lines254–263; #IEUNC lines280–295",
+      "value_class": "nist_asd_central",
+      "model_choice": "Fixed central numeric representation is a separate consumer choice; storage type, rounding and bits are not qualified by this source audit. Definitional exactness is separate from finite representation."
+    },
+    {
+      "unit": "J s",
+      "exact": true,
+      "uncertainty": {
+        "unit": "J s",
+        "interpretation": "Exact SI defining numerical value; zero denotes definitional exactness, not an estimated zero standard deviation.",
+        "decimal_value": "0",
+        "distribution": null,
+        "coverage": null,
+        "reason": "Definition is exact; no stochastic uncertainty or numerical-representation accuracy follows.",
+        "standard_uncertainty": null,
+        "standard_uncertainty_null_reason": "Not an estimated random quantity: exact SI definition or conversion; no stochastic standard uncertainty is asserted."
+      },
+      "source_quantity_kind": "SI definition",
+      "asd_parenthesized_theory_flag": null,
+      "flag_null_reason": "Definition, not an ASD ionization-energy entry.",
+      "evidence": [
+        {
+          "source_id": "SI9_v4_01",
+          "original_asset_sha256": "1122cf38e25b23d780a30607c68f7350b2b6d1f9970a89947aaa87a45ecbb20a",
+          "locator": "Section2.2, PDF page126 / printed124, paragraph preceding Table1 and Planck constant row; original render visually checked"
+        }
+      ],
+      "id": "h",
+      "decimal_value": "6.62607015e-34",
+      "source_asset_ids": [
+        "SI9_v4_01"
+      ],
+      "locator": "SI9_v4_01: Section2.2, PDF page126 / printed124, paragraph preceding Table1 and Planck constant row; original render visually checked",
+      "value_class": "exact_definition",
+      "model_choice": "Fixed central numeric representation is a separate consumer choice; storage type, rounding and bits are not qualified by this source audit. Definitional exactness is separate from finite representation."
+    },
+    {
+      "unit": "J K^-1",
+      "exact": true,
+      "uncertainty": {
+        "unit": "J K^-1",
+        "interpretation": "Exact SI defining numerical value; zero denotes definitional exactness, not an estimated zero standard deviation.",
+        "decimal_value": "0",
+        "distribution": null,
+        "coverage": null,
+        "reason": "Definition is exact; no stochastic uncertainty or numerical-representation accuracy follows.",
+        "standard_uncertainty": null,
+        "standard_uncertainty_null_reason": "Not an estimated random quantity: exact SI definition or conversion; no stochastic standard uncertainty is asserted."
+      },
+      "source_quantity_kind": "SI definition (source symbol k; serialized name k_B)",
+      "asd_parenthesized_theory_flag": null,
+      "flag_null_reason": "Definition, not an ASD ionization-energy entry.",
+      "evidence": [
+        {
+          "source_id": "SI9_v4_01",
+          "original_asset_sha256": "1122cf38e25b23d780a30607c68f7350b2b6d1f9970a89947aaa87a45ecbb20a",
+          "locator": "Section2.2, PDF page126 / printed124, paragraph preceding Table1 and Boltzmann constant row; original render visually checked"
+        }
+      ],
+      "id": "k_B",
+      "decimal_value": "1.380649e-23",
+      "source_asset_ids": [
+        "SI9_v4_01"
+      ],
+      "locator": "SI9_v4_01: Section2.2, PDF page126 / printed124, paragraph preceding Table1 and Boltzmann constant row; original render visually checked",
+      "value_class": "exact_definition",
+      "model_choice": "Fixed central numeric representation is a separate consumer choice; storage type, rounding and bits are not qualified by this source audit. Definitional exactness is separate from finite representation."
+    },
+    {
+      "unit": "J eV^-1",
+      "exact": true,
+      "uncertainty": {
+        "unit": "J eV^-1",
+        "interpretation": "Exact electronvolt-to-joule conversion following fixed SI elementary charge; not an atomic measurement.",
+        "decimal_value": "0",
+        "distribution": null,
+        "coverage": null,
+        "reason": "Definition is exact; no stochastic uncertainty or numerical-representation accuracy follows.",
+        "standard_uncertainty": null,
+        "standard_uncertainty_null_reason": "Not an estimated random quantity: exact SI definition or conversion; no stochastic standard uncertainty is asserted."
+      },
+      "source_quantity_kind": "SI unit conversion",
+      "asd_parenthesized_theory_flag": null,
+      "flag_null_reason": "Unit conversion, not an ASD ionization-energy entry.",
+      "evidence": [
+        {
+          "source_id": "SI9_v4_01",
+          "original_asset_sha256": "1122cf38e25b23d780a30607c68f7350b2b6d1f9970a89947aaa87a45ecbb20a",
+          "locator": "PDF page142 / printed140, Table8 electronvolt row; PDF page143 / printed141 footnote(l) explicitly states exact conversion; Table1 elementary-charge row on PDF126 / printed124. All selected original pages visually checked"
+        }
+      ],
+      "id": "eV_J",
+      "decimal_value": "1.602176634e-19",
+      "source_asset_ids": [
+        "SI9_v4_01"
+      ],
+      "locator": "SI9_v4_01: PDF page142 / printed140, Table8 electronvolt row; PDF page143 / printed141 footnote(l) explicitly states exact conversion; Table1 elementary-charge row on PDF126 / printed124. All selected original pages visually checked",
+      "value_class": "exact_definition",
+      "model_choice": "Fixed central numeric representation is a separate consumer choice; storage type, rounding and bits are not qualified by this source audit. Definitional exactness is separate from finite representation."
+    }
+  ],
+  "conventions": {
+    "ground_state": {
+      "status": "reader-derived algebra under explicitly supplied model conventions; not a primary-source Saha/LTE applicability certification",
+      "source_ground_electronic_states": [
+        {
+          "species": "HI",
+          "configuration": "1s",
+          "term": "2S",
+          "J": "1/2",
+          "evidence": {
+            "source_id": "H_ASD",
+            "original_asset_sha256": "0789b0d775c2bc6aef7f5479fd214fa3eba6e6e7a53b3d73d8dcb1c9babe8704",
+            "locator": "HTML Hydrogen row143–144"
+          }
+        },
+        {
+          "species": "HeI",
+          "configuration": "1s^2",
+          "term": "1S",
+          "J": "0",
+          "evidence": {
+            "source_id": "HeI_levels",
+            "original_asset_sha256": "764b8ae6d891e1778f6e2831db5ddc6ebdc023c94f1730aa95b8923442a895d9",
+            "locator": "HTML ground row212–219; J line216; isotope4He line178"
+          }
+        },
+        {
+          "species": "HeII",
+          "configuration": "1s",
+          "term": "2S",
+          "J": "1/2",
+          "evidence": {
+            "source_id": "HeII_levels",
+            "original_asset_sha256": "a874e89f9024c22fa8e4e8ccfc64002d1356751de030c408482ac7be6e090c48",
+            "locator": "HTML ground row221–235; J line225; isotope4He line178"
+          }
+        }
+      ],
+      "reader_rule": "For electronic angular momentum J, electronic multiplicity g=2J+1.",
+      "supplied_conventions": {
+        "free_unpolarized_electron_spin_count": "2",
+        "bare_HII_electronic_count": "1",
+        "bare_HeIII_electronic_count": "1",
+        "nuclear_spin": "Electronic-only counting; common nuclear factors omitted consistently from adjacent ion/atom ratios. Nuclear-spin values were not audited.",
+        "excited_states": "Excluded from these ground electronic counts."
+      },
+      "derived_counts": {
+        "HI": "2",
+        "HII": "1",
+        "HeI": "1",
+        "HeII": "2",
+        "HeIII": "1",
+        "electron": "2"
+      },
+      "reader_factor_rule": "g_e*g_(next ion)/g_(atom or ion)",
+      "derived_adjacent_ground_state_factors": {
+        "HI_to_HII": "1",
+        "HeI_to_HeII": "4",
+        "HeII_to_HeIII": "1"
+      },
+      "translational_mass_condition": "Adjacent ion/atom translational mass ratios are approximated by one. The factors above do not establish exact mass ratios or a propagated mass correction.",
+      "domain": "Only the declared ground-electronic, free-electron-spin, bare-ion and adjacent-translational-mass conventions. No temperature/density/LTE physical domain is accepted."
+    },
+    "uncertainty_covariance": {
+      "value": null,
+      "null_reason": "No joint covariance among these scalar entries was established by the checked sources. Repeated ASD query rows and CODATA page/PDF are duplicate representations, not independent data. Do not assume independence or form quadrature noise."
+    },
+    "asd_displayed_uncertainty_policy": "GSIE help #IEIE lines238–251 and #IEUNC lines292–295 says eV output includes conversion-factor uncertainty supplied by ASD. Preserve the displayed uncertainty without recomputing or adding a second conversion/noise term. The help does not provide a current joint covariance.",
+    "numeric_representation": {
+      "status": "proposed consumer policy, not source data or accepted implementation",
+      "central_decimal_inputs": [
+        "m_e",
+        "chi_HI",
+        "chi_HeI",
+        "chi_HeII",
+        "h",
+        "k_B",
+        "eV_J"
+      ],
+      "conversion": "A consumer may choose a fixed binary64 representation of these decimal central values. Rounding rule, bit patterns and actual conversion are not audited or generated here.",
+      "physical_uncertainty": "Preserve source uncertainty metadata outside arithmetic/numerical diagnostics; fixed central choice does not make nonexact source scalars exact.",
+      "implementation_gate": "Consumer must accept exact proposal bytes and independently qualify its representation; engine header digests do not certify primary values."
+    }
+  },
+  "unknowns": [
+    "Previously independently accepted original H1/B2 serialization source pins are unavailable. This is a new bounded source-owned proposal, not a reconstruction or certification of those missing contracts.",
+    "No joint covariance among these scalar entries was established by the checked sources. Repeated ASD query rows and CODATA page/PDF are duplicate representations, not independent data. Do not assume independence or form quadrature noise.",
+    "H isotope not identified in the selected query; He4 ancestry comes from separate level notes, not a complete isotopic-model qualification.",
+    "Underlying atomic papers, Hirata Eq24 (TLS acquisition failure) and Sales2023 derivation unread; no full primary Saha/LTE certification.",
+    "Thomson cross section, G, all unlisted constants, excitation/wavelength closure, rate normalization/fit validity, atomic-rate uncertainty and covariance remain outside this scalar audit.",
+    "LTE/ground-state applicability, nuclear-spin and translational mass corrections, BBN/abundance mapping, kinetics/history, physical drag/CMB, and numerical/consumer qualification remain separate gates."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}
