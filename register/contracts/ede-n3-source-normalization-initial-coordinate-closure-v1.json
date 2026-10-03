@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "contract_id": "ede-n3-source-normalization-initial-coordinate-closure-v1",
+  "title": "Finite-n=3 EDE source parameters and prediction closures",
+  "review_id": "2026-10-03-ede-n3-targeted-closure",
+  "paper_ids": ["arxiv:1811.04083v2"],
+  "scopes": [
+    {
+      "scope_id": "NEXT-14",
+      "title": "Scalar input and perturbation compatibility for linear predictions",
+      "paper_ids": ["arxiv:1811.04083v2"],
+      "checked_claim": "Original #p5.1 and Eqs.(1)–(2) (#S0.E1/#S0.E2) describe a potential-specific oscillating effective-fluid family. The chosen n=3 branch has averaged w_n=1/2. Original #p9.1 explicitly defines f_EDE(a_c)=Omega_phi(a_c)/Omega_tot(a_c); it does not identify that transition fraction with a peak. The sampled initial coordinate is literally phi_i (#p8.m1), whereas the potential and zero initial-derivative assumption use varphi and dot varphi_i (#p5.1/#p7.1). The selected text does not define phi_i=varphi_i/f or Theta_i. Bulk velocity theta_phi in #p7.1 is a separate perturbation variable. Source-specific sound speed, initial modes and the original modified CLASS mapping are required before source-faithful predictions.",
+      "unresolved": "Fixed density normalization and Omega_phi,0 conversion, phi_i units/domain/angle mapping, finite-n=3 sound-speed/initial-mode implementation and original modified CLASS branch/commit/patch/configuration remain unbound. The standard CLASS reference and the independent compensated-density thermal-FD background are distinct identities; neither establishes the paper implementation. The background-only reviewer fluid supplies no scalar perturbation, thermal-history, predicted endpoint or CMB closure."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "ede-1811-04083-v2-original-html",
+      "url": "https://arxiv.org/html/1811.04083v2",
+      "sha256": "b36bec38bc8fddabe5c70ad54f1400bf9c6272b043a9c9bbd3efdb0527310afd",
+      "role": "html",
+      "conditioning": "Selected original MathML/alttext and paragraph/bibliography anchors checked; bounded term searches do not constitute a full reading. No author code or linked primary lead followed."
+    },
+    {
+      "id": "ede-1811-04083-v2-original-pdf",
+      "url": "https://arxiv.org/pdf/1811.04083v2",
+      "sha256": "dfeb28f5917368fcaa43c7050f655317ee289d4049bcbd04c42010ed9411ce53",
+      "role": "pdf",
+      "conditioning": "Rehashed in place; existing PDF-derived text checked selectively. No new PDF math/image or figure visual inspection."
+    }
+  ],
+  "limitations": [
+    "Omega_phi(a) cannot be substituted for the instantaneous total-density fraction. A constant density-normalizer interpretation and any Omega_phi,0-to-X_c conversion are conditional reader conventions until the original implementation fixes their ownership.",
+    "For separately conserved positive scalar and aggregate non-scalar densities, 0<F<1 and a common pressure/density convention, an interior stationary fraction requires w_phi=w_other. With w_total=F w_phi+(1-F)w_other, this is equivalent to w_total=w_phi only on that positive two-sector decomposition. For n=3 the conditional relation is y=(a_stat/a_c)^(9/2)=(1+w_other(a_stat))/(1/2-w_other(a_stat)), requiring -1<w_other(a_stat)<1/2 and finite positive y. The denominator vanishes at w_other=1/2; w_other=-1 gives no finite positive y. The relation is implicit for a varying background and does not establish a maximum, a unique peak or a numerical peak fraction; boundaries and a derivative sign change must also be checked.",
+    "The cosine argument varphi/f requires compatible units, but the selected letter does not specify physical units or the normalization/domain of sampled phi_i. No field value, angle range or prior bound is inferred from fitted summaries. Early dot varphi_i=0 is a source assumption, not a supplied full initial-mode prescription.",
+    "The explicit MontePython footnote URL and CLASS bibliography are navigation witnesses, not an EDE repository/commit/configuration. Original code identity is unresolved within the retained sources, rather than proved globally unavailable.",
+    "The reviewer fluid independently chooses X=rho_fluid/rho_crit,ref,0, a nine-halves density shape and compensated Lambda at fixed H0. Its source interface has density_at_transition, transition_scale and ruler_endpoint, with a complete retained thermal reference. These are not source-normalized scalar coordinates or an admitted paper EDE implementation.",
+    "The necessary matched ruler has 0<a_end<=1 and a supplied endpoint; it predicts neither drag/decoupling nor thermal history. Zero-amplitude conservation uses the division-free density equation. Physical perturbation, recombination/reionization, lensed observables, likelihood/prior and shared-data conditioning remain separate open gates.",
+    "This accepts only located source definitions and explicit closure gaps. It does not promote the candidate, accept a numerical reference or executable request, or establish a CMB/H0 solution."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}

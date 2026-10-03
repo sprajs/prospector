@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-ede-n3-targeted-closure",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "agent_id": "/root/perturbation_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "session_id": "01a0fec1-578e-7712-ba9d-1707e70bb91c",
+    "turn_id": "01a10342-d4c3-7d40-8e3d-751ba53f237b",
+    "evidence_kind": "runtime_turn_context",
+    "actual_backend_identity": null,
+    "companion_path": ".work/alternative-ede-source-candidate-20261003/closure-v1/source-runtime-v1.json",
+    "companion_sha256": "ef77899416396bda03fe8f22b328a29516e028cf530cfc62256856dd5b48dacb",
+    "policy_note": "Ordinary review requests high; ROOT authorizes reuse of this existing verified exact Sol worker at actual xhigh. This source turn is separate from original candidate and correction turns."
+  },
+  "reviewed_utc": "2026-10-03T20:15:17.316725+00:00",
+  "packet_path": ".work/alternative-ede-source-candidate-20261003/closure-v1/workers/source/packet-final-v1.json",
+  "packet_sha256": "e2e7118cf721fc0c657d046ab97ab283495e735333a38e4388f3e919c7e3039b",
+  "additive_amendment": {
+    "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/workers/source/packet-amendment-final-v2.json",
+    "sha256": "b7be12b1a5430bcb071a493996097957ef5694eda15a4cb82ce552be72fae6a2"
+  },
+  "reviewed_papers": [
+    "arxiv:1811.04083v2"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:1811.04083v2",
+      "source_hashes": {
+        "html": "b36bec38bc8fddabe5c70ad54f1400bf9c6272b043a9c9bbd3efdb0527310afd"
+      },
+      "coverage": {
+        "main_text": "Selected source #p5.1–#p9.1 and #p12.1; bounded searches of retained HTML/text for scalar-initial symbols, density/peak terminology and code navigation. This is not a new whole-paper reading.",
+        "checked_locators": [
+          "Original HTML #p5.1 line267: varphi, potential proportional to [1-cos(varphi/f)]^n, onset and averaged w_n; distinct oscillator/kinetic branches.",
+          "#p6.1–#p6.3 lines270–293, #S0.E1/#S0.E2: Original Eq1/2 MathML and alttext, density shape and early/late limits. Eq2 uses the source label w_phi(z) with a on its right-hand side.",
+          "#p7.1 lines294–302 and footnote1: theta_varphi is bulk velocity; u=(1+w)theta; dot varphi_i=0 early assumption; adiabatic versus rest-frame sound speed and dependence on potential. No complete n=3 sound-speed or initial-mode prescription printed here.",
+          "#p8.1 lines305–325, #p8.m1 line311 and footnote2 line310: Literal sampled phi_i and Omega_varphi,0, stated flat priors, modified CLASS wording and MontePython URL. No ranges or source-code pin reconstructed.",
+          "#p9.1 lines328–337: #p9.m9 defines f_EDE(a_c); #p9.m30 prints phi_i in the n=2 sound-speed dependence statement. Historical full/lite likelihood distinction checked; no n=3 formula inferred. Additive amendment corrects the combined v1 anchor wording.",
+          "#p12.1 line371: Source requires EDE perturbations for physical CMB predictions.",
+          "#bib.bib40 lines812–816; #bib.bib43 lines831–837; #bib.bib44 lines839–843; #bib.bib47 lines855–858; #bib.bib48 lines860–865: Five literal primary bibliography witnesses; base IDs only, no cited version inferred or lead followed.",
+          "Existing text aid lines77–129 (selected PDF-p2 text): Eq1/2 and initial-symbol/code/perturbation prose cross-check; extracted text is an aid rather than original PDF math inspection.",
+          "Exact original #p9.m9 fraction-definition and #p9.m30 initial-coordinate/n2 sound-speed anchors; additive amendment separates them."
+        ],
+        "figures": "No new visual inspection or rendering. Search matches in Figure1/2 captions are terminology only; no figure prediction or numerical plot accepted.",
+        "tables": "Only the Table2 f_EDE(a_c) label appeared in a bounded term search; no fit cell, prior, angle or parameter value adopted.",
+        "unread": [
+          "Other main-text claims, quantitative tables, figure images, remaining bibliography and original PDF math/images in this turn.",
+          "The five cited primary papers, actual author modified CLASS branch/patch/configuration and any remote code release.",
+          "Native cpp implementation, dependencies, underlying thermal mapping/constants, tests, binaries and all build/runtime/numerical receipts.",
+          "EDE gauge/Fourier/initial-mode closure, physical rest-frame sound-speed implementation, solved thermal history, full spectra and exact historical likelihood/nuisance/priors/covariance."
+        ]
+      },
+      "conclusions": [
+        "Source f_EDE is explicitly at a_c; peak identification is unestablished. Conditional constant-normalizer conversion and stationary-fraction algebra are reader statements with explicit domains, not author-code closure.",
+        "Literal sampled phi_i has no checked unit/range/field-angle mapping; theta_varphi is bulk velocity.",
+        "Modified CLASS repository/branch/commit/configuration, finite-n3 sound speed and regular initial-mode mapping remain unbound. No global code-unavailability claim or paper rejection follows."
+      ]
+    }
+  ],
+  "reviewed_source_assets": [
+    {
+      "id": "ede-1811-04083-v2-original-html",
+      "role": "html",
+      "url": "https://arxiv.org/html/1811.04083v2",
+      "sha256": "b36bec38bc8fddabe5c70ad54f1400bf9c6272b043a9c9bbd3efdb0527310afd",
+      "bytes": 206711,
+      "retrieved_utc": "2026-10-01T00:44:03.561485+00:00",
+      "local_path": ".work/alternative-ede-source-candidate-20261003/primary/1811.04083v2-html.html",
+      "coverage": "Selected original MathML/alttext, paper anchors and literal bibliography witnesses above; bounded searches only. Cached source rehashed in place, not refreshed.",
+      "licence": "Raw source stays ignored. Registered access/licence uncertainty remains; no legal or redistribution grant inferred."
+    }
+  ],
+  "hash_checked_assets": [
+    {
+      "role": "pdf",
+      "sha256": "dfeb28f5917368fcaa43c7050f655317ee289d4049bcbd04c42010ed9411ce53",
+      "coverage": "Hash only; no fresh original PDF math/image inspection."
+    },
+    {
+      "role": "extracted_text",
+      "sha256": "e256b519abad18afa46bfe27cb5e1dc1d1543afadcfe294a4cb22f3c471076dd",
+      "derived_from_sha256": "dfeb28f5917368fcaa43c7050f655317ee289d4049bcbd04c42010ed9411ce53",
+      "coverage": "Selected existing text-aid lines77-129; not a new extraction or original visual check."
+    }
+  ],
+  "native_comparison_source_binding": {
+    "repository": "sprajs/irreducible",
+    "revision": "11cda7e589af5be6d606f3c841d50308255bc1d2",
+    "dirty_at_binding": false,
+    "model_identity": "independent-compensated-density-nine-halves-thermal-FD-background/v1",
+    "files": [
+      {
+        "path": "docs/effective-fluid.md",
+        "sha256": "d018db9f2220ae2329cf775f9caecfbb1882c0b9e8d75800b22aa0cda785982d"
+      },
+      {
+        "path": "cpp/include/irred/effective_fluid.hpp",
+        "sha256": "0351e7587ac26017ee4d27b5a0a0ab0ddaab7eaca1b5e9094791856c01342923"
+      }
+    ],
+    "coverage": "Two bound files read directly without copying. Declared independent density/onset/endpoint source interface only; no implementation/tests/build/runtime/numerical acceptance."
+  },
+  "accepted_records": {
+    "contract_ids": [
+      "ede-n3-source-normalization-initial-coordinate-closure-v1"
+    ],
+    "claim_ids": [
+      "C01-source-transition-fraction",
+      "C02-literal-initial-symbols",
+      "C03-modified-class-identity-gap",
+      "C04-independent-native-source-boundary",
+      "C05-conditional-stationary-fraction",
+      "C06-finite-closure-ownership"
+    ],
+    "contract_sha256": "f8c7e35a893bdb0923df2e945383bd26cddb6710fc977e51bcf591a9fc5b6413",
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": []
+  },
+  "corrections": [
+    "Reader-domain clarification: interior stationary fraction requires positive separately conserved two-sector densities, -1<w_other<1/2 and finite positive y; it establishes no peak existence, maximum, value or location.",
+    "Reader locator clarification: #p9.m9 is the fraction definition; #p9.m30 is phi_i in the n2 sound-speed statement. Original packet and contract predecessor are preserved; neither clarification is a printed-source correction."
+  ],
+  "limitations": [
+    "Omega_phi(a) cannot be substituted for the instantaneous total-density fraction. A constant density-normalizer interpretation and any Omega_phi,0-to-X_c conversion are conditional reader conventions until the original implementation fixes their ownership.",
+    "For separately conserved positive scalar and aggregate non-scalar densities, 0<F<1 and a common pressure/density convention, an interior stationary fraction requires w_phi=w_other. With w_total=F w_phi+(1-F)w_other, this is equivalent to w_total=w_phi only on that positive two-sector decomposition. For n=3 the conditional relation is y=(a_stat/a_c)^(9/2)=(1+w_other(a_stat))/(1/2-w_other(a_stat)), requiring -1<w_other(a_stat)<1/2 and finite positive y. The denominator vanishes at w_other=1/2; w_other=-1 gives no finite positive y. The relation is implicit for a varying background and does not establish a maximum, a unique peak or a numerical peak fraction; boundaries and a derivative sign change must also be checked.",
+    "The cosine argument varphi/f requires compatible units, but the selected letter does not specify physical units or the normalization/domain of sampled phi_i. No field value, angle range or prior bound is inferred from fitted summaries. Early dot varphi_i=0 is a source assumption, not a supplied full initial-mode prescription.",
+    "The explicit MontePython footnote URL and CLASS bibliography are navigation witnesses, not an EDE repository/commit/configuration. Original code identity is unresolved within the retained sources, rather than proved globally unavailable.",
+    "The reviewer fluid independently chooses X=rho_fluid/rho_crit,ref,0, a nine-halves density shape and compensated Lambda at fixed H0. Its source interface has density_at_transition, transition_scale and ruler_endpoint, with a complete retained thermal reference. These are not source-normalized scalar coordinates or an admitted paper EDE implementation.",
+    "The necessary matched ruler has 0<a_end<=1 and a supplied endpoint; it predicts neither drag/decoupling nor thermal history. Zero-amplitude conservation uses the division-free density equation. Physical perturbation, recombination/reionization, lensed observables, likelihood/prior and shared-data conditioning remain separate open gates.",
+    "This accepts only located source definitions and explicit closure gaps. It does not promote the candidate, accept a numerical reference or executable request, or establish a CMB/H0 solution.",
+    "Targeted scope only; original full-paper extraction/review and candidate/design/graph/queue stages remain unchanged. No executable request or numerical/physical qualification."
+  ],
+  "coordinator_review": {
+    "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/coordinator-review-final-v1.json",
+    "sha256": "c3e50400f044320fcca1fe8d95370915a11830d5d57c94816466a6b57310a02b",
+    "scope": "Separate deliberate selected-original-source and complete frozen-packet check. Does not certify an independent native scientific gate."
+  },
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  },
+  "new_full_reads": 0,
+  "new_luna_reads": 0,
+  "new_jobs": 0
+}
