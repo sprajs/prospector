@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-next14-collisionless-v3-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "agent_id": "/root/perturbation_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "runtime_session_id": "01a0fec1-578e-7712-ba9d-1707e70bb91c",
+    "turn_id": "01a0fff9-24de-7d81-8fd6-ec746bc2317d",
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "evidence_kind": "runtime_turn_context",
+    "actual_backend_identity": null
+  },
+  "model_confirmation_companion_sha256": "12a5d6535c5480ebd5dafbc89f8f97706e7c46ba61e308ad341cc4b3f378dd5d",
+  "reviewed_utc": "2026-10-03T04:17:55.317517+00:00",
+  "packet_sha256": "8eefadc824cbae35655937355a43c098c516e413ce3dcd56d55ec7675a4c5213",
+  "reviewed_papers": [
+    "arxiv:astro-ph/9506072v1",
+    "arxiv:1104.2933v3"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:astro-ph/9506072v1",
+      "source_hashes": {
+        "pdf": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+        "extracted_text": "6d20a4d613f84696f7bf870823e5acb9b63383da0f2dc3fff4e0f93ec59d7933"
+      },
+      "coverage": {
+        "text_checked": [
+          "PDFp7Eq5",
+          "PDFp10Eq22",
+          "PDFp11Eqs23a-d/25",
+          "PDFp16Eq43",
+          "PDFp17Eqs44-48",
+          "PDFp18Eqs49-51 and endpoint warning",
+          "PDFp31Eq98 through visualrender and next-order caveat"
+        ],
+        "formula_visual_checks": [
+          "PDFp11Eqs23a-d/25",
+          "PDFp17Eqs46-48",
+          "PDFp18Eq50/51",
+          "PDFp31Eq98"
+        ],
+        "figures_visually_checked": [],
+        "unread": "Other sections/appendices/numerical results/figures and bibliography in this turn; prior targeted checks remain bounded history.",
+        "main_text": "Exact selected original coverage inherited from frozen FINAL v3 packet; this compact projection performs no new source campaign or full reading.",
+        "checked_locators": [
+          "PDFp7Eq5",
+          "PDFp10Eq22",
+          "PDFp11Eqs23a-d/25",
+          "PDFp16Eq43",
+          "PDFp17Eqs44-48",
+          "PDFp18Eqs49-51 and endpoint warning",
+          "PDFp31Eq98 through visualrender and next-order caveat"
+        ]
+      }
+    },
+    {
+      "paper_id": "arxiv:1104.2933v3",
+      "source_hashes": {
+        "pdf": "748b2c1bced36e6dd106226b32839da619f17854b2c42cbf2e0b4b273c1a3ebb",
+        "extracted_text": "d219b6a06bc14d35c3328d45a79031b1b9bf7037c305605dd0a424e9dc1d2649"
+      },
+      "coverage": {
+        "text_checked": [
+          "Sec3/3.1 PDFp14-16",
+          "Sec3.3-3.4 PDFp17-18"
+        ],
+        "formula_visual_checks": [
+          "PDFp17Eq3.1-3.2",
+          "PDFp18Eq3.3-3.4"
+        ],
+        "figures_visually_checked": [],
+        "incidental_only": "PDFp14-16 tables/figure4/5 captions and plot-text were encountered but not visually examined or numerically qualified; Sec3.5 discussion incidental context only.",
+        "unread": "AppendixB and other sections/full paper/figures/bibliography; no proof or numerical performance promotion.",
+        "main_text": "Exact selected original coverage inherited from frozen FINAL v3 packet; this compact projection performs no new source campaign or full reading.",
+        "checked_locators": [
+          "Sec3/3.1 PDFp14-16",
+          "Sec3.3-3.4 PDFp17-18"
+        ]
+      }
+    }
+  ],
+  "reviewed_source_assets": [
+    {
+      "id": "astro-ph__9506072v1-pdf",
+      "url": "https://arxiv.org/pdf/astro-ph/9506072v1",
+      "sha256": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+      "role": "pdf",
+      "conditioning": "Selected original Newtonian Einstein, CDM and massless brightness equations and leading mode only; new centered/Gram/damping algebra is reader-derived."
+    },
+    {
+      "id": "1104.2933v3-pdf",
+      "url": "https://arxiv.org/pdf/1104.2933v3",
+      "sha256": "748b2c1bced36e6dd106226b32839da619f17854b2c42cbf2e0b4b273c1a3ebb",
+      "role": "pdf",
+      "conditioning": "Selected fully decoupled massless transport and approximate hierarchy/UFA context only; no approximation or source-output reproduction accepted."
+    }
+  ],
+  "accepted_records": {
+    "contract_ids": [
+      "next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v3"
+    ],
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": []
+  },
+  "source_contract_binding": {
+    "contract_id": "next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v3",
+    "path": "register/contracts/next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v3.json",
+    "sha256": "cafb6c7907a855decbe9966bdb10cc70d16ee065890a745a2d3cbf2381ab64c0"
+  },
+  "accepted_claim_ids": [
+    "NEXT14-v3-MB-original-signs",
+    "NEXT14-v3-source-leading-mode",
+    "NEXT14-v3-CLASS-closure-warning",
+    "NEXT14-v3-centered-angular-continuum",
+    "NEXT14-v3-nodal-product-integration",
+    "NEXT14-v3-actual-shear-forcing",
+    "NEXT14-v3-Gram-translation",
+    "NEXT14-v3-selected-initializer-order",
+    "NEXT14-v3-scaled-and-CDM-coordinates",
+    "NEXT14-v3-original-E-not-comoving",
+    "NEXT14-v3-damped-residual-propagation",
+    "NEXT14-v3-background-and-nodal-forcing",
+    "NEXT14-v3-finite-k-Lyapunov",
+    "NEXT14-v3-weighted-energy-zero-k",
+    "NEXT14-v3-undamped-risk-control",
+    "NEXT14-v3-actual-thermal-source-owner",
+    "NEXT14-v3-shared-units-and-existing-fluid",
+    "NEXT14-v3-nominal-selected-caller-domain",
+    "NEXT14-v3-unit-zeta-three-readouts",
+    "NEXT14-v3-whole-output-budget-policy",
+    "NEXT14-v3-all-attempt-storage-refusal-policy"
+  ],
+  "supporting_packets": [
+    {
+      "role": "immutable_v3_source_method_caller_packet",
+      "sha256": "8eefadc824cbae35655937355a43c098c516e413ce3dcd56d55ec7675a4c5213"
+    },
+    {
+      "role": "visible_own_locator_transcription_correction",
+      "sha256": "e94f61f23781f414e2db47b2a062dc78127a8bfef53cff0a8455fa7560619529"
+    },
+    {
+      "role": "final_v3_handoff_amendment",
+      "sha256": "997c86c077d32cb4af9db54f703640a20d7c0b62ba4d3586029b60d8331463ca"
+    }
+  ],
+  "projection_kind": "Compact exact-byte projection of frozen FINAL v3 audit; no new source campaign or promotion. Public slug maps separate selected private v3 method/request artifacts, not a revised physical/source39cf model.",
+  "corrections": [
+    "Own metadata locator was transposed; correct immutable39cf pointer is /conventions_and_source_original_equations. No printed-source repair."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "full_paper_review": false
+  },
+  "limitations": [
+    "Conditional source/method/caller-specification acceptance only; original physical/start39cf and canonicalv2/de5 acceptance unchanged.",
+    "All seven numerical/compiled/installed/physical gates remain open; homogeneous proofs do not certify forced/discrete/all-peer/forward stability.",
+    "Targeted original locators only; no new full/Luna read, paper-stage/graph promotion, numerical job or inference. Unread full-paper queue remains unchanged."
+  ]
+}

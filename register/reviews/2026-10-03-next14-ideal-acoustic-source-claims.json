@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-next14-ideal-acoustic-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "agent_id": "/root/perturbation_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "runtime_session_id": "01a0fec1-578e-7712-ba9d-1707e70bb91c",
+    "turn_id": "01a0fff9-24de-7d81-8fd6-ec746bc2317d",
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "evidence_kind": "runtime_turn_context",
+    "actual_backend_identity": null
+  },
+  "model_confirmation_companion_sha256": "12a5d6535c5480ebd5dafbc89f8f97706e7c46ba61e308ad341cc4b3f378dd5d",
+  "reviewed_utc": "2026-10-03T04:40:26.748097+00:00",
+  "packet_sha256": "5564b6134e1516ba3c206ad1b35b3b325ab99797643f540b78ac182247ad5a6e",
+  "reviewed_papers": [
+    "arxiv:astro-ph/9506072v1"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:astro-ph/9506072v1",
+      "source_hashes": {
+        "pdf": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+        "extracted_text": "6d20a4d613f84696f7bf870823e5acb9b63383da0f2dc3fff4e0f93ec59d7933"
+      },
+      "coverage": {
+        "main_text": "Selected original new MB Newtonian photon/baryon/tight-coupling and formal no-shear-control passages only; prior metric/Fourier/Einstein/CDM/leading-mode conventions retain their separately frozen bounded v3 ancestry.",
+        "checked_locators": [
+          "PDFp22 Eq64 first two lines and baryon-section introductory pressure/momentum paragraph",
+          "PDFp23 Eq67 and preceding exchange paragraph; Eq68 pressure context incidental",
+          "PDFp24 Eq70 and reciprocal R definition/lowest-order limit paragraph",
+          "PDFp34 paragraph before Eq99, Eqs99–101 and no-neutrino/formal-control caveat"
+        ],
+        "formula_visual_checks": [
+          "PDFp22 Eq64",
+          "PDFp23 Eq67",
+          "PDFp24 Eq70 and R definition",
+          "PDFp34 Eqs99–101"
+        ],
+        "figures_visually_checked": [],
+        "incidental_only": "Photon polarization/high multipoles/Eq65, baryon temperature68–69 and finite-TCA71–74 were visible on selected pages but no implementation/finite-TCA claim was accepted. PDFp33 results text and p34 references to figures2/3 encountered only; no numerical-result/figure acceptance. mb-formal-33.png was created as an initial locator aid and not visually inspected.",
+        "unread": "All other paper sections/appendices/full numerical results and figures/bibliography in this turn. Earlier targeted metric/Einstein/CDM/leading-mode checks remain bounded frozen ancestry. No full reading, full-review field or full-paper promotion; ordinary Luna/full-read queue untouched."
+      }
+    }
+  ],
+  "reviewed_source_assets": [
+    {
+      "id": "astro-ph__9506072v1-pdf",
+      "url": "https://arxiv.org/pdf/astro-ph/9506072v1",
+      "sha256": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+      "role": "pdf",
+      "conditioning": "Selected original Newtonian photon/baryon momentum equations and approximate no-shear constant-sound-speed control; new ideal closure, regular-series/comoving/TRACE algebra and frozen numerical policies are reader choices."
+    }
+  ],
+  "accepted_records": {
+    "contract_ids": [
+      "next14-ideal-photon-cold-baryon-cdm-lambda-acoustic-v1"
+    ],
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": []
+  },
+  "source_contract_binding": {
+    "contract_id": "next14-ideal-photon-cold-baryon-cdm-lambda-acoustic-v1",
+    "path": "register/contracts/next14-ideal-photon-cold-baryon-cdm-lambda-acoustic-v1.json",
+    "sha256": "6ac7c2cda97cfe7689cfd06ee3d184d84d3c538a3349db00f44d0a856320aadd"
+  },
+  "accepted_claim_ids": [
+    "IA-S01-MB64-photon-signs",
+    "IA-S02-MB67-baryon-exchange",
+    "IA-S03-MB70-reciprocal-loading",
+    "IA-S04-MB99-formal-control",
+    "IA-M01-distinct-ideal-conservation",
+    "IA-M02-loading-and-sound",
+    "IA-M03-corrected-five-state",
+    "IA-M04-Hamiltonian-propagation",
+    "IA-M05-unit-zeta-readouts",
+    "IA-M06-radiation-regular-series",
+    "IA-M07-total-matter-series",
+    "IA-M08-finite-start-projection",
+    "IA-M09-oscillator-and-original-trace",
+    "IA-M10-forced-constraints-and-growth",
+    "IA-M11-age-and-phase",
+    "IA-C01-thermal-source-and-units",
+    "IA-C02-private-loading-owner",
+    "IA-C03-helper-extension-required",
+    "IA-P01-selected-caller-specification",
+    "IA-P02-whole-output-budget",
+    "IA-P03-all-attempt-refusal",
+    "IA-P04-formal-controls-only"
+  ],
+  "supporting_packets": [
+    {
+      "role": "new_ideal_acoustic_source_method_caller_audit",
+      "sha256": "5564b6134e1516ba3c206ad1b35b3b325ab99797643f540b78ac182247ad5a6e"
+    },
+    {
+      "role": "selected_candidate",
+      "sha256": "78b043f55043e4f19153277d1ab048276e0a7ec7318389980a8d68d5f9081e6c"
+    },
+    {
+      "role": "frozen_future_two_row_request",
+      "sha256": "15024929fc13bbe16ccb21e8ca2a061aeccad10fb15f0281f351937437447911"
+    },
+    {
+      "role": "source_rehash",
+      "sha256": "9bcb375ab75cf69d62df10f99fe95786365040a42529258c92bd47a8a13ae8f5"
+    }
+  ],
+  "corrections": [
+    "Preserved rejected reader3B coefficient becomes checked9B/2; this is not a MB source error.",
+    "Ambiguous helper-refusal wording cannot certify a helper guard; actual old fluid preparation guard is separate.",
+    "Continuum cancellation requires exact background. Native3R_bg Vc and forced raw H/M residual effects must be owned before any actual helper/numerical admission."
+  ],
+  "limitations": [
+    "Selected original source equations and conditional reader algebra/protocol specification only; this distinct ideal photon/cold-baryon closure does not replace the accepted collisionless FD model.",
+    "All seven implementation/control/installed/numerical/physical gates remain open; helper-self-refusal is unsupported and actual background/conservation forcing must be charged.",
+    "Cold baryon zero pressure is additional closure. No finite opacity, recombination/drag history, diffusion, photon hierarchy/polarization, CMB projection, full standard transfer, ordinary full-support sigma8, observational law or inference.",
+    "No numerical/source-array/test/compiler job or native caller. Targeted original pages only, zero new full/Luna reads; paper-stage/full-reading queue and graph/prospect promotion untouched."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "full_paper_review": false
+  }
+}

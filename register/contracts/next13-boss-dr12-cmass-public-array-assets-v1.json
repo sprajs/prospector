@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "contract_id": "next13-boss-dr12-cmass-public-array-assets-v1",
+  "title": "BOSS DR12 author release assets: conditioned P/B estimates and distinct2016a/b power products",
+  "review_id": "2026-10-03-next13-boss-public-array-source-claims",
+  "paper_ids": [
+    "arxiv:1606.00439v2"
+  ],
+  "scopes": [
+    {
+      "scope_id": "NEXT-13",
+      "title": "Selected CMASS release identities, formats and covariance requirements",
+      "paper_ids": [
+        "arxiv:1606.00439v2"
+      ],
+      "checked_claim": "Original Hector Gil-Marin notes dated13Feb2020 and author pages dated17Feb2020 identify pre-recon P data, B0 data, post-recon BAO and separate bestfit products. Current exact linked archives and ten CMASS members are hash-bound; P comment headers and notes locate seven-column P/B formats, physical units and already-subtracted shot noise; notes identify already-squared six-column cap mask functions and weighted density roles. June2016 README distinguishes cap-averaged power measurements, bestfit curves, power-only covariance and rectangular window matrices. Original notes require paired2048 MD-Patchy statistics for a chosen P/B data vector with full auto/cross covariance; source reporting alone is accepted.",
+      "unresolved": "Exact historical release/estimator identity, full numerical support/order, mock realization pairing and reconstruction label conflict, author code, complete survey/B window and priors/likelihood remain unresolved. No joint covariance, fit, independence, numerical implementation or executable request accepted. Earlier NEXT13 fit contract remains separate."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "boss-release-dr12-page",
+      "url": "https://www.ub.edu/bispectrum/page10.html",
+      "sha256": "6b10cd354876a5ad1a7f3fcb224e3487aba01ea78937a8d3c6116f475c318560",
+      "role": "html",
+      "conditioning": "Selected HTML title/description, lines 100/116, 154–173, 191–241, 363 and 378; analysis roles, author date and exact linked route. Images not inspected; fit/fiducial files unacquired."
+    },
+    {
+      "id": "boss-release-products-page",
+      "url": "https://www.ub.edu/bispectrum/page11.html",
+      "sha256": "2bb06c42a121c3037c20fa17ddbba8807c17bd45f103aea27115426b52237be1",
+      "role": "html",
+      "conditioning": "Selected HTML lines 99–103, 130–211, 253–296 and 344–400; exact pre-recon data archive IDs and mock labels. Mock bodies and other catalogues unacquired; line278 reconstruction label conflict retained."
+    },
+    {
+      "id": "boss-release-original-page",
+      "url": "https://www.ub.edu/bispectrum/bispectrum_public/boss_public.html",
+      "sha256": "95b7e24af651832f6efb85cc748f678a5d6bc04cdfb976499a828dfe34b64760",
+      "role": "html",
+      "conditioning": "Selected HTML title and lines 26, 42–57, 62 and68: exact notes/Public Files link, analysis roles and source date. Figures uninspected."
+    },
+    {
+      "id": "boss-release-notes-20200213",
+      "url": "https://www.ub.edu/bispectrum/bispectrum_public/bispectrum_notes.pdf",
+      "sha256": "57a97fab74f0d2cf3ede8055254e0093cf349b45796b5296b82557de99b5cd22",
+      "role": "pdf",
+      "conditioning": "Author release notes; selected pp1–8 sections and bibliography entries4/5/7, original pp1–7 visually checked. Printed math/table issues remain literal; no full-paper review."
+    },
+    {
+      "id": "boss-release-2016ab-power-archive",
+      "url": "https://data.sdss.org/sas/dr12/boss/papers/clustering/GilMarin_etal_2016ab_DR12CMASSLOWZ_powspec.zip",
+      "sha256": "124a14c3ae3ff4d495208889b803ef2fa3e6dfccdc496bbbb7b918d7cffadd4b",
+      "role": "archive",
+      "conditioning": "Source-owned June2016 pre-recon RSD/post-recon BAO power products. README fully read, CMASS prefixes checked; 49 extracted member hashes checked, no array algebra/count/dimension validation."
+    },
+    {
+      "id": "boss-release-pb-power-archive",
+      "url": "https://drive.usercontent.google.com/uc?id=15rqW8lNmlbcPFSBWGfIMmISf4mDi_PuM&export=download",
+      "sha256": "4a2c4b960366cae0e9e52f31b61cd005ff7d6d14f385aefb3b3f65242274317c",
+      "role": "archive",
+      "conditioning": "Exact current author-linked pre-reconstruction P data archive; four CMASS linear/log prefixes and two density/mask prefixes checked. Historical byte/estimator equivalence to2017 analysis unestablished."
+    },
+    {
+      "id": "boss-release-pb-bispectrum-archive",
+      "url": "https://drive.usercontent.google.com/uc?id=1MsTXL1UXY7gmysaoxOaTVONOvN0aF7F4&export=download",
+      "sha256": "17b1cceb1f6d00edc057ff8d270854758b9f43de77c90438320cc8290d12b1db",
+      "role": "archive",
+      "conditioning": "Exact current author-linked pre-reconstruction B0 data archive; selected two CMASS cap members checked first three literal rows only, linked format supplied by notes; no full support/count/numerical validation."
+    },
+    {
+      "id": "boss-release-2016ab-readme",
+      "url": "https://data.sdss.org/sas/dr12/boss/papers/clustering/GilMarin_etal_2016ab_DR12CMASSLOWZ_powspec.zip",
+      "sha256": "74101f26fc1bc01f0bbe39e764d08fc7f7f67a2b15be65a426c4f7f47365b22e",
+      "role": "archive_member",
+      "conditioning": "README lines1–36 fully checked. Source title Hector Gil Marin, June2016; separate measured/bestfit/window/covariance roles."
+    }
+  ],
+  "limitations": [
+    "Released pre-reconstruction cap P/B estimates and separate2016a/b power products are source-owned reductions. They are not raw galaxy observations, an independent amplitude measurement, a qualified likelihood, or an executable native model.",
+    "2016 archive contains weighted NGC+SGC power estimates, diagonal errors, bestfit curves, power-only covariance and window matrices. Its covariance cannot replace the P0/P2/B0 joint auto/cross covariance. Arrays/dimensions/interleaving were not numerically validated.",
+    "Current release pre-reconstruction P headers report cap data effective redshifts0.589341/0.590627 and randoms0.547267/0.547683, distinct from analysis zeff0.57. Definitions are preserved; no automatic replacement or proof of contradiction. Historical estimator/byte equality to the2017 paper is unestablished.",
+    "Exact selected bin/triangle order and paired mock realization IDs are required for all auto/cross covariance blocks. No mocks were downloaded/read, no covariance constructed or inverted, no Hartlap likelihood correction executed. Page11 line278 labels B mocks post-recon while notes/data say pre-recon; pairing/reconstruction is unresolved.",
+    "Masks supply already-squared W_l^2, not a complete bispectrum survey window. Notes offer only a partial individual-power approximation with squeezed-triangle limitations. Density units and intrinsic headerless B/mask self-description remain unlocated; dimensional reader deductions are separate.",
+    "Formal notes are incomplete on RSD/AP/selection/LOS physics. Printed Eq2 Fourier normalization/measure, Eq5 triangle count normalization, p3 linear-bin units, Eq9 likelihood label, Eq14 internal operator and Table1 Patchy sigma8=8288 issues remain literal. No silent repair or author-code equivalence is accepted.",
+    "Source claims of independent sky-cap/sample likelihoods and arbitrary high-k validity are reported assertions, not verified independence or scientific qualification. Same galaxy, random, fiducial, mask and mock ancestry links power-only RSD, P+B RSD and post-reconstruction BAO; cross-analysis covariance remains unknown. Linear/log P are alternative reductions, not independent samples.",
+    "Source-specific redistribution licences are unresolved. Citation requests, as-is disclaimers, successful public GETs and a failed connector materialization establish no licence or licence denial. Only metadata, links and original short review notes may be public; raw sources stay local.",
+    "Asset-only targeted review; navigation association to existing1606.00439v2 does not review that paper anew. Zero Luna/full-paper reads, promotions, experiments, fits, compiler jobs, native execution or numerical/scientific acceptance. Existing pending queues and earlier source gates remain intact."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}

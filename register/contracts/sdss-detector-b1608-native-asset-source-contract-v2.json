@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "contract_id": "sdss-detector-b1608-native-asset-source-contract-v2",
+  "title": "SDSS legacy run bridge and B1608+656 native archival asset identities",
+  "review_id": "2026-10-03-sdss-b1608-native-source-assets",
+  "paper_ids": [
+    "arxiv:2112.03863v2",
+    "arxiv:2112.03864v2",
+    "arxiv:0910.2773v2"
+  ],
+  "scopes": [
+    {
+      "scope_id": "NEXT-07",
+      "title": "Versioned SDSS flux, timing and exposure bridge",
+      "paper_ids": [
+        "arxiv:2112.03863v2",
+        "arxiv:2112.03864v2"
+      ],
+      "checked_claim": "Original2005 scene-model SN6057/2005if file explicitly labels native SDSS asinh magnitudes, AB-corrected microJy, random/sky/galaxy error components and uncorrected foreground extinction. Selected first g epoch53616.457598 binds RUN5566/82N. The separately pinned JLA-named HEAD primary PHOTFILE names SDSS_allCandidates+BOSS_PHOT.FITS; selected NUL-normalized row2864 binds6057/2005if,NOBS115 and pointers313798..313912.56 HEAD TUNIT cards are present/blank; inherited later PHOT19 TUNIT cards are present/blank and EXPTIME absent.",
+      "unresolved": "Source5.04-labelled original photometry and SMPv8+BOSS/FLUXCAL are separate reduction identities; equal epoch/CID/pointer labels do not certify flux/error/calibration equivalence or physical-event deduplication. Native frame/camcol/field, MJD clock convention, EXPTIME/readout/calibration/QE/error covariance and full selection remain unresolved; no HST clock/exposure substitution."
+    },
+    {
+      "scope_id": "NEXT-10",
+      "title": "SDSS native detector and selection prerequisites",
+      "paper_ids": [
+        "arxiv:2112.03863v2",
+        "arxiv:2112.03864v2"
+      ],
+      "checked_claim": "Official selected run5566/rerun40/nightMJD53616/N has processed field range11..622 and UT run interval05:11:04..11:15:43. Source documents nonphotometric frame recalibration, restrictedRA range, g/camcol3 zero-point QA in millimags, ambiguous zeroQA, processing gaps and per-run rolling field IDs. Legacy source flags/runs/strips improve reduced-product ancestry without a native detector law.",
+      "unresolved": "No native SDSS pixels, actual frame header, measured gain/read-noise uncertainty/distribution, per-epoch PSF/mask/sky/extraction operator or censoring/followup/analysis selection likelihood is checked. Run/strip is insufficient for unique camera column/field; flag descriptions do not give detection probability. Existing fpC/TAI example and passband configuration remain version-specific ancestry, not this event exposure."
+    },
+    {
+      "scope_id": "NEXT-18",
+      "title": "B1608+656 acquired RAW counts and reduction boundaries",
+      "paper_ids": [
+        "arxiv:0910.2773v2"
+      ],
+      "checked_claim": "MAST selected j93501010 association and PUBLIC product rows, RAW/SPT headers, current LOG and five-row ASN match GO10158/PI-Fassnacht/B1608+656/ACS-WFC/F606W. H9Q has two4144×2068 count-image payloads in a34344000B file,609s exposure and UT-labelled2004-08-24 start; ERR/DQ encode constant-zero arrays in headers without pixel payload, not measured zero uncertainty or verified clean quality. Current2026 file/log uses CALACS10.4.1 and named calibration references; RAW calibration cards are unpopulated, not measured zero noise. ASN links four exposure IDs to01010; only H9Q and ancillary bytes acquired.",
+      "unresolved": "Remaining exposures/filter band, calibrated/drizzled products and reference bodies, telemetry clock conversion/precision, measured detector/QE/count distribution and image likelihood/covariance are unchecked. Current archive processing is not established equivalent to the2010 author PSF/dust/lens-light/potential reduction. OlderWFPC2 remains distinct; PSF/Keck/radio-delay/environment products/covariances and author-product rights stay unresolved."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "mast-go10158-observation-page1",
+      "url": "https://mast.stsci.edu/api/v0/invoke?request=%7B%22service%22%3A%22Mast.Caom.Filtered%22%2C%22params%22%3A%7B%22columns%22%3A%22%2A%22%2C%22filters%22%3A%5B%7B%22paramName%22%3A%22proposal_id%22%2C%22values%22%3A%5B%2210158%22%5D%7D%2C%7B%22paramName%22%3A%22obs_collection%22%2C%22values%22%3A%5B%22HST%22%5D%7D%5D%7D%2C%22format%22%3A%22json%22%2C%22pagesize%22%3A40%2C%22page%22%3A1%2C%22timeout%22%3A20%7D",
+      "sha256": "ee0d992e4b7b41634b02e42b25c680d7bbfd22ac50f348a556fd045a562ed429",
+      "role": "official proposal-filtered observation metadata",
+      "retrieved_utc": "2026-10-03T04:03:44.063794+00:00",
+      "bytes": 65266,
+      "licence": null,
+      "licence_null_reason": "Source-specific ownership/redistribution licence not established by selected body.",
+      "coverage": "Paging and fields; only data row obs_id=j93501010 scientifically checked; 40 of51 rows returned, remaining selected/unreturned observations unexamined.",
+      "conditioning": "HST/ACS-WFC, B1608+656, GO10158, PI Fassnacht, F606W, j93501010/obsid24824324, PUBLIC. Association t_exptime2436 and CALACS provenance, calib_level3. Field-unit entries are null; metadata values do not themselves define detector/exposure likelihood. Query is a current archive snapshot, not exhaustive program exposures."
+    },
+    {
+      "id": "mast-j93501010-products",
+      "url": "https://mast.stsci.edu/api/v0/invoke?request=%7B%22service%22%3A%22Mast.Caom.Products%22%2C%22params%22%3A%7B%22obsid%22%3A24824324%7D%2C%22format%22%3A%22json%22%2C%22pagesize%22%3A100%2C%22page%22%3A1%2C%22timeout%22%3A20%7D",
+      "sha256": "860942150ee2f94319f3251f21e37a778db1439fe1d8fcdd03f9893d1d85bb65",
+      "role": "official selected association product metadata",
+      "retrieved_utc": "2026-10-03T04:04:37.701933+00:00",
+      "bytes": 45418,
+      "licence": null,
+      "licence_null_reason": "Source-specific ownership/redistribution licence not established by selected body.",
+      "coverage": "Paging81 of81 product rows returned; four rows selected by exact productFilename RAW/SPT/LOG/ASN, remaining77 row content unreviewed.",
+      "conditioning": "H9Q RAW/SPT/LOG are obsID24031772/parent24824324, F606W, GO10158, PUBLIC, calib_level1, projectCALACS, prvversion null. ASN belongs to association24824324, calib_level3, prvversion DrizzlePac3.11.0. Selected returned sizes agree with acquired bytes. Public listing does not certify other members or author reductions."
+    },
+    {
+      "id": "j93501h9q-raw",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AHST%2Fproduct%2Fj93501h9q_raw.fits",
+      "sha256": "dc7e5529f13682e9b93b8681d6568acfbcd8ab2190030f855fb544e67c62f737",
+      "role": "native archival RAW count-image product",
+      "retrieved_utc": "2026-10-03T04:07:14.683797+00:00",
+      "bytes": 34344000,
+      "licence": "PUBLIC archival access; MAST general public-domain policy with exceptions",
+      "licence_null_reason": null,
+      "coverage": "Whole-body SHA256/length; all7 HDU literal header cards and padded layout; selected identity/exposure/unit/storage/calibration/association cards examined. No image values decoded.",
+      "conditioning": "RAW primary FILENAME/ROOTNAME/PROPOSID/TARGNAME/INSTRUME/DETECTOR/FILTER1/2 bind H9Q/B1608+656/GO10158/ACS-WFC/F606W+CLEAR2L. UT DATE-OBS2004-08-24/TIME-OBS05:30:18; EXPSTART53241.22938523/EXPEND53241.23644588 labelled MJD; EXPTIME609.000000s and DARKTIME612.129202s separate. File DATE2026-05-20; CAL_VER blank. HDUs1/4 SCI EXTVER1/2 CCDCHIP2/1: NAXIS1=4144,NAXIS2=2068,BITPIX16,BSCALE1,BZERO32768,BUNIT COUNTS; each declared payload17139584B and padded span17141760B, with total34344000B. ERR/DQ HDUs2/3/5/6 have NAXIS0 and no pixel payload, but NPIX1=4144,NPIX2=2068 and PIXVALUE0 encode constant-zero arrays in headers. These are RAW placeholders, not measured zero uncertainty or verified clean quality. Gain/read-noise and photometric calibration cards are literal zeros; commanded CCDGAIN1 is not a measured gain/noise distribution. Correction switches are PERFORM/OMIT instructions, not completion evidence. Count units are not a direct electron/photon probability law.",
+      "dataset_id": "HST GO10158/j93501h9q",
+      "archive_product_version": null,
+      "version_null_reason": "Selected RAW product row prvversion null and RAW CAL_VER blank; dated bytes/hash pin this snapshot.",
+      "licence_scope": "Selected MAST PUBLIC rows and policy checked separately; legal ownership of author products is not certified."
+    },
+    {
+      "id": "j93501h9q-spt",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AHST%2Fproduct%2Fj93501h9q_spt.fits",
+      "sha256": "6b9ae5a95f8be30aca63431d558790cf1287b89809062515f9580f61fcbaeb13",
+      "role": "native archival engineering-support product",
+      "retrieved_utc": "2026-10-03T04:07:19.964712+00:00",
+      "bytes": 57600,
+      "licence": "PUBLIC archival access; MAST general public-domain policy with exceptions",
+      "licence_null_reason": null,
+      "coverage": "Whole SHA/length; primary and UDL extension headers/layout only; UDL values not decoded.",
+      "conditioning": "ROOTNAME/target/program/ASN agree with RAW. CMD_EXP609 and UDL INTTIME609; HST/MIE coarse/fine counters have labels but conversion/precision not established. HSTTIMES and HSTTIMEC are literally equal, while other counter fields differ; do not derive a clock or exposure history from this. UDL NAXIS1=965,BITPIX16,payload1930B,padded2880B,total57600B. DATE2026-05-20; proposed/commanded gain is not calibration uncertainty."
+    },
+    {
+      "id": "j93501h9q-log",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AHST%2Fproduct%2Fj93501h9q_log.txt",
+      "sha256": "b910e7c02338e24e1a2fb066dbe83fca583b5ab1a4e6c00bb217fc5e51203f5a",
+      "role": "current archive calibration processing log",
+      "retrieved_utc": "2026-10-03T04:07:23.647561+00:00",
+      "bytes": 16222,
+      "licence": "PUBLIC archival access; MAST general public-domain policy with exceptions",
+      "licence_null_reason": null,
+      "coverage": "Lines1-100,137-149,153-216,277-334; selected remaining version/reference/completion/warning hits through467. Remaining per-chip CTE/bias/dark processing details unexamined.",
+      "conditioning": "Source log reports CALACS10.4.1(08-Aug-2025) on20-May-2026, CCDTAB jref$72m1821ij_ccd.fits and gain/readnoise vectors0.9999,0.9721,1.0107,1.018 and4.97,4.85,5.24,4.85; units/uncertainties/covariance and full amp ordering not certified. Specific CTE statements use amplifier-dependent read noise. Current bias/dark/flat/photometry/CTE reference filenames include 6631810bj_bia,78f1819gj_drk,nar1136pj_pfl,4af1559ij_imp,8ch1518tj_cte. Reference bodies and resulting FLT/FLC/DRZ unacquired. Preserve line49 flat-offset warning; lines202-207 missing-header-keyword ERROR labels are explicitly described as nonfatal reference fallback; line210 ignores PCTERNOI in favour of CCDTAB. Log completion is a provider report, not quality qualification or 2010 author processing."
+    },
+    {
+      "id": "j93501010-asn",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AHST%2Fproduct%2Fj93501010_asn.fits",
+      "sha256": "1815a9bb860fbb978800ad7f8bf23d6aeed4358ce6821ffb02404c3149862fc5",
+      "role": "native archival association metadata table",
+      "retrieved_utc": "2026-10-03T04:07:27.194156+00:00",
+      "bytes": 11520,
+      "licence": "PUBLIC archival access; MAST general public-domain policy with exceptions",
+      "licence_null_reason": null,
+      "coverage": "Whole SHA/length, both headers/layout, all five29-byte ASN metadata rows.",
+      "conditioning": "Three columns MEMNAME/MEMTYPE/MEMPRSNT. Rows0-3 J93501H9Q/HAQ/HCQ/HEQ EXP-DTH,T; row4 J93501010 PROD-DTH,T. RAW/SPT ASN_ID and ASN_TAB match. MEMPRSNT is archive metadata, not local acquisition proof: only H9Q RAW/SPT/LOG and this ASN acquired. Other three RAWs and association calibrated/drizzled products remain unacquired. No full exposure-set or author-reduction identity follows."
+    },
+    {
+      "id": "mast-data-use-policy",
+      "url": "https://archive.stsci.edu/publishing/data-use",
+      "sha256": "f309e1b4708217eafff51feab3fc9780e5b0c7fef79452e6fde486030b37e2c3",
+      "role": "official archive access and data-use policy",
+      "retrieved_utc": "2026-10-03T03:56:22.041357+00:00",
+      "bytes": 81786,
+      "licence": "MAST public-data policy with stated exceptions; source-specific PUBLIC rows independently checked",
+      "licence_null_reason": null,
+      "coverage": "HTML270-339: main policy, exclusive access, licensed/copyrighted sections and exception collection names. Remaining attribution/licence destinations and DSS owner details unexamined.",
+      "conditioning": "Most MAST data public domain with acknowledgement expectations; exclusive-access data become publicly usable after expiry. Community HLSPs may be CC BY4.0; DSS and Guide Star Catalogs have copyright restrictions. Selected HST DADS rows are PUBLIC, separately from this general policy. Do not transfer ESA6555 CC BY-NC3.0IGO or author-product rights to these files."
+    },
+    {
+      "id": "JLA2014_SDSS_DS17_HEAD.FITS.gz",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/1_DATA/photometry/JLA2014_SDSS_DS17/JLA2014_SDSS_DS17_HEAD.FITS.gz",
+      "sha256": "c15b24545f604798b0963d192b63ed0ca1d0548fe3490ff1f9245b1c8fcdf735",
+      "role": "released_reduced_product",
+      "retrieved_utc": "2026-10-03T03:57:00.900358+00:00",
+      "bytes": 806293,
+      "licence": null,
+      "licence_null_reason": "Source-specific ownership/redistribution licence not established by selected body.",
+      "coverage": "Whole compressed hash; complete header/card/56-column metadata and layout; SNID-only strict scan failed due NUL padding, then externally identified zero-based row2864 alone decoded with explicit right-space/NUL normalization. Other table fields/rows unexamined.",
+      "conditioning": "Literal pinned filename remains distinct from any differently named HEAD. Primary PHOTFILE explicitly names SDSS_allCandidates+BOSS_PHOT.FITS; this strengthens a declared product link without creating a byte alias. Header table10258 rows×262B and56 TUNIT cards present with blank values; no per-epoch RUN/CAMCOL/FIELD or EXPTIME columns. Row2864 SNID raw hex36303537000000000000000000000000 and IAUC raw hex32303035696600000000000000000000 normalize to6057/2005if. NOBS115/PTROBS_MIN313798/PTROBS_MAX313912 match older coordinator-reported structural pointers; PHOT arrays not reread or rejoined. RA52.553604/DECL−0.974586 differ literally from legacy source coordinates; units/frame not supplied by blank TUNIT. No native exposure history or physical-event deduplication follows.",
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b"
+    },
+    {
+      "id": "sdss-supernova-runlist",
+      "url": "https://classic.sdss.org/dr7/coverage/sndr7.html",
+      "sha256": "d37ec44d29695fb3a0b125abf6e3482f7db4e2aa27a7d40fdcefa578080fdb20",
+      "role": "official historical run and processing documentation",
+      "retrieved_utc": "2026-10-03T03:56:25.907111+00:00",
+      "bytes": 217849,
+      "licence": null,
+      "licence_null_reason": "Source-specific ownership/redistribution licence not established by selected body.",
+      "coverage": "HTML8-65,67-99,255-277,1757-1774 selected run5566,5774-5812 notes/footer. Other304 run rows and linked plots/night pages unexamined.",
+      "conditioning": "SDSS-II seasons2005-2007,5566-5924/6281-6618/6921-7202; nonphotometric recalibration only−50<RA<59 via repeated objects/frame zero points. QA is g/camcol3 one-sigma zero-point variation in millimags; zero means unrecalibrated or photometric, not zero uncertainty. Run5566/rerun40/nightMJD53616/date2005/09/03/N/fields11..622/RA−32.65..59.19/UT05:11:04..11:15:43/QA0/coadd206. Run and strip match the selected legacy lightcurve, not a camcol/field/native-frame join. Fields may have gaps and are rolling per-run numbers, not unique sky positions. Coadds100006/200006 are distinct products."
+    },
+    {
+      "id": "sdss-original-lightcurves-entry",
+      "url": "https://classic.sdss.org/supernova/lightcurves.html",
+      "sha256": "fd17edc0e85b8fb74cb5eb5680a5b7fb89d069777e2a4faf92d1c0ad44832db1",
+      "role": "official first-year reduced-lightcurve route",
+      "retrieved_utc": "2026-10-03T03:56:29.379185+00:00",
+      "bytes": 8040,
+      "licence": null,
+      "licence_null_reason": "Source-specific ownership/redistribution licence not established by selected body.",
+      "coverage": "HTML135-142 main title/publication/tar link and180 campaign navigation label only; linked paper/gallery/release pages unexamined.",
+      "conditioning": "Main body identifies first-year Holtzman2008 AJ1362306 and exact sn_data.tar.gz link. Printed arXiv0908.4277 link was not identity-verified and no paper admission/review is claimed. All2005-2007 navigation text does not make this first-year archive a three-year/raw detector collection."
+    },
+    {
+      "id": "sdss-original-2005-lightcurve-archive",
+      "url": "https://classic.sdss.org/supernova/sn_data.tar.gz",
+      "sha256": "4401186ffe4de701843e73ef70a0f00094946f6b847e60e9d86bbd84aee6c160",
+      "role": "official original released scene-model reduced-lightcurve archive",
+      "retrieved_utc": "2026-10-03T04:19:15.685978+00:00",
+      "bytes": 579506,
+      "licence": null,
+      "licence_null_reason": "Source-specific ownership/redistribution licence not established by selected body.",
+      "coverage": "Whole compressed SHA/length independently checked; central safe148-member inventory/extraction receipt retained. Only two extracted source members checked; no independent archive extraction or all-object read.",
+      "conditioning": "579506B acquired from actual official first-year link; central inventory148 members/2191381 expanded bytes is coordinator-reported. Archive is reduced photometry, not SDSS raw detector frames; supplied member identities separately verified. No copyright/licence inferred from public download or an author list."
+    },
+    {
+      "id": "sdss-2005-lightcurve-ReadMe",
+      "url": "https://classic.sdss.org/supernova/sn_data.tar.gz",
+      "sha256": "ff030ee26b8b830c287a2df346165422c3408a1c3898baa9cc3962bd0a0d3aa3",
+      "bytes": 3547,
+      "retrieved_utc": "2026-10-03T04:19:15.685978+00:00",
+      "role": "original archive member; released reduced-product documentation",
+      "archive_member": "data/ReadMe",
+      "container_sha256": "4401186ffe4de701843e73ef70a0f00094946f6b847e60e9d86bbd84aee6c160",
+      "licence": null,
+      "licence_null_reason": "No member-specific redistribution licence printed in selected documentation.",
+      "coverage": "All68 short documentation lines; not the paper or other146 lightcurves.",
+      "conditioning": "Printed title/authors and146 spectroscopic-confirmed/probable2005 SNe; scene modelling, CID/IAU/J2000 coordinates, [01234]→ugriz, native asinh mag versus AB-corrected microJy. ABmag−SDSSmag offsets[−0.037,0.024,0.005,0.018,0.016] are source conversion conventions, not new calibration measurements. Random/sky/galaxy error columns and RUN/STRIP meanings given; flags are partial quality conditions, not a selection probability. ReadMe permits16/32 for galaxy constraints, whereas selected file generic flag prose omits those exceptions: preserve both descriptions."
+    },
+    {
+      "id": "SDSS2005-SN6057-snphot-5.04",
+      "url": "https://classic.sdss.org/supernova/sn_data.tar.gz",
+      "sha256": "33f7c9e1a511c61effdc36fa42132f540c47236627a7521142a4aa95c2af50ae",
+      "bytes": 15052,
+      "retrieved_utc": "2026-10-03T04:19:15.685978+00:00",
+      "role": "original archive member; released reduced photometry",
+      "archive_member": "data/SN6057.snphot-5.04.sum",
+      "container_sha256": "4401186ffe4de701843e73ef70a0f00094946f6b847e60e9d86bbd84aee6c160",
+      "licence": null,
+      "licence_null_reason": "No member-specific redistribution licence printed in selected documentation.",
+      "coverage": "Header lines1-19 and selected first g-epoch line20; nearby printed rows21-32 incidentally viewed, not accepted for additional scientific claims. Remaining epoch rows unread.",
+      "conditioning": "Literal filename version label5.04, SDSS CID6057/IAU2005if, J2000RA52.553547/DEC−0.974675, no extinction correction. Header distinguishes random flux error from estimated sky/galaxy systematics. Line20 FLAG32,MJD53616.457598,FILT1(g),MAG23.678,MERR0.484,MSKYERR0.249,MGALERR0.443,FLUX1.115E+00microJy,FLUXERR5.729E−01,SKYERR2.952E−01,GALERR5.243E−01,NPRE21,TELEsdss,RUN5566,STRIP82N. This is a literal legacy epoch→run/strip bridge. Matching epoch/CID and pointers to later SMPv8 do not certify flux/error/reduction equivalence; no raw/clock/EXPTIME/camcol/field law or new units for later FLUXCAL."
+    },
+    {
+      "id": "SDSS_allCandidates+BOSS_PHOT.FITS.gz",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/1_DATA/photometry/JLA2014_SDSS_DS17/SDSS_allCandidates%2BBOSS_PHOT.FITS.gz",
+      "sha256": "0b143978c068c0b93b78eb582701bf77286b1930cfa93ce436ef30b5722a5a05",
+      "role": "released_reduced_product",
+      "retrieved_utc": "2026-10-02T01:22:01.880740+00:00",
+      "bytes": 40919338,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "Release redistribution licence unverified.",
+      "conditioning": "Inherited source-role evidence, preserved historical scope: Original bytes rehashed; retained previously decoded header has19 blank TUNIT values and absent EXPTIME. No fresh data-array reading or measured physical detector distribution is accepted.",
+      "coverage": "Original bytes rehashed only in this turn; selected content/identity acceptance inherited from prior targeted review2026-10-03-sdss-b1608-targeted-source-claims-v1 and immutable packetbb0af2c7. No new paper/body reading."
+    },
+    {
+      "id": "JLA2014_SDSS_DS17.README",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/1_DATA/photometry/JLA2014_SDSS_DS17/JLA2014_SDSS_DS17.README",
+      "sha256": "653e5ca44de6f29265923bf24b1ade3d9ec7b6586a7c49f278163ea59b2b426a",
+      "role": "pinned release conversion and error-treatment description",
+      "retrieved_utc": "2026-10-02T01:02:36.402845+00:00",
+      "bytes": 14875,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "Release redistribution licence unverified.",
+      "conditioning": "Inherited source-role evidence, preserved historical scope: Lines1-108 and191-212 checked. SMPv8+BOSS2005-2007 derives from Holtz/v6_reCalib; Feb2010 error scaling uses FLUXERR(uJy), and QMASK bits describe partial epoch-quality conditions.10258 lightcurve containers are not a physical-event deduplication count.",
+      "coverage": "Original bytes rehashed only in this turn; selected content/identity acceptance inherited from prior targeted review2026-10-03-sdss-b1608-targeted-source-claims-v1 and immutable packetbb0af2c7. No new paper/body reading."
+    },
+    {
+      "id": "kcor_SDSS.input",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/SNANA_kcor/kcor_SDSS.input",
+      "sha256": "b27008fc0be2dd94c21bafc38bee49d08cea38d9ff157777b14376705a2b93c1",
+      "role": "pinned calibration configuration",
+      "retrieved_utc": "2026-10-02T01:15:43.139792+00:00",
+      "bytes": 1037,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "Release redistribution licence unverified.",
+      "conditioning": "Inherited source-role evidence, preserved historical scope: All41 lines checked without execution. AB/COUNT labels, U/G/R/I/Z passband paths, external BD17/Hsiao SEDs, offset expressions and generation grids are configuration choices. Referenced curve bodies and units for untagged wavelength-shift literals remain unexamined; no optical/detector probability law is supplied.",
+      "coverage": "Original bytes rehashed only in this turn; selected content/identity acceptance inherited from prior targeted review2026-10-03-sdss-b1608-targeted-source-claims-v1 and immutable packetbb0af2c7. No new paper/body reading."
+    },
+    {
+      "id": "b1608-0910.2773v2-original",
+      "url": "https://arxiv.org/pdf/0910.2773v2",
+      "sha256": "49713641ce2c8c82994f6365b112dc349b1388b048819f712ab565a4043feeff",
+      "role": "pinned original paper, selected data-description claims",
+      "retrieved_utc": "2026-10-02T21:49:52.244657+00:00",
+      "bytes": 701443,
+      "versioned_id": "0910.2773v2",
+      "title": "Dissecting the Gravitational Lens B1608+656. II. Precision Measurements of the Hubble Constant, Spatial Curvature, and the Dark Energy Equation of State",
+      "authors": [
+        "S. H. Suyu",
+        "P. J. Marshall",
+        "M. W. Auger",
+        "S. Hilbert",
+        "R. D. Blandford",
+        "L. V. E. Koopmans",
+        "C. D. Fassnacht",
+        "T. Treu"
+      ],
+      "licence": null,
+      "licence_null_reason": "Original saved metadata/receipt has no verified licence.",
+      "conditioning": "Inherited source-role evidence, preserved historical scope: Title/authors/version watermark and selected Sec3.1, Sec4.1/p8/Fig1, Sec5.1-5.2 data descriptions and Sec6.2/footnote15 checked. Figures other than p8 are uninspected; p12 Fig2 caption only. Literal November26,2024 draft header versus January28,2010 arXiv watermark remains unexplained. No complete lens data law or numerical qualification follows.",
+      "coverage": "Original bytes rehashed only in this turn; selected content/identity acceptance inherited from prior targeted review2026-10-03-sdss-b1608-targeted-source-claims-v1 and immutable packetbb0af2c7. No new paper/body reading."
+    },
+    {
+      "id": "b1608-go10158-proposal",
+      "url": "https://archive.stsci.edu/proposal_search.php?id=10158&mission=hst",
+      "sha256": "42b8b56a184e3f6e32a8c0a76b767d6b53ed3d2e88ae05f4439c29c1d7c32620",
+      "role": "official matched proposal and selected archive-dataset metadata",
+      "retrieved_utc": "2026-10-03T02:18:45.869495+00:00",
+      "bytes": 60835,
+      "dataset_id": "HST GO10158",
+      "title": "ACS Observations of the Gravitational Lens B1608+656: Characterizing the Einstein Ring",
+      "principal_investigator": "Christopher Fassnacht",
+      "licence": null,
+      "licence_null_reason": "Proprietary-marker instruction and copyright link printed; full rights/pixel-product redistribution terms unexamined.",
+      "conditioning": "Inherited source-role evidence, preserved historical scope: Title/PI/cycle13/completed GO and first4 of page-declared30 rows checked: J93501010/20 with F606W and J93501030/40 with F814W, ACS/WFC, target B1608+656. Rows are archive dataset identifiers, not certified individual raw exposures or author reductions. ExpTime/CentralWavelength units and clock standard are not stated in checked table/header. No pixel or product files acquired.",
+      "coverage": "Original bytes rehashed only in this turn; selected content/identity acceptance inherited from prior targeted review2026-10-03-sdss-b1608-targeted-source-claims-v1 and immutable packetbb0af2c7. No new paper/body reading."
+    },
+    {
+      "id": "b1608-older-wfpc2-6555",
+      "url": "https://esdcdoi.esac.esa.int/doi/html/data/astronomy/hst/6555.html",
+      "sha256": "00920c25c9b3de8a10c89e00ba579786a20fd10af110063f6e6ce1b910fbfd6a",
+      "role": "distinct historical WFPC2 dataset metadata",
+      "retrieved_utc": "2026-10-03T02:18:39.320177+00:00",
+      "bytes": 9776,
+      "dataset_id": "HST6555",
+      "dataset_version": "1.0",
+      "doi": "10.5270/esa-43nng46",
+      "title": "What causes the astigmatism in gravitational lenses?",
+      "principal_investigator": "Schechter, Paul",
+      "licence": "CC BY-NC3.0IGO",
+      "licence_url": "https://creativecommons.org/licenses/by-nc/3.0/igo",
+      "licence_scope": "Provider statement for ESA-hosted data checked in lines136-137; no STScI or author-reduction rights inferred.",
+      "conditioning": "Inherited source-role evidence, preserved historical scope: Dataset field lines65-138 and structured rights metadata checked: WFPC2/WFPC2-PC,1997-1999 temporal coverage,version1.0. Generic page keywords do not change instrument identity. This is not GO10158 ACS and cannot substitute for SDSS or later B1608 imaging.",
+      "coverage": "Original bytes rehashed only in this turn; selected content/identity acceptance inherited from prior targeted review2026-10-03-sdss-b1608-targeted-source-claims-v1 and immutable packetbb0af2c7. No new paper/body reading."
+    },
+    {
+      "id": "h0licow-pinned-readme",
+      "url": "https://raw.githubusercontent.com/shsuyu/H0LiCOW-public/57cf97357e16a94ba0065472bd4185cfbc604aa3/README.md",
+      "sha256": "e4804af66b108488ad8b56459119d652fb43992aec135c9f121b310c64420b5c",
+      "role": "pinned inference-product description",
+      "retrieved_utc": "2026-10-03T02:18:53.354123+00:00",
+      "bytes": 2450,
+      "pinned_revision": "57cf97357e16a94ba0065472bd4185cfbc604aa3",
+      "provider_git_blob_sha1": "7c7098ee4a6a5fdab0256c0b4de01d055a9a27e6",
+      "licence": null,
+      "licence_null_reason": "README requests source citations but no redistribution licence was verified.",
+      "conditioning": "Inherited source-role evidence, preserved historical scope: Complete short README read; exact revision and Git blob independently checked. B1608 Suyu2010 time-delay-distance and Jee2019 angular-distance analytical fits are inferred summaries. Chains, notebooks, inference implementations and their conditionings remain unexamined.",
+      "coverage": "Original bytes rehashed only in this turn; selected content/identity acceptance inherited from prior targeted review2026-10-03-sdss-b1608-targeted-source-claims-v1 and immutable packetbb0af2c7. No new paper/body reading."
+    }
+  ],
+  "limitations": [
+    "Dataset baselines are the original2005 SDSS scene-model reduced source labelled5.04, the later pinned c447 SMPv8+BOSS reduced release, and one current archival HST GO10158 F606W RAW/engineering/association product snapshot. They are distinct products and reduction histories, not a joint independent-data model.",
+    "HST count payloads are acquired and their declared header/layout checked; image values and engineering telemetry are unanalysed. Counts do not establish electrons, QE, photon/readout distribution, censoring or calibrated photometry. RAW ERR/DQ encode constant-zero placeholders via NPIX1/2 and PIXVALUE, without pixel payload. They are not measured zero uncertainty or verified clean quality. Gain/read-noise/photometric zeros are not zero noise/calibration uncertainty.",
+    "Current CALACS10.4.1 processing log and DrizzlePac3.11.0 association metadata do not identify or reproduce the source paper2010 PSF/dust/lens-light/potential/drizzle processing. Only one of four ASN exposures is locally acquired; full F606W/F814W imaging and calibrated products, reference bodies, PSF ensembles/masks/image covariance remain unacquired.",
+    "Literal legacyCID6057→epoch→RUN5566/82N is now checked, and a separate c447 HEAD row declares allCandidates PHOT pointers. Physical event deduplication, legacy→SMPv8 reduction/flux/error equivalence, camcol/field/native exposure, per-epoch clock standard, exposure/readout operator, sky/calibration/QE and full selection bridge remain unresolved. HST assets cannot substitute for SDSS.",
+    "The old Suyu paper identity/selected-source review remains ancestry: printed November26,2024 draft header versus January28,2010 v2 watermark stays unresolved, and older WFPC2 GO6555 is distinct. Radio time series/joint delay covariance, Keck spectra/templates/aperture/seeing, environment selection/simulated sightlines and their joint likelihood remain unacquired.",
+    "Pixel, extraction, calibration, delay, kinematic, environment and cross-probe covariances/distributions remain unknown, not zero or Gaussian/Poisson. Error components, read-noise/gain metadata and fitted distance summaries do not supply a measured physical law or physical history.",
+    "Selected archival data are PUBLIC with a checked general MAST public-domain/exceptions policy; author-product ownership/licences and SDSS redistribution rights remain unverified. Unacquired or unread assets are not proven absent."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}

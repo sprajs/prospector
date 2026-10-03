@@ -799,9 +799,9 @@
     "request_sha256": "5d67253917a35031b69b85272fe381da8c946007da5615300a3dcf3381f12bed"
   },
   "continuation_note": "Resume saved acquisitions/reads before a new bounded window. Least-searched lane interacting-sectors; preserve foundational spin citations and blocked source-audit designs. No scheduled or endless crawl.",
-  "last_completed_source_audit": "2026-10-03-all19-source-wave3",
+  "last_completed_source_audit": "2026-10-03-all19-source-wave4",
   "coordinated_source_continuation": {
-    "scan_id": "2026-10-03-all19-source-wave3",
+    "scan_id": "2026-10-03-all19-source-wave4",
     "mode": "bounded_targeted_source_work",
     "pending": [
       {
@@ -827,22 +827,22 @@
       {
         "scope_id": "NEXT-10",
         "stage": "physical_source_and_consumer",
-        "reason": "Selected SDSS release/format metadata checked. No CID/epoch-to-raw-exposure/reduction join, calibrated arrival/QE/gain/extraction/selection law or covariance is qualified."
+        "reason": "Literal legacy2005 SN6057 first-g-epoch RUN5566/82N and official run metadata checked; distinct c447 HEAD row/declared PHOTFILE preserved. Native camcol/field/pixels, clock/QE/gain/extraction/selection law, covariance and legacy-to-SMPv8 reduction equivalence remain unresolved."
       },
       {
         "scope_id": "NEXT-14",
         "stage": "consumer_stability_and_numerical",
-        "reason": "Frozen39cf conditional source algebra remains accepted; native and numerical gates are open. Projected zero-velocity start differs from regular growing mode. Root reported instability in the earlier raw trace peer. A separate root v3 centered-angular/constant-kappa method3fd9154dc4fab24c75fb5f95a8991e855021f8b41a7890e044097b56d5d6598c and requestdddec336b4e25d4f7a722e1b3b3fdd9f5c4f416e5deb4c03525618b24b871883 have externally reported conditional derived-method admission d84b2246bce75d0a4bec8d775695eb5fa9d596320f55d7b3f32474c6ec981d3b; exact independent Prospector source checking is pending. No numerical, SDK or full-physics promotion."
+        "reason": "Separate FDv3 centered-angular/damped-residual source algebra and ideal photon/cold-baryon acoustic source derivations accepted only conditionally. All G01\u2013G07 remain open. Original39cf/de5/0610 proposal, projected-versus-regular start and raw growing TRACE caveat remain. Actual background/derivative/conservation forcing and forward/work/storage effects are unqualified; old conformal helper lacks total-matter extension and self-baryon refusal. No installed/compiled/numerical/model-equivalence promotion."
       },
       {
         "scope_id": "NEXT-18",
         "stage": "physical_source_and_joint_likelihood",
-        "reason": "Correct HST GO-10158 metadata identified, first four of 30 dataset rows checked; older WFPC2 product remains distinct. Raw pixels, author reductions/PSF, delays/spectra/environment, timing/rights and joint covariance remain unqualified."
+        "reason": "One current GO10158 ACS-WFC/F606W RAW count product, SPT, LOG and five-row ASN acquired and bounded headers/layout checked; image and telemetry values unread. RAW ERR/DQ header-encoded zeros are placeholders, not measured error or cleanDQ. Current2026 processing is not established equal to2010 author reduction. Other exposures/band, calibration bodies, PSF/Keck/radio/environment products, rights and joint likelihood/covariance remain open."
       },
       {
         "scope_id": "NEXT-13",
         "stage": "source_assets_and_consumer",
-        "reason": "Selected BOSS DR12 CMASS pre-reconstruction P0/P2/B0 source contract checked. Printed likelihood half-factor/AP normalization and triangle conventions remain explicit; actual estimator arrays/window/full covariance/prior/ordinary sigma8 compatibility remain unresolved."
+        "reason": "Current author-public CMASS cap P/B/density/mask assets and separate2016a/b power archive acquired; selected release-note math visually checked. Historical2017 byte/estimator identity, full support/order, paired mock IDs/2048 mocks, joint auto/cross covariance, complete window, likelihood/prior/code and ordinary sigma8 compatibility remain unqualified. Printed note issues and public-access-versus-licence distinction retained."
       },
       {
         "scope_id": "NEXT-12",
@@ -857,7 +857,17 @@
       {
         "scope_id": "NEXT-17",
         "stage": "consumer_protocol_and_execution",
-        "reason": "Exact synthetic v2 source/algebra and proposed unchanged caps accepted. Parent protocol, executable identity, positivity/admission, raw certainty-law agreement and numerical acceptance remain separate; no measured population/selection qualification."
+        "reason": "Original bf6828/69e681 source/algebra and caps remain unchanged. Separate source clarification conditionally permits an explicitly new fixed-mask165 six-one-coordinate-marginal successor design, retaining all eight joint masses/nulls, parent priors and alternative-denominator witness. Historical marginal sign/set ambiguity is explicit; signed convention is a new design choice. No successor bytes, executable, useful-witness pass or numerical admission accepted."
+      },
+      {
+        "scope_id": "NEXT-07",
+        "stage": "physical_source_and_consumer",
+        "reason": "Legacy asinh/AB-corrected microJy/error-component units and selected released HEAD pointer link checked. Native event/exposure/operator/clock bridge, complete transformations, full selection and covariance remain unknown; HST cannot replace SDSS."
+      },
+      {
+        "scope_id": "NEXT-19",
+        "stage": "physical_history_and_primary_CMB",
+        "reason": "Intrinsic signed delta_gamma/4 per asymptotic unit zeta belongs only to the separate ideal acoustic model. MB99\u2013101 are an approximate no-shear formal control, not a loaded physical history; opacity, visibility, diffusion, polarization, line-of-sight CMB and observed likelihood remain absent from this specification."
       }
     ],
     "no_automatic_execution": true

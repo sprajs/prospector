@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "contract_id": "next14-ideal-photon-cold-baryon-cdm-lambda-acoustic-v1",
+  "title": "Conditional ideal photon and cold-baryon acoustic source with CDM and smooth Lambda",
+  "review_id": "2026-10-03-next14-ideal-acoustic-source-claims",
+  "paper_ids": [
+    "arxiv:astro-ph/9506072v1"
+  ],
+  "scopes": [
+    {
+      "scope_id": "NEXT-14",
+      "title": "Distinct ideal common photon and cold-baryon transfer",
+      "paper_ids": [
+        "arxiv:astro-ph/9506072v1"
+      ],
+      "checked_claim": "Original MB64 (PDFp22), MB67 (p23) and MB70 (p24) support the declared infinite momentum-coupling limit after enthalpy-weighted exchange cancellation. Native loading is reciprocal to printed R_MB. Zero baryon thermal pressure, no relics/other radiation, smooth nonnegative Lambda and initial zero baryon/photon entropy are explicit ideal choices. Corrected9B/2 comoving equations, Hamiltonian propagation, regular radiation/total-matter series, recorded finite-start projection, independent loaded oscillator/original TRACE and signed four readouts were checked as reader derivations. Actual copied thermal source separates baryon/CDM fractions and mapping units; the old helper needs a total-matter extension and does not itself refuse baryons.",
+      "unresolved": "Exact continuum cancellation assumes compatible background; actual closure/derivative/conservation forcing, including native Delta forcing, must be bounded and charged. Growing raw TRACE residual, native projected-mode bias, mixed finite-start omissions, shared background/age/arithmetic, coupled time stability, endpoint and forward allocations remain open. Private loading/sound-speed ownership needs a narrow shared helper and new consumer API. The synthetic two-row request and fixed budgets/caps/refusal rules are conditional specifications, with no installed, compiled or resource pass. All G01–G07 remain open; prior massless-FD v2/v3 physical/source acceptance unchanged."
+    },
+    {
+      "scope_id": "NEXT-19",
+      "title": "Intrinsic ideal photon temperature only",
+      "paper_ids": [
+        "arxiv:astro-ph/9506072v1"
+      ],
+      "checked_claim": "Intrinsic signed delta_gamma/4 per asymptotic unit zeta is a conditional readout of this separate ideal acoustic model. Original MB99–101 (PDFp34) are accepted only as a no-shear approximate constant-sound-speed formal control; their radiation specialization does not supply the loaded physical trajectory.",
+      "unresolved": "No opacity, visibility, recombination, drag prediction, diffusion, polarization, ordinary photon free streaming, angular/line-of-sight temperature spectrum or observed likelihood is included. Full primary CMB and physical-history acceptance remain open."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "astro-ph__9506072v1-pdf",
+      "url": "https://arxiv.org/pdf/astro-ph/9506072v1",
+      "sha256": "8893f63227cbf374853265e43d62af19a1ba726e7e0b0b575fdeed5fb0c0575a",
+      "role": "pdf",
+      "conditioning": "Selected original Newtonian photon/baryon momentum equations and approximate no-shear constant-sound-speed control; new ideal closure, regular-series/comoving/TRACE algebra and frozen numerical policies are reader choices."
+    }
+  ],
+  "limitations": [
+    "Selected original source equations and conditional reader algebra/protocol specification only; this distinct ideal photon/cold-baryon closure does not replace the accepted collisionless FD model.",
+    "All seven implementation/control/installed/numerical/physical gates remain open; helper-self-refusal is unsupported and actual background/conservation forcing must be charged.",
+    "Cold baryon zero pressure is additional closure. No finite opacity, recombination/drag history, diffusion, photon hierarchy/polarization, CMB projection, full standard transfer, ordinary full-support sigma8, observational law or inference.",
+    "No numerical/source-array/test/compiler job or native caller. Targeted original pages only, zero new full/Luna reads; paper-stage/full-reading queue and graph/prospect promotion untouched."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}
