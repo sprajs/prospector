@@ -1,0 +1,668 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-next04-skara-reconstruction-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "requested_reasoning_basis": "Existing exact Sol worker reused with coordinator-disclosed configured/inherited xhigh; ordinary AGENTS says high, which is not falsely recorded as the exposed effort. No new worker launch.",
+  "agent_id": "/root/thermal_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "runtime_effort_key": "effort",
+    "session_id": "01a0fec1-0810-7361-a598-b20696ba4a64",
+    "turn_id": "01a1005e-2435-7d30-91c9-2ef8db2081c2",
+    "evidence_kind": "runtime_turn_context",
+    "raw_turn_context_sha256": "e3dd49895e771774f4f1b13e78736529f1d1ddf7bb49df710c9fbea597004d47",
+    "actual_backend_identity": null,
+    "companion_sha256": "b31427e618b1150ca14bfbe979104abdae6a739f22f51f05421b10afaea70c04"
+  },
+  "model_confirmation_companion_sha256": "b31427e618b1150ca14bfbe979104abdae6a739f22f51f05421b10afaea70c04",
+  "reviewed_utc": "2026-10-03T06:25:27.321137+00:00",
+  "packet_sha256": "a7b92d350892b804b255ab50a2610ab737c6783c22576b876410ef0346e8b77b",
+  "reviewed_papers": [],
+  "reviewed_paper_details": [],
+  "reviewed_source_assets": [
+    {
+      "id": "skara-e36d6c84-tree",
+      "name": "skara-reanalysis-tree-e36d6c84.json",
+      "url": "https://api.github.com/repos/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/git/trees/e36d6c84f6638e3118919c467545d4cc2847271e?recursive=1",
+      "sha256": "765a49b467503db74910c06de70564da547dc0d740067f83a058429f3540e7b0",
+      "role": "pinned_repository_metadata",
+      "conditioning": "Pinned author reconstruction at e36d6c84; documentary/code/table source only, no execution or producer generating lineage.",
+      "retrieved_utc": "2026-10-03T05:52:47.893961+00:00",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/git/trees/e36d6c84f6638e3118919c467545d4cc2847271e?recursive=1",
+      "get_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "14890",
+        "ETag": "W/\"765a49b467503db74910c06de70564da547dc0d740067f83a058429f3540e7b0\"",
+        "Last-Modified": "Tue, 28 Jul 2026 08:39:20 GMT",
+        "Date": "Sat, 03 Oct 2026 05:52:51 GMT"
+      },
+      "bytes": 14890,
+      "local_path": ".work/all19-source-wave5-20261003/sources/skara-reanalysis-tree-e36d6c84.json",
+      "licence": null,
+      "licence_reason": "Git API metadata access, with repository LICENSE recorded separately; no independent data-ownership assertion.",
+      "access": "Central original GET200, local byte hash verified; no worker acquisition or redistribution.",
+      "coverage": {
+        "checked_locators": [
+          "top-level sha=e36d6c84f6638e3118919c467545d4cc2847271e and truncated=false; selected Baseline1v12, README, LICENSE, TABLES/Table E1 entries"
+        ],
+        "unread": "Other listed bodies not read; no inventory absence inference or repository-wide scientific review."
+      }
+    },
+    {
+      "id": "skara-universe8100502-journal",
+      "name": "skara-universe8100502.pdf",
+      "url": "https://mdpi-res.com/d_attachment/universe/universe-08-00502/article_deploy/universe-08-00502.pdf",
+      "sha256": "7e1d1f6e601fae64cfe007bc2f899a60fb1daff3e6c1b9d6dadeeddecfd4b23b",
+      "role": "journal_pdf",
+      "conditioning": "Selected journal reconstruction claims; separate journal DOI identity, not producer-source authority or arxiv full review.",
+      "retrieved_utc": "2026-10-03T05:52:51.226391+00:00",
+      "http_status": 200,
+      "final_url": "https://mdpi-res.com/d_attachment/universe/universe-08-00502/article_deploy/universe-08-00502.pdf",
+      "get_headers": {
+        "Content-Type": "application/pdf",
+        "Content-Length": "2618151",
+        "ETag": "\"63302b6c-27f327\"",
+        "Last-Modified": "Sun, 25 Sep 2022 10:20:28 GMT",
+        "Date": "Sat, 03 Oct 2026 05:52:54 GMT"
+      },
+      "bytes": 2618151,
+      "local_path": ".work/all19-source-wave5-20261003/sources/skara-universe8100502.pdf",
+      "licence": "CC-BY-4.0",
+      "licence_reason": "Journal p1 author CC-BY4.0 notice checked; short notes/metadata only.",
+      "access": "Central original GET200, local byte hash verified; no worker acquisition or redistribution.",
+      "coverage": {
+        "checked_locators": [
+          "p1 title/authors/DOI/publication dates/licence only",
+          "p4 selected release-composition/47-versus46/X/standardization paragraphs",
+          "p5 Eqs4–5 and prior-standardization definitions only",
+          "p7 Eq8/period-days and selected released-Y residual description; Eqs9–14 visually seen, no cosmographic or cosmological adequacy accepted",
+          "p8 Eq15/residual bullets and Y schematic, including literal LMC_HST plus sign",
+          "p9 Eq16 and ordered q after it, Eq17/dimensions",
+          "p10 schematic L/source dimension statements and Eqs18–20",
+          "p11 first three paragraphs and closing three bullets of section2.1",
+          "p37 AppendixE sequence statement, text aid only",
+          "p38 TableA3 caption/header/preview ordering and Notes3–4",
+          "p39 Notes5–10 and selected bibliography entry1; other nearby notes incidentally seen but not accepted"
+        ],
+        "reading_aid_locators": [
+          "lines1–70",
+          "lines233–285",
+          "lines350–440",
+          "lines439–707",
+          "lines799–865",
+          "lines3047–3165"
+        ],
+        "original_pages_visually_checked": [
+          1,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          38,
+          39
+        ],
+        "unread": "Most introduction/context; section2.2 and later analyses; transition models/results/model selection; Table2 and all other full tables except selected TableA3 preview; AppendicesA–D except incidental text hits; all unselected AppendixE material; bibliography beyond selected entry1; arxiv2208.11169v3 body. No full-paper reading.",
+        "figures": "No original figures checked. Incidental captions from keyword search do not count as visual figure review.",
+        "incidental_unaccepted_material": "Reading-aid text in p6 includes the section outline and Eqs6–7; original p6 math was not visually checked or accepted. Surrounding transition/fit claims shown on selected renders are unaccepted."
+      }
+    },
+    {
+      "id": "skara-e36d6c84-license",
+      "name": "skara-LICENSE",
+      "url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/LICENSE",
+      "sha256": "62e0ae9025acb8e067a240220ab50e92b18fc395bde9181fec48196b1605687c",
+      "role": "pinned_third_party_reconstruction_source",
+      "conditioning": "Pinned author reconstruction at e36d6c84; documentary/code/table source only, no execution or producer generating lineage.",
+      "retrieved_utc": "2026-10-03T05:55:04.571453+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/LICENSE",
+      "get_headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "1070",
+        "ETag": "\"4a8eb267407730bb3a59a65507153925273dcd0c6a2803c8bac0873a912ffeb7\"",
+        "Last-Modified": null,
+        "Date": "Sat, 03 Oct 2026 05:55:04 GMT"
+      },
+      "bytes": 1070,
+      "local_path": ".work/all19-source-wave5-20261003/sources/skara-LICENSE",
+      "licence": "MIT",
+      "licence_reason": "Pinned LICENSE checked; applies to software/associated documentation, not proof of inherited Riess data rights. Printed TableA3 caption also claims MIT electronic-table access.",
+      "access": "Central original GET200, local byte hash verified; no worker acquisition or redistribution.",
+      "coverage": {
+        "checked_locators": [
+          "whole21-line MIT licence, copyright2022 FoteiniSkara and notice condition"
+        ],
+        "unread": "Underlying Riess data ownership/rights and any unprovided terms are not established by this licence."
+      }
+    },
+    {
+      "id": "skara-e36d6c84-readme",
+      "name": "skara-README.md",
+      "url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/README.md",
+      "sha256": "bee2b686a379daa67a391045654b965480680eabaa1a4709641000643a0d3a0a",
+      "role": "pinned_third_party_reconstruction_source",
+      "conditioning": "Pinned author reconstruction at e36d6c84; documentary/code/table source only, no execution or producer generating lineage.",
+      "retrieved_utc": "2026-10-03T05:55:04.766657+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/README.md",
+      "get_headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "2675",
+        "ETag": "\"56dd12e8a6418b33613e7b5d8600b0e5f1ff12ad919ceb1fda958493bc51cbdb\"",
+        "Last-Modified": null,
+        "Date": "Sat, 03 Oct 2026 05:55:08 GMT"
+      },
+      "bytes": 2675,
+      "local_path": ".work/all19-source-wave5-20261003/sources/skara-README.md",
+      "licence": "MIT",
+      "licence_reason": "Pinned LICENSE checked; applies to software/associated documentation, not proof of inherited Riess data rights. Printed TableA3 caption also claims MIT electronic-table access.",
+      "access": "Central original GET200, local byte hash verified; no worker acquisition or redistribution.",
+      "coverage": {
+        "checked_locators": [
+          "whole30-line README identity/source citation and advertised scope"
+        ],
+        "unread": "Linked studies, other repository bodies and numerical claims/figures remain unqualified."
+      }
+    },
+    {
+      "id": "skara-e36d6c84-analysis-readme",
+      "name": "skara-analysis-readme",
+      "url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/NUMERICAL_ANALYSIS/readme",
+      "sha256": "b14c4f136bf5a0de15369c025543a7288479d495628ea68240f4162774f16f14",
+      "role": "pinned_third_party_reconstruction_source",
+      "conditioning": "Pinned author reconstruction at e36d6c84; documentary/code/table source only, no execution or producer generating lineage.",
+      "retrieved_utc": "2026-10-03T05:55:08.044384+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/NUMERICAL_ANALYSIS/readme",
+      "get_headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "5055",
+        "ETag": "\"dbd6b15581dc28f39eb120564fca254f0ffbeb7cac0f8bac7e6729fca516b42e\"",
+        "Last-Modified": null,
+        "Date": "Sat, 03 Oct 2026 05:55:11 GMT"
+      },
+      "bytes": 5055,
+      "local_path": ".work/all19-source-wave5-20261003/sources/skara-analysis-readme",
+      "licence": "MIT",
+      "licence_reason": "Pinned LICENSE checked; applies to software/associated documentation, not proof of inherited Riess data rights. Printed TableA3 caption also claims MIT electronic-table access.",
+      "access": "Central original GET200, local byte hash verified; no worker acquisition or redistribution.",
+      "coverage": {
+        "checked_locators": [
+          "whole93-line README; especially31–33 baseline variants,56–64 source FITS identities,73–75 distall count and85–93 separate rankings"
+        ],
+        "unread": "Named data bodies, other notebooks, plot digitization and distance/galrank inputs."
+      }
+    },
+    {
+      "id": "skara-e36d6c84-data-readme",
+      "name": "skara-data-readme",
+      "url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/NUMERICAL_ANALYSIS/data/readme",
+      "sha256": "c8c939bcd479e8b0b03769ce3fa885cdf7956d1a9f0dd4bd8f49bf2bf3176c99",
+      "role": "pinned_third_party_reconstruction_source",
+      "conditioning": "Pinned author reconstruction at e36d6c84; documentary/code/table source only, no execution or producer generating lineage.",
+      "retrieved_utc": "2026-10-03T05:55:11.342544+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/NUMERICAL_ANALYSIS/data/readme",
+      "get_headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "2153",
+        "ETag": "\"7b8c581e0644d27c96ecb81f24b7a5e4e2bc07fd3f4d1336e8e43f6f95c64f77\"",
+        "Last-Modified": null,
+        "Date": "Sat, 03 Oct 2026 05:55:14 GMT"
+      },
+      "bytes": 2153,
+      "local_path": ".work/all19-source-wave5-20261003/sources/skara-data-readme",
+      "licence": "MIT",
+      "licence_reason": "Pinned LICENSE checked; applies to software/associated documentation, not proof of inherited Riess data rights. Printed TableA3 caption also claims MIT electronic-table access.",
+      "access": "Central original GET200, local byte hash verified; no worker acquisition or redistribution.",
+      "coverage": {
+        "checked_locators": [
+          "whole42-line README; especially5–13 Y/L/C source identities and21–23 distall count"
+        ],
+        "unread": "Named data bodies and numerical metadata not loaded."
+      }
+    },
+    {
+      "id": "skara-e36d6c84-table-e1",
+      "name": "skara-Table-E1.txt",
+      "url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/TABLES/Table%20E1",
+      "sha256": "a39e8ab4d8bb246d1a801604425414ea941b861df4cae78749295eeccf6acc2e",
+      "role": "pinned_third_party_reconstruction_source",
+      "conditioning": "Pinned author reconstruction at e36d6c84; documentary/code/table source only, no execution or producer generating lineage.",
+      "retrieved_utc": "2026-10-03T05:55:14.619769+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/TABLES/Table%20E1",
+      "get_headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "143908",
+        "ETag": "\"1f32b94c7172d53bc61ebaa8031347e5469dc94589d9bd253051b6bc52dd5fb9\"",
+        "Last-Modified": null,
+        "Date": "Sat, 03 Oct 2026 05:55:17 GMT"
+      },
+      "bytes": 143908,
+      "local_path": ".work/all19-source-wave5-20261003/sources/skara-Table-E1.txt",
+      "licence": "MIT",
+      "licence_reason": "Pinned LICENSE checked; applies to software/associated documentation, not proof of inherited Riess data rights. Printed TableA3 caption also claims MIT electronic-table access.",
+      "access": "Central original GET200, local byte hash verified; no worker acquisition or redistribution.",
+      "coverage": {
+        "checked_locators": [
+          "line1 header",
+          "lines2–30 first M101 selected prefix",
+          "lines2628–2636, especially2632",
+          "lines2742–2759, especially2746/2747/2756",
+          "lines3130–3137 terminal selected fragment"
+        ],
+        "unread": "All other scientific rows and full table support/count/order/equivalence to original FITS. No array parsing, value comparison under tolerances or physical-object joins."
+      }
+    },
+    {
+      "id": "skara-e36d6c84-baseline1-v12",
+      "name": "skara-baseline1-v12.nb",
+      "url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/NUMERICAL_ANALYSIS/Baseline1_structure_of_system_Fig_B1_v12.nb",
+      "sha256": "15ec459f7085b9225a43ae6265f73cf5b7a87369b325d1f202d3aeb297c40d9e",
+      "role": "pinned_third_party_reconstruction_source",
+      "conditioning": "Pinned author reconstruction at e36d6c84; documentary/code/table source only, no execution or producer generating lineage.",
+      "retrieved_utc": "2026-10-03T05:55:17.927279+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/NUMERICAL_ANALYSIS/Baseline1_structure_of_system_Fig_B1_v12.nb",
+      "get_headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "262695",
+        "ETag": "\"524ceba6952cac493c328da4de83968994f0d0c82f17eb10454a4d372c57b15a\"",
+        "Last-Modified": null,
+        "Date": "Sat, 03 Oct 2026 05:55:21 GMT"
+      },
+      "bytes": 262695,
+      "local_path": ".work/all19-source-wave5-20261003/sources/skara-baseline1-v12.nb",
+      "licence": "MIT",
+      "licence_reason": "Pinned LICENSE checked; applies to software/associated documentation, not proof of inherited Riess data rights. Printed TableA3 caption also claims MIT electronic-table access.",
+      "access": "Central original GET200, local byte hash verified; no worker acquisition or redistribution.",
+      "coverage": {
+        "checked_locators": [
+          "lines108–231, In[3–7]: Y import/cached extent/comment/qpar labels",
+          "lines259–328, In[8–10]: allL import/trL selector/explicit transpose",
+          "lines858–888, In[12–13]: allC import/Call",
+          "lines2510–2535: X constraint input/comment only"
+        ],
+        "unread": "Remaining inputs, formulas, cached numerical outputs/arrays, embedded graphics, fits/solver/model-selection routines and other notebooks. Keyword searches were bounded text inspection; no Mathematica parsing, evaluation or array loading. Cached3492 and any incidentally exposed output are not fresh evidence of numerical correctness."
+      }
+    },
+    {
+      "id": "riess-c447-readme-md",
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/README.md",
+      "sha256": "fd845e484a184ad9740dddf26550db9d6d154d1631c1b30622dcecefe8ee7174",
+      "role": "primary_release_code_or_document",
+      "conditioning": "Reused producer source comparison only; old physical-join failures/reconstruction remain inherited context, not newly recomputed.",
+      "retrieved_utc": null,
+      "retrieved_utc_reason": "Checked local reuse receipts and prior review do not retain the original GET acquisition UTC. Local verified reuse UTC is recorded separately, not relabelled original retrieval.",
+      "reuse_verified_utc": "2026-10-03T00:13:34.406928+00:00",
+      "bytes": 2454,
+      "local_path": ".work/all19-source-wave2-20261003/sources/README.md",
+      "licence": null,
+      "licence_reason": "No source-specific producer licence established from selected reused records; Skara MIT does not establish inherited Riess data rights.",
+      "access": "Existing local cache rehashed against frozen prior source identity; no network.",
+      "coverage": {
+        "checked_locators": [
+          "lines1–29; especially6–14 high-level product roles and -3.285"
+        ],
+        "unread": "All other scientific code/table material and producer paper/FITS payloads. No numerical execution, sampler run, covariance parsing or physical-object join."
+      }
+    },
+    {
+      "id": "riess-c447-mcmc-utils-py",
+      "name": "MCMC_utils.py",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/MCMC_utils.py",
+      "sha256": "e6ec3d83a9b126d7772ec6dd0d1b58ca757b820acd853fb89218c379cf873841",
+      "role": "primary_release_code_or_document",
+      "conditioning": "Reused producer source comparison only; old physical-join failures/reconstruction remain inherited context, not newly recomputed.",
+      "retrieved_utc": null,
+      "retrieved_utc_reason": "Checked local reuse receipts and prior review do not retain the original GET acquisition UTC. Local verified reuse UTC is recorded separately, not relabelled original retrieval.",
+      "reuse_verified_utc": "2026-10-02T23:25:38.951993+00:00",
+      "bytes": 2730,
+      "local_path": ".work/standard-lcdm-contracts/cache/ladder-original/MCMC_utils.py",
+      "licence": null,
+      "licence_reason": "No source-specific producer licence established from selected reused records; Skara MIT does not establish inherited Riess data rights.",
+      "access": "Existing local cache rehashed against frozen prior source identity; no network.",
+      "coverage": {
+        "checked_locators": [
+          "lines13–21 closed-box prior",
+          "lines35–38 likelihood expression",
+          "lines56–61 support construction"
+        ],
+        "unread": "All other scientific code/table material and producer paper/FITS payloads. No numerical execution, sampler run, covariance parsing or physical-object join."
+      }
+    },
+    {
+      "id": "riess-c447-run-mcmc-py",
+      "name": "run_mcmc.py",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/run_mcmc.py",
+      "sha256": "00546b9de2d73cd6315c0333b5f7b07a8b948f9e73056a88e76abe0249464c85",
+      "role": "primary_release_code_or_document",
+      "conditioning": "Reused producer source comparison only; old physical-join failures/reconstruction remain inherited context, not newly recomputed.",
+      "retrieved_utc": null,
+      "retrieved_utc_reason": "Checked local reuse receipts and prior review do not retain the original GET acquisition UTC. Local verified reuse UTC is recorded separately, not relabelled original retrieval.",
+      "reuse_verified_utc": "2026-10-02T23:25:38.951993+00:00",
+      "bytes": 2020,
+      "local_path": ".work/standard-lcdm-contracts/cache/ladder-original/run_mcmc.py",
+      "licence": null,
+      "licence_reason": "No source-specific producer licence established from selected reused records; Skara MIT does not establish inherited Riess data rights.",
+      "access": "Existing local cache rehashed against frozen prior source identity; no network.",
+      "coverage": {
+        "checked_locators": [
+          "lines24–40, especially32 PRIOR_WIDTH_RATIO=10"
+        ],
+        "unread": "All other scientific code/table material and producer paper/FITS payloads. No numerical execution, sampler run, covariance parsing or physical-object join."
+      }
+    },
+    {
+      "id": "riess-c447-lstsq-results-txt",
+      "name": "lstsq_results.txt",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/lstsq_results.txt",
+      "sha256": "37d2d423d06b6a2100c47578eb9b1c566a575caf6ade0ed61f6b9586d2a35c95",
+      "role": "primary_release_code_or_document",
+      "conditioning": "Reused producer source comparison only; old physical-join failures/reconstruction remain inherited context, not newly recomputed.",
+      "retrieved_utc": null,
+      "retrieved_utc_reason": "Checked local reuse receipts and prior review do not retain the original GET acquisition UTC. Local verified reuse UTC is recorded separately, not relabelled original retrieval.",
+      "reuse_verified_utc": "2026-10-02T23:25:38.951993+00:00",
+      "bytes": 721,
+      "local_path": ".work/standard-lcdm-contracts/cache/ladder-original/lstsq_results.txt",
+      "licence": null,
+      "licence_reason": "No source-specific producer licence established from selected reused records; Skara MIT does not establish inherited Riess data rights.",
+      "access": "Existing local cache rehashed against frozen prior source identity; no network.",
+      "coverage": {
+        "checked_locators": [
+          "line45 only, center0/width0"
+        ],
+        "unread": "All other scientific code/table material and producer paper/FITS payloads. No numerical execution, sampler run, covariance parsing or physical-object join."
+      }
+    },
+    {
+      "id": "riess-c447-table2-tex",
+      "name": "table2.tex",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/table2.tex",
+      "sha256": "d4b9af2b5d65118f7ac44a41b7e8cd662dfd42a63b5c359ca402d8be3b4dbba4",
+      "role": "primary_rounded_photometry_table",
+      "conditioning": "Reused producer source comparison only; old physical-join failures/reconstruction remain inherited context, not newly recomputed.",
+      "retrieved_utc": null,
+      "retrieved_utc_reason": "Checked local reuse receipts and prior review do not retain the original GET acquisition UTC. Local verified reuse UTC is recorded separately, not relabelled original retrieval.",
+      "reuse_verified_utc": "2026-10-03T00:13:34.427151+00:00",
+      "bytes": 329678,
+      "local_path": ".work/all19-source-wave2-20261003/sources/table2.tex",
+      "licence": null,
+      "licence_reason": "No source-specific producer licence established from selected reused records; Skara MIT does not establish inherited Riess data rights.",
+      "access": "Existing local cache rehashed against frozen prior source identity; no network.",
+      "coverage": {
+        "checked_locators": [
+          "lines2638–2640, especially2639 M31 rounded photometry row; no rejoin"
+        ],
+        "unread": "All other scientific code/table material and producer paper/FITS payloads. No numerical execution, sampler run, covariance parsing or physical-object join."
+      }
+    }
+  ],
+  "source_contract_associations": [
+    {
+      "contract_id": "next04-skara-shoes-reconstruction-source-v1",
+      "paper_ids": [
+        "arxiv:2112.04510v3"
+      ],
+      "source_asset_ids": [
+        "skara-universe8100502-journal",
+        "skara-e36d6c84-license",
+        "skara-e36d6c84-analysis-readme",
+        "skara-e36d6c84-data-readme",
+        "skara-e36d6c84-table-e1",
+        "skara-e36d6c84-baseline1-v12",
+        "riess-c447-readme-md",
+        "riess-c447-mcmc-utils-py",
+        "riess-c447-run-mcmc-py",
+        "riess-c447-lstsq-results-txt"
+      ],
+      "reason": "Existing Riess paper ID supplies release navigation only. Selected journal DOI10.3390/universe8100502 and pinned author assets are third-party reconstruction sources with separate identity; neither the Riess paper nor arxiv2208.11169v3 is newly fully reviewed/admitted."
+    }
+  ],
+  "accepted_records": {
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": [],
+    "contract_ids": [
+      "next04-skara-shoes-reconstruction-source-v1"
+    ],
+    "source_audit_ids": [
+      "all19-next04-skara-reconstruction-source-only-20261003-v1"
+    ]
+  },
+  "accepted_contract_bindings": [
+    {
+      "contract_id": "next04-skara-shoes-reconstruction-source-v1",
+      "proposed_file": ".work/all19-source-wave5-20261003/workers/next04-reconstruction/next04-skara-shoes-reconstruction-source-v1.json",
+      "canonical_path": "register/contracts/next04-skara-shoes-reconstruction-source-v1.json",
+      "sha256": "e4605a368266aefdf73f30e6d72b1ed2fab22a91b2978d3be6c0405f5d7ecbfa"
+    }
+  ],
+  "checked_asset_claims": [
+    {
+      "claim_id": "NEXT04-SKARA-01",
+      "origin": "third_party_source_statement",
+      "claim": "The journal reanalysis writes a 47-entry q: 37 host distance moduli, Delta_mu_N4258, M_H^W, Delta_mu_LMC, mu_M31, Delta_b_W, M_B, Z_W, X, Delta_zp, 5log10(H0). Its introduction says 46 if X is ignored; its notebook retains entry45, labels it X, and describes it as a dummy unused in the physical model. These are statements of this reconstruction, not an original producer dictionary or physical definition of zero-based44.",
+      "locators": [
+        "Journal PDF p4 paragraph beginning 'The new SH0ES data release'; p9 q vector after Eq16; p11 closing bullets of section2.1; p39 Note5",
+        "Pinned notebook In[6–7], lines166–221: retained entry45 and qpar label list"
+      ],
+      "accepted_boundary": "The third-party label X and retained ordering are accepted as documentary source evidence. Physical_identity and physical_unit of original zero-based44 remain null; no executable 46-coordinate reduction or new prior is accepted. Note5 reports thanks to A. Riess, without providing checked correspondence or generating code."
+    },
+    {
+      "claim_id": "NEXT04-SKARA-02",
+      "origin": "third_party_source_statement_and_checked_source_code",
+      "claim": "The reanalysis describes Y=Lq with L3492x47 and C3492x3492. The pinned notebook imports ally as Y, imports alll as ldata and selects ldata[[1,2]] as trL, then sets L=Transpose[trL]; allc becomes Call. The producer sampler instead evaluates theta dot L. This identifies the two source conventions for their input expressions; no matrix was loaded, transposed, dimension-checked or evaluated in this audit.",
+      "locators": [
+        "Journal PDF pp9–10 Eq17 and following matrix/dimension statements",
+        "Pinned notebook In[3–5], lines110–161; In[8–10], lines261–326; In[12–13], lines858–888",
+        "Producer MCMC_utils.py lines35–38; producer README.md lines6–12"
+      ],
+      "accepted_boundary": "RawData import expressions and the deliberate notebook transpose are accepted as code-reading facts. The cached Out[5]=3492 is an author output, not a fresh numerical check or a independently verified array extent."
+    },
+    {
+      "claim_id": "NEXT04-SKARA-03",
+      "origin": "third_party_source_statement",
+      "claim": "The reanalysis conditions the compact input on prior standardization of Cepheid Wesenheit and supernova color/shape magnitudes; it does not expose RW, alpha and beta as independent free parameters. Eq15 defines a residual Cepheid magnitude mbar_H^W=m_H^W-b_W^0[P], with b_W^0=-3.286 and fitted Delta_b_W=b_W-b_W^0. The prose says anchor entries subtract fiducial distance moduli; the printed Y schematic nevertheless adds mu0,LMC for LMC_HST entries. Hubble-flow entries subtract a cosmographic Hubble-free luminosity-distance term. The source defines [P]=log10(P/days)-1. The electronic table is presented as data from the released Y/L, whose entries are reduced inputs; its exact producer reduction has not been established here, and it is not an optical-arrival table.",
+      "locators": [
+        "Journal PDF pp4–5 selected standardization paragraphs and Eqs4–5",
+        "Journal PDF p7 Eq8; p8 Eq15 and selected residual descriptions/Y schematic",
+        "Producer README.md line14"
+      ],
+      "accepted_boundary": "Only these declared definitions and conditioning are accepted. The producer's -3.285 versus the reanalysis's -3.286 is preserved unresolved. Eq5 signs are recorded as this source's convention, without repairing Riess or replacing its standardization law. The p8 printed LMC_HST plus sign is preserved separately from the prose subtraction claim."
+    },
+    {
+      "claim_id": "NEXT04-SKARA-04",
+      "origin": "third_party_source_statement",
+      "claim": "Eq18 gives chi2=(Y-Lq)^T C^-1(Y-Lq); Eqs19–20 give qbest=(L^T C^-1 L)^-1 L^T C^-1Y and Sigma=(L^T C^-1 L)^-1. The source calls sqrt of Sigma's diagonal the fitted parameter 1sigma standard errors. It identifies C as the released measurement-error/correlation matrix, including external constraints. This describes its conditional linear model, not a new physical joint observation law.",
+      "locators": [
+        "Journal PDF p10 Eqs18–20 and surrounding definitions; p11 first paragraph"
+      ],
+      "accepted_boundary": "Formula transcription and source error interpretation are accepted. Invertibility/rank, Gaussian calibration, complete physical covariance ancestry, fitted values, numerical reproduction and error coverage are not newly established. No diagonal-only replacement, covariance construction or inverse was performed."
+    },
+    {
+      "claim_id": "NEXT04-SKARA-05",
+      "origin": "third_party_source_statement_and_reader_ordinal_convention",
+      "claim": "Appendix E says its sequence is the top3130 entries of released Y. The printed preview is TableA3; the pinned electronic file is TABLES/Table E1. Its header contains galaxy, ranking, m_w[mag], sigma[mag], [P][dex], [O/H][dex], with no physical object identifier or sky coordinates. The inspected ranking column is within-host, not the original global row number. Selected old zero-based rows2630/2744/2745/2754 are inspected at file lines2632/2746/2747/2756 by the explicit one-header ordinal convention; this is not a new physical-object join.",
+      "locators": [
+        "Journal PDF p37 AppendixE preface; p38 TableA3 caption/selected preview and Notes3–4",
+        "Pinned Table E1 lines1–30,2628–2636,2742–2759,3130–3137"
+      ],
+      "accepted_boundary": "The exact selected literal records and source sequence claim are accepted, with no full table count/content check and no assertion that rounded periods/metals identify physical Cepheids. The four original joins remain failed. sigma[mag] is a declared table column; a noise distribution, confidence coverage, correlation structure or original reduction recipe is not supplied by these selected rows."
+    },
+    {
+      "claim_id": "NEXT04-SKARA-06",
+      "origin": "checked_producer_source_and_reader_inference",
+      "claim": "The frozen producer sampler uses a closed uniform box centered on q_lstsq with halfwidth sigma_lstsq times PRIOR_WIDTH_RATIO=10; the one-based45th lstsq_results line has center0 and width0. The source code therefore restricts original zero-based44 to0. Its unnormalized quadratic likelihood omits a constant normalization. This producer support differs from a reanalysis dummy parameter constrained through Eq16 and from the words 46-if-ignored.",
+      "locators": [
+        "Producer MCMC_utils.py lines13–21,35–38,56–61; run_mcmc.py lines26–32; lstsq_results.txt line45",
+        "Journal PDF p9 Eq16 X entry; pinned notebook In[6–7]"
+      ],
+      "accepted_boundary": "The zero-width support follows manually from the checked code and literal input line. No sampler or fit was executed. It supplies no producer rationale, physical label or permission to remove a slot, alter its support, introduce an inverse-distance-ladder prior or substitute a model."
+    }
+  ],
+  "literal_conflicts": [
+    {
+      "id": "SKARA-X-UNCERTAINTY",
+      "kind": "source_internal",
+      "locators": [
+        "Journal PDF p4 introduction",
+        "Journal PDF p9 Eq16"
+      ],
+      "literal_values": "Introduction uncertainty10^-9, with superscript footnote5; Eq16 X=0±0.00003.",
+      "disposition": "Both retained. The joined text-aid token10−95 is an extraction artifact, not exponent−95. No variance-versus-standard-deviation repair or new prior is adopted."
+    },
+    {
+      "id": "SKARA-SLOPE-VARIANT",
+      "kind": "source_variant",
+      "locators": [
+        "Journal PDF p8 Eq15 and p11 Table2 discussion",
+        "Producer README.md line14"
+      ],
+      "literal_values": "Reanalysis b_W^0=-3.286; producer initial slope=-3.285.",
+      "disposition": "Unreconciled source conventions; no numeric adjustment, tolerance change or substitution."
+    },
+    {
+      "id": "SKARA-NOTEBOOK-SLOPE-LABEL",
+      "kind": "source_internal",
+      "locators": [
+        "Journal PDF p9 q and p11 correction bullet",
+        "Pinned notebook In[7]"
+      ],
+      "literal_values": "Journal Delta_b_W; notebook qpar string b_W.",
+      "disposition": "Retain literal label and the journal residual definition separately."
+    },
+    {
+      "id": "SKARA-HOST-LABEL-VARIANTS",
+      "kind": "context_variant",
+      "locators": [
+        "Pinned notebook In[7]",
+        "Old reconstructed-dictionary-and-preserved-gaps original47 ordering"
+      ],
+      "literal_values": "Notebook N0105/N0976; old reconstruction N105A/N976A.",
+      "disposition": "Alias equivalence and physical object identity remain unknown."
+    },
+    {
+      "id": "SKARA-README-LENGTH",
+      "kind": "source_internal",
+      "locators": [
+        "NUMERICAL_ANALYSIS/readme lines73–75",
+        "NUMERICAL_ANALYSIS/data/readme lines21–23"
+      ],
+      "literal_values": "distall description3292 versus3492 with the same listed constituents.",
+      "disposition": "Retain the discrepancy; neither distall body nor released scientific arrays were counted or checked."
+    },
+    {
+      "id": "SKARA-TABLE-NAME-PREVIEW",
+      "kind": "source_presentation_variant",
+      "locators": [
+        "Journal PDF pp37–38 AppendixE/TableA3",
+        "Pinned TABLES/Table E1 lines1–2"
+      ],
+      "literal_values": "PrintedTableA3 versus electronicTableE1; printed preview startsM1337, electronic file startsM101.",
+      "disposition": "Preserve identifiers and preview difference. The author's sequence claim is reported; no full printed/electronic/producer byte equivalence is inferred."
+    },
+    {
+      "id": "SKARA-DUMMY-WORDING",
+      "kind": "source_wording_limit",
+      "locators": [
+        "Pinned notebook In[6–7] and selected X constraint cell lines2510–2535",
+        "Journal PDF p9 Eq16"
+      ],
+      "literal_values": "Notebook calls retainedX useless/unused anywhere; both notebook constraint cell and journal Eq16 explicitly includeX.",
+      "disposition": "Treat unused as the source's physical-model description; do not erase its constraint, assert zero matrix column or discard the coordinate."
+    },
+    {
+      "id": "SKARA-NOTEBOOK-FILENAME",
+      "kind": "source_navigation_variant",
+      "locators": [
+        "NUMERICAL_ANALYSIS/readme line31",
+        "Pinned Git tree selected Baseline1 member"
+      ],
+      "literal_values": "Readme Baseline1_structure_of_system_v12.nb; acquired member Baseline1_structure_of_system_Fig_B1_v12.nb.",
+      "disposition": "Record exact acquired filename/commit. No undocumented file equivalence is assumed."
+    },
+    {
+      "id": "SKARA-LMC-HST-SIGN",
+      "kind": "source_internal_reduction_ambiguity",
+      "locators": [
+        "Journal PDF p8 residual bullet and Y schematic LMC_HST rows"
+      ],
+      "literal_values": "Residual prose says subtraction of fiducial anchor moduli; Y schematic shows mbar_H,LMC_HST^W + mu0,LMC.",
+      "disposition": "Preserve the literal plus and prose separately. No source repair, recomputed reduction or repair of original Riess signs is adopted."
+    }
+  ],
+  "corrections": [
+    {
+      "type": "locator_interpretation",
+      "before": "Searching the electronic ranking column for global original2630/2744/2745/2754 would confuse within-host ranking with Y row indices.",
+      "after": "Locate the requested rows by explicit old zero-based ordinal plus two file lines, preserving author sequence as a source statement and physical joins as failed.",
+      "source_changed": false
+    },
+    {
+      "type": "text_extraction",
+      "before": "Text-aid token10−95 combines an exponent and footnote marker.",
+      "after": "Read original p4 as exponent−9 followed by footnote5; do not create an exponent−95 source claim.",
+      "source_changed": false
+    },
+    {
+      "type": "identifier_preservation",
+      "before": "The task shorthand TableE1 could be mistaken for the printed journal table number.",
+      "after": "Use printedTableA3 and pinned electronicTABLES/Table E1 as separate exact locators.",
+      "source_changed": false
+    }
+  ],
+  "preserved_failures": {
+    "failed_original_rows": [
+      2630,
+      2744,
+      2745,
+      2754
+    ],
+    "join_execution_in_this_audit": false,
+    "physical_identity_original44": null,
+    "physical_unit_original44": null,
+    "generator_definition": null,
+    "remaining_gates": [
+      "Riess-producer physical definition/unit and fixed-coordinate rationale for original zero-based44; third-party X is only a documentary label.",
+      "Complete original producer axis dictionary and unresolved N0105/N105A, N0976/N976A aliases.",
+      "Original source-generating IDL program, reduction/serialization recipe and full constraint ancestry; third-party notebook consumes already released FITS.",
+      "All four original physical Cepheid joins2630/2744/2745/2754 remain failed; electronic row witnesses provide no unique object IDs, sky coordinates or tolerance repair.",
+      "Physical joint covariance/noise/selection/calibration ancestry and cross-covariance remain unqualified; the reconstructed conditional C and parameter Sigma do not create a measured joint law.",
+      "Existing N1365/SMC/HST-LMC count/selection differences and compact/printed constraint variants remain unresolved; source Note3/4 criticisms are not a new producer repair.",
+      "All numerical/fit/model-comparison, native implementation, consumer execution, inference and cosmological-interpretation gates remain separate and unaccepted."
+    ]
+  },
+  "limitations": [
+    "This is Perivolaropoulos/Skara’s third-party reconstruction and criticism of reduced SH0ES inputs. Its reported Riess clarification supplies no checked producer correspondence, complete original dictionary or generating program. Original zero-based coordinate 44 physical identity/unit and rationale remain unknown despite the reconstruction label X.",
+    "The notebook retains 47 entries; the statement “46 if X is ignored” is not an executable reduction. The producer’s zero-width support at coordinate 44 and the reconstruction’s X constraint have distinct statistical roles. No inverse-distance-ladder prior or transition model is adopted.",
+    "Literal variants remain: journal residual slope -3.286 versus producer -3.285; journal Delta_b_W versus notebook b_W; notebook N0105/N0976 versus earlier reconstruction N105A/N976A; introduction X uncertainty 10^-9 versus Eq16 ±0.00003; distall README 3292 versus 3492. No repairs or physical aliases are inferred.",
+    "The page-8 Y schematic adds the fiducial LMC modulus for HST entries while nearby residual prose describes subtraction. Printed Table A3 and electronic Table E1 have different preview starts. These remain source presentation/reduction ambiguities.",
+    "Electronic Table E1’s inspected ranking is within-host. Under the declared top 3130 Y sequence and an explicit ordinal convention, the selected old rows 2630/2744/2745/2754 yield reduced-data witnesses without physical object IDs. All four physical joins remain failed; no tolerance change or new join is justified.",
+    "Selected column units and conditional linear covariance formulas do not establish original selection/calibration/reduction ancestry, a physical joint observation likelihood, uncertainty coverage or independent Gaussian row noises. Full table/FITS equivalence, covariance/rank, fits and cosmological interpretation remain unqualified.",
+    "All unexamined main text, appendices, figures, tables, scientific arrays and alternate notebooks remain outside this targeted review. Source/math transcription is not numerical or scientific qualification."
+  ],
+  "coverage_counts": {
+    "new_luna_reads": 0,
+    "new_full_paper_reads": 0,
+    "papers_promoted": 0,
+    "new_workers": 0,
+    "worker_acquisitions": 0,
+    "scientific_array_parse_jobs": 0,
+    "numerical_jobs": 0,
+    "compiler_jobs": 0,
+    "fits": 0,
+    "join_recomputations": 0
+  }
+}

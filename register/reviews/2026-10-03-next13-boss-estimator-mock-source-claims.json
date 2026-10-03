@@ -1,0 +1,568 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-next13-boss-estimator-mock-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "requested_reasoning_basis": "Explicit existing verified exact Sol worker targeted-source exception; ordinary scientific-review policyhigh is retained separately, actual inheritedxhigh exposed by current runtime companion.",
+  "agent_id": "/root/perturbation_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "runtime_effort_key": "effort",
+    "session_id": "01a0fec1-578e-7712-ba9d-1707e70bb91c",
+    "turn_id": "01a10068-f1a2-7df2-a73a-a09b4027521e",
+    "evidence_kind": "runtime_turn_context",
+    "actual_backend_identity": null,
+    "companion_sha256": "f37e0b85411780d3c1deea9c330f519b6e43880f35d7ae254bddd02c67247d12"
+  },
+  "model_confirmation_companion_sha256": "f37e0b85411780d3c1deea9c330f519b6e43880f35d7ae254bddd02c67247d12",
+  "reviewed_utc": "2026-10-03T06:35:08.274809+00:00",
+  "packet_sha256": "c3d60c0288ebb027222ddcb6bdd284fb30e67a7b81b31d91b0d4a08ad4229e52",
+  "reviewed_papers": [],
+  "reviewed_paper_details": [],
+  "reviewed_source_assets": [
+    {
+      "id": "boss-current-code-links",
+      "url": "https://www.ub.edu/bispectrum/page9.html",
+      "sha256": "f60a8e33ab047494f77ff1e436a2b7661be94e96dc5142a432eb5c25e1aaeec5",
+      "role": "html",
+      "conditioning": "Selected author code-navigation anchors121/143 identify RUSTICO estimator and BRASS fitting roles; linked legacy implementations and papers not inspected.",
+      "licence": null,
+      "licence_reason": "Licence/reuse grant not established in selected sources; GitHub metadata licence is null for code repositories. Public availability does not establish redistribution permission; raw sources remain local."
+    },
+    {
+      "id": "rustico-pinned-source",
+      "url": "https://api.github.com/repos/hectorgil/Rustico/zipball/0d7609e3b5fbd2e62e18d361cfacc44bc25f1516",
+      "sha256": "6b1de60c073c33fb180d380dcbf499c2e6d6c22a8c5db3f7d187e154de2f2d5c",
+      "role": "pinned_code_archive",
+      "conditioning": "Pinned0d7609e3b5fbd2e62e18d361cfacc44bc25f1516; selected README/cut-sky reader, output/shot-noise and auto-RR mask passages only. Current code is not verified historical2017 implementation.",
+      "licence": null,
+      "licence_reason": "Licence/reuse grant not established in selected sources; GitHub metadata licence is null for code repositories. Public availability does not establish redistribution permission; raw sources remain local.",
+      "checked_source_members": [
+        {
+          "path": ".work/all19-source-wave5-20261003/sources/Rustico-pinned/README_quick.md",
+          "sha256": "4bb5bb8ee05bb471409e9069790eea044fbe4086012110a9fa7128736cc3ed4c",
+          "checked_locators": [
+            "1–152, targeted choices/definitions; truncated output was reread at98–120"
+          ],
+          "unread": "All code outside explicitly checked passages, callers, numerical behavior, compilation and historical2017 provenance remain unexamined."
+        },
+        {
+          "path": ".work/all19-source-wave5-20261003/sources/Rustico-pinned/read_line.c",
+          "sha256": "0401ca4e836daf2c44d7d152ba7b64bd500dcd05c1fa744e3214b5e0e38c5716",
+          "checked_locators": [
+            "1–84 cut-sky reader defaults, active data/random parsing and commented Patchy alternatives"
+          ],
+          "unread": "All code outside explicitly checked passages, callers, numerical behavior, compilation and historical2017 provenance remain unexamined."
+        },
+        {
+          "path": ".work/all19-source-wave5-20261003/sources/Rustico-pinned/read_positions.c",
+          "sha256": "9924a063c2dd2c8e1314574e8e2fea7c75d7b21d5f7e5cf6779202b706d6606e",
+          "checked_locators": [
+            "541–554: selection, I22/I33/zeff weight source",
+            "593–610: selected weight/shot-noise/alpha passages; other requested533–616 output partly truncated and not claimed fully read"
+          ],
+          "unread": "All code outside explicitly checked passages, callers, numerical behavior, compilation and historical2017 provenance remain unexamined."
+        },
+        {
+          "path": ".work/all19-source-wave5-20261003/sources/Rustico-pinned/main.c",
+          "sha256": "b85f1484f95717ea8f63bc02c75dff41969ffe6868332d7ffad633b48754ff0f",
+          "checked_locators": [
+            "993–1013: normalization and shot-noise mixture",
+            "1637–1665: current B output header; incidental cross-B header1764–1771 unreviewed"
+          ],
+          "unread": "All code outside explicitly checked passages, callers, numerical behavior, compilation and historical2017 provenance remain unexamined."
+        },
+        {
+          "path": ".work/all19-source-wave5-20261003/sources/Rustico-pinned/ps_write.c",
+          "sha256": "9ec89584bb1809639d0617b967321ee2bb7f1d6863eac3475cf899d28f9e8748",
+          "checked_locators": [
+            "10: cut-sky function identity",
+            "468–490: selected quadrupole choices",
+            "718–746: source subtraction and output branches; incidental574–594 unreviewed"
+          ],
+          "unread": "All code outside explicitly checked passages, callers, numerical behavior, compilation and historical2017 provenance remain unexamined."
+        },
+        {
+          "path": ".work/all19-source-wave5-20261003/sources/Rustico-pinned/bispectrum.c",
+          "sha256": "81b5da2af8b479cd751328669617a42c2bb856e1437e704298482e27d9fa37e7",
+          "checked_locators": [
+            "1280–1323: source B subtraction, Q relation and eleven-field writer; cross/quadrupole branches incidental, no correctness acceptance"
+          ],
+          "unread": "All code outside explicitly checked passages, callers, numerical behavior, compilation and historical2017 provenance remain unexamined."
+        },
+        {
+          "path": ".work/all19-source-wave5-20261003/sources/Rustico-pinned/mask.c",
+          "sha256": "8f0125ef79b5f6c2bdd853eef81ac9b5d39828d201115ea37733cb6aff9cd438",
+          "checked_locators": [
+            "15: RR counter function identity",
+            "290–378: selected auto-pair LOS, moments, normalization and writer"
+          ],
+          "unread": "All code outside explicitly checked passages, callers, numerical behavior, compilation and historical2017 provenance remain unexamined."
+        }
+      ]
+    },
+    {
+      "id": "brass-pinned-source",
+      "url": "https://api.github.com/repos/hectorgil/Brass/zipball/478a961a262c478bd2b4ee587652f99f2ff7d299",
+      "sha256": "ae24807333adab60382ef762b5def0092f7335927f317b293cb5f8bd2b33bab1",
+      "role": "pinned_code_archive",
+      "conditioning": "Pinned478a961a262c478bd2b4ee587652f99f2ff7d299; selected README/parsers/configuration/covariance source passages only. No historical2017 parameter/likelihood equivalence or execution.",
+      "licence": null,
+      "licence_reason": "Licence/reuse grant not established in selected sources; GitHub metadata licence is null for code repositories. Public availability does not establish redistribution permission; raw sources remain local.",
+      "checked_source_members": [
+        {
+          "path": ".work/all19-source-wave5-20261003/sources/Brass-pinned/README.sh",
+          "sha256": "2cdddcedf42a95af1c0e7251702e71d65cf2f66b2831930a03f31888f57b735c",
+          "checked_locators": [
+            "1–35: date, parser/scaling/proposal requirements and source links"
+          ],
+          "unread": "All code outside explicitly checked passages, callers, numerical behavior, compilation and historical2017 provenance remain unexamined."
+        },
+        {
+          "path": ".work/all19-source-wave5-20261003/sources/Brass-pinned/get_line.c",
+          "sha256": "ec2751c3039caf5f9ae6d9e1be762a7445d36f31d2c5cec3ab1d89448a5a3458",
+          "checked_locators": [
+            "1–106: selected mask/P/B parsers"
+          ],
+          "unread": "All code outside explicitly checked passages, callers, numerical behavior, compilation and historical2017 provenance remain unexamined."
+        },
+        {
+          "path": ".work/all19-source-wave5-20261003/sources/Brass-pinned/readme_params.c",
+          "sha256": "26cb0c0654f62f4ed94be06872874fb64285dd61a4f0bae884ef66d24409152c",
+          "checked_locators": [
+            "1–44,68–76,95–107: selected data/covariance/model options; requested46–52 partly truncated and not fully claimed"
+          ],
+          "unread": "All code outside explicitly checked passages, callers, numerical behavior, compilation and historical2017 provenance remain unexamined."
+        },
+        {
+          "path": ".work/all19-source-wave5-20261003/sources/Brass-pinned/read.c",
+          "sha256": "33ae532a65d54bc2ef4149a16ab0772ed0ddd600bfead33719e8aa57ac7e8a93",
+          "checked_locators": [
+            "12: SCALING_COVARIANCE declaration via literal search",
+            "554–597: selected mask reader/renormalization/column assignment",
+            "768–783,854–872: selected P mock loop/count",
+            "1145–1165,1236–1251,1291–1312,1359–1367: selected B loop/packing/count comparison",
+            "1488–1504: literal joint-vector sample covariance accumulation",
+            "1630–1648: literal correction branch/storage; no inversion/likelihood correctness review",
+            "Packing/options693–707,911–925,934–951 partly displayed; incidental1506–1540 not reviewed; no full order or fit validation"
+          ],
+          "unread": "All code outside explicitly checked passages, callers, numerical behavior, compilation and historical2017 provenance remain unexamined."
+        }
+      ]
+    },
+    {
+      "id": "boss-power-mock-archive",
+      "url": "https://drive.google.com/file/d/1fCg0A2zGQQnVpZenmLabqBknDlfHbPUX/view?usp=sharing",
+      "sha256": "a3bb298c26dbe2d39af6af712ffd07c2b9618713e0be07ffaae8a20f4c91bb38",
+      "role": "author_linked_mock_archive",
+      "conditioning": "Full archive byte identity pinned; only selected linear CMASS/NGC1000/1001 headers checked. Drive2021 creation metadata does not establish historical2017 output identity; numeric bodies and physical pairing unexamined.",
+      "licence": null,
+      "licence_reason": "Licence/reuse grant not established in selected sources; GitHub metadata licence is null for code repositories. Public availability does not establish redistribution permission; raw sources remain local.",
+      "checked_source_members": [
+        {
+          "inner_member": "Power_Spectrum_cmass_ngc_v5_Patchy_1000.txt",
+          "sha256": "ed1d3da2c383631eeefa74f92bdc3b1eced9735ce15531cb40f2bd9f309cd0fb",
+          "checked_locators": [
+            "Comment header lines1–25 only"
+          ],
+          "unread": "All numerical body rows and grid/order/triangle consistency not reviewed. First numeric P line was incidentally consumed while seeking the header boundary; no numeric interpretation or array operation."
+        },
+        {
+          "inner_member": "Power_Spectrum_cmass_ngc_v5_Patchy_1001.txt",
+          "sha256": "5c119adba63128e015cf61f31e0bff827dede54637321adb5af51bb38eb29e90",
+          "checked_locators": [
+            "Comment header lines1–25 only"
+          ],
+          "unread": "All numerical body rows and grid/order/triangle consistency not reviewed. First numeric P line was incidentally consumed while seeking the header boundary; no numeric interpretation or array operation."
+        }
+      ]
+    },
+    {
+      "id": "boss-bispectrum-mock-archive",
+      "url": "https://drive.google.com/file/d/1cX3hE_0d7UeYlOWoAW92ZXkEIf4eqz3P/view?usp=sharing",
+      "sha256": "2d59afb38cda795886f0e4cd91a81044dd042a53feb4092ac69aa314665cccb5",
+      "role": "author_linked_mock_archive",
+      "conditioning": "Full confirmed gzip byte identity pinned; only selected CMASS/NGC run1000/1001 first-record structure checked. Filename matching and earlier post/pre labels do not establish physical pairing/reconstruction. No transient confirmation URL is an asset identity.",
+      "licence": null,
+      "licence_reason": "Licence/reuse grant not established in selected sources; GitHub metadata licence is null for code repositories. Public availability does not establish redistribution permission; raw sources remain local.",
+      "checked_source_members": [
+        {
+          "inner_member": "Bis_ngc_g512_Dk6_run1000.txt",
+          "sha256": "3dff8c1ab24e308e76f792da9912a53eac7171c3d58362b2e4124140bb890e2a",
+          "checked_locators": [
+            "First physical record only: no preceding comment header, seven tokens; numeric values not interpreted"
+          ],
+          "unread": "All later numerical body rows/triangle ordering unexamined. Filename tokens g512,Dk6/run1000 or1001 do not establish metadata, units or physical identity."
+        },
+        {
+          "inner_member": "Bis_ngc_g512_Dk6_run1001.txt",
+          "sha256": "8c9681d426cb2dc69119973f0b8b02967c45213bbf552e51515bd1a030afd2c4",
+          "checked_locators": [
+            "First physical record only: no preceding comment header, seven tokens; numeric values not interpreted"
+          ],
+          "unread": "All later numerical body rows/triangle ordering unexamined. Filename tokens g512,Dk6/run1000 or1001 do not establish metadata, units or physical identity."
+        }
+      ]
+    }
+  ],
+  "accepted_records": {
+    "contract_ids": [
+      "next13-boss-dr12-current-estimator-mock-source-contract-v1"
+    ],
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": []
+  },
+  "source_contract_associations": [
+    {
+      "contract_id": "next13-boss-dr12-current-estimator-mock-source-contract-v1",
+      "paper_ids": [
+        "arxiv:1606.00439v2"
+      ],
+      "source_asset_ids": [
+        "boss-current-code-links",
+        "rustico-pinned-source",
+        "brass-pinned-source",
+        "boss-power-mock-archive",
+        "boss-bispectrum-mock-archive"
+      ],
+      "reason": "Asset-only navigation to the existing historical BOSS paper associated with the author mock release/current code pages. Selected current assets do not newly review its body, identify its historical implementation or assert paper/code-version equivalence."
+    }
+  ],
+  "source_contract_binding": {
+    "contract_id": "next13-boss-dr12-current-estimator-mock-source-contract-v1",
+    "path": "register/contracts/next13-boss-dr12-current-estimator-mock-source-contract-v1.json",
+    "sha256": "646f8fa41888e5b2590efa999b770f69a7d89c8df53c7cba5ace2f0b44fd1196"
+  },
+  "accepted_claims": [
+    {
+      "claim_id": "EM01",
+      "status": "accepted_selected_source",
+      "source_assets": [
+        "boss-current-code-links",
+        "rustico-pinned-source",
+        "brass-pinned-source"
+      ],
+      "locators": [
+        "Codes page9 HTML121,143",
+        "RUSTICO README1–5,144–152",
+        "BRASS README1–8,34–35"
+      ],
+      "statement": "The author links RUSTICO as an estimator and BRASS as a fit tool. The pinned source snapshots are separately identified current code assets; no equivalence to the historical2017 implementation is accepted.",
+      "claim_kind": "source_identity_and_declared_role"
+    },
+    {
+      "claim_id": "EM02",
+      "status": "accepted_selected_source",
+      "source_assets": [
+        "boss-power-mock-archive"
+      ],
+      "locators": [
+        "CMASS/NGC linear nested mock1000/1001, comment lines1–25"
+      ],
+      "statement": "The selected P headers declare distinct V6C-Portsmouth-mass mock input paths and the same x100 random path, a seven-field center/effective-k/P0-minus-shot/P2/P4/modes/shot output, FFT grid512, P5S, GridCenter, two interlacing steps, grid correction and Ωm0.31. These are printed processing declarations, not validated runs or observations.",
+      "claim_kind": "source_header_declarations"
+    },
+    {
+      "claim_id": "EM03",
+      "status": "accepted_selected_source_and_reader_compatibility_finding",
+      "source_assets": [
+        "boss-bispectrum-mock-archive",
+        "brass-pinned-source",
+        "rustico-pinned-source"
+      ],
+      "locators": [
+        "CMASS/NGC B run1000/1001 first record only",
+        "BRASS get_line.c21–54",
+        "RUSTICO bispectrum.c1280–1323"
+      ],
+      "statement": "Selected B files start without a comment header and their first record has seven fields. The current BRASS B parser consumes eleven fields, as does the current RUSTICO writer. This is a verified format distinction; it does not supply a conversion or prove whole-file validity. Prior released seven-field semantics remain conditional context.",
+      "claim_kind": "source_format_and_reader_inference"
+    },
+    {
+      "claim_id": "EM04",
+      "status": "accepted_selected_source",
+      "source_assets": [
+        "rustico-pinned-source"
+      ],
+      "locators": [
+        "read_line.c13–58",
+        "read_positions.c541–554,593–610",
+        "main.c993–1013",
+        "ps_write.c718–746",
+        "bispectrum.c1280–1323"
+      ],
+      "statement": "Current cut-sky source assigns product weights and distinguishes active DATA/RANDOM readers from commented Patchy alternatives; selected output branches subtract monopole/B shot noise and carry explicit normalization/mix choices. An exact catalogue parser and run configuration are required before mapping a released mock to this implementation.",
+      "claim_kind": "conditional_source_implementation"
+    },
+    {
+      "claim_id": "EM05",
+      "status": "accepted_selected_source_with_literal_label_finding",
+      "source_assets": [
+        "rustico-pinned-source",
+        "brass-pinned-source"
+      ],
+      "locators": [
+        "RUSTICO mask.c290–321,348–374",
+        "BRASS get_line.c6–18",
+        "BRASS read.c554–597"
+      ],
+      "statement": "The current auto-RR code selects midpoint or one-endpoint LOS, forms weighted even Legendre moments with separation factors and divides by a selected W0 bin, searching later bins when zero. This normalization is conditionally interpretable when the denominator and pair-mean bins are valid; source guard behavior and realized validity are unqualified. Its seven-field writer puts the bin center before pair-mean separation, although the literal header names them in the opposite order. The current BRASS reader treats them as sav then seff. No source repair or legacy squared-mask equivalence is accepted.",
+      "claim_kind": "literal_source_and_reader_semantics"
+    },
+    {
+      "claim_id": "EM06",
+      "status": "accepted_selected_source",
+      "source_assets": [
+        "brass-pinned-source"
+      ],
+      "locators": [
+        "README.sh8–13",
+        "readme_params.c20–29,68–76,95–107"
+      ],
+      "statement": "BRASS declares configurable covariance corrections, shot-noise/window treatment and fitted model/σ8 options. These are configuration choices, not the frozen historical parameterization, an observed statistical law, independence or qualified amplitudes.",
+      "claim_kind": "declared_model_choices"
+    },
+    {
+      "claim_id": "EM07",
+      "status": "accepted_source_expression_with_reader_identity_gate",
+      "source_assets": [
+        "brass-pinned-source"
+      ],
+      "locators": [
+        "read.c768–783,854–872,1145–1165,1236–1251,1291–1312,1359–1367,1488–1504,1630–1648"
+      ],
+      "statement": "Selected current covariance source builds a common vector and accumulates residual products divided by Ncounter−1 and a scaling factor; P/B successful-file counters are separate and only total equality is checked at the selected refusal. Equal counts alone do not establish identical valid realization-ID sets. All covariance values, inverse law, correction validity and likelihood remain unexecuted/unqualified.",
+      "claim_kind": "source_expression_and_reader_dependence_requirement"
+    },
+    {
+      "claim_id": "EM08",
+      "status": "accepted_bounded_asset_identity",
+      "source_assets": [
+        "boss-power-mock-archive",
+        "boss-bispectrum-mock-archive"
+      ],
+      "locators": [
+        "Central bounded archive receipt: selected nested CMASS/NGC paths and four member hashes",
+        "Original Drive metadata selected createdTime/modifiedTime/name/size"
+      ],
+      "statement": "The full archive identities and four selected member identities are pinned. Central archive counts are structural inventory evidence only; 2021 Drive creation metadata is release storage ancestry and does not date the scientific realization or establish historical2017 byte identity.",
+      "claim_kind": "asset_identity_with_central_inventory_attribution"
+    }
+  ],
+  "corrections": [
+    {
+      "correction_id": "EC01",
+      "kind": "acquisition_body_identity_correction",
+      "statement": "The earlier small Google Drive B response is a normal virus-scan confirmation HTML body, preserved by central body-identity amendment. It is not the mock archive and does not show missing or corrupt scientific rows. The subsequently confirmed full gzip identity is separately pinned; transient confirmation UUID stays private."
+    },
+    {
+      "correction_id": "EC02",
+      "kind": "prevented_extraction_overreach",
+      "statement": "Candidate filename1000/1001 matching and2048 nested headers do not establish paired realization/reconstruction identity. The earlier post/pre label conflict remains open; no mock-pair acceptance or covariance inference was made."
+    },
+    {
+      "correction_id": "EC03",
+      "kind": "source_format_variant_not_transcription_error",
+      "statement": "Released seven-field B first records differ from current eleven-field code parser/writer. The current RR seven-field layout differs from the older six-field released squared-moment layout. No silent data or source conversion was applied."
+    },
+    {
+      "correction_id": "EC04",
+      "kind": "literal_source_label_vs_writer_finding",
+      "statement": "RUSTICO mask.c367 labels first columns seff,sav, but374 writes bin center then pair mean; BRASS get_line.c andread.c use sav,seff. Writer/reader operational meanings are kept separate from literal labels; no original source correction proposed or executed."
+    },
+    {
+      "correction_id": "EC05",
+      "kind": "reader_inference_not_source_claim",
+      "statement": "Selected covariance code compares successful P/B counts, not valid-ID sets. Equal counts cannot certify paired vectors. This reader requirement does not claim an actual mismatch in supplied mocks; no rows or covariance were computed."
+    },
+    {
+      "correction_id": "EC06",
+      "kind": "conditional_normalization_domain_qualification",
+      "statement": "The selected RR source takes W0 at a chosen bin and searches later bins if zero; it does not establish that a nonzero fallback exists or certify finite output. Accepted normalization semantics are conditional on a valid nonzero denominator and valid pair-mean bins. Source/rows remain unchanged; guard behavior and realized validity remain open."
+    }
+  ],
+  "blocked_claims": [
+    {
+      "claim_id": "BG01",
+      "status": "blocked",
+      "claim": "Exact historical2017 code/configuration/output ancestry",
+      "reason": "Current pins and2021 Drive metadata do not establish historical tuples; exact2017 parameter/calibration inputs remain unexamined/unavailable here."
+    },
+    {
+      "claim_id": "BG02",
+      "status": "blocked",
+      "claim": "Physical paired realization and reconstruction identity",
+      "reason": "Filename equality andtotalcounts are insufficient; B is headerless and earlier post/pre source label conflict unresolved."
+    },
+    {
+      "claim_id": "BG03",
+      "status": "blocked",
+      "claim": "Drop-in B/mask parser compatibility",
+      "reason": "Seven versus eleven B fields; seven current mask fields versus six released legacyfields; adapter/normalization/convention ancestry unverified."
+    },
+    {
+      "claim_id": "BG04",
+      "status": "blocked",
+      "claim": "Qualified full joint covariance and likelihood",
+      "reason": "All grid/triangle/ID selection andjointcrossblocks unexamined; no numericalconstruction/inversion/finite-mock/likelihood law qualification."
+    },
+    {
+      "claim_id": "BG05",
+      "status": "blocked",
+      "claim": "Actual estimator/random/shot-noise/window reproduction",
+      "reason": "Selected configuration/parser/randomcatalogue/nz/normalization/LOS andBwindow provenance not fixed; no compilation/execution. Nonzero W0 denominator and valid pair-mean-bin guard/refusal behavior remain unqualified."
+    },
+    {
+      "claim_id": "BG06",
+      "status": "blocked",
+      "claim": "Independent amplitude/fullσ8 comparison",
+      "reason": "Fittedconditionings/sharedobjectmocks/geometry/externalcrosscovariance andcompatible epoch/full-k top-hatmatterphysics remain unresolved."
+    }
+  ],
+  "coverage": {
+    "main_text": "Selected current source-code/header/metadata assets only; no primarypaper body reread.",
+    "checked_locators": [
+      {
+        "asset_id": "boss-current-code-links",
+        "locators": [
+          [
+            "Codes page9 HTML121,143",
+            "RUSTICO README1–5,144–152",
+            "BRASS README1–8,34–35"
+          ]
+        ]
+      },
+      {
+        "asset_id": "rustico-pinned-source",
+        "locators": [
+          [
+            "Codes page9 HTML121,143",
+            "RUSTICO README1–5,144–152",
+            "BRASS README1–8,34–35"
+          ],
+          [
+            "CMASS/NGC B run1000/1001 first record only",
+            "BRASS get_line.c21–54",
+            "RUSTICO bispectrum.c1280–1323"
+          ],
+          [
+            "read_line.c13–58",
+            "read_positions.c541–554,593–610",
+            "main.c993–1013",
+            "ps_write.c718–746",
+            "bispectrum.c1280–1323"
+          ],
+          [
+            "RUSTICO mask.c290–321,348–374",
+            "BRASS get_line.c6–18",
+            "BRASS read.c554–597"
+          ]
+        ]
+      },
+      {
+        "asset_id": "brass-pinned-source",
+        "locators": [
+          [
+            "Codes page9 HTML121,143",
+            "RUSTICO README1–5,144–152",
+            "BRASS README1–8,34–35"
+          ],
+          [
+            "CMASS/NGC B run1000/1001 first record only",
+            "BRASS get_line.c21–54",
+            "RUSTICO bispectrum.c1280–1323"
+          ],
+          [
+            "RUSTICO mask.c290–321,348–374",
+            "BRASS get_line.c6–18",
+            "BRASS read.c554–597"
+          ],
+          [
+            "README.sh8–13",
+            "readme_params.c20–29,68–76,95–107"
+          ],
+          [
+            "read.c768–783,854–872,1145–1165,1236–1251,1291–1312,1359–1367,1488–1504,1630–1648"
+          ]
+        ]
+      },
+      {
+        "asset_id": "boss-power-mock-archive",
+        "locators": [
+          [
+            "CMASS/NGC linear nested mock1000/1001, comment lines1–25"
+          ],
+          [
+            "Central bounded archive receipt: selected nested CMASS/NGC paths and four member hashes",
+            "Original Drive metadata selected createdTime/modifiedTime/name/size"
+          ]
+        ]
+      },
+      {
+        "asset_id": "boss-bispectrum-mock-archive",
+        "locators": [
+          [
+            "CMASS/NGC B run1000/1001 first record only",
+            "BRASS get_line.c21–54",
+            "RUSTICO bispectrum.c1280–1323"
+          ],
+          [
+            "Central bounded archive receipt: selected nested CMASS/NGC paths and four member hashes",
+            "Original Drive metadata selected createdTime/modifiedTime/name/size"
+          ]
+        ]
+      }
+    ],
+    "unread": [
+      "All paper main text/appendices, figures and linked papers/legacycode in this turn; prior accepted targeted context unchanged.",
+      "All mock numerical grids/order/covariance arrays andothernestedarchivecontents.",
+      "All code outside listed selected passages, exact historical configuration/calibration andrun behavior."
+    ],
+    "figures_visual_checked": [],
+    "captions_only": []
+  },
+  "limitations": [
+    "The pinned current RUSTICO/BRASS sources and author-linked mock release are distinct assets from the historical 2017 analysis. README dates, repository timestamps and download metadata do not establish the historical implementation, parameter file or exact output ancestry.",
+    "Equal filename suffixes and archive counts do not establish physical paired realizations or reconstruction identity. The earlier author-page post-reconstruction B-mock label conflicts with the pre-reconstruction notes/data description; selected headerless B records do not resolve it.",
+    "Only two power headers and two bispectrum first records were examined. Full grids, triangle ordering, all rows, missing-record behavior, all mock IDs and common valid realization sets remain unchecked.",
+    "The selected B records use seven fields while the current BRASS B reader expects eleven. The current seven-field RR-mask output is distinct from the older six-field released squared-moment mask. A verified adapter and exact convention/normalization mapping are required; no implicit conversion is accepted.",
+    "The current cut-sky parser, shot-noise options, random weights, density conventions, mask LOS and normalization choices require an exact selected configuration and data ancestry. No full bispectrum survey-window closure or historical window application has been established.",
+    "A complete paired P0/P2/B0 vector, all auto/cross covariance blocks, exact selection/bin order, finite-mock correction and likelihood law remain unqualified. Separate source counters with equal totals do not prove paired valid ID sets; unknown cross-covariance is not zero.",
+    "BOSS fitted fσ8 remains a conditioned summary with shared galaxies, mocks, BAO geometry and unknown external cross-covariance. Neither current model options nor header effective redshifts establish an independent observation or an ordinary σ8 prediction at a declared epoch with full-k 8 h^-1 Mpc top-hat support and compatible matter/species physics.",
+    "Historical printed AP/likelihood issues and earlier release-note ambiguities remain separately preserved. Current code does not resolve them or reproduce the historical source outputs. Public access and null licence metadata do not establish redistribution permission.",
+    "Current RR normalization semantics require a valid nonzero W0 denominator and valid pair-mean bins. The selected fallback search does not certify those conditions or a refusal outside them; no observed validity or guard qualification is inferred."
+  ],
+  "supporting_packets": [
+    {
+      "path": ".work/all19-source-wave5-20261003/workers/boss-estimator-mocks/packet-final-v3.json",
+      "sha256": "c3d60c0288ebb027222ddcb6bdd284fb30e67a7b81b31d91b0d4a08ad4229e52"
+    },
+    {
+      "path": ".work/all19-source-wave5-20261003/workers/boss-estimator-mocks/selected-source-claims-final-v2.json",
+      "sha256": "ffb18a2e286498d1a1860c99bd95cd6fc68c2dfb7cc23fb6f79bc9a0633faa97"
+    },
+    {
+      "path": ".work/all19-source-wave5-20261003/workers/boss-estimator-mocks/source-rehash-final.json",
+      "sha256": "b76513921453e903aeb9c0beb71a02eba3c2420de103de0452e948fa4196a1a7"
+    },
+    {
+      "path": ".work/all19-source-wave5-20261003/receipts/perturbation-wave5-runtime-confirmation-v1.json",
+      "sha256": "f37e0b85411780d3c1deea9c330f519b6e43880f35d7ae254bddd02c67247d12"
+    }
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  },
+  "source_error_semantics": "Literal source labels/format variants, prior source inconsistencies, central acquisition-body correction and reader requirements are kept distinct. No source repair, conversion, automatic Gaussian/covariance or historical-output reproduction is accepted.",
+  "supersedes_selected_projection": {
+    "path": ".work/all19-source-wave5-20261003/workers/boss-estimator-mocks/proposed-review-v2.json",
+    "sha256": "6b415a7a05dcf616c32bd76994a5744afbc1ce0436ed19165c18cf46a374af76",
+    "reason": "Metadata-only exact runtime effort-key correction. Canonical proposed contractv2/conditional RR qualifier and all scientific claims/coverage unchanged."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "contract_id": "next13-boss-dr12-current-estimator-mock-source-contract-v1",
+  "title": "BOSS DR12 selected mock formats and current estimator requirements",
+  "review_id": "2026-10-03-next13-boss-estimator-mock-source-claims",
+  "paper_ids": [
+    "arxiv:1606.00439v2"
+  ],
+  "scopes": [
+    {
+      "scope_id": "NEXT-13",
+      "title": "Mock lineage, estimator conventions and joint P/B conditioning",
+      "paper_ids": [
+        "arxiv:1606.00439v2"
+      ],
+      "checked_claim": "Selected CMASS/NGC power-mock headers declare catalogue/random ancestry, processing choices and seven output fields. Selected bispectrum first records have seven fields, distinct from the eleven-field current BRASS parser/RUSTICO writer. Current code exposes catalogue-weight, shot-noise, random-window LOS/normalization and joint-vector covariance choices; these are conditional implementation requirements. The RR-mask writer puts bin center before pair-mean separation despite opposite literal header labels.",
+      "unresolved": "Physical paired realization/reconstruction identity, exact historical implementation/configuration, full row/grid/triangle order, B/mask adaptation, estimator calibration and complete survey-window/covariance/likelihood ancestry remain open. Equal mock counts do not certify paired valid ID sets. Shared galaxies/mocks/geometry and unknown cross-covariance prevent independent amplitude interpretation."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "boss-current-code-links",
+      "url": "https://www.ub.edu/bispectrum/page9.html",
+      "sha256": "f60a8e33ab047494f77ff1e436a2b7661be94e96dc5142a432eb5c25e1aaeec5",
+      "role": "html",
+      "conditioning": "Selected author code-navigation anchors121/143 identify RUSTICO estimator and BRASS fitting roles; linked legacy implementations and papers not inspected.",
+      "licence": null,
+      "licence_reason": "Licence/reuse grant not established in selected sources; GitHub metadata licence is null for code repositories. Public availability does not establish redistribution permission; raw sources remain local."
+    },
+    {
+      "id": "rustico-pinned-source",
+      "url": "https://api.github.com/repos/hectorgil/Rustico/zipball/0d7609e3b5fbd2e62e18d361cfacc44bc25f1516",
+      "sha256": "6b1de60c073c33fb180d380dcbf499c2e6d6c22a8c5db3f7d187e154de2f2d5c",
+      "role": "pinned_code_archive",
+      "conditioning": "Pinned0d7609e3b5fbd2e62e18d361cfacc44bc25f1516; selected README/cut-sky reader, output/shot-noise and auto-RR mask passages only. Current code is not verified historical2017 implementation.",
+      "licence": null,
+      "licence_reason": "Licence/reuse grant not established in selected sources; GitHub metadata licence is null for code repositories. Public availability does not establish redistribution permission; raw sources remain local."
+    },
+    {
+      "id": "brass-pinned-source",
+      "url": "https://api.github.com/repos/hectorgil/Brass/zipball/478a961a262c478bd2b4ee587652f99f2ff7d299",
+      "sha256": "ae24807333adab60382ef762b5def0092f7335927f317b293cb5f8bd2b33bab1",
+      "role": "pinned_code_archive",
+      "conditioning": "Pinned478a961a262c478bd2b4ee587652f99f2ff7d299; selected README/parsers/configuration/covariance source passages only. No historical2017 parameter/likelihood equivalence or execution.",
+      "licence": null,
+      "licence_reason": "Licence/reuse grant not established in selected sources; GitHub metadata licence is null for code repositories. Public availability does not establish redistribution permission; raw sources remain local."
+    },
+    {
+      "id": "boss-power-mock-archive",
+      "url": "https://drive.google.com/file/d/1fCg0A2zGQQnVpZenmLabqBknDlfHbPUX/view?usp=sharing",
+      "sha256": "a3bb298c26dbe2d39af6af712ffd07c2b9618713e0be07ffaae8a20f4c91bb38",
+      "role": "author_linked_mock_archive",
+      "conditioning": "Full archive byte identity pinned; only selected linear CMASS/NGC1000/1001 headers checked. Drive2021 creation metadata does not establish historical2017 output identity; numeric bodies and physical pairing unexamined.",
+      "licence": null,
+      "licence_reason": "Licence/reuse grant not established in selected sources; GitHub metadata licence is null for code repositories. Public availability does not establish redistribution permission; raw sources remain local."
+    },
+    {
+      "id": "boss-bispectrum-mock-archive",
+      "url": "https://drive.google.com/file/d/1cX3hE_0d7UeYlOWoAW92ZXkEIf4eqz3P/view?usp=sharing",
+      "sha256": "2d59afb38cda795886f0e4cd91a81044dd042a53feb4092ac69aa314665cccb5",
+      "role": "author_linked_mock_archive",
+      "conditioning": "Full confirmed gzip byte identity pinned; only selected CMASS/NGC run1000/1001 first-record structure checked. Filename matching and earlier post/pre labels do not establish physical pairing/reconstruction. No transient confirmation URL is an asset identity.",
+      "licence": null,
+      "licence_reason": "Licence/reuse grant not established in selected sources; GitHub metadata licence is null for code repositories. Public availability does not establish redistribution permission; raw sources remain local."
+    }
+  ],
+  "limitations": [
+    "The pinned current RUSTICO/BRASS sources and author-linked mock release are distinct assets from the historical 2017 analysis. README dates, repository timestamps and download metadata do not establish the historical implementation, parameter file or exact output ancestry.",
+    "Equal filename suffixes and archive counts do not establish physical paired realizations or reconstruction identity. The earlier author-page post-reconstruction B-mock label conflicts with the pre-reconstruction notes/data description; selected headerless B records do not resolve it.",
+    "Only two power headers and two bispectrum first records were examined. Full grids, triangle ordering, all rows, missing-record behavior, all mock IDs and common valid realization sets remain unchecked.",
+    "The selected B records use seven fields while the current BRASS B reader expects eleven. The current seven-field RR-mask output is distinct from the older six-field released squared-moment mask. A verified adapter and exact convention/normalization mapping are required; no implicit conversion is accepted.",
+    "The current cut-sky parser, shot-noise options, random weights, density conventions, mask LOS and normalization choices require an exact selected configuration and data ancestry. No full bispectrum survey-window closure or historical window application has been established.",
+    "A complete paired P0/P2/B0 vector, all auto/cross covariance blocks, exact selection/bin order, finite-mock correction and likelihood law remain unqualified. Separate source counters with equal totals do not prove paired valid ID sets; unknown cross-covariance is not zero.",
+    "BOSS fitted fσ8 remains a conditioned summary with shared galaxies, mocks, BAO geometry and unknown external cross-covariance. Neither current model options nor header effective redshifts establish an independent observation or an ordinary σ8 prediction at a declared epoch with full-k 8 h^-1 Mpc top-hat support and compatible matter/species physics.",
+    "Historical printed AP/likelihood issues and earlier release-note ambiguities remain separately preserved. Current code does not resolve them or reproduce the historical source outputs. Public access and null licence metadata do not establish redistribution permission.",
+    "Current RR normalization semantics require a valid nonzero W0 denominator and valid pair-mean bins. The selected fallback search does not certify those conditions or a refusal outside them; no observed validity or guard qualification is inferred."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}

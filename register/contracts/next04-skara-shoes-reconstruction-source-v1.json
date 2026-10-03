@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "contract_id": "next04-skara-shoes-reconstruction-source-v1",
+  "title": "SH0ES reduced-input ordering in the Skara reconstruction",
+  "review_id": "2026-10-03-next04-skara-reconstruction-source-claims",
+  "paper_ids": [
+    "arxiv:2112.04510v3"
+  ],
+  "scopes": [
+    {
+      "scope_id": "NEXT-04",
+      "title": "Third-party coordinate and row conventions",
+      "paper_ids": [
+        "arxiv:2112.04510v3"
+      ],
+      "checked_claim": "The journal DOI 10.3390/universe8100502 and notebook pinned at e36d6c84 describe Y = Lq with 47 retained entries, label one-based slot 45 X, and explicitly transpose the released allL for that orientation. Electronic Table E1 declares mag/dex columns and within-host rankings; selected ordinal witnesses preserve the four unmatched rows. The producer source separately fixes original zero-based coordinate 44 through zero-width uniform support. These are documentary definitions and conditioning, not producer physical identities or new fits.",
+      "unresolved": "Original coordinate 44 physical meaning/unit and fixed-slot rationale, producer dictionary/generator, four physical joins, exact reduction/constraint ancestry, aliases and literal source variants, physical covariance/selection law and every numerical/inference gate."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "skara-universe8100502-journal",
+      "url": "https://mdpi-res.com/d_attachment/universe/universe-08-00502/article_deploy/universe-08-00502.pdf",
+      "sha256": "7e1d1f6e601fae64cfe007bc2f899a60fb1daff3e6c1b9d6dadeeddecfd4b23b",
+      "role": "journal_pdf",
+      "conditioning": "Selected journal reconstruction claims; separate journal DOI identity, not producer-source authority or arxiv full review."
+    },
+    {
+      "id": "skara-e36d6c84-license",
+      "url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/LICENSE",
+      "sha256": "62e0ae9025acb8e067a240220ab50e92b18fc395bde9181fec48196b1605687c",
+      "role": "pinned_third_party_reconstruction_source",
+      "conditioning": "Pinned author reconstruction at e36d6c84; documentary/code/table source only, no execution or producer generating lineage."
+    },
+    {
+      "id": "skara-e36d6c84-analysis-readme",
+      "url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/NUMERICAL_ANALYSIS/readme",
+      "sha256": "b14c4f136bf5a0de15369c025543a7288479d495628ea68240f4162774f16f14",
+      "role": "pinned_third_party_reconstruction_source",
+      "conditioning": "Pinned author reconstruction at e36d6c84; documentary/code/table source only, no execution or producer generating lineage."
+    },
+    {
+      "id": "skara-e36d6c84-data-readme",
+      "url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/NUMERICAL_ANALYSIS/data/readme",
+      "sha256": "c8c939bcd479e8b0b03769ce3fa885cdf7956d1a9f0dd4bd8f49bf2bf3176c99",
+      "role": "pinned_third_party_reconstruction_source",
+      "conditioning": "Pinned author reconstruction at e36d6c84; documentary/code/table source only, no execution or producer generating lineage."
+    },
+    {
+      "id": "skara-e36d6c84-table-e1",
+      "url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/TABLES/Table%20E1",
+      "sha256": "a39e8ab4d8bb246d1a801604425414ea941b861df4cae78749295eeccf6acc2e",
+      "role": "pinned_third_party_reconstruction_source",
+      "conditioning": "Pinned author reconstruction at e36d6c84; documentary/code/table source only, no execution or producer generating lineage."
+    },
+    {
+      "id": "skara-e36d6c84-baseline1-v12",
+      "url": "https://raw.githubusercontent.com/FOTEINISKARA/A-reanalysis-of-the-SH0ES-data-for-H_0/e36d6c84f6638e3118919c467545d4cc2847271e/NUMERICAL_ANALYSIS/Baseline1_structure_of_system_Fig_B1_v12.nb",
+      "sha256": "15ec459f7085b9225a43ae6265f73cf5b7a87369b325d1f202d3aeb297c40d9e",
+      "role": "pinned_third_party_reconstruction_source",
+      "conditioning": "Pinned author reconstruction at e36d6c84; documentary/code/table source only, no execution or producer generating lineage."
+    },
+    {
+      "id": "riess-c447-readme-md",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/README.md",
+      "sha256": "fd845e484a184ad9740dddf26550db9d6d154d1631c1b30622dcecefe8ee7174",
+      "role": "primary_release_code_or_document",
+      "conditioning": "Reused producer source comparison only; old physical-join failures/reconstruction remain inherited context, not newly recomputed."
+    },
+    {
+      "id": "riess-c447-mcmc-utils-py",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/MCMC_utils.py",
+      "sha256": "e6ec3d83a9b126d7772ec6dd0d1b58ca757b820acd853fb89218c379cf873841",
+      "role": "primary_release_code_or_document",
+      "conditioning": "Reused producer source comparison only; old physical-join failures/reconstruction remain inherited context, not newly recomputed."
+    },
+    {
+      "id": "riess-c447-run-mcmc-py",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/run_mcmc.py",
+      "sha256": "00546b9de2d73cd6315c0333b5f7b07a8b948f9e73056a88e76abe0249464c85",
+      "role": "primary_release_code_or_document",
+      "conditioning": "Reused producer source comparison only; old physical-join failures/reconstruction remain inherited context, not newly recomputed."
+    },
+    {
+      "id": "riess-c447-lstsq-results-txt",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/lstsq_results.txt",
+      "sha256": "37d2d423d06b6a2100c47578eb9b1c566a575caf6ade0ed61f6b9586d2a35c95",
+      "role": "primary_release_code_or_document",
+      "conditioning": "Reused producer source comparison only; old physical-join failures/reconstruction remain inherited context, not newly recomputed."
+    }
+  ],
+  "limitations": [
+    "This is Perivolaropoulos/Skara’s third-party reconstruction and criticism of reduced SH0ES inputs. Its reported Riess clarification supplies no checked producer correspondence, complete original dictionary or generating program. Original zero-based coordinate 44 physical identity/unit and rationale remain unknown despite the reconstruction label X.",
+    "The notebook retains 47 entries; the statement “46 if X is ignored” is not an executable reduction. The producer’s zero-width support at coordinate 44 and the reconstruction’s X constraint have distinct statistical roles. No inverse-distance-ladder prior or transition model is adopted.",
+    "Literal variants remain: journal residual slope -3.286 versus producer -3.285; journal Delta_b_W versus notebook b_W; notebook N0105/N0976 versus earlier reconstruction N105A/N976A; introduction X uncertainty 10^-9 versus Eq16 ±0.00003; distall README 3292 versus 3492. No repairs or physical aliases are inferred.",
+    "The page-8 Y schematic adds the fiducial LMC modulus for HST entries while nearby residual prose describes subtraction. Printed Table A3 and electronic Table E1 have different preview starts. These remain source presentation/reduction ambiguities.",
+    "Electronic Table E1’s inspected ranking is within-host. Under the declared top 3130 Y sequence and an explicit ordinal convention, the selected old rows 2630/2744/2745/2754 yield reduced-data witnesses without physical object IDs. All four physical joins remain failed; no tolerance change or new join is justified.",
+    "Selected column units and conditional linear covariance formulas do not establish original selection/calibration/reduction ancestry, a physical joint observation likelihood, uncertainty coverage or independent Gaussian row noises. Full table/FITS equivalence, covariance/rank, fits and cosmological interpretation remain unqualified."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}
