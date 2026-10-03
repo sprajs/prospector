@@ -823,9 +823,9 @@
     "request_sha256": "5d67253917a35031b69b85272fe381da8c946007da5615300a3dcf3381f12bed"
   },
   "continuation_note": "Selected NEXT-13 pre-reconstruction LOWZ P0/P2 source target: primary discrete window action and historical fit cuts checked;6/106 diagnostic diagonal matches do not admit covariance axes. Next action is exact producer/source covariance/error and cut-map reconciliation, or retained refusal. CLASS galaxy/RSD/window/statistical-model adapters remain blocked. Ordinary queue preserved plus one new pending full read; all19 remains OPEN.",
-  "last_completed_source_audit": "2026-10-03-hyrec-and-b1608-primary-source-checkpoint",
+  "last_completed_source_audit": "2026-10-03-ede-n3-source-closure-checkpoint",
   "coordinated_source_continuation": {
-    "scan_id": "2026-10-03-hyrec-and-b1608-primary-source-checkpoint",
+    "scan_id": "2026-10-03-ede-n3-source-closure-checkpoint",
     "mode": "bounded_targeted_source_work",
     "pending": [
       {
@@ -856,7 +856,7 @@
       {
         "scope_id": "NEXT-14",
         "stage": "consumer_stability_and_numerical",
-        "reason": "Separate FDv3 centered-angular/damped-residual source algebra and ideal photon/cold-baryon acoustic source derivations accepted only conditionally. All G01–G07 remain open. Original39cf/de5/0610 proposal, projected-versus-regular start and raw growing TRACE caveat remain. Actual background/derivative/conservation forcing and forward/work/storage effects are unqualified; old conformal helper lacks total-matter extension and self-baryon refusal. No installed/compiled/numerical/model-equivalence promotion."
+        "reason": "Separate FDv3 centered-angular/damped-residual source algebra and ideal photon/cold-baryon acoustic source derivations accepted only conditionally. All G01–G07 remain open. Original39cf/de5/0610 proposal, projected-versus-regular start and raw growing TRACE caveat remain. Actual background/derivative/conservation forcing and forward/work/storage effects are unqualified; old conformal helper lacks total-matter extension and self-baryon refusal. No installed/compiled/numerical/model-equivalence promotion. Original density normalizer/Omega_phi,0 conversion, sampled phi_i field-angle units/domain, modified CLASS code/configuration and n3 sound-speed/initial-mode mapping remain unbound. Native compensated-density thermal-FD background is a separate identity. No physical perturbation/thermal/endpoint/spectra/likelihood closure or candidate promotion."
       },
       {
         "scope_id": "NEXT-18",
@@ -956,6 +956,6 @@
         "source_sha256": "1afd058be7e605705e88eff517888cc6c52a11abcd34c97e7443499eb9fe48b7"
       }
     ],
-    "scope_limit": "Finite HyRec/Paper I source checkpoint complete; all19 program remains OPEN. Targeted helium source facts only, Paper I body reading and Eq99/Eq121 reconciliation pending. Existing queues, alternatives, EDE blocked candidate and consumer/physical gates retained. Further acquisition, arrays, builds or numerical execution require concrete finite leases; no automatic experiments or Site job."
+    "scope_limit": "Finite EDE source-normalization/initial-coordinate/code closure checkpoint complete. Source transition-fraction definitions and conditional reader algebra only; normalization/angle/original modified CLASS/perturbation/thermal/endpoint/likelihood gates remain open. Existing62-paper queue, all alternative candidates and prior nineteen-scope negatives retained. Further primary code/method acquisition needs its separately frozen finite recipe and explicit brief-job allocation. No numerical experiment, full crawl or Site job."
   }
 }

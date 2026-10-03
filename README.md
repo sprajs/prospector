@@ -47,6 +47,11 @@ separates the analytic fit, historical accuracy comparisons and later code rate
 convention. Original equation-sign reconciliation and physical history remain
 open. B1608 Paper I is registered with its full reading pending.
 
+The [EDE source-parameter contract](register/contracts/ede-n3-source-normalization-initial-coordinate-closure-v1.json)
+keeps the transition fraction separate from a peak. Density normalization, initial
+field coordinates and the original modified CLASS implementation remain unresolved;
+the independent background fluid supplies no paper EDE perturbation closure.
+
 ## Records
 
 - [Papers](register/papers/), [ideas](register/ideas/) and [topics](register/topics/)
