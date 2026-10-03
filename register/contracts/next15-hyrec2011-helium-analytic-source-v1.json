@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "contract_id": "next15-hyrec2011-helium-analytic-source-v1",
+  "title": "HyRec2011 analytic helium recombination: fit, conditioning and rate conventions",
+  "review_id": "2026-10-03-next15-hyrec2011-helium-source-claims",
+  "paper_ids": ["arxiv:1011.3758v2"],
+  "scopes": [
+    {
+      "scope_id": "NEXT-15",
+      "title": "HeII to HeI analytic line treatment and explicit approximation boundaries",
+      "paper_ids": ["arxiv:1011.3758v2"],
+      "checked_claim": "Section VI assumes one temperature T_m=T_r, HeI excited levels in equilibrium with the continuum, and a small hydrogen neutral fraction treated with Saha equilibrium. The 584 Angstrom line uses steady radiation transfer, damping wings and hydrogen continuum opacity; its width contribution Gamma_other includes the 2P-to-2S transition and selected n=3-5 singlet levels. Eq.117 fits its dimensionless enhancement as sqrt(1+pi^2*tau_c)+7.74*tau_c/(1+70*tau_c), stated within 0.8% for all positive tau_c, with limit 1 at zero. The 591 Angstrom intercombination line uses the full Sobolev absorption factor and on-the-spot feedback that subtracts P_reabs*F584. These fit statements differ from the reported maximum 0.3% helium-history comparison in VI.4. The later pinned helium.c variant uses cm, seconds and Kelvin and returns d(x_HeII)/dln(a), with species fractions per H nucleus and x_e=1-x_HI+x_HeII; it is a distinct source convention, not a total-electron rate or an erratum to the paper.",
+      "unresolved": "The HTML literally prints dot(x_e)=-F in Eq.99 and F(H)=-dot(x_HI)|Saha in Eq.121 while summing all F contributions. Their combination has a sign tension with the stated charge identity; original PDF/journal comparison and source convention reconciliation remain open. Exact energy-zero/temperature-unit mapping, adopted atomic inputs, caller species normalization, approximation errors, integration/domain controls, native adapter and solved thermal history are separate requirements. No full HeIII kinetics, independently evolved coupled H/He law, likelihood or physical CMB qualification follows."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "hyrec2011-1011-3758v2-original-html",
+      "url": "https://arxiv.org/html/1011.3758v2",
+      "sha256": "cfc5a7b8f940968d5168e5c3aa422cbbe8f035af3feab957bf788eb6e32b7e38",
+      "role": "primary_paper_html",
+      "conditioning": "Selected Section VI, definitions and conclusions only. Eqs.117,99,121 original MathML/alttext checked; figure images and original PDF not inspected. The reported history comparison uses the source flat LCDM conditioning, not a new numerical guarantee."
+    },
+    {
+      "id": "hyrec2-helium-c-pinned-source-variant",
+      "url": "https://github.com/nanoomlee/HYREC-2/blob/09e8243d0e08edd3603a94dfbc445ae06cafe139/helium.c",
+      "sha256": "cc113cdc4b2d4ffa0762ab82d5485816bbbb3bbf63cd3441be5206c4c3bf6587",
+      "role": "later_source_code_convention",
+      "conditioning": "Central Git-blob custody matches the CLASS copy at commit 0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18 and upstream blob 9e165e78b059ec32ba7b368742a466506a6a7ee5. This pinned web link is navigation constructed from that custody, not a separately fetched page. Units/rate interface and literal Eq.117 coefficients only; no compiled or full-source accuracy certification."
+    },
+    {
+      "id": "hyrec2-upstream-readme-pinned-blob",
+      "url": "https://api.github.com/repos/nanoomlee/HYREC-2/git/blobs/a9fcf1e6aab60fc12891fcd108bb833c93aae8cb",
+      "sha256": "f69bc78aa5e1f1c07d4bda28e3bb418e82d03c224c73b56c1fd80ceedd36c6e9",
+      "role": "upstream_version_and_citation_notice",
+      "conditioning": "Decoded README bytes bound to the acquired blob response at commit 09e8243d0e08edd3603a94dfbc445ae06cafe139; July 2020 version/authorship and citation requests checked. This notice does not settle licence applicability or vendoring permissions."
+    }
+  ],
+  "limitations": [
+    "The source fit error is an author-stated approximation error, with no statistical distribution, sigma interpretation or covariance supplied. It is not a bound on the whole recombination history.",
+    "The historical 0.3% comparison and conclusions' few-times-10^-3 helium estimate retain source cosmology, approximations and collision caveats; no new physical or numerical qualification.",
+    "Eq.99/Eq.121 HTML signs remain literal and unresolved. The charge-chain derivation and later HeII source interface do not silently repair the paper or establish an author erratum.",
+    "The 2011 paper's equilibrium/switching assumptions differ from the source code's 2012 explicit hydrogen input and 2015 density-unit change. Same fit coefficients do not establish complete variant equivalence.",
+    "A per-He caller must bind its conversion to per-H source fractions and keep the hydrogen contribution separate. Temperature/atomic-energy conventions and source approximation domains must be matched before an adapter is accepted.",
+    "Original PDF/figures, antecedent references, complete error budgets and legal/vendoring terms remain unexamined; raw sources are not redistributed. Full HeIII kinetics, coupled thermodynamics and CMB/likelihood scope remain open."
+  ],
+  "qualification": {"numerically_executed": false, "scientifically_qualified": false}
+}

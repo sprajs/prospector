@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-next15-hyrec2011-helium-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "agent_id": "/root/thermal_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "session_id": "01a0fec1-0810-7361-a598-b20696ba4a64",
+    "turn_id": "01a102fd-db17-7930-a264-e956a2bd67de",
+    "evidence_kind": "runtime_turn_context",
+    "actual_backend_identity": null,
+    "companion_path": ".work/next15-hyrec-minimum-acquisition-20261003/thermal-peer-runtime-v1.json",
+    "companion_sha256": "223f46de8992cedeaff172ec79dd09f89b523ddccb4c8d61b66f92a3281c91bd",
+    "policy_note": "ROOT explicitly authorized reuse of the existing exact Sol/xhigh worker; ordinary scientific review high policy is not silently relabelled."
+  },
+  "reviewed_utc": "2026-10-03T18:34:00Z",
+  "packet_sha256": "d35c5edbd838fc6ea3eef60f6bbf617c040956b040c3c0a2476958f5e3713819",
+  "packet_path": ".work/next15-hyrec-minimum-acquisition-20261003/workers/peer-source/packet-final-v1.json",
+  "reviewed_papers": ["arxiv:1011.3758v2"],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:1011.3758v2",
+      "source_hashes": {"html": "cfc5a7b8f940968d5168e5c3aa422cbbe8f035af3feab957bf788eb6e32b7e38"},
+      "coverage": {
+        "main_text": "Selected original Section VI helium treatment, relevant definitions/background tuple and Section VII conclusions. Zero new full/Luna reads; ordinary full-paper pipeline remains pending.",
+        "checked_locators": [
+          "#infobox/#license-tr/#watermark-tr/title/authors, lines255-276; source identity matched saved Atom entry",
+          "#S1.p10.1 line318: flat LCDM with T0=2.728 K, Omega_b*h^2=0.022, Omega_m*h^2=0.13, Omega_Lambda*h^2=0.343, Y_He=0.24, N_nu,eff=3.04",
+          "#S2.SS1.p1.1 (n_H/x_e), #S2.E3 (g_e), #S2.SS1.p4.2 (f_He); definitions only",
+          "#S6 VI.1-VI.4, Eqs95-121, lines1687-2154; HeIII Saha is context, not evolved kinetic acceptance",
+          "#S6.E99, #S6.E117, #S6.E121: important original MathML/alttext directly inspected",
+          "#S7.p1.1-#S7.p3.1; #A4.E136/#A4.E137 and #A4.SS2.p1.1 selected Saha/post-Saha anchors",
+          "#bib.bib31-#bib.bib33: exact printed base IDs/DOIs only; no antecedent followed"
+        ],
+        "figures": "Figures9/10 captions only. No figure pixels, PDF or rendered page inspected; VI.4 prose independently states the reported0.3% comparison.",
+        "unread": [
+          "Original arXiv and journal PDFs, all figure images and any author erratum; journal/preprint typesetting differences unresolved.",
+          "Most hydrogen sectionsII-V, remaining appendices and bibliography, complete error analysis and referenced atomic/antecedent originals.",
+          "Physical changed-cosmology, two-temperature, evolved-HeIII, late-tail or full CMB/likelihood qualification.",
+          "Ordinary Luna full reading is pending; this targeted review does not complete extraction/full-review stages."
+        ]
+      },
+      "conclusions": [
+        "The enhancement fit is author-stated within0.8% for positive tau_c, with coefficients7.74/70. It is distinct from the reported0.3% whole-helium-history comparison and supplies no statistical uncertainty law.",
+        "Equilibrium/steady-state/damping-wing/Sobolev/on-the-spot and switching assumptions are source conditioning, not independently established physical validity bounds.",
+        "Literal Eq99/Eq121 signs have a convention tension with the charge identity. Preserve them and the separate reader inference; unseen PDF does not permit an author-erratum claim."
+      ]
+    }
+  ],
+  "reviewed_source_assets": [
+    {
+      "id": "hyrec2011-1011-3758v2-original-html",
+      "name": "1011.3758v2 HTML",
+      "role": "html",
+      "url": "https://arxiv.org/html/1011.3758v2",
+      "sha256": "cfc5a7b8f940968d5168e5c3aa422cbbe8f035af3feab957bf788eb6e32b7e38",
+      "retrieved_utc": "2026-10-03T17:23:36.020550+00:00",
+      "bytes": 786820,
+      "local_path": ".work/next15-hyrec-minimum-acquisition-20261003/attempt-v2/arxiv/objects/cfc5a7b8f940968d5168e5c3aa422cbbe8f035af3feab957bf788eb6e32b7e38.html",
+      "licence": "Original infobox displays arXiv perpetual non-exclusive navigation; linked legal scope not read. Raw source not redistributed.",
+      "coverage": "Exactly the original paper locators above; no full reading."
+    },
+    {
+      "id": "hyrec2-helium-c-pinned-source-variant",
+      "name": "Later pinned helium.c/helium.h conventions",
+      "role": "primary_source_code",
+      "url": "https://github.com/nanoomlee/HYREC-2/blob/09e8243d0e08edd3603a94dfbc445ae06cafe139/helium.c",
+      "sha256": "cc113cdc4b2d4ffa0762ab82d5485816bbbb3bbf63cd3441be5206c4c3bf6587",
+      "bytes": 8691,
+      "retrieved_utc": null,
+      "null_reason": "No separate GET of this navigation page; centrally copied source bound to CLASS0ceb/upstream09e8243d Git-blob custody.",
+      "local_path": ".work/next15-hyrec-minimum-acquisition-20261003/class-source-custody-v1/helium.c",
+      "companion_header_sha256": "ca5cbebf2ad0c256c55ad425bce2c26da7d56463f7e7a5fa9112d7cb6970619c",
+      "coverage": "Both small files read; only cm/s/K, state/derivative convention, literal fit coefficients and visible source-date changes accepted. No complete algorithm, adapter, constant-rescaling, executable or numerical qualification.",
+      "licence": "Header authorship/custody and a matching Git blob are not licence grants. Applicable rights/vendoring remain unresolved."
+    },
+    {
+      "id": "hyrec2-upstream-readme-pinned-blob",
+      "name": "HYREC-2 upstream README",
+      "role": "primary_version_notice",
+      "url": "https://api.github.com/repos/nanoomlee/HYREC-2/git/blobs/a9fcf1e6aab60fc12891fcd108bb833c93aae8cb",
+      "sha256": "f69bc78aa5e1f1c07d4bda28e3bb418e82d03c224c73b56c1fd80ceedd36c6e9",
+      "retrieved_utc": "2026-10-03T17:41:20.754464+00:00",
+      "bytes": 1938,
+      "response_sha256": "c7db31f84d9e27a10c07968417e1e1824e8d6a1e69505e56ec1a25373531bde2",
+      "local_path": ".work/next15-hyrec-minimum-acquisition-20261003/upstream-readme-attempt-v1/f69bc78aa5e1f1c07d4bda28e3bb418e82d03c224c73b56c1fd80ceedd36c6e9.md",
+      "coverage": "Complete43-line notice for July2020 authorship, output/citation statements and absence of an explicit licence grant in this notice alone; no helper command run, readme.pdf body or repository-wide legal review.",
+      "licence": "Unresolved; citation requests do not establish redistribution/applicability."
+    }
+  ],
+  "accepted_records": {
+    "contract_ids": ["next15-hyrec2011-helium-analytic-source-v1"],
+    "claim_ids": ["HY01", "HY02", "HY03", "HY04", "HY05", "HY06", "HY07"],
+    "contract_sha256": "a672bd542e87df6c4a29215434cfdafae52e1e6a7e3936d231fb4d60e468d01a",
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": []
+  },
+  "corrections": [
+    "Separate fit enhancement accuracy from history comparison; neither percentage supplies a covariance/sigma interpretation.",
+    "Keep Eq99/Eq121 literal HTML tension, reader charge-chain inference and later HeII source convention distinct; no silent repair or author erratum.",
+    "Keep per-H versus per-He and physical-time versus logarithmic-scale-factor mappings explicit. Later code/source dates and density-unit changes do not recertify the2011 complete model.",
+    "Keep2011 version identity separate from internal converted-document2026 date."
+  ],
+  "limitations": [
+    "Exact source/reader claims only; no new full-paper stage, implementation/compiled request, numerical experiment or physical qualification.",
+    "Original PDF/journal sign/energy convention, atomic input ownership, full error budgets, legal/vendoring applicability and ordinary full reading remain open.",
+    "The source background tuple and no-overlap/switch statements are historical conditioning, not independently established for a changed cosmology or consumer.",
+    "No independent coupled non-LTE H/He law, evolved HeIII, reionization/today tail, full CMB or likelihood/covariance accepted.",
+    "Coordinator metadata admission and exact contract/review integration are separate; the proposed review does not itself alter canonical paper stages."
+  ],
+  "qualification": {"numerically_executed": false, "scientifically_qualified": false},
+  "new_full_reads": 0,
+  "new_luna_reads": 0,
+  "new_jobs": 0
+}

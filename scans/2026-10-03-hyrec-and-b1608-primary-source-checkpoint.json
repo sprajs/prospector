@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-03-hyrec-and-b1608-primary-source-checkpoint",
+  "status": "completed",
+  "started_utc": "2026-10-03T17:09:03.341502+00:00",
+  "started_utc_basis": "First exact terms receipt in the finite HyRec primary-source intake, after PR28 checkpoint. Paper I intake followed as a separate finite dependency.",
+  "completed_utc": "2026-10-03T18:59:48.326517+00:00",
+  "lane": "baseline-reference",
+  "work_mode": "explicit_scoped_source_audit",
+  "registered_papers": [
+    "arxiv:1011.3758v2",
+    "arxiv:0804.2827v3"
+  ],
+  "new_versions": [
+    "arxiv:1011.3758v2",
+    "arxiv:0804.2827v3"
+  ],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [
+    "2026-10-03-next15-hyrec2011-helium-source-claims"
+  ],
+  "source_contract_ids": [
+    "next15-hyrec2011-helium-analytic-source-v1"
+  ],
+  "idea_ids": [],
+  "design_ids": [],
+  "prospect_ids": [],
+  "edge_ids": [],
+  "citation_ids": [],
+  "pending": [
+    {
+      "scope_id": "NEXT-15",
+      "stage": "source_convention_and_conditional_history",
+      "reason": "Selected HyRec2011 helium source claims and later per-H HeII derivative convention checked independently. Literal converted-HTML Eq99/Eq121 sign tension remains unresolved; original PDF/journal math, energy/temperature/atomic inputs and caller species mapping need explicit reconciliation. Source equilibrium, single-temperature, switching/no-overlap and historical fit/history error claims are conditional. Native history, evolved HeIII, coupled H/He thermodynamics, late tail and full CMB/likelihood remain open."
+    },
+    {
+      "scope_id": "NEXT-18",
+      "stage": "paperI_body_and_physical_lens_source",
+      "reason": "Exact Paper I0804.2827v3 metadata and original HTML identity are admitted. Embedded HST/GO10158 title-footnote refusal is retained with an additive identity check; body/math and pinned PDF remain pending in this coordinator checkpoint. Existing author-conditioning, current2026-versus-author2010 reduction, two-deflector/PSF/dust/source/mask/noise and joint radio-delay/kinematic likelihood gates remain open. Koopmans metadata route stopped on HTTP429, without retry or scientific rejection."
+    }
+  ],
+  "search_receipts": [
+    "2026-10-03-hyrec2011-title-timeout",
+    "2026-10-03-hyrec2011-title-retry",
+    "2026-10-03-b1608-paperI-primary-title"
+  ],
+  "source_packet": {
+    "path": ".work/next15-hyrec-minimum-acquisition-20261003/workers/peer-source/packet-final-v1.json",
+    "sha256": "d35c5edbd838fc6ea3eef60f6bbf617c040956b040c3c0a2476958f5e3713819",
+    "bytes": 15923
+  },
+  "source_manifest": {
+    "path": ".work/next15-hyrec-minimum-acquisition-20261003/workers/peer-source/manifest-final-v1.json",
+    "sha256": "832550f8aa9459681f20ac22c462781baa8058db05cf01436f6c5d27c502869a",
+    "bytes": 2328
+  },
+  "primary_couriers": [
+    {
+      "path": ".work/next15-hyrec-minimum-acquisition-20261003/primary-source-courier-v1.json",
+      "sha256": "43b095abafd8069b56e2351080f7e9024a60f1979f23edd0bbf85e18e3121881",
+      "bytes": 5705
+    },
+    {
+      "path": ".work/b1608-paperI-primary-20261003/primary-courier-v1.json",
+      "sha256": "4a9bd8e4be9baa45b8111aaebf4ff47ab09e8bc6269c7bcfd3dcdc910b2acf79",
+      "bytes": 4369
+    }
+  ],
+  "identity_amendment": {
+    "path": ".work/b1608-paperI-primary-20261003/identity-screen-amendment-v1.json",
+    "sha256": "1f394de82d97c478b29634a3b7459633605067dbd3c913ea955e4cee6b06a3e2",
+    "bytes": 1609
+  },
+  "source_variants": [
+    "HyRec2011 original SectionVI and later HYREC-2 helium.c are distinct source conventions. CLASS0ceb/upstream09e8243d selected Git-blob identity does not establish complete vendoring history, licensing or numerical equivalence.",
+    "Historical source flat-LCDM tuple is preserved in the targeted review. It is separate from Reproducible's full Planck example point; no h, massive-neutrino state or YHe-to-fHe conversion derived."
+  ],
+  "acquisition_failures": [
+    {
+      "kind": "arxiv_metadata_timeout",
+      "receipt": {
+        "path": ".work/next15-hyrec-minimum-acquisition-20261003/attempt-v1/intake-result.json",
+        "sha256": "a984f992356db09efe12a68d788c9f4fa7e5b45402fbc8c42ac17e209d6f2490",
+        "bytes": 3372
+      },
+      "reason": "20-second read timeout returned no metadata snapshot. One fresh narrow retry later succeeded; original failure remains canonical and is not an empty search."
+    },
+    {
+      "kind": "upstream_notice_topology_refusal",
+      "receipt": {
+        "path": ".work/next15-hyrec-minimum-acquisition-20261003/attempt-v2/intake-result.json",
+        "sha256": "bb9e9b72ce269c85e607c57f16da4ef7649513e7f473a8f42843dfac27ab9d67",
+        "bytes": 9982
+      },
+      "reason": "Root tree contained two README roles, so initial helper refused before fetching either body. Fresh exact README.md Git-blob intake later succeeded; original topology refusal retained."
+    },
+    {
+      "kind": "crossref_koopmans_http429",
+      "receipt": {
+        "path": ".work/b1608-critical-primary-proposal-20261003/attempt-v1/62ae5d3bc04a71f66a112d181b0d7427753d6bbe2ab726e8b89d3f9934d94738.result.json",
+        "sha256": "62ae5d3bc04a71f66a112d181b0d7427753d6bbe2ab726e8b89d3f9934d94738",
+        "bytes": 17747
+      },
+      "reason": "Paper I identity succeeded first; second Koopmans lead returned429 with no Retry-After. Stopped without retry. Paper I proceeded via already saved verified title/DOI; no Crossref repeat."
+    },
+    {
+      "kind": "paperI_conservative_html_title_refusal",
+      "receipt": {
+        "path": ".work/b1608-paperI-primary-20261003/attempt-v1/result.json",
+        "sha256": "e79b7f6328eea720f55358e4c9008920509e2fe524ba3429d7db358bf830366b",
+        "bytes": 8863
+      },
+      "reason": "Exact title comparison rejected appended observation-footnote text. Original result retained; additive header/version/seven-author check confirms identity. Body/math coverage is still pending."
+    }
+  ],
+  "deferred_assets": [
+    "HyRec pinned PDF/journal equation signs and energy conventions; all figure images, most hydrogen dynamics, antecedents/atomic originals and repository legal applicability.",
+    "Paper I scientific body/important math and original PDF; original2003 Koopmans lead remains unacquired after429.",
+    "EDE original-code/full-physics candidate remains a separate limited blocked source handoff; no canonical design or compiled-model promotion here."
+  ],
+  "resource_receipt": {
+    "new_central_logical_requests": 14,
+    "hyrec_requests_including_policy_and_notices": 9,
+    "b1608_metadata_and_paper_requests": 5,
+    "successful_primary_html_bodies": 2,
+    "successful_primary_pdf_bodies": 1,
+    "successful_arxiv_metadata_windows": 2,
+    "failed_arxiv_metadata_requests": 1,
+    "http429_stops": 1,
+    "new_agents": 0,
+    "new_full_reads": 0,
+    "new_luna_reads": 0,
+    "new_full_paper_sol_reviews": 0,
+    "targeted_sol_source_reviews": 1,
+    "new_renders": 0,
+    "new_pdf_text_aids": 0,
+    "scientific_arrays_or_numerical_experiments": 0,
+    "compiler_jobs": 0,
+    "scope": "Finite sequential central acquisition leases; source reader reused exact existing Sol/xhigh with unexposed backend null. Logical calls do not claim separately inventoried redirect counts."
+  },
+  "limits": [
+    "Two new admitted versions; one targeted source review; zero full/Luna reads, full-paper reviews, ideas, designs, physical edges, prospect or consumer promotions.",
+    "Original60 pending papers retained; two new full readings queued before integrity validation. Existing literature lanes and last_completed_scan remain unchanged.",
+    "Only original notes, links and descriptive provenance are public. Full sources, code bodies, raw abstracts and complete worker logs remain ignored in Prospector.",
+    "All nineteen scopes remain OPEN. Source acceptance, structural checks, PR/current-main CI, numerical acceptance and scientific qualification are separate gates.",
+    "Public Site remains at the prior deployment by explicit coordination instruction; no build supervisor, export or deployment performed."
+  ],
+  "structural_validation": {
+    "scope": "Register integrity and generated views only; no scientific qualification.",
+    "result_path": ".work/next15-hyrec-minimum-acquisition-20261003/validation-attempt-v1/result.json",
+    "before_completion_passed": [
+      "validate-in-progress",
+      "build-views"
+    ],
+    "final_check_policy": "Final record validation and index rebuild follow within the same finite lease; any failure restores the in-progress completion fields."
+  }
+}

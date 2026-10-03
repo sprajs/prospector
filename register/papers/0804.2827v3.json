@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:0804.2827v3",
+  "arxiv_id": "0804.2827",
+  "version": 3,
+  "title": "Dissecting the Gravitational Lens B1608+656. I. Lens Potential Reconstruction",
+  "authors": [
+    "S. H. Suyu",
+    "P. J. Marshall",
+    "R. D. Blandford",
+    "C. D. Fassnacht",
+    "L. V. E. Koopmans",
+    "J. P. McKean",
+    "T. Treu"
+  ],
+  "categories": [
+    "astro-ph"
+  ],
+  "published_utc": "2008-04-17T14:29:09Z",
+  "updated_utc": "2009-01-12T16:31:25Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/0804.2827v3",
+    "html": "https://arxiv.org/html/0804.2827v3",
+    "pdf": "https://arxiv.org/pdf/0804.2827v3"
+  },
+  "license": {
+    "status": "arXiv.org perpetual non-exclusive license in pinned HTML infobox",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Coordinator checked original HTML #license-tr and version watermark. Atom has no licence URL. No paper or code redistribution permission is inferred."
+  },
+  "artifacts": [
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22DISSECTING+THE+GRAVITATIONAL+LENS+B1608%2B656.+I.+LENS+POTENTIAL+RECONSTRUCTION%22&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+      "retrieved_utc": "2026-10-03T18:20:11.548389+00:00",
+      "sha256": "0825c5832ab1a7d93f6797a2739e6c9e40455eb2bb6bb381eb39f2b3eb6dffb6",
+      "bytes": 3946,
+      "role": "metadata"
+    },
+    {
+      "url": "https://arxiv.org/html/0804.2827v3",
+      "retrieved_utc": "2026-10-03T18:20:14.939205+00:00",
+      "sha256": "8f3280780f023895258dc69209f710e46906e299ddb147f99f0a81d841c2383b",
+      "bytes": 543285,
+      "role": "html"
+    },
+    {
+      "url": "https://arxiv.org/pdf/0804.2827v3",
+      "retrieved_utc": "2026-10-03T18:20:18.202123+00:00",
+      "sha256": "a20ad027e205aab6ac4d0664e89d6876b42b4f85f0571c9adad918dbc7eb0043",
+      "bytes": 2691473,
+      "role": "pdf"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "metadata",
+    "reason": "Exact Paper I DOI/title/seven authors matched saved metadata and original HTML header/version. Conservative title refusal caused by an embedded GO10158/HST footnote is preserved in the scan amendment. Body/maths and original PDF remain unread here; full reading and physical B1608 adapter remain pending."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

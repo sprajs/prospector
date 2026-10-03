@@ -42,6 +42,11 @@ The [LOWZ windowed-power source target](docs/next13-lowz-source-target.md) selec
 one released clustering dependency for that audit. Its covariance ordering and
 galaxy-model adapter remain blocked; the existing prospect review is unchanged.
 
+The [HyRec helium source contract](register/contracts/next15-hyrec2011-helium-analytic-source-v1.json)
+separates the analytic fit, historical accuracy comparisons and later code rate
+convention. Original equation-sign reconciliation and physical history remain
+open. B1608 Paper I is registered with its full reading pending.
+
 ## Records
 
 - [Papers](register/papers/), [ideas](register/ideas/) and [topics](register/topics/)

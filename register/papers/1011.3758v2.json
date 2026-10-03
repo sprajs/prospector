@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1011.3758v2",
+  "arxiv_id": "1011.3758",
+  "version": 2,
+  "title": "HyRec: A fast and highly accurate primordial hydrogen and helium recombination code",
+  "authors": [
+    "Yacine Ali-Haïmoud",
+    "Christopher M. Hirata"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2010-11-16T17:06:06Z",
+  "updated_utc": "2011-01-21T02:58:46Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1011.3758v2",
+    "html": "https://arxiv.org/html/1011.3758v2",
+    "pdf": "https://arxiv.org/pdf/1011.3758v2"
+  },
+  "license": {
+    "status": "arXiv.org perpetual non-exclusive license in pinned HTML infobox",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Coordinator checked original HTML #license-tr and version watermark. Atom has no licence URL. No paper or code redistribution permission is inferred."
+  },
+  "artifacts": [
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=ti%3AHyRec&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+      "retrieved_utc": "2026-10-03T17:23:32.693799+00:00",
+      "sha256": "88a237e9eb805dda9536ef2f43eaea406b1eba50266cb10271e44f5fc6e3a4e3",
+      "bytes": 7263,
+      "role": "metadata"
+    },
+    {
+      "url": "https://arxiv.org/html/1011.3758v2",
+      "retrieved_utc": "2026-10-03T17:23:36.020550+00:00",
+      "sha256": "cfc5a7b8f940968d5168e5c3aa422cbbe8f035af3feab957bf788eb6e32b7e38",
+      "bytes": 786820,
+      "role": "html"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "metadata",
+    "reason": "Exact 2011 primary identity selected for scoped NEXT-15 helium source claims. Targeted review is separate; complete Luna reading and full-paper review remain pending. No HyRec PDF acquired."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

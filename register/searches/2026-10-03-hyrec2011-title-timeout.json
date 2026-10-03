@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-10-03-hyrec-and-b1608-primary-source-checkpoint",
+  "search_id": "2026-10-03-hyrec2011-title-timeout",
+  "lane": "baseline-reference",
+  "work_mode": "targeted_primary_source_resolution",
+  "status": "failed",
+  "requested_utc": "2026-10-03T17:10:58.948621+00:00",
+  "request": {
+    "query": "ti:HyRec",
+    "normalized_query": "ti:HyRec",
+    "order": "relevance",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "37d140925d54b63cd712708672f5e548e8b279c2c5ff0fe4e2f7af64f1623867"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "One narrow DOI-backed primary-law lookup; source metadata timed out and was preserved.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=ti%3AHyRec&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+    "retrieved_utc": "2026-10-03T17:10:58.948621+00:00",
+    "sha256": null,
+    "http_status": null,
+    "error": "TimeoutError: The read operation timed out",
+    "local_path": null,
+    "retry_after": null
+  },
+  "results": [],
+  "coverage": {
+    "result_ids_complete": false,
+    "dispositions_complete": false,
+    "metadata_complete": false,
+    "limitations": [
+      "One bounded relevance window; no exhaustive or gap-free archive claim.",
+      "Failure has no returned snapshot and is not an empty result or scientific rejection."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": "2026-10-03-hyrec-and-b1608-primary-source-checkpoint",
+    "query_id": "2026-10-03-hyrec2011-title-timeout"
+  }
+}

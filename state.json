@@ -577,6 +577,22 @@
       "prospect_ids": [
         "baseline-reference"
       ]
+    },
+    {
+      "paper_id": "arxiv:1011.3758v2",
+      "stage": "read",
+      "reason": "Targeted HyRec helium source claims leave the complete Luna reading and ordinary full-paper review pending. Original PDF/figures and Eq99/Eq121 convention reconciliation remain unexamined.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
+    },
+    {
+      "paper_id": "arxiv:0804.2827v3",
+      "stage": "read",
+      "reason": "Paper I metadata and original HTML title/authors/version match. Targeted body/important math, original PDF and complete Luna reading/review remain pending; pinned source custody is retained.",
+      "prospect_ids": [
+        "baseline-reference"
+      ]
     }
   ],
   "search_history": [
@@ -807,9 +823,9 @@
     "request_sha256": "5d67253917a35031b69b85272fe381da8c946007da5615300a3dcf3381f12bed"
   },
   "continuation_note": "Selected NEXT-13 pre-reconstruction LOWZ P0/P2 source target: primary discrete window action and historical fit cuts checked;6/106 diagnostic diagonal matches do not admit covariance axes. Next action is exact producer/source covariance/error and cut-map reconciliation, or retained refusal. CLASS galaxy/RSD/window/statistical-model adapters remain blocked. Ordinary queue preserved plus one new pending full read; all19 remains OPEN.",
-  "last_completed_source_audit": "2026-10-03-next13-lowz-windowed-source-target",
+  "last_completed_source_audit": "2026-10-03-hyrec-and-b1608-primary-source-checkpoint",
   "coordinated_source_continuation": {
-    "scan_id": "2026-10-03-next13-lowz-windowed-source-target",
+    "scan_id": "2026-10-03-hyrec-and-b1608-primary-source-checkpoint",
     "mode": "bounded_targeted_source_work",
     "pending": [
       {
@@ -845,7 +861,7 @@
       {
         "scope_id": "NEXT-18",
         "stage": "physical_source_and_joint_likelihood",
-        "reason": "Selected author radio-delay Monte Carlo conditioning and non-Gaussian recovered distributions, Keck aperture/template fitting, imaging-conditioned slope prior, M5 substitution, four-exposure F814W count selection and OBS-versus-MS simulated priors accepted as source claims only. Raw radio/Keck/imaging/catalogue/simulation identities, products, empirical noise/joint covariance, author2010 reduction and current2026 equivalence remain unknown. Delay symbol order, source date/count/interval variants and earlier distinct native-header/trailer coverage retained."
+        "reason": "Selected author radio-delay Monte Carlo conditioning and non-Gaussian recovered distributions, Keck aperture/template fitting, imaging-conditioned slope prior, M5 substitution, four-exposure F814W count selection and OBS-versus-MS simulated priors accepted as source claims only. Raw radio/Keck/imaging/catalogue/simulation identities, products, empirical noise/joint covariance, author2010 reduction and current2026 equivalence remain unknown. Delay symbol order, source date/count/interval variants and earlier distinct native-header/trailer coverage retained. Exact Paper I0804.2827v3 metadata and original HTML identity are admitted. Embedded HST/GO10158 title-footnote refusal is retained with an additive identity check; body/math and pinned PDF remain pending in this coordinator checkpoint. Existing author-conditioning, current2026-versus-author2010 reduction, two-deflector/PSF/dust/source/mask/noise and joint radio-delay/kinematic likelihood gates remain open. Koopmans metadata route stopped on HTTP429, without retry or scientific rejection."
       },
       {
         "scope_id": "NEXT-13",
@@ -881,6 +897,11 @@
         "scope_id": "NEXT-06",
         "stage": "physical_source_and_consumer",
         "reason": "Selected multiplicative redshift factors and distinct projected radial prescriptions, reconstructed-flow/group/calibration conditioning and duplicate-event covariance context accepted as source claims only. Physical observer worldline, ephemeris/frame/event clocks, exact flow grid/group/calibration ancestry, full frequency transfer and joint covariance remain unknown. Peterson original HTML Eq10 units/measure/normalization and Carr HTML/metadata source-snapshot discrepancy remain unresolved; no likelihood repair or numerical admission."
+      },
+      {
+        "scope_id": "NEXT-15",
+        "stage": "source_convention_and_conditional_history",
+        "reason": "Selected HyRec2011 helium source claims and later per-H HeII derivative convention checked independently. Literal converted-HTML Eq99/Eq121 sign tension remains unresolved; original PDF/journal math, energy/temperature/atomic inputs and caller species mapping need explicit reconciliation. Source equilibrium, single-temperature, switching/no-overlap and historical fit/history error claims are conditional. Native history, evolved HeIII, coupled H/He thermodynamics, late tail and full CMB/likelihood remain open."
       }
     ],
     "no_automatic_execution": true,
@@ -935,6 +956,6 @@
         "source_sha256": "1afd058be7e605705e88eff517888cc6c52a11abcd34c97e7443499eb9fe48b7"
       }
     ],
-    "scope_limit": "One scoped NEXT-13 LOWZ source target checkpoint complete; all19 program remains OPEN. Covariance serialization and physical adapter gates remain unresolved. Further acquisition, scientific-array inspection, builds or consumer numerical execution require concrete finite leases; no automatic experiments or scans."
+    "scope_limit": "Finite HyRec/Paper I source checkpoint complete; all19 program remains OPEN. Targeted helium source facts only, Paper I body reading and Eq99/Eq121 reconciliation pending. Existing queues, alternatives, EDE blocked candidate and consumer/physical gates retained. Further acquisition, arrays, builds or numerical execution require concrete finite leases; no automatic experiments or Site job."
   }
 }

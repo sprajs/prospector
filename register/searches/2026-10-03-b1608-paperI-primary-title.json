@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-10-03-hyrec-and-b1608-primary-source-checkpoint",
+  "search_id": "2026-10-03-b1608-paperI-primary-title",
+  "lane": "baseline-reference",
+  "work_mode": "targeted_primary_source_resolution",
+  "status": "completed",
+  "requested_utc": "2026-10-03T18:20:11.548389+00:00",
+  "request": {
+    "query": "ti:\"DISSECTING THE GRAVITATIONAL LENS B1608+656. I. LENS POTENTIAL RECONSTRUCTION\"",
+    "normalized_query": "ti:\"DISSECTING THE GRAVITATIONAL LENS B1608+656. I. LENS POTENTIAL RECONSTRUCTION\"",
+    "order": "relevance",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "82348ef72485698291888d72cf431971e6f6b60d6e8c30d22cfb8f7b424c01e9"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Primary identity resolution from already saved Crossref DOI/title/authors/journal coordinates. No Crossref repeat or guessed arXiv ID; earlier Koopmans HTTP429 remains stopped.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22DISSECTING+THE+GRAVITATIONAL+LENS+B1608%2B656.+I.+LENS+POTENTIAL+RECONSTRUCTION%22&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+    "retrieved_utc": "2026-10-03T18:20:11.548389+00:00",
+    "sha256": "0825c5832ab1a7d93f6797a2739e6c9e40455eb2bb6bb381eb39f2b3eb6dffb6",
+    "http_status": 200,
+    "error": null,
+    "local_path": ".work/b1608-paperI-primary-20261003/attempt-v1/arxiv/objects/0825c5832ab1a7d93f6797a2739e6c9e40455eb2bb6bb381eb39f2b3eb6dffb6.xml",
+    "retry_after": null
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:0804.2827v3",
+      "position": 0,
+      "disposition": "selected",
+      "reason": "Unique DOI/title/all seven authors match ApJ691,277–298 and the existing Suyu Paper II bibliography. Exact pinned version admitted; body review remains pending.",
+      "title": "Dissecting the Gravitational Lens B1608+656. I. Lens Potential Reconstruction",
+      "decision_history": [
+        {
+          "utc": "2026-10-03T18:39:49.738082+00:00",
+          "disposition": "selected",
+          "reason": "Unique DOI/title/all seven authors match ApJ691,277–298 and the existing Suyu Paper II bibliography. Exact pinned version admitted; body review remains pending."
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One bounded relevance window; no exhaustive or gap-free archive claim.",
+      "Source bodies, abstracts and complete feeds stay private; admitted identities remain pending full readings."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": "2026-10-03-hyrec-and-b1608-primary-source-checkpoint",
+    "query_id": "2026-10-03-b1608-paperI-primary-title"
+  }
+}
