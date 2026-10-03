@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-ede-method-pdf-html-equation-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "agent_id": "/root/perturbation_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "session_id": "01a0fec1-578e-7712-ba9d-1707e70bb91c",
+    "turn_id": "01a103ac-8a5b-7c61-b0fa-1f7803508560",
+    "evidence_kind": "runtime_turn_context",
+    "actual_backend_identity": null,
+    "companion_path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/pdf-check-v1/source-runtime-final-v1.json",
+    "companion_sha256": "6b162f4bde57fdbb59a2a2423ef2dd3103cb5a8f983d102d4d8e0ca159c57f0b",
+    "policy_note": "ROOT explicitly authorized reuse of the existing exact Sol worker at actual configured xhigh; ordinary full-paper review requests high. No new worker or backend identity is inferred."
+  },
+  "reviewed_utc": "2026-10-03T22:08:33.544096+00:00",
+  "review_time_basis": "Coordinator integration timestamp after the completed, separately confirmed source turn; not a fabricated worker completion timestamp.",
+  "packet_path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/pdf-check-v1/workers/source/packet-final-v1.json",
+  "packet_sha256": "7192af39c414fae73fb939718c3a290a2de715b9563c3c540c6086f1a1244f6d",
+  "reviewed_papers": [
+    "arxiv:1806.10608v1"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:1806.10608v1",
+      "source_hashes": {
+        "pdf": "4c41a4eb17acd693932e061f347fa75a75422f16e534ca1ab2ff5ca7a44f064a",
+        "html": "ba5b329123418f34caef286f54d22238904cfdca6e7d6556a6b2c4d4f00baacf"
+      },
+      "coverage": {
+        "main_text": "Exact finite comparison of PDFpages4,5,18 with selected retained HTML math/conventions. Complete selected images were inspected; accepted source claims are restricted to the explicit comparisons below, not every visible statement.",
+        "checked_locators": [
+          "PDFp4 left column SecII.B Eq17/Eq18 versus HTML#S2.E17/#S2.E18, lines521–535; near Eq20/21 oscillator validity context.",
+          "PDFp4 right column Eq22/Eq23 and immediately following conformal-time statement versus HTML#S2.E22.m1/#S2.SS3.p1.2, lines584–596; Eq24/25 and early-sound-speed text.",
+          "PDFp5 right lower column Eq32/Eq33 and u_a=(1+w_a)theta_a context versus HTML#S3.E32.m1, lines727–732.",
+          "PDFp18 right column AppendixA EqA4 plus immediately preceding conformal-time sentence versus HTML#A1.p1.2/#A1.Ex8 (converted53), lines1253–1269; surrounding A1–A9 metric/rest-frame conventions.",
+          "PDFp5 right upper/middle Eq30 and reference(30) versus HTML#S2.Ex3 and #S2.SS4.p4.1 lost label/reference; former exact anchors preserved.",
+          "PDFp4 Eq26 rest sound speed and PDFp5 method Theta_i=phi_i/f and analytic smallf_zc/away-from-hilltop clauses viewed as surrounding method-only context; not a 2019 code bridge."
+        ],
+        "visual_basis": "Existing centrally created pdftoppm100dpi complete pages, no new rendering/extraction. Native full-image inspection, not captions-only or text-aid inference, supports the selected printed expressions.",
+        "figures": {
+          "visual_checked": [],
+          "captions_only": [],
+          "reason": "These three selected pages contain no plotted figures; all paper figures remain unexamined visually by this audit."
+        },
+        "unread": [
+          "All other PDFpages including page1/header; complete paper/appendix and ordinary full-read stages remain outside scope.",
+          "PDF initial-attractor equations on subsequent pages and the remainder of AppendixA derivation; prior selected HTML evidence remains separate.",
+          "Original TeX, external bibliography, original modified CLASS fork/branch/commit/patch/configuration and every repository/legal URL.",
+          "Numerical validation behind visible approximation, constraint and conclusion statements; observational arrays, covariance, likelihoods, priors and fitted summaries.",
+          "Native/consumer implementation, binaries and outputs; no physical, numerical, compiled/installed or statistical acceptance."
+        ]
+      },
+      "conclusions": [
+        "P01–P03 confirm selected printed period, entropy-density dimensional and clock conflicts; interpreted equations and producer behavior remain unknown.",
+        "P04 separates printed A4/HTML converted 53 and the missing HTML Eq30 label/reference from repeated physical expressions. P05 retains the printed reversed early-sound-speed interval without endpoint repair."
+      ]
+    }
+  ],
+  "reviewed_source_assets": [
+    {
+      "id": "ede-method-1806-10608-v1-original-pdf",
+      "url": "https://arxiv.org/pdf/1806.10608v1",
+      "sha256": "4c41a4eb17acd693932e061f347fa75a75422f16e534ca1ab2ff5ca7a44f064a",
+      "role": "pdf",
+      "conditioning": "Complete original pages 4, 5 and 18 visually checked through existing centrally rendered native page images. All other pages and figures remain outside this selected comparison. Exact title, all five authors and v1 were matched centrally; the source reviewer did not independently view page 1 or produce a new render/extraction."
+    },
+    {
+      "id": "ede-method-1806-10608-v1-original-html",
+      "url": "https://arxiv.org/html/1806.10608v1",
+      "sha256": "ba5b329123418f34caef286f54d22238904cfdca6e7d6556a6b2c4d4f00baacf",
+      "role": "html",
+      "conditioning": "Selected original equation MathML/alttext and nearby declared clocks compared with the pinned PDF. Earlier broader method-definition checks remain a distinct bounded source record; no full-paper or producer-code review is inferred."
+    }
+  ],
+  "accepted_records": {
+    "contract_ids": [
+      "ede-primary-method-printed-equation-conflicts-source-v1"
+    ],
+    "claim_ids": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05"
+    ],
+    "contract_sha256": "de277d462116de63a688c4c1dfcf89ec85e8b9753889f4b9cb86909e94364294",
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": [],
+    "graph_edge_ids": []
+  },
+  "public_projection": {
+    "worker_proposed_contract": {
+      "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/pdf-check-v1/workers/source/proposed-scoped-contract-final-v1.json",
+      "sha256": "7638960036b4c95788355b6fdf84c0dabdb355efcbc1e8cbf33f2ad48b567c3c",
+      "bytes": 4254
+    },
+    "canonical_path": "register/contracts/ede-primary-method-printed-equation-conflicts-source-v1.json",
+    "scope": "Coordinator projection of accepted located claims. Original worker bytes remain unchanged; public prose and cross-links do not represent a new worker turn or expanded scientific acceptance.",
+    "changes": [
+      "Add spaces in selected public prose and clarify that the source reviewer did not independently view page 1; mathematical content and accepted scope unchanged."
+    ]
+  },
+  "corrections": [
+    {
+      "paper_id": "arxiv:1806.10608v1",
+      "display_summary": "Printed appendix A4 corresponds to HTML converted 53. Printed Eq30 and its later reference survive in PDF page 5 but lose their labels in HTML. Period, entropy-density and clock conflicts also occur in the selected printed pages; no equation repair is accepted.",
+      "kind": "source_locator_and_conversion_distinction",
+      "source_sha256": "4c41a4eb17acd693932e061f347fa75a75422f16e534ca1ab2ff5ca7a44f064a",
+      "locators": [
+        "PDF page 18, Appendix A4; HTML #A1.Ex8",
+        "PDF page 5, Eq30 and reference (30); HTML #S2.Ex3/#S2.SS4.p4.1",
+        "PDF pages 4, 5 and 18; selected expressions only"
+      ]
+    }
+  ],
+  "limitations": [
+    "Targeted selected-source claims only. No Luna extraction, full-paper Sol review, graph relationship, prospect, design or numerical reference is accepted.",
+    "The independently selected 2018 v1 does not establish which version was cited or consumed by the later letter, or identify its sampled coordinates, density normalizer or modified CLASS producer.",
+    "No physical/numerical/consumer/native or statistical qualification. Existing blocked candidate and canonical letter-normalization contract are unchanged."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  },
+  "additive_amendment": {
+    "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/pdf-check-v1/workers/source/source-comparison-amendment-final-v1.json",
+    "sha256": "3679a72f3f1ccdd7b319fb5c4f043ed1b7a4e826b25adb6bcbb8a456be2534f7",
+    "bytes": 4645
+  },
+  "prior_html_review_id": "2026-10-03-ede-primary-method-targeted-source-claims"
+}

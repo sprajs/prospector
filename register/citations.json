@@ -429,6 +429,19 @@
         "locator": "HTML bibliography bib.bib83, lines2278–2287; Peterson et al.2021, title and base-ID URL; version not printed",
         "url": "https://arxiv.org/html/2202.04077v2#bib.bib83"
       }
+    },
+    {
+      "id": "cite-1811.04083-1806.10608",
+      "from_paper_id": "arxiv:1811.04083v2",
+      "cited_arxiv_id": "1806.10608",
+      "cited_version": null,
+      "reference": "40",
+      "source": {
+        "role": "html",
+        "sha256": "b36bec38bc8fddabe5c70ad54f1400bf9c6272b043a9c9bbd3efdb0527310afd",
+        "locator": "Original HTML bibliography #bib.bib40, lines 812–816; explicit base ID, no cited version printed.",
+        "url": "https://arxiv.org/html/1811.04083v2#bib.bib40"
+      }
     }
   ],
   "inspected_paper_ids": [

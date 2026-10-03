@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "contract_id": "ede-primary-method-printed-equation-conflicts-source-v1",
+  "title": "Printed scalar-fluid equations and unresolved clock conventions",
+  "review_id": "2026-10-03-ede-method-pdf-html-equation-source-claims",
+  "paper_ids": [
+    "arxiv:1806.10608v1"
+  ],
+  "scopes": [
+    {
+      "scope_id": "NEXT-14",
+      "title": "Original scalar-fluid equation interpretation",
+      "paper_ids": [
+        "arxiv:1806.10608v1"
+      ],
+      "checked_claim": "Visual inspection of complete original PDF pages 4, 5 and 18 confirms that the retained HTML repeats the selected printed expressions: Eq17 contains H0^-1 while Eq18 contains H0; density entropy terms in Eqs22/32 contain one conformal H; and Appendix-A prose introduces conformal time before a scalar equation with 3H and k^2/a^2. These are printed-source dimensional/convention conflicts requiring interpretation, rather than HTML-only differences. Printed appendix EqA4 corresponds to HTML converted 53/#A1.Ex8. Printed Eq30 and its later reference are present on page 5 where the HTML loses the label/reference. The page 4 early adiabatic-sound-speed range also orders -7/3 below -5/2. No corrected expression or producer behavior is accepted.",
+      "unresolved": "The original modified CLASS source revision/patch/configuration and its clocks, frequency normalization and implemented entropy-density terms remain unknown. The 2018 method version does not identify the 2019 producer or map its sampled phi_i/Omega_phi,0 aliases. Source-faithful scalar perturbation and finite-start interpretation remain blocked; no numerical, physical or statistical law is qualified."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "ede-method-1806-10608-v1-original-pdf",
+      "url": "https://arxiv.org/pdf/1806.10608v1",
+      "sha256": "4c41a4eb17acd693932e061f347fa75a75422f16e534ca1ab2ff5ca7a44f064a",
+      "role": "pdf",
+      "conditioning": "Complete original pages 4, 5 and 18 visually checked through existing centrally rendered native page images. All other pages and figures remain outside this selected comparison. Exact title, all five authors and v1 were matched centrally; the source reviewer did not independently view page 1 or produce a new render/extraction."
+    },
+    {
+      "id": "ede-method-1806-10608-v1-original-html",
+      "url": "https://arxiv.org/html/1806.10608v1",
+      "sha256": "ba5b329123418f34caef286f54d22238904cfdca6e7d6556a6b2c4d4f00baacf",
+      "role": "html",
+      "conditioning": "Selected original equation MathML/alttext and nearby declared clocks compared with the pinned PDF. Earlier broader method-definition checks remain a distinct bounded source record; no full-paper or producer-code review is inferred."
+    }
+  ],
+  "limitations": [
+    "The period prefactor and entropy-density dimensions require an original producer explanation. Neither replacing H0 with its inverse nor inserting a second conformal H is an accepted repair or a statement of what code executed.",
+    "Appendix A4's prose/clock conflict does not establish whether the intended derivatives were cosmic or conformal. A consistent source-to-code clock and gauge convention is still required.",
+    "The reversed early-sound-speed range is preserved as printed source text; no endpoint swap or new scalar approximation is admitted. Source-acknowledged differences between exact slow-roll and parametrized adiabatic sound speeds remain separate from this ordering inconsistency.",
+    "The method's angle, rest sound speed and small-fraction/away-from-hilltop approximation statements do not close the later letter's coordinate/normalizer/code bridge. The independent compensated-density background remains a distinct model.",
+    "Next action: obtain an exact original modified CLASS producer revision or patch plus configuration and conventions covering these equations, or retain refusal. No exact author fork URL was located in the preceding method navigation; this comparison supplies none.",
+    "This accepts only selected printed-source comparison and visible locator corrections. Existing candidate readiness, initial-mode, thermal/observable, likelihood, numerical and implementation gates remain open."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}

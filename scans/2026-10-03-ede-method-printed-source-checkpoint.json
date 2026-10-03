@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-03-ede-method-printed-source-checkpoint",
+  "status": "completed",
+  "started_utc": "2026-10-03T20:39:32.273186+00:00",
+  "completed_utc": "2026-10-03T22:20:00.437430+00:00",
+  "lane": "early-energy",
+  "work_mode": "explicit_scoped_source_audit",
+  "registered_papers": [
+    "arxiv:1806.10608v1"
+  ],
+  "new_versions": [
+    "arxiv:1806.10608v1"
+  ],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [
+    "2026-10-03-ede-primary-method-targeted-source-claims",
+    "2026-10-03-ede-method-pdf-html-equation-source-claims"
+  ],
+  "source_contract_ids": [
+    "ede-n3-primary-method-coordinate-perturbation-dependency-v1",
+    "ede-primary-method-printed-equation-conflicts-source-v1"
+  ],
+  "idea_ids": [],
+  "design_ids": [],
+  "prospect_ids": [],
+  "edge_ids": [],
+  "citation_ids": [
+    "cite-1811.04083-1806.10608"
+  ],
+  "search_receipts": [],
+  "known_id_acquisition": {
+    "request_url": "https://export.arxiv.org/api/query?id_list=1806.10608&max_results=1",
+    "requested_base_ids": [
+      "1806.10608"
+    ],
+    "max_results": 1,
+    "explicit_sort_order": null,
+    "explicit_sort_direction": null,
+    "retrieved_utc": "2026-10-03T20:39:32.273186+00:00",
+    "metadata_sha256": "5bd96a76add97572b31538f8a81dc54c09739b752ad167c9095e32a2ace9e61d",
+    "result_ids": [
+      "arxiv:1806.10608v1"
+    ],
+    "disposition": "selected_primary_method_metadata; ordinary_full_read_pending",
+    "reason": "Explicit later-letter reference 40, followed one citation hop. A known-ID lookup is not a topic discovery/pagination window; no request sorting or archive completeness is invented."
+  },
+  "source_packets": [
+    {
+      "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/workers/source/packet-final-v1.json",
+      "sha256": "7d6490741d5bc5dfd3d40ddf4faad9aa1c99dc1d29894840b34c7fc46d039ce9",
+      "bytes": 22572
+    },
+    {
+      "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/pdf-check-v1/workers/source/packet-final-v1.json",
+      "sha256": "7192af39c414fae73fb939718c3a290a2de715b9563c3c540c6086f1a1244f6d",
+      "bytes": 16167
+    }
+  ],
+  "source_manifests": [
+    {
+      "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/workers/source/manifest-final-v1.json",
+      "sha256": "32041cabb28041522b978b5f5e187f4ceaf0119b28234ae72b528dfba330e061",
+      "bytes": 2612
+    },
+    {
+      "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/pdf-check-v1/workers/source/manifest-final-v1.json",
+      "sha256": "f3b0d940c7cf695f56130095ee7dd5c31770d73e665885f5ac8f75c056c7e11d",
+      "bytes": 4128
+    }
+  ],
+  "source_comparison_amendment": {
+    "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/pdf-check-v1/workers/source/source-comparison-amendment-final-v1.json",
+    "sha256": "3679a72f3f1ccdd7b319fb5c4f043ed1b7a4e826b25adb6bcbb8a456be2534f7",
+    "bytes": 4645
+  },
+  "identity_amendment": {
+    "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/identity-amendment-final-v2.json",
+    "sha256": "fad00fdd1694699b3d8cc25910de91399e956e0bd8753072bf455e141413bd59",
+    "bytes": 3738
+  },
+  "coordinator_reviews": [
+    {
+      "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/coordinator-review-final-v2.json",
+      "sha256": "75f93f31bb0986108e8ec09b9ce752ee8936708b7520ca9130cd38f78bbfeb40",
+      "bytes": 6433
+    },
+    {
+      "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/pdf-check-v1/coordinator-review-final-v2.json",
+      "sha256": "af7229ec04f521169ab986db2d7c897e1d7c63e8eceaae8d7ad22c3b6a39bb03",
+      "bytes": 10368
+    }
+  ],
+  "bounded_producer_navigation": {
+    "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/pdf-check-v1/producer-navigation-source-check-final-v1.json",
+    "sha256": "cb1daf1b8a0166ff9051fa56f034a109811879b6475dbfeb88576a95885c54ed",
+    "bytes": 2826
+  },
+  "pending": [
+    {
+      "scope_id": "NEXT-14",
+      "stage": "original_ede_producer_and_prediction_closure",
+      "reason": "Original producer revision/patch/configuration, period/frequency and entropy-density clocks, 2019 sampled coordinate/normalizer bridge, finite-start/gauge/curvature normalization, oscillation controls, thermal/species/observable and likelihood closure remain unresolved. Selected printed conflicts are observed, with no accepted repair."
+    }
+  ],
+  "next_required_primary_witness": {
+    "url": null,
+    "sha256": null,
+    "reason": "No exact original modified CLASS asset was identified in selected primary navigation. Generic CLASS/MontePython URLs are not a producer pin. This is a bounded unknown, not global unavailability or paper rejection."
+  },
+  "preserved_canonical_contract": {
+    "path": "register/contracts/ede-n3-source-normalization-initial-coordinate-closure-v1.json",
+    "sha256": "f8c7e35a893bdb0923df2e945383bd26cddb6710fc977e51bcf591a9fc5b6413",
+    "bytes": 5134
+  },
+  "preserved_candidate": {
+    "path": ".work/alternative-ede-source-candidate-20261003/workers/source/proposed-design-final-v2.json",
+    "sha256": "e4e16b02bcdd6d851aaae199521146770f3c9c48fc85c4e2e3d525b8f0be2a50",
+    "bytes": 13598,
+    "readiness": "blocked",
+    "canonical_integration": false,
+    "executable_request": null
+  },
+  "resource_receipt": {
+    "new_central_requests": 3,
+    "requests_breakdown": {
+      "known_id_atom": 1,
+      "pinned_html": 1,
+      "pinned_pdf": 1
+    },
+    "new_agents": 0,
+    "existing_sol_worker_reused": 1,
+    "targeted_sol_source_turns": 2,
+    "new_full_reads": 0,
+    "new_luna_reads": 0,
+    "new_full_paper_sol_reviews": 0,
+    "new_pdf_text_aids": 1,
+    "new_render_jobs": 1,
+    "rendered_pdf_pages": [
+      4,
+      5,
+      18
+    ],
+    "closed_source_leases": [
+      {
+        "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/release-final-v1.json",
+        "sha256": "6408932ecf7a3cfebe4c671f71512bdca7c09a11b14d326234399a70f3e9f386",
+        "bytes": 2360
+      },
+      {
+        "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/pdf-check-v1/release-final-v1.json",
+        "sha256": "0d62cc9ba7f51e7e05832f3ab00e21535fa2ebbcf43e788198bcdace13076695",
+        "bytes": 3562
+      },
+      {
+        "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/pdf-check-v1/offline-renders-v1/release-final-v1.json",
+        "sha256": "cb6e42a8242f1bf17f0dce009e4011fdfd4ea8d9bdcd7f0a4bb98bbb9a21d6ff",
+        "bytes": 3356
+      }
+    ],
+    "scientific_arrays_or_numerical_experiments": 0,
+    "compiler_jobs": 0,
+    "offline_record_jobs": 1
+  },
+  "limits": [
+    "One new independently identified method version, two distinct targeted Sol source turns, zero full reads or new scientific ideas/edges/prospects/designs. Graph change is source-node inventory only.",
+    "All 62 preexisting ordinary queue entries retain exact values and order; one method full-read entry is appended. Existing candidate, canonical letter contract, all alternative prospects and nineteen-scope negatives remain unchanged.",
+    "The two source packets and original contracts are immutable. Integrated source-only prose links the completed additive PDF comparison without relabeling earlier coverage or model confirmation.",
+    "No new GET, worker, numerical experiment or Site publication in this public integration. Source leases were finite and separately granted; offline structural checks need their own finite allocation."
+  ],
+  "structural_validation": {
+    "scope": "Register integrity and generated views only; no scientific qualification.",
+    "result_path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/publication-v1/validation-attempt-v1/result.json",
+    "before_completion_passed": [
+      "validate-in-progress",
+      "build-views"
+    ],
+    "final_check_policy": "Final validation and index rebuild follow in the same finite lease; failure restores the in-progress completion fields."
+  }
+}

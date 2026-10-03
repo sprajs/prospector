@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1806.10608v1",
+  "arxiv_id": "1806.10608",
+  "version": 1,
+  "title": "Cosmological implications of ultra-light axion-like fields",
+  "authors": [
+    "Vivian Poulin",
+    "Tristan L. Smith",
+    "Daniel Grin",
+    "Tanvi Karwal",
+    "Marc Kamionkowski"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "hep-ph"
+  ],
+  "published_utc": "2018-06-27T18:00:01Z",
+  "updated_utc": "2018-06-27T18:00:01Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1806.10608v1",
+    "html": "https://arxiv.org/html/1806.10608v1",
+    "pdf": "https://arxiv.org/pdf/1806.10608v1"
+  },
+  "license": {
+    "status": "arXiv.org perpetual non-exclusive license displayed in pinned HTML infobox",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Exact version/title/authors matched centrally and in selected HTML. Atom supplies no licence URL; linked legal text and code rights are unexamined. The HTML internal converted date is separate from the source version date. Raw sources remain local and ignored."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=1806.10608&max_results=1",
+      "retrieved_utc": "2026-10-03T20:39:32.273186+00:00",
+      "sha256": "5bd96a76add97572b31538f8a81dc54c09739b752ad167c9095e32a2ace9e61d",
+      "bytes": 3447
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/1806.10608v1",
+      "retrieved_utc": "2026-10-03T20:39:35.661602+00:00",
+      "sha256": "ba5b329123418f34caef286f54d22238904cfdca6e7d6556a6b2c4d4f00baacf",
+      "bytes": 539307
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/1806.10608v1",
+      "retrieved_utc": "2026-10-03T21:20:27.693966+00:00",
+      "sha256": "4c41a4eb17acd693932e061f347fa75a75422f16e534ca1ab2ff5ca7a44f064a",
+      "bytes": 4058300
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "metadata",
+    "reason": "Exact primary method v1 independently identified after the later letter's reference 40 printed only its base ID. Selected targeted HTML and PDF source claims are recorded separately. Complete Luna reading and full-paper Sol review remain pending; this is not proof of a version consumed in 2019."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

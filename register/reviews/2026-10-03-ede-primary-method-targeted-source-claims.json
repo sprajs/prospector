@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-ede-primary-method-targeted-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "agent_id": "/root/perturbation_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "session_id": "01a0fec1-578e-7712-ba9d-1707e70bb91c",
+    "turn_id": "01a10382-b1c3-7291-8a78-38dbccea9ee9",
+    "evidence_kind": "runtime_turn_context",
+    "actual_backend_identity": null,
+    "companion_path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/source-runtime-final-v1.json",
+    "companion_sha256": "7e679adcfaad14f6a8daa6355a62d8744fd94dfd111355a1251dae8b14d3840c",
+    "policy_note": "ROOT explicitly authorized reuse of the existing exact Sol worker at actual configured xhigh; ordinary full-paper review requests high. No new worker or backend identity is inferred."
+  },
+  "reviewed_utc": "2026-10-03T22:08:33.544096+00:00",
+  "review_time_basis": "Coordinator integration timestamp after the completed, separately confirmed source turn; not a fabricated worker completion timestamp.",
+  "packet_path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/workers/source/packet-final-v1.json",
+  "packet_sha256": "7d6490741d5bc5dfd3d40ddf4faad9aa1c99dc1d29894840b34c7fc46d039ce9",
+  "reviewed_papers": [
+    "arxiv:1806.10608v1"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:1806.10608v1",
+      "source_hashes": {
+        "html": "ba5b329123418f34caef286f54d22238904cfdca6e7d6556a6b2c4d4f00baacf"
+      },
+      "coverage": {
+        "main_text": "Selected original Sec II.1–II.4 definitions, equations and domain clauses; Sec III.1 fluid variables and starts; Sec I code-navigation paragraph only. Title/header and abstract transition-fraction definition checked. This is not a complete paper reading.",
+        "checked_locators": [
+          "Header lines4,226–270: title, licence display, watermark v1/27 Jun 2018, authors/affiliations and internal converted date; #abstract1.1 line274: transition fraction definition only.",
+          "#S1.p11.1/footnote2 and footnote3 lines318–328: modified CLASS statement and generic CLASS/MontePython URLs.",
+          "#S2.SS1.p2.1–p2.6, #S2.E1–E8 lines340–411: physical potential/density, fixed critical normalizer, dimensionless variables and clock; important original MathML/alttext checked directly.",
+          "#S2.Ex1 (printed Eq9), #S2.E10, #S2.SS1.p3.1–p3.3 lines413–440: regular homogeneous expansion and numerical initial domain.",
+          "#S2.SS1.p4.1–p5.7, #S2.E11–E16 lines442–513: oscillatory averaging, power-law amplitude and interpolation.",
+          "#S2.SS2.p1.1–p1.4, #S2.E17–E21 lines517–565: frequency/period expressions and subdominant oscillatory validity; original Eq18 MathML checked directly.",
+          "#S2.SS3.p1.1–p4.2, #S2.E22–E26 lines571–637: synchronous conformal-clock equations, adiabatic versus rest sound speed; original MathML of Eqs22/24/26 checked directly.",
+          "#S2.SS4.p1.1–p4.1, #S2.E27–E29/#S2.Ex3/#S2.E31 lines644–706: theory/model coordinate relation and approximation domains; original Eq27 and domain MathML checked.",
+          "#S3.SS1.p1.1–p2.3, #S3.E32–E36 lines716–782: heat flux, switching, synchronous attractor, source zero start and isocurvature qualification; original Eq32 MathML checked directly.",
+          "Appendix A #A1.p1–p6, Eqs50–88 lines1227–1601: selected rest-frame averaging and gauge/entropy derivation, including original Eq53/70 MathML; not figure validation.",
+          "Bibliography #bib.bib32–35 lines1935–1966 and #bib.bib40 lines2010–2017: explicit CLASS/MB printed base IDs only.",
+          "Bounded literal Omega_a,0/Omega_Theta,0 and author-code URL/term searches; adjacent constraint/caption/Appendix-B snippets appeared, without accepting their numerical or fit claims."
+        ],
+        "math_basis": "Original retained HTML MathML and TeX alttext, with bounded source-only stdout reading aids. No saved extraction aid, source copy, PDF/TeX or render generated. HTML source conflicts are not promoted to printed-PDF errors.",
+        "figures": {
+          "visual_checked": [],
+          "captions_only": "Incidental Fig11/12 captions and adjacent example/table material encountered in locator searches; no visual or numerical validation accepted."
+        },
+        "unread": [
+          "Pinned method PDF/TeX and all rendered figures; legal link and every external code/repository page.",
+          "Remainder of introduction, Sec III.2 and Sec IV–VII as a coherent scientific review, full tables, fits/constraints, likelihoods, observational inputs, priors and covariance.",
+          "Appendix B's numerical comparison as a verified result; only incidental surrounding source snippets encountered.",
+          "Remaining bibliography and external cited works, original modified CLASS source/patch/configuration, and 2019 producer implementation.",
+          "Native implementation, binaries, requests, tests, solver output arrays and thermal/observable histories in this task."
+        ]
+      },
+      "conclusions": [
+        "Method-only coordinates, fixed critical-density convention, separate interpolation/today coefficient and approximation domains are located. Conditional reader n=3 algebra is not a producer implementation.",
+        "The potential-specific averaged rest-frame sound speed and synchronous starts are distinct prescriptions, with validity and finite-start controls unresolved.",
+        "The original packet recorded HTML conflicts while PDF comparison was pending. That historical coverage is preserved; the later separate printed-source review confirms selected printed conflicts without accepting repair."
+      ]
+    }
+  ],
+  "reviewed_source_assets": [
+    {
+      "id": "ede-method-1806-10608-v1-original-html",
+      "url": "https://arxiv.org/html/1806.10608v1",
+      "sha256": "ba5b329123418f34caef286f54d22238904cfdca6e7d6556a6b2c4d4f00baacf",
+      "role": "html",
+      "conditioning": "Original selected MathML, TeX alttext and paragraph/bibliography anchors checked. The independently matched v1 is a method dependency, not an established consumed version or 2019 producer identity. No PDF, figures, code or linked legal text checked; displayed arXiv perpetual non-exclusive licence is navigation only."
+    }
+  ],
+  "accepted_records": {
+    "contract_ids": [
+      "ede-n3-primary-method-coordinate-perturbation-dependency-v1"
+    ],
+    "claim_ids": [
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "M06",
+      "M07"
+    ],
+    "contract_sha256": "cf2f3c8f7d71e43547bf9d27dd7f25793381489e0e72f4de2727f6c125a4c627",
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": [],
+    "graph_edge_ids": []
+  },
+  "public_projection": {
+    "worker_proposed_contract": {
+      "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/workers/source/proposed-dependency-contract-final-v1.json",
+      "sha256": "2cc371519ae26614a3601903395ae4ab33ccd30240c366793b8f186e7e7892a7",
+      "bytes": 5130
+    },
+    "canonical_path": "register/contracts/ede-n3-primary-method-coordinate-perturbation-dependency-v1.json",
+    "scope": "Coordinator projection of accepted located claims. Original worker bytes remain unchanged; public prose and cross-links do not represent a new worker turn or expanded scientific acceptance.",
+    "changes": [
+      "Replace the historical pending-PDF next action with an explicit link to the subsequently completed printed-source comparison; no accepted formula, domain or source identity is changed."
+    ]
+  },
+  "corrections": [],
+  "limitations": [
+    "Targeted selected-source claims only. No Luna extraction, full-paper Sol review, graph relationship, prospect, design or numerical reference is accepted.",
+    "The independently selected 2018 v1 does not establish which version was cited or consumed by the later letter, or identify its sampled coordinates, density normalizer or modified CLASS producer.",
+    "No physical/numerical/consumer/native or statistical qualification. Existing blocked candidate and canonical letter-normalization contract are unchanged."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  },
+  "subsequent_source_comparison": {
+    "review_id": "2026-10-03-ede-method-pdf-html-equation-source-claims",
+    "contract_id": "ede-primary-method-printed-equation-conflicts-source-v1",
+    "packet": {
+      "path": ".work/alternative-ede-source-candidate-20261003/closure-v1/code-navigation-v1/pdf-check-v1/workers/source/packet-final-v1.json",
+      "sha256": "7192af39c414fae73fb939718c3a290a2de715b9563c3c540c6086f1a1244f6d",
+      "bytes": 16167
+    },
+    "effect": "Additive printed-source/locator comparison only. Does not expand the coverage or model confirmation of this earlier HTML turn."
+  }
+}

@@ -1,6 +1,6 @@
 # Register
 
-70 paper versions · 23 ideas · 9 topics · 10 candidate prospects.
+71 paper versions · 23 ideas · 9 topics · 10 candidate prospects.
 
 [Open Prospector](https://prospector-cosmology.sprajs.chatgpt.site) · [Local map](map.html)
 
@@ -10,7 +10,7 @@
 | --- | ---: | ---: |
 | [ΛCDM reference](topics/baseline-reference.json) | 22 | 4 |
 | [Bounces, cycles and primordial alternatives](topics/bounces-cycles.json) | 3 | 0 |
-| [Early energy and recombination](topics/early-energy.json) | 18 | 8 |
+| [Early energy and recombination](topics/early-energy.json) | 19 | 8 |
 | [Inhomogeneity, averaging and observers](topics/inhomogeneity.json) | 6 | 2 |
 | [Interactions, transitions and decays](topics/interacting-sectors.json) | 12 | 9 |
 | [Acceleration and reconstruction](topics/kinematics.json) | 4 | 2 |
@@ -65,7 +65,7 @@ Combined models require compatibility checks before promotion.
 - [Tracking scalar unification requires a depletion branch between early and late energy](ideas/unified-scalar-steep-steeper-shallow.json)
 
 [Typed relationships](graph.json) preserve overlap, distinctions, critique, shared data and prospect links.
-[Bibliographic citations](citations.json): 33 explicit links; the index is incomplete.
+[Bibliographic citations](citations.json): 34 explicit links; the index is incomplete.
 
 ## Papers
 
@@ -90,6 +90,7 @@ Combined models require compatibility checks before promotion.
 | [Einstein-Cartan Gravity with Torsion Field Serving as Origin for Cosmological Constant or Dark Energy Density](https://arxiv.org/abs/1607.01128v2) | [1607.01128v2](papers/1607.01128v2.json) | screened |
 | [Kinematics of Einstein-Cartan universes](https://arxiv.org/abs/1611.07878v3) | [1611.07878v3](papers/1611.07878v3.json) | screened |
 | [Precision big bang nucleosynthesis with improved Helium-4 predictions](https://arxiv.org/abs/1801.08023v3) | [1801.08023v3](papers/1801.08023v3.json) | discovered |
+| [Cosmological implications of ultra-light axion-like fields](https://arxiv.org/abs/1806.10608v1) | [1806.10608v1](papers/1806.10608v1.json) | discovered |
 | [Planck 2018 results. VI. Cosmological parameters](https://arxiv.org/abs/1807.06209v4) | [1807.06209v4](papers/1807.06209v4.json) | screened |
 | [Early Dark Energy Can Resolve The Hubble Tension](https://arxiv.org/abs/1811.04083v2) | [1811.04083v2](papers/1811.04083v2.json) | reviewed |
 | [Einstein-Cartan Cosmologies](https://arxiv.org/abs/1812.04589v1) | [1812.04589v1](papers/1812.04589v1.json) | screened |
@@ -236,6 +237,7 @@ Source checks and structural validation do not establish independent reproductio
 - [2026-10-03-b1608-calibrated-source-assets](reviews/2026-10-03-b1608-calibrated-source-assets.json): The current FLT has21 HDUs and declared full-size calibrated ERR/DQ payloads, distinct from RAW7-HDU zero-encoded placeholders. Array values and error quality remain unchecked.
 - [2026-10-03-b1608-calibrated-source-assets](reviews/2026-10-03-b1608-calibrated-source-assets.json): SCI and external headerlet retain FK5 despite GAIAeDR3-labelled relative fit; ERR/DQ older TAN metadata remains distinct. Trailer identifies separate FLT/FLC branches; FLC-named headerlet is not FLC image acquisition. No frame conversion, alignment or covariance inference.
 - [2026-10-03-b1608-calibrated-source-assets](reviews/2026-10-03-b1608-calibrated-source-assets.json): Preserve literal handbook Eq1 square on σ_RN and its source prose separately. The initialization formula and calibrated metadata do not provide a measured detector law or joint covariance.
+- [arxiv:1806.10608v1](reviews/2026-10-03-ede-method-pdf-html-equation-source-claims.json): Printed appendix A4 corresponds to HTML converted 53. Printed Eq30 and its later reference survive in PDF page 5 but lose their labels in HTML. Period, entropy-density and clock conflicts also occur in the selected printed pages; no equation repair is accepted.
 - [2026-10-03-next08-calibration-estimation-propagation-source-claims](reviews/2026-10-03-next08-calibration-estimation-propagation-source-claims.json): Nine realizations use correlated zeropoints and uncorrelated mean-wavelength shifts; zeropoint–wavelength correlations are omitted. Joint downstream propagation does not imply a correlated joint input law. Earlier shorthand conflated correlation and joint propagation; original packet remains preserved.
 - [2026-10-03-next08-calibration-estimation-propagation-source-claims](reviews/2026-10-03-next08-calibration-estimation-propagation-source-claims.json): Mean-wavelength variations enter SALT2 retraining and affect downstream light-curve fits through changed surfaces; no separate direct wavelength-shift implementation of fitting passbands is certified. The earlier both-retraining-and-fitting shorthand was ambiguous. This is a projection/reader wording correction, not a printed-source repair or new implementation claim.
 - [2026-10-03-sdss-b1608-native-source-assets](reviews/2026-10-03-sdss-b1608-native-source-assets.json): Original strict HEAD ID comparison failed on NUL padding; selected row2864 raw bytes separately checked and right-padding normalization explicit. No source identity alias or full join inferred.
