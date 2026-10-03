@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-10-03-all19-source-wave7",
+  "search_id": "2026-10-03-wave7-fassnacht-delay-primary-title",
+  "lane": "measurement-lineage",
+  "work_mode": "targeted_citation_source_resolution",
+  "status": "completed",
+  "requested_utc": "2026-10-03T10:00:44.504745+00:00",
+  "request": {
+    "query": "ti:\"time delay measurements\" AND au:Fassnacht AND cat:astro-ph",
+    "order": "relevance",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "normalized_query": "ti:\"time delay measurements\" AND au:Fassnacht AND cat:astro-ph",
+    "window_sha256": "c2aee1e13ea7eb4f4119911590fd3c9c9b2e713380fa47b1b0495dd32bfee2bc"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Lawful primary-source resolution of one alreadyallocatedSuyu bibliography2002delay lead after publisherroute redirectedtoaccesschallenge; no accesscontrol bypass or new citationhop. Saved crawlstatus and canonical receipts checked beforequery.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22time+delay+measurements%22+AND+au%3AFassnacht+AND+cat%3Aastro-ph&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+    "retrieved_utc": "2026-10-03T10:00:44.504745+00:00",
+    "sha256": "117b5900aebe638fb5b5f46ab4160e8219b90c376bfe42de5146ee8f07c83bca",
+    "http_status": 200,
+    "error": null,
+    "local_path": ".work/all19-source-wave7-20261003/sources/fassnacht-delay-primary-arxiv-title-query.xml",
+    "retry_after": null
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:astro-ph/0208420v1",
+      "position": 0,
+      "disposition": "deferred",
+      "reason": "Exact title/four authors/year matches printedFassnacht2002ApJ581823-835 and DOIregistry10.1086/344368. SelectedarXivv1body is a boundedtargetedsource asset; ordinary paperadmission/fullreading deferred; journalversionequivalence and exactcitedversion unknown.",
+      "title": "A Determination of H_0 with the CLASS Gravitational Lens B1608+656: III. A Significant Improvement in the Precision of the Time Delay Measurements",
+      "decision_history": [
+        {
+          "utc": "2026-10-03T10:10:35.114093+00:00",
+          "disposition": "deferred",
+          "reason": "Exact title/four authors/year matches printedFassnacht2002ApJ581823-835 and DOIregistry10.1086/344368. SelectedarXivv1body is a boundedtargetedsource asset; ordinary paperadmission/fullreading deferred; journalversionequivalence and exactcitedversion unknown."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9907257v1",
+      "position": 1,
+      "disposition": "deferred",
+      "reason": "Other1999 title-queryhit retained in savedmetadata only; outside allocated2002bibliographic lead. No body acquisition, citationhop or ordinaryadmission.",
+      "title": "A Determination of H_0 with the CLASS Gravitational Lens B1608+656: I. Time Delay Measurements with the VLA",
+      "decision_history": [
+        {
+          "utc": "2026-10-03T10:10:35.114093+00:00",
+          "disposition": "deferred",
+          "reason": "Other1999 title-queryhit retained in savedmetadata only; outside allocated2002bibliographic lead. No body acquisition, citationhop or ordinaryadmission."
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing relevancewindow,start0/limit10; neither gapfree nor exhaustiveliteraturecoverage.",
+      "Selected2002body is an unadmitted targetedsource asset, not new fullpaperreview; otherqueryhit remains unfollowed.",
+      "Source abstracts and fullmetadata bodies remain ignored; no bibliography baseID proves exactcitedversion."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": "2026-10-03-all19-source-wave7",
+    "query_id": "fassnacht-delay-primary-title"
+  }
+}

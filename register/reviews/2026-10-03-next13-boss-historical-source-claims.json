@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-next13-boss-historical-source-claims",
+  "review_kind": "targeted_source_claims",
+  "packet_sha256": "7833a5bf0a2a67fdb1a1af8fc1c77034e30092bb6e4e233201dc549d8a27cab2",
+  "reviewed_papers": ["arxiv:1606.00439v2"],
+  "source_contract_binding": {
+    "contract_id": "next13-boss-dr12-historical-method-mock-ancestry-source-contract-v1",
+    "path": "register/contracts/next13-boss-dr12-historical-method-mock-ancestry-source-contract-v1.json",
+    "sha256": "a36234e68bf61b1b78dae1037cf808d7350039943fed6ae32c8cedf302f02a45"
+  },
+  "worker_packet": {
+    "path": ".work/all19-source-wave7-20261003/workers/boss-historical/packet-final-v1.json",
+    "sha256": "7833a5bf0a2a67fdb1a1af8fc1c77034e30092bb6e4e233201dc549d8a27cab2",
+    "status": "FINAL"
+  },
+  "supporting_packets": [
+    {"path": ".work/all19-source-wave7-20261003/workers/boss-historical/cached-claim-notes-v1.json", "sha256": "05ea4a63ee604b7a38d83b415d3e2ecc6c469a047367648a992a65473c708cc2"},
+    {"path": ".work/all19-source-wave7-20261003/workers/boss-historical/acquisition-needs-final-v1.json", "sha256": "d2c0cae4d24acac4e9d78851481a64d4d8273441b8cbe6c424d49bb9076b6b75"}
+  ],
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "requested_reasoning_note": "high under ordinary policy; explicitly authorized existing worker retains actual xhigh",
+  "agent_id": "/root/perturbation_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "path": ".work/all19-source-wave7-20261003/receipts/perturbation-wave7-runtime-confirmation-v1.json",
+    "sha256": "656ce6591fc2e0423b4c1848f524e08cb3ec5a437225964e2b82a65a6b3ee3f0",
+    "session_id": "01a0fec1-578e-7712-ba9d-1707e70bb91c",
+    "turn_id": "01a1011d-9a16-71f0-ae82-0be553d003d8",
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "exposed_model": "gpt-6.1-sol",
+    "exposed_reasoning_effort": "xhigh",
+    "backend": null
+  },
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:1606.00439v2",
+      "source_hashes": {
+        "pdf": "7026e8dd7e51a07adde8940c380dded16391ad90a49c6ba321393d0fde1fe823",
+        "html": "d3538b300d0b0490dee538b4c5327f694b78bec515e9ed8c820f96466baf560d",
+        "extracted_text": "eb9b18366cd8ca0e4e4de415ccbe504d777ab8b016db941e3e4dcb156b908b7b"
+      },
+      "coverage": {
+        "main_text": "Selected identity, Sec2.1–2.3 mock/fiducial passages, Sec3 estimator/FFT/bins, Sec4 cap-combination paragraph, Sec5.3–5.4 AP/window, Sec6.1–6.2 covariance/fit assumptions, and selected Sec8.4/AppendixC covariance-ancestry prose only. These are conditional source descriptions, not full-section/full-paper reading or reproduction.",
+        "checked_locators": [
+          "PDFp1 title/authors/version watermark26Oct2016 and preprint header27Oct2016; title/date selected text1–65",
+          "PDFp3 Sec2.1 Eq1/FKP/data selections; Sec2.2 MD-Patchy/QPM paragraphs/footnote1; PDFp4 QPM/20-halo/fiducial paragraphs; HTML S2.SS1,S2.SS2,S2.SS3; selected text149–278",
+          "PDFpp4–5 Sec3 Eqs2–7, normalization/random/LOS/FFT/bin/low-k paragraphs; Sec4 Eq8/cap areas; HTML S3.E2,E3,EGx1,E5,E6,E7 and S4.E8; selected text223–375",
+          "PDFp7 Sec5.3 Eqs9–13 and source-shot-noise continuation; PDFp9 Eqs14–17/closure prose and Sec5.4 Eqs18–20; HTML S5.SS3,S5.SS4; selected text580–715",
+          "PDFp9 Sec6.1 Eq21; PDFp11 Sec6.2 Eq22,9-parameter/fixed-shape/growth definitions and Gaussian assumption/footnote4; HTML S6.SS1,S6.SS2; selected text807–852",
+          "PDFp1 selected pre-RSD/post-BAO statement; selected Sec8.4 text1796–1811 product labels; PDFp24 correlation/variance/footnote6 and dependent-combination prose; AppendixC text2735–2751 introductory covariance construction only"
+        ],
+        "unread": "Most introduction, complete measured plots and Sec5.1/5.2 effective/TNS/2-loop kernels/calibrations, Sec6.3/systematic simulations, most Sec7/8/9, AppendicesA/B/D, AppendixC C1/C2 numerical cells, unselected tables/figures/references and exact author code/configuration/covariance/window assets. No current/released mock numeric body read in this wave; complete Luna/full Sol pipeline remains queued.",
+        "unexamined_math": "Exact FFT/discrete/Fourier/shot-noise conversion to files; actual W2/W3 and bins; full Hartlap implementation/priors/likelihood and covariance arrays; source Eq14 angular normalization/Eq28 exponent remain gated by unchanged earlier corrections.",
+        "figures": "Reused original renders p1/3/4/5/7/9/11/24 inspected for selected text/math; Fig1(p7) and Fig4(p11) only qualitatively visible, no digitization/error-law validation. Fig2 caption/ranges incidentally read; image not inspected. Fig15/16 and other scientific images not visually examined.",
+        "paper_stage_untouched": true,
+        "new_full_reads": 0
+      }
+    }
+  ],
+  "reviewed_source_assets": [
+    {
+      "id": "boss-author-codes-navigation-snapshot",
+      "url": "https://www.ub.edu/bispectrum/page9.html",
+      "sha256": "f60a8e33ab047494f77ff1e436a2b7661be94e96dc5142a432eb5c25e1aaeec5",
+      "role": "author_navigation_snapshot",
+      "checked_locators": ["HTML110–149, RUSTICO#content7-28 line121 and BRASS#content7-26 line143"],
+      "accepted_claim": "Retrospective RUSTICO2016 paper label and literal old-documentation/current-code links; selected BRASS papers-where-used links name2020. No historical code commit/version identity accepted.",
+      "unread": "Unselected page content/images and all followed navigation bodies: the two central historical lead requests failed with zero body bytes read. No historical body, code internals or numeric arrays rechecked.",
+      "licence": null
+    }
+  ],
+  "accepted_claim_ids": ["H01", "H02", "H03", "H04", "H05", "H06", "H07", "H08"],
+  "accepted_records": {
+    "contract_ids": ["next13-boss-dr12-historical-method-mock-ancestry-source-contract-v1"],
+    "scope_ids": ["NEXT-13"],
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": []
+  },
+  "corrections": [
+    {"id": "H-C01", "kind": "prevented_historical_attribution", "statement": "Retrospective author navigation and current code commits do not prove the historical2016/2017 implementation/configuration or exact released output. No RUSTICO_old name/date or current BRASS interface is substituted for that identity."},
+    {"id": "H-C02", "kind": "population_role_distinction", "statement": "2048 MD-Patchy covariance/model mocks,1000 QPM fibre-collision controls and20 selection-free halo catalogues are distinct source populations/roles. Source counts and matching file suffixes do not prove pairing or reconstruction."},
+    {"id": "H-C03", "kind": "covariance_lineage_distinction", "statement": "Raw P0/P2/B0 binned covariance and the8x8 compressed RSD/BAO covariance are distinct objects. AppendixC prose combines mock correlation coefficients with data-fit variances; no new cells or likelihood construction accepted."},
+    {"id": "H-C04", "kind": "preserved_source_issues", "statement": "Earlier original-source grid/low-k/AP k-q/triangle-closure/angular-prefactor/Eq28 and Cii terminology corrections remain literal and unchanged; no repair, new numeric check or current-code resolution."}
+  ],
+  "bibliography_coverage": {
+    "new_registered_bibliography_links": [],
+    "scope": "No new bibliography extraction or inferred citation from methodological overlap. Earlier limited CAMB bibliography check remains historical. Two explicit author-page navigation leads are separately bounded and are not version-specific citations or paper equivalence."
+  },
+  "context_checks": {
+    "prior_contracts": ["next13-boss-dr12-cmass-pre-rec-p0-p2-b0-conditioned-v1", "next13-boss-dr12-cmass-public-array-assets-v1", "next13-boss-dr12-current-estimator-mock-source-contract-v1"],
+    "graph": "No accepted physical graph relationship for this paper was added or changed; existing baseline navigation is not estimator/model equivalence.",
+    "prior_packets": "Immutable prior BOSS source/current-code packets and canonical records remain unchanged; this historical-method review does not recertify their larger coverage or source arrays."
+  },
+  "acquisition_disposition": {
+    "receipt": ".work/all19-source-wave7-20261003/acquisition-v1.json",
+    "sha256": "7b734295b10e965e1e23010a9ce9c49906958648a42063a854a8172a66f60786",
+    "checked_attempts": [
+      {"url": "https://github.com/hectorgil/Rustico_old/blob/master/README.md", "http_status": 404, "body_bytes_read": 0, "source_sha256": null},
+      {"url": "https://academic.oup.com/mnras/article/465/2/1757/2417407", "http_status": 403, "body_bytes_read": 0, "source_sha256": null}
+    ],
+    "scope": "Two literal author-page leads, one hop, 524288-byte body cap each. Central bounded acquisition failed without reading either body; no retry, alternate scrape or access-control bypass. Failure is not evidence that the code, source or historical implementation is absent. Cached arXiv v2 is the checked alternate, with journal equivalence unresolved. Other lane attempts in the receipt are outside this review.",
+    "deferred": "Historical implementation/version and journal-body comparison remain unresolved; no further request planned in this bounded audit."
+  },
+  "limitations": [
+    "Selected original-source descriptions and mathematical conditions only; exact historical implementation, configuration, output/FFT normalization and observable ownership remain unresolved.",
+    "Fixed analysis fiducial and mock-generating cosmologies differ. Source model choices, nuisance restrictions and Gaussian assumptions are conditioning, not measured physical laws or a faithful Planck/native model.",
+    "Current2023/2025 code and released2021 assets retain separate identities; adapter/window/valid-pair/reconstruction/covariance/likelihood/prior/selection/rights gates remain open. Unknown covariance is not zero.",
+    "fσ8 is fitted; the checked growth relation alone does not establish ordinary sigma8 full-k/top-hat/matter/species compatibility or an engine prediction.",
+    "No full/Luna paper read, paper-stage/graph/design/prospect promotion, arrays, estimator execution, independent reproduction, consumer/native or scientific qualification."
+  ],
+  "qualification": {"numerically_executed": false, "scientifically_qualified": false},
+  "resource_accounting": {"new_versions": 0, "new_full_reads": 0, "new_agents": 0, "compiler_build_validator_science_jobs": 0, "numeric_mock_body_calculations": 0, "worker_network_requests": 0}
+}

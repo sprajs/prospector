@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "contract_id": "b1608-author-observation-conditioning-source-contract-v1",
+  "title": "B1608 author delay, aperture kinematics, imaging and environment conditioning",
+  "review_id": "2026-10-03-b1608-author-observation-source-claims",
+  "paper_ids": [
+    "arxiv:0910.2773v2"
+  ],
+  "scopes": [
+    {
+      "scope_id": "NEXT-18",
+      "title": "Author observation and inference-product lineage",
+      "paper_ids": [
+        "arxiv:0910.2773v2"
+      ],
+      "checked_claim": "Selected Suyu locators distinguish radio delays relative to image B, ACS GO10158 F606W/F814W reconstruction and Keck1/LRIS aperture-dispersion fitting. Eq27 assumes independent individual delay PDFs; Eq32 explicitly approximates the fitted dispersion likelihood as Gaussian. The original delay source uses smoothed-composite Monte Carlo inputs with assumed Gaussian perturbations but reports non-Gaussian recovered delay distributions and68%/95% intervals. ACS slope is an imaging-conditioned posterior reused as a prior, including radio/NICMOS/delay optimization and stated delay-likelihood subtraction. M5 PSF-B1/three-band-dust substitution and regularization are author approximations. The count source uses four F814W exposures and Vega/AUTO selection. The OBS prior selects simulated overdense sightlines and differs from MS primary-lens-plane-excluded strong-lens selection.",
+      "unresolved": "Radio time series, visibility/calibration and joint delay covariance; Keck spectra, complete slit/seeing geometry, templates/weights and spectral covariance; author PSF, dust, lens light, image covariance, masks and reconstruction products; catalogue/simulation identities and shared calibration/selection covariance remain unverified. Source factorization and fitted Gaussian priors are not measured native laws. Current archival processing does not establish the author2010 reduction or full likelihood."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "b1608-0910.2773v2-author-observation-source",
+      "url": "https://arxiv.org/pdf/0910.2773v2",
+      "sha256": "49713641ce2c8c82994f6365b112dc349b1388b048819f712ab565a4043feeff",
+      "bytes": 701443,
+      "role": "pinned_original_paper_selected_author_observation_and_conditioning_claims",
+      "title": "Dissecting the Gravitational Lens B1608+656. II. Precision Measurements of the Hubble Constant, Spatial Curvature, and the Dark Energy Equation of State",
+      "authors": [
+        "S. H. Suyu",
+        "P. J. Marshall",
+        "M. W. Auger",
+        "S. Hilbert",
+        "R. D. Blandford",
+        "L. V. E. Koopmans",
+        "C. D. Fassnacht",
+        "T. Treu"
+      ],
+      "versioned_id": "0910.2773v2",
+      "retrieved_utc": "2026-10-02T21:49:52.244657+00:00",
+      "licence": null,
+      "licence_null_reason": "Saved receipt and selected original locators do not establish a redistribution licence.",
+      "conditioning": "Author radio-delay summaries, fitted aperture dispersion, regularized imaging and environment-prior approximations. The original prints a November 26, 2024 draft line and January 28, 2010 arXiv v2 watermark; their discrepancy is unresolved.",
+      "checked_locators": [
+        "p3 Eqs1–7; pp5–7 Sec3.1–3.3 Eqs23/25–33",
+        "pp8–11 Sec4.1/4.2.1–4.2.3, sparse Table1/2 model labels and notes, Eq34",
+        "pp11–13 Sec5/6; p13 footnote15; selected Sec7 prior definitions",
+        "pp23–24 AppendixA.1 selected approximation assumptions; p22 bibliography Fassnacht2002/2009"
+      ],
+      "coverage": "Selected text locators only. Original p3/p7 equations, p8 Fig1 and delay paragraph, p11 Eq34/Keck description, and p13 OBS selection/Fig4 visually checked. Other selected pages are text-only; Fig2/3 captions only. Unselected main text, equations and appendices are unexamined.",
+      "uncertainty_covariance": null,
+      "uncertainty_covariance_null_reason": "Source factorization and fitted Gaussian approximations do not supply empirical within-probe or cross-probe covariance."
+    },
+    {
+      "id": "fassnacht-0909.4301v1-count-subset-source",
+      "url": "https://arxiv.org/html/0909.4301v1",
+      "sha256": "47ab01248116a91074dcb8eb8ebb9854a419612e2483735bc2c86054bbb5cf41",
+      "bytes": 189084,
+      "role": "pinned_original_html_selected_environment_count_processing_and_selection",
+      "title": "Galaxy Number Counts and Implications for Strong Lensing",
+      "authors": [
+        "C. D. Fassnacht",
+        "L. V. E. Koopmans",
+        "K. C. Wong"
+      ],
+      "versioned_id": "0909.4301v1",
+      "retrieved_utc": "2026-10-03T09:59:35.457476+00:00",
+      "licence": "HTML infobox: arXiv.org perpetual non-exclusive license",
+      "licence_scope": "The HTML label is checked separately from null licence metadata; it does not establish rights to underlying catalogues or images.",
+      "conditioning": "Chosen historical v1, distinct from latest v2 metadata. Suyu prints base0909.4301 without a version, so exact cited-version equality is unknown. Environment counts use a reduced four-exposure F814W subset, Vega/AUTO photometry and edited/masked SExtractor catalogues.",
+      "checked_locators": [
+        "#watermark-tr/#license-tr/title/authors (HTML211–229)",
+        "#S2.SS1.p1 (HTML378–397); #S2.SS2.p1/p2 (508–544)",
+        "#S2.SS3.p1/p2 (551–583); #S2.SS4.p1 (600–619)",
+        "#S5.p1 (1347–1374); Fig1 caption586–592 and adjacent prose622–628 literal interval labels only"
+      ],
+      "coverage": "Selected identity, sample/reduction, magnitude/catalogue and aperture definitions; B1608 comments. No Bayesian likelihood/Poisson/cosmic-variance calculation or figure image inspection.",
+      "uncertainty_covariance": null,
+      "uncertainty_covariance_null_reason": "Selected catalogue descriptions and source interval labels do not determine count, calibration, convergence or cross-probe covariance."
+    },
+    {
+      "id": "fassnacht-2002-delay-bibliographic-metadata",
+      "url": "https://api.crossref.org/works?query.bibliographic=Fassnacht+2002+Astrophysical+Journal+581+823+B1608+time+delays&rows=3",
+      "sha256": "182a3eee6803ffcf5ce0c102e4eebb1aab80101be094ee2ab12a5ca7a09f34e8",
+      "bytes": 13416,
+      "role": "primary_registry_bibliographic_identity_only",
+      "title": "A Determination of H0 with the CLASS Gravitational Lens B1608+656. III. A Significant Improvement in the Precision of the Time Delay Measurements",
+      "authors": [
+        "C. D. Fassnacht",
+        "E. Xanthopoulos",
+        "L. V. E. Koopmans",
+        "D. Rusin"
+      ],
+      "doi": "10.1086/344368",
+      "retrieved_utc": "2026-10-03T09:57:07.643129+00:00",
+      "licence": null,
+      "licence_null_reason": "Matching Crossref item has no licence entry; publisher body was not accessed.",
+      "conditioning": "Authors/year/ApJ581/pages823–835 match the Suyu bibliography. DOI resolution gives the publisher route, which redirects to an access challenge. This registry item is bibliographic identity only; the separate arXiv v1 body is selected below without asserting journal-version equivalence.",
+      "checked_locators": [
+        "Crossref message.items[DOI=10.1086/344368] title/author/published/container-title/volume/page/URL/link/license",
+        "Suyu original p22 bibliography; derived text1649–1650"
+      ],
+      "coverage": "Matching registry item only. Other returned candidates and the publisher body are not accepted. Original radio time series, code and joint covariance remain unexamined."
+    },
+    {
+      "id": "fassnacht-astro-ph-0208420v1-delay-error-source",
+      "url": "https://arxiv.org/html/astro-ph/0208420v1",
+      "sha256": "1afd058be7e605705e88eff517888cc6c52a11abcd34c97e7443499eb9fe48b7",
+      "bytes": 283917,
+      "role": "pinned_original_html_selected_radio_delay_construction_and_intervals",
+      "title": "A Determination of H0 with the CLASS Gravitational Lens B1608+656: III. A Significant Improvement in the Precision of the Time Delay Measurements",
+      "authors": [
+        "C. D. Fassnacht",
+        "E. Xanthopoulos",
+        "L. V. E. Koopmans",
+        "D. Rusin"
+      ],
+      "versioned_id": "astro-ph/0208420v1",
+      "retrieved_utc": "2026-10-03T10:01:36.247315+00:00",
+      "licence": null,
+      "licence_null_reason": "HTML explicitly labels an ASSUMED arXiv perpetual non-exclusive licence; no source-specific licence or raw-data rights is thereby established.",
+      "conditioning": "Three-season VLA combined analysis with season-dependent relative magnifications, dispersion statistic, smoothed-composite Monte Carlo input and assumed Gaussian perturbations. Recovered delay distributions are described as non-Gaussian. Table5 confidence intervals are not Gaussian standard deviations or an empirical joint likelihood.",
+      "checked_locators": [
+        "#watermark-tr/title/authors (HTML220–270)",
+        "#S3.SS4.p1/p2/p3 (667–723): calibrator selection/corrections and point error construction",
+        "#S4.SS1.p1 and #S4.SS2.p1/p2/Eq1 (765–784,807–849): dispersion/season magnifications/literal t_j−tau shift",
+        "#S4.T4 footnote and A/C/D delay cells (1216–1240)",
+        "#S5.p1/p2 (1278–1322); #S5.T5 header and BA/BC/BD rows (1335–1361)",
+        "#S5.F7 caption (1329–1332), image unexamined"
+      ],
+      "coverage": "Selected identity and radio processing/estimator/error-construction prose; exact three delay interval rows only. No full calibration/code audit, raw time-series/visibility reading, figure image inspection, Monte Carlo reproduction or joint covariance."
+    }
+  ],
+  "limitations": [
+    "Suyu reports AB31.5(+2.0,−1.0), CB36.0(±1.5), DB77.0(+2.0,−1.0) days relative to image B. Fassnacht v1 Table5 instead labels BA/BC/BD, with inputs31.5/36.0/77.0d and68% intervals30.5–33.5/34.5–37.5/76–79d (95%29–34.5/33.5–38.5/74–81d). Preserve both label orders and the literal t_j−tau shift; signed-symbol translation is unqualified. Monte Carlo smoothing/noise assumptions, residual-map RMS and0.6% calibration error condition the intervals. Recovered delay distributions are explicitly non-Gaussian; source independence does not establish empirical joint covariance.",
+    "Keck1/LRIS red observations on12June2007 use831/8200 with D680, nominal0.9arcsec seeing and18600s total exposure. A0.84arcsec/four-spatial-pixel G1 extraction, common0.915Angstrom grid, clipping and variance-weighted coaddition condition the spectrum. The selected source does not give a complete two-dimensional slit aperture or measured resampling/extraction covariance.",
+    "Nine INDO-US templates, nonnegative mixture coefficients, rest-frame4200–4900Angstrom fitting and continuum choices condition sigma260±15km/s. Its adopted error incorporates template mismatch/spread and statistical uncertainty; it is not a raw-detector or stellar-state distribution. Previous247±35km/s uses a different aperture.",
+    "Imaging models include PSF B, image covariance C_D, lens light l and dust K. F814W source/potential reconstruction, quadratic regularization, representative-model prior weights and M5 substitution are approximations. Actual author products, masks and model support remain unverified.",
+    "ACS gamma'2.08 with Gaussian standard deviation0.03 is a fitted imaging-conditioned prior. Thin degeneracy-tube optimization, equal G1/G2 slopes, radio/NICMOS data and delay-log-likelihood subtraction are retained conditions; complete marginalization or removal of all dependencies is unqualified. Table1's mean/scatter across three inferred H0 values omits delay uncertainty and is not a measured joint H0 error.",
+    "Fassnacht v1 environment counts use the first four GO10158 F814W exposures (2528s), distinct from its quoted28144s deep total and Suyu's full reconstruction. Vega/AUTO magnitudes, star/artifact cuts, cosmic-ray masks and lens-centred versus control-grid apertures define the sample. Raw catalogues, weights, detection completeness and reduction equivalence are unverified.",
+    "Suyu's OBS prior uses18.5≤m_F814W<24.5 within45arcsec and simulated selection1.95≤n/<n><2.05. Unlike the MS strong-lens subset, OBS neither subtracts a primary lens plane nor requires strong lensing. Approximate m_F814W=0.5m_i+0.5m_z, galaxy modelling, cosmology and high-convergence/local-environment treatment condition the prior; counts are not measured convergence.",
+    "Source variants remain unresolved: Suyu's2024 draft line versus2010 v2 watermark; Fassnacht abstract259 COSMOS fields versus body257 images; Fig1 caption68%/90% versus adjacent prose68%/95%. No replacement count or interval is inferred.",
+    "Spherical dynamics, stellar profiles, aperture/seeing convolution, radial-anisotropy prior and fixed-radius/redshift approximations remain author inputs. Pixel, delay, kinematic, calibration, catalogue, simulation and cross-probe covariance/distributions remain unknown.",
+    "GO10158 F606W/F814W author imaging, NICMOS F160W proposal7422, historical WFPC2 GO6555 and current RAW/FLT/HLET/TRL are distinct histories. Current2026 calibrated products do not reconstruct the2010 author reduction. Source-specific ownership/rights of spectra, PSFs, catalogues, simulations and author products remain unknown; unread or unacquired material is not proven absent."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}

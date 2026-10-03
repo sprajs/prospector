@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-next04-primary-shoes-conditioning-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "normal_policy_reasoning": "high",
+  "configured_effort_disclosure": "Root explicitly authorized reuse of the existing configured/exposed xhigh exactSol worker; normal high policy is unchanged. No model/backend substitution claimed.",
+  "agent_id": "/root/thermal_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "session_id": "01a0fec1-0810-7361-a598-b20696ba4a64",
+    "turn_id": "01a1013b-f1fd-7232-a4d8-4006d936eea8",
+    "evidence_kind": "runtime_turn_context",
+    "raw_line_sha256": "211ff9d127c79862b2b4c50383ed70e040a93c559563ddffccf66da02f6a62e3",
+    "companion_path": ".work/all19-source-wave7-20261003/receipts/thermal-wave7-runtime-confirmation-v2.json",
+    "companion_sha256": "dc7a49c4795df895c6c40bbe4da746fc796d174aed8e64cd4d4def48cea7564b",
+    "actual_backend_identity": null,
+    "backend_null_reason": "Not exposed by available runtime metadata."
+  },
+  "reviewed_utc": "2026-10-03T10:18:14.653620+00:00",
+  "packet_sha256": "8d6238c0bc21fef4a6a8060907b97fa80217e74144eb63a629ef62c24c935bfa",
+  "source_manifest_sha256": "bb98af62f386134e12e7281cce8884d1901dc97db2894cf713c435a18d843eb7",
+  "reviewed_papers": [
+    "arxiv:2112.04510v3"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:2112.04510v3",
+      "source_hashes": {
+        "pdf": "572e5d2c0f32bf6e80a118eec13ed0107e1e2830f9ebe90b5bc4e9d1b7fa5df1",
+        "extracted_text": "cb075a9089294197178ea49385657839a15554b32b497f15e490782c48589c5e"
+      },
+      "coverage": {
+        "main_text": "Selected source claims only: printedp21 Sec3.5/Eq9; contextual formalism/constraint paragraphs are rechecks, not expanded old acceptance. No full/Luna reading or paper-stage promotion.",
+        "checked_locators": [
+          "Riess2112.04510v3 printedp21 Sec3.5 Eq9 and following iteration paragraph",
+          "Riess2112.04510v3 printedp59 AppendixB.1 selected opening/selection/aperture-correction paragraphs, text-aid only",
+          "Riess2112.04510v3 printedp60 AppendixB.1 paragraph beginning We measured aperture photometry; FigureB1 descriptive visual/caption only",
+          "Riess2112.04510v3 printedpp62–63 AppendixC selected calibration/scale-covariance paragraphs; FigureC1 descriptive visual/caption only",
+          "Riess2112.04510v3 printedp63 AppendixD opening, Eq22 and intrinsic-color/completeness conditions",
+          "Riess2112.04510v3 printedp64 AppendixD first and third paragraphs, host-R warning attributed to the authors"
+        ],
+        "unread": [
+          "Remaining Riess main text except the listed contextual checks and incidentally visible locator-search fragments; AppendixA and bibliography beyond selected named attribution",
+          "AppendixB.1 beyond selected opening/shared-input paragraphs; B.2 except incidental originalp60/p62 displayed fragments; remaining AppendixD and D.1 beyond the stated warning paragraphs",
+          "Unexamined Riess figures/plots including B2/D1; B1 and C1 have only descriptive visual/caption checks, no digitization/quantitative acceptance",
+          "Underlying images, individual PSF/aperture extractions, artificial-star realizations, spectroscopy and stellar/strong-line calibration source tables/papers",
+          "Yuan remaining main text, remaining selection stages and statistics, results/discussion, tables/figures/captions and bibliography; no full reading or photometry-catalogue check",
+          "Scientific FITS payloads and chains, original source generator/IDL program, sibling working files/capabilities and all numerical, reference, fit, covariance or join operations",
+          "No fresh Skara original-body review: its dictionary/ordinal witness and nine conflicts remain inherited source context, not producer evidence",
+          "Other-lane bodies and renders from the central delivery were not scientifically read; no global absence claim from unexamined links"
+        ],
+        "appendices": "Selected B.1 prosepp59–60, Cpp62–63, Dopening/Eq22/host-Rwarningpp63–64 only. P59 prose is text-aid-only; important new math and shared-input statements checked on original images.",
+        "visual_original_pages": [
+          21,
+          60,
+          62,
+          63,
+          64
+        ],
+        "figures": {
+          "B1": "Originalp60 plottedPSF F160Wmag versus PSF-minus-aperture difference, blackSN-host and blueNGC4258 markers, axes and caption viewed descriptively. No point digitization, agreement/uncertainty reproduction or numerical admission.",
+          "C1": "Originalp63 abundance-versus-RG(kpc) axes, blueMWCepheid and blackHII-region points, displayed lines/annotations and caption viewed descriptively. No gradient fit, precision/covariance reproduction or numerical admission.",
+          "others": "Unexamined beyond incidental original-page appearances; no caption-only scientific claims accepted."
+        }
+      }
+    }
+  ],
+  "reviewed_source_assets": [
+    {
+      "id": "riess-2112-04510v3-primary-conditioning",
+      "url": "https://arxiv.org/pdf/2112.04510v3",
+      "sha256": "572e5d2c0f32bf6e80a118eec13ed0107e1e2830f9ebe90b5bc4e9d1b7fa5df1",
+      "role": "primary_paper_selected_claims",
+      "conditioning": "Selected original pp21,59–60,62–64; important Eq9/Eq22 and shared-input statements checked on original page images. Main formalism and existing fixed44 reconstruction are contextual ancestry; no new fit or full-paper review.",
+      "licence": null,
+      "licence_null_reason": "Licence not established in this selected source scope; access is not redistribution permission.",
+      "bytes": 9544553,
+      "local_path": ".work/standard-lcdm-contracts/cache/2112.04510v3.pdf.pdf",
+      "retrieved_utc": "2026-10-01T15:05:41.292717+00:00",
+      "retrieval_origin": "Existing canonical PDF artifact receipt; no freshGET.",
+      "coverage": [
+        "Riess2112.04510v3 printedp21 Sec3.5 Eq9 and following iteration paragraph",
+        "Riess2112.04510v3 printedp59 AppendixB.1 selected opening/selection/aperture-correction paragraphs, text-aid only",
+        "Riess2112.04510v3 printedp60 AppendixB.1 paragraph beginning We measured aperture photometry; FigureB1 descriptive visual/caption only",
+        "Riess2112.04510v3 printedpp62–63 AppendixC selected calibration/scale-covariance paragraphs; FigureC1 descriptive visual/caption only",
+        "Riess2112.04510v3 printedp63 AppendixD opening, Eq22 and intrinsic-color/completeness conditions",
+        "Riess2112.04510v3 printedp64 AppendixD first and third paragraphs, host-R warning attributed to the authors"
+      ]
+    },
+    {
+      "id": "riess-c447-primary-release-readme",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/SH0ES_Data/README.md",
+      "sha256": "fd845e484a184ad9740dddf26550db9d6d154d1631c1b30622dcecefe8ee7174",
+      "role": "primary_release_document",
+      "conditioning": "Pinned producer high-level y/L/C release and explicit Yuan link; no complete original numerical-axis or rowwise dictionary inferred from these source pointers.",
+      "licence": null,
+      "licence_null_reason": "Licence not established in this selected source scope; access is not redistribution permission.",
+      "bytes": 2454,
+      "local_path": ".work/all19-source-wave2-20261003/sources/README.md",
+      "retrieved_utc": null,
+      "retrieval_null_reason": "OriginalGETUTC is not established in the inspected cache receipts; historical reuseUTC2026-10-03T00:13:34.406928+00:00 is distinct.",
+      "reuse_receipt_sha256": "040422c73f7416f68adb558372b2c7100489e0a874fc90a0cbeecf762b10d0e8",
+      "coverage": "Whole short README read as contextual original release/source-lead document; no new47-slot dictionary acceptance."
+    },
+    {
+      "id": "yuan-2203-06681v1-optical-reduction",
+      "url": "https://arxiv.org/html/2203.06681v1",
+      "sha256": "d4d146b9d00c774fc819297465ec70dadded062516a954cc70e31240a650f7cf",
+      "role": "primary_one_hop_source_selected_claims",
+      "conditioning": "Title/authors/version checked against primary metadata; selected HTML S2.SS1.p1.1, S2.SS2.p1.1–p2.1 and S3.p1.1 only. NGC4258 optical ancestry, not NIR/all-host reduction, a complete source dictionary or a new paper admission.",
+      "licence": null,
+      "licence_null_reason": "Licence not established in this selected source scope; access is not redistribution permission.",
+      "bytes": 228303,
+      "local_path": ".work/all19-source-wave7-20261003/sources/yuan-2203.06681v1.html",
+      "retrieved_utc": "2026-10-03T09:58:42.202827+00:00",
+      "http_status": 200,
+      "original_GET_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "228303",
+        "ETag": "\"CIWh56uWupYDEAE=\"",
+        "Last-Modified": "Mon, 24 Aug 2026 21:09:05 GMT",
+        "Date": "Sat, 03 Oct 2026 09:58:42 GMT"
+      },
+      "headers_origin": "Central originalGET receiptacquisition-v2; notHEAD snapshots.",
+      "metadata_source": {
+        "path": ".work/all19-source-wave7-20261003/sources/known-id-2203.06681-0909.4301.xml",
+        "sha256": "7e6572a1df02c19f99ebe1a4ada4ad51f1b9df93a8787760abcb0c068a6a6fda",
+        "retrieved_utc": "2026-10-03T09:57:00.913359+00:00",
+        "original_GET_headers": {
+          "Content-Type": "application/atom+xml; charset=utf-8",
+          "Content-Length": "6660",
+          "ETag": null,
+          "Last-Modified": null,
+          "Date": "Sat, 03 Oct 2026 09:57:01 GMT"
+        }
+      },
+      "coverage": "Title/all9authors/version/date; S2.SS1.p1.1; S2.SS2.p1.1–p2.1; S3.p1.1. No other body/table/figure acceptance.",
+      "unregistered_primary_source_identity": "arxiv:2203.06681v1",
+      "ordinary_paper_admission": false
+    }
+  ],
+  "additional_primary_source_coverage": {
+    "source_id": "arxiv:2203.06681v1",
+    "reviewed_as": "Selected explicit one-hop source asset; not a new registered version/full-paper review.",
+    "checked_locators": [
+      "Yuan2203.06681v1 originalHTML title/author block/version banner; S2.SS1.p1.1; S2.SS2.p1.1 and S2.SS2.p2.1; S3.p1.1"
+    ],
+    "unread": "Remaining main text/selection/results/discussion/figures/tables/captions/bibliography and underlying data.",
+    "identity": "Original Atom and HTML title/all9authors/v1 date match; NGC4258 optical only and NIR directed to Riess."
+  },
+  "accepted_records": {
+    "contract_ids": [
+      "next04-primary-shoes-compact-conditioning-source-v1"
+    ],
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": []
+  },
+  "accepted_contract_bindings": [
+    {
+      "contract_id": "next04-primary-shoes-compact-conditioning-source-v1",
+      "path": "register/contracts/next04-primary-shoes-compact-conditioning-source-v1.json",
+      "sha256": "e39652759fb45c7e4bfa11c1d68e1a44fb262dc2e725c9907d5b41948e240102"
+    }
+  ],
+  "checked_claim_ids": [
+    "NEXT04-primary-aperture-test-shared-ancestry",
+    "NEXT04-primary-metallicity-covariance-conditioning",
+    "NEXT04-primary-wesenheit-coordinate-conditioning",
+    "NEXT04-yuan-ngc4258-optical-ancestry"
+  ],
+  "corrections": [
+    {
+      "kind": "our_locator_error",
+      "prior_path": ".work/all19-source-wave7-20261003/workers/shoes-primary/cached-inspection-notes-v1.json",
+      "prior_sha256": "1680a0dd8b7f3a783d605170526de6d959fa5e32ef3cb93705cdbeb00ad4f0f2",
+      "wrong": "Sec3.5/Eq9 printedp22",
+      "correct": "printedp21; p22 beginsTable3",
+      "evidence": "Textaidline1010 starts21, Eq9/iteration1028–1054, line1065 starts22; original p21 label/Eq9 visually verified.",
+      "source_issue": false,
+      "old_file_unchanged": true
+    },
+    {
+      "kind": "coordinator_render_receipt_path_error",
+      "prior_sha256": "8fa794ab8f70fbff53b38581d0cf92f3cc52678d461592232cf61950ba7fa05f",
+      "correction_sha256": "41c302304956a22f4c5966d2360aba8275147dd875ea37befb6314afda87639e",
+      "description": "Coordinator additivev2 binds actual distinctPNGpaths/rendered flags. Actual5Riessimages rehashed/visually checked; no additional worker rendering or source repair.",
+      "source_issue": false
+    },
+    {
+      "kind": "scope_narrowing_after_primary_body_check",
+      "prior_path": ".work/all19-source-wave7-20261003/workers/shoes-primary/acquisition-needs-v1.json",
+      "prior_sha256": "af452df0d6c575aa2a4bf455fa7bfee80dcb7f43ed890c436cfe434112af4331",
+      "description": "README generic product association motivated the one-hop request; checked Yuan body establishes NGC4258 optical ancestry only and sends NIR to Riess, not a full original19/all-host or complete ladder generator.",
+      "old_file_unchanged": true
+    },
+    {
+      "kind": "our_identity_text_spacing_error",
+      "prior_packet_path": ".work/all19-source-wave7-20261003/workers/shoes-primary/packet-final-v1.json",
+      "prior_packet_sha256": "943f346a2534c535cf8a5513594f2607329ccd7c78c2bdf64af3fdeb10e30d24",
+      "description": "Earlier identity strings compacted spaces in author names and NGC 4258. This additivev2 restores the exact metadata title and ordinary-spaced metadata author names, retaining the HTML en-dash/thin-space title. The already checked source identities, accepted claims, source pins, coverage and scientific gates are unchanged.",
+      "source_issue": false,
+      "old_file_unchanged": true
+    }
+  ],
+  "preserved_gates": {
+    "original_slot44": {
+      "physical_meaning": null,
+      "physical_unit": null,
+      "physical_prior_or_fixed_rationale": null,
+      "generator": null,
+      "null_reason": "No checked complete producer numerical-axis dictionary/generator; source zero-width support remains a distinct already-known conditioning fact."
+    },
+    "original47_dictionary": "Unresolved; schematic categories, third-partyX and ordinal witnesses do not resolve original numerical slots.",
+    "compact_constraint_rows": [
+      3207,
+      3208,
+      3209,
+      3210,
+      3211,
+      3212,
+      3213,
+      3214
+    ],
+    "compact_constraint_status": "Frozen reconstructed context only; original reduction/unit/statistical-role transport remains unresolved, including row3213 measure/event gates.",
+    "failed_physical_joins": [
+      2630,
+      2744,
+      2745,
+      2754
+    ],
+    "new_join_execution": false,
+    "nine_literal_conflict_ids": [
+      "SKARA-X-UNCERTAINTY",
+      "SKARA-SLOPE-VARIANT",
+      "SKARA-NOTEBOOK-SLOPE-LABEL",
+      "SKARA-HOST-LABEL-VARIANTS",
+      "SKARA-README-LENGTH",
+      "SKARA-TABLE-NAME-PREVIEW",
+      "SKARA-DUMMY-WORDING",
+      "SKARA-NOTEBOOK-FILENAME",
+      "SKARA-LMC-HST-SIGN"
+    ],
+    "conflict_ancestry_sha256": "a7b92d350892b804b255ab50a2610ab737c6783c22576b876410ef0346e8b77b",
+    "riess_Eq2_vs_displayed_L_sign": "Existing source inconsistency unchanged; no repair/convention substitution.",
+    "count_gaps": [
+      "N1365compact46/Table3printed45",
+      "SMCcompact143/Table4printed145",
+      "HSTLMCcompact69/Table4printed70"
+    ],
+    "remaining": "Selection/calibration/physical covariance and every consumer, native/numerical/statistical/observational/inference gate remain open."
+  },
+  "limitations": [
+    "Targeted selected primary-source facts and manual dimensional reasoning only. No full-paper review, fresh whole-source generator audit or certification of unexamined claims.",
+    "No numerical fit/experiment, covariance reconstruction, array or chain decode, join, tolerance repair, native/SDK capability check or consumer admission.",
+    "Primary sources provide calibration/reduction conditioning; physical coordinate/object identity, distribution/measure transport and original generator remain unresolved.",
+    "Initial request/interim and previous runtime are immutable supporting provenance; only fresh continuation runtimev2 binds this FINAL disposition.",
+    "Yuan selected source coverage establishes historical optical ancestry only; it is neither an all-host/NIR serialization dictionary nor a licence or scientific qualification.",
+    "All4failedphysicaljoins/all9literalconflicts and original47/fixed44 versus compact44 identities are retained; no repair, prior/model substitution or graph/design promotion."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  },
+  "counts": {
+    "new_versions": 0,
+    "new_Luna_reads": 0,
+    "new_full_reads": 0,
+    "new_full_paper_reviews": 0,
+    "paper_promotions": 0,
+    "new_contract_proposals": 1,
+    "new_claims_in_this_contract": 4,
+    "worker_network_requests": 0,
+    "worker_render_commands": 0,
+    "compiler_or_science_jobs": 0,
+    "numerical_experiments": 0,
+    "array_decodes": 0,
+    "physical_joins": 0,
+    "new_children": 0,
+    "public_edits": 0
+  },
+  "conclusion": "Accept exact new primary-conditioning contract and listed source claims only. Producer dictionary/generator/44, compact constraints, joins, physical measurement/covariance and all consumer/numerical/inference gates remain open.",
+  "superseded_review_proposal": {
+    "path": ".work/all19-source-wave7-20261003/workers/shoes-primary/2026-10-03-next04-primary-shoes-conditioning-source-claims.json",
+    "sha256": "000108b3717f29d7a463eb02ce7e102b40d800cd19aa59cc9244d51d0663ef20",
+    "reason": "Additive packet identity-spacing correction only; exact scientific contract/source acceptance unchanged."
+  }
+}

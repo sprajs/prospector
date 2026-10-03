@@ -798,16 +798,16 @@
     "adapter_revision": "98cadbb3e3bf59f5933ef977133b64453c968c0a",
     "request_sha256": "5d67253917a35031b69b85272fe381da8c946007da5615300a3dcf3381f12bed"
   },
-  "continuation_note": "Bounded source-only wave6 completed: SDSS run5566 legacy calibration/header ancestry and separate conditional NEXT05 coordinate-measure clarification. Event exposure, source units/likelihoods and numerical/physical gates remain open. Existing ordinary queue and discovery lanes unchanged.",
-  "last_completed_source_audit": "2026-10-03-all19-source-wave6",
+  "continuation_note": "Bounded source-only wave7 completed: selected SH0ES primary conditioning, original BOSS estimator/mock/covariance ancestry and B1608 author observation/selection/error conditioning. Native observation laws, joint covariance and implementation/numerical/physical gates remain open. Ordinary queue and discovery lanes unchanged.",
+  "last_completed_source_audit": "2026-10-03-all19-source-wave7",
   "coordinated_source_continuation": {
-    "scan_id": "2026-10-03-all19-source-wave6",
+    "scan_id": "2026-10-03-all19-source-wave7",
     "mode": "bounded_targeted_source_work",
     "pending": [
       {
         "scope_id": "NEXT-04",
         "stage": "source",
-        "reason": "Selected Perivolaropoulos/Skara journal/notebook ordering and four literal ordinal witnesses checked as third-party reconstruction. Original coordinate44 physical meaning/unit/rationale, producer dictionary/generator, four physical joins and original covariance/reduction/selection remain unresolved; all printed variants retained."
+        "reason": "Selected Riess aperture/PSF same-image lineage, iterative metallicity covariance and Wesenheit conventions, plus Yuan optical NGC4258 methods, accepted only as located source claims. Original47 dictionary/generator, coordinate44 physical label/unit/fixed rationale/prior, compact constraints3207–3214, four failed physical joins2630/2744/2745/2754, nine Skara conflicts and joint selection/covariance remain unresolved. Prior printed variants and matrix/sign/count issues retained."
       },
       {
         "scope_id": "NEXT-05",
@@ -837,12 +837,12 @@
       {
         "scope_id": "NEXT-18",
         "stage": "physical_source_and_joint_likelihood",
-        "reason": "One current matched GO10158/F606W FLT, external headerlet and trailer acquired; selected21/11/2-HDU original headers and216 ASCII trailer rows checked. RAW zero ERR/DQ placeholders remain separate. Electron SCI/ERR storage and gain/read-noise cards do not qualify pixel values/covariance. FLT/FLC branches, printed FK5/Gaia naming and2026-versus2010 processing preserved. Reference bodies, other exposures/filter, PSF/Keck/radio/environment and joint likelihood remain open."
+        "reason": "Selected author radio-delay Monte Carlo conditioning and non-Gaussian recovered distributions, Keck aperture/template fitting, imaging-conditioned slope prior, M5 substitution, four-exposure F814W count selection and OBS-versus-MS simulated priors accepted as source claims only. Raw radio/Keck/imaging/catalogue/simulation identities, products, empirical noise/joint covariance, author2010 reduction and current2026 equivalence remain unknown. Delay symbol order, source date/count/interval variants and earlier distinct native-header/trailer coverage retained."
       },
       {
         "scope_id": "NEXT-13",
         "stage": "source_assets_and_consumer",
-        "reason": "Current pinned2023/2025 RUSTICO/BRASS and full named current mock archive bytes acquired; selected CMASS/NGC nested headers and four small candidate1000/1001 text bodies checked. Seven-field B versus eleven-field reader and distinct current RR-mask conventions require verified adaptation. Historical2017 implementation, paired valid IDs/reconstruction, full support/order/window, joint auto/cross covariance, likelihood/prior and ordinary sigma8 remain unqualified."
+        "reason": "Selected original BOSS weights, normalization, FFT/bins/cap combination, analysis-versus-mock fiducials, 2048 MD-Patchy/1000 QPM/20 periodic-halo roles, AP/window approximations and raw-versus-compressed covariance ancestry accepted conditionally. Current2023/2025 code and named mock files do not establish historical2016/2017 implementation, pairing, reconstruction, actual W2/W3, full support/order, priors, joint covariance or ordinary full-k sigma8. All B01–B08 and prior printed-source issues remain open."
       },
       {
         "scope_id": "NEXT-12",
@@ -886,8 +886,42 @@
         "metadata_source_sha256": "1a0dcd5ec185332cd5d33cc4e07157a26b9af945bce24324a6c75930865492ab",
         "journal_doi": "10.3390/universe8100502",
         "reason": "Useful third-party reduced-input reconstruction/challenge. Journal selected-source audit does not read or prove identity of pinned arxivv3; retain saved metadata rather than repeat lookup. No inverse-distance-ladder prior/model or fitted H0 admitted."
+      },
+      {
+        "arxiv_id": "2203.06681",
+        "versioned_id": "2203.06681v1",
+        "title": "Absolute Calibration of Cepheid Period-Luminosity Relations in NGC 4258",
+        "admission": "selected_source_asset_unadmitted_full_read_deferred",
+        "reason": "Producer bibliography lead; selected optical Cepheid-method passages only. No registered paper or full reading.",
+        "source_sha256": "d4d146b9d00c774fc819297465ec70dadded062516a954cc70e31240a650f7cf",
+        "authors": [
+          "Wenlong Yuan",
+          "Lucas M. Macri",
+          "Adam G. Riess",
+          "Thomas G. Brink",
+          "Stefano Casertano",
+          "Alexei V. Filippenko",
+          "Samantha L. Hoffmann",
+          "Caroline D. Huang",
+          "Dan Scolnic"
+        ],
+        "metadata_source_sha256": "7e6572a1df02c19f99ebe1a4ada4ad51f1b9df93a8787760abcb0c068a6a6fda"
+      },
+      {
+        "arxiv_id": "0909.4301",
+        "versioned_id": "0909.4301v1",
+        "admission": "selected_source_asset_unadmitted_full_read_deferred",
+        "reason": "Printed bibliography base ID does not prove cited version. Historical2009v1 selected exposure/catalogue/selection passages; latest2011v2 metadata retained separately without body reading.",
+        "source_sha256": "47ab01248116a91074dcb8eb8ebb9854a419612e2483735bc2c86054bbb5cf41"
+      },
+      {
+        "arxiv_id": "astro-ph/0208420",
+        "versioned_id": "astro-ph/0208420v1",
+        "admission": "selected_source_asset_unadmitted_full_read_deferred",
+        "reason": "Primary delay reference identity matched DOI/title/authors/year; selected Monte Carlo/error-interval methods only. Signed delay translation and empirical joint law remain unknown.",
+        "source_sha256": "1afd058be7e605705e88eff517888cc6c52a11abcd34c97e7443499eb9fe48b7"
       }
     ],
-    "scope_limit": "Coherent source-only wave6 complete; all19 scientific program remains open. Resume saved source gaps and ordinary uncompleted reads under the next explicitly scoped bounded batch; no automatic numerical execution or endless scan."
+    "scope_limit": "Coherent source-only wave7 complete; all19 scientific program remains open. Next explicitly authorized cached-source wave covers NEXT06/08/09; acquisitions, rendering and builds need their own finite resource leases. No automatic numerical execution or endless scan."
   }
 }
