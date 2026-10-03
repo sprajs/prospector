@@ -38,6 +38,10 @@ its fitted-data conditioning. A separate candidate matches Reproducible's limite
 massless background/conditional-BAO comparison. Its chosen controls and supplied
 drag endpoint do not reproduce Planck physics or a cosmological posterior.
 
+The [LOWZ windowed-power source target](docs/next13-lowz-source-target.md) selects
+one released clustering dependency for that audit. Its covariance ordering and
+galaxy-model adapter remain blocked; the existing prospect review is unchanged.
+
 ## Records
 
 - [Papers](register/papers/), [ideas](register/ideas/) and [topics](register/topics/)

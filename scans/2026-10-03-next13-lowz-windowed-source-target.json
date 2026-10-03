@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-03-next13-lowz-windowed-source-target",
+  "status": "completed",
+  "started_utc": "2026-10-03T15:39:32.257639+00:00",
+  "started_utc_basis": "Exact selected-source courier creation; coordination planning predates this evidence checkpoint.",
+  "completed_utc": "2026-10-03T16:26:05.207640+00:00",
+  "lane": "measurement-lineage",
+  "work_mode": "explicit_scoped_source_audit",
+  "queries": [
+    {
+      "kind": "known_id_metadata_lookup",
+      "id_list": "1509.06386",
+      "url": "https://export.arxiv.org/api/query?id_list=1509.06386&max_results=1",
+      "retrieved_utc": "2026-10-03T15:46:42.832644+00:00",
+      "result_id": "arxiv:1509.06386v2",
+      "sha256": "531538ddbd4753c16840955bc152f3d5e499216f3d8f01dcaa610c51a3957eb9",
+      "disposition": "admitted_scoped_source_target_full_read_pending",
+      "reason": "Exact method reference named by the preserved release README; no discovery window replay."
+    }
+  ],
+  "registered_papers": [
+    "arxiv:1509.06386v2"
+  ],
+  "new_versions": [
+    "arxiv:1509.06386v2"
+  ],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [
+    "2026-10-03-next13-lowz-windowed-power-source-claims"
+  ],
+  "source_contract_ids": [
+    "next13-lowz-pre-recon-windowed-power-source-target-v1"
+  ],
+  "idea_ids": [],
+  "design_ids": [],
+  "prospect_ids": [],
+  "edge_ids": [],
+  "pending": [
+    {
+      "scope_id": "NEXT-13",
+      "stage": "covariance_source_mapping_and_physical_adapter",
+      "reason": "One June2016 pre-reconstruction LOWZ P0/P2 target selected, with pinned1509.06386v2 primary window action, units, fiducial/AP and historical fit cuts checked. Central structural receipt reports53 bins,1000-point input and106x106 covariance, but only6/106 diagonal/error intervals match the candidate P0-then-P2 order. Covariance axis/error ownership and exact cut-row map remain refused pending source reconciliation. Galaxy bias/RSD/FoG/noise model and priors, CLASS epoch/species/unit/support/AP adapter, window calibration/normalization and finite-mock correction ownership remain open. Earlier B01-B08/history/mocks/overlap gates are retained; no numerical score or full-paper promotion."
+    }
+  ],
+  "independent_source_reviews": [
+    {
+      "path": ".work/windowed-clustering-target-20261003/workers/peer/acceptance-final-v1.json",
+      "sha256": "6c8d2a96f7f06b5ddb9bda67c582a4231f6e3a6c229868f17ab92e46d5378b8f",
+      "bytes": 5279,
+      "scope": "Exact selected-source v3 acceptance only; covariance ownership, physical adapter and native/numerical qualification remain blocked."
+    }
+  ],
+  "source_packet": {
+    "path": ".work/windowed-clustering-target-20261003/workers/source/packet-final-v3.json",
+    "sha256": "41c6f6a94e893ec80c577b080bba28a4b5a6ef909f668d56f66226ba327e7be2",
+    "bytes": 52222
+  },
+  "citation_ids": [],
+  "source_leads": [],
+  "search_receipts": [],
+  "source_inspection": {
+    "result": {
+      "path": ".work/windowed-clustering-target-20261003/acquisition-inspection-result-v2.json",
+      "sha256": "847d61974c2d63c8962e9934f3ed9ea1d677ea5a19d672bcc901ad097e5c22c2",
+      "bytes": 9115
+    },
+    "interpretation_amendment": {
+      "path": ".work/windowed-clustering-target-20261003/inspection-interpretation-amendment-v1.json",
+      "sha256": "db0fa5c329f545d9016482c8d796712f1cf011d5e454788fe7ce6482bb1fdbdc",
+      "bytes": 1101
+    },
+    "candidate_covariance_order": "all P0 source rows then all P2 source rows",
+    "diagonal_interval_matches": 6,
+    "diagonal_interval_total": 106,
+    "covariance_axis_accepted": false,
+    "scope": "Dimensions/finite tokens/endpoints and diagnostic diagonal comparison only; no inverse, solve, factorization, window product or fit."
+  },
+  "acquisition_failures": [
+    {
+      "kind": "local_launcher_pipe_failure_after_successful_metadata",
+      "result": {
+        "path": ".work/windowed-clustering-target-20261003/acquisition-inspection-result-v1.json",
+        "sha256": "b1c598553dbad60e5fd2b214cecc031c4d60801a04a972251f3f83227fe264e6",
+        "bytes": 1242
+      },
+      "reason": "Plain setsid detached the helper from tool stdout; BrokenPipeError stopped before full-text acquisition or inspection. Successful metadata preserved.",
+      "resolution": "Fresh finite lease; setsid --wait resumed the saved feed without another metadata request. Both process groups were confirmed absent and slots released."
+    }
+  ],
+  "corrections": [
+    "Central v2 fixed explanation claimed every covariance diagonal matched despite raw counters6/106; immutable result retained and additive amendment withdrew that sentence. Axis ownership remains unaccepted.",
+    "Source v2 asset conditioning retained stale Eq15-unexamined text from v1. Independent peer identified it; additive v3 corrects coverage wording without changing scientific scope. All earlier packets retained.",
+    "ROOT corrected earlier NEXT-06 shorthand to NEXT-13 for clustering; historical NEXT-06 SDSS observer lineage unchanged.",
+    "First structural validation refused a missing graph inventory node for newly admitted1509. Added only the metadata paper node; no relationship or idea acceptance changed. Failed lease was stopped/released before build."
+  ],
+  "deferred_assets": [
+    "Original PDF equation-number/index alignment, complete galaxy/RSD kernels and nuisance priors, source covariance/error serialization ownership and exact fit-row map.",
+    "CLASS matter epoch/species/units/grid support, installed galaxy/window caller, finite-mock statistical treatment and numerical covariance acceptance.",
+    "Most original paper text, tables, figures, appendices and bibliography; no new bibliography witness or full-paper reading claimed."
+  ],
+  "resource_receipt": {
+    "new_central_requests": 2,
+    "metadata_requests": 1,
+    "pinned_html_requests": 1,
+    "new_source_body_bytes": 621494,
+    "new_metadata_bytes": 4293,
+    "new_agents": 0,
+    "new_full_reads": 0,
+    "new_renders": 0,
+    "new_pdf_text_aids": 0,
+    "archive_extractions": 0,
+    "bounded_structural_array_inspections": 1,
+    "compiler_jobs": 0,
+    "science_jobs": 0,
+    "source_mode": "One centrally acquired pinned primary and existing hash-verified release/native snapshots; two existing exact Sol/xhigh workers. Separate finite structural-validation lease."
+  },
+  "limits": [
+    "One new version, zero Luna/full-paper reads, zero full-paper Sol reviews; one targeted source review and one independent selected-source peer. No ideas, designs, graph edges or prospect promotions.",
+    "Existing ordinary59-stage queue retained; primary1509 added as pending read. Discovery lanes, alternatives and old source contracts remain unchanged.",
+    "Original primary licence label checked; archive redistribution rights remain unknown. Raw sources, arrays and worker transcripts stay ignored.",
+    "Public checkpoint linked directly from README; existing prospect scientific paper set/review and Site publication remain unchanged.",
+    "Source acceptance, structural checks, PR review/CI, consumer numerical acceptance and scientific qualification are separate. All19 scopes remain OPEN."
+  ],
+  "document_boundary_review": {
+    "path": ".work/windowed-clustering-target-20261003/workers/peer/document-boundary-final-v1.json",
+    "sha256": "a58b9a779df1d5006cbba5f81b3f9b6156bdbe9727dbcbca659186224db1f92b",
+    "bytes": 2663,
+    "scope": "Exact bounded document projection only; no whole PR or consumer acceptance."
+  },
+  "structural_validation_attempts": [
+    {
+      "result": ".work/windowed-clustering-target-20261003/validate-build-result-v1.json",
+      "status": "failed_missing_metadata_graph_node",
+      "build_executed": false,
+      "resource_released": true
+    },
+    {
+      "result": ".work/windowed-clustering-target-20261003/validate-build-result-v2.json",
+      "sha256": "af3b537e1b768c2b2d581868e62e547ed48c4f5eb1861b5bf041dcb71a11aa3a",
+      "status": "success",
+      "validate_exit_code": 0,
+      "build_exit_code": 0,
+      "elapsed_seconds": 0.58,
+      "resource_released": true,
+      "scope": "Register integrity and generated views only; no scientific qualification."
+    }
+  ]
+}

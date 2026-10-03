@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1509.06386v2",
+  "arxiv_id": "1509.06386",
+  "version": 2,
+  "title": "The clustering of galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: RSD measurement from the LOS-dependent power spectrum of DR12 BOSS galaxies",
+  "authors": [
+    "Héctor Gil-Marín",
+    "Will J. Percival",
+    "Joel R. Brownstein",
+    "Chia-Hsun Chuang",
+    "Jan Niklas Grieb",
+    "Shirley Ho",
+    "Francisco-Shu Kitaura",
+    "Claudia Maraston",
+    "Francisco Prada",
+    "Sergio Rodríguez-Torres",
+    "Ashley J. Ross",
+    "Lado Samushia",
+    "David J. Schlegel",
+    "Daniel Thomas",
+    "Jeremy L. Tinker",
+    "Gong-Bo Zhao"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2015-09-21T20:17:10Z",
+  "updated_utc": "2016-05-27T12:08:07Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1509.06386v2",
+    "html": "https://arxiv.org/html/1509.06386v2",
+    "pdf": "https://arxiv.org/pdf/1509.06386v2"
+  },
+  "license": {
+    "status": "arXiv.org perpetual non-exclusive license in pinned HTML infobox",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Original HTML #license-tr identifies the paper licence; Atom metadata has no licence URL. No permission to redistribute paper bodies or the separate SDSS archive is inferred."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=1509.06386&max_results=1",
+      "retrieved_utc": "2026-10-03T15:46:42.832644+00:00",
+      "sha256": "531538ddbd4753c16840955bc152f3d5e499216f3d8f01dcaa610c51a3957eb9",
+      "bytes": 4293
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/1509.06386v2",
+      "retrieved_utc": "2026-10-03T15:51:04.557305+00:00",
+      "sha256": "f90073722add2c4c9f8c76ce37610a5c0cc85dab00ad345f971c2985b1282a3d",
+      "bytes": 621494
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "metadata",
+    "reason": "Known primary identity admitted for the scoped NEXT-13 LOWZ pre-reconstruction P0/P2 source target. Located Sol source checks are separate; complete Luna reading remains pending."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}
