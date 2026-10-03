@@ -47,7 +47,7 @@
           "HTML Sec2.1/2.3/2.4/2.7; Sec3.1 Eqs4–5; Sec3.2 selection; Sec3.3/Table3 S3.T3 all literal rows; Sec4.1/4.3; AppendixA",
           "Original PDF7 selection/Eq5/105 prose; PDF8 Table3 visually checked"
         ],
-        "unread": "HTML sections2.1/2.3/2.4/2.7/3.1–3.3/4.1/4.3 and AppendixA only; selectedTable3 all literal records. Other papers/full source appendices/training implementation/cosmology results unread or unaccepted.",
+        "unread": "All unlisted/remaining main-text and appendix material; training tables and implementation; underlying primary calibrator/survey papers and Taylor2112.03863v2; cosmology results unaccepted. Unlisted figures are unchecked. No complete paper reading.",
         "figures": "Original PDF7 and8 visually checked; other figures unchecked."
       }
     },
@@ -63,7 +63,7 @@
           "Sec2 Eq1/2.1/2.2, selected3.1/3.2 ancestry,4.1–4.3 construction/regularization,5 normalization,6/6.1/6.2 error roles",
           "Original PDF2,4,5,6 visually checked equations/domains/error roles"
         ],
-        "unread": "Eq1/2.1/2.2; selected3.1/3.2 ancestry;4.1–4.3;5 normalization;6/6.1/6.2 error roles; historicalfit/cosmologySections7–8 and trainingTable2 unread, no result acceptance.",
+        "unread": "Sections7–8, trainingTable2 and all unlisted/remaining main-text or appendix material; underlying original training/calibration papers, executable reader and modern B21 format implementation. Unlisted figures are unchecked. No complete paper reading.",
         "figures": "Original PDF2,4,5,6 selected equations/text visually checked; figures unchecked."
       }
     }
@@ -296,6 +296,32 @@
       "licence": "notverified; ignoredonly",
       "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
       "conditioning": "complete short configuration/README. Source/release semantics only; no independent optical measurement law or numerical qualification."
+    },
+    {
+      "id": "Pantheon+_Data/3_SALT2/CALIB_fitopts/ALL.fitopts",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/CALIB_fitopts/ALL.fitopts",
+      "sha256": "5662aa5af987e54ccdb44376d094c62dd0227071e40a9c560f5bd17f58ccf118",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-02T01:15:41.166481+00:00",
+      "bytes": 43183,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": "notverified; ignoredonly",
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "coverage": "selected lines1–33 plus bounded label search",
+      "conditioning": "Selected original lines1–33 and bounded label search: calibration coefficient0.3 and MODEL001–009 links. This literal differs from paper sigma_k=1/3; no probability mass inferred. Remaining options and generator semantics unexamined."
+    },
+    {
+      "id": "Pantheon+_Data/3_SALT2/SALT2_trainopts/shift_0.dat",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_trainopts/shift_0.dat",
+      "sha256": "ca5b9b86f1be086b7b1fffee45e0f4485a101c8192fa21926937fd35b4e683c7",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-02T01:15:41.363904+00:00",
+      "bytes": 1036,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": "notverified; ignoredonly",
+      "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
+      "coverage": "complete short configuration/README",
+      "conditioning": "Complete short original configuration: nonzero MAGSHIFT/WAVESHIFT entries. A suffix0 does not establish nominal MODEL000 mapping; generator/index bridge unexamined."
     }
   ],
   "accepted_records": {
@@ -390,6 +416,12 @@
       "category": "literal_source_or_release_issue",
       "statement": "B21 version1 has4 printed color coefficients; Guy2007 describes a cubic with2 free coefficients and2 normalizations. They are not silently the same executable convention.",
       "repair_applied": false
+    },
+    {
+      "category": "coordinator_coverage_field_correction",
+      "statement": "Selected-coverage descriptions were initially copied into two unread fields. Corrected fields list only unexamined material; checked locators and immutable worker packet are unchanged.",
+      "repair_applied": true,
+      "source_acceptance_expanded": false
     }
   ],
   "training_selection_calibration_ancestry": {

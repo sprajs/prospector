@@ -292,6 +292,11 @@
       "scope_id": "NEXT-18",
       "stage": "source_acquisition",
       "reason": "B1608 original imaging/PSF/time-delay/kinematics/environment asset discovery/lineage pending; no summary-as-measurement claim."
+    },
+    {
+      "scope_id": "NEXT-13",
+      "stage": "source_acquisition",
+      "reason": "Select one actual BOSS/SDSS RSD estimator/AP/window/scale-cut/fiducial/amplitude release; preserve Table3P+B/Table5BAO/RSD shared-galaxy ancestry and unknown cross-covariance. Reference epoch and8 h^-1 Mpc support/physics compatibility require an explicit separate gate."
     }
   ],
   "limits": [
@@ -299,5 +304,28 @@
     "Thirteen selected pinned release assets acquired centrally; raw sources/reading aids/full packets remain ignored. Existing five atomic/source consumer record byte identities and all unrelated literature queues/alternative prospects are preserved.",
     "No numerical experiments, covariance recomputation, physical refit, softened failed join, new probability mass or cosmological qualification. Source facts, declared hypotheses and reviewer derivations remain distinct.",
     "Scoped feed/tree/code inventories do not establish exhausted literature or global source absence. NEXT13/16/18/19 and full standard-model gates remain visible."
-  ]
+  ],
+  "public_projection_amendments": [
+    {
+      "amendment_id": "optical-calibration-template-public-integration-amendment-20261003-v1",
+      "status": "FINAL",
+      "packet_sha256": "add23b23591dd536c397dde01f15bd673df6f4579fae2e1a9547a6ce7f07f5d0",
+      "accepted_public_projection": [
+        {
+          "contract_id": "optical-calibration-template-source-contract-v1",
+          "path": "register/contracts/optical-calibration-template-source-contract-v1.json",
+          "sha256": "ff18f609803c56db33dfbc8de317888ffc882f086e463cc87e14a0a0960a49a7",
+          "acceptance": "Exact amended public source contract; bounded source acceptance only."
+        },
+        {
+          "review_id": "review-optical-calibration-template-source-20261003-v1",
+          "path": "register/reviews/review-optical-calibration-template-source-20261003-v1.json",
+          "sha256": "2748aacbc11bf27f2c199ca0f6dda94dad31c14e6ad910c0e87e92e1340330e5",
+          "acceptance": "Exact corrected public review; documentary provenance and unread-field correction only."
+        }
+      ],
+      "scope": "Documentary provenance correction only: exact source identities for two already reviewed release files and unread-field correction. Original source packets unchanged; no expanded scientific acceptance or additional full reading."
+    }
+  ],
+  "corrections_verified_utc": "2026-10-03T01:21:03.030058+00:00"
 }

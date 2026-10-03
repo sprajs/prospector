@@ -23,7 +23,7 @@ def public_investigation(item):
     """Export scientific conditioning, omitting consumer requests and private input paths."""
     return ({k: item[k] for k in ['title', 'readiness', 'faithful_claim', 'assumptions',
                                 'simplifications', 'unknowns']}
-           | {'test': {k: item['minimal_test'][k] for k in ['question', 'observables', 'scope']},
+           | {'test': {k: item['minimal_test'][k] for k in ['question', 'observables']},
               'equations': [{k: eq[k] for k in ['expression', 'locator', 'paper_id', 'definitions', 'domain', 'status']}
                             for eq in item['equations']]})
 

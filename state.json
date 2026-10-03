@@ -838,6 +838,11 @@
         "scope_id": "NEXT-18",
         "stage": "source_acquisition",
         "reason": "B1608 original imaging/PSF/time-delay/kinematics/environment asset discovery/lineage pending; no summary-as-measurement claim."
+      },
+      {
+        "scope_id": "NEXT-13",
+        "stage": "source_acquisition",
+        "reason": "Select one actual BOSS/SDSS RSD estimator/AP/window/scale-cut/fiducial/amplitude release; preserve Table3P+B/Table5BAO/RSD shared-galaxy ancestry and unknown cross-covariance. Reference epoch and8 h^-1 Mpc support/physics compatibility require an explicit separate gate."
       }
     ],
     "no_automatic_execution": true

@@ -31,7 +31,7 @@ class PublicChronology(unittest.TestCase):
         self.assertEqual(public['readiness'], 'blocked')
         self.assertIn('C_FT', public['equations'][1]['expression'])
         self.assertIn('full-fit', ' '.join(public['unknowns']).lower())
-        self.assertIn('No execution request', public['test']['scope'])
+        self.assertEqual(set(public['test']), {'question', 'observables'})
         self.assertNotIn('consumer', public)
         self.assertNotIn('executable_request', public)
         self.assertNotIn('parameter_choices', public['test'])
