@@ -324,8 +324,17 @@
           "acceptance": "Exact corrected public review; documentary provenance and unread-field correction only."
         }
       ],
-      "scope": "Documentary provenance correction only: exact source identities for two already reviewed release files and unread-field correction. Original source packets unchanged; no expanded scientific acceptance or additional full reading."
+      "scope": "Documentary provenance correction only: exact source identities for two already reviewed release files and unread-field correction. Original source packets unchanged; no expanded scientific acceptance or additional full reading.",
+      "current_binding": "Historical exact projection accepted before the visible bibliographic identity correction in the public review. Immutable amendment unchanged; final review binds the corrected current projection separately."
     }
   ],
-  "corrections_verified_utc": "2026-10-03T01:21:03.030058+00:00"
+  "corrections_verified_utc": "2026-10-03T01:25:02.439144+00:00",
+  "bibliographic_identity_correction": {
+    "kind": "identity_only",
+    "corrected_paper_id": "arxiv:2112.03863v2",
+    "correct_first_author": "Dan Scolnic",
+    "distinct_unread_training_reference": "Taylor et al.2021 DOI10.1093/mnras/stab962",
+    "new_full_reads": 0,
+    "original_worker_artifacts_unchanged": true
+  }
 }

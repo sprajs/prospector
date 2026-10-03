@@ -44,10 +44,10 @@
       "coverage": {
         "main_text": "Targeted original-source locators only, no complete reading.",
         "checked_locators": [
-          "HTML Sec2.1/2.3/2.4/2.7; Sec3.1 Eqs4–5; Sec3.2 selection; Sec3.3/Table3 S3.T3 all literal rows; Sec4.1/4.3; AppendixA",
+          "HTML Sec2.1/2.3/2.4/2.7; Sec3.1 Eqs4\u20135; Sec3.2 selection; Sec3.3/Table3 S3.T3 all literal rows; Sec4.1/4.3; AppendixA",
           "Original PDF7 selection/Eq5/105 prose; PDF8 Table3 visually checked"
         ],
-        "unread": "All unlisted/remaining main-text and appendix material; training tables and implementation; underlying primary calibrator/survey papers and Taylor2112.03863v2; cosmology results unaccepted. Unlisted figures are unchecked. No complete paper reading.",
+        "unread": "All unlisted/remaining main-text and appendix material; training tables and implementation; underlying primary calibrator/survey papers and Scolnic2112.03863v2 and the separate Taylor et al.2021 training source (DOI10.1093/mnras/stab962); cosmology results unaccepted. Unlisted figures are unchecked. No complete paper reading.",
         "figures": "Original PDF7 and8 visually checked; other figures unchecked."
       }
     },
@@ -60,10 +60,10 @@
       "coverage": {
         "main_text": "Targeted original-source locators only, no complete reading.",
         "checked_locators": [
-          "Sec2 Eq1/2.1/2.2, selected3.1/3.2 ancestry,4.1–4.3 construction/regularization,5 normalization,6/6.1/6.2 error roles",
+          "Sec2 Eq1/2.1/2.2, selected3.1/3.2 ancestry,4.1\u20134.3 construction/regularization,5 normalization,6/6.1/6.2 error roles",
           "Original PDF2,4,5,6 visually checked equations/domains/error roles"
         ],
-        "unread": "Sections7–8, trainingTable2 and all unlisted/remaining main-text or appendix material; underlying original training/calibration papers, executable reader and modern B21 format implementation. Unlisted figures are unchecked. No complete paper reading.",
+        "unread": "Sections7\u20138, trainingTable2 and all unlisted/remaining main-text or appendix material; underlying original training/calibration papers, executable reader and modern B21 format implementation. Unlisted figures are unchecked. No complete paper reading.",
         "figures": "Original PDF2,4,5,6 selected equations/text visually checked; figures unchecked."
       }
     }
@@ -307,8 +307,8 @@
       "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
       "licence": "notverified; ignoredonly",
       "licence_null_reason": "No licence inspected for new release assets; reused receipt says not verified where present. Local ignored reading only; no raw redistribution permission inferred.",
-      "coverage": "selected lines1–33 plus bounded label search",
-      "conditioning": "Selected original lines1–33 and bounded label search: calibration coefficient0.3 and MODEL001–009 links. This literal differs from paper sigma_k=1/3; no probability mass inferred. Remaining options and generator semantics unexamined."
+      "coverage": "selected lines1\u201333 plus bounded label search",
+      "conditioning": "Selected original lines1\u201333 and bounded label search: calibration coefficient0.3 and MODEL001\u2013009 links. This literal differs from paper sigma_k=1/3; no probability mass inferred. Remaining options and generator semantics unexamined."
     },
     {
       "id": "Pantheon+_Data/3_SALT2/SALT2_trainopts/shift_0.dat",
@@ -364,7 +364,7 @@
     },
     {
       "paper_id": "arxiv:astro-ph/0701828v1",
-      "locator": "Sec6.1, PDF5–6 (unnumbered displayed equations)",
+      "locator": "Sec6.1, PDF5\u20136 (unnumbered displayed equations)",
       "expression": "V_MODEL=S(p,lambda)*V_MEAN; V_MEAN=H0^T*V0*H0+x1^2*H1^T*V1*H1+2*x1*H0^T*C01*H1",
       "meaning": "Historical training-component variance/covariance projected by basis H and empirically rescaled by S; jackknife residual correlation acknowledged and diagonal simplification assumed.",
       "origin": "Original visually checked empirical model, not relative-grid normalization decoder."
@@ -378,7 +378,7 @@
     "PS1_Public_to_PS1": "candidate archive-coordinate alias only; paperSec2.4 directly establishes role",
     "PS1_SNe_to_oldPS1": "candidate archive-coordinate alias only; paperSec2.4 directly establishes role",
     "Foundation_to_newPS1": "candidate archive-coordinate alias only; paperSec2.4 directly establishes role",
-    "CFA3S": "Preserve Table3 r/i (S3.T3.2.1.12/.13), NPZ R/I in prior dictionary, Sec2.7 UBVRI, and new combined-kcor20–21 explicit R/I filter filenames. No global case folding or physical passband equivalence accepted.",
+    "CFA3S": "Preserve Table3 r/i (S3.T3.2.1.12/.13), NPZ R/I in prior dictionary, Sec2.7 UBVRI, and new combined-kcor20\u201321 explicit R/I filter filenames. No global case folding or physical passband equivalence accepted.",
     "configuration_collision": "PS1 and Foundation short configs both SURVEY PS1MD; filenames/g-filter choices/offset expressions differ. This is not a unique physical-survey identifier."
   },
   "corrections": [
@@ -399,7 +399,7 @@
     },
     {
       "category": "literal_source_or_release_issue",
-      "statement": "Historical Guy2007 construction2000–9200 Angstrom/−20..+50 days, BroutB21 fitting3000–7000 Angstrom and INFO2800–7000 values remain separate domains.",
+      "statement": "Historical Guy2007 construction2000\u20139200 Angstrom/\u221220..+50 days, BroutB21 fitting3000\u20137000 Angstrom and INFO2800\u20137000 values remain separate domains.",
       "repair_applied": false
     },
     {
@@ -422,6 +422,32 @@
       "statement": "Selected-coverage descriptions were initially copied into two unread fields. Corrected fields list only unexamined material; checked locators and immutable worker packet are unchanged.",
       "repair_applied": true,
       "source_acceptance_expanded": false
+    },
+    {
+      "category": "reader_bibliographic_identity_correction",
+      "statement": "The frozen worker wording incorrectly attributed arxiv:2112.03863v2 to Taylor. Original title/authors identify Scolnic et al., The Pantheon+ Analysis: The Full Dataset and Light-Curve Release. Brout bibliography separately cites Taylor et al.2021 DOI10.1093/mnras/stab962. Public identity wording is corrected visibly; immutable worker/amendment records preserve the error. Identity-only checks do not accept either source main text or scientific result.",
+      "repair_applied": true,
+      "source_acceptance_expanded": false,
+      "checked_identity_sources": [
+        {
+          "paper_id": "arxiv:2112.03863v2",
+          "url": "https://arxiv.org/html/2112.03863v2",
+          "sha256": "2c853a30cad35cd63a3097520235e5e772c645f717aba847708eecc2e5cb98a0",
+          "locator": "Original HTML title and author list only; main text/appendices unexamined in this wave."
+        },
+        {
+          "paper_id": "arxiv:2112.03863v2",
+          "url": "https://arxiv.org/pdf/2112.03863v2",
+          "sha256": "c42406c774a1f09ba520238b4bbe6bbcba81fec6171fdf0064d7c4dca583b9c9",
+          "locator": "Original PDF page1 title/authors only."
+        },
+        {
+          "paper_id": "arxiv:2112.03864v2",
+          "url": "https://arxiv.org/pdf/2112.03864v2",
+          "sha256": "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74",
+          "locator": "Original bibliography Scolnic, Brout, Carr2022 arxiv:2112.03863 and separate Taylor, Lidman, Tucker2021 DOI10.1093/mnras/stab962 entries."
+        }
+      ]
     }
   ],
   "training_selection_calibration_ancestry": {
@@ -430,16 +456,16 @@
   },
   "limitations": [
     "Targeted original-source claims only; zero new Luna/full-paper reads or paper promotions. Existing queues and original assets remain intact.",
-    "Paper locators: Brout2112.03864v2 Sec2.1/2.3/2.4/2.7, Sec3.1 Eqs4–5, Sec3.2, Sec3.3/Table3, Sec4.1/4.3 and AppendixA; Guyastro-ph/0701828v1 Sec2 Eq1/2.1/2.2, selected Sec3.1/3.2, Sec4.1–4.3, Sec5 and Sec6/6.1/6.2. Coverage is bounded; training tables, cited primary calibrator/survey papers and Taylor2112.03863v2 are unread in this wave.",
+    "Paper locators: Brout2112.03864v2 Sec2.1/2.3/2.4/2.7, Sec3.1 Eqs4\u20135, Sec3.2, Sec3.3/Table3, Sec4.1/4.3 and AppendixA; Guyastro-ph/0701828v1 Sec2 Eq1/2.1/2.2, selected Sec3.1/3.2, Sec4.1\u20134.3, Sec5 and Sec6/6.1/6.2. Coverage is bounded; training tables, cited primary calibrator/survey papers and Scolnic2112.03863v2 and the separate Taylor et al.2021 training source (DOI10.1093/mnras/stab962) are unread in this wave.",
     "Calibration ancestry includes overlapping tertiary stars, CALSPEC/NGSL synthetic magnitudes, passbands, extinction correction, zero-centered priors, relative survey weights and uncertainty floors. Brout Sec3.2 selection cuts are conditioning, not a complete survey selection probability.",
     "Nine correlated zeropoint/effective-wavelength mock realizations are systematic perturbations propagated jointly through retraining and fitting. Paper Sec4.3 sigma_k=1/3 and selected ALL.fitopts literal0.3 are kept distinct; neither is an observed probability mass.",
     "shift_0.dat has nonzero perturbations; its suffix does not certify a zero shift or a mapping to nominal MODEL000. Generator/index bridge unexamined.",
     "The original Guy color-law convention CL(lambda_B)=0 and CL(lambda_V)=0.4 log(10) is historical context; no silent mapping to the later version1 four-coefficient release convention.",
     "Release FILTSYSTEM COUNT and MAGSYSTEM AB/BD17 are configuration literals, not measured quantum efficiency, gain or extraction/censoring laws. Both PS1 and Foundation configs use SURVEY PS1MD, with differing g-filter filenames and offsets.",
     "Covariances/uncertainties depend on training, calibration and selection. No independent datasets, stochastic optical-state law, global empirical-template accuracy or held-out validation are established.",
-    "See per-asset coverage in source-rehash; unopened bodies of shift1–8 remain hash-only. Actual filter curves, KCOR FITS bodies, Hsiao07/CALSPEC spectra and allother MODEL/reader code remain unread/unacquired.",
+    "See per-asset coverage in source-rehash; unopened bodies of shift1\u20138 remain hash-only. Actual filter curves, KCOR FITS bodies, Hsiao07/CALSPEC spectra and allother MODEL/reader code remain unread/unacquired.",
     "Prior JSON schema/labels viewed as retained evidence; covariance diagonal/asymmetry values were not accepted or recomputed."
   ],
-  "bibliography_coverage": "No new original bibliography entries linking registered versions were checked in this bounded wave; no new citation link inferred.",
+  "bibliography_coverage": "Selected original bibliography identity checks distinguish Scolnic arxiv:2112.03863 from Taylor2021 DOI10.1093/mnras/stab962. Existing register citation cite-2112.03864-2112.03863 records the base identity only; no printed cited version is certified and no new citation record is added. Remaining bibliography is unexamined in this wave.",
   "conclusion": "Exact bounded calibration/template source contract accepted, with coordinate aliases, complete format/units/support and physical probability/detector/censoring law gates retained. Zero full-paper readings, promotion, numerical execution or observational qualification."
 }

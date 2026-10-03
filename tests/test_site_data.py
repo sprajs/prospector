@@ -17,10 +17,23 @@ class PublicChronology(unittest.TestCase):
         source['agent_id'] = 'PRIVATE_WORKER'
         source['source_assets'][0]['credential'] = 'SECRET_TEST_VALUE'
         public = site_data.public_contract(source)
-        self.assertIn('full-fit', public['limitations'][1])
+        self.assertIn('full-fit', ' '.join(public['limitations']))
         self.assertIn('C_TT', public['scopes'][1]['checked_claim'])
         self.assertEqual(public['sources'][0]['sha256'], source['source_assets'][0]['sha256'])
-        for private in ['.work/', 'PRIVATE_WORKER', 'SECRET_TEST_VALUE', 'local_path']:
+        for private in ['.work/', 'PRIVATE_WORKER', 'SECRET_TEST_VALUE', 'local_path', 'Luna', 'stage promotion']:
+            self.assertNotIn(private, json.dumps(public))
+
+    def test_optical_export_keeps_unread_coverage_and_physical_limits(self):
+        path = site_data.ROOT / 'register/contracts/optical-calibration-template-source-contract-v1.json'
+        source = json.loads(path.read_text())
+        public = site_data.public_contract(source)
+        limits = ' '.join(public['limitations'])
+        self.assertIn('are unread', limits)
+        self.assertIn('sigma_k=1/3', limits)
+        self.assertIn('shift_0.dat has nonzero', limits)
+        self.assertIn('not measured quantum efficiency', limits)
+        self.assertIn('Covariances/uncertainties depend on training', limits)
+        for private in ['Luna', 'paper promotions', '.work/']:
             self.assertNotIn(private, json.dumps(public))
 
     def test_investigation_export_keeps_formal_and_physical_limits(self):

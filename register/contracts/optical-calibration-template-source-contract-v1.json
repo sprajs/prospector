@@ -286,7 +286,7 @@
   ],
   "limitations": [
     "Targeted original-source claims only; zero new Luna/full-paper reads or paper promotions. Existing queues and original assets remain intact.",
-    "Paper locators: Brout2112.03864v2 Sec2.1/2.3/2.4/2.7, Sec3.1 Eqs4–5, Sec3.2, Sec3.3/Table3, Sec4.1/4.3 and AppendixA; Guyastro-ph/0701828v1 Sec2 Eq1/2.1/2.2, selected Sec3.1/3.2, Sec4.1–4.3, Sec5 and Sec6/6.1/6.2. Coverage is bounded; training tables, cited primary calibrator/survey papers and Taylor2112.03863v2 are unread in this wave.",
+    "Paper locators: Brout2112.03864v2 Sec2.1/2.3/2.4/2.7, Sec3.1 Eqs4–5, Sec3.2, Sec3.3/Table3, Sec4.1/4.3 and AppendixA; Guyastro-ph/0701828v1 Sec2 Eq1/2.1/2.2, selected Sec3.1/3.2, Sec4.1–4.3, Sec5 and Sec6/6.1/6.2. Coverage is bounded; training tables, cited primary calibrator/survey papers and Scolnic2112.03863v2 and the separate Taylor et al.2021 training source (DOI10.1093/mnras/stab962) are unread in this wave.",
     "Calibration ancestry includes overlapping tertiary stars, CALSPEC/NGSL synthetic magnitudes, passbands, extinction correction, zero-centered priors, relative survey weights and uncertainty floors. Brout Sec3.2 selection cuts are conditioning, not a complete survey selection probability.",
     "Nine correlated zeropoint/effective-wavelength mock realizations are systematic perturbations propagated jointly through retraining and fitting. Paper Sec4.3 sigma_k=1/3 and selected ALL.fitopts literal0.3 are kept distinct; neither is an observed probability mass.",
     "shift_0.dat has nonzero perturbations; its suffix does not certify a zero shift or a mapping to nominal MODEL000. Generator/index bridge unexamined.",

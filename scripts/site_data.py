@@ -11,7 +11,9 @@ ORDER = ['baseline-reference', 'early-energy', 'late-dark-energy', 'interacting-
 def public_contract(item):
     """Expose checked source scope without local storage or worker provenance."""
     return {
-        'title': item['title'], 'limitations': item['limitations'],
+        'title': item['title'],
+        'limitations': [limit for limit in item['limitations']
+                        if not any(term in limit for term in ['Luna', 'paper promotion', 'stage promotion'])],
         'scopes': [{k: scope[k] for k in ['scope_id', 'title', 'paper_ids', 'checked_claim', 'unresolved']}
                    for scope in item['scopes']],
         'sources': [{k: source[k] for k in ['id', 'url', 'sha256', 'role', 'conditioning']}
