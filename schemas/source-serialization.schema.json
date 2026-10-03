@@ -16,7 +16,7 @@
       "type": "object", "required": ["id", "decimal_value", "unit", "value_class", "source_asset_ids", "locator", "uncertainty", "model_choice"],
       "properties": {
         "id": {"type": "string"}, "decimal_value": {"type": "string", "pattern": "^-?[0-9]+(\\.[0-9]+)?([eE][+-]?[0-9]+)?$"}, "unit": {"type": "string", "minLength": 1},
-        "value_class": {"enum": ["exact_definition", "evaluated_codata_central", "nist_asd_central"]},
+        "value_class": {"enum": ["exact_definition", "evaluated_codata_central", "nist_asd_central", "reported_compilation_value"]},
         "source_asset_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}}, "locator": {"type": "string", "minLength": 1},
         "uncertainty": {"type": "object", "required": ["decimal_value", "interpretation", "distribution", "coverage", "reason"], "properties": {"decimal_value": {"type": ["string", "null"]}, "interpretation": {"type": ["string", "null"]}, "distribution": {"type": ["string", "null"]}, "coverage": {"type": ["string", "null"]}, "reason": {"type": "string", "minLength": 1}}},
         "model_choice": {"type": "string", "minLength": 1}

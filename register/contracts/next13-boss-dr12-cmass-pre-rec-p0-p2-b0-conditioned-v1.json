@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "contract_id": "next13-boss-dr12-cmass-pre-rec-p0-p2-b0-conditioned-v1",
+  "title": "BOSS DR12 CMASS conditioned power/bispectrum RSD estimator",
+  "review_id": "2026-10-03-next13-boss-rsd-source-claims",
+  "paper_ids": [
+    "arxiv:1606.00439v2"
+  ],
+  "scopes": [
+    {
+      "scope_id": "NEXT-13",
+      "title": "CMASS full-AP P0/P2/B0 fitted product",
+      "paper_ids": [
+        "arxiv:1606.00439v2"
+      ],
+      "checked_claim": "Original Sec2.1-2.3 and Sec3-6 locate weighted galaxy/random estimators, fixed flat-LCDM coordinate/template values, area-weighted caps, nonlinear bias/TNS/effective bispectrum kernels, AP Eqs9-17, approximate window Eqs18-20 and2048-mock auto/cross covariance. Sec8.1, Table3 third column and Eqs23,25,27 specify one CMASS pre-reconstruction full-AP fit at zeff0.57,kmax0.22 h Mpc^-1. The source reports a conditioned f*sigma8/amplitude-geometry summary with model-error inflation; Table5 combines distinct overlapping RSD/BAO fits. Accepted source reporting is limited by the original printed normalization/label/boundary caveats.",
+      "unresolved": "Actual estimator/window/mask/covariance/likelihood/prior/calibration assets and amplitude/species/full-k compatibility are not qualified. Eq28 covariance/exponent and Eq14 orientation conventions remain unresolved; reader corrections are separate. Joint likelihood use requires known dependence/covariance. No executable request, independent amplitude measurement or source-result reproduction is accepted."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "boss1606-00439v2-html",
+      "url": "https://arxiv.org/html/1606.00439v2",
+      "sha256": "d3538b300d0b0490dee538b4c5327f694b78bec515e9ed8c820f96466baf560d",
+      "role": "html",
+      "conditioning": "Pinned original1606.00439v2, selected estimator/AP/window/covariance/Table3 and Table5 checks only; original PDF math visually checked in frozen source audit."
+    },
+    {
+      "id": "boss1606-00439v2-pdf",
+      "url": "https://arxiv.org/pdf/1606.00439v2",
+      "sha256": "7026e8dd7e51a07adde8940c380dded16391ad90a49c6ba321393d0fde1fe823",
+      "role": "pdf",
+      "conditioning": "Pinned original1606.00439v2, selected estimator/AP/window/covariance/Table3 and Table5 checks only; original PDF math visually checked in frozen source audit."
+    }
+  ],
+  "limitations": [
+    "One conditioned CMASS pre-reconstruction full-AP P0+P2+B0 fit: nominal kmin0.02/0.04/0.03 and kmax0.22 h Mpc^-1. Table3 no-AP, Table4 separately reported f/sigma8 at0.17 and Table5 combined RSD/BAO products are distinct.",
+    "Actual catalogues, randoms, masks/veto/radial weights, bins/triangle ownership, power multipole estimator, W2/W3 functions, full covariance arrays, inverse correction, nonlinear calibration, likelihood code/chains and prior bounds remain unacquired or unchecked. Their absence is not inferred.",
+    "Source Eq28 omits1/2 despite covariance terminology; Eq14 bispectrum orientation normalization is unresolved. The source k/q labels conflict, and its AP-only triangle-loss claim fails for one positive common linear LOS map. Original expressions remain literal; proposed reader repairs are not applied or paper-equivalent.",
+    "Printed512^3/box-side cell resolution, bispectrum lower-bound wording and Table3 statistical-error caption have source inconsistencies. Exact author implementation and discrete inclusion are open.",
+    "f*sigma8 is a fitted summary conditioned on fiducial geometry, fixed spectral shape, nonlinear bias/RSD/window/mocks and model-error inflation. Exact ordinary sigma8 top-hat/full-k/gauge/matter-species convention is not located in checked passages; a reduced-sector finite-band variance cannot be relabelled sigma8.",
+    "RSD P is contained in RSD P+B; Table5 adds post-reconstruction BAO from the same galaxies and shared mock/geometry ancestry. Published within-paper8x8 covariance is referenced in AppendixC but unread here; external cross-analysis covariance remains unknown, never zero.",
+    "Targeted source claims only; zero new full/Luna readings, paper-stage or graph promotions. No observed likelihood, estimator implementation, independent numerical reproduction or scientific qualification is accepted."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}

@@ -799,9 +799,9 @@
     "request_sha256": "5d67253917a35031b69b85272fe381da8c946007da5615300a3dcf3381f12bed"
   },
   "continuation_note": "Resume saved acquisitions/reads before a new bounded window. Least-searched lane interacting-sectors; preserve foundational spin citations and blocked source-audit designs. No scheduled or endless crawl.",
-  "last_completed_source_audit": "2026-10-03-all19-source-wave2",
+  "last_completed_source_audit": "2026-10-03-all19-source-wave3",
   "coordinated_source_continuation": {
-    "scan_id": "2026-10-03-all19-source-wave2",
+    "scan_id": "2026-10-03-all19-source-wave3",
     "mode": "bounded_targeted_source_work",
     "pending": [
       {
@@ -826,23 +826,38 @@
       },
       {
         "scope_id": "NEXT-10",
-        "stage": "source_acquisition",
-        "reason": "Named SDSS arrival/QE/gain/exposure/extraction/selection source contract pending after final review; no instrument substitution."
+        "stage": "physical_source_and_consumer",
+        "reason": "Selected SDSS release/format metadata checked. No CID/epoch-to-raw-exposure/reduction join, calibrated arrival/QE/gain/extraction/selection law or covariance is qualified."
       },
       {
         "scope_id": "NEXT-14",
-        "stage": "targeted_source_review",
-        "reason": "Root collisionless FD+CDM+Lambda v2 proposal39cf0ba... centrally preserved and original sources rehashed; existing Sol dispatch pending NEXT05 final review. No code or numerical acceptance."
+        "stage": "consumer_stability_and_numerical",
+        "reason": "Frozen39cf conditional source algebra remains accepted; native and numerical gates are open. Projected zero-velocity start differs from regular growing mode. Root reported instability in the earlier raw trace peer. A separate root v3 centered-angular/constant-kappa method3fd9154dc4fab24c75fb5f95a8991e855021f8b41a7890e044097b56d5d6598c and requestdddec336b4e25d4f7a722e1b3b3fdd9f5c4f416e5deb4c03525618b24b871883 have externally reported conditional derived-method admission d84b2246bce75d0a4bec8d775695eb5fa9d596320f55d7b3f32474c6ec981d3b; exact independent Prospector source checking is pending. No numerical, SDK or full-physics promotion."
       },
       {
         "scope_id": "NEXT-18",
-        "stage": "source_acquisition",
-        "reason": "B1608 original imaging/PSF/time-delay/kinematics/environment asset discovery/lineage pending; no summary-as-measurement claim."
+        "stage": "physical_source_and_joint_likelihood",
+        "reason": "Correct HST GO-10158 metadata identified, first four of 30 dataset rows checked; older WFPC2 product remains distinct. Raw pixels, author reductions/PSF, delays/spectra/environment, timing/rights and joint covariance remain unqualified."
       },
       {
         "scope_id": "NEXT-13",
-        "stage": "source_acquisition",
-        "reason": "Select one actual BOSS/SDSS RSD estimator/AP/window/scale-cut/fiducial/amplitude release; preserve Table3P+B/Table5BAO/RSD shared-galaxy ancestry and unknown cross-covariance. Reference epoch and8 h^-1 Mpc support/physics compatibility require an explicit separate gate."
+        "stage": "source_assets_and_consumer",
+        "reason": "Selected BOSS DR12 CMASS pre-reconstruction P0/P2/B0 source contract checked. Printed likelihood half-factor/AP normalization and triangle conventions remain explicit; actual estimator arrays/window/full covariance/prior/ordinary sigma8 compatibility remain unresolved."
+      },
+      {
+        "scope_id": "NEXT-12",
+        "stage": "chosen_inputs_and_consumer",
+        "reason": "Selected constants and mass conventions source-checked. Joint uncertainty/covariance, underlying isotope evaluation and consistent native chosen-input qualification remain open."
+      },
+      {
+        "scope_id": "NEXT-16",
+        "stage": "physical_late_input",
+        "reason": "Today opacity/visibility need a qualified matching late-electron history or deterministic depth enclosure; actual L/U remain null. Drag requires a distinct weighted tail."
+      },
+      {
+        "scope_id": "NEXT-17",
+        "stage": "consumer_protocol_and_execution",
+        "reason": "Exact synthetic v2 source/algebra and proposed unchanged caps accepted. Parent protocol, executable identity, positivity/admission, raw certainty-law agreement and numerical acceptance remain separate; no measured population/selection qualification."
       }
     ],
     "no_automatic_execution": true

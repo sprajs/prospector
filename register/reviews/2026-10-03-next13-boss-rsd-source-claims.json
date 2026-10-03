@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-next13-boss-rsd-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "agent_id": "/root/perturbation_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "runtime_session_id": "01a0fec1-578e-7712-ba9d-1707e70bb91c",
+    "turn_id": "01a0ffb1-8ebf-7481-b9f5-4599a194de17",
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "evidence_kind": "runtime_turn_context",
+    "actual_backend_identity": null
+  },
+  "model_confirmation_companion_sha256": "676c0c3b2d0eb7669fbb3d6c274aadbe1344aad1065e236bf0f1b2319b05fdbc",
+  "reviewed_utc": "2026-10-03T03:01:34.249777+00:00",
+  "packet_sha256": "b96f03b4e83fcfd520e752b73d561ad9ad98c543b3c3d97b4c9538fb4c712703",
+  "reviewed_papers": [
+    "arxiv:1606.00439v2"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:1606.00439v2",
+      "source_hashes": {
+        "html": "d3538b300d0b0490dee538b4c5327f694b78bec515e9ed8c820f96466baf560d",
+        "pdf": "7026e8dd7e51a07adde8940c380dded16391ad90a49c6ba321393d0fde1fe823",
+        "extracted_text": "eb9b18366cd8ca0e4e4de415ccbe504d777ab8b016db941e3e4dcb156b908b7b"
+      },
+      "coverage": {
+        "main_text": "Selected original-source locators inherited from frozen FINAL source audit; no complete reading or new source campaign.",
+        "checked_locators": [
+          "p1 title, authors, left margin arXiv:1606.00439v2 [astro-ph.CO] 26 Oct 2016; HTML title and selected body",
+          "p3 Sec2.1 Eq1; Sec2.2 mock paragraphs and footnote1; p4 QPM/N-body context; HTML S2.SS1.p1.1,p2.1,p2.2,p3.1; S2.E1; S2.SS2.p2.1,p3.1,p4.1",
+          "p4 Sec2.3 and upper-right parameter tuple; HTML S2.SS3.p1.1,p2.1",
+          "pp4-5 Sec3 Eqs2-7; FFT/bin/low-k paragraphs; p6 Sec4 ordering paragraph and cuts; HTML S3.E2,E3,EGx1,E5,E6,E7; S3.p1.1-p1.3,p2.1,p3.1,p3.2,p3.3,p4.1-p4.3,p5.1,p6.1,p7.1; S4.p2.1,p3.1",
+          "p5 Sec4 Eq8 and area paragraph; HTML S4.E8; S4.p1.1,p1.2",
+          "p6 Sec5.1/5.2 and p7 shot-noise paragraph; HTML S5.SS1.p1.1; S5.SS2.p1.1,p2.1,p3.1",
+          "p7 Sec5.3 Eqs9-13; p9 Eqs14-17 and following closure paragraph; HTML S5.EGx2,EGx3,E13,E14,EGx4,EGx5,E17; S5.SS3.p1.1,p1.2,p2.1-p2.6",
+          "p9 Sec5.4 Eqs18-20 and approximation/domain paragraphs; HTML S5.EGx6,EGx7,EGx8; S5.SS4.p1.1,p2.1-p2.4",
+          "p9 Sec6.1 Eq21; p10 first correlation paragraphs; p11 Sec6.2 Eq22 and definitions; p12 first fit/joint-fit paragraphs; HTML S6.E21,E22; S6.SS1.p1.1; S6.SS2.p1.1,p1.2,p2.1,p2.2,p3.1",
+          "p16 Table2/caption; Sec7.1 selected budget paragraph and final error paragraph; Sec8 opening; p17 selected cut/budget discussion; HTML S7.T2; S8.p1.1; selected S7.SS1/S8 cut paragraphs",
+          "p17 Sec8.1 Eqs23-27 and covariance prose; p18 Table3/caption, Eq28 and adjacent definition; Table4/caption and Sec8.2 first paragraphs; HTML S8.E23-E28; S8.T3; S8.T4; S8.SS1.p1.1,p2.1-p2.4,p3.1-p3.3,p4.1,p4.2; S8.SS2.p1.1,p2.1",
+          "p22 Sec8.4 introductory paragraph; p24 same-data/mocks/correlation prose, Table5/caption, Eqs35-41 and footnote6; HTML S8.SS4.p1.1,p2.1 and selected correlation/combination paragraphs; S8.E35-E41; S8.T5",
+          "Bibliography not newly rendered/read; HTML bib.bib58"
+        ],
+        "unread": "Most introduction beyond skim/selected context, complete Sec4 measured plots, most Sec6.3 and Sec7 systematic simulations, Sec8.3 and8.5/8.6/9 cosmological comparisons/GR claims, AppendixA systematic weights, AppendixB fibre collisions, AppendixC C1/C2 full8x8 cells, AppendixD degeneracy model, referenced modelling/estimator papers, full bibliography except bib58, unlisted equations/figures. Complete Luna extraction/full Sol review remain queued.",
+        "unexamined_math": "Full TNS/2-loop/bispectrum effective kernels and calibration coefficients, P/B Poisson formulas, actual W2/W3/power multipole windows, estimator Fourier/FFT code normalization, discrete shells/mode ownership, exact prior bounds/Hartlap implementation/author likelihood code and chains.",
+        "figures": "Original audit qualitatively inspected Fig1(p7) and Fig4(p11); Fig2/3 captions/context only, remaining figures unexamined. No digitization or estimator/fit qualification."
+      }
+    }
+  ],
+  "reviewed_source_assets": [
+    {
+      "id": "boss1606-00439v2-html",
+      "url": "https://arxiv.org/html/1606.00439v2",
+      "sha256": "d3538b300d0b0490dee538b4c5327f694b78bec515e9ed8c820f96466baf560d",
+      "role": "html",
+      "conditioning": "Pinned original1606.00439v2, selected estimator/AP/window/covariance/Table3 and Table5 checks only; original PDF math visually checked in frozen source audit."
+    },
+    {
+      "id": "boss1606-00439v2-pdf",
+      "url": "https://arxiv.org/pdf/1606.00439v2",
+      "sha256": "7026e8dd7e51a07adde8940c380dded16391ad90a49c6ba321393d0fde1fe823",
+      "role": "pdf",
+      "conditioning": "Pinned original1606.00439v2, selected estimator/AP/window/covariance/Table3 and Table5 checks only; original PDF math visually checked in frozen source audit."
+    }
+  ],
+  "projection_kind": "Compact exact-byte public projection of frozen selected-source audit; no new source campaign",
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "full_paper_review": false
+  },
+  "supporting_packets": [
+    {
+      "role": "immutable_private_estimator_contract",
+      "sha256": "5f1917ba0a503924a117d58d9cb81b5749eda003dfefdb2ed56af6e1e2d241d1"
+    },
+    {
+      "role": "immutable_source_corrections",
+      "sha256": "3f98c1e16aba6060d5254639afefcc583ced246a6518339a4a96d4f0828a8743"
+    },
+    {
+      "role": "immutable_source_rehash",
+      "sha256": "b21374b91e2f7999849b0f1f1d6e5ffbbae9e222d49cd91074b1aa2ba99dd663"
+    }
+  ],
+  "accepted_records": {
+    "contract_ids": [
+      "next13-boss-dr12-cmass-pre-rec-p0-p2-b0-conditioned-v1"
+    ],
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": []
+  },
+  "source_contract_binding": {
+    "contract_id": "next13-boss-dr12-cmass-pre-rec-p0-p2-b0-conditioned-v1",
+    "path": "register/contracts/next13-boss-dr12-cmass-pre-rec-p0-p2-b0-conditioned-v1.json",
+    "sha256": "8f7e16823641116f6c9287a5d43823ce9b59e6de09523f41cc1dedcd113bb558"
+  },
+  "accepted_claims": [
+    {
+      "id": "NEXT13-A01-data-estimator",
+      "claim": "CMASS DR12 weighted galaxy P0,P2 and isotropic B0 are jointly fitted. Galaxy/random mask and radial selection, observational/FKP weighting, FFT/binning and NGC/SGC combination are part of the estimator, not optional amplitude decorations.",
+      "status": "accepted_targeted_source_claim_with_stated_limits",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1606.00439v2",
+          "sha256": "7026e8dd7e51a07adde8940c380dded16391ad90a49c6ba321393d0fde1fe823",
+          "url": "https://arxiv.org/pdf/1606.00439v2",
+          "locator": "p3 Sec2.1 Eq1; Sec2.2 mock paragraphs and footnote1; p4 QPM/N-body context; pp4-5 Sec3 Eqs2-7; FFT/bin/low-k paragraphs; p6 Sec4 ordering paragraph and cuts; p5 Sec4 Eq8 and area paragraph"
+        }
+      ]
+    },
+    {
+      "id": "NEXT13-A02-fiducial-AP",
+      "claim": "Fixed source fiducial transform/template values and source drag-ruler-scaled AP parametrization condition the fit. Eqs9-13 and15-17 are source-located algebra under stated positive common-LOS domain; Eq14 normalized-monopole acceptance is blocked, and the printed AP triangle-loss claim is rejected in that domain.",
+      "status": "accepted_targeted_source_claim_with_stated_limits",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1606.00439v2",
+          "sha256": "7026e8dd7e51a07adde8940c380dded16391ad90a49c6ba321393d0fde1fe823",
+          "url": "https://arxiv.org/pdf/1606.00439v2",
+          "locator": "p4 Sec2.3 and upper-right parameter tuple; p7 Sec5.3 Eqs9-13; p9 Eqs14-17 and following closure paragraph"
+        }
+      ]
+    },
+    {
+      "id": "NEXT13-A03-scale-model-window",
+      "claim": "The chosen CMASS P+B f*sigma8/AP product uses nominal low-k cuts0.02/0.04/0.03 and kmax0.22 h Mpc^-1 with nonlinear bias/TNS/effective kernels/FoG/shot noise and a separable bispectrum window approximation. It is not a bare linear-growth observation.",
+      "status": "accepted_targeted_source_claim_with_stated_limits",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1606.00439v2",
+          "sha256": "7026e8dd7e51a07adde8940c380dded16391ad90a49c6ba321393d0fde1fe823",
+          "url": "https://arxiv.org/pdf/1606.00439v2",
+          "locator": "pp4-5 Sec3 Eqs2-7; FFT/bin/low-k paragraphs; p6 Sec4 ordering paragraph and cuts; p6 Sec5.1/5.2 and p7 shot-noise paragraph; p9 Sec5.4 Eqs18-20 and approximation/domain paragraphs; p16 Table2/caption; Sec7.1 selected budget paragraph and final error paragraph; Sec8 opening; p17 selected cut/budget discussion"
+        }
+      ]
+    },
+    {
+      "id": "NEXT13-A04-covariance-summary",
+      "claim": "Full P0/P2/B0 auto/cross covariance comes from2048 MD-Patchy mocks with inverse-covariance bias correction; author raw-statistic Gaussian law, fitted compressed covariance/diagonal model-error inflation and source printed CMASS decimals are recorded. This accepts source reporting, not a new likelihood, raw covariance qualification or source-output reproduction.",
+      "status": "accepted_targeted_source_claim_with_stated_limits",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1606.00439v2",
+          "sha256": "7026e8dd7e51a07adde8940c380dded16391ad90a49c6ba321393d0fde1fe823",
+          "url": "https://arxiv.org/pdf/1606.00439v2",
+          "locator": "p9 Sec6.1 Eq21; p10 first correlation paragraphs; p11 Sec6.2 Eq22 and definitions; p12 first fit/joint-fit paragraphs; p16 Table2/caption; Sec7.1 selected budget paragraph and final error paragraph; Sec8 opening; p17 selected cut/budget discussion; p17 Sec8.1 Eqs23-27 and covariance prose; p18 Table3/caption, Eq28 and adjacent definition; Table4/caption and Sec8.2 first paragraphs"
+        }
+      ]
+    },
+    {
+      "id": "NEXT13-A05-distinct-shared-products",
+      "claim": "Table3 full-AP P+B, Table3 no-AP, Table4 separately reported f/sigma8 at kmax0.17, and Table5 combined pre-reconstruction RSD plus post-reconstruction BAO are distinct conditioned products. Their same galaxy/mocks ancestry and explicit within-paper correlations prohibit independent-data multiplication.",
+      "status": "accepted_targeted_source_claim_with_stated_limits",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1606.00439v2",
+          "sha256": "7026e8dd7e51a07adde8940c380dded16391ad90a49c6ba321393d0fde1fe823",
+          "url": "https://arxiv.org/pdf/1606.00439v2",
+          "locator": "p22 Sec8.4 introductory paragraph; p24 same-data/mocks/correlation prose, Table5/caption, Eqs35-41 and footnote6; p17 Sec8.1 Eqs23-27 and covariance prose; p18 Table3/caption, Eq28 and adjacent definition; Table4/caption and Sec8.2 first paragraphs"
+        }
+      ]
+    },
+    {
+      "id": "NEXT13-A06-amplitude-boundary",
+      "claim": "Source f=dlnD/dlna and sigma8(z)=D(z)sigma8_0 are fit parameters at zeff, with sigma8_0 called a fiducial-time amplitude. Exact8h^-1Mpc/full-k/top-hat/gauge/matter-species definition is not located in this selected source check. Truncated reduced-sector transfer variance is excluded from identification with this fitted ordinary sigma8.",
+      "status": "accepted_targeted_source_claim_with_stated_limits",
+      "evidence": [
+        {
+          "paper_id": "arxiv:1606.00439v2",
+          "sha256": "7026e8dd7e51a07adde8940c380dded16391ad90a49c6ba321393d0fde1fe823",
+          "url": "https://arxiv.org/pdf/1606.00439v2",
+          "locator": "p9 Sec6.1 Eq21; p10 first correlation paragraphs; p11 Sec6.2 Eq22 and definitions; p12 first fit/joint-fit paragraphs; p6 Sec5.1/5.2 and p7 shot-noise paragraph; p17 Sec8.1 Eqs23-27 and covariance prose; p18 Table3/caption, Eq28 and adjacent definition; Table4/caption and Sec8.2 first paragraphs"
+        }
+      ]
+    }
+  ],
+  "corrections": [
+    {
+      "id": "NEXT13-C01-AP-locator",
+      "category": "prior_packet_locator_error",
+      "locator": ".work/standard-lcdm-contracts/integrated-source-audit.json / reviewed_paper_details[arxiv:1606.00439v2]",
+      "statement": "Original AP section is Sec5.3, PDF p7, HTML S5.EGx2. Sec3 contains estimator Eqs2-7.",
+      "repair_applied": false
+    },
+    {
+      "id": "NEXT13-C02-figure-coverage",
+      "category": "prior_packet_coverage_contamination",
+      "locator": "historical integrated BOSS coverage",
+      "statement": "Those are not BOSS figure checks. Current BOSS Fig1 on p7 and Fig4 on p11 were visually inspected only qualitatively while checking equations; Fig2 caption/text and Fig3 caption/correlation prose were read; their images were not inspected. Remaining scientific figures not visually checked.",
+      "repair_applied": false
+    },
+    {
+      "id": "NEXT13-C03-likelihood-exponent",
+      "category": "printed_source_convention_or_error_unresolved",
+      "locator": "PDF p18 Eq28; HTML S8.E28; pp17-18 covariance/definition prose and Sec6.2 Eq22",
+      "statement": "With conventional residuals and C as a covariance this literal has precision2 C^-1; it is not the usual Gaussian kernel with covariance C. Actual author software exponent is unknown.",
+      "repair_applied": false
+    },
+    {
+      "id": "NEXT13-C04-AP-closure",
+      "category": "printed_source_prose_error_with_reader_proof",
+      "locator": "PDF p9 immediately after Eq17; HTML S5.SS3.p2.6",
+      "statement": "See immutable source correction",
+      "repair_applied": false
+    },
+    {
+      "id": "NEXT13-C05-k-q-prose",
+      "category": "printed_source_internal_label_inconsistency",
+      "locator": "PDF p7 Eqs11-13 versus p9 after Eq14; HTML S5.SS3.p2.1,p2.4",
+      "statement": "p7 defines k as observed/fiducial-coordinate mode and q as tested-model mode. p9 calls ki actual and qi fiducial, reversed relative to preceding definitions/equations.",
+      "repair_applied": false
+    },
+    {
+      "id": "NEXT13-C06-bispectrum-angle-prefactor",
+      "category": "printed_source_normalization_unresolved",
+      "locator": "PDF p9 Eq14; HTML S5.E14",
+      "statement": "If B here denotes the ordinary angular bispectrum and is a constant Bstar with alpha_perp=alpha_parallel=1, the literal gives2pi Bstar, rather than the angular mean Bstar.",
+      "repair_applied": false
+    },
+    {
+      "id": "NEXT13-C07-grid-resolution",
+      "category": "printed_source_grid_statement_inconsistency",
+      "locator": "PDF p5 Sec3 FFT paragraph; HTML S3.p5.1",
+      "statement": "The quoted resolutions correspond to Lbox/1024 rather than Lbox/512. No grid or estimator was run; this is elementary dimensional/source consistency, not a numerical experiment.",
+      "repair_applied": false
+    },
+    {
+      "id": "NEXT13-C08-low-k-boundary",
+      "category": "printed_source_boundary_not_frozen_to_arrays",
+      "locator": "PDF p5 Sec3, p6 Sec4, p16 Sec8; HTML S3.p6.1,S4.p3.1,S8.p1.1",
+      "statement": "Sec3 discards any bispectrum side <=0.03 h Mpc^-1; later ranges are printed with inclusive0.03 lower bound. CMASS N0=3 with delta-k6kf is printed separately.",
+      "repair_applied": false
+    },
+    {
+      "id": "NEXT13-C09-table-caption-error-wording",
+      "category": "printed_source_wording_inconsistency",
+      "locator": "PDF p18 Table3 caption versus Sec8 opening pp16-17 and Table4 caption",
+      "statement": "See immutable source correction",
+      "repair_applied": false
+    },
+    {
+      "id": "NEXT13-C10-covariance-diagonal-word",
+      "category": "printed_source_terminology_inconsistency",
+      "locator": "PDF p24 Sec8.4 correlation paragraph and footnote6",
+      "statement": "After rij=Cij/sqrt(Cii Cjj), prose calls Cii standard deviation. Footnote6 and variance construction use diagonal covariance entries as variances.",
+      "repair_applied": false
+    }
+  ],
+  "normalization_and_geometry_limits": {
+    "Eq28": "Literal exp[-r^T C^-1 r] remains printed; conventional1/2 exponent is only a separately named reader proposal, not accepted author behavior.",
+    "Eq14": "Literal angle prefactor returns2pi times a constant isotropic B under ordinary B convention; reader1/(4pi alpha_parallel^2 alpha_perp^4) proposal is not applied.",
+    "AP_triangles": "With one finite positive common LOS map q_i=Mk_i, closure and bounded transformed cosine are preserved. Source AP-only triangle-loss claim is rejected only in that domain; shell/wide-angle/code behavior remains open."
+  },
+  "blocked_gates": [
+    "NEXT13-B01-executable-estimator",
+    "NEXT13-B02-amplitude-consumer-map",
+    "NEXT13-B03-joint-probe-law",
+    "NEXT13-B04-likelihood-and-B0-normalization"
+  ],
+  "limitations": [
+    "One conditioned CMASS pre-reconstruction full-AP P0+P2+B0 fit: nominal kmin0.02/0.04/0.03 and kmax0.22 h Mpc^-1. Table3 no-AP, Table4 separately reported f/sigma8 at0.17 and Table5 combined RSD/BAO products are distinct.",
+    "Actual catalogues, randoms, masks/veto/radial weights, bins/triangle ownership, power multipole estimator, W2/W3 functions, full covariance arrays, inverse correction, nonlinear calibration, likelihood code/chains and prior bounds remain unacquired or unchecked. Their absence is not inferred.",
+    "Source Eq28 omits1/2 despite covariance terminology; Eq14 bispectrum orientation normalization is unresolved. The source k/q labels conflict, and its AP-only triangle-loss claim fails for one positive common linear LOS map. Original expressions remain literal; proposed reader repairs are not applied or paper-equivalent.",
+    "Printed512^3/box-side cell resolution, bispectrum lower-bound wording and Table3 statistical-error caption have source inconsistencies. Exact author implementation and discrete inclusion are open.",
+    "f*sigma8 is a fitted summary conditioned on fiducial geometry, fixed spectral shape, nonlinear bias/RSD/window/mocks and model-error inflation. Exact ordinary sigma8 top-hat/full-k/gauge/matter-species convention is not located in checked passages; a reduced-sector finite-band variance cannot be relabelled sigma8.",
+    "RSD P is contained in RSD P+B; Table5 adds post-reconstruction BAO from the same galaxies and shared mock/geometry ancestry. Published within-paper8x8 covariance is referenced in AppendixC but unread here; external cross-analysis covariance remains unknown, never zero.",
+    "Targeted source claims only; zero new full/Luna readings, paper-stage or graph promotions. No observed likelihood, estimator implementation, independent numerical reproduction or scientific qualification is accepted."
+  ],
+  "bibliography_coverage": {
+    "checked": "HTML bib.bib58 Lewis/Challinor/Lasenby2000,ApJ538,473 only",
+    "printed_arxiv_base_id": null,
+    "printed_arxiv_version": null,
+    "version_specific_citation_accepted": false,
+    "unread": "Other bibliography links unknown; no inferred MB/CLASS link."
+  },
+  "conclusion": "Accept this exact canonical source contract only for listed conditioned source claims. It is not an executable estimator or likelihood and does not promote the paper or graph."
+}

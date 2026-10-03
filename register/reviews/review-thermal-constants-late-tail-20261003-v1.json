@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "review_id": "review-thermal-constants-late-tail-20261003-v1",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "agent_id": "/root/thermal_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "runtime_session_id": "01a0fec1-0810-7361-a598-b20696ba4a64",
+    "turn_id": "01a0ffb1-6963-73c3-9cb4-18948d96fb45",
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "evidence_kind": "runtime_turn_context",
+    "actual_backend_identity": null,
+    "path": ".work/all19-source-wave3-20261003/thermal-public-projection-model-confirmation.json",
+    "sha256": "bbccefb98dbfa4427aba963b72baea5a90bfb33cda6eac0bdfce2d9b298c1da7",
+    "confirmation_scope": "Current exact-byte public-projection amendment; original source review remains separately pinned supporting provenance."
+  },
+  "reviewed_utc": "2026-10-03T02:28:10.697588+00:00",
+  "packet_sha256": "857e5815fb5cfd8772d85def31ed662da989c604fa5edcad6c80a84613dd91b5",
+  "supporting_packets": [
+    {
+      "role": "immutable_original_contract_proposal",
+      "sha256": "2970074f00b4426367a76b0554a39d013be1c7308d58daea25b980f0b22d50a4"
+    },
+    {
+      "role": "immutable_original_scalar_proposal",
+      "sha256": "3476c49eca63590dece0404fac0e5b874758412c8595179e2dcc656288719886"
+    },
+    {
+      "role": "immutable_original_scientific_source_model_confirmation",
+      "path": ".work/all19-source-wave3-20261003/constants-late-tail-model-confirmation.json",
+      "sha256": "22bc7b5199414e50e97c4639cd64f441c2b26088b6a213d78123077b67f7415d",
+      "original_wrapper": {
+        "path": ".work/all19-source-wave3-20261003/constants-late-tail-model-confirmation.json",
+        "sha256": "22bc7b5199414e50e97c4639cd64f441c2b26088b6a213d78123077b67f7415d",
+        "runtime_context": {
+          "session_id": null,
+          "runtime_session_id": "01a0fec1-0810-7361-a598-b20696ba4a64",
+          "turn_id": "01a0ff7e-e887-7cd3-880b-01942b722486",
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "agent_id": "/root/thermal_source_audit",
+          "evidence_kind": "runtime_turn_context",
+          "actual_backend_identity": null,
+          "actual_backend_null_reason": "Serving backend unexposed; runtime model and actual effort read directly.",
+          "raw_context_line": 700,
+          "raw_context_sha256": "4d5c6ebb140eca78a310e27e972a4d18f3bd0e7b3264c3565c63e47161e22055",
+          "confirmed_utc": "2026-10-03T02:04:24.068156+00:00"
+        },
+        "effort_is_actual_exposed_runtime_key": true,
+        "reasoning_effort_field_exposed": false
+      }
+    }
+  ],
+  "reviewed_papers": [
+    "arxiv:1801.08023v3"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:1801.08023v3",
+      "source_hashes": {
+        "html": "571a8f3a2e56eedfdad53a2986316125fc108bb6c1f92cdc5f10325843ccf1f5"
+      },
+      "coverage": {
+        "main_text": "Original HTML title/frontmatter/authors and printed August24,2026 date; AppendixD A4.T10 atomic H1/He4 entries and Table10 caption; SecII.3 S2.E33–S2.E34 and adjoining density definitions. Nearby S2.E35–S2.E38 context inspected, without new eta/result acceptance.",
+        "unread": "Other main text/appendices/tables/figures; underlying isotope-mass evaluation sources; BBN result/domain/covariance; no PDF inspected this wave and no complete paper read.",
+        "figures": "No BBN figure visual checks in this audit.",
+        "checked_locators": [
+          "Original HTML title/frontmatter/authors; printed August 24, 2026 date",
+          "Appendix D Table 10 (A4.T10): H1 (atomic) and He4 (atomic) rows and Table 10 caption",
+          "Section II.3 equations (33)-(34), S2.E33-S2.E34, and adjoining density definitions",
+          "Section II.3 equations (35)-(38), S2.E35-S2.E38: nearby context inspected only; no new eta or BBN-result acceptance"
+        ]
+      }
+    }
+  ],
+  "reviewed_source_assets": [
+    {
+      "sha256": "5c4a2c8127a80698d05f4d682bd4cac200dabcd9c2e9dd783661a0aa60f4bb1c",
+      "bytes": 193554,
+      "url": "https://physics.nist.gov/cuu/pdf/all.pdf",
+      "source_identity": "Fundamental Physical Constants — Extensive Listing; 2022 CODATA adjustment",
+      "retrieved_utc": "2026-10-02T23:37:45.305679+00:00",
+      "licence": "unknown; local reading only; do not redistribute raw source",
+      "coverage": {
+        "checked": "PDF1 G row/header; PDF2 electron kg and Thomson(8pi/3)r_e^2 row/header; PDF3 proton kg row/header; PDF6 atomic-mass-constant kg row/header; PDF7 footnote||. All selected rows and units visually checked against original renders.",
+        "unread": "Unlisted constants, numerical adjustments/correlations and underlying experimental/theoretical measurement papers."
+      },
+      "id": "CODATA2022_selected_constants",
+      "role": "selected_primary_source",
+      "conditioning": "Bounded original-source locators only; no complete source, independent measurement, native implementation or scientific qualification."
+    },
+    {
+      "sha256": "1122cf38e25b23d780a30607c68f7350b2b6d1f9970a89947aaa87a45ecbb20a",
+      "bytes": 3503078,
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9.pdf",
+      "source_identity": "The International System of Units (SI), 9th edition, V4.01, June 2026",
+      "retrieved_utc": "2026-10-02T23:37:48.753712+00:00",
+      "licence": "unknown; local reading only; do not redistribute raw source",
+      "coverage": {
+        "checked": "Sec2.2 Table1 PDF126/printed124 c,h,e,k and exactness sentence; Sec3 Table7 PDF140/printed138 kilo/mega; Sec4 Table8 PDF142/printed140 Da/au/eV entries and PDF143/printed141 footnotes(i),(j),(l). Original pages visually checked. V4.01 identity in original reading aid.",
+        "unread": "All other SI definitions, main text, appendices and historical resolutions; no full brochure read."
+      },
+      "id": "SI9v4.01_exact_constants",
+      "role": "selected_primary_source",
+      "conditioning": "Bounded original-source locators only; no complete source, independent measurement, native implementation or scientific qualification."
+    },
+    {
+      "sha256": "703091e7fb6ef44da2363f1e7cd3f1463f6efc3ad3b2cb9337ff33b263ccbc76",
+      "bytes": 8199,
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?me",
+      "source_identity": "CODATA Value: electron mass",
+      "retrieved_utc": "2026-10-02T23:46:26.069047+00:00",
+      "licence": "unknown; local reading only",
+      "coverage": {
+        "checked": "Original HTML title line6; central kg value75–76, standard uncertainty82–83 and2022 source110–111.",
+        "unread": "Linked uncertainty/correlation derivations and underlying adjustment/measurements."
+      },
+      "id": "CODATA2022_electron_page",
+      "role": "selected_primary_source",
+      "conditioning": "Bounded original-source locators only; no complete source, independent measurement, native implementation or scientific qualification."
+    },
+    {
+      "sha256": "571a8f3a2e56eedfdad53a2986316125fc108bb6c1f92cdc5f10325843ccf1f5",
+      "bytes": 1727107,
+      "url": "https://arxiv.org/html/1801.08023v3",
+      "source_identity": "arxiv:1801.08023v3",
+      "retrieved_utc": "2026-10-02T21:50:47.711969+00:00",
+      "licence": "not verified in this targeted wave; ignored local reading only, no raw redistribution",
+      "coverage": {
+        "checked": "Original HTML title/frontmatter/authors and printed August24,2026 date; AppendixD A4.T10 atomic H1/He4 entries and Table10 caption; SecII.3 S2.E33–S2.E34 and adjoining density definitions. Nearby S2.E35–S2.E38 context inspected, without new eta/result acceptance.",
+        "unread": "Other main text/appendices/tables/figures; underlying isotope-mass evaluation sources; BBN result/domain/covariance; no PDF inspected this wave and no complete paper read."
+      },
+      "id": "Pitrou_H1He4_mass_convention",
+      "role": "selected_primary_source",
+      "conditioning": "Bounded original-source locators only; no complete source, independent measurement, native implementation or scientific qualification."
+    },
+    {
+      "sha256": "1f580593ca21dc4277ee9b27d06b51539b3842c99940a1afb0b4041d41aaaa66",
+      "bytes": 209606,
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/e85808324f51fc694d12e3ed7439552a3c3f9540/source/thermodynamics.c",
+      "source_identity": "class-thermodynamics",
+      "retrieved_utc": "2026-10-02T21:53:21.946942+00:00",
+      "licence": "not verified in this targeted wave; ignored local reading only, no raw redistribution",
+      "coverage": {
+        "checked": "Pinned thermodynamics.c2998–3018 ordinary Thomson opacity;3148–3230 baryon-weighted depth;3395–3410 stored minus-kappa today integral;3447–3474 ordinary visibility and explicit extra-idm branch distinction;3879–3921 drag definition/root;4159–4171 reio_none/xe_before;4378–4384 units.",
+        "unread": "Full solver, external constants/helper dependencies, recombination/reionization algorithms beyond selected branch, input validation/full runtime and numerical accuracy. Search hits elsewhere are not acceptance."
+      },
+      "id": "CLASS_today_opacity_definitions",
+      "role": "selected_primary_source",
+      "conditioning": "Bounded original-source locators only; no complete source, independent measurement, native implementation or scientific qualification."
+    },
+    {
+      "sha256": "a6d2a2b9fbb5bd74a538701d74ce6292d61f482ffdaa50dbcf91546212abbc4c",
+      "bytes": 69241,
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/e85808324f51fc694d12e3ed7439552a3c3f9540/explanatory.ini",
+      "source_identity": "class-input",
+      "retrieved_utc": "2026-10-02T21:53:22.156878+00:00",
+      "licence": "not verified in this targeted wave; ignored local reading only, no raw redistribution",
+      "coverage": {
+        "checked": "Pinned explanatory.ini211–223 named reio alternatives and default reio_camb.",
+        "unread": "All remaining configuration/parameter definitions; no default full model accepted."
+      },
+      "id": "CLASS_reionization_input_identity",
+      "role": "selected_primary_source",
+      "conditioning": "Bounded original-source locators only; no complete source, independent measurement, native implementation or scientific qualification."
+    },
+    {
+      "sha256": "0d4879d686ca5de1fb7ea237cfe9c923a13dfd84cd081b36590319d6ea9f726a",
+      "bytes": 6691,
+      "url": "https://physics.nist.gov/cuu/Uncertainty/index.html",
+      "retrieved_utc": "2026-10-02T23:45:48.445492+00:00",
+      "licence": "unknown; local reading only",
+      "coverage": {
+        "checked": "Original title and selected index links lines49–67; this is an index, not a checked numerical uncertainty convention.",
+        "unread": "Linked component/coverage-factor definitions and guidelines; index cannot supply2018G standard uncertainty meaning."
+      },
+      "id": "nist-codata-uncertainty.html",
+      "role": "selected_primary_source",
+      "conditioning": "Bounded original-source locators only; no complete source, independent measurement, native implementation or scientific qualification."
+    },
+    {
+      "url": "https://physics.nist.gov/cuu/Constants/ArchiveASCII/allascii_2018.txt",
+      "source_identity": "NIST official CODATA2018 historical listing; bounded G row/header",
+      "sha256": "8c47c05db62c4d314a5244db51a47b4831616e55a8d357ced373a8620ff43be1",
+      "bytes": 40689,
+      "retrieved_utc": "2026-10-03T02:09:58.489734+00:00",
+      "licence": "unresolved; ignored local reading only; no raw redistribution",
+      "coverage": {
+        "checked": "Original text1–10 title2018identity/header and line263 G central/uncertainty/unit row. Target search exposed other mass/Thomson hits only; none accepted as2018 extra scalar facts.",
+        "unread": "All other table values, historical adjustment, original measurements and source-defined standard-uncertainty convention. Header says Uncertainty only."
+      },
+      "id": "nist-codata2018-archive.txt",
+      "role": "selected_primary_source",
+      "conditioning": "Bounded original-source locators only; no complete source, independent measurement, native implementation or scientific qualification."
+    },
+    {
+      "url": "https://iau.org/Iau/Publications/List-of-Resolutions",
+      "bytes": 97379,
+      "sha256": "6306d1278f9b09ab6c4065e3b4aa89d23e01f2807d6270184eed8df1bd1e585c",
+      "retrieved_utc": "2026-10-03T02:11:49.905198+00:00",
+      "licence": "unresolved; raw local reading only",
+      "coverage": {
+        "checked": "Original official2015 All English row and exact publicDrive file link1vL1vXyzFUWjY083Yb5s67dDsc_rxTWWZ.",
+        "unread": "All other years/resolutions/links."
+      },
+      "id": "iau-current-resolution-list.html",
+      "role": "selected_primary_source",
+      "conditioning": "Bounded original-source locators only; no complete source, independent measurement, native implementation or scientific qualification."
+    },
+    {
+      "url": "https://drive.google.com/uc?export=download&id=1vL1vXyzFUWjY083Yb5s67dDsc_rxTWWZ",
+      "bytes": 211337,
+      "sha256": "9a169a36228b4bdb6ba1f5cd679886253dc1765ae9b32aa7bf125631d8a1a970",
+      "retrieved_utc": "2026-10-03T02:11:53.328601+00:00",
+      "licence": "unresolved; raw local reading only",
+      "coverage": {
+        "checked": "Original text ResolutionB2 heading; PDF5/printed4 Notes4 exact pc=648000au/pi; PDF11/printed6(B3) Notes4 exact AU149597870700m attribution to2012B2. Both selected original pages visually checked.",
+        "unread": "Other resolutions, solar/bolometric constants, referenced2012original resolution and bibliography; no full document read."
+      },
+      "id": "iau2015-english-current-official.pdf",
+      "role": "selected_primary_source",
+      "conditioning": "Bounded original-source locators only; no complete source, independent measurement, native implementation or scientific qualification."
+    }
+  ],
+  "accepted_records": {
+    "contract_ids": [
+      "thermal-constants-late-tail-source-contract-v1"
+    ],
+    "serialization_ids": [
+      "thermal-opacity-density-constants-si9-iau2015-codata2018-2022-v1"
+    ],
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": []
+  },
+  "conditional_late_tail": {
+    "route_id": "supplied-nonnegative-late-Thomson-depth-interval/v1",
+    "origin": "Reviewer-selected conditional input design; not a source-provided tail value, fullCLASS continuation or measured probability law.",
+    "primary_definitions": {
+      "ordinary_positive_rate": "PinnedCLASS dkappa column=a*n_e,physical*sigma_T in inverseconformal-length units; source calls this kappa derivative but stores minus-kappa in today integration. Actual derivative of kappa(eta)=integral_eta^eta0 rate d eta is negative rate.",
+      "visibility": "g_eta=rate*exp(-kappa), inverseconformal length; CLASS outputMpc^-1. Source branch with extra idm_g opacity is outside this ordinaryThomson contract.",
+      "today_boundary": "kappa(eta0)=0; source integrates from today, not from nativez_late.",
+      "source_locators": [
+        "thermodynamics.c3009–3011",
+        "3395–3410",
+        "3447–3474",
+        "4378–4384"
+      ]
+    },
+    "reader_redshift_algebra": {
+      "expression": "q_z=c*sigma_T*n_e/[H*(1+z)]; tau_0(z)=integral_0^z q_z dz; g_z=q_z*exp[-tau_0(z)]; d(exp[-tau_0])/dz=-g_z.",
+      "units": {
+        "q_z,g_z": "perredshift",
+        "tau_0": "dimensionless",
+        "H": "s^-1",
+        "n_e": "physical free electrons m^-3",
+        "c": "m s^-1",
+        "sigma_T": "m^2"
+      },
+      "change_of_variable": "d eta_length=-c dz/H; g_z=|d eta_length/dz|*g_eta. Distinct from CLASS g[Mpc^-1].",
+      "conditions": "Same ordinary Thomson/background/physical electron convention; finite positiveH,c,sigma_T and nonnegativene. No extrapolation of native states or claim of a global CMB distribution."
+    },
+    "supplied_interval": {
+      "late_boundary": "Exactly the named native sourcez_late,300–600; fixed for one request.",
+      "definition": "tau_late=integral_0^z_late q_z dz",
+      "lower": null,
+      "upper": null,
+      "unit": "dimensionless",
+      "status": "UNKNOWN_NO_SOURCE_QUALIFIED_FINITE_INPUT",
+      "null_reason": "No qualified lateelectron/reionization history or conservative integral enclosure under the identical background/input conditioning has been supplied.",
+      "admission_if_supplied": "Explicit finite0<=L<=U with provenance identifying exact background/nuclei/constants/z_late and a valid enclosure of this integral. A credibility interval is not silently a deterministic enclosure. Tail is an input with source/model conditioning, not a fitted correction.",
+      "source_evidence_needed": [
+        "Qualified continuation of the same electron inventory/charge convention through today, with reionization and omitted heating/latephysics explicitly owned and boundary compatibility reviewed.",
+        "Or a source-supported electron-density envelope and same positive H, with separately qualified integral/physical bounds. Unknown shared covariances remain unknown."
+      ],
+      "native_coverage_limit": "None of the inspected native H/He or pureH histories supplies such late continuation. reio_none inCLASS returns xe_before; it does not imply zero electrons/zero omitted opacity."
+    },
+    "conditional_algebra": {
+      "for_query": "z_late<=z<=z_initial only; retain original artificial initialstate.",
+      "tau_bounded": "tau_B(z)=integral_z_late^z q_z dz",
+      "today_depth_if_admissible_input": "tau_0(z) in[tau_B(z)+L,tau_B(z)+U]",
+      "survival_if_admissible_input": "exp[-tau_B(z)-U]<=S_0(z)<=exp[-tau_B(z)-L]",
+      "per_z_visibility_if_admissible_input": "q_z*exp[-tau_B(z)-U]<=g_z,0(z)<=q_z*exp[-tau_B(z)-L], conditional on admissible nonnegativeq_z. Native empirical diagnostics alone are not certified enclosures.",
+      "finite_mass": "For exact admittedq_z: integral_z_late^z_initial g_z,0 dz = exp(-tau_late)*(1-exp[-tau_B(z_initial)]). Retain surviving upper boundary and missing late/high-z scope; never renormalize this finite interval to1.",
+      "origin": "Reader integral split/monotonic exponential algebra from primary today definition. No joint nuisance/observational law or numerical acceptance."
+    },
+    "drag_separate": {
+      "expression": "tau_drag,0(z)=integral_0^z q_z/R_b dz; R_b=3rho_b/(4rho_gamma) in matched density units.",
+      "locators": [
+        "thermodynamics.c3175–3204",
+        "3218–3228",
+        "3881–3916"
+      ],
+      "requirement": "Its omitted weighted tail needs a separate R_b-consistent enclosure/source. An unweightedThomson interval does not determine drag orr_d; supplied endpoint is not a predicted root."
+    },
+    "refused": [
+      "No negligible-tail assumption, signed correction, omitted-tail zero, extrapolated recombination or late rate-fit extension.",
+      "No fullCLASS default/reio_none/fullPlanck equivalence.",
+      "No computed todaydepth/visibility/drag/ruler/CMB/BBN or independent scientific qualification.",
+      "A conditional interval is not a joint law; fixed sourceconstants are not independent noises."
+    ]
+  },
+  "selected_native_source_definitions": {
+    "snapshot_head": "277a363516c2a3f224bca8737db2502cf8f7cff6",
+    "dirty": false,
+    "scope": "22selected source files rehashed; selected declared source definitions only, no current whole capability/build certification.",
+    "constant_choices": [
+      "Shared thermalGravitational G6.67430e-11L matches selected2018centralrow; mapper assets_id explicitly saysCODATA2018G.2022central equality does not erase this source label.",
+      "HHe and pureH sigma_T6.6524587051e-29L and pureH m_p1.67262192595e-27L match2022source central rows; me9.1093837139e-31L is already separately bound by canonical atomicserialization.",
+      "c double, h/kB/eV longdouble literal declarations match exact SI centraldecimal definitions; binary format/rounding execution unqualified."
+    ],
+    "mass_conventions": [
+      "PureH ownerdefines m_H=m_p+m_e−B1/c² andnH0=rho_crit(H100)*omega_b/m_H. This chosen effective neutralmass is not an independently measured isotope scalar or a universalHHe default.",
+      "HHe abundance source independently supplies positive normal effective neutralH1/He4 kg masses andY_m; nH=rho(1−Y_m)/mH,nHe=rhoY_m/mHe. Y_m is a mass share under those fixed masses, not number/pseudo-mass fraction or BBN prediction.",
+      "Neutral-effective masses include caller declared electron/binding convention and remain fixed under ionization. Binding/thermal feedback into background is excluded; no natural isotope mixture inferred.",
+      "nuclei background consistency is not automatically proved by provenance labels or independent thermal inventories."
+    ],
+    "boundaries": {
+      "HHe": "Artificial two-stage stationary/Saha charge andTm=Tr initialstate;2600<=zinitial<=2800;300<=zlate<=600;nonfinite/outside interval queries refused. No accepted earlierphysical trajectory.",
+      "pureH": "Artificial sourceSaha initialstate; prescribed1550<=zinitial<=1650 versus evolved1550<=zinitial<=1600;300<=zlate<=600;nonfinite/outside interval queries refused. No accepted earlierphysical trajectory.",
+      "HHe_controls": "nH0.1–.3m^-3,nHe0.005–.035m^-3,nHe/nH.04–.12;H060–80km/s/Mpc,omega_b.015–.03,omega_cdm.08–.15,Tcmb0 2.7–2.75K,physicalmasslessnonphoton0–3e-5;massive species refused in this owner. Nonempty nuclei_origin required.",
+      "pureH_species": "Separate owner permits bounded positive-mass species0<m<=.3eV,T0 1.8–2K,weight1–2,max3positive withinmax16total, whileHHe owner refuses positive masses. This audit does not merge their identities.",
+      "other_gates": "All exact source-owned work/arithmetic/budget/HeIII/activity/interpolation/admission gates remain unchanged. Selected source inventory/guards are not full validation or numerical reproduction."
+    },
+    "diagnostics": "Native numerical/rounding/root/interpolation diagnostics, physical source uncertainties, mass/abundance choices, rate fits and omitted tail stay separate; no error propagation/covariance qualification performed."
+  },
+  "corrections": [
+    {
+      "id": "G-source-epoch-preserved",
+      "classification": "sourceconditioning",
+      "statement": "Native mapper retainsCODATA2018-G label. Identical2022Gcentralvalue is a separate source comparison; no silent version update."
+    },
+    {
+      "id": "2018-uncertainty-unresolved",
+      "classification": "coverage_gap",
+      "statement": "2018archive header saysUncertainty only.2022relative-standard header and explicitme page do not certify2018Grow standard/one-sigma/coverage semantics; retain null meaning."
+    },
+    {
+      "id": "Pitrou-HTML-date-variant",
+      "classification": "literal_rendering_variant",
+      "statement": "Current cached originalHTML571a8f3... prints August24,2026. Earlier frozen packet records originalPDF-derived February7,2025 and arXivv3 metadata updatedFebruary6,2025. This wave has not read thePDF. Preserve both source representations/receipts; no new arXiv version/publication inferred."
+    },
+    {
+      "id": "mass-models-not-equivalent",
+      "classification": "reader_scope_correction",
+      "statement": "NativepureH effective m_p+m_e−B1/c², suppliedHHe neutral-effective kg masses, Pitrou H1/He4u comparison and pseudo-mass fractions are distinct; no universal isotope default or silent substitution."
+    },
+    {
+      "id": "reio-none-not-zero",
+      "classification": "original_code_definition",
+      "statement": "PinnedCLASS4161–4164 defines reio_none asxe_before; no reionization is not zeroelectron/zeroopacity and does not supply missing native continuation."
+    },
+    {
+      "id": "visibility-coordinate-sign",
+      "classification": "source_convention_and_reader_algebra",
+      "statement": "CLASSpositive dkappa column is the collision rate, stores minuskappa in today integration and emitsg[Mpc^-1]. Positive perz rate/visibility usesabsolute coordinateJacobian; mathematicald kappa/deta of today integral has opposite sign."
+    },
+    {
+      "id": "IAU-replacement-route",
+      "classification": "acquisition_route_correction",
+      "statement": "Candidate oldstaticIAUURL404 remains recorded; exactofficial2015index link identifies acquiredpublicDrivePDF. Original sourcepage/hash/UTC and selectedPDF locators retained, not inferred from status200 alone."
+    }
+  ],
+  "uncertainty_policy": "Recommendedsource/scalaruncertainty metadata is distinct fromfixedenginecentralchoices andnumericaldiagnostics. Alljointcovariance/distributions/coverage probabilities remainunknown; no independentnoises orquadrature combination.2018rawuncertaintymeaning andPitrouisotopeuncertainties explicitlynull.",
+  "limitations": [
+    "Targeted selected-original-source claims only; no fullpaper/fullCLASS/fullPlanck or completeconstants-table review.",
+    "Current sourcesnapshot is not compiledcapability or numericalcertificate.",
+    "No numericalexecutions/fits, probabilitylaw, measurementlikelihood or physicallatehistory accepted.",
+    "Targeted paper coverage is limited to Pitrou selected density definitions/Table 10. Current HTML prints August 24, 2026; earlier PDF/metadata dates remain separate representations, not a new admitted arXiv version.",
+    "Source uncertainties, fixed native central choices and empirical arithmetic diagnostics are separate. Joint distributions and covariances remain unknown.",
+    "Original IAU route failure is preserved; replacement follows the official resolution index. Native source snapshot at 277a363516c2a3f224bca8737db2502cf8f7cff6 checks selected definitions only."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  },
+  "public_projection_boundary": "Coordinator schema adaptation pending exact-byte Sol amendment. Source review alone; no full paper review, new graph nodes, experiments or numerical acceptance."
+}
