@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "contract_id": "next06-pantheon-redshift-frame-flow-conditioning-source-v1",
+  "title": "Pantheon+ redshift factors, host flows and observer lineage",
+  "review_id": "2026-10-03-next06-redshift-flow-source-claims",
+  "paper_ids": ["arxiv:2112.01471v2", "arxiv:2110.03487v2", "arxiv:2112.03863v2", "arxiv:2202.04077v2"],
+  "scopes": [
+    {
+      "scope_id": "NEXT-06",
+      "title": "Conditional frame and reconstructed-flow conventions",
+      "paper_ids": ["arxiv:2112.01471v2", "arxiv:2110.03487v2", "arxiv:2112.03863v2", "arxiv:2202.04077v2"],
+      "checked_claim": "Carr Sec5 Eqs2–7 separates heliocentric, observer-corrected CMB and host-PV-corrected Hubble-diagram redshifts through multiplicative frequency-ratio factors; Eqs4–5 fix a projected radial blueshift sign. Peterson SecII.1 Eq7 instead uses a linear radial factor in galactic coordinates. Carr Sec6 Eq9 and Sec6.2–6.3 describe a calibrated, interpolated redshift-space reconstruction and chosen external-flow continuation. Peterson SecIII.2–III.3, SecIV.1 and AppendixA describe catalog-dependent group matching and assumed, posterior-conditioned PV uncertainties. Brout SecIII.1.2–III.1.3 distinguishes light-curve and distance redshift roles and conditioned systematic covariance; Scolnic SecIII.2 p1 retains duplicate-event covariance and searches aliases by RA, DEC and PKMJD.",
+      "unresolved": "Complete physical event/frame/clock and observer four-velocity ancestry, exact velocity-grid/group/configuration/calibration ownership, normalization/support and joint covariance remain open. The projected radial prescriptions do not establish a complete Lorentz/frequency-transfer model. Peterson original HTML Eq10's dimensional residual/velocity-width convention and probability measure require original PDF/TeX and implementation clarification before likelihood use. Existing coordinate failures and unknown cross-probe covariance remain blocking."
+    }
+  ],
+  "source_assets": [
+    {"id": "carr-redshift-v2-selected-html", "url": "https://arxiv.org/html/2112.01471v2", "sha256": "eb5c7d943ff293f09c11784e10e0931d8810546936d808e5d67857a24a6395b9", "role": "html", "conditioning": "Exact v2-labelled HTML selected math/prose. Its abstract counts differ from the archived metadata snapshot; source-variant ancestry unresolved. Truncated local PDF excluded. Rights/licence unknown; no raw redistribution."},
+    {"id": "peterson-pv-v2-selected-html", "url": "https://arxiv.org/html/2110.03487v2", "sha256": "130b154d16078b7b406ac192da8c19db2cafef90a1dd6105be43edf55114c9dd", "role": "html", "conditioning": "Selected radial correction, group/reconstruction and uncertainty-method description; assumed normal PV scatter is conditioning. Eq10 likelihood units/measure unresolved; PDF/implementation equivalence unverified. Rights/licence unknown; no raw redistribution."},
+    {"id": "scolnic-dataset-v2-duplicate-context-html", "url": "https://arxiv.org/html/2112.03863v2", "sha256": "2c853a30cad35cd63a3097520235e5e772c645f717aba847708eecc2e5cb98a0", "role": "html", "conditioning": "Selected duplicate-alias/shared-covariance prose only; no exact covariance equation or raw-event identity admission. Rights/licence unknown; no raw redistribution."},
+    {"id": "brout-cosmology-v2-pv-context-html", "url": "https://arxiv.org/html/2202.04077v2", "sha256": "7580cd8300bf5bf53119735a06c94f7240a7426c37a4f2e8fdbf9915905ecb38", "role": "html", "conditioning": "Selected redshift-role and PV systematic-covariance conditioning; fitted floors/alternative-map construction are not universal statistical laws. Rights/licence unknown; no raw redistribution."}
+  ],
+  "limitations": [
+    "Accepted identities are conditional on the declared redshift factors and selected exact source snapshots. Source-adopted dipole, flow parameters, dispersions and fit outputs are not independently measured inputs or physical laws.",
+    "Carr's projected square-root Doppler factor and Peterson's linear radial factor remain distinct source prescriptions; neither supplies a checked telescope observer worldline, ephemeris, aberration, coordinate epoch or event clock.",
+    "The source reconstruction uses galaxy density, external calibration and group choices with selection and smoothing dependence. Its lack of SN-distance use does not prove joint independence from all shared observations or other galaxy probes.",
+    "Peterson Eq10's literal units/normalization are unresolved. Its printed density-weighted comoving-distance prior is not replaced by an inferred volume prior; no executable likelihood, Gaussian law or repair is accepted.",
+    "Uncertainty propagation can depend on reconstruction position and produce non-Gaussian or multi-valued redshift inference. Peterson's assumed 250 km/s dispersion and Brout's conditioned 240 km/s floor have different roles; unknown cross-covariance is not zero.",
+    "Duplicate aliases and structural CID/epoch linkage do not establish a complete physical event identity. The existing ten coordinate-rounding failures, undefined MJD time scale/flux law and map/event/covariance gates remain open.",
+    "No raw arrays, source-output reproduction, native capability, numerical result, held-out independence or cosmological qualification is admitted."
+  ],
+  "qualification": {"numerically_executed": false, "scientifically_qualified": false}
+}

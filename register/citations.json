@@ -390,6 +390,45 @@
         "locator": "HTML bibliography bib.bib59",
         "url": "https://arxiv.org/html/2112.03864v2#bib.bib59"
       }
+    },
+    {
+      "id": "cite-2110.03487-2112.01471",
+      "from_paper_id": "arxiv:2110.03487v2",
+      "cited_arxiv_id": "2112.01471",
+      "cited_version": null,
+      "reference": "14",
+      "source": {
+        "role": "html",
+        "sha256": "130b154d16078b7b406ac192da8c19db2cafef90a1dd6105be43edf55114c9dd",
+        "locator": "HTML bibliography bib.bib14, lines1584–1589; Carr et al.2021, arXiv:2112.01471; version not printed",
+        "url": "https://arxiv.org/html/2110.03487v2#bib.bib14"
+      }
+    },
+    {
+      "id": "cite-2202.04077-2112.01471",
+      "from_paper_id": "arxiv:2202.04077v2",
+      "cited_arxiv_id": "2112.01471",
+      "cited_version": null,
+      "reference": "20",
+      "source": {
+        "role": "html",
+        "sha256": "7580cd8300bf5bf53119735a06c94f7240a7426c37a4f2e8fdbf9915905ecb38",
+        "locator": "HTML bibliography bib.bib20, lines1812–1821; Carr et al.2021, title and base-ID URL; version not printed",
+        "url": "https://arxiv.org/html/2202.04077v2#bib.bib20"
+      }
+    },
+    {
+      "id": "cite-2202.04077-2110.03487",
+      "from_paper_id": "arxiv:2202.04077v2",
+      "cited_arxiv_id": "2110.03487",
+      "cited_version": null,
+      "reference": "83",
+      "source": {
+        "role": "html",
+        "sha256": "7580cd8300bf5bf53119735a06c94f7240a7426c37a4f2e8fdbf9915905ecb38",
+        "locator": "HTML bibliography bib.bib83, lines2278–2287; Peterson et al.2021, title and base-ID URL; version not printed",
+        "url": "https://arxiv.org/html/2202.04077v2#bib.bib83"
+      }
     }
   ],
   "inspected_paper_ids": [
@@ -407,7 +446,8 @@
     "arxiv:1104.2933v3",
     "arxiv:astro-ph/9911177v2",
     "arxiv:astro-ph/9603033v1",
-    "arxiv:1807.06209v4"
+    "arxiv:1807.06209v4",
+    "arxiv:2110.03487v2"
   ],
   "limitations": [
     "Four explicit bibliography links to registered paper identities were verified in pinned original HTML. This is a bounded extraction, not a complete citation index.",
@@ -415,6 +455,7 @@
     "HTML uses author-year labels for 2605.26116v2; its anchors differ from the numeric PDF bibliography. Both locators are retained.",
     "No registered-ID match found in an inspected source does not establish an absence of citations; discovery and extraction remain incomplete.",
     "Core-reference audit adds twelve registered-ID bibliography links checked in pinned HTML. Bibliography inspection is separate from full reading and scientific source review.",
-    "2026-10-01: bounded full-bibliography identity inspection for pinned 2609.37437v1 and 2609.36853v1; registered base-ID matches do not establish the cited version. PDF reference labels remain distinct from HTML bibliography anchors."
+    "2026-10-01: bounded full-bibliography identity inspection for pinned 2609.37437v1 and 2609.36853v1; registered base-ID matches do not establish the cited version. PDF reference labels remain distinct from HTML bibliography anchors.",
+    "Wave8 checks only Peterson HTML bibliography14 and Brout HTML bibliography20/83. Cited base IDs do not establish cited versions; all other bibliography coverage remains unknown. These links are bibliographic evidence, not physical ancestry or independent observations."
   ]
 }

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "contract_id": "next08-calibration-estimation-propagation-source-contract-v1",
+  "title": "Calibration fit objective and conditioned systematic propagation",
+  "review_id": "2026-10-03-next08-calibration-estimation-propagation-source-claims",
+  "paper_ids": [
+    "arxiv:2112.03864v2"
+  ],
+  "scopes": [
+    {
+      "scope_id": "NEXT-08",
+      "title": "Fitted calibration uncertainty versus measured optical probability",
+      "paper_ids": [
+        "arxiv:2112.03864v2"
+      ],
+      "checked_claim": "Brout Sec3.1 defines survey-filter offsets through observed tertiary-star magnitude differences and synthetic CALSPEC/NGSL transformations. Eq5 is a weighted objective with scatter/N, error floors and zero-centred prior penalties; emcee produces a fitted uncertainty covariance. Sec4.3 and AppendixA propagate correlated zeropoint realizations through SALT2 retraining and subsequent light-curve fitting. Uncorrelated mean-wavelength shifts enter retraining and affect subsequent fits through the resulting SALT2 surfaces. Sec6 explicitly omits zeropoint–wavelength correlations from those systematics. These are conditioned estimation and propagation choices.",
+      "unresolved": "No normalized native likelihood or optical-state/arrival/QE/gain/extraction/censoring law follows from this objective or fitted covariance. Actual star/error inputs, fitting implementation, coordinate measure/normalization, joint zeropoint–wavelength covariance and draw generator remain unverified. Preserve 105-filter prose versus 102 fitted-release coordinates, unresolved machine aliases/passbands/events and shared calibration covariance."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "brout-2112-03864v2-calibration-html",
+      "url": "https://arxiv.org/html/2112.03864v2",
+      "sha256": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+      "bytes": 426034,
+      "role": "html",
+      "title": "The Pantheon+ Analysis: SuperCal-Fragilistic Cross Calibration, Retrained SALT2 Light Curve Model, and Calibration Systematic Uncertainty",
+      "authors": [
+        "Dillon Brout",
+        "Georgie Taylor",
+        "Dan Scolnic",
+        "Charlotte M. Wood",
+        "Benjamin M. Rose",
+        "Maria Vincenzi",
+        "Arianna Dwomoh",
+        "Christopher Lidman",
+        "Adam Riess",
+        "Noor Ali",
+        "Helen Qu",
+        "Mi Dai"
+      ],
+      "versioned_id": "2112.03864v2",
+      "retrieved_utc": "2026-10-01T15:05:31.566601+00:00",
+      "licence": null,
+      "licence_null_reason": "Source-specific redistribution licence unreported in saved metadata; no raw source redistributed.",
+      "conditioning": "Fitted filter-magnitude offsets and author-chosen propagation through SALT2 retraining/light-curve fitting; not a native optical-event probability law."
+    },
+    {
+      "id": "brout-2112-03864v2-calibration-pdf",
+      "url": "https://arxiv.org/pdf/2112.03864v2",
+      "sha256": "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74",
+      "bytes": 1431273,
+      "role": "pdf",
+      "title": "The Pantheon+ Analysis: SuperCal-Fragilistic Cross Calibration, Retrained SALT2 Light Curve Model, and Calibration Systematic Uncertainty",
+      "authors": [
+        "Dillon Brout",
+        "Georgie Taylor",
+        "Dan Scolnic",
+        "Charlotte M. Wood",
+        "Benjamin M. Rose",
+        "Maria Vincenzi",
+        "Arianna Dwomoh",
+        "Christopher Lidman",
+        "Adam Riess",
+        "Noor Ali",
+        "Helen Qu",
+        "Mi Dai"
+      ],
+      "versioned_id": "2112.03864v2",
+      "retrieved_utc": "2026-10-01T15:05:34.717527+00:00",
+      "licence": null,
+      "licence_null_reason": "Source-specific redistribution licence unreported in saved metadata; no raw source redistributed.",
+      "conditioning": "Fitted filter-magnitude offsets and author-chosen propagation through SALT2 retraining/light-curve fitting; not a native optical-event probability law."
+    }
+  ],
+  "limitations": [
+    "The paper’s covariance concerns fitted magnitude offsets; choosing a Gaussian or other normalized native density from it requires an additional declared statistical model and source/input evidence.",
+    "Eq5 prints a half-weight prior term and compact summation/index notation. Its prose assigns priors per survey-filter; no summation repair, log-density normalization or sampler target is inferred.",
+    "Correlations among zeropoint offsets differ from the chosen uncorrelated mean-wavelength perturbations. The source omits their cross-correlations; physical zero covariance or independent calibration measurements is not established.",
+    "Nine mock realizations are systematic propagation samples, not nine measured optical states, a finite population law or observed probability masses.",
+    "The prior Table3/NPZ count discrepancy, PS1 Public/PS1SNe/Foundation mapping, CFA3S r/i versus R/I, passband/zeropoint sign and event-level joins remain unresolved.",
+    "Source selection cuts, synthetic standards, repeated telescope calibrations, prior widths, survey weights and uncertainty floors condition the fit. Raw catalogues, standards, response curves and full dependency covariance remain unverified.",
+    "SALT2 retraining and distance covariance propagation remain empirical and conditioned; no template-format, first-principles luminosity, numerical accuracy or measured detector likelihood is qualified.",
+    "The checked wavelength-shift pathway is retraining followed by downstream fitting with the changed SALT2 surfaces. No separate direct wavelength-shift implementation in the fitting passbands is certified."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}

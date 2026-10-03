@@ -1,0 +1,297 @@
+{
+  "schema_version": 1,
+  "review_id": "review-salt2-empirical-temporal-training-source-20261003-v1",
+  "review_kind": "targeted_source_claims",
+  "reviewed_utc": "2026-10-03T11:26:19Z",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "agent_id": "/root/observation_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "agent_id": "/root/observation_source_audit",
+    "session_id": "01a0fec1-bc32-7423-8594-b5a5fe128456",
+    "turn_id": "01a10175-dbf9-7911-a756-3c447d9d41e4",
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "evidence_kind": "runtime_turn_context",
+    "actual_backend_identity": null,
+    "path": ".work/all19-source-wave8-20261003/receipts/observation-next09-runtime-confirmation-v1.json",
+    "sha256": "8b094848739a2a500fd20bcce3bd2ba935eb739247147d1bd350793aa569b8e1",
+    "turn_context_timestamp": "2026-10-03T11:11:03.700Z",
+    "actual_backend_null_reason": "Runtime model/effort/session/turn exposed; actual serving backend not exposed."
+  },
+  "packet_sha256": "b95786162dd0e70f293541d5b4e973563637f8ed83e3efa05522e16eb1b9b50f",
+  "supporting_packets": [
+    {
+      "path": ".work/all19-source-wave8-20261003/workers/templates/packet-final-v1.json",
+      "sha256": "b95786162dd0e70f293541d5b4e973563637f8ed83e3efa05522e16eb1b9b50f"
+    },
+    {
+      "path": ".work/all19-source-wave8-20261003/workers/templates/coverage-final-v1.json",
+      "sha256": "a4eed045a665f65cc5d3ab58cc9baa1d6a0e05ce055f57d1d9cff1630492fe08"
+    },
+    {
+      "path": ".work/all19-source-wave8-20261003/workers/templates/source-rehash-final-v1.json",
+      "sha256": "72dbc88117b472e91939629c6dfcf4817bc7460fbb63ef9def0a736375fdf93d"
+    }
+  ],
+  "reviewed_papers": [
+    "arxiv:astro-ph/0701828v1",
+    "arxiv:2112.03864v2"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:astro-ph/0701828v1",
+      "source_hashes": {
+        "html": "bab88504c4bce299c5a765c722b3c4fa040eed3830c924a6438762e0a7985952",
+        "pdf": "a89d6be7eb6b76fe9a83fce8e2f3a8eda99ca35c0d20c71c580d2a83a99b42e3"
+      },
+      "coverage": {
+        "main_text": "Selected original-source claims only. Original HTML paragraphs and existing original PDF page renders 2,4,5,6 checked; no complete paper reading.",
+        "checked_locators": [
+          "Identity: original HTML title/authors/watermark and licence label; original PDF page1 title/authors/watermark through rehashed layout aid. Captured v1 PDF also prints November26,2024/ESO2024.",
+          "HTML S1.p4.1/S1.p5.1; S2.p1.1/S2.p1.2/S2.EGx1/S2.p2.1; S2.SS1.p1.1/.p2.1. Original PDF2 Eq1/basis definitions visually checked.",
+          "HTML S2.SS2.p1.1/.p2.1/.p3.1; S3.p2.1/.p3.1/.p4.1; S3.SS1.p1.1/.p2.1; S3.SS2.p1.1/.p2.1/.p3.1. Selected spectral recalibration, selection and shared-reduction prose checked against original HTML.",
+          "Original PDF4 Sec4.1–4.3 and PDF5 Sec4.3 continuation; HTML S4.SS1.p1.1/.p2.1/.p3.1, S4.SS2.p1.1/.p1.2/S4.Ex2, S4.SS3.p1.1. Historical basis/regularization and domains visually checked.",
+          "Original PDF5 Sec5 first paragraph, Sec6/6.1; PDF6 Sec6.1 and selected Sec6.2 context. HTML S6.p1.1/.p2.1, S6.SS1.p1.1/.p2.1/.p2.2/.p3.1/.p3.2/.p5.1/.p6.1, S6.Ex8. Empirical error equations checked visually, including literal repeated H0,i in bin-normalization numerator."
+        ],
+        "unread": "All other main-text material and numerical/cosmological results; full training tables 2/3 and object-level provenance; underlying spectra/light curves/calibrators and cited sources; actual training implementation, fitted component/covariance arrays and held-out validation. Unlisted figures/captions and bibliography unchecked. No source-table catalogue audit or full-paper promotion.",
+        "figures": "Figure1 on original PDF4 visually inspected qualitatively: photometric/spectral phase-wavelength coverage and axes/caption only, no digitization or completeness certificate. No other figure image checked. Incidental figure references on selected text pages are not visual checks.",
+        "appendices": "Unlisted tables, end material and bibliography remain unread."
+      }
+    },
+    {
+      "paper_id": "arxiv:2112.03864v2",
+      "source_hashes": {
+        "html": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+        "pdf": "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74"
+      },
+      "coverage": {
+        "main_text": "Selected original HTML IV retraining/calibration propagation and one VI conditioning paragraph only; original PDF retained/rehashed but no fresh PDF page visual inspection.",
+        "checked_locators": [
+          "Original HTML lines229–307: title,12 authors, pinned v2 watermark14Nov2022 and CC BY4.0 label.",
+          "HTML S4.p1.1 (line1256), S4.SS1.p1.1/.p2.1 (1263/1266): B21 retraining, prior B14/T21 identities, SDSS/CSP u-band zero recalibration offsets and Pantheon+3000–7000 Angstrom fitting bounds.",
+          "HTML S4.SS3.p1.1/.p2.1/.p3.1/.p4.1, S4.E7 (lines1405–1422): correlated zeropoint/uncorrelated wavelength perturbations, nine retrained surfaces plus refitted distances, sigma_k literal1/3 and source-added training/CALSPEC/CSP systematic choices.",
+          "HTML S6.p8.1 (line1513): filter shifts omitted from simultaneous fit, varied instead in training without zeropoint correlations; focal-plane variation omitted."
+        ],
+        "unread": "Remaining calibration fit/selection details, Table3, IV.2 distance/cosmology results, all unlisted main text, appendices A/B (including variant Table7), bibliography and underlying standards/training/filter bodies. Taylor2021 DOI10.1093/mnras/stab962 and other cited training sources remain unread. No old optical contract's full scientific claim recertification.",
+        "figures": "No Brout figure image visually inspected this turn. Figure4/8/9 references were read in prose only; their images/data remain unchecked. No captions-only check is promoted to visual inspection.",
+        "appendices": "No fresh appendix reading."
+      }
+    }
+  ],
+  "reviewed_source_assets": [
+    {
+      "id": "guy-astro-ph-0701828v1-html",
+      "url": "https://arxiv.org/html/astro-ph/0701828v1",
+      "sha256": "bab88504c4bce299c5a765c722b3c4fa040eed3830c924a6438762e0a7985952",
+      "role": "html",
+      "retrieved_utc": "2026-10-02T21:50:08.790582+00:00",
+      "bytes": 293981,
+      "licence": null,
+      "licence_null_reason": "Original HTML labels its licence as assumed arXiv perpetual non-exclusive; no author redistribution grant independently checked.",
+      "conditioning": "Historical 2007v1 selected Sec2–4/6 definitions, training/selection/recalibration and residual assumptions; exact anchors in targeted review.",
+      "coverage": "Only selected listed paragraphs/equations and identity/licence header."
+    },
+    {
+      "id": "guy-astro-ph-0701828v1-pdf",
+      "url": "https://arxiv.org/pdf/astro-ph/0701828v1",
+      "sha256": "a89d6be7eb6b76fe9a83fce8e2f3a8eda99ca35c0d20c71c580d2a83a99b42e3",
+      "role": "pdf",
+      "retrieved_utc": "2026-10-02T21:50:12.024604+00:00",
+      "bytes": 681848,
+      "licence": null,
+      "licence_null_reason": "Preserve captured ESO2024 manuscript header with2007v1 watermark; no new paper version or redistribution grant inferred.",
+      "conditioning": "Original pages2/4/5/6 checked through rehashed existing renders; Eq1, regularization, historical support and empirical residual-error formulas.",
+      "coverage": "Original selected page2/4/5/6 renders; title/identity through rehashed page1 layout aid."
+    },
+    {
+      "id": "brout-2112-03864v2-html",
+      "url": "https://arxiv.org/html/2112.03864v2",
+      "sha256": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+      "role": "html",
+      "retrieved_utc": "2026-10-01T15:05:31.566601+00:00",
+      "bytes": 426034,
+      "licence": "CC BY 4.0 as printed in original HTML licence label",
+      "conditioning": "Selected IV.1/IV.3 and VI.p8 original prose/math: B21 retraining and downstream systematic propagation; correlated zeropoints versus uncorrelated wavelength shifts are source modelling choices.",
+      "coverage": "Complete selected short asset body or listed original HTML passages."
+    },
+    {
+      "id": "brout-2112-03864v2-pdf",
+      "url": "https://arxiv.org/pdf/2112.03864v2",
+      "sha256": "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74",
+      "role": "pdf",
+      "retrieved_utc": "2026-10-01T15:05:34.717527+00:00",
+      "bytes": 1431273,
+      "licence": null,
+      "licence_null_reason": "Original HTML prints CC BY4.0; PDF-specific grant not separately inspected this turn.",
+      "conditioning": "Pinned v2 original bytes rehashed as source identity; no fresh PDF visual coverage or independent numerical reproduction.",
+      "coverage": "Whole-byte rehash only this turn; selected paper body checked in HTML."
+    },
+    {
+      "id": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/SALT2.INFO",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/SALT2.INFO",
+      "sha256": "6cb38b88565eec41cb4e18eb7a973a58da02223af0f1579d6ead37f9ec330dfa",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-03T00:35:41.624208+00:00",
+      "bytes": 513,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "Repository licence not inspected; no raw redistribution permission inferred.",
+      "conditioning": "Complete17-line configuration only; range/color/interpolation/error-floor literals do not decode full MODEL000 grids or specify a native likelihood.",
+      "coverage": "Complete selected short asset body or listed original HTML passages."
+    },
+    {
+      "id": "Pantheon+_Data/3_SALT2/README",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/README",
+      "sha256": "7b14123f47ea879afe59b68de23983fd93376392bc9c58c91bc487af44c8468a",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-02T01:15:40.971332+00:00",
+      "bytes": 373,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "Repository licence not inspected; no raw redistribution permission inferred.",
+      "conditioning": "Complete short README: nominal MODEL000, nine systematic variants and trainopts/fitopts roles. Its broad nine-correlated-realizations wording is less specific than Brout IV.3/VI.",
+      "coverage": "Complete selected short asset body or listed original HTML passages."
+    }
+  ],
+  "checked_source_identities": [
+    {
+      "paper_id": "arxiv:astro-ph/0701828v1",
+      "title": "SALT2: using distant supernovae to improve the use of Type Ia supernovae as distance indicators",
+      "authors": [
+        "J. Guy",
+        "P. Astier",
+        "S. Baumont",
+        "D. Hardin",
+        "R. Pain",
+        "N. Regnault",
+        "S. Basa",
+        "R. G. Carlberg",
+        "A. Conley",
+        "S. Fabbro",
+        "D. Fouchez",
+        "I. M. Hook",
+        "D. A. Howell",
+        "K. Perrett",
+        "C. J. Pritchet",
+        "J. Rich",
+        "M. Sullivan",
+        "P. Antilogus",
+        "E. Aubourg",
+        "G. Bazin",
+        "J. Bronder",
+        "M. Filiol",
+        "N. Palanque-Delabrouille",
+        "P. Ripoche",
+        "V. Ruhlmann-Kleider"
+      ],
+      "versioned_id": "astro-ph/0701828v1",
+      "identity_locator": "Original HTML title/author metadata/watermark and PDF page1 layout aid;29Jan2007v1. Captured PDF compilation header November26,2024/ESO2024 preserved as literal variant.",
+      "source_variant_note": "No new journal/version equivalence inferred; original receipt source_identity_verified flag remains historical."
+    },
+    {
+      "paper_id": "arxiv:2112.03864v2",
+      "title": "The Pantheon+ Analysis: SuperCal-Fragilistic Cross Calibration, Retrained SALT2 Light Curve Model, and Calibration Systematic Uncertainty",
+      "authors": [
+        "Dillon Brout",
+        "Georgie Taylor",
+        "Dan Scolnic",
+        "Charlotte M. Wood",
+        "Benjamin M. Rose",
+        "Maria Vincenzi",
+        "Arianna Dwomoh",
+        "Christopher Lidman",
+        "Adam Riess",
+        "Noor Ali",
+        "Helen Qu",
+        "Mi Dai"
+      ],
+      "versioned_id": "2112.03864v2",
+      "identity_locator": "Original HTML lines229–307 title/12authors/v2 watermark14Nov2022/CCBY4.0 label."
+    }
+  ],
+  "accepted_records": {
+    "idea_ids": [],
+    "design_ids": [],
+    "prospect_ids": [],
+    "reference_ids": [],
+    "contract_ids": [
+      "salt2-empirical-temporal-training-source-contract-v1"
+    ]
+  },
+  "source_equations": [
+    {
+      "paper_id": "arxiv:astro-ph/0701828v1",
+      "locator": "Original PDF2 Eq1; HTML S2.EGx1/S2.p1.2",
+      "expression": "F(SN,p,lambda)=x0*[M0(p,lambda)+x1*M1(p,lambda)+...]*exp[c*CL(lambda)]",
+      "definitions": "Rest-frame phase since B maximum and rest-frame wavelength; global empirical Mk/CL and per-SN fitted normalization/components/color. Color includes intrinsic variation or dust or both.",
+      "units_limit": "Historical days/Angstrom coordinates are source definitions; absolute MODEL000 flux/luminosity normalization not fixed by freely fitted x0."
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0701828v1",
+      "locator": "Original PDF4 Sec4.2; HTML S4.Ex2/S4.SS2.p1.2",
+      "expression": "chi2_REGUL=n*sum_k(Mk^T*D^T*D*Mk)",
+      "definitions": "Second-derivative regularization in phase/wavelength; derivative matrix D and chosen normalization n introduce estimator bias assessed by the author's SALT-based simulations.",
+      "units_limit": "No executable derivative discretization, strength/unit convention or universal error bound accepted."
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0701828v1",
+      "locator": "Original PDF5–6 Sec6.1",
+      "expression": "V_MODEL=S*V_MEAN; V_MEAN=H0^T*V0*H0+x1^2*H1^T*V1*H1+2*x1*H0^T*C01*H1",
+      "definitions": "Training component covariance projected by basis vectors, empirically scaled from residuals. Source diagonal approximation treats still-correlated residuals as independent conditionally.",
+      "units_limit": "No B21 relative-file normalization/units or measured joint observation covariance accepted."
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0701828v1",
+      "locator": "Original PDF6 bin-normalization display; HTML S6.Ex8.m1",
+      "expression": "(1/n)*sum_i([f_i-x0*(H0,i^T*M0+x1*H0,i^T*M1)]^2/[sigma_i^2+x0^2*S*V_MEAN])=1",
+      "definitions": "Literal H0,i repeats for M1 in both original forms; preserved separately from the preceding H0/H1 variance expression.",
+      "units_limit": "Basis/index reconciliation unresolved; no H1 substitution, source-error diagnosis or repaired implementation accepted."
+    },
+    {
+      "paper_id": "arxiv:2112.03864v2",
+      "locator": "Original HTML S4.E7/S4.SS3.p3.1",
+      "expression": "C_zi,zj=sum_k(dDelta_mu_zi/dk)*(dDelta_mu_zj/dk)*sigma_k^2; sigma_k=1/3",
+      "definitions": "Systematic distance covariance from jointly retrained/refitted variants; not independent light-curve/training evidence or a native probability law.",
+      "units_limit": "Released input/variant-generator/normalization mapping not rechecked; historical ALL.fitopts0.3 distinct."
+    }
+  ],
+  "corrections": [
+    {
+      "issue_id": "L01",
+      "type": "printed_basis_index_unresolved",
+      "status": "open",
+      "original_locator": "Guy original PDF6 bin-normalization equation; HTML S6.Ex8.m1",
+      "statement": "Preserve printed H0,i for M1. The preceding component-variance formula uses H1 and historical basis sizes differ. No silently repaired equation or forced implementation convention accepted."
+    },
+    {
+      "issue_id": "L02",
+      "type": "historical_review_shorthand_correction",
+      "status": "new_selected_source_boundary",
+      "historical_record": {
+        "path": "register/reviews/review-optical-calibration-template-source-20261003-v1.json",
+        "sha256": "31bf9435f40814d92e1a53b13c04da6c8b46d139047d9f9feb14634cb881f9f9"
+      },
+      "statement": "Old blanket correlated zeropoint/effective-wavelength wording is too broad. New selected BroutIV.3/VI.p8 distinguishes correlated zeropoints from uncorrelated effective-wavelength input choices, while downstream retraining/refitting remains joint. The release README's broad wording is retained literally. Old bytes stay immutable; thermal NEXT08 correction is a separate source gate."
+    },
+    {
+      "issue_id": "L03",
+      "type": "source_version_variant",
+      "status": "retained",
+      "statement": "Guy captured pinned2007v1 PDF has November26,2024/ESO2024 header and29Jan2007 watermark. Preserve byte identity/variant; do not infer a new bibliography or journal version."
+    }
+  ],
+  "training_selection_calibration_ancestry": "Historical data-conditioned sequence: heterogeneous phase coverage, light-curve-based spectral recalibration, assumed spectral white noise/chosen weights, premaximum and host-contamination cuts, regularized fits and leave-one-SN-out residuals. B21 changes calibration of training data and jointly propagates shared perturbations through retraining/refitting. Full event/calibrator/selection and training-evaluation cross-covariance remains unknown.",
+  "limitations": [
+    "Acceptance is limited to this exact new NEXT09 source contract and checked locators. No idea/design/prospect/reference, native statistical/physical law or numerical consumer acceptance.",
+    "Zero new versions, acquisitions, Luna/full-paper reads, paper promotions, renders, scientific arrays, numerical experiments or compiler/build/test jobs. Existing full-paper stages and queues remain untouched.",
+    "Brout paper distinguishes correlated zeropoints and uncorrelated effective-wavelength perturbation inputs. Joint downstream propagation does not establish a correlated joint input law or physical zero covariance; old blanket shorthand is retained historically and not recertified.",
+    "MODEL000 full grids/support/order/flux normalization, version1 color-law format, error-map units/interpolation and covariance closure remain open. Earlier first8-line/configuration checks are inherited context only.",
+    "Guy residual independence, white spectral-noise assumption and regularization-bias simulations are author-conditioned choices. Jackknife retraining is not an independent population holdout; full component covariance is not measured observation covariance.",
+    "Literal repeated H0,i in the Guy residual-scaling equation remains unresolved. Historical2007 construction,2024 captured PDF header, B21 fitting bounds and c447 range/options remain distinct.",
+    "Selected source figures and unread coverage are explicit per paper. Full training tables, arrays, cited training sources, standards/filter bodies and unlisted appendices/results remain unexamined."
+  ],
+  "bibliography_coverage": "Only selected training-reference mentions read; no new bibliography/version-equivalence witness or citation record proposed. Taylor2021 full source and all unlisted bibliography entries remain unchecked.",
+  "conclusion": "Accept the exact new empirical temporal-template source contract within selected coverage and unresolved format/covariance/native-law gates. This author source audit requires a separate independent peer and integration gate."
+}
