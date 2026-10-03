@@ -3,20 +3,20 @@
   "project_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8",
   "url": "https://prospector-cosmology.sprajs.chatgpt.site",
   "access_mode": "public",
-  "source_commit_sha": "14feb56b18a4afd69de8f1d541d5a123ac40596f",
-  "version_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8~appgver_06545f7938348191b402c29e49e4fe04",
-  "version_number": 8,
-  "deployment_id": "appgdep_6ac0773fe6c081918234e4e8fbcaeeae",
+  "source_commit_sha": "af7eb08764d3fdb46cd7ea5276b043d3631f63b7",
+  "version_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8~appgver_0d8ead7e2980819195f0727e6fa25bb4",
+  "version_number": 9,
+  "deployment_id": "appgdep_6ac0903215e481918cc7ff6e7fc6507b",
   "deployment_status": "succeeded",
-  "published_utc": "2026-10-03T03:32:28.455538+00:00",
-  "artifact_sha256": "sha256:4b9629dc2864723900bce698d74482d3032613ff66dc81abfb19b13f69b49afc",
-  "local_archive_sha256": "sha256:f17292bdd3493fc064ed089e9340d626f718109fcfce57721e22c3e6db626f78",
-  "repository_revision": "c02c7b92514eed30f9ab771a6a26106932b26cd9",
-  "repository_ci_run": "https://github.com/sprajs/prospector/actions/runs/37093380206",
-  "scan_id": "2026-10-03-all19-source-wave3",
+  "published_utc": "2026-10-03T05:18:54.434367+00:00",
+  "artifact_sha256": "sha256:d67eb42ffddecc28cc6f061a6b565629ff688f8044eb02201961fa7716cde532",
+  "local_archive_sha256": "sha256:a5f515854b55609911414009a0c1c9648422c45b2eb9d09fe67bf3a7475d0c4f",
+  "repository_revision": "6453f33771fd13b9f13b763972f1c43495b1e24e",
+  "repository_ci_run": "https://github.com/sprajs/prospector/actions/runs/37098993251",
+  "scan_id": "2026-10-03-all19-source-wave4",
   "source_contract_sha256": "a5c22039fd165d8261bba49b179d96942a236e60a9066ccc7109a0c5d7de8644",
   "scalar_serialization_sha256": "d5c189e4623b5eadc2f44f5035dc959e95ff85df69fc199cf8fc0f57ca9c1839",
-  "independent_final_review_sha256": "d7a0751af814645eac49ff2461dfe1f971c989536533ec73c41aff53e5f83af6",
+  "independent_final_review_sha256": "3fda6e169796a2ad1eacda0e04b6840cbfbfc8ce4e7933b27c392b14be372c0c",
   "additional_source_contracts": [
     {
       "contract_id": "next05-released-fixed44-row3213-conditional-source-v1",
@@ -41,6 +41,22 @@
     {
       "contract_id": "thermal-constants-late-tail-source-contract-v1",
       "sha256": "15cc03af546ffa5edf351c521dcb1cdc817ee7c216e1ab7f9eaba6c87c730d00"
+    },
+    {
+      "contract_id": "next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v3",
+      "sha256": "52c01a6309ecc51e9f125a099e4c78d00b3b9e58709988499dbfbe2d80f3248e"
+    },
+    {
+      "contract_id": "next14-ideal-photon-cold-baryon-cdm-lambda-acoustic-v1",
+      "sha256": "befd902e439450bfbacd19dda2f853b743961cfae640766ff18430065785dc59"
+    },
+    {
+      "contract_id": "next13-boss-dr12-cmass-public-array-assets-v1",
+      "sha256": "c8f73e414bd85ee245cfcc066a912cb0c5c0c8bf4a35701c33b01f0bc3b2bb79"
+    },
+    {
+      "contract_id": "sdss-detector-b1608-native-asset-source-contract-v2",
+      "sha256": "10921b6e198b172af589d39a6a44c9ec0b07eb6822356aa33f67bcc53e4fefc5"
     }
   ],
   "candidate_design": {
@@ -50,12 +66,12 @@
   },
   "independent_final_reviews": [
     {
-      "role": "independent thermal/BOSS/collisionless source projection and complete integration review; authored observation claims excluded",
-      "sha256": "d7a0751af814645eac49ff2461dfe1f971c989536533ec73c41aff53e5f83af6"
+      "role": "Independent FD/acoustic/BOSS source projection and complete integration review; authored observation claims excluded",
+      "sha256": "3fda6e169796a2ad1eacda0e04b6840cbfbfc8ce4e7933b27c392b14be372c0c"
     },
     {
-      "role": "independent observation source projection and complete integration review; authored thermal/NEXT17 claims excluded",
-      "sha256": "6b67a758817f75ca470a87b8e5ec4f111a789ea866adf6c2c7dff5cfc61905de"
+      "role": "Independent FD/acoustic/observation source projection and complete integration review; authored BOSS and NEXT17 claims excluded",
+      "sha256": "2f7df5e87c47da95e52f257f6751ee9370f68f53fcfbc980edcf50e38a1e988c"
     }
   ],
   "additional_scalar_serializations": [
@@ -69,5 +85,7 @@
     "dist/.openai/hosting.json"
   ],
   "artifact_hash_scope": "artifact_sha256 is the native provider-reported saved artifact hash. local_archive_sha256 binds the local packaged archive; they are distinct representations. The local archive's two file members were verified byte-for-byte against the pushed source/build. No provider/local hash equality is asserted.",
-  "publication_scope": "Bounded source claims and scalar facts only. Exact repository merge/main CI, source parent, archive members and native public deployment verified; no full-paper, numerical, consumer or physical qualification. This receipt-only commit does not change the deployed public export."
+  "publication_scope": "Bounded selected source claims and native asset identities only. Four targeted audits; zero new versions, Luna full reads, full-paper reviews, idea or design promotions, or experiments. Exact repository merge/main CI, source parent, archive members and native public deployment verified; numerical, consumer and physical qualification remain separate open gates. This receipt-only commit does not change the deployed public export.",
+  "public_data_sha256": "320393e8f725b5a6a46ed45928da1ad25c7842524eccfed07c1fb7fbe985eb7a",
+  "source_parent_commit_sha": "14feb56b18a4afd69de8f1d541d5a123ac40596f"
 }
