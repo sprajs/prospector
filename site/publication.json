@@ -3,18 +3,33 @@
   "project_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8",
   "url": "https://prospector-cosmology.sprajs.chatgpt.site",
   "access_mode": "public",
-  "source_commit_sha": "3a260559f7d7afa6a4a31dd4b726b2aa434d0291",
-  "version_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8~appgver_ea322eee63088191ad2c57ffb174f518",
-  "version_number": 6,
-  "deployment_id": "appgdep_6ac04bd441908191b50edab1ab7112c8",
+  "source_commit_sha": "e3cbb0b7db94a74fe198752772654322e4d92e6a",
+  "version_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8~appgver_f83e8aec2b2081918512551c7a9b0b3e",
+  "version_number": 7,
+  "deployment_id": "appgdep_6ac05daa934881918b3784da14292495",
   "deployment_status": "succeeded",
-  "published_utc": "2026-10-03T00:27:13.090850+00:00",
-  "artifact_sha256": "sha256:c674f0934a94e8a427d9cafae2fc73dccbf08951b5085d280292a92f9414c973",
-  "local_archive_sha256": "sha256:04441765eaf76ae4bfcdb439ae9eded649237c1ef7b93a9eacce8c61b9c47fc6",
-  "repository_revision": "669093656632a7600fa2a4d883455ccd9a9c3da8",
-  "repository_ci_run": "https://github.com/sprajs/prospector/actions/runs/37081814655",
-  "scan_id": "2026-10-03-atomic-source-serialization",
+  "published_utc": "2026-10-03T01:43:19.246322+00:00",
+  "artifact_sha256": "sha256:dc821e7f05e02f66f849e84e5eafc933a84687af4f1b560cdd23bf9eff2ea957",
+  "local_archive_sha256": "sha256:c076592f3e1a76e3325e6be21274cc0fb3ea44493eecc86295f286c3669acd3f",
+  "repository_revision": "bb5a6d9fcdc5809dd345941f29a667bfdbd9a4dc",
+  "repository_ci_run": "https://github.com/sprajs/prospector/actions/runs/37086781386",
+  "scan_id": "2026-10-03-all19-source-wave2",
   "source_contract_sha256": "a5c22039fd165d8261bba49b179d96942a236e60a9066ccc7109a0c5d7de8644",
   "scalar_serialization_sha256": "d5c189e4623b5eadc2f44f5035dc959e95ff85df69fc199cf8fc0f57ca9c1839",
-  "independent_final_review_sha256": "bacc558c93daf014ba62f1a054e00c0ea6d82efdea6471927e78915d701f6f3e"
+  "independent_final_review_sha256": "8da0461a32a0169e2004370f754d2a9daa4d5e9705e0e2bbf920c03264b78159",
+  "additional_source_contracts": [
+    {
+      "contract_id": "next05-released-fixed44-row3213-conditional-source-v1",
+      "sha256": "16c5de924b39a1d71b24ecb50d17a8243200137df858349ab2e5f54302b8bee2"
+    },
+    {
+      "contract_id": "optical-calibration-template-source-contract-v1",
+      "sha256": "9a5a1a0ee1c7c115e11d0afc79da6be69815d9c13973e38ed6359d336d253ec1"
+    }
+  ],
+  "candidate_design": {
+    "design_id": "next05-released-fixed44-row3213-conditional-diagnostic-20261003",
+    "sha256": "5e208d295ab356f4e449078cc060a346c8608afffaf43819e34562dec0ce665e",
+    "readiness": "blocked"
+  }
 }
