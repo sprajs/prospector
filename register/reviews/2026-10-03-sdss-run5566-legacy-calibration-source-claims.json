@@ -1,0 +1,495 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-sdss-run5566-legacy-calibration-source-claims",
+  "review_kind": "targeted_source_claims",
+  "reviewed_utc": "2026-10-03 08:20:33 UTC",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "agent_id": "/root/observation_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "agent_id": "/root/observation_source_audit",
+    "runtime_session_id": "01a0fec1-bc32-7423-8594-b5a5fe128456",
+    "turn_id": "01a100c5-fdec-7b60-bbdd-81ca990f2c0f",
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "evidence_kind": "runtime_turn_context",
+    "companion_sha256": "3cfef1d6fd150228d9dffdb5cb965500e38f9f3727a42644f670117ffb538bd9",
+    "actual_backend_identity": null,
+    "backend_null_reason": "Available runtime metadata does not expose actual backend identity."
+  },
+  "packet_sha256": "67c4ce2f966aa5779da063d9a174c96bc08b272d0b74cd0fb8bf4c9f52b9daa2",
+  "reviewed_papers": [],
+  "reviewed_paper_details": [],
+  "reviewed_source_assets": [
+    {
+      "id": "sdss-dr7-das1-archive-index",
+      "title": "SDSS DR7 DAS1 archive index",
+      "url": "https://data.sdss.org/sas/dr7/das1/",
+      "sha256": "66684f5c0c92bca51ac5e752a1260e6c436a96fdccc9eba5cf82740265e7e1f5",
+      "role": "official_archive_navigation_snapshot",
+      "retrieved_utc": "2026-10-03T07:50:58.123852+00:00",
+      "bytes": 1688,
+      "licence": null,
+      "licence_null_reason": "Public official access checked; source-specific redistribution rights/ownership not established.",
+      "coverage": "HTML lines4–12; imaging/ and raw/ links only"
+    },
+    {
+      "id": "sdss-dr7-das2-archive-index",
+      "title": "SDSS DR7 DAS2 archive index",
+      "url": "https://data.sdss.org/sas/dr7/das2/",
+      "sha256": "055db33e9dfac15a13c3a3f019242588060b65fcb52db4bcc3860b8b340732df",
+      "role": "official_archive_navigation_snapshot",
+      "retrieved_utc": "2026-10-03T07:50:58.692438+00:00",
+      "bytes": 4395,
+      "licence": null,
+      "licence_null_reason": "Public official access checked; source-specific redistribution rights/ownership not established.",
+      "coverage": "HTML lines1–29; selected imaging/ and raw/ links"
+    },
+    {
+      "id": "sdss-dr7-das2-imaging-run5566-route",
+      "title": "SDSS DR7 DAS2 imaging index: selected run5566 link",
+      "url": "https://data.sdss.org/sas/dr7/das2/imaging/",
+      "sha256": "adbd8837185a879c82d3d5e990be8cd89c338bc2f9aef71bee8889da069ffa2b",
+      "role": "official_archive_navigation_snapshot",
+      "retrieved_utc": "2026-10-03T07:52:00.876724+00:00",
+      "bytes": 112955,
+      "licence": null,
+      "licence_null_reason": "Public official access checked; source-specific redistribution rights/ownership not established.",
+      "coverage": "HTML lines423–429; exact run5566 link at426"
+    },
+    {
+      "id": "sdss-current-photofield-schema-snapshot",
+      "title": "Data model: photoField (current documentation snapshot)",
+      "url": "https://data.sdss.org/datamodel/files/BOSS_PHOTOOBJ/RERUN/RUN/photoField.html",
+      "sha256": "dac13f20f8a58f335b877a657e3ceb86710a218d3f13caa12bf7d4622163e112",
+      "role": "official_source_schema_documentation_snapshot",
+      "retrieved_utc": "2026-10-03T07:52:10.077665+00:00",
+      "bytes": 18494,
+      "licence": null,
+      "licence_null_reason": "Public official access checked; source-specific redistribution rights/ownership not established.",
+      "coverage": "HTML7–21,105–112,128,150–152,164–174,192–208,214–230; selected clock/calibration/PSF-unit/gain metadata"
+    },
+    {
+      "id": "sdss-current-frame-calibration-noise-doc-snapshot",
+      "title": "Data model: frame (current conditional calibration/error documentation)",
+      "url": "https://data.sdss.org/datamodel/files/BOSS_PHOTOOBJ/frames/RERUN/RUN/CAMCOL/frame.html",
+      "sha256": "8e147c6af185a749908fd827a692d868de51df92b7e09c97d678e72dcc884555",
+      "role": "official_source_schema_documentation_snapshot",
+      "retrieved_utc": "2026-10-03T07:52:13.744411+00:00",
+      "bytes": 17231,
+      "licence": null,
+      "licence_null_reason": "Public official access checked; source-specific redistribution rights/ownership not established.",
+      "coverage": "HTML7–29,53–69,92–99,104–158,221–248,250–310; gain/dark tables seen incidentally, no entries assigned to an event"
+    },
+    {
+      "id": "sdss-dr7-run5566-rerun40-route",
+      "title": "SDSS DR7 DAS2 run5566 directory",
+      "url": "https://data.sdss.org/sas/dr7/das2/imaging/5566/",
+      "sha256": "1885ff423766659d2ba0d07ed91e1c242c01410b28470d8cc62bebd540614381",
+      "role": "official_archive_navigation_snapshot",
+      "retrieved_utc": "2026-10-03T07:52:51.012757+00:00",
+      "bytes": 1557,
+      "licence": null,
+      "licence_null_reason": "Public official access checked; source-specific redistribution rights/ownership not established.",
+      "coverage": "HTML1–11; exact rerun40 link at8"
+    },
+    {
+      "id": "sdss-dr7-run5566-rerun40-products-route",
+      "title": "SDSS run5566/rerun40 directory",
+      "url": "https://data.sdss.org/sas/dr7/das2/imaging/5566/40/",
+      "sha256": "919fa30e65295f3d905805fdf0edb4a9920aaf08440c75ebdcf08c5ddaadbc5b",
+      "role": "official_archive_navigation_snapshot",
+      "retrieved_utc": "2026-10-03T07:53:23.547279+00:00",
+      "bytes": 2771,
+      "licence": null,
+      "licence_null_reason": "Public official access checked; source-specific redistribution rights/ownership not established.",
+      "coverage": "HTML1–19; calibChunks/9, corr/10, objcs/13"
+    },
+    {
+      "id": "sdss-dr7-run5566-rerun40-objcs-route",
+      "title": "SDSS run5566/rerun40 objcs directory",
+      "url": "https://data.sdss.org/sas/dr7/das2/imaging/5566/40/objcs/",
+      "sha256": "45de41d429db8305f6eed02a49b73de19f664ceb3ee77bd43d8e5ce74b9aa7d4",
+      "role": "official_archive_navigation_snapshot",
+      "retrieved_utc": "2026-10-03T07:53:55.781153+00:00",
+      "bytes": 6827,
+      "licence": null,
+      "licence_null_reason": "Public official access checked; source-specific redistribution rights/ownership not established.",
+      "coverage": "HTML1–37; camcol3 at10 and PSP QA at32–34"
+    },
+    {
+      "id": "sdss-dr7-run5566-rerun40-calibchunks-route",
+      "title": "SDSS run5566/rerun40 calibChunks directory",
+      "url": "https://data.sdss.org/sas/dr7/das2/imaging/5566/40/calibChunks/",
+      "sha256": "a478e79c4446fd1c6ccdc0956818db9db5185389707badf62eafcacc5e5f580c",
+      "role": "official_archive_navigation_snapshot",
+      "retrieved_utc": "2026-10-03T07:53:56.338539+00:00",
+      "bytes": 2264,
+      "licence": null,
+      "licence_null_reason": "Public official access checked; source-specific redistribution rights/ownership not established.",
+      "coverage": "HTML1–16; camcol3 at10"
+    },
+    {
+      "id": "sdss-dr7-run5566-rerun40-pspqa",
+      "title": "PSP QA for run5566, rerun40",
+      "url": "https://data.sdss.org/sas/dr7/das2/imaging/5566/40/objcs/pspQA-005566.html",
+      "sha256": "4ae54893cac5aa6fe03b582199fa131992f8b2b01856aad0ce23d487ef340f92",
+      "role": "official_provider_reduction_QA_report",
+      "retrieved_utc": "2026-10-03T07:55:15.849731+00:00",
+      "bytes": 9306,
+      "licence": null,
+      "licence_null_reason": "Public official access checked; source-specific redistribution rights/ownership not established.",
+      "coverage": "HTML1–20,114–117,131–135; remaining summary tables text examined without accepting event values"
+    },
+    {
+      "id": "sdss-dr7-run5566-rerun40-camcol3-psfield-route",
+      "title": "SDSS run5566/rerun40 camcol3 objcs: selected psField0011 route",
+      "url": "https://data.sdss.org/sas/dr7/das2/imaging/5566/40/objcs/3/",
+      "sha256": "4f494844586bc9930532c36ee0c53f82fe74cd3b742ef1937c60b1c2ede2f42c",
+      "role": "official_archive_navigation_snapshot",
+      "retrieved_utc": "2026-10-03T07:55:16.460238+00:00",
+      "bytes": 1745270,
+      "licence": null,
+      "licence_null_reason": "Public official access checked; source-specific redistribution rights/ownership not established.",
+      "coverage": "HTML4–10,7353–7356; psField-005566-3-0011.fit at7353"
+    },
+    {
+      "id": "sdss-dr7-tsfield-exported-field-schema",
+      "title": "Survey Interface File for Exported Field Info (legacy tsField schema)",
+      "url": "https://classic.sdss.org/dr7/dm/flatFiles/tsField.php",
+      "sha256": "b9e6c0ac3cfb488a092b05640dba7c29945ddc4607464bedfa9fda204bf0cb28",
+      "role": "official_source_schema_documentation_snapshot",
+      "retrieved_utc": "2026-10-03T07:55:57.072073+00:00",
+      "bytes": 19345,
+      "licence": null,
+      "licence_null_reason": "Public official access checked; source-specific redistribution rights/ownership not established.",
+      "coverage": "HTML3–31,35–65,68–105,215–258,285–298,344–404,425–451; selected clock/photometric/PSF/gain/quality definitions"
+    },
+    {
+      "id": "sdss-dr7-run5566-rerun40-calibchunks3-tsfield0011-route",
+      "title": "SDSS run5566/rerun40 calibChunks camcol3: selected tsField0011 route",
+      "url": "https://data.sdss.org/sas/dr7/das2/imaging/5566/40/calibChunks/3/",
+      "sha256": "add323dd7865b8e58f68c9556afb62a82d287baf31e839fc7cc7e97943f32278",
+      "role": "official_archive_navigation_snapshot",
+      "retrieved_utc": "2026-10-03T07:56:21.289929+00:00",
+      "bytes": 283214,
+      "licence": null,
+      "licence_null_reason": "Public official access checked; source-specific redistribution rights/ownership not established.",
+      "coverage": "HTML4–16; exact tsField-005566-3-40-0011.fit at9"
+    },
+    {
+      "id": "sdss-tsfield-005566-3-40-0011-header-bytes-0-2879-only",
+      "title": "tsField-005566-3-40-0011: HEADER BYTES0–2879 ONLY (whole FITS hash unknown)",
+      "url": "https://data.sdss.org/sas/dr7/das2/imaging/5566/40/calibChunks/3/tsField-005566-3-40-0011.fit",
+      "sha256": "8c258a9fb32a6f06e931e7a6e9b9cc151d2a7b5d80c90b8ec3a316f2c8932ca2",
+      "role": "partial_original_FITS_primary_header_bytes_only",
+      "retrieved_utc": "2026-10-03T07:57:41.713064+00:00",
+      "bytes": 2880,
+      "licence": null,
+      "licence_null_reason": "Public official access checked; source-specific redistribution rights/ownership not established.",
+      "coverage": "Original bytes0–2879; all36 fixed80-byte slots: cards1–31 complete primary through END, slots32–36 padding",
+      "hash_scope": "HTTP206 response body bytes0–2879 only",
+      "byte_range": {
+        "start": 0,
+        "end": 2879
+      },
+      "full_source_bytes": 28800,
+      "full_source_sha256": null,
+      "full_source_hash_null_reason": "Whole FITS product not acquired; this SHA256 is for the selected header representation only."
+    },
+    {
+      "id": "sdss-supernova-runlist",
+      "title": "sdss-supernova-runlist",
+      "url": "https://classic.sdss.org/dr7/coverage/sndr7.html",
+      "sha256": "d37ec44d29695fb3a0b125abf6e3482f7db4e2aa27a7d40fdcefa578080fdb20",
+      "role": "official historical run and processing documentation",
+      "retrieved_utc": "2026-10-03T03:56:25.907111+00:00",
+      "bytes": 217849,
+      "licence": null,
+      "licence_null_reason": "Source-specific ownership/redistribution licence not established by selected body.",
+      "coverage": "Selected original HTML1757–1771 rechecked; other older coverage inherited only."
+    },
+    {
+      "id": "SDSS2005-SN6057-snphot-5.04",
+      "title": "SDSS2005-SN6057-snphot-5.04",
+      "url": "https://classic.sdss.org/supernova/sn_data.tar.gz",
+      "sha256": "33f7c9e1a511c61effdc36fa42132f540c47236627a7521142a4aa95c2af50ae",
+      "role": "original archive member; released reduced photometry",
+      "retrieved_utc": "2026-10-03T04:19:15.685978+00:00",
+      "bytes": 15052,
+      "licence": null,
+      "licence_null_reason": "No member-specific redistribution licence printed in selected documentation.",
+      "coverage": "Original header1–19 and first g-epoch20 rechecked; remaining epochs unread."
+    },
+    {
+      "id": "SDSS_allCandidates+BOSS_PHOT.FITS.gz",
+      "title": "SDSS_allCandidates+BOSS_PHOT.FITS.gz",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/1_DATA/photometry/JLA2014_SDSS_DS17/SDSS_allCandidates%2BBOSS_PHOT.FITS.gz",
+      "sha256": "0b143978c068c0b93b78eb582701bf77286b1930cfa93ce436ef30b5722a5a05",
+      "role": "released_reduced_product",
+      "retrieved_utc": "2026-10-02T01:22:01.880740+00:00",
+      "bytes": 40919338,
+      "licence": null,
+      "licence_null_reason": "Release redistribution licence unverified.",
+      "coverage": "Whole compressed original bytes rehashed; prior selected header coverage inherited only, no new decompression/arrays."
+    },
+    {
+      "id": "JLA2014_SDSS_DS17.README",
+      "title": "JLA2014_SDSS_DS17.README",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/1_DATA/photometry/JLA2014_SDSS_DS17/JLA2014_SDSS_DS17.README",
+      "sha256": "653e5ca44de6f29265923bf24b1ade3d9ec7b6586a7c49f278163ea59b2b426a",
+      "role": "pinned release conversion and error-treatment description",
+      "retrieved_utc": "2026-10-02T01:02:36.402845+00:00",
+      "bytes": 14875,
+      "licence": null,
+      "licence_null_reason": "Release redistribution licence unverified.",
+      "coverage": "Whole original bytes rehashed this turn; source-role/content coverage inherited: lines1–108,191–212."
+    },
+    {
+      "id": "kcor_SDSS.input",
+      "title": "kcor_SDSS.input",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/2_CALIBRATION/SNANA_kcor/kcor_SDSS.input",
+      "sha256": "b27008fc0be2dd94c21bafc38bee49d08cea38d9ff157777b14376705a2b93c1",
+      "role": "pinned calibration configuration",
+      "retrieved_utc": "2026-10-02T01:15:43.139792+00:00",
+      "bytes": 1037,
+      "licence": null,
+      "licence_null_reason": "Release redistribution licence unverified.",
+      "coverage": "Whole original bytes rehashed; all41 configuration-line coverage inherited, no execution."
+    }
+  ],
+  "accepted_records": {
+    "contract_ids": [
+      "sdss-run5566-legacy-calibration-header-source-contract-v1"
+    ]
+  },
+  "source_contract_associations": [
+    {
+      "contract_id": "sdss-run5566-legacy-calibration-header-source-contract-v1",
+      "paper_ids": [
+        "arxiv:2112.03863v2",
+        "arxiv:2112.03864v2"
+      ],
+      "source_asset_ids": [
+        "JLA2014_SDSS_DS17.README",
+        "SDSS_allCandidates+BOSS_PHOT.FITS.gz",
+        "kcor_SDSS.input"
+      ],
+      "reason": "Existing Scolnic/Brout IDs navigate the exact c447 SDSS released reduction/calibration products and their native-source prerequisites. Matching original URL/hash assets occur in this review and accepted contract; their selected source-role coverage is explicitly inherited. No paper content review or idea/design/prospect/reference/full-paper stage is authorized."
+    }
+  ],
+  "checked_claims": [
+    {
+      "id": "SDSS-W6-C01-partial-header-identity",
+      "kind": "direct_original_source_fact",
+      "claim": "The HTTP206 representation is2880B and contains the complete primary header END31/NAXIS0. RUN5566/RERUN40/CAMCOL3/FIELD0=11/NFIELDS1/STRIPE82/STRIPN match the source-named representative product. Full FITS SHA256 is null; the representation hash cannot identify the28800B whole product.",
+      "locators": [
+        "tsField original bytes0–2879; one-based80-byte cards1–11,31; padding slots32–36"
+      ],
+      "source_hashes": [
+        "8c258a9fb32a6f06e931e7a6e9b9cc151d2a7b5d80c90b8ec3a316f2c8932ca2"
+      ],
+      "boundary": "No table extension/value, actual array, pixel, other field or physical-event assignment accepted.",
+      "status": "accepted_targeted_source_claim_with_stated_boundary"
+    },
+    {
+      "id": "SDSS-W6-C02-clock-filter-pipeline-conventions",
+      "kind": "direct_original_source_fact",
+      "claim": "C_OBS=2.6322E+04usec/unbinned-row; TRACKING=1.504106E+01asec/TAI-sec; FILTERS='u g r i z'; DSCALE32. PHOT_VERv5_4_28/EXPO_VERv6_0, PHOTO_ID2005-09-15T20:55:44 21118, EASTR_ID2005-09-15T16:05:35 05241/EAST_VERv3_8a, EFCAL_ID2005-12-21T19:06:17 14723556615566255663/EFCA_VERv2_2 are literal metadata. Target astrometry/calibration/version fields are blank. No EXPTIME in complete primary header.",
+      "locators": [
+        "tsField primary cards12–30; (card-1)*80 byte offsets",
+        "Legacy tsField schema HTML35–65"
+      ],
+      "source_hashes": [
+        "8c258a9fb32a6f06e931e7a6e9b9cc151d2a7b5d80c90b8ec3a316f2c8932ca2",
+        "b9e6c0ac3cfb488a092b05640dba7c29945ddc4607464bedfa9fda204bf0cb28"
+      ],
+      "boundary": "Rates, filter-array order and run IDs are not measured event integration/readout history. No exposure derived from clock/dimensions; timestamp scales/precision not certified. QA temporal r-i-u-z-g order is a distinct diagnostic.",
+      "status": "accepted_targeted_source_claim_with_stated_boundary"
+    },
+    {
+      "id": "SDSS-W6-C03-archive-QA-selection-boundaries",
+      "kind": "direct_original_source_fact_with_separate_reported_inventory",
+      "claim": "Returned official DAS2 archive route reaches run5566/rerun40 objcs/calibChunks/camcol3 and selected psField/tsField0011 listings. QA body prints photo v5_4_28 on ThuSep15 14:49:17 CDT2005, nFields613, union592OK/21HOLE3.4%, camcol3 610OK/3HOLE0.5%, yet 'There are no warnings for this run'. Separate central literal-name inventory reports612 tsField names0011–0622; prior runlist range11–622 is separately rechecked.",
+      "locators": [
+        "DAS2 imaging HTML426; run5566 HTML8; rerun40 HTML9–13; objcs HTML10,32; calibChunks3 HTML9; camcol3 objcs HTML7353",
+        "PSP QA HTML1–20,114–117,131–135",
+        "Prior runlist HTML1757–1771",
+        "Central name-count receipt source-listed-calibration-name-check-v1.json fields literal_listed_product_count/first_listed/last_listed"
+      ],
+      "source_hashes": [
+        "adbd8837185a879c82d3d5e990be8cd89c338bc2f9aef71bee8889da069ffa2b",
+        "1885ff423766659d2ba0d07ed91e1c242c01410b28470d8cc62bebd540614381",
+        "919fa30e65295f3d905805fdf0edb4a9920aaf08440c75ebdcf08c5ddaadbc5b",
+        "45de41d429db8305f6eed02a49b73de19f664ceb3ee77bd43d8e5ce74b9aa7d4",
+        "add323dd7865b8e58f68c9556afb62a82d287baf31e839fc7cc7e97943f32278",
+        "4f494844586bc9930532c36ee0c53f82fe74cd3b742ef1937c60b1c2ede2f42c",
+        "4ae54893cac5aa6fe03b582199fa131992f8b2b01856aad0ce23d487ef340f92",
+        "d37ec44d29695fb3a0b125abf6e3482f7db4e2aa27a7d40fdcefa578080fdb20"
+      ],
+      "boundary": "612 is coordinator-reported metadata inventory, not independently enumerated here. No count repair/reconciliation, gap-free exposure completeness, quality assignment to field11/SN6057 or selection probability accepted.",
+      "status": "accepted_targeted_source_claim_with_stated_boundary"
+    },
+    {
+      "id": "SDSS-W6-C04-legacy-table-schema-units",
+      "kind": "direct_schema_definition_not_acquired_table_values",
+      "claim": "Legacy tsField names c1–6/rerun/firstfield; produceropdb/consumersx; one row per field, filters in primary order. Five-band mjd uses MJD(TAI)whenrow0read; airmass unitless; aa/bb/cc/kk and their error fields literally mag. muErr/nuErr arcsec; sky and sigma labels asinhmag/arcsec²; composite psf_sigma1/2 arcsec, two-Gaussian sigmas pixels, gain averaged amplifiers electrons/DN, dark_variance unitless. Quality=4/5 admits holes; culled bits exclude target samples.",
+      "locators": [
+        "Legacy tsField HTML13–31,68–105,217–258,285–298,344–404,425–451"
+      ],
+      "source_hashes": [
+        "b9e6c0ac3cfb488a092b05640dba7c29945ddc4607464bedfa9fda204bf0cb28"
+      ],
+      "boundary": "Schema definitions only. Actual extension and per-field mjd/coefficients/errors/PSF/gain values unacquired; error distributions, correlations and a complete SN selection function unknown.",
+      "status": "accepted_targeted_source_claim_with_stated_boundary"
+    },
+    {
+      "id": "SDSS-W6-C05-current-schema-distinction",
+      "kind": "direct_schema_label_comparison",
+      "claim": "Current photoField sky_psp, sky_frames, sky_frames_sub and sigPix use nmgy; composite psf_sigma1/2 use pixels. Gain is literally labelled '(electrons)', dark_variance has no unit label and ref_tai/tai use seconds. Its five-element mjd description literally names u-band row 0 and airmass is literally labelled '(mag)', differing from legacy per-band MJD(TAI)/unitless wording. These labels are preserved rather than repaired.",
+      "locators": [
+        "Current photoField HTML128,150–152,169–174,192–208,214–230",
+        "Legacy tsField HTML217–227,285–298,375–404,425–430"
+      ],
+      "source_hashes": [
+        "dac13f20f8a58f335b877a657e3ceb86710a218d3f13caa12bf7d4622163e112",
+        "b9e6c0ac3cfb488a092b05640dba7c29945ddc4607464bedfa9fda204bf0cb28"
+      ],
+      "boundary": "No numerical equivalence between schema versions; no current row values, PSF-law expression or asTrans INCL claim accepted. Unit labels do not qualify a physical operator.",
+      "status": "accepted_targeted_source_claim_with_stated_boundary"
+    },
+    {
+      "id": "SDSS-W6-C06-current-frame-conditional-recipe",
+      "kind": "provider_documented_recipe_and_assumptions",
+      "claim": "Current frame is calibrated sky-subtracted nanomaggies with calibration already applied and sky already subtracted; PCALIB/PSKY name PHOTO_CALIB/PHOTO_SKY versions. FLOATCOMPRESS keeps10 significant binary digits (source claims0.1% per pixel), so reconstruction is described as very close/near original. dn=img/cimg+simg; nelec=dn*gain; dn_err=sqrt(dn/gain+darkVariance); img_err=dn_err*cimg. Provider calls photoelectrons Poisson and sky statistical errors negligible; masks are required for bleed trails/bad columns, gain/dark change by configuration and amplifier averages.",
+      "locators": [
+        "Current frame HTML19–29,53–69,92–99,104–158,221–248,250–310"
+      ],
+      "source_hashes": [
+        "8e147c6af185a749908fd827a692d868de51df92b7e09c97d678e72dcc884555"
+      ],
+      "boundary": "Provider recipe only, conditional on matched image/calibration/sky/gain/dark/mask inputs. No execution, exact raw reconstruction, actual pixel Poisson law, Gaussian/independent errors or complete likelihood/covariance acceptance.",
+      "status": "accepted_targeted_source_claim_with_stated_boundary"
+    },
+    {
+      "id": "SDSS-W6-C07-conditional-dimensional-check",
+      "kind": "reader_conditional_dimensional_inference",
+      "claim": "If dn is DN, nelec electrons and cimg nanomaggies/DN, the documented algebra would require gain electrons/DN and darkVariance DN² for dn_err to be DN. This is a dimensional requirement of that recipe, not a repair of legacy unitless/current unlabeled dark-variance or current '(electrons)' gain labels. The radicand and calibration validity must be established for matched inputs.",
+      "locators": [
+        "Current frame HTML255–294; legacy tsField427,430; current photoField214–215"
+      ],
+      "source_hashes": [
+        "8e147c6af185a749908fd827a692d868de51df92b7e09c97d678e72dcc884555",
+        "b9e6c0ac3cfb488a092b05640dba7c29945ddc4607464bedfa9fda204bf0cb28",
+        "dac13f20f8a58f335b877a657e3ceb86710a218d3f13caa12bf7d4622163e112"
+      ],
+      "boundary": "No numerical coefficient assignment, measured physical units, noise parameter estimation or statistical qualification.",
+      "status": "accepted_targeted_source_claim_with_stated_boundary"
+    },
+    {
+      "id": "SDSS-W6-C08-selected-legacy-release-ancestry",
+      "kind": "selected_source_recheck_and_explicit_inherited_coverage",
+      "claim": "Original5.04 source header/firstg row retains CID6057/IAU2005if/J2000RA52.553547/DEC−0.974675 and MJD53616.457598/RUN5566/82N; selected official runlist retains run5566/rerun40. Pinned c447 README/PHOT/kcor original bytes are rehashed; their reducedSMPv8, blank19PHOT TUNIT/absentEXPTIME and configuration roles are inherited, not newly parsed. Later HEAD coordinates52.553604/−0.974586 discrepancy remains inherited unresolved ancestry.",
+      "locators": [
+        "SN6057.snphot-5.04.sum original1–20; official runlist HTML1757–1771",
+        "Immutable prior native contract source_assets[JLA2014_SDSS_DS17.README,SDSS_allCandidates+BOSS_PHOT.FITS.gz,kcor_SDSS.input,JLA2014_SDSS_DS17_HEAD.FITS.gz] and prior review coverage"
+      ],
+      "source_hashes": [
+        "33f7c9e1a511c61effdc36fa42132f540c47236627a7521142a4aa95c2af50ae",
+        "d37ec44d29695fb3a0b125abf6e3482f7db4e2aa27a7d40fdcefa578080fdb20",
+        "653e5ca44de6f29265923bf24b1ade3d9ec7b6586a7c49f278163ea59b2b426a",
+        "0b143978c068c0b93b78eb582701bf77286b1930cfa93ce436ef30b5722a5a05",
+        "b27008fc0be2dd94c21bafc38bee49d08cea38d9ff157777b14376705a2b93c1"
+      ],
+      "boundary": "No new fullPHOT/HEAD joins or arrays. Source lightcurve clock scale, event deduplication, camcol/field/exposure, FLUXCAL physical units,5.04→SMPv8/operator equivalence and joint covariance stay unresolved. No HST substitution.",
+      "status": "accepted_targeted_source_claim_with_stated_boundary"
+    }
+  ],
+  "supporting_packets": [
+    {
+      "role": "exact proposed source contract",
+      "sha256": "afb0b2b4afc2daec78a1ac69e68f35c5ddf7c06c972d2de028c783be4648d08e"
+    },
+    {
+      "role": "original byte rehash receipt",
+      "sha256": "66ff61fa2ea0fdd137f6e0a87b5249c72b1d915aae74c1eabb35f3252345ff1c"
+    },
+    {
+      "role": "exact selected/unread coverage",
+      "sha256": "a156deb176402fc005277724f6505b72044fb8d38b8cb4fabc41c2ff1054beac"
+    },
+    {
+      "role": "unchanged prior selected asset ancestry only; no new runtime rebinding",
+      "sha256": "47b8b704658e405ccf74e7b69923f270e0fcdb12a82b136241fd2df59353f7e4"
+    },
+    {
+      "role": "separate coordinator-reported literal-name inventory; no independent enumeration",
+      "sha256": "4e51a45082470c16a1413fc081f6fd87cbaa167b34746e8630d8b4d0156bb591"
+    },
+    {
+      "role": "visible selected-schema field precision amendment; prior bytes preserved",
+      "sha256": "50645d3678f6ab94787c45c04d712f62fc401ac85464160199ed65f5640d93c8"
+    },
+    {
+      "role": "final exact-binding conclusion clarification; source content unchanged",
+      "sha256": "a72af43a7d50513bf6737a55c29fe7585c0491848868a9f26116649693acbf5e"
+    }
+  ],
+  "corrections": [
+    {
+      "kind": "partial_original_identity_boundary",
+      "display_summary": "New range SHA identifies only2880B header bytes, fullFITS SHA null; completeprimary has noEXPTIME, not evidence allproduct extensions lack one."
+    },
+    {
+      "kind": "literal_schema_unit_variant",
+      "display_summary": "Legacygain electrons/DN, dark_variance unitless; currentgain '(electrons)', dark_variance unlabeled. Currentairmass '(mag)'/u-band MJD wording preserved distinct from legacyschema."
+    },
+    {
+      "kind": "unexamined_count_reconciliation",
+      "display_summary": "Prior runlist11–622, centrallyreported612calibrationnames, QA613fields/592+21union/610+3camcol3 are separateviews. No normalization, off-by-one repair or all-exposure claim."
+    },
+    {
+      "kind": "printed_expression_outside_acceptance",
+      "display_summary": "CurrentphotoFieldHTML25 compositePSFsecondterm lacks exponential; expression/repair outsideacceptedclaims. Sourceunitlabels stillchecked; no numericalPSFequivalence."
+    },
+    {
+      "kind": "no_reduction_substitution",
+      "display_summary": "5.04/DR7photo/currentframe/c447SMPv8 histories keptdistinct. Existingcoordinate/unit/exposure/covariance gaps retained; HST is no substitute."
+    },
+    {
+      "kind": "schema_field_precision",
+      "display_summary": "Generic 'sky fields use nmgy' wording narrowed to exact selected sky_psp/sky_frames/sky_frames_sub/sigPix names. Separate skySig magnitude/fractional-error wording is not silently treated as nmgy. No numerical value or inference qualification added."
+    }
+  ],
+  "limitations": [
+    "Only tsField bytes0–2879 are acquired and hashed. Whole FITS SHA256 is unknown; extension rows, native field clocks, calibration coefficients and PSF/gain values remain unexamined.",
+    "Run5566/rerun40/camcol3/field11 is a representative archive header, not an assignment to CID6057 or its first g MJD53616.457598. C_OBS and dimensions do not establish event exposure; the complete checked primary header has no EXPTIME.",
+    "Original5.04-labelled reduced lightcurve, DR7photo v5_4_28/export v6_0, pinned c447 SMPv8+BOSS release and current photoField/frame documentation are distinct reduction/product histories. Their flux, error, unit, clock and extraction operators are not established equivalent.",
+    "Legacy J2000 source RA52.553547/DEC−0.974675 differs from inherited later HEAD RA52.553604/DECL−0.974586. Blank later TUNIT values and absent EXPTIME remain unresolved; physical-event deduplication, frame/epoch and clock-scale joins are incomplete.",
+    "Legacy schema labels gain electrons/DN and dark_variance unitless; current photoField labels gain '(electrons)' and leaves dark_variance unlabeled. Literal schema units are preserved. Dimensional conditions of the frame error formula do not repair these labels into measured values or a detector law.",
+    "Current frame conditional error recipe needs matched calibration, sky, gain/dark values and masks; PCALIB/PSKY provenance and FLOATCOMPRESS lost precision matter. Provider Poisson/no-sky-error statements do not certify the actual measurement distribution, exact raw reconstruction or full covariance.",
+    "Run-level QA reports field holes despite 'no warnings'. Field quality, PSF status and culled masks do not determine transient detection/selection probability, missing-epoch censoring or complete selection support.",
+    "Run-list fields11–622, the reported612 calibration-directory names0011–0622 and QA nFields613 are distinct product views. Count reconciliation and full exposure completeness remain unexamined; NFIELDS1 describes only the selected tsField product.",
+    "Raw pixels, matched calibration/PSF/mask/reference bodies, readout/QE/extraction law, temporal/spatial/calibration and cross-probe covariance remain unknown. No Gaussian, independent-noise or joint-likelihood assumption is accepted.",
+    "Selected public source access is established; source-specific licences/ownership/redistribution rights remain unknown. Unacquired or unread products are not proven absent.",
+    "Selected documentation/header locators only; actual full tsField product/data rows, referenced product/software bodies and all source figures/plots unexamined. No new Scolnic/Brout paper main-text/appendix/bibliography/figure reading; prior stages retained."
+  ],
+  "accounting": {
+    "new_versions": 0,
+    "Luna_reads": 0,
+    "full_reads": 0,
+    "paper_promotions": 0,
+    "new_ideas": 0,
+    "new_designs": 0,
+    "new_prospects": 0,
+    "worker_acquisitions": 0,
+    "source_full_fits_acquisitions": 0,
+    "array_or_pixel_values_decoded": 0,
+    "numerical_experiments": 0,
+    "compiler_jobs": 0,
+    "tests_or_builds": 0,
+    "public_edits": 0
+  },
+  "conclusion": "Accept only the exact current source-contract bytes pinned by supporting_packets and the located bounded source facts/conditional documentation. No new paper promotion, numerical consumer acceptance, physical detector law or whole-wave/PR acceptance."
+}

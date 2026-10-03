@@ -798,10 +798,10 @@
     "adapter_revision": "98cadbb3e3bf59f5933ef977133b64453c968c0a",
     "request_sha256": "5d67253917a35031b69b85272fe381da8c946007da5615300a3dcf3381f12bed"
   },
-  "continuation_note": "Resume saved acquisitions/reads before a new bounded window. Least-searched lane interacting-sectors; preserve foundational spin citations and blocked source-audit designs. No scheduled or endless crawl.",
-  "last_completed_source_audit": "2026-10-03-all19-source-wave5",
+  "continuation_note": "Bounded source-only wave6 completed: SDSS run5566 legacy calibration/header ancestry and separate conditional NEXT05 coordinate-measure clarification. Event exposure, source units/likelihoods and numerical/physical gates remain open. Existing ordinary queue and discovery lanes unchanged.",
+  "last_completed_source_audit": "2026-10-03-all19-source-wave6",
   "coordinated_source_continuation": {
-    "scan_id": "2026-10-03-all19-source-wave5",
+    "scan_id": "2026-10-03-all19-source-wave6",
     "mode": "bounded_targeted_source_work",
     "pending": [
       {
@@ -812,7 +812,7 @@
       {
         "scope_id": "NEXT-05",
         "stage": "consumer_and_physical_source",
-        "reason": "Distinct frozen-product conditional diagnostic only; physical refit/sign and new numerical target acceptance remain blocked. Reproducible reported a separate full-target v4 conditioning-budget refusal (receipt7822fbbb20e3bbe1aeb9fa6b60d299a9f535b007f149fcaab2a02993da6dc07a); this source wave did not reproduce it or change tolerances."
+        "reason": "Existing16c5 frozen-product source contract unchanged. Separate cached-source clarification accepts only explicitly supplied Lebesgue measure on unchanged original row3213 numerical coordinate, conditionally on separate model/normalization gates. Physical row unit/event/anchor and author normalized-density witness remain unknown. Exact sealed consumer experiment, current implementation and numerical/physical qualification are not accepted here. Reproducible's earlier separate full-target v4 conditioning-budget refusal (receipt7822fbbb20e3bbe1aeb9fa6b60d299a9f535b007f149fcaab2a02993da6dc07a) remains preserved; this source clarification does not reproduce it or change tolerances."
       },
       {
         "scope_id": "NEXT-08",
@@ -827,7 +827,7 @@
       {
         "scope_id": "NEXT-10",
         "stage": "physical_source_and_consumer",
-        "reason": "Literal legacy2005 SN6057 first-g-epoch RUN5566/82N and official run metadata checked; distinct c447 HEAD row/declared PHOTFILE preserved. Native camcol/field/pixels, clock/QE/gain/extraction/selection law, covariance and legacy-to-SMPv8 reduction equivalence remain unresolved."
+        "reason": "Official run5566/rerun40 QA and calibration routes checked; representative camcol3/field11 is not SN6057 assignment. QA613 versus listed612 product count reconciliation unknown. Legacy/current unit labels and conditional frame error recipe preserved; actual pixels/PSF/masks/QE/gain/error distributions, native extraction/selection law and reduction equivalence remain unqualified."
       },
       {
         "scope_id": "NEXT-14",
@@ -862,7 +862,7 @@
       {
         "scope_id": "NEXT-07",
         "stage": "physical_source_and_consumer",
-        "reason": "Legacy asinh/AB-corrected microJy/error-component units and selected released HEAD pointer link checked. Native event/exposure/operator/clock bridge, complete transformations, full selection and covariance remain unknown; HST cannot replace SDSS."
+        "reason": "Exact legacy run5566/rerun40 representative tsField primary header and row-clock/filter/pipeline metadata checked; no EXPTIME, full FITS digest or event camcol/field join. Legacy source5.04, DR7photo v5_4_28/export v6_0 and c447 SMPv8 remain distinct. Native MJD clock/exposure/operator bridge, actual calibration values, selection and covariance unresolved; HST cannot replace SDSS."
       },
       {
         "scope_id": "NEXT-19",
@@ -888,6 +888,6 @@
         "reason": "Useful third-party reduced-input reconstruction/challenge. Journal selected-source audit does not read or prove identity of pinned arxivv3; retain saved metadata rather than repeat lookup. No inverse-distance-ladder prior/model or fitted H0 admitted."
       }
     ],
-    "scope_limit": "Coherent source-only wave5 complete; all19 scientific program remains open. Resume saved hard source gaps and ordinary uncompleted reads; no automatic numericalexecution or endlessscan."
+    "scope_limit": "Coherent source-only wave6 complete; all19 scientific program remains open. Resume saved source gaps and ordinary uncompleted reads under the next explicitly scoped bounded batch; no automatic numerical execution or endless scan."
   }
 }
