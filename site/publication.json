@@ -3,20 +3,20 @@
   "project_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8",
   "url": "https://prospector-cosmology.sprajs.chatgpt.site",
   "access_mode": "public",
-  "source_commit_sha": "40b3ce5f37c77765fc31be43511ed75b9d3517ff",
-  "version_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8~appgver_b64a405733f081919aef58c277d75e74",
-  "version_number": 11,
-  "deployment_id": "appgdep_6ac0c3bad8f4819198a66b3fdb6fabfa",
+  "source_commit_sha": "76ab9dd342ff9682e90c98533d78d0e38cbcd315",
+  "version_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8~appgver_a599908b086c81918959ffe0a71eef7f",
+  "version_number": 12,
+  "deployment_id": "appgdep_6ac0e61d05c48191a7f11c10e45c2c14",
   "deployment_status": "succeeded",
-  "published_utc": "2026-10-03T08:58:48.006665+00:00",
-  "artifact_sha256": "sha256:72070ba485a0c0099182db8bedb1d63024d6237b5afcfeaab2fd79601ff5485b",
-  "local_archive_sha256": "sha256:7e36d78eddc5d4675852678ed37413431b4838ff11caff8854016d31d34e0746",
-  "repository_revision": "c418d1b465e56d30cd1b3c71eef0530f8c8434f2",
-  "repository_ci_run": "https://github.com/sprajs/prospector/actions/runs/37111313156",
-  "scan_id": "2026-10-03-all19-source-wave6",
+  "published_utc": "2026-10-03T11:25:29.644711+00:00",
+  "artifact_sha256": "sha256:8cc282e322f0459d8569c27cc203fd8dbeb9ff23925bd57b8facf7b2bd05bfbf",
+  "local_archive_sha256": "sha256:25cfe745fc67afb40761bc0891c5df318019f3ecba0a789fe48b30fc5dcb3396",
+  "repository_revision": "97c6e8e8a34d58332e145bb633a30cb254ce68bd",
+  "repository_ci_run": "https://github.com/sprajs/prospector/actions/runs/37118689764",
+  "scan_id": "2026-10-03-all19-source-wave7",
   "source_contract_sha256": "a5c22039fd165d8261bba49b179d96942a236e60a9066ccc7109a0c5d7de8644",
   "scalar_serialization_sha256": "d5c189e4623b5eadc2f44f5035dc959e95ff85df69fc199cf8fc0f57ca9c1839",
-  "independent_final_review_sha256": "de465590c66f583327b2273fc6da2bc2451fe1b18b3a2f7a2bfcb56559a6725f",
+  "independent_final_review_sha256": "d5f62d9feb9292964f58d80aafe066985be6a8bbbef6787fc0ef0fb09d70a1d2",
   "additional_source_contracts": [
     {
       "contract_id": "next05-released-fixed44-row3213-conditional-source-v1",
@@ -73,6 +73,18 @@
     {
       "contract_id": "sdss-run5566-legacy-calibration-header-source-contract-v1",
       "sha256": "afb0b2b4afc2daec78a1ac69e68f35c5ddf7c06c972d2de028c783be4648d08e"
+    },
+    {
+      "contract_id": "next04-primary-shoes-compact-conditioning-source-v1",
+      "sha256": "e39652759fb45c7e4bfa11c1d68e1a44fb262dc2e725c9907d5b41948e240102"
+    },
+    {
+      "contract_id": "next13-boss-dr12-historical-method-mock-ancestry-source-contract-v1",
+      "sha256": "a36234e68bf61b1b78dae1037cf808d7350039943fed6ae32c8cedf302f02a45"
+    },
+    {
+      "contract_id": "b1608-author-observation-conditioning-source-contract-v1",
+      "sha256": "0da0c27e24f93b29dc84066537a6a62a9f2925320f584f8e483c05600975d56b"
     }
   ],
   "candidate_design": {
@@ -96,6 +108,22 @@
     {
       "role": "Independent complete seven-file wave6 integration diff, retaining source and NEXT05 conditioning/refusal boundaries",
       "sha256": "de465590c66f583327b2273fc6da2bc2451fe1b18b3a2f7a2bfcb56559a6725f"
+    },
+    {
+      "role": "Wave7 independent selected primary SH0ES conditioning claims",
+      "sha256": "e338d3477a969e041b4f07fc469d329c28d9673fee13624072ccd0d788805dd9"
+    },
+    {
+      "role": "Wave7 independent selected BOSS historical methods/mock/covariance ancestry",
+      "sha256": "28e0a05c21d4254f997aa28e9eb170fdcca8920ee67ad5966ff398b7aef30580"
+    },
+    {
+      "role": "Wave7 independent selected B1608 author observation/selection/error claims",
+      "sha256": "718634d0569f0bf8e411cb3fa5d7cfdd90cbe54bc3ff3bf33482e9e7975a2b16"
+    },
+    {
+      "role": "Wave7 independent complete12-path integration diff; ownNEXT18 science excluded",
+      "sha256": "d5f62d9feb9292964f58d80aafe066985be6a8bbbef6787fc0ef0fb09d70a1d2"
     }
   ],
   "additional_scalar_serializations": [
@@ -109,16 +137,16 @@
     "dist/.openai/hosting.json"
   ],
   "artifact_hash_scope": "artifact_sha256 is the native provider-reported saved artifact hash. local_archive_sha256 binds the local packaged archive; they are distinct representations. The local archive's two file members were verified byte-for-byte against the pushed source/build. No provider/local hash equality is asserted.",
-  "publication_scope": "One new bounded canonical SDSS NEXT07/NEXT10 targeted source audit plus a separate supplied-coordinate NEXT05 measure clarification. Zero new versions, Luna/full-paper reads, full-paper reviews, new ideas, graph/design/prospect promotions or numerical experiments. The public data changes only by one conditioned SDSS source-contract insertion. Partial FITS digest covers bytes0–2879 only; event exposure, reduction equivalence, physical units, detector/statistical law, selection and covariance remain unresolved. Independent source/full-diff review, exact repository merge/main CI, exact public source parent, two archive members and native public deployment verified. Consumer admission, numerical, physical and observation-law qualification remain separate; readiness remains blocked. This receipt-only commit does not change the deployed public export.",
-  "public_data_sha256": "46cdf8047591dfa9f3a713860490ed98969d89183ad0570a02ed40c38d93eba5",
-  "source_parent_commit_sha": "60ef9d0adc7cb146dc49ecb9d82a4afcf36a2fdb",
+  "publication_scope": "Three new bounded canonical targeted source audits: primary SH0ES conditioning, original BOSS estimator/mock/covariance ancestry and B1608 author observation/selection/error conditioning. Three independent selected-source peers plus separate complete final integration review. Zero new versions, Luna/full-paper reads, full-paper reviews, new ideas, graph/design/prospect promotions or numerical experiments. Public data changes only by three paper-subset source-contract navigation cards; ordinary queue and all prior science records remain unchanged. Native observation laws, actual historical products/implementations, joint covariance and numerical/physical/inference gates remain unresolved. Exact repository merge/main CI, exact public source parent, two regular archive files and native public deployment verified. Consumer admission remains a separate later gate; existing readiness remains blocked. This receipt-only commit does not change the deployed public export.",
+  "public_data_sha256": "af1c2ec25c56da0917ab421dfe0e4323bea8b9a11afafd769c87b0d3356d2522",
+  "source_parent_commit_sha": "40b3ce5f37c77765fc31be43511ed75b9d3517ff",
   "previous_publication": {
-    "version_number": 10,
-    "source_commit_sha": "60ef9d0adc7cb146dc49ecb9d82a4afcf36a2fdb",
-    "version_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8~appgver_e8aafeec3ac08191a6d3031e964f668d",
-    "deployment_id": "appgdep_6ac0ad7f7f6c8191a6a1d5c9cfa0046d",
-    "receipt_sha256": "ca4709e7c82a51dc2167e18e9684d81aed28a699ca9297f57d466d8899a57b73",
-    "repository_receipt_revision": "8ecd8e97c7a1201442927718ce1f8586ddb79090",
+    "version_number": 11,
+    "source_commit_sha": "40b3ce5f37c77765fc31be43511ed75b9d3517ff",
+    "version_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8~appgver_b64a405733f081919aef58c277d75e74",
+    "deployment_id": "appgdep_6ac0c3bad8f4819198a66b3fdb6fabfa",
+    "receipt_sha256": "03137e647de7533e7c5da5cad6621c6dfcfc9f4134bba0ad99e95e9089f1d004",
+    "repository_receipt_revision": "899777480adbb2ea89fe23eb18ad94e7e2fe61e2",
     "scope": "Prior source identities and consumer receipts remain bound to their prior revisions."
   }
 }
