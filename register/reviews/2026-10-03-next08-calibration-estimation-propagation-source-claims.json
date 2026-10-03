@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-next08-calibration-estimation-propagation-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "agent_id": "/root/thermal_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "requested_model": "gpt-6.1-sol",
+    "requested_reasoning": "xhigh",
+    "configured_effort": "xhigh",
+    "ordinary_policy_scientific_review_effort": "high",
+    "reuse_authorization": "ROOT explicitly authorized existing exact Sol/xhigh worker for this additive source-owner projection-wording amendment.",
+    "agent_id": "/root/thermal_source_audit",
+    "runtime_session_id": "01a0fec1-0810-7361-a598-b20696ba4a64",
+    "turn_id": "01a10193-a432-78b1-9171-63747ac1c3b8",
+    "runtime_timestamp": "2026-10-03T11:43:35.501Z",
+    "evidence_kind": "runtime_turn_context",
+    "companion_path": ".work/all19-source-wave8-20261003/receipts/thermal-next08-amendment-runtime-confirmation-v1.json",
+    "companion_sha256": "f373ba7163ed6b5d9f4736e18a0ed6de28ae60710ae34f2fb32ec52e8c6fd628",
+    "actual_backend_identity": null,
+    "backend_null_reason": "Unexposed in exact runtime context."
+  },
+  "reviewed_utc": "2026-10-03T11:47:52.674693+00:00",
+  "packet_sha256": "cc801a031aa10d51a667776b6b72b8f140258945b9376912ec54edcf44861cf1",
+  "supporting_packets": [
+    {
+      "role": "exact amended calibration-estimation source contract",
+      "sha256": "1f165d5fec62acbf19fa9a270daa71a52e568de8db7f3c32ca6111d0b6c3e61f"
+    },
+    {
+      "role": "source-rehash-final-v2.json",
+      "sha256": "a4bc366a4d35f9a749136d43ad3db30c941551993608d5a061344a06edce2872"
+    },
+    {
+      "role": "immutable original source packet with unchanged selected coverage",
+      "sha256": "f4339636b32cde7014507d95843b2395df39b894de9bf4834a350cc29c620cc5"
+    },
+    {
+      "role": "immutable original source review and original497f2cf9 runtime",
+      "sha256": "fffeb2133b825d0cc5af0d6d285d725b62ce0165fe4b4e012152ca4a6046a9ca"
+    },
+    {
+      "role": "prior independent peer interpretation limits, pending separate exact v2 binding",
+      "sha256": "84d104b2dc98419f715e4105265976ad4ff754f6094d536f64214a99f28471f7"
+    },
+    {
+      "role": "prior independent peer packet and coverage",
+      "sha256": "1bd5db8925a8507ab3f02a47a9eea32412f383fd22863b4b65e9fa218d95960c"
+    }
+  ],
+  "reviewed_papers": [
+    "arxiv:2112.03864v2"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:2112.03864v2",
+      "source_hashes": {
+        "html": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+        "pdf": "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74",
+        "extracted_text": "506a368e04799fc73ef511dae88c15a11a85610e19ad25e36af76ff60831c6d4"
+      },
+      "coverage": {
+        "main_text": "Selected Brout identity/header; Sec3.1 estimation objective and selected Sec3.2 conditioning; Sec3.3 covariance description; Sec4.3 selected realization/propagation paragraphs; newly selected Sec6.p8 omitted-correlation paragraph.",
+        "checked_locators": [
+          "HTML#S3.E4/#S3.E5 andselected#S3.SS1 paragraphs; HTML679–743",
+          "OriginalPDFp7/Eq5 existingrender2355dfbb visually reread, no new render",
+          "#S3.SS3.p2.1 HTML1244 selected fitted-covariance roles",
+          "#S4.SS3.p1.1/#S4.SS3.p2.1 HTML1405/1408; PDFp12 selectedprose",
+          "#S6.p8.1 HTML1513; PDFp15 selectedprose",
+          "#A1.p1.1 HTML2220; PDFp18 selectedprose; Table7 caption only"
+        ],
+        "unread": "All other main text/results/cosmology/appendix formulas, full training/calibration tables and bibliography; numerical Table7 values unaccepted, full table unexamined; all figure images and raw calibrator/photometry/response/template/NPZ arrays, posterior chains, fitting/draw code and source-specific cited calibrator/survey papers. No fresh Guy/SALT2 full reading.",
+        "appendices": "Only AppendixA first paragraph and Table7 Gaussian-variation caption; remaining appendix text/results/formulas unexamined.",
+        "figures": "No figure-image reading in this wave. Eq5/page7 visually reread from the existing original render; all figure plots remain unexamined. Figure3/8/9 references are context only.",
+        "amendment_note": "Selected original-source coverage inherited unchanged from v1 packet f4339636 and prior peer packet1bd5db89. This v2 adds no source/figure/implementation reading; it clarifies the already checked retraining-to-fitting pathway only."
+      }
+    }
+  ],
+  "reviewed_source_assets": [
+    {
+      "id": "brout-2112-03864v2-calibration-html",
+      "url": "https://arxiv.org/html/2112.03864v2",
+      "sha256": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+      "bytes": 426034,
+      "role": "html",
+      "title": "The Pantheon+ Analysis: SuperCal-Fragilistic Cross Calibration, Retrained SALT2 Light Curve Model, and Calibration Systematic Uncertainty",
+      "authors": [
+        "Dillon Brout",
+        "Georgie Taylor",
+        "Dan Scolnic",
+        "Charlotte M. Wood",
+        "Benjamin M. Rose",
+        "Maria Vincenzi",
+        "Arianna Dwomoh",
+        "Christopher Lidman",
+        "Adam Riess",
+        "Noor Ali",
+        "Helen Qu",
+        "Mi Dai"
+      ],
+      "versioned_id": "2112.03864v2",
+      "retrieved_utc": "2026-10-01T15:05:31.566601+00:00",
+      "licence": null,
+      "licence_null_reason": "Source-specific redistribution licence unreported in saved metadata; no raw source redistributed.",
+      "conditioning": "Fitted filter-magnitude offsets and author-chosen propagation through SALT2 retraining/light-curve fitting; not a native optical-event probability law."
+    },
+    {
+      "id": "brout-2112-03864v2-calibration-pdf",
+      "url": "https://arxiv.org/pdf/2112.03864v2",
+      "sha256": "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74",
+      "bytes": 1431273,
+      "role": "pdf",
+      "title": "The Pantheon+ Analysis: SuperCal-Fragilistic Cross Calibration, Retrained SALT2 Light Curve Model, and Calibration Systematic Uncertainty",
+      "authors": [
+        "Dillon Brout",
+        "Georgie Taylor",
+        "Dan Scolnic",
+        "Charlotte M. Wood",
+        "Benjamin M. Rose",
+        "Maria Vincenzi",
+        "Arianna Dwomoh",
+        "Christopher Lidman",
+        "Adam Riess",
+        "Noor Ali",
+        "Helen Qu",
+        "Mi Dai"
+      ],
+      "versioned_id": "2112.03864v2",
+      "retrieved_utc": "2026-10-01T15:05:34.717527+00:00",
+      "licence": null,
+      "licence_null_reason": "Source-specific redistribution licence unreported in saved metadata; no raw source redistributed.",
+      "conditioning": "Fitted filter-magnitude offsets and author-chosen propagation through SALT2 retraining/light-curve fitting; not a native optical-event probability law."
+    }
+  ],
+  "accepted_records": {
+    "contract_ids": [
+      "next08-calibration-estimation-propagation-source-contract-v1"
+    ]
+  },
+  "source_claims": [
+    {
+      "id": "NEXT08-fitted-calibration-objective-not-native-density",
+      "origin": "original_source_objective_and_reader_boundary",
+      "source_hashes": [
+        "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+        "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74"
+      ],
+      "locators": [
+        "HTML#S3.E4/#S3.E5 and#S3.SS1.p1.1–p9.1 (selected HTML679–743)",
+        "PDFpp6–7 Sec3.1; original existing p7 render2355dfbb"
+      ],
+      "claim": "Offsets are jointly fitted from mean observed-minus-synthetic tertiary-star magnitude differences. The source uses weighted scatter/N plus floors, zero-centred priors and emcee-derived covariance. This establishes the estimation procedure, not a measured normalized native density.",
+      "boundary": "Do not assign p=exp(−chi2/2), a coordinate measure or independent Gaussian noises without separately specifying the model/normalization and checking the implementation.",
+      "status": "accepted_targeted_source_claim"
+    },
+    {
+      "id": "NEXT08-correlated-zeropoints-uncorrelated-wavelengths",
+      "origin": "new_explicit_original_source_conditioning",
+      "source_hashes": [
+        "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+        "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74"
+      ],
+      "locators": [
+        "HTML#S4.SS3.p1.1/#S4.SS3.p2.1 (1405/1408)",
+        "HTML#A1.p1.1 (2220); #A1.T7 caption only",
+        "PDFp12 Sec4.3 andp18 AppendixA selected prose/caption"
+      ],
+      "claim": "The source generates nine calibration realizations from fitted zeropoint covariance, while effective mean-wavelength variations are uncorrelated. Zeropoint realizations are propagated through SALT2 retraining and light-curve fitting. Mean-wavelength variations enter retraining and affect subsequent fitting through the resulting SALT2 surfaces, then contribute to distance-covariance propagation. The wavelength-variation caption specifies Gaussian1sigma uncertainties as chosen variation inputs.",
+      "boundary": "No measured multivariate wavelength law, complete joint probability distribution, actual generator/seed/index identity or cross-probe covariance accepted. Table7 numerical rows are not audited. No separate direct wavelength-shift implementation in the fitting passbands is certified.",
+      "status": "accepted_targeted_source_claim"
+    },
+    {
+      "id": "NEXT08-omitted-zeropoint-wavelength-correlations",
+      "origin": "new_located_original_source_limit",
+      "source_hashes": [
+        "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+        "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74"
+      ],
+      "locators": [
+        "HTML#S6.p8.1 (1513)",
+        "PDFp15 Sec6 selected paragraph; reading-aid1181–1195"
+      ],
+      "claim": "The authors explain that adding filter shifts to the simultaneous fit would double degrees of freedom and introduce likelihood nonlinearity. Filter-curve uncertainties are instead varied in training systematics without correlations with zeropoints; focal-plane variations are also omitted.",
+      "boundary": "A source modelling omission is not a measurement of zero physical covariance or a qualification of omitted effects. The cited Currie/Betoule primary analyses are unread.",
+      "status": "accepted_targeted_source_claim"
+    }
+  ],
+  "corrections": [
+    {
+      "kind": "visible_prior_extraction_scope_correction",
+      "display_summary": "Nine realizations use correlated zeropoints and uncorrelated mean-wavelength shifts; zeropoint–wavelength correlations are omitted. Joint downstream propagation does not imply a correlated joint input law. Earlier shorthand conflated correlation and joint propagation; original packet remains preserved.",
+      "original_contract_id": "optical-calibration-template-source-contract-v1",
+      "original_contract_sha256": "9a5a1a0ee1c7c115e11d0afc79da6be69815d9c13973e38ed6359d336d253ec1",
+      "source_locators": [
+        "#S4.SS3.p1.1",
+        "#A1.p1.1",
+        "#S6.p8.1"
+      ]
+    },
+    {
+      "kind": "additive_author_projection_pathway_clarification",
+      "original_contract_id": "next08-calibration-estimation-propagation-source-contract-v1",
+      "original_contract_sha256": "e07c78b3ee00cc8a4af4af21d5228be8f2ffcd6ace3ac6d2a07a72fba41f76b9",
+      "amended_contract_sha256": "1f165d5fec62acbf19fa9a270daa71a52e568de8db7f3c32ca6111d0b6c3e61f",
+      "display_summary": "Mean-wavelength variations enter SALT2 retraining and affect downstream light-curve fits through changed surfaces; no separate direct wavelength-shift implementation of fitting passbands is certified. The earlier both-retraining-and-fitting shorthand was ambiguous. This is a projection/reader wording correction, not a printed-source repair or new implementation claim.",
+      "source_locators": [
+        "Brout2112.03864v2 #S4.SS3.p1.1/#S4.SS3.p2.1 HTML1405/1408",
+        "Brout #A1.p1.1 HTML2220",
+        "Brout #S6.p8.1 HTML1513"
+      ],
+      "source_hashes": {
+        "html": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+        "pdf": "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74"
+      },
+      "prior_peer_interpretation": {
+        "acceptance_sha256": "84d104b2dc98419f715e4105265976ad4ff754f6094d536f64214a99f28471f7",
+        "pointer": "/interpretation_limits/1",
+        "packet_sha256": "1bd5db8925a8507ab3f02a47a9eea32412f383fd22863b4b65e9fa218d95960c",
+        "pointer_in_packet": "/independent_manual_checks/1/boundary"
+      },
+      "added_contract_limit": "The checked wavelength-shift pathway is retraining followed by downstream fitting with the changed SALT2 surfaces. No separate direct wavelength-shift implementation in the fitting passbands is certified.",
+      "coverage_expansion": false,
+      "old_files_changed": false
+    }
+  ],
+  "limitations": [
+    "Selected source facts and explicit author model omissions only; normalized native probability law and measured joint response remain unknown.",
+    "The105/102 discrepancy, machine/passband/event joins and covariance gaps remain unresolved; no data arrays loaded or missing axes inferred.",
+    "Source selection, fitted uncertainties and chosen Gaussian wavelength perturbations do not qualify empirical detector/calibration probability or causal independence.",
+    "Only selected original Brout locators and one existing equation-page image checked. Unselected material/cited primary calibrator sources/code remain unread; no fullpaper stage or graph/design promotion.",
+    "The checked wavelength-shift pathway is retraining followed by downstream fitting with the changed SALT2 surfaces. No separate direct wavelength-shift implementation in the fitting passbands is certified."
+  ],
+  "accounting": {
+    "full_reads": 0,
+    "new_paper_versions": 0,
+    "numerical_executions": 0,
+    "new_arrays_read": 0,
+    "new_render_jobs": 0
+  },
+  "conclusion": "Accept only this exact separately identified source contract: calibration estimates and chosen propagation assumptions are sourced, but a measured/native probability law remains blocked."
+}

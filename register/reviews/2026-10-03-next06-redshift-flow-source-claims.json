@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-03-next06-redshift-flow-source-claims",
+  "review_kind": "targeted_source_claims",
+  "packet_sha256": "e265c8829edc9173cda8e6d9f85aea85eb29fb267c95e758d35489ef1aa5e42c",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "xhigh",
+  "requested_reasoning_note": "Ordinary source review policy is high; ROOT explicitly authorized reuse of this existing verified exact Sol worker with actual xhigh. No model substitution or effort relabeling.",
+  "agent_id": "/root/perturbation_source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "model": "gpt-6.1-sol", "effort": "xhigh", "backend": null,
+    "session_id": "01a0fec1-578e-7712-ba9d-1707e70bb91c",
+    "turn_id": "01a10163-a5c8-7492-89ad-ed54d5f7aca7",
+    "path": ".work/all19-source-wave7-20261003/receipts/perturbation-continuation-runtime-confirmation-v1.json",
+    "sha256": "c9d91f0bead5b8f1ba3919f9667b400aa3a57d7227e092f974e68046ca1a0f52",
+    "evidence_kind": "runtime_turn_context"
+  },
+  "worker_packet": {"path": ".work/all19-source-wave8-20261003/workers/velocity/packet-final-v1.json", "sha256": "e265c8829edc9173cda8e6d9f85aea85eb29fb267c95e758d35489ef1aa5e42c", "status": "FINAL"},
+  "supporting_packets": [
+    {"path": ".work/all19-source-wave8-20261003/workers/velocity/selected-claim-notes-final-v1.json", "sha256": "f4e81980cd9b03a48fd1d45e866e376427c46a15afafd7c6ccfa0cd0841caa1a"},
+    {"path": ".work/all19-source-wave8-20261003/workers/velocity/acquisition-needs-final-v1.json", "sha256": "ebb3659fd1ac340219effe5083c60d6a7e0507f37d6504d7393eb2b8f1780cd0"},
+    {"path": ".work/all19-source-wave8-20261003/workers/velocity/runtime-companion-v1.json", "sha256": "f026eb7c60f9849dd0c735445abfd8d176f4ea10d725253d2767b8e73d4d153d"},
+    {"path": ".work/all19-source-wave8-20261003/workers/velocity/proposed-citation-witnesses-final-v1.json", "sha256": "c7727aba0cedf2260c2126581c15c4724ca9849c8b356ad4b8605b3f97e16cc8"}
+  ],
+  "source_contract_binding": {
+    "contract_id": "next06-pantheon-redshift-frame-flow-conditioning-source-v1",
+    "path": "register/contracts/next06-pantheon-redshift-frame-flow-conditioning-source-v1.json",
+    "sha256": "39faf2a983f13f2dd3b5a1abf849688a5fee03d5765f1a3588119b6cdd4f4ab2"
+  },
+  "reviewed_papers": ["arxiv:2112.01471v2", "arxiv:2110.03487v2", "arxiv:2112.03863v2", "arxiv:2202.04077v2"],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:2112.01471v2",
+      "source_hashes": {"html": "eb5c7d943ff293f09c11784e10e0931d8810546936d808e5d67857a24a6395b9"},
+      "coverage": {
+        "main_text": "Selected original HTML identity, Sec5 redshift-factor/radial-sign math and Sec6 calibrated redshift-space flow/tail/uncertainty prose only. Abstract discrepancy comparison is excluded from numerical claim acceptance.",
+        "checked_locators": ["HTML236–281 version/date/title/seven authors; abstract1.1 lines283–291 compared with archived metadata", "S5.SS1/S5.SS2 selected prose and E1–E7 original MathML/TeX annotations, HTML1549–1656", "S6.SS1.p4–p6/E9, S6.SS2.p1–p2, S6.SS3.p2/p4, HTML1739–1786,1811–1826"],
+        "unread": "Most main text/results/tables/full bibliography/appendices, Sec6.1 Eq8 and exact AppendixB algorithm/tail implementation, underlying calibrator papers and all images. Truncated PDF rejected; no valid PDF/TeX/journal comparison. Counts and fitted shifts unaccepted.",
+        "unexamined_math": "Eq8 normalization, exact real/redshift coordinate mapping/interpolation, external-tail function/configuration and original PDF equivalence.",
+        "figures": "No visual checks. Fig6 caption incidentally read; prose references to other figures do not establish plot inspection.",
+        "paper_stage_untouched": true, "new_full_reads": 0
+      }
+    },
+    {
+      "paper_id": "arxiv:2110.03487v2",
+      "source_hashes": {"html": "130b154d16078b7b406ac192da8c19db2cafef90a1dd6105be43edf55114c9dd"},
+      "coverage": {
+        "main_text": "Selected original HTML identity, SecII.1 radial correction, SecIII.2–III.3 matching/group estimators, SecIV.1 reconstruction/iLOS assumptions and AppendixA uncertainty-method prose. Eq10 literal representation inspected, executable density blocked.",
+        "checked_locators": ["HTML234–326 version/date/title/all13 author names", "S2.SS1.p2/E7 original MathML/TeX, HTML494–506", "S3.SS2.p1–p2 and S3.SS3.p1–p4, HTML612–660", "S4.SS1.p1; S4.I1.i1–i4/E10/prior original MathML/TeX, HTML669–710", "A1.p1–p2, HTML2173–2180; bib.bib14, HTML1584–1589"],
+        "unread": "Most main text/results/statistics, remaining appendices/full bibliography/underlying references and all images. Valid central PDF/extracted text not used or rehashed as read sources here. Incidental quality-cut/table/result values not accepted. Eq10 normalization/support/implementation and PDF comparison unexamined.",
+        "unexamined_math": "Eq10 executable measure/Jacobian/unit conversion and support; full source distance-error/statistic definitions or posterior implementation. No repaired equation or volume prior.",
+        "figures": "No visual checks; Fig9 caption encountered only.",
+        "paper_stage_untouched": true, "new_full_reads": 0
+      }
+    },
+    {
+      "paper_id": "arxiv:2112.03863v2",
+      "source_hashes": {"html": "2c853a30cad35cd63a3097520235e5e772c645f717aba847708eecc2e5cb98a0"},
+      "coverage": {
+        "main_text": "Reused original HTML version/title and SecIII.2 p1 duplicate-alias/shared-covariance prose only. Larger earlier review scope remains historical.",
+        "checked_locators": ["HTML211/214 version/date/title", "S3.SS2.p1.1, HTML1417–1419"],
+        "unread": "All other source equations/results/tables/bibliography and images; incidentally encountered p2–p4 and Fig5 caption not accepted. In particular p2's indices/variance expression remains unexamined and unrepaired.",
+        "unexamined_math": "Duplicate covariance formula/cells and full event alias tolerances/clock-coordinate transformations.",
+        "figures": "Fig5 caption only, no visual check.",
+        "paper_stage_untouched": true, "new_full_reads": 0
+      }
+    },
+    {
+      "paper_id": "arxiv:2202.04077v2",
+      "source_hashes": {"html": "7580cd8300bf5bf53119735a06c94f7240a7426c37a4f2e8fdbf9915905ecb38"},
+      "coverage": {
+        "main_text": "Reused original HTML version/title and selected SecIII.1.2–III.1.3 redshift roles/PV uncertainty and systematic-covariance conditioning only.",
+        "checked_locators": ["HTML248/251 version/date/title", "S3.SS1.SSS2.p1.1, HTML852–854", "S3.SS1.SSS3.p1–p3, HTML861–875", "bib.bib20/bib.bib83, HTML1812–1821,2278–2287"],
+        "unread": "Complete distance/covariance equations, actual covariance arrays/likelihood, other calibration/systematic construction, results/tables/full bibliography and all figures. No new numeric floor, covariance positivity or independence accepted.",
+        "unexamined_math": "Exact distance/error/covariance/likelihood implementation and cross-probe covariance.",
+        "figures": "No visual checks.",
+        "paper_stage_untouched": true, "new_full_reads": 0
+      }
+    }
+  ],
+  "accepted_claim_ids": ["V01", "V02", "V03", "V04", "V05"],
+  "accepted_records": {"contract_ids": ["next06-pantheon-redshift-frame-flow-conditioning-source-v1"], "scope_ids": ["NEXT-06"], "idea_ids": [], "design_ids": [], "prospect_ids": [], "reference_ids": []},
+  "corrections": [
+    {"id": "C01", "kind": "source-snapshot discrepancy", "statement": "Carr's v2-labelled HTML abstract counts/results differ from archived Atom metadata. Title/authors/banner match, cause and original-PDF/journal/version equivalence unresolved. Counts/results excluded; old snapshots and rejected incomplete PDF preserved."},
+    {"id": "C02", "kind": "original-HTML units/normalization issue, PDF comparison pending", "statement": "Peterson Eq10 displays a dimensionless ratio residual divided by sigma_v squared while prose declares sigma_v in km/s. Multiline HTML MathML also has a presentation token defect; its TeX annotation carries the same underlying formula. Unit/measure/Jacobian/support and implementation remain blocked, with no source repair or claim about executed code."},
+    {"id": "C03", "kind": "source-prescription distinction", "statement": "Carr's projected square-root radial Doppler factor and Peterson's linear radial factor are not silently made finite-speed equivalent or treated as full observer four-velocity evidence."},
+    {"id": "C04", "kind": "reader working-note correction", "statement": "An unverified working-note z-squared density prior was replaced before acceptance by the actual printed (1+delta)dchi/dz source transcription. No old immutable/public record changed; no inferred volume prior adopted."},
+    {"id": "C05", "kind": "excluded incidental source math", "statement": "Scolnic SecIII.2 p2 duplicate covariance indices/variance units were not audited here. Only p1 alias/shared-covariance prose accepted; no repair or executable covariance admission."}
+  ],
+  "bibliography_coverage": {"checked_witnesses": 3, "new_integrated_links": 0, "proposed_witnesses_packet": ".work/all19-source-wave8-20261003/workers/velocity/proposed-citation-witnesses-final-v1.json", "scope": "Peterson reference14 and Brout references20/83 print registered base IDs without version. No full bibliography, inferred citation or source acquisition; coordinator must deduplicate before integration."},
+  "context_checks": {
+    "historical_master_contract": {"path": "register/contracts/standard-model-source-gates-v1.json", "sha256": "a5c22039fd165d8261bba49b179d96942a236e60a9066ccc7109a0c5d7de8644", "scope": "NEXT06 original acceptance unchanged"},
+    "blocked_design": {"path": "designs/candidate-sdss-released-observer-contract.json", "sha256": "954d3e2369f21099dbe7fa298e7ee040bab0c5c90ca101f192b79292ff31f5fe", "scope": "Historical321 structural joins, ten coordinate failures,429 history and no physical event admission preserved; no design or current native acceptance"},
+    "prior_review": {"path": "register/reviews/2026-10-02-sn-passband-source-claims.json", "sha256": "28e7e41f21be1a96a226629163f59d90e7076d7579016833b94c40d342600706", "scope": "No rewriting or larger coverage recertification"},
+    "graph": "Selected Carr/Peterson neighbour entries did not provide an accepted physical relation in the inspected filter. No graph change or completeness claim.",
+    "reference_independence": "Companion methods and release/cosmology papers share events, galaxy surveys, groups, reconstructions and calibrations; four source checks are not four independent observations."
+  },
+  "limitations": [
+    "Only located source conventions and conditioned methods accepted; exact physical event, observer worldline/clock/coordinate and velocity-map lineage remain unresolved.",
+    "Radial formula variants stay distinct; adopted dipole/calibration/dispersion/fitted summaries are not independently measured laws or full spacetime transfer evidence.",
+    "Peterson Eq10 executable probability density remains blocked by units/measure/support ambiguity. No Gaussian law, Jacobian, prior replacement or implementation repair is accepted.",
+    "Group completeness, reconstruction smoothing and external calibration share data; source independence wording does not prove joint independence. Unknown covariance remains unknown.",
+    "Carr HTML/metadata abstract discrepancy and rejected incomplete PDF are preserved. Counts/fitted cosmological results and PDF/journal equivalence unaccepted.",
+    "Existing321 joins, ten coordinate failures and timing/flux/selection/covariance gates unchanged; no arrays, native or physical admission, numerical qualification or full-paper/graph/design/prospect promotion."
+  ],
+  "qualification": {"numerically_executed": false, "scientifically_qualified": false},
+  "resource_accounting": {"new_versions": 0, "new_full_reads": 0, "new_agents": 0, "worker_network_requests": 0, "new_renders": 0, "compiler_validator_build_science_jobs": 0, "numerical_array_jobs_or_experiments": 0}
+}

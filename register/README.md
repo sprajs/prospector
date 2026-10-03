@@ -65,7 +65,7 @@ Combined models require compatibility checks before promotion.
 - [Tracking scalar unification requires a depletion branch between early and late energy](ideas/unified-scalar-steep-steeper-shallow.json)
 
 [Typed relationships](graph.json) preserve overlap, distinctions, critique, shared data and prospect links.
-[Bibliographic citations](citations.json): 30 explicit links; the index is incomplete.
+[Bibliographic citations](citations.json): 33 explicit links; the index is incomplete.
 
 ## Papers
 
@@ -233,6 +233,8 @@ Source checks and structural validation do not establish independent reproductio
 - [2026-10-03-b1608-calibrated-source-assets](reviews/2026-10-03-b1608-calibrated-source-assets.json): The current FLT has21 HDUs and declared full-size calibrated ERR/DQ payloads, distinct from RAW7-HDU zero-encoded placeholders. Array values and error quality remain unchecked.
 - [2026-10-03-b1608-calibrated-source-assets](reviews/2026-10-03-b1608-calibrated-source-assets.json): SCI and external headerlet retain FK5 despite GAIAeDR3-labelled relative fit; ERR/DQ older TAN metadata remains distinct. Trailer identifies separate FLT/FLC branches; FLC-named headerlet is not FLC image acquisition. No frame conversion, alignment or covariance inference.
 - [2026-10-03-b1608-calibrated-source-assets](reviews/2026-10-03-b1608-calibrated-source-assets.json): Preserve literal handbook Eq1 square on σ_RN and its source prose separately. The initialization formula and calibrated metadata do not provide a measured detector law or joint covariance.
+- [2026-10-03-next08-calibration-estimation-propagation-source-claims](reviews/2026-10-03-next08-calibration-estimation-propagation-source-claims.json): Nine realizations use correlated zeropoints and uncorrelated mean-wavelength shifts; zeropoint–wavelength correlations are omitted. Joint downstream propagation does not imply a correlated joint input law. Earlier shorthand conflated correlation and joint propagation; original packet remains preserved.
+- [2026-10-03-next08-calibration-estimation-propagation-source-claims](reviews/2026-10-03-next08-calibration-estimation-propagation-source-claims.json): Mean-wavelength variations enter SALT2 retraining and affect downstream light-curve fits through changed surfaces; no separate direct wavelength-shift implementation of fitting passbands is certified. The earlier both-retraining-and-fitting shorthand was ambiguous. This is a projection/reader wording correction, not a printed-source repair or new implementation claim.
 - [2026-10-03-sdss-b1608-native-source-assets](reviews/2026-10-03-sdss-b1608-native-source-assets.json): Original strict HEAD ID comparison failed on NUL padding; selected row2864 raw bytes separately checked and right-padding normalization explicit. No source identity alias or full join inferred.
 - [2026-10-03-sdss-b1608-native-source-assets](reviews/2026-10-03-sdss-b1608-native-source-assets.json): New native ACS counts and legacy2005 run keys narrow older unacquired asset gaps only. Prior immutable review/proposal remains historical: current HST2026 pipeline is not established equal to2010 author processing;5.04-labelled legacy photometry is not SMPv8.
 - [2026-10-03-sdss-b1608-native-source-assets](reviews/2026-10-03-sdss-b1608-native-source-assets.json): Legacy ReadMe exempts FLAG16/32 from the general galaxy-constraint rule; the selected lightcurve generic header omits those exceptions. Preserve the more detailed documentation and generic header separately; no complete selection rule follows.

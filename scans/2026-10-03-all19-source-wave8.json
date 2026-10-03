@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-03-all19-source-wave8",
+  "status": "completed",
+  "started_utc": "2026-10-03T10:56:26.161587+00:00",
+  "completed_utc": "2026-10-03T12:06:08.481103+00:00",
+  "lane": "measurement-lineage",
+  "work_mode": "explicit_scoped_source_audit",
+  "queries": [],
+  "registered_papers": [
+    "arxiv:2112.01471v2",
+    "arxiv:2110.03487v2",
+    "arxiv:2112.03863v2",
+    "arxiv:2202.04077v2",
+    "arxiv:2112.03864v2",
+    "arxiv:astro-ph/0701828v1"
+  ],
+  "new_versions": [],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [
+    "2026-10-03-next06-redshift-flow-source-claims",
+    "2026-10-03-next08-calibration-estimation-propagation-source-claims",
+    "review-salt2-empirical-temporal-training-source-20261003-v1"
+  ],
+  "source_contract_ids": [
+    "next06-pantheon-redshift-frame-flow-conditioning-source-v1",
+    "next08-calibration-estimation-propagation-source-contract-v1",
+    "salt2-empirical-temporal-training-source-contract-v1"
+  ],
+  "idea_ids": [],
+  "design_ids": [],
+  "prospect_ids": [
+    "lcdm-baseline-reference-audit"
+  ],
+  "edge_ids": [],
+  "pending": [
+    {
+      "scope_id": "NEXT-04",
+      "stage": "source",
+      "reason": "Selected Riess aperture/PSF same-image lineage, iterative metallicity covariance and Wesenheit conventions, plus Yuan optical NGC4258 methods, accepted only as located source claims. Original47 dictionary/generator, coordinate44 physical label/unit/fixed rationale/prior, compact constraints3207–3214, four failed physical joins2630/2744/2745/2754, nine Skara conflicts and joint selection/covariance remain unresolved. Prior printed variants and matrix/sign/count issues retained."
+    },
+    {
+      "scope_id": "NEXT-05",
+      "stage": "consumer_and_physical_source",
+      "reason": "Existing16c5 frozen-product source contract unchanged. Separate cached-source clarification accepts only explicitly supplied Lebesgue measure on unchanged original row3213 numerical coordinate, conditionally on separate model/normalization gates. Physical row unit/event/anchor and author normalized-density witness remain unknown. Exact sealed consumer experiment, current implementation and numerical/physical qualification are not accepted here. Reproducible's earlier separate full-target v4 conditioning-budget refusal (receipt7822fbbb20e3bbe1aeb9fa6b60d299a9f535b007f149fcaab2a02993da6dc07a) remains preserved; this source clarification does not reproduce it or change tolerances."
+    },
+    {
+      "scope_id": "NEXT-08",
+      "stage": "source",
+      "reason": "Selected star/synthetic-magnitude calibration objective, fitted covariance and chosen systematic propagation accepted conditionally. Zeropoint offsets are correlated; wavelength perturbations are chosen uncorrelated inputs varied in retraining and affect subsequent fits through changed surfaces. No separate direct fitting-passband wavelength implementation certified. Source omits zeropoint–wavelength correlations; zero physical covariance is not measured. Original105/102, aliases/passbands/events, actual generator/measure/normalization, optical-state/detector/selection and joint probability laws remain unresolved."
+    },
+    {
+      "scope_id": "NEXT-09",
+      "stage": "source",
+      "reason": "Selected historical empirical temporal-basis, spectral recalibration, training selection/weights/regularization and residual error conditioning accepted as source claims only. Literal repeated H0,i in original residual normalization remains unreconciled. Full MODEL000 grids/support/order/flux and relative-error units, color-law/reader implementation, event/calibrator/training-evaluation overlap, physical optical law and joint covariance remain unknown. All G01–G06 remain open; historical2007, captured2024 header, B21 and released c447 boundaries stay distinct."
+    },
+    {
+      "scope_id": "NEXT-10",
+      "stage": "physical_source_and_consumer",
+      "reason": "Official run5566/rerun40 QA and calibration routes checked; representative camcol3/field11 is not SN6057 assignment. QA613 versus listed612 product count reconciliation unknown. Legacy/current unit labels and conditional frame error recipe preserved; actual pixels/PSF/masks/QE/gain/error distributions, native extraction/selection law and reduction equivalence remain unqualified."
+    },
+    {
+      "scope_id": "NEXT-14",
+      "stage": "consumer_stability_and_numerical",
+      "reason": "Separate FDv3 centered-angular/damped-residual source algebra and ideal photon/cold-baryon acoustic source derivations accepted only conditionally. All G01–G07 remain open. Original39cf/de5/0610 proposal, projected-versus-regular start and raw growing TRACE caveat remain. Actual background/derivative/conservation forcing and forward/work/storage effects are unqualified; old conformal helper lacks total-matter extension and self-baryon refusal. No installed/compiled/numerical/model-equivalence promotion."
+    },
+    {
+      "scope_id": "NEXT-18",
+      "stage": "physical_source_and_joint_likelihood",
+      "reason": "Selected author radio-delay Monte Carlo conditioning and non-Gaussian recovered distributions, Keck aperture/template fitting, imaging-conditioned slope prior, M5 substitution, four-exposure F814W count selection and OBS-versus-MS simulated priors accepted as source claims only. Raw radio/Keck/imaging/catalogue/simulation identities, products, empirical noise/joint covariance, author2010 reduction and current2026 equivalence remain unknown. Delay symbol order, source date/count/interval variants and earlier distinct native-header/trailer coverage retained."
+    },
+    {
+      "scope_id": "NEXT-13",
+      "stage": "source_assets_and_consumer",
+      "reason": "Selected original BOSS weights, normalization, FFT/bins/cap combination, analysis-versus-mock fiducials, 2048 MD-Patchy/1000 QPM/20 periodic-halo roles, AP/window approximations and raw-versus-compressed covariance ancestry accepted conditionally. Current2023/2025 code and named mock files do not establish historical2016/2017 implementation, pairing, reconstruction, actual W2/W3, full support/order, priors, joint covariance or ordinary full-k sigma8. All B01–B08 and prior printed-source issues remain open."
+    },
+    {
+      "scope_id": "NEXT-12",
+      "stage": "chosen_inputs_and_consumer",
+      "reason": "Selected constants and mass conventions source-checked. Joint uncertainty/covariance, underlying isotope evaluation and consistent native chosen-input qualification remain open."
+    },
+    {
+      "scope_id": "NEXT-16",
+      "stage": "physical_late_input",
+      "reason": "Today opacity/visibility need a qualified matching late-electron history or deterministic depth enclosure; actual L/U remain null. Drag requires a distinct weighted tail."
+    },
+    {
+      "scope_id": "NEXT-17",
+      "stage": "consumer_protocol_and_execution",
+      "reason": "Originalbf6828/69e681/fe26 unchanged. Separately sealed NEW weighted-Gram source algebra/reference/count choice conditionally compatible;58800 is contribution-plus-reconstruction accounting, not scalarops or measuredwork. Completecoupled v4 wire source blocked F1–F5; parent cap-unit admission, actualABI/capacity/arithmetic/support/refinement/runtime/implementation/numerical gates open. Separate v5 reported in preparation, unread/unaccepted here."
+    },
+    {
+      "scope_id": "NEXT-07",
+      "stage": "physical_source_and_consumer",
+      "reason": "Exact legacy run5566/rerun40 representative tsField primary header and row-clock/filter/pipeline metadata checked; no EXPTIME, full FITS digest or event camcol/field join. Legacy source5.04, DR7photo v5_4_28/export v6_0 and c447 SMPv8 remain distinct. Native MJD clock/exposure/operator bridge, actual calibration values, selection and covariance unresolved; HST cannot replace SDSS."
+    },
+    {
+      "scope_id": "NEXT-19",
+      "stage": "physical_history_and_primary_CMB",
+      "reason": "Intrinsic signed delta_gamma/4 per asymptotic unit zeta belongs only to the separate ideal acoustic model. MB99–101 are an approximate no-shear formal control, not a loaded physical history; opacity, visibility, diffusion, polarization, line-of-sight CMB and observed likelihood remain absent from this specification."
+    },
+    {
+      "scope_id": "NEXT-06",
+      "stage": "physical_source_and_consumer",
+      "reason": "Selected multiplicative redshift factors and distinct projected radial prescriptions, reconstructed-flow/group/calibration conditioning and duplicate-event covariance context accepted as source claims only. Physical observer worldline, ephemeris/frame/event clocks, exact flow grid/group/calibration ancestry, full frequency transfer and joint covariance remain unknown. Peterson original HTML Eq10 units/measure/normalization and Carr HTML/metadata source-snapshot discrepancy remain unresolved; no likelihood repair or numerical admission."
+    }
+  ],
+  "independent_source_reviews": [
+    {
+      "path": ".work/all19-source-wave8-20261003/workers/peer-velocity/acceptance-final-v1.json",
+      "sha256": "f8100921dda251f959fafc33ef11f1048db72ae991eadd8d5d0245dcf61ad01a",
+      "bytes": 4982,
+      "scope": "Exact selected-source acceptance only; all native/numerical/physical and whole integration gates remain separate."
+    },
+    {
+      "path": ".work/all19-source-wave8-20261003/workers/peer-calibration/acceptance-final-v2.json",
+      "sha256": "1fadd0f54b3792277b7f5a14be796bdeba43efd36dc5343f096cf9fa3868fa4a",
+      "bytes": 5667,
+      "scope": "Exact selected-source acceptance only; all native/numerical/physical and whole integration gates remain separate."
+    },
+    {
+      "path": ".work/all19-source-wave8-20261003/workers/peer-templates/acceptance-final-v1.json",
+      "sha256": "ffdab94aab7b08f30a1ae0671d54c0b84548a82df2d492fbf0cc4c72e3c4bca9",
+      "bytes": 5996,
+      "scope": "Exact selected-source acceptance only; all native/numerical/physical and whole integration gates remain separate."
+    }
+  ],
+  "citation_ids": [
+    "cite-2110.03487-2112.01471",
+    "cite-2202.04077-2112.01471",
+    "cite-2202.04077-2110.03487"
+  ],
+  "source_leads": [],
+  "search_receipts": [],
+  "acquisition_failures": [],
+  "corrections": [
+    "Carr v2-labelled HTML versus saved Atom counts/results differ; identity/banner match but cause/version/PDF equivalence unresolved. Rejected incomplete PDF and snapshots retained.",
+    "Peterson original HTML Eq10 dimensional residual/velocity-width and measure remain unresolved; no source/code repair. A working-note inferred volume prior was replaced before acceptance with actual printed density-weighted prior.",
+    "Additive NEXT08 source interpretation corrects historical blanket correlated zeropoint/wavelength shorthand; old immutable contract/review bytes retained.",
+    "NEXT08 additive projection wording explicitly routes wavelength changes through retraining and changed surfaces before subsequent fitting; no independent direct fitting-passband shift certified. Original v1 proposal and earlier peer preserved.",
+    "Guy original PDF/HTML literal repeated H0,i in residual normalization preserved; basis/index reconciliation unknown rather than silently substituted H1."
+  ],
+  "deferred_assets": [
+    "Physical event/observer/flow-grid/group/calibration inputs and likelihood measure/normalization.",
+    "Raw standards/star/filter/generator/code and complete native measured optical/detector/selection probability law.",
+    "Complete MODEL000 component/error/color grids, decoder/support/units, training-object/calibrator overlap and unknown cross-covariance.",
+    "Unlisted paper text/tables/figures/appendices and cited source bodies; existing ordinary full readings remain queued."
+  ],
+  "resource_receipt": {
+    "new_central_requests": 0,
+    "new_source_body_bytes": 0,
+    "new_renders": 0,
+    "new_pdf_text_aids": 0,
+    "new_agents": 0,
+    "compiler_jobs": 0,
+    "science_jobs": 0,
+    "full_scientific_arrays_or_pixels_read": 0,
+    "source_mode": "Rehashed existing cached sources only; fresh structural-job lease is a separate gate."
+  },
+  "limits": [
+    "Three canonical targeted source reviews and three independent selected-source peers; zero new versions, Luna/full-paper reads, full-paper reviews, ideas, graph edges, design promotions or numerical experiments.",
+    "Three checked bibliography witnesses name pinned citing versions and unprinted cited versions as null. Citations remain separate from physical relationships; unknown coverage stays unknown.",
+    "All prior canonical science records and ordinary59-stage queue/discovery lanes retained; new contract navigation does not add physical components or promote prospects.",
+    "Exact existing Sol/xhigh workers reused with runtime turn-context receipts and explicit authorization; serving backend unexposed/null, ordinary Sol/high policy unchanged.",
+    "Conditioned fitted summaries, assumed uncertainties and propagation variants are not measured/native probability laws. Unknown event identity, units, selection and covariance remain unknown.",
+    "Independent source review, complete integration review, latest-head CI, exact-main CI, publication and consumer/native/numerical/physical acceptance remain separate. All19 remains OPEN."
+  ]
+}

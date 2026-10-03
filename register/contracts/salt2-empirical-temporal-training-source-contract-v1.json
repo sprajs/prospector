@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "contract_id": "salt2-empirical-temporal-training-source-contract-v1",
+  "title": "SALT2 empirical temporal training and residual-error conditioning",
+  "review_id": "review-salt2-empirical-temporal-training-source-20261003-v1",
+  "paper_ids": [
+    "arxiv:astro-ph/0701828v1",
+    "arxiv:2112.03864v2"
+  ],
+  "scopes": [
+    {
+      "scope_id": "NEXT-09",
+      "title": "Empirical spectral sequence, selected training ancestry and conditional error propagation",
+      "paper_ids": [
+        "arxiv:astro-ph/0701828v1",
+        "arxiv:2112.03864v2"
+      ],
+      "checked_claim": "Guy Sec2 Eq1 defines F=x0[M0(p,lambda)+x1*M1(p,lambda)+...]exp[c*CL(lambda)], with rest-frame phase since B maximum and rest-frame wavelength; global components/color law and per-SN fitted normalization/components/color. Color can include intrinsic variation or dust or both. Sec2.1/2.2/3 condition the empirical model on heterogeneous ensemble coverage, photometric spectral recalibration, assumed white spectral noise, chosen spectral weights, premaximum sampling and model-dependent host-contamination cuts. Sec4 fits components and calibration together, using second-derivative regularization in weakly constrained regions. Historical construction spans−20..+50 days and2000..9200 Angstrom. Sec6 estimates residual errors by leave-one-SN-out retraining and per-SN refitting; remaining correlations are acknowledged before an assumed diagonal simplification. Component covariance projected by H0/H1 and rescaled by S(p,lambda) is training-model uncertainty. Brout IV.1/IV.3 retrains B21 with changed zeropoints/filter functions; nine calibration variants propagate jointly through retraining and light-curve refitting. Survey zeropoint draws are correlated, effective-wavelength shifts are uncorrelated inputs in that analysis. Pantheon+ fitting3000..7000 Angstrom is distinct from c447 MODEL000 INFO range2800..7000. INFO/README configuration literals and nominal/variant roles are checked.",
+      "unresolved": "The empirical sequence is not a first-principles emitted-luminosity, photon-arrival, detector/extraction or selection likelihood. Full MODEL000 grid/column/flux normalization, version1 color polynomial/extrapolation, relative-error normalization/interpolation and covariance closure remain unresolved. Historical basis support is not complete observed coverage or current released support. Training-object/calibrator overlap and unknown cross-covariance require explicit lineage; no fitted x0/x1/c summary is accepted as a native law."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "guy-astro-ph-0701828v1-html",
+      "url": "https://arxiv.org/html/astro-ph/0701828v1",
+      "sha256": "bab88504c4bce299c5a765c722b3c4fa040eed3830c924a6438762e0a7985952",
+      "role": "html",
+      "retrieved_utc": "2026-10-02T21:50:08.790582+00:00",
+      "bytes": 293981,
+      "licence": null,
+      "licence_null_reason": "Original HTML labels its licence as assumed arXiv perpetual non-exclusive; no author redistribution grant independently checked.",
+      "conditioning": "Historical 2007v1 selected Sec2–4/6 definitions, training/selection/recalibration and residual assumptions; exact anchors in targeted review."
+    },
+    {
+      "id": "guy-astro-ph-0701828v1-pdf",
+      "url": "https://arxiv.org/pdf/astro-ph/0701828v1",
+      "sha256": "a89d6be7eb6b76fe9a83fce8e2f3a8eda99ca35c0d20c71c580d2a83a99b42e3",
+      "role": "pdf",
+      "retrieved_utc": "2026-10-02T21:50:12.024604+00:00",
+      "bytes": 681848,
+      "licence": null,
+      "licence_null_reason": "Preserve captured ESO2024 manuscript header with2007v1 watermark; no new paper version or redistribution grant inferred.",
+      "conditioning": "Original pages2/4/5/6 checked through rehashed existing renders; Eq1, regularization, historical support and empirical residual-error formulas."
+    },
+    {
+      "id": "brout-2112-03864v2-html",
+      "url": "https://arxiv.org/html/2112.03864v2",
+      "sha256": "5e042f44faa5204afb941c9e8914d6920409a67429673bc8ac01e6c990265805",
+      "role": "html",
+      "retrieved_utc": "2026-10-01T15:05:31.566601+00:00",
+      "bytes": 426034,
+      "licence": "CC BY 4.0 as printed in original HTML licence label",
+      "conditioning": "Selected IV.1/IV.3 and VI.p8 original prose/math: B21 retraining and downstream systematic propagation; correlated zeropoints versus uncorrelated wavelength shifts are source modelling choices."
+    },
+    {
+      "id": "brout-2112-03864v2-pdf",
+      "url": "https://arxiv.org/pdf/2112.03864v2",
+      "sha256": "022ae1a5fa3ceda36caac295c1a4cc0b1ef4cab28f818564c62e353e1750ae74",
+      "role": "pdf",
+      "retrieved_utc": "2026-10-01T15:05:34.717527+00:00",
+      "bytes": 1431273,
+      "licence": null,
+      "licence_null_reason": "Original HTML prints CC BY4.0; PDF-specific grant not separately inspected this turn.",
+      "conditioning": "Pinned v2 original bytes rehashed as source identity; no fresh PDF visual coverage or independent numerical reproduction."
+    },
+    {
+      "id": "Pantheon+_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/SALT2.INFO",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/SALT2_B21trained_withsys/SALT2.MODEL000/SALT2.INFO",
+      "sha256": "6cb38b88565eec41cb4e18eb7a973a58da02223af0f1579d6ead37f9ec330dfa",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-03T00:35:41.624208+00:00",
+      "bytes": 513,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "Repository licence not inspected; no raw redistribution permission inferred.",
+      "conditioning": "Complete17-line configuration only; range/color/interpolation/error-floor literals do not decode full MODEL000 grids or specify a native likelihood."
+    },
+    {
+      "id": "Pantheon+_Data/3_SALT2/README",
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/3_SALT2/README",
+      "sha256": "7b14123f47ea879afe59b68de23983fd93376392bc9c58c91bc487af44c8468a",
+      "role": "pinned_release_asset",
+      "retrieved_utc": "2026-10-02T01:15:40.971332+00:00",
+      "bytes": 373,
+      "pinned_revision": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "licence": null,
+      "licence_null_reason": "Repository licence not inspected; no raw redistribution permission inferred.",
+      "conditioning": "Complete short README: nominal MODEL000, nine systematic variants and trainopts/fitopts roles. Its broad nine-correlated-realizations wording is less specific than Brout IV.3/VI."
+    }
+  ],
+  "limitations": [
+    "Guy Sec2.1 permits basis dependence in poorly constrained regions. Sec4.2 regularization introduces estimator bias, assessed by author simulations based on SALT; the reported0.005mag K-correction criterion is conditional, not an independent accuracy certificate. Historical10x120/10x60 basis sizes are not released grid dimensions.",
+    "Guy Sec3 selection requires premaximum sampling, excludes1991bg-like SNe and uses the fitted model to assess host contamination. Spectra share light-curve calibration and host subtraction; exact event-level training/evaluation overlap, selection probabilities and cross-covariances remain unchecked.",
+    "Guy Sec6 uses jackknife retraining because a separate large validation sample was unavailable. Remaining residuals are still correlated; independent residual treatment assumes temporal correlation shorter than typical sampling. Full component covariance is not a measured joint detector or event covariance.",
+    "Original Guy PDF6/HTML S6.Ex8 prints H0,i multiplying both M0 and M1 in the residual normalization equation, while the preceding variance expression uses H0/H1 separately and Sec4.3 gives different basis sizes. The literal indices are preserved; an executable basis reconciliation is unresolved.",
+    "Brout IV.3 jointly propagates training/fitting perturbations to distance covariance; VI.p8 says filter shifts were omitted from the simultaneous calibration fit and varied in training without zeropoint correlations. This model choice does not establish zero physical cross-covariance. Source-added training, CALSPEC and CSP systematics remain conditional choices.",
+    "The release README's broad nine-correlated-realizations wording is kept distinct from the paper's correlated-zeropoint/uncorrelated-wavelength split. Nine variants are systematic analysis perturbations. Paper sigma_k=1/3, historical ALL.fitopts0.3 and nonzero shift_0 remain distinct; nominal MODEL000 mapping is not inferred from suffix0.",
+    "SALT2.INFO options, SIGMA_INT0.106 and error-floor literals do not establish units/distributions of released error maps, a Gaussian optical state, physical reddening, held-out accuracy or a complete measured noise law. Absolute flux normalization, color-law version mapping and all unexamined template/reader bodies remain open.",
+    "Only listed original-source passages and one historical coverage figure are checked. Full training tables, standards/filter bodies, cited training sources and unlisted figures/appendices remain unexamined."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}
