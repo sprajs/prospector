@@ -112,7 +112,7 @@
   "source_contract_binding": {
     "contract_id": "next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v3",
     "path": "register/contracts/next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v3.json",
-    "sha256": "cafb6c7907a855decbe9966bdb10cc70d16ee065890a745a2d3cbf2381ab64c0"
+    "sha256": "52c01a6309ecc51e9f125a099e4c78d00b3b9e58709988499dbfbe2d80f3248e"
   },
   "accepted_claim_ids": [
     "NEXT14-v3-MB-original-signs",
@@ -149,6 +149,10 @@
     {
       "role": "final_v3_handoff_amendment",
       "sha256": "997c86c077d32cb4af9db54f703640a20d7c0b62ba4d3586029b60d8331463ca"
+    },
+    {
+      "role": "exact_public_presentation_amendment_source_ledger",
+      "sha256": "6f947d50b76773b8657b89a0cbe215ad4aa5a3fa9dfe85b004dbaeb005bae3b3"
     }
   ],
   "projection_kind": "Compact exact-byte projection of frozen FINAL v3 audit; no new source campaign or promotion. Public slug maps separate selected private v3 method/request artifacts, not a revised physical/source39cf model.",
@@ -164,5 +168,26 @@
     "Conditional source/method/caller-specification acceptance only; original physical/start39cf and canonicalv2/de5 acceptance unchanged.",
     "All seven numerical/compiled/installed/physical gates remain open; homogeneous proofs do not certify forced/discrete/all-peer/forward stability.",
     "Targeted original locators only; no new full/Luna read, paper-stage/graph promotion, numerical job or inference. Unread full-paper queue remains unchanged."
+  ],
+  "presentation_amendments": [
+    {
+      "amended_utc": "2026-10-03T04:57:51.095103+00:00",
+      "kind": "presentation_only_exact_byte_binding_update",
+      "source_ledger_sha256": "6f947d50b76773b8657b89a0cbe215ad4aa5a3fa9dfe85b004dbaeb005bae3b3",
+      "previous_contract_sha256": "cafb6c7907a855decbe9966bdb10cc70d16ee065890a745a2d3cbf2381ab64c0",
+      "amended_contract_sha256": "52c01a6309ecc51e9f125a099e4c78d00b3b9e58709988499dbfbe2d80f3248e",
+      "previous_review_sha256": "d71d3380c22e6b649cc9ab679ea8149326faa673027b1869a24ed328b972f2d0",
+      "presentation_runtime_companion_sha256": "c3537b7c75120ab7ae7c94712f6db8c4f778c6968c07eb43f025ecdbf2fabedf",
+      "presentation_model_confirmation": {
+        "runtime_session_id": "01a0fec1-578e-7712-ba9d-1707e70bb91c",
+        "turn_id": "01a10018-f522-7a72-975b-acddff618280",
+        "model": "gpt-6.1-sol",
+        "effort": "xhigh",
+        "evidence_kind": "runtime_turn_context",
+        "actual_backend_identity": null
+      },
+      "scientific_runtime_companion_sha256_unchanged": "12a5d6535c5480ebd5dafbc89f8f97706e7c46ba61e308ad341cc4b3f378dd5d",
+      "decision": "Authorized private bookkeeping/workflow presentation cleanup only; original scientific runtime, packet, sources, claims, coverage and open gates unchanged."
+    }
   ]
 }

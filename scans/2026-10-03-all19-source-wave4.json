@@ -233,5 +233,19 @@
     "Raw PDFs/HTML/FITS/arrays/worker transcripts and temporary aids remain local and ignored inside Prospector. Public records contain metadata, primary links/hashes and short original notes only.",
     "Selected acquisition, static proofs and structural validation do not establish historical product equivalence, physical law, implementation/resource bounds, ordinary sigma8, CMB or scientific/numerical qualification.",
     "Consumer source acceptance, implementation/numerical acceptance, final PR review, latest integrated-head CI, exact-main CI and same-Site publication remain separate gates. No numerical experiments, external communication beyond authorized coordination, schedules or endless crawl."
+  ],
+  "presentation_amendments": [
+    {
+      "role": "FD_and_acoustic_public_details_only",
+      "acceptance_sha256": "5643d1bf39430ecef928030cb3305924c24d21c8f30e93a7789cf1237df9328e",
+      "copy_receipt_sha256": "eeacdd6ea3713a91b6efb9f2e3150f6fe8a3dccf6bced7424ff6e1f07a4aa04e",
+      "scope": "Four agreed public text pointers plus review bindings/additive presentation provenance. Original scientific packets/runtime/source claims, closures, readcoverage and all gates unchanged; old projections preserved."
+    },
+    {
+      "role": "BOSS_public_details_only",
+      "acceptance_sha256": "6c9a58c76f5639e7991f79ec0ec60c1d586b3ac1a3bf897dbcb1f9fcd0583114",
+      "copy_receipt_sha256": "8f7ad3373619986ecd83a68b47c9eec41049ebb3ceaf8da698bd617cf062e0b3",
+      "scope": "Remove final queue-workflow sentence in contract/review limitation8; update hash binding only. Original source packet, claims, coverage, rights and qualifications preserved."
+    }
   ]
 }

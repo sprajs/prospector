@@ -84,7 +84,7 @@
     "Formal notes are incomplete on RSD/AP/selection/LOS physics. Printed Eq2 Fourier normalization/measure, Eq5 triangle count normalization, p3 linear-bin units, Eq9 likelihood label, Eq14 internal operator and Table1 Patchy sigma8=8288 issues remain literal. No silent repair or author-code equivalence is accepted.",
     "Source claims of independent sky-cap/sample likelihoods and arbitrary high-k validity are reported assertions, not verified independence or scientific qualification. Same galaxy, random, fiducial, mask and mock ancestry links power-only RSD, P+B RSD and post-reconstruction BAO; cross-analysis covariance remains unknown. Linear/log P are alternative reductions, not independent samples.",
     "Source-specific redistribution licences are unresolved. Citation requests, as-is disclaimers, successful public GETs and a failed connector materialization establish no licence or licence denial. Only metadata, links and original short review notes may be public; raw sources stay local.",
-    "Asset-only targeted review; navigation association to existing1606.00439v2 does not review that paper anew. Zero Luna/full-paper reads, promotions, experiments, fits, compiler jobs, native execution or numerical/scientific acceptance. Existing pending queues and earlier source gates remain intact."
+    "Asset-only targeted review; navigation association to existing1606.00439v2 does not review that paper anew. Zero Luna/full-paper reads, promotions, experiments, fits, compiler jobs, native execution or numerical/scientific acceptance."
   ],
   "qualification": {
     "numerically_executed": false,

@@ -68,7 +68,7 @@
   "source_contract_binding": {
     "contract_id": "next14-ideal-photon-cold-baryon-cdm-lambda-acoustic-v1",
     "path": "register/contracts/next14-ideal-photon-cold-baryon-cdm-lambda-acoustic-v1.json",
-    "sha256": "6ac7c2cda97cfe7689cfd06ee3d184d84d3c538a3349db00f44d0a856320aadd"
+    "sha256": "befd902e439450bfbacd19dda2f853b743961cfae640766ff18430065785dc59"
   },
   "accepted_claim_ids": [
     "IA-S01-MB64-photon-signs",
@@ -110,6 +110,10 @@
     {
       "role": "source_rehash",
       "sha256": "9bcb375ab75cf69d62df10f99fe95786365040a42529258c92bd47a8a13ae8f5"
+    },
+    {
+      "role": "exact_public_presentation_amendment_source_ledger",
+      "sha256": "6f947d50b76773b8657b89a0cbe215ad4aa5a3fa9dfe85b004dbaeb005bae3b3"
     }
   ],
   "corrections": [
@@ -121,11 +125,32 @@
     "Selected original source equations and conditional reader algebra/protocol specification only; this distinct ideal photon/cold-baryon closure does not replace the accepted collisionless FD model.",
     "All seven implementation/control/installed/numerical/physical gates remain open; helper-self-refusal is unsupported and actual background/conservation forcing must be charged.",
     "Cold baryon zero pressure is additional closure. No finite opacity, recombination/drag history, diffusion, photon hierarchy/polarization, CMB projection, full standard transfer, ordinary full-support sigma8, observational law or inference.",
-    "No numerical/source-array/test/compiler job or native caller. Targeted original pages only, zero new full/Luna reads; paper-stage/full-reading queue and graph/prospect promotion untouched."
+    "The acoustic consumer and two-row request are specifications; no installed native caller or numerical qualification is established."
   ],
   "qualification": {
     "numerically_executed": false,
     "scientifically_qualified": false,
     "full_paper_review": false
-  }
+  },
+  "presentation_amendments": [
+    {
+      "amended_utc": "2026-10-03T04:57:51.095103+00:00",
+      "kind": "presentation_only_exact_byte_binding_update",
+      "source_ledger_sha256": "6f947d50b76773b8657b89a0cbe215ad4aa5a3fa9dfe85b004dbaeb005bae3b3",
+      "previous_contract_sha256": "6ac7c2cda97cfe7689cfd06ee3d184d84d3c538a3349db00f44d0a856320aadd",
+      "amended_contract_sha256": "befd902e439450bfbacd19dda2f853b743961cfae640766ff18430065785dc59",
+      "previous_review_sha256": "f825b69fc111e55a46117758c371676147bc93dc779b2994ac17747dc15a5dea",
+      "presentation_runtime_companion_sha256": "c3537b7c75120ab7ae7c94712f6db8c4f778c6968c07eb43f025ecdbf2fabedf",
+      "presentation_model_confirmation": {
+        "runtime_session_id": "01a0fec1-578e-7712-ba9d-1707e70bb91c",
+        "turn_id": "01a10018-f522-7a72-975b-acddff618280",
+        "model": "gpt-6.1-sol",
+        "effort": "xhigh",
+        "evidence_kind": "runtime_turn_context",
+        "actual_backend_identity": null
+      },
+      "scientific_runtime_companion_sha256_unchanged": "12a5d6535c5480ebd5dafbc89f8f97706e7c46ba61e308ad341cc4b3f378dd5d",
+      "decision": "Authorized private bookkeeping/workflow presentation cleanup only; original scientific runtime, packet, sources, claims, coverage and open gates unchanged."
+    }
+  ]
 }

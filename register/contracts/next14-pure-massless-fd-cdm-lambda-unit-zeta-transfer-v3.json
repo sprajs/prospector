@@ -36,7 +36,7 @@
     }
   ],
   "limitations": [
-    "Additive public projection of selected method3fd9154dc4fab24c75fb5f95a8991e855021f8b41a7890e044097b56d5d6598c and requestdddec336b4e25d4f7a722e1b3b3fdd9f5c4f416e5deb4c03525618b24b871883. Original39cf physical/start proposal, de5 source acceptance and canonical v2 SHA0610d5bc33e5b26122e5de782d5ca0b2a8c0874d25cee11d123e5a8ca7837f8a remain unchanged.",
+    "The centered angular and trace methods have conditional acceptance as reader derivations. The original physical model and finite-start prescription retain their separate source acceptance and remain unchanged.",
     "Pure explicit exactly mass-zero FD radiation with positive CDM and smooth nonnegative Lambda only; supplied photons, baryons and unidentified massless fractions are zero. Retain original ordered mass/temperature/statistical-weight tuples, background status/method/units and wide normalization/accessor errors. No species name or role field is invented.",
     "Centered angular/Gram/scaled-state/damping formulas, asymptotic unit-zeta mapping and nominal-domain bounds are reader-derived. Selected kappa2 and the synthetic tuple H0=70 km/s/Mpc, CDM fraction0.3 and FD tuple(0,0.0002 eV,2) are chosen inputs, not author facts, measurements or an observed cosmology.",
     "Damping uses original E; the production comoving Hamiltonian is3(E-W). Both original residual equations are affected. Original trace correction and original constraint/conservation gates remain; modified-trace agreement alone cannot pass them.",
@@ -44,7 +44,7 @@
     "Retain the original ideal projected witness and original Z through actual-Gram translation and hybrid readout. Projected-leading7/19 differs from regular1/4; no regular-start substitution, constraint reset, finite-zeta renormalization or inferred growing-mode purity. Damping cannot remove constraint-satisfying initial modes.",
     "The homogeneous continuum proofs cover two residual modes only. Zero k has a separate regular-limit proof and is a mathematical fixture outside the caller band. Forced, finite-stage, all-peer-mode and forward stability, undamped precision feasibility and resource adequacy remain unqualified.",
     "Per-output native and reference contributions, correction/kappa/start/Gram/background/age effects and all attempted/rejected/refused work remain within original whole budgets and caps. Bounded external stage ledgers and refusal snapshots are proposed obligations, not existing storage or earned cap admission.",
-    "The caller and new SDK surface are specifications, not installed or compiled evidence. Ordinary full-support sigma8, massive perturbations, photon/baryon/opacity physics, primary CMB, observations and inference are outside this scope. No paper-stage or graph promotion."
+    "The caller and new SDK surface are specifications, not installed or compiled evidence. Ordinary full-support sigma8, massive perturbations, photon/baryon/opacity physics, primary CMB, observations and inference are outside this scope."
   ],
   "qualification": {
     "numerically_executed": false,
