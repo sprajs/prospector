@@ -82,3 +82,5 @@ owner's standing authorization, after checking the current head and base.
 Prospector owns literature and prospects. [Reproducible](https://github.com/sprajs/reproducible)
 owns accepted experiments and results; [Irreducible](https://github.com/sprajs/irreducible)
 owns compiled science.
+
+Shared datasets and private evidence use the [common storage layout](docs/shared-data.md).
