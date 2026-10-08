@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Versioned experiment findings and bounded literature priorities",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "feedback_id", "programme_id", "recorded_utc", "supersedes", "evidence", "findings", "priorities", "qualification"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "feedback_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*-v[1-9][0-9]*$"},
+    "programme_id": {"type": "string", "minLength": 1},
+    "recorded_utc": {"type": "string", "format": "date-time"},
+    "supersedes": {"type": ["string", "null"]},
+    "evidence": {"type": "array", "minItems": 1, "items": {
+      "type": "object", "additionalProperties": false,
+      "required": ["evidence_id", "repository", "revision", "path", "sha256", "role"],
+      "properties": {
+        "evidence_id": {"type": "string", "minLength": 1},
+        "repository": {"enum": ["sprajs/reproducible", "sprajs/irreducible", "sprajs/prospector"]},
+        "revision": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "role": {"type": "string", "minLength": 1}
+      }
+    }},
+    "findings": {"type": "array", "minItems": 1, "items": {
+      "type": "object", "additionalProperties": false,
+      "required": ["finding_id", "kind", "statement", "evidence_ids", "limits"],
+      "properties": {
+        "finding_id": {"type": "string", "minLength": 1},
+        "kind": {"enum": ["numerical_diagnostic", "source_mismatch", "probe_coverage", "conditional_fit", "missing_physics", "negative_result"]},
+        "statement": {"type": "string", "minLength": 1},
+        "evidence_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "limits": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+      }
+    }},
+    "priorities": {"type": "array", "minItems": 1, "items": {
+      "type": "object", "additionalProperties": false,
+      "required": ["lane", "target_kind", "target_id", "finding_ids", "next_action", "scope", "stage"],
+      "properties": {
+        "lane": {"type": "string"},
+        "target_kind": {"enum": ["paper", "design", "prospect"]},
+        "target_id": {"type": "string"},
+        "finding_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "next_action": {"type": "string", "minLength": 1},
+        "scope": {"type": "string", "minLength": 1},
+        "stage": {"enum": ["source_review", "candidate_revision", "consumer_review", "source_development"]}
+      }
+    }},
+    "qualification": {"type": "object", "additionalProperties": false,
+      "required": ["scientifically_qualified", "changes_paper_stages", "limits"],
+      "properties": {
+        "scientifically_qualified": {"const": false},
+        "changes_paper_stages": {"const": false},
+        "limits": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

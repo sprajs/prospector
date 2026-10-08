@@ -11,6 +11,7 @@ source identity and decisions so Codex can continue without a transcript.
 | `register/prospects/<id>.json` | Baseline cosmologies, modifications, scope and candidate investigations |
 | `register/citations.json` | Explicit bibliographic links and source evidence |
 | `register/searches/<id>.json` | Exact archive windows, failures, per-hit dispositions and refresh reasons |
+| `register/feedback/<id>-vN.json` | Immutable experiment findings, exact consumer evidence pins and bounded source priorities |
 | `register/bibliometrics/<snapshot>.json` | Provider-specific citation counts and verified author visibility snapshots |
 | `register/reviews/<id>.json` | Sol source checks, corrections, overlap and limits |
 | `register/contracts/<id>.json` | Located source requirements, pinned reduced/code assets and unresolved gates |
@@ -138,6 +139,18 @@ Readiness is `needs_review`, `blocked` or `ready_for_consumer_review`. The last
 requires Sol review, no blockers/unknowns and a separate consumer-validated request
 with digest and inspected revision. It still needs Reproducible acceptance.
 Blocked concepts keep executable request null; runs/qualification belong to consumers.
+
+Experiments can return versioned findings through `register/feedback/`. Each
+finding pins its consumer repository revision, evidence path and byte digest,
+states its conditioning and limits, and names a bounded next action against a
+registered paper, design or prospect. `crawl.py status` shows active receipts
+alongside the preserved queue. Priority list order is an explicit work choice,
+not a scientific score or a claim of independent evidence. New findings can
+supersede an earlier receipt in the same programme; keep both immutable files.
+The validator checks identities, digest syntax, chronology and references; it
+does not fetch external evidence or verify its contents. Integration must inspect
+the pinned evidence. Feedback never changes reading stages, promotes a model or
+authorizes execution. Candidate/source revisions still need their separate gates.
 
 A dedicated Reproducible native adapter is a separate route from Irreducible's
 CLI schema. Its accepted request snapshot uses

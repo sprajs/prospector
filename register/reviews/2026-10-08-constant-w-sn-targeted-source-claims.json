@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-08-constant-w-sn-targeted-source-claims",
+  "review_kind": "targeted_source_claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "high",
+  "agent_id": "/root/source_audit",
+  "actual_backend_identity": null,
+  "model_confirmation": {
+    "model": "gpt-6.1-sol",
+    "effort": "high",
+    "evidence_kind": "coordinator_observed_collaboration_spawn_agent",
+    "launch_arguments": {
+      "task_name": "source_audit",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "fork_turns": "none"
+    },
+    "launch_return": {
+      "task_name": "/root/source_audit"
+    },
+    "actual_backend_identity": null,
+    "limits": "Tool exposes canonical agent ID only; backend UUID/session identity not exposed."
+  },
+  "reviewed_utc": "2026-10-08T22:14:15Z",
+  "packet_sha256": "1e12eee821412de18d1d504e9f347f8e685fc1974e1a3c957216aa75e85dbcf8",
+  "reviewed_papers": [
+    "arxiv:2503.14738v3",
+    "arxiv:2202.04077v2"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:2503.14738v3",
+      "source_hashes": {
+        "html": "782d7b25d5a6d7195e0dc0cfdab029e49a4b05cff8263e18f843e82e9c054c49"
+      },
+      "coverage": {
+        "main_text": "Targeted selected claims only; zero full reads",
+        "checked_locators": [
+          "S1.E1,E4,E5,EGx2(Eq6),E8,E9,E10",
+          "S1.p6.3 constant-w name and wa=0",
+          "S1.p8.1 BAO uncalibrated ruler and external BBN/CMB conditions",
+          "S5 cosmological inference and prior-source reference38 Table2",
+          "S3.T4 covariance compression/navigation; existing baseline audit owns full13 released axes"
+        ],
+        "unread": "Remaining main text, scientific plots and appendices not read.",
+        "figures": "Original HTML equations checked; no plot images inspected."
+      }
+    },
+    {
+      "paper_id": "arxiv:2202.04077v2",
+      "source_hashes": {
+        "html": "7580cd8300bf5bf53119735a06c94f7240a7426c37a4f2e8fdbf9915905ecb38"
+      },
+      "coverage": {
+        "main_text": "Targeted selected claims only; zero full reads",
+        "checked_locators": [
+          "S2.E9–S2.E15 and S2.SS3.p1–p5: covariance quadratic, distances, calibrated residuals, M/H0 anchor statement and source sampler",
+          "S2.I1.i4.p1.m2: printed evolving-w expression checked, retained as source inconsistency",
+          "Source caller/README exact rows, frames, joint covariance"
+        ],
+        "unread": "Remaining main text, scientific plots and appendices not read.",
+        "figures": "Original HTML equations checked; no plot images inspected."
+      }
+    }
+  ],
+  "accepted_records": {
+    "idea_ids": [
+      "constant-w-smooth-fluid-source-subclass"
+    ],
+    "design_ids": [
+      "candidate-constant-w-smooth-fluid-v1"
+    ],
+    "prospect_ids": [
+      "constant-w-smooth-fluid-comparison"
+    ]
+  },
+  "corrections": [
+    {
+      "kind": "source_print_inconsistency",
+      "paper_id": "arxiv:2202.04077v2",
+      "locator": "HTML S2.I1.i4.p1.m2",
+      "display_summary": "Printed w=w0+wa(1+z) differs from DESI/CLASS CPL; no repair adopted and wa0 unaffected."
+    },
+    {
+      "kind": "upstream_runtime_ambiguity",
+      "display_summary": "Released SN covariance caller returns raw B; inherited Cosmosis uses runtime-dependent allclose/hermitian pseudoinverse branch with lower-triangle semantics, not pair averaging. Exact original NumPy/Cosmosis options remain unknown; preserve original refusal and S_hat working repair."
+    }
+  ],
+  "limitations": [
+    "Both papers remaining main text,appendices,plots and scientific results not fully read; all ordinary reading/review stages remain unchanged.",
+    "Cosmosis author execution runtime/version, original fit NumPy/BLAS, parameter priors/options and released M inference not established.",
+    "PPF primary paper0808.3125, DESI prior-source ref38Table2, full CLASS closures/numerical implementation and nonlinear validity not audited.",
+    "Planck paper original selected likelihood/calibration source not reacquired in this worker; inherited already-qualified boundaries only.",
+    "Scientific source definition acceptance only; exact consumer numerical acceptance and final review remain independent gates.",
+    "No historical likelihood-runtime or fixed-point numerical claim verified in this targeted source audit."
+  ],
+  "reviewed_source_assets": [
+    {
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/5_COSMOLOGY/cosmosis_likelihoods/Pantheon%2BSH0ES_cosmosis_likelihood.py",
+      "sha256": "345fac3781a5cb930b95e91c1c07eb17dcf99b441703bb5e449477519240a59d",
+      "bytes": 4573,
+      "id": "sn-caller",
+      "locator": "Lines39–88: released row selection and raw unchanged covariance principal submatrix; residual redshift/frame convention."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/README",
+      "sha256": "e2b0d262757f01c1794a938c78d32600a21e289b2a0320e5c660c4c6fc9aa87e",
+      "bytes": 4056,
+      "id": "sn-readme",
+      "locator": "Lines1–18: full covariance, duplicate/host dependence; released column definitions."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/explanatory.ini",
+      "sha256": "49fd6355685adc11dca2f406e23a6535b973e708efe9d3820f3aad46fdd061df",
+      "bytes": 66152,
+      "id": "class-explanatory",
+      "locator": "Lines543–583: CLP,w0=-0.9,wa0,cs2=1,use_ppf=yes,c_gamma0.4."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/source/background.c",
+      "sha256": "00275b2c1e864571353745932384aeaa4fb7bf982e786d1aeb9a272cbf3b79df",
+      "bytes": 118877,
+      "id": "class-background",
+      "locator": "Lines664–740: equation-of-state and background integration."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/source/input.c",
+      "sha256": "78326f1f557b22491655f0437aa1eb94f152d6c24c896ebde9eccfeebecbe463",
+      "bytes": 238121,
+      "id": "class-input",
+      "locator": "Lines3179–3240 and3250–3292: closure and input controls; omit Omega_fld."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/numpy/numpy/v2.2.6/numpy/linalg/_linalg.py",
+      "sha256": "40d795507d435d07bb5f9620a7e2d5f56d6d37bb1bc1b84c5c841b44d3d8257d",
+      "bytes": 114680,
+      "id": "numpy-2.2.6-linalg",
+      "locator": "Lines2129,2209–2241: pinv rcond1e-15;1778–1793: hermitian SVD to eigh, default lower triangle at1486."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/numpy/numpy/v2.2.6/numpy/_core/numeric.py",
+      "sha256": "bec88470c8a0e101f031ff473f999aa8e845b1b96a19b87c02d138717d3c0fbc",
+      "bytes": 81726,
+      "id": "numpy-2.2.6-numeric",
+      "locator": "Line2244 allclose default rtol1e-5,atol1e-8."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/source/perturbations.c",
+      "sha256": "5e2a48fbed1d012fb83b37a5c574f46bc2f074191268010476d0d82682a45a8e",
+      "bytes": 422469,
+      "id": "class-perturbations",
+      "locator": "Lines7180–7235: fluid versus approximate PPF nonzero perturbations."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/joezuntz/cosmosis/4e1d640ce68ee433d391adb4a8d83942fd6cd43f/cosmosis/gaussian_likelihood.py",
+      "sha256": "e91964def754709e80154aa25278ab988bf0345dcc5d41b9fc939718d032c973",
+      "bytes": 14009,
+      "id": "cosmosis-2022-gaussian",
+      "locator": "Lines8–13: runtime hermitian flag;104–116: allclose/pinv or inverse;168–207 scalar quadratic."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/joezuntz/cosmosis/238df945450ceb56241a89569f1092956d3df5d6/cosmosis/gaussian_likelihood.py",
+      "sha256": "6732f2f5859dba007e7110333d827338a1567f5984f0243ef7b6826de97df3a0",
+      "bytes": 14797,
+      "id": "cosmosis-current-gaussian",
+      "locator": "Lines102–119: allclose/hermitian pinv and TypeError fallback, else inverse."
+    }
+  ],
+  "source_print_findings": [
+    {
+      "paper_id": "arxiv:2202.04077v2",
+      "locator": "HTML S2.I1.i4.p1.m2",
+      "literal_tex": "w=w_{0}+w_{a}\\,(1+z)",
+      "source_sha256": "7580cd8300bf5bf53119735a06c94f7240a7426c37a4f2e8fdbf9915905ecb38",
+      "kind": "source_print_inconsistency",
+      "interpretation": "Contrasts with CPL DESI S1.E9 w(a)=w0+wa(1-a) and pinned CLASS CLP source; literal printed expression diverges at largez rather than tendingw0+wa. Historical author runtime intent unresolved; do not infer which expression their fits used. wa=0 subclass unaffected."
+    }
+  ],
+  "accepted_draft_bindings": [
+    {
+      "path": "designs/candidate-constant-w-smooth-fluid-v1.json",
+      "sha256": "107f06117c2006a577e948d92ea823c657e88fb0219044f0323dd06c34bf5dbe",
+      "id": "candidate-constant-w-smooth-fluid-v1"
+    },
+    {
+      "path": ".work/source-audit-20261008/draft-idea.json",
+      "sha256": "4df521497157d6efb476781ff5db1764f2cd099d2b2b21c6e0f853f9688aa7b2",
+      "id": "constant-w-smooth-fluid-source-subclass"
+    },
+    {
+      "path": ".work/source-audit-20261008/draft-prospect.json",
+      "sha256": "614c74eaafd4fd872e8d20be38a5dac9a7d88399a5f7cf2a55a7c6016fcc1a2c",
+      "id": "constant-w-smooth-fluid-comparison"
+    }
+  ],
+  "source_conclusions": {
+    "schema": "source-code-findings/v1",
+    "source_audit_sha256": "1e12eee821412de18d1d504e9f347f8e685fc1974e1a3c957216aa75e85dbcf8",
+    "sn": {
+      "caller": "Pinned caller345fac3781a5cb930b95e91c1c07eb17dcf99b441703bb5e449477519240a59d lines39–88 selects zHD>0.01 OR calibrator; constructs full principal B by sequential float reads and returns it unchanged.",
+      "historical_parent": "Cosmosis4e1d640ce68ee433d391adb4a8d83942fd6cd43f latest Gaussian file change before release commit date2022-12-21 (not evidence release authors ran this version). Lines8–13 use hermitian flag if packaging imports and numpy.version>1.17.0;104–116 allclose(B,B.T) and flag select pinv(B,hermitian=True); otherwise inv(B). init39–61 default include_normfalse and kindcubic; cholesky in non-likelihood-only path supports simulation, does not set scalar score precision;168–207 scalar quadratic.",
+      "current_parent": "Cosmosis238df945450ceb56241a89569f1092956d3df5d6 lines102–119 allclose->hermitian pinv, TypeError->ordinary pinv, else inverse. No half-sum averaging in either examined source.",
+      "numpy_semantics": "NumPy2.2.6 numeric.py2244 allclose defaults rtol1e-5,atol1e-8; _linalg.py2129,2209–2241 pinv default rcond1e-15;1778–1793 hermitian SVD calls eigh(a), defaultUPLO=L at1486; stored lower triangle defines Hermitian input. Modes |lambda|<=cutoff are zeroed. Positivity not checked upstream; rank/truncation and backend are unresolved until run.",
+      "faithful_alternative": "A NEW explicit official-cosmosis-lower-triangle-pinv target can follow these pinned source semantics after actual raw-byte allclose verification, NumPy/runtime pinning, cutoff/full-mode and positive-law admission and residual/interpolation/M conventions. It is not an average covariance and is not evidence for original historical fit runtime. A strict full-rank SPD native implementation may reproduce its scalar law only after proving no cutoff modes and source-comparison agreement. Never silently replace original exact-symmetry admission.",
+      "raw_inverse_branch": "If deliberately declared fallback inverse branch, scalar r^T B^-1 r uses Q=Sym(B^-1), with C_eff=Q^-1=S-A S^-1 A (S=(B+B^T)/2,A=(B-B^T)/2 when S SPD). C_eff differs from S and S_hat; source determinant(B) differs from determinant(C_eff). This is conditional algebra, not executed source intent.",
+      "repair": "S_hat RN-even exact-binary64 pair averaging is retained as released-sn-symmetric-working-profile/v1. It is a distinct repaired working target; upstream code does not authorize it as source-faithful likelihood.",
+      "interpretation": "For noncalibrators mu=5log10[(1+zHD)(1+zHEL)DA(zHD)/Mpc]+25; calibrators use CEPH_DIST; M shared. Retain all joint covariance, repeated occurrences and original order. Free-M degeneracy applies uncalibrated-only Hubble-flow sample; calibrated77-host rows allow H0 sensitivity when cosmology varies. Existing four identical ns means do not constitute H0 inference. Do not add SH0ES posterior H0 as independent data.",
+      "source_print_inconsistency": "Pantheon+ S2.I1.i4.p1.m2 prints w=w0+wa(1+z). It is not DESI/CLASS CPL w0+wa(1-a); do not adopt or silently repair. wa0 constant-w branch unaffected. Source Eq13 uses late radiation-free approximation; replacing it with full thermal CLASS is a declared mean-model extension, not paper literal reproduction."
+    },
+    "alternative": {
+      "scientific_identity": "Flat GR wCDM constant-w=-0.9,wa=0 source-defined subclass of DESI Eqs6,8–10, implemented using pinned CLASS CLP fluid and explicit PPF approximation; chosen control state, not source best-fit or scalar microphysical model.",
+      "source_equations": "w(a)=w0+wa(1-a); rho_DE(a)/rho_DE0=a^-3(1+w0+wa)exp[-3wa(1-a)]; constant-w yieldsa^-0.3. Flat H density closure retains thermal photons/UR and full evolving0.06eV relic, baryons/CDM.",
+      "class_inputs": {
+        "Omega_k": "0",
+        "Omega_Lambda": "0",
+        "Omega_scf": "0",
+        "Omega_fld": "OMIT from input, inferred by source closure",
+        "fluid_equation_of_state": "CLP",
+        "w0_fld": "-0.9",
+        "wa_fld": "0",
+        "cs2_fld": "1",
+        "use_ppf": "yes",
+        "c_gamma_over_c_fld": "0.4"
+      },
+      "locators": "explanatory.ini543–583;input.c3179–3240,3250–3292;background.c664–740;perturbations.c7180–7235 distinguishes true fluid from nonzero approximate PPF perturbations.",
+      "conditioning": "Retain declared CLASS reference full state input coordinates; H0-only DESI13 score/fit conditions omega_b,omega_cdm,Tcmb,mass/temperature/species,primordial,reionization,YHe/recombination etc. Recompute source closure and ruler as H0 changes. Fixed physical densities do not imply H0 cancellation.",
+      "priors": "A bounded H0 optimization domain is algorithm/domain conditioning, not an adopted source posterior prior. No w posterior or w significance. DESI actual SecV sampled multiple coordinates, CAMB/Cobaya and priors from reference38; those priors have not been audited/adopted. Planck scores separately use actual component/nuisance contracts and declared calibration term; yP/A_planck mapping and component internal priors remain unknown.",
+      "coverage": "DESI seven baseline samples13coordinates/full covariance; Planck primary Plik-lite TTTEEE+CommanderTT+SimAllEE only, no separate lensing likelihood. Lensed theory still required. SN faithful source remains separately blocked pending runtime/source-semantics admission. No combined posterior/evidence, no Hubble-tension resolution, no native CMB qualification."
+    },
+    "actual_original_covariance_newly_verified": false,
+    "full_reads": 0
+  }
+}

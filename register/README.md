@@ -1,6 +1,6 @@
 # Register
 
-71 paper versions · 23 ideas · 9 topics · 10 candidate prospects.
+71 paper versions · 24 ideas · 9 topics · 11 candidate prospects.
 
 [Open Prospector](https://prospector-cosmology.sprajs.chatgpt.site) · [Local map](map.html)
 
@@ -14,7 +14,7 @@
 | [Inhomogeneity, averaging and observers](topics/inhomogeneity.json) | 6 | 2 |
 | [Interactions, transitions and decays](topics/interacting-sectors.json) | 12 | 9 |
 | [Acceleration and reconstruction](topics/kinematics.json) | 4 | 2 |
-| [Late dark energy and unified histories](topics/late-dark-energy.json) | 19 | 10 |
+| [Late dark energy and unified histories](topics/late-dark-energy.json) | 20 | 11 |
 | [Measurements and calibration](topics/measurement-lineage.json) | 24 | 4 |
 | [Gravity and quantum cosmology](topics/modified-gravity.json) | 19 | 4 |
 
@@ -24,6 +24,7 @@ Topics are navigation groups. Membership does not establish equivalent physics.
 
 | Candidate cosmology | Baseline |
 | --- | --- |
+| [Flat constant-w fluid with CLASS PPF closure](prospects/constant-w-smooth-fluid-comparison.json) | Pinned external CLASS Lambda-CDM reference |
 | [Scalar early energy](prospects/ede-fixed-endpoint-ruler.json) | ΛCDM |
 | [Full ΛCDM reference](prospects/lcdm-baseline-reference-audit.json) | Planck 2018 base ΛCDM |
 | [Conditional massless background and BAO](prospects/lcdm-massless-conditional-comparison.json) | Planck base ΛCDM comparison |
@@ -43,6 +44,7 @@ Combined models require compatibility checks before promotion.
 - [Approximate expansion matching does not transfer external cosmological fits](ideas/background-match-does-not-transfer-fit-evidence.json)
 - [BAO distances relative to the acoustic ruler](ideas/bao-compressed-relative-ruler.json)
 - [Constant coupling retains a percent-scale scalar tracking residue](ideas/constant-coupling-scalar-residual-floor.json)
+- [Constant-w fluid with declared CLASS PPF closure](ideas/constant-w-smooth-fluid-source-subclass.json)
 - [Dark-Higgs-mediated massive-vector scattering gives a separate SIDM candidate](ideas/dark-higgs-vector-sidm-candidate.json)
 - [Trace spin source and photon prescription must close before a duality signal](ideas/frenkel-trace-and-maxwell-duality-closure.json)
 - [Gauss–Bonnet benchmark and stability must agree with one fixed action](ideas/gauss-bonnet-minimum-and-stability-consistency.json)
@@ -148,6 +150,7 @@ Combined models require compatibility checks before promotion.
 | Design | Readiness |
 | --- | --- |
 | [Bounded shared-charge H/He singlet history](../designs/candidate-bounded-shared-charge-hhe.json) | blocked |
+| [Flat constant-w fluid with CLASS PPF closure](../designs/candidate-constant-w-smooth-fluid-v1.json) | needs_review |
 | [DESI DR2 full compressed-vector contract](../designs/candidate-desi-dr2-full-compression-contract.json) | blocked |
 | [EDE fixed-endpoint sound-horizon response](../designs/candidate-ede-fixed-endpoint-ruler.json) | blocked |
 | [Gauss–Bonnet minimum and stability audit](../designs/candidate-gauss-bonnet-minimum-and-stability-audit.json) | blocked |
@@ -252,5 +255,7 @@ Source checks and structural validation do not establish independent reproductio
 - [2026-10-03-sdss-run5566-legacy-calibration-source-claims](reviews/2026-10-03-sdss-run5566-legacy-calibration-source-claims.json): CurrentphotoFieldHTML25 compositePSFsecondterm lacks exponential; expression/repair outsideacceptedclaims. Sourceunitlabels stillchecked; no numericalPSFequivalence.
 - [2026-10-03-sdss-run5566-legacy-calibration-source-claims](reviews/2026-10-03-sdss-run5566-legacy-calibration-source-claims.json): 5.04/DR7photo/currentframe/c447SMPv8 histories keptdistinct. Existingcoordinate/unit/exposure/covariance gaps retained; HST is no substitute.
 - [2026-10-03-sdss-run5566-legacy-calibration-source-claims](reviews/2026-10-03-sdss-run5566-legacy-calibration-source-claims.json): Generic 'sky fields use nmgy' wording narrowed to exact selected sky_psp/sky_frames/sky_frames_sub/sigPix names. Separate skySig magnitude/fractional-error wording is not silently treated as nmgy. No numerical value or inference qualification added.
+- [arxiv:2202.04077v2](reviews/2026-10-08-constant-w-sn-targeted-source-claims.json): Printed w=w0+wa(1+z) differs from DESI/CLASS CPL; no repair adopted and wa0 unaffected.
+- [2026-10-08-constant-w-sn-targeted-source-claims](reviews/2026-10-08-constant-w-sn-targeted-source-claims.json): Released SN covariance caller returns raw B; inherited Cosmosis uses runtime-dependent allclose/hermitian pseudoinverse branch with lower-triangle semantics, not pair averaging. Exact original NumPy/Cosmosis options remain unknown; preserve original refusal and S_hat working repair.
 
 [Scan receipts](../scans/) · [Continuation queue](../state.json) · [Record conventions](../docs/records.md)

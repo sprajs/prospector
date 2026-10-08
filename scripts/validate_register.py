@@ -91,6 +91,8 @@ def validate():
     # Durable discovery coverage is independent of admission into the paper register.
     from crawl import receipts as search_receipts
     searches = search_receipts(ROOT)
+    from feedback import receipts as feedback_receipts
+    feedback_receipts(ROOT)
     for search in searches:
         require(search['lane'] is None or search['lane'] in topics,
                 'search references missing topic lane')

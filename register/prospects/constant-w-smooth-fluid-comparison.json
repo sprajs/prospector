@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "constant-w-smooth-fluid-comparison",
+  "title": "Flat constant-w fluid with CLASS PPF closure",
+  "kind": "single_mechanism",
+  "readiness": "needs_review",
+  "baseline": {
+    "label": "Pinned external CLASS Lambda-CDM reference",
+    "role": "comparison",
+    "scope": "Same fixed physical state and released probe contracts; Lambda replaced by one separately conserved fluid.",
+    "parameters": null,
+    "parameters_reason": "Versioned candidate pins exact consumer reference digest and chosen fluid controls."
+  },
+  "cosmology": {
+    "gravity": "General relativity",
+    "geometry": "Spatially flat FLRW",
+    "components": [
+      "Baryons",
+      "Cold dark matter",
+      "Photons",
+      "Massless thermal neutrinos",
+      "One thermal0.06eV neutrino",
+      "Separately conserved constant-w dark-energy fluid"
+    ],
+    "modifications": [
+      "Replace Lambda with w=-0.9 smooth fluid; preserve remaining physical species and fixed inputs."
+    ],
+    "background": "rho_de/rho_de,0=(1+z)^0.3; flatness recomputed with live thermal-neutrino current density at each H0.",
+    "perturbations": "Explicit CLASS approximate PPF closure,cs2=1,c_gamma=0.4, with nonzero fluid perturbations; source parameterization does not determine microphysical perturbations.",
+    "observables": [
+      "DESI thirteen full-covariance DM/rd,DH/rd,DV/rd coordinates",
+      "H(z),luminosity/comoving distances and predicted drag ruler",
+      "Lensed CMB TT/EE/TE",
+      "Separate linear and Halofit matter spectra"
+    ]
+  },
+  "scope": [
+    "Same dedicated Reproducible external CLASS prediction and retained-product official-clik workflow as LCDM. One conditional H0 fit to full13 DESI covariance, with all other physical/nuisance inputs fixed. Display BAO and primary CMB separately; SN remains separately conditional on its source contract."
+  ],
+  "unknowns": [
+    "Consumer-specific validation, finite H0 bounds and convergence/precision budget pending explicit acceptance.",
+    "Unknown cross-probe covariance and release selection conditioning prevent a joint posterior claim."
+  ],
+  "combination_compatibility": {
+    "status": "source_coherent",
+    "basis": "One flat GR geometry, separately conserved retained sectors and positive-fluid closure; explicit phenomenological perturbation closure. Shared released probes and unknown cross-probe covariance prevent independent/joint evidence promotion."
+  },
+  "idea_ids": [
+    "constant-w-smooth-fluid-source-subclass"
+  ],
+  "model_idea_ids": [
+    "constant-w-smooth-fluid-source-subclass"
+  ],
+  "design_ids": [
+    "candidate-constant-w-smooth-fluid-v1"
+  ],
+  "topic_ids": [
+    "late-dark-energy"
+  ],
+  "paper_ids": [
+    "arxiv:2503.14738v3"
+  ],
+  "review_id": "2026-10-08-constant-w-sn-targeted-source-claims",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2503.14738v3",
+      "locator": "HTML S1.EGx2 (Eq6),S1.E8-S1.E10,S1.p6.3: conserved expansion, CPL and constant-w subclass; SecV: CAMB/Cobaya multi-coordinate source inference remains distinct.",
+      "url": "https://arxiv.org/abs/2503.14738v3",
+      "source_sha256": {
+        "html": "782d7b25d5a6d7195e0dc0cfdab029e49a4b05cff8263e18f843e82e9c054c49"
+      }
+    }
+  ]
+}

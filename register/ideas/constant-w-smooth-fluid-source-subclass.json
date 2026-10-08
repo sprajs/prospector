@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "constant-w-smooth-fluid-source-subclass",
+  "title": "Constant-w fluid with declared CLASS PPF closure",
+  "family": "late_dark_energy",
+  "status": "reviewed_targeted",
+  "review_id": "2026-10-08-constant-w-sn-targeted-source-claims",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2503.14738v3",
+      "locator": "S1.E1,E4,E5,EGx2(Eq6),E8,E9,E10"
+    }
+  ],
+  "assumptions": [
+    "One GR metric, flat FLRW and separate energy conservation; replace Lambda only.",
+    "Retain the explicit baryon/CDM/neutrino/photon, helium, HyRec, reionization, primordial and output state from the pinned external CLASS reference; no native Irreducible CMB claim.",
+    "Use CLASS phenomenological PPF perturbation closure with explicit cs2=1,c_gamma=0.4 and adiabatic initial conditions.",
+    "w0=-0.9 is a chosen example, not a DESI posterior mean or fitted scalar-field parameter.",
+    "At each H0 point recompute fractional density/flatness closure from fixed physical densities, including actual present massive-neutrino density."
+  ],
+  "predictions": [
+    "rho_de scales as a^(-0.3) for chosen w=-0.9; differs from constant Lambda.",
+    "Same shared physical state can feed external CMB/matter/background/BAO workflow if the consumer validates the closure and controls."
+  ]
+}

@@ -41,6 +41,18 @@ def public_investigation(item):
                             for eq in item['equations']]})
 
 
+def public_feedback(item, target_ids):
+    """Show scoped findings, omitting execution storage and worker provenance."""
+    priorities = [p for p in item['priorities'] if p['target_id'] in target_ids]
+    finding_ids = {ident for p in priorities for ident in p['finding_ids']}
+    return {
+        'date': item['recorded_utc'][:10],
+        'findings': [{k: f[k] for k in ['statement', 'limits']}
+                     for f in item['findings'] if f['finding_id'] in finding_ids],
+        'next_actions': [{k: p[k] for k in ['next_action', 'scope']} for p in priorities],
+    }
+
+
 def public_serialization(item):
     """Publish scalar conditioning and primary links, excluding worker/acquisition fields."""
     return {
@@ -95,6 +107,9 @@ def website_data(papers, ideas, prospects, graph):
     metrics = visibility_snapshots()
     contracts = {p.stem: strict_load(p) for p in (ROOT / 'register/contracts').glob('*.json')}
     designs = {p.stem: strict_load(p) for p in (ROOT / 'designs').glob('*.json')}
+    feedback = [strict_load(p) for p in (ROOT / 'register/feedback').glob('*.json')]
+    superseded = {item['supersedes'] for item in feedback if item['supersedes']}
+    feedback = [item for item in feedback if item['feedback_id'] not in superseded]
     serializations = {p.stem: public_serialization(strict_load(p))
                       for p in (ROOT / 'register/source-data').glob('*.json')}
     def public_prospect(path):
@@ -117,6 +132,10 @@ def website_data(papers, ideas, prospects, graph):
             for source in contracts[contract].get('source_serializations', [])})]
         public['investigations'] = [public_investigation(designs[ident])
                                     for ident in item.get('design_ids', [])]
+        targets = {item['id']} | set(item.get('design_ids', []))
+        public['experiment_findings'] = [public_feedback(record, targets)
+            for record in sorted(feedback, key=lambda r: (r['recorded_utc'], r['feedback_id']))
+            if any(p['target_id'] in targets for p in record['priorities'])]
         return public
     return {
         'prospects': [public_prospect(p) for p in sorted((ROOT / 'register/prospects').glob('*.json'))],

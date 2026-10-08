@@ -24,6 +24,13 @@ search, with never-searched lanes first and stable state-file ordering for ties.
 The existing `next_work_mode` remains visible. Dates and counts guide bounded
 work; they do not measure scientific merit or completeness.
 
+`experiment_priorities` adds versioned consumer findings and bounded follow-up
+actions from `register/feedback/`. These preserve the ordinary queue and source
+gates. Inspect their pinned evidence before acting; a failed diagnostic or
+conditional fit can prioritize a source review without promoting a paper or
+claiming independent confirmation. Superseded receipts remain in Git and local
+search, while status shows only active successors.
+
 ## Search a single window
 
 After pending work has been dispatched, completed or explicitly deferred, an

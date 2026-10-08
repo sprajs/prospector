@@ -323,6 +323,8 @@ def queue(root=ROOT):
 
 
 def status(root=ROOT):
+    from feedback import priorities
+    experiment_priorities = priorities(root)
     connection = ensure_index(root)
     state = strict_load(root / 'state.json')
     lanes = []
@@ -335,8 +337,9 @@ def status(root=ROOT):
     counts = dict(connection.execute('SELECT disposition,COUNT(*) FROM hits GROUP BY disposition').fetchall())
     connection.close()
     return dict(queue=queue(root), lanes_least_recent_first=lanes, dispositions=counts,
+                experiment_priorities=experiment_priorities,
                 next_work_mode=state.get('next_work_mode'),
-                limits='Queue before discovery; lane ordering and recorded counts are navigation, not scientific scores.')
+                limits='Queue before discovery; experiment findings suggest bounded work without changing queues or paper stages. Lane ordering and counts are navigation, not scientific scores.')
 
 
 def screen(search_id, paper_id, disposition, reason, root=ROOT):

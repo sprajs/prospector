@@ -23,7 +23,8 @@
     "arxiv:2609.37437v1",
     "arxiv:2609.38422v1",
     "arxiv:2609.39039v1",
-    "arxiv:astro-ph/0601544v2"
+    "arxiv:astro-ph/0601544v2",
+    "arxiv:2503.14738v3"
   ],
   "idea_ids": [
     "background-match-does-not-transfer-fit-evidence",
@@ -35,12 +36,14 @@
     "localized-gauss-bonnet-oscillatory-dark-energy",
     "gauss-bonnet-minimum-and-stability-consistency",
     "hubble-cutoff-negative-spin-background",
-    "frenkel-trace-and-maxwell-duality-closure"
+    "frenkel-trace-and-maxwell-duality-closure",
+    "constant-w-smooth-fluid-source-subclass"
   ],
   "design_ids": [
     "candidate-staged-decay-energy-and-background-claim-audit",
     "candidate-unified-scalar-source-consistency-and-slope-screen",
     "candidate-gauss-bonnet-minimum-and-stability-audit",
-    "candidate-spin-source-and-photon-duality-audit"
+    "candidate-spin-source-and-photon-duality-audit",
+    "candidate-constant-w-smooth-fluid-v1"
   ]
 }
