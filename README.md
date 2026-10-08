@@ -86,3 +86,7 @@ owns compiled science.
 Shared datasets and private evidence use the [common storage layout](docs/shared-data.md).
 Read the [cloud startup guide](https://github.com/sprajs/reproducible/blob/main/docs/cloud-startup.md)
 for the bounded shared-catalog readiness check; Reproducible owns the startup script.
+
+The [shared-input priority checkpoint](docs/2026-10-08-shared-input-priorities.md)
+records the current restored-input routing dependency and next bounded comparison;
+its runtime failure adds no new numerical or S3 qualification.
