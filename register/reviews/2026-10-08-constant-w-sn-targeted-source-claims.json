@@ -85,6 +85,10 @@
     {
       "kind": "upstream_runtime_ambiguity",
       "display_summary": "Released SN covariance caller returns raw B; inherited Cosmosis uses runtime-dependent allclose/hermitian pseudoinverse branch with lower-triangle semantics, not pair averaging. Exact original NumPy/Cosmosis options remain unknown; preserve original refusal and S_hat working repair."
+    },
+    {
+      "kind": "integration_wording_correction",
+      "display_summary": "77 denotes calibrator light-curve occurrences in Cepheid hosts, not77 distinct host galaxies; the source describes42 hosts. Prior condensed packet wording retained locally."
     }
   ],
   "limitations": [
@@ -205,7 +209,7 @@
       "faithful_alternative": "A NEW explicit official-cosmosis-lower-triangle-pinv target can follow these pinned source semantics after actual raw-byte allclose verification, NumPy/runtime pinning, cutoff/full-mode and positive-law admission and residual/interpolation/M conventions. It is not an average covariance and is not evidence for original historical fit runtime. A strict full-rank SPD native implementation may reproduce its scalar law only after proving no cutoff modes and source-comparison agreement. Never silently replace original exact-symmetry admission.",
       "raw_inverse_branch": "If deliberately declared fallback inverse branch, scalar r^T B^-1 r uses Q=Sym(B^-1), with C_eff=Q^-1=S-A S^-1 A (S=(B+B^T)/2,A=(B-B^T)/2 when S SPD). C_eff differs from S and S_hat; source determinant(B) differs from determinant(C_eff). This is conditional algebra, not executed source intent.",
       "repair": "S_hat RN-even exact-binary64 pair averaging is retained as released-sn-symmetric-working-profile/v1. It is a distinct repaired working target; upstream code does not authorize it as source-faithful likelihood.",
-      "interpretation": "For noncalibrators mu=5log10[(1+zHD)(1+zHEL)DA(zHD)/Mpc]+25; calibrators use CEPH_DIST; M shared. Retain all joint covariance, repeated occurrences and original order. Free-M degeneracy applies uncalibrated-only Hubble-flow sample; calibrated77-host rows allow H0 sensitivity when cosmology varies. Existing four identical ns means do not constitute H0 inference. Do not add SH0ES posterior H0 as independent data.",
+      "interpretation": "For noncalibrators mu=5log10[(1+zHD)(1+zHEL)DA(zHD)/Mpc]+25; calibrators use CEPH_DIST; M shared. Retain all joint covariance, repeated occurrences and original order. Free-M degeneracy applies uncalibrated-only Hubble-flow sample; 77 calibrator occurrences in Cepheid hosts allow H0 sensitivity when cosmology varies. Existing four identical ns means do not constitute H0 inference. Do not add SH0ES posterior H0 as independent data.",
       "source_print_inconsistency": "Pantheon+ S2.I1.i4.p1.m2 prints w=w0+wa(1+z). It is not DESI/CLASS CPL w0+wa(1-a); do not adopt or silently repair. wa0 constant-w branch unaffected. Source Eq13 uses late radiation-free approximation; replacing it with full thermal CLASS is a declared mean-model extension, not paper literal reproduction."
     },
     "alternative": {
