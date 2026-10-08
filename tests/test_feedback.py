@@ -116,3 +116,10 @@ class FeedbackTests(unittest.TestCase):
         for private in ['experiments/test/result.json', 'revision', 'sha256', 'evidence_ids']:
             self.assertNotIn(private, json.dumps(public))
         self.assertEqual(site_data.public_feedback(self.record, {'unrelated'})['findings'], [])
+
+    def test_deleting_all_receipts_cannot_leave_a_dangling_state_pin(self):
+        state = json.loads((self.root / 'state.json').read_text())
+        state['experiment_feedback_ids'] = [self.record['feedback_id']]
+        self.write('state.json', state)
+        with self.assertRaisesRegex(ValueError, 'state references missing feedback receipt'):
+            crawl.status(self.root)

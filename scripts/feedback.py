@@ -9,11 +9,13 @@ def receipts(root):
     # Reuse the strict JSON reader without adding another authoritative index.
     from crawl import strict_load
     paths = sorted((root / 'register/feedback').glob('*.json'))
+    state = strict_load(root / 'state.json')
     if not paths:
+        if state.get('experiment_feedback_ids'):
+            raise ValueError('state references missing feedback receipt')
         return []
     schema = strict_load(root / 'schemas/experiment-feedback.schema.json')
     validator = jsonschema.Draft202012Validator(schema, format_checker=jsonschema.FormatChecker())
-    state = strict_load(root / 'state.json')
     known_targets = {
         'paper': {strict_load(p)['paper_id'] for p in (root / 'register/papers').glob('*.json')},
         'design': {strict_load(p)['design_id'] for p in (root / 'designs').glob('*.json')},

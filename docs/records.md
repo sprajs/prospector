@@ -158,6 +158,15 @@ CLI schema. Its accepted request snapshot uses
 revision. This preserves the consumer's existing status token.
 Do not label that request as an Irreducible CLI operation or generic recipe.
 
+An external solver handoff names `sprajs/reproducible` as its consumer and pins
+the complete solver/source-reference state in its parameter choices. Keep the
+source parameterization, chosen test point and implementation closure distinct.
+For the constant-w candidate, CLASS PPF is an explicit approximate perturbation
+closure; omitting `Omega_fld` allows flatness closure after replacing Lambda.
+Source review leaves readiness `needs_review` until the separate consumer
+validation/acceptance route is recorded. This neither adds native Irreducible
+physics nor changes the existing native readiness requirements.
+
 Conditioned references preserve model assumptions, source table/column, units,
 uncertainty interpretation and missing covariance. Candidate `source_references`
 pin their path, reference identity and SHA-256. A consumer accepts those exact
