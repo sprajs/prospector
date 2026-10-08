@@ -23,6 +23,15 @@ source identity and decisions so Codex can continue without a transcript.
 | `scans/<id>.json`, `state.json` | Actual batch records and continuation queue |
 | `.work/`, root `papers/`, root `downloads/` | Ignored full sources, rendering and working material |
 
+For selective durable evidence storage, use Reproducible's shared
+[exact-version archive workflow](https://github.com/sprajs/reproducible/blob/main/docs/archive.md)
+and `scripts/archive_experiment.py` with `--root` set to the selected evidence
+store. Git retains source reviews, candidate handoffs and concise findings;
+approved valuable evidence can use exact S3 object versions and digests with
+runtime credentials. Preserve upstream URL/version/hash reacquisition routes
+for redownloadable arXiv sources and exclude their full contents from uploads.
+Do not copy the archive implementation or store credentials in Prospector.
+
 ## Papers and reading
 
 Paper identity is `arxiv:<base-id>vN`. Encode legacy filename slashes as `__`,
