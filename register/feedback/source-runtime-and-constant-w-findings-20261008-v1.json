@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "feedback_id": "source-runtime-and-constant-w-findings-20261008-v1",
+  "programme_id": "source-runtime-and-constant-w",
+  "recorded_utc": "2026-10-08T22:17:19.991825+00:00",
+  "supersedes": null,
+  "evidence": [
+    {
+      "evidence_id": "source-audit",
+      "repository": "sprajs/prospector",
+      "revision": "efcd22895ce5550a5d749999062fd178b299acde",
+      "path": "register/reviews/2026-10-08-constant-w-sn-targeted-source-claims.json",
+      "sha256": "963f83e72348399058100e66202e1b0a5c9803b5acbf2bf83b0402a8d631bbe4",
+      "role": "Targeted original-source and pinned-code review; actual source/code hashes and exact locators inside."
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "sn-runtime-ambiguity",
+      "kind": "source_mismatch",
+      "statement": "Released SN caller returns raw selected covariance B. Examined Cosmosis source can choose a runtime-dependent allclose/hermitian-pseudoinverse branch; NumPy Hermitian semantics use stored lower triangle and a cutoff. Neither source averages covariance pairs. The RN-even averaged S_hat target remains a distinct working repair.",
+      "evidence_ids": [
+        "source-audit"
+      ],
+      "limits": [
+        "Original author NumPy/Cosmosis/options, cutoff/rank and numerical fit identity remain unknown.",
+        "No newly acquired raw covariance was verified by this source worker; historical389full/361selected pair diagnostics stay historical.",
+        "Calibrated host distances allow conditional H0 sensitivity; four identical ns points did not fit H0."
+      ]
+    },
+    {
+      "finding_id": "sn-printed-eos-conflict",
+      "kind": "source_mismatch",
+      "statement": "Pinned Pantheon+ HTML S2.I1.i4.p1.m2 prints w=w0+wa(1+z), distinct from the DESI/CLASS CPL expression w=w0+wa(1-a). Preserve the printed inconsistency without an adopted repair; wa=0 constant-w comparison is unaffected.",
+      "evidence_ids": [
+        "source-audit"
+      ],
+      "limits": [
+        "Source author runtime intent and time-dependent-w implementation remain unknown.",
+        "Targeted passages only; no full-paper review or changed reading stage."
+      ]
+    },
+    {
+      "finding_id": "supported-class-subclass",
+      "kind": "probe_coverage",
+      "statement": "DESI explicitly defines constant-w as wa=0. Pinned CLASS supports the declared CLP/PPF branch with Lambda=0, inferred fluid flatness closure and live massive-neutrino density. This supplies a sufficiently specified separate external comparison candidate.",
+      "evidence_ids": [
+        "source-audit"
+      ],
+      "limits": [
+        "w=-0.9 and PPF controls are chosen construction, not a DESI posterior or scalar microphysics.",
+        "External CLASS, primary clik and full13 BAO coverage do not establish native Irreducible CMB ability, lensing likelihood, raw-clustering likelihood or joint inference.",
+        "Consumer acceptance and actual conditional fit remain separate gates."
+      ]
+    }
+  ],
+  "priorities": [
+    {
+      "lane": "measurement-lineage",
+      "target_kind": "design",
+      "target_id": "candidate-lcdm-baseline-reference-audit",
+      "finding_ids": [
+        "sn-runtime-ambiguity",
+        "sn-printed-eos-conflict"
+      ],
+      "next_action": "Inspect exact released bytes against the pinned caller and runtime source branch; declare a separate source-compatible target or retain refusal.",
+      "scope": "One released selected covariance/residual convention; preserve S_hat repair and earlier failures. Do not reopen all19 scopes or infer historical author execution.",
+      "stage": "source_review"
+    },
+    {
+      "lane": "late-dark-energy",
+      "target_kind": "design",
+      "target_id": "candidate-constant-w-smooth-fluid-v1",
+      "finding_ids": [
+        "supported-class-subclass",
+        "sn-printed-eos-conflict"
+      ],
+      "next_action": "Accept exact candidate bytes in the same external CLASS/BAO/primary-CMB workflow, then return conditional fit and numerical refinement findings.",
+      "scope": "One fixed constant-w=-0.9,wa=0 branch; conditional H0 only; separate scores and retained positive-closure/source gates.",
+      "stage": "consumer_review"
+    }
+  ],
+  "qualification": {
+    "scientifically_qualified": false,
+    "changes_paper_stages": false,
+    "limits": "Located source/code checks and bounded work priorities. Consumer execution and independent scientific/numerical qualification remain separate. No new full reads or source-model substitutions."
+  }
+}

@@ -798,6 +798,11 @@
       "design_id": "next05-released-fixed44-row3213-conditional-diagnostic-20261003",
       "state": "blocked",
       "reason": "Source-accepted frozen released-row conditional diagnostic; physical refit/sign/dependence and new consumer target/numerical gates remain unresolved."
+    },
+    {
+      "design_id": "candidate-constant-w-smooth-fluid-v1",
+      "state": "needs_review",
+      "reason": "Selected source-defined constant-w subclass and explicit CLASS PPF controls accepted by targeted Sol review; consumer numerical/fit acceptance pending independently."
     }
   ],
   "notes": [
@@ -828,7 +833,7 @@
     "request_sha256": "5d67253917a35031b69b85272fe381da8c946007da5615300a3dcf3381f12bed"
   },
   "continuation_note": "Selected NEXT-13 pre-reconstruction LOWZ P0/P2 source target: primary discrete window action and historical fit cuts checked;6/106 diagnostic diagonal matches do not admit covariance axes. Next action is exact producer/source covariance/error and cut-map reconciliation, or retained refusal. CLASS galaxy/RSD/window/statistical-model adapters remain blocked. Ordinary queue preserved plus one new pending full read; all19 remains OPEN.",
-  "last_completed_source_audit": "2026-10-03-ede-method-printed-source-checkpoint",
+  "last_completed_source_audit": "2026-10-08-constant-w-source-and-feedback",
   "coordinated_source_continuation": {
     "scan_id": "2026-10-03-ede-method-printed-source-checkpoint",
     "mode": "bounded_targeted_source_work",
@@ -962,5 +967,19 @@
       }
     ],
     "scope_limit": "Finite method-coordinate and printed-source comparison checkpoint complete. Two distinct targeted Sol turns, one new method version, zero full reads or scientific record promotions. All 62 prior queue entries are unchanged; one method full-read entry is appended. Printed conflicts are retained without repair, and original modified CLASS URL/revision/patch/configuration and the 2019 coordinate/normalizer bridge remain unknown. Existing blocked candidate, canonical letter contract and all nineteen scope gates remain. Further acquisition requires a finite identified primary witness and a separate allocation. No numerical experiment, broad crawl or Site publication."
+  },
+  "experiment_feedback_ids": [
+    "source-runtime-and-constant-w-findings-20261008-v1"
+  ],
+  "coordinated_experiment_feedback": {
+    "programme_id": "conditional-cosmology-comparison",
+    "candidate_id": "candidate-constant-w-smooth-fluid-v1",
+    "candidate_sha256": "ea15c707b8bbfa53e2b50bab095f5729aec6a99334388bd0fc4cf061e0442414",
+    "handoff_revision": "99673d5ddb457732c1660a586305eb8b98de5eb6",
+    "consumer_repository": "sprajs/reproducible",
+    "next_action": "Consume exact candidate bytes, fit one conditional H0 coordinate using matching full13 DESI covariance and return findings; keep separate primary-CMB/SN targets.",
+    "ordinary_queue_preserved": true,
+    "all19_scope_gates_preserved": true,
+    "no_automatic_execution": true
   }
 }
