@@ -23,7 +23,7 @@
     "unknowns": {"type": "array", "items": {"type": "string"}},
     "verification_gates": {"type": "array", "minItems": 1, "items": {"type": "string"}},
     "falsification": {"type": "string", "minLength": 1},
-    "consumer": {"type": "object", "required": ["repository", "revision", "dirty", "capability_status", "recipe_runner_status"], "properties": {"repository": {"const": "sprajs/irreducible"}, "revision": {"type": ["string", "null"], "pattern": "^[0-9a-f]{40}$"}, "dirty": {"type": ["boolean", "null"]}, "capability_status": {"type": "string"}, "recipe_runner_status": {"type": "string"}}},
+    "consumer": {"type": "object", "required": ["repository", "revision", "dirty", "capability_status", "recipe_runner_status"], "properties": {"repository": {"enum": ["sprajs/irreducible", "sprajs/reproducible"]}, "revision": {"type": ["string", "null"], "pattern": "^[0-9a-f]{40}$"}, "dirty": {"type": ["boolean", "null"]}, "capability_status": {"type": "string"}, "recipe_runner_status": {"type": "string"}}},
     "blockers": {"type": "array", "items": {"type": "string"}},
     "executable_request": {"oneOf": [{"type": "null"}, {"type": "object", "additionalProperties": false, "required": ["path", "sha256", "consumer_validation"], "properties": {"path": {"type": "string"}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "consumer_validation": {"const": "passed_at_inspected_revision"}, "validation_route": {"type": "string", "minLength": 1}}}]},
     "qualification": {"type": "object", "additionalProperties": false, "required": ["numerically_executed", "scientifically_qualified", "reason"], "properties": {"numerically_executed": {"const": false}, "scientifically_qualified": {"const": false}, "reason": {"type": "string"}}}

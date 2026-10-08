@@ -104,7 +104,9 @@
     "arxiv:1509.06386v2",
     "arxiv:1011.3758v2",
     "arxiv:0804.2827v3",
-    "arxiv:1806.10608v1"
+    "arxiv:1806.10608v1",
+    "constant-w-smooth-fluid-source-subclass",
+    "constant-w-smooth-fluid-comparison"
   ],
   "edges": [
     {
@@ -1436,6 +1438,36 @@
         }
       ],
       "rationale": "Both have one canonical scalar, but late scalar–GB oscillations do not realize the neighbour smooth early-energy/depletion/late-reactivation sequence. The curvature coupling changes the background and perturbation equations without requiring a second scalar. No extension of the neighbour restricted tracking obstruction to modified gravity is accepted."
+    },
+    {
+      "id": "desi-describes-constant-w-fluid",
+      "from": "arxiv:2503.14738v3",
+      "to": "constant-w-smooth-fluid-source-subclass",
+      "type": "describes",
+      "status": "reviewed",
+      "rationale": "Source parameterization explicitly includes constant-w subclass; selected w and PPF closure are separate chosen construction.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2503.14738v3",
+          "locator": "S1.E1,E4,E5,EGx2(Eq6),E8,E9,E10"
+        }
+      ],
+      "review_id": "2026-10-08-constant-w-sn-targeted-source-claims"
+    },
+    {
+      "id": "constant-w-fluid-informs-prospect",
+      "from": "constant-w-smooth-fluid-source-subclass",
+      "to": "constant-w-smooth-fluid-comparison",
+      "type": "informs",
+      "status": "reviewed",
+      "rationale": "One source-defined background subclass plus declared phenomenological PPF closure informs a conditional external CLASS comparison.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2503.14738v3",
+          "locator": "S1.E1,E4,E5,EGx2(Eq6),E8,E9,E10"
+        }
+      ],
+      "review_id": "2026-10-08-constant-w-sn-targeted-source-claims"
     }
   ]
 }

@@ -11,6 +11,7 @@ source identity and decisions so Codex can continue without a transcript.
 | `register/prospects/<id>.json` | Baseline cosmologies, modifications, scope and candidate investigations |
 | `register/citations.json` | Explicit bibliographic links and source evidence |
 | `register/searches/<id>.json` | Exact archive windows, failures, per-hit dispositions and refresh reasons |
+| `register/feedback/<id>-vN.json` | Immutable experiment findings, exact consumer evidence pins and bounded source priorities |
 | `register/bibliometrics/<snapshot>.json` | Provider-specific citation counts and verified author visibility snapshots |
 | `register/reviews/<id>.json` | Sol source checks, corrections, overlap and limits |
 | `register/contracts/<id>.json` | Located source requirements, pinned reduced/code assets and unresolved gates |
@@ -21,6 +22,15 @@ source identity and decisions so Codex can continue without a transcript.
 | `references/<topic>/<name>.json` | Sourced, conditioned numerical references with separate supported variants |
 | `scans/<id>.json`, `state.json` | Actual batch records and continuation queue |
 | `.work/`, root `papers/`, root `downloads/` | Ignored full sources, rendering and working material |
+
+For selective durable evidence storage, use Reproducible's shared
+[exact-version archive workflow](https://github.com/sprajs/reproducible/blob/main/docs/archive.md)
+and `scripts/archive_experiment.py` with `--root` set to the selected evidence
+store. Git retains source reviews, candidate handoffs and concise findings;
+approved valuable evidence can use exact S3 object versions and digests with
+runtime credentials. Preserve upstream URL/version/hash reacquisition routes
+for redownloadable arXiv sources and exclude their full contents from uploads.
+Do not copy the archive implementation or store credentials in Prospector.
 
 ## Papers and reading
 
@@ -139,11 +149,32 @@ requires Sol review, no blockers/unknowns and a separate consumer-validated requ
 with digest and inspected revision. It still needs Reproducible acceptance.
 Blocked concepts keep executable request null; runs/qualification belong to consumers.
 
+Experiments can return versioned findings through `register/feedback/`. Each
+finding pins its consumer repository revision, evidence path and byte digest,
+states its conditioning and limits, and names a bounded next action against a
+registered paper, design or prospect. `crawl.py status` shows active receipts
+alongside the preserved queue. Priority list order is an explicit work choice,
+not a scientific score or a claim of independent evidence. New findings can
+supersede an earlier receipt in the same programme; keep both immutable files.
+The validator checks identities, digest syntax, chronology and references; it
+does not fetch external evidence or verify its contents. Integration must inspect
+the pinned evidence. Feedback never changes reading stages, promotes a model or
+authorizes execution. Candidate/source revisions still need their separate gates.
+
 A dedicated Reproducible native adapter is a separate route from Irreducible's
 CLI schema. Its accepted request snapshot uses
 `passed_at_inspected_revision` with an explicit `validation_route` and adapter
 revision. This preserves the consumer's existing status token.
 Do not label that request as an Irreducible CLI operation or generic recipe.
+
+An external solver handoff names `sprajs/reproducible` as its consumer and pins
+the complete solver/source-reference state in its parameter choices. Keep the
+source parameterization, chosen test point and implementation closure distinct.
+For the constant-w candidate, CLASS PPF is an explicit approximate perturbation
+closure; omitting `Omega_fld` allows flatness closure after replacing Lambda.
+Source review leaves readiness `needs_review` until the separate consumer
+validation/acceptance route is recorded. This neither adds native Irreducible
+physics nor changes the existing native readiness requirements.
 
 Conditioned references preserve model assumptions, source table/column, units,
 uncertainty interpretation and missing covariance. Candidate `source_references`

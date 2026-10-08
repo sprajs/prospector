@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "feedback_id": "conditional-lcdm-constant-w-execution-20261008-v1",
+  "programme_id": "conditional-cosmology-comparison",
+  "recorded_utc": "2026-10-08T22:31:41.463404+00:00",
+  "supersedes": null,
+  "evidence": [
+    {
+      "evidence_id": "executed-account",
+      "repository": "sprajs/reproducible",
+      "revision": "a92bccea00b95e3afb1f91582304567141b6cf59",
+      "path": "experiments/observational-cosmology/README.md",
+      "sha256": "567771a03e5ad042bc336dcf450afbcace8115c42d5caf4154e16221b8edec3d",
+      "role": "Committed actual quick, independent fresh and broader account, source/data/runtime conditioning and full manifest hashes."
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "chosen-constant-w-lower-H0-worse-BAO",
+      "kind": "conditional_fit",
+      "statement": "At fixed source-reference physical densities, thermal species, primordial/reionization state and chosen w=-0.9 PPF controls, broader full13 DESI fits give H0=68.831349 and covariance quadratic 10.641026 for flat LCDM, versus H0=66.697421 and 16.957078 for the fluid branch. H0 is in km s^-1 Mpc^-1. The chosen fluid branch lowers the conditional H0 and worsens the BAO quadratic by about 6.31605.",
+      "evidence_ids": [
+        "executed-account"
+      ],
+      "limits": [
+        "One fitted H0 coordinate on 55–85 with other inputs fixed; no posterior, parameter uncertainty interval, global optimum proof, generic constant-w exclusion or Hubble-tension resolution.",
+        "Full13 fitted BAO compression/full covariance/order retained; source fiducial/reconstruction conditioning remains.",
+        "The exact candidate ea15c707b8bbfa53e2b50bab095f5729aec6a99334388bd0fc4cf061e0442414 was consumed; w=-0.9 and approximate PPF closure remain chosen construction."
+      ]
+    },
+    {
+      "finding_id": "finite-resolution-and-independent-repeat",
+      "kind": "numerical_diagnostic",
+      "statement": "Independent fresh checkout quick fits/predictions/separate official scores match exactly. Broader search uses 46 points per model and 0.00621124 final H0 bracket, compared with 23 points and 0.03768749 for quick. H0 shifts are -0.001790 and -0.001030; BAO quadratic decreases are 0.00002584 and 0.00001603. Positive inferred dark-energy closure and zero final full-output versus fast-fit score difference are recorded for both branches.",
+      "evidence_ids": [
+        "executed-account"
+      ],
+      "limits": [
+        "Optimizer brackets and resolution shifts are empirical numerical diagnostics, not confidence intervals or certified CLASS/interpolation error bounds.",
+        "Independent attempt filesystem paths, timings and manifest hashes differ; exact scientific equality does not imply identical attempts.",
+        "Raw full evidence remains local pending selective durable archive; committed concise account and manifest hashes preserve its identity."
+      ]
+    },
+    {
+      "finding_id": "primary-CMB-separate-selected-point-scores",
+      "kind": "probe_coverage",
+      "statement": "At the broader DESI-selected points, separate official Commander TT + SimAll EE + Plik-lite TTTEEE raw log likelihoods are -626.154767 for LCDM and -866.973292 for the chosen fluid branch. Official test vectors pass the unchanged 1e-6 gate; fixed A_planck=1 relative prior penalty is zero and separately declared.",
+      "evidence_ids": [
+        "executed-account"
+      ],
+      "limits": [
+        "CMB scores are not CMB-fit optima, a joint BAO/CMB target or model evidence; no separate lensing likelihood.",
+        "No source-author posterior, full prior qualification, source calibration-parameter equivalence or Hubble-tension adjudication is claimed.",
+        "Original SN source-runtime refusal and separate averaged-covariance working profile remain distinct; no calibrated SN fit was performed here.",
+        "External CLASS predictions and compiled Gaussian scores add no native Irreducible CMB or constant-w physics qualification."
+      ]
+    }
+  ],
+  "priorities": [
+    {
+      "lane": "late-dark-energy",
+      "target_kind": "design",
+      "target_id": "candidate-constant-w-smooth-fluid-v1",
+      "finding_ids": [
+        "chosen-constant-w-lower-H0-worse-BAO",
+        "finite-resolution-and-independent-repeat",
+        "primary-CMB-separate-selected-point-scores"
+      ],
+      "next_action": "Preserve this negative conditional result; review the source multi-coordinate inference and prior/dependence conventions before specifying a larger comparison.",
+      "scope": "One finite source/parameter-conditioning review. Do not erase this tested branch, infer general exclusion or promote unsupported alternatives through the LCDM descriptor.",
+      "stage": "candidate_revision"
+    },
+    {
+      "lane": "measurement-lineage",
+      "target_kind": "design",
+      "target_id": "candidate-lcdm-baseline-reference-audit",
+      "finding_ids": [
+        "primary-CMB-separate-selected-point-scores",
+        "finite-resolution-and-independent-repeat"
+      ],
+      "next_action": "Prioritize the unresolved SN covariance-runtime convention and calibrated residual/selection law as a separate source target; keep current BAO/primary-CMB results separate.",
+      "scope": "Existing source-runtime/repair distinction and shared-calibrator covariance gates; no combined posterior and no wait for all nineteen source scopes.",
+      "stage": "source_review"
+    }
+  ],
+  "qualification": {
+    "scientifically_qualified": false,
+    "changes_paper_stages": false,
+    "limits": "Actual consumer execution feedback under declared conditioning. No new versions, full-paper reads, source receipts rewritten, generic theory acceptance/rejection or native physics promotion."
+  }
+}

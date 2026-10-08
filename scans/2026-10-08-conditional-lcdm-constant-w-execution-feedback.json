@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-08-conditional-lcdm-constant-w-execution-feedback",
+  "status": "completed",
+  "started_utc": "2026-10-08T22:28:02+00:00",
+  "completed_utc": "2026-10-08T22:32:27.667470+00:00",
+  "lane": "late-dark-energy",
+  "work_mode": "consumer_execution_feedback_integration",
+  "registered_papers": [],
+  "new_versions": [],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [],
+  "idea_ids": [],
+  "design_ids": [
+    "candidate-constant-w-smooth-fluid-v1"
+  ],
+  "prospect_ids": [],
+  "edge_ids": [],
+  "queries": [],
+  "search_receipts": [],
+  "feedback_ids": [
+    "conditional-lcdm-constant-w-execution-20261008-v1"
+  ],
+  "consumer_public_evidence": {
+    "revision": "a92bccea00b95e3afb1f91582304567141b6cf59",
+    "path": "experiments/observational-cosmology/README.md",
+    "sha256": "567771a03e5ad042bc336dcf450afbcace8115c42d5caf4154e16221b8edec3d"
+  },
+  "execution_feedback_reviews": [
+    {
+      "reviewer": "/root/source_audit",
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "high",
+      "scope": "Original source worker independently checked actual quick/main/fresh manifests and broader/public summary. No numerical rerun, full-paper read or native physics promotion.",
+      "packets": [
+        {
+          "path": ".work/source-audit-20261008/quick002-scientific-evidence-review.json",
+          "sha256": "f4860ce85f80f7cc7ea60a8ea95a4b5fb5fc5cc3a36f6c9cf1c8eb7c37d1e451"
+        },
+        {
+          "path": ".work/source-audit-20261008/broader001-scientific-evidence-review.json",
+          "sha256": "47d99658d1d7bbf1a6ec9201003a534080df0ea3010df702859c29daef0e0a6a"
+        }
+      ],
+      "final_feedback_acceptance": {
+        "path": ".work/source-audit-20261008/final-execution-feedback-review.json",
+        "sha256": "78891e941f20ec9f6237e04f945710a039da6babee15f2f7690f40bba9cbf833",
+        "accepted_feedback_sha256": "8c7417cbe1f0e0dd964027182b774747fc596cf3e4f6999940ee4b4b15cc9ab1",
+        "conclusion": "All three scientific findings, priorities and qualification boundaries accepted; no actionable science issue."
+      }
+    }
+  ],
+  "preservation": {
+    "queue_count": 63,
+    "queue_exactly_matches_main": true,
+    "nineteen_scope_continuation_exactly_matches_main": true,
+    "candidate_sha256": "ea15c707b8bbfa53e2b50bab095f5729aec6a99334388bd0fc4cf061e0442414",
+    "original_source_receipts_unchanged": true
+  },
+  "qualification": {
+    "full_reads": 0,
+    "numerically_executed_here": false,
+    "scientifically_qualified": false,
+    "reason": "Exact consumer findings returned into bounded priorities; no joint posterior, uncertainty interval, generic alternative exclusion or native physics acceptance."
+  },
+  "publication": {
+    "status": "prepared_not_deployed",
+    "project_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8",
+    "reason": "Official site-workflow.mjs unavailable; existing public site version12 preserved. Generated scientific export prepared locally after integration."
+  }
+}

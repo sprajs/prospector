@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-08-constant-w-source-and-feedback",
+  "status": "completed",
+  "started_utc": "2026-10-08T22:08:49.067511+00:00",
+  "completed_utc": "2026-10-08T22:18:10.146156+00:00",
+  "lane": "late-dark-energy",
+  "work_mode": "explicit_scoped_source_audit_and_consumer_feedback",
+  "registered_papers": [
+    "arxiv:2503.14738v3",
+    "arxiv:2202.04077v2"
+  ],
+  "new_versions": [],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [
+    "2026-10-08-constant-w-sn-targeted-source-claims"
+  ],
+  "idea_ids": [
+    "constant-w-smooth-fluid-source-subclass"
+  ],
+  "design_ids": [
+    "candidate-constant-w-smooth-fluid-v1"
+  ],
+  "prospect_ids": [
+    "constant-w-smooth-fluid-comparison"
+  ],
+  "edge_ids": [
+    "desi-describes-constant-w-fluid",
+    "constant-w-fluid-informs-prospect"
+  ],
+  "queries": [],
+  "search_receipts": [],
+  "feedback_ids": [
+    "source-runtime-and-constant-w-findings-20261008-v1"
+  ],
+  "acquisition": [
+    {
+      "paper_id": "arxiv:2503.14738v3",
+      "role": "html",
+      "url": "https://arxiv.org/html/2503.14738v3",
+      "retrieved_utc": "2026-10-08T22:08:49.067511+00:00",
+      "sha256": "782d7b25d5a6d7195e0dc0cfdab029e49a4b05cff8263e18f843e82e9c054c49",
+      "bytes": 1170284,
+      "identity_title_body_matches": true,
+      "previous_source_sha256": [
+        "782d7b25d5a6d7195e0dc0cfdab029e49a4b05cff8263e18f843e82e9c054c49"
+      ],
+      "reacquisition_reason": "Fresh checkout lacks original local assets; source_audit requested finite original-source witness. Exact previously recorded hashes reacquired without source change."
+    },
+    {
+      "paper_id": "arxiv:2202.04077v2",
+      "role": "html",
+      "url": "https://arxiv.org/html/2202.04077v2",
+      "retrieved_utc": "2026-10-08T22:09:01.920805+00:00",
+      "sha256": "7580cd8300bf5bf53119735a06c94f7240a7426c37a4f2e8fdbf9915905ecb38",
+      "bytes": 518758,
+      "identity_title_body_matches": true,
+      "previous_source_sha256": [
+        "7580cd8300bf5bf53119735a06c94f7240a7426c37a4f2e8fdbf9915905ecb38"
+      ],
+      "reacquisition_reason": "Fresh checkout lacks original local assets; source_audit requested finite original-source witness. Exact previously recorded hashes reacquired without source change."
+    }
+  ],
+  "source_packets": [
+    {
+      "path": ".work/source-audit-20261008/targeted-source-audit.json",
+      "sha256": "1e12eee821412de18d1d504e9f347f8e685fc1974e1a3c957216aa75e85dbcf8"
+    }
+  ],
+  "preserved_queue": {
+    "count": 63,
+    "sha256": "9d593601830c6456f7fd0f2fd801f663aad1e68105808f9afae1d79ee0237a7d",
+    "verification": "Exact parsed equality to origin/main state; no removed/changed/reordered entries."
+  },
+  "pending": [
+    {
+      "stage": "consumer_review",
+      "design_id": "candidate-constant-w-smooth-fluid-v1",
+      "reason": "External consumer exact intake/validation and conditional fit findings belong to Reproducible."
+    }
+  ],
+  "qualification": {
+    "full_reads": 0,
+    "numerically_executed_here": false,
+    "scientifically_qualified": false,
+    "reason": "Targeted source/code claims and operational priority records only; original full-read queue and all19 scope gates retained."
+  },
+  "publication": {
+    "status": "prepared_not_deployed",
+    "project_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8",
+    "public_export_sha256": "953fd0b12f4cad6ea013bee4c7bc0e38b37bd5a110e1b9b3558bdb793a3ac83a",
+    "reason": "Required official site-workflow.mjs absent in selected environment; cloud skill script resource unavailable. Existing public owner site remains verified version12. Publication awaits supported helper after reviewed repository merge.",
+    "previous_version_number": 12
+  }
+}
