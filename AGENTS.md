@@ -9,6 +9,15 @@ Prospector owns literature, idea relationships and candidate investigations.
 Reproducible owns accepted experiments and results; Irreducible owns compiled
 science. Work in this checkout unless the user asks otherwise.
 
+## Shared research storage
+
+Use [shared data](docs/shared-data.md), `storage-layout.json` and
+`scripts/research_storage.py` for named shared datasets and evidence. Keep Git
+source references, immutable acquisition/reconstruction pins and exact manifest
+URI/SHA256/VersionId. Preserve failures, originals and historical receipts; the
+catalog discovery pointer is not a scientific pin. Respect third-party copying
+restrictions and keep credentials out of all selections.
+
 ## Continue when the user says “run more”
 
 Read `state.json`, the latest `scans/` record, the register and graph. Resume
