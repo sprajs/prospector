@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "contract_id": "foundation-exploratory-primary-desi-joint-v1",
+  "title": "Exploratory shared-state primary CMB plus DESI DR2 full13 working posterior",
+  "review_id": "2026-10-09-foundation-working-joint-source-claims",
+  "paper_ids": [
+    "arxiv:1807.06209v4",
+    "arxiv:1907.12875v2",
+    "arxiv:2503.14738v3"
+  ],
+  "scopes": [
+    {
+      "scope_id": "M2",
+      "title": "Named exploratory factorized first joint target",
+      "paper_ids": [
+        "arxiv:1807.06209v4",
+        "arxiv:1907.12875v2",
+        "arxiv:2503.14738v3"
+      ],
+      "checked_claim": "Unchanged frozen v2 primary physics, all six cosmological coordinates and one A_planck, plus the complete ordered13-dimensional DESI DR2 Gaussian compression. One CLASS state predicts spectra, distances and r_drag. Full covariance is retained; extraction/foreground priors and fitted posterior summaries are not appended. The exact consumer semantics are in candidate-class-planck-primary-desi-exploratory-v1.",
+      "unresolved": "Cross-probe block factorization is an explicitly chosen exploratory approximation. Source joint analyses evidence an adopted combination, not an empirical negligible-crosscovariance bound for this exact likelihood pair. Consumer admission, precision/convergence/predictive checks and predeclared same-prior sensitivity remain required; calibrated tensions and evidence claims are withheld."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "desi-dr2-validation-html",
+      "url": "https://arxiv.org/html/2503.14742v3",
+      "sha256": "36cc9894b04f40845d6262ee36092b7d64cce6579863ae0e9d296f28976e7639",
+      "role": "targeted_companion_source",
+      "conditioning": "Complete selected SecIII,IV.1–5,V.2,VI.6,VII.3; finite fiducial and compressed-Gaussian checks; not an ordinary paper admission/read"
+    },
+    {
+      "id": "desi-optimal-reconstruction-html",
+      "url": "https://arxiv.org/html/2404.03005v3",
+      "sha256": "4b2d4c5390d9353e238b9d744cb15b7618477740c81514525616bb26d72819e1",
+      "role": "targeted_companion_source",
+      "conditioning": "Complete Sec2.2 including2.2.1–2/Eqs1–15/Table1 and Sec3.1; not full-paper reading"
+    },
+    {
+      "id": "desi-fiducial-validation-html",
+      "url": "https://arxiv.org/html/2406.06085v2",
+      "sha256": "0eb77d697aaebfb3e93bb7ac50c4843c7b2fe94ce0a830490b583f12809e33ef",
+      "role": "targeted_companion_source",
+      "conditioning": "Complete Sec2.1–4,4.3,5.1,6,AppendixA/B; not full-paper reading"
+    },
+    {
+      "id": "desi-dr2-mean",
+      "url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/bb0c1c9009dc76d1391300e169e8df38fd1096db/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+      "sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+      "role": "released_compression",
+      "conditioning": "Exact restored bytes and all13 mean rows/full169 covariance entries; custody is not likelihood numerical qualification"
+    },
+    {
+      "id": "desi-dr2-covariance",
+      "url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/bb0c1c9009dc76d1391300e169e8df38fd1096db/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+      "sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509",
+      "role": "released_compression",
+      "conditioning": "Exact restored bytes and all13 mean rows/full169 covariance entries; custody is not likelihood numerical qualification"
+    },
+    {
+      "id": "classy-distance-drag-api",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/python/classy.pyx",
+      "sha256": "d0f1bac838772917f2269977e4e45e06b7a41952c89eec8590dbf8b09acc3691",
+      "role": "implementation_source",
+      "conditioning": "angular_distance and Hubble call background_at_z; rs_drag thermodynamics getter; selected methods and background units checked, not full file"
+    }
+  ],
+  "limitations": [
+    "This distinct working target does not rewrite or unblock the historical v1/v2 source contracts. Zero ordinary full-paper reads or queue-stage changes.",
+    "Planck VI Sec5.1 Eq24 defines DV and treats BAO as complementary; it omits WiggleZ/BOSS overlap when correlations are unquantified. DESI source CMB uses PR4 CamSpec plus Planck/ACT reconstruction, unlike this primary-only target.",
+    "Selected sources support flat-LCDM BAO template use and finite fiducial checks, not whole-project-prior compression sufficiency. Neff/BAO phase changes require new template qualification; no such varying-Neff sector is admitted here.",
+    "Late ISW, lensing smoothing, common structure/sky and extraction/calibration ancestry remain possible dependence channels. No reconstruction likelihood is appended; absence of that factor does not eliminate primary-lensing dependence.",
+    "Commander omission, per-probe comparisons and tracer leaveouts test robustness, not empirical crosscovariance zero. No invented correlation bound is used.",
+    "Primary official likelihood additive normalization is retained; no absolute-evidence claim follows from adding a normalized BAO factor."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}

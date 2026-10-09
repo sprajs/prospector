@@ -51,7 +51,7 @@ def records(folder, key):
 
 def validate():
     schemas = {name: strict_load(ROOT / "schemas" / (name + ".schema.json"))
-               for name in ["paper", "candidate-design", "topic", "prospect", "citations", "reference", "reference-fit", "foundation-consumer", "foundation-handoff", "source-contract", "source-serialization"]}
+               for name in ["paper", "candidate-design", "topic", "prospect", "citations", "reference", "reference-fit", "foundation-consumer", "foundation-joint-consumer", "foundation-handoff", "source-contract", "source-serialization"]}
     validators = {}
     for name, schema in schemas.items():
         Draft202012Validator.check_schema(schema)
@@ -413,6 +413,31 @@ def validate():
             require(fixed['sBBN file'] == consumer_contract['bbn_table']['path']
                     and bbn['sha256'] == consumer_contract['bbn_table']['sha256'],
                     'consumer BBN table differs from reviewed reference')
+        joint = (design['minimal_test'].get('parameter_choices') or {}).get('working_joint_contract')
+        if joint is not None:
+            validators['foundation-joint-consumer'].validate(joint)
+            primary_pin, reference_pin = joint['primary_candidate'], joint['primary_reference']
+            require(primary_pin['id'] == 'candidate-class-planck-primary-six-parameter-v2'
+                    and reference_pin['id'] == 'class-planck-primary-six-parameter-v2',
+                    'joint consumer must bind the frozen primary v2 identities')
+            primary_path = ROOT / 'designs' / (primary_pin['id'] + '.json')
+            reference_path = references[reference_pin['id']][0]
+            for pin, path in [(primary_pin, primary_path), (reference_pin, reference_path)]:
+                require(pin['path'] == str(path.relative_to(ROOT)),
+                        'joint consumer role path does not match registered identity')
+                require(path.stat().st_size == pin['bytes']
+                        and hashlib.sha256(path.read_bytes()).hexdigest() == pin['sha256'],
+                        'joint consumer primary source digest mismatch')
+            primary_design = designs[primary_pin['id']]
+            expected_reference = primary_design['source_references'][0]
+            require(reference_pin['id'] == expected_reference['reference_id']
+                    and reference_pin['path'] == expected_reference['path']
+                    and reference_pin['sha256'] == expected_reference['sha256'],
+                    'joint consumer primary/reference pairing mismatch')
+            require(joint['primary_consumer_contract'] ==
+                    primary_design['minimal_test']['parameter_choices']['consumer_contract'],
+                    'joint consumer changes frozen primary semantics')
+            validators['foundation-consumer'].validate(joint['primary_consumer_contract'])
     for path in sorted((ROOT / 'handoffs').glob('*.json')):
         handoff = strict_load(path)
         validators['foundation-handoff'].validate(handoff)
