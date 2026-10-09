@@ -1,0 +1,71 @@
+{
+  "schema": "prospector-site-assets-verification/v1",
+  "date": "2026-10-09",
+  "infrastructure": {
+    "schema": "prospector-public-assets-config/v1",
+    "bucket": "prospector-web-assets-436908790672-eu-west-2",
+    "region": "eu-west-2",
+    "origin": "https://d2ww54nx7x5je4.cloudfront.net",
+    "distribution_id": "E1YM7UAK809FWK",
+    "deployment_role_arn": "arn:aws:iam::436908790672:role/prospector-assets-deployer",
+    "stack_name": "prospector-site-assets"
+  },
+  "research_startup_catalog_pin": {
+    "bytes": 198929,
+    "sha256": "7ee8a1ce4443bf87b58af95e895ab14b02976d2567186ccd4133b384ce528fcb",
+    "uri": "s3://research-data-436908790672-eu-west-2/shared/catalogs/releases/7ee8a1ce4443bf87b58af95e895ab14b02976d2567186ccd4133b384ce528fcb.json",
+    "version_id": "5zhtxcsv0MqKPSUGnkvHAXTcIQ307K2T"
+  },
+  "research_prefix_audit": {
+    "object_count": 72,
+    "pagination": "AWS CLI automatic pagination completed; no NextToken",
+    "website_asset_matches": 0,
+    "contents": "Paper and review custody manifests; no deployable public assets."
+  },
+  "html": {
+    "before_live_bytes": 397451,
+    "same_export_inline_bytes": 444428,
+    "after_bytes": 4633,
+    "reduction_percent": 98.834,
+    "before_live_encoded_bytes": 116481
+  },
+  "browser_benchmark": {
+    "scope": "Chrome; gzip local HTML and production CloudFront assets with negotiated compression; unique query cohort bypasses browser cache without changing asset bytes or CloudFront cache key. One cold browser-cache load plus one ordinary reload. CDN edge already warm. Not a before-after live latency comparison.",
+    "cold_ready_ms": 151,
+    "cached_ready_ms": 39.2,
+    "cold_asset_transfer_bytes": 114103,
+    "cached_asset_transfer_bytes": 0,
+    "cold_asset_encoded_body_bytes": 112903,
+    "cached_html_transfer_bytes": 2089
+  },
+  "checks": {
+    "anonymous_cloudfront_exact_hashes": true,
+    "cors_in_browser": true,
+    "css_js_sri": true,
+    "register_sha256_before_render": true,
+    "direct_s3_denied": true,
+    "nonasset_paths_denied": true,
+    "navigation": true,
+    "timeline_and_relationships": true,
+    "paper_search_and_details": true,
+    "retry_recovered": true,
+    "local_real_abstract_status": 200,
+    "abstract_unregistered_ids_status": 404,
+    "tests": {
+      "python": 119,
+      "node": 10
+    }
+  },
+  "limitations": [
+    "Local benchmark excludes production HTML request latency and uses warm CDN edges; no universal speedup claimed.",
+    "Cold visits still fetch the entire public register.",
+    "Public scope includes all four current exported files and retained historical app assets; no research files are exposed.",
+    "Scientific records are projected unchanged from current main; structural and web checks are not scientific qualification."
+  ],
+  "asset_release_sha256": "5628ac183610ef791b33d0c383341d301d4c093abfac6ec931c2eb56e0975948",
+  "review": {
+    "method": "Separate deliberate complete implementation/infrastructure diff review after functional validation.",
+    "finding_and_fix": "Generated assets and measurement HTML initially sat in dist, which the Sites packager copies recursively. Moved them into ignored .work; production dist contains only server/index.js.",
+    "conclusion": "No remaining actionable findings in scoped review; latest-head GitHub CI and exact-main checks remain required before publication."
+  }
+}

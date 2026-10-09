@@ -1,0 +1,103 @@
+{
+  "schema": "prospector-public-assets-release/v1",
+  "verified_utc": "2026-10-09T08:53:22.855822+00:00",
+  "origin": "https://d2ww54nx7x5je4.cloudfront.net",
+  "manifest": {
+    "schema": "prospector-public-assets/v1",
+    "assets": {
+      "register": {
+        "key": "assets/register.cd82f6044f516ec85f939d201753906eb73602d2c671dd51f798d187caacf592.json",
+        "sha256": "cd82f6044f516ec85f939d201753906eb73602d2c671dd51f798d187caacf592",
+        "integrity": "sha384-3uhr5qjtW/UKLaJwL8QuqHws1DCxFRNgcIEUCGbwwi6/UZfWilMOyk1ftZAhCc65",
+        "bytes": 392114,
+        "content_type": "application/json; charset=utf-8"
+      },
+      "style": {
+        "key": "assets/style.bbcb4c51478e505d9fe3a361f842cee810ab90cea426eeaaf819653b5671f5b3.css",
+        "sha256": "bbcb4c51478e505d9fe3a361f842cee810ab90cea426eeaaf819653b5671f5b3",
+        "integrity": "sha384-vrz52swaNR+TQnat1c2mQ6khFTd3MIkXXWLJ540O13mctJpBCuRM8hbpCYg6KhBQ",
+        "bytes": 12917,
+        "content_type": "text/css; charset=utf-8"
+      },
+      "app": {
+        "key": "assets/app.4e69f055a95718a579fefdde7e2abbfef824a6553f03cb5c074d5f778044136f.js",
+        "sha256": "4e69f055a95718a579fefdde7e2abbfef824a6553f03cb5c074d5f778044136f",
+        "integrity": "sha384-HPQmKTai5kmMcE9KwXELvViR8UIMY/xXbacRo7sV5FCBcg/OkSDln78pEAN0M/A7",
+        "bytes": 27077,
+        "content_type": "text/javascript; charset=utf-8"
+      },
+      "logo": {
+        "key": "assets/logo.39284636610eafa4f2705e1737704e4623e7ce45349c6eb39ae896cb86146d9e.svg",
+        "sha256": "39284636610eafa4f2705e1737704e4623e7ce45349c6eb39ae896cb86146d9e",
+        "integrity": "sha384-xCkMkZr/RtnCRPQ6txNz4DTa0fDAdXMhUgwUMOp8ThK7zAPMX3GV2i4v7o/abBc+",
+        "bytes": 570,
+        "content_type": "image/svg+xml"
+      }
+    }
+  },
+  "objects": {
+    "register": {
+      "uri": "s3://prospector-web-assets-436908790672-eu-west-2/assets/register.cd82f6044f516ec85f939d201753906eb73602d2c671dd51f798d187caacf592.json",
+      "version_id": "sv25R.jMn9jjSid7piDDk8aNJBHiN1hE",
+      "sha256": "cd82f6044f516ec85f939d201753906eb73602d2c671dd51f798d187caacf592",
+      "url": "https://d2ww54nx7x5je4.cloudfront.net/assets/register.cd82f6044f516ec85f939d201753906eb73602d2c671dd51f798d187caacf592.json",
+      "delivery": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Encoding": "gzip",
+        "Cache-Control": "public, max-age=31536000, immutable",
+        "Access-Control-Allow-Origin": "*",
+        "X-Cache": "Miss from cloudfront",
+        "ETag": "W/\"e0188fb7caf66711570a306da17afac7\"",
+        "encoded_bytes": 118255
+      }
+    },
+    "style": {
+      "uri": "s3://prospector-web-assets-436908790672-eu-west-2/assets/style.bbcb4c51478e505d9fe3a361f842cee810ab90cea426eeaaf819653b5671f5b3.css",
+      "version_id": "JNwapLLyw9aD4zXKd.Lq.kfoRBBUJe7t",
+      "sha256": "bbcb4c51478e505d9fe3a361f842cee810ab90cea426eeaaf819653b5671f5b3",
+      "url": "https://d2ww54nx7x5je4.cloudfront.net/assets/style.bbcb4c51478e505d9fe3a361f842cee810ab90cea426eeaaf819653b5671f5b3.css",
+      "delivery": {
+        "Content-Type": "text/css; charset=utf-8",
+        "Content-Encoding": "gzip",
+        "Cache-Control": "public, max-age=31536000, immutable",
+        "Access-Control-Allow-Origin": "*",
+        "X-Cache": "Miss from cloudfront",
+        "ETag": "W/\"3ddc52d60cd914a5397ccfb2322c2e83\"",
+        "encoded_bytes": 3577
+      }
+    },
+    "app": {
+      "uri": "s3://prospector-web-assets-436908790672-eu-west-2/assets/app.4e69f055a95718a579fefdde7e2abbfef824a6553f03cb5c074d5f778044136f.js",
+      "version_id": "DnP2FMjmJNLqcSzuFyDP6gfwdOn53Sye",
+      "sha256": "4e69f055a95718a579fefdde7e2abbfef824a6553f03cb5c074d5f778044136f",
+      "url": "https://d2ww54nx7x5je4.cloudfront.net/assets/app.4e69f055a95718a579fefdde7e2abbfef824a6553f03cb5c074d5f778044136f.js",
+      "delivery": {
+        "Content-Type": "text/javascript; charset=utf-8",
+        "Content-Encoding": "gzip",
+        "Cache-Control": "public, max-age=31536000, immutable",
+        "Access-Control-Allow-Origin": "*",
+        "X-Cache": "Miss from cloudfront",
+        "ETag": "W/\"dee3f85b43799074f1c1ed956b1ad45f\"",
+        "encoded_bytes": 8125
+      }
+    },
+    "logo": {
+      "uri": "s3://prospector-web-assets-436908790672-eu-west-2/assets/logo.39284636610eafa4f2705e1737704e4623e7ce45349c6eb39ae896cb86146d9e.svg",
+      "version_id": "4k9EXmkrBOMPTGcV.wjWmZ0bzH49nmIf",
+      "sha256": "39284636610eafa4f2705e1737704e4623e7ce45349c6eb39ae896cb86146d9e",
+      "url": "https://d2ww54nx7x5je4.cloudfront.net/assets/logo.39284636610eafa4f2705e1737704e4623e7ce45349c6eb39ae896cb86146d9e.svg",
+      "delivery": {
+        "Content-Type": "image/svg+xml",
+        "Content-Encoding": null,
+        "Cache-Control": "public, max-age=31536000, immutable",
+        "Access-Control-Allow-Origin": "*",
+        "X-Cache": "Miss from cloudfront",
+        "ETag": "\"1925c0447c2115255c2106860ea397b9\"",
+        "encoded_bytes": 570
+      }
+    }
+  },
+  "deployment_identity": "arn:aws:sts::436908790672:assumed-role/prospector-assets-deployer/botocore-session-1791535840",
+  "repository_revision": "a3b3a3ac141638959e289c92c20c85fb19679224",
+  "repository_dirty": true
+}

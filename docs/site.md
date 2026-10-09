@@ -23,6 +23,7 @@ worker records, local source paths and consumer requests.
 
 ```bash
 uv run python scripts/build_register.py
+python3 scripts/publish_site_assets.py
 uv run python scripts/prepare_site.py
 node .work/site-hosting/dev.mjs
 ```
@@ -61,3 +62,69 @@ confirms publication. Record the public version/source mapping in `site/publicat
 update README if the returned URL changes, and open that URL in the app.
 Stop the preview server after successful publication. Repo PRs follow the standing
 review/green-CI/merge authorization in [development](development.md).
+
+## Immutable public assets
+
+Sites still serves the HTML and `/api/abstract`. CloudFront serves the exact
+public register JSON, stylesheet, interface script and logo from the separate
+private `prospector-web-assets-436908790672-eu-west-2` bucket. The research archive
+is not a website origin and its policies/retention are not modified.
+`site/assets-config.json` identifies the deployed infrastructure;
+`infrastructure/site-assets.json` is its CloudFormation definition. CloudFront
+uses signed origin access, HTTPS and read-only access to `assets/*`. S3 blocks
+public access, enforces bucket ownership and TLS, keeps versions and requires
+create-only conditional writes. There is no object expiry or deployment deletion.
+The narrowly scoped `prospector-assets-deployer` role trusts only `research-local`,
+can list `assets/`, and can read/write assets; it cannot administer infrastructure,
+read research data or delete objects. Administrative setup uses the separately
+authorized local administrative session, never browser code.
+
+An authorized administrator can recreate/update the stack with:
+
+```bash
+aws cloudformation deploy --profile research-admin --region eu-west-2 \
+  --stack-name prospector-site-assets --template-file infrastructure/site-assets.json \
+  --capabilities CAPABILITY_NAMED_IAM
+aws configure set role_arn arn:aws:iam::436908790672:role/prospector-assets-deployer --profile prospector-assets
+aws configure set source_profile research --profile prospector-assets
+aws configure set region eu-west-2 --profile prospector-assets
+```
+
+Check the actual stack outputs against `site/assets-config.json`. These settings
+contain no credentials; the role obtains short-lived credentials through the
+existing local profile. Do not broaden the restricted cloud research identity.
+
+For each publication, open/fetch the existing hosted source first as described
+above, reconcile any changes, then run from the Prospector repository root:
+
+```bash
+uv run python scripts/build_register.py
+python3 scripts/publish_site_assets.py
+uv run python scripts/prepare_site.py --destination /ABSOLUTE/HELPER/CHECKOUT
+```
+
+Use the actual opened helper checkout, inside this repository's ignored `.work`.
+The uploader selects exactly four generated public files, uses atomic
+`If-None-Match: *` writes, reuses only identical objects, downloads every exact
+S3 VersionId, checks anonymous CloudFront bytes/CORS/content types/cache headers,
+and writes `site/assets-release.json` only after success. The release pins hashes,
+lengths, URLs, versions and the register/abstract allowlist input identity. Builds
+refuse a stale or missing release; no Site publication should precede verification.
+The Worker keeps only paper IDs/titles needed by the abstract allowlist. It does
+not serve a second copy of the JSON or external assets.
+
+All asset URLs contain their full SHA256. CloudFront negotiates gzip/Brotli for
+eligible files and caches them for one year with `immutable`; unchanged CSS,
+JavaScript and images keep the same URLs across register updates. CORS allows
+anonymous public reads from any origin, without credentials. CSS/JavaScript use
+SRI; register bytes are checked against their SHA256 before rendering. The page
+shows loading, an explicit failure and a reload-based Retry. Retain old assets
+for old saved Site versions; rollback means redeploying the prior Sites version.
+`register/map.html` remains the self-contained offline mirror.
+
+For local-only checks without AWS, use `node site/build.mjs --local-assets` then
+`node site/dev.mjs`. Local mode serves exactly the same four generated assets;
+production builds require the verified CloudFront release. Add `?performance=1`
+to capture browser timing/transfer measurements in the root element's
+`data-prospector-performance` attribute without adding interface chrome. Record
+cold and repeated loads separately; network timings are environment-specific.
