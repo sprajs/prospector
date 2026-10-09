@@ -58,10 +58,597 @@
   ],
   "screen": {
     "status": "selected",
-    "basis": "abstract",
-    "reason": "Full reading selected: recent independent ACT DR6 constraint on related WZDR/nuADaM phenomenology; not direct Hot NEDE exclusion."
+    "basis": "full_text",
+    "reason": "Complete Luna reading, pending exact Sol source/scientific assessment. No idea acceptance or execution."
   },
-  "extraction": null,
+  "extraction": {
+    "packet_version": 1,
+    "paper_id": "arxiv:2512.19633v1",
+    "requested_model": "gpt-6-luna",
+    "requested_reasoning_effort": "xhigh",
+    "agent_id": "/root/read_act_constraints",
+    "actual_backend_identity": null,
+    "reading_level": "full_text",
+    "source_identity_verified": true,
+    "source_hashes": {
+      "html": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+      "pdf": "de6affb0aac878569d76b999a81853204ae7be9bf22a2ce9c918db8ff051dd71",
+      "extracted_text": "744a81a72e6ee49e5a5a5ff2c2e7b4c5f9360d23a66e66ed9a62bd85232d74c7"
+    },
+    "coverage": {
+      "sections_read": [
+        "Title and abstract",
+        "Contents",
+        "1 Introduction",
+        "2 Models",
+        "2.1 WZDR Model",
+        "2.2 nuADaM Model",
+        "3 Data and Methodology",
+        "4 Results",
+        "5 Conclusion",
+        "6 Acknowledgments",
+        "References (identity/citation matching; no full reading of unregistered cited papers)",
+        "Appendix A Triangle plots"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "figures_rendered_and_visually_checked": [
+        "Figure 1",
+        "Figure 2",
+        "Figure 3",
+        "Figure 4",
+        "Figure 5",
+        "Figure 6",
+        "Figure 7"
+      ],
+      "rendered_pdf_physical_pages": [
+        3,
+        7,
+        9,
+        10,
+        16,
+        17
+      ],
+      "figure_check": "All seven figures were rendered from the pinned PDF and visually inspected, including the residual curves, parameter contours, Table 1-3 values, and Appendix A triangle plots. No figure is treated as checked from its caption alone.",
+      "original_html_checks": [
+        "Equation (2.1) in PDF is HTML equation anchor #S2.E1 (HTML tag number (1)); equation (2.2) is #S2.E2 (HTML tag number (2)).",
+        "Compared the HTML equation alttext and MathML with the PDF render for both Lagrangians.",
+        "Checked the HTML bibliography anchors independently against PDF numbered references; HTML anchors do not share PDF numbering."
+      ],
+      "unread_material": [
+        "No main-text section or Appendix A figure was unread.",
+        "No author code repository, CLASS modifications, likelihood implementation/configuration, MCMC chain files, or supplementary numerical files were inspected.",
+        "No independent reproduction, model execution, or current-data reassessment was performed.",
+        "Unregistered references were not fetched/read; the five leads below are pointers only.",
+        "The registered Hot NEDE paper arxiv:2508.03795v2 and queued paper arxiv:2604.26541v1 were not fully read."
+      ],
+      "limitations": [
+        "No main-text section or Appendix A figure was unread.",
+        "No author code repository, CLASS modifications, likelihood implementation/configuration, MCMC chain files, or supplementary numerical files were inspected.",
+        "No independent reproduction, model execution, or current-data reassessment was performed.",
+        "Unregistered references were not fetched/read; the five leads below are pointers only.",
+        "The registered Hot NEDE paper arxiv:2508.03795v2 and queued paper arxiv:2604.26541v1 were not fully read."
+      ]
+    },
+    "summary": "This paper fits Wess-Zumino dark radiation (WZDR) and new atomic dark matter (nuADaM) with ACT DR6 small-scale CMB spectra plus Planck, CMB lensing, BAO, supernovae, and optional S8/SH0ES information. The authors find that the high-ell damping-tail data restrict extra radiation in both transition models: without SH0ES, their quoted 95% upper bounds are N_IR<0.246 (WZDR) and N_idr<0.237 (nuADaM), while fits including SH0ES reach H0 around 70 km/s/Mpc with a worse CMB fit. A separate free-streaming plus perfect-fluid radiation extension finds no preference for a self-interacting component. These are model- and likelihood-conditioned fits; they do not test Hot NEDE or a running primordial spectrum directly.",
+    "ideas": [
+      {
+        "local_id": "wzdr-threshold-entropy-transfer",
+        "title": "WZDR scalar threshold transfers entropy to a self-interacting fermion bath",
+        "claim_type": "author_model_description",
+        "description": "The proposed dark sector contains a massive complex scalar and a massless Weyl fermion with a Yukawa interaction. The paper assumes the dark sector is populated after BBN, scalar decays remain in equilibrium, and fermion self-interactions keep chemical and kinetic equilibrium through recombination. When Td falls below m_phi, the scalar becomes nonrelativistic and its entropy heats the remaining fermions over roughly a decade in redshift. The text says the effective relativistic count rises from N_UV to N_IR=(15/7)^(1/3)N_UV. The fitted parameters are late radiation density and a transition location; the fixed ratio is the complex-scalar/Weyl-fermion degree-of-freedom prediction.",
+        "locators": [
+          "Sec. 2.1, PDF p.3, Eq. (2.1); HTML #S2.E1",
+          "Sec. 2.1, PDF p.3, paragraph after Eq. (2.1); HTML #S2.SS1.p1.2"
+        ],
+        "equations": [
+          {
+            "expression": "\\mathcal{L}_{\\rm WZ}=\\frac{1}{2}m_{\\phi}^{2}\\phi^{2}+\\lambda\\phi\\psi^{2}+\\lambda^{2}(\\phi^{*}\\phi)^{2}.",
+            "locator": "PDF Eq. (2.1), p.3; HTML #S2.E1 (HTML equation tag (1)); transcribed literally as printed.",
+            "definitions": "m_phi is the scalar mass; phi is the complex scalar; psi is the massless Weyl fermion; lambda is the Yukawa coupling.",
+            "domain": "Dark-sector description; early relativistic regime Td >> m_phi and transition as Td falls through m_phi.",
+            "confidence": "high"
+          },
+          {
+            "expression": "N_{\\rm IR}/N_{\\rm UV}=(15/7)^{1/3}.",
+            "locator": "Sec. 2.1, PDF p.3, immediately after the entropy-transfer description; HTML #S2.SS1.p1.2.",
+            "definitions": "N_UV and N_IR denote the effective relativistic degrees of freedom before and after the threshold.",
+            "domain": "Fixed complex-scalar plus Weyl-fermion WZDR content assumed by this analysis.",
+            "confidence": "high"
+          },
+          {
+            "expression": "1+z_t\\simeq m_{\\phi}/T_{d0}.",
+            "locator": "Sec. 2.1, PDF p.3, transition-redshift definition; HTML paragraph in #S2.SS1.",
+            "definitions": "z_t is the threshold redshift and Td0 the dark-sector temperature today.",
+            "domain": "Approximate relation for the mass threshold; no uncertainty for this mapping is supplied.",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "local_id": "nuadam-dark-recombination-and-coupled-radiation",
+        "title": "nuADaM couples a dark-radiation fluid to an atomic dark-matter subcomponent until dark recombination",
+        "claim_type": "author_model_description",
+        "description": "A subcomponent of dark matter consists of oppositely charged dark protons and electrons under a dark U(1). Dark photons mix kinetically with a massless vector X and charged massless fermions, keeping the radiation self-interacting. At high temperatures the charged matter is ionized and scatters from dark radiation; below the dark binding scale it recombines and decouples. The paper describes effective parameters N_idr, the atomic-dark-matter fraction f_idm, and transition scale factor a_t; it fixes alpha_d=0.01 and m_p'=1 GeV and uses m_e'/m_p' to control the transition. The fit section instead varies r_twin without defining it in the paper text.",
+        "locators": [
+          "Sec. 2.2, PDF pp.3-4, Eq. (2.2); HTML #S2.E2/#S2.E2X/#S2.E2Y",
+          "Sec. 2.2, PDF p.4, parameter paragraph; HTML #S2.SS2"
+        ],
+        "equations": [
+          {
+            "expression": "\\mathcal{L}_{\\rm nuadam}=-\\frac14F^{\\prime\\mu\\nu}F^{\\prime}_{\\mu\\nu}+\\bar p^{\\prime}(i\\slashed D-m_{p^{\\prime}})p^{\\prime}+\\bar e^{\\prime}(i\\slashed D-m_{e^{\\prime}})e^{\\prime}-\\frac14X^{\\mu\\nu}X_{\\mu\\nu}-\\frac{\\epsilon}{4}F^{\\prime\\mu\\nu}X_{\\mu\\nu}+\\sum_{j=1}^{N_f}\\bar\\nu_j^{\\prime}i\\slashed D\\nu_j^{\\prime}.",
+            "locator": "PDF Eq. (2.2), p.4; HTML #S2.E2 (equation-group rows #S2.E2X/#S2.E2Y); PDF render visually checked.",
+            "definitions": "F' is the dark-photon field strength; X is the second dark vector field strength; p' and e' are dark proton/electron; nu'_j are charged massless fermions; epsilon is the kinetic mixing; D is the dark covariant derivative; N_f counts the dark fermion species.",
+            "domain": "The paper\u2019s cosmological regime with dark radiation self-interacting through the stated kinetic mixing and dark recombination before matter-radiation equality.",
+            "confidence": "high"
+          },
+          {
+            "expression": "T\\gg\\alpha_d^2m_{e^{\\prime}}\\;\\text{(ionized)},\\qquad T\\ll\\alpha_d^2m_{e^{\\prime}}\\;\\text{(dark atoms)}.",
+            "locator": "Sec. 2.2, PDF p.3; HTML #S2.SS2.",
+            "definitions": "T is the relevant dark-sector temperature; alpha_d is the dark fine-structure constant; m_e' is the dark-electron mass.",
+            "domain": "Asymptotic temperature regimes; the paper does not present this as a sharp, exact recombination condition.",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "local_id": "act-dr6-restricts-wzdr-and-nuadam-radiation",
+        "title": "ACT DR6 damping-tail data sharply reduce allowed radiation in the fitted WZDR and nuADaM models",
+        "claim_type": "author_fitted_result",
+        "description": "For P-ACT-LBS without SH0ES, the authors report 95% limits N_IR<0.246 for WZDR and N_idr<0.237 for nuADaM, with H0 means 68.75 and 68.64 km s^-1 Mpc^-1 respectively. With SH0ES, they report H0 around 70.13 (WZDR) and 70.48 (nuADaM), but describe a degraded CMB fit; the Table 1 best fits remain over 2 sigma below the SH0ES central value. Restricting ACT to ell<3000 gives similar 95% upper bounds, 0.266 and 0.256. These are posterior summaries under the paper\u2019s dataset and parameter choices, not direct measurements of H0 or universal bounds on dark radiation.",
+        "locators": [
+          "Sec. 4, PDF pp.5-10, Fig.2, Fig.3, Fig.4, Tables 1-3; HTML #S4",
+          "Sec. 5, PDF p.10; HTML #S5"
+        ],
+        "equations": []
+      },
+      {
+        "local_id": "intermediate-damping-tail-drives-reported-bounds",
+        "title": "The reported WZDR and nuADaM limits are stable when ACT multipoles above 3000 are removed",
+        "claim_type": "author_interpretation",
+        "description": "The fits with ell_max=3000 yield only slightly weaker quoted radiation bounds than the ell_max=6500 fits. The authors infer that the constraining power is mainly in the intermediate damping tail, 1000<ell<3000, where they argue Silk damping is measurable and secondary anisotropies are less dominant. This tests the sensitivity to removing high multipoles in their adopted ACT likelihood; it does not vary the foreground model or demonstrate absence of model-dependent likelihood bias.",
+        "locators": [
+          "Sec. 4, PDF pp.7-9, Fig.4, Tables 2-3; HTML #S4",
+          "Sec. 5, PDF p.10; HTML #S5"
+        ],
+        "equations": [
+          {
+            "expression": "1000<\\ell<3000",
+            "locator": "Sec. 4, PDF p.7; HTML #S4.",
+            "definitions": "CMB multipole interval.",
+            "domain": "Authors\u2019 interpretation of the ell_max cut comparison.",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "local_id": "free-streaming-plus-perfect-fluid-radiation-fit",
+        "title": "ACT DR6 finds no preference for partitioning radiation into free-streaming and perfect-fluid components",
+        "claim_type": "author_fitted_result",
+        "description": "The authors add independently variable free-streaming radiation N_fs and a self-interacting perfect relativistic fluid with w=c_s^2=1/3, define N_tot=N_fs+N_idr, and report N_tot=2.87\u00b10.13 at 68% CL, N_idr<0.187, and no preference for nonzero interacting radiation. They say this agrees with the ACT DR6 baseline Neff=2.86\u00b10.13. This is a deliberately limited two-component phenomenology, not a test of arbitrary interacting-radiation perturbation closures.",
+        "locators": [
+          "Sec. 4, PDF pp.7-10, Figure 5; HTML #S4.F5 and surrounding text"
+        ],
+        "equations": [
+          {
+            "expression": "N_{\\rm tot}=N_{\\rm fs}+N_{\\rm idr},\\qquad w=c_s^2=1/3.",
+            "locator": "Sec. 4, PDF pp.7-8 and Figure 5, p.9; HTML #S4.",
+            "definitions": "N_fs denotes the free-streaming component (including SM neutrinos as described); N_idr denotes additional self-interacting radiation.",
+            "domain": "Generalized analysis with a tightly coupled perfect-fluid radiation component.",
+            "confidence": "high"
+          }
+        ]
+      }
+    ],
+    "quantities": [
+      {
+        "name": "WZDR N_IR upper bound",
+        "value": "<0.246",
+        "unit": "effective relativistic species",
+        "uncertainty": "95% CL upper limit",
+        "conditioning": "P-ACT-LBS without SH0ES; WZDR model; parameterization as in source; BAO release ambiguity in detailed Tables 2-3 noted below.",
+        "locator": "Sec. 4, Table 2 and Sec. 5; PDF pp.8-10."
+      },
+      {
+        "name": "nuADaM N_idr upper bound",
+        "value": "<0.237",
+        "unit": "effective relativistic species",
+        "uncertainty": "95% CL upper limit",
+        "conditioning": "P-ACT-LBS without SH0ES; nuADaM model; source parameterization.",
+        "locator": "Sec. 4, Table 3 and Sec. 5; PDF pp.9-10."
+      },
+      {
+        "name": "WZDR N_IR upper bound, ACT cut",
+        "value": "<0.266",
+        "unit": "effective relativistic species",
+        "uncertainty": "95% CL upper limit",
+        "conditioning": "P-ACT-LBS with ACT ell_max=3000; WZDR model.",
+        "locator": "Sec. 4, Table 2; PDF p.8."
+      },
+      {
+        "name": "nuADaM N_idr upper bound, ACT cut",
+        "value": "<0.256",
+        "unit": "effective relativistic species",
+        "uncertainty": "95% CL upper limit",
+        "conditioning": "P-ACT-LBS with ACT ell_max=3000; nuADaM model.",
+        "locator": "Sec. 4, Table 3; PDF p.9."
+      },
+      {
+        "name": "WZDR H0 posterior mean",
+        "value": "68.75 +0.92/-0.71",
+        "unit": "km s^-1 Mpc^-1",
+        "uncertainty": "Table 2 states 2-sigma uncertainties; source does not separately state posterior summary method in caption.",
+        "conditioning": "P-ACT-LBS without SH0ES.",
+        "locator": "Sec. 4, Table 2; PDF p.8."
+      },
+      {
+        "name": "nuADaM H0 posterior mean",
+        "value": "68.64 +1.15/-0.69",
+        "unit": "km s^-1 Mpc^-1",
+        "uncertainty": "Table 3 states 2-sigma uncertainties; source does not separately state posterior summary method in caption.",
+        "conditioning": "P-ACT-LBS without SH0ES.",
+        "locator": "Sec. 4, Table 3; PDF p.9."
+      },
+      {
+        "name": "WZDR H0 posterior mean with SH0ES",
+        "value": "70.13 +1.10/-1.08",
+        "unit": "km s^-1 Mpc^-1",
+        "uncertainty": "2-sigma uncertainties per Table 2.",
+        "conditioning": "P-ACT-LBS+SH0ES.",
+        "locator": "Sec. 4, Table 2; PDF p.8."
+      },
+      {
+        "name": "nuADaM H0 posterior mean with SH0ES",
+        "value": "70.48 +1.18/-1.22",
+        "unit": "km s^-1 Mpc^-1",
+        "uncertainty": "2-sigma uncertainties per Table 3.",
+        "conditioning": "P-ACT-LBS+SH0ES.",
+        "locator": "Sec. 4, Table 3; PDF p.9."
+      },
+      {
+        "name": "generalized-model N_tot",
+        "value": "2.87 +/- 0.13",
+        "unit": "effective relativistic species",
+        "uncertainty": "68% CL in surrounding text.",
+        "conditioning": "P-ACT-LBS; free-streaming plus self-interacting component fit; source states DESI DR1 for this generalized analysis.",
+        "locator": "Sec. 4 and Figure 5; PDF pp.8-9."
+      },
+      {
+        "name": "SH0ES likelihood input",
+        "value": "73.04 +/- 1.04; M_B=-19.253 +/- 0.027",
+        "unit": "km s^-1 Mpc^-1; mag",
+        "uncertainty": "Gaussian likelihood on supernova intrinsic brightness M_B; source labels corresponding H0 measurement.",
+        "conditioning": "SH0ES prior, reference [1].",
+        "locator": "Sec. 3; PDF p.5."
+      },
+      {
+        "name": "KiDS S8 likelihood input",
+        "value": "0.815 +0.016/-0.021",
+        "unit": "dimensionless",
+        "uncertainty": "Gaussian likelihood, asymmetric quoted interval.",
+        "conditioning": "S8/KiDS cosmic-shear likelihood; used in Figure 2 combinations.",
+        "locator": "Sec. 3; PDF p.5."
+      }
+    ],
+    "data_dependencies": [
+      {
+        "name": "ACT DR6 power spectra",
+        "role": "CMB TT/TE/EE likelihood",
+        "conditioning": "ACT-lite, 600<ell<6500 in baseline; truncated fit uses ell_max=3000.",
+        "locator": "Sec. 3; PDF p.4."
+      },
+      {
+        "name": "Planck 2018 PR3 Planckcut + Sroll2",
+        "role": "large-scale CMB and reionization optical-depth constraints",
+        "conditioning": "TT ell<1000, TE/EE ell<600; low-ell Sroll2 EE ell<30. The authors say this minimizes ACT overlap.",
+        "locator": "Sec. 3; PDF p.4."
+      },
+      {
+        "name": "ACT DR6 lensing and Planck PR4 NPIPE lensing",
+        "role": "CMB lensing added in P-ACT-L",
+        "conditioning": "Combined as described; covariance/overlap details are not restated in this paper.",
+        "locator": "Sec. 3; PDF p.4."
+      },
+      {
+        "name": "DESI BAO",
+        "role": "low-redshift distance-ratio constraints",
+        "conditioning": "Methods define DR2, five tracer populations spanning z<0.4 to 2.0<z<4.2; source later states DESI DR1 was used for the generalized free-streaming+fluid fits. Section 4 Tables 2-3 do not clearly restate which release supplies their BAO rows after that statement; retain this as unresolved table-conditioning ambiguity.",
+        "locator": "Sec. 3 and footnote 2; Sec. 4; PDF pp.4,5,8."
+      },
+      {
+        "name": "Pantheon+",
+        "role": "Type Ia supernova distances",
+        "conditioning": "1701 light curves from 1550 SNe Ia; 0.001<z<2.26.",
+        "locator": "Sec. 3; PDF p.5."
+      },
+      {
+        "name": "SH0ES",
+        "role": "optional local-distance-ladder likelihood",
+        "conditioning": "Gaussian prior implemented on M_B=-19.253\u00b10.027, corresponding to H0=73.04\u00b11.04 km/s/Mpc.",
+        "locator": "Sec. 3; PDF p.5."
+      },
+      {
+        "name": "KiDS completed survey",
+        "role": "optional S8 likelihood",
+        "conditioning": "Gaussian S8=0.815 +0.016/-0.021.",
+        "locator": "Sec. 3; PDF p.5."
+      }
+    ],
+    "fit_details": {
+      "codes_and_methods": "Modified CLASS implementations of WZDR and nuADaM; Cobaya MCMC; Procoli minimization in COCOA. WZDR implementation follows ref [26]; nuADaM implementation follows ref [48]. No exact code commit or configuration hashes are supplied in this paper.",
+      "model_specific_flat_priors": [
+        {
+          "parameter": "WZDR N_IR",
+          "range": "[0,5]"
+        },
+        {
+          "parameter": "WZDR log10(a_t) in Methods",
+          "range": "[-5.0,-4.0]",
+          "note": "Sec.2.1 instead describes log10(z_t); table axes/results use a_t."
+        },
+        {
+          "parameter": "nuADaM \u0394N_idr",
+          "range": "[0,5]"
+        },
+        {
+          "parameter": "nuADaM log10(m_e'/m_p')",
+          "range": "[-4.5,-3.5]"
+        },
+        {
+          "parameter": "nuADaM r_twin",
+          "range": "[0,0.3]",
+          "note": "Not defined in the paper\u2019s model or methods prose; Sec.2.2 instead names f_idm as an effective parameter."
+        }
+      ],
+      "fixed_nuadam_inputs": {
+        "alpha_d": "0.01",
+        "m_p_prime": "1 GeV"
+      },
+      "convergence": "Gelman-Rubin R-1<0.05 for all parameters; for WZDR all runs reached R-1<0.01. No nuADaM-specific tighter value is given.",
+      "not_reported_or_not_checked": [
+        "common LCDM parameter prior ranges",
+        "chain lengths, burn-in, effective sample sizes, number of chains, sampling settings beyond stated convergence criterion",
+        "full likelihood and nuisance-parameter configuration",
+        "actual likelihood/version hashes",
+        "modified CLASS source revision and exact runtime settings",
+        "posterior predictive checks or independent chain reproduction"
+      ]
+    },
+    "interpretation": {
+      "author_proposals_and_model_assumptions": [
+        "WZDR entropy transfer across a scalar mass threshold, with dark sector populated after BBN and self-interactions in equilibrium through recombination.",
+        "nuADaM dark atom formation/decoupling near equality with a self-interacting radiation fluid.",
+        "Generalized additional radiation as a free-streaming plus perfect-fluid split with w=c_s^2=1/3."
+      ],
+      "author_fitted_results": [
+        "ACT+Planck+low-redshift data restrict N_IR and N_idr in the two fitted models; quoted 95% bounds are <0.246 and <0.237 without SH0ES.",
+        "The SH0ES-conditioned fit moves H0 upward to about 70 km/s/Mpc but worsens the CMB chi-square; Table 1 best-fit H0 values are 70.04 (WZDR) and 70.63 (nuADaM), versus 68.71 for LCDM.",
+        "The generalized fit reports N_tot=2.87\u00b10.13 (68% CL) and no preference for N_idr>0."
+      ],
+      "author_interpretations": [
+        "Extra radiation increases Silk damping and is disfavored by ACT high-ell spectra in the fitted models.",
+        "Similar constraints after ell_max=3000 suggest intermediate multipoles 1000<ell<3000 carry much of the constraining power.",
+        "The paper concludes these transitions do not preserve the earlier Planck-only H0-relieving parameter space, but explicitly leaves open other radiation-sector mechanisms."
+      ],
+      "reader_inferences": [
+        "Methods and tables have nomenclature drift: WZDR is described using N_IR but Table 1 labels the row \u0394N_idr; the transition is log10(z_t) in Sec.2.1 and log10(a_t) in Methods/Tables. nuADaM lists f_idm in its model description but varies r_twin without a definition in the prose.",
+        "The generalized-model paragraph says DESI DR1 is used; the precise BAO release for the adjacent WZDR/nuADaM Tables 2-3 is not explicitly restated, so avoid silently assigning DR1 or DR2 to those rows.",
+        "Table 1 total chi-square values do not equal the sum of the separately listed CMB, BAO, SN, and M_B components. The methods also include KiDS S8 but the table has no chi-square_S8 row; the source does not specify the missing term or any additive normalization convention. The table-to-total accounting therefore cannot be reconstructed from the paper alone; this is not enough to claim a calculation error."
+      ]
+    },
+    "comparison_scope": [
+      {
+        "paper_id": "arxiv:2508.03795v2",
+        "title": "Hot New Early Dark Energy: Dark Radiation Matter Decoupling",
+        "register_status": "deferred, abstract basis; extraction is null.",
+        "comparison": "This is the registered Hot NEDE paper and is explicitly bibliography ref [50] in the target source (PDF label [50], HTML anchor #bib.bib10). The target paper fits WZDR and nuADaM and does not fit Hot NEDE. Its bounds cannot be transferred to this separate dark-radiation/matter-decoupling model or treated as an exclusion."
+      },
+      {
+        "paper_id": "arxiv:2604.26541v1",
+        "title": "The End of the First Act: Spectral Running, Interacting Dark Radiation, and the Hubble Tension in Light of ACT DR6 Data",
+        "register_status": "selected for full reading; extraction is null and reading remains queued.",
+        "comparison": "It shares ACT DR6 context and is selected to examine spectral running versus interacting-dark-radiation degeneracy. This packet does not read that paper or infer its result; shared ACT data also means a later comparison is not independent observational evidence."
+      }
+    ],
+    "strongest_objection": "The broadest conclusion is more general than the fitted physics: the paper constrains two specific transition models and one restricted free-streaming plus perfect-fluid split, under the adopted ACT/Planck/BAO/SN likelihood and baseline assumptions. It does not establish a bound on arbitrary interacting-radiation perturbations, Hot NEDE\u2019s distinct background/matter-decoupling history, or compensating primordial-spectrum running. The source also leaves parameter and table-conditioning details (notably r_twin, a_t versus z_t, and the BAO release scope) insufficiently explicit for a clean independent reproduction.",
+    "most_informative_next_test": "First complete the already queued source reading of arxiv:2604.26541v1 as a separate paper. For a later quantitative comparison, hold the ACT DR6 likelihood and shared nuisance/foreground setup fixed and compare the same WZDR or nuADaM branch with a power-law primordial spectrum versus a clearly defined running extension, reporting posterior predictive TT/TE/EE residuals over 1000<ell<3000 and exact likelihood/code/prior identities. Keep Hot NEDE as a separate model branch with its own closure; do not transfer these bounds or combine mechanisms before their contracts are checked. No such test was run here.",
+    "citation_links": [
+      {
+        "pdf_reference_label": "[1]",
+        "cited_base_id": "2112.04510",
+        "cited_version_printed": null,
+        "registered_paper_id": "arxiv:2112.04510v3",
+        "html_anchor": "#bib.bib67",
+        "role": "SH0ES local H0 likelihood; explicit citation",
+        "source_url": "https://arxiv.org/html/2512.19633v1#bib.bib67",
+        "original_source_sha256": {
+          "html_sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+          "pdf_sha256": "de6affb0aac878569d76b999a81853204ae7be9bf22a2ce9c918db8ff051dd71"
+        }
+      },
+      {
+        "pdf_reference_label": "[2]",
+        "cited_base_id": "1807.06209",
+        "cited_version_printed": null,
+        "registered_paper_id": "arxiv:1807.06209v4",
+        "html_anchor": "#bib.bib65",
+        "role": "Planck 2018 baseline likelihood; explicit citation",
+        "source_url": "https://arxiv.org/html/2512.19633v1#bib.bib65",
+        "original_source_sha256": {
+          "html_sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+          "pdf_sha256": "de6affb0aac878569d76b999a81853204ae7be9bf22a2ce9c918db8ff051dd71"
+        }
+      },
+      {
+        "pdf_reference_label": "[10]",
+        "cited_base_id": "1811.04083",
+        "cited_version_printed": null,
+        "registered_paper_id": "arxiv:1811.04083v2",
+        "html_anchor": "#bib.bib44",
+        "role": "Early dark energy H0 proposal; cited in introduction",
+        "source_url": "https://arxiv.org/html/2512.19633v1#bib.bib44",
+        "original_source_sha256": {
+          "html_sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+          "pdf_sha256": "de6affb0aac878569d76b999a81853204ae7be9bf22a2ce9c918db8ff051dd71"
+        }
+      },
+      {
+        "pdf_reference_label": "[25]",
+        "cited_base_id": "2112.00770",
+        "cited_version_printed": null,
+        "registered_paper_id": "arxiv:2112.00770v2",
+        "html_anchor": "#bib.bib33",
+        "role": "Earlier Hot New Early Dark Energy paper; cited in introduction",
+        "source_url": "https://arxiv.org/html/2512.19633v1#bib.bib33",
+        "original_source_sha256": {
+          "html_sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+          "pdf_sha256": "de6affb0aac878569d76b999a81853204ae7be9bf22a2ce9c918db8ff051dd71"
+        }
+      },
+      {
+        "pdf_reference_label": "[42]",
+        "cited_base_id": "2404.16822",
+        "cited_version_printed": null,
+        "registered_paper_id": "arxiv:2404.16822v1",
+        "html_anchor": "#bib.bib17",
+        "role": "Dark-radiation neutrino-mixing paper; explicit bibliography entry",
+        "source_url": "https://arxiv.org/html/2512.19633v1#bib.bib17",
+        "original_source_sha256": {
+          "html_sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+          "pdf_sha256": "de6affb0aac878569d76b999a81853204ae7be9bf22a2ce9c918db8ff051dd71"
+        }
+      },
+      {
+        "pdf_reference_label": "[50]",
+        "cited_base_id": "2508.03795",
+        "cited_version_printed": null,
+        "registered_paper_id": "arxiv:2508.03795v2",
+        "html_anchor": "#bib.bib10",
+        "role": "Hot New Early Dark Energy: Dark Radiation Matter Decoupling; cited in introduction",
+        "source_url": "https://arxiv.org/html/2512.19633v1#bib.bib10",
+        "original_source_sha256": {
+          "html_sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+          "pdf_sha256": "de6affb0aac878569d76b999a81853204ae7be9bf22a2ce9c918db8ff051dd71"
+        }
+      },
+      {
+        "pdf_reference_label": "[61]",
+        "cited_base_id": "2306.12469",
+        "cited_version_printed": null,
+        "registered_paper_id": "arxiv:2306.12469v2",
+        "html_anchor": "#bib.bib55",
+        "role": "Comparative interacting stepped dark radiation analysis; explicit bibliography entry",
+        "source_url": "https://arxiv.org/html/2512.19633v1#bib.bib55",
+        "original_source_sha256": {
+          "html_sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+          "pdf_sha256": "de6affb0aac878569d76b999a81853204ae7be9bf22a2ce9c918db8ff051dd71"
+        }
+      },
+      {
+        "pdf_reference_label": "[72]",
+        "cited_base_id": "2503.14738",
+        "cited_version_printed": null,
+        "registered_paper_id": "arxiv:2503.14738v3",
+        "html_anchor": "#bib.bib74",
+        "role": "DESI DR2 BAO data release; explicit citation",
+        "source_url": "https://arxiv.org/html/2512.19633v1#bib.bib74",
+        "original_source_sha256": {
+          "html_sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+          "pdf_sha256": "de6affb0aac878569d76b999a81853204ae7be9bf22a2ce9c918db8ff051dd71"
+        }
+      },
+      {
+        "pdf_reference_label": "[73]",
+        "cited_base_id": "2112.03863",
+        "cited_version_printed": null,
+        "registered_paper_id": "arxiv:2112.03863v2",
+        "html_anchor": "#bib.bib66",
+        "role": "Pantheon+ data release; explicit citation",
+        "source_url": "https://arxiv.org/html/2512.19633v1#bib.bib66",
+        "original_source_sha256": {
+          "html_sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+          "pdf_sha256": "de6affb0aac878569d76b999a81853204ae7be9bf22a2ce9c918db8ff051dd71"
+        }
+      },
+      {
+        "pdf_reference_label": "[74]",
+        "cited_base_id": "1104.2933",
+        "cited_version_printed": null,
+        "registered_paper_id": "arxiv:1104.2933v3",
+        "html_anchor": "#bib.bib64",
+        "role": "CLASS code methods; explicit citation",
+        "source_url": "https://arxiv.org/html/2512.19633v1#bib.bib64",
+        "original_source_sha256": {
+          "html_sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+          "pdf_sha256": "de6affb0aac878569d76b999a81853204ae7be9bf22a2ce9c918db8ff051dd71"
+        }
+      }
+    ],
+    "citation_leads": [
+      {
+        "pdf_reference_label": "[26]",
+        "base_id": "2111.00014",
+        "why_follow_up": "WZDR model/previous analysis used as the implementation reference; check its exact parameter mapping and earlier Planck conditioning.",
+        "action": "Pointer only; not downloaded or read."
+      },
+      {
+        "pdf_reference_label": "[48]",
+        "base_id": "2411.08097",
+        "why_follow_up": "Original nuADaM analysis; needed to trace the physical meaning of the fitted interaction/transition parameters, including r_twin.",
+        "action": "Pointer only; not downloaded or read."
+      },
+      {
+        "pdf_reference_label": "[58]",
+        "base_id": "2503.14454",
+        "why_follow_up": "ACT DR6 extended-model likelihood/data analysis that supplies the central comparative constraint; exact likelihood conditioning is critical.",
+        "action": "Pointer only; not downloaded or read."
+      },
+      {
+        "pdf_reference_label": "[77]",
+        "base_id": "2511.16554",
+        "why_follow_up": "A phenomenological dark-matter/dark-radiation comparison cited by the authors for similar ACT degradation; test whether the parameterization genuinely overlaps nuADaM.",
+        "action": "Pointer only; not downloaded or read."
+      },
+      {
+        "pdf_reference_label": "[79]",
+        "base_id": "2502.19383",
+        "why_follow_up": "CMB-experiment dark-sector likelihood/systematics case study relevant to the authors\u2019 caveat about foreground/nonlinear modeling at high ell.",
+        "action": "Pointer only; not downloaded or read."
+      }
+    ],
+    "usefulness": {
+      "assessment": "Useful constraint-context reading for interacting dark radiation and an informative boundary against overgeneralizing ACT DR6 results. It is not evidence against Hot NEDE and does not settle the running-versus-radiation degeneracy.",
+      "readiness": "full Luna reading packet prepared; Sol scientific review remains required before idea/graph acceptance or design promotion.",
+      "strongest_supported_conclusion": "Under this paper\u2019s WZDR and nuADaM model parameterizations and stated combined datasets, ACT DR6 substantially lowers the allowed additional radiation and SH0ES-conditioned H0 remains around 70 rather than the SH0ES central value."
+    },
+    "caveats": [
+      "The abstract says WZDR induces a step-like reduction in dark-radiation abundance, while Sec.2.1 describes the effective radiation count increasing from N_UV to N_IR as scalar entropy heats the fermions. This may refer to different abundance variables; the distinction should be clarified rather than treating the wording as a contradiction or equating the quantities.",
+      "The exact fitted interpretation of nuADaM r_twin is not defined in this paper; no meaning should be guessed from f_idm or source-code conventions.",
+      "Posterior limits, best fits, means, and confidence levels are source-conditioned fits, not direct measurements or independent reproductions.",
+      "The restriction ell_max=3000 is a likelihood-range sensitivity check within the adopted analysis, not a re-evaluation of ACT foreground/calibration modeling for non-LCDM spectra.",
+      "The source cites registered papers at author-year anchors whose HTML anchor numbers differ from the printed PDF bibliography labels. Both locators are retained in citation_links.",
+      "Table 1 reports S8 but omits a chi-square_S8 contribution, and its listed component chi-squares do not sum to chi-square total. The missing term and any normalization convention are not explained; do not diagnose a calculation error from the table alone."
+    ],
+    "local_packet_sha256": "4af8b3d4cb8cb2c69cbcac0880df88728d4b8eb32c1454bf36ce1956944b3873",
+    "interpretation_status": "Original Luna extraction, with coverage limitations copied from unread_material, source-hash shape normalized and unexposed backend recorded as null; scientific review pending. Original packet retained unchanged in exact-version S3 custody."
+  },
   "review_id": null,
   "idea_ids": []
 }

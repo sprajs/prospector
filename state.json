@@ -167,8 +167,8 @@
     },
     {
       "paper_id": "arxiv:2112.00770v2",
-      "stage": "read",
-      "reason": "Retain thermal NEDE trigger and dark-radiation embeddings; thermal and cold triggers need a sourced distinction.",
+      "stage": "review",
+      "reason": "Complete Luna full-text extraction and original/rendered evidence preserved in the reading-checkpoint S3 manifest; await Sol assessment of original sources, equations, overlap and scientific usefulness.",
       "prospect_ids": [
         "early-energy",
         "interacting-sectors"
@@ -678,8 +678,8 @@
     },
     {
       "paper_id": "arxiv:2512.19633v1",
-      "stage": "read",
-      "reason": "Full reading selected: recent independent ACT DR6 constraint on related WZDR/nuADaM phenomenology; not direct Hot NEDE exclusion.",
+      "stage": "review",
+      "reason": "Complete Luna full-text extraction and original/rendered evidence preserved in the reading-checkpoint S3 manifest; await Sol assessment of original sources, equations, overlap and scientific usefulness.",
       "prospect_ids": [
         "interacting-sectors"
       ]
@@ -1426,5 +1426,6 @@
     "milestone": "M0",
     "scope": "Source-defined reference and likelihood/prior/dependence contract; queue preserved; no automatic execution"
   },
-  "last_completed_intake_scan": "2026-10-09-interacting-radiation-intake"
+  "last_completed_intake_scan": "2026-10-09-interacting-radiation-intake",
+  "last_reading_checkpoint": "2026-10-09-interacting-radiation-reading-checkpoint"
 }

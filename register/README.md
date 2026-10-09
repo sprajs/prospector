@@ -69,7 +69,7 @@ Combined models require compatibility checks before promotion.
 - [Tracking scalar unification requires a depletion branch between early and late energy](ideas/unified-scalar-steep-steeper-shallow.json)
 
 [Typed relationships](graph.json) preserve overlap, distinctions, critique, shared data and prospect links.
-[Bibliographic citations](citations.json): 34 explicit links; the index is incomplete.
+[Bibliographic citations](citations.json): 48 explicit links; the index is incomplete.
 
 ## Papers
 
@@ -118,7 +118,7 @@ Combined models require compatibility checks before promotion.
 | [Shan--Chen interacting vacuum cosmology](https://arxiv.org/abs/2109.08676v2) | [2109.08676v2](papers/2109.08676v2.json) | screened |
 | [The Pantheon+ Analysis: Evaluating Peculiar Velocity Corrections in Cosmological Analyses with Nearby Type Ia Supernovae](https://arxiv.org/abs/2110.03487v2) | [2110.03487v2](papers/2110.03487v2.json) | discovered |
 | [Inflaton-driven early dark energy](https://arxiv.org/abs/2111.07288v1) | [2111.07288v1](papers/2111.07288v1.json) | screened |
-| [Hot New Early Dark Energy](https://arxiv.org/abs/2112.00770v2) | [2112.00770v2](papers/2112.00770v2.json) | screened |
+| [Hot New Early Dark Energy](https://arxiv.org/abs/2112.00770v2) | [2112.00770v2](papers/2112.00770v2.json) | read |
 | [The Pantheon+ Analysis: Improving the Redshifts and Peculiar Velocities of Type Ia Supernovae Used in Cosmological Analyses](https://arxiv.org/abs/2112.01471v2) | [2112.01471v2](papers/2112.01471v2.json) | discovered |
 | [The Pantheon+ Analysis: The Full Dataset and Light-Curve Release](https://arxiv.org/abs/2112.03863v2) | [2112.03863v2](papers/2112.03863v2.json) | screened |
 | [The Pantheon+ Analysis: SuperCal-Fragilistic Cross Calibration, Retrained SALT2 Light Curve Model, and Calibration Systematic Uncertainty](https://arxiv.org/abs/2112.03864v2) | [2112.03864v2](papers/2112.03864v2.json) | screened |
@@ -149,7 +149,7 @@ Combined models require compatibility checks before promotion.
 | [Hot New Early Dark Energy: Dark Radiation Matter Decoupling](https://arxiv.org/abs/2508.03795v2) | [2508.03795v2](papers/2508.03795v2.json) | screened |
 | [Cosmological perturbations on an averaged background](https://arxiv.org/abs/2511.17160v2) | [2511.17160v2](papers/2511.17160v2.json) | screened |
 | [Interacting scalar field dark matter and stepped dark radiation in an extended Wess-Zumino dark radiation model](https://arxiv.org/abs/2512.06719v4) | [2512.06719v4](papers/2512.06719v4.json) | screened |
-| [InterACTing dark radiation models after ACT](https://arxiv.org/abs/2512.19633v1) | [2512.19633v1](papers/2512.19633v1.json) | screened |
+| [InterACTing dark radiation models after ACT](https://arxiv.org/abs/2512.19633v1) | [2512.19633v1](papers/2512.19633v1.json) | read |
 | [Revisiting the Mass Step: Environmental Dependence of Type Ia Supernovae in Low-Metallicity Host Galaxies](https://arxiv.org/abs/2512.20834v1) | [2512.20834v1](papers/2512.20834v1.json) | screened |
 | [Partial Relief of the Hubble Tension and a Natural Self-Interacting Dark Matter Candidate From Staged Symmetry Breaking](https://arxiv.org/abs/2602.01543v2) | [2602.01543v2](papers/2602.01543v2.json) | reviewed |
 | [Parameterizations of the Hubble Constant from the Binned Type Ia Supernova Master Sample: Logarithmic versus Power-law Forms](https://arxiv.org/abs/2603.00497v3) | [2603.00497v3](papers/2603.00497v3.json) | screened |

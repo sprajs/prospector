@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-09-interacting-radiation-reading-checkpoint",
+  "status": "checkpoint_review_pending",
+  "recorded_utc": "2026-10-09T18:17:00.640524+00:00",
+  "scope": "Completed first two full Luna readings in bounded thermal NEDE/ACT challenge batch; final source2604.26541v1 and Sol acceptance remain pending worker rotation. Parallel source work for roadmap M3/M5 NEDE trigger avenue, not a new priority plan.",
+  "registered_papers": [
+    "arxiv:2112.00770v2",
+    "arxiv:2512.19633v1"
+  ],
+  "new_versions": [],
+  "full_reads": [
+    "arxiv:2112.00770v2",
+    "arxiv:2512.19633v1"
+  ],
+  "reviewed_papers": [],
+  "idea_ids": [],
+  "design_ids": [],
+  "evidence_custody": {
+    "manifest_format": "research-named-manifest/v1",
+    "collection": "prospector/reviews/2026-10-09-interacting-radiation-reading-checkpoint",
+    "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/2026-10-09-interacting-radiation-reading-checkpoint/versions/35249321cf5a5b7ac3139d82713b7b3f230ec2cd5eba14f44647f36df990b100/manifest.json",
+    "version_id": "Ihx7neRsn3qko2dt0nQCitaB3ndYgBpd",
+    "sha256": "faab840f1b653ab23da5a05ca2197f8fab01055e9c69535592ce67d2e1369c7a",
+    "bytes": 39051
+  },
+  "previous_intake_scan": "2026-10-09-interacting-radiation-intake",
+  "counting": "This is a cumulative checkpoint of the same batch; deduplicate paper IDs against the final batch receipt rather than summing checkpoint counts. Zero new admissions here.",
+  "limits": [
+    "Original packets and all inspected original/rendered material privately preserved; no Sol acceptance yet.",
+    "No experiment or scientific qualification.",
+    "Shared arXiv acquisition stop following peer-reported429 at18:08UTC; local already-acquired sources only."
+  ],
+  "pending": [
+    {
+      "paper_id": "arxiv:2604.26541v1",
+      "stage": "read"
+    },
+    {
+      "paper_ids": [
+        "arxiv:2112.00770v2",
+        "arxiv:2512.19633v1",
+        "arxiv:2604.26541v1"
+      ],
+      "stage": "review",
+      "model": "gpt-6.1-sol",
+      "reasoning": "high"
+    }
+  ]
+}
