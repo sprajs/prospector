@@ -19,9 +19,9 @@
     "pdf": "https://arxiv.org/pdf/1812.01586v2"
   },
   "license": {
-    "status": "unknown",
+    "status": "License: arXiv.org perpetual non-exclusive license",
     "redistribution": "links_and_original_notes_only",
-    "reason": "API license not supplied; source terms unresolved; only links and original notes published."
+    "reason": "Notice checked at original HTML #license-tr; retain original notices in owner-authorized private preservation. No full sources published in Git/Site."
   },
   "artifacts": [
     {
@@ -56,11 +56,270 @@
     }
   ],
   "screen": {
-    "status": "selected",
-    "basis": "abstract",
-    "reason": "Focused timescape foundations, conditional support, independent tests or cross-probe compatibility; selection is not acceptance."
+    "status": "reviewed",
+    "basis": "full_text",
+    "reason": "Luna full reading and Sol original-source assessment complete. Conditional evidence and source inconsistencies retained; no reproduction or scientific qualification."
   },
-  "extraction": null,
-  "review_id": null,
-  "idea_ids": []
+  "extraction": {
+    "paper_id": "arxiv:1812.01586v2",
+    "title": "Comment on \"Hubble flow variations as a test for inhomogeneous cosmology\"",
+    "authors": [
+      "David L. Wiltshire"
+    ],
+    "requested_model": "gpt-6-luna",
+    "requested_reasoning": "xhigh",
+    "agent_id": "/root/luna_reply1812",
+    "backend_identity": null,
+    "reading_level": "full_text",
+    "source_hashes": {
+      "html": "66656c6db6e2ddecb7d56932b7060b1e4fc7b07fd2e3759d50e61e75f94b4ec4",
+      "pdf": "ac3efc9794aeab4b45ae24d7fe868c6a5e4ae482c639318460f9dc24678c5824",
+      "extracted_text": "cfb15c84080b1add137c06fd1983cb00b8adc031f510c7da0dd4e520cbc0105b"
+    },
+    "coverage": {
+      "sections_read": [
+        "Title, abstract, and metadata",
+        "1. Introduction",
+        "2. Key geometrical features of the timescape cosmology",
+        "3. Systematic problem of the Saulder et al. (2019) rescaling",
+        "4. Discussion and conclusions",
+        "Acknowledgements and all 31 references"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "figure_check": "The four-page PDF contains no figures. Rendered and visually inspected pages 2-3, including equations (1)-(13); equations and geometry agree with the extracted text.",
+      "limitations": [
+        "Identity confirmed from pinned v2 arXiv header, title, author David L. Wiltshire, and HTML/PDF body. HTML, PDF, and derived-text SHA-256 values match the acquisition manifest.",
+        "No cited original was opened; author descriptions of Saulder, Duley, Planck, and other works are attributed to this comment rather than independently checked.",
+        "The acquisition record has no license URL; copying permissions are therefore not established."
+      ]
+    },
+    "summary": "Wiltshire argues that the specific Saulder et al. differential-expansion proxy, built by rescaling a Newtonian Millennium simulation on a ΛCDM background, omits essential timescape geometry and clock calibration and therefore is not a timescape approximation. In the two-phase timescape account, wall and void expansion define a Buchert volume-average scale factor and bare Hubble rate, while observers in finite-infinity wall regions use proper time τ related to average time t by the lapse γ̄=dt/dτ. The dressed scale factor is a=γ̄⁻¹ā, so H=γ̄H̄−dγ̄/dt. The effective dressed metric is not a constant-curvature FLRW metric. Separately, the simulation proxy infers finite-infinity radii from mass and a critical-density scaling and then linearly averages wall/void Hubble values by a line-of-sight fraction. Wiltshire says this mixes Euclidean volume-radius calibration with curved timescape geometry: at the same radius a negatively curved sphere has more volume, and curvature/volume do not scale as in the proxy. Tuning b_soft can impose the limiting H̄₀/H₀ relation when the line fraction tends to one, but does not remove the claimed incompatibility of simultaneously matching each object's Hᵢ/H₀ and line fraction in both geometries. This is a source-author critique of that construction, not an independent falsification of differential expansion or proof that every nonlinear deformation fails: the comment says another nonlinear deformation is unclear. It also says realistic detailed timescape predictions require substantial theoretical development and observational precision must improve. AvERA is described as a distinct Newtonian N-body/volume-averaging scheme whose distance-redshift curve happens to track timescape closely; LTB appears as a ray-tracing tool for a different test. Neither is identified as the same model.",
+    "ideas": [
+      {
+        "local_id": "timescape-two-phase-volume-and-lapse",
+        "title": "Timescape separates volume-average expansion from dressed observer expansion",
+        "claim_type": "author_model_definition",
+        "description": "Within the two-phase Buchert description, the domain is a disjoint union of spatially flat walls and negatively curved voids. The volume fractions f_w and f_v sum to one and weight regional Hubble rates in the bare volume-average H̄. The dressed metric is formed after matching wall light rays to a spherically symmetric averaged solution; its scale factor and Hubble parameter use ideal wall observers' proper time. A changing lapse contributes independently to dressed H, so the average expansion and observed expansion cannot be identified by a constant rescaling. The paper presents this as the timescape model's geometric/observer framework, not a result derived from the Saulder data.",
+        "locators": [
+          "PDF pp. 2-3, Sec. 2, Eqs. (1)-(10)"
+        ],
+        "equations": [
+          {
+            "expression": "ā³ = f_wi a_w³ + f_vi a_v³; f_v(t)+f_w(t)=1",
+            "locator": "Sec. 2, Eqs. (1)-(2), PDF p. 2",
+            "confidence": "high",
+            "definitions": "ā is the Buchert volume-average scale factor; a_w and a_v are wall and void scale factors; f_wi and f_vi are initial volume shares, while f_w(t)=f_wi a_w³/ā³ and f_v(t)=f_vi a_v³/ā³ are evolving shares.",
+            "domain": "The paper's two-phase wall/void approximation; early initial void fraction is stated to be small."
+          },
+          {
+            "expression": "H̄ ≡ (∂_t ā)/ā = f_w H_w + f_v H_v; H_w=(∂_t a_w)/a_w; H_v=(∂_t a_v)/a_v",
+            "locator": "Sec. 2, Eq. (3), PDF p. 2",
+            "confidence": "high",
+            "definitions": "Bare Hubble rate is a volume-weighted average using Buchert time t; H_w and H_v are regional rates with the same time parameter.",
+            "domain": "Volume average, not an average over one-dimensional lines of sight."
+          },
+          {
+            "expression": "Ω̄_M+Ω̄_R+Ω̄_k+Ω̄_Q=1; ρ̄_cr=3H̄²/(8πG)",
+            "locator": "Sec. 2, Eqs. (4)-(5), PDF p. 2",
+            "confidence": "high",
+            "definitions": "The terms are matter, radiation, curvature and kinematic-backreaction density parameters. Ω̄_k depends on f_v^(1/3)/ā²; Ω̄_Q=−(∂_t f_v)²/[24πG f_v(1−f_v)ρ̄_cr]. α²=−k_v f_vi^(2/3)c² and k_v<0 is the void curvature scale.",
+            "domain": "Buchert averaged quantities in the two-phase parameterization; the source says this Friedmann-like sum does not by itself restrict the general Buchert scheme."
+          },
+          {
+            "expression": "ds²_fi=−c²dτ²+a_w²(τ)[dη_w²+η_w²dΩ²]; ds²=−c²dτ²+a²(τ)[dη̄²+r_w²(η̄,τ)dΩ²]",
+            "locator": "Sec. 2, Eqs. (6)-(7), PDF p. 2",
+            "confidence": "high",
+            "definitions": "The first is the spatially flat finite-infinity wall metric; the second is the effective dressed metric on radial lines of sight after conformal matching to a spherically symmetric metric fitted to the Buchert solution. a=γ̄⁻¹ā.",
+            "domain": "Timescape's ideal wall observers and the stated radial light-ray construction; the dressed metric is explicitly not spatially constant-curvature."
+          },
+          {
+            "expression": "r_w=γ̄₀(1−f_v)^(1/3)∫_t^t₀ [c dt′/(γ̄(t′)(1−f_v(t′))^(1/3)ā(t′))]; γ̄₀=γ̄(t₀); γ̄=dt/dτ",
+            "locator": "Sec. 2, Eqs. (8)-(9), PDF p. 2",
+            "confidence": "high",
+            "definitions": "r_w is the dressed radial metric function, γ̄ is the phenomenological lapse between volume-average time t and finite-infinity observer proper time τ.",
+            "domain": "The radial light-ray metric in the two-phase timescape construction."
+          },
+          {
+            "expression": "H≡(1/a)(da/dτ)=(1/ā)(dā/dτ)−(1/γ̄)(dγ̄/dτ)=γ̄H̄−dγ̄/dt",
+            "locator": "Sec. 2, Eq. (10), PDF p. 3",
+            "confidence": "high",
+            "definitions": "Dressed H uses τ; the last equality follows from γ̄=dt/dτ and a=γ̄⁻¹ā. It is an algebraic identity within the definitions, with a lapse-rate contribution in addition to the average-volume contribution.",
+            "domain": "Timescape observer calibration; it does not supply a mapping from a simulated galaxy's mass to an observed line-of-sight fraction."
+          }
+        ]
+      },
+      {
+        "local_id": "millennium-rescaling-geometry-mismatch",
+        "title": "The proposed finite-infinity rescaling does not encode timescape curvature geometry",
+        "claim_type": "author_critique",
+        "description": "Saulder et al.'s construction obtains finite-infinity radii from simulated region mass and a critical density with an Hubble-ratio factor, then assigns a line-of-sight finite-infinity fraction and linearly averages effective wall/void Hubble values. Wiltshire's critique is that this is not the timescape volume or geometry: the simulation has FLRW/Euclidean radius-volume calibration, whereas negatively curved voids have a different radius-volume relation and timescape average curvature evolves independently of direct volume scaling. The paper says adjusting b_soft can impose the predicted limiting ratio at f̃_fi→1 but still cannot make both per-object H_i/H_0 and f̃_fi identical across the FLRW and timescape geometries. These are claims about the stated proxy and its assumptions.",
+        "locators": [
+          "Sec. 3, Eqs. (11)-(13), PDF pp. 3-4; discussion immediately after Eq. (13), PDF p. 3"
+        ],
+        "equations": [
+          {
+            "expression": "R_f=[3M_tot/(4πρ_cr f)]^(1/3)",
+            "locator": "Sec. 3, Eq. (11), PDF p. 3",
+            "confidence": "high",
+            "definitions": "M_tot is simulated mass in a finite-infinity region, ρ_cr is the simulation critical density, and f modifies that density.",
+            "domain": "Saulder et al. simulation rescaling as reported by Wiltshire; not a timescape radius-volume law."
+          },
+          {
+            "expression": "f=(H̄₀/H₀)² ≃ [2(2+f_v0)/(4f_v0²+f_v0+4)]²",
+            "locator": "Sec. 3, Eq. (12), PDF p. 3",
+            "confidence": "high",
+            "definitions": "H̄₀ and H₀ are timescape bare and dressed present Hubble constants; f_v0 is present void volume fraction. The approximation uses the exact-tracking-limit solution, per the author.",
+            "domain": "A density rescaling factor in the Saulder proxy, not a derived simulation of timescape curvature."
+          },
+          {
+            "expression": "f̃_fi H̃₀,w +(1−f̃_fi)H̃₀,v = H̃₀,av; H̃₀,av assumed equal to H₀",
+            "locator": "Sec. 3, Eq. (13), PDF p. 3",
+            "confidence": "high",
+            "definitions": "f̃_fi is the empirical average fraction of lines of sight in finite-infinity regions; tildes distinguish empirically inferred line quantities H̃₀,w, H̃₀,v from Eq. (3)'s volume-average regional rates.",
+            "domain": "An average over one-dimensional lines of sight with expansion referred to observer time τ, unlike Eq. (3)'s volume average in t. The author says H̃₀,v and this relation have no obvious timescape counterpart."
+          }
+        ]
+      },
+      {
+        "local_id": "timescape-prediction-and-test-limit",
+        "title": "A direct detailed timescape prediction for the proposed mock-catalogue test remains unavailable",
+        "claim_type": "author_scope_statement",
+        "description": "The comment endorses testing nonkinematic differential expansion in principle and describes the Saulder survey's statistical/systematic constraints, but says substantial theoretical advances are needed before timescape can make predictions at the detail level of FLRW-background Newtonian N-body simulations. It leaves open whether some nonlinear deformation of Millennium could approximate the lapse-flow condition. Thus its criticism rejects treating the existing scaling as a timescape approximation; it does not calculate an alternative timescape catalogue prediction or rule out every proxy. A falsifiable per-object mapping from mass, curved volume, line-of-sight geometry and observer clocks to H_i/H_0 and f_fi is the missing deliverable for this particular test.",
+        "locators": [
+          "Sec. 1, PDF p. 1; Sec. 3, PDF p. 4; Sec. 4, PDF p. 4"
+        ],
+        "equations": []
+      },
+      {
+        "local_id": "avera-and-ltb-are-distinct-comparison-tools",
+        "title": "AvERA and LTB enter as separate methods, not timescape equivalences",
+        "claim_type": "author_comparison",
+        "description": "AvERA is described as a no-dark-energy Newtonian N-body scheme that evolves small scales with Friedmann equations and averages the volume scale factor at each step; its comoving distance-redshift curve tracks a timescape curve closely for the cited Planck fit, but the author says the empirical code changes do not yet tie directly to timescape's physical principles or effective curvature. LTB is mentioned as a model used for simple ray-tracing estimates of a separate large-angle CMB test. Similarity of one distance-redshift curve or use as a ray-tracing tool does not establish physical equivalence to timescape.",
+        "locators": [
+          "Sec. 4 and footnotes 3-4, PDF p. 4"
+        ],
+        "equations": []
+      }
+    ],
+    "quantities": [
+      {
+        "name": "Scale for emergence of average isotropic expansion",
+        "value": "order 70-120 h^-1 Mpc, ideally a few times this scale",
+        "unit": "h^-1 Mpc",
+        "uncertainty": "No statistical uncertainty stated; qualitative scale range cited from prior literature.",
+        "conditioning": "Author's statement of the scale on which differential-expansion tests should be performed; not a fit in this comment.",
+        "locator": "Sec. 1, PDF p. 1"
+      },
+      {
+        "name": "Present bare Hubble constant H̄₀",
+        "value": 50.1,
+        "unit": "km s^-1 Mpc^-1",
+        "uncertainty": "±1.7; source does not specify interval convention here.",
+        "conditioning": "Value quoted from Duley et al. (2013), fitting the angular scale of CMB acoustic peaks with Planck data; only that angular scale is fitted.",
+        "locator": "Sec. 2, PDF p. 3"
+      },
+      {
+        "name": "Present lapse γ̄₀",
+        "value": 1.348,
+        "unit": "dimensionless",
+        "uncertainty": "+0.021/-0.025; source does not specify interval convention here.",
+        "conditioning": "Quoted from the same Duley et al. (2013) Planck acoustic-scale fit.",
+        "locator": "Sec. 2, PDF p. 3"
+      },
+      {
+        "name": "Present dressed Hubble constant H₀",
+        "value": 61.7,
+        "unit": "km s^-1 Mpc^-1",
+        "uncertainty": "±3.0; source does not specify interval convention here.",
+        "conditioning": "Quoted from the same Duley et al. (2013) fit; H₀ includes the lapse-rate reduction relative to γ̄₀H̄₀.",
+        "locator": "Sec. 2, PDF p. 3"
+      },
+      {
+        "name": "Proper-time rate of change of volume-average scale factor H̄_{τ,0}",
+        "value": 67.5,
+        "unit": "km s^-1 Mpc^-1",
+        "uncertainty": "+3.4/-3.5; approximate lapse contribution −5.8 km s^-1 Mpc^-1",
+        "conditioning": "Derived in the comment as γ̄₀H̄₀ and then reduced by −γ̄₀⁻¹∂_τγ̄₀ to obtain the dressed H₀; same Planck acoustic-scale fit.",
+        "locator": "Sec. 2, Eq. (10) and numerical example, PDF p. 3"
+      },
+      {
+        "name": "Northern-hemisphere sky fraction in the Saulder structure catalogue",
+        "value": 22.7,
+        "unit": "%",
+        "uncertainty": "Not reported in this comment.",
+        "conditioning": "Description of the Saulder et al. (2019) catalogue assembled using fundamental-plane distances, SDSS and 2MRS; the comment flags incomplete-sky systematic uncertainty.",
+        "locator": "Sec. 1, PDF p. 1"
+      }
+    ],
+    "data_dependencies": [
+      "No new dataset is analysed in this comment. The target of its critique is Saulder et al. (2019)'s mock-galaxy/catalogue analysis, which the author says uses fundamental-plane distances, SDSS and 2MRS information, a structure catalogue, and mock samples from the Millennium 'millimil' Newtonian N-body simulation on a ΛCDM background. Its reported sky coverage is 22.7% of the northern hemisphere; line-of-sight galaxy masses and incomplete coverage are identified as limitations. These source descriptions have not been independently checked against Saulder et al.",
+      "The numerical timescape example is attributed to Duley et al. (2013)'s fit of the Planck CMB acoustic angular scale; the comment says only that angular scale is fitted and that the same physical scale between last scattering and today is compared. The underlying fit and likelihood were not inspected.",
+      "The introduction reports earlier full-sky spherical-average analyses using COMPOSITE and Cosmicflows-II and claims strong Bayesian evidence for more uniform expansion in the Local Group frame. Those papers/data were not inspected; this is contextual author-reported evidence, not evidence independently established by this reading."
+    ],
+    "caveats": [
+      "The paper is a short comment by the timescape model's author. Its criticism and conclusion are source claims; no independent replication or Sol review occurred in this reading.",
+      "The argument concerns a particular Euclidean radius/critical-density rescaling and empirical line-fraction relation. The author explicitly says a nonlinear deformation that might approximate the lapse condition is unclear, so the comment does not establish that every possible approximation fails.",
+      "The paper does not supply a timescape-generated mock catalogue or per-object prediction for the proposed test. It calls for substantial theoretical advances to reach the detailed predictive level of FLRW-background Newtonian N-body simulations.",
+      "The comment states that the relative magnitude of timescape differential expansion versus the Kaiser effect has no a priori ordering; it does not claim a larger timescape signal.",
+      "Claims about current data precision, survey systematics, model fits, and referenced papers are not independently reassessed here. Unknown covariance and detailed uncertainty meanings remain unknown.",
+      "Nearby comparisons are not equivalence claims: AvERA's similar cited distance-redshift curve is empirical and its physical relation to timescape is stated to be unclear; LTB is used as a ray-tracing model for another proposed test."
+    ],
+    "usefulness": {
+      "assessment": "Useful as a targeted source critique and design constraint for any candidate investigation of the Saulder differential-expansion test. It identifies the exact clock, volume, line-of-sight and curvature distinctions a valid timescape proxy would have to preserve, and says that detailed mock predictions are not yet available in this comment.",
+      "readiness": "Not an executable candidate design or observational reanalysis. Requires independent source review and a separately specified timescape prediction/closure before a test can be designed.",
+      "specific_next_questions": [
+        "Can the time-dependent curved radius-volume relation be translated into an observable per-object finite-infinity assignment without conflating volume fractions with line-of-sight fractions?",
+        "What theoretical/initial-condition/observer prescription yields simulated wall and void expansion plus lapse γ̄ at the resolution of a catalogue, and what parameters are fixed independently of the test data?",
+        "Can the resulting predicted joint distribution of H_i/H_0 and f_fi be compared to the same survey while carrying its mass, distance, selection and sky-coverage uncertainties?"
+      ]
+    },
+    "citation_leads": [
+      {
+        "reference": "Saulder et al. (2019), A&A 622 A83, HTML bibliography anchor #bib.bib22",
+        "cited_arxiv_id": "1811.11976",
+        "registered_match": "arxiv:1811.11976v3",
+        "cited_version": null,
+        "note": "Exact title/authors and publication match in the staged register; cited version is not printed in this comment. This source was not read here."
+      },
+      {
+        "reference": "Wiltshire (2007a), New J. Phys. 9, 377, HTML bibliography anchor #bib.bib26",
+        "cited_arxiv_id": "gr-qc/0702082",
+        "registered_match": "arxiv:gr-qc/0702082v4",
+        "cited_version": null,
+        "note": "Author/year/publication entry matches the staged record for Cosmic clocks, cosmic variance and cosmic averages; no arXiv version is printed. This source was not read here."
+      },
+      {
+        "reference": "Wiltshire (2007b), Phys. Rev. Lett. 99, 251101, HTML bibliography anchor #bib.bib27",
+        "cited_arxiv_id": "0709.0732",
+        "registered_match": "arxiv:0709.0732v2",
+        "cited_version": null,
+        "note": "Author/year/publication entry matches the staged record for Exact solution to the averaging problem in cosmology; no arXiv version is printed. This source was not read here."
+      },
+      {
+        "reference": "Wiltshire (2009), Phys. Rev. D 80, 123512, HTML bibliography anchor #bib.bib29",
+        "cited_arxiv_id": "0909.0749",
+        "registered_match": "arxiv:0909.0749v2",
+        "cited_version": null,
+        "note": "Author/year/publication entry matches the staged record for Average observational quantities in the timescape cosmology; no arXiv version is printed. This source was not read here."
+      }
+    ],
+    "packet_sha256": "98ab954d374919f034583ce55ed8c2aa99a53473753516da23fbfe90bd0fcc76",
+    "packet_path": ".work/timescape-20261009/readers/reply1812/packet.json",
+    "scientific_review_corrections": {
+      "review_id": "timescape-focused-2026-10-09-sol",
+      "basis": "Read the review corrections before using extracted quantities; original worker packet remains hash-pinned and unchanged.",
+      "material_cautions": [
+        "Clock/geometry criticism identifies missing proxy derivation; it is not new observational confirmation."
+      ]
+    }
+  },
+  "review_id": "timescape-focused-2026-10-09-sol",
+  "idea_ids": [
+    "timescape-hubble-flow-proxy-contract"
+  ]
 }

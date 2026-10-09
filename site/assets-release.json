@@ -1,15 +1,15 @@
 {
   "schema": "prospector-public-assets-release/v1",
-  "verified_utc": "2026-10-09T17:59:15.703292+00:00",
+  "verified_utc": "2026-10-09T18:08:02.864747+00:00",
   "origin": "https://d2ww54nx7x5je4.cloudfront.net",
   "manifest": {
     "schema": "prospector-public-assets/v1",
     "assets": {
       "register": {
-        "key": "assets/register.2e869f434cbebb9b9b06b361f40a122ff9815cdda926101600285cb2e1d22b3c.json",
-        "sha256": "2e869f434cbebb9b9b06b361f40a122ff9815cdda926101600285cb2e1d22b3c",
-        "integrity": "sha384-3BAc+k+n/wEsv4FPxI0C9e0SL1tYAWQK+9Z9QT5LPPRWZ5txOEiIfJdMFuQajIew",
-        "bytes": 444646,
+        "key": "assets/register.59a3aa276c56f0f395bae2d7312d11e36efde677204810016614f723783248d1.json",
+        "sha256": "59a3aa276c56f0f395bae2d7312d11e36efde677204810016614f723783248d1",
+        "integrity": "sha384-rNPXVsIrq7vTh+SdNzt1A6D78ufCp+gH2C5TmSDfxlRMaHzhcGWUu1AVG71pGUsm",
+        "bytes": 445176,
         "content_type": "application/json; charset=utf-8"
       },
       "style": {
@@ -37,18 +37,18 @@
   },
   "objects": {
     "register": {
-      "uri": "s3://prospector-web-assets-436908790672-eu-west-2/assets/register.2e869f434cbebb9b9b06b361f40a122ff9815cdda926101600285cb2e1d22b3c.json",
-      "version_id": "BYQgR6NmYk_4C5ZT19oahO38ZPofExfo",
-      "sha256": "2e869f434cbebb9b9b06b361f40a122ff9815cdda926101600285cb2e1d22b3c",
-      "url": "https://d2ww54nx7x5je4.cloudfront.net/assets/register.2e869f434cbebb9b9b06b361f40a122ff9815cdda926101600285cb2e1d22b3c.json",
+      "uri": "s3://prospector-web-assets-436908790672-eu-west-2/assets/register.59a3aa276c56f0f395bae2d7312d11e36efde677204810016614f723783248d1.json",
+      "version_id": "etAjHAz48m4k_uY66S2C94u9bXfxqRZX",
+      "sha256": "59a3aa276c56f0f395bae2d7312d11e36efde677204810016614f723783248d1",
+      "url": "https://d2ww54nx7x5je4.cloudfront.net/assets/register.59a3aa276c56f0f395bae2d7312d11e36efde677204810016614f723783248d1.json",
       "delivery": {
         "Content-Type": "application/json; charset=utf-8",
         "Content-Encoding": "gzip",
         "Cache-Control": "public, max-age=31536000, immutable",
         "Access-Control-Allow-Origin": "*",
         "X-Cache": "Miss from cloudfront",
-        "ETag": "W/\"05561fc7fc0f6b5e73c5100a7a351d46\"",
-        "encoded_bytes": 126604
+        "ETag": "W/\"93450afa6446947a2131326892bc7071\"",
+        "encoded_bytes": 126742
       }
     },
     "style": {
@@ -76,7 +76,7 @@
         "Content-Encoding": "gzip",
         "Cache-Control": "public, max-age=31536000, immutable",
         "Access-Control-Allow-Origin": "*",
-        "X-Cache": "Miss from cloudfront",
+        "X-Cache": "Hit from cloudfront",
         "ETag": "W/\"dee3f85b43799074f1c1ed956b1ad45f\"",
         "encoded_bytes": 8086
       }
@@ -98,6 +98,6 @@
     }
   },
   "deployment_identity": "arn:aws:sts::436908790672:assumed-role/prospector-assets-deployer/botocore-session-1791568748",
-  "repository_revision": "1b011298eb95759862ae252b0c1771466e8f1d89",
+  "repository_revision": "e2d28b7c99a6efddbaf09e6b105d299678afb664",
   "repository_dirty": false
 }

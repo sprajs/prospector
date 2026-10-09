@@ -24,9 +24,9 @@
     "pdf": "https://arxiv.org/pdf/2412.15143v1"
   },
   "license": {
-    "status": "unknown",
+    "status": "License: CC BY 4.0",
     "redistribution": "links_and_original_notes_only",
-    "reason": "API license not supplied; source terms unresolved; only links and original notes published."
+    "reason": "Notice checked at original HTML #license-tr; retain original notices in owner-authorized private preservation. No full sources published in Git/Site."
   },
   "artifacts": [
     {
@@ -61,11 +61,353 @@
     }
   ],
   "screen": {
-    "status": "selected",
-    "basis": "abstract",
-    "reason": "Focused timescape foundations, conditional support, independent tests or cross-probe compatibility; selection is not acceptance."
+    "status": "reviewed",
+    "basis": "full_text",
+    "reason": "Luna full reading and Sol original-source assessment complete. Conditional evidence and source inconsistencies retained; no reproduction or scientific qualification."
   },
-  "extraction": null,
-  "review_id": null,
-  "idea_ids": []
+  "extraction": {
+    "paper_id": "arxiv:2412.15143v1",
+    "title": "Supernovae evidence for foundational change to cosmological models",
+    "authors": [
+      "Antonia Seifert",
+      "Zachary G. Lane",
+      "Marco Galoppo",
+      "Ryan Ridden-Harper",
+      "David L. Wiltshire"
+    ],
+    "requested_model": "gpt-6-luna",
+    "requested_reasoning": "xhigh",
+    "agent_id": "/root/luna_sn2412",
+    "backend_identity": null,
+    "source_hashes": {
+      "html": "40d21fc1c779f39ef77162f435aeb6385526f7d67ce7a3e628a633364f06b88c",
+      "pdf": "5e2917fd9fc2ee561b35858e4c1b93a1b6c883d7c230e6a78185e8569714dbc7",
+      "extracted_text": "719a65dc134e9abe3d136d31086e6dd467393ad1ac641dbc67d821a85d952542"
+    },
+    "reading_level": "full_text",
+    "coverage": {
+      "sections_read": [
+        "Abstract",
+        "1 Introduction",
+        "2 Statistical Analysis",
+        "3 Results",
+        "4 Discussion and Conclusions",
+        "Acknowledgements",
+        "Data Availability",
+        "References"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "figure_check": "Visually inspected rendered PDF pages 4-5 (Figures 1-3), page 3 (Table 1 and Eqs. 4-5), page 2 (Eqs. 1-3), and page 5 (Eq. 6 and the H0/M_B uncertainty footnote). Checked equations against original HTML MathML/TeX annotations. Figures 1-3 were inspected as plots, not only captions.",
+      "limitations": [
+        "The six-page v1 contains no appendix.",
+        "The paper points to external code, covariance and input files; they were not acquired or independently checked for this single-paper reading.",
+        "No code execution, numerical reproduction, current-data reassessment or scientific qualification was performed."
+      ]
+    },
+    "summary": "Authors compare timescape with spatially flat LambdaCDM using Pantheon+ Type Ia supernovae, the Tripp relation and a Bayesian evidence calculation across CMB-frame redshift cuts. Their proposed methodological change fixes each event's SALT2 x1 and c at the fitted values rather than modelling their joint population distribution; event absolute magnitudes are assigned a common Gaussian population prior with scatter. They report ln B = ln(Z_TS/Z_flat-LambdaCDM) > 5 for the full P+1690 sample and ln B > 1 for cuts z_CMB > 0.075, with preference varying across lower-redshift/calibration cuts. These are conditional model-comparison results from shared Pantheon+ observations and a specific SALT2/covariance/prior pipeline, not a model-independent measurement. The likelihood and prior description contains unresolved internal inconsistencies (see caveats), so the printed evidence deserves source review before reuse.",
+    "ideas": [
+      {
+        "local_id": "timescape-average-expansion",
+        "title": "Timescape interpretation of averaged expansion",
+        "claim_type": "author_proposed_physical_framework",
+        "description": "The authors describe timescape as statistically homogeneous and isotropic while differing from average FLRW evolution. They characterize it by the void volume fraction f_v and motivate a uniform quasilocal Hubble-expansion condition in Buchert averaging as an extension of the Strong Equivalence Principle to cosmological averages at roughly 4-15 Mpc. They interpret the effective replacement for dark energy as kinetic gravitational energy and its gradients. These are source claims and motivation, not derived or independently established by this supernova analysis.",
+        "locators": [
+          "HTML #S1.p2, #S1.p3; PDF p. 1",
+          "HTML #S4.p1, #S4.p6; PDF p. 5"
+        ],
+        "equations": []
+      },
+      {
+        "local_id": "fixed-salt2-tripp-likelihood",
+        "title": "Fixed SALT2 stretch and colour in a shared hierarchical likelihood",
+        "claim_type": "author_proposed_statistical_method",
+        "description": "The authors use the Tripp relation with Pantheon+ m_B*, x1 and c. Their prior in Eq. (4) assigns each event a Gaussian absolute magnitude around common Mbar_B with scatter sigma_M_B and delta-function priors at the SALT2-fitted x1 and c. The likelihood then combines the residual vector with a 3N-dimensional statistical/systematic covariance from Lane et al. This avoids an explicit population model for the correlated, non-Gaussian x1,c distribution by assuming the SALT2 point estimates are the most probable true values. The source does not resolve how its Eq. (5) residual M_B,i terms relate to the common Mbar_B prior and the scatter covariance.",
+        "locators": [
+          "HTML #S1.E1, #S1.E2; PDF p. 2",
+          "HTML #S2.E4, #S2.EGx2, #S2.EGx3; PDF pp. 2-3",
+          "HTML #S2.T1; PDF p. 3"
+        ],
+        "equations": [
+          {
+            "expression": "mu_obs = m_B* - M_B + alpha x_1 - beta c",
+            "locator": "Eq. (1), HTML #S1.E1, PDF p. 2",
+            "confidence": "high transcription; source conventions retained",
+            "definitions": "alpha and beta are Tripp coefficients; x1 and c are SALT2 stretch and colour; m_B* and M_B are apparent and absolute rest-frame B-band magnitudes.",
+            "domain": "The paper treats alpha and beta as constant across redshift and uses the same rest-frame relation for the two compared theories."
+          },
+          {
+            "expression": "mu_th = 25 + 5 log10(d_L/Mpc)",
+            "locator": "Eq. (2), HTML #S1.E2, PDF p. 2",
+            "confidence": "high transcription",
+            "definitions": "d_L is luminosity distance computed for the chosen cosmology and event redshift.",
+            "domain": "Distance-modulus model comparison in this paper; the cosmological dependence is in d_L."
+          },
+          {
+            "expression": "Pr[(M_B,x1,c)_i|H] = N(M_B|Mbar_B,sigma_M_B) delta(x1-xhat1_i) delta(c-chat_i)",
+            "locator": "Eq. (4), HTML #S2.E4, PDF pp. 2-3",
+            "confidence": "high transcription",
+            "definitions": "Mbar_B is the common population mean; sigma_M_B is the population scatter; xhat1_i and chat_i are the SALT2-fitted per-event values.",
+            "domain": "The authors' proposed likelihood for the Pantheon+ events; it assumes the fitted x1,c values stand for the most probable true values."
+          },
+          {
+            "expression": "L = (2 pi)^(-3/2) det(D+Sigma_d)^(-1/2) exp[-X^T(D+Sigma_d)^(-1)X/2]",
+            "locator": "Eq. (5), HTML #S2.EGx2, PDF p. 3",
+            "confidence": "high transcription; normalization is flagged for review",
+            "definitions": "D is described as block diagonal with each 3x3 block diag(sigma_M_B^2,0,0); Sigma_d is a 3N x 3N statistical/systematic covariance; X is defined in Eq. (5) and #S2.EGx3.",
+            "domain": "The stated likelihood for N selected supernovae. The printed prefactor appears inconsistent with a normalized 3N-dimensional Gaussian; see caveats."
+          }
+        ]
+      },
+      {
+        "local_id": "redshift-cut-model-comparison",
+        "title": "Pantheon+ evidence changes with CMB-frame redshift selection",
+        "claim_type": "reported_fit_and_reader_qualification",
+        "description": "They define positive ln B as preference for timescape, with the Figure 1 ordinate showing ln(Z_TS/Z_flat-LambdaCDM). The paper reports very strong to strong timescape preference for 0 < z_min < 0.023; moderate to no preference for 0.023 <= z_min < 0.054; and moderate timescape preference for z_min >= 0.075. It reports ln B > 5 for the full P+1690 sample and ln B > 1 for z_min >= 0.075. For z_min cuts they characterize as beyond SHS_alpha (z_min >= 0.055), their plotted MLEs include Omega_M0=0.377 +/- 0.021 and f_v0=0.737 +/- 0.029. The paper itself notes that the full-sample evidence shifts by about 1.5-2.5 in ln B relative to Lane et al. while the P+580 subsample agrees more closely, and says redshift distribution needs further study. The observational input is shared with Lane et al.; this is not independent confirmation.",
+        "locators": [
+          "HTML #S2.p1, #S2.p3, #S2.p4; PDF pp. 2-3",
+          "HTML #S3.F1, #S3.F2, #S3.F3; PDF pp. 4-5",
+          "HTML #S4.p1; PDF p. 5"
+        ],
+        "equations": [
+          {
+            "expression": "ln B = ln(Z_TS/Z_flat-LambdaCDM); positive values favor timescape and negative values favor flat LambdaCDM",
+            "locator": "Section 2 and Figure 1 axis/legend, HTML #S2.p1 and #S3.F1, PDF pp. 2, 4",
+            "confidence": "high for sign and model ordering",
+            "definitions": "Z_TS and Z_flat-LambdaCDM are model evidences; the ratio ordering follows the printed Figure 1 ordinate and explicit sign statement.",
+            "domain": "Only the two models and cut-specific likelihoods compared in this paper."
+          }
+        ]
+      },
+      {
+        "local_id": "host-mass-step-robustness",
+        "title": "Optional host-mass-step correction test",
+        "claim_type": "reported_fit",
+        "description": "The authors tested a Beams-with-Bias-Correction host mass-step term, report an average absolute change |Delta ln B|=0.077, and state that the added-parameter model is disfavoured relative to the uncorrected Tripp model by Delta BIC=-7.90 at z_min=0. They omit host corrections from final results and note gamma changes inconsistently across redshift cuts; the test does not address all host/environmental systematics.",
+        "locators": [
+          "HTML #S3.E6, #S3.p3, #S3.p4; PDF p. 5"
+        ],
+        "equations": [
+          {
+            "expression": "delta_G.Host = +gamma/2 for M_Galaxy >= 10^10 M_sun; -gamma/2 for M_Galaxy < 10^10 M_sun",
+            "locator": "Eq. (6), HTML #S3.E6, PDF p. 5",
+            "confidence": "high transcription",
+            "definitions": "gamma is the mass-step amplitude; delta_G.Host is the host correction.",
+            "domain": "Two-bin host stellar-mass step used in the optional robustness test."
+          }
+        ]
+      }
+    ],
+    "quantities": [
+      {
+        "name": "Full Pantheon+ sample size",
+        "value": 1690,
+        "unit": "supernovae",
+        "uncertainty": "not applicable",
+        "conditioning": "P+1690 full sample used in the paper's analysis.",
+        "locator": "Section 3 / Figure 2, HTML #S3.F2 and #S3.p2; PDF pp. 3-4"
+      },
+      {
+        "name": "Comparison subsample size",
+        "value": 580,
+        "unit": "supernovae",
+        "uncertainty": "not applicable",
+        "conditioning": "P+580 subsample from the Lane et al. comparison; exact event-selection recipe is not restated in this Letter.",
+        "locator": "Section 3 / Figure 2, HTML #S3.F2 and #S3.p2; PDF p. 4"
+      },
+      {
+        "name": "ln B for the full sample",
+        "value": "> 5",
+        "unit": "dimensionless log evidence ratio",
+        "uncertainty": "reported evidence threshold; figure states evidence uncertainty about 0.014",
+        "conditioning": "Full P+1690 sample; ln B = ln(Z_TS/Z_flat-LambdaCDM); authors classify as very strong timescape preference.",
+        "locator": "Abstract; Section 2; Figure 1, HTML #abstract1.1 and #S3.F1; PDF pp. 1, 4"
+      },
+      {
+        "name": "ln B for z_min >= 0.075",
+        "value": "> 1",
+        "unit": "dimensionless log evidence ratio",
+        "uncertainty": "threshold reported; uncertainty about 0.014 is stated to leave classifications unchanged",
+        "conditioning": "Retain events with reconstructed z_CMB > z_min; paper describes this as moderate timescape preference beyond its robust upper bound for the statistical homogeneity scale.",
+        "locator": "Abstract and Section 2, HTML #abstract1.1 and #S2.p3; PDF pp. 1, 3"
+      },
+      {
+        "name": "Timescape present void fraction f_v0",
+        "value": 0.737,
+        "unit": "dimensionless volume fraction",
+        "uncertainty": "+/- 0.029; paper labels displayed values as MLEs but does not give the interval construction beside this number",
+        "conditioning": "Timescape fit for cuts beyond SHS_alpha; text uses z_min >= 0.055. It is a fit parameter, not an independent measurement.",
+        "locator": "Section 3 / Figure 1, HTML #S3.F1 and #S3.p2; PDF p. 4"
+      },
+      {
+        "name": "Flat-LambdaCDM present matter density Omega_M0",
+        "value": 0.377,
+        "unit": "dimensionless density parameter",
+        "uncertainty": "+/- 0.021; paper labels displayed values as MLEs but does not give the interval construction beside this number",
+        "conditioning": "Flat-LambdaCDM fit for cuts beyond SHS_alpha; text uses z_min >= 0.055. It is a fit parameter, not an independent measurement.",
+        "locator": "Section 3 / Figure 1, HTML #S3.F1 and #S3.p2; PDF p. 4"
+      },
+      {
+        "name": "Empirical SHS_alpha redshift cut",
+        "value": 0.054,
+        "unit": "redshift",
+        "uncertainty": "+0.007 / -0.012",
+        "conditioning": "Their empirical convergence estimate from a power-law fit to alpha*x1; paper says 1.2 sigma above the maximum two-point-correlation SHS value and within 2.3 sigma of Lane et al.",
+        "locator": "Section 3 / Figure 3, HTML #S3.F3 and #S3.p2; PDF p. 5"
+      },
+      {
+        "name": "Tripp alpha at the plotted fit summary",
+        "value": 0.118,
+        "unit": "dimensionless",
+        "uncertainty": "+/- 0.005",
+        "conditioning": "MLE summary shown in Figure 1; the text does not specify a unique redshift cut for this printed label.",
+        "locator": "Figure 1, HTML #S3.F1; PDF p. 4"
+      },
+      {
+        "name": "Tripp beta at the plotted fit summary",
+        "value": 2.44,
+        "unit": "dimensionless",
+        "uncertainty": "+/- 0.06",
+        "conditioning": "MLE summary shown in Figure 1; the text does not specify a unique redshift cut for this printed label.",
+        "locator": "Figure 1, HTML #S3.F1; PDF p. 4"
+      },
+      {
+        "name": "Mean Tripp distance-modulus difference",
+        "value": 0.03,
+        "unit": "mag",
+        "uncertainty": "+/- 0.019",
+        "conditioning": "Absolute mean difference reported for flat LambdaCDM at z_min > 0.054, comparing median SALT2 x1,c values with the earlier Gaussian-distribution fit; authors call it not statistically significant.",
+        "locator": "Section 3, HTML #S3.p3; PDF p. 5"
+      }
+    ],
+    "prior_audit": {
+      "table_1_reported_bounds": [
+        {
+          "parameter": "f_v0",
+          "prior": "[0.500, 0.799] (2 sigma bound)"
+        },
+        {
+          "parameter": "Omega_M0",
+          "prior": "[0.143, 0.487] (2 sigma bound)"
+        },
+        {
+          "parameter": "alpha",
+          "prior": "[0, 1]"
+        },
+        {
+          "parameter": "beta",
+          "prior": "[0, 7]"
+        },
+        {
+          "parameter": "x1",
+          "prior": "[-20, 20]"
+        },
+        {
+          "parameter": "c",
+          "prior": "[-20, 20]"
+        },
+        {
+          "parameter": "M_B",
+          "prior": "[-20.3, 18.3]"
+        },
+        {
+          "parameter": "sigma_M_B^2",
+          "prior": "log10(sigma) in [-10, 4]"
+        }
+      ],
+      "hubble_nuisance": "Section 3 says H0 is fixed for both models as a nuisance parameter; its numerical value is not stated there. Footnote 7 combines H0 and absolute-magnitude uncertainties into sigma_M_B, so their contributions are not separately identified.",
+      "sampler": "PyMultiNest/MultiNest, tolerance 10^-3, n_live=800; text says nine parameters, while the preceding method description says five effective parameters and Eq. (4) delta-fixes per-event x1,c. The paper does not reconcile these counts."
+    },
+    "data_dependencies": [
+      {
+        "name": "Pantheon+ Type Ia supernova sample",
+        "description": "The paper says it uses the spectroscopically confirmed Pantheon+ sample, P+1690, with a P+580 comparison subsample. These samples are reused from the Lane et al. analysis; they are shared observations, not independent confirmations.",
+        "source_locator": "Introduction and Section 3; HTML #S1.p6, #S3.p1-2",
+        "registered_match": "arxiv:2112.03863v2 (Scolnic et al. 2022, bibliography bib.bib42)"
+      },
+      {
+        "name": "SALT2 fitted light-curve quantities",
+        "description": "Per-event m_B*, x1 and c are taken from Pantheon+; x1 and c are treated as fixed at fitted values. The authors cite Taylor et al. simulations for recovery of input parameters but do not independently validate SALT2 here.",
+        "source_locator": "Introduction; Sections 2 and 4; HTML #S1.p6, #S2.p2, #S4.p2"
+      },
+      {
+        "name": "Statistical and systematic covariance and input files",
+        "description": "Sigma_d is the 3N x 3N covariance attributed to Lane et al. (2025, Sec. 2). The data-availability statement points to Lane & Seifert (2024), P+1690 Covariance Matrix, DOI 10.5281/zenodo.12729746. Neither files nor covariance construction were independently checked.",
+        "source_locator": "Eq. (5), HTML #S2.EGx2; Data Availability, HTML #Sx2.p1"
+      },
+      {
+        "name": "Redshift frame and cut selection",
+        "description": "Authors reconstruct z_CMB by boosting Pantheon+ heliocentric redshifts, excluding peculiar-velocity corrections, then remove all events with z_CMB <= z_min. Evidence is therefore conditional on this frame transformation and changing selected sample.",
+        "source_locator": "Section 2, HTML #S2.p4; PDF p. 3"
+      },
+      {
+        "name": "Cosmological distances",
+        "description": "The observed distance modulus is compared with model luminosity distances for spatially flat LambdaCDM and timescape; this is not a general model-independent observable fit.",
+        "source_locator": "Eqs. (1)-(2), HTML #S1.E1 and #S1.E2"
+      }
+    ],
+    "caveats": [
+      "The paper's phrase 'cosmologically model-independent' describes its empirical standardization approach; the reported inference still compares only two specified cosmological models and depends on the SALT2/Pantheon+ processing, covariance, priors, redshift frame and cuts. It is not a model-independent measurement.",
+      "Normalization audit: Eq. (5) uses a 3N-dimensional residual vector and says D+Sigma_d is 3N x 3N, but prints (2 pi)^(-3/2). A normalized Gaussian of dimension 3N has prefactor (2 pi)^(-3N/2). This is a source-level discrepancy. If the same missing dimension-only constant is used for both models at a cut, it cancels in their evidence ratio; absolute evidence normalization is still suspect. The analysis code was not inspected, so implementation and effect on reported Bayes factors remain unverified.",
+      "Eq. (4) defines per-event M_B values from a Gaussian centered on common Mbar_B and Eq. (5) puts sigma_M_B^2 in D, but the Eq. (5) residual vector is printed with M_B,1 through M_B,N. The paper does not state whether these are latent values, conditioned estimates or a notation error, nor how the scatter has been integrated. This needs source/code review.",
+      "Prior/parameter-count audit: Eq. (4) delta-fixes event x1,c, yet Table 1 lists uniform prior bounds for x1,c; prose says five parameters while the sampler sentence says nine. Table 1 labels sigma_M_B^2 but writes a prior on log10(sigma). The role of these entries and the exact sampled parameterization are unresolved.",
+      "The text calls H0 a fixed nuisance parameter but does not state the fixed numerical value; footnote 7 combines its uncertainty with M_B uncertainty in sigma_M_B, so the separate contributions cannot be recovered from this paper.",
+      "Authors omit peculiar-velocity corrections because common corrections assume FLRW geometry, and omit cosmology/metric-dependent bias corrections including Malmquist bias. They expect these to be small or similar across models, but do not quantify that expectation for every cut. They test a host mass-step term and omit it from final results; this is not a comprehensive systematic audit.",
+      "The new method assumes the single-shot SALT2 fitted x1,c are the most probable true values and does not fit their joint correlated non-Gaussian population. The paper itself identifies possible astrophysical systematics in the SALT2 procedure.",
+      "The paper says redshift distribution changes the evidence and calls for further analysis. The P+580 selection recipe is not restated; comparison with Lane et al. reuses observations and covariance ancestry.",
+      "The conclusions about a need to revisit cosmology are author interpretations. The quoted f_v0 and Omega_M0 are conditional fit parameters, not independent measurements or independent confirmations from CMB/lensing citations."
+    ],
+    "usefulness": {
+      "assessment": "Useful source for a timescape-versus-flat-LambdaCDM supernova model-comparison prospect and for a targeted likelihood/selection audit; not ready as a validated measurement or executable investigation.",
+      "reason": "The paper gives a concrete likelihood, priors, redshift-cut strategy, evidence sign convention and reported fit values. Internal ambiguity in the likelihood normalization, residual vector, priors and parameter count should be checked before any prospect promotes its statistical claim."
+    },
+    "citation_leads": [
+      {
+        "lead": "Williams et al. 2024, arXiv:2403.11997",
+        "relevance": "Authors cite numerical-relativity void-statistics results as compatible context for emergent kinetic spatial curvature.",
+        "status": "Not staged as a registered paper in the reader's inspected staged register; cited source not read here."
+      },
+      {
+        "lead": "Galoppo & Wiltshire 2024, arXiv:2406.14157; Galoppo et al. 2024, arXiv:2408.00385",
+        "relevance": "Authors point to work on timescape BAO extraction and calibration of dark-matter fraction, primordial sound speed and BAO scale.",
+        "status": "Not staged as registered papers in the reader's inspected staged register; cited sources not read here."
+      },
+      {
+        "lead": "Carr et al. 2022, PASA 39, e046; Kessler & Scolnic 2017, ApJ 836, 56",
+        "relevance": "Sources cited for peculiar-velocity/cosmology-dependent bias corrections and the host mass-step correction.",
+        "status": "Referenced as methodology leads; not independently checked in this reading."
+      },
+      {
+        "lead": "Seifert & Lane 2023 analysis code; Lane & Seifert 2024 P+1690 covariance and input files, DOI 10.5281/zenodo.12729746",
+        "relevance": "Data-availability pointers that could resolve the sampled parameterization, covariance and implementation of Eq. (5).",
+        "status": "Not downloaded or inspected; external artifacts are not evidence of a reproduced result."
+      }
+    ],
+    "source_context": {
+      "affiliations_printed": "The paper lists all authors at the University of Canterbury; Antonia Seifert is also listed at the University of Heidelberg.",
+      "publication_history_printed": "The PDF says received 2024-11-20, accepted 2024-11-21, original form 2024-07-11; the arXiv v1 date is 2024-12-19. No external author-profile or bibliometric evidence was consulted.",
+      "lane_overlap": "The staged arxiv:2311.01438v2 Lane et al. record and this paper share Pantheon+ inputs and four authors (Lane, Seifert, Ridden-Harper and Wiltshire); Galoppo is an additional author here. This overlap is source/register evidence, not independent replication."
+    },
+    "packet_sha256": "7f6119fcb81caccad1a0a87986242952425256ad09882e9bc499ce5d90fc73b5",
+    "packet_path": ".work/timescape-20261009/readers/sn2412/packet.json",
+    "backend_identity_note": "Requested model and agent recorded; actual backend identity not exposed.",
+    "scientific_review_corrections": {
+      "review_id": "timescape-focused-2026-10-09-sol",
+      "basis": "Read the review corrections before using extracted quantities; original worker packet remains hash-pinned and unchanged.",
+      "material_cautions": [
+        "1690 denotes light-curve rows; do not assume1690 unique independent SNe.",
+        "Printed Gaussian-normalizer, M-prior and parameter-count differences are distinguished from inspected code and unverified published-run provenance."
+      ]
+    }
+  },
+  "review_id": "timescape-focused-2026-10-09-sol",
+  "idea_ids": [
+    "timescape-supernova-conditional-evidence"
+  ]
 }

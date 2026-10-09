@@ -1,0 +1,532 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-09-timescape-science-checkpoint",
+  "status": "completed",
+  "stage": "three_paper_scientific_assessment_remaining_readings_continue",
+  "completed_utc": "2026-10-09T18:32:56.893317+00:00",
+  "lane": "inhomogeneity",
+  "work_mode": "user_focused_timescape",
+  "registered_papers": [
+    "arxiv:2412.15143v1",
+    "arxiv:1811.11976v3",
+    "arxiv:1812.01586v2"
+  ],
+  "new_versions": [],
+  "full_reads": [
+    "arxiv:2412.15143v1",
+    "arxiv:1811.11976v3",
+    "arxiv:1812.01586v2"
+  ],
+  "reviewed_papers": [
+    "arxiv:2412.15143v1",
+    "arxiv:1811.11976v3",
+    "arxiv:1812.01586v2"
+  ],
+  "idea_ids": [
+    "timescape-supernova-conditional-evidence",
+    "timescape-hubble-flow-proxy-contract"
+  ],
+  "design_ids": [
+    "candidate-timescape-supernova-likelihood-selection-audit",
+    "candidate-timescape-observer-consistent-hubble-flow"
+  ],
+  "prospect_ids": [
+    "timescape-observation-contracts"
+  ],
+  "batch_admission_receipt": "2026-10-09-timescape-acquisition",
+  "counts": {
+    "new_versions_this_checkpoint": 0,
+    "new_versions_batch": 9,
+    "luna_full_reads_this_checkpoint": 3,
+    "sol_reviewed_papers": 3,
+    "new_methodological_ideas": 2,
+    "new_fundamental_cosmologies": 0,
+    "new_observational_prospects": 1
+  },
+  "overlap": "Reuses existing timescape-bare-dressed model; SN reduction idea overlaps existing lineage concern. New specific tests, no duplicate underlying cosmology.",
+  "search_receipts": [
+    "2026-10-09-timescape-focused-recent",
+    "2026-10-09-timescape-selection",
+    "2026-10-09-timescape-averaging"
+  ],
+  "search_coverage": "Three bounded windows returned40 entries before deduplication; metadata/abstract screens, central pinned acquisition, registered bibliography matches and linked analysis-code inspection. No exhaustive claim.",
+  "source_input_custody": {
+    "manifest_format": "research-named-manifest/v1",
+    "collection": "prospector/reviews/2026-10-09-timescape-source-inputs",
+    "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/2026-10-09-timescape-source-inputs/versions/591128220950fcb04e581576fee4dd4ee4af152ed44b09e302b0f2df4d7bffa3/manifest.json",
+    "version_id": "Al3jiVf1KwCuBt_pZdoKkIm_eWXOw8m1",
+    "sha256": "d5c2d7817bebc378ee36268ac2084c1c0229aac40662a32442328224ba3f6a11",
+    "bytes": 23748
+  },
+  "evidence_custody": {
+    "manifest_format": "research-named-manifest/v1",
+    "collection": "prospector/reviews/2026-10-09-timescape-science",
+    "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/2026-10-09-timescape-science/versions/d9db8126db0922015c7db2d2813f52de22d7564cf2dfdd44358058239be0d14b/manifest.json",
+    "version_id": "TZKqqJc_XWso3TqFxtYVbruOF.GNMkXQ",
+    "sha256": "9b82793612230f19862426a5074c0e11503197a43a8ceecb79624072dd16a326",
+    "bytes": 37796
+  },
+  "research_context": {
+    "snapshot_utc": "2026-10-09T17:53:42.880889+00:00",
+    "scope": "Dated source-backed visibility, authorship and research links; not scientific validation.",
+    "publication_history": [
+      {
+        "paper_id": "arxiv:1811.11976v3",
+        "title": "Hubble flow variations as a test for inhomogeneous cosmology",
+        "first_submission_utc": "2018-11-29T06:04:20Z",
+        "version_updated_utc": "2018-12-07T11:26:29Z",
+        "authors": [
+          "Christoph Saulder",
+          "Steffen Mieske",
+          "Eelco van Kampen",
+          "Werner W. Zeilinger"
+        ],
+        "source_sha256": "b1c5e9cab57effac64776b1b3187c686eab2452a9cbbac8521a58379ea2dbe10"
+      },
+      {
+        "paper_id": "arxiv:2412.15143v1",
+        "title": "Supernovae evidence for foundational change to cosmological models",
+        "first_submission_utc": "2024-12-19T18:26:04Z",
+        "version_updated_utc": "2024-12-19T18:26:04Z",
+        "authors": [
+          "Antonia Seifert",
+          "Zachary G. Lane",
+          "Marco Galoppo",
+          "Ryan Ridden-Harper",
+          "David L. Wiltshire"
+        ],
+        "source_sha256": "b1c5e9cab57effac64776b1b3187c686eab2452a9cbbac8521a58379ea2dbe10"
+      },
+      {
+        "paper_id": "arxiv:1812.01586v2",
+        "title": "Comment on \"Hubble flow variations as a test for inhomogeneous cosmology\"",
+        "first_submission_utc": "2018-12-04T18:42:49Z",
+        "version_updated_utc": "2019-04-02T22:13:08Z",
+        "authors": [
+          "David L. Wiltshire"
+        ],
+        "source_sha256": "b1c5e9cab57effac64776b1b3187c686eab2452a9cbbac8521a58379ea2dbe10"
+      },
+      {
+        "paper_id": "arxiv:0909.0749v2",
+        "title": "Average observational quantities in the timescape cosmology",
+        "first_submission_utc": "2009-09-04T09:31:08Z",
+        "version_updated_utc": "2009-12-11T19:00:21Z",
+        "authors": [
+          "David L. Wiltshire"
+        ],
+        "source_sha256": "b1c5e9cab57effac64776b1b3187c686eab2452a9cbbac8521a58379ea2dbe10"
+      },
+      {
+        "paper_id": "arxiv:0709.0732v2",
+        "title": "Exact solution to the averaging problem in cosmology",
+        "first_submission_utc": "2007-09-06T11:57:39Z",
+        "version_updated_utc": "2007-11-01T05:28:14Z",
+        "authors": [
+          "David L. Wiltshire"
+        ],
+        "source_sha256": "b1c5e9cab57effac64776b1b3187c686eab2452a9cbbac8521a58379ea2dbe10"
+      },
+      {
+        "paper_id": "arxiv:1811.11963v2",
+        "title": "Baryon acoustic oscillation methods for generic curvature: Application to the SDSS-III Baryon Oscillation Spectroscopic Survey",
+        "first_submission_utc": "2018-11-29T04:49:46Z",
+        "version_updated_utc": "2019-03-03T06:44:32Z",
+        "authors": [
+          "Asta Heinesen",
+          "Chris Blake",
+          "Yong-Zhuang Li",
+          "David L. Wiltshire"
+        ],
+        "source_sha256": "b1c5e9cab57effac64776b1b3187c686eab2452a9cbbac8521a58379ea2dbe10"
+      },
+      {
+        "paper_id": "arxiv:2311.01438v2",
+        "title": "Cosmological foundations revisited with Pantheon+",
+        "first_submission_utc": "2023-11-02T17:52:39Z",
+        "version_updated_utc": "2024-11-13T01:54:06Z",
+        "authors": [
+          "Zachary G. Lane",
+          "Antonia Seifert",
+          "Ryan Ridden-Harper",
+          "David L. Wiltshire"
+        ],
+        "source_sha256": "b1c5e9cab57effac64776b1b3187c686eab2452a9cbbac8521a58379ea2dbe10"
+      },
+      {
+        "paper_id": "arxiv:gr-qc/0702082v4",
+        "title": "Cosmic clocks, cosmic variance and cosmic averages",
+        "first_submission_utc": "2007-02-15T20:34:13Z",
+        "version_updated_utc": "2007-11-01T04:18:11Z",
+        "authors": [
+          "David L. Wiltshire"
+        ],
+        "source_sha256": "b1c5e9cab57effac64776b1b3187c686eab2452a9cbbac8521a58379ea2dbe10"
+      },
+      {
+        "paper_id": "arxiv:1410.3470v3",
+        "title": "Cosmic microwave background anisotropies in the timescape cosmology",
+        "first_submission_utc": "2014-10-13T20:00:03Z",
+        "version_updated_utc": "2015-03-13T19:55:35Z",
+        "authors": [
+          "M. Ahsan Nazer",
+          "David L. Wiltshire"
+        ],
+        "source_sha256": "b1c5e9cab57effac64776b1b3187c686eab2452a9cbbac8521a58379ea2dbe10"
+      }
+    ],
+    "coauthorship": [
+      {
+        "paper_id": "arxiv:1811.11976v3",
+        "author_pairs": [
+          [
+            "Christoph Saulder",
+            "Steffen Mieske"
+          ],
+          [
+            "Christoph Saulder",
+            "Eelco van Kampen"
+          ],
+          [
+            "Christoph Saulder",
+            "Werner W. Zeilinger"
+          ],
+          [
+            "Steffen Mieske",
+            "Eelco van Kampen"
+          ],
+          [
+            "Steffen Mieske",
+            "Werner W. Zeilinger"
+          ],
+          [
+            "Eelco van Kampen",
+            "Werner W. Zeilinger"
+          ]
+        ],
+        "basis": "Exact primary Atom metadata author list; collaboration on this publication only."
+      },
+      {
+        "paper_id": "arxiv:2412.15143v1",
+        "author_pairs": [
+          [
+            "Antonia Seifert",
+            "Zachary G. Lane"
+          ],
+          [
+            "Antonia Seifert",
+            "Marco Galoppo"
+          ],
+          [
+            "Antonia Seifert",
+            "Ryan Ridden-Harper"
+          ],
+          [
+            "Antonia Seifert",
+            "David L. Wiltshire"
+          ],
+          [
+            "Zachary G. Lane",
+            "Marco Galoppo"
+          ],
+          [
+            "Zachary G. Lane",
+            "Ryan Ridden-Harper"
+          ],
+          [
+            "Zachary G. Lane",
+            "David L. Wiltshire"
+          ],
+          [
+            "Marco Galoppo",
+            "Ryan Ridden-Harper"
+          ],
+          [
+            "Marco Galoppo",
+            "David L. Wiltshire"
+          ],
+          [
+            "Ryan Ridden-Harper",
+            "David L. Wiltshire"
+          ]
+        ],
+        "basis": "Exact primary Atom metadata author list; collaboration on this publication only."
+      },
+      {
+        "paper_id": "arxiv:1811.11963v2",
+        "author_pairs": [
+          [
+            "Asta Heinesen",
+            "Chris Blake"
+          ],
+          [
+            "Asta Heinesen",
+            "Yong-Zhuang Li"
+          ],
+          [
+            "Asta Heinesen",
+            "David L. Wiltshire"
+          ],
+          [
+            "Chris Blake",
+            "Yong-Zhuang Li"
+          ],
+          [
+            "Chris Blake",
+            "David L. Wiltshire"
+          ],
+          [
+            "Yong-Zhuang Li",
+            "David L. Wiltshire"
+          ]
+        ],
+        "basis": "Exact primary Atom metadata author list; collaboration on this publication only."
+      },
+      {
+        "paper_id": "arxiv:2311.01438v2",
+        "author_pairs": [
+          [
+            "Zachary G. Lane",
+            "Antonia Seifert"
+          ],
+          [
+            "Zachary G. Lane",
+            "Ryan Ridden-Harper"
+          ],
+          [
+            "Zachary G. Lane",
+            "David L. Wiltshire"
+          ],
+          [
+            "Antonia Seifert",
+            "Ryan Ridden-Harper"
+          ],
+          [
+            "Antonia Seifert",
+            "David L. Wiltshire"
+          ],
+          [
+            "Ryan Ridden-Harper",
+            "David L. Wiltshire"
+          ]
+        ],
+        "basis": "Exact primary Atom metadata author list; collaboration on this publication only."
+      },
+      {
+        "paper_id": "arxiv:1410.3470v3",
+        "author_pairs": [
+          [
+            "M. Ahsan Nazer",
+            "David L. Wiltshire"
+          ]
+        ],
+        "basis": "Exact primary Atom metadata author list; collaboration on this publication only."
+      }
+    ],
+    "identity_and_expertise": [
+      {
+        "name": "David L. Wiltshire",
+        "identity_basis": "University of Canterbury profile and homepage identify timescape proposer; institution and name agree with original papers.",
+        "source": {
+          "label": "wiltshire-profile",
+          "url": "https://profiles.canterbury.ac.nz/david-wiltshire",
+          "retrieved_utc": "2026-10-09T17:51:21.769402+00:00",
+          "http_status": 200,
+          "sha256": "ccdfce46f4d021c2ec8502725b9516d1dfdd90918207ee03dc7df3ed60553de8",
+          "bytes": 269538,
+          "path": ".work/timescape-20261009/context/wiltshire-profile.html"
+        },
+        "profile_reported_fields": [
+          "general relativity",
+          "quantum gravity",
+          "cosmology"
+        ],
+        "limits": "Institutional/self-described expertise context, no inference of correctness."
+      },
+      {
+        "name": "Christoph Saulder and coauthors",
+        "identity_basis": "1811.11976v3 original PDF title/author/affiliation page.",
+        "source_paper_id": "arxiv:1811.11976v3",
+        "source_sha256": "99c7e9ae135514e78e5e6ddd0a3b89308e59b3e3ff19d989f78e624621525070",
+        "source_affiliations": [
+          "Korea Institute for Advanced Study",
+          "University of Vienna",
+          "European Southern Observatory"
+        ],
+        "publication_history_scope": "Reference list identifies antecedent proposal/catalogue/fundamental-plane work by Saulder et al.; those cited publications not independently fully read here.",
+        "career_metrics": null,
+        "missing_reason": "Full career/profile audit not conducted; no inferred seniority or h-index."
+      }
+    ],
+    "institutional_links": [
+      {
+        "source": {
+          "label": "wiltshire-home",
+          "url": "https://spcs.canterbury.ac.nz/~dlw24/",
+          "retrieved_utc": "2026-10-09T17:51:23.787710+00:00",
+          "http_status": 200,
+          "sha256": "97b5e73b32cb150fb221940430aad8b65f60963b2aaba8058f28d6f4d9c53988",
+          "bytes": 14360,
+          "path": ".work/timescape-20261009/context/wiltshire-home.html"
+        },
+        "relation": "homepage_reported_ongoing_collaboration",
+        "groups": [
+          "Thomas Buchert, Universite de Lyon 1",
+          "Hayley Macpherson, University of Chicago",
+          "Asta Heinesen, University of Copenhagen",
+          "Krzysztof Bolejko, University of Tasmania",
+          "Jan Ostrowski, National Centre for Nuclear Research, Warsaw"
+        ],
+        "limits": "Homepage declaration, not proof that every linked researcher endorses timescape or participated in a selected paper."
+      },
+      {
+        "source": {
+          "label": "canterbury-group",
+          "url": "https://www.canterbury.ac.nz/research/about-uc-research/research-groups-and-centres/gravity-and-cosmology-group",
+          "retrieved_utc": "2026-10-09T17:51:24.777487+00:00",
+          "http_status": 200,
+          "sha256": "a249369105d4f863cb04f228202cc2b14263dc64c43b3832d6be952e503d0312",
+          "bytes": 369101,
+          "path": ".work/timescape-20261009/context/canterbury-group.html"
+        },
+        "relation": "institutional_research_group_listing",
+        "findings": [
+          "Lane listed as Wiltshire doctoral student co-supervised by Ridden-Harper.",
+          "Galoppo listed as Wiltshire doctoral student.",
+          "2511.17160 averaged-background perturbation preprint listed for Galoppo and Mourier; source metadata acquired, no timescape equivalence inferred."
+        ]
+      }
+    ],
+    "independence_assessment": [
+      {
+        "papers": [
+          "arxiv:2311.01438v2",
+          "arxiv:2412.15143v1"
+        ],
+        "status": "shared_data_and_overlapping_author_team",
+        "basis": "Exact metadata shares Lane, Seifert, Ridden-Harper, Wiltshire; both abstracts name Pantheon+ and latest identifies earlier methodology.",
+        "cross_covariance": null,
+        "interpretation": "Methodological follow-up, not independent data confirmation."
+      },
+      {
+        "papers": [
+          "arxiv:1811.11976v3",
+          "arxiv:1812.01586v2"
+        ],
+        "status": "external_test_and_model_author_response",
+        "basis": "Non-overlapping listed author sets; test uses SDSS/2MRS and Millennium mocks, reply challenges geometry/clock mapping.",
+        "limits": "Separate author set does not prove complete institutional independence; author response is not new observational confirmation."
+      },
+      {
+        "papers": [
+          "arxiv:1410.3470v3",
+          "arxiv:2412.15143v1"
+        ],
+        "status": "different_probe_shared_model_author",
+        "basis": "Planck CMB versus Pantheon+ SN; Wiltshire common author.",
+        "cross_covariance": null,
+        "interpretation": "Different observations do not supply a jointly calibrated likelihood or established compatibility."
+      }
+    ],
+    "metrics": {
+      "provider": "INSPIRE-HEP",
+      "snapshot_date": "2026-10-09",
+      "base_work_counts_not_version_counts": true,
+      "author_h_indices": null,
+      "normalized_ranks": null,
+      "reason": "No source-backed comparable cohort population or verified author metric profiles collected. Missing count is null, not zero. Count without self-citations is a provider field, not an independently audited count of independent confirmations."
+    }
+  },
+  "frontier": {
+    "max_followup_leads": 5,
+    "citation_hop_limit": 1,
+    "leads": [
+      {
+        "topic": "Original clock interpretation",
+        "paper_id": "arxiv:gr-qc/0702082v4",
+        "next_stage": "acquire",
+        "reason": "Long original formulation; short exact-solution source is this batch reading, not a substitute for all original derivation."
+      },
+      {
+        "topic": "Direct discriminants and redshift drift",
+        "paper_id": "arxiv:0909.0749v2",
+        "next_stage": "acquire",
+        "reason": "Primary observable conventions acrossAP/CBL/redshift-drift require originalmath."
+      },
+      {
+        "topic": "Generic-curvature BAO",
+        "paper_id": "arxiv:1811.11963v2",
+        "next_stage": "acquire",
+        "reason": "Check BOSS estimator/mocks/ruler and angular-radial geometry before comparing currentBAO; commonWiltshire author, not automatically independent support."
+      },
+      {
+        "topic": "Recent averaged perturbations",
+        "paper_id": "arxiv:2511.17160v2",
+        "next_stage": "acquire",
+        "reason": "Determine exact modelapplications/closure domains; not assumed timescape implementation."
+      },
+      {
+        "topic": "SN selection/population methods",
+        "paper_id": "arxiv:1610.08972v3",
+        "next_stage": "ownership_handoff",
+        "reason": "Pinned metadata only; broaderSN systematics scope assigned otherchat. Shared acquired metadata prevents duplicate lookup."
+      }
+    ],
+    "saved_unadmitted_windows": [
+      "2026-10-09-timescape-selection",
+      "2026-10-09-timescape-averaging"
+    ],
+    "additional_gaps": [
+      "Direct recentDESI/DES timescape fits not established in boundedwindow.",
+      "Broader weak-limit backreaction critique not automatically applicable totimescape.",
+      "GRB andTimescape-realized remain existing deferredrecords; no theoryequivalence accepted.",
+      "Full observational jointcalibration/selection covariance not verified."
+    ],
+    "refresh_policy": "Resume exact saved result windows, do not refetch without newreason; recentpage starts0 limit20 needs deliberatepagination+overlap ifcontinued.",
+    "acquisition_stop": {
+      "utc": "2026-10-09T18:08:20Z",
+      "status": 429,
+      "operation": "Known-ID bibliography identity lookup of1009.5855v2 and1306.3208v2; initial timeout, one retry after31seconds.",
+      "action": "All new arXiv acquisition stopped for this batch; no alternate-route retries. All six planned reading sources already acquired and privately preserved.",
+      "scientific_interpretation": "Access failure is not scientific rejection.",
+      "unverified_citation_mappings": [
+        "1811.11976v3 bib.bib92 to1009.5855",
+        "1811.11976v3 bib.bib31 to1306.3208"
+      ]
+    }
+  },
+  "limitations": [
+    "No numerical experiments, independent reproduction or joint multi-probe qualification.",
+    "Only3papers scientifically reviewed; remaining planned3 Luna readings will retain review queue.",
+    "CMB/BAO/growth/modern survey compatibility unresolved; no native timescape request route.",
+    "arXiv429 stopped further acquisition; two citation identity mappings deferred."
+  ],
+  "scientific_assessment": {
+    "conditional_support": "Source-reported Pantheon+ evidence favors timescape within the chosen likelihood, priors, reductions and cuts; linked code clarifies printed inconsistencies without verifying the published run.",
+    "substantive_criticism": "External Hubble-flow test disfavors a specified deformed-LambdaCDM proxy; strongest printed significance has a table-scale inconsistency, and observer/curvature fidelity is disputed.",
+    "most_informative_next_tests": [
+      "Same-event likelihood/covariance/prior/selection audit of the Pantheon+ comparison.",
+      "Derive and check a clock- and geometry-consistent joint Hubble-flow/sightline prediction before catalogue fitting."
+    ],
+    "readiness": "Both designs blocked; no executable request or science qualification."
+  },
+  "preservation_limitations": [
+    {
+      "status": "original_html_excluded_scanner_marker_original_retained_locally",
+      "source_path": ".work/timescape-20261009/context/wiltshire-home.html",
+      "source_sha256": "97b5e73b32cb150fb221940430aad8b65f60963b2aaba8058f28d6f4d9c53988",
+      "source_url": "https://spcs.canterbury.ac.nz/~dlw24/",
+      "sanitized_sha256": "5b6c31bdaa7c3edf709eedd58a7e2fa48bdc5024445c841460c88c9a36558150",
+      "modification": "Credential-pattern scanner matched a39-character sk- prefix within a public href. Matched bytes redacted only in private upload derivative; no raw marker exposed. Source page remains local unchanged and unpreserved in full.",
+      "impact": "Author collaboration/profile context only; full original papers and scientific code inputs separately preserved.",
+      "utc": "2026-10-09T18:34:23.081214+00:00"
+    }
+  ],
+  "bibliometric_scope": {
+    "snapshots": 9,
+    "provider": "INSPIRE-HEP",
+    "date": "2026-10-09",
+    "uncollected": "2511.17160v2 bibliometrics not collected; all author h-indices and normalized ranks null.",
+    "interpretation": "Base-work visibility counts only, not version-specific impact or independent scientific support."
+  }
+}

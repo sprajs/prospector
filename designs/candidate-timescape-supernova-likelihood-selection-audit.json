@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "design_id": "candidate-timescape-supernova-likelihood-selection-audit",
+  "title": "Audit conditioned timescape supernova evidence on identical event rows",
+  "paper_ids": [
+    "arxiv:2412.15143v1"
+  ],
+  "idea_ids": [
+    "timescape-bare-dressed",
+    "timescape-supernova-conditional-evidence"
+  ],
+  "review_id": "timescape-focused-2026-10-09-sol",
+  "readiness": "blocked",
+  "faithful_claim": "Seifert et al. report a timescape preference in a revised Pantheon+ evidence calculation that fixes SALT2 x1,c. Test the statistical and selection sensitivity of this exact comparison, preserving its shared-data ancestry and source geometry.",
+  "equations": [
+    {
+      "paper_id": "arxiv:2412.15143v1",
+      "expression": "mu_obs=m_B_star-Mbar_B+alpha*x1hat-beta*chat; mu_th=25+5*log10(d_L/Mpc)",
+      "locator": "Eqs.(1)-(2), PDFp2",
+      "definitions": "Magnitudes are dimensionless logarithmic flux units, d_L is luminosity distance in Mpc; alpha*x1 and beta*c are magnitude corrections. H0 and common absolute-magnitude normalization are degenerate without external calibration.",
+      "domain": "Same declared selected Pantheon+ rows; distance function belongs to the respective model.",
+      "status": "reviewed_transcription"
+    },
+    {
+      "paper_id": "arxiv:2412.15143v1",
+      "expression": "C=D+Sigma_d; D_i=diag(sigma_M_B^2,0,0); X_i=(m_B_star_i-mu_i-Mbar_B+alpha*x1hat_i-beta*chat_i,0,0)",
+      "locator": "Eq.(5), PDFp3, with code-resolved commonM in pinned bayesian_nongauss.py:RES/COV",
+      "definitions": "Sigma_d is3N-by3N covariance of interleaved(m_B_star,x1,c) summaries, not just released N-dimensional corrected-distance covariance. Common Mbar_B is supported by inspected code; per-event M_B,i in printed residual remains a source notation inconsistency.",
+      "domain": "Fixed SALT2 estimate conditioning; exact covariance construction and cross-event lineage must be restored.",
+      "status": "needs_verification"
+    },
+    {
+      "paper_id": "arxiv:2412.15143v1",
+      "expression": "ln L=-(3N/2)*ln(2*pi)-(1/2)*ln det C-(1/2)*X^T*C^-1*X",
+      "locator": "Eq.(5), PDFp3, reviewer normalization repair; pinned code m2loglike implements3N",
+      "definitions": "Printed prefactor has3/2 rather than3N/2; the displayed expression here is explicitly reviewer-repaired. Code supports it for its selected path.",
+      "domain": "Normalized3N Gaussian under the stated covariance; does not attest statistical appropriateness of data-conditioned delta priors.",
+      "status": "reviewer_derived"
+    },
+    {
+      "paper_id": "arxiv:2412.15143v1",
+      "expression": "ln B=ln Z_TS-ln Z_flat-LambdaCDM; Z_model=integral L(theta)*pi(theta) dtheta",
+      "locator": "Sec.2, Figure1, PDFpp2-4",
+      "definitions": "Positive lnB favors timescape. pi must be a proper prior in a declared measure; evidence changes if finite nuisance or cosmological priors change.",
+      "domain": "Only the two specified models on identical selected rows; no comparison of absolute evidence across differently selected datasets.",
+      "status": "reviewed_transcription"
+    }
+  ],
+  "assumptions": [
+    "Retain the source timescape dressed distance and distinct flat LambdaCDM comparison; verify the tracker mapping and spline construction before any numerical use.",
+    "Freeze identical input row identities/order, covariance submatrix and redshift-frame transformation within each paired comparison. Multiple light curves for one SN remain linked observations.",
+    "Use the source fixed-x1,c conditional calculation as a reproduction target, then a separately declared uncertainty/selection alternative; neither is presumed scientifically correct.",
+    "Treat the grid of nested redshift cuts as correlated sensitivity analyses, not independent detections or a data-independent selection of a homogeneity scale."
+  ],
+  "minimal_test": {
+    "question": "Does the reported preference survive a faithful paired input/likelihood audit and explicitly declared changes in fixed-estimate conditioning, nuisance priors and redshift selection?",
+    "observables": [
+      "Paired lnB with sampler uncertainty for each preregistered identical event-row selection.",
+      "Nuisance/magnitude residual changes, unique-event versus light-curve-row counts, covariance dimensions/order/positive-definiteness and sensitivity to common normalization.",
+      "Comparison of fixed-estimate likelihood and a separately specified error/selection treatment on matching rows; any population or survey weighting choices declared before results."
+    ],
+    "parameter_choices": {
+      "paper_reported": {
+        "f_v0_uniform": [
+          0.5,
+          0.799
+        ],
+        "Omega_M0_uniform": [
+          0.143,
+          0.487
+        ],
+        "alpha_uniform": [
+          0,
+          1
+        ],
+        "beta_uniform": [
+          0,
+          7
+        ],
+        "M_B_bounds_printed": [
+          -20.3,
+          18.3
+        ],
+        "scatter_prior_printed": "Table1 labels sigma_M_B^2 but says log10(sigma) in[-10,4]",
+        "sampler": "n_live800,tolerance1e-3; nine-parameter prose conflicts with five-parameter method"
+      },
+      "inspected_code_only": {
+        "commit": "3caa94c62b10f97fe8c116ccd3f6cda860d55a38",
+        "parameters": [
+          "Q",
+          "alpha",
+          "beta",
+          "M",
+          "variance_M"
+        ],
+        "M_uniform": [
+          -20.3,
+          -18.3
+        ],
+        "log10_variance_M_uniform": [
+          -10,
+          4
+        ],
+        "H0_km_s_Mpc": 66.7,
+        "cut_comparison": "sort_and_cut retains z>=zmin; paper excludes z<=zmin. Boundary rows must be checked."
+      },
+      "adopted_test_inputs": null,
+      "adoption_reason": "Source targets only, not accepted runnable parameters; exact published-run revision/data/configuration unknown."
+    },
+    "scope": "Start with input identity and symbolic/normalization/parameter bookkeeping. Numerical evidence integration belongs to a later accepted consumer packet. A smaller paired residual/score audit can detect row/covariance/offset mistakes but cannot reproduce Bayesian evidence."
+  },
+  "simplifications": [
+    "No full raw-photometry light-curve retraining or complete survey selection/population likelihood is supplied here.",
+    "An averaged dressed distance test does not predict local direction-dependent wall/void expansion or establish the physical cause of low-z residuals.",
+    "No absolute H0 measurement, joint BAO/CMB inference, early-universe closure or proof of timescape cosmology."
+  ],
+  "data_dependencies": [
+    "Exact P+1690 and P+580 inputs/covariance linked by the paper to DOI10.5281/zenodo.12729746; release/version/bytes and event mapping not audited in this review.",
+    "SALT2 fitted summaries and calibration FITRES lineage; full covariance construction and duplicate-observation treatment unresolved.",
+    "Source CMB boost without peculiar-velocity corrections, omitted cosmology-dependent bias corrections, host-step test and redshift cuts must remain explicit.",
+    "Same observations/covariance ancestry with Lane et al.; cross-analysis dependence unquantified. No multiplied independent-evidence claim."
+  ],
+  "unknowns": [
+    "Attested exact published-run source, input, spline, sampler/configuration and output pins.",
+    "Complete covariance construction, unique-event/row identity and selection/calibration ancestry.",
+    "Intended normalization and statistical meaning after conditioning on measured x1,c; effect of latent-variable/selection alternatives.",
+    "Proper variance-versus-standard-deviation prior and nuisance measure intended for published run; exact equality-cut behavior.",
+    "Independent source verification of tracker mapping, interpolation accuracy and valid domain."
+  ],
+  "verification_gates": [
+    "Bind immutable full source/data/covariance/configuration/output manifests before reproduction; static code presence is insufficient.",
+    "Verify row/event identities and preserve repeated-light-curve covariance instead of treating1690 as necessarily uniqueSNe.",
+    "Derive conditional likelihood and normalize in its actual dimension; keep printed error and reviewer repair distinct. Demonstrate any model-shared constant cancellation algebraically.",
+    "Check cosmological and nuisance prior measure including log10variance; translate finiteM prior consistently if fixedH0 changes.",
+    "Validate observer distance/redshift conventions, c restoration, small-z behavior, numerical reference and spline errors separately before evidence sampling.",
+    "Preregister paired cuts/reductions and uncertainty treatment; carry correlated selections and survey/selection dependence. No invented execution tolerance.",
+    "Require consumer implementation/request validation and acceptance at an inspected revision before any authorized numerical work."
+  ],
+  "falsification": "A row/covariance/magnitude/prior mismatch rejects a claimed reproduction. If a declared faithful comparison removes or reverses the reported preference, that conditioned evidence claim is not robust under the tested contract. If the preference survives the specified corrections/alternatives, it weakens those specific artifact explanations; it still does not prove timescape, establish independence or exclude untested systematics.",
+  "consumer": {
+    "repository": "sprajs/irreducible",
+    "revision": "886a4abb8ea417faef6f0e5664f309fa82ec3261",
+    "dirty": false,
+    "capability_status": "Coordinator source inspection at this clean revision lists lcdm/constant_q/cpl only. No native timescape observer/lapse or hierarchical SALT2 evidence route. Compiled executable discovery unverified. Author Python code exists separately and was inspected statically, not run or consumer-accepted.",
+    "recipe_runner_status": "Proposed only per inspected docs/run-recipes.md; no executable recipe route verified."
+  },
+  "blockers": [
+    "Native schema lacks timescape dressed geometry and the proposed hierarchical Bayesian likelihood. Compiled capability discovery unverified.",
+    "Published-run/data/covariance and statistical conditioning contract unresolved; author Python code has no attested paper-run or consumer acceptance.",
+    "No validated executable request/recipe; arbitrary equations cannot be executed by JSON."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Prospector source/design review only. No calculation, observational reanalysis, evidence reproduction or consumer acceptance."
+  }
+}

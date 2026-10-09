@@ -59,10 +59,533 @@
   ],
   "screen": {
     "status": "selected",
-    "basis": "abstract",
-    "reason": "Resume queued thermal trigger foundation to distinguish phase-transition energy injection, entropy steps and perturbation closure."
+    "basis": "full_text",
+    "reason": "Complete Luna reading, pending exact Sol source/scientific assessment. No idea acceptance or execution."
   },
-  "extraction": null,
+  "extraction": {
+    "schema_version": 1,
+    "paper_id": "arxiv:2112.00770v2",
+    "requested_model": "gpt-6-luna",
+    "requested_reasoning_effort": "xhigh",
+    "agent_id": "/root/radiation_explorer",
+    "actual_backend_identity": null,
+    "actual_backend_identity_note": "Backend identity was not exposed by the task runtime.",
+    "reading_level": "full_text",
+    "source_hashes": {
+      "html": "98a302d14ef4f7018e2e032153b288d51b8496f4246d217a7f35f3d03669f80e",
+      "pdf": "51054356c36f8aa53ba06604251405567c58086ca4943877e6f91b6b7af38876",
+      "extracted_text": "781192ba96478c24935f361271595a5e550a008624845fa43aac52f916a3045b"
+    },
+    "coverage": {
+      "sections_read": [
+        "Title, abstract, contents",
+        "I. Introduction",
+        "II. Cold NEDE: effective field theory model and phenomenology",
+        "III. Hot NEDE: effective field theory model; small-mass/high-temperature and large-mass/low-temperature regimes; phenomenology; decay scenarios A and B",
+        "IV. Microphysical description: interacting dark matter and dark radiation; NEDE and neutrino mass generation; dark electroweak model and phenomenology",
+        "V. Discussion",
+        "Appendix A. Thermal corrections in the Abelian Higgs model"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        66,
+        68
+      ],
+      "formula_checks": [
+        "HTML MathML/alt-text and rendered PDF cross-checks for Eqs. (III.1), (III.3), (III.26), (III.28), (III.34), (III.41)-(III.43), (III.49), (IV.3), (IV.4a)-(IV.4b), and Appendix A thermal-potential equations.",
+        "Rendered PDF pages checked for formulas and equation typography at pages 14, 16-18, 20-23, 25, 29, 31, 33-34, 38-39, 43, 47, 50, 55, 61-62, and 64."
+      ],
+      "figure_check": "Visually inspected Figures 1-15 using rendered original PDF pages, including the potential-regime plots, phenomenology/transition illustrations, and the Appendix A potential plot. Figure 3 has a source-level legend/caption mismatch: dotted curves are labeled \u03b4_eff=1.75 in the visual legend for O3/O4 while the caption says dotted \u03b4_eff=0.75. Figure 10 is an illustrative cold-NEDE comparison using prior cold-model fit parameters, not a hot-NEDE fit. Captions were not treated as visual inspection by themselves.",
+      "limitations": [
+        "References were sampled only for registered-paper matches and up to five follow-up leads; the full bibliography was not read sequentially.",
+        "No cited follow-up source was acquired or read in this assignment.",
+        "No Boltzmann implementation, likelihood, parameter-chain, independent numerical calculation, or present-data reassessment was performed."
+      ]
+    },
+    "summary": "The paper proposes hot NEDE: a finite dark-sector temperature thermally stabilizes the symmetric phase, and cooling removes those corrections so a first-order transition releases false-vacuum energy near recombination. Its Abelian-Higgs working example favors a large-mass/low-temperature, strongly supercooled regime (\u03b3\u22721, often \u03b3\u22480.024 in the benchmark) where a sizable NEDE fraction can coexist with a cold, subdominant dark-radiation bath. The mechanism and background scaling are developed analytically, and the authors sketch interacting dark matter/radiation, inverse-seesaw neutrino mass generation, and a dark-electroweak completion. This is a proposal and effective-model analysis, not a fitted hot-NEDE cosmological solution: the temperature-triggered perturbation amplitude, post-transition stress-energy closure, detailed particle/Boltzmann evolution, and updated inference are explicitly left open.",
+    "ideas": [
+      {
+        "local_id": "thermal-trigger",
+        "title": "Thermal corrections trigger a first-order NEDE transition",
+        "claim_type": "author_proposal_and_analytic_effective_model",
+        "description": "In hot NEDE, the dark-sector bath restores the symmetry at early times. As its temperature falls through the critical scale, thermal stabilization subsides and the scalar tunnels to the broken phase. This replaces the ultralight zero-temperature trigger field of cold NEDE with dark-temperature evolution. The authors identify this trigger as a new mechanism and explore its background phenomenology; they do not report a hot-NEDE posterior or demonstrate a tension-resolving fit.",
+        "locators": [
+          "PDF pp. 13-15, Sec. III A",
+          "PDF pp. 58-60, Sec. V"
+        ],
+        "equations": [
+          {
+            "expression": "V(\u03c8;T_d)=D(T_d\u00b2\u2212T_\u25e6\u00b2)\u03c8\u00b2\u2212E T_d \u03c8\u00b3+(\u03bb/4)\u03c8\u2074+V\u2080(T_d)",
+            "locator": "Eq. (III.1), PDF p. 14",
+            "definitions": "\u03c8 is the NEDE order parameter; T_d is dark temperature; T_\u25e6 is the zero-temperature critical scale; D, E, \u03bb are effective couplings; V\u2080 is field independent.",
+            "domain": "Small-mass/high-temperature approximation with the validity conditions in Eq. (III.2); the paper finds this regime is not the preferred strong-transition phenomenology.",
+            "confidence": "high; checked against HTML MathML and PDF rendering"
+          },
+          {
+            "expression": "\u03b3=\u03bb/(4\u03c0E\u2074)^(1/3); for the Abelian-Higgs example \u03b3=4\u03c0\u03bb/g_NEDE\u2074",
+            "locator": "Eq. (III.3), PDF p. 15",
+            "definitions": "Dimensionless parameter separating thermal-potential regimes; g_NEDE is the dark gauge coupling.",
+            "domain": "\u03b3\u226b1 for the cubic high-temperature approximation; \u03b3\u22721 requires the generalized large-mass/low-temperature potential.",
+            "confidence": "high; checked against HTML MathML and PDF rendering"
+          }
+        ]
+      },
+      {
+        "local_id": "supercooled-low-temperature-regime",
+        "title": "Strong supercooling permits sizable NEDE in a cold dark sector",
+        "claim_type": "author_analytic_prediction_and_benchmark",
+        "description": "The paper extends the thermal potential beyond the high-temperature expansion using a large-mass/low-temperature expression. In that regime, \u03b3\u22721 can yield \u03b1\u226b1 and f_NEDE of order 0.1 even when the dark sector is colder than visible radiation. The quoted values are analytic benchmark relations conditioned on the Abelian-Higgs approximation and the stated transition assumptions, not inferred cosmological parameters.",
+        "locators": [
+          "PDF pp. 21-26, Sec. III A 2",
+          "PDF pp. 26-30, Sec. III B"
+        ],
+        "equations": [
+          {
+            "expression": "V(\u03c8;T_d)=\u2212D T_\u25e6\u00b2\u03c8\u00b2+(\u03bb/4)\u03c8\u2074+3T_d\u2074 K(\u221a(8D)\u03c8/T_d)exp[\u2212\u221a(8D)\u03c8/T_d]+V\u2080(T_d)",
+            "locator": "Eq. (III.26), PDF p. 22",
+            "definitions": "K is the paper's fitted thermal integral function; other symbols follow Eq. (III.1).",
+            "domain": "Large-mass/low-temperature approximation; see its matching/validity discussion and Appendix A.",
+            "confidence": "high; checked against HTML MathML and PDF rendering"
+          },
+          {
+            "expression": "V\u0304_\u03b3(\u03c8\u0304;T_d)=(1/4)\u03c8\u0304\u2074\u2212(1/2)[\u03c0\u03b3\u2212\u03b4_eff]\u03c8\u0304\u00b2+12\u03c0\u03b3\u00b3K(\u03c8\u0304/\u03b3)exp(\u2212\u03c8\u0304/\u03b3)",
+            "locator": "Eq. (III.28), PDF p. 23",
+            "definitions": "Dimensionless potential; \u03c8\u0304, \u03b4_eff, \u03b3, and V\u0304_\u03b3 are the rescaled field, effective temperature-dependent mass parameter, regime parameter, and potential defined immediately around Eqs. (III.27)-(III.29).",
+            "domain": "Low-temperature approximation, with \u03b3\u22721; thin-wall limit is left for future work.",
+            "confidence": "high; checked against HTML MathML and PDF rendering"
+          },
+          {
+            "expression": "\u03be_*\u2074\u22480.56\u03b3[f_NEDE/(1\u2212f_NEDE)]/0.1; T_d*\u2074\u2248(0.7 eV)\u2074 \u03b3[f_NEDE/(1\u2212f_NEDE)]/0.1 [(1+z_*)/5000]\u2074",
+            "locator": "Eqs. (III.41)-(III.42), PDF p. 26",
+            "definitions": "\u03be_*=T_d/T_vis at transition; f_NEDE is the NEDE fraction; z_* is transition redshift.",
+            "domain": "Approximate relations neglecting subdominant dark-radiation contribution to total density and assuming the stated transition model.",
+            "confidence": "high; checked against HTML MathML and PDF rendering"
+          }
+        ]
+      },
+      {
+        "local_id": "transition-timescale-and-percolation",
+        "title": "Percolation and transition duration are estimated in the supercooled regime",
+        "claim_type": "author_analytic_estimate",
+        "description": "The authors estimate the tunneling/percolation condition by S\u2083/T_d*\u2248250 and derive a rapid transition for weak gauge coupling. The duration estimate is model- and approximation-dependent; it is not a resolved finite-duration perturbation calculation.",
+        "locators": [
+          "PDF pp. 24-26, especially Fig. 5 and Eq. (III.43)"
+        ],
+        "equations": [
+          {
+            "expression": "S\u2083/T_d*\u2248250 (percolation condition used for p\u22481)",
+            "locator": "PDF p. 24, discussion of Fig. 5",
+            "definitions": "S\u2083 is the three-dimensional Euclidean bounce action; T_d* is dark temperature at transition.",
+            "domain": "Adopted nucleation/percolation criterion in the analysis, not an observational fit.",
+            "confidence": "high; text and figure caption checked"
+          },
+          {
+            "expression": "H_* \u03b2\u0304\u207b\u00b9\u223c10\u207b\u00b2 g_NEDE\u00b2, for \u03b3\u22721 and g_NEDE\u22720.1",
+            "locator": "Eq. (III.43), PDF p. 26",
+            "definitions": "H_* is the Hubble rate at transition; \u03b2\u0304\u207b\u00b9 parameterizes transition duration in Hubble units.",
+            "domain": "Derived in the stated strongly supercooled, weak-coupling regime using the approximate bounce-action scaling.",
+            "confidence": "high; checked against HTML MathML and PDF rendering"
+          }
+        ]
+      },
+      {
+        "local_id": "temperature-triggered-perturbation-source",
+        "title": "Hot-trigger perturbations depend on dark-temperature fluctuations",
+        "claim_type": "author_derived_relation_with_open_test",
+        "description": "The transition hypersurface is set by dark temperature, so the initial NEDE density perturbation is sourced by \u03b4T_d/T\u0307_d rather than the trigger-field fluctuation used in cold NEDE. The authors explicitly postpone checking whether the resulting amplitude and scale dependence match the phenomenologically required initial conditions to a Boltzmann implementation.",
+        "locators": [
+          "PDF pp. 30-31, Eq. (III.49) and surrounding discussion"
+        ],
+        "equations": [
+          {
+            "expression": "\u03b4\u03c1_NEDE(t_*,k)/\u03c1_NEDE(t_*)=\u22123[1+w_NEDE(t_*)]H_* \u03b4T_d(t_*,k)/T\u0307_d(t_*)",
+            "locator": "Eq. (III.49), PDF p. 31",
+            "definitions": "\u03b4T_d is the dark-temperature perturbation; T\u0307_d is its background time derivative; w_NEDE(t_*) is the post-transition NEDE equation-of-state parameter at transition; H_* is the Hubble rate.",
+            "domain": "Linear perturbation relation on a constant-temperature transition surface; it does not by itself specify the dark-radiation hierarchy, nucleation noise, finite transition width, or post-transition closure.",
+            "confidence": "high; checked against HTML MathML and PDF rendering"
+          }
+        ]
+      },
+      {
+        "local_id": "post-transition-decay-branches",
+        "title": "Two post-transition decay scenarios remain phenomenological",
+        "claim_type": "author_proposals_with_unclosed_microphysics",
+        "description": "Scenario A deposits energy in colliding bubble-wall fluid/condensate and assumes a time-dependent equation of state, sound speed, and viscosity that the hot model does not derive. The cold-NEDE fit with approximately constant w\u22482/3 (reported there near 0.70 with asymmetric uncertainty) is not a hot-NEDE fit. Scenario B transfers energy to particles that later become nonrelativistic and contribute to dark matter; the displayed piecewise background equation of state is illustrative, and the authors state that a full particle/Boltzmann treatment and its perturbations remain necessary.",
+        "locators": [
+          "PDF pp. 31-37, Sec. III C and Fig. 10"
+        ],
+        "equations": [],
+        "source_figure_note": "Figure 10 (PDF p. 34) compares an illustrative cold-NEDE background with prior cold-model fit parameters; it is not a hot-NEDE fit. Scenario B's example uses z_rel=1000, f_NEDE=16.3%, an approximately matched sound-horizon reduction, and x_NEDE\u224813% of DM; these are illustrative choices, not posterior constraints."
+      },
+      {
+        "local_id": "interacting-dark-sector-embedding",
+        "title": "Dark matter and self-interacting dark radiation can accompany hot NEDE",
+        "claim_type": "author_model_embedding_and_prior_fit_context",
+        "description": "The proposed (non-)Abelian dark-sector embedding has stable dark matter coupled to dark photons/gluons. Entropy history gives a benchmark \u03be\u22480.34 after decoupling around 10-100 GeV; the phase transition changes the relativistic degrees of freedom and can heat the remaining dark radiation. A prior NADM analysis is cited for constraints, but this paper does not present a new joint fit of that model with hot NEDE. For N=3, the quoted post-transition \u0394N_eff\u22480.67 is marginally above the old quoted 95% bound; the authors expect limited impact near equality, an assumption that needs updated inference.",
+        "locators": [
+          "PDF pp. 37-40, Sec. IV A, Eqs. (IV.2)-(IV.4b)"
+        ],
+        "equations": [
+          {
+            "expression": "\u0394N_eff=(8/7)(11/4)^(4/3) N_d \u03be\u2074\u22480.06 N_d",
+            "locator": "Eq. (IV.3), PDF pp. 38-39",
+            "definitions": "N_d is the number of massless dark gauge bosons; \u03be is the dark-to-visible temperature ratio defined in the text.",
+            "domain": "Relativistic dark radiation before/after transition with the stated entropy accounting; N_d changes across symmetry breaking.",
+            "confidence": "high; checked against original PDF rendering"
+          },
+          {
+            "expression": "\u0393_DM\u2212DR=N_d \u0393\u2080_DM\u2212DR (T_vis/T_vis,0)\u00b2 [g_rel,d(T_vis)/g_rel,d(T_vis,0)]^(2/3); \u0393\u2080_DM\u2212DR=(\u03c0/9)\u03b1_d\u00b2 ln(\u03b1_d\u207b\u00b9)(T_d\u00b2/M_X)_today",
+            "locator": "Eqs. (IV.4a)-(IV.4b), PDF p. 39",
+            "definitions": "\u0393 is the DM-DR drag rate; N_d counts massless dark gauge bosons; \u03b1_d is the dark coupling; M_X is the mediator mass; g_rel,d counts relativistic dark-sector degrees of freedom.",
+            "domain": "Approximate drag scaling in the assumed thermal history; source notes a discontinuity across the transition. The normalization displayed is for one gauge boson before the stated generalization.",
+            "confidence": "high; square on \u03b1_d verified in rendered PDF"
+          }
+        ]
+      },
+      {
+        "local_id": "inverse-seesaw-link",
+        "title": "The NEDE transition is proposed to generate inverse-seesaw sterile-neutrino masses",
+        "claim_type": "author_model_proposal_and_conditional_constraint_summary",
+        "description": "A Yukawa interaction with the NEDE order parameter can generate a Majorana mass for sterile states in an inverse-seesaw construction, relating the transition scale to active-neutrino mass generation and addressing an EDE coincidence motivation. The paper's coupling limit is quoted from model-dependent older analyses/random-matrix assumptions; the text notes that newer work weakens it. The eV-sterile branch also depends on mixing, secret interactions, late annihilation and structure constraints. This is not a measured neutrino-mass result or a jointly fitted cosmology.",
+        "locators": [
+          "PDF pp. 40-47, Sec. IV B; especially Eqs. (IV.6), (IV.12), (IV.18)-(IV.19)"
+        ],
+        "equations": [
+          {
+            "expression": "g_s \u03a8 \u03bd_s \u03bd_s generates a sterile-sector Majorana mass after \u27e8\u03a8\u27e9\u22600",
+            "locator": "Sec. IV B, Eq. (IV.6), PDF pp. 40-41",
+            "definitions": "g_s is a Yukawa coupling; \u03a8 is the symmetry-breaking field; \u03bd_s denotes sterile-neutrino fields.",
+            "domain": "Schematic inverse-seesaw embedding; detailed particle content and mass/mixing assumptions are model-dependent.",
+            "confidence": "medium; equation content checked, schematic notation retained"
+          },
+          {
+            "expression": "g_s < 10\u207b\u2077/\u03ba\u00b2",
+            "locator": "Eq. (IV.18), PDF p. 45",
+            "definitions": "\u03ba is the mixing/ratio parameter defined in the inverse-seesaw discussion.",
+            "domain": "Source-reported, conditional bound; based on assumptions/sampling summarized by the authors and explicitly contrasted with newer weaker bounds.",
+            "confidence": "high for transcription; low as a transferable present constraint without rechecking cited analyses"
+          }
+        ]
+      },
+      {
+        "local_id": "dark-electroweak-completion",
+        "title": "A dark electroweak model embeds the thermal trigger and neutrino sector",
+        "claim_type": "author_model_proposal",
+        "description": "The proposed DEW sector uses SU(2)_D\u00d7U(1)_YD, an eV-scale hot-NEDE transition, heavier symmetry breaking, and an inverse-seesaw/approximate-lepton-number structure. It is a construction sketch: thermal and quantum corrections are not fully computed; anomaly cancellation may require additional fields; BBN compatibility depends on dark degrees of freedom and decoupling history. Its parameter example is not a posterior or a validated UV completion.",
+        "locators": [
+          "PDF pp. 47-58, Sec. IV C"
+        ],
+        "equations": [],
+        "source_limits": [
+          "The authors flag possible additional matter for anomaly cancellation.",
+          "The quoted BBN temperature-ratio bound \u03be<0.2 is conditional on g_rel,d<17 and may be relaxed with heavier/decoupled fields.",
+          "Full thermal corrections, field content, and cosmological perturbations remain unverified."
+        ]
+      },
+      {
+        "local_id": "thermal-potential-validity",
+        "title": "Finite-temperature potential approximations have explicit validity limits",
+        "claim_type": "author_analytic_method_and_uncertainty_caveat",
+        "description": "Appendix A derives a one-loop Landau-gauge thermal potential, uses a fitted representation for the thermal integral and ring resummation, and states separate small-mass/high-temperature and large-mass/low-temperature domains. At \u03c8\u21920 the perturbative expansion fails when the transverse gauge mode becomes massless; the authors cite an uncertainty of order g\u2076T_d\u2074 that may affect f_NEDE, while arguing it is negligible for sufficiently weak coupling and a cold dark sector. Preserve this as a theoretical uncertainty, not as a quantified posterior error.",
+        "locators": [
+          "PDF pp. 60-64, Appendix A, especially Eqs. (A.6)-(A.13), Fig. 15"
+        ],
+        "equations": [
+          {
+            "expression": "K(a)e^(\u2212a) fit to the thermal integral for 0<a<30 with stated relative error below 4%",
+            "locator": "Appendix A, Eq. (A.6) and surrounding text, PDF pp. 60-61",
+            "definitions": "a is the dimensionless mass-to-temperature argument of the thermal integral fit.",
+            "domain": "Only the stated interval and fit accuracy; not a bound on the full effective-potential or cosmological error.",
+            "confidence": "medium; fitted expression checked against rendered PDF, full coefficients not transcribed here"
+          }
+        ],
+        "source_inconsistencies": [
+          "Figure 3 legend/caption discrepancy: the visual dotted-curve labels give \u03b4_eff=1.75 for O3/O4 while its caption assigns dotted curves \u03b4_eff=0.75; left unrepaired."
+        ]
+      }
+    ],
+    "quantities": [
+      {
+        "name": "\u03b3 benchmark",
+        "value": "approximately 0.024",
+        "unit": "dimensionless",
+        "uncertainty": "benchmark, not an uncertainty interval",
+        "conditioning": "Authors' low-temperature Abelian-Higgs example with \u03be_*\u22480.34 and f_NEDE\u22480.10; analytic relation, not fitted posterior.",
+        "locator": "Eqs. (III.41)-(III.42), PDF p. 26; Fig. 5b"
+      },
+      {
+        "name": "dark-to-visible temperature ratio \u03be_*",
+        "value": "approximately 0.34",
+        "unit": "dimensionless",
+        "uncertainty": "benchmark assumption derived for the stated dark-sector decoupling history",
+        "conditioning": "Decoupling around 10-100 GeV and entropy degrees of freedom in Eq. (IV.2); used as an illustrative benchmark.",
+        "locator": "Eq. (IV.2), PDF p. 38; Eqs. (III.41)-(III.42), PDF p. 26"
+      },
+      {
+        "name": "transition redshift z_*",
+        "value": "approximately 5000",
+        "unit": "redshift",
+        "uncertainty": "illustrative benchmark scale",
+        "conditioning": "Inserted in Eq. (III.42) to show an eV-scale dark transition temperature; not independently inferred here.",
+        "locator": "Eq. (III.42), PDF p. 26"
+      },
+      {
+        "name": "NEDE fraction f_NEDE",
+        "value": "approximately 0.10",
+        "unit": "fraction of total density at transition",
+        "uncertainty": "target/example value, no posterior uncertainty",
+        "conditioning": "Strongly supercooled analytic regime with \u03b3\u22480.024 and \u03be_*\u22480.34.",
+        "locator": "Eqs. (III.40)-(III.42), PDF p. 26"
+      },
+      {
+        "name": "transition temperature T_d*",
+        "value": "approximately 0.7 eV times the fourth-root scaling in Eq. (III.42)",
+        "unit": "eV",
+        "uncertainty": "analytic benchmark scaling, not measured",
+        "conditioning": "For \u03b3 and f_NEDE factors normalized as in the equation and z_*\u22485000.",
+        "locator": "Eq. (III.42), PDF p. 26"
+      },
+      {
+        "name": "transition duration H_* \u03b2\u0304\u207b\u00b9",
+        "value": "order 10\u207b\u00b2 g_NEDE\u00b2",
+        "unit": "dimensionless Hubble-time fraction",
+        "uncertainty": "approximate analytic scaling",
+        "conditioning": "\u03b3\u22721 and g_NEDE\u22720.1 in the low-temperature strongly supercooled regime.",
+        "locator": "Eq. (III.43), PDF p. 26"
+      },
+      {
+        "name": "\u0394N_eff per dark massless gauge boson",
+        "value": "approximately 0.06",
+        "unit": "effective neutrino species",
+        "uncertainty": "derived thermal-history estimate",
+        "conditioning": "Equation (IV.3), with temperature ratio and relativistic degrees of freedom stated by the authors.",
+        "locator": "Eq. (IV.3), PDF pp. 38-39"
+      },
+      {
+        "name": "N=3 post-transition \u0394N_eff",
+        "value": "approximately 0.67",
+        "unit": "effective neutrino species",
+        "uncertainty": "source-reported model value; compared with an older 95% bound, not newly fitted",
+        "conditioning": "Dark gauge boson multiplicity and entropy release across the proposed transition; authors call it marginally above the cited bound and expect limited impact near equality.",
+        "locator": "Sec. IV A, PDF p. 39"
+      },
+      {
+        "name": "DM-DR drag normalization \u0393\u2080_DM\u2212DR",
+        "value": "1.2\u00d710\u207b\u2077 [\u03b1_d\u00b2 ln(\u03b1_d\u207b\u00b9)/(2.0\u00d710\u207b\u00b9\u2076)] [1.2 TeV/M_\u03c7]",
+        "unit": "Mpc\u207b\u00b9",
+        "uncertainty": "model normalization, not measurement",
+        "conditioning": "Today, for a single dark gauge boson under the assumed microphysics.",
+        "locator": "Eq. (IV.4b), PDF p. 39"
+      },
+      {
+        "name": "DEW BBN temperature-ratio bound",
+        "value": "\u03be<0.2",
+        "unit": "dimensionless",
+        "uncertainty": "conditional constraint quoted in the paper, not re-evaluated",
+        "conditioning": "Assumed g_rel,d<17; authors state heavier/decoupled fields can relax it.",
+        "locator": "Sec. IV C 2, PDF pp. 52-53"
+      }
+    ],
+    "data_dependencies": [
+      {
+        "dependency": "Prior NEDE fit and model phenomenology",
+        "source": "arXiv:1910.10739 and related cold-NEDE analyses cited by the authors",
+        "role": "Cold-NEDE context; constant w\u22482/3 fit values and figure comparisons must not be relabeled as hot-NEDE results.",
+        "lineage_status": "Prior source; no new hot-NEDE likelihood analysis in this paper."
+      },
+      {
+        "dependency": "Prior NADM constraints and dark matter-dark radiation drag model",
+        "source": "Refs. [67], [68] in the paper",
+        "role": "Supplies cited \u0394N_eff bound and DM-DR interaction context.",
+        "lineage_status": "Inherited published fit/constraint; data overlap and covariance not re-audited here."
+      },
+      {
+        "dependency": "Thermal particle content and entropy history",
+        "source": "Assumed dark-sector decoupling at 10-100 GeV, visible/dark relativistic degrees of freedom, and transition-induced gauge-boson multiplicity change",
+        "role": "Sets \u03be, \u0394N_eff and dark-radiation heating; values depend on particle content and decoupling assumptions.",
+        "lineage_status": "Model assumptions, not direct measurements."
+      }
+    ],
+    "caveats": [
+      "No hot-NEDE cosmological posterior is reported. The authors explore effective-potential/background phenomenology and propose microphysical embeddings.",
+      "The temperature-triggered perturbation amplitude in Eq. (III.49) has not been tested in an explicit Boltzmann implementation; transition width, nucleation perturbations, energy conservation, anisotropic stress, and post-transition closure remain unresolved.",
+      "Scenario A does not derive the hot model's post-transition w_NEDE(t), sound speed, or viscosity. Scenario B's piecewise equation of state is illustrative and requires full particle and perturbation treatment.",
+      "The NADM drag coefficient and \u0394N_eff discussion are inherited from prior model work; adding hot NEDE changes thermal and transition history, so updated joint fits are needed. The N=3 post-transition value is marginally above the cited old bound.",
+      "Inverse-seesaw coupling limits and BBN constraints are conditional on model-specific particle content and older analyses; the authors flag weaker newer bounds or ways to relax them.",
+      "The DEW construction's anomaly cancellation, full field content, quantum/thermal corrections and perturbation implementation remain incomplete.",
+      "Appendix A identifies perturbative breakdown near vanishing transverse gauge mass and an order-g\u2076T_d\u2074 theoretical uncertainty; its impact on f_NEDE is not quantified.",
+      "Source inconsistency retained: Fig. 3 visual dotted labels give \u03b4_eff=1.75 for O3/O4, while the caption says dotted \u03b4_eff=0.75. This packet does not guess which is intended.",
+      "The paper's Hubble-tension motivation and discussion cite results conditional on datasets and external distance-ladder evidence. They do not establish a present-data resolution of the tension."
+    ],
+    "usefulness": {
+      "assessment": "High-value mechanism foundation and source of explicit background/perturbation relations; not an accepted cosmological result or executable design.",
+      "strongest_objection": "The key observational discriminator\u2014temperature-triggered initial perturbations and their transfer through a physically closed post-transition fluid\u2014was not implemented. Without that closure, background resemblance or a reduced sound horizon cannot establish CMB/LSS viability or a Hubble-tension solution.",
+      "bounded_next_test": "A source-faithful linear perturbation test should first implement the constant-temperature transition relation (III.49) with the paper's declared thermal history, then compare against a matched-background control while varying the transition surface, finite duration, dark-radiation anisotropic stress/self-interaction, and post-transition closure one at a time. Track acoustic phase, damping-tail response, and matter power. This is a proposal for a later qualified design, not an execution recipe; the necessary microphysics and code support must be established first.",
+      "readiness": "Foundational reading complete; Sol source review and perturbation/Boltzmann closure remain outstanding."
+    },
+    "registered_bibliography_links": [
+      {
+        "citing_paper_id": "arxiv:2112.00770v2",
+        "cited_base_id": "1807.06209",
+        "reference_label": "[1]",
+        "registered_record": "arxiv:1807.06209v4",
+        "cited_version_printed": null,
+        "version_note": "Bibliography prints base arXiv ID only; registered v4 is navigation and not a claim that v4 was cited.",
+        "source_hash": "51054356c36f8aa53ba06604251405567c58086ca4943877e6f91b6b7af38876",
+        "locator": "PDF p. 64, References [1]"
+      },
+      {
+        "citing_paper_id": "arxiv:2112.00770v2",
+        "cited_base_id": "1806.10608",
+        "reference_label": "[22]",
+        "registered_record": "arxiv:1806.10608v1",
+        "cited_version_printed": null,
+        "version_note": "Bibliography prints base arXiv ID only; registered v1 is navigation and not a claim that v1 was cited.",
+        "source_hash": "51054356c36f8aa53ba06604251405567c58086ca4943877e6f91b6b7af38876",
+        "locator": "PDF p. 66, References [22]"
+      },
+      {
+        "citing_paper_id": "arxiv:2112.00770v2",
+        "cited_base_id": "1811.04083",
+        "reference_label": "[23]",
+        "registered_record": "arxiv:1811.04083v2",
+        "cited_version_printed": null,
+        "version_note": "Bibliography prints base arXiv ID only; registered v2 is navigation and not a claim that v2 was cited.",
+        "source_hash": "51054356c36f8aa53ba06604251405567c58086ca4943877e6f91b6b7af38876",
+        "locator": "PDF p. 66, References [23]"
+      },
+      {
+        "citing_paper_id": "arxiv:2112.00770v2",
+        "cited_base_id": "1910.10739",
+        "reference_label": "[58]",
+        "registered_record": "arxiv:1910.10739v5",
+        "cited_version_printed": null,
+        "version_note": "Bibliography prints base arXiv ID only; registered v5 is navigation and not a claim that v5 was cited.",
+        "source_hash": "51054356c36f8aa53ba06604251405567c58086ca4943877e6f91b6b7af38876",
+        "locator": "PDF p. 68, References [58]"
+      }
+    ],
+    "citation_leads": [
+      {
+        "reference_label": "[79]",
+        "arxiv_id": "2112.00759",
+        "title": "Hot New Early Dark Energy: Towards a Unified Dark Sector of Neutrinos, Dark Energy and Dark Matter",
+        "url": "https://arxiv.org/abs/2112.00759",
+        "reason": "Direct companion paper that develops the unified dark-sector embedding.",
+        "status": "Bibliography lead only; not acquired or read in this assignment."
+      },
+      {
+        "reference_label": "[38]",
+        "arxiv_id": "2104.12798",
+        "title": "A Dark Sector to Restore Cosmological Concordance",
+        "url": "https://arxiv.org/abs/2104.12798",
+        "reason": "Prior temperature/confinement-triggered dark-sector mechanism discussed by the paper.",
+        "status": "Bibliography lead only; not acquired or read in this assignment."
+      },
+      {
+        "reference_label": "[67]",
+        "arxiv_id": "1505.03542",
+        "title": "Non-Abelian dark matter and dark radiation",
+        "url": "https://arxiv.org/abs/1505.03542",
+        "reason": "Primary NADM model source for dark-radiation heating and DM-DR microphysics.",
+        "status": "Bibliography lead only; not acquired or read in this assignment."
+      },
+      {
+        "reference_label": "[68]",
+        "arxiv_id": "1507.04351",
+        "title": "Evidence for dark matter interactions in cosmological precision data?",
+        "url": "https://arxiv.org/abs/1507.04351",
+        "reason": "Source of the older NADM CMB/BAO/LSS constraint quoted in Sec. IV A.",
+        "status": "Bibliography lead only; not acquired or read in this assignment."
+      },
+      {
+        "reference_label": "[127]",
+        "arxiv_id": "2104.04399",
+        "title": "On the perturbative expansion at high temperature and implications for cosmological phase transitions",
+        "url": "https://arxiv.org/abs/2104.04399",
+        "reason": "Independent theoretical scrutiny relevant to finite-temperature perturbation theory and its validity limits.",
+        "status": "Bibliography lead only; not acquired or read in this assignment."
+      }
+    ],
+    "unread_or_uncertain_material": [
+      "The complete bibliography was not read in sequence; the five leads and four registered matches above are a bounded, explicit subset.",
+      "The exact intended value in the Fig. 3 dotted-curve \u03b4_eff caption/legend discrepancy is unknown and deliberately unrepaired.",
+      "Not every equation in the 72-page PDF was independently transcribed; the equations listed here were selected as central and checked against HTML math or PDF rendering.",
+      "The cited source constraints, fitted parameter chains, covariance, priors, codes, updated survey likelihoods and implementation details were not audited."
+    ],
+    "provenance": {
+      "source_acquisition": "Coordinator-acquired pinned HTML/PDF and derived PDF text only; no paper sources were downloaded by this reader.",
+      "searches_or_external_calls": "None in the full-paper reading stage.",
+      "shared_register_writes": false,
+      "experiments_or_numerical_runs": false,
+      "date": "2026-10-09"
+    },
+    "local_packet_sha256": "db504037a71a281d0cbebe40c0ff3f22b3f5d366358ae0524fb62ede9d3c11ce",
+    "interpretation_status": "Original Luna extraction with source-hash shape normalized on integration; scientific review pending. Original packet retained unchanged in exact-version S3 custody."
+  },
   "review_id": null,
   "idea_ids": []
 }

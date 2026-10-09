@@ -57,10 +57,389 @@
   ],
   "screen": {
     "status": "selected",
-    "basis": "abstract",
-    "reason": "Selected for ordinary full-paper Luna reading followed by Sol source review; shared worker capacity pending. Retain corrected SN distance-ladder comparison; overlapping supernovae and fixed calibration offsets require dependency checks."
+    "basis": "full_text",
+    "reason": "One complete Luna reading of the corrected-ladder intervention and overlapping-survey offset; Sol source review pending. Broader dust/population alternatives remain separate queued sources."
   },
-  "extraction": null,
+  "extraction": {
+    "paper_id": "arxiv:2607.24443v2",
+    "requested_model": "gpt-6-luna",
+    "reading_level": "full_text",
+    "coverage": {
+      "sections_read": [
+        "Abstract",
+        "I Introduction",
+        "II Data and Method",
+        "II.1 The H0 Distance Network",
+        "II.2 Corrected Pantheon+",
+        "II.3 DES-DOVEKIE and its magnitude offset",
+        "III Results",
+        "III.1 Main Results",
+        "III.2 Extending the Hubble-flow samples",
+        "IV Conclusion",
+        "Acknowledgments",
+        "References (all 28 bibliography entries inspected for relevant registered links and source leads)"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "appendices": "No appendix appears in this paper. Section II.2 cites Appendix F of Hoyt et al. (2026), but that separate source was not acquired or read.",
+      "original_math_checks": "HTML annotations for displayed Equations (1)-(10) were checked against the PDF text/rendered layout. Equation (1) gives log10(H0)=0.2 MB+alpha_B+5; Equations (2)-(3) define the magnitude update and mapping into H0DN rows; (4)-(5) define DES-Pantheon+ offsets; (6)-(7) give the offset-dependent magnitude vector and available covariance; (8) is the stated baseline result; (9) defines the Gaussian CMB difference; (10) gives the low-z peculiar-velocity magnitude uncertainty approximation. No displayed equation for the third-order cosmographic distance law is supplied in the paper body; its fixed q0,j0 convention is described in prose.",
+      "visual_figure_checks": "Rendered PDF p.5 and visually inspected Table 1 and Figure 1(a,b), including row values, uncertainty bars, overlap markers, weighted mean/median and fitted offset-redshift trend. Rendered PDF p.7 and visually inspected Figure 2(a,b), including nested redshift-cut points, uncertainties and common direction of change. Both figures are visually checked, not caption-only. No other figure is present.",
+      "visual_limitations": "Other PDF pages were read from layout-preserving extracted text but not separately rendered for visual review. Source TeX, input tables, covariance files, fitter implementation and plotted-data files were not inspected.",
+      "reference_scope": "Bibliography identities/locators were inspected; cited papers, archived data/code and external likelihoods were not read. Explicit links to exact-title/DOI matches in the local register are listed separately. Unregistered bibliography leads remain leads, not reviewed sources.",
+      "figure_check": "Rendered PDF p.5 and visually inspected Table 1 and Figure 1(a,b), including row values, uncertainty bars, overlap markers, weighted mean/median and fitted offset-redshift trend. Rendered PDF p.7 and visually inspected Figure 2(a,b), including nested redshift-cut points, uncertainties and common direction of change. Both figures are visually checked, not caption-only. No other figure is present.",
+      "limitations": [
+        "Other PDF pages were read from layout-preserving extracted text but not separately rendered for visual review. Source TeX, input tables, covariance files, fitter implementation and plotted-data files were not inspected.",
+        "Bibliography identities/locators were inspected; cited papers, archived data/code and external likelihoods were not read. Explicit links to exact-title/DOI matches in the local register are listed separately. Unregistered bibliography leads remain leads, not reviewed sources.",
+        "No appendix appears in this paper. Section II.2 cites Appendix F of Hoyt et al. (2026), but that separate source was not acquired or read."
+      ]
+    },
+    "summary": "Roy Choudhury updates the H0 Distance Network (H0DN) supernova Hubble-flow rung using two distinct inputs: revised Pantheon+ host-mass bias corrections and DES-DOVEKIE distance moduli. In the main isolated calculation, 52 of 277 H0DN Hubble-flow rows receive only revised apparent magnitudes; H0DN covariance, redshifts and velocity treatment remain fixed, and the 55 calibrator supernovae are unchanged. The reported result shifts from 73.499\u00b10.809 to 73.264\u00b10.806 km s^-1 Mpc^-1. A separate full Pantheon+ replacement uses the public Pantheon+ covariance and redshift/velocity treatment and gives 73.139\u00b10.791; the additional shift is attributed mainly to redshift/flow treatment, since the stated covariance matrices agree. DES-DOVEKIE replaces the Hubble-flow sample with 220 rows, 196 of which overlap corrected Pantheon+. A single weighted magnitude offset fitted on those overlaps gives 73.267\u00b10.828 when held fixed; propagating the available within-release and Pantheon+ covariance through the offset gives 73.175\u00b10.854, while the median-offset check gives 72.991\u00b10.825. The uncertainty-propagation expression omits DES\u2013Pantheon+ cross-covariance because none is public; the overlapping samples therefore are not independent and the full uncertainty remains incompletely known. With q0=-0.55 and j0=1 fixed, raising the Hubble-flow upper redshift to 0.30 raises both samples' fitted H0 rather than moving them toward the stated CMB+flat-LCDM comparison. These are conditional distance-ladder fits and sensitivity checks, not independent measurements, a dust-population test, or a cosmological mechanism. None of the reported updates removes the quoted early\u2013late difference.",
+    "ideas": [
+      {
+        "local_id": "corrected-pantheon-host-branch-h0dn-response",
+        "title": "Object-level host-mass bias-branch update and H0DN response",
+        "claim_type": "author_method_and_reported_fit",
+        "description": "The authors reconstruct a corrected Pantheon+ magnitude vector from public inputs, reporting agreement with a privately supplied corrected file to floating-point precision. They fit separate unweighted degree-three polynomials f_low(c_SALT) and f_high(c_SALT) to public biasCor_m_b values over 713 rows with 0.01<=z_CMB<0.15, split by the published log10(M*/M_sun)=10 host-mass step. For 114 rows whose published host masses were 9.4<=log10(M*/M_sun)<10 and are said to be underestimated by about 0.6 dex, they replace the low-branch correction with the high-branch value: Delta_i=f_low(c_i)-f_high(c_i), m_corr_i=m_public_i+Delta_i. This moves 52 H0DN Hubble-flow rows (46 distinct names); none of 55 calibrators changes. They add only the magnitude delta to matching H0DN rows and hold its covariance, redshifts and peculiar-velocity treatment fixed. This is a branch substitution in an existing empirical BBC correction, not a newly fitted constant mass-step amplitude, a rerun of bias simulations, or a test of distinct physical dust populations.",
+        "locators": [
+          "HTML #S2.SS2; PDF pp.2-3, Eqs.(2)-(3)",
+          "PDF p.4, first results discussion; PDF p.5 Table 1/Figure 1; PDF p.8 Conclusion"
+        ],
+        "equations": [
+          {
+            "expression": "Delta_i=f_low(c_SALT,i)-f_high(c_SALT,i); m_b,corr,i=m_b,public,i+Delta_i",
+            "locator": "HTML #S2.E2; PDF pp.2-3, Eq.(2)",
+            "confidence": "high",
+            "definitions": "c_SALT is the Pantheon+ light-curve color parameter; i indexes a released row; f_low/high are separate unweighted cubic fits to public biasCor_m_b values on the two host-mass branches.",
+            "domain": "Fit sample: 713 public Pantheon+ rows, 0.01<=z_CMB<0.15. Updated subset: 114 rows with published host masses 9.4<=log10(M*/M_sun)<10 that cross the log10(M*/M_sun)=10 step after the stated ~0.6 dex revision."
+          },
+          {
+            "expression": "m_b,new,i=m_b,old,i+(m_b,corr,i-m_b,public,i)",
+            "locator": "HTML #S2.E3; PDF p.3, Eq.(3)",
+            "confidence": "high",
+            "definitions": "old/new denote H0DN Hubble-flow magnitudes before/after applying the corrected-minus-public Pantheon+ change.",
+            "domain": "52 affected H0DN Hubble-flow rows among 277; 46 distinct supernova names. Calibrator rows are not changed."
+          },
+          {
+            "expression": "log10(H0)=0.2 M_B+alpha_B+5",
+            "locator": "HTML #S2.E1; PDF p.2, Eq.(1)",
+            "confidence": "high",
+            "definitions": "M_B is the calibrated SN Ia absolute magnitude and alpha_B is the Hubble-flow intercept in the H0DN convention.",
+            "domain": "H0DN local distance-network fit; its non-SN distance indicators and shared calibrations remain part of the network."
+          }
+        ],
+        "result": "H0DN baseline 73.499\u00b10.809 becomes 73.264\u00b10.806 km s^-1 Mpc^-1 (delta -0.235). The 52-row mean correction is 0.06391 mag, but the authors' influence-weighted correction is 0.0085 mag; they state a coherent 0.236 mag Hubble-flow faintening would be required to shift the complete network central value to 67.24. These are reported fit outputs; the input artifacts and fit were not independently rerun.",
+        "assumptions_and_limits": [
+          "Low-z host masses are revised as stated by Hoyt et al.; no host-mass source data were checked here.",
+          "The bias-branch correction uncertainty is reported as <0.02 mag and nearly unchanged, so the authors do not update covariance; that covariance decision was not independently audited.",
+          "The paper does not rerun the full bias-correction simulations.",
+          "A host-mass correction result does not by itself discriminate two-population dust from intrinsic color, selection, calibration or other standardization effects."
+        ]
+      },
+      {
+        "local_id": "des-dovekie-overlap-offset-transfer",
+        "title": "Single additive offset transfers DES-DOVEKIE moduli to the H0DN magnitude scale",
+        "claim_type": "author_method_and_reported_fit",
+        "description": "For DES-DOVEKIE, the authors turn released distance moduli into H0DN-convention apparent magnitudes by estimating one constant offset on the 196 supernovae shared with corrected Pantheon+. The fiducial DES sample has 220 rows in 0.02509<=z_HD<=0.15062 (197 external-survey and 23 DES-observed); 36 overlap rows carry a Pantheon+ host correction. Per-object C_i=m_corr_b,i-mu_DES,i and w_i=1/sigma_mu,i^2 define C_DES=-19.3766 mag. They hold this constant for the fiducial intercept and for redshift extensions. Offset adequacy is motivated by a fitted slope 0.195\u00b10.255 mag per redshift and 0.0823 mag scatter; the constant also absorbs release H0 normalization and any mean difference in light-curve shape/color, host step, bias correction and photometric calibration. Those contributions cannot be separated from the overlap alone.",
+        "locators": [
+          "HTML #S2.SS3; PDF pp.3-4, Eqs.(4)-(7)",
+          "PDF p.5 Table 1 and Figure 1(b); PDF pp.6-7 Figure 2"
+        ],
+        "equations": [
+          {
+            "expression": "C_i=m_b,corr,i-mu_DES,i; C_DES=sum_i(w_i C_i)/sum_i(w_i), w_i=1/sigma_mu,i^2",
+            "locator": "HTML #S2.E4; PDF p.3, Eq.(4)",
+            "confidence": "high",
+            "definitions": "mu_DES is released DES-DOVEKIE distance modulus; sigma_mu,i is its released per-object distance-modulus uncertainty; the authors use inverse-variance scalar weights.",
+            "domain": "196 cross-matched supernovae at the fiducial upper cut z_HD,max=0.151; DES release has nominal H0=70 km s^-1 Mpc^-1."
+          },
+          {
+            "expression": "m_b,DES,H0DN,i=mu_DES,i+C_DES",
+            "locator": "HTML #S2.E5; PDF p.3, Eq.(5)",
+            "confidence": "high",
+            "definitions": "The fitted additive offset places DES-DOVEKIE moduli on the apparent-magnitude convention of H0DN.",
+            "domain": "220 selected DES-DOVEKIE Hubble-flow rows; constant fitted using the 196 overlapping Pantheon+ rows."
+          },
+          {
+            "expression": "y=F d+1 w^T(r-S d)=A d+B r; A=F-1 w^T S; B=1 w^T",
+            "locator": "HTML #S2.E6; PDF p.4, Eq.(6)",
+            "confidence": "high",
+            "definitions": "d is the full DES modulus vector; r is corrected Pantheon+ magnitudes for overlap rows; F selects Hubble-flow rows; S selects overlaps; w is normalized offset weights; 1 is a column of ones.",
+            "domain": "Offset covariance propagation for the selected DES flow sample and its overlap-derived magnitude scale."
+          },
+          {
+            "expression": "V_y=A V_D A^T+B V_R B^T",
+            "locator": "HTML #S2.E7; PDF p.4, Eq.(7)",
+            "confidence": "high",
+            "definitions": "V_D and V_R are public DES-DOVEKIE and Pantheon+ covariance matrices.",
+            "domain": "The paper says no joint DES\u2013Pantheon+ cross-covariance is public. Cross terms are absent from the displayed expression; this is an unresolved uncertainty source, not evidence that the shared-data covariance is physically zero."
+          }
+        ],
+        "result": "Fixed weighted mean: 73.267\u00b10.828 km s^-1 Mpc^-1. Propagating the available covariance: 73.175\u00b10.854, with sigma(C_DES)=0.02309 mag (DES contribution 0.01739, Pantheon+ 0.01520). Median fixed: 72.991\u00b10.825. The offset scatter is 0.0823 mag, its full range is stated as 0.5323 mag, and its fitted redshift slope is 0.195\u00b10.255 mag per unit redshift. The 0.0823-mag scatter corresponds to about 3.8% in luminosity distance under the stated modulus conversion; it is not an independent sample-level error estimate.",
+        "assumptions_and_limits": [
+          "The fiducial offset is fixed in the first result; that central estimate is conditional on the estimated transfer and its quoted uncertainty is not propagated.",
+          "The propagated calculation includes within-DES covariance for measurements reused in the overlap offset, but does not include a joint DES\u2013Pantheon+ cross-covariance; the two products overlap and are explicitly not independent.",
+          "The fit uses scalar 1/sigma_mu^2 weights for the offset; the full covariance-based offset estimator and the origin of all released error columns were not independently inspected.",
+          "A lack of a resolved linear redshift slope over this low-z overlap does not establish common standardization or rule out host/color/selection-dependent mismatch."
+        ]
+      },
+      {
+        "local_id": "nested-hubble-flow-redshift-cut-sensitivity",
+        "title": "Conditional H0 shifts under nested Hubble-flow redshift cuts",
+        "claim_type": "reported_fit_and_reader_interpretation",
+        "description": "The authors extend corrected Pantheon+ full-rung and DES-DOVEKIE fixed-offset fits through z_HD,max=0.151, 0.20, 0.25 and 0.30, fixing q0=-0.55 and j0=1 throughout. DES uses the overlap offset measured only at 0.151; it is not refitted at higher cuts. The samples are nested, and the reported changes use 5000 joint Gaussian draws retaining covariance between nested cuts. Both sequences rise as higher-redshift SNe are included. This is sensitivity of a data-plus-fixed-cosmography analysis; it does not isolate expansion-history physics from calibration, selection, peculiar-velocity or shared-sample effects.",
+        "locators": [
+          "HTML #S3.SS2; PDF pp.6-7, Figure 2 and surrounding text",
+          "PDF p.8, Conclusion"
+        ],
+        "equations": [
+          {
+            "expression": "Third-order-in-z luminosity-distance relation with fixed (q0,j0)=(-0.55,1); the source describes a quadratic cosmographic correction multiplying leading z but does not display the full expression here.",
+            "locator": "HTML #S3.SS2; PDF p.6, paragraph preceding the redshift sweep",
+            "confidence": "medium",
+            "definitions": "The fixed pair matches the authors' flat-Lambda-CDM reference with Omega_m=0.30, Omega_Lambda=0.70. They state the truncated relation differs by about 1 mmag in relative distance modulus over 0.151<=z_HD<=0.30.",
+            "domain": "Hubble-flow extensions only through z_HD,max=0.30; conclusion is conditioned on fixed deceleration and jerk."
+          }
+        ],
+        "result": "At z_HD,max=0.30, corrected Pantheon+ gives 73.552\u00b10.774 and DES-DOVEKIE 73.995\u00b10.801 km s^-1 Mpc^-1. Relative to 0.151, rises are 0.413\u00b10.179 and 0.728\u00b10.233; their difference is 0.314\u00b10.294, with unavailable cross-covariance omitted. A separate corrected-Pantheon+ lower cut z_HD>0.05 keeps 91/277 rows and gives 72.896\u00b10.858, still quoted 6.11 sigma above the CMB+flat-LCDM reference. The authors also report DES |c_SALT|<0.15 leaves 198 rows and gives 73.338\u00b10.836 with the fixed weighted offset.",
+        "assumptions_and_limits": [
+          "The higher-redshift DES points reuse a zero point calibrated only on the overlapping low-redshift sample.",
+          "The inter-compilation cross-covariance for comparing the two redshift trends is omitted; the DES and Pantheon+ samples overlap.",
+          "Neither the cut sweep nor the color cut is an independent measurement or a physical test of a redshift-dependent/dust population model.",
+          "The source discusses peculiar-velocity uncertainty as sigma_mu,v approximately 5 sigma_v/(ln(10) c z), using sigma_v=240 km/s; this is a low-z uncertainty approximation, not a replacement for the full velocity/covariance lineage."
+        ]
+      }
+    ],
+    "quantities": [
+      {
+        "name": "H0DN baseline H0",
+        "value": "73.499 \u00b1 0.809",
+        "unit": "km s^-1 Mpc^-1",
+        "conditioning": "Public H0DN baseline with 55 calibrator SNe, 277 Hubble-flow rows and other network distance indicators/calibrations; q0=-0.55,j0=1 held fixed.",
+        "locator": "PDF p.5 Table 1; HTML #S3.T1",
+        "uncertainty": "Reported one-sigma fit uncertainty from the complete H0 Distance Network; table chi-square/dof is for the complete network, compressing Hubble-flow SNe to one intercept."
+      },
+      {
+        "name": "Corrected Pantheon+ magnitude-only H0",
+        "value": "73.264 \u00b1 0.806",
+        "unit": "km s^-1 Mpc^-1",
+        "conditioning": "52 of 277 Hubble-flow rows corrected; 55 calibrators unchanged; H0DN full network otherwise retained.",
+        "locator": "PDF p.5 Table 1, Figure 1; HTML #S3.E8/#S3.T1",
+        "uncertainty": "Reported one-sigma fit uncertainty; H0DN covariance, redshifts and velocity treatment fixed, no added covariance for revised host correction."
+      },
+      {
+        "name": "Corrected Pantheon+ complete-rung H0",
+        "value": "73.139 \u00b1 0.791",
+        "unit": "km s^-1 Mpc^-1",
+        "conditioning": "277 SH0ES-flagged rows, corrected magnitudes, corresponding Pantheon+ statistical-plus-systematic covariance and heliocentric/Hubble-diagram redshifts; q0,j0 fixed.",
+        "locator": "PDF pp.4-5; Table 1/Figure 1",
+        "uncertainty": "Reported one-sigma fit uncertainty from replacement Hubble-flow rung."
+      },
+      {
+        "name": "DES-DOVEKIE fixed weighted-offset H0",
+        "value": "73.267 \u00b1 0.828",
+        "unit": "km s^-1 Mpc^-1",
+        "conditioning": "220 DES rows; C_DES=-19.3766 mag fit on 196 overlaps; q0,j0 fixed.",
+        "locator": "PDF pp.3-5, Eqs.(4)-(7), Table 1",
+        "uncertainty": "Reported one-sigma fit uncertainty conditional on fixed weighted offset; transfer uncertainty excluded."
+      },
+      {
+        "name": "DES-DOVEKIE propagated-offset H0",
+        "value": "73.175 \u00b1 0.854",
+        "unit": "km s^-1 Mpc^-1",
+        "conditioning": "Same 220 rows and 196-overlap offset; sigma(C_DES)=0.02309 mag available covariance.",
+        "locator": "PDF pp.4-6, Eqs.(6)-(7), Table 1",
+        "uncertainty": "Reported one-sigma uncertainty using available within-release and Pantheon+ covariance for the offset-dependent y; cross-release joint covariance is unavailable/omitted."
+      },
+      {
+        "name": "DES-DOVEKIE median-offset H0",
+        "value": "72.991 \u00b1 0.825",
+        "unit": "km s^-1 Mpc^-1",
+        "conditioning": "C_DES median=-19.3660 mag from the same overlap objects.",
+        "locator": "PDF pp.3-5, Table 1",
+        "uncertainty": "Reported one-sigma fit uncertainty for fixed median offset; robustness check, not a probability mixture."
+      },
+      {
+        "name": "CMB+flat-LCDM comparison H0",
+        "value": "67.24 \u00b1 0.35",
+        "unit": "km s^-1 Mpc^-1",
+        "conditioning": "Reference adopted by H0DN; it is a model-conditioned early-universe inference, not the local ladder measurement.",
+        "locator": "PDF p.5 Eq.(9) context and Table 1; bibliography [6]",
+        "uncertainty": "Quoted as a Gaussian one-sigma reference from a joint Planck, ACT and SPT fit within flat LCDM; source fit not read here."
+      },
+      {
+        "name": "Magnitude-only correction mean",
+        "value": "0.07220 overall; 0.06391 for 52 H0DN flow rows; 0.0085 influence-weighted H0DN correction",
+        "unit": "mag",
+        "conditioning": "114 corrected rows total; 52 Hubble-flow rows, 46 distinct event names; H0DN covariance and fit sensitivity determine influence.",
+        "locator": "PDF p.3 Eq.(3) discussion; PDF p.8 conclusion",
+        "uncertainty": "Reported sample means and H0 influence-weighted correction; no distribution or covariance of these summaries supplied here."
+      },
+      {
+        "name": "DES overlap-offset residual scatter",
+        "value": "0.0823 (full range 0.5323)",
+        "unit": "mag",
+        "conditioning": "196 overlapping events, with common SN intrinsic luminosity variation largely canceling in paired reductions; 160 unchanged and 36 corrected P+ overlaps.",
+        "locator": "PDF pp.3-4; PDF p.5 Figure 1(b)",
+        "uncertainty": "Unweighted sample standard deviation/scatter and stated full range of per-SN offsets, not uncertainty on the mean and not the full covariance."
+      },
+      {
+        "name": "DES overlap offset redshift slope",
+        "value": "0.195 \u00b1 0.255",
+        "unit": "mag per unit z",
+        "conditioning": "196 low-redshift overlaps, 0.025<=z_HD<=0.151; only 0.76 sigma from zero as reported.",
+        "locator": "PDF p.3 and Figure 1(b)",
+        "uncertainty": "Reported fitted slope uncertainty; fit specification/covariance details are not independently available in the read source."
+      },
+      {
+        "name": "Offset covariance uncertainty",
+        "value": "0.02309 (DES 0.01739; corrected Pantheon+ 0.01520)",
+        "unit": "mag",
+        "conditioning": "C_DES estimated from 196 overlap objects also reused in DES Hubble flow.",
+        "locator": "PDF p.6, discussion of Eq.(7)",
+        "uncertainty": "Reported propagated standard uncertainty contributions under available covariances; no DES\u2013Pantheon+ cross-covariance."
+      },
+      {
+        "name": "H0 upper-cut increase, 0.151 to 0.30",
+        "value": "0.413 \u00b1 0.179 corrected Pantheon+; 0.728 \u00b1 0.233 DES-DOVEKIE; difference 0.314 \u00b1 0.294",
+        "unit": "km s^-1 Mpc^-1",
+        "conditioning": "q0=-0.55,j0=1 fixed; DES offset remains the value fit at z_HD,max=0.151; samples nested.",
+        "locator": "PDF p.6 text; PDF p.7 Figure 2",
+        "uncertainty": "Authors use 5000 joint Gaussian draws retaining covariance between nested cuts; cross-covariance between DES and Pantheon+ trend estimates is omitted."
+      },
+      {
+        "name": "Peculiar-velocity modulus uncertainty approximation",
+        "value": "sigma_mu,v \u2243 5 sigma_v/(ln(10) c z); sigma_v=240; 0.075 mag at z=0.0232 and 0.035 mag at z=0.05",
+        "unit": "mag; sigma_v in km/s",
+        "conditioning": "Low-redshift cut argument; authors compare to typical ~0.1-mag standardized-SN scatter.",
+        "locator": "PDF p.7 Eq.(10) and surrounding text",
+        "uncertainty": "Approximate line-of-sight peculiar-velocity contribution, not an empirical posterior or full covariance."
+      },
+      {
+        "name": "Gaussian H0DN versus CMB+flat-LCDM differences t_CMB",
+        "value": "7.10 baseline; 6.85 corrected Pantheon+ magnitude-only; 6.82 complete corrected Pantheon+ rung; 6.70 DES weighted offset fixed; 6.43 DES available offset covariance propagated; 6.42 DES median offset fixed",
+        "unit": "sigma",
+        "conditioning": "Uses H0_CMB,LCDM=67.24\u00b10.35 km s^-1 Mpc^-1 from the cited joint Planck/ACT/SPT flat-LCDM fit; source fit not read here. Local fits share H0DN calibration and fixed q0,j0.",
+        "locator": "HTML #S3.E9 and #S3.T1; PDF p.5 Eq.(9), Table 1",
+        "uncertainty": "Defined by the paper as the central-value difference divided by the quadrature sum of reported one-sigma local and CMB+flat-LCDM uncertainties; Gaussian comparison statistic, not an independently calibrated tail probability."
+      }
+    ],
+    "data_dependencies": [
+      {
+        "input": "H0 Distance Network baseline and public calculation files",
+        "role": "Full local distance network: calibrated SN absolute magnitude/intercept plus independent non-SN distance indicators and shared calibrations; source baseline value.",
+        "rows_or_range": "55 calibrator supernovae; 277 Hubble-flow rows, with repeated event names possible because distinct standardized rows are retained.",
+        "conditioning_and_lineage": "H0DN files; baseline 73.499\u00b10.809. Bibliography [8] is Casertano et al. 2026 consensus report. Exact files, version, covariance and code were not inspected in this paper read.",
+        "dependence": "The whole network remains in the P+ magnitude-only and DES replacement runs; it is not a SN-only H0 likelihood."
+      },
+      {
+        "input": "Corrected Pantheon+ host masses and bias-correction magnitudes",
+        "role": "Revised host-property correction for 114 public rows; 52 rows feed H0DN flow sample.",
+        "rows_or_range": "1701 Pantheon+ released rows overall; correction fit uses 713 rows with 0.01<=z_CMB<0.15.",
+        "conditioning_and_lineage": "Host mass revision is attributed to Hoyt et al. [15], arXiv:2601.19424 (base ID printed, version not); source paper says revised low-z host masses move by about 0.6 dex and reconstructs correction using Hoyt Appendix F. Our reader did not inspect that source, the underlying host table, private corrected table, scripts or Zenodo archive.",
+        "dependence": "Pantheon+ corrected rows overlap DES-DOVEKIE and are used to estimate DES zero point; not an independent second sample."
+      },
+      {
+        "input": "Public Pantheon+ light-curve, covariance and redshift products",
+        "role": "Full-rung replacement; provides apparent magnitudes, covariance, heliocentric and Hubble-diagram redshifts and flow treatment.",
+        "rows_or_range": "277 Hubble-flow rows in fiducial complete-rung case.",
+        "conditioning_and_lineage": "Authors state the 277-row H0DN and Pantheon+ covariance matrices are identical and magnitudes agree within sub-mmag rounding. P+ z_HD includes observer and host motion corrections. Bibliography [4], [7], [19], [24] maps by exact titles/DOIs to registered records; no input tables or covariance bytes were checked here.",
+        "dependence": "Full replacement is distinct from magnitude-only isolation. Its extra 0.125 km/s/Mpc shift is attributed by authors almost entirely to redshift/peculiar-velocity treatment."
+      },
+      {
+        "input": "DES-DOVEKIE five-year SN sample",
+        "role": "Alternative Hubble-flow release with standardized distance moduli, redshifts and inverse covariance.",
+        "rows_or_range": "Selected 220 events (0.02509<=z_HD<=0.15062), 197 external and 23 DES observed; 196 overlap corrected P+.",
+        "conditioning_and_lineage": "Release modulus nominal H0=70; the source gives redshift and covariance handling, inverts the full released inverse covariance before selecting rows. DES-DOVEKIE bibliography [1], [21], [28]; none of these source records were read locally in this task.",
+        "dependence": "Overlap is substantial. Only 36 shared rows have revised P+ host correction. Shared events and calibrations mean this is not independent corroboration."
+      },
+      {
+        "input": "Fixed cosmographic convention for Hubble-flow distances",
+        "role": "Distance-redshift relation in all fits and redshift-cut sweeps.",
+        "rows_or_range": "q0=-0.55,j0=1; redshift extension to z_HD,max=0.30.",
+        "conditioning_and_lineage": "Authors equate it to flat LCDM Omega_m=0.30, neglect any parameter variation for comparisons, and state relative distance-modulus deviation is about 1 mmag over 0.151-0.30. Full implementation formula is not displayed in the paper body; H0DN source code was not inspected.",
+        "dependence": "The cut sweep can respond to fixed expansion law, sample selection and calibration together; it does not establish an evolving-dark-energy effect."
+      }
+    ],
+    "caveats": [
+      "The source has one author and reports fits using public inputs, but this worker did not reproduce the results or independently validate the private corrected Pantheon+ file's claimed agreement with reconstructed public data.",
+      "The 1-sigma fit uncertainties depend on the H0DN network/calibration model, covariance, fixed q0,j0 convention and (for DES) treatment of the overlap-derived offset. They do not include every unreported or unavailable cross-release systematic.",
+      "The DES offset is estimated using 196 objects shared with corrected Pantheon+. Equation (7) carries the available within-release covariance but has no DES-Pantheon+ cross term; the paper says no joint cross-covariance is public. Treating the displayed formula as complete would understate unresolved dependence; the missing term is unknown, not physically zero.",
+      "The 196 overlap comparisons include 160 unchanged and 36 host-corrected Pantheon+ rows. A constant offset can absorb mean differences in zero point and reductions, so a small slope over this interval does not prove compatible host/color/dust standardization, selection or calibration.",
+      "The reclassified host-mass correction updates an empirical bias-correction branch. It is not a direct two-population dust measurement and does not test whether host-dependent residuals arise from dust versus intrinsic color, selection, or calibration.",
+      "The redshift-cut trend is conditional on fixed q0=-0.55,j0=1 and, for DES, a low-z offset frozen at 0.151. Nested samples, overlapping compilations and omitted inter-release covariance prevent interpreting this as an independent expansion-history signal.",
+      "The quoted t_CMB statistic is a Gaussian difference using the local-fit and CMB+flat-LCDM error bars in quadrature. The CMB value is model-conditioned; this reading did not check that fit or all systematic covariance assumptions.",
+      "No source license or redistribution terms were independently checked. Only compact original notes and source links are carried in this packet; no full text, abstract copy, tables or data are included.",
+      "No registered physical idea, graph edge, prospect, candidate design or consumer execution readiness is accepted by this reader packet."
+    ],
+    "usefulness": {
+      "assessment": "Useful as a source-conditional measurement-lineage and sensitivity record: the paper separates a magnitude-only host-mass update from a full Pantheon+ rung replacement and an overlapping DES-DOVEKIE modulus transfer. It exposes that the headline one-sigma values inherit fixed network/cosmography assumptions and incomplete cross-release covariance. It is not a new physical cosmology, an independent H0 confirmation, or a validated dust-population test.",
+      "minimum_discriminating_checks": "A later source review should inspect pinned H0DN input/code and complete calibration covariance; compare the corrected Pantheon+ reconstruction and release files/row joins; verify redshift/velocity roles and duplicate-row lineage; obtain or bound DES-DOVEKIE\u2013Pantheon+ cross-covariance; test the constant offset against redshift, host mass, color, survey/selection strata; and compare an overlap-aware hierarchical standardization against this fixed-offset summary. This is source/dependency work only, not executed here.",
+      "readiness": "needs_review; no executable design proposed. The existing compiled consumer is not established to support hierarchical dust/population calibration, and this source read does not meet numerical, inference or scientific qualification gates.",
+      "relation_to_existing_register": "Relevant to topic measurement-lineage and idea supernova-reduction-selection-dependence. The host correction is a measurement-systematics update and should not be promoted as a distinct dust mechanism without independent source evidence and Sol review. No graph change is made."
+    },
+    "citation_leads": [
+      {
+        "reference": "[8] Casertano et al. 2026, The Local Distance Network: A community consensus report on the measurement of the Hubble constant at ~1% precision",
+        "printed_source_locator": "HTML #bib.bib8; PDF p.9",
+        "printed_identifier": "DOI 10.1051/0004-6361/202557993; no arXiv ID or version printed",
+        "why_relevant": "H0DN baseline and network composition; verify exact input and uncertainty ancestry in a later permitted source review.",
+        "status": "not read or fetched; outside this paper's full-reading scope"
+      },
+      {
+        "reference": "[15] Hoyt et al. 2026, Union3.1: Self-consistent Measurements of Host Galaxy Properties for 2000 Type Ia Supernovae",
+        "printed_source_locator": "HTML #bib.bib15; PDF p.9",
+        "printed_identifier": "arXiv:2601.19424 (base ID only; version not printed)",
+        "why_relevant": "Host-mass revision and Appendix F prescription underlying the corrected Pantheon+ magnitudes.",
+        "status": "not read or fetched; paper's Appendix F is external to the assigned paper"
+      },
+      {
+        "reference": "[21] Popovic et al. 2026, DES Supernova Program reanalysis with updated Type Ia calibration",
+        "printed_source_locator": "HTML #bib.bib21; PDF p.9",
+        "printed_identifier": "DOI 10.1093/mnras/stag632; no arXiv ID/version printed",
+        "why_relevant": "DES-DOVEKIE Hubble diagram, distance-modulus release and covariance lineage.",
+        "status": "not read or fetched"
+      },
+      {
+        "reference": "[23] Roy Choudhury 2026, data release for this analysis",
+        "printed_source_locator": "HTML #bib.bib23; PDF p.9; in-text HTML #S2.SS2.p1",
+        "printed_identifier": "Zenodo DOI 10.5281/zenodo.22017350; source text also gives github.com/shouvikrc/pantheonplus-hostmass-correction-reconstruction",
+        "why_relevant": "Could supply reconstructed corrected-row inputs/scripts needed for exact source recheck.",
+        "status": "not read or fetched"
+      },
+      {
+        "reference": "[1] Abbott et al. 2024 and [28] Vincenzi et al. 2024, DES five-year supernova analyses",
+        "printed_source_locator": "HTML #bib.bib1 and #bib.bib28; PDF pp.8-9",
+        "printed_identifier": "DOIs 10.3847/2041-8213/ad6f9f and 10.3847/1538-4357/ad5e6c; no arXiv IDs/versions printed",
+        "why_relevant": "DES sample selection/calibration and previous public release context.",
+        "status": "not read or fetched"
+      }
+    ],
+    "agent_id": "/root/luna_sn_ladder",
+    "backend_model_identity": null,
+    "backend_identity_note": "Exact requested gpt-6-luna xhigh recorded in spawn and both turn_context entries; actual backend identity not independently exposed.",
+    "local_packet_sha256": "1440d07b7b8e6c60fe8245199071cb78b23177ed3f83aa7943203eba4e8cb6f4",
+    "source_hashes": {
+      "html": "f12842aea199dc5d5b05c23201bb58aa1112c9133f74d5031ac4f84950a48aaa",
+      "pdf": "9f6956e7663dc16b4ae4a820f1107fdda43700afd7e4c6bb58f3962111b6d28d",
+      "extracted_text": "c31aa0b8d47cf8c11c327876765835020209d52eb530aa5841a34f111bcced6d"
+    },
+    "interpretation_status": "Original Luna full-paper extraction with canonical field alias normalization only; scientific Sol review pending.",
+    "integration_amendment": {
+      "recorded_utc": "2026-10-09T18:28:13.391214+00:00",
+      "changes": "Lifted agent_id, represented receipted role hashes as source_hashes, copied figure_check and limitations aliases, renamed quantity uncertainty_interpretation to uncertainty. No source statement or value changed.",
+      "original_packet_sha256": "1440d07b7b8e6c60fe8245199071cb78b23177ed3f83aa7943203eba4e8cb6f4",
+      "review_status": "pending"
+    }
+  },
   "review_id": null,
   "idea_ids": []
 }

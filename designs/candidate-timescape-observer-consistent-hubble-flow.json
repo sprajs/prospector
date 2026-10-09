@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "design_id": "candidate-timescape-observer-consistent-hubble-flow",
+  "title": "Derive an observer-consistent Hubble-flow proxy before catalogue testing",
+  "paper_ids": [
+    "arxiv:1811.11976v3",
+    "arxiv:1812.01586v2"
+  ],
+  "idea_ids": [
+    "timescape-bare-dressed",
+    "timescape-hubble-flow-proxy-contract"
+  ],
+  "review_id": "timescape-focused-2026-10-09-sol",
+  "readiness": "blocked",
+  "faithful_claim": "The Saulder differential-expansion test constrains an imposed deformation of Millennium mocks. Wiltshire objects that its mass-radius calibration and line-fraction interpolation omit timescape curvature and lapse. Establish a model-to-observable contract before using that proxy as a timescape test.",
+  "equations": [
+    {
+      "paper_id": "arxiv:1812.01586v2",
+      "expression": "abar^3=f_wi*a_w^3+f_vi*a_v^3; f_w+f_v=1; Hbar=f_w*H_w+f_v*H_v",
+      "locator": "Eqs.(1)-(3), PDFp2",
+      "definitions": "Volume shares and regional H use volume-average time t. Hbar=(1/abar)dabar/dt; H_w andH_v use that same t.",
+      "domain": "Two-region Buchert averaged description, not line-of-sight averaging.",
+      "status": "reviewed_transcription"
+    },
+    {
+      "paper_id": "arxiv:1812.01586v2",
+      "expression": "gamma=dt/dtau; a=abar/gamma; H=(1/a)da/dtau=gamma*Hbar-dgamma/dt",
+      "locator": "Eqs.(7),(9)-(10), PDFpp2-3",
+      "definitions": "t volume-average time,tau ideal wall-observer proper time,gamma dimensionless,H andHbar inverse-time with different clock conventions. Derivative equality follows by chain rule.",
+      "domain": "Timescape dressed observer prescription; not an object-level catalogue prediction.",
+      "status": "reviewed_transcription"
+    },
+    {
+      "paper_id": "arxiv:1812.01586v2",
+      "expression": "R_f=(3*M_tot/(4*pi*rho_cr*f))^(1/3); f=(Hbar0/H0)^2 approx [2*(2+f_v0)/(4*f_v0^2+f_v0+4)]^2",
+      "locator": "Eqs.(11)-(12), PDFp3",
+      "definitions": "R_f length,M mass,rho mass/volume; f dimensionless density-rescaling factor distinct from f_v and f_fi. Printed relation describes the criticized Millennium calibration.",
+      "domain": "Source-described proxy only; no adoption as a curved timescape volume-radius law.",
+      "status": "reviewed_transcription"
+    },
+    {
+      "paper_id": "arxiv:1811.11976v3",
+      "expression": "f_fi*H_0,w+(1-f_fi)*H_0,v=H_0,av",
+      "locator": "Eq.(1), PDFp7; distinct tilded Eq.(13) in1812",
+      "definitions": "f_fi is catalogue-average one-dimensional finite-infinity sightline fraction. Source setsH_0,w50.1,H_0,av61.7 km/s/Mpc andb_soft0.75; H_0,v is proxy-derived.",
+      "domain": "Empirical deformation; not equivalent to the volume-average law or lapse identity.",
+      "status": "reviewed_transcription"
+    },
+    {
+      "paper_id": "arxiv:1811.11976v3",
+      "expression": "H_rel_i=(z_group_i/D_FP_i)/mean_sample(z_group/D_FP)",
+      "locator": "Sec.4, PDFpp4-7, reviewer operational expression of prose",
+      "definitions": "z dimensionless,D_FP comoving fundamental-plane distance inMpc; c is required if the unnormalized estimator is presented as physicalH units, and cancels inH_rel. H_rel dimensionless.",
+      "domain": "Same declared frame, sample normalization and distance calibration; no absoluteH0 inference.",
+      "status": "reviewer_derived"
+    }
+  ],
+  "assumptions": [
+    "Retain timescape wall/void averaged geometry and the lapse; flat LambdaCDM Millennium is a comparison/mock ancestry rather than retained timescape physics.",
+    "Line fraction, curved proper volume and distance/redshift relations are distinct. A matching endpoint or small mean distance difference does not validate joint catalogue statistics.",
+    "Coherent infall, distance/mass estimation, morphology selection, sky mask and mock-volume reuse can affect the same statistic."
+  ],
+  "minimal_test": {
+    "question": "Can a proposed approximation jointly map mass/geometry/clocks into finite-infinity line fractions and relativeHubble observables while satisfying the source dressed-expansion identity?",
+    "observables": [
+      "A located symbolic or independently specified mapping for the joint pair(H_rel,f_fi), with the mass-volume-radius and observer-distance relations stated.",
+      "Endpoint/clock/flat-curvature limits and consistency of mass-volume calibration with the same geometry used for sightline distances.",
+      "Only after closure: selected-sample weighted and binned slopes plus full covariance and mock dependence, in declaredLG/CMB frames with identical selection."
+    ],
+    "parameter_choices": {
+      "source_proxy_only": {
+        "b_soft": 0.75,
+        "H_wall_km_s_Mpc": 50.1,
+        "H_average_km_s_Mpc": 61.7,
+        "selected_minimum_early_types": 3,
+        "selected_FP_distance_max_Mpc": 402.8
+      },
+      "adopted_timescape_mapping": null,
+      "reason": "Source proxy values are historical comparison targets, not a validated timescape simulation or accepted initial conditions."
+    },
+    "scope": "First deliver a falsifiable derivation/consistency audit. Do not launch a catalogue simulation or fit until the theoretical/observational mapping and nuisance calibration are fixed independently of the statistic to be tested."
+  },
+  "simplifications": [
+    "This source-development contract supplies no self-consistent general timescape N-body or light-cone simulation.",
+    "No transfer of Millennium peculiar velocities, Euclidean radius-volume law or linear line-fraction rule is certified as timescape physics.",
+    "No joint analysis with supernovae, CMB, BAO or AvERA/LTB as interchangeable models."
+  ],
+  "data_dependencies": [
+    "For a later observation test: SDSSDR12/2MRS groups, fundamental-plane calibration and updated finite-infinity catalogues inAppendixA/CDS/VizieR, whose external full tables were not inspected.",
+    "Eight underlying Millennium mock regions create64 ordered pairs but36 unique combinations; reuse does not yield64 independent cosmological realizations.",
+    "Proxy andLambdaCDM mocks share matter distribution, mock calibration and selection ancestry; richness mismatch, missing mass,15-20% radius/mass/distance uncertainty and incomplete sky coverage remain."
+  ],
+  "unknowns": [
+    "Object-level timescape curved-volume/radius/clock/light-cone mapping and its theoretical uniqueness.",
+    "Self-consistent peculiar-motion/structure-evolution closure and initial conditions at catalogue resolution.",
+    "Full released catalogue bytes/selection, fundamental-plane systematic covariance, common-object normalization and mock dependence.",
+    "1811 Table1 printed slope-scatter versus standardized-discrepancy inconsistency; raw statistic/output necessary for repair."
+  ],
+  "verification_gates": [
+    "Derive wall-clock dressedH identity and preserve dimensional/clock conventions throughout observable construction.",
+    "Distinguish volume fraction from line fraction and specify proper/geodesic/areal radius before any curved-volume comparison. A negative-curvature sphere exceedsEuclidean volume at fixed proper radial radius, not an arbitrary radius convention.",
+    "Check correct limit cases and permit failure of proposed proxy; no assertion that all possible nonlinear approximations are excluded.",
+    "Freeze model mapping and prior choices before observationalfit; a tunable mapping chosen from the tested trend is not a prior prediction.",
+    "Before significance claims verifyTable1 raw statistics; keepTable2 reported1.52/2.08sigma conditional, overlapping-bin covariance and reused mock volumes explicit.",
+    "Require an accepted consumer development path; noLCDM/CPL relabeling or arbitraryJSON equation execution."
+  ],
+  "falsification": "Failure to satisfy the lapse identity, declared geometry-volume law or joint observable mapping rejects a proposed timescape approximation. A closed and independently fixed mapping later inconsistent with calibrated joint(H_rel,f_fi) data could reject that specified timescape variant. The current proxy mismatch and reply alone neither falsify nor confirm the full model.",
+  "consumer": {
+    "repository": "sprajs/irreducible",
+    "revision": "886a4abb8ea417faef6f0e5664f309fa82ec3261",
+    "dirty": false,
+    "capability_status": "Coordinator source inspection at this clean revision lists lcdm/constant_q/cpl only. No native timescape observer/lapse or hierarchical SALT2 evidence route. Compiled executable discovery unverified. Author Python code exists separately and was inspected statically, not run or consumer-accepted.",
+    "recipe_runner_status": "Proposed only per inspected docs/run-recipes.md; no executable recipe route verified."
+  },
+  "blockers": [
+    "No native timescape lapse/dressed light-cone/catalogue model; compiled discovery unverified.",
+    "The reviewed sources do not supply the missing object-level prediction/closure; direct observational theory test is premature.",
+    "Full catalogue and uncertainty/mock-dependence contract unavailable; no validated executable request."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Prospector source/design review only. No calculation, observational reanalysis, evidence reproduction or consumer acceptance."
+  }
+}

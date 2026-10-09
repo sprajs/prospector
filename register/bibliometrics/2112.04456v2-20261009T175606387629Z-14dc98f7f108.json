@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2112.04456v2",
+  "work_identity": {
+    "arxiv_id": "2112.04456",
+    "registered_version": 2,
+    "title": "The Pantheon+ Analysis: Forward-Modeling the Dust and Intrinsic Colour Distributions of Type Ia Supernovae, and Quantifying their Impact on Cosmological Inferences",
+    "match_status": "exact",
+    "provider": "INSPIRE-HEP",
+    "provider_record_id": "1986895",
+    "matched_arxiv_ids": [
+      "2112.04456"
+    ],
+    "linked_dois": [
+      "10.3847/1538-4357/aca273"
+    ],
+    "journal_metadata": [
+      {
+        "journal_title": "Astrophys.J.",
+        "year": 2023,
+        "volume": "945",
+        "article_or_page": "84"
+      }
+    ],
+    "journal_scope": "linked_journal_metadata_returned",
+    "count_scope": "provider_base_work_record",
+    "version_scope": "versions_not_disaggregated",
+    "publication_scope_note": "Citation counts are totals for this provider literature record. They are not split between the registered arXiv version, other arXiv versions, and linked journal publication records.",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A2112.04456&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:52:36.707546+00:00",
+      "http_status": 200,
+      "response_sha256": "cf9e76ab6207d00338acdd148606dda7ca20aafeb408838723ee2ea25987aeb8",
+      "response_bytes": 2941,
+      "archive_path": ".work/systematics-20261009/bibliometrics/2026-10-09/inspire-2112.04456-cf9e76ab6207.json"
+    }
+  },
+  "citation_snapshot": {
+    "status": "observed",
+    "count": 108,
+    "count_without_self_citations": 56,
+    "retrieved_utc": "2026-10-09T17:52:36.707546+00:00",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A2112.04456&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:52:36.707546+00:00",
+      "http_status": 200,
+      "response_sha256": "cf9e76ab6207d00338acdd148606dda7ca20aafeb408838723ee2ea25987aeb8",
+      "response_bytes": 2941,
+      "archive_path": ".work/systematics-20261009/bibliometrics/2026-10-09/inspire-2112.04456-cf9e76ab6207.json"
+    },
+    "missing_reason": null
+  },
+  "comparison": {
+    "first_publication_utc": "2021-12-08T18:31:33Z",
+    "age_days_at_snapshot": 1765.9729595780786,
+    "age_years_at_snapshot": 4.835069740181054,
+    "field_categories": [
+      "astro-ph.CO",
+      "astro-ph.GA"
+    ],
+    "cohort": {
+      "provider": "INSPIRE-HEP",
+      "snapshot_batch_id": "systematics-20261009",
+      "field_definition": "arXiv primary category: astro-ph.CO",
+      "age_band_years": {
+        "lower_inclusive": 4.0,
+        "upper_exclusive": 5.0
+      },
+      "population_size": null,
+      "minimum_population_size": 100,
+      "population_evidence": null,
+      "percentile": null,
+      "status": "not_queried",
+      "reason": "No provider population was queried for this provider, snapshot batch, arXiv primary category, and publication-age band. The deliberately selected Prospector sample is not a percentile reference population."
+    }
+  },
+  "authors": [
+    {
+      "paper_author_name": "Brodie Popovic",
+      "source_author_id": "1781206",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "Dillon Brout",
+      "source_author_id": "1246494",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "Richard Kessler",
+      "source_author_id": "1003164",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "Daniel Scolnic",
+      "source_author_id": "1597957",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    }
+  ],
+  "team_visibility": {
+    "status": "none",
+    "unique_author_count": 4,
+    "verified_h_index_author_count": 0,
+    "coverage_fraction": 0.0,
+    "h_index_scope": null,
+    "h_index_snapshot_batch_id": null,
+    "max_h_index": null,
+    "median_h_index": null,
+    "missing_reason": "Team maximum and median use verified, observed, same-scope h-indices only; missing author metrics are unknown."
+  },
+  "snapshot_created_utc": "2026-10-09T17:56:06.387629+00:00",
+  "snapshot_id": "20261009T175606387629Z-14dc98f7f108"
+}

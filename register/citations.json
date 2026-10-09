@@ -442,6 +442,396 @@
         "locator": "Original HTML bibliography #bib.bib40, lines 812–816; explicit base ID, no cited version printed.",
         "url": "https://arxiv.org/html/1811.04083v2#bib.bib40"
       }
+    },
+    {
+      "id": "cite-2112.00770v2-1807.06209",
+      "from_paper_id": "arxiv:2112.00770v2",
+      "cited_arxiv_id": "1807.06209",
+      "cited_version": null,
+      "reference": "[1]",
+      "source": {
+        "role": "html",
+        "sha256": "98a302d14ef4f7018e2e032153b288d51b8496f4246d217a7f35f3d03669f80e",
+        "locator": "HTML References bib.bib1; printed numeric label [1]; cited version not printed.",
+        "url": "https://arxiv.org/html/2112.00770v2#bib.bib1"
+      }
+    },
+    {
+      "id": "cite-2112.00770v2-1806.10608",
+      "from_paper_id": "arxiv:2112.00770v2",
+      "cited_arxiv_id": "1806.10608",
+      "cited_version": null,
+      "reference": "[22]",
+      "source": {
+        "role": "html",
+        "sha256": "98a302d14ef4f7018e2e032153b288d51b8496f4246d217a7f35f3d03669f80e",
+        "locator": "HTML References bib.bib22; printed numeric label [22]; cited version not printed.",
+        "url": "https://arxiv.org/html/2112.00770v2#bib.bib22"
+      }
+    },
+    {
+      "id": "cite-2112.00770v2-1811.04083",
+      "from_paper_id": "arxiv:2112.00770v2",
+      "cited_arxiv_id": "1811.04083",
+      "cited_version": null,
+      "reference": "[23]",
+      "source": {
+        "role": "html",
+        "sha256": "98a302d14ef4f7018e2e032153b288d51b8496f4246d217a7f35f3d03669f80e",
+        "locator": "HTML References bib.bib23; printed numeric label [23]; cited version not printed.",
+        "url": "https://arxiv.org/html/2112.00770v2#bib.bib23"
+      }
+    },
+    {
+      "id": "cite-2112.00770v2-1910.10739",
+      "from_paper_id": "arxiv:2112.00770v2",
+      "cited_arxiv_id": "1910.10739",
+      "cited_version": null,
+      "reference": "[58]",
+      "source": {
+        "role": "html",
+        "sha256": "98a302d14ef4f7018e2e032153b288d51b8496f4246d217a7f35f3d03669f80e",
+        "locator": "HTML References bib.bib58; printed numeric label [58]; cited version not printed.",
+        "url": "https://arxiv.org/html/2112.00770v2#bib.bib58"
+      }
+    },
+    {
+      "id": "cite-2512.19633v1-2112.04510",
+      "from_paper_id": "arxiv:2512.19633v1",
+      "cited_arxiv_id": "2112.04510",
+      "cited_version": null,
+      "reference": "[1]",
+      "source": {
+        "role": "html",
+        "sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+        "locator": "HTML author-year bibliography #bib.bib67; separate PDF reference [1] (reader checked); cited version not printed.",
+        "url": "https://arxiv.org/html/2512.19633v1#bib.bib67"
+      }
+    },
+    {
+      "id": "cite-2512.19633v1-1807.06209",
+      "from_paper_id": "arxiv:2512.19633v1",
+      "cited_arxiv_id": "1807.06209",
+      "cited_version": null,
+      "reference": "[2]",
+      "source": {
+        "role": "html",
+        "sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+        "locator": "HTML author-year bibliography #bib.bib65; separate PDF reference [2] (reader checked); cited version not printed.",
+        "url": "https://arxiv.org/html/2512.19633v1#bib.bib65"
+      }
+    },
+    {
+      "id": "cite-2512.19633v1-1811.04083",
+      "from_paper_id": "arxiv:2512.19633v1",
+      "cited_arxiv_id": "1811.04083",
+      "cited_version": null,
+      "reference": "[10]",
+      "source": {
+        "role": "html",
+        "sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+        "locator": "HTML author-year bibliography #bib.bib44; separate PDF reference [10] (reader checked); cited version not printed.",
+        "url": "https://arxiv.org/html/2512.19633v1#bib.bib44"
+      }
+    },
+    {
+      "id": "cite-2512.19633v1-2112.00770",
+      "from_paper_id": "arxiv:2512.19633v1",
+      "cited_arxiv_id": "2112.00770",
+      "cited_version": null,
+      "reference": "[25]",
+      "source": {
+        "role": "html",
+        "sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+        "locator": "HTML author-year bibliography #bib.bib33; separate PDF reference [25] (reader checked); cited version not printed.",
+        "url": "https://arxiv.org/html/2512.19633v1#bib.bib33"
+      }
+    },
+    {
+      "id": "cite-2512.19633v1-2404.16822",
+      "from_paper_id": "arxiv:2512.19633v1",
+      "cited_arxiv_id": "2404.16822",
+      "cited_version": null,
+      "reference": "[42]",
+      "source": {
+        "role": "html",
+        "sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+        "locator": "HTML author-year bibliography #bib.bib17; separate PDF reference [42] (reader checked); cited version not printed.",
+        "url": "https://arxiv.org/html/2512.19633v1#bib.bib17"
+      }
+    },
+    {
+      "id": "cite-2512.19633v1-2508.03795",
+      "from_paper_id": "arxiv:2512.19633v1",
+      "cited_arxiv_id": "2508.03795",
+      "cited_version": null,
+      "reference": "[50]",
+      "source": {
+        "role": "html",
+        "sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+        "locator": "HTML author-year bibliography #bib.bib10; separate PDF reference [50] (reader checked); cited version not printed.",
+        "url": "https://arxiv.org/html/2512.19633v1#bib.bib10"
+      }
+    },
+    {
+      "id": "cite-2512.19633v1-2306.12469",
+      "from_paper_id": "arxiv:2512.19633v1",
+      "cited_arxiv_id": "2306.12469",
+      "cited_version": null,
+      "reference": "[61]",
+      "source": {
+        "role": "html",
+        "sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+        "locator": "HTML author-year bibliography #bib.bib55; separate PDF reference [61] (reader checked); cited version not printed.",
+        "url": "https://arxiv.org/html/2512.19633v1#bib.bib55"
+      }
+    },
+    {
+      "id": "cite-2512.19633v1-2503.14738",
+      "from_paper_id": "arxiv:2512.19633v1",
+      "cited_arxiv_id": "2503.14738",
+      "cited_version": null,
+      "reference": "[72]",
+      "source": {
+        "role": "html",
+        "sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+        "locator": "HTML author-year bibliography #bib.bib74; separate PDF reference [72] (reader checked); cited version not printed.",
+        "url": "https://arxiv.org/html/2512.19633v1#bib.bib74"
+      }
+    },
+    {
+      "id": "cite-2512.19633v1-2112.03863",
+      "from_paper_id": "arxiv:2512.19633v1",
+      "cited_arxiv_id": "2112.03863",
+      "cited_version": null,
+      "reference": "[73]",
+      "source": {
+        "role": "html",
+        "sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+        "locator": "HTML author-year bibliography #bib.bib66; separate PDF reference [73] (reader checked); cited version not printed.",
+        "url": "https://arxiv.org/html/2512.19633v1#bib.bib66"
+      }
+    },
+    {
+      "id": "cite-2512.19633v1-1104.2933",
+      "from_paper_id": "arxiv:2512.19633v1",
+      "cited_arxiv_id": "1104.2933",
+      "cited_version": null,
+      "reference": "[74]",
+      "source": {
+        "role": "html",
+        "sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+        "locator": "HTML author-year bibliography #bib.bib64; separate PDF reference [74] (reader checked); cited version not printed.",
+        "url": "https://arxiv.org/html/2512.19633v1#bib.bib64"
+      }
+    },
+    {
+      "id": "cite-2412.15143-2311.01438",
+      "from_paper_id": "arxiv:2412.15143v1",
+      "cited_arxiv_id": "2311.01438",
+      "cited_version": null,
+      "reference": "Lane Z. G., Seifert A., Ridden-Harper R., Wiltshire D. L., 2025, MNRAS, 536, 1752",
+      "source": {
+        "role": "html",
+        "sha256": "40d21fc1c779f39ef77162f435aeb6385526f7d67ce7a3e628a633364f06b88c",
+        "locator": "HTML bibliography, bib.bib34; in-text citation label is Lane et al. (2025)",
+        "url": "https://arxiv.org/html/2412.15143v1#bib.bib34"
+      }
+    },
+    {
+      "id": "cite-2412.15143-2112.03863",
+      "from_paper_id": "arxiv:2412.15143v1",
+      "cited_arxiv_id": "2112.03863",
+      "cited_version": null,
+      "reference": "Scolnic D., et al., 2022, ApJ, 938, 113",
+      "source": {
+        "role": "html",
+        "sha256": "40d21fc1c779f39ef77162f435aeb6385526f7d67ce7a3e628a633364f06b88c",
+        "locator": "HTML bibliography, bib.bib42; Pantheon+ full dataset/light-curve release; cited version not printed",
+        "url": "https://arxiv.org/html/2412.15143v1#bib.bib42"
+      }
+    },
+    {
+      "id": "cite-2412.15143-2202.04077",
+      "from_paper_id": "arxiv:2412.15143v1",
+      "cited_arxiv_id": "2202.04077",
+      "cited_version": null,
+      "reference": "Brout D., et al., 2022a, ApJ, 938, 110",
+      "source": {
+        "role": "html",
+        "sha256": "40d21fc1c779f39ef77162f435aeb6385526f7d67ce7a3e628a633364f06b88c",
+        "locator": "HTML bibliography, bib.bib5; Pantheon+ cosmological-constraints record; cited version not printed",
+        "url": "https://arxiv.org/html/2412.15143v1#bib.bib5"
+      }
+    },
+    {
+      "id": "cite-2412.15143-2112.03864",
+      "from_paper_id": "arxiv:2412.15143v1",
+      "cited_arxiv_id": "2112.03864",
+      "cited_version": null,
+      "reference": "Brout D., et al., 2022b, ApJ, 938, 111",
+      "source": {
+        "role": "html",
+        "sha256": "40d21fc1c779f39ef77162f435aeb6385526f7d67ce7a3e628a633364f06b88c",
+        "locator": "HTML bibliography, bib.bib6; Pantheon+ calibration/SALT2 release; cited version not printed",
+        "url": "https://arxiv.org/html/2412.15143v1#bib.bib6"
+      }
+    },
+    {
+      "id": "cite-2412.15143-1811.11963",
+      "from_paper_id": "arxiv:2412.15143v1",
+      "cited_arxiv_id": "1811.11963",
+      "cited_version": null,
+      "reference": "Heinesen A., Blake C., Li Y.-Z., Wiltshire D. L., 2019, JCAP, 03, 003",
+      "source": {
+        "role": "html",
+        "sha256": "40d21fc1c779f39ef77162f435aeb6385526f7d67ce7a3e628a633364f06b88c",
+        "locator": "HTML bibliography, bib.bib26; BAO methods for generic curvature; cited version not printed",
+        "url": "https://arxiv.org/html/2412.15143v1#bib.bib26"
+      }
+    },
+    {
+      "id": "cite-2412.15143-0909.0749",
+      "from_paper_id": "arxiv:2412.15143v1",
+      "cited_arxiv_id": "0909.0749",
+      "cited_version": null,
+      "reference": "Wiltshire D. L., 2009, Phys. Rev. D, 80, 123512",
+      "source": {
+        "role": "html",
+        "sha256": "40d21fc1c779f39ef77162f435aeb6385526f7d67ce7a3e628a633364f06b88c",
+        "locator": "HTML bibliography, bib.bib51; Average observational quantities in the timescape cosmology; cited version not printed",
+        "url": "https://arxiv.org/html/2412.15143v1#bib.bib51"
+      }
+    },
+    {
+      "id": "cite-1811.11976-gr-qc-0702082",
+      "from_paper_id": "arxiv:1811.11976v3",
+      "cited_arxiv_id": "gr-qc/0702082",
+      "cited_version": null,
+      "reference": "Wiltshire (2007)",
+      "source": {
+        "role": "html",
+        "sha256": "96b5c65db89141c97cfd3685d70f81502e0b6676cd785bfd1e8e50c72dc5109c",
+        "locator": "bib.bib102; journal author/year/volume/article identity matched to arXiv primary metadata or INSPIRE publication record; no cited arXiv version printed",
+        "url": "https://arxiv.org/html/1811.11976v3#bib.bib102"
+      }
+    },
+    {
+      "id": "cite-1811.11976-0909.0749",
+      "from_paper_id": "arxiv:1811.11976v3",
+      "cited_arxiv_id": "0909.0749",
+      "cited_version": null,
+      "reference": "Wiltshire (2009)",
+      "source": {
+        "role": "html",
+        "sha256": "96b5c65db89141c97cfd3685d70f81502e0b6676cd785bfd1e8e50c72dc5109c",
+        "locator": "bib.bib104; journal author/year/volume/article identity matched to arXiv primary metadata or INSPIRE publication record; no cited arXiv version printed",
+        "url": "https://arxiv.org/html/1811.11976v3#bib.bib104"
+      }
+    },
+    {
+      "id": "cite-1811.11976-1410.3470",
+      "from_paper_id": "arxiv:1811.11976v3",
+      "cited_arxiv_id": "1410.3470",
+      "cited_version": null,
+      "reference": "Nazer & Wiltshire (2015)",
+      "source": {
+        "role": "html",
+        "sha256": "96b5c65db89141c97cfd3685d70f81502e0b6676cd785bfd1e8e50c72dc5109c",
+        "locator": "bib.bib71; journal author/year/volume/article identity matched to arXiv primary metadata or INSPIRE publication record; no cited arXiv version printed",
+        "url": "https://arxiv.org/html/1811.11976v3#bib.bib71"
+      }
+    },
+    {
+      "id": "citation-1812.01586v2-bib22",
+      "from_paper_id": "arxiv:1812.01586v2",
+      "cited_arxiv_id": "1811.11976",
+      "cited_version": null,
+      "reference": "Saulder et al. (2019), A&A 622 A83; HTML bibliography item bib.bib22",
+      "source": {
+        "role": "html",
+        "sha256": "66656c6db6e2ddecb7d56932b7060b1e4fc7b07fd2e3759d50e61e75f94b4ec4",
+        "locator": "#bib.bib22",
+        "url": "https://arxiv.org/html/1812.01586v2#bib.bib22"
+      }
+    },
+    {
+      "id": "citation-1812.01586v2-bib26",
+      "from_paper_id": "arxiv:1812.01586v2",
+      "cited_arxiv_id": "gr-qc/0702082",
+      "cited_version": null,
+      "reference": "Wiltshire (2007a), New J. Phys. 9, 377; HTML bibliography item bib.bib26",
+      "source": {
+        "role": "html",
+        "sha256": "66656c6db6e2ddecb7d56932b7060b1e4fc7b07fd2e3759d50e61e75f94b4ec4",
+        "locator": "#bib.bib26",
+        "url": "https://arxiv.org/html/1812.01586v2#bib.bib26"
+      }
+    },
+    {
+      "id": "citation-1812.01586v2-bib27",
+      "from_paper_id": "arxiv:1812.01586v2",
+      "cited_arxiv_id": "0709.0732",
+      "cited_version": null,
+      "reference": "Wiltshire (2007b), Phys. Rev. Lett. 99, 251101; HTML bibliography item bib.bib27",
+      "source": {
+        "role": "html",
+        "sha256": "66656c6db6e2ddecb7d56932b7060b1e4fc7b07fd2e3759d50e61e75f94b4ec4",
+        "locator": "#bib.bib27",
+        "url": "https://arxiv.org/html/1812.01586v2#bib.bib27"
+      }
+    },
+    {
+      "id": "citation-1812.01586v2-bib29",
+      "from_paper_id": "arxiv:1812.01586v2",
+      "cited_arxiv_id": "0909.0749",
+      "cited_version": null,
+      "reference": "Wiltshire (2009), Phys. Rev. D 80, 123512; HTML bibliography item bib.bib29",
+      "source": {
+        "role": "html",
+        "sha256": "66656c6db6e2ddecb7d56932b7060b1e4fc7b07fd2e3759d50e61e75f94b4ec4",
+        "locator": "#bib.bib29",
+        "url": "https://arxiv.org/html/1812.01586v2#bib.bib29"
+      }
+    },
+    {
+      "id": "cite-1203.6776-gr-qc-0202064",
+      "from_paper_id": "arxiv:1203.6776v2",
+      "cited_arxiv_id": "gr-qc/0202064",
+      "cited_version": null,
+      "reference": "40",
+      "source": {
+        "role": "html",
+        "sha256": "61fe4c6b503645e9bbf12f2384a3329bcfc1465f3ed2d7834b44122da01cbc9a",
+        "locator": "HTMLreference[40], bib.bib40; PDFp8reference[40] (same numbering)",
+        "url": "https://arxiv.org/html/1203.6776v2#bib.bib40"
+      }
+    },
+    {
+      "id": "cite-1203.6776-astro-ph-0212114",
+      "from_paper_id": "arxiv:1203.6776v2",
+      "cited_arxiv_id": "astro-ph/0212114",
+      "cited_version": null,
+      "reference": "41",
+      "source": {
+        "role": "html",
+        "sha256": "61fe4c6b503645e9bbf12f2384a3329bcfc1465f3ed2d7834b44122da01cbc9a",
+        "locator": "HTMLreference[41], bib.bib41; PDFp8reference[41] (same numbering)",
+        "url": "https://arxiv.org/html/1203.6776v2#bib.bib41"
+      }
+    },
+    {
+      "id": "cite-1403.2190v2-astro-ph-9801212",
+      "from_paper_id": "arxiv:1403.2190v2",
+      "cited_arxiv_id": "astro-ph/9801212",
+      "cited_version": null,
+      "reference": "10",
+      "source": {
+        "role": "html",
+        "sha256": "8d428d727a2d6a18a5145dd84da0484ebc32e1eb7e9f4a4f170fe4f8a66995ac",
+        "locator": "HTML reference [10], bib.bib10; PDF p.21 bibliography. Version not printed.",
+        "url": "https://arxiv.org/html/1403.2190v2#bib.bib10"
+      }
     }
   ],
   "inspected_paper_ids": [
@@ -460,7 +850,14 @@
     "arxiv:astro-ph/9911177v2",
     "arxiv:astro-ph/9603033v1",
     "arxiv:1807.06209v4",
-    "arxiv:2110.03487v2"
+    "arxiv:2110.03487v2",
+    "arxiv:2112.00770v2",
+    "arxiv:2512.19633v1",
+    "arxiv:2412.15143v1",
+    "arxiv:1811.11976v3",
+    "arxiv:1812.01586v2",
+    "arxiv:1203.6776v2",
+    "arxiv:1403.2190v2"
   ],
   "limitations": [
     "Four explicit bibliography links to registered paper identities were verified in pinned original HTML. This is a bounded extraction, not a complete citation index.",
@@ -469,6 +866,10 @@
     "No registered-ID match found in an inspected source does not establish an absence of citations; discovery and extraction remain incomplete.",
     "Core-reference audit adds twelve registered-ID bibliography links checked in pinned HTML. Bibliography inspection is separate from full reading and scientific source review.",
     "2026-10-01: bounded full-bibliography identity inspection for pinned 2609.37437v1 and 2609.36853v1; registered base-ID matches do not establish the cited version. PDF reference labels remain distinct from HTML bibliography anchors.",
-    "Wave8 checks only Peterson HTML bibliography14 and Brout HTML bibliography20/83. Cited base IDs do not establish cited versions; all other bibliography coverage remains unknown. These links are bibliographic evidence, not physical ancestry or independent observations."
+    "Wave8 checks only Peterson HTML bibliography14 and Brout HTML bibliography20/83. Cited base IDs do not establish cited versions; all other bibliography coverage remains unknown. These links are bibliographic evidence, not physical ancestry or independent observations.",
+    "2026-10-09 thermal NEDE/ACT reading checkpoint:14 explicit original-HTML bibliography links to registered base identities checked (4from2112.00770v2,10from2512.19633v1). PDF labels and HTML anchors kept separate; unprinted cited versions remain null. Bounded coverage, not complete citation ancestry or independent evidence.",
+    "Explicit registered matches only; cited versions unspecified remainnull; root excluded1811bib103 false match and left2identities pending429.",
+    "1203.6776v2 full bibliography44entries inspected against currently registered baseIDs; twoexplicit registeredlinks recorded, no citedversion specified; this is bounded coverage, not exhaustive external citation mapping.",
+    "All40 references in1403.2190v2 read; one explicit match to current registered base IDs. Registered cited version is not proof of the version cited. No physical graph edge inferred."
   ]
 }

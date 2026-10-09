@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "timescape-hubble-flow-proxy-contract",
+  "title": "A Hubble-flow proxy needs timescape geometry and observer clocks",
+  "family": "timescape_observation_contract",
+  "status": "reviewed_conditional",
+  "review_id": "timescape-focused-2026-10-09-sol",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:1811.11976v3",
+      "locator": "Secs.4.4-7, Eq.(1), Tables1-2, AppendixA; PDF pp6-20"
+    },
+    {
+      "paper_id": "arxiv:1812.01586v2",
+      "locator": "Secs.2-4, Eqs.(1)-(13), PDF pp2-4"
+    }
+  ],
+  "assumptions": [
+    "A one-dimensional finite-infinity line fraction and its inferred radii are operational catalogue quantities, distinct from Buchert three-dimensional wall/void volume shares.",
+    "Dressed H uses wall proper time tau and a=abar/gamma, gamma=dt/dtau; H=gamma Hbar-dgamma/dt. A phenomenological linear line-fraction interpolation alone does not supply this relation.",
+    "The tested alternative retains Millennium LambdaCDM matter/velocity ancestry and imposes a deformation with b_soft=0.75; no full timescape catalogue prediction is supplied."
+  ],
+  "predictions": [
+    "The Saulder observations favor their LambdaCDM mocks over their imposed differential-expansion proxy; Table2 binned discrepancies are reported1.52sigma(LG) and2.08sigma(CMB), conditional on that proxy and mock uncertainties.",
+    "Table1 strong significance claims are retained only as source-reported values with an unresolved displayed-sigma inconsistency; no raw-statistic repair is inferred.",
+    "A valid timescape approximation must predict both sightline fractions and relative Hubble observables under a declared curved geometry, lapse, selection and distance calibration; endpoint matching or enhanced coherent infall is insufficient.",
+    "The reply establishes a missing model-to-observable contract, not observational confirmation of timescape or a proof that every nonlinear proxy fails."
+  ]
+}

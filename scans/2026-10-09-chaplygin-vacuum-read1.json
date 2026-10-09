@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-09-chaplygin-vacuum-read1",
+  "status": "checkpoint_review_pending",
+  "recorded_utc": "2026-10-09T18:35:16.304253+00:00",
+  "registered_papers": [
+    "arxiv:1203.6776v2"
+  ],
+  "new_versions": [],
+  "full_reads": [
+    "arxiv:1203.6776v2"
+  ],
+  "reviewed_papers": [],
+  "idea_ids": [],
+  "design_ids": [],
+  "scope": "Completed first foundational reading in three-source bridge batch; no scientific promotion",
+  "worker": {
+    "agent_id": "/root/luna_vacuum_foundation",
+    "requested_model": "gpt-6-luna",
+    "requested_reasoning": "xhigh",
+    "fork_turns": "none",
+    "paper_id": "arxiv:1203.6776v2",
+    "started_utc": "2026-10-09T18:27:54.650674+00:00",
+    "actual_backend_identity": null,
+    "backend_identity_reason": "Spawn tool exposes canonical task name only; no backend attestation inferred.",
+    "assignment_file": ".work/bridges-20261009/luna-1203-task.txt",
+    "status": "completed",
+    "completed_utc": "2026-10-09T18:33:36.778918+00:00",
+    "packet_sha256": "696d91249db85acdc4920d63a26d5c6d8e2004e24b7add8a619e52332ca9eac4",
+    "activity_log_sha256": "9b43f02ca74ca071df266f56fb2bd3eb68730813ca39d6be1fb6c4e30a081263"
+  },
+  "packet_sha256": "696d91249db85acdc4920d63a26d5c6d8e2004e24b7add8a619e52332ca9eac4",
+  "coverage": {
+    "sections_read": [
+      "Title, author and affiliation block, abstract, and version/date header",
+      "I. Introduction",
+      "II. Vacuum energy-momentum",
+      "III.A. Spatially homogeneous background",
+      "III.B. Linear perturbations",
+      "III.C. Gauge invariant perturbations",
+      "IV.A. Scalar field dynamics",
+      "IV.B. Decomposing dark energy models",
+      "V. Conclusions",
+      "Acknowledgments",
+      "Bibliography [1]-[44]"
+    ],
+    "pdf_pages_read": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "figure_check": "Visually inspected all eight original PDF page renders at .work/bridges-20261009/renders/1203.6776v2/page-1.png through page-8.png. No figures or data tables occur in this paper; rendered equations and bibliography were visible. Key equations were compared against HTML MathML TeX annotations as well as the PDF renders.",
+    "limitations": [
+      "No appendix is present. No main-text or bibliography section was left unread.",
+      "The paper reports no fit, likelihood, numerical parameter estimates, or original dataset analysis; cited observational constraints are not independently reassessed here.",
+      "The authors do not specify a microphysical action for the pressureless matter-vacuum interaction, and state that the geodesic prescription lacks a clear covariant scalar interaction model.",
+      "No nonlinear, vector, tensor, baryon/radiation perturbation, or initial-mode analysis is supplied for the decomposed Chaplygin example.",
+      "The source does not state a general allowed domain or stability interval for α, A, or B; no such range is inferred here."
+    ]
+  },
+  "visible_corrections": [
+    {
+      "field": "citation_leads[*].reference_title_as_printed",
+      "correction": "Rename to title_from_registered_metadata; source refs40/41 print authors/journal/baseID, not article titles. Printed referenceidentity/baseID/unknownversion unchanged."
+    },
+    {
+      "field": "source_hashes",
+      "correction": "Public extraction flattens receipted pdf/html/extracted_text roles to digest strings; full path/render receipt structure stays in immutable originalpacket and source_details."
+    },
+    {
+      "field": "agent_id and provenance",
+      "correction": "Add returned canonical agentID/root/luna_vacuum_foundation and requestedmodel/reasoning launch; actualbackendidentity remainsnull."
+    }
+  ],
+  "source_custody": {
+    "manifest_format": "research-named-manifest/v1",
+    "collection": "prospector/reviews/chaplygin-vacuum-bridges-20261009-sources",
+    "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/chaplygin-vacuum-bridges-20261009-sources/versions/2fc06722007ed7f28d49b09b976fb67cf930c53e94cbf08ef6cecb3c51e7454d/manifest.json",
+    "version_id": "tzp7TzJjVGnwVxsX2XSk_wWxUQp4yEoR",
+    "sha256": "38f6187b94d9d1993616aeff51222a82a84844e4f02d6eef07f260e30908d222",
+    "bytes": 16249
+  },
+  "limits": [
+    "Sol acceptance pending; extracted candidates not accepted physical ideas.",
+    "Two other admitted full-source readings remain pending.",
+    "Shared arXiv429 stop: no new acquisition or query.",
+    "Samebackground does not establish sameperturbations; covariant/microphysical closure remains a source-review gate."
+  ],
+  "evidence_custody": {
+    "manifest_format": "research-named-manifest/v1",
+    "collection": "prospector/reviews/chaplygin-vacuum-bridges-20261009-read1",
+    "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/chaplygin-vacuum-bridges-20261009-read1/versions/a80afe034c321619042c2ee17b9ed83abb90fabd0910d9a37902a34206b120fc/manifest.json",
+    "version_id": "AJeCr9GNPeKifTtPG_qzwmfgYvCNLrj_",
+    "sha256": "9872489f9d0fffb7d53e4d93d5150d7ceb00adbd1fd78e8fff7d66a73adddfa2",
+    "bytes": 10752
+  }
+}

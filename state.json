@@ -167,8 +167,8 @@
     },
     {
       "paper_id": "arxiv:2112.00770v2",
-      "stage": "read",
-      "reason": "Retain thermal NEDE trigger and dark-radiation embeddings; thermal and cold triggers need a sourced distinction.",
+      "stage": "review",
+      "reason": "Complete Luna full-text extraction and original/rendered evidence preserved in the reading-checkpoint S3 manifest; await Sol assessment of original sources, equations, overlap and scientific usefulness.",
       "prospect_ids": [
         "early-energy",
         "interacting-sectors"
@@ -238,8 +238,8 @@
     },
     {
       "paper_id": "arxiv:2607.24443v2",
-      "stage": "read",
-      "reason": "Retain corrected SN distance-ladder comparison; overlapping supernovae and fixed calibration offsets require dependency checks.",
+      "stage": "review",
+      "reason": "Full Luna read complete; awaiting Sol original-source review.",
       "prospect_ids": [
         "measurement-lineage"
       ]
@@ -678,8 +678,8 @@
     },
     {
       "paper_id": "arxiv:2512.19633v1",
-      "stage": "read",
-      "reason": "Full reading selected: recent independent ACT DR6 constraint on related WZDR/nuADaM phenomenology; not direct Hot NEDE exclusion.",
+      "stage": "review",
+      "reason": "Complete Luna full-text extraction and original/rendered evidence preserved in the reading-checkpoint S3 manifest; await Sol assessment of original sources, equations, overlap and scientific usefulness.",
       "prospect_ids": [
         "interacting-sectors"
       ]
@@ -746,30 +746,6 @@
       "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
       "prospect_ids": [
         "stochastic-vacuum"
-      ]
-    },
-    {
-      "paper_id": "arxiv:1811.11976v3",
-      "stage": "read",
-      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
-      "prospect_ids": [
-        "inhomogeneity"
-      ]
-    },
-    {
-      "paper_id": "arxiv:2412.15143v1",
-      "stage": "read",
-      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
-      "prospect_ids": [
-        "inhomogeneity"
-      ]
-    },
-    {
-      "paper_id": "arxiv:1812.01586v2",
-      "stage": "read",
-      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
-      "prospect_ids": [
-        "inhomogeneity"
       ]
     },
     {
@@ -894,8 +870,8 @@
     },
     {
       "paper_id": "arxiv:1203.6776v2",
-      "stage": "read",
-      "reason": "Selected for full Luna reading and Sol comparison of barotropic and geodesic/nonadiabatic closure; intake is not scientific acceptance.",
+      "stage": "review",
+      "reason": "Full Luna/xhigh8page reading completed; ordinary Sol scientific comparison pending.",
       "prospect_ids": [
         "interacting-sectors",
         "late-dark-energy"
@@ -991,8 +967,8 @@
     },
     {
       "paper_id": "arxiv:1403.2190v2",
-      "stage": "read",
-      "reason": "Selected Hantzsche-Wendt historical mechanism and later covariance detectability revisit; awaiting shared Luna slot.",
+      "stage": "review",
+      "reason": "Full22-page Luna extraction completed; await Sol original-source review, including E6 observer/initial-spectrum/statistical scope and printed orientation sampling convention.",
       "prospect_ids": [
         "cosmic-topology"
       ]
@@ -1238,7 +1214,8 @@
   "notes": [
     "Resume pending screens and reads before new searches.",
     "Raw sources and working files stay inside ignored Prospector/.work.",
-    "Blocked numerical handoffs need a separately scoped implementation task."
+    "Blocked numerical handoffs need a separately scoped implementation task.",
+    "Timescape science checkpoint:3full Luna reads and3Sol reviews;2conditional ideas,2blockeddesigns,1newtestprospect. Remaining planned3fullreads pending; no execution."
   ],
   "next_work_mode": "roadmap_M0_source_defined_reference",
   "coordinated_baseline": {
@@ -1426,5 +1403,6 @@
     "milestone": "M0",
     "scope": "Source-defined reference and likelihood/prior/dependence contract; queue preserved; no automatic execution"
   },
-  "last_completed_intake_scan": "2026-10-09-interacting-radiation-intake"
+  "last_completed_intake_scan": "2026-10-09-interacting-radiation-intake",
+  "last_reading_checkpoint": "2026-10-09-interacting-radiation-reading-checkpoint"
 }

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-09-systematics-ladder-reading",
+  "status": "completed",
+  "started_utc": "2026-10-09T18:08:32Z",
+  "completed_utc": "2026-10-09T18:28:13.396204+00:00",
+  "lane": "measurement-lineage",
+  "work_mode": "ordinary_full_paper_reading_checkpoint_review_pending",
+  "queries": [],
+  "registered_papers": [
+    "arxiv:2607.24443v2"
+  ],
+  "new_versions": [],
+  "full_reads": [
+    "arxiv:2607.24443v2"
+  ],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [],
+  "idea_ids": [],
+  "design_ids": [],
+  "prospect_ids": [],
+  "edge_ids": [],
+  "acquisition_failures": [
+    {
+      "reported_utc": "2026-10-09T18:08:00Z",
+      "source_scope": "timescape",
+      "reporting_integrator": "01a121c3-1fb1-7e20-97b4-25853865c1a2",
+      "status": "official arXiv API HTTP429 after one reasoned timeout retry; coordinated acquisition stopped",
+      "scope_effect": "No further arXiv requests here; all3 planned full texts already acquired17:52UTC. Reader notified; unresolved bibliography/metadata remains queued.",
+      "evidence_level": "coordinator report; see timescape acquisition log for original429 receipt"
+    }
+  ],
+  "pending": [
+    {
+      "paper_id": "arxiv:2607.24443v2",
+      "stage": "review",
+      "reason": "Luna full reading complete; original-source Sol review not yet allocated."
+    },
+    {
+      "paper_id": "arxiv:2401.08755v2",
+      "stage": "read",
+      "reason": "Broader dust/intrinsic decomposition comparison acquired and preserved; deferred outside this one-intervention checkpoint."
+    },
+    {
+      "paper_id": "arxiv:2506.22150v2",
+      "stage": "read",
+      "reason": "Broader two-population calibration comparison acquired and preserved; deferred outside this one-intervention checkpoint."
+    }
+  ],
+  "limits": [
+    "One actual Luna full reading,0 Sol reviews,0 new ideas/designs/prospect acceptance.",
+    "Initial worker interrupted; same configured gpt-6-luna xhigh resumed to complete9pp, Eq1–10, Table1 and both figures. Original partial/completed log preserved.",
+    "No underlying H0DN/SH0ES data/code run, no joint DES–Pantheon+ covariance inspected, no cosmological qualification.",
+    "Nine new admissions already counted in systematics intake; not counted again.",
+    "Shared slot released to bridges at completion; remaining boundary needs explicit global allocation."
+  ],
+  "evidence_custody": {
+    "manifest_format": "research-named-manifest/v1",
+    "collection": "prospector/reviews/systematics-20261009-reading",
+    "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/systematics-20261009-reading/versions/7a987ef9dac26eab34101dde4eacea7cb8eb50a74eb6ccae54e73c8de3c668c0/manifest.json",
+    "version_id": "zfs4vMj3jzojGrNEgzNa1iRneLmqXWZZ",
+    "sha256": "0e881ae253a7670a8ea1a33cc02bd071596552d9071669258d9086ad5ea15d78",
+    "bytes": 19723
+  },
+  "integration_verification": "Coordinator downloaded exact VersionId and verified manifest SHA256; source packet hash and read-only acceptance boundary checked."
+}
