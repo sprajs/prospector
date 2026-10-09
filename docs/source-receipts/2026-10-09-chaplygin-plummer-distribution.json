@@ -1,0 +1,68 @@
+{
+  "schema": "native-model-source-equation-dossier/v1",
+  "dossier_id": "2026-10-09-chaplygin-plummer-distribution",
+  "worker": "/root/prospector_owner",
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "omitted/inherited; independently unrecorded",
+  "actual_backend_identity": null,
+  "full_paper_reads": 0,
+  "registered_paper_stage_changes": false,
+  "candidate_promotion": false,
+  "prospector_base_commit": "0bec04665a7380530528916436767897d9bbd32c",
+  "sources": [
+    {
+      "id": "gr-qc/0202064v1",
+      "title": "Generalized Chaplygin Gas, Accelerated Expansion and Dark Energy-Matter Unification",
+      "authors": [
+        "M. C. Bento",
+        "O. Bertolami",
+        "A. A. Sen"
+      ],
+      "url": "https://arxiv.org/pdf/gr-qc/0202064v1",
+      "bytes": 173794,
+      "sha256": "0e246430a70015a450f4994cecef6f748272295f9e7a77523358f9419362aa04",
+      "checked_locators": [
+        "Rendered PDF page 1 title/authors/arXiv version watermark/Eq.1 and A>0",
+        "Rendered PDF page 2 Eq.12 continuity and Eq.13 integrated density, prose 0<alpha<=1"
+      ],
+      "coverage": "Targeted equations and scope; no full main text, appendices, scientific plots or microphysical/perturbation qualification",
+      "source_domain": "A>0,0<alpha<=1; alpha=0 and As=0 native mathematical controls are distinct endpoint extensions",
+      "units": "Source pressure and rho are energy density in c=1; A units energy-density^(1+alpha); As dimensionless; dp/de=-alpha*w dimensionless, not SI speed-squared",
+      "raw_copying": "Rights unverified; raw PDF/text/rendered excerpts excluded from cloud selection and retained locally"
+    }
+  ],
+  "source_access_failures": [
+    {
+      "url": "https://doi.org/10.1093/mnras/76.7.572",
+      "timeout_seconds": 20,
+      "byte_limit": 262144,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://articles.adsabs.harvard.edu/pdf/1916MNRAS..76..572E",
+      "timeout_seconds": 20,
+      "byte_limit": 10485760,
+      "error": "The read operation timed out"
+    }
+  ],
+  "eddington_context": {
+    "citation_target": "Eddington (1916), MNRAS 76,572, DOI10.1093/mnras/76.7.572",
+    "original_source_read": false,
+    "equation_locators": null,
+    "scope": "Independently derived isotropic Abel inversion and velocity/Jeans/projection integrals; no original-source numerical reproduction"
+  },
+  "eligibility": "Owned review/derivation notes and acquisition/failure metadata only. No credentials or raw rights-unverified source assets.",
+  "archive": {
+    "manifest_format": "research-named-manifest/v1",
+    "collection": "reproducible/handoffs/prospector/chaplygin-plummer-source-20261009t0301z",
+    "uri": "s3://research-data-436908790672-eu-west-2/reproducible/handoffs/prospector/chaplygin-plummer-source-20261009t0301z/versions/f6af7f0050da579f886033f896a1a0b6c48793b61a653a084038a0c0386fb4b5/manifest.json",
+    "version_id": "m9PT3oHEbF8b8Q28PoUMgivnyUQ1kAaB",
+    "sha256": "ae4d866251ee49f374bd5d8fdf269f0fea39a1365cd8909f87105ea8bae0579c",
+    "bytes": 3446
+  },
+  "fresh_restore": {
+    "files": 5,
+    "bytes": 10353,
+    "all_lengths_sha256_match": true
+  }
+}

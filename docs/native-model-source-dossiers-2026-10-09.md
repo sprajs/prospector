@@ -189,3 +189,7 @@ are separately preserved (`research-named-manifest/v1`):
 - URI: `s3://research-data-436908790672-eu-west-2/reproducible/handoffs/prospector/native-model-source-followup-20261009t0202z/versions/0e20d9e6f65abaf705686d085464353dc53e17606dba735aaec38468fcf6fbf4/manifest.json`
 - SHA256: `124b14a9bdce53c03885711cfa943207832135b3464a6f1686c45ddd065240cb`
 - VersionId: `1HyvjSDvZRku5D7NRwG8R9mA5XiLGF_Q`
+
+The [Chaplygin and isotropic Plummer follow-up](chaplygin-plummer-source-dossiers-2026-10-09.md)
+adds selected barotropic source equations and an independently derived collisionless
+population contract, preserving the original Eddington access refusal.
