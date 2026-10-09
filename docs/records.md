@@ -21,7 +21,7 @@ source identity and decisions so Codex can continue without a transcript.
 | `designs/<id>.json` | Candidate investigation handoffs |
 | `references/<topic>/<name>.json` | Sourced, conditioned numerical references with separate supported variants |
 | `scans/<id>.json`, `state.json` | Actual batch records and continuation queue |
-| `.work/`, root `papers/`, root `downloads/` | Ignored full sources, rendering and working material |
+| `.work/`, root `papers/`, root `downloads/` | Temporary scratch; eligible persistent full evidence lives in S3 |
 
 For selective durable evidence storage, use Reproducible's shared
 [exact-version archive workflow](https://github.com/sprajs/reproducible/blob/main/docs/archive.md)
@@ -29,7 +29,8 @@ and `scripts/archive_experiment.py` with `--root` set to the selected evidence
 store. Git retains source reviews, candidate handoffs and concise findings;
 approved valuable evidence can use exact S3 object versions and digests with
 runtime credentials. Preserve upstream URL/version/hash reacquisition routes
-for redownloadable arXiv sources and exclude their full contents from uploads.
+for redownloadable arXiv sources. Keep source copies temporary unless lawful
+private custody is useful between runs; check copying restrictions before upload.
 Do not copy the archive implementation or store credentials in Prospector.
 
 ## Papers and reading
@@ -52,7 +53,7 @@ source-derived prose compact; do not publish abstracts/full text.
 
 Preserve the original worker-packet digest and source hashes. Correct coverage
 with a dated amendment naming the agent, new checks and previous statement;
-retain the original packet locally. Review details must cover each reviewed
+retain the original packet in verified S3 custody before evicting scratch. Review details must cover each reviewed
 paper and reference its receipted original-source hashes. A metadata digest
 alone cannot support a full reading or scientific review.
 
@@ -213,7 +214,9 @@ coverage. HTTP 429 stops acquisition in that batch directory, including on resum
 
 Integrate/validate/build before recording completion. Preserve unfinished stages
 on interruption. Recheck cache hashes; record changed bytes rather than replacing
-old provenance. Full sources/working files stay ignored inside Prospector. Unknown
+old provenance. Full sources/working files stay ignored inside Prospector during
+use; useful eligible cross-run evidence and partial packets must be published
+to a named S3 collection before handoff, retaining exact manifest pins. Unknown
 licence/access terms stay explicit. Public records never carry credentials or
 complete worker transcripts; local paths are relative.
 
