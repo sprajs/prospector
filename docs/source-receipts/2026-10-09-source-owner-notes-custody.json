@@ -1,0 +1,9 @@
+{
+  "manifest_format": "research-named-manifest/v1",
+  "collection": "reproducible/handoffs/prospector/foundation-source-owner-20261009",
+  "uri": "s3://research-data-436908790672-eu-west-2/reproducible/handoffs/prospector/foundation-source-owner-20261009/versions/7947d7d98388ab5d2ce8d4a3dd4d166654d11fed303d9e5b126b357836568993/manifest.json",
+  "version_id": "b.rWdztBdDvyKcS_58j8k8mHjGJj0EZw",
+  "sha256": "1fee8138c47381e6046a4d73daaf0cdc3d74fcff01ace0778b7de6089033c992",
+  "bytes": 3783,
+  "fresh_restore": "All5 ownednotes files restored into fresh destination and byte-compared exactly; original copies retained; no raw sources selected."
+}

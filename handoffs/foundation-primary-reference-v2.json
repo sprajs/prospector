@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "kind": "foundation_source_handoff",
+  "programme": "M0/M1/M2",
+  "handoff_id": "foundation-primary-reference-v2",
+  "source_repository": "sprajs/prospector",
+  "source_base_revision": "bcbe01d6dc8862d7b7473444bd932f83c652d48c",
+  "candidate": {
+    "id": "candidate-class-planck-primary-six-parameter-v2",
+    "path": "designs/candidate-class-planck-primary-six-parameter-v2.json",
+    "sha256": "d249fc8664099d174d250a652553fd09dde846bd3d4877552b1b79f0eb6c16a4"
+  },
+  "reference": {
+    "id": "class-planck-primary-six-parameter-v2",
+    "path": "references/lcdm/class-planck-primary-six-parameter-v2.json",
+    "sha256": "9af4a7bcf0d5cb5bffc8e29d1650ec15ca21fc55f3068d68ff53753fa97b1bc9"
+  },
+  "contracts": [
+    {
+      "id": "foundation-supported-primary-and-joint-contract-v2",
+      "path": "register/contracts/foundation-supported-primary-and-joint-contract-v2.json",
+      "sha256": "156464ffd2d186485fee096dc5154a7e2e311817122bbc0848d20c96a4c37eb9"
+    }
+  ],
+  "source_review": {
+    "id": "2026-10-09-foundation-supported-primary-source-claims",
+    "path": "register/reviews/2026-10-09-foundation-supported-primary-source-claims.json",
+    "sha256": "46af4583874ddacbc1fefe9f8a5f6788e6c3a05db8f904d622fd4943bfcc1029"
+  },
+  "consumer_acceptance": {
+    "owner": "sprajs/reproducible",
+    "status": "pending_exact_bytes",
+    "receipt": null
+  },
+  "rights": "Owned notes and hash receipts are eligible for publication; raw copied papers/code stay excluded from Git/S3 without grants.",
+  "numerical_readiness": "Restricted conditional v2 unqualified; finite consumer support diagnostics do not establish whole-domain numerical precision or posterior inference.",
+  "joint_readiness": "Blocked: primary-CMB/BAO cross-probe dependence remains unbounded.",
+  "immutable_preservation": "V1 candidate/reference/review/contracts/handoff unchanged. V1 Commander range failure and first never-frozen restricted proposal SimAll failure preserved; wider diagnostic controls do not broaden v2. Historical paper queues/source models remain unchanged."
+}
