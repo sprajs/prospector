@@ -74,6 +74,33 @@ class RegisterIntegrity(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'targeted review does not accept contract_ids'):
             self.validate()
 
+    def test_joint_primary_pin_cannot_swap_valid_reference(self):
+        path = 'designs/candidate-class-planck-primary-desi-exploratory-v1.json'
+        record = json.loads((self.root / path).read_text())
+        joint = record['minimal_test']['parameter_choices']['working_joint_contract']
+        replacement = joint['primary_reference']
+        joint['primary_candidate'].update(path=replacement['path'], bytes=replacement['bytes'],
+                                          sha256=replacement['sha256'])
+        (self.root / path).write_text(json.dumps(record))
+        with self.assertRaisesRegex(ValueError, 'joint consumer role path does not match registered identity'):
+            self.validate()
+
+    def test_joint_cannot_change_primary_calibration_ownership(self):
+        self.mutate('designs/candidate-class-planck-primary-desi-exploratory-v1.json',
+                    lambda r: r['minimal_test']['parameter_choices']['working_joint_contract']
+                    ['primary_consumer_contract']['calibration_prior'].update(applications=2))
+        with self.assertRaisesRegex(ValueError, 'joint consumer changes frozen primary semantics'):
+            self.validate()
+
+    def test_joint_bao_order_cannot_change(self):
+        def change(record):
+            rows = record['minimal_test']['parameter_choices']['working_joint_contract']['bao']['rows']
+            rows[-2], rows[-1] = rows[-1], rows[-2]
+        self.mutate('designs/candidate-class-planck-primary-desi-exploratory-v1.json', change)
+        from jsonschema.exceptions import ValidationError
+        with self.assertRaises(ValidationError):
+            self.validate()
+
     def test_scalar_serialization_requires_explicit_acceptance(self):
         self.mutate('register/reviews/2026-10-03-atomic-source-claims.json',
                     lambda r: r['accepted_records']['serialization_ids'].clear())

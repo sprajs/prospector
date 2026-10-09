@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "kind": "foundation_source_handoff",
+  "programme": "M2",
+  "handoff_id": "foundation-exploratory-primary-desi-v1",
+  "source_repository": "sprajs/prospector",
+  "source_base_revision": "aa1be1c0ec3a4ecbeaa5ba7c6aafeaf74149b01e",
+  "candidate": {
+    "id": "candidate-class-planck-primary-desi-exploratory-v1",
+    "path": "designs/candidate-class-planck-primary-desi-exploratory-v1.json",
+    "sha256": "ba29a44fcb0b4022bebe3060bb2b2c115852e4e72e40a22ec48e692a9080a6d2"
+  },
+  "reference": {
+    "id": "class-planck-primary-six-parameter-v2",
+    "path": "references/lcdm/class-planck-primary-six-parameter-v2.json",
+    "sha256": "a192c531bf307f1e17a8be101abdca3d911dce34e27b27e8e006507eb253715f"
+  },
+  "contracts": [
+    {
+      "id": "foundation-exploratory-primary-desi-joint-v1",
+      "path": "register/contracts/foundation-exploratory-primary-desi-joint-v1.json",
+      "sha256": "9a50be08dd7deaec5ffe1e95934cefa1918a1aadb2cdbd6cb7220157db88ef11"
+    },
+    {
+      "id": "foundation-relative-and-calibrated-sn-working-v1",
+      "path": "register/contracts/foundation-relative-and-calibrated-sn-working-v1.json",
+      "sha256": "8430dc7a5e916ca4a685dd6d141d37eb3eed4c870f830d26cd2cc5db61f15858"
+    }
+  ],
+  "source_review": {
+    "id": "2026-10-09-foundation-working-joint-source-claims",
+    "path": "register/reviews/2026-10-09-foundation-working-joint-source-claims.json",
+    "sha256": "61b0208f039ee19f74075f601264d6af8d2b39fe16408a688128a57f5f8996d6"
+  },
+  "consumer_acceptance": {
+    "owner": "sprajs/reproducible",
+    "status": "pending_exact_bytes",
+    "receipt": null
+  },
+  "rights": "Owned notes and hash receipts are eligible for publication; raw copied papers/code stay excluded from Git/S3 without grants.",
+  "numerical_readiness": "New exact working target unqualified; unchanged primary v2 support/precision evidence remains separately consumer-owned. No new source-owner numerical execution.",
+  "joint_readiness": "Source-reviewed exploratory factorized working posterior. Exact consumer execution gates pending; empirical dependence/calibrated tension/evidence qualification remains open. Relative/calibrated SN working source mappings are separate and require their own frozen executable identities.",
+  "immutable_preservation": "All v1/v2 artifacts and failures remain byte-identical; no old queues or sibling literature records changed. New exploratory joint and distinct SN working source contracts do not rewrite historical blocked contracts."
+}
