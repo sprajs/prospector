@@ -1,0 +1,370 @@
+{
+  "schema_version": 1,
+  "kind": "reference_fit_contract",
+  "reference_id": "class-planck-primary-six-parameter-v1",
+  "review_id": "2026-10-09-foundation-primary-source-claims",
+  "status": "source_contract_reviewed",
+  "paper_id": "arxiv:1807.06209v4",
+  "source_sha256": {
+    "html": "622d05fab48d935a2224afeade05b07393ec37e4e0554bb9c416f4298acb7bc0"
+  },
+  "locator": "Planck VI Secs.2.1,2.2,7.8; Planck V Secs.2.1,2.2.3,2.2.6,3.3.4,3.5.2,4; pinned CLASS and official clik callers.",
+  "conditioning": "New uniform-H0, effective thermal CLASS/BBN2017/HyRec2020/HMcode2016 reference with released primary Commander+SimAll+Plik-lite. All six cosmological coordinates and shared calibration vary. This is not the prior, full Plik nuisance model or reconstructed-lensing target of Planck Table2.",
+  "parameters": [
+    {
+      "name": "omega_b",
+      "role": "cosmological",
+      "unit": "dimensionless",
+      "transform": "CLASS omega_b identity",
+      "prior": {
+        "kind": "uniform",
+        "lower": 0.01,
+        "upper": 0.035,
+        "measure": "domega_b",
+        "source_role": "Project choice within the BBN2017 grid"
+      }
+    },
+    {
+      "name": "omega_cdm",
+      "role": "cosmological",
+      "unit": "dimensionless",
+      "transform": "CLASS omega_cdm identity",
+      "prior": {
+        "kind": "uniform",
+        "lower": 0.05,
+        "upper": 0.25,
+        "measure": "domega_cdm",
+        "source_role": "Project choice"
+      }
+    },
+    {
+      "name": "H0",
+      "role": "cosmological",
+      "unit": "km s^-1 Mpc^-1",
+      "transform": "CLASS H0 identity",
+      "prior": {
+        "kind": "uniform",
+        "lower": 40,
+        "upper": 100,
+        "measure": "dH0",
+        "source_role": "Project choice: flat dH0, not flat dtheta_MC"
+      }
+    },
+    {
+      "name": "logA",
+      "role": "cosmological",
+      "unit": "dimensionless",
+      "transform": "CLASS A_s=exp(logA)*1e-10",
+      "prior": {
+        "kind": "uniform",
+        "lower": 1.61,
+        "upper": 3.91,
+        "measure": "dlogA",
+        "source_role": "Planck VI Sec2.1 supplies this amplitude range; natural-log coordinate retained"
+      }
+    },
+    {
+      "name": "n_s",
+      "role": "cosmological",
+      "unit": "dimensionless",
+      "transform": "CLASS n_s identity",
+      "prior": {
+        "kind": "uniform",
+        "lower": 0.8,
+        "upper": 1.2,
+        "measure": "dn_s",
+        "source_role": "Project choice"
+      }
+    },
+    {
+      "name": "tau_reio",
+      "role": "cosmological",
+      "unit": "dimensionless",
+      "transform": "CLASS tau_reio identity; derive z_reio at each state",
+      "prior": {
+        "kind": "uniform",
+        "lower": 0.01,
+        "upper": 0.14,
+        "measure": "dtau_reio",
+        "source_role": "Project choice; not a prior inferred from the SimAll simulation ensemble"
+      }
+    },
+    {
+      "name": "A_planck",
+      "role": "calibration",
+      "unit": "dimensionless",
+      "transform": "Official clik A_planck=y_P map calibration; theory divided by A_planck^2",
+      "prior": {
+        "kind": "truncated_gaussian",
+        "lower": 0.9,
+        "upper": 1.1,
+        "mean": 1,
+        "sigma": 0.0025,
+        "measure": "dA_planck",
+        "source_role": "Planck V Eq39 Gaussian; finite truncation bounds are a project choice"
+      }
+    }
+  ],
+  "model": {
+    "gravity": "General relativity",
+    "geometry": "Flat FLRW; explicit nonnegative-Lambda physical support",
+    "components": [
+      "Baryons",
+      "Cold dark matter",
+      "Photons",
+      "Massless radiation N_ur=2.0327983725164924",
+      "One effective FD massive neutrino of 0.06eV",
+      "Lambda derived by closure using all actual densities"
+    ],
+    "primordial": "Adiabatic scalar power law, pivot0.05Mpc^-1; zero running and tensors",
+    "thermal": "T_CMB=2.7255K; FD neutrino/antineutrino pair, native g=2/CLASS deg_ncdm=1, T_ncdm/T_CMB=0.71611, zero chemical potential; total early Neff=3.046",
+    "helium": "YHe=BBN with explicit sBBN_2017.dat; derive mass fraction at each state",
+    "reionization": "reio_camb: varied tau, exponent1.5, width0.5; second helium transition at z3.5 with width0.5",
+    "recombination": "CLASS HyRec2020; explicit implementation choice for this new reference"
+  },
+  "implementation": {
+    "repository": "https://github.com/lesgourg/class_public",
+    "revision": "0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18",
+    "archive_sha256": "443a8b7c38b84cc8cfbb0dec907f1b618199e79df8d141dc3237b9a5185fb856",
+    "source_assets": [
+      {
+        "id": "class-explanatory",
+        "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/explanatory.ini",
+        "sha256": "49fd6355685adc11dca2f406e23a6535b973e708efe9d3820f3aad46fdd061df",
+        "role": "configuration",
+        "conditioning": "Species, YHe, recombination, reio_camb, pivot and HMcode2016 options"
+      },
+      {
+        "id": "class-input",
+        "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/source/input.c",
+        "sha256": "78326f1f557b22491655f0437aa1eb94f152d6c24c896ebde9eccfeebecbe463",
+        "role": "parameter_mapping",
+        "conditioning": "input_read_parameters_species; input_read_parameters_nonlinear; default_params"
+      },
+      {
+        "id": "class-background",
+        "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/source/background.c",
+        "sha256": "00275b2c1e864571353745932384aeaa4fb7bf982e786d1aeb9a272cbf3b79df",
+        "role": "species_density",
+        "conditioning": "background_ncdm_init and background_solve Neff definition"
+      },
+      {
+        "id": "class-thermodynamics",
+        "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/source/thermodynamics.c",
+        "sha256": "ce2d8e0b490106b002a3fb62561948ded4239db5109efea0ec2d297d458816ce",
+        "role": "BBN_interpolation",
+        "conditioning": "thermodynamics_helium_from_bbn; thermodynamics_init YHe mass-fraction conversion"
+      },
+      {
+        "id": "class-precisions",
+        "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/include/precisions.h",
+        "sha256": "962fb9d95118b223b67abf36f9d1a1666408b377d9d0fd2fe5ddf60d20440bea",
+        "role": "configuration",
+        "conditioning": "sBBN_file default is2025 and must be overridden"
+      },
+      {
+        "id": "class-bbn-2017",
+        "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/external/bbn/sBBN_2017.dat",
+        "sha256": "b72607a3a2f9134130cb2c09c0140d4f68c5916962e83fc6740a664bd5b69ea5",
+        "role": "BBN_table",
+        "conditioning": "Complete header, grid axes and table format; PArthENoPE1.2/neutron880.2s"
+      },
+      {
+        "id": "clik-lklbs",
+        "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/lklbs.c",
+        "sha256": "81e595932c33553ea7fd913dcb0f858123923876ed42d668a6c8b823cb28fd52",
+        "role": "official_likelihood_source",
+        "conditioning": "lklbs_get_cls: calibration1/A_planck^2 on theory; cmblkl_select_cls"
+      },
+      {
+        "id": "clik-helper",
+        "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/clik_helper.c",
+        "sha256": "301b457a7c988818a508c4ebee57ebc83a53d7f338baf2947725773d9d227851",
+        "role": "official_likelihood_source",
+        "conditioning": "free_calib metadata creates calibration name and index"
+      },
+      {
+        "id": "clik-cmbonly-c",
+        "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/cmbonly/clik_cmbonly.c",
+        "sha256": "e288e7a3bc8008cf09ad23d69c010b93f0d4e74cabad5c87c5a89a9e4b245be4",
+        "role": "official_likelihood_source",
+        "conditioning": "xnames_def A_planck; clik_plik_cmbonly_init"
+      },
+      {
+        "id": "clik-cmbonly-wrapper",
+        "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/cmbonly/clik_cmbonly.f90",
+        "sha256": "aadf73644f96315ced77d7a38217914c5f58d197f9438388aa497dd209e0695c",
+        "role": "official_likelihood_source",
+        "conditioning": "plik_cmbonly_extra_LKL: spectral TT/EE/TE blocks then calPlanck"
+      },
+      {
+        "id": "clik-cmbonly-likelihood",
+        "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/cmbonly/plik_cmbonly.f90",
+        "sha256": "70630d03e5aae7ab24a08424136043e4ce95967eb75e8212db7462dc15665d6d",
+        "role": "official_likelihood_source",
+        "conditioning": "calc_like_cmbonly: binned model/calPlanck^2; X_data-X_model; half quadratic"
+      },
+      {
+        "id": "clik-simall",
+        "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/simall/clik_simall.c",
+        "sha256": "624ffcf6cf8fb86a3cf755c02e119cfc76ce2415229d3c91177cadb2fc381393",
+        "role": "official_likelihood_source",
+        "conditioning": "simall_lkl: calibrated Dl/step finite support, integer table lookup"
+      },
+      {
+        "id": "commander_TT-metadata",
+        "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Data-baseline_R3.00.tar.gz#baseline/plc_3.0/low_l/commander/commander_dx12_v3_2_29.clik/clik/lkl_0/_mdb",
+        "sha256": "8055330eefeefb8c31d07fe214029ece36f6893889d7641bf791f09fb31a3334",
+        "role": "official_product_metadata",
+        "conditioning": "free_calib str A_planck; external_dir str .; delta_l int 1000; lmin int 2; lmax int 29; version int 3; lkl_type str gibbs_gauss; pipeid str b13c8fda-1837-41b5-ae2d-78d6b723fcf1; unit int 1; "
+      },
+      {
+        "id": "simall_EE-metadata",
+        "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Data-baseline_R3.00.tar.gz#baseline/plc_3.0/low_l/simall/simall_100x143_offlike5_EE_Aplanck_B.clik/clik/lkl_0/_mdb",
+        "sha256": "3aef330d936d68573f8881731cd282b8ef2c66dbf56c7d736755eff43e1e0b00",
+        "role": "official_product_metadata",
+        "conditioning": "free_calib str A_planck; lmin int 2; nell int 28; nstepsEE int 3000; lmax int 29; stepEE float 0.0001; lkl_type str simall; pipeid str simall_EE_BB_TE; unit int 1; "
+      },
+      {
+        "id": "plik_lite_TTTEEE-metadata",
+        "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Data-baseline_R3.00.tar.gz#baseline/plc_3.0/hi_l/plik_lite/plik_lite_v22_TTTEEE.clik/clik/lkl_0/_mdb",
+        "sha256": "04198fe177773534c1f6d2673567b69626e581b0affa80ebb17a8ba3da4749f4",
+        "role": "official_product_metadata",
+        "conditioning": "lkl_type str plik_cmbonly; lmax int 2508; cmbonly_version int 22; external_dir str .; lmin int 30; unit int 1; "
+      },
+      {
+        "id": "class-precision-key-parser",
+        "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/include/macros_precision.h",
+        "sha256": "14a6887545b0f090bf15d2f70d8329e7d7f582eaa0f9c5d6952da8990890bfd6",
+        "role": "implementation_source",
+        "conditioning": "__PARSE_PRECISION_PARAMETER__: class_read_string(STRING,ppr->NAME); external key is \"sBBN file\", internal member sBBN_file."
+      },
+      {
+        "id": "class-hmcode",
+        "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/external/HMcode/hmcode.c",
+        "sha256": "2eb8b59b35db995c093f000dd9cf5c8b6dc06de80570c9b0dee4ad7af8b77162",
+        "role": "implementation_source",
+        "conditioning": "hmcode_version_2015 branch includes Mead2016 neutrino additions to delta_c and Delta_v; 2015/2016 input aliases."
+      }
+    ],
+    "class_options": {
+      "T_cmb": "2.7255",
+      "N_ur": "2.0327983725164924",
+      "N_ncdm": "1",
+      "m_ncdm": "0.06",
+      "T_ncdm": "0.71611",
+      "deg_ncdm": "1",
+      "ksi_ncdm": "0",
+      "Omega_k": "0",
+      "Omega_fld": "0",
+      "Omega_scf": "0",
+      "YHe": "BBN",
+      "recombination": "HyRec",
+      "reio_parametrization": "reio_camb",
+      "reionization_exponent": "1.5",
+      "reionization_width": "0.5",
+      "helium_fullreio_redshift": "3.5",
+      "helium_fullreio_width": "0.5",
+      "P_k_ini type": "analytic_Pk",
+      "k_pivot": "0.05",
+      "alpha_s": "0",
+      "modes": "s",
+      "ic": "ad",
+      "gauge": "synchronous",
+      "output": "tCl,pCl,lCl,mPk",
+      "lensing": "yes",
+      "non linear": "hmcode",
+      "hmcode_version": "2016",
+      "feedback model": "emu_dmonly",
+      "l_max_scalars": "2508",
+      "sBBN file": "external/bbn/sBBN_2017.dat"
+    },
+    "species_mapping": "N_ur=3.046-deg_ncdm*(T_ncdm/(4/11)^(1/3))^4=2.0327983725164924. This matches the early FD radiation normalization and CLASS m/omega=93.14eV convention, not an exact nonthermal CAMB distribution. input.c accepts literal hmcode_version2016 and maps it to enum hmcode_version_2015; hmcode.c includes the Mead2016 neutrino corrections.",
+    "bbn_mapping": "thermodynamics_helium_from_bbn uses actual background Neff at T=0.1MeV, DeltaNeff=Neff_BBN−3.046, and natural cubic interpolation across omega_b and DeltaNeff. The 2017 table declares PArthENoPE1.2/neutron880.2s; Planck VI declares1.1. Exact grid equivalence is unproved. YHe is helium mass fraction, not nucleon fraction. Table support: omega_b[0.00499,0.03993], DeltaNeff[-3,7]. Explicit external parser key is \"sBBN file\"; verify resolved table bytes in the runtime."
+  },
+  "likelihood": {
+    "components": [
+      {
+        "id": "commander_TT",
+        "product": "low_l/commander/commander_dx12_v3_2_29.clik",
+        "spectrum_ranges": {
+          "TT": [
+            2,
+            29
+          ]
+        },
+        "nuisance_names": [
+          "A_planck"
+        ]
+      },
+      {
+        "id": "simall_EE",
+        "product": "low_l/simall/simall_100x143_offlike5_EE_Aplanck_B.clik",
+        "spectrum_ranges": {
+          "EE": [
+            2,
+            29
+          ]
+        },
+        "nuisance_names": [
+          "A_planck"
+        ]
+      },
+      {
+        "id": "plik_lite_TTTEEE",
+        "product": "hi_l/plik_lite/plik_lite_v22_TTTEEE.clik",
+        "spectrum_ranges": {
+          "TT": [
+            30,
+            2508
+          ],
+          "TE": [
+            30,
+            1996
+          ],
+          "EE": [
+            30,
+            1996
+          ]
+        },
+        "nuisance_names": [
+          "A_planck"
+        ]
+      }
+    ],
+    "transport": "Use the exact clik API-returned lmax and nuisance order. Input Cl is in microkelvin^2, with ell0..lmax blocks TT,EE,BB,TE,TB,EB followed by nuisance coordinates. CLASS dimensionless Dl conversion is Cl_uK2=Dl*2pi/[ell(ell+1)]*(Tcmb*1e6)^2; CLASSy dimensionless Cl needs only the temperature factor. Preserve released constants and padding.",
+    "marginalization": "Plik-lite already marginalizes20 secondary foreground/instrument coordinates including relative frequency calibrations; overall A_planck remains. No extra foreground prior or full Plik likelihood factor may be multiplied into this target.",
+    "calibration_prior_owner": "Reproducible owns the normalized truncated Gaussian in dA_planck, applied exactly once after the three raw component log-likelihoods. Selected local component metadata show no embedded prior; the consumer must verify full container/runtime prior ownership after restore.",
+    "simall_support": "Before the native call, require 0 <= (Cl_EE_uK2/A_planck^2)*ell*(ell+1)/(2pi*stepEE_native_float32) <3000 at each ell2..29. A state outside the released table is unsupported and explicitly refused; it is not a physical-prior zero, a clipped value or an extrapolated likelihood.",
+    "dependence": "Planck V Sec4 hybridization ignores low-TT/low-EE and low/high-multipole correlations and omits TE below30. These are sourced likelihood approximations, not mathematical independence."
+  },
+  "prior_measure": {
+    "density_kernel": "[product over six cosmological coordinates of 1/(upper-lower)] * I(box) * I(Omega_Lambda>=0) * exp(-0.5*((A_planck-1)/0.0025)^2)/(0.0025*sqrt(2pi)*[Phi(40)-Phi(-40)]) * I(0.9<=A_planck<=1.1)",
+    "physical_support": "omega_b+omega_cdm+omega_gamma+omega_ur+omega_nu(today)<=h^2, h=H0/100. Include massive kinetic density. Lambda follows actual flat closure; negative Lambda is an explicit physical-prior exclusion.",
+    "normalization": "The box and truncated-calibration density normalizations are specified. The extra normalization from conditioning on nonnegative Lambda is uncomputed; posterior kernel ratios are exact, evidence normalization is not claimed. The conditioned joint prior is no longer independent across cosmological coordinates.",
+    "coordinate_jacobian": "Measure domega_b domega_cdm dH0 dlogA dn_s dtau_reio dA_planck. dlogA=dA_s/A_s. No extra Jacobian is applied in these declared coordinates; transforming to other coordinates requires one. Planck Table2 errors are not cosmological priors.",
+    "numerical_support": "Qualify the entire intended prior or stop, repair, or freeze a new named restricted target. Solver errors and unsupported SimAll table states cannot be turned into zero posterior density or an undisclosed inner prior cut."
+  },
+  "covariance": null,
+  "covariance_reason": "This is a fit specification, not a posterior summary. Parameter covariance must come from an accepted fit; no covariance is invented from marginal Planck errors.",
+  "bookkeeping": [
+    "Derive Omega_m from baryons, CDM and actual present massive-neutrino density; keep photon/massless radiation separate.",
+    "Predict YHe,z_reio,r_drag,distances and lensed spectra from the same varied state. No fixed drag or helium, or Table2 point, is substituted.",
+    "The six box bounds are explicit project choices; only the log-amplitude range is checked in Planck VI. Uniform H0 is distinct from the source theta_MC measure."
+  ],
+  "lost_scope": [
+    "Exact Planck/CAMB nonthermal neutrino distribution and PArthENoPE1.1 grid/implementation equivalence are unproved.",
+    "Planck Table2 TT,TE,EE+lowE+lensing additionally uses full Plik foreground nuisance conditioning and a reconstructed-lensing likelihood.",
+    "DESI DR2 source CMB baseline PR4 CamSpec plus Planck+ACT reconstruction is a different target.",
+    "Numerical qualification, convergence and independent matched-target posterior reproduction remain open."
+  ],
+  "joint_admission": {
+    "status": "blocked",
+    "contract_id": "foundation-primary-and-joint-contract-v1",
+    "reason": "The full13 DESI mean/covariance bytes are known. Cross-covariance with this primary-CMB target is not bounded by the checked sources; no product-likelihood joint fit is admitted yet."
+  },
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}

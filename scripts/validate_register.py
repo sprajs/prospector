@@ -51,7 +51,7 @@ def records(folder, key):
 
 def validate():
     schemas = {name: strict_load(ROOT / "schemas" / (name + ".schema.json"))
-               for name in ["paper", "candidate-design", "topic", "prospect", "citations", "reference", "source-contract", "source-serialization"]}
+               for name in ["paper", "candidate-design", "topic", "prospect", "citations", "reference", "reference-fit", "foundation-consumer", "foundation-handoff", "source-contract", "source-serialization"]}
     validators = {}
     for name, schema in schemas.items():
         Draft202012Validator.check_schema(schema)
@@ -206,7 +206,8 @@ def validate():
     references = {}
     for path in sorted((ROOT / 'references').rglob('*.json')):
         reference = strict_load(path)
-        validators['reference'].validate(reference)
+        fit_contract = reference.get('kind') == 'reference_fit_contract'
+        validators['reference-fit' if fit_contract else 'reference'].validate(reference)
         ident = reference['reference_id']
         require(ident not in references, 'duplicate reference identity')
         references[ident] = (path, reference)
@@ -218,14 +219,28 @@ def validate():
                     'reference source hash lacks receipt')
         require(len({p['name'] for p in reference['parameters']}) == len(reference['parameters']),
                 'duplicate reference parameter')
-        if reference['status'] == 'targeted_reviewed':
+        if reference['status'] in {'targeted_reviewed', 'source_contract_reviewed'}:
             require(reference['review_id'] in reviews, 'reference lacks review')
             accepted_record(reference['review_id'], 'reference_ids', ident)
-            accepted_record(reference['review_id'], 'reference_ids', reference['supported_variant']['id'])
+            if not fit_contract:
+                accepted_record(reference['review_id'], 'reference_ids', reference['supported_variant']['id'])
             require(reference['paper_id'] in reviews[reference['review_id']]['reviewed_papers'],
                     'reference source not reviewed')
         else:
             require(reference['review_id'] is None, 'pending reference has review')
+        if fit_contract:
+            require(len(reference['parameters']) == 7, 'fit reference must declare six cosmological and one calibration coordinates')
+            require([p['name'] for p in reference['parameters']] ==
+                    ['omega_b', 'omega_cdm', 'H0', 'logA', 'n_s', 'tau_reio', 'A_planck'],
+                    'fit reference coordinate order mismatch')
+            for parameter in reference['parameters']:
+                require(parameter['prior']['lower'] < parameter['prior']['upper'],
+                        'fit reference prior has empty support')
+            assets = {a['id']: a for a in reviews[reference['review_id']].get('reviewed_source_assets', [])}
+            for asset in reference['implementation']['source_assets']:
+                require(asset['id'] in assets and asset['sha256'] == assets[asset['id']]['sha256']
+                        and asset['url'] == assets[asset['id']]['url'],
+                        'fit reference implementation source not reviewed')
     serializations = records('register/source-data', 'serialization_id')
     for ident, serialization in serializations.items():
         validators['source-serialization'].validate(serialization)
@@ -376,6 +391,42 @@ def validate():
             path = (ROOT / request["path"]).resolve()
             require(path.is_relative_to(ROOT) and path.is_file(), f"invalid executable path: {ident}")
             require(hashlib.sha256(path.read_bytes()).hexdigest() == request["sha256"], f"request digest mismatch: {ident}")
+        consumer_contract = design['minimal_test'].get('parameter_choices')
+        consumer_contract = (consumer_contract or {}).get('consumer_contract')
+        if consumer_contract is not None:
+            validators['foundation-consumer'].validate(consumer_contract)
+            require(len(design.get('source_references', [])) == 1,
+                    'foundation consumer must name one exact reference')
+            reference = references[design['source_references'][0]['reference_id']][1]
+            require(reference.get('kind') == 'reference_fit_contract',
+                    'foundation consumer must bind a fit reference')
+            require(consumer_contract['bounds'] == {p['name']: [p['prior']['lower'], p['prior']['upper']]
+                    for p in reference['parameters']}, 'consumer and reference prior bounds differ')
+            fixed = consumer_contract['class_fixed']
+            require(set(fixed) == set(reference['implementation']['class_options']),
+                    'consumer and reference fixed parameter names differ')
+            for name, value in fixed.items():
+                expected = reference['implementation']['class_options'][name]
+                require(value == (float(expected) if isinstance(value, (int, float)) else expected),
+                        'consumer and reference fixed parameter value differs: ' + name)
+            bbn = next(a for a in reference['implementation']['source_assets'] if a['id'] == 'class-bbn-2017')
+            require(fixed['sBBN file'] == consumer_contract['bbn_table']['path']
+                    and bbn['sha256'] == consumer_contract['bbn_table']['sha256'],
+                    'consumer BBN table differs from reviewed reference')
+    for path in sorted((ROOT / 'handoffs').glob('*.json')):
+        handoff = strict_load(path)
+        validators['foundation-handoff'].validate(handoff)
+        pins = [handoff['candidate'], handoff['reference'], handoff['source_review'], *handoff['contracts']]
+        for pin in pins:
+            target = (ROOT / pin['path']).resolve()
+            require(target.is_relative_to(ROOT) and target.is_file(), 'invalid handoff path')
+            require(hashlib.sha256(target.read_bytes()).hexdigest() == pin['sha256'],
+                    'handoff digest mismatch: ' + pin['id'])
+        require(handoff['candidate']['id'] in designs
+                and handoff['reference']['id'] in references
+                and handoff['source_review']['id'] in reviews
+                and all(pin['id'] in contracts for pin in handoff['contracts']),
+                'handoff references missing source records')
     for ident, prospect in prospects.items():
         validators['prospect'].validate(prospect)
         require(set(prospect['model_idea_ids']).issubset(prospect['idea_ids']), 'prospect model idea is outside its evidence ideas')

@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Immutable source handoff with explicit pending consumer acceptance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "kind",
+    "programme",
+    "handoff_id",
+    "source_repository",
+    "source_base_revision",
+    "candidate",
+    "reference",
+    "contracts",
+    "source_review",
+    "consumer_acceptance",
+    "rights",
+    "numerical_readiness",
+    "joint_readiness",
+    "immutable_preservation"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "kind": {
+      "const": "foundation_source_handoff"
+    },
+    "programme": {
+      "type": "string",
+      "minLength": 1
+    },
+    "handoff_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_repository": {
+      "const": "sprajs/prospector"
+    },
+    "source_base_revision": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "contracts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "source_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "consumer_acceptance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "owner",
+        "status",
+        "receipt"
+      ],
+      "properties": {
+        "owner": {
+          "const": "sprajs/reproducible"
+        },
+        "status": {
+          "const": "pending_exact_bytes"
+        },
+        "receipt": {
+          "type": "null"
+        }
+      }
+    },
+    "rights": {
+      "type": "string",
+      "minLength": 1
+    },
+    "numerical_readiness": {
+      "type": "string",
+      "minLength": 1
+    },
+    "joint_readiness": {
+      "type": "string",
+      "minLength": 1
+    },
+    "immutable_preservation": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

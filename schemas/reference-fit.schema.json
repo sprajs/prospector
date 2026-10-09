@@ -1,0 +1,474 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Immutable fully varied reference fit source contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "kind",
+    "reference_id",
+    "review_id",
+    "status",
+    "paper_id",
+    "source_sha256",
+    "locator",
+    "conditioning",
+    "parameters",
+    "model",
+    "implementation",
+    "likelihood",
+    "prior_measure",
+    "covariance",
+    "covariance_reason",
+    "bookkeeping",
+    "lost_scope",
+    "joint_admission",
+    "qualification"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "kind": {
+      "const": "reference_fit_contract"
+    },
+    "reference_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "review_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "const": "source_contract_reviewed"
+    },
+    "paper_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_sha256": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "html"
+      ],
+      "properties": {
+        "html": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "conditioning": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parameters": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "role",
+          "unit",
+          "transform",
+          "prior"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "enum": [
+              "cosmological",
+              "calibration"
+            ]
+          },
+          "unit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "transform": {
+            "type": "string",
+            "minLength": 1
+          },
+          "prior": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "lower",
+              "upper",
+              "measure",
+              "source_role"
+            ],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "uniform",
+                  "truncated_gaussian"
+                ]
+              },
+              "lower": {
+                "type": "number"
+              },
+              "upper": {
+                "type": "number"
+              },
+              "mean": {
+                "type": "number"
+              },
+              "sigma": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "measure": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_role": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "kind": {
+                      "const": "truncated_gaussian"
+                    }
+                  }
+                },
+                "then": {
+                  "required": [
+                    "mean",
+                    "sigma"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gravity",
+        "geometry",
+        "components",
+        "primordial",
+        "thermal",
+        "helium",
+        "reionization",
+        "recombination"
+      ],
+      "properties": {
+        "gravity": {
+          "type": "string",
+          "minLength": 1
+        },
+        "geometry": {
+          "type": "string",
+          "minLength": 1
+        },
+        "components": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "primordial": {
+          "type": "string",
+          "minLength": 1
+        },
+        "thermal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "helium": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reionization": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recombination": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "implementation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repository",
+        "revision",
+        "archive_sha256",
+        "source_assets",
+        "class_options",
+        "species_mapping",
+        "bbn_mapping"
+      ],
+      "properties": {
+        "repository": {
+          "type": "string",
+          "format": "uri"
+        },
+        "revision": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "archive_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source_assets": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "url",
+              "sha256",
+              "role",
+              "conditioning"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "role": {
+                "type": "string",
+                "minLength": 1
+              },
+              "conditioning": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "class_options": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "species_mapping": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bbn_mapping": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "likelihood": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "components",
+        "transport",
+        "marginalization",
+        "calibration_prior_owner",
+        "simall_support",
+        "dependence"
+      ],
+      "properties": {
+        "components": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "product",
+              "spectrum_ranges",
+              "nuisance_names"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "product": {
+                "type": "string",
+                "minLength": 1
+              },
+              "spectrum_ranges": {
+                "type": "object",
+                "minProperties": 1,
+                "propertyNames": {
+                  "enum": [
+                    "TT",
+                    "EE",
+                    "TE"
+                  ]
+                },
+                "additionalProperties": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "integer",
+                    "minimum": 2,
+                    "maximum": 2508
+                  }
+                }
+              },
+              "nuisance_names": {
+                "const": [
+                  "A_planck"
+                ]
+              }
+            }
+          }
+        },
+        "transport": {
+          "type": "string",
+          "minLength": 1
+        },
+        "marginalization": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calibration_prior_owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "simall_support": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dependence": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "prior_measure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "density_kernel",
+        "physical_support",
+        "normalization",
+        "coordinate_jacobian",
+        "numerical_support"
+      ],
+      "properties": {
+        "density_kernel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "physical_support": {
+          "type": "string",
+          "minLength": 1
+        },
+        "normalization": {
+          "type": "string",
+          "minLength": 1
+        },
+        "coordinate_jacobian": {
+          "type": "string",
+          "minLength": 1
+        },
+        "numerical_support": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "covariance": {
+      "type": "null"
+    },
+    "covariance_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bookkeeping": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "lost_scope": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "joint_admission": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "contract_id",
+        "reason"
+      ],
+      "properties": {
+        "status": {
+          "const": "blocked"
+        },
+        "contract_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "qualification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "numerically_executed",
+        "scientifically_qualified"
+      ],
+      "properties": {
+        "numerically_executed": {
+          "const": false
+        },
+        "scientifically_qualified": {
+          "const": false
+        }
+      }
+    }
+  }
+}
