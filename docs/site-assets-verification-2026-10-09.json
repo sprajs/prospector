@@ -54,7 +54,13 @@
     "tests": {
       "python": 119,
       "node": 10
-    }
+    },
+    "live_real_abstract_status": 200,
+    "live_unknown_abstract_status": 404,
+    "live_browser_abstract_text_rendered": true,
+    "live_graph_nodes": 24,
+    "live_graph_specialization_paths": 5,
+    "live_timeline_rendered": true
   },
   "limitations": [
     "Local benchmark excludes production HTML request latency and uses warm CDN edges; no universal speedup claimed.",
@@ -66,6 +72,41 @@
   "review": {
     "method": "Separate deliberate complete implementation/infrastructure diff review after functional validation.",
     "finding_and_fix": "Generated assets and measurement HTML initially sat in dist, which the Sites packager copies recursively. Moved them into ignored .work; production dist contains only server/index.js.",
-    "conclusion": "No remaining actionable findings in scoped review; latest-head GitHub CI and exact-main checks remain required before publication."
+    "conclusion": "No remaining actionable findings. Exact implementation head and merged main CI passed; PR #41 merged as eeac3c2454d3693b538f531cfb3a3aaec8196c67. Native Site version 13 publication succeeded."
+  },
+  "live_browser": {
+    "scope": "Chrome, exact published Site version 13; first visit in the production top-level cache partition followed by ordinary reload. One sample each; HTML request latency varied substantially.",
+    "cold_ready_ms": 1823.4,
+    "cached_ready_ms": 101.7,
+    "cold_html_response_end_ms": 1700,
+    "cached_html_response_end_ms": 65.2,
+    "cold_asset_transfer_bytes": 114103,
+    "cached_asset_transfer_bytes": 0,
+    "html_encoded_bytes": 1771,
+    "html_transfer_bytes": 2071,
+    "html_decoded_bytes": 4633
+  },
+  "research_archive_policy_unchanged": true,
+  "live_http": {
+    "decoded_bytes": 5571,
+    "encoded_bytes": 2179,
+    "total_seconds": 0.101725,
+    "source_comparison": "Generated HTML prefix and ending match exactly; this curl response adds a 938-byte Cloudflare challenge script before closing body. Browser performance sample received the 4633-byte original. Provider injection is separate from our source/assets.",
+    "provider_injected_bytes": 938,
+    "generated_html_sha256": "3aa16c02ceedcfc7aec2c838d4dd2dfbf6469a347a4dd21eedb074e1fd957739",
+    "received_html_sha256": "8fdc9a976890d10897659cf26f1d94a8e5f862107373ccc935db1466a0214015"
+  },
+  "verification_evidence": {
+    "manifest": {
+      "manifest_format": "research-named-manifest/v1",
+      "collection": "shared/archives/prospector-site-assets-2026-10-09",
+      "uri": "s3://research-data-436908790672-eu-west-2/shared/archives/prospector-site-assets-2026-10-09/versions/cfeb0e2293c21ca5aa12c2ae14ca9fd9c666f8acb7951493aa1831ea0e242634/manifest.json",
+      "version_id": "2VI.DlZSg38O9GUpKRt6nJsTtCL5XJIJ",
+      "sha256": "636d9254e6491b5f57e18642c4b210396b0cbd5a2bae8ac7ea380b273b68205e",
+      "bytes": 14264
+    },
+    "scope": "30 selected engineering/source-publication verification files, exact Site artifact and owned test harnesses; header authentication cookies excluded. Snapshot precedes this custody-reference edit.",
+    "rights": "private-preservation-unreviewed",
+    "scientific_status": "Infrastructure/web verification only; no scientific qualification."
   }
 }
