@@ -1,7 +1,8 @@
 # Development and publication
 
 Read [contributing](../CONTRIBUTING.md), [AGENTS.md](../AGENTS.md) and the current
-README. This follows Irreducible's coherent branches, checkpoint backup,
+README. [The roadmap](roadmap.md) is the sole active priority plan;
+[the gaps](gaps.md) are evidence. This follows Irreducible's coherent branches, checkpoint backup,
 deliberate review and verified cleanup. Prospector's tests should reflect its
 literature/provenance responsibilities rather than Irreducible's native CI matrix.
 
@@ -45,7 +46,7 @@ One owner integrates each repository; the coordinator controls shared interfaces
 and independent final review. Pin Prospector candidate/reference hashes in the
 Reproducible experiment, then pin its inputs and Irreducible revision/build.
 Keep source review, numerical acceptance, PR review and exact-main CI distinct.
-The current baseline audit shares four local compiler/compute jobs across all
+The shared roadmap programme shares four local compiler/compute jobs across all
 chats and worktrees, with at most one light job in Prospector. It adds no worker
 launch entitlement. Preserve the bounded research queue and existing alternatives.
 Publish this task's Site changes only after the reviewed repository merge.

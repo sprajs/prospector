@@ -1,5 +1,7 @@
 # LOWZ windowed-power source target
 
+This is frozen source evidence. Current scheduling follows [the sole roadmap](roadmap.md).
+
 NEXT-13 selects one June 2016 **pre-reconstruction LOWZ P0/P2** release at
 effective redshift 0.32. This is the smaller LOWZ/CMASS power-only option in the
 selected release, not a claim about all available clustering datasets.
@@ -56,10 +58,10 @@ finite-mock inverse and parameter-error corrections. A normalized fixed raw-C
 Gaussian would be a separately declared conditional model, not parity with that fit.
 Shared BOSS objects, masks, randoms and mocks also leave cross-probe dependence unresolved.
 
-**Next action:** the source/consumer owner must reconcile the exact released
-covariance axes and error semantics against producer evidence, freeze a justified
-ordered-row/covariance and historical cut map, or retain refusal. This precedes scoring;
-the galaxy/window adapter and statistical-model gates remain separate prerequisites.
+**Unresolved dependency:** source/consumer qualification requires reconciliation
+of the exact released covariance axes and error semantics against producer evidence, a justified
+ordered-row/covariance and historical cut map; refusal remains otherwise.
+This precedes scoring; the galaxy/window adapter and statistical-model gates remain separate prerequisites.
 
 This checkpoint accepts located source claims only. It adds no numerical experiment,
 full-paper review, graph relationship or prospect promotion. The full ΛCDM audit
