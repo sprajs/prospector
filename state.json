@@ -891,6 +891,143 @@
       "prospect_ids": [
         "measurement-lineage"
       ]
+    },
+    {
+      "paper_id": "arxiv:1203.6776v2",
+      "stage": "read",
+      "reason": "Selected for full Luna reading and Sol comparison of barotropic and geodesic/nonadiabatic closure; intake is not scientific acceptance.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1306.0917v2",
+      "stage": "read",
+      "reason": "Selected for full Luna reading and Sol comparison of barotropic and geodesic/nonadiabatic closure; intake is not scientific acceptance.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1301.5315v2",
+      "stage": "read",
+      "reason": "Selected for full Luna reading and Sol comparison of barotropic and geodesic/nonadiabatic closure; intake is not scientific acceptance.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0212114v2",
+      "stage": "read",
+      "reason": "Foundational structure-formation criticism; exact adiabatic/lineage domain needs full read.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2603.21675v2",
+      "stage": "read",
+      "reason": "Recent unimodular diffusion correspondence claim; gauge and homogeneous-transfer restrictions need source review.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0306004v2",
+      "stage": "read",
+      "reason": "Earlier entropy/silent quartessence approach; no equivalence to geodesic interaction claimed.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:gr-qc/0202064v2",
+      "stage": "read",
+      "reason": "Full-paper foundation remains unread; v2 differs from historical v1 selected-equation dossier.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1709.08933v3",
+      "stage": "read",
+      "reason": "Explicit Borges-Wands coauthorship bridge; growth/velocity observable conventions need full reading.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2109.08676v2",
+      "stage": "read",
+      "reason": "Lattice kinetic equation-of-state transferred into vacuum interaction; source-reported null tension relief remains unreviewed.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9801212v1",
+      "stage": "read",
+      "reason": "Deferred foundation, null-result constraint, eigenmode derivation, independent method or forecast; no full reading claimed.",
+      "prospect_ids": [
+        "cosmic-topology"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1502.01593v2",
+      "stage": "read",
+      "reason": "Deferred foundation, null-result constraint, eigenmode derivation, independent method or forecast; no full reading claimed.",
+      "prospect_ids": [
+        "cosmic-topology"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1403.2190v2",
+      "stage": "read",
+      "reason": "Selected Hantzsche-Wendt historical mechanism and later covariance detectability revisit; awaiting shared Luna slot.",
+      "prospect_ids": [
+        "cosmic-topology"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2210.11426v4",
+      "stage": "read",
+      "reason": "Selected Hantzsche-Wendt historical mechanism and later covariance detectability revisit; awaiting shared Luna slot.",
+      "prospect_ids": [
+        "cosmic-topology"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2306.17112v3",
+      "stage": "read",
+      "reason": "Deferred foundation, null-result constraint, eigenmode derivation, independent method or forecast; no full reading claimed.",
+      "prospect_ids": [
+        "cosmic-topology"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2403.09221v2",
+      "stage": "read",
+      "reason": "Deferred foundation, null-result constraint, eigenmode derivation, independent method or forecast; no full reading claimed.",
+      "prospect_ids": [
+        "cosmic-topology"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2608.25033v1",
+      "stage": "read",
+      "reason": "Deferred foundation, null-result constraint, eigenmode derivation, independent method or forecast; no full reading claimed.",
+      "prospect_ids": [
+        "cosmic-topology"
+      ]
     }
   ],
   "search_history": [

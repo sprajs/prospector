@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-09-chaplygin-vacuum-bridges-intake",
+  "status": "checkpoint_reading_pending",
+  "started_utc": "2026-10-09T17:51:18.699092+00:00",
+  "recorded_utc": "2026-10-09T17:55:38.820406+00:00",
+  "lane": "interacting-sectors",
+  "work_mode": "research_group_bridges_intake",
+  "scope": "Generalized Chaplygin/quartessence versus interacting vacuum+dark matter; background and perturbation closure comparison",
+  "new_versions": [
+    "arxiv:1203.6776v2",
+    "arxiv:1306.0917v2",
+    "arxiv:1301.5315v2",
+    "arxiv:astro-ph/0212114v2",
+    "arxiv:2603.21675v2",
+    "arxiv:astro-ph/0306004v2",
+    "arxiv:gr-qc/0202064v2",
+    "arxiv:1709.08933v3",
+    "arxiv:2109.08676v2"
+  ],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "new_ideas": [],
+  "queries": [
+    {
+      "search_id": "2026-10-09-bridges-foundation"
+    },
+    {
+      "search_id": "2026-10-09-bridges-recent"
+    },
+    {
+      "search_id": "2026-10-09-bridges-narrow"
+    }
+  ],
+  "evidence_custody": {
+    "manifest_format": "research-named-manifest/v1",
+    "collection": "prospector/reviews/chaplygin-vacuum-bridges-20261009-intake",
+    "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/chaplygin-vacuum-bridges-20261009-intake/versions/b52c40538eb8a66d12db0ff7af5e5949f9554e45e1858db1bdc5bb38f1118cf5/manifest.json",
+    "version_id": "u4li7nehkyrLNLFGr.m8.bmliwIm7fQL",
+    "sha256": "d7c49df4b7113b77caa8d65fcf6da4137f1226f5cd4fe146e5b5c8c53d190785",
+    "bytes": 19210
+  },
+  "bibliometric_context": {
+    "provider": "INSPIRE-HEP",
+    "date": "2026-10-09",
+    "counts": {
+      "arxiv:1203.6776v2": {
+        "count": 88,
+        "count_without_self_citations": 74
+      },
+      "arxiv:1301.5315v2": {
+        "count": 104,
+        "count_without_self_citations": 93
+      },
+      "arxiv:1306.0917v2": {
+        "count": 30,
+        "count_without_self_citations": 10
+      },
+      "arxiv:1709.08933v3": {
+        "count": 26,
+        "count_without_self_citations": 15
+      }
+    },
+    "normalized_ranks": null,
+    "author_h_indices": null,
+    "reason": "Four selected works are not a defensible cohort; author h-index profiles unqueried."
+  },
+  "network_findings": [
+    "Two Portsmouth-associated works share Wang,Wands and De-Santiago; they are not independent author support.",
+    "The Brazil-associated 2013 work has a disjoint author list but cites the decomposed model; broader intellectual and data independence unproven.",
+    "Growth paper1709.08933v3 coauthors Borges and Wands. INSPIRE author record1033952 matches H.A.Borges and Humberto A Borges across the exact base-work records. This is an existing collaboration, not evidence of isolation."
+  ],
+  "limitations": [
+    "No full Luna readings or Sol acceptance yet; selected snippets are discovery screens.",
+    "Three finite search windows are not exhaustive and may overlap changing feeds.",
+    "Primary PDFs/HTML/extracted text not in S3 bundle: copying eligibility unresolved; local bytes retained and source hashes/routes preserved.",
+    "Consumer compiled capability unavailable; no numerical execution or executable design."
+  ],
+  "pending": [
+    {
+      "paper_id": "arxiv:1203.6776v2",
+      "stage": "read",
+      "reason": "Selected for full Luna reading and Sol comparison of barotropic and geodesic/nonadiabatic closure; intake is not scientific acceptance.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1306.0917v2",
+      "stage": "read",
+      "reason": "Selected for full Luna reading and Sol comparison of barotropic and geodesic/nonadiabatic closure; intake is not scientific acceptance.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1301.5315v2",
+      "stage": "read",
+      "reason": "Selected for full Luna reading and Sol comparison of barotropic and geodesic/nonadiabatic closure; intake is not scientific acceptance.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0212114v2",
+      "stage": "read",
+      "reason": "Foundational structure-formation criticism; exact adiabatic/lineage domain needs full read.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2603.21675v2",
+      "stage": "read",
+      "reason": "Recent unimodular diffusion correspondence claim; gauge and homogeneous-transfer restrictions need source review.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0306004v2",
+      "stage": "read",
+      "reason": "Earlier entropy/silent quartessence approach; no equivalence to geodesic interaction claimed.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:gr-qc/0202064v2",
+      "stage": "read",
+      "reason": "Full-paper foundation remains unread; v2 differs from historical v1 selected-equation dossier.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1709.08933v3",
+      "stage": "read",
+      "reason": "Explicit Borges-Wands coauthorship bridge; growth/velocity observable conventions need full reading.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2109.08676v2",
+      "stage": "read",
+      "reason": "Lattice kinetic equation-of-state transferred into vacuum interaction; source-reported null tension relief remains unreviewed.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    }
+  ],
+  "ownership": {
+    "scope_owner_thread": "01a121c9-239f-71e1-8447-aaa4f85b6a75",
+    "integration_owner_thread": "01a121c3-1fb1-7e20-97b4-25853865c1a2"
+  },
+  "registered_papers": [
+    "arxiv:1203.6776v2",
+    "arxiv:1306.0917v2",
+    "arxiv:1301.5315v2",
+    "arxiv:astro-ph/0212114v2",
+    "arxiv:2603.21675v2",
+    "arxiv:astro-ph/0306004v2",
+    "arxiv:gr-qc/0202064v2",
+    "arxiv:1709.08933v3",
+    "arxiv:2109.08676v2"
+  ],
+  "idea_ids": [],
+  "design_ids": [],
+  "integration_amendments": [
+    "Coordinator bound intake search provenance to this existing scan and added canonical registered_papers/idea_ids/design_ids fields; no source or scientific stage change."
+  ]
+}

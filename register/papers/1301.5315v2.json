@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1301.5315v2",
+  "arxiv_id": "1301.5315",
+  "version": 2,
+  "title": "Cosmological constraints on a decomposed Chaplygin gas",
+  "authors": [
+    "Yuting Wang",
+    "David Wands",
+    "Lixin Xu",
+    "Josue De-Santiago",
+    "Alireza Hojjati"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2013-01-22T18:11:03Z",
+  "updated_utc": "2013-04-04T14:06:18Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1301.5315v2",
+    "html": "https://arxiv.org/html/1301.5315v2",
+    "pdf": "https://arxiv.org/pdf/1301.5315v2"
+  },
+  "license": {
+    "status": "arxiv_nonexclusive",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Pinned HTML displays arXiv perpetual non-exclusive license; no public source redistribution. Raw-source cloud copying eligibility unresolved."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=1203.6776v2%2C1301.5315v2%2C1306.0917v2&max_results=3",
+      "retrieved_utc": "2026-10-09T17:51:52.043337+00:00",
+      "sha256": "1206bad51cb33a466f5301e63990483ec6694047bc0e5f37c90a5bc1696c60b1",
+      "bytes": 6994
+    },
+    {
+      "url": "https://arxiv.org/html/1301.5315v2",
+      "retrieved_utc": "2026-10-09T17:52:26.662096+00:00",
+      "bytes": 348532,
+      "sha256": "988fa810715b696837c41e5cbb4a782d22f8d4569287ec0f3b0ccc74844eea79",
+      "role": "html"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1301.5315v2",
+      "retrieved_utc": "2026-10-09T17:52:29.899326+00:00",
+      "bytes": 1693706,
+      "sha256": "4d6d333cacafb45274a8e12fab371635faac5281c5379f37e7bcf07a5299a887",
+      "role": "pdf"
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/1301.5315v2",
+      "retrieved_utc": "2026-10-09T17:52:30.824101+00:00",
+      "sha256": "94db202d5d26c8d41902efe11e87d764b20d307ad77bef38d3e4afdf328456fd",
+      "bytes": 192629,
+      "derived_from_sha256": "4d6d333cacafb45274a8e12fab371635faac5281c5379f37e7bcf07a5299a887",
+      "tool": "pdftotext -layout"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "abstract",
+    "reason": "Selected for full Luna reading and Sol comparison of barotropic and geodesic/nonadiabatic closure; intake is not scientific acceptance."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

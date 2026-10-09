@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:astro-ph/0306004v2",
+  "arxiv_id": "astro-ph/0306004",
+  "version": 2,
+  "title": "Entropy perturbations in quartessence Chaplygin models",
+  "authors": [
+    "R. R. R. Reis",
+    "I. Waga",
+    "M. O. Calvao",
+    "S. E. Joras"
+  ],
+  "categories": [
+    "astro-ph"
+  ],
+  "published_utc": "2003-06-02T12:13:00Z",
+  "updated_utc": "2003-06-08T04:48:39Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/astro-ph/0306004v2",
+    "html": "https://arxiv.org/html/astro-ph/0306004v2",
+    "pdf": "https://arxiv.org/pdf/astro-ph/0306004v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Metadata supplies no verified license; retain links and original notes."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=gr-qc%2F0202064%2Castro-ph%2F0212114%2Castro-ph%2F0306004%2C1709.08933v3%2C2109.08676v2%2C2603.21675v2&max_results=6",
+      "retrieved_utc": "2026-10-09T17:52:54.074504+00:00",
+      "sha256": "267e50de79b1d4f09cdc5ba62ed2f40221e5a0c46b4ba15bca638b7f1b1533b5",
+      "bytes": 12724
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Earlier entropy/silent quartessence approach; no equivalence to geodesic interaction claimed."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

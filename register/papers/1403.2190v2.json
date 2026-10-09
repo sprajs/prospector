@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1403.2190v2",
+  "arxiv_id": "1403.2190",
+  "version": 2,
+  "title": "The Hantzsche-Wendt Manifold in Cosmic Topology",
+  "authors": [
+    "Ralf Aurich",
+    "Sven Lustig"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2014-03-10T09:33:02Z",
+  "updated_utc": "2014-07-23T12:22:55Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1403.2190v2",
+    "html": "https://arxiv.org/html/1403.2190v2",
+    "pdf": "https://arxiv.org/pdf/1403.2190v2"
+  },
+  "license": {
+    "status": "arXiv.org perpetual non-exclusive license",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Licence notice inspected in pinned HTML with source hash 8d428d727a2d6a18a5145dd84da0484ebc32e1eb7e9f4a4f170fe4f8a66995ac. Short original notes and links only in public records; owner-authorized private custody, no explicit private-copy prohibition observed."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=astro-ph%2F9801212%2C1403.2190v2%2C2210.11426v4%2C1502.01593%2C2306.17112v3%2C2403.09221v2%2C2608.25033v1&max_results=7",
+      "retrieved_utc": "2026-10-09T17:51:41.460556+00:00",
+      "sha256": "1a818ed7ee3cb63a165ebf3a573fdd6595806ec192958cb1c5b7594b29d21c54",
+      "bytes": 36053
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/1403.2190v2",
+      "retrieved_utc": "2026-10-09T17:51:55.346850+00:00",
+      "sha256": "8d428d727a2d6a18a5145dd84da0484ebc32e1eb7e9f4a4f170fe4f8a66995ac",
+      "bytes": 371207
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/1403.2190v2",
+      "retrieved_utc": "2026-10-09T17:52:02.522204+00:00",
+      "sha256": "b6d8ec5bedf9ed87f40ec5419e53895556960950328d7c3f945fc0442b36198f",
+      "bytes": 1341841
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/1403.2190v2",
+      "retrieved_utc": "2026-10-09T17:52:03.235521+00:00",
+      "sha256": "5a299c7d0c39b8012ea890c2dd6a30d37c36cdfc2b596abdb263462fb1e42597",
+      "bytes": 64380,
+      "derived_from_sha256": "b6d8ec5bedf9ed87f40ec5419e53895556960950328d7c3f945fc0442b36198f",
+      "tool": "pdftotext -layout"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "abstract",
+    "reason": "Full reading selected: historically restricted circle searches and observer-dependent Hantzsche-Wendt signatures; test feasibility and null-search scope, not presumed anomaly explanation."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}
