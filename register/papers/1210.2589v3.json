@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1210.2589v3",
+  "arxiv_id": "1210.2589",
+  "version": 3,
+  "title": "Everpresent Lambda - II: Structural Stability",
+  "authors": [
+    "Maqbool Ahmed",
+    "Rafael Sorkin"
+  ],
+  "categories": [
+    "gr-qc",
+    "astro-ph.CO",
+    "hep-th"
+  ],
+  "published_utc": "2012-10-09T13:12:35Z",
+  "updated_utc": "2012-12-07T06:53:30Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1210.2589v3",
+    "html": "https://arxiv.org/html/1210.2589v3",
+    "pdf": "https://arxiv.org/pdf/1210.2589v3"
+  },
+  "license": {
+    "status": "unresolved; no licence in Atom metadata",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public register contains metadata and original notes. Private research custody only; no public full-source redistribution."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=0711.2904v1%2C1210.2589v3%2C1703.06265v4%2C2304.03819v2&max_results=4",
+      "retrieved_utc": "2026-10-09T17:48:14.320588+00:00",
+      "sha256": "8ad8299cbe14072407b669ddaf8a81c2093cb7cf97181d6b12d6e5ca203327bb",
+      "bytes": 8353
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "One-hop mechanism/criticism frontier preserved for later full source acquisition and reading; batch scope limited to three full papers."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

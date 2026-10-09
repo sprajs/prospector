@@ -691,6 +691,62 @@
       "prospect_ids": [
         "interacting-sectors"
       ]
+    },
+    {
+      "paper_id": "arxiv:0711.2904v1",
+      "stage": "read",
+      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
+      "prospect_ids": [
+        "stochastic-vacuum"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1210.2589v3",
+      "stage": "read",
+      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
+      "prospect_ids": [
+        "stochastic-vacuum"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1703.06265v4",
+      "stage": "read",
+      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
+      "prospect_ids": [
+        "stochastic-vacuum"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2304.03819v2",
+      "stage": "read",
+      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
+      "prospect_ids": [
+        "stochastic-vacuum"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2307.13743v2",
+      "stage": "read",
+      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
+      "prospect_ids": [
+        "stochastic-vacuum"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0209274v1",
+      "stage": "read",
+      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
+      "prospect_ids": [
+        "stochastic-vacuum"
+      ]
+    },
+    {
+      "paper_id": "arxiv:gr-qc/0612128v2",
+      "stage": "read",
+      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
+      "prospect_ids": [
+        "stochastic-vacuum"
+      ]
     }
   ],
   "search_history": [

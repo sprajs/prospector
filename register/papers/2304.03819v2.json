@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2304.03819v2",
+  "arxiv_id": "2304.03819",
+  "version": 2,
+  "title": "Aspects of Everpresent $Λ$ (I): A Fluctuating Cosmological Constant from Spacetime Discreteness",
+  "authors": [
+    "Santanu Das",
+    "Arad Nasiri",
+    "Yasaman K. Yazdi"
+  ],
+  "categories": [
+    "gr-qc",
+    "astro-ph.CO",
+    "hep-th"
+  ],
+  "published_utc": "2023-04-07T19:07:42Z",
+  "updated_utc": "2024-02-20T21:05:40Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2304.03819v2",
+    "html": "https://arxiv.org/html/2304.03819v2",
+    "pdf": "https://arxiv.org/pdf/2304.03819v2"
+  },
+  "license": {
+    "status": "unresolved; no licence in Atom metadata",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public register contains metadata and original notes. Private research custody only; no public full-source redistribution."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=0711.2904v1%2C1210.2589v3%2C1703.06265v4%2C2304.03819v2&max_results=4",
+      "retrieved_utc": "2026-10-09T17:48:14.320588+00:00",
+      "sha256": "8ad8299cbe14072407b669ddaf8a81c2093cb7cf97181d6b12d6e5ca203327bb",
+      "bytes": 8353
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "One-hop mechanism/criticism frontier preserved for later full source acquisition and reading; batch scope limited to three full papers."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

@@ -1,6 +1,6 @@
 # Register
 
-82 paper versions · 24 ideas · 9 topics · 11 candidate prospects.
+89 paper versions · 24 ideas · 10 topics · 11 candidate prospects.
 
 [Open Prospector](https://prospector-cosmology.sprajs.chatgpt.site) · [Local map](map.html)
 
@@ -17,6 +17,7 @@
 | [Late dark energy and unified histories](topics/late-dark-energy.json) | 20 | 11 |
 | [Measurements and calibration](topics/measurement-lineage.json) | 24 | 4 |
 | [Gravity and quantum cosmology](topics/modified-gravity.json) | 19 | 4 |
+| [Stochastic vacuum and spacetime discreteness](topics/stochastic-vacuum.json) | 7 | 0 |
 
 Topics are navigation groups. Membership does not establish equivalent physics.
 
@@ -73,12 +74,14 @@ Combined models require compatibility checks before promotion.
 
 | Paper | Version | Reading |
 | --- | --- | --- |
+| [The CMB in a Causal Set Universe](https://arxiv.org/abs/0711.2904v1) | [0711.2904v1](papers/0711.2904v1.json) | screened |
 | [Dissecting the Gravitational Lens B1608+656. I. Lens Potential Reconstruction](https://arxiv.org/abs/0804.2827v3) | [0804.2827v3](papers/0804.2827v3.json) | discovered |
 | [Dissecting the Gravitational Lens B1608+656. II. Precision Measurements of the Hubble Constant, Spatial Curvature, and the Dark Energy Equation of State](https://arxiv.org/abs/0910.2773v2) | [0910.2773v2](papers/0910.2773v2.json) | discovered |
 | [Supernova tests of the timescape cosmology](https://arxiv.org/abs/1009.5855v2) | [1009.5855v2](papers/1009.5855v2.json) | reviewed |
 | [HyRec: A fast and highly accurate primordial hydrogen and helium recombination code](https://arxiv.org/abs/1011.3758v2) | [1011.3758v2](papers/1011.3758v2.json) | discovered |
 | [The Cosmic Linear Anisotropy Solving System (CLASS) II: Approximation schemes](https://arxiv.org/abs/1104.2933v3) | [1104.2933v3](papers/1104.2933v3.json) | discovered |
 | [Gamma ray burst distances and the timescape cosmology](https://arxiv.org/abs/1107.5596v2) | [1107.5596v2](papers/1107.5596v2.json) | screened |
+| [Everpresent Lambda - II: Structural Stability](https://arxiv.org/abs/1210.2589v3) | [1210.2589v3](papers/1210.2589v3.json) | screened |
 | [Timescape cosmology with radiation fluid](https://arxiv.org/abs/1306.3208v2) | [1306.3208v2](papers/1306.3208v2.json) | screened |
 | [Signature transition in Einstein-Cartan cosmology](https://arxiv.org/abs/1308.2877v2) | [1308.2877v2](papers/1308.2877v2.json) | screened |
 | [Timescape realized](https://arxiv.org/abs/1310.3124v1) | [1310.3124v1](papers/1310.3124v1.json) | screened |
@@ -91,6 +94,7 @@ Combined models require compatibility checks before promotion.
 | [The clustering of galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: RSD measurement from the power spectrum and bispectrum of the DR12 BOSS galaxies](https://arxiv.org/abs/1606.00439v2) | [1606.00439v2](papers/1606.00439v2.json) | discovered |
 | [Einstein-Cartan Gravity with Torsion Field Serving as Origin for Cosmological Constant or Dark Energy Density](https://arxiv.org/abs/1607.01128v2) | [1607.01128v2](papers/1607.01128v2.json) | screened |
 | [Kinematics of Einstein-Cartan universes](https://arxiv.org/abs/1611.07878v3) | [1611.07878v3](papers/1611.07878v3.json) | screened |
+| [Cosmological Tests of Everpresent $Λ$](https://arxiv.org/abs/1703.06265v4) | [1703.06265v4](papers/1703.06265v4.json) | screened |
 | [Precision big bang nucleosynthesis with improved Helium-4 predictions](https://arxiv.org/abs/1801.08023v3) | [1801.08023v3](papers/1801.08023v3.json) | discovered |
 | [Cosmological implications of ultra-light axion-like fields](https://arxiv.org/abs/1806.10608v1) | [1806.10608v1](papers/1806.10608v1.json) | discovered |
 | [Planck 2018 results. VI. Cosmological parameters](https://arxiv.org/abs/1807.06209v4) | [1807.06209v4](papers/1807.06209v4.json) | screened |
@@ -108,7 +112,9 @@ Combined models require compatibility checks before promotion.
 | [The Pantheon+ Analysis: Cosmological Constraints](https://arxiv.org/abs/2202.04077v2) | [2202.04077v2](papers/2202.04077v2.json) | screened |
 | [Microphysics of Early Dark Energy](https://arxiv.org/abs/2202.08291v3) | [2202.08291v3](papers/2202.08291v3.json) | screened |
 | [Coupled Early Dark Energy](https://arxiv.org/abs/2209.15046v1) | [2209.15046v1](papers/2209.15046v1.json) | screened |
+| [Aspects of Everpresent $Λ$ (I): A Fluctuating Cosmological Constant from Spacetime Discreteness](https://arxiv.org/abs/2304.03819v2) | [2304.03819v2](papers/2304.03819v2.json) | screened |
 | [The weak, the strong and the ugly -- A comparative analysis of interacting stepped dark radiation](https://arxiv.org/abs/2306.12469v2) | [2306.12469v2](papers/2306.12469v2.json) | screened |
+| [Aspects of Everpresent $Λ$ (II): Cosmological Tests of Current Models](https://arxiv.org/abs/2307.13743v2) | [2307.13743v2](papers/2307.13743v2.json) | screened |
 | [Trapped early dark energy](https://arxiv.org/abs/2401.08812v1) | [2401.08812v1](papers/2401.08812v1.json) | screened |
 | [Hot New Early Dark Energy bridging cosmic gaps: Supercooled phase transition reconciles (stepped) dark radiation solutions to the Hubble tension with BBN](https://arxiv.org/abs/2404.07256v1) | [2404.07256v1](papers/2404.07256v1.json) | screened |
 | [Cosmological probes of Dark Radiation from Neutrino Mixing](https://arxiv.org/abs/2404.16822v1) | [2404.16822v1](papers/2404.16822v1.json) | screened |
@@ -147,6 +153,7 @@ Combined models require compatibility checks before promotion.
 | [AdS - de Sitter transition in interacting dark energy models](https://arxiv.org/abs/2609.38422v1) | [2609.38422v1](papers/2609.38422v1.json) | screened |
 | [Metastable Dark Energy on the Phantom Brane](https://arxiv.org/abs/2609.39039v1) | [2609.39039v1](papers/2609.39039v1.json) | screened |
 | [Structure formation in anisotropic Einstein-Cartan cosmologies](https://arxiv.org/abs/astro-ph/0009150v1) | [astro-ph/0009150v1](papers/astro-ph__0009150v1.json) | screened |
+| [Everpresent Lambda](https://arxiv.org/abs/astro-ph/0209274v1) | [astro-ph/0209274v1](papers/astro-ph__0209274v1.json) | screened |
 | [Early Dark Energy Cosmologies](https://arxiv.org/abs/astro-ph/0601544v2) | [astro-ph/0601544v2](papers/astro-ph__0601544v2.json) | screened |
 | [SALT2: using distant supernovae to improve the use of Type Ia supernovae as distance indicators](https://arxiv.org/abs/astro-ph/0701828v1) | [astro-ph/0701828v1](papers/astro-ph__0701828v1.json) | discovered |
 | [Cosmological Perturbation Theory in the Synchronous and Conformal Newtonian Gauges](https://arxiv.org/abs/astro-ph/9506072v1) | [astro-ph/9506072v1](papers/astro-ph__9506072v1.json) | discovered |
@@ -155,6 +162,7 @@ Combined models require compatibility checks before promotion.
 | [A New Calculation of the Recombination Epoch](https://arxiv.org/abs/astro-ph/9909275v2) | [astro-ph/9909275v2](papers/astro-ph__9909275v2.json) | discovered |
 | [Efficient Computation of CMB anisotropies in closed FRW models](https://arxiv.org/abs/astro-ph/9911177v2) | [astro-ph/9911177v2](papers/astro-ph__9911177v2.json) | discovered |
 | [Metric perturbations in Einstein-Cartan Cosmology](https://arxiv.org/abs/gr-qc/0202022v1) | [gr-qc/0202022v1](papers/gr-qc__0202022v1.json) | screened |
+| [A Strong Constraint on Ever-Present Lambda](https://arxiv.org/abs/gr-qc/0612128v2) | [gr-qc/0612128v2](papers/gr-qc__0612128v2.json) | screened |
 
 ## Investigations
 

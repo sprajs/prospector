@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:0711.2904v1",
+  "work_identity": {
+    "arxiv_id": "0711.2904",
+    "registered_version": 1,
+    "title": "The CMB in a Causal Set Universe",
+    "match_status": "exact",
+    "provider": "INSPIRE-HEP",
+    "provider_record_id": "768013",
+    "matched_arxiv_ids": [
+      "0711.2904"
+    ],
+    "linked_dois": [
+      "10.1103/PhysRevD.77.043002"
+    ],
+    "journal_metadata": [
+      {
+        "journal_title": "Phys.Rev.D",
+        "year": 2008,
+        "volume": "77",
+        "article_or_page": "043002"
+      }
+    ],
+    "journal_scope": "linked_journal_metadata_returned",
+    "count_scope": "provider_base_work_record",
+    "version_scope": "versions_not_disaggregated",
+    "publication_scope_note": "Citation counts are totals for this provider literature record. They are not split between the registered arXiv version, other arXiv versions, and linked journal publication records. Coordinator identity reconciliation: exact unique base arXiv ID plus provider alternate title 'The CMB in a Causal Set Universe' matches registered title after Lambda/Greek/TeX/punctuation normalization. Raw response remains unchanged; original strict-first-title snapshot retained. No author identity inferred from a title alone.",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A0711.2904&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:49:02.774542+00:00",
+      "http_status": 200,
+      "response_sha256": "8a870705a2898df6732f25e73a271237c7a01be7835abc5273886ff63e44a60d",
+      "response_bytes": 2222,
+      "archive_path": ".work/unconventional-20261009/bibliometrics/2026-10-09/inspire-0711.2904-8a870705a289.json"
+    }
+  },
+  "citation_snapshot": {
+    "status": "observed",
+    "count": 12,
+    "count_without_self_citations": 12,
+    "retrieved_utc": "2026-10-09T17:49:02.774542+00:00",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A0711.2904&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:49:02.774542+00:00",
+      "http_status": 200,
+      "response_sha256": "8a870705a2898df6732f25e73a271237c7a01be7835abc5273886ff63e44a60d",
+      "response_bytes": 2222,
+      "archive_path": ".work/unconventional-20261009/bibliometrics/2026-10-09/inspire-0711.2904-8a870705a289.json"
+    },
+    "missing_reason": null
+  },
+  "comparison": {
+    "first_publication_utc": "2007-11-19T11:57:00Z",
+    "age_days_at_snapshot": 6899.244476557199,
+    "age_years_at_snapshot": 18.889489795292715,
+    "field_categories": [
+      "astro-ph"
+    ],
+    "cohort": {
+      "provider": "INSPIRE-HEP",
+      "snapshot_batch_id": "everpresent-20261009",
+      "field_definition": "arXiv primary category: astro-ph",
+      "age_band_years": {
+        "lower_inclusive": 18.0,
+        "upper_exclusive": 19.0
+      },
+      "population_size": null,
+      "minimum_population_size": 100,
+      "population_evidence": null,
+      "percentile": null,
+      "status": "not_queried",
+      "reason": "No provider population was queried for this provider, snapshot batch, arXiv primary category, and publication-age band. The deliberately selected Prospector sample is not a percentile reference population."
+    }
+  },
+  "authors": [
+    {
+      "paper_author_name": "Joe Zuntz",
+      "source_author_id": null,
+      "author_identity_verified": false,
+      "identity_evidence": "No exact author-record match was established from the provider response.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    }
+  ],
+  "team_visibility": {
+    "status": "none",
+    "unique_author_count": 1,
+    "verified_h_index_author_count": 0,
+    "coverage_fraction": 0.0,
+    "h_index_scope": null,
+    "h_index_snapshot_batch_id": null,
+    "max_h_index": null,
+    "median_h_index": null,
+    "missing_reason": "Team maximum and median use verified, observed, same-scope h-indices only; missing author metrics are unknown."
+  },
+  "snapshot_created_utc": "2026-10-09T17:49:35.020988+00:00",
+  "snapshot_id": "20261009T174935020988Z-73890cd70330"
+}
