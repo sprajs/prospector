@@ -71,3 +71,6 @@ Reproducible owns accepted experiments and results; Irreducible owns compiled
 physics. Source review, exact-version transport checks, numerical acceptance and
 scientific qualification remain separate gates. This checkpoint changes no
 scientific readiness or public Site deployment.
+
+The [observed 2026-10-09 checkpoint](2026-10-09-observed-portability-priorities.md)
+records the subsequent real restored-input run and remaining numerical failures.
