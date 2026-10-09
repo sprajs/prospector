@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2404.16822v1",
+  "arxiv_id": "2404.16822",
+  "version": 1,
+  "title": "Cosmological probes of Dark Radiation from Neutrino Mixing",
+  "authors": [
+    "Itamar J. Allali",
+    "Daniel Aloni",
+    "Nils Sch\u00f6neberg"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "hep-ph"
+  ],
+  "published_utc": "2024-04-25T17:59:40Z",
+  "updated_utc": "2024-04-25T17:59:40Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2404.16822v1",
+    "html": "https://arxiv.org/html/2404.16822v1",
+    "pdf": "https://arxiv.org/pdf/2404.16822v1"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper copying terms not yet checked; public record contains descriptive metadata and original notes only."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2306.12469v2%2C2404.07256v1%2C2404.16822v1%2C2512.06719v4%2C2508.03795v2%2C2609.16120v1&max_results=6",
+      "retrieved_utc": "2026-10-09T17:46:57.210832+00:00",
+      "sha256": "79ce4cb02bc36705176f2e8db2ce5dd967a54f6414e6fa807ab4a880d9b20fd0",
+      "bytes": 15501
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Deferred: independent neutrino-mixing production alternative with explicit background and perturbation implementation."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

@@ -32,12 +32,35 @@
       "retrieved_utc": "2026-10-01T00:43:43.823637+00:00",
       "sha256": "11cf37f0711f131eecd20c6e19f32ab0b569c7d9b40169581d63a8f428f62251",
       "bytes": 23175
+    },
+    {
+      "url": "https://arxiv.org/html/2112.00770v2",
+      "retrieved_utc": "2026-10-09T17:46:25.447953+00:00",
+      "bytes": 1043937,
+      "sha256": "98a302d14ef4f7018e2e032153b288d51b8496f4246d217a7f35f3d03669f80e",
+      "role": "html"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2112.00770v2",
+      "retrieved_utc": "2026-10-09T17:46:28.729125+00:00",
+      "bytes": 2157082,
+      "sha256": "51054356c36f8aa53ba06604251405567c58086ca4943877e6f91b6b7af38876",
+      "role": "pdf"
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/2112.00770v2",
+      "retrieved_utc": "2026-10-09T17:46:29.447244+00:00",
+      "sha256": "781192ba96478c24935f361271595a5e550a008624845fa43aac52f916a3045b",
+      "bytes": 295218,
+      "derived_from_sha256": "51054356c36f8aa53ba06604251405567c58086ca4943877e6f91b6b7af38876",
+      "tool": "pdftotext -layout"
     }
   ],
   "screen": {
-    "status": "deferred",
+    "status": "selected",
     "basis": "abstract",
-    "reason": "Retain thermal NEDE trigger and dark-radiation embeddings; thermal and cold triggers need a sourced distinction."
+    "reason": "Resume queued thermal trigger foundation to distinguish phase-transition energy injection, entropy steps and perturbation closure."
   },
   "extraction": null,
   "review_id": null,

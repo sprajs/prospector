@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2404.07256v1",
+  "arxiv_id": "2404.07256",
+  "version": 1,
+  "title": "Hot New Early Dark Energy bridging cosmic gaps: Supercooled phase transition reconciles (stepped) dark radiation solutions to the Hubble tension with BBN",
+  "authors": [
+    "Mathias Garny",
+    "Florian Niedermann",
+    "Henrique Rubira",
+    "Martin S. Sloth"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "hep-ph"
+  ],
+  "published_utc": "2024-04-10T18:00:01Z",
+  "updated_utc": "2024-04-10T18:00:01Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2404.07256v1",
+    "html": "https://arxiv.org/html/2404.07256v1",
+    "pdf": "https://arxiv.org/pdf/2404.07256v1"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper copying terms not yet checked; public record contains descriptive metadata and original notes only."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2306.12469v2%2C2404.07256v1%2C2404.16822v1%2C2512.06719v4%2C2508.03795v2%2C2609.16120v1&max_results=6",
+      "retrieved_utc": "2026-10-09T17:46:57.210832+00:00",
+      "sha256": "79ce4cb02bc36705176f2e8db2ce5dd967a54f6414e6fa807ab4a880d9b20fd0",
+      "bytes": 15501
+    },
+    {
+      "url": "https://arxiv.org/html/2404.07256v1",
+      "retrieved_utc": "2026-10-09T17:47:00.573572+00:00",
+      "bytes": 654803,
+      "sha256": "76839638f6ed69660877fe87448835e0f56b3e149b7fe1e851ce0755e05433b7",
+      "role": "html"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2404.07256v1",
+      "retrieved_utc": "2026-10-09T17:47:07.177965+00:00",
+      "bytes": 2211517,
+      "sha256": "56260402d650e2ddd9130c7f36a2d8f4919cbde1c889ac47572e172d7a5ecc89",
+      "role": "pdf"
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/2404.07256v1",
+      "retrieved_utc": "2026-10-09T17:47:07.799432+00:00",
+      "sha256": "235438d7d056ed42b932e7dde47855321cc1129016a6f617cc490b62b1cff343",
+      "bytes": 166744,
+      "derived_from_sha256": "56260402d650e2ddd9130c7f36a2d8f4919cbde1c889ac47572e172d7a5ecc89",
+      "tool": "pdftotext -layout"
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Deferred full reading: post-BBN reheating and entropy step bridge; original sources centrally acquired but three-paper review ceiling prioritizes current perturbation challenge."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

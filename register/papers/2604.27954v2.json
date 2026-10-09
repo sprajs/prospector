@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2604.27954v2",
+  "arxiv_id": "2604.27954",
+  "version": 2,
+  "title": "Axion dark matter from extended misalignment with a constant-$\u03c9_\u03c6$ pre-oscillatory phase and dark radiation",
+  "authors": [
+    "Jos\u00e9 Mar\u00eda P\u00e9rez-Poyatos"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2026-04-30T14:51:00Z",
+  "updated_utc": "2026-05-07T15:11:55Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2604.27954v2",
+    "html": "https://arxiv.org/html/2604.27954v2",
+    "pdf": "https://arxiv.org/pdf/2604.27954v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper copying terms not yet checked; public record contains descriptive metadata and original notes only."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2604.26541v1%2C2605.18716v1%2C2604.27954v2&max_results=3",
+      "retrieved_utc": "2026-10-09T17:47:33.840139+00:00",
+      "sha256": "1c33d676f9c01be51193cb6723ae302d2fe4436dc0e61602b8798431448ecee7",
+      "bytes": 7131
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Deferred valuable null: ALP-induced dark radiation does not resolve tensions; distinct production history needs full read."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

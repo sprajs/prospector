@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "search_id": "20261009T174652556541Z-f12b86806fda",
+  "lane": "interacting-sectors",
+  "work_mode": "fresh",
+  "status": "completed",
+  "requested_utc": "2026-10-09T17:46:52.556476+00:00",
+  "request": {
+    "query": "(cat:astro-ph.CO OR cat:hep-ph) AND ti:\"dark radiation\" AND submittedDate:[202401010000 TO 202610092359]",
+    "normalized_query": "(cat:astro-ph.CO OR cat:hep-ph) AND ti:\"dark radiation\" AND submittedDate:[202401010000 TO 202610092359]",
+    "order": "lastUpdatedDate",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "f12b86806fdae3d01f7c15c84f249316fc5600854283659ff05aa0427d37576b"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Broad Wess-Zumino cross-field window contained eight unrelated field-theory hits; narrower title/date window resolves cosmological recent coverage without repeating completed query.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Ahep-ph%29+AND+ti%3A%22dark+radiation%22+AND+submittedDate%3A%5B202401010000+TO+202610092359%5D&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+    "retrieved_utc": "2026-10-09T17:46:53.879520+00:00",
+    "sha256": "8510e41af77f2db031c24063c8fcdfc03ea264c579cace8a622a038b2c34253a",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/crawl-acquisition/2026-10-09-interacting-radiation/objects/8510e41af77f2db031c24063c8fcdfc03ea264c579cace8a622a038b2c34253a.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:2609.16120v1",
+      "position": 0,
+      "disposition": "deferred",
+      "reason": "Deferred: dark-QCD imperfect-fluid viscosity alternative, quoted posterior conditioned on SH0ES; requires full closure/lineage review.",
+      "title": "Dark Radiation Sticks Together: Dark QCD and the Hubble Tension",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2508.03795v2",
+      "position": 1,
+      "disposition": "deferred",
+      "reason": "Deferred: hot-NEDE matter decoupling microphysics; present batch first checks foundation and comparative constraints.",
+      "title": "Hot New Early Dark Energy: Dark Radiation Matter Decoupling",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2512.06719v4",
+      "position": 2,
+      "disposition": "deferred",
+      "reason": "Deferred valuable null: scalar-DM momentum coupling gives marginal S8 relief and poorer combined-prior fit; full conditioning unreviewed.",
+      "title": "Interacting scalar field dark matter and stepped dark radiation in an extended Wess-Zumino dark radiation model",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2512.03662v3",
+      "position": 3,
+      "disposition": "deferred",
+      "reason": "Abstract-screened secondary production/collider/review route; outside this bounded thermal-transition and perturbation-discriminator comparison. Retained search frontier, not scientifically rejected.",
+      "title": "Gravitational Decays of Secluded Scalars and Graviton Dark Radiation",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2605.18716v1",
+      "position": 4,
+      "disposition": "deferred",
+      "reason": "Deferred: neutrino recoupling could distinguish CMB-BAO mismatch from a pure H0 extension; fitted preference is not a measurement.",
+      "title": "Recoupled Dark Radiation reconciling CMB and DESI BAO measurements",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2605.17178v1",
+      "position": 5,
+      "disposition": "deferred",
+      "reason": "Abstract-screened secondary production/collider/review route; outside this bounded thermal-transition and perturbation-discriminator comparison. Retained search frontier, not scientifically rejected.",
+      "title": "An EFT Map of Axion Dark Radiation from Reheating",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2604.27954v2",
+      "position": 6,
+      "disposition": "deferred",
+      "reason": "Deferred valuable null: ALP-induced dark radiation does not resolve tensions; distinct production history needs full read.",
+      "title": "Axion dark matter from extended misalignment with a constant-$\u03c9_\u03c6$ pre-oscillatory phase and dark radiation",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2605.03427v1",
+      "position": 7,
+      "disposition": "deferred",
+      "reason": "Abstract-screened secondary production/collider/review route; outside this bounded thermal-transition and perturbation-discriminator comparison. Retained search frontier, not scientifically rejected.",
+      "title": "Search for Long-Lived Dark Photons from Dark Radiation at the LHC",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2509.17059v3",
+      "position": 8,
+      "disposition": "deferred",
+      "reason": "Abstract-screened secondary production/collider/review route; outside this bounded thermal-transition and perturbation-discriminator comparison. Retained search frontier, not scientifically rejected.",
+      "title": "Axions as Dark Matter, Dark Energy, and Dark Radiation",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2604.26541v1",
+      "position": 9,
+      "disposition": "selected",
+      "reason": "Full reading selected: ACT DR6 dark-radiation limits versus primordial-spectrum running; test degeneracy rather than infer a tension solution.",
+      "title": "The End of the First Act: Spectral Running, Interacting Dark Radiation, and the Hubble Tension in Light of ACT DR6 Data",
+      "decision_history": []
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": null,
+    "query_id": null
+  },
+  "batch_id": "2026-10-09-interacting-radiation"
+}

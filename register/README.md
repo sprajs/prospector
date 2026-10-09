@@ -1,6 +1,6 @@
 # Register
 
-71 paper versions · 24 ideas · 9 topics · 11 candidate prospects.
+82 paper versions · 24 ideas · 9 topics · 11 candidate prospects.
 
 [Open Prospector](https://prospector-cosmology.sprajs.chatgpt.site) · [Local map](map.html)
 
@@ -12,7 +12,7 @@
 | [Bounces, cycles and primordial alternatives](topics/bounces-cycles.json) | 3 | 0 |
 | [Early energy and recombination](topics/early-energy.json) | 19 | 8 |
 | [Inhomogeneity, averaging and observers](topics/inhomogeneity.json) | 6 | 2 |
-| [Interactions, transitions and decays](topics/interacting-sectors.json) | 12 | 9 |
+| [Interactions, transitions and decays](topics/interacting-sectors.json) | 23 | 9 |
 | [Acceleration and reconstruction](topics/kinematics.json) | 4 | 2 |
 | [Late dark energy and unified histories](topics/late-dark-energy.json) | 20 | 11 |
 | [Measurements and calibration](topics/measurement-lineage.json) | 24 | 4 |
@@ -108,21 +108,32 @@ Combined models require compatibility checks before promotion.
 | [The Pantheon+ Analysis: Cosmological Constraints](https://arxiv.org/abs/2202.04077v2) | [2202.04077v2](papers/2202.04077v2.json) | screened |
 | [Microphysics of Early Dark Energy](https://arxiv.org/abs/2202.08291v3) | [2202.08291v3](papers/2202.08291v3.json) | screened |
 | [Coupled Early Dark Energy](https://arxiv.org/abs/2209.15046v1) | [2209.15046v1](papers/2209.15046v1.json) | screened |
+| [The weak, the strong and the ugly -- A comparative analysis of interacting stepped dark radiation](https://arxiv.org/abs/2306.12469v2) | [2306.12469v2](papers/2306.12469v2.json) | screened |
 | [Trapped early dark energy](https://arxiv.org/abs/2401.08812v1) | [2401.08812v1](papers/2401.08812v1.json) | screened |
+| [Hot New Early Dark Energy bridging cosmic gaps: Supercooled phase transition reconciles (stepped) dark radiation solutions to the Hubble tension with BBN](https://arxiv.org/abs/2404.07256v1) | [2404.07256v1](papers/2404.07256v1.json) | screened |
+| [Cosmological probes of Dark Radiation from Neutrino Mixing](https://arxiv.org/abs/2404.16822v1) | [2404.16822v1](papers/2404.16822v1.json) | screened |
+| [Dark Matter-Radiation Scattering Enhances CMB Phase Shift through Dark Matter-loading](https://arxiv.org/abs/2405.08064v2) | [2405.08064v2](papers/2405.08064v2.json) | screened |
 | [Quintessential early dark energy](https://arxiv.org/abs/2408.03229v3) | [2408.03229v3](papers/2408.03229v3.json) | screened |
 | [Thermo-Coupled Early Dark Energy](https://arxiv.org/abs/2411.09747v2) | [2411.09747v2](papers/2411.09747v2.json) | screened |
 | [Interacting Early Dark Energy](https://arxiv.org/abs/2502.08541v2) | [2502.08541v2](papers/2502.08541v2.json) | screened |
 | [DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints](https://arxiv.org/abs/2503.14738v3) | [2503.14738v3](papers/2503.14738v3.json) | screened |
+| [Hot New Early Dark Energy: Dark Radiation Matter Decoupling](https://arxiv.org/abs/2508.03795v2) | [2508.03795v2](papers/2508.03795v2.json) | screened |
+| [Interacting scalar field dark matter and stepped dark radiation in an extended Wess-Zumino dark radiation model](https://arxiv.org/abs/2512.06719v4) | [2512.06719v4](papers/2512.06719v4.json) | screened |
+| [InterACTing dark radiation models after ACT](https://arxiv.org/abs/2512.19633v1) | [2512.19633v1](papers/2512.19633v1.json) | screened |
 | [Partial Relief of the Hubble Tension and a Natural Self-Interacting Dark Matter Candidate From Staged Symmetry Breaking](https://arxiv.org/abs/2602.01543v2) | [2602.01543v2](papers/2602.01543v2.json) | reviewed |
 | [Parameterizations of the Hubble Constant from the Binned Type Ia Supernova Master Sample: Logarithmic versus Power-law Forms](https://arxiv.org/abs/2603.00497v3) | [2603.00497v3](papers/2603.00497v3.json) | screened |
 | [Dispersion Measure Distribution of Unlocalized Fast Radio Bursts as a Probe of the Hubble Constant](https://arxiv.org/abs/2604.03769v2) | [2604.03769v2](papers/2604.03769v2.json) | screened |
 | [Ray-traced weak lensing convergence in screened modified gravity theories](https://arxiv.org/abs/2604.08393v2) | [2604.08393v2](papers/2604.08393v2.json) | screened |
+| [The End of the First Act: Spectral Running, Interacting Dark Radiation, and the Hubble Tension in Light of ACT DR6 Data](https://arxiv.org/abs/2604.26541v1) | [2604.26541v1](papers/2604.26541v1.json) | screened |
+| [Axion dark matter from extended misalignment with a constant-$ω_φ$ pre-oscillatory phase and dark radiation](https://arxiv.org/abs/2604.27954v2) | [2604.27954v2](papers/2604.27954v2.json) | screened |
+| [Recoupled Dark Radiation reconciling CMB and DESI BAO measurements](https://arxiv.org/abs/2605.18716v1) | [2605.18716v1](papers/2605.18716v1.json) | screened |
 | [Holographic Dark Energy with Hubble Radius as an Infrared Cutoff in Einstein-Cartan Gravity](https://arxiv.org/abs/2605.22143v2) | [2605.22143v2](papers/2605.22143v2.json) | screened |
 | [Unifying Early and Late Dark Energy: Dynamical Requirements and Obstructions](https://arxiv.org/abs/2605.26116v2) | [2605.26116v2](papers/2605.26116v2.json) | reviewed |
 | [Interacting dark energy constraints from Fermi GRBs and Pantheon+ SNe Ia with full GRB covariance](https://arxiv.org/abs/2606.00549v2) | [2606.00549v2](papers/2606.00549v2.json) | screened |
 | [Modeling Uncertainties in Modified Gravity Predictions for the Stochastic Gravitational-Wave Background](https://arxiv.org/abs/2607.05331v2) | [2607.05331v2](papers/2607.05331v2.json) | screened |
 | [Updated 1.1% Precision Values of the Hubble Constant with Corrected Pantheon+ and Dark Energy Survey (DES)-DOVEKIE Type Ia Supernovae](https://arxiv.org/abs/2607.24443v2) | [2607.24443v2](papers/2607.24443v2.json) | screened |
 | [Forecasting Coupled Dark Energy Parameters with the One-Loop Galaxy Power Spectrum](https://arxiv.org/abs/2609.14966v3) | [2609.14966v3](papers/2609.14966v3.json) | screened |
+| [Dark Radiation Sticks Together: Dark QCD and the Hubble Tension](https://arxiv.org/abs/2609.16120v1) | [2609.16120v1](papers/2609.16120v1.json) | screened |
 | [Gauss--Bonnet running and the de Sitter saddle of quadratic gravity inflation](https://arxiv.org/abs/2609.24912v1) | [2609.24912v1](papers/2609.24912v1.json) | screened |
 | [CHASE Spectral Survey I: Measuring Contamination in the Color-selected J-region Asymptotic Giant Branch Distance Indicator](https://arxiv.org/abs/2609.25412v1) | [2609.25412v1](papers/2609.25412v1.json) | screened |
 | [Two-rung ladder: $H_0$ from Tip of the Red Giant Branch and geometric anchors alone](https://arxiv.org/abs/2609.29996v1) | [2609.29996v1](papers/2609.29996v1.json) | screened |

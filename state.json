@@ -603,6 +603,94 @@
       "paper_id": "arxiv:1806.10608v1",
       "stage": "read",
       "reason": "Independently identified primary method v1 with cached HTML/PDF. Two targeted source reviews cover selected definitions and printed comparisons only; complete Luna main-text/appendix reading and ordinary full-paper Sol review remain pending. The later letter cites only the base ID."
+    },
+    {
+      "paper_id": "arxiv:2306.12469v2",
+      "stage": "read",
+      "reason": "Useful weak/strong comparative challenge; full reading deferred to prioritize the queued thermal foundation and direct ACT DR6 constraint versus primordial-running comparison within three-paper review ceiling. Sources acquired.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2404.07256v1",
+      "stage": "read",
+      "reason": "Deferred full reading: post-BBN reheating and entropy step bridge; original sources centrally acquired but three-paper review ceiling prioritizes current perturbation challenge.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2404.16822v1",
+      "stage": "read",
+      "reason": "Deferred: independent neutrino-mixing production alternative with explicit background and perturbation implementation.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2512.06719v4",
+      "stage": "read",
+      "reason": "Deferred valuable null: scalar-DM momentum coupling gives marginal S8 relief and poorer combined-prior fit; full conditioning unreviewed.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2508.03795v2",
+      "stage": "read",
+      "reason": "Deferred: hot-NEDE matter decoupling microphysics; present batch first checks foundation and comparative constraints.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.16120v1",
+      "stage": "read",
+      "reason": "Deferred: dark-QCD imperfect-fluid viscosity alternative, quoted posterior conditioned on SH0ES; requires full closure/lineage review.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2604.26541v1",
+      "stage": "read",
+      "reason": "Full reading selected: ACT DR6 dark-radiation limits versus primordial-spectrum running; test degeneracy rather than infer a tension solution.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2605.18716v1",
+      "stage": "read",
+      "reason": "Deferred: neutrino recoupling could distinguish CMB-BAO mismatch from a pure H0 extension; fitted preference is not a measurement.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2604.27954v2",
+      "stage": "read",
+      "reason": "Deferred valuable null: ALP-induced dark radiation does not resolve tensions; distinct production history needs full read.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2512.19633v1",
+      "stage": "read",
+      "reason": "Full reading selected: recent independent ACT DR6 constraint on related WZDR/nuADaM phenomenology; not direct Hot NEDE exclusion.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2405.08064v2",
+      "stage": "read",
+      "reason": "Deferred: acoustic phase shift from dark-matter loading may separate momentum transfer from background radiation density; source scaling domain unreviewed.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
     }
   ],
   "search_history": [

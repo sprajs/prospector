@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2512.19633v1",
+  "arxiv_id": "2512.19633",
+  "version": 1,
+  "title": "InterACTing dark radiation models after ACT",
+  "authors": [
+    "William Cvetko",
+    "Melissa Joseph",
+    "Gustavo Marques-Tavares"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2025-12-22T18:09:55Z",
+  "updated_utc": "2025-12-22T18:09:55Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2512.19633v1",
+    "html": "https://arxiv.org/html/2512.19633v1",
+    "pdf": "https://arxiv.org/pdf/2512.19633v1"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper copying terms not yet checked; public links, metadata and original notes only."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2512.19633v1%2C2405.08064v2&max_results=2",
+      "retrieved_utc": "2026-10-09T17:48:54.794599+00:00",
+      "sha256": "c5352fd3cce59e83f906552b6f5d1498020c8dd8a979bb32a29ec62acf2d949c",
+      "bytes": 5979
+    },
+    {
+      "url": "https://arxiv.org/html/2512.19633v1",
+      "retrieved_utc": "2026-10-09T17:48:58.208382+00:00",
+      "bytes": 281193,
+      "sha256": "421500dc6edcab625777f15d9615a9536f1e9b4971251f2d05a0a187ca0912fe",
+      "role": "html"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2512.19633v1",
+      "retrieved_utc": "2026-10-09T17:49:01.485914+00:00",
+      "bytes": 5876123,
+      "sha256": "de6affb0aac878569d76b999a81853204ae7be9bf22a2ce9c918db8ff051dd71",
+      "role": "pdf"
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/2512.19633v1",
+      "retrieved_utc": "2026-10-09T17:49:04.685366+00:00",
+      "sha256": "744a81a72e6ee49e5a5a5ff2c2e7b4c5f9360d23a66e66ed9a62bd85232d74c7",
+      "bytes": 61865,
+      "derived_from_sha256": "de6affb0aac878569d76b999a81853204ae7be9bf22a2ce9c918db8ff051dd71",
+      "tool": "pdftotext -layout"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "abstract",
+    "reason": "Full reading selected: recent independent ACT DR6 constraint on related WZDR/nuADaM phenomenology; not direct Hot NEDE exclusion."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

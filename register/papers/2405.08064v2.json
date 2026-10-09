@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2405.08064v2",
+  "arxiv_id": "2405.08064",
+  "version": 2,
+  "title": "Dark Matter-Radiation Scattering Enhances CMB Phase Shift through Dark Matter-loading",
+  "authors": [
+    "Subhajit Ghosh",
+    "Daven Wei Ren Ho",
+    "Yuhsin Tsai"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "hep-ph"
+  ],
+  "published_utc": "2024-05-13T18:00:01Z",
+  "updated_utc": "2025-02-11T20:46:34Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2405.08064v2",
+    "html": "https://arxiv.org/html/2405.08064v2",
+    "pdf": "https://arxiv.org/pdf/2405.08064v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper copying terms not yet checked; public links, metadata and original notes only."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2512.19633v1%2C2405.08064v2&max_results=2",
+      "retrieved_utc": "2026-10-09T17:48:54.794599+00:00",
+      "sha256": "c5352fd3cce59e83f906552b6f5d1498020c8dd8a979bb32a29ec62acf2d949c",
+      "bytes": 5979
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Deferred: acoustic phase shift from dark-matter loading may separate momentum transfer from background radiation density; source scaling domain unreviewed."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}
