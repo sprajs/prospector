@@ -23,7 +23,10 @@ fixed-helium, massless/supplied-drag and conditional-H0 identities are preserved
 The [targeted review](../register/reviews/2026-10-09-foundation-primary-source-claims.json)
 records original hashes, complete selected sections, captions-only figure coverage,
 unread scope and requested Sol/high provenance. No ordinary Luna reading stage was
-filled:71 registered papers and63 pending stages remain. Fresh Planck V HTML differs
+filled. At source-review base `16b25a9b6bc6f3a80335161ff2e98fc83619f8fe`,
+the register contained 71 papers and 63 pending stages; this audit preserves that
+snapshot. See the [current register](../register/README.md) for live counts after
+other lanes' subsequent admissions. Fresh Planck V HTML differs
 from the historical receipt by235bytes; both hashes remain. The old bytes were not
 restored for a content diff. Raw copied sources have unresolved redistribution
 rights and stay ignored locally, excluded from Git and S3.
