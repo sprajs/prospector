@@ -1,0 +1,327 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "Prospector public-only immutable assets; isolated from research storage.",
+  "Parameters": {
+    "DeploymentPrincipalArn": {
+      "Type": "String",
+      "Default": "arn:aws:iam::436908790672:user/research-local"
+    }
+  },
+  "Resources": {
+    "AssetsBucket": {
+      "Type": "AWS::S3::Bucket",
+      "DeletionPolicy": "Retain",
+      "UpdateReplacePolicy": "Retain",
+      "Properties": {
+        "BucketName": "prospector-web-assets-436908790672-eu-west-2",
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "IgnorePublicAcls": true,
+          "BlockPublicPolicy": true,
+          "RestrictPublicBuckets": true
+        },
+        "OwnershipControls": {
+          "Rules": [
+            {
+              "ObjectOwnership": "BucketOwnerEnforced"
+            }
+          ]
+        },
+        "VersioningConfiguration": {
+          "Status": "Enabled"
+        },
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": [
+            {
+              "ServerSideEncryptionByDefault": {
+                "SSEAlgorithm": "AES256"
+              }
+            }
+          ]
+        },
+        "CorsConfiguration": {
+          "CorsRules": [
+            {
+              "AllowedOrigins": [
+                "*"
+              ],
+              "AllowedMethods": [
+                "GET",
+                "HEAD"
+              ],
+              "AllowedHeaders": [
+                "*"
+              ],
+              "ExposedHeaders": [
+                "ETag"
+              ],
+              "MaxAge": 86400
+            }
+          ]
+        }
+      }
+    },
+    "OriginAccess": {
+      "Type": "AWS::CloudFront::OriginAccessControl",
+      "Properties": {
+        "OriginAccessControlConfig": {
+          "Name": "prospector-public-assets",
+          "OriginAccessControlOriginType": "s3",
+          "SigningBehavior": "always",
+          "SigningProtocol": "sigv4"
+        }
+      }
+    },
+    "ResponseHeaders": {
+      "Type": "AWS::CloudFront::ResponseHeadersPolicy",
+      "Properties": {
+        "ResponseHeadersPolicyConfig": {
+          "Name": "prospector-public-assets",
+          "CorsConfig": {
+            "AccessControlAllowCredentials": false,
+            "AccessControlAllowHeaders": {
+              "Items": [
+                "*"
+              ]
+            },
+            "AccessControlAllowMethods": {
+              "Items": [
+                "GET",
+                "HEAD",
+                "OPTIONS"
+              ]
+            },
+            "AccessControlAllowOrigins": {
+              "Items": [
+                "*"
+              ]
+            },
+            "AccessControlExposeHeaders": {
+              "Items": [
+                "ETag"
+              ]
+            },
+            "AccessControlMaxAgeSec": 86400,
+            "OriginOverride": true
+          },
+          "CustomHeadersConfig": {
+            "Items": [
+              {
+                "Header": "Timing-Allow-Origin",
+                "Value": "*",
+                "Override": true
+              }
+            ]
+          },
+          "SecurityHeadersConfig": {
+            "ContentTypeOptions": {
+              "Override": true
+            },
+            "StrictTransportSecurity": {
+              "AccessControlMaxAgeSec": 31536000,
+              "Override": true
+            }
+          }
+        }
+      }
+    },
+    "Distribution": {
+      "Type": "AWS::CloudFront::Distribution",
+      "Properties": {
+        "DistributionConfig": {
+          "Enabled": true,
+          "Comment": "Prospector public register assets only",
+          "PriceClass": "PriceClass_100",
+          "HttpVersion": "http2and3",
+          "IPV6Enabled": true,
+          "Origins": [
+            {
+              "Id": "assets",
+              "DomainName": {
+                "Fn::GetAtt": [
+                  "AssetsBucket",
+                  "RegionalDomainName"
+                ]
+              },
+              "OriginAccessControlId": {
+                "Ref": "OriginAccess"
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              }
+            }
+          ],
+          "DefaultCacheBehavior": {
+            "TargetOriginId": "assets",
+            "ViewerProtocolPolicy": "redirect-to-https",
+            "AllowedMethods": [
+              "GET",
+              "HEAD",
+              "OPTIONS"
+            ],
+            "CachedMethods": [
+              "GET",
+              "HEAD",
+              "OPTIONS"
+            ],
+            "Compress": true,
+            "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
+            "ResponseHeadersPolicyId": {
+              "Ref": "ResponseHeaders"
+            }
+          },
+          "ViewerCertificate": {
+            "CloudFrontDefaultCertificate": true
+          },
+          "CustomErrorResponses": [
+            {
+              "ErrorCode": 403,
+              "ErrorCachingMinTTL": 0
+            },
+            {
+              "ErrorCode": 404,
+              "ErrorCachingMinTTL": 0
+            }
+          ]
+        }
+      }
+    },
+    "BucketPolicy": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": {
+          "Ref": "AssetsBucket"
+        },
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Sid": "CloudFrontReadPublicAssets",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "cloudfront.amazonaws.com"
+              },
+              "Action": "s3:GetObject",
+              "Resource": "arn:aws:s3:::prospector-web-assets-436908790672-eu-west-2/assets/*",
+              "Condition": {
+                "StringEquals": {
+                  "AWS:SourceArn": {
+                    "Fn::Sub": "arn:aws:cloudfront::${AWS::AccountId}:distribution/${Distribution}"
+                  }
+                }
+              }
+            },
+            {
+              "Sid": "RequireTLS",
+              "Effect": "Deny",
+              "Principal": "*",
+              "Action": "s3:*",
+              "Resource": [
+                "arn:aws:s3:::prospector-web-assets-436908790672-eu-west-2",
+                "arn:aws:s3:::prospector-web-assets-436908790672-eu-west-2/*"
+              ],
+              "Condition": {
+                "Bool": {
+                  "aws:SecureTransport": "false"
+                }
+              }
+            },
+            {
+              "Sid": "RequireCreateOnlyAssets",
+              "Effect": "Deny",
+              "Principal": "*",
+              "Action": "s3:PutObject",
+              "Resource": "arn:aws:s3:::prospector-web-assets-436908790672-eu-west-2/assets/*",
+              "Condition": {
+                "Null": {
+                  "s3:if-none-match": "true"
+                },
+                "Bool": {
+                  "s3:ObjectCreationOperation": "true"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "DeploymentRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "RoleName": "prospector-assets-deployer",
+        "MaxSessionDuration": 3600,
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": {
+                  "Ref": "DeploymentPrincipalArn"
+                }
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Policies": [
+          {
+            "PolicyName": "PublicAssetsOnly",
+            "PolicyDocument": {
+              "Version": "2012-10-17",
+              "Statement": [
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "s3:GetObject",
+                    "s3:GetObjectVersion",
+                    "s3:PutObject"
+                  ],
+                  "Resource": "arn:aws:s3:::prospector-web-assets-436908790672-eu-west-2/assets/*"
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": "s3:ListBucket",
+                  "Resource": "arn:aws:s3:::prospector-web-assets-436908790672-eu-west-2",
+                  "Condition": {
+                    "StringLike": {
+                      "s3:prefix": [
+                        "assets/",
+                        "assets/*"
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Outputs": {
+    "Bucket": {
+      "Value": {
+        "Ref": "AssetsBucket"
+      }
+    },
+    "DistributionId": {
+      "Value": {
+        "Ref": "Distribution"
+      }
+    },
+    "AssetOrigin": {
+      "Value": {
+        "Fn::Sub": "https://${Distribution.DomainName}"
+      }
+    },
+    "DeploymentRoleArn": {
+      "Value": {
+        "Fn::GetAtt": [
+          "DeploymentRole",
+          "Arn"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "prospector-public-assets-config/v1",
+  "bucket": "prospector-web-assets-436908790672-eu-west-2",
+  "region": "eu-west-2",
+  "origin": "https://d2ww54nx7x5je4.cloudfront.net",
+  "distribution_id": "E1YM7UAK809FWK",
+  "deployment_role_arn": "arn:aws:iam::436908790672:role/prospector-assets-deployer",
+  "stack_name": "prospector-site-assets"
+}
