@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "search_id": "2026-10-09-timescape-focused-recent",
+  "lane": "inhomogeneity",
+  "work_mode": "focused_user_objective",
+  "status": "completed",
+  "requested_utc": "2026-10-09T17:46:34.311175+00:00",
+  "request": {
+    "query": "(ti:timescape OR abs:timescape)",
+    "normalized_query": "(ti:timescape OR abs:timescape)",
+    "order": "lastUpdatedDate",
+    "direction": "descending",
+    "start": 0,
+    "limit": 20,
+    "window_sha256": "9cd5c31f035f4c8ddfb78a3db43ecb15de5920d4b5f23e0f6c2bd0a0e1b9c3bf"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Explicit new timescape search. Existing deferred CMB source selected; unrelated queues untouched. Wider latest-update page than earlier title-only five-hit window; no exhaustive coverage.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Atimescape+OR+abs%3Atimescape%29&start=0&max_results=20&sortBy=lastUpdatedDate&sortOrder=descending",
+    "retrieved_utc": "2026-10-09T17:46:34.311175+00:00",
+    "sha256": "15f85bbb98f0bc9e1ea16056af6e658d7159adec03fcd95d99b8df9e90e2ad5e",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/timescape-20261009/acquisition/objects/15f85bbb98f0bc9e1ea16056af6e658d7159adec03fcd95d99b8df9e90e2ad5e.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:2412.15143v1",
+      "position": 0,
+      "disposition": "selected",
+      "reason": "Pinned version admitted for focused timescape mechanisms, observational-method dispute or cross-probe frontier.",
+      "title": "Supernovae evidence for foundational change to cosmological models",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2311.01438v2",
+      "position": 1,
+      "disposition": "selected",
+      "reason": "Pinned version admitted for focused timescape mechanisms, observational-method dispute or cross-probe frontier.",
+      "title": "Cosmological foundations revisited with Pantheon+",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2403.11997v2",
+      "position": 2,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screen: related lead outside this coherent six-read batch; retain snapshot for future screening without requery.",
+      "title": "Revisiting the effect of lens mass models in cosmological applications of strong gravitational lensing",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2404.02129v1",
+      "position": 3,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screen: related lead outside this coherent six-read batch; retain snapshot for future screening without requery.",
+      "title": "Solution to the cosmological constant problem",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1902.07915v2",
+      "position": 4,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screen: related lead outside this coherent six-read batch; retain snapshot for future screening without requery.",
+      "title": "Dynamical spatial curvature as a fit to type Ia supernovae",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1812.01586v2",
+      "position": 5,
+      "disposition": "selected",
+      "reason": "Pinned version admitted for focused timescape mechanisms, observational-method dispute or cross-probe frontier.",
+      "title": "Comment on \"Hubble flow variations as a test for inhomogeneous cosmology\"",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1811.11963v2",
+      "position": 6,
+      "disposition": "selected",
+      "reason": "Pinned version admitted for focused timescape mechanisms, observational-method dispute or cross-probe frontier.",
+      "title": "Baryon acoustic oscillation methods for generic curvature: Application to the SDSS-III Baryon Oscillation Spectroscopic Survey",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1811.11976v3",
+      "position": 7,
+      "disposition": "selected",
+      "reason": "Pinned version admitted for focused timescape mechanisms, observational-method dispute or cross-probe frontier.",
+      "title": "Hubble flow variations as a test for inhomogeneous cosmology",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1706.07236v2",
+      "position": 8,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screen: related lead outside this coherent six-read batch; retain snapshot for future screening without requery.",
+      "title": "Apparent cosmic acceleration from type Ia supernovae",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1311.3787v2",
+      "position": 9,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screen: related lead outside this coherent six-read batch; retain snapshot for future screening without requery.",
+      "title": "Cosmic structure, averaging and dark energy",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1410.3470v3",
+      "position": 10,
+      "disposition": "duplicate",
+      "reason": "Exact version already registered; CMB selected for bounded full reading, other pre-existing stages retained.",
+      "title": "Cosmic microwave background anisotropies in the timescape cosmology",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1310.3124v1",
+      "position": 11,
+      "disposition": "duplicate",
+      "reason": "Exact version already registered; CMB selected for bounded full reading, other pre-existing stages retained.",
+      "title": "Timescape realized",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1306.3208v2",
+      "position": 12,
+      "disposition": "duplicate",
+      "reason": "Exact version already registered; CMB selected for bounded full reading, other pre-existing stages retained.",
+      "title": "Timescape cosmology with radiation fluid",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1211.1926v1",
+      "position": 13,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screen: related lead outside this coherent six-read batch; retain snapshot for future screening without requery.",
+      "title": "Observational Aspects of an Inhomogeneous Cosmology",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1107.5596v2",
+      "position": 14,
+      "disposition": "duplicate",
+      "reason": "Exact version already registered; CMB selected for bounded full reading, other pre-existing stages retained.",
+      "title": "Gamma ray burst distances and the timescape cosmology",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1106.1693v1",
+      "position": 15,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screen: related lead outside this coherent six-read batch; retain snapshot for future screening without requery.",
+      "title": "What is dust? - Physical foundations of the averaging problem in cosmology",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1102.2045v1",
+      "position": 16,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screen: related lead outside this coherent six-read batch; retain snapshot for future screening without requery.",
+      "title": "Gravitational energy as dark energy: Cosmic structure and apparent acceleration",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1009.5855v2",
+      "position": 17,
+      "disposition": "duplicate",
+      "reason": "Exact version already registered; CMB selected for bounded full reading, other pre-existing stages retained.",
+      "title": "Supernova tests of the timescape cosmology",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:0912.5236v1",
+      "position": 18,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screen: related lead outside this coherent six-read batch; retain snapshot for future screening without requery.",
+      "title": "Gravitational energy as dark energy: Average observational quantities",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:0912.4563v1",
+      "position": 19,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screen: related lead outside this coherent six-read batch; retain snapshot for future screening without requery.",
+      "title": "From time to timescape - Einstein's unfinished revolution",
+      "decision_history": []
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": "2026-10-09-timescape-acquisition",
+    "query_id": "recent-timescape"
+  }
+}

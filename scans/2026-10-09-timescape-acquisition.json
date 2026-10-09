@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-09-timescape-acquisition",
+  "status": "completed",
+  "stage": "acquisition_checkpoint_only_reading_and_science_review_pending",
+  "started_utc": "2026-10-09T17:46:34.311175+00:00",
+  "completed_utc": "2026-10-09T17:54:30.516615+00:00",
+  "lane": "inhomogeneity",
+  "work_mode": "user_focused_timescape",
+  "registered_papers": [
+    "arxiv:1811.11976v3",
+    "arxiv:2412.15143v1",
+    "arxiv:1812.01586v2",
+    "arxiv:0909.0749v2",
+    "arxiv:0709.0732v2",
+    "arxiv:1811.11963v2",
+    "arxiv:2311.01438v2",
+    "arxiv:gr-qc/0702082v4",
+    "arxiv:1410.3470v3",
+    "arxiv:2511.17160v2"
+  ],
+  "new_versions": [
+    "arxiv:1811.11976v3",
+    "arxiv:2412.15143v1",
+    "arxiv:1812.01586v2",
+    "arxiv:0909.0749v2",
+    "arxiv:0709.0732v2",
+    "arxiv:1811.11963v2",
+    "arxiv:2311.01438v2",
+    "arxiv:gr-qc/0702082v4",
+    "arxiv:2511.17160v2"
+  ],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "idea_ids": [],
+  "design_ids": [],
+  "queries": [
+    {
+      "query": "(ti:timescape OR abs:timescape)",
+      "order": "lastUpdatedDate",
+      "direction": "descending",
+      "start": 0,
+      "limit": 20,
+      "receipt": {
+        "label": "search",
+        "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Atimescape+OR+abs%3Atimescape%29&start=0&max_results=20&sortBy=lastUpdatedDate&sortOrder=descending",
+        "retrieved_utc": "2026-10-09T17:46:34.311175+00:00",
+        "timeout_seconds": 20,
+        "byte_limit": 10485760,
+        "http_status": 200,
+        "final_url": "https://export.arxiv.org/api/query?search_query=%28ti%3Atimescape+OR+abs%3Atimescape%29&start=0&max_results=20&sortBy=lastUpdatedDate&sortOrder=descending",
+        "content_type": "application/atom+xml; charset=utf-8",
+        "bytes": 46977,
+        "sha256": "15f85bbb98f0bc9e1ea16056af6e658d7159adec03fcd95d99b8df9e90e2ad5e",
+        "path": ".work/timescape-20261009/acquisition/objects/15f85bbb98f0bc9e1ea16056af6e658d7159adec03fcd95d99b8df9e90e2ad5e.xml",
+        "elapsed_seconds": 0.328
+      },
+      "result_ids": [
+        "arxiv:2412.15143v1",
+        "arxiv:2311.01438v2",
+        "arxiv:2403.11997v2",
+        "arxiv:2404.02129v1",
+        "arxiv:1902.07915v2",
+        "arxiv:1812.01586v2",
+        "arxiv:1811.11963v2",
+        "arxiv:1811.11976v3",
+        "arxiv:1706.07236v2",
+        "arxiv:1311.3787v2",
+        "arxiv:1410.3470v3",
+        "arxiv:1310.3124v1",
+        "arxiv:1306.3208v2",
+        "arxiv:1211.1926v1",
+        "arxiv:1107.5596v2",
+        "arxiv:1106.1693v1",
+        "arxiv:1102.2045v1",
+        "arxiv:1009.5855v2",
+        "arxiv:0912.5236v1",
+        "arxiv:0912.4563v1"
+      ]
+    },
+    {
+      "query": "(ti:supernova OR abs:supernova) AND (ti:selection OR abs:selection) AND (au:Rubin OR au:Hayden)",
+      "order": "relevance",
+      "direction": "descending",
+      "start": 0,
+      "limit": 10,
+      "receipt": {
+        "label": "search",
+        "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Asupernova+OR+abs%3Asupernova%29+AND+%28ti%3Aselection+OR+abs%3Aselection%29+AND+%28au%3ARubin+OR+au%3AHayden%29&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+        "retrieved_utc": "2026-10-09T17:49:07.269835+00:00",
+        "timeout_seconds": 20,
+        "byte_limit": 10485760,
+        "http_status": 200,
+        "final_url": "https://export.arxiv.org/api/query?search_query=%28ti%3Asupernova+OR+abs%3Asupernova%29+AND+%28ti%3Aselection+OR+abs%3Aselection%29+AND+%28au%3ARubin+OR+au%3AHayden%29&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+        "content_type": "application/atom+xml; charset=utf-8",
+        "bytes": 43410,
+        "sha256": "a7128f0656b288f196054dd4fa373d95595620526fb9847392355bbebca06f0b",
+        "path": ".work/timescape-20261009/acquisition/objects/a7128f0656b288f196054dd4fa373d95595620526fb9847392355bbebca06f0b.xml",
+        "elapsed_seconds": 0.401
+      },
+      "result_ids": [
+        "arxiv:1507.01602v4",
+        "arxiv:1810.09476v1",
+        "arxiv:1008.4797v2",
+        "arxiv:1001.3428v2",
+        "arxiv:1701.01422v1",
+        "arxiv:2609.39804v1",
+        "arxiv:1412.6501v1",
+        "arxiv:2311.12098v4",
+        "arxiv:2403.05620v2",
+        "arxiv:2306.17226v1"
+      ]
+    },
+    {
+      "query": "(ti:backreaction OR ti:averaging) AND (au:Green OR au:Wald OR au:Buchert)",
+      "order": "relevance",
+      "direction": "descending",
+      "start": 0,
+      "limit": 10,
+      "receipt": {
+        "label": "search",
+        "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Abackreaction+OR+ti%3Aaveraging%29+AND+%28au%3AGreen+OR+au%3AWald+OR+au%3ABuchert%29&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+        "retrieved_utc": "2026-10-09T17:49:10.770528+00:00",
+        "timeout_seconds": 20,
+        "byte_limit": 10485760,
+        "http_status": 200,
+        "final_url": "https://export.arxiv.org/api/query?search_query=%28ti%3Abackreaction+OR+ti%3Aaveraging%29+AND+%28au%3AGreen+OR+au%3AWald+OR+au%3ABuchert%29&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+        "content_type": "application/atom+xml; charset=utf-8",
+        "bytes": 20683,
+        "sha256": "ead5997be5cbe29329092bc8f5c1c79c2bc96b5807d0a6dd95f9cdeab717a9ec",
+        "path": ".work/timescape-20261009/acquisition/objects/ead5997be5cbe29329092bc8f5c1c79c2bc96b5807d0a6dd95f9cdeab717a9ec.xml",
+        "elapsed_seconds": 0.265
+      },
+      "result_ids": [
+        "arxiv:1506.06452v2",
+        "arxiv:1304.2318v2",
+        "arxiv:1601.06789v1",
+        "arxiv:1811.01374v2",
+        "arxiv:1704.00703v3",
+        "arxiv:gr-qc/0612166v2",
+        "arxiv:astro-ph/9907137v1",
+        "arxiv:1112.5335v2",
+        "arxiv:1805.10455v2",
+        "arxiv:0808.1161v2"
+      ]
+    }
+  ],
+  "known_id_lookups": [
+    {
+      "label": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=gr-qc%2F0702082%2C0709.0732%2C0909.0749%2C2412.15143v1%2C2311.01438v2%2C1811.11976v3%2C1812.01586v2%2C1410.3470v3%2C1811.11963v2&max_results=9",
+      "retrieved_utc": "2026-10-09T17:47:17.121175+00:00",
+      "timeout_seconds": 20,
+      "byte_limit": 10485760,
+      "http_status": 200,
+      "final_url": "https://export.arxiv.org/api/query?id_list=gr-qc%2F0702082%2C0709.0732%2C0909.0749%2C2412.15143v1%2C2311.01438v2%2C1811.11976v3%2C1812.01586v2%2C1410.3470v3%2C1811.11963v2&max_results=9",
+      "content_type": "application/atom+xml; charset=utf-8",
+      "bytes": 23697,
+      "sha256": "b1c5e9cab57effac64776b1b3187c686eab2452a9cbbac8521a58379ea2dbe10",
+      "path": ".work/timescape-20261009/acquisition/objects/b1c5e9cab57effac64776b1b3187c686eab2452a9cbbac8521a58379ea2dbe10.xml",
+      "elapsed_seconds": 0.261
+    },
+    {
+      "label": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2511.17160%2C1610.08972&max_results=2",
+      "retrieved_utc": "2026-10-09T17:51:27.939303+00:00",
+      "timeout_seconds": 20,
+      "byte_limit": 10485760,
+      "http_status": 200,
+      "final_url": "https://export.arxiv.org/api/query?id_list=2511.17160%2C1610.08972&max_results=2",
+      "content_type": "application/atom+xml; charset=utf-8",
+      "bytes": 6046,
+      "sha256": "c6c94817b532e583c85e5efa5a4ee874168addaafe64b1a62e500c02e8d15045",
+      "path": ".work/timescape-20261009/acquisition/objects/c6c94817b532e583c85e5efa5a4ee874168addaafe64b1a62e500c02e8d15045.xml",
+      "elapsed_seconds": 0.236
+    }
+  ],
+  "evidence_custody": {
+    "manifest_format": "research-named-manifest/v1",
+    "collection": "prospector/reviews/2026-10-09-timescape-focused",
+    "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/2026-10-09-timescape-focused/versions/c7490e703eb032be20b4d15ae4b49da18d0c568cf5e91df8580f69cb9c3582ee/manifest.json",
+    "version_id": "H6JIA9XZUmZwMcsHU2SW3wzfkm8ERXXM",
+    "sha256": "f740e271b572a32a424dc11136086156dfd85fa790923b2171d3d812bae2f875",
+    "bytes": 34907
+  },
+  "coverage_gaps": [
+    "Three bounded windows,40 hits; no exhaustive or gap-free claim.",
+    "Six acquired papers await complete Luna reading and three selected Sol reviews.",
+    "Buchert/Green-Wald method papers and SN-selection sources are saved frontier, not inferred direct tests of timescape.",
+    "No numerical experiments or current-data joint fit.",
+    "Pinned full-paper source caches are excluded from S3 selection as redownloadable upstream inputs; hashes and URLs preserved, local copies retained."
+  ],
+  "coordination": {
+    "owner_thread": "01a121c4-b9bb-77d3-8a9a-f4c498dad994",
+    "integration_owner": "01a121c3-1fb1-7e20-97b4-25853865c1a2",
+    "worker_allocation": 1
+  },
+  "bibliometric_context": {
+    "snapshots": 9,
+    "normalized_ranks": null,
+    "author_h_indices": null,
+    "note": "INSPIRE provider base-work visibility only; no cohort population or verified author metrics."
+  }
+}

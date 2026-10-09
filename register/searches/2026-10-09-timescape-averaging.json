@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "search_id": "2026-10-09-timescape-averaging",
+  "lane": "inhomogeneity",
+  "work_mode": "focused_user_objective",
+  "status": "completed",
+  "requested_utc": "2026-10-09T17:49:10.770528+00:00",
+  "request": {
+    "query": "(ti:backreaction OR ti:averaging) AND (au:Green OR au:Wald OR au:Buchert)",
+    "normalized_query": "(ti:backreaction OR ti:averaging) AND (au:Green OR au:Wald OR au:Buchert)",
+    "order": "relevance",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "98c75fd8ef6526cf3ae0d8507ccb089ac205eda161bb41065bcac0776068c17f"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Cross-terminology methodological search requested for timescape assessment; saved relevant methods as future frontier beyond six-paper read ceiling.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Abackreaction+OR+ti%3Aaveraging%29+AND+%28au%3AGreen+OR+au%3AWald+OR+au%3ABuchert%29&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+    "retrieved_utc": "2026-10-09T17:49:10.770528+00:00",
+    "sha256": "ead5997be5cbe29329092bc8f5c1c79c2bc96b5807d0a6dd95f9cdeab717a9ec",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/timescape-20261009/acquisition/objects/ead5997be5cbe29329092bc8f5c1c79c2bc96b5807d0a6dd95f9cdeab717a9ec.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:1506.06452v2",
+      "position": 0,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "Comments on Backreaction",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1304.2318v2",
+      "position": 1,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "Examples of backreaction of small scale inhomogeneities in cosmology",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1601.06789v1",
+      "position": 2,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "A Simple, Heuristic Derivation of our \"No Backreaction\" Results",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1811.01374v2",
+      "position": 3,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "On the covariance of scalar averaging and backreaction in relativistic inhomogeneous cosmology",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1704.00703v3",
+      "position": 4,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "On Backreaction in Newtonian cosmology",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:gr-qc/0612166v2",
+      "position": 5,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "Backreaction Issues in Relativistic Cosmology and the Dark Energy Debate",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9907137v1",
+      "position": 6,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "Backreaction in Cosmological Models",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1112.5335v2",
+      "position": 7,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "Backreaction in late-time cosmology",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1805.10455v2",
+      "position": 8,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "Cosmological backreaction and its dependence on spacetime foliation",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:0808.1161v2",
+      "position": 9,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "Testing backreaction effects with observations",
+      "decision_history": []
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": "2026-10-09-timescape-acquisition",
+    "query_id": "averaging"
+  }
+}

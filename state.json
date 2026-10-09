@@ -747,6 +747,78 @@
       "prospect_ids": [
         "stochastic-vacuum"
       ]
+    },
+    {
+      "paper_id": "arxiv:1811.11976v3",
+      "stage": "read",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2412.15143v1",
+      "stage": "read",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1812.01586v2",
+      "stage": "read",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:0909.0749v2",
+      "stage": "acquire",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:0709.0732v2",
+      "stage": "read",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1811.11963v2",
+      "stage": "acquire",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2311.01438v2",
+      "stage": "read",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:gr-qc/0702082v4",
+      "stage": "acquire",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2511.17160v2",
+      "stage": "acquire",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
     }
   ],
   "search_history": [
