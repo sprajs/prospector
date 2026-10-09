@@ -36,10 +36,14 @@ identity. Keep its verified catalog pin; explicit failure is not readiness.
 
 ## Continue when the user says “run more”
 
-Read `state.json`, the latest `scans/` record, the register and graph. Resume
-pending screens, acquisitions, reads and reviews before new discovery. Use the
-least recently searched topic lane; alternate fresh work with foundations,
-citation leads and challenges. Do not repeat questions already settled here.
+Read [the sole active roadmap](docs/roadmap.md), its factual [gaps](docs/gaps.md),
+`state.json`, the latest relevant `scans/` record, the register and graph. The
+roadmap owns priority; historical checkpoint/feedback next-action text and
+least-recent lane order supply evidence, not competing plans. Resume
+pending screens, acquisitions, reads and reviews before new discovery. For
+discovery within a roadmap-selected programme, use the least recently searched
+relevant topic lane; alternate fresh work with foundations, citation leads and
+challenges. Do not repeat questions already settled here.
 
 Use `scripts/crawl.py status` and the canonical `register/searches/` receipts
 before searching. Resume undecided saved results without fetching that window
@@ -62,7 +66,9 @@ external messages. Ready PR merges follow the standing authorization below.
 ## Use the requested Codex agents
 
 Use actual Codex subagents. **Luna is `gpt-6-luna`, xhigh reasoning; scientific
-review is exactly `gpt-6.1-sol`, high reasoning.** No silent Astra/model substitution.
+review is exactly `gpt-6.1-sol`, high reasoning.** No silent Astra/model
+substitution. An explicit user-requested Astra scientific planning consultation is permitted within that scope; it does not replace
+ordinary Luna readings or Sol acceptance gates.
 If unavailable, preserve the blocked stage and report it.
 
 Select the model explicitly with fresh or small context; full-history forks can
@@ -224,8 +230,8 @@ and interpretation qualification separate.
 For coordinated work with Reproducible and Irreducible, appoint one integration
 owner per repository and one coordinating reviewer. Pass exact candidate/source
 hashes and repository revisions; each consumer explicitly accepts the handoff.
-Share the live resource budget across chats and worktrees: the baseline audit
-allows four local compiler/compute jobs total, with at most one light job here.
+Share the live resource budget across chats and worktrees: the shared roadmap
+programme allows four local compiler/compute jobs total, with at most one light job here.
 Reading and independent review need no compiler jobs. Resource ceilings do not
 authorize extra worker launches. Scientific source review, consumer numerical
 acceptance, PR review and exact-main CI are separate gates. A coordinated task

@@ -17,10 +17,11 @@ that compatibility.
 
 ## Continue the research
 
-Open this checkout in Codex and say **“run more.”** Codex resumes the saved queue,
-acquires exact arXiv versions and coordinates actual subagents: `gpt-6-luna` reads
-papers; `gpt-6.1-sol` checks their science, baselines and relationships. Each bounded
-batch saves its evidence and updates the register and public site.
+Use the [sole active roadmap](docs/roadmap.md) for current priorities and the
+[factual gap review](docs/gaps.md) for evidence and limits. Saying **“run more”**
+resumes a bounded task from that plan with the saved paper queue. Actual
+`gpt-6-luna` readers and `gpt-6.1-sol` reviewers follow AGENTS.md; source review,
+consumer acceptance and scientific qualification remain distinct.
 
 The [crawl ledger](docs/crawling.md) remembers exact search windows and every
 result's disposition. Git JSON records are authoritative and accept ordinary
@@ -94,6 +95,6 @@ ending work, and evict local copies only after exact-version byte verification.
 Read the [cloud startup guide](https://github.com/sprajs/reproducible/blob/main/docs/cloud-startup.md)
 for the bounded shared-catalog readiness check; Reproducible owns the startup script.
 
-The [shared-input priority checkpoint](docs/2026-10-08-shared-input-priorities.md)
-records the current restored-input routing dependency and next bounded comparison;
-its runtime failure adds no new numerical or S3 qualification.
+The [shared-input checkpoint](docs/2026-10-08-shared-input-priorities.md) and
+[observed portability evidence](docs/2026-10-09-observed-portability-priorities.md)
+preserve historical attempts and failures. Current work follows the roadmap.

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "last_completed_scan": "2026-10-01-resumable-modified-gravity",
-  "next_lane": "interacting-sectors",
+  "next_lane": "baseline-reference",
   "batch_limits": {
     "new_versions": 20,
     "luna_full_reads": 6,
@@ -57,6 +57,11 @@
       "id": "early-energy",
       "description": "Early dark energy and pre-recombination physics",
       "last_searched_utc": "2026-10-01T00:43:43.823637+00:00"
+    },
+    {
+      "id": "baseline-reference",
+      "description": "Source-defined conventional reference and exact comparison conditioning; roadmap M0",
+      "last_searched_utc": null
     }
   ],
   "queue": [
@@ -810,7 +815,7 @@
     "Raw sources and working files stay inside ignored Prospector/.work.",
     "Blocked numerical handoffs need a separately scoped implementation task."
   ],
-  "next_work_mode": "fresh_after_queued_reads",
+  "next_work_mode": "roadmap_M0_source_defined_reference",
   "coordinated_baseline": {
     "state": "limited_candidate_ready_for_consumer_review",
     "engine_revision": "db4765838fc404a489a0115ee69713f2ea6cd2f4",
@@ -832,7 +837,7 @@
     "adapter_revision": "98cadbb3e3bf59f5933ef977133b64453c968c0a",
     "request_sha256": "5d67253917a35031b69b85272fe381da8c946007da5615300a3dcf3381f12bed"
   },
-  "continuation_note": "Selected NEXT-13 pre-reconstruction LOWZ P0/P2 source target: primary discrete window action and historical fit cuts checked;6/106 diagnostic diagonal matches do not admit covariance axes. Next action is exact producer/source covariance/error and cut-map reconciliation, or retained refusal. CLASS galaxy/RSD/window/statistical-model adapters remain blocked. Ordinary queue preserved plus one new pending full read; all19 remains OPEN.",
+  "continuation_note": "Current priorities are solely docs/roadmap.md M0–M6. Historical LOWZ/all19/source and consumer feedback remain evidence; all 63 paper queue entries and immutable scientific pins are preserved.",
   "last_completed_source_audit": "2026-10-08-constant-w-source-and-feedback",
   "coordinated_source_continuation": {
     "scan_id": "2026-10-03-ede-method-printed-source-checkpoint",
@@ -978,7 +983,7 @@
     "candidate_sha256": "ea15c707b8bbfa53e2b50bab095f5729aec6a99334388bd0fc4cf061e0442414",
     "handoff_revision": "99673d5ddb457732c1660a586305eb8b98de5eb6",
     "consumer_repository": "sprajs/reproducible",
-    "next_action": "Preserve worse chosen-fluid conditional fit; review source multi-coordinate/prior conditioning and separate SN covariance/runtime conventions before specifying another bounded target.",
+    "next_action": "Route current work through docs/roadmap.md M0/M1; retain this conditional negative result and exact consumer evidence as historical feedback.",
     "ordinary_queue_preserved": true,
     "all19_scope_gates_preserved": true,
     "no_automatic_execution": true,
@@ -989,5 +994,11 @@
       "sha256": "567771a03e5ad042bc336dcf450afbcace8115c42d5caf4154e16221b8edec3d"
     }
   },
-  "last_completed_experiment_feedback": "2026-10-08-conditional-lcdm-constant-w-execution-feedback"
+  "last_completed_experiment_feedback": "2026-10-08-conditional-lcdm-constant-w-execution-feedback",
+  "active_roadmap": {
+    "path": "docs/roadmap.md",
+    "programme": "coordinated-science-reset",
+    "milestone": "M0",
+    "scope": "Source-defined reference and likelihood/prior/dependence contract; queue preserved; no automatic execution"
+  }
 }

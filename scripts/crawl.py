@@ -338,8 +338,9 @@ def status(root=ROOT):
     connection.close()
     return dict(queue=queue(root), lanes_least_recent_first=lanes, dispositions=counts,
                 experiment_priorities=experiment_priorities,
+                active_roadmap=state.get('active_roadmap'),
                 next_work_mode=state.get('next_work_mode'),
-                limits='Queue before discovery; experiment findings suggest bounded work without changing queues or paper stages. Lane ordering and counts are navigation, not scientific scores.')
+                limits='The active roadmap owns current priority; experiment findings are historical evidence. Preserve queue before discovery. Lane ordering and counts are navigation, not scientific scores.')
 
 
 def screen(search_id, paper_id, disposition, reason, root=ROOT):

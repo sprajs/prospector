@@ -1,5 +1,7 @@
 # Chaplygin background and isotropic Plummer source dossiers
 
+This is frozen source evidence. Current scheduling follows [the sole roadmap](roadmap.md).
+
 This follow-up to the [native model dossiers](native-model-source-dossiers-2026-10-09.md)
 checks selected source equations and declares independent physical derivations.
 It adds no full paper read, registered paper stage, graph edge or candidate

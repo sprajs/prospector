@@ -1,4 +1,8 @@
-# Observed portability and comparison priorities
+# Observed portability and comparison evidence
+
+Current scheduling follows [the sole roadmap](roadmap.md); earlier operative
+priority text is superseded. Git at `b4384c539652e7e7b6e5a426a13ce542347e0321`
+preserves that text.
 
 This consumer-informed checkpoint adds no paper reading, source qualification,
 graph acceptance or candidate promotion. Preserve the research queue and all
@@ -39,18 +43,18 @@ CLASS `0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18` and native SDK
 `7a006f81a36a70cdcd3187a1298a8a1ea2cf3f39` retain their historical roles;
 advancing main does not repin these experiments.
 
-## Observed failures and next actions
+## Observed failures and unresolved dependencies
 
-| Capability | Observed failure or prerequisite | Owner | Scientific impact and next action |
+| Capability | Observed failure or prerequisite | Owner | Unresolved scope |
 |---|---|---|---|
-| Numerical sensitivity | At fixed-w H0=75, changed CLASS precision shifted separate Planck score by +0.2996146, exceeding declared 0.2 budget | Reproducible | Retain failed numerical acceptance; study parameter-dependent CMB precision before larger comparisons |
-| Spectrum comparison | Four common P(k) axes provide partial coverage; integration case has zero common axes and is unassessed | Reproducible | Preserve correction/refusal; define comparable grids before interpreting spectrum sensitivity |
-| Attempt provenance | Sensitivity attempt 001 failed in harness before CLASS; corrected 002 preserves numerical failures | Reproducible | Retain both attempts; harness failure is not model failure |
-| Calibrated SN | Raw covariance/runtime convention and calibrated residual/selection law unresolved; averaged repair separate | Prospector, Reproducible | Resolve exact matrix/caller/rank/calibrator ancestry or retain refusal; no combined SN score |
-| Lensing reconstruction | Primary official likelihood and lensed CLASS spectra do not supply reconstruction likelihood | Prospector, Reproducible | Acquire exact reconstruction likelihood, response/noise/binning and dependence contracts |
-| Galaxy clustering/RSD/AP/window | LOWZ covariance candidate axes match only 6/106 error-square intervals; cut map unresolved | Prospector, Reproducible | Producer axes/error/cut evidence precedes scoring; then source galaxy/nuisance/AP/window and finite-mock adapters |
-| Broader inference | H0-only fixed-state target; priors and cross-probe ancestry incomplete | Prospector, Reproducible | Specify identifiable parameter/prior/calibration/dependence contract before joint inference |
-| Native physics | Supplied-drag massless/native controls differ from full CLASS species/perturbations | Irreducible, Prospector | Keep approximation identities and lost scope; never substitute unsupported cosmologies |
+| Numerical sensitivity | At fixed-w H0=75, changed CLASS precision shifted separate Planck score by +0.2996146, exceeding declared 0.2 budget | Reproducible | Parameter-dependent CMB precision remains unaccepted in the tested alternative domain |
+| Spectrum comparison | Four common P(k) axes provide partial coverage; integration case has zero common axes and is unassessed | Reproducible | Unmatched-grid spectrum sensitivity is unassessed |
+| Attempt provenance | Sensitivity attempt 001 failed in harness before CLASS; corrected 002 preserves numerical failures | Reproducible | Harness failure and subsequent numerical failure are distinct attempts |
+| Calibrated SN | Raw covariance/runtime convention and calibrated residual/selection law unresolved; averaged repair separate | Prospector, Reproducible | Exact matrix/caller/rank/calibrator ancestry unresolved; no combined SN score |
+| Lensing reconstruction | Primary official likelihood and lensed CLASS spectra do not supply reconstruction likelihood | Prospector, Reproducible | Exact reconstruction likelihood, response/noise/binning and dependence contracts are absent |
+| Galaxy clustering/RSD/AP/window | LOWZ covariance candidate axes match only 6/106 error-square intervals; cut map unresolved | Prospector, Reproducible | Producer axes/error/cut identity and galaxy/nuisance/AP/window/finite-mock adapters remain unqualified |
+| Broader inference | H0-only fixed-state target; priors and cross-probe ancestry incomplete | Prospector, Reproducible | Parameter/prior/calibration/dependence contract for joint inference incomplete |
+| Native physics | Supplied-drag massless/native controls differ from full CLASS species/perturbations | Irreducible, Prospector | Approximation identities have declared lost scope and cannot represent unsupported cosmologies |
 
 Solver/table/interpolation sensitivity and optimizer-bracket refinement are
 separate diagnostics. Empirical agreement supplies no certified aggregate error

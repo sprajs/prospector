@@ -6,7 +6,8 @@ index built with Python's standard `sqlite3`. There is no database service,
 database migration or database file to contribute. Any public source-byte change
 invalidates the index. Missing or corrupt databases rebuild from public records.
 
-Use the existing `state.json`, latest scan and queued work first. The tool does
+Use [the sole active roadmap](roadmap.md), the existing `state.json`, relevant
+latest scan and queued work first. The tool does
 not admit papers, download full texts, launch model readers, run experiments or
 schedule future work. A search command makes at most one API page request,
 through `arxiv.Client` and its shared repository lock and rate limit. It never
@@ -24,12 +25,12 @@ search, with never-searched lanes first and stable state-file ordering for ties.
 The existing `next_work_mode` remains visible. Dates and counts guide bounded
 work; they do not measure scientific merit or completeness.
 
-`experiment_priorities` adds versioned consumer findings and bounded follow-up
-actions from `register/feedback/`. These preserve the ordinary queue and source
-gates. Inspect their pinned evidence before acting; a failed diagnostic or
-conditional fit can prioritize a source review without promoting a paper or
-claiming independent confirmation. Superseded receipts remain in Git and local
-search, while status shows only active successors.
+`experiment_priorities` exposes unsuperseded versioned consumer findings and
+historical follow-up proposals from `register/feedback/`. They are evidence,
+not an active scheduling plan. `active_roadmap` and `next_work_mode` route current
+work to the roadmap. Preserve the ordinary queue and source gates, and inspect
+pinned feedback before revising a target. Superseded receipts remain in Git and
+local search; a newer receipt is not scientific promotion or independent evidence.
 
 ## Search a single window
 

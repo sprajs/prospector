@@ -1,8 +1,11 @@
-# Shared input portability and next comparison priorities
+# Historical shared-input portability checkpoint
+
+Current scheduling is superseded by [the sole roadmap](roadmap.md). Git at
+`b4384c539652e7e7b6e5a426a13ce542347e0321` preserves the earlier plan text.
 
 2026-10-08 source and interface checkpoint. The existing measured comparison
-remains the scientific feedback; this checkpoint records the next dependency and
-test priorities. It introduces no new paper reading, numerical result or S3
+remains historical scientific feedback; this checkpoint recorded the then-current
+dependency and test priorities. It introduces no new paper reading, numerical result or S3
 verification.
 
 ## Source and runtime status
@@ -47,25 +50,12 @@ exclusion. The original SN raw-covariance/runtime refusal and the separate avera
 working repair remain distinct. Preserve the immutable candidates, all 63 queued
 paper entries and all nineteen source-scope gates.
 
-## Next bounded work
+## Current routing
 
-1. After runtime recovery and input-root acceptance, restore the selected exact
-   input manifest and run a new quick LambdaCDM control with explicit restored
-   paths and unchanged scientific pins. Compare its retained outputs with the
-   historical control; preserve any refusal and the new attempt identity.
-2. Specify a separate changed-parameter target with an explicit baseline,
-   retained sectors, finite coordinates and bounds. Test declared solver precision
-   sensitivity separately from optimizer-bracket refinement before expanding
-   model comparisons. Neither numerical diagnostic supplies an uncertainty interval.
-3. Review source multi-coordinate inference, prior and dependence conventions
-   before interpreting a broader alternative. Keep the chosen PPF fluid distinct
-   from scalar microphysics, EDE, NEDE and timescape.
-4. Continue the separate SN covariance/runtime and calibrated residual/selection
-   source target. For lower-level clustering, first resolve the
-   [LOWZ covariance axes, error semantics and cut map](next13-lowz-source-target.md),
-   then admit the galaxy/RSD/AP/window and finite-mock statistical adapters.
-   A matter spectrum alone is not a galaxy likelihood; shared observations and
-   unknown cross-covariance cannot be counted as independent probes.
+The earlier runtime/input-root follow-up plan is superseded by the roadmap.
+The subsequent restored-input evidence below retains its separate attempt
+identity; exact source review, numerical acceptance and observational gates
+remain as documented.
 
 Reproducible owns accepted experiments and results; Irreducible owns compiled
 physics. Source review, exact-version transport checks, numerical acceptance and

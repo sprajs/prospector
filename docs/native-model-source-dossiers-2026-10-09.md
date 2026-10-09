@@ -1,5 +1,7 @@
 # Native model source and scope dossiers
 
+This is frozen source evidence. Current scheduling follows [the sole roadmap](roadmap.md).
+
 These dossiers connect the new compiled-model campaign to selected original
 source equations. They are not full paper readings, source-author numerical
 reproductions or observational qualification. No registered paper stage, graph

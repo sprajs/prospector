@@ -153,9 +153,10 @@ Blocked concepts keep executable request null; runs/qualification belong to cons
 Experiments can return versioned findings through `register/feedback/`. Each
 finding pins its consumer repository revision, evidence path and byte digest,
 states its conditioning and limits, and names a bounded next action against a
-registered paper, design or prospect. `crawl.py status` shows active receipts
-alongside the preserved queue. Priority list order is an explicit work choice,
-not a scientific score or a claim of independent evidence. New findings can
+registered paper, design or prospect. `crawl.py status` shows unsuperseded receipts
+alongside the preserved queue as historical evidence. Current scheduling follows
+[the sole roadmap](roadmap.md); old feedback priority order is not a second plan,
+a scientific score or a claim of independent evidence. New findings can
 supersede an earlier receipt in the same programme; keep both immutable files.
 The validator checks identities, digest syntax, chronology and references; it
 does not fetch external evidence or verify its contents. Integration must inspect
