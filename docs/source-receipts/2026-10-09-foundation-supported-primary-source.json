@@ -1,0 +1,175 @@
+{
+  "schema": "foundation-supported-primary-source-evidence/v1",
+  "parent_source_checkpoint": "508b413bc05ce38148823923795898bb7ef073ec",
+  "target_identity": "class-planck-primary-six-parameter-v2",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "high",
+  "agent_id": "/root/foundation_prospector",
+  "backend_identity": "Unattested; explicit parent launch confirmation only",
+  "review_kind": "targeted_source_claims",
+  "source_assets": [
+    {
+      "id": "commander-v3-gaussianization",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#plc_3.01/src/gibbs/comm_gauss_br_mod_v3.f90",
+      "bytes": 14253,
+      "sha256": "c3bd2ce70d69f751bd8da3f183a4c7a54a2375ed43c4420e79ee437d6fdbb1e7",
+      "coverage": "Complete file, including initialization, support checks, interpolation, derivative, FITS layout and offset"
+    },
+    {
+      "id": "commander-v3-dispatch",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#plc_3.01/src/gibbs/clik_gibbs.c",
+      "bytes": 7776,
+      "sha256": "8d646c356af8c5f864e8fc25895866c48240d1804127c3988dae7e169f47cc7d",
+      "coverage": "Version dispatch and v3 callbacks lines155–243; unrelated lowl dispatch not assessed"
+    },
+    {
+      "id": "commander-v3-fortran-caller",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#plc_3.01/src/gibbs/clik_gibbs.f90",
+      "bytes": 6280,
+      "sha256": "bcbd9e976020bbf0cf73bf220ef796baf8acc2fc5ae8e409c4f3dbcbf58fbc1d",
+      "coverage": "Complete v3 caller/init/deallocator lines135–188"
+    },
+    {
+      "id": "commander-v3-calibration-metadata",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Data-baseline_R3.00.tar.gz#baseline/plc_3.0/low_l/commander/commander_dx12_v3_2_29.clik/clik/lkl_0/_mdb",
+      "bytes": 181,
+      "sha256": "8055330eefeefb8c31d07fe214029ece36f6893889d7641bf791f09fb31a3334",
+      "coverage": "Complete metadata: version3, free_calib A_planck, TT2–29"
+    },
+    {
+      "id": "commander-v3-sigma-table",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Data-baseline_R3.00.tar.gz#baseline/plc_3.0/low_l/commander/commander_dx12_v3_2_29.clik/clik/lkl_0/_external/sigma.fits",
+      "bytes": 6491520,
+      "sha256": "d5d3fcf06bffe5b770c62ff7ca8c4d6e57d4b8cb2916e4a39790d80d5933e069",
+      "coverage": "Exact bytes pinned; numerical values not inspected by this source worker"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dispatch",
+      "locator": "metadata version3; clik_gibbs.c200–233; clik_gibbs.f90146–188",
+      "claim": "Selected official Commander product dispatches to comm_gauss_br_mod_v3 using sigma.fits and TT2–29. The Fortran caller converts input calibrated microkelvin-squared Cl to Dl by ell(ell+1)/(2pi)."
+    },
+    {
+      "id": "range",
+      "locator": "comm_gauss_br_mod_v3.f90106–119,185–194",
+      "claim": "For each ell, initialization skips low rows with abs(x+5)<1e-4, takes Cl at first nonsaturated index+2 as lower; skips high rows with abs(x-5)<1e-4, takes index−2 as upper. Compute returns −1d30 if Dl<lower or Dl>upper. Equality with bounds passes this check. These are calibrated likelihood table margins, not a cosmological physical prior."
+    },
+    {
+      "id": "derivative",
+      "locator": "comm_gauss_br_mod_v3.f90205–221, splint_deriv_gauss_br",
+      "claim": "Within range, cubic interpolation maps Dl to x; Gaussian quadratic is augmented by log(dx/dDl). Any derivative<=0 sets lnL=−1d30 and exits; final return subtracts the stored offset. Therefore a sentinel-scale result alone does not distinguish range failure from derivative failure."
+    },
+    {
+      "id": "diagnostic",
+      "locator": "read_gauss_BR_datafile_int; splint_gauss_br; splint_deriv_gauss_br; locate_gauss_br",
+      "claim": "A matching diagnostic must use exact sigma.fits header LMIN/LMAX/NBIN and Fortran first-HDU layout(nbin,lmin:lmax,3), selected ell2–29, the source cubic/locate conventions and calibrated Dl=theory Cl*ell(ell+1)/(2pi*A_planck²). It should return violating ell, table limits/coordinate, derivative and exact branch separately, not convert either sentinel into physical minus infinity. Exact build numeric conventions also matter: clik_gibbs.f90 declares an unsuffixed PI literal; match compiled flags rather than assume binary64 mathematical pi."
+    }
+  ],
+  "runtime_report": {
+    "owner": "/root/foundation_inference",
+    "status": "reported_not_independently_scored",
+    "point": {
+      "logA": 3.91,
+      "tau_reio": 0.14,
+      "A_planck": 0.9,
+      "remaining_coordinates": "consumer anchor"
+    },
+    "report": "Commander returns a sentinel before SimAll is called. Astra saved-vector/table witness identifies the first range violation at ell22; range check precedes spline derivative evaluation.",
+    "saved_vector_witness": {
+      "owner": "/root/foundation_astra",
+      "bytes": 8250,
+      "sha256": "0a9b4deb9c620448ec85ae04384776014775127b7bc0fca618d3e164166717b7",
+      "theory_sha256": "332a43a5ee8c7862beef573e41e98ecac270f6d875f9b339f7f4dd6a401b5087",
+      "vector_sha256": "b6cbf54122dbeb64a6a0a5393a7e3373f8012d1525fe47b83e9a5947e5255c3c",
+      "sigma_fits_sha256": "d5d3fcf06bffe5b770c62ff7ca8c4d6e57d4b8cb2916e4a39790d80d5933e069",
+      "first_outside": {
+        "ell": 22,
+        "calibrated_Dl_uK2": 2421.2311414261976,
+        "lower_Dl_uK2": 232.19380231391727,
+        "upper_Dl_uK2": 2343.0496262588954,
+        "lower_table_index_Fortran": 6,
+        "upper_table_index_Fortran": 993,
+        "outside": true
+      },
+      "native_pi": 3.1415927410125732,
+      "native_pi_basis": "clik_gibbs.f90:7 unsuffixed literal, gfortran14 default-real flags in command-025.json",
+      "source_owner_verification": "Witness object and exact source branch read; no independent numerical recomputation by source owner."
+    },
+    "target_identity": "class-planck-primary-six-parameter-v1"
+  },
+  "target_disposition": "New separate v2 restricted conditional target; v1 original source and failed-domain evidence remain unchanged. Numerical and scientific posterior qualification unearned.",
+  "limitations": [
+    "No numerical experiments or FITS interpolation performed by this source worker.",
+    "No new full paper reading or paper admission.",
+    "No cosmological box bounds derived solely from table margins.",
+    "No inference of full Planck posterior agreement or CMB–BAO independence."
+  ],
+  "raw_rights": "Raw code/papers remain local; no new Git/S3 raw redistribution.",
+  "prior_review": {
+    "origin": "Root authorization and Astra scientific recommendation, explicit new conditional project target",
+    "bounds": {
+      "omega_b": [
+        0.018,
+        0.028
+      ],
+      "omega_cdm": [
+        0.08,
+        0.18
+      ],
+      "H0": [
+        50,
+        90
+      ],
+      "logA": [
+        2.8,
+        3.3
+      ],
+      "n_s": [
+        0.92,
+        1.03
+      ],
+      "tau_reio": [
+        0.02,
+        0.1
+      ],
+      "A_planck": [
+        0.975,
+        1.025
+      ]
+    },
+    "calibration_normalization": "Phi(10)-Phi(-10) in dA_planck; N(1,.0025), one application",
+    "interpretation": "Investigators restrict intended cosmological/calibration prior before production. This is an analysis choice motivated by finite likelihood table support, not Planck source prior or recovered v1 posterior.",
+    "scope": "Same reviewed model/species/BBN/HMcode/primary products; changed prior bounds only.",
+    "qualification": "Finite supported diagnostic cases are evidence for attempting qualification, not proof that all prior states are supported or numerically converged.",
+    "physical_indicator": "Redundant across v2: wb+wc<=.208, h²>=.25 and conservative fixed photon/ur/massive-species density bound<.001. Exact runtime closure remains required. The extra prior conditioning normalization is one.",
+    "fixed_density_bound_basis": "Reviewer conservative bound using FD energy inequality sqrt(p²+m²)<=p+m: rest-mass contribution bounded by .00066 (m=.06eV and CLASS93.14eV normalization), plus photons and early-radiation bound<.00005 at Tcmb2.7255K/Neff3.046, hence total<.001; margin .042. This is a model algebra bound, not a data likelihood result."
+  },
+  "preserved_v1": {
+    "candidate_sha256": "2211b45de6876106557e30e0bb7ed1c696e165c5cb98c397f0a34c6e2b15e7d3",
+    "reference_sha256": "0d80fa8cdd93da0ddb4a5bc5d3194af449f162f62e18d82cf65f70625cd1c17c",
+    "failed_support": "Commander ell22 range violation recorded in saved-vector witness; no v1 target modification."
+  },
+  "rejected_first_proposal": {
+    "status": "Reported consumer diagnostic, no source-owner solver run",
+    "logA": 3.4,
+    "n_s": 0.9,
+    "tau_reio": 0.12,
+    "A_planck": 0.975,
+    "failure": "SimAll ell4 index3110.10 exceeds calibrated support [0,3000); this proposal was never frozen or qualified."
+  },
+  "consumer_diagnostics": {
+    "owner": "/root/foundation_inference",
+    "status": "Reported finite cases, numerical precision/inference unearned",
+    "scope": "Second support characterization004 four amplitude/tilt/tau corners x2 calibration endpoints and 005–010 density/H0 coupled extremes supported. Wider diagnostic lowlogA2.7/highns1.05 do not broaden this target.",
+    "next": "All64 cosmological corners x2 calibration endpoints, interior/spread checks and orthogonal precision references; qualification may still fail."
+  },
+  "owned_notes_custody": {
+    "manifest_format": "research-named-manifest/v1",
+    "collection": "reproducible/handoffs/prospector/foundation-source-owner-20261009",
+    "uri": "s3://research-data-436908790672-eu-west-2/reproducible/handoffs/prospector/foundation-source-owner-20261009/versions/7947d7d98388ab5d2ce8d4a3dd4d166654d11fed303d9e5b126b357836568993/manifest.json",
+    "version_id": "b.rWdztBdDvyKcS_58j8k8mHjGJj0EZw",
+    "sha256": "1fee8138c47381e6046a4d73daaf0cdc3d74fcff01ace0778b7de6089033c992",
+    "bytes": 3783
+  }
+}
