@@ -427,6 +427,16 @@ def validate():
                 and handoff['source_review']['id'] in reviews
                 and all(pin['id'] in contracts for pin in handoff['contracts']),
                 'handoff references missing source records')
+        expected_paths = [
+            (handoff['candidate'], ROOT / 'designs' / (handoff['candidate']['id'] + '.json')),
+            (handoff['reference'], references[handoff['reference']['id']][0]),
+            (handoff['source_review'], ROOT / 'register/reviews' / (handoff['source_review']['id'] + '.json')),
+            *((pin, ROOT / 'register/contracts' / (pin['id'] + '.json'))
+              for pin in handoff['contracts']),
+        ]
+        for pin, expected in expected_paths:
+            require(pin['path'] == str(expected.relative_to(ROOT)),
+                    'handoff role path does not match registered identity: ' + pin['id'])
     for ident, prospect in prospects.items():
         validators['prospect'].validate(prospect)
         require(set(prospect['model_idea_ids']).issubset(prospect['idea_ids']), 'prospect model idea is outside its evidence ideas')
