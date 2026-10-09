@@ -1088,5 +1088,6 @@
     "programme": "coordinated-science-reset",
     "milestone": "M0",
     "scope": "Source-defined reference and likelihood/prior/dependence contract; queue preserved; no automatic execution"
-  }
+  },
+  "last_completed_intake_scan": "2026-10-09-interacting-radiation-intake"
 }

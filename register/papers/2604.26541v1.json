@@ -22,9 +22,9 @@
     "pdf": "https://arxiv.org/pdf/2604.26541v1"
   },
   "license": {
-    "status": "unknown",
+    "status": "CC BY 4.0",
     "redistribution": "links_and_original_notes_only",
-    "reason": "Per-paper copying terms not yet checked; public record contains descriptive metadata and original notes only."
+    "reason": "Explicit license label checked in pinned original HTML #license-tr. Public register contains only descriptive metadata and original notes. Private preservation is separate from public redistribution permission."
   },
   "artifacts": [
     {

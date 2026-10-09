@@ -21,9 +21,9 @@
     "pdf": "https://arxiv.org/pdf/2112.00770v2"
   },
   "license": {
-    "status": "unknown",
+    "status": "arXiv.org perpetual non-exclusive license",
     "redistribution": "links_and_original_notes_only",
-    "reason": "Per-paper redistribution terms not checked; public record contains links, descriptive metadata and original notes."
+    "reason": "Explicit license label checked in pinned original HTML #license-tr. Public register contains only descriptive metadata and original notes. Private preservation is separate from public redistribution permission."
   },
   "artifacts": [
     {

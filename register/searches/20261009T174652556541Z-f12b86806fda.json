@@ -120,7 +120,7 @@
   },
   "provenance": {
     "kind": "live",
-    "scan_id": null,
+    "scan_id": "2026-10-09-interacting-radiation-intake",
     "query_id": null
   },
   "batch_id": "2026-10-09-interacting-radiation"
