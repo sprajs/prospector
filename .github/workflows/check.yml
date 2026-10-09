@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - run: node --test site/abstract.test.mjs
+      - run: node --test site/abstract.test.mjs site/assets.test.mjs
       - run: uv python install 3.13
       - run: uv sync --locked --python 3.13
       - run: uv run python -m unittest discover -s tests -v

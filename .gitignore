@@ -12,3 +12,7 @@ __pycache__/
 !.env.example
 .DS_Store
 *.partial
+
+/site/dist/
+
+/site/.work/
