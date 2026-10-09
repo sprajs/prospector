@@ -163,7 +163,7 @@ Combined models require compatibility checks before promotion.
 | [Unifying Early and Late Dark Energy: Dynamical Requirements and Obstructions](https://arxiv.org/abs/2605.26116v2) | [2605.26116v2](papers/2605.26116v2.json) | reviewed |
 | [Interacting dark energy constraints from Fermi GRBs and Pantheon+ SNe Ia with full GRB covariance](https://arxiv.org/abs/2606.00549v2) | [2606.00549v2](papers/2606.00549v2.json) | screened |
 | [Modeling Uncertainties in Modified Gravity Predictions for the Stochastic Gravitational-Wave Background](https://arxiv.org/abs/2607.05331v2) | [2607.05331v2](papers/2607.05331v2.json) | screened |
-| [Updated 1.1% Precision Values of the Hubble Constant with Corrected Pantheon+ and Dark Energy Survey (DES)-DOVEKIE Type Ia Supernovae](https://arxiv.org/abs/2607.24443v2) | [2607.24443v2](papers/2607.24443v2.json) | screened |
+| [Updated 1.1% Precision Values of the Hubble Constant with Corrected Pantheon+ and Dark Energy Survey (DES)-DOVEKIE Type Ia Supernovae](https://arxiv.org/abs/2607.24443v2) | [2607.24443v2](papers/2607.24443v2.json) | read |
 | [A Simulation Based Inference Approach to Modelling of Type Ia Supernova Populations](https://arxiv.org/abs/2607.28725v3) | [2607.28725v3](papers/2607.28725v3.json) | screened |
 | [Supernovae Ia ejecta velocities and host galaxy environments: the role of survey-selection effects](https://arxiv.org/abs/2608.21603v2) | [2608.21603v2](papers/2608.21603v2.json) | screened |
 | [Cosmic topology. Part Va. Information content of the observable Universe](https://arxiv.org/abs/2608.25033v1) | [2608.25033v1](papers/2608.25033v1.json) | screened |

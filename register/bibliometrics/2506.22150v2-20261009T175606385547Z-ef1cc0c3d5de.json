@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2506.22150v2",
+  "work_identity": {
+    "arxiv_id": "2506.22150",
+    "registered_version": 2,
+    "title": "Stretch to stretch, dust to dust: lower-value local $H_{0}$ measurement from two-population modelling of type Ia supernovae",
+    "match_status": "exact",
+    "provider": "INSPIRE-HEP",
+    "provider_record_id": "2939583",
+    "matched_arxiv_ids": [
+      "2506.22150"
+    ],
+    "linked_dois": [
+      "10.1051/0004-6361/202556288"
+    ],
+    "journal_metadata": [
+      {
+        "journal_title": "Astron.Astrophys.",
+        "year": 2025,
+        "volume": "702",
+        "article_or_page": "A176"
+      },
+      {
+        "journal_title": "Astron.Astrophys.",
+        "year": 2025,
+        "volume": "702",
+        "article_or_page": "A176"
+      }
+    ],
+    "journal_scope": "linked_journal_metadata_returned",
+    "count_scope": "provider_base_work_record",
+    "version_scope": "versions_not_disaggregated",
+    "publication_scope_note": "Citation counts are totals for this provider literature record. They are not split between the registered arXiv version, other arXiv versions, and linked journal publication records.",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A2506.22150&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:52:36.592618+00:00",
+      "http_status": 200,
+      "response_sha256": "e1df028ad101030a36dbd2a26bf7e7dc543508da8cd7dfc8d586c20652806fd8",
+      "response_bytes": 3089,
+      "archive_path": ".work/systematics-20261009/bibliometrics/2026-10-09/inspire-2506.22150-e1df028ad101.json"
+    }
+  },
+  "citation_snapshot": {
+    "status": "observed",
+    "count": 16,
+    "count_without_self_citations": 12,
+    "retrieved_utc": "2026-10-09T17:52:36.592618+00:00",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A2506.22150&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:52:36.592618+00:00",
+      "http_status": 200,
+      "response_sha256": "e1df028ad101030a36dbd2a26bf7e7dc543508da8cd7dfc8d586c20652806fd8",
+      "response_bytes": 3089,
+      "archive_path": ".work/systematics-20261009/bibliometrics/2026-10-09/inspire-2506.22150-e1df028ad101.json"
+    },
+    "missing_reason": null
+  },
+  "comparison": {
+    "first_publication_utc": "2025-06-27T11:56:58Z",
+    "age_days_at_snapshot": 469.2469744515973,
+    "age_years_at_snapshot": 1.2847545793591855,
+    "field_categories": [
+      "astro-ph.CO",
+      "astro-ph.GA"
+    ],
+    "cohort": {
+      "provider": "INSPIRE-HEP",
+      "snapshot_batch_id": "systematics-20261009",
+      "field_definition": "arXiv primary category: astro-ph.CO",
+      "age_band_years": {
+        "lower_inclusive": 1.0,
+        "upper_exclusive": 2.0
+      },
+      "population_size": null,
+      "minimum_population_size": 100,
+      "population_evidence": null,
+      "percentile": null,
+      "status": "not_queried",
+      "reason": "No provider population was queried for this provider, snapshot batch, arXiv primary category, and publication-age band. The deliberately selected Prospector sample is not a percentile reference population."
+    }
+  },
+  "authors": [
+    {
+      "paper_author_name": "Rados\u0142aw Wojtak",
+      "source_author_id": "1045676",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "Jens Hjorth",
+      "source_author_id": "1005876",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    }
+  ],
+  "team_visibility": {
+    "status": "none",
+    "unique_author_count": 2,
+    "verified_h_index_author_count": 0,
+    "coverage_fraction": 0.0,
+    "h_index_scope": null,
+    "h_index_snapshot_batch_id": null,
+    "max_h_index": null,
+    "median_h_index": null,
+    "missing_reason": "Team maximum and median use verified, observed, same-scope h-indices only; missing author metrics are unknown."
+  },
+  "snapshot_created_utc": "2026-10-09T17:56:06.385547+00:00",
+  "snapshot_id": "20261009T175606385547Z-ef1cc0c3d5de"
+}

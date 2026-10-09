@@ -238,8 +238,8 @@
     },
     {
       "paper_id": "arxiv:2607.24443v2",
-      "stage": "read",
-      "reason": "Retain corrected SN distance-ladder comparison; overlapping supernovae and fixed calibration offsets require dependency checks.",
+      "stage": "review",
+      "reason": "Full Luna read complete; awaiting Sol original-source review.",
       "prospect_ids": [
         "measurement-lineage"
       ]
