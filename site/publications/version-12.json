@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "project_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8",
+  "url": "https://prospector-cosmology.sprajs.chatgpt.site",
+  "access_mode": "public",
+  "source_commit_sha": "76ab9dd342ff9682e90c98533d78d0e38cbcd315",
+  "version_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8~appgver_a599908b086c81918959ffe0a71eef7f",
+  "version_number": 12,
+  "deployment_id": "appgdep_6ac0e61d05c48191a7f11c10e45c2c14",
+  "deployment_status": "succeeded",
+  "published_utc": "2026-10-03T11:25:29.644711+00:00",
+  "artifact_sha256": "sha256:8cc282e322f0459d8569c27cc203fd8dbeb9ff23925bd57b8facf7b2bd05bfbf",
+  "local_archive_sha256": "sha256:25cfe745fc67afb40761bc0891c5df318019f3ecba0a789fe48b30fc5dcb3396",
+  "repository_revision": "97c6e8e8a34d58332e145bb633a30cb254ce68bd",
+  "repository_ci_run": "https://github.com/sprajs/prospector/actions/runs/37118689764",
+  "scan_id": "2026-10-03-all19-source-wave7",
+  "source_contract_sha256": "a5c22039fd165d8261bba49b179d96942a236e60a9066ccc7109a0c5d7de8644",
+  "scalar_serialization_sha256": "d5c189e4623b5eadc2f44f5035dc959e95ff85df69fc199cf8fc0f57ca9c1839",
+  "independent_final_review_sha256": "d5f62d9feb9292964f58d80aafe066985be6a8bbbef6787fc0ef0fb09d70a1d2",
+  "additional_source_contracts": [
+    {
+      "contract_id": "next05-released-fixed44-row3213-conditional-source-v1",
+      "sha256": "16c5de924b39a1d71b24ecb50d17a8243200137df858349ab2e5f54302b8bee2"
+    },
+    {
+      "contract_id": "optical-calibration-template-source-contract-v1",
+      "sha256": "9a5a1a0ee1c7c115e11d0afc79da6be69815d9c13973e38ed6359d336d253ec1"
+    },
+    {
+      "contract_id": "next13-boss-dr12-cmass-pre-rec-p0-p2-b0-conditioned-v1",
+      "sha256": "8f7e16823641116f6c9287a5d43823ce9b59e6de09523f41cc1dedcd113bb558"
+    },
+    {
+      "contract_id": "next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v2",
+      "sha256": "0610d5bc33e5b26122e5de782d5ca0b2a8c0874d25cee11d123e5a8ca7837f8a"
+    },
+    {
+      "contract_id": "sdss-detector-b1608-asset-source-contract-v1",
+      "sha256": "ad779cddb703eff9edc04fafa8718f2cc3f7e3cebdd95d3e692a2b80c2f6edab"
+    },
+    {
+      "contract_id": "thermal-constants-late-tail-source-contract-v1",
+      "sha256": "15cc03af546ffa5edf351c521dcb1cdc817ee7c216e1ab7f9eaba6c87c730d00"
+    },
+    {
+      "contract_id": "next14-pure-massless-fd-cdm-lambda-unit-zeta-transfer-v3",
+      "sha256": "52c01a6309ecc51e9f125a099e4c78d00b3b9e58709988499dbfbe2d80f3248e"
+    },
+    {
+      "contract_id": "next14-ideal-photon-cold-baryon-cdm-lambda-acoustic-v1",
+      "sha256": "befd902e439450bfbacd19dda2f853b743961cfae640766ff18430065785dc59"
+    },
+    {
+      "contract_id": "next13-boss-dr12-cmass-public-array-assets-v1",
+      "sha256": "c8f73e414bd85ee245cfcc066a912cb0c5c0c8bf4a35701c33b01f0bc3b2bb79"
+    },
+    {
+      "contract_id": "sdss-detector-b1608-native-asset-source-contract-v2",
+      "sha256": "10921b6e198b172af589d39a6a44c9ec0b07eb6822356aa33f67bcc53e4fefc5"
+    },
+    {
+      "contract_id": "next04-skara-shoes-reconstruction-source-v1",
+      "sha256": "e4605a368266aefdf73f30e6d72b1ed2fab22a91b2978d3be6c0405f5d7ecbfa"
+    },
+    {
+      "contract_id": "next13-boss-dr12-current-estimator-mock-source-contract-v1",
+      "sha256": "646f8fa41888e5b2590efa999b770f69a7d89c8df53c7cba5ace2f0b44fd1196"
+    },
+    {
+      "contract_id": "b1608-go10158-calibrated-asset-source-contract-v1",
+      "sha256": "23d6cf9a4eb7159087abd093856ab23a0af9413738df5f3db9619986f74e6dac"
+    },
+    {
+      "contract_id": "sdss-run5566-legacy-calibration-header-source-contract-v1",
+      "sha256": "afb0b2b4afc2daec78a1ac69e68f35c5ddf7c06c972d2de028c783be4648d08e"
+    },
+    {
+      "contract_id": "next04-primary-shoes-compact-conditioning-source-v1",
+      "sha256": "e39652759fb45c7e4bfa11c1d68e1a44fb262dc2e725c9907d5b41948e240102"
+    },
+    {
+      "contract_id": "next13-boss-dr12-historical-method-mock-ancestry-source-contract-v1",
+      "sha256": "a36234e68bf61b1b78dae1037cf808d7350039943fed6ae32c8cedf302f02a45"
+    },
+    {
+      "contract_id": "b1608-author-observation-conditioning-source-contract-v1",
+      "sha256": "0da0c27e24f93b29dc84066537a6a62a9f2925320f584f8e483c05600975d56b"
+    }
+  ],
+  "candidate_design": {
+    "design_id": "next05-released-fixed44-row3213-conditional-diagnostic-20261003",
+    "sha256": "5e208d295ab356f4e449078cc060a346c8608afffaf43819e34562dec0ce665e",
+    "readiness": "blocked"
+  },
+  "independent_final_reviews": [
+    {
+      "role": "Independent selected BOSS original sources, unchanged independent NEXT04 acceptance and complete integration review; own NEXT18 science excluded",
+      "sha256": "db01f0ce90e91571f6b31358db71a413e05972cf06e24f6aea5bfbfea5a71cb7"
+    },
+    {
+      "role": "Independent selected NEXT18 original cards, official definitions and42 original log rows; complete integration review with own BOSS science excluded",
+      "sha256": "17c38711babcfb8edbdc85469eeb30463df86cf9840ef174f1a5feb1118cd873"
+    },
+    {
+      "role": "Independent selected SDSS original-source claims; representative partial header, literal source units and unread scopes retained",
+      "sha256": "d48965a0303f96f71c6db7b1365f1847452eaedbf8a8c1d40fd0ce5131c01c2d"
+    },
+    {
+      "role": "Independent complete seven-file wave6 integration diff, retaining source and NEXT05 conditioning/refusal boundaries",
+      "sha256": "de465590c66f583327b2273fc6da2bc2451fe1b18b3a2f7a2bfcb56559a6725f"
+    },
+    {
+      "role": "Wave7 independent selected primary SH0ES conditioning claims",
+      "sha256": "e338d3477a969e041b4f07fc469d329c28d9673fee13624072ccd0d788805dd9"
+    },
+    {
+      "role": "Wave7 independent selected BOSS historical methods/mock/covariance ancestry",
+      "sha256": "28e0a05c21d4254f997aa28e9eb170fdcca8920ee67ad5966ff398b7aef30580"
+    },
+    {
+      "role": "Wave7 independent selected B1608 author observation/selection/error claims",
+      "sha256": "718634d0569f0bf8e411cb3fa5d7cfdd90cbe54bc3ff3bf33482e9e7975a2b16"
+    },
+    {
+      "role": "Wave7 independent complete12-path integration diff; ownNEXT18 science excluded",
+      "sha256": "d5f62d9feb9292964f58d80aafe066985be6a8bbbef6787fc0ef0fb09d70a1d2"
+    }
+  ],
+  "additional_scalar_serializations": [
+    {
+      "serialization_id": "thermal-opacity-density-constants-si9-iau2015-codata2018-2022-v1",
+      "sha256": "21fe9fa6d2d8f58bfe401df96db5942b783c6ef4b7d07c07df4e0b4ffcd148c4"
+    }
+  ],
+  "artifact_members": [
+    "dist/server/index.js",
+    "dist/.openai/hosting.json"
+  ],
+  "artifact_hash_scope": "artifact_sha256 is the native provider-reported saved artifact hash. local_archive_sha256 binds the local packaged archive; they are distinct representations. The local archive's two file members were verified byte-for-byte against the pushed source/build. No provider/local hash equality is asserted.",
+  "publication_scope": "Three new bounded canonical targeted source audits: primary SH0ES conditioning, original BOSS estimator/mock/covariance ancestry and B1608 author observation/selection/error conditioning. Three independent selected-source peers plus separate complete final integration review. Zero new versions, Luna/full-paper reads, full-paper reviews, new ideas, graph/design/prospect promotions or numerical experiments. Public data changes only by three paper-subset source-contract navigation cards; ordinary queue and all prior science records remain unchanged. Native observation laws, actual historical products/implementations, joint covariance and numerical/physical/inference gates remain unresolved. Exact repository merge/main CI, exact public source parent, two regular archive files and native public deployment verified. Consumer admission remains a separate later gate; existing readiness remains blocked. This receipt-only commit does not change the deployed public export.",
+  "public_data_sha256": "af1c2ec25c56da0917ab421dfe0e4323bea8b9a11afafd769c87b0d3356d2522",
+  "source_parent_commit_sha": "40b3ce5f37c77765fc31be43511ed75b9d3517ff",
+  "previous_publication": {
+    "version_number": 11,
+    "source_commit_sha": "40b3ce5f37c77765fc31be43511ed75b9d3517ff",
+    "version_id": "appgprj_6abe2da9dcc081919deb876a27ec2dc8~appgver_b64a405733f081919aef58c277d75e74",
+    "deployment_id": "appgdep_6ac0c3bad8f4819198a66b3fdb6fabfa",
+    "receipt_sha256": "03137e647de7533e7c5da5cad6621c6dfcfc9f4134bba0ad99e95e9089f1d004",
+    "repository_receipt_revision": "899777480adbb2ea89fe23eb18ad94e7e2fe61e2",
+    "scope": "Prior source identities and consumer receipts remain bound to their prior revisions."
+  }
+}
