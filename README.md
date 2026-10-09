@@ -52,6 +52,10 @@ keeps the transition fraction separate from a peak. Density normalization, initi
 field coordinates and the original modified CLASS implementation remain unresolved;
 the independent background fluid supplies no paper EDE perturbation closure.
 
+The [native model source dossiers](docs/native-model-source-dossiers-2026-10-09.md)
+connect the compiled-model campaign to selected original equations, finite-state
+contracts and retained source-access failures without changing paper stages.
+
 ## Records
 
 - [Papers](register/papers/), [ideas](register/ideas/) and [topics](register/topics/)

@@ -1,0 +1,114 @@
+{
+  "requested_model": "gpt-6.1-sol",
+  "launch": "root followup reused existing gpt-6.1-sol worker; reasoning inherited/unrecorded; backend unexposed",
+  "compute_jobs": 0,
+  "review_kind": "native_model_source_equation_dossier",
+  "full_reads": 0,
+  "sources": [
+    {
+      "id": "gr-qc/9711068v2",
+      "sha256": "520595adc32264c9c0c2c9837929b25c340aa53eafd6ccaf0507a064bdf5df8c",
+      "checked": "title, PDF page2 rendered TableI/Eqs6-10; extracted singlefluid scope",
+      "scope": "Canonical scalar positive exponential potential; dust+radiation extension independently conservationderived; no perturbation qualification",
+      "url": "https://arxiv.org/pdf/gr-qc/9711068v2",
+      "local_source_path": null,
+      "redistribution": "unverified: raw PDF, extracted text and rendered source excerpts retained locally and excluded from cloud selection"
+    },
+    {
+      "id": "astro-ph/0511634v1",
+      "sha256": "c3713bf257b6b545e2787799effa563050572963860f9e10cefe21598d8f3c5a",
+      "checked": "title, page3 rendered Eqs30-35; extracted subhorizon/quasistatic conditions and Eq5 background",
+      "scope": "Flat selfacceleratingDGP dust linear quasistatic only; no arbitrarywavelength/5D/fullCMB",
+      "url": "https://arxiv.org/pdf/astro-ph/0511634v1",
+      "local_source_path": null,
+      "redistribution": "unverified: raw PDF, extracted text and rendered source excerpts retained locally and excluded from cloud selection"
+    },
+    {
+      "id": "hep-th/0512097v1",
+      "sha256": "f32ad9d3beb5e38ca98a5eb1098f01b7293273f4a980e2e03837cbea594a9bc7",
+      "checked": "title/abstract explicitly ghost excitation in selfaccelerating solution",
+      "scope": "Viability warning only; ghost proof and main derivation unread",
+      "url": "https://arxiv.org/pdf/hep-th/0512097v1",
+      "local_source_path": null,
+      "redistribution": "unverified: raw PDF, extracted text and rendered source excerpts retained locally and excluded from cloud selection"
+    },
+    {
+      "id": "astro-ph/9908213v1",
+      "sha256": "7ce499d72520e9a7067ff36942999a1697d27191f52364249b3d2175486e63c4",
+      "checked": "title, page5 rendered Eqs10-14; extracted Eqs1-3,9 normalizations",
+      "scope": "Untruncated sphericalNFW physical/lens profiles; no observedmass inference/selection qualification",
+      "url": "https://arxiv.org/pdf/astro-ph/9908213v1",
+      "local_source_path": null,
+      "redistribution": "unverified: raw PDF, extracted text and rendered source excerpts retained locally and excluded from cloud selection"
+    },
+    {
+      "id": "1407.2418v1",
+      "sha256": "c00f4bedf79c9229c3c95fe00f1344878af4f6a27b454a3371bbfbca2bc88219",
+      "checked": "title, rendered PDFphysicalpage4 printed3 Sec2.1Eqs2.1/2.2, subsequent paragraph sourcepresentfractionshooting/asymptoticdaughter initialstate",
+      "scope": "Proper/conformal continuity mapping verified; finiteanchor model distinct; perturbation/inference unread",
+      "url": "https://arxiv.org/pdf/1407.2418v1",
+      "local_source_path": null,
+      "redistribution": "unverified: raw PDF, extracted text and rendered source excerpts retained locally and excluded from cloud selection"
+    },
+    {
+      "id": "astro-ph/9905116v1",
+      "sha256": "cfde8333f9247c94d1b846441f81f6e60338755783999a77cc1631df20da98fe",
+      "checked": "title, rendered pages3/4 Eq13 expansion Eq14radial Eq15curvature; extracted Eq17/20duality",
+      "scope": "DustLambda reference geometry; radiationa^-4 independently conservationderived; erroneous coordinatecurvature statement rejected, not adopted; ownmodel implementation requires independent reviewer",
+      "url": "https://arxiv.org/pdf/astro-ph/9905116v1",
+      "local_source_path": null,
+      "redistribution": "unverified: raw PDF, extracted text and rendered source excerpts retained locally and excluded from cloud selection"
+    }
+  ],
+  "rejected_sources": [
+    {
+      "id": "astro-ph/9711068v2",
+      "reason": "wrong title astrophotometry paper, incorrect category initialknownID; retained acquisition receipt, not acceptedsource"
+    },
+    {
+      "id": "astro-ph/0511634v2",
+      "reason": "main and export404, verifiedv1 instead"
+    }
+  ],
+  "unread": "No full paper, appendices, figures or ghost proof read. No public paper stage/candidate promotion. Math at named rendered locators inspected.",
+  "source_access_failures": [
+    {
+      "id": "Hernquist1990ApJ356359",
+      "route": "ADS/pdf",
+      "result": "20stimeout"
+    },
+    {
+      "id": "Hernquist1990ApJ356359",
+      "route": "ADS/full",
+      "result": "202emptybody; notsourcequalification"
+    }
+  ],
+  "qualification": "Selected original-source equations checked; no full-paper read, Prospector registered-paper stage, candidate promotion or source-author result reproduction. Unknown launch reasoning cannot satisfy existing high/xhigh register-review acceptance gate.",
+  "review_id": "2026-10-09-native-model-source-equations",
+  "actual_backend_identity": null,
+  "archive": {
+    "manifest_format": "research-named-manifest/v1",
+    "collection": "reproducible/handoffs/prospector/native-model-source-review-20261009t0158z",
+    "uri": "s3://research-data-436908790672-eu-west-2/reproducible/handoffs/prospector/native-model-source-review-20261009t0158z/versions/6755d334fd803372ea14336376c6a0446f083af9c487aa0a6daa21b7588e51fa/manifest.json",
+    "version_id": "FunxAcCVvU_b8.pG88ru0HWlZTam5OjM",
+    "sha256": "a79ff9946a889a95c6867e0e5e5c77ec9b91c6765ee2aa3921d01ccfe10c91b8",
+    "bytes": 4524
+  },
+  "plummer_followup_access": {
+    "doi": "10.1093/mnras/71.5.460",
+    "url": "https://doi.org/10.1093/mnras/71.5.460",
+    "http_status": 403,
+    "source_checked": false,
+    "limitation": "No original equation locators read; independently declared finitecore density/Newtonian/projection law is not source reproduction."
+  },
+  "followup_archive": {
+    "manifest_format": "research-named-manifest/v1",
+    "collection": "reproducible/handoffs/prospector/native-model-source-followup-20261009t0202z",
+    "uri": "s3://research-data-436908790672-eu-west-2/reproducible/handoffs/prospector/native-model-source-followup-20261009t0202z/versions/0e20d9e6f65abaf705686d085464353dc53e17606dba735aaec38468fcf6fbf4/manifest.json",
+    "version_id": "1HyvjSDvZRku5D7NRwG8R9mA5XiLGF_Q",
+    "sha256": "124b14a9bdce53c03885711cfa943207832135b3464a6f1686c45ddd065240cb",
+    "bytes": 2600
+  },
+  "prospector_source_commit": "a69c1bd89f5900c4e6073920e0355c072b75bb57",
+  "archive_provenance_correction": "Both earlier archive provenance source_commit fields abbreviate a69c1bd; this receipt resolves it to full a69c1bd89f5900c4e6073920e0355c072b75bb57 without overwriting immutable archives."
+}
