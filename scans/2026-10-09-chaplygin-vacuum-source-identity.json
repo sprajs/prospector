@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-09-chaplygin-vacuum-source-identity",
+  "status": "checkpoint_reading_pending",
+  "recorded_utc": "2026-10-09T18:05:24.177802+00:00",
+  "registered_papers": [
+    "arxiv:1203.6776v2",
+    "arxiv:1301.5315v2",
+    "arxiv:1306.0917v2"
+  ],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "idea_ids": [],
+  "design_ids": [],
+  "scope": "Source-payload identity and private preservation amendment; no scientific stage promotion",
+  "source_identity_observations": [
+    {
+      "paper_id": "arxiv:1301.5315v2",
+      "checked_utc": "2026-10-09T18:01:19.519570+00:00",
+      "status": "source_payload_multiple_manuscript_bodies; no chosen repair",
+      "sources": {
+        "html": "988fa810715b696837c41e5cbb4a782d22f8d4569287ec0f3b0ccc74844eea79",
+        "pdf": "4d6d333cacafb45274a8e12fab371635faac5281c5379f37e7bcf07a5299a887",
+        "extracted_text": "94db202d5d26c8d41902efe11e87d764b20d307ad77bef38d3e4afdf328456fd"
+      },
+      "observation": "PDF33 physical pages contains manuscript bodyA on pages1-16 and bodyB on pages17-33, both titled Cosmological constraints on a decomposed Chaplygin gas. Page1 watermark says1301.5315v2 4Apr2013. Both title pages show generated date November17,2018. Source metadata submission/update dates remain separate.",
+      "coordinator_visual_pages": [
+        1,
+        17
+      ],
+      "contradictions": [
+        {
+          "locator": "PDF physicalp1 bodyA abstract",
+          "reported_barotropic_bound": "alpha<1.44e-5 (95%)",
+          "reported_geodesic_bound": "-0.1522<alpha<0.2556 (95%)"
+        },
+        {
+          "locator": "PDF physicalp17 bodyB abstract",
+          "reported_barotropic_bound": "alpha<5.66e-6 (95%)",
+          "reported_geodesic_bound": "-0.15<alpha<0.26 (95%)"
+        }
+      ],
+      "qualification": "Not independent observations or a coordinator transcription repair. Need full Luna and Sol comparison, exact dataset/prior/likelihood conditioning and block-specific locators. HTML body/numbering must not silently be conflated with second PDF body.",
+      "coverage": "Two rendered title pages and text/bibliography inspection; zero full-paper reads.",
+      "custody": {
+        "manifest_format": "research-named-manifest/v1",
+        "collection": "prospector/reviews/chaplygin-vacuum-bridges-20261009-sources",
+        "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/chaplygin-vacuum-bridges-20261009-sources/versions/2fc06722007ed7f28d49b09b976fb67cf930c53e94cbf08ef6cecb3c51e7454d/manifest.json",
+        "version_id": "tzp7TzJjVGnwVxsX2XSk_wWxUQp4yEoR",
+        "sha256": "38f6187b94d9d1993616aeff51222a82a84844e4f02d6eef07f260e30908d222",
+        "bytes": 16249
+      }
+    }
+  ],
+  "alternate_route_check": {
+    "reason": "Investigate pinnedPDF two-manuscript-body ambiguity; compare lawful alternate official route without replacing previous source identity.",
+    "original_sha256": "4d6d333cacafb45274a8e12fab371635faac5281c5379f37e7bcf07a5299a887",
+    "alternate_receipt": {
+      "label": "1301.5315v2-alternate-route-identity-check",
+      "url": "https://export.arxiv.org/pdf/1301.5315v2",
+      "retrieved_utc": "2026-10-09T18:03:58.768569+00:00",
+      "timeout_seconds": 20,
+      "byte_limit": 10485760,
+      "http_status": 200,
+      "final_url": "https://export.arxiv.org/pdf/1301.5315v2",
+      "content_type": "application/pdf",
+      "bytes": 1693706,
+      "sha256": "4d6d333cacafb45274a8e12fab371635faac5281c5379f37e7bcf07a5299a887",
+      "path": ".work/bridges-20261009/acquisition/objects/4d6d333cacafb45274a8e12fab371635faac5281c5379f37e7bcf07a5299a887.pdf",
+      "elapsed_seconds": 0.317
+    },
+    "byte_identity_matches": true,
+    "independence_limit": "Alternate host may share upstream payload/CDN; this is a delivery consistency check, not independent scientific evidence."
+  },
+  "evidence_custody": {
+    "manifest_format": "research-named-manifest/v1",
+    "collection": "prospector/reviews/chaplygin-vacuum-bridges-20261009-sources",
+    "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/chaplygin-vacuum-bridges-20261009-sources/versions/2fc06722007ed7f28d49b09b976fb67cf930c53e94cbf08ef6cecb3c51e7454d/manifest.json",
+    "version_id": "tzp7TzJjVGnwVxsX2XSk_wWxUQp4yEoR",
+    "sha256": "38f6187b94d9d1993616aeff51222a82a84844e4f02d6eef07f260e30908d222",
+    "bytes": 16249
+  },
+  "preservation_amendment": "Earlier intake deferred raw custody. PinnedHTML notices now checked; no explicit private-copy prohibition identified. Acquired papers/Atom feeds and notices preserved privately under owner authorization via private-preservation-unreviewed. No public redistribution rights inferred. Earlier receipt remains historical.",
+  "limitations": [
+    "No full-paper read or accepted scientific constraint; both manuscript bodies must be read with separate physical-page and equation/reference locators.",
+    "HTML follows bodyA with1.44e-5 bound, metadata abstract follows bodyB with5.66e-6; no source repair or selection adopted.",
+    "Alternate host is not independent scientific support.",
+    "Compiled perturbation consumer unavailable; no execution."
+  ],
+  "integration_verification": {
+    "manifest_sha256": "38f6187b94d9d1993616aeff51222a82a84844e4f02d6eef07f260e30908d222",
+    "method": "Fresh exact-VersionId S3 manifest download and SHA256 check by integration owner; source observations are explicitly scoped coordinator checks pending Luna/Sol.",
+    "registered_papers_semantics": "Existing paper identities; zero new admissions in this amendment."
+  }
+}
