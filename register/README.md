@@ -72,7 +72,7 @@ Combined models require compatibility checks before promotion.
 - [Tracking scalar unification requires a depletion branch between early and late energy](ideas/unified-scalar-steep-steeper-shallow.json)
 
 [Typed relationships](graph.json) preserve overlap, distinctions, critique, shared data and prospect links.
-[Bibliographic citations](citations.json): 63 explicit links; the index is incomplete.
+[Bibliographic citations](citations.json): 64 explicit links; the index is incomplete.
 
 ## Papers
 
@@ -94,7 +94,7 @@ Combined models require compatibility checks before promotion.
 | [Timescape cosmology with radiation fluid](https://arxiv.org/abs/1306.3208v2) | [1306.3208v2](papers/1306.3208v2.json) | screened |
 | [Signature transition in Einstein-Cartan cosmology](https://arxiv.org/abs/1308.2877v2) | [1308.2877v2](papers/1308.2877v2.json) | screened |
 | [Timescape realized](https://arxiv.org/abs/1310.3124v1) | [1310.3124v1](papers/1310.3124v1.json) | screened |
-| [The Hantzsche-Wendt Manifold in Cosmic Topology](https://arxiv.org/abs/1403.2190v2) | [1403.2190v2](papers/1403.2190v2.json) | screened |
+| [The Hantzsche-Wendt Manifold in Cosmic Topology](https://arxiv.org/abs/1403.2190v2) | [1403.2190v2](papers/1403.2190v2.json) | read |
 | [On the Einstein-Cartan cosmology vs. Planck data](https://arxiv.org/abs/1405.3435v1) | [1405.3435v1](papers/1405.3435v1.json) | screened |
 | [Modified Einstein-Cartan Gravity and its Implications for Cosmology](https://arxiv.org/abs/1406.7555v2) | [1406.7555v2](papers/1406.7555v2.json) | screened |
 | [Cosmic microwave background anisotropies in the timescape cosmology](https://arxiv.org/abs/1410.3470v3) | [1410.3470v3](papers/1410.3470v3.json) | screened |

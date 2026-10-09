@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-09-neglected-topology-reading1-checkpoint",
+  "status": "completed",
+  "started_utc": "2026-10-09T18:34:03.433734+00:00",
+  "completed_utc": "2026-10-09T18:42:17.326828+00:00",
+  "completion_scope": "One completed Luna extraction checkpoint only; second selected reading and Sol review remain pending. No scientific acceptance.",
+  "lane": "inhomogeneity",
+  "work_mode": "neglected_topology_full_read_checkpoint",
+  "registered_papers": [
+    "arxiv:1403.2190v2"
+  ],
+  "new_versions": [],
+  "full_reads": [
+    "arxiv:1403.2190v2"
+  ],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [],
+  "idea_ids": [],
+  "design_ids": [],
+  "prospect_ids": [],
+  "edge_ids": [],
+  "queries": [],
+  "search_receipts": [],
+  "evidence_custody": [
+    {
+      "manifest_format": "research-named-manifest/v1",
+      "collection": "prospector/reviews/neglected-topology-20261009-checkpoint1",
+      "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/neglected-topology-20261009-checkpoint1/versions/af3205607ccc0cc16fbf4f2d9dc2caf90ae09902a3a4cec5d23ae0de881e5aa8/manifest.json",
+      "version_id": "CF34QR2OMdJmGzAHESbTieWugb1BBiwe",
+      "sha256": "73618f2e175107006407fe898de5d9263593a99b12b97548ed6fd8a33b6262d5",
+      "bytes": 29409
+    },
+    {
+      "manifest_format": "research-named-manifest/v1",
+      "collection": "prospector/reviews/neglected-topology-20261009-checkpoint2",
+      "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/neglected-topology-20261009-checkpoint2/versions/64f0954cc7a7d31d687c916899090577890f362bf56a3fa7e221d0b32d1c64c2/manifest.json",
+      "version_id": "6WfTL7Hyan5UIVPfPKv3OXtLy_Sl2VD7",
+      "sha256": "c56b4383f63d2f0bf380e98c2624e2dde4ff85c3534089f7740bbfcca357c1cf",
+      "bytes": 12290
+    },
+    {
+      "manifest_format": "research-named-manifest/v1",
+      "collection": "prospector/reviews/neglected-topology-20261009-reading1",
+      "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/neglected-topology-20261009-reading1/versions/3ddf809d65749e618d20b4d8b08588820d5c97e53ae19c5497f953c7e0e9ae57/manifest.json",
+      "version_id": "FgxSQaQYEeG7REkLrhAlIfNF4IA2g90Q",
+      "sha256": "dbd5654bf363abc62e9f8b5dbc5d4749d3e40cb31e28724092c73f6eed7201b0",
+      "bytes": 18930
+    }
+  ],
+  "worker_provenance": {
+    "launched_utc": "2026-10-09T18:34:03.433734+00:00",
+    "agent_id": "/root/luna_hantzsche_wendt",
+    "requested_model": "gpt-6-luna",
+    "requested_reasoning": "xhigh",
+    "actual_backend_identity": null,
+    "backend_note": "Spawn tool exposes canonical agent task name and requested model, no independent backend attestation.",
+    "paper_id": "arxiv:1403.2190v2",
+    "slot_authorization": "Bridges coordinator explicit release; global slot rotates to root integration owner after this paper.",
+    "source_map": ".work/neglected-20261009/restored-source-map.json",
+    "output_packet": ".work/neglected-20261009/luna-hw/reading.json",
+    "status": "completed",
+    "packet_sha256": "89dfa30582f83ebb31211080af2a73c2594a30c18746a4adae912b0883002e24"
+  },
+  "coverage": "All22pages, Figures1-12, Table1, central equations and40references; no appendices.",
+  "source_and_review_limits": [
+    "Full read records source claims and caveats; no independent reproduction or current-data reassessment.",
+    "Paper historical radius threshold and selected observer simulations are conditional; no cosmological detection.",
+    "Printed Euler-angle orientation prescription flagged as a question for Sol, not an established source-code error.",
+    "Coordinated arXiv HTTP429 stop retained; no further acquisition.",
+    "Consumer source schema inspected but no compiled descriptor found; no executable topology request or experiment."
+  ],
+  "publication": {
+    "status": "frozen_for_integration_owner"
+  }
+}

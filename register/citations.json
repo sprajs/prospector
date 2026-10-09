@@ -819,6 +819,19 @@
         "locator": "HTMLreference[41], bib.bib41; PDFp8reference[41] (same numbering)",
         "url": "https://arxiv.org/html/1203.6776v2#bib.bib41"
       }
+    },
+    {
+      "id": "cite-1403.2190v2-astro-ph-9801212",
+      "from_paper_id": "arxiv:1403.2190v2",
+      "cited_arxiv_id": "astro-ph/9801212",
+      "cited_version": null,
+      "reference": "10",
+      "source": {
+        "role": "html",
+        "sha256": "8d428d727a2d6a18a5145dd84da0484ebc32e1eb7e9f4a4f170fe4f8a66995ac",
+        "locator": "HTML reference [10], bib.bib10; PDF p.21 bibliography. Version not printed.",
+        "url": "https://arxiv.org/html/1403.2190v2#bib.bib10"
+      }
     }
   ],
   "inspected_paper_ids": [
@@ -843,7 +856,8 @@
     "arxiv:2412.15143v1",
     "arxiv:1811.11976v3",
     "arxiv:1812.01586v2",
-    "arxiv:1203.6776v2"
+    "arxiv:1203.6776v2",
+    "arxiv:1403.2190v2"
   ],
   "limitations": [
     "Four explicit bibliography links to registered paper identities were verified in pinned original HTML. This is a bounded extraction, not a complete citation index.",
@@ -855,6 +869,7 @@
     "Wave8 checks only Peterson HTML bibliography14 and Brout HTML bibliography20/83. Cited base IDs do not establish cited versions; all other bibliography coverage remains unknown. These links are bibliographic evidence, not physical ancestry or independent observations.",
     "2026-10-09 thermal NEDE/ACT reading checkpoint:14 explicit original-HTML bibliography links to registered base identities checked (4from2112.00770v2,10from2512.19633v1). PDF labels and HTML anchors kept separate; unprinted cited versions remain null. Bounded coverage, not complete citation ancestry or independent evidence.",
     "Explicit registered matches only; cited versions unspecified remainnull; root excluded1811bib103 false match and left2identities pending429.",
-    "1203.6776v2 full bibliography44entries inspected against currently registered baseIDs; twoexplicit registeredlinks recorded, no citedversion specified; this is bounded coverage, not exhaustive external citation mapping."
+    "1203.6776v2 full bibliography44entries inspected against currently registered baseIDs; twoexplicit registeredlinks recorded, no citedversion specified; this is bounded coverage, not exhaustive external citation mapping.",
+    "All40 references in1403.2190v2 read; one explicit match to current registered base IDs. Registered cited version is not proof of the version cited. No physical graph edge inferred."
   ]
 }

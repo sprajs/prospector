@@ -57,10 +57,417 @@
   ],
   "screen": {
     "status": "selected",
-    "basis": "abstract",
-    "reason": "Full reading selected: historically restricted circle searches and observer-dependent Hantzsche-Wendt signatures; test feasibility and null-search scope, not presumed anomaly explanation."
+    "basis": "full_text",
+    "reason": "One complete Luna reading retained with pending Sol source review. Geometric blind spot and conditional simulation results are not accepted cosmological evidence."
   },
-  "extraction": null,
+  "extraction": {
+    "paper_id": "arxiv:1403.2190v2",
+    "requested_model": "gpt-6-luna",
+    "requested_reasoning": "xhigh",
+    "agent_id": "/root/luna_hantzsche_wendt",
+    "actual_backend_identity_exposed": null,
+    "reading_level": "full_text",
+    "source_hashes": {
+      "html": "8d428d727a2d6a18a5145dd84da0484ebc32e1eb7e9f4a4f170fe4f8a66995ac",
+      "pdf": "b6d8ec5bedf9ed87f40ec5419e53895556960950328d7c3f945fc0442b36198f",
+      "extracted_text": "5a299c7d0c39b8012ea890c2dd6a30d37c36cdfc2b596abdb263462fb1e42597"
+    },
+    "coverage": {
+      "sections_read": [
+        "Front matter: exact title, authors, arXiv:1403.2190v2 and 23 July 2014 version date verified in the pinned PDF and HTML",
+        "1 Introduction",
+        "2 Hantzsche-Wendt Topology",
+        "3 Eigenmodes in the Hantzsche-Wendt Space",
+        "4 CMB Statistics",
+        "5 Suppression of Large-Scale CMB Correlations",
+        "5.1 Full-sky CMB analysis",
+        "5.2 Analysis with WMAP mask kq75 9yr",
+        "6 Summary",
+        "Acknowledgements",
+        "References 1–40"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "figure_check": "Rendered and visually inspected all 22 PDF pages at 110 dpi. Figures 1–12 were visually checked: Fig. 1 p.4; Figs. 2–3 p.5; Fig. 4 p.6; Fig. 5 p.7; Fig. 6 p.11; Fig. 7 p.13; Fig. 8 p.14; Fig. 9 p.15; Fig. 10 p.16; Fig. 11 p.19; Fig. 12 p.20. Table 1 was checked on p.18. Central formula renderings were checked against the HTML math: Eq. (1) p.3; Eqs. (2)–(4) p.8; Eqs. (5)–(13) p.9; Eqs. (14)–(19) pp.10–11; Eq. (20) p.12; Eqs. (21)–(24) p.17.",
+      "limitations": [
+        "The paper has no appendix; all numbered sections, acknowledgements, and the complete bibliography were read.",
+        "The text gives l_max symbolically for the masked pseudo-correlation, but no numerical l_max; it also gives no numerical k-mode cutoff or convergence study.",
+        "No author code/version, full mode-selection implementation, or map-level likelihood is specified, limiting exact computational reproduction from this paper alone."
+      ]
+    },
+    "summary": "Aurich and Lustig study the compact orientable flat E6 Hantzsche-Wendt quotient with three half-turn corkscrew holonomies. For the regular case Lx=Ly=Lz, their observer-dependent discrete eigenmodes generate simulated temperature skies. A 51^3 observer grid and simulations over L show that the full-sky scalar S(60°) distribution can be lower than the fixed simply connected ΛCDM comparison near L≈3 LH, while generic observers at L>3 lack the large back-to-back matched circles that their historical search threshold would readily reveal. The kq75 9-year masked simulations retain an enhanced low-S tail for selected L and observer positions. These are conditional simulated signatures, not a topology detection or a fit of the Hantzsche-Wendt model to the observed sky. The authors explicitly restrict the analysis to the direction-averaged C(θ), which discards topology-specific statistical anisotropy.",
+    "ideas": [
+      {
+        "local_id": "hw_e6_holonomy_geometry",
+        "title": "E6 Hantzsche-Wendt holonomies and the observer-centred Dirichlet cell",
+        "claim_type": "author_model_definition",
+        "description": "The paper defines E3/Γ by three fixed-point-free half-turn corkscrew transformations with scale parameters Lx, Ly, Lz. Squaring a generator gives a pure translation at twice its corresponding scale. The primitive face identifications therefore rotate by π; the topology is inhomogeneous, so the Dirichlet cell and CMB statistics depend on observer position. Dimensionless coordinates x,y,z map to physical coordinates (xLx,yLy,zLz). The detailed CMB results later restrict to Lx=Ly=Lz=L.",
+        "locators": [
+          "Sec. 2, Eq. (1), PDF p.3, HTML #S2.E1",
+          "Sec. 2 observer-coordinate and Dirichlet-cell discussion, PDF pp.3–5"
+        ],
+        "equations": [
+          {
+            "expression": "(x̃,ỹ,z̃) → (x̃+Lx,−ỹ,−z̃); (x̃,ỹ,z̃) → (−x̃,ỹ+Ly,−(z̃+Lz)); (x̃,ỹ,z̃) → (−(x̃+Lx),−(ỹ+Ly),z̃+Lz)",
+            "locator": "Sec. 2, Eq. (1), PDF p.3; HTML #S2.E1; source HTML SHA256 8d428d727a2d6a18a5145dd84da0484ebc32e1eb7e9f4a4f170fe4f8a66995ac",
+            "conventions": "Tilded coordinates are Euclidean-cover coordinates; Lx, Ly, Lz are physical topological lengths. The three transformations are transcribed in the displayed order.",
+            "domain": "The quotient E3/Γ; lengths are positive. The plotted and simulated CMB results use the regular subcase Lx=Ly=Lz.",
+            "confidence": "high; compared the original HTML MathML/TeX and PDF rendering"
+          }
+        ]
+      },
+      {
+        "local_id": "hw_observer_dependent_eigenmodes",
+        "title": "Discrete E6 eigenmodes projected about an arbitrary observer",
+        "claim_type": "author_method",
+        "description": "Invariance under Γ yields four related plane waves per eigenmode and a wave-number lattice k⃗=π(nx/Lx,ny/Ly,nz/Lz), with additional allowed-index restrictions stated in the prose. The mode normalization is γ=1/√2 when two indices vanish and γ=1 otherwise. The rotations relate the four wavevectors by π rotations about coordinate axes; their phases are fixed by the integer indices. Re-expansion about observer position x⃗o gives position-dependent α, β and ξlm coefficients. The authors choose Gaussian mode coefficients c=(cR+icI)/√2 with independent zero-mean, unit-variance real and imaginary parts; if any wave-number component vanishes they apply an additional 1/√2 to c because the mode is already real or purely imaginary.",
+        "locators": [
+          "Sec. 3, Eqs. (2)–(13), PDF pp.8–10, HTML #S3.E2–#S3.E13",
+          "Sec. 2, dimensionless observer coordinates, PDF p.3"
+        ],
+        "equations": [
+          {
+            "expression": "Ψk(x⃗)=γ Σ(j=1..4) exp(i k⃗j·x⃗) exp(i φj)",
+            "locator": "Sec. 3, Eq. (2), PDF p.8; HTML #S3.E2",
+            "conventions": "Four plane-wave terms form one Γ-invariant eigenmode; k⃗j and φj are specified immediately after Eq. (3).",
+            "domain": "Allowed discrete E6 modes only.",
+            "confidence": "high; visually checked PDF and inspected HTML math"
+          },
+          {
+            "expression": "k⃗=(kx,ky,kz)=π(nx/Lx,ny/Ly,nz/Lz), (nx,ny,nz)∈Z³",
+            "locator": "Sec. 3, Eq. (3), PDF p.8; HTML #S3.E3",
+            "conventions": "The prose restricts the lattice representatives: all-positive or all-negative nonzero triples; one zero component with the other two positive and cyclic permutations; or two zero components with the remaining index even and cyclic permutations. γ=1/√2 for the latter two-zero-component case, otherwise 1.",
+            "domain": "The discrete spectrum of the quotient, not an unrestricted cubic lattice; k=|k⃗|.",
+            "confidence": "high; checked displayed equation and following index restrictions"
+          },
+          {
+            "expression": "α=e^(i k⃗1·x⃗o)+(-1)^m e^(i(k⃗4·x⃗o+φ4)); β=(-1)^m e^(i(k⃗2·x⃗o+φ2))+e^(i(k⃗3·x⃗o+φ3))",
+            "locator": "Sec. 3, Eqs. (10)–(11), PDF p.9; HTML #S3.E10 and #S3.E11",
+            "conventions": "Observer phases use the paper's coordinate origin and spherical-harmonic index m; φj are the phase assignments following Eq. (3).",
+            "domain": "For each allowed discrete wavevector and observer x⃗o.",
+            "confidence": "high; visually checked PDF and inspected HTML math"
+          },
+          {
+            "expression": "ξ_lm^k(x⃗o)=i^l γ{Y_lm*(n̂1)[cα+(-1)^l c*α*]+Y_lm(n̂1)[(-1)^l cβ+c*β*]}",
+            "locator": "Sec. 3, Eq. (13), PDF p.9; HTML #S3.E13",
+            "conventions": "n̂1=k⃗1/|k⃗1|; α and β are defined in Eqs. (10)–(11); c is the Gaussian coefficient described on PDF p.10.",
+            "domain": "Spherical expansion about observer x⃗o for each allowed E6 eigenmode.",
+            "confidence": "high; visually checked PDF and inspected HTML math"
+          }
+        ]
+      },
+      {
+        "local_id": "hw_antipodal_circle_blind_spot",
+        "title": "Restricted back-to-back circle searches leave an E6 signature window",
+        "claim_type": "author_geometric_prediction",
+        "description": "The authors argue that the half-turn identifications make the largest circles non-back-to-back. Applying a generator twice gives pure translations but at twice the primitive length and hence smaller back-to-back circles. On a 51^3 observer grid for regular spaces, L>3 has no back-to-back circle with radius >25° for at least some positions and at most one for a position; circles >25° persist only at selected axis-related observers up to roughly L≈6. For L>4.4 the largest non-back-to-back circle can approach zero for some grid observers. The antipodicity angle varies with position. These results identify a blind spot specifically for antipodal searches; they do not show absence of non-back-to-back circles or establish that a real search would detect or exclude them.",
+        "locators": [
+          "Sec. 2, discussion of squared generators and Nα, PDF pp.6–7",
+          "Figs. 4–5, PDF pp.6–7; visually checked"
+        ],
+        "equations": []
+      },
+      {
+        "local_id": "hw_full_sky_low_correlation_simulations",
+        "title": "Conditional full-sky suppression of the scalar S(60°) statistic",
+        "claim_type": "reported_simulation_result",
+        "description": "For regular L, the authors compute temperature multipoles from the discrete eigenmodes, then the all-directions-averaged full-sky C(θ) and S(60°). The input transfer function uses their fixed WMAP+BAO+H0 parameter set and full Boltzmann physics; P(k)∝k^(ns−4), with its normalization fitted over l=50–400 to a WMAP seven-year power spectrum. They scan L=1.5–6.0 by 0.1 and L=6–9 by 0.5. At each L, 51^3 observer positions use 50,000 simulations each for position-dependent medians. The reported median is about a factor of two lower than the simply connected comparison for L below about 4; the minimum remains strongly suppressed toward L≈5, while the mean nearly returns to the comparison by L=9. Fig. 9 uses 100,000 simulations for selected positions. Threshold probabilities use 100,000 skies and choose the position with the smallest median. These are conditional simulated distributions and selected-position tail fractions, not fitted probabilities for the observed universe.",
+        "locators": [
+          "Sec. 4, Eqs. (14)–(19), PDF pp.10–12",
+          "Sec. 5.1, Eq. (20) and simulation design, PDF pp.12–16",
+          "Figs. 6–10, PDF pp.11, 13–16; visually checked"
+        ],
+        "equations": [
+          {
+            "expression": "a_lm=Σ_k T_l(k)√P(k) ξ_lm^k(x⃗o)",
+            "locator": "Sec. 4, Eq. (15), PDF p.10; HTML #S4.E15",
+            "conventions": "k sums over the allowed E6 modes; T_l is the transfer function; ξ includes Gaussian mode amplitudes and observer phases; P(k)∝k^(ns−4).",
+            "domain": "Temperature multipoles for the paper's fixed flat ΛCDM transfer-function inputs and E6 spectrum.",
+            "confidence": "high; visually checked PDF and inspected HTML math"
+          },
+          {
+            "expression": "⟨C_l⟩=Σ_k [T_l²(k)P(k)/(4π)]{1+P_l(k̂1·k̂2)(−1)^nx cos(2πny y)cos(2πnz z)+P_l(k̂1·k̂3)(−1)^(ny+nz)cos(2πnx x)cos(2πnz z)+P_l(k̂2·k̂3)(−1)^(nx+ny+nz)cos(2πnx x)cos(2πny y)}",
+            "locator": "Sec. 4, Eq. (17), PDF p.10; HTML #S4.E17",
+            "conventions": "Ensemble-averaged multipole for dimensionless observer coordinates (x,y,z); n_i label the discrete wave numbers of Eq. (3). The Legendre factors encode the three related wavevector directions.",
+            "domain": "Regular or general E6 mode construction as written; reported scan specializes to Lx=Ly=Lz.",
+            "confidence": "high; compared the complete displayed expression on PDF p.10"
+          },
+          {
+            "expression": "C(θ)=Σ_l (2l+1)C_l P_l(cos θ)/(4π)",
+            "locator": "Sec. 4, Eq. (19), PDF p.11; HTML #S4.E19",
+            "conventions": "C(θ) averages over all sky-direction pairs at separation θ; the authors warn this isotropic scalar average loses information for the anisotropic manifold.",
+            "domain": "Full-sky temperature two-point correlation summary.",
+            "confidence": "high; visually checked PDF and inspected HTML math"
+          },
+          {
+            "expression": "S(60°)=∫_[cos(180°)]^[cos(60°)] d(cos θ) |C(θ)|²",
+            "locator": "Sec. 5, Eq. (20), PDF p.12; HTML #S5.E20",
+            "conventions": "C has temperature units, so S is reported in µK⁴. It integrates only angular separations 60°–180°.",
+            "domain": "Scalar low-large-angle-correlation statistic used in the paper; it omits directional covariance information.",
+            "confidence": "high; visually checked PDF and inspected HTML math"
+          }
+        ]
+      },
+      {
+        "local_id": "hw_kq75_masked_simulation_pipeline",
+        "title": "WMAP kq75 9-year mask applied to simulated topology skies",
+        "claim_type": "reported_simulation_result",
+        "description": "The masked-sky pipeline randomly rotates each statistically anisotropic simulated map using uniformly selected Euler angles, removes monopole and dipole, applies the WMAP kq75 9-year mask, computes pseudo-C_l, divides the pseudo-correlation by the mask normalization A(θ), and then computes S(60°). For L=2.7, 3.1, and 4.5 at two selected observers, the paper overlays histograms from 200 cell orientations, with 100,000 simulations per orientation as described. Table 1 reports threshold fractions for those cases, L=9 at one observer, a volume-matched torus case, and ΛCDM with/without the mask. The authors find enhanced low-S fractions relative to the ΛCDM masked simulations. They do not compare a topology-aware likelihood to the observed WMAP map; the mask and WMAP angular spectrum condition a simulation exercise.",
+        "locators": [
+          "Sec. 5.2, Eqs. (21)–(24), PDF p.17",
+          "Table 1, PDF p.18; Figs. 11–12, PDF pp.19–20; visually checked"
+        ],
+        "equations": [
+          {
+            "expression": "C̃_l=(1/(2l+1))Σ_m |ã_lm|²; C̃(θ)=A(θ)^(−1)Σ_(l=0..lmax)[(2l+1)/(4π)]C̃_l P_l(cos θ)",
+            "locator": "Sec. 5.2, Eqs. (22)–(23), PDF p.17; HTML #S5.E22 and #S5.E23",
+            "conventions": "ã_lm are coefficients after map orientation, monopole/dipole removal, and application of the kq75 mask; A(θ) is the mask normalization defined in Eq. (24).",
+            "domain": "Pseudo-correlation estimator for the masked simulated maps; numerical l_max is not stated.",
+            "confidence": "high; visually checked PDF and inspected HTML math"
+          },
+          {
+            "expression": "A(θ)=Σ_(l=0..lmax)[(2l+1)/(4π)]A_l P_l(cos θ), A_l=(1/(2l+1))Σ_m |w_lm|²",
+            "locator": "Sec. 5.2, Eq. (24), PDF p.17; HTML #S5.E24",
+            "conventions": "w_lm are the spherical-harmonic coefficients of the mask.",
+            "domain": "The paper's kq75 9-year cut-sky pseudo-correlation estimator; numerical l_max is not stated.",
+            "confidence": "high; visually checked PDF and inspected HTML math"
+          }
+        ]
+      },
+      {
+        "local_id": "hw_isotropic_statistic_limit",
+        "title": "The direction-averaged correlation is insufficient to test topology-specific anisotropy",
+        "claim_type": "author_caveat",
+        "description": "The authors explicitly note that E6 is statistically anisotropic and that averaging over all direction pairs into C(θ) loses information relative to the covariance C_ll′mm′=⟨a_lm a*_{l′m′}⟩. They state consistency with this isotropic statistic is insufficient because anisotropy tests could conflict with observations; computational cost leads them to restrict the paper to C(θ).",
+        "locators": [
+          "Sec. 4, discussion following Eq. (19), PDF p.11"
+        ],
+        "equations": []
+      }
+    ],
+    "quantities": [
+      {
+        "name": "Ω_bar",
+        "value": "0.0456",
+        "unit": "dimensionless",
+        "uncertainty": "not reported in this paper; treated as a fixed input",
+        "conditioning": "Flat ΛCDM comparison inputs from Table 8, WMAP+BAO+H0 column of Jarosik et al. [27].",
+        "locator": "Sec. 2, PDF p.4"
+      },
+      {
+        "name": "Ω_cdm",
+        "value": "0.227",
+        "unit": "dimensionless",
+        "uncertainty": "not reported in this paper; treated as a fixed input",
+        "conditioning": "Flat ΛCDM comparison inputs from Table 8, WMAP+BAO+H0 column of Jarosik et al. [27].",
+        "locator": "Sec. 2, PDF p.4"
+      },
+      {
+        "name": "h",
+        "value": "0.704",
+        "unit": "dimensionless reduced Hubble parameter",
+        "uncertainty": "not reported in this paper; treated as a fixed input",
+        "conditioning": "The same WMAP+BAO+H0 parameter column; LH=c/H0≈4.258 Gpc.",
+        "locator": "Sec. 2, PDF p.4"
+      },
+      {
+        "name": "τ_reionization",
+        "value": "0.087",
+        "unit": "dimensionless optical depth",
+        "uncertainty": "not reported in this paper; treated as a fixed input",
+        "conditioning": "The same WMAP+BAO+H0 parameter column.",
+        "locator": "Sec. 2, PDF p.4"
+      },
+      {
+        "name": "n_s",
+        "value": "0.963",
+        "unit": "dimensionless scalar spectral index",
+        "uncertainty": "not reported in this paper; treated as a fixed input",
+        "conditioning": "The same WMAP+BAO+H0 parameter column; P(k)∝k^(n_s−4).",
+        "locator": "Sec. 2 and Sec. 4, PDF pp.4,10"
+      },
+      {
+        "name": "L_H=c/H_0",
+        "value": "approximately 4.258",
+        "unit": "Gpc",
+        "uncertainty": "not reported",
+        "conditioning": "For the fixed h=0.704 parameter set; all reported topological L values are in Hubble-length units.",
+        "locator": "Sec. 2, PDF p.4"
+      },
+      {
+        "name": "D_sls",
+        "value": "6.605",
+        "unit": "L_H",
+        "uncertainty": "not reported",
+        "conditioning": "Paper's stated diameter of the surface of last scattering for its fixed parameter set.",
+        "locator": "Sec. 2, PDF p.4"
+      },
+      {
+        "name": "Full-sky observer grid",
+        "value": "51^3 positions; dimensionless x,y,z∈[0,0.5] in steps of 0.01",
+        "unit": "observer positions",
+        "uncertainty": "finite grid; no interpolation or continuous-position error reported",
+        "conditioning": "Regular E6 case; 50,000 skies per position and L for the median scan.",
+        "locator": "Sec. 5.1, PDF p.12"
+      },
+      {
+        "name": "Back-to-back circle search threshold discussed",
+        "value": "approximately 25°–30° radius",
+        "unit": "degrees",
+        "uncertainty": "historical practical threshold range, not a measured confidence bound",
+        "conditioning": "The paper's 2014 discussion of earlier CMB matched-circle searches; smaller circles are said not detectable in the cited search context.",
+        "locator": "Sec. 1, PDF p.2; Sec. 2, PDF pp.6–7"
+      },
+      {
+        "name": "Observed low-S thresholds used for simulation fractions",
+        "value": "1000, 1500, 2000",
+        "unit": "µK^4",
+        "uncertainty": "fixed threshold choices; simulation sampling uncertainty is not reported",
+        "conditioning": "Thresholds are motivated by prior cut-sky compilations; reported probabilities are Monte Carlo fractions, not posterior probabilities.",
+        "locator": "Sec. 5.1 and Sec. 5.2, PDF pp.16–18"
+      }
+    ],
+    "data_dependencies": [
+      {
+        "name": "WMAP+BAO+H0 baseline parameters",
+        "role": "fixed cosmological inputs",
+        "conditioning": "Table 8, WMAP+BAO+H0 column of Jarosik et al. [27]; values copied in Sec. 2. No Planck parameter set is used for the reported simulation outputs.",
+        "locator": "PDF p.4; reference [27], PDF p.22"
+      },
+      {
+        "name": "WMAP seven-year angular power spectrum",
+        "role": "normalization of P(k)",
+        "conditioning": "Ensemble-averaged multipoles l=50–400 are fitted, on the stated ground that topology has little influence at these smaller angles.",
+        "locator": "Sec. 4, PDF p.11"
+      },
+      {
+        "name": "WMAP nine-year unbinned C_l",
+        "role": "observed comparison curve in Fig. 6",
+        "conditioning": "Used to plot C(θ) through Eq. (19); it is not a topology model likelihood fit.",
+        "locator": "Sec. 4 and Fig. 6, PDF pp.11–12; explicit reference [37]"
+      },
+      {
+        "name": "WMAP kq75 9-year mask",
+        "role": "mask applied to simulated full-sky maps",
+        "conditioning": "Applied after random map orientation and monopole/dipole removal; mask pseudo-C_l and mask-normalized C̃(θ) are then used.",
+        "locator": "Sec. 5.2, PDF pp.17–18; explicit reference [37]"
+      },
+      {
+        "name": "Prior cut-sky S(60°) compilations",
+        "role": "empirical context for thresholds and anomaly statement",
+        "conditioning": "The text reports values below 1900 µK^4 for cited combinations of CMB measurements and masks, then uses 1000/1500/2000 µK^4 thresholds. The Hantzsche-Wendt simulations are not direct fits to those maps.",
+        "locator": "Sec. 5 and Sec. 5.1, PDF pp.12,16; explicit reference [36]"
+      },
+      {
+        "name": "Boltzmann transfer function",
+        "role": "temperature source transfer T_l(k)",
+        "conditioning": "The stated implementation includes ordinary and integrated Sachs–Wolfe, Doppler, Silk damping, reionization, photon polarization, and standard-thermal-history neutrinos; the simply connected angular spectrum is said to agree with CAMB.",
+        "locator": "Sec. 4, PDF p.10; references [31]–[32]"
+      }
+    ],
+    "caveats": [
+      "The results concern flat Euclidean E6 and, for the principal CMB scan, the regular equal-length branch. They do not test unequal Lx,Ly,Lz or other topologies.",
+      "The paper's 2014 back-to-back-circle detectability discussion is tied to historical search pipelines and a radius threshold. It does not rule out the non-back-to-back circles that the paper itself predicts, and no contemporary search is rerun here.",
+      "The 513-position notation is 51^3 in the source. Both geometric circle ranges and CMB summaries are sampled on finite observer grids; no continuous observer marginalization or location prior is reported.",
+      "C(θ) averages over directions and loses anisotropic covariance information. The authors explicitly state that topology-specific statistical-isotropy tests could be inconsistent with observations, but defer them for computational cost.",
+      "The reported low-S fractions are conditional simulations. Full-sky tail probabilities choose an observer with the smallest median; the masked cases also select special observers and random orientations. No correction for position/orientation selection or look-elsewhere effects is reported.",
+      "The kq75 mask is applied to simulated skies, but the paper does not report an observed-map topology likelihood, instrument-noise or beam treatment, foreground model, or joint temperature-polarization test. Photon polarization is included in the transfer physics, but no polarization statistic is analyzed.",
+      "The masked estimator defines l_max but gives no numerical value; the finite k-mode cutoff, software version, numerical convergence, and exact reproducible implementation are also not stated.",
+      "The source says Planck collaboration parameters would not change the largest-scale topological results, but the paper's concrete input set and simulations are WMAP+BAO+H0 conditioned; it reports no Planck map or mask analysis.",
+      "Its statements on low CMB correlations and absent convincing matched circles are literature/data context as of 2014. This paper alone cannot establish what changed after 2014 or current detection status."
+    ],
+    "usefulness": {
+      "assessment": "Useful source for the exact E6 holonomies, observer-dependent discrete mode construction, length and Hubble-unit conventions, and the distinction between antipodal-circle searches and low-C scalar-correlation simulations. It motivates a bounded topology-aware investigation near L≈3 L_H but supplies no accepted cosmological fit, observed-sky detection, or scientific qualification.",
+      "strongest_objection": "The headline compatibility combines two weak summaries while leaving the model's distinctive anisotropy untested: the paper averages away directional covariance for an inhomogeneous topology and compares selected simulation tails rather than a topology-aware likelihood for the actual CMB maps. The selected observer positions and orientations also lack an explicit prior or selection correction. Thus reduced S(60°) plus failure of a restricted antipodal search is feasibility motivation, not evidence that E6 explains the sky.",
+      "minimal_informative_test": "At a predeclared regular scale near L=3 L_H, reproduce the stated discrete spectrum and kq75 pseudo-C_l pipeline with explicit k and l cutoffs and convergence checks. Predeclare observer and cell-orientation distributions instead of selecting the best positions; compare WMAP-era observed cut-sky temperature summaries and topology-specific anisotropic covariance to ΛCDM under the same mask, beam/noise, and foreground treatment. Correct the comparison for scanning L/observer/orientation. A low-S tail alone would remain a conditional statistic, not detection."
+    },
+    "citation_leads": [
+      {
+        "reference_label": "[9]",
+        "source": "Riazuelo et al., arXiv:astro-ph/0311314",
+        "lead": "Cited for eigenmodes on Euclidean manifolds; authors say it permits fluctuations for an observer at the coordinate origin.",
+        "locator": "Sec. 1 and Sec. 3, PDF pp.3,8; HTML #bib.bib9"
+      },
+      {
+        "reference_label": "[22]",
+        "source": "Aurich and Lustig, arXiv:1303.4226",
+        "lead": "Cited for the historical matched-circle search-grid resolution and detectability limits that motivate the antipodal-circle claim.",
+        "locator": "Sec. 1 and Sec. 2, PDF pp.2,7; HTML #bib.bib22"
+      },
+      {
+        "reference_label": "[27]",
+        "source": "Jarosik et al., arXiv:1001.4744",
+        "lead": "Source for the WMAP+BAO+H0 parameter column used to set the fixed transfer function.",
+        "locator": "Sec. 2, PDF p.4; HTML #bib.bib27"
+      },
+      {
+        "reference_label": "[36]",
+        "source": "Copi et al., arXiv:1310.3831",
+        "lead": "Cited for the low large-angle C(θ) context and cut-sky S(60°) values used to motivate thresholds.",
+        "locator": "Sec. 5 and Sec. 5.1, PDF pp.12,16; HTML #bib.bib36"
+      },
+      {
+        "reference_label": "[37]",
+        "source": "Bennett et al., arXiv:1212.5225",
+        "lead": "Cited for the WMAP 9-year unbinned C_l and kq75 9-year mask.",
+        "locator": "Sec. 4 and Sec. 5.2, PDF pp.11,17; HTML #bib.bib37"
+      }
+    ],
+    "bibliographic_links": [
+      {
+        "citing_paper_id": "arxiv:1403.2190v2",
+        "cited_base_id": "astro-ph/9801212",
+        "cited_version": null,
+        "registered_match_by_base_id": "arxiv:astro-ph/9801212v1",
+        "reference_label": "[10]",
+        "source_role": "html",
+        "source_sha256": "8d428d727a2d6a18a5145dd84da0484ebc32e1eb7e9f4a4f170fe4f8a66995ac",
+        "bibliography_html_anchor": "#bib.bib10",
+        "in_text_locator": "Introduction, PDF p.2; CITS signature citation [10]",
+        "bibliography_locator": "PDF p.21; HTML #bib.bib10",
+        "evidence_note": "The printed reference gives arXiv base ID astro-ph/9801212 without a version. The registered v1 match is by base ID only; the cited version remains unknown."
+      }
+    ],
+    "original_packet": {
+      "path": ".work/neglected-20261009/luna-hw/reading.json",
+      "sha256": "89dfa30582f83ebb31211080af2a73c2594a30c18746a4adae912b0883002e24",
+      "custody": {
+        "manifest_format": "research-named-manifest/v1",
+        "collection": "prospector/reviews/neglected-topology-20261009-reading1",
+        "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/neglected-topology-20261009-reading1/versions/3ddf809d65749e618d20b4d8b08588820d5c97e53ae19c5497f953c7e0e9ae57/manifest.json",
+        "version_id": "FgxSQaQYEeG7REkLrhAlIfNF4IA2g90Q",
+        "sha256": "dbd5654bf363abc62e9f8b5dbc5d4749d3e40cb31e28724092c73f6eed7201b0",
+        "bytes": 18930
+      }
+    },
+    "coordinator_validation": {
+      "packet_schema": "passed using repository uv environment",
+      "source_hashes": "All original and extracted source digests match public artifacts and freshly restored S3 bytes.",
+      "review_status": "Unreviewed extraction; original packet preserved; Sol scientific review pending."
+    }
+  },
   "review_id": null,
   "idea_ids": []
 }

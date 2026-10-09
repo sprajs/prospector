@@ -967,8 +967,8 @@
     },
     {
       "paper_id": "arxiv:1403.2190v2",
-      "stage": "read",
-      "reason": "Selected Hantzsche-Wendt historical mechanism and later covariance detectability revisit; awaiting shared Luna slot.",
+      "stage": "review",
+      "reason": "Full22-page Luna extraction completed; await Sol original-source review, including E6 observer/initial-spectrum/statistical scope and printed orientation sampling convention.",
       "prospect_ids": [
         "cosmic-topology"
       ]
