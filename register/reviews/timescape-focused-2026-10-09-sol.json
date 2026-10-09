@@ -1,0 +1,415 @@
+{
+  "schema_version": 1,
+  "review_id": "timescape-focused-2026-10-09-sol",
+  "review_kind": "full_paper_scientific_review",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "high",
+  "agent_id": "/root/sol_timescape_assessment",
+  "model_confirmation": {
+    "model": "gpt-6.1-sol",
+    "effort": "high",
+    "status": "Exact model and effort explicitly requested in the worker assignment; actual backend identity is not exposed.",
+    "actual_backend_identity": null
+  },
+  "reviewed_at": "2026-10-09T18:30:49.911011+00:00",
+  "reviewed_papers": [
+    "arxiv:2412.15143v1",
+    "arxiv:1811.11976v3",
+    "arxiv:1812.01586v2"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:2412.15143v1",
+      "source_hashes": {
+        "html": "40d21fc1c779f39ef77162f435aeb6385526f7d67ce7a3e628a633364f06b88c",
+        "pdf": "5e2917fd9fc2ee561b35858e4c1b93a1b6c883d7c230e6a78185e8569714dbc7",
+        "extracted_text": "719a65dc134e9abe3d136d31086e6dd467393ad1ac641dbc67d821a85d952542"
+      },
+      "extraction_sha256": "7f6119fcb81caccad1a0a87986242952425256ad09882e9bc499ce5d90fc73b5",
+      "decision": "Useful conditional source review; blocked investigation only.",
+      "coverage": {
+        "main_text": true,
+        "sections_read": "Abstract; Sections 1-4; acknowledgements, data availability and references. No appendix.",
+        "pdf_pages_text_read": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "visual_pdf_pages": [
+          3,
+          4,
+          5
+        ],
+        "figure_check": "Original rendered PDF pages inspected as listed: 2412 Figures 1-3 and Table 1; 1811 Eq. (1), Tables 1-2, Figures 13 and 18; 1812 Eqs. (1)-(13). Other figures were checked as text/captions only by this Sol review. Luna broader visual coverage remains its own provenance.",
+        "unread": [
+          "External full catalogues, photometry, covariance files and chains; original sources of contextual citations beyond these three papers."
+        ],
+        "limitations": [
+          "All main text read in PDF-derived layout text, with original PDF mathematics/tables on the listed visual pages. No figure digitization, statistical execution or independent reproduction."
+        ]
+      },
+      "checks": {
+        "equations": "Checked Eqs. (1)-(5), dimensions, common magnitude and variance, prior and parameter-count ambiguities, Bayes-factor sign and host step. Footnote 7 visually has the correct 5/(H0 ln 10); no derivative error is claimed.",
+        "strongest_objection": "Preference is conditioned on fixed measured SALT2 x1,c, shared covariance, selection and prior measure. The paper supplies no quantitative bound that these choices cannot explain the small model-distance differences. This is a testable alternative explanation, not a demonstrated artifact.",
+        "minimal_investigation": "Freeze event rows and covariance; derive the conditioning, normalization and prior codebook; compare paired evidence under preregistered conditioning and selection alternatives using source-faithful distances."
+      }
+    },
+    {
+      "paper_id": "arxiv:1811.11976v3",
+      "source_hashes": {
+        "html": "96b5c65db89141c97cfd3685d70f81502e0b6676cd785bfd1e8e50c72dc5109c",
+        "pdf": "99c7e9ae135514e78e5e6ddd0a3b89308e59b3e3ff19d989f78e624621525070",
+        "extracted_text": "1bfd1ee1a467db3ceea3df21ae0dbcf55752f2fb378c3f5bcb3bb7ade971c791"
+      },
+      "extraction_sha256": "6f870bc70ebe3f6c193981262ccae86ebfcd4ec0faf7c823cdee6376c98d8e3b",
+      "decision": "Useful conditional source review; blocked investigation only.",
+      "coverage": {
+        "main_text": true,
+        "sections_read": "Abstract; Sections 1-7 including all subsections; Appendix A and displayed Tables A.1-A.2; references.",
+        "pdf_pages_text_read": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "visual_pdf_pages": [
+          7,
+          10,
+          12
+        ],
+        "figure_check": "Original rendered PDF pages inspected as listed: 2412 Figures 1-3 and Table 1; 1811 Eq. (1), Tables 1-2, Figures 13 and 18; 1812 Eqs. (1)-(13). Other figures were checked as text/captions only by this Sol review. Luna broader visual coverage remains its own provenance.",
+        "unread": [
+          "External full catalogues, photometry, covariance files and chains; original sources of contextual citations beyond these three papers."
+        ],
+        "limitations": [
+          "All main text read in PDF-derived layout text, with original PDF mathematics/tables on the listed visual pages. No figure digitization, statistical execution or independent reproduction."
+        ]
+      },
+      "checks": {
+        "equations": "Checked line fractions, comoving fundamental-plane distances, relative normalization, rest frames, coherent infall, mock richness mismatch and Appendix A units. Table 1 has an unresolved displayed scale inconsistency; Table 2 remains a conditional negative proxy result.",
+        "strongest_objection": "The proxy retains LambdaCDM structure and peculiar motions, then imposes linear redshift changes without demonstrating timescape observer and curvature closure. Rejection of this proxy cannot directly reject full timescape.",
+        "minimal_investigation": "Derive the joint object-level (H_rel,f_fi) mapping, including clock, curvature, mass and distance consistency, before fitting observations."
+      }
+    },
+    {
+      "paper_id": "arxiv:1812.01586v2",
+      "source_hashes": {
+        "html": "66656c6db6e2ddecb7d56932b7060b1e4fc7b07fd2e3759d50e61e75f94b4ec4",
+        "pdf": "ac3efc9794aeab4b45ae24d7fe868c6a5e4ae482c639318460f9dc24678c5824",
+        "extracted_text": "cfb15c84080b1add137c06fd1983cb00b8adc031f510c7da0dd4e520cbc0105b"
+      },
+      "extraction_sha256": "98ab954d374919f034583ce55ed8c2aa99a53473753516da23fbfe90bd0fcc76",
+      "decision": "Useful conditional source review; blocked investigation only.",
+      "coverage": {
+        "main_text": true,
+        "sections_read": "Abstract; Sections 1-4; acknowledgements and references. No appendix.",
+        "pdf_pages_text_read": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "visual_pdf_pages": [
+          2,
+          3
+        ],
+        "figure_check": "Original rendered PDF pages inspected as listed: 2412 Figures 1-3 and Table 1; 1811 Eq. (1), Tables 1-2, Figures 13 and 18; 1812 Eqs. (1)-(13). Other figures were checked as text/captions only by this Sol review. Luna broader visual coverage remains its own provenance.",
+        "unread": [
+          "External full catalogues, photometry, covariance files and chains; original sources of contextual citations beyond these three papers."
+        ],
+        "limitations": [
+          "All main text read in PDF-derived layout text, with original PDF mathematics/tables on the listed visual pages. No figure digitization, statistical execution or independent reproduction."
+        ]
+      },
+      "checks": {
+        "equations": "Checked Eqs. (1)-(13), the wall-time/volume-time chain rule, density and curvature dimensions, and the line-fraction/volume-fraction distinction.",
+        "strongest_objection": "Criticism of an existing proxy does not supply a predictive alternative catalogue or quantify the magnitude/sign of the timescape trend. The author explicitly leaves detailed predictions undeveloped.",
+        "minimal_investigation": "Require a fixed observer-consistent mapping and declared limits. Failure rejects that approximation; a closed mapping could later face an observational test."
+      }
+    }
+  ],
+  "reviewed_source_assets": [
+    {
+      "id": "timescape-sn-code-README-md",
+      "url": "https://github.com/antosft/SNe-PantheonPlus-Analysis/blob/3caa94c62b10f97fe8c116ccd3f6cda860d55a38/README.md",
+      "repository_path": "README.md",
+      "commit": "3caa94c62b10f97fe8c116ccd3f6cda860d55a38",
+      "sha256": "2192525c23810b287b0ef83231c659345ba643ffdb62fc70efe45165c28e46dc",
+      "coverage": "Full selected file read statically; not executed."
+    },
+    {
+      "id": "timescape-sn-code-bayesian_nongauss-py",
+      "url": "https://github.com/antosft/SNe-PantheonPlus-Analysis/blob/3caa94c62b10f97fe8c116ccd3f6cda860d55a38/bayesian_nongauss.py",
+      "repository_path": "bayesian_nongauss.py",
+      "commit": "3caa94c62b10f97fe8c116ccd3f6cda860d55a38",
+      "sha256": "45cd9acf52addba00c9a26d47de8f58bd267d597298cc7984d28e741001a2d95",
+      "coverage": "Full selected file read statically; not executed."
+    },
+    {
+      "id": "timescape-sn-code-distmod-py",
+      "url": "https://github.com/antosft/SNe-PantheonPlus-Analysis/blob/3caa94c62b10f97fe8c116ccd3f6cda860d55a38/distmod.py",
+      "repository_path": "distmod.py",
+      "commit": "3caa94c62b10f97fe8c116ccd3f6cda860d55a38",
+      "sha256": "8e65b801fd34de2b90ff21cb1cc0c66db78b45fb686d130eecfbc5c524d0d23f",
+      "coverage": "Full selected file read statically; not executed."
+    }
+  ],
+  "code_audit": {
+    "repository": "antosft/SNe-PantheonPlus-Analysis",
+    "commit": "3caa94c62b10f97fe8c116ccd3f6cda860d55a38",
+    "coverage": "Independently read README.md, bayesian_nongauss.py and distmod.py; freshly verified their digests. Other selected files are not claimed checked. No import or execution.",
+    "findings": [
+      "The non-Gaussian path samples five parameters with a common M, adds variance VM to the covariance, uses the 3N normalizer, M upper prior -18.3, uniform log10 variance and the printed two-sigma cosmological intervals. The distance normalization is fixed to H0=66.7 km/s/Mpc, with a (1+zhel)/(1+zcmb) factor. The code cut retains z>=zmin whereas the paper retains z>zmin.",
+      "distmod.py supplies a tracker time-redshift inversion and distances in author Python. This is not a native Irreducible implementation. Time conventions, primary-source closure and spline accuracy need verification before adoption.",
+      "The hardcoded 42-process pool was not run. Covariance, splines, inputs and chains were not reproduced."
+    ],
+    "history": {
+      "coordinator_receipt": "code-audit/likelihood-history-verification.json",
+      "receipt_sha256": "0940577892bae9ff78034056e65470c55e0eaab99cca1dcaceaba3cb3bf13e26",
+      "prior_commit": "972cc5cdb2d224e8b34251400bb66e4e33cc28d0",
+      "prior_date": "2024-06-26T10:50:49Z",
+      "claimed_identical_sha256": "45cd9acf52addba00c9a26d47de8f58bd267d597298cc7984d28e741001a2d95",
+      "review_status": "Local history JSON supports the June 2024 add-file date. The saved coordinator receipt states byte identity. The prior raw file was not present for a second independent rehash. This is not an attestation of the published-run configuration, data or output."
+    },
+    "licensing": "No LICENSE file is listed in the pinned tree. Publish source links, commit, digests and original notes; do not publish raw code."
+  },
+  "corrections": [
+    {
+      "id": "sn2412-normalization",
+      "paper_id": "arxiv:2412.15143v1",
+      "target": "Eq. (5) normalization",
+      "status": "source_inconsistency_flagged",
+      "correction": "Eq. (5) prints (2 pi)^(-3/2) although the covariance and residual are 3N dimensional; normalized density requires (2 pi)^(-3N/2). Keep the printed source and reviewer repair separate. An identical dimension-only factor cancels between models at the same cut, so this alone cannot reverse the Bayes ratio. The inspected m2loglike implements 3*N*ln(2*pi).",
+      "locators": [
+        "Eq. (5), original PDF p.3; HTML #S2.EGx2",
+        "bayesian_nongauss.py: m2loglike"
+      ]
+    },
+    {
+      "id": "sn2412-five-parameters-prior",
+      "paper_id": "arxiv:2412.15143v1",
+      "target": "Printed parameter counts, Table 1 priors and Eq. (5) residual",
+      "status": "code_path_clarifies_printed_inconsistency",
+      "correction": "The inspected code samples Q, alpha, beta, M and VM. RES uses common M; COV adds VM to magnitude entries. Code M bounds are [-20.3,-18.3] versus printed [-20.3,+18.3]. Uniform cube bounds [-10,4] followed by VM=10**cube[4] imply a log10 variance prior, not log10 standard deviation. The code uses the printed two-sigma cosmological intervals. These clarify a selected code path, not an attested published run. Printed nine-parameter prose and x1/c prior rows remain inconsistent.",
+      "locators": [
+        "Eqs. (4)-(5), Table 1 and sampler paragraph, PDF pp.2-3",
+        "bayesian_nongauss.py: __call__, COV, RES, prior and main"
+      ]
+    },
+    {
+      "id": "sn2412-observation-count",
+      "paper_id": "arxiv:2412.15143v1",
+      "target": "Luna sample-size quantities",
+      "status": "identity_scope_required",
+      "correction": "Record 1690 as selected light-curve/observation rows or the paper-labeled P+1690 sample, not a verified count of unique SNe. Eq. (3) defines N as supernova observations. Unique-event identities and repeats require the input mapping. Apply the same qualification to P+580.",
+      "locators": [
+        "Eq. (3), PDF p.2; Sections 3-4, PDF pp.4-5"
+      ]
+    },
+    {
+      "id": "sn2412-conditioning-not-independence",
+      "paper_id": "arxiv:2412.15143v1",
+      "target": "Model-independence and low-z interpretation",
+      "status": "narrow_interpretation",
+      "correction": "Delta priors at measured SALT2 x1,c impose a conditioning assumption rather than removing all statistical assumptions. The covariance is reused from Lane et al.; its construction was not reproduced. The paper explicitly uses the same data. Shared Pantheon+ observations, covariance ancestry and four authors do not provide independent confirmation. An averaged low-z distance fit does not identify a local direction-dependent nonkinematic expansion signal.",
+      "locators": [
+        "Sections 2-4, Figure 2 and data availability, PDF pp.2-6"
+      ]
+    },
+    {
+      "id": "sn2412-cut-boundary",
+      "paper_id": "arxiv:2412.15143v1",
+      "target": "Redshift-cut definition",
+      "status": "code_paper_boundary_difference",
+      "correction": "The paper excludes z_CMB<=zmin; the code retains z>=zmin. Only boundary rows are affected if present; no effect is claimed without data. An all-below-cut input also makes np.argmax return zero; a future consumer needs an empty-selection guard. No default data path was executed.",
+      "locators": [
+        "Section 2 final paragraph, PDF p.3; bayesian_nongauss.py: sort_and_cut"
+      ]
+    },
+    {
+      "id": "sn2412-bic-notation",
+      "paper_id": "arxiv:2412.15143v1",
+      "target": "BIC notation and reported comparisons",
+      "status": "notation_requires_run_check",
+      "correction": "PDF p.5 defines BIC=k ln N-2 ln Z and calls Z likelihood, whereas earlier Z denotes evidence. Conventional BIC uses maximized likelihood, not integrated evidence. The intended quantity and Delta BIC sign need run/output checks. Reported BIC values are not reproduced Bayes factors.",
+      "locators": [
+        "Section 3 host step and Section 4 model comparison, PDF p.5"
+      ]
+    },
+    {
+      "id": "flow1811-table1-scatter-scale",
+      "paper_id": "arxiv:1811.11976v3",
+      "target": "Luna summary, selected-slope idea and Table 1 quantities",
+      "status": "printed_source_inconsistency_and_visible_Luna_qualification",
+      "correction": "Original PDF p.10 Table 1 prints columns k_obs, k_mock, sigma_k,mock and Delta k[sigma]. Selected differential-expansion rows are (-0.19,-0.39,0.20,9.50) for LG and (-0.16,-0.39,0.20,11.22) for CMB. Reviewer arithmetic from rounded displayed values gives abs(-0.19+0.39)/0.20=1.00 and abs(-0.16+0.39)/0.20=1.15, incompatible with 9.50 and 11.22. The full-sample LG row (-0.06,-0.19,0.23,5.69) gives approximately 0.565. Rounding cannot explain this scale difference. Preserve all printed values with the ambiguity; do not infer a raw-statistic repair or replace sigma. Luna faithfully transcribed the values, but its strong-discrepancy summary requires this visible source-inconsistency qualification.",
+      "locators": [
+        "Original PDF p.10, Table 1 and caption, visually inspected columns 3-6; PDF SHA256 99c7e9ae135514e78e5e6ddd0a3b89308e59b3e3ff19d989f78e624621525070"
+      ],
+      "source_claim": {
+        "selected_proxy_LG": {
+          "k_obs": -0.19,
+          "k_mock": -0.39,
+          "sigma_k_mock": 0.2,
+          "reported_delta_sigma": 9.5
+        },
+        "selected_proxy_CMB": {
+          "k_obs": -0.16,
+          "k_mock": -0.39,
+          "sigma_k_mock": 0.2,
+          "reported_delta_sigma": 11.22
+        }
+      },
+      "reviewer_derived": {
+        "rounded_table_ratio_LG": 1.0,
+        "rounded_table_ratio_CMB": 1.15,
+        "status": "Internal consistency diagnostic only; not replacement fitted significance."
+      },
+      "display_summary": "Printed Table 1 scatter and standardized-discrepancy columns are inconsistent; strong sigma figures remain unresolved source claims."
+    },
+    {
+      "id": "flow1811-relative-H-units",
+      "paper_id": "arxiv:1811.11976v3",
+      "target": "Relative Hubble-estimator units",
+      "status": "units_clarification",
+      "correction": "The paper prose and Luna use z/D_FP. This has inverse-length units, not km/s/Mpc, unless c is included. In H_i/mean(H_i), c cancels, so the dimensionless relative diagnostic is consistent. Do not present unnormalized z/D as an absolute Hubble measurement.",
+      "locators": [
+        "Section 4, PDF pp.4-7"
+      ]
+    },
+    {
+      "id": "flow1811-proxy-and-bins",
+      "paper_id": "arxiv:1811.11976v3",
+      "target": "Proxy exclusion and binned-statistic interpretation",
+      "status": "preserve_negative_result_with_limits",
+      "correction": "The alternative is Millennium late-time LambdaCDM structure plus an empirical deformation with b_soft=0.75, not self-consistent timescape. Table 2 reports binned discrepancies 1.52 sigma in LG and 2.08 sigma in CMB; rounded slopes/scatter are coherent. Overlapping bins are correlated. The 64 ordered mock pairs reuse eight underlying regions and 36 unique combinations. KS fits are poor for both families, and the authors question implementation/suitability. They explicitly state current data/models cannot fully exclude timescape.",
+      "locators": [
+        "Section 4.4, PDF pp.6-7; Section 5.1, PDF p.8; Sections 5.3-5.5, Table 2, PDF pp.10-12; Sections 6.7-7, PDF pp.15-18"
+      ]
+    },
+    {
+      "id": "reply1812-lapse-and-curved-radius",
+      "paper_id": "arxiv:1812.01586v2",
+      "target": "Observer and curvature critique",
+      "status": "accept_bounded_contract_not_confirmation",
+      "correction": "From a=abar/gamma and dt/dtau=gamma, the chain rule gives H=gamma Hbar-dgamma/dt. H uses wall proper time tau, Hbar volume-average time t. Eq. (3) averages volume shares in t; Eq. (13) interpolates empirical line fractions in observer time. The latter does not automatically satisfy the former. A negatively curved sphere exceeds Euclidean volume at fixed proper radial/geodesic radius; radius conventions matter. This supports a missing proxy-fidelity contract, not a unique object-level prediction, observational confirmation or proof that every nonlinear deformation fails. Quoted CMB/H values remain attributed prior fits.",
+      "locators": [
+        "Eqs. (1)-(13), PDF pp.2-3; Section 4, PDF p.4"
+      ]
+    },
+    {
+      "id": "reply1812-sky-fraction",
+      "paper_id": "arxiv:1812.01586v2",
+      "target": "Comment sky-fraction quantity",
+      "status": "cross_source_clarification",
+      "correction": "The comment phrases coverage as 22.7% of the northern-hemisphere sky, but 1811 quotes 9376 square degrees and about 22.7% of the full sky, mostly northern. Use the original 1811 area/full-sky denominator rather than propagating the comment denominator.",
+      "locators": [
+        "1812 Section 1, PDF p.1; 1811 Section 5.2, PDF p.9, and Section 6.6, PDF p.15"
+      ]
+    },
+    {
+      "id": "flow1811-citation-identity",
+      "paper_id": "arxiv:1811.11976v3",
+      "target": "Luna Wiltshire (2008) citation lead",
+      "status": "reject_incorrect_candidate_match",
+      "correction": "The bibliography entry Wiltshire (2008), Phys. Rev. D 78, 084032 is not 0709.0732 (Phys. Rev. Lett. 99, 251101, 2007). Preserve the original worker ledger and exclude the incorrect candidate match.",
+      "locators": [
+        "References, PDF p.19; HTML #bib.bib103"
+      ]
+    }
+  ],
+  "scientific_assessment": {
+    "overall": "Useful conditional statistical and observational-test contracts. None of these sources qualifies or independently confirms timescape. Preserve the negative proxy result together with its geometric objection.",
+    "new_ideas": 2,
+    "overlap": "Bare/dressed geometry and generic supernova reduction dependence already exist. New records add a specific Pantheon+ conditioning audit and Hubble-flow model-to-observable contract, not new physical mechanisms.",
+    "data_ancestry": "2412 reuses Lane et al. Pantheon+ observations/covariance and shares four authors. The precursor 2311 was checked only for identity and source attribution, not fully reviewed. 1811 mock families share Millennium ancestry; 1812 analyses no new data.",
+    "readiness": "Both new designs and the new observational-test prospect are blocked, with executable requests null. The existing tracker design is not promoted."
+  },
+  "accepted_records": {
+    "idea_ids": [
+      "timescape-supernova-conditional-evidence",
+      "timescape-hubble-flow-proxy-contract"
+    ],
+    "design_ids": [
+      "candidate-timescape-supernova-likelihood-selection-audit",
+      "candidate-timescape-observer-consistent-hubble-flow"
+    ],
+    "prospect_ids": [
+      "timescape-observation-contracts"
+    ],
+    "graph_edge_ids": [
+      "timescape-20261009-sn-describes",
+      "timescape-20261009-flow-describes",
+      "timescape-20261009-reply-describes",
+      "timescape-20261009-sn-overlap",
+      "timescape-20261009-proxy-overlap",
+      "timescape-20261009-reply-critiques-flow",
+      "timescape-20261009-informs-timescape-bare-dressed",
+      "timescape-20261009-informs-timescape-supernova-conditional-evidence",
+      "timescape-20261009-informs-timescape-hubble-flow-proxy-contract",
+      "timescape-20261009-sn-shares-precursor"
+    ],
+    "reused_existing_model_idea_ids": [
+      "timescape-bare-dressed"
+    ]
+  },
+  "rejections": [
+    "No independent-confirmation edge from repeated Pantheon+ analyses or from the comment.",
+    "No full-timescape falsification from the Millennium proxy; no endorsement of unresolved Table 1 high sigma values.",
+    "No AvERA/LTB equivalence from similar distance curves or contextual references.",
+    "No relabeling timescape equations as LCDM/CPL or promotion of native capabilities."
+  ],
+  "consumer_inspection": {
+    "repository": "sprajs/irreducible",
+    "revision": "886a4abb8ea417faef6f0e5664f309fa82ec3261",
+    "dirty": false,
+    "checked_utc": "2026-10-09T17:50:18.617790+00:00",
+    "files": {
+      "schema/run.schema.json": "9d6f0569be08dacf9b49dc9ea2ebcc2e77e816c53e482a51b7aa5a1b1082b023",
+      "docs/capabilities.md": "6288cd415acdb6fe07ddde7244d4bd31efbf770f396fd71c7861682505ea1a55",
+      "docs/run-recipes.md": "8b3700b4d90e59630661adc8505dc58f89d187a93f64af3c66ea51521ec37d77"
+    },
+    "schema_expansion_kinds": [
+      "lcdm",
+      "constant_q",
+      "cpl"
+    ],
+    "compiled_capabilities": "No irred executable found in existing build/ or target/; compiled discovery not verified; no build or simulation launched. Source schema has no timescape option.",
+    "recipe_runner": "Proposed only per docs/run-recipes.md; no executable recipe route.",
+    "readiness": "blocked",
+    "substitution": "No LCDM/CPL surrogate offered."
+  },
+  "limitations": [
+    "Exactly three papers fully reviewed. No additional paper, including 2311.01438, 0709.0732 or 1410.3470, is counted as fully reviewed. Existing graph-neighbour records were context only.",
+    "No network/acquisition requests, numerical experiment, source-code execution, statistical reproduction or current-data reassessment.",
+    "Raw photometry, covariance, full catalogues, chains and published-run identity remain unaudited. Source review is not scientific qualification.",
+    "Sol visual coverage is limited to the listed original PDF pages. Other figures were not independently inspected as images in this review.",
+    "Custody and public integration remain coordinator responsibilities; copying restrictions stay explicit."
+  ],
+  "shared_data_identity_scope": {
+    "paper_id": "arxiv:2311.01438v2",
+    "basis": "Staged title/authors plus explicit reviewed 2412 text and bibliography attribution to Lane et al. (2025).",
+    "full_paper_reviewed": false,
+    "exact_common_rows_verified": false
+  },
+  "packet_path": ".work/timescape-20261009/review/review.json",
+  "packet_sha256": "4b73d3990e6313e60a142bb85b2c520d03f90db335d037b0672f65373888e005"
+}

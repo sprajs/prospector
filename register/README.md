@@ -1,6 +1,6 @@
 # Register
 
-123 paper versions · 24 ideas · 11 topics · 11 candidate prospects.
+123 paper versions · 26 ideas · 11 topics · 12 candidate prospects.
 
 [Open Prospector](https://prospector-cosmology.sprajs.chatgpt.site) · [Local map](map.html)
 
@@ -12,11 +12,11 @@
 | [Bounces, cycles and primordial alternatives](topics/bounces-cycles.json) | 3 | 0 |
 | [Cosmic topology and global spatial identifications](topics/cosmic-topology.json) | 7 | 0 |
 | [Early energy and recombination](topics/early-energy.json) | 19 | 8 |
-| [Inhomogeneity, averaging and observers](topics/inhomogeneity.json) | 15 | 2 |
+| [Inhomogeneity, averaging and observers](topics/inhomogeneity.json) | 15 | 4 |
 | [Interactions, transitions and decays](topics/interacting-sectors.json) | 32 | 9 |
 | [Acceleration and reconstruction](topics/kinematics.json) | 4 | 2 |
 | [Late dark energy and unified histories](topics/late-dark-energy.json) | 29 | 11 |
-| [Measurements and calibration](topics/measurement-lineage.json) | 33 | 4 |
+| [Measurements and calibration](topics/measurement-lineage.json) | 36 | 6 |
 | [Gravity and quantum cosmology](topics/modified-gravity.json) | 19 | 4 |
 | [Stochastic vacuum and spacetime discreteness](topics/stochastic-vacuum.json) | 7 | 0 |
 
@@ -35,6 +35,7 @@ Topics are navigation groups. Membership does not establish equivalent physics.
 | [Deceleration reconstruction](prospects/q-reconstruction-continuity-and-derivative-interpretation.json) | Flat ΛCDM reference |
 | [Spin and holographic dark-energy source audit](prospects/spin-holographic-source-and-photon-audit.json) | LambdaCDM |
 | [Staged dark-sector decay](prospects/staged-decay-energy-and-background-claim-audit.json) | Flat GR · radiation + matter |
+| [Timescape observational tests](prospects/timescape-observation-contracts.json) | Timescape two-region averaged geometry with wall observers |
 | [Timescape distances](prospects/timescape-tracker-distance-lineage.json) | Two-scale dust tracker |
 | [Unified scalar dark energy](prospects/unified-scalar-source-consistency-and-slope-screen.json) | Flat GR · radiation + matter |
 
@@ -61,6 +62,8 @@ Combined models require compatibility checks before promotion.
 - [Late dark symmetry breaking activates daughter-only quintessence coupling](ideas/staged-dark-decay-daughter-quintessence.json)
 - [Supernova reduction and selection dependence](ideas/supernova-reduction-selection-dependence.json)
 - [Timescape bare versus dressed geometry and clock](ideas/timescape-bare-dressed.json)
+- [A Hubble-flow proxy needs timescape geometry and observer clocks](ideas/timescape-hubble-flow-proxy-contract.json)
+- [Timescape supernova evidence depends on likelihood conditioning and selection](ideas/timescape-supernova-conditional-evidence.json)
 - [Transient pre-recombination energy reduces the acoustic ruler](ideas/transient-pre-recombination-energy.json)
   - [Oscillating scalar EDE](ideas/ede-oscillating-scalar.json)
   - [Slowly rolling and kinetic scalar EDE](ideas/ede-slowly-rolling-scalar.json)
@@ -69,7 +72,7 @@ Combined models require compatibility checks before promotion.
 - [Tracking scalar unification requires a depletion branch between early and late energy](ideas/unified-scalar-steep-steeper-shallow.json)
 
 [Typed relationships](graph.json) preserve overlap, distinctions, critique, shared data and prospect links.
-[Bibliographic citations](citations.json): 48 explicit links; the index is incomplete.
+[Bibliographic citations](citations.json): 61 explicit links; the index is incomplete.
 
 ## Papers
 
@@ -109,8 +112,8 @@ Combined models require compatibility checks before promotion.
 | [Planck 2018 results. VI. Cosmological parameters](https://arxiv.org/abs/1807.06209v4) | [1807.06209v4](papers/1807.06209v4.json) | screened |
 | [Early Dark Energy Can Resolve The Hubble Tension](https://arxiv.org/abs/1811.04083v2) | [1811.04083v2](papers/1811.04083v2.json) | reviewed |
 | [Baryon acoustic oscillation methods for generic curvature: Application to the SDSS-III Baryon Oscillation Spectroscopic Survey](https://arxiv.org/abs/1811.11963v2) | [1811.11963v2](papers/1811.11963v2.json) | screened |
-| [Hubble flow variations as a test for inhomogeneous cosmology](https://arxiv.org/abs/1811.11976v3) | [1811.11976v3](papers/1811.11976v3.json) | screened |
-| [Comment on "Hubble flow variations as a test for inhomogeneous cosmology"](https://arxiv.org/abs/1812.01586v2) | [1812.01586v2](papers/1812.01586v2.json) | screened |
+| [Hubble flow variations as a test for inhomogeneous cosmology](https://arxiv.org/abs/1811.11976v3) | [1811.11976v3](papers/1811.11976v3.json) | reviewed |
+| [Comment on "Hubble flow variations as a test for inhomogeneous cosmology"](https://arxiv.org/abs/1812.01586v2) | [1812.01586v2](papers/1812.01586v2.json) | reviewed |
 | [Einstein-Cartan Cosmologies](https://arxiv.org/abs/1812.04589v1) | [1812.04589v1](papers/1812.04589v1.json) | screened |
 | [Planck 2018 results. V. CMB power spectra and likelihoods](https://arxiv.org/abs/1907.12875v2) | [1907.12875v2](papers/1907.12875v2.json) | discovered |
 | [New Early Dark Energy](https://arxiv.org/abs/1910.10739v5) | [1910.10739v5](papers/1910.10739v5.json) | reviewed |
@@ -142,7 +145,7 @@ Combined models require compatibility checks before promotion.
 | [Dark Matter-Radiation Scattering Enhances CMB Phase Shift through Dark Matter-loading](https://arxiv.org/abs/2405.08064v2) | [2405.08064v2](papers/2405.08064v2.json) | screened |
 | [Quintessential early dark energy](https://arxiv.org/abs/2408.03229v3) | [2408.03229v3](papers/2408.03229v3.json) | screened |
 | [Thermo-Coupled Early Dark Energy](https://arxiv.org/abs/2411.09747v2) | [2411.09747v2](papers/2411.09747v2.json) | screened |
-| [Supernovae evidence for foundational change to cosmological models](https://arxiv.org/abs/2412.15143v1) | [2412.15143v1](papers/2412.15143v1.json) | screened |
+| [Supernovae evidence for foundational change to cosmological models](https://arxiv.org/abs/2412.15143v1) | [2412.15143v1](papers/2412.15143v1.json) | reviewed |
 | [Interacting Early Dark Energy](https://arxiv.org/abs/2502.08541v2) | [2502.08541v2](papers/2502.08541v2.json) | screened |
 | [DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints](https://arxiv.org/abs/2503.14738v3) | [2503.14738v3](papers/2503.14738v3.json) | screened |
 | [Stretch to stretch, dust to dust: lower-value local $H_{0}$ measurement from two-population modelling of type Ia supernovae](https://arxiv.org/abs/2506.22150v2) | [2506.22150v2](papers/2506.22150v2.json) | screened |
@@ -216,6 +219,8 @@ Combined models require compatibility checks before promotion.
 | [SDSS released observer and covariance contract](../designs/candidate-sdss-released-observer-contract.json) | blocked |
 | [Spin source and photon duality audit](../designs/candidate-spin-source-and-photon-duality-audit.json) | blocked |
 | [Staged decay energy and claim audit](../designs/candidate-staged-decay-energy-and-background-claim-audit.json) | blocked |
+| [Derive an observer-consistent Hubble-flow proxy before catalogue testing](../designs/candidate-timescape-observer-consistent-hubble-flow.json) | blocked |
+| [Audit conditioned timescape supernova evidence on identical event rows](../designs/candidate-timescape-supernova-likelihood-selection-audit.json) | blocked |
 | [Timescape tracker distance and same-object reduction sensitivity](../designs/candidate-timescape-tracker-distance-lineage.json) | blocked |
 | [Scalar slope and source-consistency screen](../designs/candidate-unified-scalar-source-consistency-and-slope-screen.json) | blocked |
 | [Historical WFC3 optical response and calibration-law boundary](../designs/candidate-wfc3-optical-response-contract.json) | blocked |
@@ -312,5 +317,6 @@ Source checks and structural validation do not establish independent reproductio
 - [arxiv:2202.04077v2](reviews/2026-10-08-constant-w-sn-targeted-source-claims.json): Printed w=w0+wa(1+z) differs from DESI/CLASS CPL; no repair adopted and wa0 unaffected.
 - [2026-10-08-constant-w-sn-targeted-source-claims](reviews/2026-10-08-constant-w-sn-targeted-source-claims.json): Released SN covariance caller returns raw B; inherited Cosmosis uses runtime-dependent allclose/hermitian pseudoinverse branch with lower-triangle semantics, not pair averaging. Exact original NumPy/Cosmosis options remain unknown; preserve original refusal and S_hat working repair.
 - [2026-10-08-constant-w-sn-targeted-source-claims](reviews/2026-10-08-constant-w-sn-targeted-source-claims.json): 77 denotes calibrator light-curve occurrences in Cepheid hosts, not77 distinct host galaxies; the source describes42 hosts. Prior condensed packet wording retained locally.
+- [arxiv:1811.11976v3](reviews/timescape-focused-2026-10-09-sol.json): Printed Table 1 scatter and standardized-discrepancy columns are inconsistent; strong sigma figures remain unresolved source claims.
 
 [Scan receipts](../scans/) · [Continuation queue](../state.json) · [Record conventions](../docs/records.md)

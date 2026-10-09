@@ -23,9 +23,13 @@
   ],
   "idea_ids": [
     "supernova-reduction-selection-dependence",
-    "timescape-bare-dressed"
+    "timescape-bare-dressed",
+    "timescape-supernova-conditional-evidence",
+    "timescape-hubble-flow-proxy-contract"
   ],
   "design_ids": [
-    "candidate-timescape-tracker-distance-lineage"
+    "candidate-timescape-tracker-distance-lineage",
+    "candidate-timescape-supernova-likelihood-selection-audit",
+    "candidate-timescape-observer-consistent-hubble-flow"
   ]
 }

@@ -21,9 +21,9 @@
     "pdf": "https://arxiv.org/pdf/1811.11976v3"
   },
   "license": {
-    "status": "unknown",
+    "status": "License: arXiv.org perpetual non-exclusive license",
     "redistribution": "links_and_original_notes_only",
-    "reason": "API license not supplied; source terms unresolved; only links and original notes published."
+    "reason": "Notice checked at original HTML #license-tr; retain original notices in owner-authorized private preservation. No full sources published in Git/Site."
   },
   "artifacts": [
     {
@@ -58,11 +58,505 @@
     }
   ],
   "screen": {
-    "status": "selected",
-    "basis": "abstract",
-    "reason": "Focused timescape foundations, conditional support, independent tests or cross-probe compatibility; selection is not acceptance."
+    "status": "reviewed",
+    "basis": "full_text",
+    "reason": "Luna full reading and Sol original-source assessment complete. Conditional evidence and source inconsistencies retained; no reproduction or scientific qualification."
   },
-  "extraction": null,
-  "review_id": null,
-  "idea_ids": []
+  "extraction": {
+    "schema_version": 1,
+    "paper_id": "arxiv:1811.11976v3",
+    "title": "Hubble flow variations as a test for inhomogeneous cosmology",
+    "authors": [
+      "Christoph Saulder",
+      "Steffen Mieske",
+      "Eelco van Kampen",
+      "Werner W. Zeilinger"
+    ],
+    "requested_model": "gpt-6-luna",
+    "requested_reasoning": "xhigh",
+    "agent_id": "/root/luna_flow1811",
+    "actual_backend": null,
+    "reading_level": "full_text",
+    "source_identity": {
+      "verified": true,
+      "arxiv_banner": "arXiv:1811.11976v3 [astro-ph.CO] 07 Dec 2018",
+      "title_authors_version_match": true,
+      "html_sha256": "96b5c65db89141c97cfd3685d70f81502e0b6676cd785bfd1e8e50c72dc5109c",
+      "pdf_sha256": "99c7e9ae135514e78e5e6ddd0a3b89308e59b3e3ff19d989f78e624621525070",
+      "extracted_text_sha256": "1bfd1ee1a467db3ceea3df21ae0dbcf55752f2fb378c3f5bcb3bb7ade971c791",
+      "extracted_text_derived_from_pdf_sha256": "99c7e9ae135514e78e5e6ddd0a3b89308e59b3e3ff19d989f78e624621525070"
+    },
+    "source_authorship": {
+      "received": "2016-06-23",
+      "accepted": "2018-11-28",
+      "affiliations_as_printed": {
+        "Christoph Saulder": [
+          "Korea Institute for Advanced Study, Seoul, South Korea",
+          "Department of Astrophysics, University of Vienna, Austria"
+        ],
+        "Steffen Mieske": [
+          "European Southern Observatory, Santiago, Chile"
+        ],
+        "Eelco van Kampen": [
+          "European Southern Observatory, Garching bei München, Germany"
+        ],
+        "Werner W. Zeilinger": [
+          "Department of Astrophysics, University of Vienna, Austria"
+        ]
+      },
+      "scope_note": "These are the affiliations and dates printed in this version; no current-affiliation or career-history claim is inferred."
+    },
+    "coverage": {
+      "sections": [
+        "Abstract",
+        "1 Introduction",
+        "2 Concept of the cosmological test",
+        "3 Data",
+        "4 Method",
+        "4.1 Coherent infall and biases",
+        "4.2 Identifying early-type galaxies in the Millennium simulation",
+        "4.3 Creating mock catalogues in Lambda-CDM cosmology",
+        "4.4 Creating mock catalogues for timescape cosmology",
+        "5 Results",
+        "5.1 Mock catalogues",
+        "5.2 Linear regression",
+        "5.3 Analysis of binned data",
+        "5.4 Kolmogorov-Smirnov test",
+        "5.5 Chi-square test",
+        "6 Discussion",
+        "6.1 Comparison to preliminary data",
+        "6.2 Approximations for timescape cosmology",
+        "6.3 Fundamental plane calibrations",
+        "6.4 Normalization",
+        "6.5 Distance/redshift limit",
+        "6.6 Sky coverage",
+        "6.7 Statistical analysis",
+        "7 Summary and conclusions",
+        "Acknowledgments",
+        "References",
+        "Appendix A Updated finite infinity regions catalogue"
+      ],
+      "pdf_pages_text_read": "1-20",
+      "visual_checks": {
+        "figures_inspected": "Figures 1-21, PDF pages 4-16",
+        "appendix_tables_inspected": [
+          "A.1",
+          "A.2",
+          "PDF pages 19-20"
+        ],
+        "notes": "Inspected the line-of-sight sketch, coherent-infall illustration, sample-selection plots, mock and observed fit plots, distance/sky-distribution plots, and the appendix sample tables against rendered PDF pages. Figure inspection confirms the plotted trends and selection effects; no figure data were digitized."
+      },
+      "limits": [
+        "The paper states that full catalogue Tables 3 and 4 are available electronically through CDS/VizieR; those external tables were not part of the pinned local source and were not fetched.",
+        "The only displayed main-text equation is Eq. (1); the HTML MathML annotation and rendered PDF were checked. The paper does not provide a self-consistent timescape simulation or a full transformation equation for its deformed mocks.",
+        "The paper's bibliography identifies cited works by author/year/publication details but does not print their arXiv base IDs or versions; candidate registered-record matches are kept separate in citations.json.",
+        "No cited paper or other original source was read for this packet."
+      ],
+      "sections_read": [
+        "Abstract",
+        "1 Introduction",
+        "2 Concept of the cosmological test",
+        "3 Data",
+        "4 Method",
+        "4.1 Coherent infall and biases",
+        "4.2 Identifying early-type galaxies in the Millennium simulation",
+        "4.3 Creating mock catalogues in Lambda-CDM cosmology",
+        "4.4 Creating mock catalogues for timescape cosmology",
+        "5 Results",
+        "5.1 Mock catalogues",
+        "5.2 Linear regression",
+        "5.3 Analysis of binned data",
+        "5.4 Kolmogorov-Smirnov test",
+        "5.5 Chi-square test",
+        "6 Discussion",
+        "6.1 Comparison to preliminary data",
+        "6.2 Approximations for timescape cosmology",
+        "6.3 Fundamental plane calibrations",
+        "6.4 Normalization",
+        "6.5 Distance/redshift limit",
+        "6.6 Sky coverage",
+        "6.7 Statistical analysis",
+        "7 Summary and conclusions",
+        "Acknowledgments",
+        "References",
+        "Appendix A Updated finite infinity regions catalogue"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "figure_check": "Figures 1-21, PDF pages 4-16; Appendix A sample tables A.1/A.2 inspected on pp19-20; no digitization.",
+      "limitations": [
+        "The paper states that full catalogue Tables 3 and 4 are available electronically through CDS/VizieR; those external tables were not part of the pinned local source and were not fetched.",
+        "The only displayed main-text equation is Eq. (1); the HTML MathML annotation and rendered PDF were checked. The paper does not provide a self-consistent timescape simulation or a full transformation equation for its deformed mocks.",
+        "The paper's bibliography identifies cited works by author/year/publication details but does not print their arXiv base IDs or versions; candidate registered-record matches are kept separate in citations.json.",
+        "No cited paper or other original source was read for this packet."
+      ]
+    },
+    "summary": "The test correlates a galaxy group's relative Hubble estimate from redshift and fundamental-plane distance with the fraction of its observer-to-group sightline inside finite-infinity regions. The central comparison is SDSS-based observations versus Millennium mocks for Lambda-CDM and a deliberately approximate timescape-inspired deformation of those same Lambda-CDM mocks. On the selected sample, the direct weighted-slope comparison strongly disfavors that imposed differential-expansion mock (9.50 sigma in the Local Group frame; 11.22 sigma in the CMB frame), while the binned-slope comparison is much weaker (1.52 and 2.08 sigma). KS and chi-square comparisons are poor/low-significance for both mock families, with an overall preference for Lambda-CDM. The tested alternative is not full timescape cosmology: it imposes a linear wall/void Hubble-rate relation on Millennium matter distributions with a softening factor of 0.75. The authors say their data show no significant support for timescape but do not fully exclude it or percent-level backreaction models.",
+    "ideas": [
+      {
+        "local_id": "flow1811-los-finite-infinity-fraction",
+        "title": "Operational line-of-sight finite-infinity fraction",
+        "claim_type": "method_definition",
+        "description": "For each group, place 1000 equally spaced sample points along the straight observer-to-group line using the group's comoving fundamental-plane distance; f_fi is the fraction of sampled points lying inside one or more reconstructed spherical finite-infinity regions. Overlaps are counted as locations inside a region. The authors report less than 0.2% additional error against semi-analytic intersections for all observational sightlines. They explicitly distinguish this one-dimensional fraction from the three-dimensional timescape wall-volume fraction f_w0.",
+        "locators": [
+          "HTML #S4.p1; PDF p.4 and p.7; Eq. (1) context"
+        ],
+        "equations": [
+          {
+            "expression": "f_fi = N(sampled sightline locations inside finite-infinity regions) / 1000",
+            "locator": "Section 4, PDF pp.4-5; prose definition",
+            "confidence": "high; operational expression of the prose, not a displayed equation",
+            "definitions": "N counts locations inside the union of the reconstructed finite-infinity regions along the line from the origin observer to the group.",
+            "domain": "Sightlines to the selected local galaxy-group sample; f_fi is one-dimensional and is not equal to f_w0 except at limiting values 0 or 1."
+          }
+        ]
+      },
+      {
+        "local_id": "flow1811-relative-individual-hubble-estimator",
+        "title": "Relative individual Hubble estimator from group redshift and FP distance",
+        "claim_type": "method_definition",
+        "description": "The group estimator is its median redshift divided by its comoving fundamental-plane distance, then normalized by the sample mean so the average relative Hubble parameter is unity. It is a relative diagnostic for the correlation test, not an absolute H0 measurement. Group redshifts and finite-infinity catalogues are evaluated in both CMB and Local Group rest frames.",
+        "locators": [
+          "HTML #S4.p1; PDF pp.4, 6-7"
+        ],
+        "equations": [
+          {
+            "expression": "H_i = z_group / D_FP; H_rel = H_i / mean_sample(H_i)",
+            "locator": "Section 4, PDF pp.4 and 6; prose definition",
+            "confidence": "high; normalization is stated in prose",
+            "definitions": "z_group is the group median redshift; D_FP is the comoving fundamental-plane distance. The source does not give a separate displayed equation for this estimator.",
+            "domain": "Observed and mock groups, with results expressed as dimensionless relative Hubble parameters."
+          }
+        ]
+      },
+      {
+        "local_id": "flow1811-linear-timescape-mock-deformation",
+        "title": "Linear wall/void interpolation used to deform the Lambda-CDM mocks",
+        "claim_type": "author_approximation",
+        "description": "Because no suitable self-consistent timescape simulation was available, the authors retain the Millennium late-time matter distribution and impose differential expansion through a linear relation between mean sightline finite-infinity fraction and wall, void, and dressed Hubble rates. They derive a void rate for each mock catalogue, rescale the Millennium H0=73 km s^-1 Mpc^-1 mocks to the quoted dressed value, modify relative group Hubble parameters using the dark-matter-based sightline fraction, and set b_soft=0.75. The full per-group deformation formula is not printed. The model assumes the matter distribution is a reasonable late-Universe proxy and does not model a self-consistent timescape peculiar-velocity field or screening.",
+        "locators": [
+          "HTML #S4.SS3, #S4.SS4 and #S7.p3; PDF pp.6-8, 17-18; Eq. (1)"
+        ],
+        "equations": [
+          {
+            "expression": "f_fi * H_0,w + (1 - f_fi) * H_0,v = H_0,av",
+            "locator": "Equation (1), PDF p.7; HTML #S4.E1",
+            "confidence": "high; checked against HTML MathML annotation and rendered PDF",
+            "definitions": "f_fi is the average one-dimensional sightline fraction for a mock catalogue; H_0,w is the bare wall rate; H_0,v is the void rate; H_0,av is the dressed average rate.",
+            "domain": "An empirical linear interpolation used to calibrate this paper's toy deformation; it is not presented as the full timescape model equation. Authors state f_fi is not the 3D wall-volume fraction."
+          }
+        ]
+      },
+      {
+        "local_id": "flow1811-coherent-infall-confounder",
+        "title": "Coherent infall can mimic a differential-expansion trend",
+        "claim_type": "author_caveat",
+        "description": "Infall toward clusters gives foreground galaxies higher redshift relative to distance than background galaxies because the overdense cluster lies in the latter sightlines. This produces a qualitatively similar redshift-space signal to the proposed timescape effect, so the authors include mock catalogues and morphology-sensitive selection to estimate it rather than treating a slope as unique evidence for differential expansion.",
+        "locators": [
+          "HTML #S4.SS1; PDF p.5; Figure 2"
+        ],
+        "equations": [],
+        "confidence": "high for the stated confounder; this packet does not independently quantify it."
+      },
+      {
+        "local_id": "flow1811-selected-sample-slope-comparison",
+        "title": "Selected-sample slope favors Lambda-CDM over the imposed differential-expansion mock",
+        "claim_type": "reported_fitted_result",
+        "description": "For groups with at least three early-type members and FP distance below 402.8 Mpc, the observed weighted slopes are -0.19 (Local Group) and -0.16 (CMB). Table 1 compares them with mean mock slopes -0.25 for Lambda-CDM and -0.39 for differential expansion. The authors' slope-based comparison places the differential-expansion mock 9.50 and 11.22 standard deviations from the observed slopes, respectively. This is a result against their approximate mock prescription, not a direct rejection of a fully specified timescape cosmology.",
+        "locators": [
+          "HTML #S5.T1, #S5.SS2; PDF pp.9-10, Table 1, Figures 11-12"
+        ],
+        "equations": [],
+        "confidence": "high for transcription of reported table values; significance interpretation is the authors' stated comparison."
+      },
+      {
+        "local_id": "flow1811-binned-and-goodness-of-fit-limit",
+        "title": "Binned and distribution tests weaken a broad exclusion claim",
+        "claim_type": "reported_result_and_scope_limit",
+        "description": "For selected binned data, observed slopes are -0.24 (LG) and -0.20 (CMB); the differential-expansion mock slope is -0.34, giving 1.52 and 2.08 sigma differences, P=0.13 and 0.04, and two-model likelihoods 0.17 and 0.04. Most individual bins lie within both models' error bars. The authors report that KS probabilities are very low for both model families, although Lambda-CDM probabilities exceed the differential-expansion ones for all 36 paired mock sets; chi-square comparisons also favor Lambda-CDM overall but have low significance. They explicitly state current data/models do not fully exclude timescape.",
+        "locators": [
+          "HTML #S5.T2, #S5.SS3, #S5.SS4, #S5.SS5, #S7; PDF pp.11-12, 16-18, Figures 15-18"
+        ],
+        "equations": [],
+        "confidence": "high for reported values and authors' qualification."
+      }
+    ],
+    "quantities": [
+      {
+        "name": "H0_wall_bare_timescape_quoted",
+        "value": 50.1,
+        "unit": "km s^-1 Mpc^-1",
+        "uncertainty": "±1.7; source-quoted model-fit uncertainty",
+        "conditioning": "Duley et al. (2013) values adopted by the authors for dense/wall environment; not measured by this test",
+        "locator": "Section 2, PDF p.3; Section 4.4, PDF p.7"
+      },
+      {
+        "name": "H0_average_dressed_timescape_quoted",
+        "value": 61.7,
+        "unit": "km s^-1 Mpc^-1",
+        "uncertainty": "±3.0; source-quoted model-fit uncertainty",
+        "conditioning": "Timescape dressed rate for a wall observer, adopted as the average of the approximate mock; not fitted from this test",
+        "locator": "Section 2, PDF p.3; Section 4.4, PDF p.7"
+      },
+      {
+        "name": "H0_void_apparent_maximum_quoted",
+        "value": 75.2,
+        "unit": "km s^-1 Mpc^-1",
+        "uncertainty": "+2.0/-2.6",
+        "conditioning": "Quoted from Duley et al. (2013) and Wiltshire (2014); model value, not a measurement in this paper",
+        "locator": "Section 6.4, PDF p.14"
+      },
+      {
+        "name": "b_soft",
+        "value": 0.75,
+        "unit": "dimensionless",
+        "uncertainty": null,
+        "conditioning": "Ad hoc softening multiplier chosen to account for systematic/statistical biases and predicted-rate error bars; 0 removes the imposed differential expansion, 1 retains it",
+        "locator": "Section 4.4, PDF p.7"
+      },
+      {
+        "name": "observational_line_fraction_approximation_error",
+        "value": "<0.2%",
+        "unit": "fractional error",
+        "uncertainty": null,
+        "conditioning": "Difference between the 1000-point line sampling and semi-analytic intersection values for all observed sightlines",
+        "locator": "Section 4, PDF p.5"
+      },
+      {
+        "name": "selected_observed_weighted_slope",
+        "value": {
+          "LG": -0.19,
+          "CMB": -0.16
+        },
+        "unit": "relative-Hubble slope per unit f_fi",
+        "uncertainty": "Compared against mock slope distributions; no separate fit uncertainty listed",
+        "conditioning": "At least 3 early-type galaxies per group and FP distance <402.8 Mpc; weighted least squares",
+        "locator": "Table 1, PDF p.10"
+      },
+      {
+        "name": "selected_LCDM_mock_slope_and_comparison",
+        "value": {
+          "mean_slope": -0.25,
+          "sigma_slope": 0.23,
+          "delta_sigma": {
+            "LG": 2.24,
+            "CMB": 3.75
+          },
+          "P": {
+            "LG": 0.025,
+            "CMB": 0.0002
+          }
+        },
+        "unit": "slope; standard deviation in slope; sigma; probability",
+        "uncertainty": "sigma_slope=0.23 across combined mock catalogues",
+        "conditioning": "Selected sample, Table 1; P is the paper's probability for observations to be represented by the model",
+        "locator": "Table 1 and its caption, PDF p.10"
+      },
+      {
+        "name": "selected_differential_expansion_mock_slope_and_comparison",
+        "value": {
+          "mean_slope": -0.39,
+          "sigma_slope": 0.2,
+          "delta_sigma": {
+            "LG": 9.5,
+            "CMB": 11.22
+          },
+          "P": {
+            "LG": "<0.0001",
+            "CMB": "<0.0001"
+          }
+        },
+        "unit": "slope; standard deviation in slope; sigma; probability",
+        "uncertainty": "sigma_slope=0.20 across combined mock catalogues",
+        "conditioning": "Selected sample; imposed linear Millennium deformation with b_soft=0.75; Table 1",
+        "locator": "Table 1 and its caption, PDF p.10"
+      },
+      {
+        "name": "selected_binned_slope_comparison",
+        "value": {
+          "observed_slope": {
+            "LG": -0.24,
+            "CMB": -0.2
+          },
+          "LCDM_mock_slope": -0.21,
+          "LCDM_sigma_slope": 0.06,
+          "LCDM_delta_sigma": {
+            "LG": 0.48,
+            "CMB": 0.12
+          },
+          "LCDM_P": {
+            "LG": 0.63,
+            "CMB": 0.9
+          },
+          "differential_mock_slope": -0.34,
+          "differential_sigma_slope": 0.07,
+          "differential_delta_sigma": {
+            "LG": 1.52,
+            "CMB": 2.08
+          },
+          "differential_P": {
+            "LG": 0.13,
+            "CMB": 0.04
+          },
+          "two_model_likelihood": {
+            "LCDM_LG": 0.83,
+            "LCDM_CMB": 0.96,
+            "differential_LG": 0.17,
+            "differential_CMB": 0.04
+          }
+        },
+        "unit": "dimensionless slope, standard deviation, sigma, probability, likelihood",
+        "uncertainty": "Mock-slope scatter as listed",
+        "conditioning": "Overlapping bins of width 0.1 with centres shifted by 0.01; each bin receives equal weight; two options only in likelihood calculation",
+        "locator": "Table 2, PDF p.12"
+      },
+      {
+        "name": "selected_sample_sizes",
+        "value": {
+          "observed_groups_CMB": 1835,
+          "observed_groups_LG": 1844,
+          "mock_groups_per_combination_range": "530-954",
+          "observed_full_catalogue_groups_CMB": 29527,
+          "observed_full_catalogue_groups_LG": 29717
+        },
+        "unit": "groups",
+        "uncertainty": null,
+        "conditioning": "Selected sample requires at least 3 early-type galaxies and distance <402.8 Mpc; full catalogue counts require at least one early-type galaxy and redshift <0.1",
+        "locator": "Section 5.2, PDF pp.9-10 and footnotes 8, 12"
+      },
+      {
+        "name": "mean_sightline_fractions",
+        "value": {
+          "mock_catalogue_range": "0.30-0.47",
+          "observed_selected": 0.47
+        },
+        "unit": "dimensionless f_fi",
+        "uncertainty": "Mock range varies by catalogue; reconstruction has about 15% scatter and a systematic shift versus dark-matter truth",
+        "conditioning": "One-dimensional sightline fractions; authors caution these do not equal the 3D timescape wall-volume fraction",
+        "locator": "Sections 4.4 and 6.2, PDF pp.7, 14"
+      }
+    ],
+    "data_dependencies": [
+      {
+        "role": "observed distances and redshifts",
+        "source": "Saulder et al. (2016) fundamental-plane distance/group catalogue, based on SDSS DR12; FP calibrations from Saulder et al. (2013, 2015)",
+        "conditioning": "Early-type galaxies; group-level estimates improve with multiple FP members; CMB frame plus recalibrated Local Group frame",
+        "locator": "Sections 3-4, PDF pp.3-4"
+      },
+      {
+        "role": "observed matter / finite-infinity regions",
+        "source": "SDSS DR12 and 2MRS galaxy-group masses; updated finite-infinity catalogue in Appendix A",
+        "conditioning": "Spherical FI regions assigned an average critical density under the timescape definition; separate CMB and LG rest-frame catalogues",
+        "locator": "Section 3 and Appendix A, PDF pp.3-4, 19-20"
+      },
+      {
+        "role": "Lambda-CDM mock catalogues",
+        "source": "Millennium simulation plus Guo et al. semi-analytical galaxy models and Saulder et al. group-finder mocks",
+        "conditioning": "Eight mock regions; paired to approximate SDSS sky coverage; mock early types selected by brightness, color, gas fraction, and star-formation rate",
+        "locator": "Sections 4.2-4.3 and 5.1, PDF pp.5-8"
+      },
+      {
+        "role": "differential-expansion mock catalogues",
+        "source": "Same Millennium matter distribution, deformed by an imposed wall/void expansion prescription",
+        "conditioning": "Dark-matter-based true FI fractions calibrate the deformation; observationally reconstructed FI fractions are used for the plotted x coordinate; this is a toy approximation, not a self-consistent timescape simulation",
+        "locator": "Section 4.4, PDF pp.6-8"
+      }
+    ],
+    "caveats": [
+      "The main alternative tested is an artificially deformed Lambda-CDM Millennium mock with a linear dependence on f_fi and b_soft=0.75. No complete timescape dynamics, screening, or self-consistent peculiar-motion field is simulated; the authors acknowledge this approximation and say a full timescape simulation would be preferable.",
+      "Finite-infinity regions are reconstructed bottom-up from observed groups although the theoretical construction is top-down. The reconstructed line fractions have about 15% scatter plus systematic shift against dark-matter truth; inferred FI sizes are uncertain by 15-20%.",
+      "The FP distance indicator has 10-20% statistical errors and residual systematics, including a richness-dependent distance/redshift trend not reproduced in the mocks. The Millennium mocks have too few rich groups, so the selected mock sample is disproportionately small (530-954 vs 1,835/1,844 observed groups).",
+      "The data cover about 22.7% of the sky, mostly the northern hemisphere; the sample misses the Local Void and Great Attractor region and includes Virgo, which can affect the peculiar-velocity field. CMB and LG rest frames differ only modestly in the final comparison.",
+      "The full-catalogue direct slope values are less discrepant than the selected-sample result; the binned slopes reduce the differential-model discrepancy to about 1.5-2.1 sigma. Individual bins generally overlap both models. KS probabilities are extremely low for both model families and chi-square tests have low significance, so these are comparative preferences rather than a clean absolute goodness-of-fit acceptance.",
+      "The likelihood column assumes only Lambda-CDM and this timescape-inspired approximation as possible options. Its relative likelihoods do not compare all cosmologies.",
+      "The source cites prior observational fits and simulation/catalogue papers, but those sources were not independently checked or read here."
+    ],
+    "usefulness": {
+      "assessment": "Useful as a test design and as a documented negative/qualified result for a particular differential-expansion signal: it defines a line-of-sight finite-infinity statistic, constructs matched mock catalogues, identifies coherent infall and selection/scatter limits, and reports a strong selected-slope discrepancy for its imposed toy signal. It is not a source for a fully specified or independently ruled-out timescape cosmology; any follow-up must preserve that lost scope and revisit the mock deformation, FP systematics, and survey-volume limitations."
+    },
+    "citation_leads": [
+      {
+        "reference_label": "Wiltshire (2007)",
+        "bibliography_anchor": "bib.bib102",
+        "record_match_candidate": "arxiv:gr-qc/0702082v4",
+        "note": "Explicit author/year/journal citation; arXiv ID/version absent from this bibliography entry."
+      },
+      {
+        "reference_label": "Wiltshire (2008)",
+        "bibliography_anchor": "bib.bib103",
+        "record_match_candidate": "arxiv:0709.0732v2",
+        "note": "Explicit author/year/journal citation; arXiv ID/version absent from this bibliography entry."
+      },
+      {
+        "reference_label": "Wiltshire (2009)",
+        "bibliography_anchor": "bib.bib104",
+        "record_match_candidate": "arxiv:0909.0749v2",
+        "note": "Explicit author/year/journal citation; arXiv ID/version absent from this bibliography entry."
+      },
+      {
+        "reference_label": "Smale & Wiltshire (2011)",
+        "bibliography_anchor": "bib.bib92",
+        "record_match_candidate": "arxiv:1009.5855v2",
+        "note": "Explicit author/year/journal citation; arXiv ID/version absent from this bibliography entry."
+      },
+      {
+        "reference_label": "Duley, Nazer & Wiltshire (2013)",
+        "bibliography_anchor": "bib.bib31",
+        "record_match_candidate": "arxiv:1306.3208v2",
+        "note": "Explicit author/year/journal citation; arXiv ID/version absent from this bibliography entry."
+      },
+      {
+        "reference_label": "Nazer & Wiltshire (2015)",
+        "bibliography_anchor": "bib.bib71",
+        "record_match_candidate": "arxiv:1410.3470v3",
+        "note": "Explicit author/year/journal citation; arXiv ID/version absent from this bibliography entry."
+      }
+    ],
+    "source_hashes": {
+      "html": "96b5c65db89141c97cfd3685d70f81502e0b6676cd785bfd1e8e50c72dc5109c",
+      "pdf": "99c7e9ae135514e78e5e6ddd0a3b89308e59b3e3ff19d989f78e624621525070",
+      "extracted_text": "1bfd1ee1a467db3ceea3df21ae0dbcf55752f2fb378c3f5bcb3bb7ade971c791"
+    },
+    "packet_sha256": "6f870bc70ebe3f6c193981262ccae86ebfcd4ec0faf7c823cdee6376c98d8e3b",
+    "packet_path": ".work/timescape-20261009/readers/flow1811/packet.json",
+    "integration_amendments": [
+      {
+        "date_utc": "2026-10-09T18:07:01.815219+00:00",
+        "agent": "/root",
+        "kind": "schema_field_normalization",
+        "note": "Original packet preserved unchanged. Coverage sections/pages/visual limits mapped to required canonical keys; usefulness string wrapped in assessment object. No reading claim expanded."
+      }
+    ],
+    "scientific_review_corrections": {
+      "review_id": "timescape-focused-2026-10-09-sol",
+      "basis": "Read the review corrections before using extracted quantities; original worker packet remains hash-pinned and unchanged.",
+      "material_cautions": [
+        "Table1 displayed mock dispersions do not reproduce its strongest reported standardized differences; Table2 conditional binned comparison remains1.52/2.08sigma."
+      ]
+    }
+  },
+  "review_id": "timescape-focused-2026-10-09-sol",
+  "idea_ids": [
+    "timescape-hubble-flow-proxy-contract"
+  ]
 }

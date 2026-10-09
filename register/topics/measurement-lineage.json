@@ -37,16 +37,23 @@
     "arxiv:2609.29996v1",
     "arxiv:2609.30312v1",
     "arxiv:2609.34239v1",
-    "arxiv:astro-ph/0701828v1"
+    "arxiv:astro-ph/0701828v1",
+    "arxiv:2412.15143v1",
+    "arxiv:1811.11976v3",
+    "arxiv:1812.01586v2"
   ],
   "idea_ids": [
     "conditional-q-upturn-not-acceleration-endpoint",
     "lagrange-deceleration-deviation-reconstruction",
     "supernova-reduction-selection-dependence",
-    "timescape-bare-dressed"
+    "timescape-bare-dressed",
+    "timescape-supernova-conditional-evidence",
+    "timescape-hubble-flow-proxy-contract"
   ],
   "design_ids": [
     "candidate-q-reconstruction-continuity-and-derivative-interpretation",
-    "candidate-timescape-tracker-distance-lineage"
+    "candidate-timescape-tracker-distance-lineage",
+    "candidate-timescape-supernova-likelihood-selection-audit",
+    "candidate-timescape-observer-consistent-hubble-flow"
   ]
 }

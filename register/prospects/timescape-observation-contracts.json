@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "timescape-observation-contracts",
+  "title": "Timescape observational tests",
+  "kind": "single_mechanism",
+  "readiness": "blocked",
+  "baseline": {
+    "label": "Timescape two-region averaged geometry with wall observers",
+    "role": "retained",
+    "scope": "Retain source timescape averaging, spatially flat walls, negatively curved voids and lapse/dressed-observer prescription. Flat ΛCDM is a comparison cosmology, not retained timescape dark energy or geometry. This is an observational-test prospect for the same mechanism, not a new combined cosmology.",
+    "parameters": null,
+    "parameters_reason": "No accepted timescape parameter set or source-to-catalogue mapping is registered; historical fits and proxy settings are not adopted."
+  },
+  "cosmology": {
+    "gravity": "Phenomenological two-region Buchert averaging of Einstein equations with an additional uniform-quasilocal-expansion observer prescription; effective averaged metrics are not claimed exact Einstein solutions.",
+    "geometry": "Flat wall regions and negatively curved voids with evolving volume fractions; volume-average time t differs from wall proper time tau; dressed radial effective metric is not global constant-curvature FLRW.",
+    "components": [
+      "Coarse-grained matter, bare curvature and kinematic backreaction in the retained timescape branch.",
+      "No homogeneousLambda in the timescape explanation; the reply lists radiation in averaged closure but this prospect supplies no validated early-universe/perturbation implementation."
+    ],
+    "modifications": [
+      "Averages and lapse distinguish bare from wall-observer dressed expansion and distances.",
+      "The two new methodological ideas constrain likelihood conditioning and proxy fidelity; they do not add new physical fields."
+    ],
+    "background": "Source volume-average relations plus wall-observer lapse identity are reviewed here. The source papers do not supply a complete unique inhomogeneous spacetime or object-level catalogue map.",
+    "perturbations": "No closed structure/peculiar-motion/light-cone system is accepted. No CMB/growth/BAO perturbation qualification follows from these supernova and proxy papers.",
+    "observables": [
+      "Conditioned paired Pantheon+ evidence and selection sensitivity under source dressed distances.",
+      "Joint relative-Hubble/finite-infinity-sightline statistic after observer-consistent mapping is derived."
+    ]
+  },
+  "scope": [
+    "A separate observational-test prospect for two complementary contracts; no multiplication of evidence or assumed cross-observable independence.",
+    "The existing timescape-tracker-distance-lineage prospect remains the background implementation/old-reduction route; this prospect does not clear its blockers."
+  ],
+  "unknowns": [
+    "Exact published SN run/data/covariance/conditioning and proper priors.",
+    "Observer-consistent local catalogue prediction and full uncertainty/selection/mock-dependence contract.",
+    "Full perturbation, early-universe and modern observational viability remain unassessed."
+  ],
+  "combination_compatibility": {
+    "status": "source_coherent",
+    "basis": "Both tests retain the source timescape model. Methodological constraints are not combined physical sectors; no joint likelihood or independent observational confirmation is accepted."
+  },
+  "idea_ids": [
+    "timescape-bare-dressed",
+    "timescape-supernova-conditional-evidence",
+    "timescape-hubble-flow-proxy-contract"
+  ],
+  "model_idea_ids": [
+    "timescape-bare-dressed"
+  ],
+  "design_ids": [
+    "candidate-timescape-supernova-likelihood-selection-audit",
+    "candidate-timescape-observer-consistent-hubble-flow"
+  ],
+  "topic_ids": [
+    "inhomogeneity",
+    "measurement-lineage"
+  ],
+  "paper_ids": [
+    "arxiv:2412.15143v1",
+    "arxiv:1811.11976v3",
+    "arxiv:1812.01586v2"
+  ],
+  "review_id": "timescape-focused-2026-10-09-sol",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2412.15143v1",
+      "locator": "Secs.2-4, Eqs.(1)-(5), Table1,Figs.1-3; PDFpp2-6",
+      "url": "https://arxiv.org/abs/2412.15143v1",
+      "source_sha256": {
+        "pdf": "5e2917fd9fc2ee561b35858e4c1b93a1b6c883d7c230e6a78185e8569714dbc7"
+      }
+    },
+    {
+      "paper_id": "arxiv:1811.11976v3",
+      "locator": "Secs.4.4-7, Eq.(1), Tables1-2, AppendixA; PDFpp6-20",
+      "url": "https://arxiv.org/abs/1811.11976v3",
+      "source_sha256": {
+        "pdf": "99c7e9ae135514e78e5e6ddd0a3b89308e59b3e3ff19d989f78e624621525070"
+      }
+    },
+    {
+      "paper_id": "arxiv:1812.01586v2",
+      "locator": "Secs.2-4,Eqs.(1)-(13); PDFpp2-4",
+      "url": "https://arxiv.org/abs/1812.01586v2",
+      "source_sha256": {
+        "pdf": "ac3efc9794aeab4b45ae24d7fe868c6a5e4ae482c639318460f9dc24678c5824"
+      }
+    }
+  ]
+}

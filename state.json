@@ -749,30 +749,6 @@
       ]
     },
     {
-      "paper_id": "arxiv:1811.11976v3",
-      "stage": "read",
-      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
-      "prospect_ids": [
-        "inhomogeneity"
-      ]
-    },
-    {
-      "paper_id": "arxiv:2412.15143v1",
-      "stage": "read",
-      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
-      "prospect_ids": [
-        "inhomogeneity"
-      ]
-    },
-    {
-      "paper_id": "arxiv:1812.01586v2",
-      "stage": "read",
-      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
-      "prospect_ids": [
-        "inhomogeneity"
-      ]
-    },
-    {
       "paper_id": "arxiv:0909.0749v2",
       "stage": "acquire",
       "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
@@ -1238,7 +1214,8 @@
   "notes": [
     "Resume pending screens and reads before new searches.",
     "Raw sources and working files stay inside ignored Prospector/.work.",
-    "Blocked numerical handoffs need a separately scoped implementation task."
+    "Blocked numerical handoffs need a separately scoped implementation task.",
+    "Timescape science checkpoint:3full Luna reads and3Sol reviews;2conditional ideas,2blockeddesigns,1newtestprospect. Remaining planned3fullreads pending; no execution."
   ],
   "next_work_mode": "roadmap_M0_source_defined_reference",
   "coordinated_baseline": {
