@@ -72,7 +72,7 @@ Combined models require compatibility checks before promotion.
 - [Tracking scalar unification requires a depletion branch between early and late energy](ideas/unified-scalar-steep-steeper-shallow.json)
 
 [Typed relationships](graph.json) preserve overlap, distinctions, critique, shared data and prospect links.
-[Bibliographic citations](citations.json): 61 explicit links; the index is incomplete.
+[Bibliographic citations](citations.json): 63 explicit links; the index is incomplete.
 
 ## Papers
 
@@ -87,7 +87,7 @@ Combined models require compatibility checks before promotion.
 | [HyRec: A fast and highly accurate primordial hydrogen and helium recombination code](https://arxiv.org/abs/1011.3758v2) | [1011.3758v2](papers/1011.3758v2.json) | discovered |
 | [The Cosmic Linear Anisotropy Solving System (CLASS) II: Approximation schemes](https://arxiv.org/abs/1104.2933v3) | [1104.2933v3](papers/1104.2933v3.json) | discovered |
 | [Gamma ray burst distances and the timescape cosmology](https://arxiv.org/abs/1107.5596v2) | [1107.5596v2](papers/1107.5596v2.json) | screened |
-| [Inhomogeneous vacuum energy](https://arxiv.org/abs/1203.6776v2) | [1203.6776v2](papers/1203.6776v2.json) | screened |
+| [Inhomogeneous vacuum energy](https://arxiv.org/abs/1203.6776v2) | [1203.6776v2](papers/1203.6776v2.json) | read |
 | [Everpresent Lambda - II: Structural Stability](https://arxiv.org/abs/1210.2589v3) | [1210.2589v3](papers/1210.2589v3.json) | screened |
 | [Cosmological constraints on a decomposed Chaplygin gas](https://arxiv.org/abs/1301.5315v2) | [1301.5315v2](papers/1301.5315v2.json) | screened |
 | [Non-adiabatic Chaplygin gas](https://arxiv.org/abs/1306.0917v2) | [1306.0917v2](papers/1306.0917v2.json) | screened |

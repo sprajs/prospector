@@ -60,10 +60,484 @@
   ],
   "screen": {
     "status": "selected",
-    "basis": "abstract",
-    "reason": "Selected for full Luna reading and Sol comparison of barotropic and geodesic/nonadiabatic closure; intake is not scientific acceptance."
+    "basis": "full_text",
+    "reason": "One complete Luna/xhigh reading covers8PDFpages and original equations. Sol scientific comparison pending; no accepted idea/prospect/design."
   },
-  "extraction": null,
+  "extraction": {
+    "paper_id": "arxiv:1203.6776v2",
+    "requested_model": "gpt-6-luna",
+    "requested_reasoning": "xhigh",
+    "reading_level": "full_text",
+    "provenance": {
+      "agent_id": "/root/luna_vacuum_foundation",
+      "actual_backend_identity": null,
+      "backend_note": "Actual backend identity and agent ID were not exposed in this worker context; coordinator must record returned agent ID.",
+      "requested_model": "gpt-6-luna",
+      "requested_reasoning": "xhigh",
+      "fork_turns": "none"
+    },
+    "coverage": {
+      "sections_read": [
+        "Title, author and affiliation block, abstract, and version/date header",
+        "I. Introduction",
+        "II. Vacuum energy-momentum",
+        "III.A. Spatially homogeneous background",
+        "III.B. Linear perturbations",
+        "III.C. Gauge invariant perturbations",
+        "IV.A. Scalar field dynamics",
+        "IV.B. Decomposing dark energy models",
+        "V. Conclusions",
+        "Acknowledgments",
+        "Bibliography [1]-[44]"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "figure_check": "Visually inspected all eight original PDF page renders at .work/bridges-20261009/renders/1203.6776v2/page-1.png through page-8.png. No figures or data tables occur in this paper; rendered equations and bibliography were visible. Key equations were compared against HTML MathML TeX annotations as well as the PDF renders.",
+      "limitations": [
+        "No appendix is present. No main-text or bibliography section was left unread.",
+        "The paper reports no fit, likelihood, numerical parameter estimates, or original dataset analysis; cited observational constraints are not independently reassessed here.",
+        "The authors do not specify a microphysical action for the pressureless matter-vacuum interaction, and state that the geodesic prescription lacks a clear covariant scalar interaction model.",
+        "No nonlinear, vector, tensor, baryon/radiation perturbation, or initial-mode analysis is supplied for the decomposed Chaplygin example.",
+        "The source does not state a general allowed domain or stability interval for α, A, or B; no such range is inferred here."
+      ]
+    },
+    "summary": "The authors define vacuum by Ť^μ_ν = −V δ^μ_ν, so its covariant transfer is fixed as Q_ν = −∇_νV and total conservation requires the opposite transfer in matter. A single perfect-fluid dark-energy stress tensor admits the exact algebraic split ρ_m = ρ_de + P_de, V = −P_de, but that background/stress-tensor identity does not choose a perturbation theory. For a generalized Chaplygin gas the homogeneous split gives Q = 3αHρ_mV/(ρ_m+V). Two perturbative lifts are then distinguished: geodesic transfer Q^μ = Q u^μ has no comoving vacuum force and zero effective rest-frame pressure response, while a separate local-function closure with constant A recovers the barotropic Chaplygin perturbations and their adiabatic sound speed. The same background can therefore represent different perturbation physics. The paper supplies formal equations and a proposed route to observations, not a fit or a qualified observational result.",
+    "ideas": [
+      {
+        "local_id": "vacuum-gradient-transfer-and-foliation",
+        "title": "Inhomogeneous vacuum is fixed by a gradient transfer and selects uniform-vacuum slices",
+        "claim_type": "author_formalism",
+        "description": "Because the vacuum stress tensor is proportional to the metric, its divergence is Q_ν = −∇_νV. A conserved total stress tensor gives matter the opposite transfer. Where ∇V is nonzero and non-null, the normalized gradient defines a preferred potential-flow direction and hypersurfaces of uniform V; the vacuum itself has no unique material four-velocity. The special closure Q^μ = Q u^μ identifies that flow with matter and therefore restricts the matter flow to be irrotational.",
+        "locators": [
+          "Sec. II, Eqs. (1)-(8), PDF p. 2, HTML #S2.E1, #S2.E2, #S2.E6, #S2.E7, #S2.E8",
+          "Sec. III.A, Eqs. (9)-(11), PDF p. 2, HTML #S3.E9 and #S3.EGx1"
+        ],
+        "equations": [
+          {
+            "expression": "Ť^μ_ν = −V δ^μ_ν; T^μ_ν = P δ^μ_ν + (ρ+P)u^μu_ν",
+            "locator": "Sec. II, Eqs. (1)-(2), PDF p. 2, HTML #S2.E1-#S2.E2",
+            "confidence": "high",
+            "definitions": "Mixed-index stress tensors; metric signature is (−,+,+,+) in Eq. (12). Vacuum density is V and vacuum pressure is −V. Matter is a perfect fluid with density ρ, pressure P, and unit four-velocity u^μ.",
+            "units": "With c=1, V, ρ and P have energy-density units; u^μ is normalized as a four-velocity.",
+            "domain": "Einstein gravity and the assumed perfect-fluid matter stress tensor."
+          },
+          {
+            "expression": "Q_ν = ∇_μŤ^μ_ν = −∇_νV; ∇_μT^μ_ν = −Q_ν",
+            "locator": "Sec. II, Eqs. (5)-(8), PDF p. 2, HTML #S2.E5-#S2.E8",
+            "confidence": "high",
+            "definitions": "Q_ν is defined as the divergence of the vacuum stress tensor; the second equality assumes covariant conservation of the total matter-plus-vacuum stress tensor.",
+            "units": "Q_ν is an energy-density gradient; in FRW the scalar Q has energy-density per time units.",
+            "domain": "Einstein gravity with conserved total stress energy. A non-interacting vacuum has ∇_νV=0."
+          },
+          {
+            "expression": "ρ̇ + 3H(ρ+P) = −Q; V̇ = Q",
+            "locator": "Sec. III.A, Eqs. (10)-(11), PDF p. 2, HTML #S3.EGx1",
+            "confidence": "high",
+            "definitions": "The paper's sign convention makes positive Q increase vacuum energy and remove energy from matter; Q_ν=Q u_ν in the homogeneous isotropic background.",
+            "units": "Q has energy-density per time units; H has inverse-time units.",
+            "domain": "Homogeneous and isotropic FRW background."
+          },
+          {
+            "expression": "ǔ^μ = −∇^μV / |∇_νV∇^νV|^(1/2)",
+            "locator": "Sec. II, Eq. (7), PDF p. 2, HTML #S2.E7",
+            "confidence": "high",
+            "definitions": "The paper's normalized energy-flow direction, not a unique vacuum particle velocity; its integral slices have uniform V.",
+            "units": "Dimensionless normalized four-vector in c=1 units.",
+            "domain": "Requires a nonzero non-null vacuum gradient; the paper does not discuss a null-gradient normalization."
+          }
+        ]
+      },
+      {
+        "local_id": "vacuum-comoving-entropy-and-nonadiabatic-pressure",
+        "title": "Vacuum perturbations have gauge-invariant relative entropy, conditional on the interaction closure",
+        "claim_type": "author_formalism",
+        "description": "The vacuum perturbation has zero intrinsic nonadiabatic pressure, but its density perturbation on matter-comoving slices is generally nonzero and equals the background transfer rate times the relative matter/energy-flow velocity potential. It vanishes on energy-flow-orthogonal slices by construction. The total nonadiabatic pressure includes a relative vacuum-fluid entropy term, so a vacuum-plus-matter split does not by itself force nonadiabaticity: it vanishes for the specified adiabatic conditions or Q=0. If V is a local function of the matter density, the relative entropy vanishes.",
+        "locators": [
+          "Sec. III.B, Eqs. (15)-(23), PDF p. 3, HTML #S3.EGx2-#S3.EGx5",
+          "Sec. III.C, Eqs. (24)-(30), PDF p. 4, HTML #S3.E24-#S3.E30"
+        ],
+        "equations": [
+          {
+            "expression": "δρ̌_com = δV + V̇θ = V̇(θ−θ̌); Δρ̌_com = δV + V̇θ̌ = 0",
+            "locator": "Sec. III.C, Eqs. (25)-(27), PDF p. 4, HTML #S3.E25-#S3.E27",
+            "confidence": "high",
+            "definitions": "θ is the matter velocity potential; θ̌ is the energy-flow potential and transforms the same way under a time-slicing change. The relative velocity is gauge invariant.",
+            "units": "δV is an energy density; θ and θ̌ have time units in the paper's cosmic-time conventions.",
+            "domain": "Linear scalar perturbations about spatially flat FRW; θ̌ = −δV/V̇ where V̇ is nonzero."
+          },
+          {
+            "expression": "Š = 3(ζ̌−ζ) = −3H(δV/V̇ − δρ/ρ̇)",
+            "locator": "Sec. III.C, Eq. (29), PDF p. 4, HTML #S3.E29",
+            "confidence": "high",
+            "definitions": "Relative entropy between vacuum and fluid, expressed on uniform-fluid-density slices; ζ̌ = −ψ−HδV/V̇ and ζ is the corresponding fluid curvature perturbation.",
+            "units": "Dimensionless.",
+            "domain": "Linear scalar perturbations where the background derivatives in the ratios are nonzero."
+          },
+          {
+            "expression": "δP_nad = δP−c_s²δρ + [(1+c_s²)Q(Q+3H(ρ+P))/(9H²(ρ+P))] Š",
+            "locator": "Sec. III.C, Eq. (30), PDF p. 4, HTML #S3.E30",
+            "confidence": "high",
+            "definitions": "The paper defines c_s² = Ṗ/ρ̇ as the adiabatic sound speed in Eq. (17); Š is the relative vacuum-fluid entropy. The displayed extra term is conditional on the interaction and entropy perturbation.",
+            "units": "Each term is a pressure perturbation; c_s² and Š are dimensionless.",
+            "domain": "Linear scalar perturbations with the stated perfect-fluid and transfer decomposition; the expression's denominators must be nonzero."
+          }
+        ]
+      },
+      {
+        "local_id": "perfect-fluid-dust-vacuum-decomposition",
+        "title": "A perfect-fluid dark-energy stress tensor can be split algebraically into dust and vacuum",
+        "claim_type": "author_result",
+        "description": "For one dark-energy component already described by the perfect-fluid tensor, the exact same tensor is obtained with pressureless matter sharing its four-velocity plus vacuum energy when ρ_m=ρ_de+P_de and V=−P_de. The induced covariant transfer is Q_μ=∇_μP_de, hence Q=−Ṗ_de in FRW. This is an algebraic identity at the tensor level; it does not uniquely lift a chosen background history into perturbations or give a microphysical interaction. Splitting into two generic fluids would introduce an unconstrained extra degree of freedom.",
+        "locators": [
+          "Sec. IV.B, Eq. (33) and immediately following text, PDF p. 5, HTML #S4.E33"
+        ],
+        "equations": [
+          {
+            "expression": "ρ_m = ρ_de + P_de; V = −P_de; Q_μ = ∇_μP_de; Q = −Ṗ_de in FRW",
+            "locator": "Sec. IV.B, Eq. (33) and following sentence, PDF p. 5, HTML #S4.E33",
+            "confidence": "high",
+            "definitions": "ρ_de and P_de are the original single perfect-fluid dark-energy density and pressure; the pressureless component shares its velocity. The Q_μ relation follows from Q_μ=−∇_μV.",
+            "units": "ρ_m, V and P_de have energy-density units; Q has energy-density per time units.",
+            "domain": "A single perfect-fluid stress tensor with no separately represented anisotropic stress or additional components. The identity alone says nothing about the perturbative closure."
+          }
+        ]
+      },
+      {
+        "local_id": "chaplygin-background-transfer",
+        "title": "The generalized Chaplygin background admits a one-parameter interacting-vacuum form",
+        "claim_type": "author_result",
+        "description": "Applying the algebraic split to P_gCg=−Aρ_gCg^(−α) yields the standard homogeneous density solution, a vacuum contribution V, the relation A=(ρ_m+V)^αV, and Q=3αHρ_mV/(ρ_m+V). In this interaction parameterization α is the dimensionless coupling and A can arise as an integration constant depending on initial conditions. The paper quotes earlier observational constraints on the barotropic sound-speed model but performs no fit. The limit α→0 recovers the successful ΛCDM background/perturbation limit discussed by the authors; the source supplies no broader allowed α interval.",
+        "locators": [
+          "Sec. IV.B, Eqs. (34)-(38), PDF pp. 5-6, HTML #S4.E34-#S4.E38"
+        ],
+        "equations": [
+          {
+            "expression": "P_gCg = −Aρ_gCg^(−α); ρ_gCg = [A+Ba^(−3(1+α))]^(1/(1+α))",
+            "locator": "Sec. IV.B, Eqs. (34)-(35), PDF p. 5, HTML #S4.E34-#S4.E35",
+            "confidence": "high",
+            "definitions": "A and B are constants in the barotropic solution; α is dimensionless; a is the scale factor.",
+            "units": "A and B have units of energy-density^(1+α) when a is dimensionless; ρ and P have energy-density units.",
+            "domain": "As written the power-law solution excludes α=−1 and requires a real positive branch; the paper does not state a full parameter/sign domain."
+          },
+          {
+            "expression": "A = (ρ_m+V)^αV; Q = 3αH[ρ_mV/(ρ_m+V)]",
+            "locator": "Sec. IV.B, Eqs. (37)-(38), PDF p. 5, HTML #S4.E37-#S4.E38",
+            "confidence": "high",
+            "definitions": "ρ_m is the pressureless component, V is vacuum density, and Q follows the paper's convention V̇=Q. A has the same dimensional role as in the barotropic equation of state.",
+            "units": "Q has energy-density per time units; α is dimensionless.",
+            "domain": "Homogeneous Chaplygin solution and its algebraic matter-vacuum decomposition; no α fit or viability interval is established."
+          }
+        ]
+      },
+      {
+        "local_id": "distinct-covariant-perturbation-lifts",
+        "title": "Geodesic and barotropic covariant lifts share a background but have different perturbations",
+        "claim_type": "author_proposal",
+        "description": "The authors consider at least two covariant extensions of the same FRW interaction. With Q^μ=Q u^μ, the energy flow follows matter, δV=−Qθ, the Euler equation is geodesic, and there is no comoving vacuum force or pressure perturbation, giving zero effective rest-frame sound speed. This restricts the matter velocity to be irrotational and the authors say they lack a clear covariant model for the scalar Q. Their alternative Q_μ=−∇_μ[A/(ρ_m+V)^α] reduces to the background interaction when Ȧ=0; when A is a universal constant it enforces the barotropic Chaplygin relation and Š=0, so the full perturbations are exactly those of that barotropic fluid, with generally nonzero adiabatic sound speed. Eq. (43) parameterizes the geodesic relative entropy by a spatially varying local δA and is singular as written at α=0.",
+        "locators": [
+          "Sec. IV.B, Eqs. (39)-(44), PDF p. 6, HTML #S4.EGx6-#S4.EGx7 and #S4.E43-#S4.E44"
+        ],
+        "equations": [
+          {
+            "expression": "Q^μ = Q u^μ; θ̌=θ; δV=−Qθ; θ̇+φ=0",
+            "locator": "Sec. IV.B, discussion and Eqs. (39)-(40), PDF p. 6, HTML #S4.EGx6",
+            "confidence": "high",
+            "definitions": "Geodesic energy transfer along the pressureless matter four-velocity; the velocity potential is θ and the lapse perturbation is φ.",
+            "units": "θ has time units; δV is an energy density.",
+            "domain": "Linear scalar perturbations. The common flow is potential/irrotational; no covariant scalar closure for Q is supplied."
+          },
+          {
+            "expression": "Š = −[(ρ_m+V)^2/(αρ_m(ρ_m+(1+α)V))](δA/A); δP_nad = −VδA/A",
+            "locator": "Sec. IV.B, Eq. (43) and following sentence, PDF p. 6, HTML #S4.E43",
+            "confidence": "high",
+            "definitions": "δA is a local perturbation of the integration-constant relation A=(ρ_m+V)^αV; in the geodesic case it represents relative entropy/local equation-of-state variation.",
+            "units": "Š and δA/A are dimensionless; δP_nad has pressure units.",
+            "domain": "The displayed parameterization requires α, ρ_m, and ρ_m+(1+α)V nonzero. It cannot be naively evaluated at α=0."
+          },
+          {
+            "expression": "Q_μ = −∇_μ[A/(ρ_m+V)^α]; if ∇_μA=0 then Š=0 and the full model is barotropic Chaplygin",
+            "locator": "Sec. IV.B, Eq. (44) and following text, PDF p. 6, HTML #S4.E44",
+            "confidence": "high",
+            "definitions": "The authors' alternative covariant choice for the energy flow; exact barotropic equivalence is stated for universal constant A.",
+            "units": "The bracket has energy-density units; its gradient has transfer-vector units.",
+            "domain": "The stated FRW reduction assumes Ȧ=0; the exact perturbative equivalence claim further assumes ∇_μA=0."
+          },
+          {
+            "expression": "c_a² = dP/dρ = αAρ^(−1−α) = αV/(ρ_m+V)",
+            "locator": "Reader algebra from Sec. IV.B, Eqs. (34), (37), and (44), PDF pp. 5-6",
+            "confidence": "high",
+            "definitions": "Adiabatic derivative for the constant-A barotropic Chaplygin closure, not the effective rest-frame sound speed assigned to the geodesic closure.",
+            "units": "Dimensionless in c=1 units.",
+            "domain": "Constant-A barotropic branch with nonzero total density; this is a symbolic consequence of the stated equation of state, not a fitted value."
+          }
+        ]
+      },
+      {
+        "local_id": "scalar-potential-transfer-as-microphysical-example",
+        "title": "Scalar-field potential energy is a familiar vacuum-matter transfer with an underlying field equation",
+        "claim_type": "author_formalism",
+        "description": "For a scalar Lagrangian L=F(X)−V(φ), the kinetic stress tensor transfers energy to the potential through Q_μ=−(∂V/∂φ)∇_μφ. Its conservation reproduces the generalized Klein-Gordon equation. The authors use this as a microphysically specified example and distinguish it from the phenomenological pressureless-matter interaction, for which no action is supplied.",
+        "locators": [
+          "Sec. IV.A, Eqs. (31)-(32), PDF pp. 4-5, HTML #S4.E31-#S4.E32"
+        ],
+        "equations": [
+          {
+            "expression": "L=F(X)−V(φ), X=−g^μν∇_μφ∇_νφ/2; Q_μ=−(∂V/∂φ)∇_μφ",
+            "locator": "Sec. IV.A, text before Eq. (31), PDF p. 4, HTML #S4.E31 context",
+            "confidence": "high",
+            "definitions": "F is a kinetic function and V(φ) a scalar potential; X is the canonical kinetic invariant.",
+            "units": "Natural units; the Lagrangian density and V have energy-density units.",
+            "domain": "Single scalar field with the stated Lagrangian form."
+          },
+          {
+            "expression": "F_,X □φ + F_,XX ∇_μφ∇^μX − ∂V/∂φ = 0",
+            "locator": "Sec. IV.A, Eq. (32), PDF p. 5, HTML #S4.E32",
+            "confidence": "high",
+            "definitions": "Generalized Klein-Gordon equation obtained from kinetic-sector energy conservation with the vacuum transfer.",
+            "units": "Terms have matching scalar-field equation units under the paper's action conventions.",
+            "domain": "Single scalar field and differentiable F(X), V(φ)."
+          }
+        ]
+      },
+      {
+        "local_id": "matched-background-linear-structure-test",
+        "title": "A matched-background linear growth and potential comparison can distinguish the closures",
+        "claim_type": "reader_inference",
+        "description": "The smallest useful comparison suggested by the paper is to hold the same Chaplygin-derived H(a) and background component densities fixed, impose matched initial conditions, then compare the linear comoving matter-density growth, velocity evolution, and metric-potential evolution under the geodesic and constant-A barotropic closures. The geodesic branch has a pressureless Euler equation and no comoving vacuum force; the barotropic branch has its adiabatic sound-speed response. A resulting scale-dependent growth/potential difference could be mapped to RSD or lensing/ISW observables only after a complete baryon, radiation, and observation model is specified. This is a proposed falsifiable comparison, not a calculation or a result of this paper.",
+        "locators": [
+          "Inference from Sec. III.B, Eqs. (20)-(23), PDF p. 3; Sec. IV.B, Eqs. (39)-(44), PDF p. 6"
+        ],
+        "equations": [
+          {
+            "expression": "Compare Eq. (21) with the geodesic Euler equation (40) and the constant-A barotropic closure (44), at fixed background solution (35)-(38)",
+            "locator": "Reader inference from PDF pp. 3, 5-6, Eqs. (21), (35)-(40), (44)",
+            "confidence": "medium",
+            "definitions": "Proposed comparison holds background expansion and initial perturbations fixed while changing the covariant perturbation closure; observable mapping remains unspecified.",
+            "units": "Dimensionless density contrasts and metric potentials; velocity/growth quantities require the stated time or scale-factor convention.",
+            "domain": "Would require a complete linear multi-component perturbation model and specified observation/likelihood lineage; not evaluated in the paper."
+          }
+        ]
+      }
+    ],
+    "quantities": [
+      {
+        "name": "α, generalized Chaplygin/interacting-vacuum coupling",
+        "value": null,
+        "unit": "dimensionless",
+        "uncertainty": null,
+        "conditioning": "Symbolic model parameter in Eqs. (34)-(38); the paper reports no fitted value or allowed interval. The authors discuss α→0 as the ΛCDM limit.",
+        "locator": "Sec. IV.B, Eqs. (34)-(38), PDF p. 5"
+      },
+      {
+        "name": "A, Chaplygin equation-of-state constant",
+        "value": null,
+        "unit": "energy-density^(1+α), by dimensional consistency",
+        "uncertainty": null,
+        "conditioning": "No numerical value is reported. In the homogeneous interaction-only parameterization it can emerge as an integration constant; the alternative covariant closure Eq. (44) includes A explicitly.",
+        "locator": "Sec. IV.B, Eqs. (34), (37), (44), PDF pp. 5-6"
+      },
+      {
+        "name": "B, integration constant in the homogeneous Chaplygin density solution",
+        "value": null,
+        "unit": "energy-density^(1+α), by dimensional consistency if a is dimensionless",
+        "uncertainty": null,
+        "conditioning": "No numerical value or uncertainty is reported; it is a symbolic integration constant in Eq. (35).",
+        "locator": "Sec. IV.B, Eq. (35), PDF p. 5"
+      },
+      {
+        "name": "Effective rest-frame sound speed squared in geodesic matter-vacuum closure",
+        "value": 0,
+        "unit": "dimensionless",
+        "uncertainty": null,
+        "conditioning": "Author-stated consequence of Q^μ=Qu^μ and vanishing comoving vacuum force for the linear interacting pressureless-matter plus vacuum model; not an observational estimate.",
+        "locator": "Sec. IV.B, discussion following Eqs. (39)-(40), PDF p. 6"
+      },
+      {
+        "name": "Adiabatic sound speed squared in constant-A barotropic Chaplygin closure",
+        "value": "αV/(ρ_m+V)",
+        "unit": "dimensionless",
+        "uncertainty": null,
+        "conditioning": "Reader algebra from dP/dρ for Eq. (34) and A=(ρ_m+V)^αV; symbolic and model-conditioned, not fitted. This quantity must not be identified with the geodesic branch's effective rest-frame sound speed.",
+        "locator": "Sec. IV.B, Eqs. (34), (37), (44), PDF pp. 5-6"
+      }
+    ],
+    "data_dependencies": [
+      {
+        "role": "original_data_or_fit",
+        "status": "none reported",
+        "detail": "This paper presents analytical background and linear-perturbation equations; it reports no newly fitted parameters, data likelihood, or original observational dataset."
+      },
+      {
+        "role": "observational_context_cited_by_authors",
+        "references": [
+          "[41] astro-ph/0212114",
+          "[42] arXiv:0910.4202"
+        ],
+        "detail": "The authors state that barotropic generalized Chaplygin models are strongly constrained and that the successful ΛCDM limit is α→0. This paper does not specify or re-audit the underlying data, calibration, covariance, fitter, or likelihood."
+      },
+      {
+        "role": "prior_model_foundation",
+        "references": [
+          "[40] gr-qc/0202064",
+          "[43] astro-ph/0407239"
+        ],
+        "detail": "Cited as prior generalized-Chaplygin and matter-vacuum decomposition work; no new data lineage is established here. Of these prior-foundation references, [40] is currently registered in Prospector; [43] is not."
+      }
+    ],
+    "caveats": [
+      "The identity ρ_m=ρ_de+P_de and V=−P_de is exact for the stated single perfect-fluid stress tensor, but it does not establish equivalence between distinct covariant perturbation closures.",
+      "The geodesic closure Q^μ=Qu^μ implies a potential, irrotational matter flow, excludes generic vorticity, and is not supplied with a clear covariant scalar law for Q by the authors.",
+      "The alternative local-function transfer becomes exactly barotropic only with universal constant A. The background interaction alone does not enforce this closure.",
+      "The paper distinguishes adiabatic c_s²=Ṗ/ρ̇ from the zero effective rest-frame pressure response of the geodesic branch. Treating these as the same sound speed would erase the physical distinction between the closures.",
+      "Equation (43) is a parameterization of relative entropy via δA/A and is singular as written at α=0 and at its other denominator zeros; the α→0 limit must be taken from the underlying equations, not this expression.",
+      "The source gives no general α stability or sign domain and does not single out α=−1/2. Equation (35) itself has a special α=−1 exponent case that is not discussed.",
+      "The normalized flow vector in Eq. (7) requires a non-null gradient. Degenerate constant or null-gradient cases are not separately developed.",
+      "The perturbation treatment is first-order scalar perturbation theory around spatially flat FRW in Einstein gravity. There is no nonlinear completion or full multi-component cosmological implementation here.",
+      "No action or microphysical mechanism for the Chaplygin matter-vacuum interaction is derived. The scalar-field section is a familiar field-theory example, not a derivation of the Chaplygin transfer law.",
+      "Statements about observational constraints are literature-context statements; no independent observational reassessment, reproduction, or scientific qualification was performed in this reading."
+    ],
+    "usefulness": {
+      "assessment": "High value as a formal bridge and a warning against promoting a background decomposition to perturbative equivalence. The most reusable result is the explicit separation between the geodesic zero-rest-pressure closure and the constant-A barotropic Chaplygin closure.",
+      "transferable_relation": "A dark perfect fluid can be algebraically represented by dust plus vacuum while preserving its total stress tensor; an interaction four-vector prescription is still needed to fix inhomogeneous behavior.",
+      "most_useful_distinction": "Same FRW Q(a) and H(a) can coexist with inequivalent perturbations. Geodesic transfer imposes irrotational flow and zero comoving vacuum force, whereas constant-A gradient transfer enforces Š=0 and exact barotropic sound-speed behavior.",
+      "smallest_falsifiable_comparison": "At fixed background and matched initial conditions, compare linear comoving matter growth, velocity, and metric potentials between the two closures; then specify an observable mapping such as RSD or lensing/ISW with a complete component and data model. This is only an inference from the equations and was not calculated.",
+      "readiness": "Source-reading packet only. It is not a Sol-reviewed idea, accepted prospect, executable candidate design, independent reproduction, or observational qualification."
+    },
+    "citation_leads": [
+      {
+        "citing_paper_id": "arxiv:1203.6776v2",
+        "cited_arxiv_id": "gr-qc/0202064",
+        "cited_version": null,
+        "reference": "40",
+        "html_anchor": "bib.bib40",
+        "pdf_page": 8,
+        "pdf_locator": "PDF reference [40], p. 8",
+        "original_source_hash": "342d46fd85eb5177770140d14f932a660f0d6538c85b256455a8db7c76e27fa4",
+        "html_source_hash": "61fe4c6b503645e9bbf12f2384a3329bcfc1465f3ed2d7834b44122da01cbc9a",
+        "source_role": "original_pdf_bibliography_checked_against_html_anchor",
+        "url": "https://arxiv.org/html/1203.6776v2#bib.bib40",
+        "identity_note": "The bibliography prints the base arXiv ID without a version. Prospector currently registers v2; the cited version is therefore unknown.",
+        "title_from_registered_metadata": "Generalized Chaplygin Gas, Accelerated Expansion and Dark Energy-Matter Unification"
+      },
+      {
+        "citing_paper_id": "arxiv:1203.6776v2",
+        "cited_arxiv_id": "astro-ph/0212114",
+        "cited_version": null,
+        "reference": "41",
+        "html_anchor": "bib.bib41",
+        "pdf_page": 8,
+        "pdf_locator": "PDF reference [41], p. 8",
+        "original_source_hash": "342d46fd85eb5177770140d14f932a660f0d6538c85b256455a8db7c76e27fa4",
+        "html_source_hash": "61fe4c6b503645e9bbf12f2384a3329bcfc1465f3ed2d7834b44122da01cbc9a",
+        "source_role": "original_pdf_bibliography_checked_against_html_anchor",
+        "url": "https://arxiv.org/html/1203.6776v2#bib.bib41",
+        "identity_note": "The bibliography prints the base arXiv ID without a version. Prospector currently registers v2; the cited version is therefore unknown.",
+        "title_from_registered_metadata": "The end of unified dark matter?"
+      }
+    ],
+    "source_hashes": {
+      "pdf": "342d46fd85eb5177770140d14f932a660f0d6538c85b256455a8db7c76e27fa4",
+      "html": "61fe4c6b503645e9bbf12f2384a3329bcfc1465f3ed2d7834b44122da01cbc9a",
+      "extracted_text": "971828b5e611c72a3b7b031bc2044deab55e08ecb151182912b60f217f8b10b5"
+    },
+    "source_identity_checks": {
+      "title": "Matched in the PDF page-1 heading and HTML title: Inhomogeneous vacuum energy.",
+      "authors": "Matched in PDF and HTML: David Wands, Josue De-Santiago, Yuting Wang.",
+      "version": "PDF header identifies arXiv:1203.6776v2 [astro-ph.CO], dated 16 Apr 2012; HTML route is pinned to /html/1203.6776v2.",
+      "date": "PDF title block says April 16, 2012; acquisition metadata records updated 2012-04-16T14:00:04Z.",
+      "body_identity": "PDF and HTML titles and section/equation sequence agree. Key transfer definitions, FRW signs, perturbation/entropy formulas, Chaplygin interaction, and both closure prescriptions were checked against HTML TeX annotations and rendered PDF pages, including Eqs. (1), (6)-(11), (18)-(21), (24)-(30), (33)-(44).",
+      "sha256_verification": "PDF, HTML, extracted text, and all eight page renders match their locally recorded manifest/render-manifest SHA-256 values.",
+      "network": "No network acquisition or external lookup was performed by this reader."
+    },
+    "source_details": {
+      "manifest_path": ".work/bridges-20261009/acquisition/1203.6776v2-sources.json",
+      "pdf": {
+        "path": ".work/bridges-20261009/acquisition/objects/342d46fd85eb5177770140d14f932a660f0d6538c85b256455a8db7c76e27fa4.pdf",
+        "sha256": "342d46fd85eb5177770140d14f932a660f0d6538c85b256455a8db7c76e27fa4",
+        "bytes": 159476,
+        "url": "https://arxiv.org/pdf/1203.6776v2"
+      },
+      "html": {
+        "path": ".work/bridges-20261009/acquisition/objects/61fe4c6b503645e9bbf12f2384a3329bcfc1465f3ed2d7834b44122da01cbc9a.html",
+        "sha256": "61fe4c6b503645e9bbf12f2384a3329bcfc1465f3ed2d7834b44122da01cbc9a",
+        "bytes": 197164,
+        "url": "https://arxiv.org/html/1203.6776v2"
+      },
+      "extracted_text": {
+        "path": ".work/bridges-20261009/acquisition/objects/971828b5e611c72a3b7b031bc2044deab55e08ecb151182912b60f217f8b10b5.txt",
+        "sha256": "971828b5e611c72a3b7b031bc2044deab55e08ecb151182912b60f217f8b10b5",
+        "bytes": 41637,
+        "derived_from_sha256": "342d46fd85eb5177770140d14f932a660f0d6538c85b256455a8db7c76e27fa4",
+        "tool": "pdftotext -layout"
+      },
+      "rendered_pdf_pages": [
+        {
+          "page": 1,
+          "path": ".work/bridges-20261009/renders/1203.6776v2/page-1.png",
+          "sha256": "236f16bb52d7c81c4b68aebbfe8b10502dc9ba5b85b720930701f244c3f24351"
+        },
+        {
+          "page": 2,
+          "path": ".work/bridges-20261009/renders/1203.6776v2/page-2.png",
+          "sha256": "7461478cc54af3a46835b2ad97f839cd661e2b7e95c26568205c7755ef8780ab"
+        },
+        {
+          "page": 3,
+          "path": ".work/bridges-20261009/renders/1203.6776v2/page-3.png",
+          "sha256": "a8774264c0c2423a8d43a686faa3db33d4212d592fd5c96fbdf0f16221b42e2e"
+        },
+        {
+          "page": 4,
+          "path": ".work/bridges-20261009/renders/1203.6776v2/page-4.png",
+          "sha256": "f8d5bf6504eea1e8002eb4f59b6917e37f1fd3458418add184470ad4c927c896"
+        },
+        {
+          "page": 5,
+          "path": ".work/bridges-20261009/renders/1203.6776v2/page-5.png",
+          "sha256": "6bca0081233e3540bdc118b00fc33214f3ad856f3f31f9d6fec65a58ce5412f7"
+        },
+        {
+          "page": 6,
+          "path": ".work/bridges-20261009/renders/1203.6776v2/page-6.png",
+          "sha256": "c4dc1d29b0822f67edcbf610239cb095dd4743a48eef80179391814f6cc12350"
+        },
+        {
+          "page": 7,
+          "path": ".work/bridges-20261009/renders/1203.6776v2/page-7.png",
+          "sha256": "cd8c77b8d2b14e751f7c21b91b9323ef22dd579adc7af053a3ee4ed9eb4111a5"
+        },
+        {
+          "page": 8,
+          "path": ".work/bridges-20261009/renders/1203.6776v2/page-8.png",
+          "sha256": "911edf0d9fbf774815b52798d1c87f0c422f5cebb4f55252e4568df65de9fad8"
+        }
+      ]
+    },
+    "agent_id": "/root/luna_vacuum_foundation",
+    "packet_sha256": "696d91249db85acdc4920d63a26d5c6d8e2004e24b7add8a619e52332ca9eac4",
+    "coordinator_amendments": [
+      {
+        "field": "citation_leads[*].reference_title_as_printed",
+        "correction": "Rename to title_from_registered_metadata; source refs40/41 print authors/journal/baseID, not article titles. Printed referenceidentity/baseID/unknownversion unchanged."
+      },
+      {
+        "field": "source_hashes",
+        "correction": "Public extraction flattens receipted pdf/html/extracted_text roles to digest strings; full path/render receipt structure stays in immutable originalpacket and source_details."
+      },
+      {
+        "field": "agent_id and provenance",
+        "correction": "Add returned canonical agentID/root/luna_vacuum_foundation and requestedmodel/reasoning launch; actualbackendidentity remainsnull."
+      }
+    ]
+  },
   "review_id": null,
   "idea_ids": []
 }

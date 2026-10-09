@@ -870,8 +870,8 @@
     },
     {
       "paper_id": "arxiv:1203.6776v2",
-      "stage": "read",
-      "reason": "Selected for full Luna reading and Sol comparison of barotropic and geodesic/nonadiabatic closure; intake is not scientific acceptance.",
+      "stage": "review",
+      "reason": "Full Luna/xhigh8page reading completed; ordinary Sol scientific comparison pending.",
       "prospect_ids": [
         "interacting-sectors",
         "late-dark-energy"

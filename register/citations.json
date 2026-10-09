@@ -793,6 +793,32 @@
         "locator": "#bib.bib29",
         "url": "https://arxiv.org/html/1812.01586v2#bib.bib29"
       }
+    },
+    {
+      "id": "cite-1203.6776-gr-qc-0202064",
+      "from_paper_id": "arxiv:1203.6776v2",
+      "cited_arxiv_id": "gr-qc/0202064",
+      "cited_version": null,
+      "reference": "40",
+      "source": {
+        "role": "html",
+        "sha256": "61fe4c6b503645e9bbf12f2384a3329bcfc1465f3ed2d7834b44122da01cbc9a",
+        "locator": "HTMLreference[40], bib.bib40; PDFp8reference[40] (same numbering)",
+        "url": "https://arxiv.org/html/1203.6776v2#bib.bib40"
+      }
+    },
+    {
+      "id": "cite-1203.6776-astro-ph-0212114",
+      "from_paper_id": "arxiv:1203.6776v2",
+      "cited_arxiv_id": "astro-ph/0212114",
+      "cited_version": null,
+      "reference": "41",
+      "source": {
+        "role": "html",
+        "sha256": "61fe4c6b503645e9bbf12f2384a3329bcfc1465f3ed2d7834b44122da01cbc9a",
+        "locator": "HTMLreference[41], bib.bib41; PDFp8reference[41] (same numbering)",
+        "url": "https://arxiv.org/html/1203.6776v2#bib.bib41"
+      }
     }
   ],
   "inspected_paper_ids": [
@@ -816,7 +842,8 @@
     "arxiv:2512.19633v1",
     "arxiv:2412.15143v1",
     "arxiv:1811.11976v3",
-    "arxiv:1812.01586v2"
+    "arxiv:1812.01586v2",
+    "arxiv:1203.6776v2"
   ],
   "limitations": [
     "Four explicit bibliography links to registered paper identities were verified in pinned original HTML. This is a bounded extraction, not a complete citation index.",
@@ -827,6 +854,7 @@
     "2026-10-01: bounded full-bibliography identity inspection for pinned 2609.37437v1 and 2609.36853v1; registered base-ID matches do not establish the cited version. PDF reference labels remain distinct from HTML bibliography anchors.",
     "Wave8 checks only Peterson HTML bibliography14 and Brout HTML bibliography20/83. Cited base IDs do not establish cited versions; all other bibliography coverage remains unknown. These links are bibliographic evidence, not physical ancestry or independent observations.",
     "2026-10-09 thermal NEDE/ACT reading checkpoint:14 explicit original-HTML bibliography links to registered base identities checked (4from2112.00770v2,10from2512.19633v1). PDF labels and HTML anchors kept separate; unprinted cited versions remain null. Bounded coverage, not complete citation ancestry or independent evidence.",
-    "Explicit registered matches only; cited versions unspecified remainnull; root excluded1811bib103 false match and left2identities pending429."
+    "Explicit registered matches only; cited versions unspecified remainnull; root excluded1811bib103 false match and left2identities pending429.",
+    "1203.6776v2 full bibliography44entries inspected against currently registered baseIDs; twoexplicit registeredlinks recorded, no citedversion specified; this is bounded coverage, not exhaustive external citation mapping."
   ]
 }
