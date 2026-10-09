@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_completed_scan": "2026-10-01-resumable-modified-gravity",
+  "last_completed_scan": "2026-10-09-stochastic-vacuum-science",
   "next_lane": "baseline-reference",
   "batch_limits": {
     "new_versions": 20,
@@ -725,30 +725,6 @@
       ]
     },
     {
-      "paper_id": "arxiv:2307.13743v2",
-      "stage": "read",
-      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
-      "prospect_ids": [
-        "stochastic-vacuum"
-      ]
-    },
-    {
-      "paper_id": "arxiv:astro-ph/0209274v1",
-      "stage": "read",
-      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
-      "prospect_ids": [
-        "stochastic-vacuum"
-      ]
-    },
-    {
-      "paper_id": "arxiv:gr-qc/0612128v2",
-      "stage": "read",
-      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
-      "prospect_ids": [
-        "stochastic-vacuum"
-      ]
-    },
-    {
       "paper_id": "arxiv:0909.0749v2",
       "stage": "acquire",
       "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
@@ -1003,6 +979,14 @@
       "reason": "Deferred foundation, null-result constraint, eigenmode derivation, independent method or forecast; no full reading claimed.",
       "prospect_ids": [
         "cosmic-topology"
+      ]
+    },
+    {
+      "paper_id": "arxiv:gr-qc/0612128v2",
+      "stage": "review",
+      "reason": "Complete Luna full reading preserved; pending Sol source review because this coherent batch used its three-paper review ceiling.",
+      "prospect_ids": [
+        "stochastic-vacuum"
       ]
     }
   ],

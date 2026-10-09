@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "ohmic-unimodular-diffusion-noise-audit",
+  "title": "Unimodular dark energy from an Ohmic bath",
+  "kind": "single_mechanism",
+  "readiness": "blocked",
+  "baseline": {
+    "label": "LambdaCDM",
+    "role": "comparison",
+    "scope": "Coordinator-declared comparison convention; not an assertion that the source retains the full LambdaCDM sectors or adopts a source posterior.",
+    "parameters": null,
+    "parameters_reason": "No numerical reference inputs adopted for this source-development prospect."
+  },
+  "cosmology": {
+    "gravity": "Dissipative unimodular gravity in the source symmetry-reduced Hamiltonian setting.",
+    "geometry": "Spatially flat FLRW in the examined source implementation.",
+    "components": [
+      "Canonical scalar matter; massless p=rho in the illustrative solution.",
+      "Hidden harmonic oscillator bath with source-specified coupling."
+    ],
+    "modifications": [
+      "Bath energy transfer produces an effective geometric Lambda; bath is an explicit added sector."
+    ],
+    "background": "Eqs.(38)-(40) give a conditional deterministic stiff-scalar background; the printed Hamiltonian-to-diffusion normalization in Eqs.(28)-(33) is unresolved. No full cosmological closure is accepted.",
+    "perturbations": "Spatial and quantum perturbation completion not supplied.",
+    "observables": [
+      "Conservation/constraint consistency and explicitly conditioned expansion histories.",
+      "Future observable distinctions require the missing source and perturbation closures."
+    ]
+  },
+  "scope": [
+    "Audit a classical reduced toy model and its approximation domain.",
+    "Standard matter/radiation history, observed Lambda magnitude and quantum-gravity microphysics are lost scope."
+  ],
+  "unknowns": [
+    "Reconcile the geometric-Lambda versus energy-density and factor-of-two mismatch of Eq.(29) with Eqs.(28),(31),(33), separately from the Appendix A equilibrium mismatch.",
+    "A controlled finite-cutoff/initial-bath regime in which neglecting noise is justified over the intended epoch.",
+    "Realistic retained radiation/matter content, spatial perturbations and observational law.",
+    "Source microphysical coupling/onset conditions and consumer acceptance are unknown.",
+    "Appendix A Eq.(A9)/(A10), endpoint convention and oscillator mode-sum normalization are unresolved. A nonzero constant thermal density also needs consistency with the expanding-background continuity equation."
+  ],
+  "combination_compatibility": {
+    "status": "not_assessed",
+    "basis": "No combination with the other stochastic/dissipative branch is proposed; a common word or motivation does not establish shared dynamics."
+  },
+  "idea_ids": [
+    "ohmic-unimodular-hidden-bath-diffusion"
+  ],
+  "model_idea_ids": [
+    "ohmic-unimodular-hidden-bath-diffusion"
+  ],
+  "design_ids": [
+    "candidate-ohmic-unimodular-diffusion-noise-audit"
+  ],
+  "topic_ids": [
+    "stochastic-vacuum"
+  ],
+  "paper_ids": [
+    "arxiv:2607.03272v1"
+  ],
+  "review_id": "2026-10-09-stochastic-vacuum-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2607.03272v1",
+      "locator": "Secs.II-IV Eqs.(5)-(6),(18)-(38); Eq.(40); Appendix A",
+      "url": "https://arxiv.org/abs/2607.03272v1",
+      "source_sha256": {
+        "html": "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+        "pdf": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+        "extracted_text": "2ddac41a495d8180db11b09fa1fdf1340cf735de7fe081495e5f43a4494b9ccc"
+      }
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-09-stochastic-vacuum-science",
+  "status": "completed",
+  "started_utc": "2026-10-09T17:46:50.507513+00:00",
+  "completed_utc": "2026-10-09T18:41:40.911839+00:00",
+  "scope": "Causal-set stochastic vacuum and distinct unimodular dissipative mechanism; final science stage after separately preserved seven-version intake.",
+  "lane": "late-dark-energy",
+  "work_mode": "unconventional_foundation_challenge_and_cross_field_mechanism",
+  "registered_papers": [
+    "arxiv:2607.03272v1",
+    "arxiv:gr-qc/0612128v2",
+    "arxiv:2307.13743v2",
+    "arxiv:astro-ph/0209274v1"
+  ],
+  "new_versions": [
+    "arxiv:2607.03272v1"
+  ],
+  "full_reads": [
+    "arxiv:2607.03272v1",
+    "arxiv:gr-qc/0612128v2",
+    "arxiv:2307.13743v2",
+    "arxiv:astro-ph/0209274v1"
+  ],
+  "reviewed_papers": [
+    "arxiv:astro-ph/0209274v1",
+    "arxiv:2307.13743v2",
+    "arxiv:2607.03272v1"
+  ],
+  "idea_ids": [
+    "everpresent-lambda-volume-noise",
+    "everpresent-lambda-seed-selection-and-cmb-limit",
+    "ohmic-unimodular-hidden-bath-diffusion"
+  ],
+  "prospect_ids": [
+    "everpresent-lambda-conservation-and-cmb-audit",
+    "ohmic-unimodular-diffusion-noise-audit"
+  ],
+  "design_ids": [
+    "candidate-everpresent-lambda-conservation-and-cmb-audit",
+    "candidate-ohmic-unimodular-diffusion-noise-audit"
+  ],
+  "abstract_screens": [
+    "arxiv:2607.03272v1"
+  ],
+  "search_ids": [
+    "2026-10-09-unimodular-dissipation-terminology"
+  ],
+  "prior_intake_scan": "2026-10-09-everpresent-lambda-intake",
+  "cumulative_scope_totals": {
+    "new_versions": 8,
+    "actual_luna_full_reads": 4,
+    "sol_reviewed_papers": 3,
+    "accepted_ideas": 3,
+    "prospects": 2,
+    "executed_experiments": 0
+  },
+  "coverage": [
+    "Three bounded Atom windows returned25 entries/22 unique versions across the intake and this final science stage. Exact windows/dispositions retained; no exhaustive or gap-free claim.",
+    "Foundational2002 ansatz,2007criticism,2024negative tests and2026cross-disciplinary hiddenbath read in full. Barrow criticism remains unreviewed; four follow-up full readings remain queued.",
+    "No new numerical experiment, schedule, consumer execution, independent reproduction or current-data assessment."
+  ],
+  "research_context": {
+    "recorded_utc": "2026-10-09T17:52:19.039083+00:00",
+    "bibliometric_context": {
+      "provider": "INSPIRE-HEP",
+      "date": "2026-10-09",
+      "counts_base_works_not_versions": {
+        "astro-ph/0209274": 146,
+        "gr-qc/0612128": 30,
+        "0711.2904": 12,
+        "1210.2589": 17,
+        "1703.06265": 33,
+        "2304.03819": 18,
+        "2307.13743": 18,
+        "2607.03272": 3
+      },
+      "interpretation": "Descriptive selected sample only; no age/field-normalized comparisons. No h-indices collected. Unresolved author visibility is not an exclusion filter. Founding paper is established within this niche, not demonstrated obscure.",
+      "identity_reconciliation": "Exact base IDs plus inspected alternate provider titles after Greek Lambda/TeX/punctuation normalization. Original strict-first-title null snapshots and immutable raw responses retained."
+    },
+    "research_connections": [
+      {
+        "kind": "coauthorship",
+        "evidence": "Exact arXiv Atom metadata for astro-ph/0209274v1,1210.2589v3,1703.06265v4",
+        "statement": "Ahmed and Sorkin recur in foundation/stability work; Sorkin is also a coauthor of the 2017 tests. These papers are not independent author teams."
+      },
+      {
+        "kind": "coauthorship",
+        "evidence": "Exact arXiv Atom metadata for 2304.03819v2 and 2307.13743v2",
+        "statement": "Both Aspects papers have Das, Nasiri and Yazdi as the same team; count as one follow-up programme."
+      },
+      {
+        "kind": "acknowledged_discussion",
+        "evidence": "2307.13743v2 Acknowledgements, printed p27; PDF SHA256 92984c3bc837a2f80629a7c04e80c4e25aed6f425667196e1c490148b7784460",
+        "statement": "Modern reassessment thanks Dowker, Sorkin and Zwane for discussions and Afshordi for detailed discussions on the analysis. Distinct byline does not establish intellectual isolation or independent data."
+      },
+      {
+        "kind": "institutional_context",
+        "evidence": "2307.13743v2 title page; same PDF digest",
+        "statement": "The three 2024 byline authors give Theoretical Physics Group, Blackett Laboratory, Imperial College London. This is source-era affiliation, not a current-employment assertion."
+      },
+      {
+        "kind": "publication_history",
+        "evidence": "Verified first-submission/version timestamps and bylines of seven admitted versions",
+        "statement": "Bounded publication trail spans 2002 foundation, 2006/2007 criticism, 2012 stability, 2017 cosmological tests, and 2023/2024 theoretical and observational reassessment. Not a complete author bibliography or career-length estimate."
+      },
+      {
+        "kind": "source_era_coauthorship_and_affiliations",
+        "evidence": "2607.03272v1 title page; PDF SHA256 9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+        "statement": "Pellecchia (Napoli Federico II/INFN Napoli), Perez (Aix Marseille/Toulon/CNRS CPT), and Ribisi (Beijing Normal University) share the 2026 byline. This establishes this collaboration and stated source-era institutions only, not prior network independence or current employment."
+      },
+      {
+        "kind": "explicit_bibliography",
+        "evidence": "2607.03272v1 HTML bib.bib20, SHA25644f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+        "statement": "Pellecchia/Perez/Ribisi cite Kashyap/Singh arXiv2603.21675 with no version. The latter is a separate bridge-scope metadata-only deferred paper; this link establishes citation, not physical equivalence, collaboration, or independent confirmation."
+      }
+    ],
+    "visibility_gaps": [
+      "No verified Scholar h-index profiles or career-normalized cohort population.",
+      "No affiliation or standing requirement was used for screening; low-visibility and unaffiliated routes remain open.",
+      "Two Perimeter direct page retrievals returned HTTP403; no retry. Imperial research-group page acquired, but group description alone does not verify individual expertise.",
+      "Three provider citations for the July2026 dissipative-bath preprint do not establish three independent validations; citing works were not followed in this bounded batch.",
+      "Complete author publication histories, career starts, broader coauthor networks and current individual expertise profiles were not verified."
+    ],
+    "cross_field_frontier": [
+      {
+        "paper_id": "arxiv:2101.00478v1",
+        "reason": "2D topology-changing quantum gravity/Coleman mechanism; defer until 4D relevance and observer interpretation are checked."
+      },
+      {
+        "paper_id": "arxiv:0904.1057v3",
+        "reason": "Statistical-fluid membrane analogy for fluctuating vacuum; defer because analogy is not a cosmological covariant closure."
+      },
+      {
+        "paper_id": "arxiv:astro-ph/0703375v2",
+        "reason": "Phenomenological gravitational-slip/ISW constraints; potential observable language, not established equivalence to stochastic Lambda."
+      }
+    ],
+    "additional_search_coverage": {
+      "query_file": "search-terminology.json",
+      "reason": "Expanded from exact everpresent nomenclature to unimodular/cosmological-constant/dark-energy terms across gr-qc,astro-ph.CO,hep-th; selected a cond-mat.other cross-listed open-system mechanism.",
+      "total_windows": 3,
+      "total_hits": 25,
+      "unique_window_versions": 22,
+      "limits": "Only top relevance/date pages; terminology, pagination, non-arXiv and non-English gaps remain. Three full-review slots prioritize original mechanisms and later negative tests; Barrow full extraction remains queued for review."
+    }
+  },
+  "review_corrections": [
+    {
+      "id": "visibility-width-reader-error",
+      "kind": "luna_and_coordinator_error",
+      "paper_id": "arxiv:2307.13743v2",
+      "original_fields": [
+        "luna-recent.caveats[type=printed_source_inconsistency, visibility width]",
+        "proposal-for-sol.questions_for_sol[3]",
+        "draft-science prospect/design unknowns and blockers"
+      ],
+      "old_claim": "Eq.(6.9) and Eq.(B.13) have conflicting powers of z_star.",
+      "replacement": "No conflict: Appendix B explicitly defines Hcal=aH (PDF p.31). B.13 uses Hcal, Eq.(6.9) uses cosmic H. Thus sigma≈z_star/(10^4 Hcal_star)=z_star(1+z_star)/(10^4 H_star)≈z_star^2/(10^4 H_star) at z_star>>1. Preserve the approximation and distinguish conformal time from cosmic time.",
+      "checked_locators": [
+        "Sec.6.1 Eq.(6.9), PDF p.19",
+        "Appendix B definition following Eq.(B.1), PDF p.31",
+        "Appendix B Eq.(B.13), PDF p.32"
+      ],
+      "action": "Replace the extraction caveat visibly and remove visibility-width repair from blockers; original Luna packet retained."
+    },
+    {
+      "id": "recent-low-z-subset-threshold",
+      "kind": "printed_source_inconsistency_confirmed",
+      "paper_id": "arxiv:2307.13743v2",
+      "original_fields": [
+        "luna-recent.quantities[Low-z Om and SN chi2 association]",
+        "luna-recent.caveats[printed threshold]"
+      ],
+      "old_claim": "70 seeds with chi2<1060 and mean Om 0.27±0.03.",
+      "replacement": "The PDF prints 1060; this conflicts with best-fit 1481.9 and Fig. 4. Retain the printed threshold as unresolved, and do not use its 70-seed statistic for a derived test or guess 1600.",
+      "checked_locators": [
+        "Sec.4.1 Eq.(4.8), PDF p.9",
+        "Sec.4.2 and Fig. 4, PDF p.11"
+      ],
+      "action": "Keep source issue, no silent repair."
+    },
+    {
+      "id": "recent-summary-percentages",
+      "kind": "printed_source_summary_not_reconciled",
+      "paper_id": "arxiv:2307.13743v2",
+      "original_fields": [
+        "luna-recent.caveats[Sec7 percentages]"
+      ],
+      "old_claim": "Sec.7 percentages differ from Sec.4.1 counts.",
+      "replacement": "Sec.4.1 states 55/90000 in [1481,1490] and 16/90000 better than LambdaCDM. Arithmetic fractions are about 0.0611% and 0.0178%. Sec.7 says about 0.14% similar and 0.015% better. The similar-fit threshold is not restated there, so this is an unreconciled summary, not proof the same precisely defined subset was miscounted. Use exact Sec.4.1 counts with finite-sample conditioning; do not turn summary percentages into model probabilities.",
+      "checked_locators": [
+        "Sec.4.1, PDF pp.6-7",
+        "Sec.7 first paragraph, PDF p.27"
+      ],
+      "action": "Narrow the original caveat; exclude summary percentages from quantitative acceptance."
+    },
+    {
+      "id": "recent-posterior-weighting-source-conflict",
+      "kind": "printed_source_method_description_conflict",
+      "paper_id": "arxiv:2307.13743v2",
+      "original_fields": [
+        "luna-recent.caveats[seed selection and evidence]",
+        "luna-recent.summary of Appendix A method"
+      ],
+      "old_claim": "Appendix A combines marginalized likelihoods consistently with main-text Bayesian model averaging.",
+      "replacement": "Main text Eqs.(4.3)-(4.4) weights normalized fixed-seed posteriors by P(s|D) proportional to marginal likelihood times seed prior; harmonic-mean likelihood estimates are stated. Appendix A Method 3 Eq.(A.6) instead says average normalized posteriors equally. Those operations differ unless seed evidences are equal. Actual implementation is unknown; preserve source-reported Eq.(4.5) as a conditional reported result, not independently verified model marginalization.",
+      "checked_locators": [
+        "Sec.4.1 Eqs.(4.3)-(4.5), PDF pp.7-8",
+        "Appendix A Method 3 Eqs.(A.5)-(A.6), PDF p.30"
+      ],
+      "action": "Add visible source methodology caveat; exact source code and weighting required before evidence reuse."
+    },
+    {
+      "id": "recent-bibliography101",
+      "kind": "luna_transcription_omission",
+      "paper_id": "arxiv:2307.13743v2",
+      "original_fields": [
+        "luna-recent.citation_leads[reference_label=[101]].printed_arxiv_base_id",
+        "luna-recent.citation_leads[reference_label=[101]].match_basis"
+      ],
+      "old_claim": "No arXiv ID is printed in reference[101].",
+      "replacement": "Reference[101] explicitly prints astro-ph/9506072. Set printed_arxiv_base_id to astro-ph/9506072, version null; do not infer the registered v1 was the cited version.",
+      "checked_locators": [
+        "HTML#bib.bib101; PDF reference[101]"
+      ],
+      "action": "Coordinator pre-review correction confirmed."
+    },
+    {
+      "id": "bath-eq29-normalization",
+      "kind": "printed_source_inconsistency_confirmed",
+      "paper_id": "arxiv:2607.03272v1",
+      "original_fields": [
+        "luna-dissipation.ideas[pellecchia-2607-ohmic-defect-bath].equations[on-shell Eqs28-32]",
+        "luna-dissipation.caveats",
+        "luna-dissipation.summary derivation claim"
+      ],
+      "old_claim": "Eq.(29) defines deltaLambda as energy-density terms plus one-half friction integral, and Eq.(33) follows by differentiation.",
+      "replacement": "The transcription is faithful, but the chain is inconsistent: Eq.(28) adds deltaLambda/(8piG) to an energy-density Hamiltonian, Eq.(31) adds deltaLambda to geometric Lambda, yet Eq.(29) RHS has density units. Its derivative also has coefficient beta_bar m_p/2 rather than the beta_bar m_p in Eq.(33). Eq.(27) and scalar continuity support the coefficient/sign in Eq.(33); this is a diagnostic, not authority to rewrite Eq.(29). Keep the deterministic system conditional and the Hamiltonian normalization blocked.",
+      "checked_locators": [
+        "PDF p.5 Eqs.(27)-(32)",
+        "PDF p.6 Eqs.(33)-(35)"
+      ],
+      "action": "Add visible printed-source caveat; do not relabel it as a Luna transcription error."
+    },
+    {
+      "id": "bath-appendix-factor2",
+      "kind": "printed_source_inconsistency_confirmed_with_domain_limits",
+      "paper_id": "arxiv:2607.03272v1",
+      "original_fields": [
+        "luna-dissipation.ideas[pellecchia-2607-ohmic-noise-fdt-equilibrium]",
+        "luna-dissipation.caveats[Appendix A]"
+      ],
+      "old_claim": "Eq.(A9) equilibrium rho=T_d^4 is inconsistent with printed averages; rho=T_d^4/2 is reader algebra.",
+      "replacement": "Confirmed literally from displayed averages and Eq.(33): 0=beta_bar m_p(2rho-T_d^4)/(3Lambda t^2). This identifies the printed factor mismatch; rho=T_d^4/2 is not adopted as the physically repaired equilibrium. White-noise endpoint normalization, finite-cutoff limit and bath mode-sum measure are unspecified. Appendix A does calculate <xi phi_dot>, so omission of that correlation is not an objection. A nonzero constant equilibrium density would additionally require an expanding-background continuity check; the homogeneous scalar has p=rho, not radiation.",
+      "checked_locators": [
+        "PDF p.8 Appendix A Eqs.(A1)-(A10)",
+        "PDF p.5 Eq.(30), p.6 footnote 8 and Eq.(35)"
+      ],
+      "action": "Retain narrow source arithmetic issue separately from Eq.(29); block quantitative Eq.(A10) reuse."
+    },
+    {
+      "id": "foundation-constraint-locator",
+      "kind": "coordinator_pre_review_transcription_correction_confirmed",
+      "paper_id": "arxiv:astro-ph/0209274v1",
+      "original_fields": [
+        "draft design Friedmann locator"
+      ],
+      "old_claim": "Friedmann was formerly labelled Eq.(3).",
+      "replacement": "Eq.(3) is past-light-cone volume; Eq.(6) is the Friedmann constraint. Draft now has the correct locator. Use rho_Lambda in its source density convention, not a dimensional identification with later geometric Lambda.",
+      "checked_locators": [
+        "PDF p.4 Eq.(3); p.5 Eq.(6)"
+      ],
+      "action": "Keep corrected draft and preserve original error provenance."
+    }
+  ],
+  "catalog_pin": {
+    "bytes": 198929,
+    "sha256": "7ee8a1ce4443bf87b58af95e895ab14b02976d2567186ccd4133b384ce528fcb",
+    "uri": "s3://research-data-436908790672-eu-west-2/shared/catalogs/releases/7ee8a1ce4443bf87b58af95e895ab14b02976d2567186ccd4133b384ce528fcb.json",
+    "version_id": "5zhtxcsv0MqKPSUGnkvHAXTcIQ307K2T"
+  },
+  "prior_preservation": [
+    {
+      "manifest_format": "research-named-manifest/v1",
+      "collection": "prospector/reviews/everpresent-lambda-20261009-intake",
+      "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/everpresent-lambda-20261009-intake/versions/54445e55f533db7f945578b2f574f670187eafed48e923b2e13b788c02893cc5/manifest.json",
+      "version_id": "C4XSkxbLU.pi721BTldryGJGpQRJzjCd",
+      "sha256": "ed5e9e34896233e785f3052310462577964b20513c1c931d0f31279a388bc06a",
+      "bytes": 19998
+    },
+    {
+      "manifest_format": "research-named-manifest/v1",
+      "collection": "prospector/reviews/everpresent-lambda-20261009-reading-checkpoint",
+      "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/everpresent-lambda-20261009-reading-checkpoint/versions/e62c668d288cb2e7b9983b14c3866d43f3554a41535086cf35820ce237e6f72b/manifest.json",
+      "version_id": "tX32fPg7I.a7Yy22l0BP0FBAgGwPsMeB",
+      "sha256": "ee08123c8a0cbf86b4cb56e1ed20b3d11d2b1287f396a857ca9c49a9a1529030",
+      "bytes": 59186
+    }
+  ],
+  "remaining_frontier": {
+    "review": [
+      "arxiv:gr-qc/0612128v2"
+    ],
+    "read": [
+      "arxiv:0711.2904v1",
+      "arxiv:1210.2589v3",
+      "arxiv:1703.06265v4",
+      "arxiv:2304.03819v2"
+    ],
+    "saved_search_results": "Resume undecided/deferred metadata from canonical receipts before another search; alternative cross-field models remain unassessed."
+  },
+  "preservation": {
+    "manifest_format": "research-named-manifest/v1",
+    "collection": "prospector/reviews/everpresent-lambda-20261009",
+    "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/everpresent-lambda-20261009/versions/212647a5ae9eb7889b41333875852b6ba9dbaf286e2ab71feff080090e0549e1/manifest.json",
+    "version_id": "DXCpFDfaOkxW7uzT4YBJVs5hJ4fglK2n",
+    "sha256": "de0816c212c1427205a54e347f480fd8371e7b363bb2b117e071c21400ef87f1",
+    "bytes": 86417
+  },
+  "preservation_verification": "Uploaded completed manifest; exact per-object remote readback in progress. Local bytes retained.",
+  "worker_slots_released": true,
+  "closeout": "User requested bounded closeout; no further workers, acquisitions or experiments. Four full readings and three source reviews completed; remaining stages queued."
+}

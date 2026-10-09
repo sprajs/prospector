@@ -832,6 +832,175 @@
         "locator": "HTML reference [10], bib.bib10; PDF p.21 bibliography. Version not printed.",
         "url": "https://arxiv.org/html/1403.2190v2#bib.bib10"
       }
+    },
+    {
+      "id": "cite-2307.13743-1703.06265",
+      "from_paper_id": "arxiv:2307.13743v2",
+      "cited_arxiv_id": "1703.06265",
+      "cited_version": null,
+      "reference": "[1]; Explicit arXiv base ID in reference; version is not printed.",
+      "source": {
+        "role": "html",
+        "sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+        "locator": "bib.bib1",
+        "url": "https://arxiv.org/html/2307.13743v2#bib.bib1"
+      }
+    },
+    {
+      "id": "cite-2307.13743-astro-ph-0209274",
+      "from_paper_id": "arxiv:2307.13743v2",
+      "cited_arxiv_id": "astro-ph/0209274",
+      "cited_version": null,
+      "reference": "[43]; Explicit arXiv base ID in reference; version is not printed.",
+      "source": {
+        "role": "html",
+        "sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+        "locator": "bib.bib43",
+        "url": "https://arxiv.org/html/2307.13743v2#bib.bib43"
+      }
+    },
+    {
+      "id": "cite-2307.13743-1210.2589",
+      "from_paper_id": "arxiv:2307.13743v2",
+      "cited_arxiv_id": "1210.2589",
+      "cited_version": null,
+      "reference": "[44]; Printed title, authors, and journal details match the registered work; no arXiv ID or version is printed in this bibliography entry.",
+      "source": {
+        "role": "html",
+        "sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+        "locator": "bib.bib44",
+        "url": "https://arxiv.org/html/2307.13743v2#bib.bib44"
+      }
+    },
+    {
+      "id": "cite-2307.13743-2304.03819",
+      "from_paper_id": "arxiv:2307.13743v2",
+      "cited_arxiv_id": "2304.03819",
+      "cited_version": null,
+      "reference": "[45]; Printed title and all three authors match the registered Part I paper; no arXiv ID or version is printed in this bibliography entry.",
+      "source": {
+        "role": "html",
+        "sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+        "locator": "bib.bib45",
+        "url": "https://arxiv.org/html/2307.13743v2#bib.bib45"
+      }
+    },
+    {
+      "id": "cite-2307.13743-2112.04510",
+      "from_paper_id": "arxiv:2307.13743v2",
+      "cited_arxiv_id": "2112.04510",
+      "cited_version": null,
+      "reference": "[11]; Printed title and publication details match the registered SH0ES work; no arXiv ID or version is printed.",
+      "source": {
+        "role": "html",
+        "sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+        "locator": "bib.bib11",
+        "url": "https://arxiv.org/html/2307.13743v2#bib.bib11"
+      }
+    },
+    {
+      "id": "cite-2307.13743-1807.06209",
+      "from_paper_id": "arxiv:2307.13743v2",
+      "cited_arxiv_id": "1807.06209",
+      "cited_version": null,
+      "reference": "[14]; Printed title and publication details match the registered Planck paper; no arXiv ID or version is printed.",
+      "source": {
+        "role": "html",
+        "sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+        "locator": "bib.bib14",
+        "url": "https://arxiv.org/html/2307.13743v2#bib.bib14"
+      }
+    },
+    {
+      "id": "cite-2307.13743-2202.04077",
+      "from_paper_id": "arxiv:2307.13743v2",
+      "cited_arxiv_id": "2202.04077",
+      "cited_version": null,
+      "reference": "[83]; Printed title and publication details match the registered Pantheon+ paper; no arXiv ID or version is printed.",
+      "source": {
+        "role": "html",
+        "sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+        "locator": "bib.bib83",
+        "url": "https://arxiv.org/html/2307.13743v2#bib.bib83"
+      }
+    },
+    {
+      "id": "cite-2307.13743-astro-ph-9603033",
+      "from_paper_id": "arxiv:2307.13743v2",
+      "cited_arxiv_id": "astro-ph/9603033",
+      "cited_version": null,
+      "reference": "[97]; Printed authors, journal, volume, and page match the registered source; title wording differs slightly and no arXiv ID/version is printed.",
+      "source": {
+        "role": "html",
+        "sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+        "locator": "bib.bib97",
+        "url": "https://arxiv.org/html/2307.13743v2#bib.bib97"
+      }
+    },
+    {
+      "id": "cite-2307.13743-astro-ph-9909275",
+      "from_paper_id": "arxiv:2307.13743v2",
+      "cited_arxiv_id": "astro-ph/9909275",
+      "cited_version": null,
+      "reference": "[99]; Printed title and authors match the registered work; no arXiv ID/version is printed.",
+      "source": {
+        "role": "html",
+        "sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+        "locator": "bib.bib99",
+        "url": "https://arxiv.org/html/2307.13743v2#bib.bib99"
+      }
+    },
+    {
+      "id": "cite-2307.13743-astro-ph-9506072",
+      "from_paper_id": "arxiv:2307.13743v2",
+      "cited_arxiv_id": "astro-ph/9506072",
+      "cited_version": null,
+      "reference": "[101]; Explicit arXiv base ID printed in reference; no version printed. Coordinator corrected Luna claim of absent ID by inspecting HTML bib.bib101.",
+      "source": {
+        "role": "html",
+        "sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+        "locator": "bib.bib101",
+        "url": "https://arxiv.org/html/2307.13743v2#bib.bib101"
+      }
+    },
+    {
+      "id": "cite-2307.13743-1811.04083",
+      "from_paper_id": "arxiv:2307.13743v2",
+      "cited_arxiv_id": "1811.04083",
+      "cited_version": null,
+      "reference": "[105]; Printed title and authors match the registered work; no arXiv ID/version is printed.",
+      "source": {
+        "role": "html",
+        "sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+        "locator": "bib.bib105",
+        "url": "https://arxiv.org/html/2307.13743v2#bib.bib105"
+      }
+    },
+    {
+      "id": "cite-gr-qc-0612128-astro-ph-0209274",
+      "from_paper_id": "arxiv:gr-qc/0612128v2",
+      "cited_arxiv_id": "astro-ph/0209274",
+      "cited_version": null,
+      "reference": "[3]; author/journal identity match; arXiv ID and version not printed.",
+      "source": {
+        "role": "pdf",
+        "sha256": "4ca97c647064a2fa8f167c144f8e9468dbdefd17ea175419db1e64d6fd76d811",
+        "locator": "References [3], PDF p5",
+        "url": "https://arxiv.org/pdf/gr-qc/0612128v2#page=5"
+      }
+    },
+    {
+      "id": "cite-2607.03272-2603.21675",
+      "from_paper_id": "arxiv:2607.03272v1",
+      "cited_arxiv_id": "2603.21675",
+      "cited_version": null,
+      "reference": "[20]; explicit base ID; version unspecified. Bibliographic link only; registered neighbour remains unread.",
+      "source": {
+        "role": "html",
+        "sha256": "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+        "locator": "bib.bib20",
+        "url": "https://arxiv.org/html/2607.03272v1#bib.bib20"
+      }
     }
   ],
   "inspected_paper_ids": [
@@ -857,7 +1026,11 @@
     "arxiv:1811.11976v3",
     "arxiv:1812.01586v2",
     "arxiv:1203.6776v2",
-    "arxiv:1403.2190v2"
+    "arxiv:1403.2190v2",
+    "arxiv:2307.13743v2",
+    "arxiv:gr-qc/0612128v2",
+    "arxiv:2607.03272v1",
+    "arxiv:astro-ph/0209274v1"
   ],
   "limitations": [
     "Four explicit bibliography links to registered paper identities were verified in pinned original HTML. This is a bounded extraction, not a complete citation index.",
@@ -870,6 +1043,9 @@
     "2026-10-09 thermal NEDE/ACT reading checkpoint:14 explicit original-HTML bibliography links to registered base identities checked (4from2112.00770v2,10from2512.19633v1). PDF labels and HTML anchors kept separate; unprinted cited versions remain null. Bounded coverage, not complete citation ancestry or independent evidence.",
     "Explicit registered matches only; cited versions unspecified remainnull; root excluded1811bib103 false match and left2identities pending429.",
     "1203.6776v2 full bibliography44entries inspected against currently registered baseIDs; twoexplicit registeredlinks recorded, no citedversion specified; this is bounded coverage, not exhaustive external citation mapping.",
-    "All40 references in1403.2190v2 read; one explicit match to current registered base IDs. Registered cited version is not proof of the version cited. No physical graph edge inferred."
+    "All40 references in1403.2190v2 read; one explicit match to current registered base IDs. Registered cited version is not proof of the version cited. No physical graph edge inferred.",
+    "Bounded inspection of the two full bibliographies; bibliography links are not scientific relationship acceptance. Unprinted cited versions remain null.",
+    "Dissipative source refs1-42 inspected; one registered base-ID match. Citation alone does not certify a physical correspondence or independent support.",
+    "Foundation full bibliography refs1-19 inspected, no exact outgoing match to another registered paper identified. Unresolved matches remain unknown, not proof of citation absence."
   ]
 }

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "everpresent-lambda-seed-selection-and-cmb-limit",
+  "title": "Seed selection and conditional CMB limits on Model 1",
+  "family": "stochastic_vacuum_constraints",
+  "status": "source_reviewed_proposal",
+  "review_id": "2026-10-09-stochastic-vacuum-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2307.13743v2",
+      "locator": "Secs.2.1-2.2 Eqs.(2.1)-(2.6); Secs.4.1-4.3 Eqs.(4.3)-(4.10), Fig. 4; Sec.5 and Table 1; Sec.6.1 Eq.(6.9), Appendix B definition Hcal=aH and Eq.(B.13); Appendix A Method 3",
+      "source_sha256": {
+        "html": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+        "pdf": "92984c3bc837a2f80629a7c04e80c4e25aed6f425667196e1c490148b7784460",
+        "extracted_text": "64e7568b9229c452e9fadff3d25c2196a0c87330ec24de86118baae867526dcf"
+      }
+    }
+  ],
+  "assumptions": [
+    "Published finite seed sets, nuisance/prior choices and source likelihood implementation.",
+    "Dark-energy perturbations switched off; precomputed histories rescaled/interpolated through separately treated eras.",
+    "Main-text seed weights use marginal likelihoods estimated by a harmonic mean; Appendix A Method 3 instead describes equal averaging of normalized fixed-seed posteriors. Exact implemented weighting and estimator stability are unresolved."
+  ],
+  "predictions": [
+    "Some selected supernova histories fit well while the published Model 1 CMB implementation fits worse than LambdaCDM. This is a reported conditional fit, not a family-wide exclusion.",
+    "Suppression near last scattering and flexible background splines are distinct prescriptions; a selected best seed is not global model evidence.",
+    "The printed Sec.4.2 chi2<1060 subset conflicts with its best fit 1481.9; retain the threshold as unresolved. Sec.7 summary percentages are not reconciled with Sec.4.1 exact counts and are not used as probabilities.",
+    "The alleged visibility-width inconsistency is a reader error: Appendix B uses Hcal=aH, so sigma_g≈z_star/(10^4 Hcal_star)=z_star(1+z_star)/(10^4 H_star)≈z_star^2/(10^4 H_star), matching Eq.(6.9) in the stated high-redshift approximation.",
+    "Source best CMB statistic 2495.6 versus about 2339.0 for its LambdaCDM likelihood; suppression branches give 2360.5/2358.5. These are optimized finite-seed results conditional on disabled DE perturbations and the stated background approximations, not global model evidence."
+  ],
+  "qualification": "Source proposal or reported conditional test only; no independent reproduction, observational reassessment or scientific qualification."
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "design_id": "candidate-everpresent-lambda-conservation-and-cmb-audit",
+  "title": "Everpresent Lambda: match background noise to a consistent observable prescription",
+  "paper_ids": [
+    "arxiv:astro-ph/0209274v1",
+    "arxiv:2307.13743v2"
+  ],
+  "idea_ids": [
+    "everpresent-lambda-volume-noise",
+    "everpresent-lambda-seed-selection-and-cmb-limit"
+  ],
+  "review_id": "2026-10-09-stochastic-vacuum-science",
+  "readiness": "blocked",
+  "faithful_claim": "The volume-noise ansatz produces order-of-density stochastic backgrounds, but the published fits test specific finite-seed and perturbation prescriptions; neither establishes a complete causal-set cosmology.",
+  "equations": [
+    {
+      "expression": "Delta Lambda ~ 1/sqrt(V); rho_Lambda ~ V^(-1/2) ~ H^2 ~ rho_critical",
+      "paper_id": "arxiv:astro-ph/0209274v1",
+      "locator": "Sec.II Eqs.(1)-(2)",
+      "definitions": "Foundation uses hbar=c=reduced Planck mass=1, hence 8piG=1. V is a chosen past four-volume.",
+      "domain": "Heuristic estimate and phenomenological flat homogeneous model.",
+      "status": "reviewed_transcription",
+      "source_sha256": {
+        "pdf": "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+        "extracted_text": "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1"
+      }
+    },
+    {
+      "expression": "3H^2 = rho_m + rho_r + rho_Lambda",
+      "paper_id": "arxiv:astro-ph/0209274v1",
+      "locator": "Sec.III Eq.(6) and surrounding definition",
+      "definitions": "Lambda is the vacuum density in the source gravitational units; separately conserved ordinary matter/radiation.",
+      "domain": "This retained equation does not by itself close the stochastic spacetime dynamics.",
+      "status": "reviewed_transcription",
+      "source_sha256": {
+        "pdf": "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+        "extracted_text": "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1"
+      }
+    }
+  ],
+  "assumptions": [
+    "Keep source Model 1 separate from bounded Gaussian-process Model 2 and artificial recombination suppression.",
+    "A specified completion must state how temporal and spatial noise, stress-energy conservation and metric perturbations are linked."
+  ],
+  "minimal_test": {
+    "question": "For one specified completion, does the same stochastic prescription determine both its background and its perturbations without contradictory conservation assumptions?",
+    "observables": [
+      "Einstein/continuity consistency residuals and the stated stochastic spatial covariance.",
+      "Conditional horizon-scale potential/CMB transfer, only after a physical perturbation closure exists."
+    ],
+    "parameter_choices": null,
+    "scope": "Source/analytic consistency gate first. Read the queued spatial-covariance and 2017 tests before claiming a new completion. A later one-seed equality-scaling audit needs exact code and seeds; not authorized or executed here."
+  },
+  "simplifications": [
+    "No new seed scan or likelihood fit.",
+    "Repeating the already acknowledged Bianchi obstruction is not a new scientific result.",
+    "No joint data likelihood, claim of equivalence to scalar EDE, or current-data exclusion."
+  ],
+  "data_dependencies": [
+    "Published Pantheon+SH0ES fits share the local calibration lineage; agreement with SH0ES is not independent evidence.",
+    "Published Planck comparisons are source-conditioned likelihood analyses, not newly obtained observations."
+  ],
+  "unknowns": [
+    "A specified covariant stochastic/conservation or modified-gravity completion and spatial covariance.",
+    "Exact source code, seed/history identity, likelihood and interpolation implementation for a published Model 1 result.",
+    "Exact low-redshift subset underlying Sec.4.2, and implemented seed-posterior weighting in view of main text versus Appendix A Method 3. Visibility-width conversion is resolved; no formula repair is needed.",
+    "Consumer capability and acceptance remain uninspected."
+  ],
+  "verification_gates": [
+    "Freeze the exact model branch, units, stochastic law, conservation and perturbation prescription.",
+    "Pin code/seed/likelihood bytes before any future computational test.",
+    "Keep source printed inconsistencies separate from proposed mathematical repairs.",
+    "Clarify actual per-seed posterior weighting before using model-averaged claims; perform a stable-evidence sensitivity check if source artifacts become available.",
+    "Preserve Appendix B calligraphic H=aH. The visibility width is consistent with Eq.(6.9) after this conversion."
+  ],
+  "falsification": "A failure of a specified completion to satisfy its own conservation/constraint equations rejects that completion. A conditional CMB failure rejects only the stated prescription and domain, not all causal-set dynamics.",
+  "consumer": {
+    "repository": "sprajs/irreducible",
+    "revision": null,
+    "dirty": null,
+    "capability_status": "Uninspected; no engine execution offered. Source development and source consistency precede any computational handoff.",
+    "recipe_runner_status": "Uninspected; executable request is null."
+  },
+  "blockers": [
+    "A specified covariant stochastic/conservation or modified-gravity completion and spatial covariance.",
+    "Exact source code, seed/history identity, likelihood and interpolation implementation for a published Model 1 result.",
+    "Exact low-redshift subset underlying Sec.4.2, and implemented seed-posterior weighting in view of main text versus Appendix A Method 3. Visibility-width conversion is resolved; no formula repair is needed.",
+    "Consumer capability and acceptance remain uninspected."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Source-development candidate only; no numerical experiment, consumer acceptance or observational qualification."
+  }
+}

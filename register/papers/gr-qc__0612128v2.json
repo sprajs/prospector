@@ -59,10 +59,442 @@
   ],
   "screen": {
     "status": "selected",
-    "basis": "abstract",
-    "reason": "Selected for full source reading: foundation, independent criticism, and later observational reassessment."
+    "basis": "full_text",
+    "reason": "Complete Luna reading retained. Historical spatial-CMB constraint is conditional on an unspecified stochastic spatial mapping; Sol full review remains queued within batch ceiling."
   },
-  "extraction": null,
+  "extraction": {
+    "schema_version": 1,
+    "paper_id": "arxiv:gr-qc/0612128v2",
+    "arxiv_id": "gr-qc/0612128",
+    "version": 2,
+    "title": "A Strong Constraint on Ever-Present Lambda",
+    "authors": [
+      "John D. Barrow"
+    ],
+    "affiliations": [
+      {
+        "author": "John D. Barrow",
+        "source_text": "DAMTP, Centre for Mathematical Sciences, Cambridge University, Wilberforce Rd., Cambridge CB3 0WA, UK"
+      }
+    ],
+    "acknowledged_discussion": [
+      "Fay Dowker",
+      "Rafael Sorkin"
+    ],
+    "requested_model": "gpt-6-luna",
+    "requested_reasoning_effort": "xhigh",
+    "agent_id": "/root/luna_barrow",
+    "backend_identity": null,
+    "backend_identity_note": "The backend identity is not exposed in the task context.",
+    "reading_level": "full_text",
+    "source_receipts": [
+      {
+        "role": "html",
+        "url": "https://arxiv.org/html/gr-qc/0612128v2",
+        "retrieved_utc": "2026-10-09T17:47:10.632315+00:00",
+        "path": ".work/unconventional-20261009/acquisition/objects/d8a104e315d85f98179d2bcb7a26e970fac665952aaa317432206288c1b756fe.html",
+        "bytes": 72792,
+        "sha256": "d8a104e315d85f98179d2bcb7a26e970fac665952aaa317432206288c1b756fe",
+        "identity_check": "HTML article title, author, version watermark and body match the pinned acquisition manifest."
+      },
+      {
+        "role": "pdf",
+        "url": "https://arxiv.org/pdf/gr-qc/0612128v2",
+        "retrieved_utc": "2026-10-09T17:47:20.481941+00:00",
+        "path": ".work/unconventional-20261009/acquisition/objects/4ca97c647064a2fa8f167c144f8e9468dbdefd17ea175419db1e64d6fd76d811.pdf",
+        "bytes": 89004,
+        "sha256": "4ca97c647064a2fa8f167c144f8e9468dbdefd17ea175419db1e64d6fd76d811",
+        "identity_check": "PDF title page and arXiv watermark identify gr-qc/0612128v2, dated 9 March 2007."
+      },
+      {
+        "role": "extracted_text",
+        "url": "https://arxiv.org/pdf/gr-qc/0612128v2",
+        "retrieved_utc": "2026-10-09T17:47:20.643170+00:00",
+        "path": ".work/unconventional-20261009/acquisition/objects/59989730c3b96870ace5a082fd4e7f6f992f39f878254178028aae815b594950.txt",
+        "bytes": 15423,
+        "sha256": "59989730c3b96870ace5a082fd4e7f6f992f39f878254178028aae815b594950",
+        "derived_from_sha256": "4ca97c647064a2fa8f167c144f8e9468dbdefd17ea175419db1e64d6fd76d811",
+        "tool": "pdftotext -layout"
+      }
+    ],
+    "identity_check": {
+      "manifest_versioned_id": "gr-qc/0612128v2",
+      "manifest_title": "A Strong Constraint on Ever-Present Lambda",
+      "manifest_authors": [
+        "John D. Barrow"
+      ],
+      "status": "confirmed against HTML and PDF title page, watermark, author and body"
+    },
+    "coverage": {
+      "sections_read": [
+        "Abstract",
+        "Full unsectioned main text, including discussion of the Ahmed et al. model and constraints",
+        "Acknowledgment",
+        "References [1]-[10]"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "appendices": "None present.",
+      "figure_check": "The scientific article contains no figures, plotted data panels or figure captions. The HTML article has zero figure elements. Rendered PDF pages 2-4 and visually checked equations (1)-(6); no figure panels required inspection. HTML/PDF text and page structure were checked across the full paper.",
+      "limitations": [
+        "No modern-data reassessment was performed.",
+        "Equation (5) is presented as an order-of-magnitude argument; its perturbation statistics and CMB transfer are not derived in this paper."
+      ]
+    },
+    "summary": "Barrow revisits the causal-set Poisson model in which fluctuations in the number of Planck-size spacetime elements make an effective Lambda density scale with the dominant cosmic density. The paper first summarizes the earlier homogeneous-background model and its preferred fluctuation intensity alpha about 0.01-0.02, then argues that a physically incomplete exact-homogeneity assumption should be replaced by horizon-scale spatial fluctuations. Identifying those fluctuations with gravitational-potential and CMB temperature anisotropies gives alpha less than or approximately 10^-5 from the cited COBE/WMAP-era anisotropy limits. Under this added mapping and a time-independent alpha, the model cannot supply late-time acceleration; an alpha that grows strongly after recombination would be a different, more complicated prescription. This is a source-era, conditional argument, not a fit to current data or a closed inhomogeneous stochastic-gravity model.",
+    "ideas": [
+      {
+        "local_id": "barrow-0612128-causal-set-ever-present-scaling",
+        "title": "Poisson spacetime-volume fluctuations give a dimension-dependent ever-present density scale",
+        "claim_type": "author_argument",
+        "description": "The proposed causal-set estimate takes the number of Planck four-volumes in the cosmic spacetime volume to scale as N(t) ~ (t/t_p)^4 and the residual Lambda magnitude as N^(-1/2), so Lambda ~ (t_p/t)^2. With the assumed matter- or radiation-era scaling H^2 ~ rho ~ t^-2, this remains comparable to the dominant density. In D spatial dimensions the paper instead obtains rho_Lambda proportional to t^(-(D+1)/2), and says it is asymptotically comparable only for D=3; for D>3 it decays faster and for D<3 it eventually dominates. This dimensional statement is conditional on the expansion scalings stated in the paper.",
+        "locators": [
+          "PDF p. 2, immediately before Eq. (1)",
+          "PDF p. 2, paragraph after Eq. (1)"
+        ],
+        "equations": [
+          {
+            "expression": "N(t) ~ (t/t_p)^4; Lambda ~ N^(-1/2) ~ (t_p/t)^2",
+            "locator": "PDF p. 2, paragraph before Eq. (1)",
+            "conventions_definitions": "t is comoving proper expansion time; t_p=(G hbar/c^5)^(1/2) is the Planck time; N is the number of Planck-sized spacetime elements, treated in Planck units.",
+            "domain": "The paper's 3+1-dimensional causal-set construction; the extension to D spatial dimensions is a scaling argument.",
+            "confidence": "High for transcription; the scaling is a model premise/argument, not an independently established prediction."
+          },
+          {
+            "expression": "rho_Lambda proportional to t^(-(D+1)/2); H^2 ~ rho ~ t^-2; comparable scaling only at D=3",
+            "locator": "PDF p. 2, paragraph after Eq. (1)",
+            "conventions_definitions": "D is the number of spatial dimensions; rho denotes the dominant matter or radiation density.",
+            "domain": "Conditional on the paper's assumed late-time power-law expansion scalings.",
+            "confidence": "High for transcription."
+          }
+        ]
+      },
+      {
+        "local_id": "barrow-0612128-stochastic-lambda-update",
+        "title": "Discrete Poisson increments drive an effective Lambda density",
+        "claim_type": "author_proposal",
+        "description": "As summarized from Ahmed et al., the model identifies N with the number of independent Planck-size spacetime volumes inside the particle horizon. At a step from t_n to t_(n+1), delta N is the change in horizon spacetime volume; a running random sum S is updated by alpha times a zero-mean, unit-standard-deviation random variable times sqrt(delta N). The resulting rho_Lambda=S/N is added to a matter-plus-radiation Friedmann equation. The source calls this a Poisson process but does not fully specify a continuous-time stochastic law, a complete random-field prescription, or a reproducible timestep/initialization scheme.",
+        "locators": [
+          "PDF p. 2, Eqs. (2)-(3)",
+          "PDF p. 3, Eq. (4) and following paragraphs"
+        ],
+        "equations": [
+          {
+            "expression": "delta N_n := N_(n+1)-N_n = V(t_(n+1))-V(t_n)",
+            "locator": "PDF p. 2, Eq. (2)",
+            "conventions_definitions": "V(t_n) is the count of Planck-sized spacetime volumes in the horizon at t_n.",
+            "domain": "Discrete steps in the source's causal-set model.",
+            "confidence": "High; visually checked against the PDF render."
+          },
+          {
+            "expression": "rho_Lambda,n+1 = S_(n+1)/N_(n+1) = [S_n + alpha xi_(n+1) sqrt(delta N_n)]/[N_n + delta N_n]",
+            "locator": "PDF p. 2, Eq. (3)",
+            "conventions_definitions": "S_i is the sum of the random increments through i, with S_(i=0)=0; xi_i has mean zero and standard deviation one; alpha is the free fluctuation-intensity parameter.",
+            "domain": "The discrete Poisson update described by the cited model.",
+            "confidence": "High; square root, indices and denominator visually checked against the PDF render."
+          },
+          {
+            "expression": "3 H^2 = rho_m + rho_gamma + rho_Lambda",
+            "locator": "PDF p. 3, Eq. (4)",
+            "conventions_definitions": "H is the expansion rate; rho_m and rho_gamma are matter and radiation densities. The normalization of gravitational units is implicit in this equation and is not separately stated here.",
+            "domain": "The source's Friedmann-background implementation.",
+            "confidence": "High for transcription; unit normalization remains implicit."
+          }
+        ]
+      },
+      {
+        "local_id": "barrow-0612128-cmb-isotropy-bound",
+        "title": "CMB isotropy constrains the stochastic intensity if it creates horizon-scale spatial fluctuations",
+        "claim_type": "author_argument",
+        "description": "Barrow argues that exact homogeneity of the earlier simulations is physically incomplete. If quantum fluctuations make rho_Lambda spatially varying and statistically homogeneous/isotropic, horizon-scale gravitational-potential fluctuations at last scattering produce microwave anisotropy. Using L~t at horizon scale and identifying the relative Lambda-density fluctuation with alpha gives Delta T/T of order alpha; the COBE, WMAP and complementary ground-based anisotropy observations cited in the 2007 version then imply alpha less than or approximately 10^-5. Under a constant alpha, this is too small for the model to drive late-time acceleration at z<1000. Barrow says a more complex time-varying stochastic intensity would be required, with effective alpha O(10^-5) at recombination and O(1) near the present.",
+        "locators": [
+          "PDF p. 4, paragraphs before and after Eq. (5)",
+          "PDF p. 4, Eqs. (5)-(6)",
+          "HTML #S0.E5 and #S0.E6"
+        ],
+        "equations": [
+          {
+            "expression": "Delta T/T ~ Delta Phi/Phi ~ [delta rho_Lambda/(rho+rho_Lambda)] (L/t)^2 ~ alpha",
+            "locator": "PDF p. 4, Eq. (5)",
+            "conventions_definitions": "Delta Phi is the gravitational-potential perturbation; the text invokes Delta Phi ~ delta rho_Lambda L^2 from the Poisson equation. L~t is a horizon-sized scale, t is cosmic time, and rho is the background density.",
+            "domain": "The author's order-of-magnitude argument at last scattering, z_ls~1000.",
+            "confidence": "High for transcription; the inference from the stochastic intensity to the spatial relative-density fluctuation is an assumption, not derived from the update law."
+          },
+          {
+            "expression": "alpha less than or approximately 10^(-5)",
+            "locator": "PDF p. 4, Eq. (6)",
+            "conventions_definitions": "Upper limit inferred by the author from the source-era CMB temperature-anisotropy amplitude.",
+            "domain": "Only if the Eq. (5) mapping between alpha and horizon-scale CMB anisotropy holds.",
+            "confidence": "High for transcription; no likelihood, confidence level or modern-data conditioning is supplied."
+          }
+        ]
+      },
+      {
+        "local_id": "barrow-0612128-prior-model-constraints",
+        "title": "Earlier model constraints and a proposed galaxy-clustering check",
+        "claim_type": "author_report",
+        "description": "Barrow reports that Ahmed et al. balance three conditions: alpha must allow rho_Lambda comparable to rho_m today with reasonable probability, avoid overly frequent large negative Lambda values that conflict with H^2>0, and avoid unacceptable helium-4 abundances from expansion changes around z~10^10. The earlier study's best compromise is reported as alpha=0.01-0.02. Barrow further argues that near matter-radiation equality, 1+z_eq~2.4e4, the model's shift in equality should stay below about 2% to avoid shifting the galaxy-clustering power-spectrum peak; he expects this could give alpha less than or approximately 0.02, but says the required accurate simulation is future work rather than presenting a new simulation or derived posterior.",
+        "locators": [
+          "PDF p. 3, paragraphs beginning 'In their study, Ahmed et al.' and 'There is another constraint'",
+          "PDF p. 3, discussion of the equality epoch and galaxy-clustering power-spectrum peak"
+        ],
+        "equations": [
+          {
+            "expression": "rho_Lambda comparable to rho_m today; H^2>0; equality-epoch shift below about 2%",
+            "locator": "PDF p. 3, constraint discussion",
+            "conventions_definitions": "The first two constraints and alpha=0.01-0.02 are reported from reference [3]; the equality shift is a proposed numerical bound. No uncertainty or likelihood is given.",
+            "domain": "The earlier homogeneous model and source-era background/BBN/galaxy-clustering considerations.",
+            "confidence": "High for what the paper reports; not an independent reproduction."
+          }
+        ]
+      }
+    ],
+    "quantities": [
+      {
+        "name": "Planck time",
+        "value": "approximately 10^-43",
+        "unit": "s",
+        "uncertainty": "Order-of-magnitude value stated by the source; no uncertainty supplied.",
+        "conditioning": "Planck time t_p=(G hbar/c^5)^(1/2).",
+        "locator": "PDF p. 2, paragraph before Eq. (1)"
+      },
+      {
+        "name": "Present expansion age used for scaling",
+        "value": "approximately 10^17",
+        "unit": "s",
+        "uncertainty": "Order-of-magnitude value stated by the source; no uncertainty supplied.",
+        "conditioning": "Used only to motivate Lambda of order 10^-120 in Planck units.",
+        "locator": "PDF p. 2, paragraph before Eq. (1)"
+      },
+      {
+        "name": "Induced Lambda magnitude today",
+        "value": "approximately 10^-120",
+        "unit": "Planck units",
+        "uncertainty": "Order-of-magnitude theoretical scaling, not a fitted or measured value in this paper.",
+        "conditioning": "N(t0)~(t0/t_p)^4 and Lambda~N^-1/2.",
+        "locator": "PDF p. 2, Eq. (1)"
+      },
+      {
+        "name": "Earlier Ahmed et al. preferred fluctuation intensity",
+        "value": "0.01-0.02",
+        "unit": "dimensionless alpha",
+        "uncertainty": "Reported compromise range from the cited study; not a posterior or estimate newly obtained here.",
+        "conditioning": "Tradeoff among recent acceleration probability, negative-Lambda/H^2 positivity and BBN helium-4 constraints.",
+        "locator": "PDF p. 3, paragraph beginning 'In their study, Ahmed et al.'"
+      },
+      {
+        "name": "BBN redshift for the earlier constraint",
+        "value": "approximately 10^10",
+        "unit": "redshift z",
+        "uncertainty": "Approximate epoch; no uncertainty supplied.",
+        "conditioning": "Expansion-rate fluctuations and helium-4 abundance, as reported from reference [3].",
+        "locator": "PDF p. 3"
+      },
+      {
+        "name": "Matter-radiation equality redshift",
+        "value": "1+z_eq approximately 2.4 x 10^4",
+        "unit": "redshift",
+        "uncertainty": "Approximate source-era value; no uncertainty supplied.",
+        "conditioning": "Used for a proposed bound from preserving the galaxy-clustering power-spectrum peak.",
+        "locator": "PDF p. 3"
+      },
+      {
+        "name": "Allowed equality-epoch shift proposed by Barrow",
+        "value": "less than about 2",
+        "unit": "percent amplitude",
+        "uncertainty": "Approximate proposed threshold; no simulation or uncertainty analysis is supplied in this paper.",
+        "conditioning": "A larger shift is argued to displace the galaxy-clustering power-spectrum peak.",
+        "locator": "PDF p. 3"
+      },
+      {
+        "name": "Last-scattering redshift",
+        "value": "approximately 1000",
+        "unit": "redshift z_ls",
+        "uncertainty": "Approximate epoch; no uncertainty supplied.",
+        "conditioning": "Horizon-scale fluctuations are mapped to CMB anisotropy.",
+        "locator": "PDF p. 4"
+      },
+      {
+        "name": "CMB-derived stochastic intensity bound",
+        "value": "less than or approximately 10^-5",
+        "unit": "dimensionless alpha",
+        "uncertainty": "No confidence level, likelihood, covariance or uncertainty is given.",
+        "conditioning": "Conditional on the Eq. (5) identification of alpha with horizon-scale spatial Lambda-density/potential/CMB fluctuations; cites COBE, WMAP and unspecified ground-based detections.",
+        "locator": "PDF p. 4, Eq. (6)"
+      },
+      {
+        "name": "Recombination time used in proposed varying-alpha scenario",
+        "value": "approximately 10^13",
+        "unit": "s",
+        "uncertainty": "Approximate value stated by the source; no uncertainty supplied.",
+        "conditioning": "The author says alpha would need to be O(10^-5) at this epoch but O(1) near the present.",
+        "locator": "PDF p. 4"
+      }
+    ],
+    "data_dependencies": [
+      {
+        "observable_or_constraint": "CMB temperature anisotropy",
+        "source_as_cited": "COBE: G. Smoot and D. Scott, astro-ph/9711069 [8]; WMAP: G. Hinshaw et al., astro-ph/0603451 [9]; complementary ground-based detections are mentioned without specific citations.",
+        "use_in_paper": "Used for alpha less than or approximately 10^-5 through Eq. (5).",
+        "source_era": "References and paper version date from 2007; these are COBE/WMAP-era observations.",
+        "conditioning_and_missingness": "No map, multipole range, likelihood, covariance, transfer function or confidence level is provided; the cited bound is not re-evaluated here."
+      },
+      {
+        "observable_or_constraint": "Type Ia supernova redshift-distance relation",
+        "source_as_cited": "A. Riess et al., Astron. J. 116, 1009 (1998), and S. Perlmutter et al., Astrophys. J. 517, 565 (1999), reference [2].",
+        "use_in_paper": "Motivates the need for a late-time contribution comparable to matter and the author's claim that the constrained simple model cannot explain the observed acceleration.",
+        "source_era": "1998-1999 discovery-era supernova results, cited in the 2007 version.",
+        "conditioning_and_missingness": "No supernova data vector, calibration, covariance or new fit is included."
+      },
+      {
+        "observable_or_constraint": "Galaxy-clustering power-spectrum peak / matter-radiation equality",
+        "source_as_cited": "Tegmark, Phys. Rev. Lett. 79, 3806 (1997), reference [6]; Liddle, Mazumdar and Barrow, Phys. Rev. D 58, 027302 (1998), reference [7].",
+        "use_in_paper": "Motivates a proposed less-than-about-2% limit on the equality-time shift and an expected alpha limit around 0.02.",
+        "source_era": "1997-1998 analyses cited in the 2007 version.",
+        "conditioning_and_missingness": "The accurate simulation needed for the model-specific shift is not performed in this paper; no data covariance or fit is supplied."
+      },
+      {
+        "observable_or_constraint": "Primordial nucleosynthesis helium-4 abundance and H^2 positivity",
+        "source_as_cited": "Earlier Ahmed et al. study, reference [3], matched by authors/title/journal to the batch foundation arxiv:astro-ph/0209274v1.",
+        "use_in_paper": "Summarizes constraints that help motivate the earlier preferred alpha range 0.01-0.02.",
+        "source_era": "Constraint is reported from the 2004 journal publication cited in the 2007 version.",
+        "conditioning_and_missingness": "No BBN likelihood or new helium calculation is given by Barrow."
+      }
+    ],
+    "assumptions": [
+      "The causal-set spacetime volume is represented by a count of Planck-sized four-volumes in the particle horizon, N=V.",
+      "The discrete increments are Poisson-like, with random xi values of zero mean and unit standard deviation, and a single free dimensionless intensity alpha; the source does not fully specify independence, distribution beyond those moments, step selection or a continuum limit.",
+      "The background equation is the stated matter-plus-radiation Friedmann equation with the stochastic effective rho_Lambda. The gravitational-unit normalization is implicit.",
+      "The key CMB argument assumes that the stochastic generation is not exactly homogeneous, that horizon-scale spatial density fluctuations have relative amplitude of order alpha at last scattering, and that their potential and temperature-anisotropy amplitudes follow the order-of-magnitude relations in Eq. (5).",
+      "The simple-model conclusion assumes the same alpha controls the stochastic process through cosmic time. A strongly time-varying alpha is suggested as a possible extension, not developed.",
+      "The general-D scaling comparison assumes H^2 and the dominant density continue to scale as t^-2."
+    ],
+    "caveats": [
+      {
+        "type": "author_acknowledged_model_limitation",
+        "detail": "Large negative Lambda fluctuations, which the source says occur half the time in the symmetric process, can make the right-hand side of the Friedmann equation inconsistent with H^2>0. The process therefore needs a cutoff or another treatment; Barrow assumes sufficiently small alpha makes dangerous excursions improbable and sets this issue aside."
+      },
+      {
+        "type": "author_acknowledged_model_limitation",
+        "detail": "The causal-set quantum origin of the fluctuations in a unimodular-gravity setting remains to be explored. A full stochastic differential equation could make the model more rigorous but is outside the paper's scope."
+      },
+      {
+        "type": "author_acknowledged_model_limitation",
+        "detail": "The earlier simulations treat rho_Lambda as perfectly homogeneous, while the new CMB bound depends on spatial fluctuations. The paper does not define a complete inhomogeneous stress-energy model, perturbation closure, conservation/exchange prescription, stochastic spatial correlation function, or CMB transfer calculation."
+      },
+      {
+        "type": "reader_inference",
+        "detail": "The strongest vulnerability is the un-derived identification of the phenomenological alpha in the temporal Poisson update with a horizon-scale spatial fractional density fluctuation at recombination. Eq. (5) supplies an order-of-magnitude chain but no stochastic field statistics, gauge/conservation treatment, perturbation evolution or angular projection. If that mapping changes, the numeric alpha bound and the no-late-acceleration conclusion need not follow."
+      },
+      {
+        "type": "reader_inference",
+        "detail": "For a spatially varying vacuum-like density, pressure and energy-momentum conservation cannot be inferred from the homogeneous Friedmann equation alone. The source gives no perturbation-level closure showing how the stochastic source exchanges energy or remains consistent with the Einstein constraints."
+      },
+      {
+        "type": "scope_limit",
+        "detail": "The observational references are source-era inputs: COBE/WMAP-era CMB anisotropy, 1998-1999 supernova discoveries, and 1997-1998 clustering constraints. This reading did not compare them with Planck-era or later observations, modern likelihoods, or current supernova compilations. Treat alpha less than or approximately 10^-5 as the paper's conditional historical claim, not a current-data bound."
+      },
+      {
+        "type": "scope_limit",
+        "detail": "The paper gives no new likelihood, parameter posterior, covariance, current-data fit, numerical reproduction, or independently measured Lambda value. Its 0.01-0.02 range and BBN statements are attributed to earlier work; its galaxy-clustering limit is a proposed simulation target."
+      },
+      {
+        "type": "author_speculation",
+        "detail": "The suggestion that the same CMB argument should constrain Padmanabhan's stochastic spacetime-fluctuation proposal is not quantified or demonstrated in this paper."
+      }
+    ],
+    "strongest_objection": "The principal bound depends on treating alpha from the homogeneous Poisson update as the amplitude of spatial, horizon-scale Lambda-density perturbations at recombination. The paper states this mapping but does not derive it from a spatial stochastic process or close the perturbation and conservation equations. Without that bridge, Eq. (5) does not establish that the observed CMB anisotropy directly bounds the model's alpha.",
+    "cheapest_decisive_check": "Start from the cited Ahmed et al. stochastic prescription and state an explicit spatial correlation scale/statistical law for delta rho_Lambda at recombination. Then, for a single horizon-scale mode, use the linear Einstein constraint plus the appropriate conservation/exchange closure to derive the gauge-invariant potential and large-angle CMB temperature transfer. Compare its predicted amplitude with the paper's order-alpha estimate. If alpha does not normalize the spatial perturbation at that epoch, the advertised bound does not apply in its present form; if it does, the analytic transfer gives the minimal quantitative check before a full spectrum fit.",
+    "usefulness": {
+      "assessment": "Useful source for the history and assumptions of the causal-set ever-present-Lambda proposal and for a sharp conditional observational objection. It identifies a valuable source-development question: derive the spatial perturbation/CMB mapping. It does not itself establish a closed model, a modern exclusion or a qualified cosmology.",
+      "best_follow_up": "A targeted original-source and perturbation-closure review of the Ahmed et al. update law and Barrow Eq. (5), preserving the distinction between temporal background noise and spatial CMB modes.",
+      "promotion_status": "No idea or prospect is accepted by this Luna extraction; Sol review and graph-neighbour checks remain separate gates."
+    },
+    "citation_leads": [
+      {
+        "reference_label": "[3]",
+        "bibliography_anchor": "HTML #bib.bib3",
+        "source_citation_anchors": [
+          "HTML #bib.bib3 and citation callouts in the main text"
+        ],
+        "source_text": "M. Ahmed, S. Dodelson, P.B. Greene and R. Sorkin, Phys. Rev. D 69, 103523 (2004).",
+        "matched_batch_paper_id": "arxiv:astro-ph/0209274v1",
+        "match_basis": "The batch metadata identifies astro-ph/0209274v1 as 'Everpresent Lambda' by the same four authors; Barrow's bibliography prints the authors and journal citation, but not the arXiv identifier or version.",
+        "source_printed_arxiv_id": null,
+        "source_printed_version": null,
+        "source_hashes": [
+          "d8a104e315d85f98179d2bcb7a26e970fac665952aaa317432206288c1b756fe",
+          "4ca97c647064a2fa8f167c144f8e9468dbdefd17ea175419db1e64d6fd76d811"
+        ],
+        "register_status": "Batch foundation match; no corresponding paper record was present in register/papers at read time."
+      },
+      {
+        "reference_label": "[5]",
+        "bibliography_anchor": "HTML #bib.bib5",
+        "source_text": "The bibliography explicitly includes R.D. Sorkin, gr-qc/0309009, alongside the causal-set papers by Bombelli et al. and Rideout and Sorkin.",
+        "explicit_arxiv_id": "gr-qc/0309009",
+        "source_printed_version": null,
+        "source_hashes": [
+          "d8a104e315d85f98179d2bcb7a26e970fac665952aaa317432206288c1b756fe",
+          "4ca97c647064a2fa8f167c144f8e9468dbdefd17ea175419db1e64d6fd76d811"
+        ],
+        "register_status": "No matching paper record found in the current register."
+      },
+      {
+        "reference_label": "[8]",
+        "bibliography_anchor": "HTML #bib.bib8",
+        "source_text": "G. Smoot and D. Scott, astro-ph/9711069.",
+        "explicit_arxiv_id": "astro-ph/9711069",
+        "source_printed_version": null,
+        "source_hashes": [
+          "d8a104e315d85f98179d2bcb7a26e970fac665952aaa317432206288c1b756fe",
+          "4ca97c647064a2fa8f167c144f8e9468dbdefd17ea175419db1e64d6fd76d811"
+        ],
+        "register_status": "No matching paper record found in the current register."
+      },
+      {
+        "reference_label": "[9]",
+        "bibliography_anchor": "HTML #bib.bib9",
+        "source_text": "G. Hinshaw et al., astro-ph/0603451.",
+        "explicit_arxiv_id": "astro-ph/0603451",
+        "source_printed_version": null,
+        "source_hashes": [
+          "d8a104e315d85f98179d2bcb7a26e970fac665952aaa317432206288c1b756fe",
+          "4ca97c647064a2fa8f167c144f8e9468dbdefd17ea175419db1e64d6fd76d811"
+        ],
+        "register_status": "No matching paper record found in the current register."
+      }
+    ],
+    "bibliography_audit": {
+      "registered_paper_matches_found": [],
+      "batch_paper_checks": [
+        {
+          "paper_id": "arxiv:astro-ph/0209274v1",
+          "cited": true,
+          "reference_label": "[3]",
+          "note": "Explicit author/title/publication identity match; this exact arXiv ID/version is supplied by batch metadata, not printed by Barrow."
+        },
+        {
+          "paper_id": "arxiv:2307.13743v2",
+          "cited": false,
+          "note": "Not present in Barrow's complete 2007 bibliography; it postdates this paper."
+        }
+      ],
+      "citation_coverage": "Full bibliography [1]-[10] inspected. The source explicitly prints arXiv identifiers for gr-qc/0309009, astro-ph/9711069 and astro-ph/0603451; none matched a current register/papers record. No citation to 2307.13743v2."
+    },
+    "source_hashes": {
+      "html": "d8a104e315d85f98179d2bcb7a26e970fac665952aaa317432206288c1b756fe",
+      "pdf": "4ca97c647064a2fa8f167c144f8e9468dbdefd17ea175419db1e64d6fd76d811",
+      "extracted_text": "59989730c3b96870ace5a082fd4e7f6f992f39f878254178028aae815b594950"
+    },
+    "worker_packet_sha256": "01fd499fa16428e9575a66aedd38060734a172b83832354bd61c2f4249ca0613",
+    "coordinator_amendment": "Added source_hashes map from the worker-verified source_receipts and immutable packet digest; original worker packet unchanged."
+  },
   "review_id": null,
   "idea_ids": []
 }

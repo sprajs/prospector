@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "search_id": "2026-10-09-unimodular-dissipation-terminology",
+  "lane": "late-dark-energy",
+  "work_mode": "recent_cross_disciplinary_terminology",
+  "status": "completed",
+  "requested_utc": "2026-10-09T17:56:37.221106+00:00",
+  "request": {
+    "query": "(cat:gr-qc OR cat:astro-ph.CO OR cat:hep-th) AND ((abs:\"causal set\" OR abs:unimodular) AND (ti:\"dark energy\" OR ti:\"cosmological constant\"))",
+    "normalized_query": "(cat:gr-qc OR cat:astro-ph.CO OR cat:hep-th) AND ((abs:\"causal set\" OR abs:unimodular) AND (ti:\"dark energy\" OR ti:\"cosmological constant\"))",
+    "order": "lastUpdatedDate",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "6a7e641512b3574afe074ec4a3a8ff1fc5d3b4d1a335d4964ffc26180a2adb48"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "After foundational and critical intake, one bounded mechanism-term expansion checks recent explicit energy-transfer/closure proposals. Existing queues and owners retained; remaining hits deferred.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Agr-qc+OR+cat%3Aastro-ph.CO+OR+cat%3Ahep-th%29+AND+%28%28abs%3A%22causal+set%22+OR+abs%3Aunimodular%29+AND+%28ti%3A%22dark+energy%22+OR+ti%3A%22cosmological+constant%22%29%29&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+    "retrieved_utc": "2026-10-09T17:56:37.221106+00:00",
+    "sha256": "4a541884d4a1dd90139125180e18f488b4f077373d2fe209e2294dd2ab60f510",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/unconventional-20261009/acquisition/objects/4a541884d4a1dd90139125180e18f488b4f077373d2fe209e2294dd2ab60f510.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:2607.16405v1",
+      "position": 0,
+      "disposition": "deferred",
+      "reason": "Adjacent unimodular mechanism outside the finite four-reading batch; source mathematics, observational law and independent follow-up unexamined. Resume saved metadata rather than repeat this window.",
+      "title": "The Goldstone Awakens: Unimodular dark energy in scale-invariant $R^2$ gravity",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:58:18.998541+00:00",
+          "disposition": "deferred",
+          "reason": "Adjacent unimodular mechanism outside the finite four-reading batch; source mathematics, observational law and independent follow-up unexamined. Resume saved metadata rather than repeat this window."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2607.03272v1",
+      "position": 1,
+      "disposition": "selected",
+      "reason": "Ohmic hidden-bath mechanism acquired for full reading and Sol review; no equivalence to everpresent-Lambda asserted.",
+      "title": "Dark energy genesis: modeling dissipative effects in primordial cosmology",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:58:18.998578+00:00",
+          "disposition": "selected",
+          "reason": "Ohmic hidden-bath mechanism acquired for full reading and Sol review; no equivalence to everpresent-Lambda asserted."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2606.28488v1",
+      "position": 2,
+      "disposition": "deferred",
+      "reason": "Adjacent unimodular mechanism outside the finite four-reading batch; source mathematics, observational law and independent follow-up unexamined. Resume saved metadata rather than repeat this window.",
+      "title": "Dark energy from neutrino interactions in Unimodular Gravity",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:58:18.998591+00:00",
+          "disposition": "deferred",
+          "reason": "Adjacent unimodular mechanism outside the finite four-reading batch; source mathematics, observational law and independent follow-up unexamined. Resume saved metadata rather than repeat this window."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2603.29918v2",
+      "position": 3,
+      "disposition": "deferred",
+      "reason": "Adjacent unimodular mechanism outside the finite four-reading batch; source mathematics, observational law and independent follow-up unexamined. Resume saved metadata rather than repeat this window.",
+      "title": "Resolution of the cosmological constant problem by unimodular gravity and signature reversal symmetry",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:58:18.998599+00:00",
+          "disposition": "deferred",
+          "reason": "Adjacent unimodular mechanism outside the finite four-reading batch; source mathematics, observational law and independent follow-up unexamined. Resume saved metadata rather than repeat this window."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2511.12897v1",
+      "position": 4,
+      "disposition": "deferred",
+      "reason": "Adjacent unimodular mechanism outside the finite four-reading batch; source mathematics, observational law and independent follow-up unexamined. Resume saved metadata rather than repeat this window.",
+      "title": "Redshifting the Cosmological Constant in Unimodular Gravity via Nonlinear Quantum Mechanics",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:58:18.998607+00:00",
+          "disposition": "deferred",
+          "reason": "Adjacent unimodular mechanism outside the finite four-reading batch; source mathematics, observational law and independent follow-up unexamined. Resume saved metadata rather than repeat this window."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2508.21175v2",
+      "position": 5,
+      "disposition": "deferred",
+      "reason": "Adjacent unimodular mechanism outside the finite four-reading batch; source mathematics, observational law and independent follow-up unexamined. Resume saved metadata rather than repeat this window.",
+      "title": "Probing the H0 Tension with Holographic Dark Energy in Unimodular Gravity: Insights from DESI DR2",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:58:18.998614+00:00",
+          "disposition": "deferred",
+          "reason": "Adjacent unimodular mechanism outside the finite four-reading batch; source mathematics, observational law and independent follow-up unexamined. Resume saved metadata rather than repeat this window."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2406.00932v4",
+      "position": 6,
+      "disposition": "deferred",
+      "reason": "Adjacent unimodular mechanism outside the finite four-reading batch; source mathematics, observational law and independent follow-up unexamined. Resume saved metadata rather than repeat this window.",
+      "title": "Cosmological constant as an integration constant",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:58:18.998620+00:00",
+          "disposition": "deferred",
+          "reason": "Adjacent unimodular mechanism outside the finite four-reading batch; source mathematics, observational law and independent follow-up unexamined. Resume saved metadata rather than repeat this window."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2406.12958v2",
+      "position": 7,
+      "disposition": "deferred",
+      "reason": "Adjacent unimodular mechanism outside the finite four-reading batch; source mathematics, observational law and independent follow-up unexamined. Resume saved metadata rather than repeat this window.",
+      "title": "Unimodular Quadratic Gravity and the Cosmological Constant",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:58:18.998627+00:00",
+          "disposition": "deferred",
+          "reason": "Adjacent unimodular mechanism outside the finite four-reading batch; source mathematics, observational law and independent follow-up unexamined. Resume saved metadata rather than repeat this window."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2310.16522v3",
+      "position": 8,
+      "disposition": "deferred",
+      "reason": "Adjacent unimodular mechanism outside the finite four-reading batch; source mathematics, observational law and independent follow-up unexamined. Resume saved metadata rather than repeat this window.",
+      "title": "The origin of the cosmological constant",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:58:18.998633+00:00",
+          "disposition": "deferred",
+          "reason": "Adjacent unimodular mechanism outside the finite four-reading batch; source mathematics, observational law and independent follow-up unexamined. Resume saved metadata rather than repeat this window."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2304.03819v2",
+      "position": 9,
+      "disposition": "duplicate",
+      "reason": "Exact version already admitted; preserve existing queue and scope owner.",
+      "title": "Aspects of Everpresent $\u039b$ (I): A Fluctuating Cosmological Constant from Spacetime Discreteness",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:58:18.998640+00:00",
+          "disposition": "duplicate",
+          "reason": "Exact version already admitted; preserve existing queue and scope owner."
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API page; no exhaustive or gap-free coverage.",
+      "Only one new mechanism selected for full source reading. Other abstract claims unverified."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": null,
+    "query_id": null
+  }
+}

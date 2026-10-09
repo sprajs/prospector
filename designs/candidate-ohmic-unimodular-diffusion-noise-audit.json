@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "design_id": "candidate-ohmic-unimodular-diffusion-noise-audit",
+  "title": "Unimodular bath: audit energy bookkeeping and the cold-noise regime",
+  "paper_ids": [
+    "arxiv:2607.03272v1"
+  ],
+  "idea_ids": [
+    "ohmic-unimodular-hidden-bath-diffusion"
+  ],
+  "review_id": "2026-10-09-stochastic-vacuum-science",
+  "readiness": "blocked",
+  "faithful_claim": "The source supplies a reduced scalar-plus-oscillator toy model and a deterministic diffusion system whose cold-bath, small-coupling stiff-scalar solution generates a positive asymptotic Lambda. The printed Hamiltonian normalization and finite-temperature equilibrium chain contain unresolved inconsistencies; no claim that the derivation is fully established or the observed value predicted is accepted.",
+  "equations": [
+    {
+      "expression": "Lambda_prime/(8piG) = gamma*m_p*(a_d/a)^3*rho",
+      "paper_id": "arxiv:2607.03272v1",
+      "locator": "Eq.(38)",
+      "definitions": "Prime is cosmic time; m_p=G^(-1/2), gamma dimensionless, massless scalar p=rho.",
+      "domain": "Noise-neglected massless-scalar illustration.",
+      "status": "reviewed_transcription",
+      "source_sha256": {
+        "html": "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+        "pdf": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+        "extracted_text": "2ddac41a495d8180db11b09fa1fdf1340cf735de7fe081495e5f43a4494b9ccc"
+      }
+    },
+    {
+      "expression": "Lambda_infinity = gamma*m_p*H_d/2",
+      "paper_id": "arxiv:2607.03272v1",
+      "locator": "Eq.(40)",
+      "definitions": "H_d is onset Hubble rate. Lambda is geometric with dimensions inverse-time squared.",
+      "domain": "Source perturbative small-gamma solution, initially Lambda_d=0.",
+      "status": "reviewed_transcription",
+      "source_sha256": {
+        "html": "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+        "pdf": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+        "extracted_text": "2ddac41a495d8180db11b09fa1fdf1340cf735de7fe081495e5f43a4494b9ccc"
+      }
+    },
+    {
+      "expression": "Lambda_dot/(8piG) = beta_bar*m_p*phi_dot^2 - phi_dot*xi",
+      "paper_id": "arxiv:2607.03272v1",
+      "locator": "Eq.(33)",
+      "definitions": "Dot is unimodular time t with dt=a^3 d tau; xi is bath noise.",
+      "domain": "Source Ohmic reduced model; normalization must be reconciled with preceding bath-energy equations.",
+      "status": "reviewed_transcription",
+      "source_sha256": {
+        "html": "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+        "pdf": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+        "extracted_text": "2ddac41a495d8180db11b09fa1fdf1340cf735de7fe081495e5f43a4494b9ccc"
+      },
+      "consistency_status": "blocked derivation from printed Eq.(29); Eq.(33) itself agrees with the reduced Langevin equation plus scalar continuity bookkeeping."
+    },
+    {
+      "expression": "deltaLambda = E_0 - integral xi phi_dot dt + (1/2) beta_bar m_p integral phi_dot^2 dt",
+      "paper_id": "arxiv:2607.03272v1",
+      "locator": "Eq.(29), PDF p.5; compare Eqs.(28),(31),(33)",
+      "definitions": "E_0 is explicitly an energy density, while deltaLambda is geometric in Eqs.(28),(31). Dots denote unimodular time.",
+      "domain": "Printed source identity retained only for consistency audit.",
+      "status": "reviewed_transcription",
+      "transcription_confidence": "verified against original PDF; no algebraic repair adopted",
+      "source_sha256": {
+        "html": "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+        "pdf": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+        "extracted_text": "2ddac41a495d8180db11b09fa1fdf1340cf735de7fe081495e5f43a4494b9ccc"
+      },
+      "blocker": "Eq.(29) RHS has energy-density units rather than geometric-Lambda units; differentiation gives a half-sized friction coefficient and does not produce Eq.(33).",
+      "consistency_status": "blocked_source_normalization; printed expression verified, physical/mathematical repair not accepted"
+    },
+    {
+      "expression": "rho = T_d^4 (printed Eq.A9)",
+      "paper_id": "arxiv:2607.03272v1",
+      "locator": "Appendix A Eq.(A9), compare averages preceding it, Eq.(30) and Eq.(33)",
+      "definitions": "rho is homogeneous massless-scalar density (p=rho); T_d parametrizes the initial bath ensemble.",
+      "domain": "Source equilibrium assertion only, not an accepted thermal/radiation result.",
+      "status": "reviewed_transcription",
+      "transcription_confidence": "verified against original PDF",
+      "source_sha256": {
+        "html": "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+        "pdf": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+        "extracted_text": "2ddac41a495d8180db11b09fa1fdf1340cf735de7fe081495e5f43a4494b9ccc"
+      },
+      "blocker": "Printed averages yield rho=T_d^4/2 under Eq.(33); endpoint/mode-sum normalization and expansion consistency unresolved. Eq.(A10) not accepted quantitatively.",
+      "consistency_status": "blocked_source_normalization; printed expression verified, physical/mathematical repair not accepted"
+    }
+  ],
+  "assumptions": [
+    "Source scalar/bath Hamiltonian, explicit time variable and renormalization prescription retained.",
+    "Massless scalar stiffness is not a standard radiation-era cosmology.",
+    "Appendix A noise-field correlation is included in the audit; zero mean noise is not sufficient by itself."
+  ],
+  "minimal_test": {
+    "question": "Do one consistent energy normalization and a specified initial-bath state support the source deterministic diffusion approximation?",
+    "observables": [
+      "Hamiltonian/continuity consistency of the bath-energy increment.",
+      "Relative accumulated noise and dissipative contributions under an explicit bath covariance and cutoff."
+    ],
+    "parameter_choices": null,
+    "scope": "Source/algebra consistency first: reconcile Eqs.(28)-(33), then specify finite-cutoff initial bath and endpoint convention and check the approximation domain. These source-review algebra checks identify blockers; no new numerical calculation, data analysis or experiment was executed."
+  },
+  "simplifications": [
+    "No replacement of realistic radiation/dust/neutrinos by the source scalar for an observational claim.",
+    "No quantum-gravity derivation, absolute vacuum-energy prediction or joint cosmological fit."
+  ],
+  "data_dependencies": [],
+  "unknowns": [
+    "Reconcile the geometric-Lambda versus energy-density and factor-of-two mismatch of Eq.(29) with Eqs.(28),(31),(33), separately from the Appendix A equilibrium mismatch.",
+    "A controlled finite-cutoff/initial-bath regime in which neglecting noise is justified over the intended epoch.",
+    "Realistic retained radiation/matter content, spatial perturbations and observational law.",
+    "Source microphysical coupling/onset conditions and consumer acceptance are unknown.",
+    "Appendix A Eq.(A9)/(A10), endpoint convention and oscillator mode-sum normalization are unresolved. A nonzero constant thermal density also needs consistency with the expanding-background continuity equation."
+  ],
+  "verification_gates": [
+    "Reconcile dimensions and factors in Eqs.(28)-(33) without silently repairing the source.",
+    "State the finite-bath/continuum, initial state and stochastic convention needed by Appendix A.",
+    "Check whether the approximation remains controlled in the desired epoch; any implementation gets its own consumer acceptance."
+  ],
+  "falsification": "If the chosen bath regime cannot keep the discarded stochastic contribution small or cannot satisfy the stated Hamiltonian/diffusion identities, reject that deterministic approximation. This does not exclude every dissipative unimodular model.",
+  "consumer": {
+    "repository": "sprajs/irreducible",
+    "revision": null,
+    "dirty": null,
+    "capability_status": "Uninspected; no engine execution offered. Source development and source consistency precede any computational handoff.",
+    "recipe_runner_status": "Uninspected; executable request is null."
+  },
+  "blockers": [
+    "Reconcile the geometric-Lambda versus energy-density and factor-of-two mismatch of Eq.(29) with Eqs.(28),(31),(33), separately from the Appendix A equilibrium mismatch.",
+    "A controlled finite-cutoff/initial-bath regime in which neglecting noise is justified over the intended epoch.",
+    "Realistic retained radiation/matter content, spatial perturbations and observational law.",
+    "Source microphysical coupling/onset conditions and consumer acceptance are unknown.",
+    "Appendix A Eq.(A9)/(A10), endpoint convention and oscillator mode-sum normalization are unresolved. A nonzero constant thermal density also needs consistency with the expanding-background continuity equation."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Source-development candidate only; no numerical experiment, consumer acceptance or observational qualification."
+  }
+}

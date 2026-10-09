@@ -1,0 +1,544 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2607.03272v1",
+  "arxiv_id": "2607.03272",
+  "version": 1,
+  "title": "Dark energy genesis: modeling dissipative effects in primordial cosmology",
+  "authors": [
+    "Pietro Pellecchia",
+    "Alejandro Perez",
+    "Salvatore Ribisi"
+  ],
+  "categories": [
+    "gr-qc",
+    "astro-ph.CO",
+    "cond-mat.other",
+    "hep-th"
+  ],
+  "published_utc": "2026-07-03T12:40:38Z",
+  "updated_utc": "2026-07-03T12:40:38Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2607.03272v1",
+    "html": "https://arxiv.org/html/2607.03272v1",
+    "pdf": "https://arxiv.org/pdf/2607.03272v1"
+  },
+  "license": {
+    "status": "unresolved; no licence in Atom metadata",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Private research custody; public register contains metadata and original notes only."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2607.03272v1&max_results=1",
+      "retrieved_utc": "2026-10-09T17:57:09.538024+00:00",
+      "sha256": "afeff34d0cf7ba940a6749f92af82ea5d7638453069307c90aae96d0e1ddefa7",
+      "bytes": 2682
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/2607.03272v1",
+      "retrieved_utc": "2026-10-09T17:57:12.933365+00:00",
+      "sha256": "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+      "bytes": 240990
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/2607.03272v1",
+      "retrieved_utc": "2026-10-09T17:57:16.596693+00:00",
+      "sha256": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+      "bytes": 425790
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/2607.03272v1",
+      "retrieved_utc": "2026-10-09T17:57:16.779112+00:00",
+      "sha256": "2ddac41a495d8180db11b09fa1fdf1340cf735de7fe081495e5f43a4494b9ccc",
+      "bytes": 71178,
+      "derived_from_sha256": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+      "tool": "pdftotext -layout"
+    }
+  ],
+  "screen": {
+    "status": "reviewed",
+    "basis": "full_text",
+    "reason": "Full Luna extraction and independent Sol source assessment completed; source-development merit only, with unresolved physics and no numerical/scientific qualification."
+  },
+  "extraction": {
+    "schema_version": 1,
+    "paper_id": "arxiv:2607.03272v1",
+    "arxiv_id": "2607.03272",
+    "version": 1,
+    "title": "Dark energy genesis: modeling dissipative effects in primordial cosmology",
+    "authors": [
+      "Pietro Pellecchia",
+      "Alejandro Perez",
+      "Salvatore Ribisi"
+    ],
+    "affiliations": [
+      {
+        "author": "Pietro Pellecchia",
+        "source_text": "Dipartimento di Fisica Ettore Pancini, Università di Napoli ‘Federico II’, Complesso Univ. Monte S. Angelo, I-80126 Napoli, Italy; INFN, Sezione di Napoli, Complesso Univ. Monte S. Angelo, I-80126 Napoli, Italy."
+      },
+      {
+        "author": "Alejandro Perez",
+        "source_text": "Aix Marseille Univ, Université de Toulon, CNRS, CPT, Marseille, France."
+      },
+      {
+        "author": "Salvatore Ribisi",
+        "source_text": "School of Physics and Astronomy, Beijing Normal University, Beijing 100875, China."
+      }
+    ],
+    "acknowledged_discussion": [
+      "Federico Greco"
+    ],
+    "requested_model": "gpt-6-luna",
+    "requested_reasoning_effort": "xhigh",
+    "agent_id": "/root/luna_dissipation",
+    "backend_identity": null,
+    "backend_identity_note": "The backend identity is not exposed in the task context.",
+    "reading_level": "full_text",
+    "source_hashes": {
+      "html": "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+      "pdf": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+      "extracted_text": "2ddac41a495d8180db11b09fa1fdf1340cf735de7fe081495e5f43a4494b9ccc"
+    },
+    "source_receipts": [
+      {
+        "role": "html",
+        "url": "https://arxiv.org/html/2607.03272v1",
+        "retrieved_utc": "2026-10-09T17:57:12.933365+00:00",
+        "path": ".work/unconventional-20261009/acquisition/objects/44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566.html",
+        "bytes": 240990,
+        "sha256": "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+        "identity_check": "HTML title, author list, pinned arXiv version and body match the acquisition manifest; digest recomputed and matched."
+      },
+      {
+        "role": "pdf",
+        "url": "https://arxiv.org/pdf/2607.03272v1",
+        "retrieved_utc": "2026-10-09T17:57:16.596693+00:00",
+        "path": ".work/unconventional-20261009/acquisition/objects/9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd.pdf",
+        "bytes": 425790,
+        "sha256": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+        "identity_check": "PDF title page and arXiv watermark identify 2607.03272v1, dated 3 July 2026; author list matches manifest; digest recomputed and matched."
+      },
+      {
+        "role": "extracted_text",
+        "url": "https://arxiv.org/pdf/2607.03272v1",
+        "retrieved_utc": "2026-10-09T17:57:16.779112+00:00",
+        "path": ".work/unconventional-20261009/acquisition/objects/2ddac41a495d8180db11b09fa1fdf1340cf735de7fe081495e5f43a4494b9ccc.txt",
+        "bytes": 71178,
+        "sha256": "2ddac41a495d8180db11b09fa1fdf1340cf735de7fe081495e5f43a4494b9ccc",
+        "derived_from_sha256": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+        "tool": "pdftotext -layout"
+      }
+    ],
+    "identity_check": {
+      "manifest_versioned_id": "2607.03272v1",
+      "manifest_title": "Dark energy genesis: modeling dissipative effects in primordial cosmology",
+      "manifest_authors": [
+        "Pietro Pellecchia",
+        "Alejandro Perez",
+        "Salvatore Ribisi"
+      ],
+      "status": "confirmed against pinned HTML and PDF title page, watermark, authors and full article body"
+    },
+    "coverage": {
+      "sections_read": [
+        "Title, author affiliations, abstract",
+        "Section I, Dissipation in gravity",
+        "Section II, Dissipative unimodular gravity",
+        "Section III, The bath of quantum gravity defects",
+        "Section IV, The toy model of Ohmic diffusion",
+        "Section V, Conclusions",
+        "Acknowledgments",
+        "Appendix A, Fluctuation dissipation and the initial state of the bath, including Eqs. (A1)-(A10)",
+        "Complete bibliography, references [1]-[42]"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "appendices": "Appendix A read in full. No other appendix is present.",
+      "figure_check": "Figure 1 on PDF p. 6 was visually inspected in .work/unconventional-20261009/rendered/dissipation-page-06.png. It plots the numerically integrated geometric Lambda(tau) rising from zero toward a dashed Lambda_infinity for gamma=10^-4, Lambda_d=0 and rho_d=1 in Planck units. This is a toy-model calculation, not observational data. PDF pp. 5-6 were visually checked for Eqs. (28)-(33) and normalization; p. 7 for Eqs. (39)-(40); p. 8 for Appendix A noise/equilibrium equations.",
+      "limitations": [
+        "No independent reproduction of the numerical integration or current-data reassessment was performed.",
+        "The article specifies a toy oscillator bath, not a microscopic quantum-gravity defect theory; no mapping of its coupling or initial bath state to a measured cosmological quantity is established.",
+        "The complete text and references were read; no article section or appendix was left unread. Equation (A9)'s printed equilibrium normalization is internally unresolved, as detailed below."
+      ]
+    },
+    "publication_and_followup_status": {
+      "source_era": "The pinned arXiv metadata identifies v1, first submitted and updated 2026-07-03. No journal reference or journal-publication status is stated in the pinned metadata/article.",
+      "observations": "No original observations are reported, and no observational dataset or likelihood is fit. The conclusion quotes Lambda_obs approximately 10^-120 Planck units only as context.",
+      "followups": "The conclusion describes more realistic microscopic quantum-gravity and matter modeling, and possible future work on quantum decoherence/localization. These are proposed followups, not completed results or tested predictions in this source.",
+      "author_context_limit": "Affiliations and acknowledgments above are transcribed from this source only; no reputation or author-quality inference is made."
+    },
+    "summary": "The authors propose that matter exchanges energy with hidden quantum-gravity defect degrees of freedom, so unimodular gravity's geometric cosmological constant becomes dynamical. They reduce a matter scalar plus oscillator bath to a Langevin equation; an ideal Ohmic kernel makes friction local, requires a divergent mass counterterm, and proposes a diffusion law for Lambda, although Sol found unresolved printed Hamiltonian normalization conflicts in Eq.(29). In the illustrative noiseless branch, a homogeneous massless scalar has p=rho (stiff matter, not radiation); for positive dimensionless gamma and initial Lambda_d=0, first-order perturbation theory predicts a monotonic rise to Lambda_infinity=gamma m_p H_d/2. Figure 1 shows one numerical example. These are conditional results of a symmetry-reduced toy model with a low-excitation initial bath, not a fit, observation, demonstration of a quantum-gravity microphysics, or completion of a causal-set fluctuating-Lambda model.",
+    "ideas": [
+      {
+        "local_id": "pellecchia-2607-unimodular-matter-diffusion",
+        "title": "In unimodular gravity, matter non-conservation sources a spacetime-dependent geometric Lambda",
+        "claim_type": "author_framework",
+        "description": "The trace-free field equation plus the integrability condition dJ=0 lets the authors rewrite the equations as Einstein equations with a cosmological term Lambda=Lambda_0+integral J. In flat FLRW, the cosmic-time Friedmann and continuity equations contain geometric Lambda and an energy exchange term; a Raychaudhuri equation leaves only two independent equations for a(tau), rho(tau) and Lambda(tau). A diffusion law is therefore required to close the homogeneous background. Lambda has geometric units (inverse length squared); its associated energy density is Lambda/(8 pi G).",
+        "locators": [
+          "PDF p. 2, Eqs. (1)-(6) and the paragraphs defining J_mu and Lambda",
+          "PDF p. 3, paragraph stating the homogeneous system has two independent equations"
+        ],
+        "equations": [
+          {
+            "expression": "J_mu = 8 pi G nabla_nu T_mu^nu; R_mu^nu - (1/2) R g_mu^nu + Lambda g_mu^nu = 8 pi G T_mu^nu; Lambda = Lambda_0 + integral_l J",
+            "locator": "PDF p. 2, Eqs. (2)-(3)",
+            "conventions_definitions": "J is the diffusion current; dJ=0 is the integrability condition; the path integral from a reference event is path independent under that condition.",
+            "domain": "Unimodular gravity with non-conserved matter stress energy; Lambda is a geometric cosmological term.",
+            "confidence": "High for transcription; this is the paper's framework and assumption, not evidence for a specific microscopic source."
+          },
+          {
+            "expression": "3 H^2 = 8 pi G rho + Lambda; rho' + 3 H (rho+p) = -Lambda'/(8 pi G); H' = -4 pi G (rho+p)",
+            "locator": "PDF p. 2, Eqs. (5a)-(6)",
+            "conventions_definitions": "Flat FLRW cosmic proper time tau; prime=d/dtau; H=a'/a; rho and p are matter density and pressure. Lambda/(8 pi G) is the corresponding energy-density scale.",
+            "domain": "Homogeneous, spatially flat background in the authors' unimodular model.",
+            "confidence": "High for transcription; visually consistent with the source equations."
+          }
+        ]
+      },
+      {
+        "local_id": "pellecchia-2607-ohmic-defect-bath",
+        "title": "A matter-coupled Ohmic oscillator bath produces local damping and a dynamical dark-energy term",
+        "claim_type": "author_derivation",
+        "description": "The authors impose the unimodular lapse N=a^-3, so their Hamiltonian time is t with dt=a^3 d tau and v=a^3. They add a defect Hamiltonian H_D that is independent of v and p_v, coupling it to matter but not directly to the low-energy geometry; they warn that arbitrary modifications made only after symmetry reduction need not respect four-dimensional covariance. The defects are harmonic oscillators linearly coupled to a scalar. Eliminating them gives a memory kernel beta and noise xi. The Ohmic delta-kernel beta(t-t')=bar_beta m_p delta(t-t') makes dissipation local; beta(0) is divergent and is absorbed by M_0^2-beta(0)=M^2 with finite non-negative M. On shell, the displayed Hamiltonian counterterm delta Lambda and Eq. (31) define an effective Lambda=Lambda_0+delta Lambda. Equation (33) explicitly retains the noise cross-correlation term. Sol source amendment: the printed Eqs.(28)-(33) are not a consistent derivation as written; Eq.(29) has density/geometric-Lambda and friction-factor conflicts. No repair adopted.",
+        "locators": [
+          "PDF pp. 3-5, Eqs. (7)-(24), including the restriction partial_v H_D=partial_pv H_D=0",
+          "PDF p. 5, Eqs. (25)-(32), visually checked in the PDF render",
+          "PDF p. 6, Eq. (33), visually checked in the PDF render"
+        ],
+        "equations": [
+          {
+            "expression": "dt=a^3 d tau; v=a^3; N=a^-3; kappa=1/(16 pi G); p_v=-(4 kappa/3) v_dot; H= -3 p_v^2/(8 kappa) + p_phi^2/(2 v^2) + V(phi); Lambda_0=-8 pi G H",
+            "locator": "PDF pp. 3-4, Eqs. (8)-(17)",
+            "conventions_definitions": "Dot=d/dt is the unimodular-time derivative; prime=d/dtau is cosmic-time derivative. The Hamiltonian's H is distinct from the Hubble expansion rate H=a'/a in Eqs. (5)-(6).",
+            "domain": "Spatially flat FLRW, symmetry-reduced unimodular action, fiducial spatial cell.",
+            "confidence": "High for transcription; time convention checked against PDF."
+          },
+          {
+            "expression": "H_T=H_G+H_M+H_D; partial_v H_D=partial_pv H_D=0; Q_ddot_alpha+omega_alpha^2 Q_alpha=-b_alpha phi",
+            "locator": "PDF pp. 4-5, Eqs. (18)-(21)",
+            "conventions_definitions": "The oscillator coordinates evolve in unimodular time; H_D is assumed independent of the geometric phase-space variables v and p_v and is coupled to the matter scalar.",
+            "domain": "The authors' toy hidden bath, not a derived spectrum of actual Planckian constituents.",
+            "confidence": "High for transcription."
+          },
+          {
+            "expression": "beta(t-t')=sum_alpha (b_alpha^2/omega_alpha^2) cos[omega_alpha(t-t')]=bar_beta m_p delta(t-t'); M_0^2-beta(0)=M^2 >= 0; v^2 phi_ddot+2 v v_dot phi_dot+M^2 phi+bar_beta m_p phi_dot=xi(t)",
+            "locator": "PDF p. 5, Eqs. (23)-(27); Eq. (26) and Eq. (27) visually checked",
+            "conventions_definitions": "Natural units c=hbar=1; m_p=G^-1/2; bar_beta is dimensionless. The ideal delta kernel localizes the memory term and makes beta(0) divergent; M is the finite renormalized scalar mass.",
+            "domain": "Ohmic oscillator-bath limit, with adiabatic switch-on and the stated initial scalar condition phi(0)=0.",
+            "confidence": "High for transcription; the physical bath spectrum/cutoff and renormalization prescription are not quantitatively specified."
+          },
+          {
+            "expression": "H_T(on shell)= -3 p_v^2/(8 kappa)+p_phi^2/(2 v^2)+(1/2)M_0^2 phi^2-delta V+delta Lambda/(8 pi G); delta V=(1/2) beta(0) phi^2; delta Lambda=E_0-integral_0^t xi(t')phi_dot(t')dt'+(1/2)bar_beta m_p integral_0^t phi_dot(t')^2dt'; rho=(1/2)v^2 phi_dot^2+(1/2)M^2 phi^2; p=(1/2)v^2 phi_dot^2-(1/2)M^2 phi^2; Lambda=Lambda_0+delta Lambda; 3 a^4 a_dot^2=8 pi G rho+Lambda",
+            "locator": "PDF p. 5, Eqs. (28)-(32), visually checked against original PDF render",
+            "conventions_definitions": "All dots in these expressions denote unimodular time t. E_0 is the initial defect energy density. The Lambda symbols in the Friedmann equation are geometric; divide by 8 pi G to express their energy-density equivalent.",
+            "domain": "On-shell oscillator bath in the authors' Ohmic model, after scalar mass renormalization.",
+            "confidence": "High for transcription; preserve the paper's displayed signs and normalizations without independent correction."
+          },
+          {
+            "expression": "Lambda_dot/(8 pi G)=bar_beta m_p phi_dot^2-phi_dot xi(t)",
+            "locator": "PDF p. 6, Eq. (33), visually checked against original PDF render",
+            "conventions_definitions": "Dot=d/dt in unimodular time. The explicit -phi_dot xi term is retained; it is not omitted from the paper's diffusion equation.",
+            "domain": "Printed effective-Lambda equation in the Ohmic model; its derivation from Eq.(29) is blocked by the reviewed normalization conflict. Faithful transcription is not validation.",
+            "confidence": "High for transcription."
+          }
+        ]
+      },
+      {
+        "local_id": "pellecchia-2607-stiff-scalar-lambda-genesis",
+        "title": "Positive Ohmic transfer generates a positive late-time Lambda in a conditional stiff-matter background",
+        "claim_type": "author_conditional_prediction",
+        "description": "The paper drops xi when solving the background, explicitly interpreting this as a sufficiently unexcited initial defect bath/low-entropy big bang assumption. Converting Eq. (33) to cosmic time gives Lambda'/8 pi G=bar_beta m_p (rho+p)a^-3. The illustrative M=0 homogeneous scalar has p=rho, so it is stiff matter (w=1), not radiation. With gamma=2 bar_beta/a_d^3, initial Lambda(tau_d)=0, rho(tau_d)=rho_d, and small gamma, the first-order solution approaches Lambda_infinity=gamma m_p H_d/2 over a timescale of order H_d^-1. This monotonic positive branch is not asserted to complete or replace causal-set fluctuating-Lambda models.",
+        "locators": [
+          "PDF p. 6, Eqs. (34)-(39), including footnote 8; visually checked against original PDF render",
+          "PDF p. 7, Eq. (40) and source discussion; visually checked against original PDF render",
+          "PDF p. 6, Fig. 1 and its caption; visually inspected"
+        ],
+        "equations": [
+          {
+            "expression": "Lambda'/(8 pi G)=bar_beta m_p (rho+p)a^-3; rho'+3(a'/a)(rho+p)+Lambda'/(8 pi G)=0",
+            "locator": "PDF p. 6, Eqs. (34)-(35)",
+            "conventions_definitions": "Prime=d/dtau in cosmic time, after dt=a^3 d tau; Lambda/(8 pi G) is the geometric term's energy-density equivalent.",
+            "domain": "Homogeneous flat-FLRW background under the Ohmic model.",
+            "confidence": "High for transcription."
+          },
+          {
+            "expression": "gamma=2 bar_beta/a_d^3; Lambda'/(8 pi G)=(gamma/2)m_p(a_d/a)^3(rho+p); for M=0, p=rho and Lambda'/(8 pi G)=gamma m_p(a_d/a)^3 rho",
+            "locator": "PDF p. 6, Eqs. (36)-(38) and footnote 8",
+            "conventions_definitions": "a_d=a(tau_d) at diffusion onset; the equations depend on a_d/a, not an independently meaningful normalization of a. A homogeneous massless scalar has p=rho, not the radiation equation of state p=rho/3.",
+            "domain": "Small-gamma perturbative example with a homogeneous massless scalar; not a radiation-fluid solution.",
+            "confidence": "High for transcription and equation-of-state distinction."
+          },
+          {
+            "expression": "Lambda(tau) approximately (gamma m_p H_d/2)[1-1/(3 H_d(tau-tau_d)+1)^2]+O(gamma^2); H_d=sqrt(8 pi G rho_d/3); rho=rho_d(a_d^6/a^6)+O(gamma); a=a_d[3H_d(tau-tau_d)+1]^(1/3)+O(gamma); Lambda_infinity=gamma m_p H_d/2=gamma sqrt(2 pi rho_d/3)",
+            "locator": "PDF pp. 6-7, Eqs. (39)-(40); Eq. (40) radical visually checked in PDF p. 7",
+            "conventions_definitions": "Geometric Lambda; natural units m_p=G^-1/2. Initial conditions are Lambda_d=0 and rho_d>0 at tau_d. The solution is first order in dimensionless gamma while Lambda is subdominant; the intermediate regime requires numerical integration.",
+            "domain": "Conditional late-time asymptotic of the noiseless M=0 model for positive gamma; source reports numerical corroboration but no independent run or observed-data fit is included here.",
+            "confidence": "High for transcription; physical prediction remains conditional on the toy model and initial-state assumptions."
+          }
+        ]
+      },
+      {
+        "local_id": "pellecchia-2607-ohmic-noise-fdt-equilibrium",
+        "title": "The defect bath supplies a classical fluctuation-dissipation noise term whose initial temperature affects the background",
+        "claim_type": "author_derivation",
+        "description": "Appendix A explicitly specifies a random equipartition initial bath at temperature T_d, gives zero-mean noise and its autocorrelation, and derives the Ohmic white-noise covariance. It then solves the late-time massless-field Langevin equation, explicitly calculates both <phi_dot^2> and the cross-correlation <xi phi_dot>, and uses them in Eq. (33) to claim equilibrium rho=T_d^4. The main-text noiseless solution is therefore a low-excitation/cold-bath branch, not an omission of the noise correlation. A reader algebra check finds that the displayed averages and Eq. (33) instead imply rho=T_d^4/2; the printed mismatch is unresolved, not repaired here. The appendix also calls the equilibrated matter radiation, while the homogeneous massless scalar defined by Eq. (30) has p=rho.",
+        "locators": [
+          "PDF p. 8, Appendix A, Eqs. (A1)-(A10), visually checked against original PDF render",
+          "PDF p. 5, Eq. (30), and PDF p. 6, footnote 8, for the scalar equation of state"
+        ],
+        "equations": [
+          {
+            "expression": "<Q_alpha(0)>=<Qdot_alpha(0)>=<Q_alpha(0)Qdot_alpha'(0)>=0; <Qdot_alpha(0)Qdot_alpha'(0)>=omega_alpha^2<Q_alpha(0)Q_alpha'(0)>=delta_alphaalpha' T_d^4; <E_D^0>=T_d^4",
+            "locator": "PDF p. 8, Eqs. (A1)-(A2)",
+            "conventions_definitions": "Classical equipartition ensemble, k_B=1; T_d is the primordial defect-bath temperature; oscillator sums define initial defect energy density per the paper's normalization.",
+            "domain": "Initial state of the oscillator bath in the appendix, distinct from the unexcited approximation used for the main noiseless calculation.",
+            "confidence": "High for transcription; ensemble-to-continuum normalization is not further specified."
+          },
+          {
+            "expression": "<xi(t)>=0; <xi(t)xi(t')>=T_d^4 beta(t-t')=T_d^4 bar_beta m_p delta(t-t')",
+            "locator": "PDF p. 8, Eqs. (A3)-(A4)",
+            "conventions_definitions": "Classical fluctuation-dissipation relation for the paper's noise xi and damping kernel beta; white-noise limit uses the ideal Ohmic delta kernel.",
+            "domain": "Thermal/equipartition bath, not the noiseless initial-state limit.",
+            "confidence": "High for transcription."
+          },
+          {
+            "expression": "3 Lambda t^2 phi_ddot+6 Lambda t phi_dot+bar_beta m_p phi_dot=xi(t); <phi_dot^2>=2 rho/(3 Lambda t^2); <xi(t)phi_dot(t)>=bar_beta m_p T_d^4/(3 Lambda t^2); Eq. (33) plus <Lambda_dot>=0 implies rho=T_d^4/2 from these displayed averages, whereas Eq. (A9) prints rho=T_d^4",
+            "locator": "PDF p. 8, Eqs. (A5)-(A9), especially the printed averages immediately before Eq. (A9); cross-correlation visually checked",
+            "conventions_definitions": "Late-time Lambda treated as constant and v=sqrt(3 Lambda)t. Eq. (30) gives rho=(1/2)v^2 phi_dot^2 for M=0. Substitution into Eq. (33) with the displayed Appendix cross-correlation gives the reader-inferred factor-of-two relation.",
+            "domain": "Reader algebra check of the paper's stated equilibrium; the white-noise endpoint prescription is not specified and the source's printed Eq. (A9) is retained as unresolved.",
+            "confidence": "High for the transcription and displayed-equation arithmetic; the stochastic boundary convention and intended normalization need source review."
+          },
+          {
+            "expression": "Lambda=Lambda(infinity)+8 pi T_d^4/m_p^2",
+            "locator": "PDF p. 8, Eq. (A10)",
+            "conventions_definitions": "Geometric Lambda in natural units. This is the appendix's stated radiation-equilibrium correction; its normalization depends on the unresolved Eq. (A9) result.",
+            "domain": "The paper's perturbative noise discussion; it says T_d of order Planck makes noise dominate and yields Planck-scale de Sitter expansion.",
+            "confidence": "High for transcription; physical magnitude is not evaluated for a sourced bath temperature."
+          }
+        ]
+      }
+    ],
+    "quantities": [
+      {
+        "name": "Diffusion coupling in Fig. 1",
+        "value": "10^-4",
+        "unit": "dimensionless gamma",
+        "uncertainty": "Illustrative selected input; no uncertainty or fit supplied.",
+        "conditioning": "Numerical example with Lambda_d=0 and rho_d=1 in Planck units.",
+        "locator": "PDF p. 6, Fig. 1 caption"
+      },
+      {
+        "name": "Initial geometric cosmological term in Fig. 1",
+        "value": "0",
+        "unit": "geometric Lambda, Planck units in the figure setup",
+        "uncertainty": "Initial condition, not an inferred value.",
+        "conditioning": "At onset tau_d in the M=0 numerical example.",
+        "locator": "PDF p. 6, Fig. 1 caption"
+      },
+      {
+        "name": "Initial density in Fig. 1",
+        "value": "1",
+        "unit": "Planck units",
+        "uncertainty": "Illustrative initial condition; no uncertainty supplied.",
+        "conditioning": "rho(tau_d)=rho_d for the numerical example.",
+        "locator": "PDF p. 6, Fig. 1 caption"
+      },
+      {
+        "name": "Dimensionless diffusion parameter",
+        "value": null,
+        "unit": "dimensionless gamma",
+        "uncertainty": "Not measured or fit; chosen by the model user.",
+        "conditioning": "gamma=2 bar_beta/a_d^3, with a_d the scale factor at onset; the paper supplies no microscopic estimate.",
+        "locator": "PDF p. 6, Eqs. (36)-(37)"
+      },
+      {
+        "name": "Initial bath temperature",
+        "value": null,
+        "unit": "energy",
+        "uncertainty": "Unreported; no distribution parameter value or observation-based limit is provided.",
+        "conditioning": "Appendix A uses T_d^4 in oscillator variance/noise; main calculation neglects xi on the assumption the bath is sufficiently unexcited.",
+        "locator": "PDF p. 8, Eqs. (A1)-(A4), (A10)"
+      },
+      {
+        "name": "Observed dark-energy cosmological-term scale quoted by the authors",
+        "value": "approximately 10^-120",
+        "unit": "Planck units, geometric Lambda",
+        "uncertainty": "Contextual order-of-magnitude statement; no uncertainty, dataset or likelihood is supplied.",
+        "conditioning": "Stated in the conclusion as a comparison to the cosmological-constant problem; not measured or fitted in this paper.",
+        "locator": "PDF p. 7, conclusion after Eq. (40)"
+      },
+      {
+        "name": "Late-time Lambda in the noiseless perturbative model",
+        "value": "gamma m_p H_d/2 = gamma sqrt(2 pi rho_d/3)",
+        "unit": "geometric Lambda, inverse length squared",
+        "uncertainty": "Analytic model output, not an observational posterior; controlled only to first order in gamma in the stated calculation.",
+        "conditioning": "Positive gamma, M=0 homogeneous scalar, Lambda_d=0, rho_d>0, low-excitation bath; H_d=sqrt(8 pi G rho_d/3). Convert to an energy density by dividing by 8 pi G.",
+        "locator": "PDF p. 7, Eqs. (39)-(40)"
+      }
+    ],
+    "data_dependencies": [
+      {
+        "observable_or_constraint": "No observational dataset or likelihood is used in the model calculation.",
+        "source_as_cited": "The conclusion quotes Lambda_obs approximately 10^-120 in Planck units but does not identify a dataset or analysis there.",
+        "use_in_paper": "Contextual comparison only; no fitted parameter, confidence interval, covariance or current-data test.",
+        "source_era": "Pinned arXiv v1 submitted and updated 2026-07-03.",
+        "conditioning_and_missingness": "No empirical data vector, likelihood, nuisance parameters or observational uncertainty are provided. Figure 1 is a numerical integration with selected initial inputs, not an observation."
+      }
+    ],
+    "assumptions": [
+      "The background is spatially flat FLRW and homogeneous, and the matter sector is represented by one minimally coupled scalar field.",
+      "The hidden defect Hamiltonian couples only to matter and is independent of the geometric phase-space variables v and p_v; this is the authors' minimal symmetry-compatible restriction.",
+      "The oscillator bath can be approximated as an ideal Ohmic continuum with beta(t-t')=bar_beta m_p delta(t-t'); the ultraviolet mass divergence is absorbed by a counterterm, while no microscopic spectrum or cutoff is specified.",
+      "The main background solution neglects xi(t), assuming the initial bath is sufficiently unexcited at the big bang. This is a low-entropy/low-temperature branch, not a general consequence of the oscillator model.",
+      "The illustrative genesis result uses M=0, so the homogeneous scalar has p=rho (stiff matter), and assumes positive small gamma with Lambda(tau_d)=0 and rho(tau_d)=rho_d.",
+      "Equation (39) is perturbative in gamma while Lambda is subdominant; the authors say an intermediate regime needs numerical integration and that the late-time geometry tends to de Sitter."
+    ],
+    "caveats": [
+      "The authors explicitly describe the defect oscillators as a toy model, not the actual Planckian constituents; the underlying quantum-gravity microphysics remains unknown.",
+      "The theory is only a homogeneous background treatment here: no perturbation closure, CMB calculation, structure-growth prediction, observational fit or independently reconstructed likelihood is provided.",
+      "The link between a chosen gamma and the observed dark-energy scale is not fixed. Lambda_infinity depends on the freely chosen onset density and coupling, and the bath initial state is also uncalibrated.",
+      "The main calculation sets the noise to zero using a cold/low-excitation initial-bath assumption. Appendix A explicitly includes xi autocorrelation and <xi phi_dot>; it says a Planck-temperature bath would instead make noise dominate and generate Planck-scale Lambda.",
+      "Source-internal unresolved normalization: PDF p. 8 gives <phi_dot^2>=2rho/(3 Lambda t^2), <xi phi_dot>=bar_beta m_p T_d^4/(3 Lambda t^2), and Eq. (33) as Lambda_dot/(8 pi G)=bar_beta m_p phi_dot^2-phi_dot xi. These displayed relations plus <Lambda_dot>=0 imply rho=T_d^4/2, while Eq. (A9) prints rho=T_d^4. The white-noise endpoint prescription is not stated; no repair is assumed. Eq. (A10) inherits this normalization uncertainty.",
+      "Appendix A calls the equilibrated component radiation, but the model's homogeneous M=0 scalar obeys p=rho in Eq. (30) and footnote 8, not the radiation equation of state. Preserve this wording as an unresolved source inconsistency.",
+      "The numerical curve in Fig. 1 confirms only the stated toy setup's plotted behavior; it is not independent reproduction or evidence for the physical existence of QG defects.",
+      "The paper's qualitative motivation from quantum-gravity discreteness does not establish ancestry, equivalence, or completion of the separately registered causal-set fluctuating/sign-changing Lambda model. That paper is not an explicit bibliography match here.",
+      "The transcription is faithful, but the chain is inconsistent: Eq.(28) adds deltaLambda/(8piG) to an energy-density Hamiltonian, Eq.(31) adds deltaLambda to geometric Lambda, yet Eq.(29) RHS has density units. Its derivative also has coefficient beta_bar m_p/2 rather than the beta_bar m_p in Eq.(33). Eq.(27) and scalar continuity support the coefficient/sign in Eq.(33); this is a diagnostic, not authority to rewrite Eq.(29). Keep the deterministic system conditional and the Hamiltonian normalization blocked.",
+      "Confirmed literally from displayed averages and Eq.(33): 0=beta_bar m_p(2rho-T_d^4)/(3Lambda t^2). This identifies the printed factor mismatch; rho=T_d^4/2 is not adopted as the physically repaired equilibrium. White-noise endpoint normalization, finite-cutoff limit and bath mode-sum measure are unspecified. Appendix A does calculate <xi phi_dot>, so omission of that correlation is not an objection. A nonzero constant equilibrium density would additionally require an expanding-background continuity check; the homogeneous scalar has p=rho, not radiation."
+    ],
+    "strongest_objection": "The claimed late-time dark-energy generation depends on an uncalibrated toy bath and a deliberately low-excitation initial state, with no microscopic derivation of gamma or current-data/perturbation closure. More concretely, Appendix A's displayed fluctuation averages do not algebraically yield its claimed equilibrium density: Eq. (33) gives rho=T_d^4/2 from the printed <phi_dot^2> and <xi phi_dot>, whereas Eq. (A9) states rho=T_d^4. This leaves the finite-temperature equilibrium normalization, and thus the stated Eq. (A10) correction, unresolved. The main noiseless branch does not rely on claiming the correlation is absent; it relies on dropping noise as a cold/low-excitation assumption.",
+    "cheapest_decisive_check": "Do a short source-level algebra audit of PDF p. 8: start from Eq. (30) with M=0 and Eq. (33), insert the displayed Appendix averages for <phi_dot^2> and <xi phi_dot>, and state the white-noise endpoint/stochastic convention used in evaluating Eq. (A8). Reconcile the factor needed for Eq. (A9) and propagate it to Eq. (A10), without changing the paper's printed result in the record. In the same check, keep the homogeneous scalar's p=rho separate from radiation p=rho/3. This is non-duplicative and requires no new cosmological data or numerical experiment.",
+    "usefulness": {
+      "assessment": "Strong reason to investigate: the paper derives a concrete matter-to-hidden-bath channel and a local Ohmic diffusion law instead of postulating a diffusion function, then supplies a simple conditional late-time Lambda solution that can be checked against its Hamiltonian, time conventions and noise treatment. It is scientifically useful as a source-development target, not as evidence that QG defects exist or that the observed dark-energy value is explained.",
+      "best_follow_up": "First resolve the Appendix A equilibrium normalization and its radiation-versus-stiff-scalar wording at source level. If those checks clarify the intended normalization, a separate Sol review can check the Hamiltonian signs, energy transfer, time conversion and overlap with already registered unimodular diffusion sources. Keep the causal-set fluctuating-Lambda line distinct; no completion or equivalence is asserted.",
+      "promotion_status": "No idea, graph edge or prospect is accepted by this Luna extraction. Sol source review and separate physical/consumer gates remain outstanding."
+    },
+    "citation_leads": [
+      {
+        "reference_label": "[20]",
+        "bibliography_anchor": "HTML #bib.bib20",
+        "source_citation_anchors": [
+          "HTML #bib.bib20 and the section-I callout among refs. [8]-[20]"
+        ],
+        "source_text": "G. Kashyap and N. K. Singh, ‘Unimodular Diffusion and Interacting Vacuum Cosmology,’ arXiv:2603.21675 [astro-ph.CO].",
+        "matched_registered_paper_id": "arxiv:2603.21675v2",
+        "match_basis": "The reference explicitly prints base arXiv ID 2603.21675 and the title/authors match the registered record. The source does not print a version, so the registered v2 must not be claimed as the exact cited version.",
+        "source_printed_arxiv_id": "2603.21675",
+        "source_printed_version": null,
+        "source_hashes": [
+          "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+          "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd"
+        ],
+        "register_status": "Exact explicit base-ID/title match to arxiv:2603.21675v2; cited version remains unknown."
+      }
+    ],
+    "bibliography_audit": {
+      "registered_paper_matches_found": [
+        {
+          "paper_id": "arxiv:2603.21675v2",
+          "reference_label": "[20]",
+          "printed_base_id": "2603.21675",
+          "printed_version": null,
+          "locator": "HTML #bib.bib20; PDF reference [20]"
+        }
+      ],
+      "batch_paper_checks": [
+        {
+          "paper_id": "arxiv:gr-qc/0612128v2",
+          "cited": false,
+          "reference_label": null,
+          "note": "No exact printed arXiv ID or title/author identity match in the full bibliography [1]-[42]. Conceptual motivation from spacetime discreteness is not citation, ancestry or completion."
+        },
+        {
+          "paper_id": "arxiv:astro-ph/0209274v1",
+          "cited": false,
+          "reference_label": null,
+          "note": "No exact printed arXiv ID or title/author identity match in the full bibliography [1]-[42]. Do not infer a citation from shared subject matter."
+        },
+        {
+          "paper_id": "arxiv:2307.13743v2",
+          "cited": false,
+          "reference_label": null,
+          "note": "No exact printed arXiv ID or title/author identity match in the full bibliography [1]-[42]."
+        }
+      ],
+      "citation_coverage": "Read the complete PDF bibliography [1]-[42] and checked explicit arXiv IDs/titles against register/papers. One exact registered match was found: [20], base ID 2603.21675. The article references [3]-[4] as general discreteness/diffusion motivation, but neither is the registered gr-qc/0612128v2 paper. No claim of exhaustive citation ancestry beyond this bounded full bibliography check."
+    },
+    "worker_packet_sha256": "8e859800bf1008d89b7212f606125e9ec4e71d03f067ad7256dd5ef64b9c6255",
+    "review_amendments": [
+      {
+        "date_utc": "2026-10-09T18:41:40.938162+00:00",
+        "coordinator": "/root",
+        "reviewer_agent": "/root/sol_stochastic_vacuum",
+        "review_id": "2026-10-09-stochastic-vacuum-science",
+        "original_packet_sha256": "8e859800bf1008d89b7212f606125e9ec4e71d03f067ad7256dd5ef64b9c6255",
+        "corrections": [
+          {
+            "id": "bath-eq29-normalization",
+            "kind": "printed_source_inconsistency_confirmed",
+            "paper_id": "arxiv:2607.03272v1",
+            "original_fields": [
+              "luna-dissipation.ideas[pellecchia-2607-ohmic-defect-bath].equations[on-shell Eqs28-32]",
+              "luna-dissipation.caveats",
+              "luna-dissipation.summary derivation claim"
+            ],
+            "old_claim": "Eq.(29) defines deltaLambda as energy-density terms plus one-half friction integral, and Eq.(33) follows by differentiation.",
+            "replacement": "The transcription is faithful, but the chain is inconsistent: Eq.(28) adds deltaLambda/(8piG) to an energy-density Hamiltonian, Eq.(31) adds deltaLambda to geometric Lambda, yet Eq.(29) RHS has density units. Its derivative also has coefficient beta_bar m_p/2 rather than the beta_bar m_p in Eq.(33). Eq.(27) and scalar continuity support the coefficient/sign in Eq.(33); this is a diagnostic, not authority to rewrite Eq.(29). Keep the deterministic system conditional and the Hamiltonian normalization blocked.",
+            "checked_locators": [
+              "PDF p.5 Eqs.(27)-(32)",
+              "PDF p.6 Eqs.(33)-(35)"
+            ],
+            "action": "Add visible printed-source caveat; do not relabel it as a Luna transcription error."
+          },
+          {
+            "id": "bath-appendix-factor2",
+            "kind": "printed_source_inconsistency_confirmed_with_domain_limits",
+            "paper_id": "arxiv:2607.03272v1",
+            "original_fields": [
+              "luna-dissipation.ideas[pellecchia-2607-ohmic-noise-fdt-equilibrium]",
+              "luna-dissipation.caveats[Appendix A]"
+            ],
+            "old_claim": "Eq.(A9) equilibrium rho=T_d^4 is inconsistent with printed averages; rho=T_d^4/2 is reader algebra.",
+            "replacement": "Confirmed literally from displayed averages and Eq.(33): 0=beta_bar m_p(2rho-T_d^4)/(3Lambda t^2). This identifies the printed factor mismatch; rho=T_d^4/2 is not adopted as the physically repaired equilibrium. White-noise endpoint normalization, finite-cutoff limit and bath mode-sum measure are unspecified. Appendix A does calculate <xi phi_dot>, so omission of that correlation is not an objection. A nonzero constant equilibrium density would additionally require an expanding-background continuity check; the homogeneous scalar has p=rho, not radiation.",
+            "checked_locators": [
+              "PDF p.8 Appendix A Eqs.(A1)-(A10)",
+              "PDF p.5 Eq.(30), p.6 footnote 8 and Eq.(35)"
+            ],
+            "action": "Retain narrow source arithmetic issue separately from Eq.(29); block quantitative Eq.(A10) reuse."
+          }
+        ],
+        "coverage_change": "No extra full reading or new source acquisition. Public extraction corrected visibly; original worker packet retained unchanged in private custody."
+      }
+    ],
+    "worker_source_hash_details": {
+      "html_sha256": "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+      "pdf_sha256": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+      "extracted_text_sha256": "2ddac41a495d8180db11b09fa1fdf1340cf735de7fe081495e5f43a4494b9ccc",
+      "extracted_text_derived_from_pdf_sha256": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd"
+    },
+    "provenance_amendments": [
+      {
+        "coordinator": "/root",
+        "reason": "Normalize worker hash keys to artifact role names required by validator; auxiliary manifest/derivation hashes retained separately. Actual bytes rehashed; no source identity or coverage changed.",
+        "original_packet_sha256": "8e859800bf1008d89b7212f606125e9ec4e71d03f067ad7256dd5ef64b9c6255"
+      }
+    ]
+  },
+  "review_id": "2026-10-09-stochastic-vacuum-science",
+  "idea_ids": [
+    "ohmic-unimodular-hidden-bath-diffusion"
+  ]
+}

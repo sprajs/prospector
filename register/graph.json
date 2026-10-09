@@ -161,7 +161,13 @@
     "arxiv:2608.25033v1",
     "timescape-supernova-conditional-evidence",
     "timescape-hubble-flow-proxy-contract",
-    "timescape-observation-contracts"
+    "timescape-observation-contracts",
+    "arxiv:2607.03272v1",
+    "everpresent-lambda-seed-selection-and-cmb-limit",
+    "everpresent-lambda-volume-noise",
+    "ohmic-unimodular-hidden-bath-diffusion",
+    "everpresent-lambda-conservation-and-cmb-audit",
+    "ohmic-unimodular-diffusion-noise-audit"
   ],
   "edges": [
     {
@@ -1671,6 +1677,152 @@
         {
           "paper_id": "arxiv:2412.15143v1",
           "locator": "Section 2, PDF p.3: same dataset as Lane et al.; Section 4, PDF p.5: same data; bibliography, PDF p.6."
+        }
+      ]
+    },
+    {
+      "id": "describes-everpresent-lambda-seed-selection-and-cmb-limit",
+      "from": "arxiv:2307.13743v2",
+      "to": "everpresent-lambda-seed-selection-and-cmb-limit",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-09-stochastic-vacuum-science",
+      "rationale": "Original source describes this mechanism or conditional test; verified as a source proposal or conditional test; no physical validity or scientific qualification is asserted.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2307.13743v2",
+          "locator": "Secs.4-5, Table 1, Appendix A; Sec.6.1 Eq.(6.9) and AppendixB Eq.(B.13)",
+          "source_sha256": {
+            "html": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+            "pdf": "92984c3bc837a2f80629a7c04e80c4e25aed6f425667196e1c490148b7784460",
+            "extracted_text": "64e7568b9229c452e9fadff3d25c2196a0c87330ec24de86118baae867526dcf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "describes-everpresent-lambda-volume-noise",
+      "from": "arxiv:astro-ph/0209274v1",
+      "to": "everpresent-lambda-volume-noise",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-09-stochastic-vacuum-science",
+      "rationale": "Original source describes this mechanism or conditional test; verified as a source proposal or conditional test; no physical validity or scientific qualification is asserted.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:astro-ph/0209274v1",
+          "locator": "Sec.II Eqs.(1)-(2); Sec.III Eqs.(3)-(6); Sec.IV conservation discussion",
+          "source_sha256": {
+            "pdf": "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+            "extracted_text": "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "describes-ohmic-unimodular-hidden-bath-diffusion",
+      "from": "arxiv:2607.03272v1",
+      "to": "ohmic-unimodular-hidden-bath-diffusion",
+      "type": "describes",
+      "status": "reviewed",
+      "review_id": "2026-10-09-stochastic-vacuum-science",
+      "rationale": "Original source describes this mechanism or conditional test; verified as a source proposal or conditional test; no physical validity or scientific qualification is asserted.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2607.03272v1",
+          "locator": "Secs.II-IV Eqs.(5)-(6),(18)-(38); Eq.(40); Appendix A",
+          "source_sha256": {
+            "html": "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+            "pdf": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+            "extracted_text": "2ddac41a495d8180db11b09fa1fdf1340cf735de7fe081495e5f43a4494b9ccc"
+          }
+        }
+      ]
+    },
+    {
+      "id": "everpresent-lambda-volume-noise-informs-everpresent-lambda-conservation-and-cmb-audit",
+      "from": "everpresent-lambda-volume-noise",
+      "to": "everpresent-lambda-conservation-and-cmb-audit",
+      "type": "informs",
+      "status": "reviewed",
+      "review_id": "2026-10-09-stochastic-vacuum-science",
+      "rationale": "Mechanism or source-conditioned test informs the bounded investigation; not a viability claim.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:astro-ph/0209274v1",
+          "locator": "Sec.II Eqs.(1)-(2); Sec.III Eqs.(3)-(6); Sec.IV conservation discussion",
+          "source_sha256": {
+            "pdf": "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+            "extracted_text": "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "everpresent-lambda-seed-selection-and-cmb-limit-informs-everpresent-lambda-conservation-and-cmb-audit",
+      "from": "everpresent-lambda-seed-selection-and-cmb-limit",
+      "to": "everpresent-lambda-conservation-and-cmb-audit",
+      "type": "informs",
+      "status": "reviewed",
+      "review_id": "2026-10-09-stochastic-vacuum-science",
+      "rationale": "Mechanism or source-conditioned test informs the bounded investigation; not a viability claim.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2307.13743v2",
+          "locator": "Secs.4-5, Table 1, Appendix A; Sec.6.1 Eq.(6.9) and AppendixB Eq.(B.13)",
+          "source_sha256": {
+            "html": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+            "pdf": "92984c3bc837a2f80629a7c04e80c4e25aed6f425667196e1c490148b7784460",
+            "extracted_text": "64e7568b9229c452e9fadff3d25c2196a0c87330ec24de86118baae867526dcf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ohmic-unimodular-hidden-bath-diffusion-informs-ohmic-unimodular-diffusion-noise-audit",
+      "from": "ohmic-unimodular-hidden-bath-diffusion",
+      "to": "ohmic-unimodular-diffusion-noise-audit",
+      "type": "informs",
+      "status": "reviewed",
+      "review_id": "2026-10-09-stochastic-vacuum-science",
+      "rationale": "Mechanism or source-conditioned test informs the bounded investigation; not a viability claim.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2607.03272v1",
+          "locator": "Secs.II-IV Eqs.(5)-(6),(18)-(38); Eq.(40); Appendix A",
+          "source_sha256": {
+            "html": "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+            "pdf": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+            "extracted_text": "2ddac41a495d8180db11b09fa1fdf1340cf735de7fe081495e5f43a4494b9ccc"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ohmic-bath-distinct-from-volume-noise",
+      "from": "ohmic-unimodular-hidden-bath-diffusion",
+      "to": "everpresent-lambda-volume-noise",
+      "type": "physically_distinct",
+      "status": "reviewed",
+      "review_id": "2026-10-09-stochastic-vacuum-science",
+      "rationale": "The reviewed source prescriptions are physically distinct: cold positive-coupling Ohmic scalar diffusion gives monotonic positive Lambda toward a constant, whereas the past-volume random-walk ansatz has sign-changing fluctuations. Different matter, conservation, units and stochastic prescriptions prevent an equivalence/completion claim; no compatibility assessment is implied.",
+      "evidence": [
+        {
+          "paper_id": "arxiv:2607.03272v1",
+          "locator": "Secs.II-IV Eqs.(5)-(6),(18)-(38); Eq.(40); Appendix A",
+          "source_sha256": {
+            "html": "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+            "pdf": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+            "extracted_text": "2ddac41a495d8180db11b09fa1fdf1340cf735de7fe081495e5f43a4494b9ccc"
+          }
+        },
+        {
+          "paper_id": "arxiv:astro-ph/0209274v1",
+          "locator": "Sec.II Eqs.(1)-(2); Sec.III Eqs.(3)-(6); Sec.IV conservation discussion",
+          "source_sha256": {
+            "pdf": "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+            "extracted_text": "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1"
+          }
         }
       ]
     }

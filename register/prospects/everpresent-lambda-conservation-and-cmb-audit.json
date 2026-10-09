@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "everpresent-lambda-conservation-and-cmb-audit",
+  "title": "Everpresent Lambda: stochastic vacuum",
+  "kind": "single_mechanism",
+  "readiness": "blocked",
+  "baseline": {
+    "label": "LambdaCDM",
+    "role": "comparison",
+    "scope": "Coordinator-declared comparison convention; not an assertion that the source retains the full LambdaCDM sectors or adopts a source posterior.",
+    "parameters": null,
+    "parameters_reason": "No numerical reference inputs adopted for this source-development prospect."
+  },
+  "cosmology": {
+    "gravity": "Phenomenological causal-set/unimodular motivation; the foundation retains a Friedmann constraint and drops the second Einstein evolution equation.",
+    "geometry": "Spatially flat FLRW in the examined source implementation.",
+    "components": [
+      "Matter and radiation in the foundational homogeneous ansatz.",
+      "Stochastic vacuum contribution."
+    ],
+    "modifications": [
+      "A persistent sign-changing volume-noise term replaces a constant Lambda."
+    ],
+    "background": "Conditional homogeneous stochastic prescription; negative-total-density histories and full dynamics unresolved.",
+    "perturbations": "No accepted covariant spatial-stochastic closure. Published CMB tests suppress DE perturbations.",
+    "observables": [
+      "Conservation/constraint consistency and explicitly conditioned expansion histories.",
+      "Future observable distinctions require the missing source and perturbation closures."
+    ]
+  },
+  "scope": [
+    "Source development and conditional-test audit.",
+    "No accepted viable cosmology, current-data assessment or numerical execution.",
+    "Keep Model 1, bounded Gaussian-process Model 2, recombination-suppressed histories and flexible spline histories as separate tested prescriptions; none is an accepted completion of another."
+  ],
+  "unknowns": [
+    "A specified covariant stochastic/conservation or modified-gravity completion and spatial covariance.",
+    "Exact source code, seed/history identity, likelihood and interpolation implementation for a published Model 1 result.",
+    "Exact low-redshift subset underlying Sec.4.2, and implemented seed-posterior weighting in view of main text versus Appendix A Method 3. Visibility-width conversion is resolved; no formula repair is needed.",
+    "Consumer capability and acceptance remain uninspected."
+  ],
+  "combination_compatibility": {
+    "status": "not_assessed",
+    "basis": "No combination with the other stochastic/dissipative branch is proposed; a common word or motivation does not establish shared dynamics."
+  },
+  "idea_ids": [
+    "everpresent-lambda-volume-noise",
+    "everpresent-lambda-seed-selection-and-cmb-limit"
+  ],
+  "model_idea_ids": [
+    "everpresent-lambda-volume-noise"
+  ],
+  "design_ids": [
+    "candidate-everpresent-lambda-conservation-and-cmb-audit"
+  ],
+  "topic_ids": [
+    "stochastic-vacuum"
+  ],
+  "paper_ids": [
+    "arxiv:astro-ph/0209274v1",
+    "arxiv:2307.13743v2"
+  ],
+  "review_id": "2026-10-09-stochastic-vacuum-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:astro-ph/0209274v1",
+      "locator": "Sec.II Eqs.(1)-(2); Sec.III Eqs.(3)-(6); Sec.IV conservation discussion",
+      "url": "https://arxiv.org/abs/astro-ph/0209274v1",
+      "source_sha256": {
+        "pdf": "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+        "extracted_text": "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1"
+      }
+    },
+    {
+      "paper_id": "arxiv:2307.13743v2",
+      "locator": "Secs.4-5, Table 1, Appendix A; Sec.6.1 Eq.(6.9) and AppendixB Eq.(B.13)",
+      "url": "https://arxiv.org/abs/2307.13743v2",
+      "source_sha256": {
+        "html": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+        "pdf": "92984c3bc837a2f80629a7c04e80c4e25aed6f425667196e1c490148b7784460",
+        "extracted_text": "64e7568b9229c452e9fadff3d25c2196a0c87330ec24de86118baae867526dcf"
+      }
+    }
+  ]
+}

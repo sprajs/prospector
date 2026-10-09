@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "everpresent-lambda-volume-noise",
+  "title": "Spacetime-volume noise as an everpresent vacuum scale",
+  "family": "stochastic_vacuum",
+  "status": "source_reviewed_proposal",
+  "review_id": "2026-10-09-stochastic-vacuum-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:astro-ph/0209274v1",
+      "locator": "Sec.II Eqs.(1)-(2); Sec.III Eqs.(3)-(6); Sec.IV conservation discussion",
+      "source_sha256": {
+        "pdf": "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+        "extracted_text": "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1"
+      }
+    }
+  ],
+  "assumptions": [
+    "Poisson number-to-four-volume correspondence, Lambda-volume conjugacy, and assumed zero mean; these do not derive a full quantum dynamics.",
+    "Flat homogeneous expanding universe; separately conserved matter/radiation with a stochastic term retained in the Friedmann constraint while the other Einstein evolution equation is dropped.",
+    "Past-light-cone volume and independent random increments are phenomenological choices.",
+    "The foundation sets the reduced Planck mass to one (8piG=1); its alpha in density Eq.(5) must not be numerically identified with the later geometric-Lambda recursion containing 8pi alpha."
+  ],
+  "predictions": [
+    "Order-of-density, sign-changing vacuum fluctuations can occur through cosmic epochs, rather than a constant vacuum term.",
+    "Realizations reaching negative total density are not given complete dynamics; survival and selection affect predicted histories.",
+    "The early-time BBN, CMB and structure statements are test proposals, with no completed perturbation or observational calculation in this source. The source-era claim that about half of realizations have positive Lambda today is not an independently established survival-conditioned probability."
+  ],
+  "qualification": "Source proposal or reported conditional test only; no independent reproduction, observational reassessment or scientific qualification."
+}

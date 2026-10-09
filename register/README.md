@@ -1,6 +1,6 @@
 # Register
 
-123 paper versions · 26 ideas · 11 topics · 12 candidate prospects.
+124 paper versions · 29 ideas · 11 topics · 14 candidate prospects.
 
 [Open Prospector](https://prospector-cosmology.sprajs.chatgpt.site) · [Local map](map.html)
 
@@ -18,7 +18,7 @@
 | [Late dark energy and unified histories](topics/late-dark-energy.json) | 29 | 11 |
 | [Measurements and calibration](topics/measurement-lineage.json) | 36 | 6 |
 | [Gravity and quantum cosmology](topics/modified-gravity.json) | 19 | 4 |
-| [Stochastic vacuum and spacetime discreteness](topics/stochastic-vacuum.json) | 7 | 0 |
+| [Stochastic vacuum and spacetime discreteness](topics/stochastic-vacuum.json) | 8 | 3 |
 
 Topics are navigation groups. Membership does not establish equivalent physics.
 
@@ -28,10 +28,12 @@ Topics are navigation groups. Membership does not establish equivalent physics.
 | --- | --- |
 | [Flat constant-w fluid with CLASS PPF closure](prospects/constant-w-smooth-fluid-comparison.json) | Pinned external CLASS Lambda-CDM reference |
 | [Scalar early energy](prospects/ede-fixed-endpoint-ruler.json) | ΛCDM |
+| [Everpresent Lambda: stochastic vacuum](prospects/everpresent-lambda-conservation-and-cmb-audit.json) | LambdaCDM |
 | [Full ΛCDM reference](prospects/lcdm-baseline-reference-audit.json) | Planck 2018 base ΛCDM |
 | [Conditional massless background and BAO](prospects/lcdm-massless-conditional-comparison.json) | Planck base ΛCDM comparison |
 | [Localized Gauss–Bonnet dark energy](prospects/localized-gauss-bonnet-source-and-stability-audit.json) | LambdaCDM |
 | [Triggered dark vacuum transition](prospects/nede-piecewise-background.json) | ΛCDM |
+| [Unimodular dark energy from an Ohmic bath](prospects/ohmic-unimodular-diffusion-noise-audit.json) | LambdaCDM |
 | [Deceleration reconstruction](prospects/q-reconstruction-continuity-and-derivative-interpretation.json) | Flat ΛCDM reference |
 | [Spin and holographic dark-energy source audit](prospects/spin-holographic-source-and-photon-audit.json) | LambdaCDM |
 | [Staged dark-sector decay](prospects/staged-decay-energy-and-background-claim-audit.json) | Flat GR · radiation + matter |
@@ -49,6 +51,8 @@ Combined models require compatibility checks before promotion.
 - [Constant coupling retains a percent-scale scalar tracking residue](ideas/constant-coupling-scalar-residual-floor.json)
 - [Constant-w fluid with declared CLASS PPF closure](ideas/constant-w-smooth-fluid-source-subclass.json)
 - [Dark-Higgs-mediated massive-vector scattering gives a separate SIDM candidate](ideas/dark-higgs-vector-sidm-candidate.json)
+- [Seed selection and conditional CMB limits on Model 1](ideas/everpresent-lambda-seed-selection-and-cmb-limit.json)
+- [Spacetime-volume noise as an everpresent vacuum scale](ideas/everpresent-lambda-volume-noise.json)
 - [Trace spin source and photon prescription must close before a duality signal](ideas/frenkel-trace-and-maxwell-duality-closure.json)
 - [Gauss–Bonnet benchmark and stability must agree with one fixed action](ideas/gauss-bonnet-minimum-and-stability-consistency.json)
 - [Conditional negative-spin background with Hubble-cutoff holographic energy](ideas/hubble-cutoff-negative-spin-background.json)
@@ -56,6 +60,7 @@ Combined models require compatibility checks before promotion.
   - [Selected fitted q upturn requires an explicit acceleration derivative test](ideas/conditional-q-upturn-not-acceleration-endpoint.json)
 - [Localized Gauss–Bonnet coupling around a hybrid scalar minimum](ideas/localized-gauss-bonnet-oscillatory-dark-energy.json)
 - [Pressureless matter and massless supplied-drag comparison](ideas/massless-supplied-drag-comparison.json)
+- [A hidden Ohmic bath generates unimodular vacuum energy](ideas/ohmic-unimodular-hidden-bath-diffusion.json)
 - [Planck-conditioned base ΛCDM](ideas/planck-conditioned-base-lcdm.json)
 - [Positive exponential sums cannot produce steepening followed by flattening along monotonic rolling](ideas/positive-exponential-slope-variance-obstruction.json)
 - [Standardized SN distances and shared calibration](ideas/sn-standardized-distance-lineage.json)
@@ -72,7 +77,7 @@ Combined models require compatibility checks before promotion.
 - [Tracking scalar unification requires a depletion branch between early and late energy](ideas/unified-scalar-steep-steeper-shallow.json)
 
 [Typed relationships](graph.json) preserve overlap, distinctions, critique, shared data and prospect links.
-[Bibliographic citations](citations.json): 64 explicit links; the index is incomplete.
+[Bibliographic citations](citations.json): 77 explicit links; the index is incomplete.
 
 ## Papers
 
@@ -134,7 +139,7 @@ Combined models require compatibility checks before promotion.
 | [Aspects of Everpresent $Λ$ (I): A Fluctuating Cosmological Constant from Spacetime Discreteness](https://arxiv.org/abs/2304.03819v2) | [2304.03819v2](papers/2304.03819v2.json) | screened |
 | [The weak, the strong and the ugly -- A comparative analysis of interacting stepped dark radiation](https://arxiv.org/abs/2306.12469v2) | [2306.12469v2](papers/2306.12469v2.json) | screened |
 | [Cosmic topology. Part IIa. Eigenmodes, correlation matrices, and detectability of orientable Euclidean manifolds](https://arxiv.org/abs/2306.17112v3) | [2306.17112v3](papers/2306.17112v3.json) | screened |
-| [Aspects of Everpresent $Λ$ (II): Cosmological Tests of Current Models](https://arxiv.org/abs/2307.13743v2) | [2307.13743v2](papers/2307.13743v2.json) | screened |
+| [Aspects of Everpresent $Λ$ (II): Cosmological Tests of Current Models](https://arxiv.org/abs/2307.13743v2) | [2307.13743v2](papers/2307.13743v2.json) | reviewed |
 | [Cosmological foundations revisited with Pantheon+](https://arxiv.org/abs/2311.01438v2) | [2311.01438v2](papers/2311.01438v2.json) | screened |
 | [Scalable hierarchical BayeSN inference: Investigating dependence of SN Ia host galaxy dust properties on stellar mass and redshift](https://arxiv.org/abs/2401.08755v2) | [2401.08755v2](papers/2401.08755v2.json) | screened |
 | [Trapped early dark energy](https://arxiv.org/abs/2401.08812v1) | [2401.08812v1](papers/2401.08812v1.json) | screened |
@@ -165,6 +170,7 @@ Combined models require compatibility checks before promotion.
 | [Holographic Dark Energy with Hubble Radius as an Infrared Cutoff in Einstein-Cartan Gravity](https://arxiv.org/abs/2605.22143v2) | [2605.22143v2](papers/2605.22143v2.json) | screened |
 | [Unifying Early and Late Dark Energy: Dynamical Requirements and Obstructions](https://arxiv.org/abs/2605.26116v2) | [2605.26116v2](papers/2605.26116v2.json) | reviewed |
 | [Interacting dark energy constraints from Fermi GRBs and Pantheon+ SNe Ia with full GRB covariance](https://arxiv.org/abs/2606.00549v2) | [2606.00549v2](papers/2606.00549v2.json) | screened |
+| [Dark energy genesis: modeling dissipative effects in primordial cosmology](https://arxiv.org/abs/2607.03272v1) | [2607.03272v1](papers/2607.03272v1.json) | reviewed |
 | [Modeling Uncertainties in Modified Gravity Predictions for the Stochastic Gravitational-Wave Background](https://arxiv.org/abs/2607.05331v2) | [2607.05331v2](papers/2607.05331v2.json) | screened |
 | [Updated 1.1% Precision Values of the Hubble Constant with Corrected Pantheon+ and Dark Energy Survey (DES)-DOVEKIE Type Ia Supernovae](https://arxiv.org/abs/2607.24443v2) | [2607.24443v2](papers/2607.24443v2.json) | read |
 | [A Simulation Based Inference Approach to Modelling of Type Ia Supernova Populations](https://arxiv.org/abs/2607.28725v3) | [2607.28725v3](papers/2607.28725v3.json) | screened |
@@ -186,7 +192,7 @@ Combined models require compatibility checks before promotion.
 | [AdS - de Sitter transition in interacting dark energy models](https://arxiv.org/abs/2609.38422v1) | [2609.38422v1](papers/2609.38422v1.json) | screened |
 | [Metastable Dark Energy on the Phantom Brane](https://arxiv.org/abs/2609.39039v1) | [2609.39039v1](papers/2609.39039v1.json) | screened |
 | [Structure formation in anisotropic Einstein-Cartan cosmologies](https://arxiv.org/abs/astro-ph/0009150v1) | [astro-ph/0009150v1](papers/astro-ph__0009150v1.json) | screened |
-| [Everpresent Lambda](https://arxiv.org/abs/astro-ph/0209274v1) | [astro-ph/0209274v1](papers/astro-ph__0209274v1.json) | screened |
+| [Everpresent Lambda](https://arxiv.org/abs/astro-ph/0209274v1) | [astro-ph/0209274v1](papers/astro-ph__0209274v1.json) | reviewed |
 | [The end of unified dark matter?](https://arxiv.org/abs/astro-ph/0212114v2) | [astro-ph/0212114v2](papers/astro-ph__0212114v2.json) | screened |
 | [Entropy perturbations in quartessence Chaplygin models](https://arxiv.org/abs/astro-ph/0306004v2) | [astro-ph/0306004v2](papers/astro-ph__0306004v2.json) | screened |
 | [Early Dark Energy Cosmologies](https://arxiv.org/abs/astro-ph/0601544v2) | [astro-ph/0601544v2](papers/astro-ph__0601544v2.json) | screened |
@@ -199,7 +205,7 @@ Combined models require compatibility checks before promotion.
 | [Efficient Computation of CMB anisotropies in closed FRW models](https://arxiv.org/abs/astro-ph/9911177v2) | [astro-ph/9911177v2](papers/astro-ph__9911177v2.json) | discovered |
 | [Metric perturbations in Einstein-Cartan Cosmology](https://arxiv.org/abs/gr-qc/0202022v1) | [gr-qc/0202022v1](papers/gr-qc__0202022v1.json) | screened |
 | [Generalized Chaplygin Gas, Accelerated Expansion and Dark Energy-Matter Unification](https://arxiv.org/abs/gr-qc/0202064v2) | [gr-qc/0202064v2](papers/gr-qc__0202064v2.json) | screened |
-| [A Strong Constraint on Ever-Present Lambda](https://arxiv.org/abs/gr-qc/0612128v2) | [gr-qc/0612128v2](papers/gr-qc__0612128v2.json) | screened |
+| [A Strong Constraint on Ever-Present Lambda](https://arxiv.org/abs/gr-qc/0612128v2) | [gr-qc/0612128v2](papers/gr-qc__0612128v2.json) | read |
 | [Cosmic clocks, cosmic variance and cosmic averages](https://arxiv.org/abs/gr-qc/0702082v4) | [gr-qc/0702082v4](papers/gr-qc__0702082v4.json) | screened |
 
 ## Investigations
@@ -211,10 +217,12 @@ Combined models require compatibility checks before promotion.
 | [Flat constant-w fluid with CLASS PPF closure](../designs/candidate-constant-w-smooth-fluid-v1.json) | needs_review |
 | [DESI DR2 full compressed-vector contract](../designs/candidate-desi-dr2-full-compression-contract.json) | blocked |
 | [EDE fixed-endpoint sound-horizon response](../designs/candidate-ede-fixed-endpoint-ruler.json) | blocked |
+| [Everpresent Lambda: match background noise to a consistent observable prescription](../designs/candidate-everpresent-lambda-conservation-and-cmb-audit.json) | blocked |
 | [Gauss–Bonnet minimum and stability audit](../designs/candidate-gauss-bonnet-minimum-and-stability-audit.json) | blocked |
 | [Full ΛCDM reference and stack-closure audit](../designs/candidate-lcdm-baseline-reference-audit.json) | blocked |
 | [Massless supplied-drag ΛCDM comparison](../designs/candidate-lcdm-massless-conditional-comparison.json) | ready_for_consumer_review |
 | [NEDE piecewise background conservation and matching](../designs/candidate-nede-piecewise-background.json) | blocked |
+| [Unimodular bath: audit energy bookkeeping and the cold-noise regime](../designs/candidate-ohmic-unimodular-diffusion-noise-audit.json) | blocked |
 | [Perfect-fluid finite-band transfer](../designs/candidate-perfect-fluid-band-transfer.json) | blocked |
 | [Deceleration matching and derivative audit](../designs/candidate-q-reconstruction-continuity-and-derivative-interpretation.json) | blocked |
 | [SDSS released observer and covariance contract](../designs/candidate-sdss-released-observer-contract.json) | blocked |

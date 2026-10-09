@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "ohmic-unimodular-hidden-bath-diffusion",
+  "title": "A hidden Ohmic bath generates unimodular vacuum energy",
+  "family": "open_system_cosmology",
+  "status": "source_reviewed_proposal",
+  "review_id": "2026-10-09-stochastic-vacuum-science",
+  "source_evidence": [
+    {
+      "paper_id": "arxiv:2607.03272v1",
+      "locator": "Secs.II-IV Eqs.(5)-(6),(18)-(38); Eq.(40); Appendix A",
+      "source_sha256": {
+        "html": "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+        "pdf": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+        "extracted_text": "2ddac41a495d8180db11b09fa1fdf1340cf735de7fe081495e5f43a4494b9ccc"
+      }
+    }
+  ],
+  "assumptions": [
+    "Flat FLRW unimodular gravity with bath Hamiltonian independent of the reduced geometric variables.",
+    "Harmonic bath in unimodular time dt=a^3 d tau, Ohmic continuum/local limit and scalar mass renormalization.",
+    "Illustrative massless scalar p=rho, small diffusion coupling, initially vanishing effective Lambda and sufficiently cold initial bath.",
+    "Lambda is geometric (mass squared), rho_Lambda=Lambda/(8piG); m_p=G^(-1/2) is the unreduced Planck mass.",
+    "The printed Eq.(29) uses energy-density terms for deltaLambda and a half-sized dissipation integral, conflicting with Eqs.(28),(31),(33). No corrected Hamiltonian normalization is silently adopted."
+  ],
+  "predictions": [
+    "In the noise-neglected illustrative branch, energy transfer generates a monotonic positive Lambda approaching a constant.",
+    "The magnitude depends on diffusion strength and onset conditions; a realistic observed-dark-energy prediction and perturbation closure are not supplied.",
+    "Eq.(38) and the first-order Eq.(39)-(40) are mutually consistent as a conditional deterministic system, but their claimed derivation from the printed Eq.(29) remains blocked.",
+    "Appendix A explicitly calculates <xi phi_dot>. Its displayed averages with Eq.(33) yield rho=T_d^4/2, whereas Eq.(A9) prints T_d^4; an unspecified white-noise endpoint convention cannot be used to silently repair the printed identities. Eq.(A10) therefore remains unaccepted as a quantitative correction."
+  ],
+  "qualification": "Source proposal or reported conditional test only; no independent reproduction, observational reassessment or scientific qualification."
+}

@@ -53,11 +53,457 @@
     }
   ],
   "screen": {
-    "status": "selected",
-    "basis": "abstract",
-    "reason": "Selected for full source reading: foundation, independent criticism, and later observational reassessment."
+    "status": "reviewed",
+    "basis": "full_text",
+    "reason": "Full Luna extraction and independent Sol source assessment completed; source-development merit only, with unresolved physics and no numerical/scientific qualification."
   },
-  "extraction": null,
-  "review_id": null,
-  "idea_ids": []
+  "extraction": {
+    "schema_version": 1,
+    "paper_id": "arxiv:astro-ph/0209274v1",
+    "arxiv_id": "astro-ph/0209274",
+    "version": 1,
+    "title": "Everpresent Lambda",
+    "authors": [
+      "Maqbool Ahmed",
+      "Scott Dodelson",
+      "Patrick B. Greene",
+      "Rafael Sorkin"
+    ],
+    "categories": [
+      "astro-ph",
+      "gr-qc",
+      "hep-th"
+    ],
+    "requested_model": "gpt-6-luna",
+    "requested_reasoning_effort": "xhigh",
+    "agent_id": "/root/luna_foundation",
+    "backend_identity": null,
+    "backend_identity_note": "The backend identity is not exposed in the task context.",
+    "reading_level": "full_text",
+    "source_hashes": {
+      "pdf": "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+      "extracted_text": "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1"
+    },
+    "source_receipts": [
+      {
+        "role": "pdf",
+        "url": "https://arxiv.org/pdf/astro-ph/0209274v1",
+        "retrieved_utc": "2026-10-09T17:48:03.970618+00:00",
+        "path": ".work/unconventional-20261009/acquisition/objects/04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4.pdf",
+        "bytes": 202126,
+        "sha256": "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+        "identity_check": "Recomputed digest matches receipt. Title, author list, body and rotated arXiv watermark identify astro-ph/0209274v1."
+      },
+      {
+        "role": "extracted_text",
+        "url": "https://arxiv.org/pdf/astro-ph/0209274v1",
+        "retrieved_utc": "2026-10-09T17:48:04.171433+00:00",
+        "path": ".work/unconventional-20261009/acquisition/objects/1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1.txt",
+        "bytes": 44631,
+        "sha256": "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1",
+        "derived_from_sha256": "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+        "tool": "pdftotext -layout"
+      }
+    ],
+    "identity_check": {
+      "manifest_versioned_id": "astro-ph/0209274v1",
+      "manifest_title": "Everpresent Lambda",
+      "manifest_authors": [
+        "Maqbool Ahmed",
+        "Scott Dodelson",
+        "Patrick B. Greene",
+        "Rafael Sorkin"
+      ],
+      "status": "Pinned v1 identity confirmed by the title, authors, article body and PDF watermark.",
+      "date_discrepancy": "The PDF watermark reads arXiv:astro-ph/0209274v1, 13 Sep 2002, matching the manifest. The title-page typeset date is October 26, 2018 and PDF metadata gives a 27 Oct 2018 creation date. The reason for the discrepancy is not established; no different arXiv version is inferred.",
+      "rejected_candidate": "The manifest's HTML candidate (sha256 0adc9457bdb46b73206a24a2f9963ed96d6708ec1e1a61ea629fd05b653ab9df) failed title/body identity screening and was not used as a reading source."
+    },
+    "coverage": {
+      "sections_read": [
+        "Title page, author affiliations, abstract and footnotes",
+        "Section I: Introduction",
+        "Section II: Causet Theory",
+        "Section III: Simulations",
+        "Section IV: Complications",
+        "Section V: Conclusion",
+        "Acknowledgements",
+        "Complete bibliography, references [1]-[19]"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "appendices": "No appendix is present.",
+      "figure_check": "All four figures were visually inspected in original-PDF renders produced with pdftoppm at 140 dpi and kept in .work/unconventional-20261009/foundation-reading/. Figure 1 (PDF p. 4) is a schematic of backward light cones; Fig. 2 (p. 5) plots one alpha=0.01 density history; Fig. 3 (p. 6) plots Omega_Lambda for one alpha=0.02 realization; Fig. 4 (p. 7) is the alpha=0.01 histogram over 6000 realizations. These are model diagrams/simulation outputs, not observations. Important displayed equations (1)-(8) were checked against the rendered PDF on pp. 2-5 and 7.",
+      "limitations": [
+        "All main text and the complete bibliography were read; no main-text section, appendix or PDF page remains unread.",
+        "No independent reproduction of the random histories, current-data reassessment, perturbation calculation or numerical experiment was performed.",
+        "The title-page versus watermark date discrepancy is unresolved; the pinned v1 identity is retained as printed."
+      ]
+    },
+    "publication_and_followup_status": {
+      "source_era": "The pinned metadata and watermark give 13 Sep 2002 for v1. The typeset title-page and PDF metadata dates are in October 2018; their relation to the pinned arXiv version is unknown.",
+      "affiliations_as_printed": [
+        {
+          "authors": [
+            "Maqbool Ahmed",
+            "Rafael Sorkin"
+          ],
+          "source_text": "Department of Physics, Syracuse University, Syracuse, NY 13244-1130."
+        },
+        {
+          "authors": [
+            "Scott Dodelson",
+            "Patrick B. Greene"
+          ],
+          "source_text": "NASA/Fermilab Astrophysics Center, Fermi National Accelerator Laboratory, Batavia, IL 60510-0500."
+        },
+        {
+          "authors": [
+            "Scott Dodelson"
+          ],
+          "source_text": "Department of Astronomy & Astrophysics, The University of Chicago, Chicago, IL 60637-1433."
+        }
+      ],
+      "acknowledged_relationships": "The article acknowledges DOE, NASA, NSF, and EPSRC support; hospitality at the Aspen Center for Physics and Goodenough College; and useful conversations between Patrick Greene and J. Moffatt at the University of Toronto, plus hospitality at the Canadian Institute for Theoretical Astrophysics. It says the Dodelson-Sorkin collaboration began at Aspen. These are source statements only; no inference about expertise, independence or scientific standing is made.",
+      "followups": "The conclusion names possible tests involving primordial perturbations, BBN, CMB acoustic oscillations and structure growth. These are proposed directions, not calculations or completed observational tests in this paper."
+    },
+    "summary": "Ahmed, Dodelson, Greene and Sorkin combine the causal-set picture of Poisson fluctuations in spacetime volume with the unimodular-gravity conjugacy of Lambda and four-volume. They infer a heuristic fluctuation scale Delta Lambda ~ 1/sqrt(V), assume a zero target mean, choose the past light-cone four-volume, and implement Lambda as a random walk in action per element. Their illustrative homogeneous cosmology keeps the Friedmann equation while dropping the acceleration equation. Some selected histories have a late positive Lambda-like contribution, but the simulations also expose a tension between fluctuation amplitude and histories terminated when total density becomes negative. The paper explicitly leaves the full quantum dynamics, conservation-compatible evolution and behavior through nonpositive total density unresolved. No data likelihood is fit and no parameter-free prediction of the observed Lambda is obtained.",
+    "ideas": [
+      {
+        "local_id": "ahmed-2002-causet-unimodular-volume-fluctuation-scale",
+        "title": "Causal-set volume fluctuations motivate a declining Lambda fluctuation scale",
+        "claim_type": "author_argument",
+        "description": "The authors combine a discrete element count N identified macroscopically with four-volume V, Poisson count fluctuations of scale sqrt(N), and the unimodular-gravity conjugacy of Lambda and V to motivate Delta Lambda ~ 1/sqrt(V). They then take the target mean to be zero as an assumption whose mechanism remains unknown. The paper says a quantum dynamics for causal sets is not yet available; this is a heuristic magnitude argument, not a derived stochastic law or a derivation of the measured value.",
+        "locators": [
+          "PDF p. 2, Section II and Eq. (1)",
+          "PDF p. 3, Eq. (2) and surrounding text",
+          "PDF p. 8, conclusion"
+        ],
+        "equations": [
+          {
+            "expression": "Delta Lambda ~ 1/Delta V ~ 1/sqrt(V)",
+            "locator": "PDF p. 2, Eq. (1)",
+            "conventions_definitions": "V is four-volume; the preceding argument identifies Poisson fluctuations in element number N with Delta V ~ sqrt(V), and treats Lambda as conjugate to V.",
+            "domain": "Heuristic causal-set/unimodular argument; the zero mean or target value is separately assumed, not derived.",
+            "confidence": "High for transcription; the paper expressly leaves the underlying quantum dynamics and interpretation open."
+          },
+          {
+            "expression": "rho_Lambda ~ V^(-1/2) ~ H^2 ~ rho_critical",
+            "locator": "PDF p. 3, Eq. (2)",
+            "conventions_definitions": "The authors approximate V by the fourth power of the Hubble radius and set 8 pi G = 1; rho_Lambda denotes the cosmological-term energy-density scale in these units.",
+            "domain": "Order-of-magnitude scaling, asserted for all epochs under the chosen volume interpretation.",
+            "confidence": "High for transcription; the V-to-H estimate and target mean are modeling assumptions."
+          }
+        ]
+      },
+      {
+        "local_id": "ahmed-2002-past-light-cone-volume-choice",
+        "title": "The fluctuation-controlling volume is chosen as a representative past light cone",
+        "claim_type": "author_model_choice",
+        "description": "For an observation-oriented implementation, the paper identifies V(t) with the four-volume of the backward light cone of a representative point. The authors acknowledge that this differs somewhat from the fixed-four-volume interpretation used in the unimodular path-integral motivation. They note that the light-cone volume is dominated by recent history and claim V ~ H^-4 recently even if the early universe inflated.",
+        "locators": [
+          "PDF p. 3, text following Eq. (2)",
+          "PDF p. 4, Fig. 1 and Eq. (3)"
+        ],
+        "equations": [
+          {
+            "expression": "V(t) = (4 pi/3) integral_0^t dt' a(t')^3 [integral_(t')^t dt''/a(t'')]^3",
+            "locator": "PDF p. 4, Eq. (3)",
+            "conventions_definitions": "a(t) is the scale factor and t is proper cosmic time; the inner integral is the comoving radial distance to the past light cone.",
+            "domain": "Homogeneous isotropic background with a Big Bang lower limit in the paper's flat cosmological setup.",
+            "confidence": "High; the expression was checked in the original rendered equation."
+          }
+        ]
+      },
+      {
+        "local_id": "ahmed-2002-random-walk-lambda-ansatz",
+        "title": "Lambda is implemented as a random walk in action per causet element",
+        "claim_type": "author_ansatz",
+        "description": "The authors treat Lambda(N)=S(N)/N, where S is the sum of zero-mean, unit-standard-deviation random increments, and use a dimensionless alpha to set the increment amplitude. Their discrete rule uses the increase in the chosen four-volume as delta N. This is a simulation prescription motivated by the heuristic scaling; the authors do not identify it as the completed quantum causal-set law or derive alpha from fundamental parameters.",
+        "locators": [
+          "PDF p. 3, random-walk discussion",
+          "PDF pp. 4-5, Eqs. (4)-(5)"
+        ],
+        "equations": [
+          {
+            "expression": "delta N_i = N_(i+1)-N_i = V(t_(i+1))-V(t_i)",
+            "locator": "PDF p. 4, Eq. (4)",
+            "conventions_definitions": "N tracks the chosen four-volume in fundamental units; i indexes successive simulation time steps.",
+            "domain": "The authors' discrete background algorithm.",
+            "confidence": "High; checked against the PDF."
+          },
+          {
+            "expression": "rho_Lambda,i+1 = [S_i + alpha xi_(i+1) sqrt(delta N_i)]/[N_i+delta N_i]",
+            "locator": "PDF p. 5, Eq. (5)",
+            "conventions_definitions": "xi has mean zero and standard deviation one; S_0 is set to zero at an unspecified very early t_0; alpha is an unknown dimensionless parameter.",
+            "domain": "Stochastic ansatz for the authors' simulation; no unique probability law beyond the stated increment moments is established in the text.",
+            "confidence": "High for equation and stated inputs; no inference about an unreported random-number distribution."
+          }
+        ]
+      },
+      {
+        "local_id": "ahmed-2002-friedmann-only-evolution-choice",
+        "title": "The simulation evolves with the Friedmann equation alone",
+        "claim_type": "author_model_choice",
+        "description": "The authors impose homogeneity and keep the first-order Friedmann equation while dropping the acceleration equation, because a time-dependent Lambda is incompatible with both equations if other stress-energy components are separately conserved. This is an acknowledged incompleteness: it does not provide a full Einstein-equation or Bianchi-consistent dynamics for fluctuating Lambda. The Bianchi/conservation issue is explicitly discussed in Section IV and is not a newly inferred objection.",
+        "locators": [
+          "PDF p. 3, paragraph choosing the evolution equation",
+          "PDF p. 5, Eq. (6)",
+          "PDF pp. 7-8, Section IV"
+        ],
+        "equations": [
+          {
+            "expression": "H^2 = (a_dot/a)^2 = (rho_matter + rho_radiation + rho_Lambda)/3",
+            "locator": "PDF p. 5, Eq. (6)",
+            "conventions_definitions": "Spatially flat homogeneous background; hbar=c=m_p=1 and 8 pi G=1. The text treats ordinary matter and radiation as separately conserved while Lambda varies.",
+            "domain": "The simulation prescription only; the independent acceleration equation is dropped.",
+            "confidence": "High; visually checked in the original PDF."
+          }
+        ]
+      },
+      {
+        "local_id": "ahmed-2002-selected-stochastic-history-illustrations",
+        "title": "Selected random histories can mimic late-time dark energy in the chosen background prescription",
+        "claim_type": "reported_simulation_result",
+        "description": "Figure 2 shows one alpha=0.01 history in which |rho_Lambda| tracks radiation roughly as a^-4 and matter roughly as a^-3. In a different alpha=0.02 realization, the authors report Omega_Lambda fluctuating about zero with amplitude of order 0.5, positive and above one half today, and changing little back to z=1 (a=0.5). They say roughly half the realizations have positive rho_Lambda today. These are conditional model illustrations, not measured values, likelihood constraints or a posterior probability for the real universe.",
+        "locators": [
+          "PDF p. 5, Fig. 2 and surrounding text",
+          "PDF pp. 5-6, Fig. 3 and surrounding text"
+        ],
+        "equations": []
+      },
+      {
+        "local_id": "ahmed-2002-amplitude-cutoff-tension",
+        "title": "Larger fluctuations raise the chance of negative total density and terminate runs",
+        "claim_type": "reported_simulation_result",
+        "description": "The authors terminate a run whenever rho_tot in Eq. (6) becomes negative. For runs started at a=10^-32, they report only about a one-in-three chance of completing at alpha=0.02. Lowering alpha to 0.01 makes such terminations rare, but a histogram of 6000 alpha=0.01 realizations rarely reaches final Omega_Lambda values they considered large enough for observations. Their stated alpha range 0.01-0.02 is a compromise in this particular implementation, not a derived or uniquely selected physical parameter range.",
+        "locators": [
+          "PDF p. 6, discussion of termination and alpha choices",
+          "PDF p. 7, Fig. 4 caption and histogram"
+        ],
+        "equations": []
+      },
+      {
+        "local_id": "ahmed-2002-conservation-completions-and-negative-density-speculation",
+        "title": "Conservation completions and evolution through nonpositive total density remain proposals",
+        "claim_type": "author_proposal_and_speculation",
+        "description": "Section IV considers, but does not implement, a positive-semidefinite Lambda option and an energy-transfer option. For gravitational waves treated as radiation, the latter gives rho_dot_grav=-4 H rho_grav-Lambda_dot; generic increasing fluctuations can make rho_grav negative, while the authors say a monotonically decreasing Lambda could avoid that specific issue. They then use a classical negative-constant example to motivate possible recollapse and speculate that a fluctuating Lambda might permit recollapse reversal or that rho_tot<0 corresponds to tunneling in a fuller sum-over-histories theory. They explicitly state these behaviors do not follow from their simple ansatz and await further dynamics.",
+        "locators": [
+          "PDF pp. 7-8, Section IV, Eq. (8) and following discussion"
+        ],
+        "equations": [
+          {
+            "expression": "rho_dot_grav = -4 H rho_grav - Lambda_dot(t)",
+            "locator": "PDF p. 7, Eq. (8)",
+            "conventions_definitions": "The proposed example transfers energy between a radiation-like gravitational-wave component and the cosmological term; the other matter components remain separately conserved. Units set 8 pi G=1.",
+            "domain": "An alternative conservation completion discussed by the authors, not the evolution used in their simulations.",
+            "confidence": "High for transcription; the completion is proposed rather than established."
+          }
+        ]
+      },
+      {
+        "local_id": "ahmed-2002-early-universe-test-proposals",
+        "title": "The authors identify possible early-universe tests but do not calculate them",
+        "claim_type": "author_prediction",
+        "description": "The paper points to possible effects on primordial perturbations, BBN light-element production, CMB acoustic oscillations and later structure growth. It gives a qualitative argument about positive or negative rho_Lambda and helium abundance, but supplies no BBN likelihood, CMB spectrum, perturbation closure, structure calculation or observational fit. These are future test avenues only.",
+        "locators": [
+          "PDF p. 6, BBN discussion",
+          "PDF p. 9, conclusion"
+        ],
+        "equations": []
+      }
+    ],
+    "quantities": [
+      {
+        "name": "Dimensionless random-walk amplitude alpha",
+        "value": null,
+        "unit": "dimensionless",
+        "uncertainty": "Unknown model parameter; not measured, derived or fitted.",
+        "conditioning": "Controls the stochastic increment in Eq. (5). Simulations illustrate alpha=0.01 and alpha=0.02; authors discuss a compromise range 0.01-0.02.",
+        "locator": "PDF p. 5, Eq. (5); pp. 5-7, Figs. 2-4 and accompanying text"
+      },
+      {
+        "name": "Random increment xi",
+        "value": null,
+        "unit": "dimensionless random variable",
+        "uncertainty": "The mean is stated as zero and standard deviation as one; a full distribution and temporal correlation law are not specified here.",
+        "conditioning": "Used in the random-walk ansatz Eq. (5).",
+        "locator": "PDF p. 5, text after Eq. (5)"
+      },
+      {
+        "name": "Chance of a completed run from a=10^-32 at alpha=0.02",
+        "value": "about 1/3",
+        "unit": "fraction of model realizations",
+        "uncertainty": "Approximate simulation statement; run count and sampling uncertainty are not reported in this passage.",
+        "conditioning": "The authors' prescription terminates a history once total effective density becomes negative.",
+        "locator": "PDF p. 6, alpha discussion"
+      },
+      {
+        "name": "Number of alpha=0.01 realizations in final-Omega histogram",
+        "value": "6000",
+        "unit": "simulation realizations",
+        "uncertainty": "Reported run count; no sampling interval or random-seed details are supplied.",
+        "conditioning": "The paper says only rarely does final Omega_Lambda approach values considered observationally adequate; the histogram is a simulation output.",
+        "locator": "PDF p. 6, discussion of Fig. 4; PDF p. 7, Fig. 4 caption"
+      },
+      {
+        "name": "Scale factor used to label the early BBN-era concern",
+        "value": "approximately 10^-9",
+        "unit": "dimensionless scale factor a",
+        "uncertainty": "Approximate epoch marker in qualitative text; not a fitted or independently assessed BBN input.",
+        "conditioning": "The authors state excess energy there could spoil successful BBN predictions.",
+        "locator": "PDF p. 5, discussion following Fig. 2"
+      }
+    ],
+    "data_dependencies": [
+      {
+        "observable_or_constraint": "No empirical dataset or likelihood is used.",
+        "source_as_cited": "The introduction refers to then-current dark-energy observations and the text cites observational and BBN papers; the simulations themselves use model-generated random histories.",
+        "use_in_paper": "Qualitative motivation and comparison only. The paper does not fit cosmological parameters or reanalyze observations.",
+        "source_era": "Pinned arXiv v1 dated 2002-09-13 in metadata and watermark; typeset date discrepancy is recorded separately.",
+        "conditioning_and_missingness": "No data vector, likelihood, priors, covariance, nuisance model, calibration, posterior or current-data reassessment is supplied. Figures 2-4 are simulations, not observational evidence."
+      }
+    ],
+    "assumptions": [
+      "Causal-set element count corresponds to spacetime volume with Poisson fluctuations, and Lambda is conjugate to four-volume in the relevant unimodular formulation.",
+      "The target mean of Lambda is zero; the paper assumes this and says its mechanism remains to be explained.",
+      "The volume governing fluctuations is a representative past light cone, although the authors acknowledge a tension with the fixed-volume meaning in their unimodular motivation.",
+      "The time-dependent homogeneous background keeps only the Friedmann equation and separately conserves ordinary matter/radiation; the acceleration equation is dropped.",
+      "The simulation uses a random walk with zero-mean, unit-standard-deviation increments and a free dimensionless amplitude alpha; no full quantum stochastic law or alpha derivation is provided.",
+      "A simulation is terminated if its total effective density becomes negative; no completed dynamics through that boundary is supplied."
+    ],
+    "caveats": [
+      "The paper describes the causal-set quantum dynamics as undeveloped; the predicted fluctuation magnitude and zero target mean are motivational assumptions, not consequences of a completed quantum theory.",
+      "The displayed scaling rho_Lambda ~ rho_critical does not determine the observed Lambda's sign, realization, probability conditioned on survival, or detailed time correlations.",
+      "Keeping the Friedmann equation while dropping the acceleration equation is an explicit modeling choice. The paper acknowledges the contracted Bianchi identity and energy-conservation problem; it does not provide a complete field-equation closure.",
+      "The alpha compromise is entangled with the negative-density termination rule. Survival-conditioned histories and illustrative favorable realizations do not by themselves establish the probability of an observationally viable universe under a complete model.",
+      "Section IV's positive-only Lambda and energy-transfer cases are alternatives the authors discuss, not dynamics derived or implemented for the random-walk model. Recollapse, reversal and tunneling are speculative extensions and explicitly do not follow from the paper's simple ansatz.",
+      "No perturbation theory, CMB computation, structure-growth calculation, BBN calculation, observational likelihood or independent numerical reproduction is provided. The BBN discussion is qualitative and refers to source-era disagreement.",
+      "The title-page typeset date and PDF creation metadata are in 2018 while the arXiv watermark and pinned metadata say September 2002; no explanation is established."
+    ],
+    "strongest_reason": "The paper makes its assumptions unusually testable: the heuristic volume-fluctuation scaling is translated into a concrete past-light-cone volume and discrete stochastic rule, and its simulations expose a specific tension between the chosen fluctuation amplitude and histories that hit negative total density. This gives later source review a clear target while keeping the numerical illustrations separate from evidence for the mechanism.",
+    "strongest_objection": "The stochastic law and its zero target mean are not derived from a completed causal-set quantum dynamics, and the background prescription is not a complete conservation-consistent cosmology: the authors keep the Friedmann equation and drop the acceleration equation, while unresolved negative-total-density histories terminate. Consequently, successful example histories do not establish a viable full cosmology or a parameter-free explanation of observed Lambda. The Bianchi/conservation issue is explicitly acknowledged by the authors.",
+    "cheapest_informative_next_source_check": "Check the original source cited as PDF reference [7], especially the printed arXiv item gr-qc/9706002 (version not printed), for the precise status and domain of the older 1/sqrt(V) fluctuation argument. This single cited-source check can distinguish an established result from the heuristic attribution in this paper; it would not resolve the separate Friedmann-only conservation closure.",
+    "usefulness": {
+      "assessment": "Useful as a foundation and source-development target for everpresent-Lambda work. It supplies an explicit heuristic chain, a volume convention, a stochastic simulation ansatz, early-universe test proposals, and candidly stated incompleteness. It is not a complete quantum-gravity derivation, a fitted model, an observational result or a scientific qualification.",
+      "best_follow_up": "A bounded source review should first check reference [7] against the claimed fluctuation scaling, while a separate equation review should keep the authors' random-walk ansatz distinct from the unimplemented conservation completions. No numerical test is authorized or needed for this Luna extraction.",
+      "promotion_status": "No idea, graph edge, prospect or design is accepted by this Luna extraction. Sol review and separate physical, consumer and qualification gates remain outstanding."
+    },
+    "citation_leads": [
+      {
+        "reference_label": "[7]",
+        "source_text": "R. D. Sorkin, 'Forks in the Road, on the Way to Quantum Gravity,' Int. J. Theor. Phys. 36:2759-2781 (1997), eprint gr-qc/9706002; the same reference also lists a 1991 chapter 'Spacetime and Causal Sets'.",
+        "cited_base_id": "gr-qc/9706002",
+        "cited_version": null,
+        "registered_paper_id": null,
+        "match_basis": "Printed base arXiv ID and source title/authors checked against registered papers; no exact registered paper match found. The version is not printed.",
+        "source_locator": "PDF p. 9, reference [7]",
+        "source_hashes": [
+          "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+          "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1"
+        ],
+        "relevance": "Cited foundation for the earlier fluctuating-Lambda argument; bounded next source check."
+      },
+      {
+        "reference_label": "[8]",
+        "source_text": "David P. Rideout and Rafael D. Sorkin, 'A Classical Sequential Growth Dynamics for Causal Sets,' Phys. Rev. D 61, 024002 (2000), eprint gr-qc/9904062.",
+        "cited_base_id": "gr-qc/9904062",
+        "cited_version": null,
+        "registered_paper_id": null,
+        "match_basis": "Printed base arXiv ID, title and authors checked; no exact registered paper match found. The version is not printed.",
+        "source_locator": "PDF p. 9, reference [8]",
+        "source_hashes": [
+          "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+          "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1"
+        ],
+        "relevance": "Classical growth dynamics the authors describe as a stepping stone; does not supply the missing quantum stochastic law by itself."
+      },
+      {
+        "reference_label": "[11]",
+        "source_text": "The reference lists S. Weinberg on classical unimodular gravity; several R. D. Sorkin works on fixed-volume sum-over-histories; W. G. Unruh on unimodular canonical quantum gravity; and A. Daughton, J. Louko and R. D. Sorkin, 'Instantons and unitarity in quantum cosmology with fixed four-volume,' Phys. Rev. D 58, 084008 (1998), eprint gr-qc/9805101.",
+        "cited_base_id": "gr-qc/9805101",
+        "cited_version": null,
+        "registered_paper_id": null,
+        "match_basis": "The one printed arXiv base ID and named paper checked against registered papers; no exact registered match found. The version is not printed.",
+        "source_locator": "PDF p. 9, reference [11]",
+        "source_hashes": [
+          "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+          "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1"
+        ],
+        "relevance": "Sources cited for the unimodular fixed-four-volume and Lambda-volume conjugacy background."
+      },
+      {
+        "reference_label": "[14]",
+        "source_text": "G. Steigman, eprint astro-ph/0208186, and S. Burles, K. M. Nollett and M. S. Turner, Astrophys. J. 552, L1 (2001).",
+        "cited_base_id": "astro-ph/0208186",
+        "cited_version": null,
+        "registered_paper_id": null,
+        "match_basis": "Printed base arXiv ID and author identity checked; no exact registered match found. The version is not printed.",
+        "source_locator": "PDF p. 10, reference [14]",
+        "source_hashes": [
+          "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+          "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1"
+        ],
+        "relevance": "Source-era BBN context for the paper's qualitative helium-abundance discussion."
+      },
+      {
+        "reference_label": "[19]",
+        "source_text": "A. Gomberoff, M. Henneaux and C. Teitelboim, 'Turning the Cosmological Constant into Black Holes,' eprint hep-th/0111032.",
+        "cited_base_id": "hep-th/0111032",
+        "cited_version": null,
+        "registered_paper_id": null,
+        "match_basis": "Printed base arXiv ID, title and authors checked; no exact registered paper match found. The version is not printed.",
+        "source_locator": "PDF p. 10, reference [19]",
+        "source_hashes": [
+          "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+          "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1"
+        ],
+        "relevance": "Cited as recent literature on a relaxation-style proposal, separate from the authors' random-walk model."
+      }
+    ],
+    "bibliography_audit": {
+      "checked_locator": "Complete PDF bibliography [1]-[19], pp. 9-10.",
+      "source_hashes": [
+        "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+        "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1"
+      ],
+      "registered_paper_matches_found": [],
+      "explicit_arxiv_ids_checked": [
+        "astro-ph/0111597",
+        "gr-qc/9706002",
+        "gr-qc/9904062",
+        "gr-qc/0009063",
+        "gr-qc/9805101",
+        "astro-ph/0208186",
+        "hep-th/0111032"
+      ],
+      "citation_coverage": "The complete printed bibliography was checked against register/papers using printed arXiv base IDs and source title/author identities, with journal details checked where available. No reference exactly matches another registered paper, so this reading creates zero citation links. A cited version remains null because the bibliography prints base IDs without version numbers. Later registered Everpresent-Lambda papers are not cited by this 2002 v1 paper; subject overlap or later authorship is not treated as citation."
+    },
+    "worker_packet_sha256": "74212c3843ef1f4ef89d471b6da43d0eb8e213e9c7c09298a8b2d642b554eeea",
+    "worker_source_hash_details": {
+      "pdf_sha256": "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+      "extracted_text_sha256": "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1",
+      "extracted_text_derived_from_pdf_sha256": "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4"
+    },
+    "provenance_amendments": [
+      {
+        "coordinator": "/root",
+        "reason": "Normalize worker hash keys to artifact role names required by validator; auxiliary manifest/derivation hashes retained separately. Actual bytes rehashed; no source identity or coverage changed.",
+        "original_packet_sha256": "74212c3843ef1f4ef89d471b6da43d0eb8e213e9c7c09298a8b2d642b554eeea"
+      }
+    ]
+  },
+  "review_id": "2026-10-09-stochastic-vacuum-science",
+  "idea_ids": [
+    "everpresent-lambda-volume-noise"
+  ]
 }

@@ -59,11 +59,738 @@
     }
   ],
   "screen": {
-    "status": "selected",
-    "basis": "abstract",
-    "reason": "Selected for full source reading: foundation, independent criticism, and later observational reassessment."
+    "status": "reviewed",
+    "basis": "full_text",
+    "reason": "Full Luna extraction and independent Sol source assessment completed; source-development merit only, with unresolved physics and no numerical/scientific qualification."
   },
-  "extraction": null,
-  "review_id": null,
-  "idea_ids": []
+  "extraction": {
+    "paper_id": "arxiv:2307.13743v2",
+    "requested_model": "gpt-6-luna",
+    "requested_reasoning_effort": "xhigh",
+    "agent_id": "/root/luna_recent",
+    "actual_backend_identity": "not exposed",
+    "reading_level": "full_text",
+    "source_identity": {
+      "title": "Aspects of Everpresent Λ (II): Cosmological Tests of Current Models",
+      "authors": [
+        "Santanu Das",
+        "Arad Nasiri",
+        "Yasaman K. Yazdi"
+      ],
+      "verified_against": [
+        "Pinned HTML title and article body",
+        "PDF first page: arXiv:2307.13743v2 [astro-ph.CO], dated 4 Oct 2024"
+      ],
+      "pdf_page_count": 37,
+      "affiliation": "Theoretical Physics Group, Blackett Laboratory, Imperial College London",
+      "license_access": "License unresolved in the acquisition record; packet contains original notes and links only."
+    },
+    "source_hashes": {
+      "html": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+      "pdf": "92984c3bc837a2f80629a7c04e80c4e25aed6f425667196e1c490148b7784460",
+      "extracted_text": "64e7568b9229c452e9fadff3d25c2196a0c87330ec24de86118baae867526dcf"
+    },
+    "source_paths": {
+      "html": ".work/unconventional-20261009/acquisition/objects/14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8.html",
+      "pdf": ".work/unconventional-20261009/acquisition/objects/92984c3bc837a2f80629a7c04e80c4e25aed6f425667196e1c490148b7784460.pdf",
+      "extracted_text": ".work/unconventional-20261009/acquisition/objects/64e7568b9229c452e9fadff3d25c2196a0c87330ec24de86118baae867526dcf.txt",
+      "acquisition_manifest": ".work/unconventional-20261009/acquisition/2307.13743v2-sources.json",
+      "reader_text": ".work/unconventional-20261009/2307.13743v2-reading.txt"
+    },
+    "coverage": {
+      "sections_read": [
+        "Abstract and source identity",
+        "1 Introduction",
+        "2 An Overview of Everpresent Λ, including 2.1 Model 1 and 2.2 Model 2",
+        "3 Cosmological Observations",
+        "4 Fitting Model 1 to Supernova Data, including 4.1 MCMC Analysis, 4.2 Diagnosing Good Seeds by a Single Parameter, and 4.3 Understanding Our Results With Mock Data",
+        "5 Fitting Model 1 to CMB Data, including methodology and results",
+        "6 Constraining Dark Energy Using CMB, including recombination, after recombination, ISW analysis, late-time numerical analysis, and before-recombination analysis",
+        "7 Discussion and Conclusion",
+        "Appendix A MCMC Analysis with a Seed Number",
+        "Appendix B On the Width of the Visibility Function",
+        "References [1]-[106], scanned for direct matches to current Prospector records and the six requested batch records"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "figure_check": "Rendered and visually inspected the original PDF pages containing Figures 1-14: PDF pages 7, 9-12, 15-16, 19, and 22-26. A contact sheet is retained at .work/unconventional-20261009/rendered/figure-pages-contact.png; detailed checks included the Om(z) plot on PDF page 11, Figure 8 on page 19, and Figure 13 on page 25. This is visual inspection of the plots themselves, not caption-only review.",
+      "formula_checks": [
+        "Model 1 Eqs. (2.1)-(2.4), original rendered PDF page 4",
+        "Model 2 Eqs. (2.5)-(2.6), original rendered PDF page 5",
+        "Bayesian seed weighting and SN equations (4.3)-(4.8), original rendered PDF page 8",
+        "Equality scaling and finite-seed filtering, original rendered PDF page 14",
+        "Visibility equations (6.7)-(6.9), original rendered PDF page 19",
+        "Post-recombination dark-energy fraction Eq. (6.15), original rendered PDF page 23",
+        "Pre-recombination dark-energy fraction Eq. (6.16), original rendered PDF page 25",
+        "Visibility-width derivation Eqs. (B.11)-(B.13), original rendered PDF page 32"
+      ],
+      "limitations": [
+        "No paper sections, relevant appendices, or bibliography entries were unread.",
+        "The TeX source was not read; the equations above were checked against the original rendered PDF, with HTML MathML/TeX annotations used for equation (6.9) and bibliography anchors.",
+        "The cited studies themselves were not reread as part of this one-paper extraction.",
+        "No code, seed lists, likelihood files, independent calculations, or experiments were acquired or run."
+      ]
+    },
+    "summary": "The paper tests two phenomenological Everpresent Λ implementations against Pantheon+SH0ES supernova data and Planck CMB likelihoods, then separately constrains flexible background-only dark-energy histories around and away from recombination. Model 1 uses stochastic Λ increments scaled by the growth of an observer's past-light-cone four-volume; Model 2 uses a bounded tanh transform of a correlated Gaussian process. In the authors' finite seed samples (with unresolved posterior-weighting descriptions), a small subset of Model 1 histories gives competitive Pantheon+SH0ES fits and those selected histories tend to have smaller, less matter-tracking low-redshift fluctuations. The paper's Model 1 CMB fits are substantially worse than ΛCDM under the stated implementation; suppressing Λ at last scattering improves the best likelihood but leaves it worse than ΛCDM. Flexible spline histories admit small late- and pre-recombination deviations and some improved best-fit CMB likelihoods, but these are parameterized background histories, not a derived Everpresent Λ model. The paper explicitly lacks a developed quantum-gravity dynamics for Everpresent Λ and discards histories with H²<0.",
+    "ideas": [
+      {
+        "local_id": "model1-past-lightcone-volume-fluctuations",
+        "title": "Model 1 scales stochastic Λ increments with past-light-cone four-volume",
+        "claim_type": "author_model_description",
+        "description": "The phenomenological Model 1 takes Λ to have zero-mean Gaussian fluctuations whose scale decreases as the observer's past-light-cone four-volume grows. At each step the Friedmann background uses separately redshifting matter and radiation plus ρΛ=Λ/(8πG). The paper treats this as a phenomenological realization motivated by causal-set/unimodular ideas, not as a derived quantum-gravity evolution law. It starts at a finite radiation-era four-volume; histories for which H² becomes negative are discarded because replacement dynamics are unknown.",
+        "locators": [
+          "PDF pp. 3-4, §2.1, Eqs. (2.1)-(2.4)",
+          "PDF p. 27, §7"
+        ],
+        "equations": [
+          {
+            "expression": "V_t = (4π/3) ∫_0^t dt' a(t')^3 [∫_{t'}^t dt''/a(t'')]^3",
+            "locator": "Eq. (2.1), PDF p. 3",
+            "conventions": "c=1; a(t) is the scale factor; V_t is the past-light-cone four-volume.",
+            "domain": "Phenomenological FLRW history from a nonzero radiation-era initial four-volume.",
+            "confidence": "high: original PDF render and HTML equation were checked."
+          },
+          {
+            "expression": "Λ_t = [Λ_{t-dt} V_{t-dt} + 8π α ξ_t sqrt(V_t - V_{t-dt})]/V_t",
+            "locator": "Eq. (2.2), PDF p. 3",
+            "conventions": "ξ_t is a standard-normal draw; α controls fluctuation amplitude.",
+            "domain": "Discrete-time Model 1 recursion.",
+            "confidence": "high: original PDF render and HTML equation were checked."
+          },
+          {
+            "expression": "ρ_{Λ,t} = Λ_t/(8πG)",
+            "locator": "Eq. (2.3), PDF p. 3",
+            "conventions": "G is Newton's constant.",
+            "domain": "Model 1 background.",
+            "confidence": "high."
+          },
+          {
+            "expression": "H^2 = (8πG/3)(ρ_t + ρ_{Λ,t}) = (8πG ρ_{cr}^0/3)[Ω_{m}^0 a^{-3} + Ω_{r}^0 a^{-4} + ρ_{Λ,t}/ρ_{cr}^0]",
+            "locator": "Eq. (2.4), PDF p. 3",
+            "conventions": "Flat background; Ω_m includes baryons and CDM, Ω_r includes photons and massless neutrinos. The fixed normalization H_0≈70 km s^-1 Mpc^-1 is distinct from inferred H_0 values.",
+            "domain": "Model 1 background; H²<0 cases are abandoned rather than dynamically continued.",
+            "confidence": "high: original PDF render checked."
+          }
+        ]
+      },
+      {
+        "local_id": "model2-correlated-bounded-density",
+        "title": "Model 2 maps a correlated Gaussian process to bounded ΩΛ",
+        "claim_type": "author_model_description",
+        "description": "The phenomenological Model 2 sets ΩΛ(λ)=tanh[ΩhatΛ(λ)], with λ=log(a), where ΩhatΛ is a mean-zero Gaussian process with squared-exponential covariance. This bounds ΩΛ to (-1,1); the paper says μ=O(1) approximately reproduces basic Model 1 features. Its later CMB chains do not converge in the authors' trials when α̃ becomes very small and μ loses relevance.",
+        "locators": [
+          "PDF p. 4, §2.2, Eqs. (2.5)-(2.6)",
+          "PDF pp. 14-15, §5.2"
+        ],
+        "equations": [
+          {
+            "expression": "ΩΛ(λ)=tanh[ΩhatΛ(λ)],  λ=log(a)",
+            "locator": "Eq. (2.5), PDF p. 4",
+            "conventions": "ΩhatΛ is a mean-zero continuous Gaussian process.",
+            "domain": "Model 2 phenomenological history.",
+            "confidence": "high: original PDF render checked."
+          },
+          {
+            "expression": "⟨ΩhatΛ(λ1) ΩhatΛ(λ2)⟩ = α̃² exp[-μ(λ1-λ2)²/2]",
+            "locator": "Eq. (2.6), PDF p. 4",
+            "conventions": "α̃ and μ are free parameters.",
+            "domain": "Model 2 covariance ansatz.",
+            "confidence": "high: original PDF render checked."
+          }
+        ]
+      },
+      {
+        "local_id": "model1-pantheon-good-seed-morphology",
+        "title": "Competitive supernova fits occur in a rare, selected seed subset",
+        "claim_type": "reported_fit",
+        "description": "For the 90,000-seed fixed-seed SN analysis, the authors report 55 seeds with best-fit χ² in [1481,1490] and 16 with likelihood better than their ΛCDM reference χ²≈1485.3. Their best-fit seed has χ²=1481.9, H0=72.18 km s^-1 Mpc^-1, Ω_m^0=0.33, and α=0.0092. The paper reports posterior summaries as model averages (weighting implementation unresolved) of H0=73.27±1.27 km s^-1 Mpc^-1, Ω_m^0=0.58±0.19, and α=0.0085±0.0017. The selected good-seed curves have smaller low-z Λ fluctuations and do not track matter as closely as poor-fit examples. The authors report correlation between mean Om over z∈[0.1,0.8] and χ², but the paper prints an internally impossible threshold for one subset (see caveats). These are finite-sample fit results, not a general probability that the model beats ΛCDM.",
+        "locators": [
+          "PDF pp. 5-11, §§4.1-4.3",
+          "PDF p. 11, Figure 4 and accompanying paragraph",
+          "PDF pp. 26-27, §7"
+        ],
+        "equations": [
+          {
+            "expression": "μ=m_B-M_B=5 log10(d_L/Mpc)+25; d_L=(1+z)∫_0^z dz'/H(z')",
+            "locator": "Eqs. (4.1)-(4.2), PDF p. 5",
+            "conventions": "d_L is in Mpc; h=H0/(100 km s^-1 Mpc^-1).",
+            "domain": "SN Ia distance-modulus likelihood.",
+            "confidence": "high."
+          },
+          {
+            "expression": "Om(z) = [(H(z)/H0)^2 - 1]/[(1+z)^3 - 1]",
+            "locator": "Eq. (4.9), PDF p. 9",
+            "conventions": "For flat ΛCDM the diagnostic is constant at Ω_m^0.",
+            "domain": "Authors' low-redshift seed diagnostic.",
+            "confidence": "high: equation and plotted Figure 4 checked."
+          }
+        ]
+      },
+      {
+        "local_id": "model1-cmb-null-conditional-on-background-closure",
+        "title": "Model 1 CMB fits are poor under the stated perturbation and scaling prescription",
+        "claim_type": "reported_fit",
+        "description": "For a 100,000-seed search, the authors prefilter to 3,106 seeds using their H0 and Ω_m,min criteria; 91 then have Planck likelihood statistic below 3000. The best Model 1 value is -2 log L≈2495.6 versus ≈2339.0 for ΛCDM (Δ≈156.6). Across qualifying histories the fitted H0 values are about 40-51 km s^-1 Mpc^-1; 82/91 chains spend most of their time at Ω_m h²≈0.16-0.20, although the best chain has Ω_m h²=0.1408. Multiplying ρΛ by a Gaussian-like suppression around z=1100 with Δz=100 or 200 raises the accepted counts to 248 or 539 and reduces the best -2 log L to 2360.5 or 2358.5, still worse than ΛCDM. Model 2 trials also fail to produce competitive H0/fits, but their implementation is not comparable to ref. [1] because this paper permits the full sign and magnitude range while that earlier analysis used a narrow negative w(z) range.",
+        "locators": [
+          "PDF pp. 12-16, §§5.1-5.2",
+          "PDF p. 14, seed scaling/filter procedure",
+          "PDF p. 17, Table 1",
+          "PDF pp. 26-27, §7"
+        ],
+        "equations": [
+          {
+            "expression": "a_eq = Ω_r^0/Ω_m^0",
+            "locator": "§5.1, PDF p. 13",
+            "conventions": "Ω_r^0 is held fixed from the CMB temperature while Ω_m^0 is varied.",
+            "domain": "Matter-radiation equality used in the authors' piecewise approximate scaling.",
+            "confidence": "high: original PDF render checked."
+          }
+        ]
+      },
+      {
+        "local_id": "phenomenological-spline-dark-energy-cmb-constraints",
+        "title": "Spline background histories permit small CMB-compatible deviations in selected epochs",
+        "claim_type": "reported_fit",
+        "description": "Separately from the stochastic Everpresent Λ realizations, the authors fit a five-node spline f(z) to background dark-energy density histories, fixing f and its derivatives to zero at the epoch boundaries. After recombination, nodes are z={1,10,50,100,500}, radiation is neglected, and the best -2ΔlogL is 5.68. Before recombination, nodes are z={2140,4570,10000,21380,45710}, radiation-scaled contributions are added, and the best -2ΔlogL is 9.02; the authors report mean dark-energy fractions 0.6±0.6% at z≈5000 and 1.0±1.5% at z≈20000, consistent with zero within 1σ. They report the latter histories raise h and change their historical Hubble-tension estimate from 5σ to 3.5σ. The chosen node locations affect detailed feature positions; the likelihood is multimodal, and the mean history need not itself fit well. This parameterization is not a derived Everpresent Λ physical model.",
+        "locators": [
+          "PDF pp. 21-26, §§6.2.2 and 6.3.1",
+          "PDF p. 23, Figure 11 and Eq. (6.15)",
+          "PDF p. 25, Figure 13, Eq. (6.16), and Table 2",
+          "PDF pp. 26-27, §7"
+        ],
+        "equations": [
+          {
+            "expression": "ΩΛ = [ΩΛ0 + (1+z)^3 f(z)] / {[ΩΛ0 + (1+z)^3 f(z)] + (1+z)^3 Ω_m^0}",
+            "locator": "Eq. (6.15), PDF p. 22",
+            "conventions": "Post-LSS approximation; radiation neglected; flat background; f and its derivatives are fixed to zero at z=0 and 1100.",
+            "domain": "Phenomenological post-recombination spline fits.",
+            "confidence": "high: original PDF render checked."
+          },
+          {
+            "expression": "ΩΛ = [ΩΛ0 + ((1+z)^3 + (Ω_r^0/Ω_m^0)(1+z)^4) f(z)] / {[ΩΛ0 + ((1+z)^3 + (Ω_r^0/Ω_m^0)(1+z)^4) f(z)] + (1+z)^3 Ω_m^0 + (1+z)^4 Ω_r^0}",
+            "locator": "Eq. (6.16), PDF p. 24",
+            "conventions": "Pre-recombination background; f and its derivatives are fixed to zero at z=1100 and 10^5.",
+            "domain": "Phenomenological pre-recombination spline fits.",
+            "confidence": "high: original PDF render checked."
+          }
+        ]
+      }
+    ],
+    "quantities": [
+      {
+        "name": "Pantheon+SH0ES events used",
+        "value": "1550 supernovae with z≥0.01 plus 42 calibrator events",
+        "unit": "events",
+        "uncertainty": "Sample counts; statistical covariance is dataset-dependent and not serialized in the paper.",
+        "conditioning": "Model 1 SN fit; M_B is a nuisance parameter tied to Cepheid-calibrated host distances.",
+        "locator": "§4 and §4.1, PDF p. 5"
+      },
+      {
+        "name": "Reference ΛCDM SN χ²",
+        "value": "≈1485.3",
+        "unit": "χ²",
+        "uncertainty": "Best-fit reference statistic; no uncertainty quoted.",
+        "conditioning": "Pantheon+SH0ES analysis as described by the authors.",
+        "locator": "§4.1, PDF p. 5"
+      },
+      {
+        "name": "SN seeds in stated near-reference interval",
+        "value": "55/90000",
+        "unit": "seeds",
+        "uncertainty": "Finite seed-count result; no seed-sampling uncertainty reported.",
+        "conditioning": "Best-fit χ² in [1481.0,1490.0] for fixed-seed chains.",
+        "locator": "§4.1, PDF p. 5"
+      },
+      {
+        "name": "SN seeds better than ΛCDM",
+        "value": "16/90000",
+        "unit": "seeds",
+        "uncertainty": "Finite seed-count result; no seed-sampling uncertainty reported.",
+        "conditioning": "Fixed-seed MCMC fits to Pantheon+SH0ES; parameters optimized within stated priors.",
+        "locator": "§4.1, PDF p. 5"
+      },
+      {
+        "name": "Best Model 1 SN fit",
+        "value": "χ²=1481.9; H0=72.18; Ω_m^0=0.33; α=0.0092",
+        "unit": "χ²; km s^-1 Mpc^-1; dimensionless; dimensionless",
+        "uncertainty": "Best-fit point; not a posterior interval.",
+        "conditioning": "Best seed in the reported finite sample.",
+        "locator": "§4.1, Eq. (4.8), PDF p. 8"
+      },
+      {
+        "name": "Model 1 SN Bayesian model averages",
+        "value": "H0=73.27±1.27; Ω_m^0=0.58±0.19; α=0.0085±0.0017",
+        "unit": "km s^-1 Mpc^-1; dimensionless; dimensionless",
+        "uncertainty": "Posterior standard deviations as reported by the authors after seed likelihood weighting.",
+        "conditioning": "Uniform prior over their finite considered seed set; seed marginal likelihood estimated with the harmonic mean of chain likelihoods. Sol amendment: Eqs4.3-4.4 and AppendixA Method3 describe different weighting; retain only as source-reported, unverified result.",
+        "locator": "§4.1, Eq. (4.5), PDF p. 8"
+      },
+      {
+        "name": "SH0ES H0 comparison",
+        "value": "73.04±1.04",
+        "unit": "km s^-1 Mpc^-1",
+        "uncertainty": "Reported 1σ uncertainty.",
+        "conditioning": "Reference [11]; comparison is not independent of the fitted Pantheon+SH0ES calibrator data.",
+        "locator": "§4.1, Eq. (4.6), PDF p. 8"
+      },
+      {
+        "name": "Low-z Om and SN χ² association",
+        "value": "Pearson r=0.85; for 70 seeds printed threshold χ²<1060, ⟨Om⟩=0.27±0.03",
+        "unit": "dimensionless",
+        "uncertainty": "Reported mean and spread; subset threshold conflicts with the paper's own χ² scale and is retained as printed.",
+        "conditioning": "⟨Om⟩=(1/0.7)∫_0.1^0.8 Om(z) dz across 90,000 SN seeds.",
+        "locator": "§4.2, Figure 4 and accompanying paragraph, PDF p. 10"
+      },
+      {
+        "name": "Mock-data better-fit fraction",
+        "value": "0.026-0.205 across ten arbitrary-seed mock datasets; mean 0.076; good-seed mock 1/10000",
+        "unit": "fraction of tested seeds",
+        "uncertainty": "Finite simulation diagnostics over 10 mock datasets and 10,000 fit seeds each; not an observational posterior.",
+        "conditioning": "Model 1 mock distances at 1,580 non-calibrator Pantheon+ redshifts, with Gaussian noise from the dataset's full covariance; ten generating histories selected from the H0≈69-72 km s^-1 Mpc^-1 tail.",
+        "locator": "§4.3, PDF pp. 11-12"
+      },
+      {
+        "name": "Planck likelihood reference and Model 1 best fit",
+        "value": "ΛCDM -2logL≈2339.0; Model 1 best -2logL=2495.56",
+        "unit": "-2 log likelihood (paper often labels it χ²)",
+        "uncertainty": "Best-fit likelihood statistics; no uncertainty quoted.",
+        "conditioning": "Planck high-ℓ, low-ℓ, and lensing likelihood; selected seeds and stated no-DE-perturbation implementation.",
+        "locator": "§5.2 and Table 1, PDF pp. 14-17"
+      },
+      {
+        "name": "Model 1 Planck accepted seeds",
+        "value": "3106 after filters; 91 with statistic <3000",
+        "unit": "seeds",
+        "uncertainty": "Finite sample and author-selected prefilters; not a global seed probability.",
+        "conditioning": "Started with 100,000; retained seeds with H0>60 km s^-1 Mpc^-1 for some α and Ω_m,min^0≤0.45.",
+        "locator": "§5.1-5.2, PDF pp. 13-14"
+      },
+      {
+        "name": "Best Planck fit after artificial LSS suppression",
+        "value": "Δz=100: -2logL=2360.5, 248 seeds below 3000; Δz=200: -2logL=2358.5, 539 seeds below 3000",
+        "unit": "likelihood statistic; seeds",
+        "uncertainty": "Best-fit values; suppressions are manually imposed histories.",
+        "conditioning": "Multiply ρΛ by a Gaussian-shaped factor that sets it to zero at z=1100; still worse than the ΛCDM reference.",
+        "locator": "§5.2 and Table 1, PDF pp. 15-17"
+      },
+      {
+        "name": "Post-recombination spline likelihood improvement",
+        "value": "-2ΔlogL=5.68",
+        "unit": "difference in -2 log likelihood",
+        "uncertainty": "Best-fit improvement; not a model-comparison penalty or posterior evidence.",
+        "conditioning": "Five-node background spline with f(0)=f(1100)=0 and derivatives fixed to zero.",
+        "locator": "Table 2, PDF p. 27"
+      },
+      {
+        "name": "Pre-recombination spline dark-energy fractions",
+        "value": "0.6±0.6% at z≈5000; 1.0±1.5% at z≈20000; -2ΔlogL=9.02",
+        "unit": "fraction; difference in -2 log likelihood",
+        "uncertainty": "Reported standard deviations; fractions consistent with zero within 1σ.",
+        "conditioning": "Five-node background spline with radiation-scaled term and zero f plus derivatives at z=1100 and 10^5.",
+        "locator": "§6.3.1, Table 2, PDF pp. 25-27"
+      }
+    ],
+    "data_dependencies": [
+      {
+        "dataset": "Pantheon+SH0ES SN Ia sample",
+        "role": "Primary low-redshift background fit",
+        "lineage": "1550 events at z≥0.01 plus 42 calibrator events; the absolute magnitude M_B is included as a nuisance parameter and calibration uses Cepheids in calibrator host galaxies. References [11] and [83] are in the current register.",
+        "conditioning": "The paper's simplified Eq. (4.7) explicitly ignores calibrators and cross-event covariance only for an explanatory argument; the mock-data generation does use the full covariance. The paper does not provide a dataset digest or covariance file hash.",
+        "limits": "The H0 comparison to SH0ES [11] shares the local calibration/data lineage and is not independent evidence."
+      },
+      {
+        "dataset": "Planck CMB likelihood",
+        "role": "Primary high-redshift perturbation fit",
+        "lineage": "Planck high-ℓ, low-ℓ, and lensing likelihood package; reference [14] is in the current register. Figure 7 also displays Planck binned data.",
+        "conditioning": "Standard six parameters Ω_m h², Ω_b h², h, κ, n_s, A_s. Model 1 α is derived from the seed and background parameters in their implementation.",
+        "limits": "No exact likelihood release/build hash, code commit, seed list, likelihood data hash, or prior ranges for the six parameters are given in this paper."
+      },
+      {
+        "dataset": "Model 1 mock supernova data",
+        "role": "Simulation diagnostic for whether good-fit seeds are atypical",
+        "lineage": "1580 non-calibrator Pantheon+ redshifts, using a Model 1 distance-modulus history and Gaussian noise drawn from the full Pantheon+ covariance.",
+        "conditioning": "Ten generating seeds selected from the H0≈69-72 km s^-1 Mpc^-1 tail; ten thousand candidate fit seeds per mock set; a separate example uses a good seed.",
+        "limits": "No underlying seed identifiers, random-state file, generated mock array, or reproducible receipt is supplied in the paper."
+      },
+      {
+        "dataset": "Modified CAMB and CMBAns calculations",
+        "role": "Boltzmann transfer/power-spectrum calculation",
+        "lineage": "The authors state both modified codes agree for their Model 1 analysis; CAMB was used because CMBAns lacked parallel computation.",
+        "conditioning": "Model 1 dark-energy perturbations are turned off because the authors do not treat this dark energy as a fluid.",
+        "limits": "No code revision or changed source files are identified in the article."
+      }
+    ],
+    "caveats": [
+      {
+        "type": "perturbation_closure",
+        "claim": "The Model 1 CMB result is conditional on turning off dark-energy perturbations. The authors explicitly say Model 1 dark energy is not a fluid. The paper supplies no alternative stress-energy/perturbation closure for this stochastic component, so the poor likelihood is not a general CMB falsification of a completed Everpresent Λ theory."
+      },
+      {
+        "type": "background_scaling",
+        "claim": "For CMB tractability the authors precompute histories on an α grid and rescale/interpolate them. Their proportionality with Ω_m h² is approximate across radiation- and matter-dominated eras and fails at equality; they scale the eras separately, say the equality interval is small in conformal time, and report a numerical check that it does not change Cℓ. The equality implementation and check are not independently auditable from the article."
+      },
+      {
+        "type": "seed_selection_and_evidence",
+        "claim": "The SN and CMB results condition on finite fixed-seed sets; the seed lists and sampling errors are unavailable. Main text Eqs.(4.3)-(4.4) weights normalized fixed-seed posteriors by P(s|D) proportional to marginal likelihood times seed prior; harmonic-mean likelihood estimates are stated. Appendix A Method 3 Eq.(A.6) instead says average normalized posteriors equally. Those operations differ unless seed evidences are equal. Actual implementation is unknown; preserve source-reported Eq.(4.5) as a conditional reported result, not independently verified model marginalization. CMB preselection adds another conditioning step; counts and best-fit extrema are not global model evidence."
+      },
+      {
+        "type": "selection_and_model_average",
+        "claim": "The optimized best SN seed is not model evidence. The main-text weighting uses per-seed marginal likelihoods, while Appendix A describes equal normalized-posterior averaging; implementation is unknown. Harmonic-mean estimates are source-reported without estimator or seed-pool sensitivity validation."
+      },
+      {
+        "type": "data_overlap",
+        "claim": "The reported H0 posterior is fit using the Pantheon+SH0ES sample including 42 calibrators and is compared to SH0ES H0. That comparison shares the local calibration lineage and must not be treated as independent confirmation. The authors also note that the model-independent SH0ES Taylor expansion assumes smooth H(z), which they say is not generally appropriate for a stochastic history."
+      },
+      {
+        "type": "printed_source_inconsistency",
+        "claim": "Section 4.2 states that 70 seeds have χ²<1060 while reporting ⟨Om⟩=0.27±0.03. This is incompatible with the section's best SN fit χ²=1481.9 and the Figure 4 χ² axis, which is around 1500-8000. The printed PDF and extracted text both read 1060. I did not silently change it to a conjectured value."
+      },
+      {
+        "type": "reader_error_corrected_by_sol",
+        "claim": "No conflict: Appendix B explicitly defines Hcal=aH (PDF p.31). B.13 uses Hcal, Eq.(6.9) uses cosmic H. Thus sigma≈z_star/(10^4 Hcal_star)=z_star(1+z_star)/(10^4 H_star)≈z_star^2/(10^4 H_star) at z_star>>1. Preserve the approximation and distinguish conformal time from cosmic time."
+      },
+      {
+        "type": "source_summary_not_reconciled",
+        "claim": "Sec.4.1 states 55/90000 in [1481,1490] and 16/90000 better than LambdaCDM. Arithmetic fractions are about 0.0611% and 0.0178%. Sec.7 says about 0.14% similar and 0.015% better. The similar-fit threshold is not restated there, so this is an unreconciled summary, not proof the same precisely defined subset was miscounted. Use exact Sec.4.1 counts with finite-sample conditioning; do not turn summary percentages into model probabilities."
+      },
+      {
+        "type": "model_scope",
+        "claim": "The LSS suppression is an artificial modification motivated by prior work, not a derived correction to Model 1. The free f(z) MCMC analyses are flexible background parameterizations, not Everpresent Λ realizations or a complete physical dark-energy model."
+      },
+      {
+        "type": "parameterization_and_multimodality",
+        "claim": "The f(z) conclusions depend on five selected interpolation redshifts and boundary conditions. The authors report node-dependent feature positions, a high rejection rate, and multiple likelihood minima; the plotted mean history need not be a good fit."
+      },
+      {
+        "type": "unresolved_implementation",
+        "claim": "For the free-f(z) analyses the paper explains background parametrization and use of SCoPE but does not state a sufficiently explicit perturbation closure for the modified component to reproduce its treatment independently. Exact code, seed, likelihood, and data identities are also absent."
+      },
+      {
+        "type": "model_domain",
+        "claim": "Model 1 diverges or is undefined at t=0 and is initialized instead with a nonzero radiation-era volume. Histories that reach H²<0 are discarded; their correct dynamics are unknown. The authors explicitly say their phenomenological model does not describe the quantum-gravity initial epoch."
+      }
+    ],
+    "usefulness": {
+      "assessment": "Useful source for a bounded, assumption-aware investigation of what low-redshift shapes and CMB epochs constrain; not a completed model qualification or independent reproduction.",
+      "strongest_reason_for_bounded_investigation": "The paper gives a concrete candidate discriminator for competitive Model 1 SN histories—smaller, weakly matter-tracking fluctuations at z≲1.5 and lower ⟨Om⟩—and shows that CMB likelihood changes sharply with the behavior around last scattering and with small, epoch-local background variations. Those are specific claims that can be checked against exact seeds and code.",
+      "strongest_objection": "The central Model 1 CMB null is inseparable from the authors' decision to turn off dark-energy perturbations, which is not a validated closure for a physical Everpresent Λ component; the approximate equality scaling and unpublished seed/code artifacts add further uncertainty.",
+      "cheapest_nonduplicative_next_test": "First obtain/pin the exact modified CAMB/CMBAns source, likelihood identity, and one published best-fit seed/history. Then do one paired calculation for that seed: compare the article's interpolated/piecewise equality scaling with a direct background integration through equality and inspect ΔCℓ and the same Planck likelihood. This isolates the claimed harmlessness of the approximation without repeating the 100,000-seed scan; it would still not settle the missing dark-energy perturbation closure. Those artifacts are not supplied here, and no calculation was run.",
+      "qualification": "Full Luna reading only. No Sol review, independent reproduction, current-data reassessment, or scientific qualification has occurred."
+    },
+    "citation_leads": [
+      {
+        "registered_paper_id": "arxiv:1703.06265v4",
+        "reference_label": "[1]",
+        "printed_title": "Cosmological tests of Everpresent Λ",
+        "printed_authors": "N. Zwane, N. Afshordi, and R. D. Sorkin",
+        "printed_arxiv_base_id": "1703.06265",
+        "printed_arxiv_version": null,
+        "match_basis": "Explicit arXiv base ID in reference; version is not printed.",
+        "source_url": "https://arxiv.org/html/2307.13743v2#bib.bib1",
+        "bibliography_anchor": "bib.bib1",
+        "original_source_role": "html",
+        "original_source_sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8"
+      },
+      {
+        "registered_paper_id": "arxiv:astro-ph/0209274v1",
+        "reference_label": "[43]",
+        "printed_title": "Everpresent Λ",
+        "printed_authors": "M. Ahmed, S. Dodelson, P. B. Greene, and R. Sorkin",
+        "printed_arxiv_base_id": "astro-ph/0209274",
+        "printed_arxiv_version": null,
+        "match_basis": "Explicit arXiv base ID in reference; version is not printed.",
+        "source_url": "https://arxiv.org/html/2307.13743v2#bib.bib43",
+        "bibliography_anchor": "bib.bib43",
+        "original_source_role": "html",
+        "original_source_sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8"
+      },
+      {
+        "registered_paper_id": "arxiv:1210.2589v3",
+        "reference_label": "[44]",
+        "printed_title": "Everpresent Λ II: Structural stability",
+        "printed_authors": "M. Ahmed and R. D. Sorkin",
+        "printed_arxiv_base_id": null,
+        "printed_arxiv_version": null,
+        "match_basis": "Printed title, authors, and journal details match the registered work; no arXiv ID or version is printed in this bibliography entry.",
+        "source_url": "https://arxiv.org/html/2307.13743v2#bib.bib44",
+        "bibliography_anchor": "bib.bib44",
+        "original_source_role": "html",
+        "original_source_sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8"
+      },
+      {
+        "registered_paper_id": "arxiv:2304.03819v2",
+        "reference_label": "[45]",
+        "printed_title": "Aspects of everpresent Λ. Part I. A fluctuating cosmological constant from spacetime discreteness",
+        "printed_authors": "S. Das, A. Nasiri, and Y. K. Yazdi",
+        "printed_arxiv_base_id": null,
+        "printed_arxiv_version": null,
+        "match_basis": "Printed title and all three authors match the registered Part I paper; no arXiv ID or version is printed in this bibliography entry.",
+        "source_url": "https://arxiv.org/html/2307.13743v2#bib.bib45",
+        "bibliography_anchor": "bib.bib45",
+        "original_source_role": "html",
+        "original_source_sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8"
+      },
+      {
+        "registered_paper_id": "arxiv:2112.04510v3",
+        "reference_label": "[11]",
+        "printed_title": "A comprehensive measurement of the local value of the Hubble constant with 1 km s-1 Mpc-1 uncertainty from the Hubble Space Telescope and the SH0ES team",
+        "printed_authors": "A. G. Riess et al.",
+        "printed_arxiv_base_id": null,
+        "printed_arxiv_version": null,
+        "match_basis": "Printed title and publication details match the registered SH0ES work; no arXiv ID or version is printed.",
+        "source_url": "https://arxiv.org/html/2307.13743v2#bib.bib11",
+        "bibliography_anchor": "bib.bib11",
+        "original_source_role": "html",
+        "original_source_sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8"
+      },
+      {
+        "registered_paper_id": "arxiv:1807.06209v4",
+        "reference_label": "[14]",
+        "printed_title": "Planck 2018 results-VI. Cosmological parameters",
+        "printed_authors": "N. Aghanim et al.",
+        "printed_arxiv_base_id": null,
+        "printed_arxiv_version": null,
+        "match_basis": "Printed title and publication details match the registered Planck paper; no arXiv ID or version is printed.",
+        "source_url": "https://arxiv.org/html/2307.13743v2#bib.bib14",
+        "bibliography_anchor": "bib.bib14",
+        "original_source_role": "html",
+        "original_source_sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8"
+      },
+      {
+        "registered_paper_id": "arxiv:2202.04077v2",
+        "reference_label": "[83]",
+        "printed_title": "The Pantheon+ analysis: cosmological constraints",
+        "printed_authors": "D. Brout et al.",
+        "printed_arxiv_base_id": null,
+        "printed_arxiv_version": null,
+        "match_basis": "Printed title and publication details match the registered Pantheon+ paper; no arXiv ID or version is printed.",
+        "source_url": "https://arxiv.org/html/2307.13743v2#bib.bib83",
+        "bibliography_anchor": "bib.bib83",
+        "original_source_role": "html",
+        "original_source_sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8"
+      },
+      {
+        "registered_paper_id": "arxiv:astro-ph/9603033v1",
+        "reference_label": "[97]",
+        "printed_title": "A line-of-sight integration approach to cosmic microwave background anisotropies",
+        "printed_authors": "U. Seljak and M. Zaldarriaga",
+        "printed_arxiv_base_id": null,
+        "printed_arxiv_version": null,
+        "match_basis": "Printed authors, journal, volume, and page match the registered source; title wording differs slightly and no arXiv ID/version is printed.",
+        "source_url": "https://arxiv.org/html/2307.13743v2#bib.bib97",
+        "bibliography_anchor": "bib.bib97",
+        "original_source_role": "html",
+        "original_source_sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8"
+      },
+      {
+        "registered_paper_id": "arxiv:astro-ph/9909275v2",
+        "reference_label": "[99]",
+        "printed_title": "A new calculation of the recombination epoch",
+        "printed_authors": "S. Seager, D. D. Sasselov, and D. Scott",
+        "printed_arxiv_base_id": null,
+        "printed_arxiv_version": null,
+        "match_basis": "Printed title and authors match the registered work; no arXiv ID/version is printed.",
+        "source_url": "https://arxiv.org/html/2307.13743v2#bib.bib99",
+        "bibliography_anchor": "bib.bib99",
+        "original_source_role": "html",
+        "original_source_sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8"
+      },
+      {
+        "registered_paper_id": "arxiv:astro-ph/9506072v1",
+        "reference_label": "[101]",
+        "printed_title": "Cosmological perturbation theory in the synchronous and conformal Newtonian gauges",
+        "printed_authors": "C.-P. Ma and E. Bertschinger",
+        "printed_arxiv_base_id": "astro-ph/9506072",
+        "printed_arxiv_version": null,
+        "match_basis": "Explicit arXiv base ID printed; version unspecified. Corrected by coordinator and confirmed by Sol.",
+        "source_url": "https://arxiv.org/html/2307.13743v2#bib.bib101",
+        "bibliography_anchor": "bib.bib101",
+        "original_source_role": "html",
+        "original_source_sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8"
+      },
+      {
+        "registered_paper_id": "arxiv:1811.04083v2",
+        "reference_label": "[105]",
+        "printed_title": "Early dark energy can resolve the Hubble tension",
+        "printed_authors": "V. Poulin, T. L. Smith, T. Karwal, and M. Kamionkowski",
+        "printed_arxiv_base_id": null,
+        "printed_arxiv_version": null,
+        "match_basis": "Printed title and authors match the registered work; no arXiv ID/version is printed.",
+        "source_url": "https://arxiv.org/html/2307.13743v2#bib.bib105",
+        "bibliography_anchor": "bib.bib105",
+        "original_source_role": "html",
+        "original_source_sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8"
+      }
+    ],
+    "bibliography_coverage": {
+      "printed_reference_range": "[1]-[106]",
+      "matching_method": "Scanned HTML bibliography anchors for explicit arXiv IDs against canonical register, then checked printed title/author/publication details for registered works without arXiv IDs in the bibliography.",
+      "registered_matches": 11,
+      "requested_batch_ids_not_located_in_this_bibliography": [
+        {
+          "paper_id": "arxiv:gr-qc/0612128v2",
+          "reason": "No matching printed arXiv ID, title, or author/reference identity located."
+        },
+        {
+          "paper_id": "arxiv:0711.2904v1",
+          "reason": "No matching printed arXiv ID, title, or author/reference identity located."
+        }
+      ],
+      "version_rule": "For matched works, the cited arXiv version is null unless the bibliography prints one. Current registered versions are association targets only and are not asserted to be the versions cited."
+    },
+    "author_and_acknowledgement_context": {
+      "byline": "Das, Nasiri, and Yazdi; Theoretical Physics Group, Blackett Laboratory, Imperial College London.",
+      "related_bibliography": "Their Part I is reference [45] and is by the same three authors. Reference [1] is by Zwane, Afshordi, and Sorkin. The paper also cites Ahmed and Sorkin in [43]-[44].",
+      "acknowledgements": "Thanks Fay Dowker, Rafael Sorkin, and Nosiphiwo Zwane for discussions, especially Niayesh Afshordi for detailed discussions on the analysis.",
+      "interpretation": "The distinct byline from [1] does not make this an isolated independent-data group: the source identifies intellectual discussion with Sorkin, Zwane, and Afshordi, and follows a same-author Part I. This is provenance/context, not a claim that the work is invalid."
+    },
+    "worker_packet_sha256": "3dbebcb67a39d6f80d41fe6ef6b8720530e60b93e3bdc9d98b39fd0a8e49fff3",
+    "review_amendments": [
+      {
+        "date_utc": "2026-10-09T18:41:40.937193+00:00",
+        "coordinator": "/root",
+        "reviewer_agent": "/root/sol_stochastic_vacuum",
+        "review_id": "2026-10-09-stochastic-vacuum-science",
+        "original_packet_sha256": "3dbebcb67a39d6f80d41fe6ef6b8720530e60b93e3bdc9d98b39fd0a8e49fff3",
+        "corrections": [
+          {
+            "id": "visibility-width-reader-error",
+            "kind": "luna_and_coordinator_error",
+            "paper_id": "arxiv:2307.13743v2",
+            "original_fields": [
+              "luna-recent.caveats[type=printed_source_inconsistency, visibility width]",
+              "proposal-for-sol.questions_for_sol[3]",
+              "draft-science prospect/design unknowns and blockers"
+            ],
+            "old_claim": "Eq.(6.9) and Eq.(B.13) have conflicting powers of z_star.",
+            "replacement": "No conflict: Appendix B explicitly defines Hcal=aH (PDF p.31). B.13 uses Hcal, Eq.(6.9) uses cosmic H. Thus sigma≈z_star/(10^4 Hcal_star)=z_star(1+z_star)/(10^4 H_star)≈z_star^2/(10^4 H_star) at z_star>>1. Preserve the approximation and distinguish conformal time from cosmic time.",
+            "checked_locators": [
+              "Sec.6.1 Eq.(6.9), PDF p.19",
+              "Appendix B definition following Eq.(B.1), PDF p.31",
+              "Appendix B Eq.(B.13), PDF p.32"
+            ],
+            "action": "Replace the extraction caveat visibly and remove visibility-width repair from blockers; original Luna packet retained."
+          },
+          {
+            "id": "recent-low-z-subset-threshold",
+            "kind": "printed_source_inconsistency_confirmed",
+            "paper_id": "arxiv:2307.13743v2",
+            "original_fields": [
+              "luna-recent.quantities[Low-z Om and SN chi2 association]",
+              "luna-recent.caveats[printed threshold]"
+            ],
+            "old_claim": "70 seeds with chi2<1060 and mean Om 0.27±0.03.",
+            "replacement": "The PDF prints 1060; this conflicts with best-fit 1481.9 and Fig. 4. Retain the printed threshold as unresolved, and do not use its 70-seed statistic for a derived test or guess 1600.",
+            "checked_locators": [
+              "Sec.4.1 Eq.(4.8), PDF p.9",
+              "Sec.4.2 and Fig. 4, PDF p.11"
+            ],
+            "action": "Keep source issue, no silent repair."
+          },
+          {
+            "id": "recent-summary-percentages",
+            "kind": "printed_source_summary_not_reconciled",
+            "paper_id": "arxiv:2307.13743v2",
+            "original_fields": [
+              "luna-recent.caveats[Sec7 percentages]"
+            ],
+            "old_claim": "Sec.7 percentages differ from Sec.4.1 counts.",
+            "replacement": "Sec.4.1 states 55/90000 in [1481,1490] and 16/90000 better than LambdaCDM. Arithmetic fractions are about 0.0611% and 0.0178%. Sec.7 says about 0.14% similar and 0.015% better. The similar-fit threshold is not restated there, so this is an unreconciled summary, not proof the same precisely defined subset was miscounted. Use exact Sec.4.1 counts with finite-sample conditioning; do not turn summary percentages into model probabilities.",
+            "checked_locators": [
+              "Sec.4.1, PDF pp.6-7",
+              "Sec.7 first paragraph, PDF p.27"
+            ],
+            "action": "Narrow the original caveat; exclude summary percentages from quantitative acceptance."
+          },
+          {
+            "id": "recent-posterior-weighting-source-conflict",
+            "kind": "printed_source_method_description_conflict",
+            "paper_id": "arxiv:2307.13743v2",
+            "original_fields": [
+              "luna-recent.caveats[seed selection and evidence]",
+              "luna-recent.summary of Appendix A method"
+            ],
+            "old_claim": "Appendix A combines marginalized likelihoods consistently with main-text Bayesian model averaging.",
+            "replacement": "Main text Eqs.(4.3)-(4.4) weights normalized fixed-seed posteriors by P(s|D) proportional to marginal likelihood times seed prior; harmonic-mean likelihood estimates are stated. Appendix A Method 3 Eq.(A.6) instead says average normalized posteriors equally. Those operations differ unless seed evidences are equal. Actual implementation is unknown; preserve source-reported Eq.(4.5) as a conditional reported result, not independently verified model marginalization.",
+            "checked_locators": [
+              "Sec.4.1 Eqs.(4.3)-(4.5), PDF pp.7-8",
+              "Appendix A Method 3 Eqs.(A.5)-(A.6), PDF p.30"
+            ],
+            "action": "Add visible source methodology caveat; exact source code and weighting required before evidence reuse."
+          },
+          {
+            "id": "recent-bibliography101",
+            "kind": "luna_transcription_omission",
+            "paper_id": "arxiv:2307.13743v2",
+            "original_fields": [
+              "luna-recent.citation_leads[reference_label=[101]].printed_arxiv_base_id",
+              "luna-recent.citation_leads[reference_label=[101]].match_basis"
+            ],
+            "old_claim": "No arXiv ID is printed in reference[101].",
+            "replacement": "Reference[101] explicitly prints astro-ph/9506072. Set printed_arxiv_base_id to astro-ph/9506072, version null; do not infer the registered v1 was the cited version.",
+            "checked_locators": [
+              "HTML#bib.bib101; PDF reference[101]"
+            ],
+            "action": "Coordinator pre-review correction confirmed."
+          }
+        ],
+        "coverage_change": "No extra full reading or new source acquisition. Public extraction corrected visibly; original worker packet retained unchanged in private custody."
+      }
+    ],
+    "worker_source_hash_details": {
+      "html_sha256": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+      "pdf_sha256": "92984c3bc837a2f80629a7c04e80c4e25aed6f425667196e1c490148b7784460",
+      "extracted_text_sha256": "64e7568b9229c452e9fadff3d25c2196a0c87330ec24de86118baae867526dcf",
+      "acquisition_manifest_sha256": "a68d5bc276fc15fcbc131184af247aefc767dd966846154ae843d9c6e13802d0",
+      "extracted_text_derived_from_pdf_sha256": "92984c3bc837a2f80629a7c04e80c4e25aed6f425667196e1c490148b7784460"
+    },
+    "provenance_amendments": [
+      {
+        "coordinator": "/root",
+        "reason": "Normalize worker hash keys to artifact role names required by validator; auxiliary manifest/derivation hashes retained separately. Actual bytes rehashed; no source identity or coverage changed.",
+        "original_packet_sha256": "3dbebcb67a39d6f80d41fe6ef6b8720530e60b93e3bdc9d98b39fd0a8e49fff3"
+      }
+    ]
+  },
+  "review_id": "2026-10-09-stochastic-vacuum-science",
+  "idea_ids": [
+    "everpresent-lambda-seed-selection-and-cmb-limit"
+  ]
 }

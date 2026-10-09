@@ -1,0 +1,404 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-09-stochastic-vacuum-science",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "high",
+  "agent_id": "/root/sol_stochastic_vacuum",
+  "actual_backend_identity": null,
+  "actual_backend_identity_note": "Exact model requested for this independent worker; backend UUID/runtime model identity is not exposed, so no backend attestation is invented.",
+  "reviewed_utc": "2026-10-09T18:40:06.793763+00:00",
+  "review_kind": "independent_scientific_source_assessment",
+  "reviewed_papers": [
+    "arxiv:astro-ph/0209274v1",
+    "arxiv:2307.13743v2",
+    "arxiv:2607.03272v1"
+  ],
+  "reviewed_paper_details": [
+    {
+      "paper_id": "arxiv:astro-ph/0209274v1",
+      "decision": "useful_source_development_or_conditional_method_audit; not qualified cosmology",
+      "source_hashes": {
+        "pdf": "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+        "extracted_text": "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1"
+      },
+      "source_hash_verification": "All receipt-listed pdf/html/extracted_text bytes recomputed and matched before use; rejected foundation HTML not used.",
+      "extraction_sha256": "74212c3843ef1f4ef89d471b6da43d0eb8e213e9c7c09298a8b2d642b554eeea",
+      "coverage": {
+        "main_text": "Sections I-V reviewed in pinned PDF-derived text; source equations and relevant original pages visually checked. No appendix is present.",
+        "checked_locators": [
+          "Title/watermark and reduced-Planck conventions, PDF p.1",
+          "Sec.II Eqs.(1)-(2) and zero-target assumption, pp.2-3",
+          "Sec.III Eqs.(3)-(6), pp.4-5",
+          "Termination/survival and alpha discussion, p.6",
+          "Sec.IV Eq.(8) and unimplemented alternatives, pp.7-8",
+          "Sec.V early-time test proposals, pp.8-9"
+        ],
+        "visual_pdf_pages": [
+          1,
+          2,
+          4,
+          5,
+          7
+        ],
+        "figures": "Figs. 1, 2, 4 visually checked in PDF renders. Fig. 3 description checked in source text; independent review did not visually reinspect Fig. 3. All are author simulations/schematics.",
+        "unread_limits": [
+          "No source bibliography lead was independently followed.",
+          "Underlying quantum dynamics, stochastic covariance and observational predictions not independently derived.",
+          "Watermark 13 Sep 2002 versus title-date 26 Oct 2018 discrepancy retained; explanation unknown."
+        ]
+      },
+      "licence_status": null,
+      "licence_status_reason": "Acquisition receipts do not establish a redistribution licence; this packet contains original notes and source pins only."
+    },
+    {
+      "paper_id": "arxiv:2307.13743v2",
+      "decision": "useful_source_development_or_conditional_method_audit; not qualified cosmology",
+      "source_hashes": {
+        "html": "14fcaadf62c137851a2ad70387460933d502e28107563609bbd89111a56479b8",
+        "pdf": "92984c3bc837a2f80629a7c04e80c4e25aed6f425667196e1c490148b7784460",
+        "extracted_text": "64e7568b9229c452e9fadff3d25c2196a0c87330ec24de86118baae867526dcf"
+      },
+      "source_hash_verification": "All receipt-listed pdf/html/extracted_text bytes recomputed and matched before use; rejected foundation HTML not used.",
+      "extraction_sha256": "3dbebcb67a39d6f80d41fe6ef6b8720530e60b93e3bdc9d98b39fd0a8e49fff3",
+      "coverage": {
+        "main_text": "Original-source review of the mechanisms, fitted-result methodology and accepted claims in Secs.2,4,5,6.1,6.3.1,7 and Appendices A/B, supported by the full Luna packet. This is scientific assessment, not an additional full-paper Luna reading.",
+        "checked_locators": [
+          "Sec.2.1-2.2 Eqs.(2.1)-(2.6), PDF pp.3-5",
+          "Sec.4.1 Eqs.(4.3)-(4.8), pp.6-9",
+          "Sec.4.2 Fig. 4/printed threshold, p.11; Sec.4.3 mock-data protocol, pp.11-12",
+          "Sec.5.1-5.2 and Table 1, pp.13-17",
+          "Sec.6.1 Eq.(6.9)/Fig. 8, pp.18-20",
+          "Sec.6.3.1/Table 2 and Sec.7, pp.26-28",
+          "Appendix A Eqs.(A.1)-(A.6), pp.29-30; Appendix B Eqs.(B.1)-(B.13), pp.31-32",
+          "HTML#bib.bib101"
+        ],
+        "visual_pdf_pages": [
+          4,
+          5,
+          11,
+          19,
+          31,
+          32
+        ],
+        "figures": "Fig. 4 and Fig. 8 visually checked in original-PDF renders. Other figures rely on Luna visual coverage and source text/captions; no independent claim to inspect all 14 plots.",
+        "unread_limits": [
+          "Detailed Sec.6.2 ISW derivation and spline construction not independently checked equation-by-equation; no separate accepted spline mechanism/design.",
+          "Bibliography identities checked only where used; cited studies not reread.",
+          "No code, seed list, likelihood release bytes or chains supplied; no model evidence recomputation."
+        ]
+      },
+      "licence_status": null,
+      "licence_status_reason": "Acquisition receipts do not establish a redistribution licence; this packet contains original notes and source pins only."
+    },
+    {
+      "paper_id": "arxiv:2607.03272v1",
+      "decision": "useful_source_development_or_conditional_method_audit; not qualified cosmology",
+      "source_hashes": {
+        "html": "44f48613e820692eeb34e0b4758bc71f424312ee17f72e903a02a05f9babc566",
+        "pdf": "9a8051e5f29d1376e74b6d0910fa1b3361ae7a3b5e39dfccc0da093a60b56cdd",
+        "extracted_text": "2ddac41a495d8180db11b09fa1fdf1340cf735de7fe081495e5f43a4494b9ccc"
+      },
+      "source_hash_verification": "All receipt-listed pdf/html/extracted_text bytes recomputed and matched before use; rejected foundation HTML not used.",
+      "extraction_sha256": "8e859800bf1008d89b7212f606125e9ec4e71d03f067ad7256dd5ef64b9c6255",
+      "coverage": {
+        "main_text": "Sections I-V and Appendix A reviewed in pinned PDF-derived text, with original math/render checks for Eqs.(27)-(40), Appendix A and the scalar/time conventions.",
+        "checked_locators": [
+          "Sec.II Eqs.(1)-(6), PDF p.2",
+          "Sec.III Eqs.(8)-(18), pp.3-4 and H_D independence/covariance warning",
+          "Sec.IV Eqs.(19)-(32), pp.4-5",
+          "Sec.IV Eqs.(33)-(39), p.6; Eq.(40) and limitations, p.7",
+          "Appendix A Eqs.(A1)-(A10), p.8; bibliography [20], p.9"
+        ],
+        "visual_pdf_pages": [
+          5,
+          6,
+          8
+        ],
+        "figures": "Fig. 1 visually inspected: one gamma=10^-4, Lambda_d=0, rho_d=1 numerical illustration; no independent integration or quantitative plot digitization.",
+        "unread_limits": [
+          "No cited open-system/gravity source independently read.",
+          "No microscopic bath spectrum, regulated kernel, quantum noise or perturbations derived.",
+          "Printed Hamiltonian and finite-temperature normalization remain unresolved."
+        ]
+      },
+      "licence_status": null,
+      "licence_status_reason": "Acquisition receipts do not establish a redistribution licence; this packet contains original notes and source pins only."
+    }
+  ],
+  "accepted_records": {
+    "idea_ids": [
+      "everpresent-lambda-volume-noise",
+      "everpresent-lambda-seed-selection-and-cmb-limit",
+      "ohmic-unimodular-hidden-bath-diffusion"
+    ],
+    "prospect_ids": [
+      "everpresent-lambda-conservation-and-cmb-audit",
+      "ohmic-unimodular-diffusion-noise-audit"
+    ],
+    "design_ids": [
+      "candidate-everpresent-lambda-conservation-and-cmb-audit",
+      "candidate-ohmic-unimodular-diffusion-noise-audit"
+    ],
+    "graph_edge_ids": [
+      "describes-everpresent-lambda-seed-selection-and-cmb-limit",
+      "describes-everpresent-lambda-volume-noise",
+      "describes-ohmic-unimodular-hidden-bath-diffusion",
+      "everpresent-lambda-volume-noise-informs-everpresent-lambda-conservation-and-cmb-audit",
+      "everpresent-lambda-seed-selection-and-cmb-limit-informs-everpresent-lambda-conservation-and-cmb-audit",
+      "ohmic-unimodular-hidden-bath-diffusion-informs-ohmic-unimodular-diffusion-noise-audit",
+      "ohmic-bath-distinct-from-volume-noise"
+    ]
+  },
+  "record_decisions": [
+    {
+      "id": "everpresent-lambda-volume-noise",
+      "decision": "accepted_as_source_reviewed_proposal",
+      "reason": "Faithful mechanism or conditional methodological conclusion after listed corrections; no physical viability claim."
+    },
+    {
+      "id": "everpresent-lambda-seed-selection-and-cmb-limit",
+      "decision": "accepted_as_source_reviewed_proposal",
+      "reason": "Faithful mechanism or conditional methodological conclusion after listed corrections; no physical viability claim."
+    },
+    {
+      "id": "ohmic-unimodular-hidden-bath-diffusion",
+      "decision": "accepted_as_source_reviewed_proposal",
+      "reason": "Faithful mechanism or conditional methodological conclusion after listed corrections; no physical viability claim."
+    },
+    {
+      "id": "everpresent-lambda-conservation-and-cmb-audit",
+      "decision": "accepted_blocked_source_development",
+      "reason": "Specific mechanisms and nonduplicative source gates justify registration; missing physics/source artifacts block execution and scientific promotion."
+    },
+    {
+      "id": "ohmic-unimodular-diffusion-noise-audit",
+      "decision": "accepted_blocked_source_development",
+      "reason": "Specific mechanisms and nonduplicative source gates justify registration; missing physics/source artifacts block execution and scientific promotion."
+    },
+    {
+      "id": "candidate-everpresent-lambda-conservation-and-cmb-audit",
+      "decision": "accepted_blocked_source_development",
+      "reason": "Specific mechanisms and nonduplicative source gates justify registration; missing physics/source artifacts block execution and scientific promotion."
+    },
+    {
+      "id": "candidate-ohmic-unimodular-diffusion-noise-audit",
+      "decision": "accepted_blocked_source_development",
+      "reason": "Specific mechanisms and nonduplicative source gates justify registration; missing physics/source artifacts block execution and scientific promotion."
+    }
+  ],
+  "corrections": [
+    {
+      "id": "visibility-width-reader-error",
+      "kind": "luna_and_coordinator_error",
+      "paper_id": "arxiv:2307.13743v2",
+      "original_fields": [
+        "luna-recent.caveats[type=printed_source_inconsistency, visibility width]",
+        "proposal-for-sol.questions_for_sol[3]",
+        "draft-science prospect/design unknowns and blockers"
+      ],
+      "old_claim": "Eq.(6.9) and Eq.(B.13) have conflicting powers of z_star.",
+      "replacement": "No conflict: Appendix B explicitly defines Hcal=aH (PDF p.31). B.13 uses Hcal, Eq.(6.9) uses cosmic H. Thus sigma≈z_star/(10^4 Hcal_star)=z_star(1+z_star)/(10^4 H_star)≈z_star^2/(10^4 H_star) at z_star>>1. Preserve the approximation and distinguish conformal time from cosmic time.",
+      "checked_locators": [
+        "Sec.6.1 Eq.(6.9), PDF p.19",
+        "Appendix B definition following Eq.(B.1), PDF p.31",
+        "Appendix B Eq.(B.13), PDF p.32"
+      ],
+      "action": "Replace the extraction caveat visibly and remove visibility-width repair from blockers; original Luna packet retained."
+    },
+    {
+      "id": "recent-low-z-subset-threshold",
+      "kind": "printed_source_inconsistency_confirmed",
+      "paper_id": "arxiv:2307.13743v2",
+      "original_fields": [
+        "luna-recent.quantities[Low-z Om and SN chi2 association]",
+        "luna-recent.caveats[printed threshold]"
+      ],
+      "old_claim": "70 seeds with chi2<1060 and mean Om 0.27±0.03.",
+      "replacement": "The PDF prints 1060; this conflicts with best-fit 1481.9 and Fig. 4. Retain the printed threshold as unresolved, and do not use its 70-seed statistic for a derived test or guess 1600.",
+      "checked_locators": [
+        "Sec.4.1 Eq.(4.8), PDF p.9",
+        "Sec.4.2 and Fig. 4, PDF p.11"
+      ],
+      "action": "Keep source issue, no silent repair."
+    },
+    {
+      "id": "recent-summary-percentages",
+      "kind": "printed_source_summary_not_reconciled",
+      "paper_id": "arxiv:2307.13743v2",
+      "original_fields": [
+        "luna-recent.caveats[Sec7 percentages]"
+      ],
+      "old_claim": "Sec.7 percentages differ from Sec.4.1 counts.",
+      "replacement": "Sec.4.1 states 55/90000 in [1481,1490] and 16/90000 better than LambdaCDM. Arithmetic fractions are about 0.0611% and 0.0178%. Sec.7 says about 0.14% similar and 0.015% better. The similar-fit threshold is not restated there, so this is an unreconciled summary, not proof the same precisely defined subset was miscounted. Use exact Sec.4.1 counts with finite-sample conditioning; do not turn summary percentages into model probabilities.",
+      "checked_locators": [
+        "Sec.4.1, PDF pp.6-7",
+        "Sec.7 first paragraph, PDF p.27"
+      ],
+      "action": "Narrow the original caveat; exclude summary percentages from quantitative acceptance."
+    },
+    {
+      "id": "recent-posterior-weighting-source-conflict",
+      "kind": "printed_source_method_description_conflict",
+      "paper_id": "arxiv:2307.13743v2",
+      "original_fields": [
+        "luna-recent.caveats[seed selection and evidence]",
+        "luna-recent.summary of Appendix A method"
+      ],
+      "old_claim": "Appendix A combines marginalized likelihoods consistently with main-text Bayesian model averaging.",
+      "replacement": "Main text Eqs.(4.3)-(4.4) weights normalized fixed-seed posteriors by P(s|D) proportional to marginal likelihood times seed prior; harmonic-mean likelihood estimates are stated. Appendix A Method 3 Eq.(A.6) instead says average normalized posteriors equally. Those operations differ unless seed evidences are equal. Actual implementation is unknown; preserve source-reported Eq.(4.5) as a conditional reported result, not independently verified model marginalization.",
+      "checked_locators": [
+        "Sec.4.1 Eqs.(4.3)-(4.5), PDF pp.7-8",
+        "Appendix A Method 3 Eqs.(A.5)-(A.6), PDF p.30"
+      ],
+      "action": "Add visible source methodology caveat; exact source code and weighting required before evidence reuse."
+    },
+    {
+      "id": "recent-bibliography101",
+      "kind": "luna_transcription_omission",
+      "paper_id": "arxiv:2307.13743v2",
+      "original_fields": [
+        "luna-recent.citation_leads[reference_label=[101]].printed_arxiv_base_id",
+        "luna-recent.citation_leads[reference_label=[101]].match_basis"
+      ],
+      "old_claim": "No arXiv ID is printed in reference[101].",
+      "replacement": "Reference[101] explicitly prints astro-ph/9506072. Set printed_arxiv_base_id to astro-ph/9506072, version null; do not infer the registered v1 was the cited version.",
+      "checked_locators": [
+        "HTML#bib.bib101; PDF reference[101]"
+      ],
+      "action": "Coordinator pre-review correction confirmed."
+    },
+    {
+      "id": "bath-eq29-normalization",
+      "kind": "printed_source_inconsistency_confirmed",
+      "paper_id": "arxiv:2607.03272v1",
+      "original_fields": [
+        "luna-dissipation.ideas[pellecchia-2607-ohmic-defect-bath].equations[on-shell Eqs28-32]",
+        "luna-dissipation.caveats",
+        "luna-dissipation.summary derivation claim"
+      ],
+      "old_claim": "Eq.(29) defines deltaLambda as energy-density terms plus one-half friction integral, and Eq.(33) follows by differentiation.",
+      "replacement": "The transcription is faithful, but the chain is inconsistent: Eq.(28) adds deltaLambda/(8piG) to an energy-density Hamiltonian, Eq.(31) adds deltaLambda to geometric Lambda, yet Eq.(29) RHS has density units. Its derivative also has coefficient beta_bar m_p/2 rather than the beta_bar m_p in Eq.(33). Eq.(27) and scalar continuity support the coefficient/sign in Eq.(33); this is a diagnostic, not authority to rewrite Eq.(29). Keep the deterministic system conditional and the Hamiltonian normalization blocked.",
+      "checked_locators": [
+        "PDF p.5 Eqs.(27)-(32)",
+        "PDF p.6 Eqs.(33)-(35)"
+      ],
+      "action": "Add visible printed-source caveat; do not relabel it as a Luna transcription error."
+    },
+    {
+      "id": "bath-appendix-factor2",
+      "kind": "printed_source_inconsistency_confirmed_with_domain_limits",
+      "paper_id": "arxiv:2607.03272v1",
+      "original_fields": [
+        "luna-dissipation.ideas[pellecchia-2607-ohmic-noise-fdt-equilibrium]",
+        "luna-dissipation.caveats[Appendix A]"
+      ],
+      "old_claim": "Eq.(A9) equilibrium rho=T_d^4 is inconsistent with printed averages; rho=T_d^4/2 is reader algebra.",
+      "replacement": "Confirmed literally from displayed averages and Eq.(33): 0=beta_bar m_p(2rho-T_d^4)/(3Lambda t^2). This identifies the printed factor mismatch; rho=T_d^4/2 is not adopted as the physically repaired equilibrium. White-noise endpoint normalization, finite-cutoff limit and bath mode-sum measure are unspecified. Appendix A does calculate <xi phi_dot>, so omission of that correlation is not an objection. A nonzero constant equilibrium density would additionally require an expanding-background continuity check; the homogeneous scalar has p=rho, not radiation.",
+      "checked_locators": [
+        "PDF p.8 Appendix A Eqs.(A1)-(A10)",
+        "PDF p.5 Eq.(30), p.6 footnote 8 and Eq.(35)"
+      ],
+      "action": "Retain narrow source arithmetic issue separately from Eq.(29); block quantitative Eq.(A10) reuse."
+    },
+    {
+      "id": "foundation-constraint-locator",
+      "kind": "coordinator_pre_review_transcription_correction_confirmed",
+      "paper_id": "arxiv:astro-ph/0209274v1",
+      "original_fields": [
+        "draft design Friedmann locator"
+      ],
+      "old_claim": "Friedmann was formerly labelled Eq.(3).",
+      "replacement": "Eq.(3) is past-light-cone volume; Eq.(6) is the Friedmann constraint. Draft now has the correct locator. Use rho_Lambda in its source density convention, not a dimensional identification with later geometric Lambda.",
+      "checked_locators": [
+        "PDF p.4 Eq.(3); p.5 Eq.(6)"
+      ],
+      "action": "Keep corrected draft and preserve original error provenance."
+    }
+  ],
+  "data_ancestry": [
+    {
+      "paper_id": "arxiv:astro-ph/0209274v1",
+      "data": "No fitted observational dataset; figures are model simulations; historical observations supply motivation only."
+    },
+    {
+      "paper_id": "arxiv:2307.13743v2",
+      "data": "Pantheon+SH0ES includes 42 Cepheid calibrators; H0 agreement with SH0ES shares calibration ancestry. Planck high-l,low-l,lensing likelihood and modified CAMB/CMBAns condition the CMB comparisons. Mock data reuse Pantheon+ redshifts/full covariance. No exact release/code/data/seed hashes, independent observations or joint-likelihood acceptance inferred."
+    },
+    {
+      "paper_id": "arxiv:2607.03272v1",
+      "data": "No dataset/likelihood fit; Fig. 1 is selected toy integration; quoted observed Lambda scale is context rather than a new measurement."
+    }
+  ],
+  "assessed_neighbours": [
+    {
+      "ids": [
+        "arxiv:0711.2904v1",
+        "arxiv:1703.06265v4",
+        "arxiv:1210.2589v3",
+        "arxiv:2304.03819v2"
+      ],
+      "basis": "Inspected current register metadata/screen/extraction/review status; all extraction/review null. Their claimed covariance, stability and favourable-fit details remain unreviewed prerequisites, not accepted physical links."
+    },
+    {
+      "ids": [
+        "arxiv:2603.21675v2"
+      ],
+      "basis": "Current metadata-only deferred bridge neighbour; source 2607.03272 reference [20] explicitly cites base 2603.21675 with no version. Bibliographic relation accepted as such; no equivalence or completion certified."
+    },
+    {
+      "ids": [
+        "arxiv:gr-qc/0612128v2"
+      ],
+      "basis": "Outside exactly-three-paper Sol scope; no source review, constraint acceptance or reviewed graph edge. Pending criticism limits coverage."
+    },
+    {
+      "ids": [
+        "staged-dark-decay-daughter-quintessence"
+      ],
+      "basis": "Existing reviewed interacting-dark-sector record inspected as a bookkeeping neighbour. Its parent/daughter/scalar transfer law and retained GR matter differ from both proposals; no new equivalence or graph edge accepted."
+    }
+  ],
+  "strongest_case": "The volume-noise ansatz exposes a time/volume-dependent law and survival selection that can be checked once a completion exists. The Ohmic paper supplies explicit reduced degrees of freedom, time conventions and candidate transfer equations, yielding a concrete source-consistency audit rather than a free background fit.",
+  "strongest_weakness": "Neither branch supplies an observationally qualified full cosmology. Everpresent Lambda lacks accepted covariant/spatial-stochastic closure; published negative fits are implementation-conditioned. The bath derivation has printed normalization gaps, freely chosen coupling/onset/initial bath, stiff rather than realistic cosmic matter, and no perturbation closure.",
+  "cheapest_informative_next_check": [
+    {
+      "prospect_id": "everpresent-lambda-conservation-and-cmb-audit",
+      "check": "Read the queued Zuntz spatial-overlap proposal and 2017 test before selecting one specified completion. Require conservation/geometry/spatial covariance, rather than rerunning the already acknowledged Bianchi objection. With exact code/history later, one paired equality-scaling calculation could test that approximation, but cannot qualify missing perturbations."
+    },
+    {
+      "prospect_id": "ohmic-unimodular-diffusion-noise-audit",
+      "check": "Resolve the distinct Eq.(29) dimensional/friction normalization and Appendix A equilibrium/endpoint conventions at source level. Then specify a regulated bath with controlled cold-noise regime and realistic sectors. No repaired equation, numerical test or data collection is authorized or executed in this review."
+    }
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "independently_reproduced": false,
+    "current_data_reassessment": false,
+    "scientifically_qualified": false,
+    "consumer_accepted": false
+  },
+  "limitations": [
+    "Exactly three reviewed paper versions; Barrow remains outside review and any full extraction queue remains intact.",
+    "No network, new source acquisition, additional workers, numerical experiments, engine capability inspection or public/Git changes.",
+    "Accepted graph edges mean source describes/informs/physically distinct at the reviewed prescription level; no equivalence, compatibility, dynamical completion or current-data exclusion.",
+    "Printed inconsistencies are preserved separately from reader/coordinator errors; no guessed parameter, covariance, probability, code identity or backend identity.",
+    "Review files and viewed renders are separate ignored .work artifacts; coordinator remains responsible for integration and persistent custody."
+  ],
+  "packet_sha256": "da468a40f4113018ef7147fc5defd90009c9bdf642cc99db16922a2ae79ad01c",
+  "model_confirmation": {
+    "model": "gpt-6.1-sol",
+    "effort": "high",
+    "evidence_kind": "coordinator_observed_collaboration_spawn_agent",
+    "launch_arguments": {
+      "task_name": "sol_stochastic_vacuum",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "fork_turns": "none"
+    },
+    "launch_return": {
+      "task_name": "/root/sol_stochastic_vacuum"
+    },
+    "actual_backend_identity": null,
+    "limits": "Requested model and canonical agent ID are exposed; actual backend identity is not."
+  }
+}
