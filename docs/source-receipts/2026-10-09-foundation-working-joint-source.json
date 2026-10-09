@@ -1,0 +1,265 @@
+{
+  "schema": "foundation-working-joint-source-evidence/v1",
+  "review_kind": "targeted_source_claims",
+  "reviewed_utc": "2026-10-09T19:35:51.613110+00:00",
+  "primary": {
+    "candidate": {
+      "id": "candidate-class-planck-primary-six-parameter-v2",
+      "path": "designs/candidate-class-planck-primary-six-parameter-v2.json",
+      "bytes": 10363,
+      "sha256": "b486e38f59e9561b6ee9ed1e32a3db85a2505fcdc77d2f1e214dfcf5670f16df"
+    },
+    "reference": {
+      "id": "class-planck-primary-six-parameter-v2",
+      "path": "references/lcdm/class-planck-primary-six-parameter-v2.json",
+      "bytes": 22715,
+      "sha256": "a192c531bf307f1e17a8be101abdca3d911dce34e27b27e8e006507eb253715f"
+    },
+    "source_revision": "95099a5137f921487cbecdad7c9c58da2a7e4fc5"
+  },
+  "desi": {
+    "inputs": {
+      "mean": {
+        "path": "desi/001-desi_gaussian_bao_ALL_GCcomb_mean.txt",
+        "bytes": 472,
+        "sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585"
+      },
+      "covariance": {
+        "path": "desi/000-desi_gaussian_bao_ALL_GCcomb_cov.txt",
+        "bytes": 2547,
+        "sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509"
+      }
+    },
+    "input_custody": {
+      "manifest_format": "research-named-manifest/v1",
+      "collection": "reproducible/handoffs/reproducible/foundation-planck-primary-desi-original-inputs-20261009",
+      "uri": "s3://research-data-436908790672-eu-west-2/reproducible/handoffs/reproducible/foundation-planck-primary-desi-original-inputs-20261009/versions/ffc90bd6f8bdd2e5bb85ca021a39b665a7fa83bfd28091962520f4b83172fad2/manifest.json",
+      "version_id": "7Wx6k4nnXxL8qsgMuycTXK2qexElF8Tz",
+      "sha256": "b3cb5a810216a036df5fa761ccf551646d392442d6070805cdac2bf264f5e7d0",
+      "bytes": 46932
+    },
+    "rows": [
+      {
+        "z": 0.295,
+        "observable": "DV_over_rs",
+        "mean": 7.94167639
+      },
+      {
+        "z": 0.51,
+        "observable": "DM_over_rs",
+        "mean": 13.58758434
+      },
+      {
+        "z": 0.51,
+        "observable": "DH_over_rs",
+        "mean": 21.86294686
+      },
+      {
+        "z": 0.706,
+        "observable": "DM_over_rs",
+        "mean": 17.35069094
+      },
+      {
+        "z": 0.706,
+        "observable": "DH_over_rs",
+        "mean": 19.45534918
+      },
+      {
+        "z": 0.934,
+        "observable": "DM_over_rs",
+        "mean": 21.57563956
+      },
+      {
+        "z": 0.934,
+        "observable": "DH_over_rs",
+        "mean": 17.64149464
+      },
+      {
+        "z": 1.321,
+        "observable": "DM_over_rs",
+        "mean": 27.60085612
+      },
+      {
+        "z": 1.321,
+        "observable": "DH_over_rs",
+        "mean": 14.17602155
+      },
+      {
+        "z": 1.484,
+        "observable": "DM_over_rs",
+        "mean": 30.51190063
+      },
+      {
+        "z": 1.484,
+        "observable": "DH_over_rs",
+        "mean": 12.81699964
+      },
+      {
+        "z": 2.33,
+        "observable": "DH_over_rs",
+        "mean": 8.631545674846294
+      },
+      {
+        "z": 2.33,
+        "observable": "DM_over_rs",
+        "mean": 38.988973961958784
+      }
+    ],
+    "companion_coverage": {
+      "2503.14742v3": [
+        "SecIII complete mocks and DR2 comparison limitations",
+        "SecIV.1–5 complete Eqs5–20/Tables2–4: dilation, reconstruction, galaxyBAO model, covariance and extraction inference",
+        "SecV.2 complete including Table5: DR2systematicbudget",
+        "SecVI.6 complete including Fig9caption: Gaussian marginalizedBAO posterior approximation",
+        "SecVII.3 complete including Table10/Fig11caption: alternativefiducialreruns andNeffphaselimitation"
+      ],
+      "2404.03005v3": [
+        "Sec2.2 complete including2.2.1–2/Eqs1–15/Table1: reconstruction displacement, RecSym/RecIso, IterativeFFT3, grid/smoothing/bias/growth settings",
+        "Sec3.1 complete: fiducialmockcosmology andmockancestry"
+      ],
+      "2406.06085v2": [
+        "Sec2.1–4 complete including Table1/Eqs1–13/captions: fiducialcosmology, geometrical distortion, template rescaling and reconstruction",
+        "Sec4.3 complete/Table2: alternatecosmologyreconstruction settings andmodifiedbias vs officialDR1",
+        "Sec5.1 complete includingTable3: finite25mockfiducialtests andNeffresidual",
+        "Sec6 complete: authorslimits andsystematics conclusion",
+        "AppendixA complete: Neffphase/r_draginterpretation limitations",
+        "AppendixB complete: additionalDESIw0waDR1rerun and.18%APshift"
+      ]
+    },
+    "companion_findings": [
+      {
+        "id": "fiducial",
+        "source": "2406.06085v2 Sec2.1;2404.03005v3 Sec3.1",
+        "claim": "DESI/Abacus baseline uses Planck2018-derived cosmology wb=.02237,wc=.1200,h=.6736,N_ur=2.0328,one massive species omega_nu=.00064420. This is an analysis coordinate/template/reconstruction choice, not an independent Planck measurement factor. Exact full parameter file/code revision is not acquired here."
+      },
+      {
+        "id": "reconstruction",
+        "source": "2503.14742v3 SecIV.2/Table2;2404.03005v3 Sec2.2",
+        "claim": "DR2 adopts IterativeFFT reconstruction with DR1 baseline pyrecon settings:3iterations,4h^-1Mpc grid,RecSym preservingRSD, Gaussian15h^-1Mpc smoothing forBGS/LRG/ELG and30forQSO; bias1.5/2.0/1.2/2.1 (combinedLRG+ELG1.6), sourceDR2 f=.69/.83/.90/.93 (combined.86). These extraction settings are already conditioned in published compression, not new nuisance priors to append."
+      },
+      {
+        "id": "compression",
+        "source": "2503.14742v3 SecIV.3–5/Table4;VI.6",
+        "claim": "GalaxyBAO extraction assumes oscillatory template scale dilation, damped wiggles, marginalized broadband/bias/RSD/damping parameters and Gaussian correlation-function estimatorlikelihood. Postreconstructionmonopole+quadrupole default, BGSm monopole. Published Gaussian mean/covariance approximates marginalizedBAO posterior transformed to D_M/r_drag,D_H/r_drag orD_V/r_drag. It is not a raw direct distance measurement. Extractor flat alpha_iso/AP[.8,1.2] andnuisancepriors are already part of compressed product and must not be added again to cosmologicaltarget."
+      },
+      {
+        "id": "fiducial-validation",
+        "source": "2503.14742v3 SecVII.3/Table10;V.2/Table5;2406.06085v2 AppendixB",
+        "claim": "DR2 reran reconstruction+coordinategrid+template+RascalCcov with fourAbacusalternatives (Omega_m.276,thawingw0−.7wa−.5,Neff3.70,sigma8.75), plus bestfitDESI+CMB+DESY5w0wa. Authors report all distanceswithin.5sigma vsbaseline and bestfitw0wa largestAP.4sigma/LRG1,largestDV.2sigma/ELG2. DR2 fiducialsystematicAP.18% forLRGvsDR1.1%, basedonadditionalw0wa test. These finite author tests do not guarantee universalcompressionsufficiency."
+      },
+      {
+        "id": "early-physics-limit",
+        "source": "2406.06085v2 Sec5.1/6/AppendixA;2503.14742v3 SecVII.3",
+        "claim": "HighNeff3.70 leadsroughly.1–.2% isotropicresiduals (someconfigurationoutliersupto.3%) becauseBAOphase doesnotrescaleexactlywithr_drag. Authors treat this as interpretation/template issue, exclude it from adopted systematicbudget, andwouldreanalyse ifinference indicatedlargeNeffdeviation. Newearlyphysics/phasechangesrequireseparate template qualification; genericdistance/r_drag agreement is insufficient."
+      },
+      {
+        "id": "primary-cmb-joint-open",
+        "source": "2503.14738v3 checkedSecIV.2/AppendixB;companionselectedsections",
+        "claim": "No primaryPlanck Commander+SimAll+Plik-lite versus full13DESIcrosscovariance bound or sourced negligible-dependence justification found incheckedlocators. DESIauthorCMBtarget PR4CamSpec plusPlanck+ACTreconstruction is distinct. Samefiducial Planckcosmology is conditionalanalysisancestry; it alone neither addsindependentinformation nor establishes noisesindependent."
+      }
+    ],
+    "source_product_evidence": "Planck VI completeSec5.1 Eq24–26 andSec5.6, DESI complete selectedSecIV.2/V: adopted multi-probe combinations do not quantify the exact primary-CMB/full13 crosscovariance. No numerical negligibility bound is asserted.",
+    "new_working_choice": {
+      "status": "exploratory_project_approximation",
+      "cross_probe_policy": "block_factorized_primary_CMB_and_DESI_BAO",
+      "cross_covariance": "set_to_zero_in_this_working_target_not_empirically_measured_zero",
+      "source_evidence": "Planck VI Sec5.1 and DESI DR2 cosmology SecIV.2/V adopt joint CMB+BAO analyses; those source targets differ and do not supply a crosscovariance bound for this exact pair.",
+      "remaining_channels": [
+        "Late ISW temperature and the same large-scale structure traced by DESI",
+        "Primary-CMB lensing smoothing and the same foreground matter modes",
+        "Shared sky and possible extragalactic foreground or selection correlations",
+        "BAO reconstruction and Planck-derived fiducial/template ancestry"
+      ],
+      "interpretation": "Real simultaneous shared-state working posterior; no calibrated cross-probe tension, Bayes-factor/evidence, empirical independence, or completed M2 dependence qualification."
+    },
+    "sensitivity": [
+      "Refit the same project prior and nuisance ownership with Commander TT omitted; compare cosmological shifts and raw per-factor scores. This diagnoses sensitivity to low-T/late-ISW information and does not measure crosscovariance.",
+      "Compare primary-only, BAO-only and joint posteriors under the same cosmological prior, retaining per-component scores and boundary diagnostics; do not multiply fitted summaries or subtract separately minimized likelihoods as a joint fit.",
+      "Leave out each BAO tracer block using the corresponding principal covariance submatrix; report sensitivity without stacking overlapping releases or superseded rows.",
+      "Retain primary v2 prior-boundary and supported expanded-prior sensitivity. Compression validation at finite fiducial alternatives is not whole-prior or early-physics template certification."
+    ],
+    "released_configuration_search": {
+      "supplement_record": "https://zenodo.org/records/16644577",
+      "metadata_sha256": "a805c36f26dae295f51ffc50774cf703074ea7e745990873e0398583e3b0b854",
+      "archive_bytes": 1306284840,
+      "bounded_directory_check": "186 outer entries; cosmology_chains.zip is nested inside a roughly1.27GB deflated member, so its configs cannot be fetched by direct member ranges without the large archive. No full archive acquired.",
+      "readme_attempt": {
+        "url": "https://zenodo.org/api/records/16644577/files/dr2-bao-zenodo.zip/content",
+        "range": "bytes=2536-6631",
+        "retrieved_utc": "2026-10-09T19:39:09.243985+00:00",
+        "http_status": 503,
+        "timeout_seconds": 20,
+        "byte_limit": 4096,
+        "disposition": "Failed bounded Readme member acquisition; no retry or full archive acquisition. Exact nested-chain configs remain unchecked."
+      },
+      "qualification": "Source paper describes adopted product; exact released likelihood YAML/configuration is not independently verified."
+    }
+  },
+  "sn": {
+    "inputs": {
+      "table": {
+        "path": "inputs/released-supernova-distances/024-000-sn-table.dat",
+        "bytes": 579283,
+        "sha256": "1cb0fc379ef066afdc2ffd1857681cc478024570d8a3eba284fb645775198cf8"
+      },
+      "covariance": {
+        "path": "inputs/released-supernova-distances/027-003-sn-covariance.cov",
+        "bytes": 33284960,
+        "sha256": "abf806d966485e64afdb359c87bffc0ecc00d05eff0a31ced66f247385df0fdc"
+      },
+      "calibrated_caller": {
+        "path": "inputs/released-supernova-distances/025-001-Pantheon+SH0ES_cosmosis_likelihood.py",
+        "bytes": 4573,
+        "sha256": "345fac3781a5cb930b95e91c1c07eb17dcf99b441703bb5e449477519240a59d"
+      },
+      "relative_caller": {
+        "path": "inputs/released-supernova-distances/026-002-Pantheon+_only_cosmosis_likelihood.py",
+        "bytes": 4000,
+        "sha256": "7bc222fedc11a3d496ef4c5c18b2e111842dcef4d2bb65d22e9597eb9be191a4"
+      },
+      "readme": {
+        "path": "inputs/released-supernova-distances/028-004-sn-readme.txt",
+        "bytes": 4056,
+        "sha256": "e2b0d262757f01c1794a938c78d32600a21e289b2a0320e5c660c4c6fc9aa87e"
+      }
+    },
+    "input_custody": {
+      "format": "research-named-manifest/v1",
+      "uri": "s3://research-data-436908790672-eu-west-2/reproducible/handoffs/reproducible/foundation-finite90-original-dataset-custody-20261009/versions/e8f07a0377c5b65ed14d02f539dd0beb6fdbd4156c927774c261f4243510d9b6/manifest.json",
+      "sha256": "1dc14173240d1b50d6143206bd665dc73565883b98fca91488fd34457536c820",
+      "version_id": "IRroC9SKerzuM30CtJfwSKRByrn0aORl"
+    },
+    "selection": {
+      "relative": {
+        "count": 1590,
+        "original_zero_based_row_indices_sha256": "d53d10d04af0f29fedc5c462c0f1c5dc0375556749dc9f9c94eda02af1354760",
+        "index_serialization": "UTF8 compact JSON integer array, no newline, original row order",
+        "flagged_calibrators_retained": 10
+      },
+      "calibrated": {
+        "count": 1657,
+        "original_zero_based_row_indices_sha256": "9eda77a8fcb126f02a7ad5175e29e867a4879c3080c780eeb3462b7950eae4fe",
+        "index_serialization": "UTF8 compact JSON integer array, no newline, original row order",
+        "flagged_calibrators_retained": 77
+      }
+    },
+    "relative_selection": "zHD>0.01",
+    "calibrated_selection": "(zHD>0.01) OR bool(IS_CALIBRATOR)",
+    "original_covariance_status": "Historical full389/selected-calibrated361 asymmetric unordered pairs, maximum3.0000000000038676e-08; structural refusal unchanged. Relative selection asymmetry count not checked here.",
+    "relative_factor_id": "pantheon-relative-symmetrized-release-working-v1",
+    "calibrated_factor_id": "pantheon-shoes-symmetrized-release-working-v1",
+    "normalization": "-0.5*(r^T Cs^-1 r + logdet(Cs) + n*log(2*pi)); prior M uniform[-21,-17] in dM, density1/4",
+    "direct_mean_choice": "Official pinned CLASS.angular_distance at each released zHD; CLASS background interpolation, no inherited CosmoSIS interp1d policy reproduction.",
+    "source_calibration_ownership": "Both exact source callers use selected Pantheon+SH0ES_STAT+SYS.cov; README states STAT+SYS includes Cepheid-host systematics and CEPH_DIST uncertainty. Relative factor follows the relative caller covariance choice, with no host-distance mean/prior factor.",
+    "numerical_status": "Data-owner calibrated1657 Cs/triangle SPD and synthetic/MU_SH0ES engineering controls are separate evidence, not source-owner execution or actual CLASS posterior qualification; relative1590 checks pending.",
+    "author_joint_caveat": "BroutIV.4 excludes SH0ES from Planck combinations due to incompatibility; source Bayes-ratio result−9 refers to the author model/prior/data, not our target. Preserve relative baseline and optional separate calibrated compatibility-stress fit.",
+    "unresolved": [
+      "Paper81 versus serialized77 calibrator light curves not reconciled",
+      "Exact inherited GaussianLikelihood version/inversion and self.kind unknown",
+      "Actual direct-CLASS residual/precision/boundary/triangle sensitivity gates unearned"
+    ]
+  },
+  "rights": "Owned notes only; raw paper/caller bodies stay excluded from Git. Existing lawful privately pinned data custody reused; no duplicate acquisition.",
+  "new_full_reads": 0,
+  "new_paper_admissions": 0
+}

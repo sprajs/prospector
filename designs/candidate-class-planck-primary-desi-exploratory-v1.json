@@ -1,0 +1,358 @@
+{
+  "schema_version": 1,
+  "kind": "candidate_design",
+  "paper_ids": [
+    "arxiv:1807.06209v4",
+    "arxiv:1907.12875v2",
+    "arxiv:2503.14738v3"
+  ],
+  "idea_ids": [
+    "planck-conditioned-base-lcdm",
+    "bao-compressed-relative-ruler"
+  ],
+  "review_id": "2026-10-09-foundation-working-joint-source-claims",
+  "readiness": "blocked",
+  "equations": [
+    {
+      "expression": "P_R(k)=A_s*(k/0.05 Mpc^-1)^(n_s-1); A_s=exp(logA)*1e-10",
+      "locator": "Planck VI Sec2.1 power law and pivot; project natural-log sampling coordinate",
+      "paper_id": "arxiv:1807.06209v4",
+      "definitions": "Dimensionless adiabatic scalar curvature power; all six cosmological coordinates vary.",
+      "domain": "Declared flat base-LCDM reference",
+      "status": "reviewed_transcription"
+    },
+    {
+      "expression": "N_ur=3.046-deg_ncdm*(T_ncdm/(4/11)^(1/3))^4; T_ncdm=.71611,deg_ncdm=1",
+      "locator": "Pinned CLASS input.c/background.c FD normalization",
+      "paper_id": "arxiv:1807.06209v4",
+      "definitions": "Reviewer-derived effective FD mapping for Planck source Neff3.046; exact nonthermal CAMB equivalence unproved.",
+      "domain": "Relativistic zero-chemical-potential FD pair; CLASS evolves the full massive energy density",
+      "status": "reviewer_derived"
+    },
+    {
+      "expression": "lnTarget_primary=sum[lnL_Commander,lnL_SimAll,lnL_Pliklite]+lnPrior_project; Cl_effective=Cl_theory/A_planck^2",
+      "locator": "Planck V Sec3.3.4 Eqs38–39,Sec4; pinned official lklbs/plik_cmbonly",
+      "paper_id": "arxiv:1907.12875v2",
+      "definitions": "Gaussian map-calibration prior once in dA_planck; foreground marginalization already in Plik-lite.",
+      "domain": "Released product support; physical-prior rejection is distinct from numerical or table refusal",
+      "status": "reviewed_transcription"
+    },
+    {
+      "expression": "DM=(1+z)DA; DH=1/H_CLASS; DV=(DM^2*z/H_CLASS)^(1/3); t_i=Di/r_drag; lnL_BAO=−(r^T C^-1 r+ln det C+13 ln(2pi))/2",
+      "locator": "PlanckVI Sec5.1Eq24; DESI SecIII/Table4; pinned CLASSy angular_distance,Hubble,rs_drag conventions",
+      "paper_id": "arxiv:2503.14738v3",
+      "definitions": "H_CLASS=Hphysical/c in Mpc^-1; all distances and predicted comoving drag ruler Mpc; full13 released covariance and original row order.",
+      "domain": "Same flat-LCDM CLASS state and frozen restricted primary v2 box; factorized exploratory likelihood.",
+      "status": "reviewer_derived"
+    }
+  ],
+  "assumptions": [
+    "Primary seven-coordinate prior and physics are copied exactly from pinned v2 and applied once.",
+    "The full13 Gaussian BAO compression is used in its source-conditioned form; no extraction priors or superseded rows are appended.",
+    "Cross-probe factorization is an explicit project approximation with unknown actual crosscovariance; inference is conditional on this choice.",
+    "Consumer admission binds exact new candidate bytes, primary pins, restored inputs and executable numerical policy before execution."
+  ],
+  "simplifications": [
+    "Exact Planck/CAMB nonthermal neutrino distribution and PArthENoPE1.1 grid/implementation equivalence are unproved.",
+    "Planck Table2 TT,TE,EE+lowE+lensing additionally uses full Plik foreground nuisance conditioning and a reconstructed-lensing likelihood.",
+    "DESI DR2 source CMB baseline PR4 CamSpec plus Planck+ACT reconstruction is a different target.",
+    "Numerical qualification, convergence and independent matched-target posterior reproduction remain open."
+  ],
+  "data_dependencies": [
+    {
+      "paper_id": "arxiv:1907.12875v2",
+      "kind": "Official primary likelihood",
+      "role": "Exact unchanged pinned primary v2 components and calibration ownership."
+    },
+    {
+      "paper_id": "arxiv:2503.14738v3",
+      "kind": "Released full13 Gaussian compression",
+      "role": "Exact mean/covariance and same-state predicted distance/drag; preserve reconstruction/template ancestry."
+    }
+  ],
+  "unknowns": [
+    "Actual crosscovariance for this exact primary/full13 pair is unknown; calibrated dependence/tension/evidence qualification is unearned.",
+    "Whole-project-prior compression sufficiency is not proven by finite fiducial variants.",
+    "Exact new executable acceptance and posterior convergence/predictive/sensitivity gates remain unearned."
+  ],
+  "verification_gates": [
+    "Accept byte-exact new candidate and pinned immutable primary candidate/reference; compare complete primary consumer semantics.",
+    "Fresh restore verifies full mean/covariance hashes,13 row order and covariance SPD without jitter/clipping.",
+    "Use one CLASS state with direct background/thermodynamic outputs; independently check units,drag and default/refined predictions and per-factor scores.",
+    "Retain primary v2 support/precision/convergence/ESS/MCSE/boundary gates, failed prefixes and raw likelihood/prior/posterior separation.",
+    "Refit the same project prior and nuisance ownership with Commander TT omitted; compare cosmological shifts and raw per-factor scores. This diagnoses sensitivity to low-T/late-ISW information and does not measure crosscovariance.",
+    "Compare primary-only, BAO-only and joint posteriors under the same cosmological prior, retaining per-component scores and boundary diagnostics; do not multiply fitted summaries or subtract separately minimized likelihoods as a joint fit.",
+    "Leave out each BAO tracer block using the corresponding principal covariance submatrix; report sensitivity without stacking overlapping releases or superseded rows.",
+    "Retain primary v2 prior-boundary and supported expanded-prior sensitivity. Compression validation at finite fiducial alternatives is not whole-prior or early-physics template certification.",
+    "Consumer scientifically reviews interpretation before calibrated tension/evidence claims; this exploratory posterior does not close the observational-dependence gate."
+  ],
+  "falsification": "A source/order/unit/coordinate mismatch or failed frozen gate refuses that comparison. Preserve failures, and do not relax budgets, replace physics or hide numerical failures in prior exclusions.",
+  "consumer": {
+    "repository": "sprajs/reproducible",
+    "revision": null,
+    "dirty": null,
+    "capability_status": "New shared-state fully varied primary+DESI consumer under development; source freeze does not claim executable acceptance.",
+    "recipe_runner_status": "Reproducible owns dedicated typed CLASS/official-clik/Gaussian-BAO execution and numerical policies."
+  },
+  "blockers": [
+    "Exact new consumer acceptance and numerical/inference qualification remain unearned; source-defined exploratory fit is permitted once these execution gates pass."
+  ],
+  "executable_request": null,
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false,
+    "reason": "Source-reviewed separately named exploratory factorized target only; no new-target numerical execution, empirical independence or qualified observational joint conclusion claimed."
+  },
+  "design_id": "candidate-class-planck-primary-desi-exploratory-v1",
+  "title": "Exploratory shared-state CLASS primary plus DESI DR2 full13 posterior",
+  "faithful_claim": "Fit a distinctly named simultaneous primary-CMB+full13 DESI posterior using the unchanged restricted primary v2 physics/prior and one CLASS state, conditional on an explicitly chosen cross-probe block-factorization approximation. Report factor scores and sensitivity; no empirical-independence, calibrated tension or source Planck/DESI posterior reproduction claim.",
+  "minimal_test": {
+    "question": "What simultaneous working posterior and per-probe diagnostics follow from the exact shared-state primary+DESI target, and how sensitive are they to the declared approximation and restricted prior?",
+    "observables": [
+      "Joint six-cosmology plus calibration posterior",
+      "Three official primary scores and normalized full13 BAO score",
+      "Same-state r_drag, angular distances and Hubble rates",
+      "Same-prior Commander omission, probe and tracer sensitivities"
+    ],
+    "parameter_choices": {
+      "working_joint_contract": {
+        "target_id": "class-planck-primary-desi-exploratory-v1",
+        "primary_candidate": {
+          "id": "candidate-class-planck-primary-six-parameter-v2",
+          "path": "designs/candidate-class-planck-primary-six-parameter-v2.json",
+          "bytes": 10363,
+          "sha256": "b486e38f59e9561b6ee9ed1e32a3db85a2505fcdc77d2f1e214dfcf5670f16df"
+        },
+        "primary_reference": {
+          "id": "class-planck-primary-six-parameter-v2",
+          "path": "references/lcdm/class-planck-primary-six-parameter-v2.json",
+          "bytes": 22715,
+          "sha256": "a192c531bf307f1e17a8be101abdca3d911dce34e27b27e8e006507eb253715f"
+        },
+        "primary_consumer_contract": {
+          "coordinates": [
+            "omega_b",
+            "omega_cdm",
+            "H0",
+            "logA",
+            "n_s",
+            "tau_reio",
+            "A_planck"
+          ],
+          "bounds": {
+            "omega_b": [
+              0.018,
+              0.028
+            ],
+            "omega_cdm": [
+              0.08,
+              0.18
+            ],
+            "H0": [
+              50,
+              90
+            ],
+            "logA": [
+              2.8,
+              3.3
+            ],
+            "n_s": [
+              0.92,
+              1.03
+            ],
+            "tau_reio": [
+              0.02,
+              0.1
+            ],
+            "A_planck": [
+              0.975,
+              1.025
+            ]
+          },
+          "measure": "domega_b domega_cdm dH0 dlogA dn_s dtau_reio dA_planck",
+          "physical_indicator": "CLASS_Omega_Lambda_nonnegative",
+          "class_fixed": {
+            "T_cmb": 2.7255,
+            "N_ur": 2.0327983725164924,
+            "N_ncdm": 1,
+            "m_ncdm": 0.06,
+            "T_ncdm": 0.71611,
+            "deg_ncdm": 1.0,
+            "ksi_ncdm": 0.0,
+            "Omega_k": 0.0,
+            "Omega_fld": 0.0,
+            "Omega_scf": 0.0,
+            "YHe": "BBN",
+            "recombination": "HyRec",
+            "reio_parametrization": "reio_camb",
+            "reionization_exponent": 1.5,
+            "reionization_width": 0.5,
+            "helium_fullreio_redshift": 3.5,
+            "helium_fullreio_width": 0.5,
+            "P_k_ini type": "analytic_Pk",
+            "k_pivot": 0.05,
+            "alpha_s": 0.0,
+            "modes": "s",
+            "ic": "ad",
+            "gauge": "synchronous",
+            "output": "tCl,pCl,lCl,mPk",
+            "lensing": "yes",
+            "non linear": "hmcode",
+            "hmcode_version": "2016",
+            "feedback model": "emu_dmonly",
+            "l_max_scalars": 2508,
+            "sBBN file": "external/bbn/sBBN_2017.dat"
+          },
+          "bbn_table": {
+            "path": "external/bbn/sBBN_2017.dat",
+            "bytes": 11213,
+            "sha256": "b72607a3a2f9134130cb2c09c0140d4f68c5916962e83fc6740a664bd5b69ea5"
+          },
+          "calibration_prior": {
+            "kind": "truncated_normal_in_dA_planck",
+            "mean": 1.0,
+            "sigma": 0.0025,
+            "applications": 1
+          },
+          "likelihood_components": [
+            "commander_TT",
+            "simall_EE",
+            "plik_lite_TTTEEE"
+          ],
+          "lmax": 2508
+        },
+        "bao": {
+          "dataset_id": "desi-dr2-full13-gaussian-compression",
+          "upstream_repository": "CobayaSampler/bao_data",
+          "upstream_revision": "bb0c1c9009dc76d1391300e169e8df38fd1096db",
+          "upstream_directory": "desi_bao_dr2",
+          "inputs": {
+            "mean": {
+              "path": "desi/001-desi_gaussian_bao_ALL_GCcomb_mean.txt",
+              "bytes": 472,
+              "sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585"
+            },
+            "covariance": {
+              "path": "desi/000-desi_gaussian_bao_ALL_GCcomb_cov.txt",
+              "bytes": 2547,
+              "sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509"
+            }
+          },
+          "rows": [
+            {
+              "z": 0.295,
+              "observable": "DV_over_rs",
+              "mean": 7.94167639
+            },
+            {
+              "z": 0.51,
+              "observable": "DM_over_rs",
+              "mean": 13.58758434
+            },
+            {
+              "z": 0.51,
+              "observable": "DH_over_rs",
+              "mean": 21.86294686
+            },
+            {
+              "z": 0.706,
+              "observable": "DM_over_rs",
+              "mean": 17.35069094
+            },
+            {
+              "z": 0.706,
+              "observable": "DH_over_rs",
+              "mean": 19.45534918
+            },
+            {
+              "z": 0.934,
+              "observable": "DM_over_rs",
+              "mean": 21.57563956
+            },
+            {
+              "z": 0.934,
+              "observable": "DH_over_rs",
+              "mean": 17.64149464
+            },
+            {
+              "z": 1.321,
+              "observable": "DM_over_rs",
+              "mean": 27.60085612
+            },
+            {
+              "z": 1.321,
+              "observable": "DH_over_rs",
+              "mean": 14.17602155
+            },
+            {
+              "z": 1.484,
+              "observable": "DM_over_rs",
+              "mean": 30.51190063
+            },
+            {
+              "z": 1.484,
+              "observable": "DH_over_rs",
+              "mean": 12.81699964
+            },
+            {
+              "z": 2.33,
+              "observable": "DH_over_rs",
+              "mean": 8.631545674846294
+            },
+            {
+              "z": 2.33,
+              "observable": "DM_over_rs",
+              "mean": 38.988973961958784
+            }
+          ],
+          "covariance_shape": [
+            13,
+            13
+          ],
+          "covariance_policy": "full_released_covariance_in_exact_mean_row_order",
+          "units": "dimensionless_distance_over_same_state_comoving_r_drag",
+          "theory": {
+            "DM_over_rs": "(1+z)*CLASS.angular_distance(z)/CLASS.rs_drag()",
+            "DH_over_rs": "1/CLASS.Hubble(z)/CLASS.rs_drag()",
+            "DV_over_rs": "[((1+z)*CLASS.angular_distance(z))^2*z/CLASS.Hubble(z)]^(1/3)/CLASS.rs_drag()",
+            "distance_unit": "Mpc",
+            "class_Hubble_unit": "1/Mpc (H_physical/c)",
+            "drag_policy": "predicted_by_the_same_CLASS_thermodynamics_state"
+          },
+          "log_likelihood": "-0.5*(r^T C^-1 r + logdet(C) + 13*log(2*pi)); r=theory-mean",
+          "factorizations": "Cholesky_solve_and_logdet_no_explicit_inverse_no_jitter_or_clipping",
+          "additional_extraction_priors": []
+        },
+        "dependence": {
+          "status": "exploratory_project_approximation",
+          "cross_probe_policy": "block_factorized_primary_CMB_and_DESI_BAO",
+          "cross_covariance": "set_to_zero_in_this_working_target_not_empirically_measured_zero",
+          "source_evidence": "Planck VI Sec5.1 and DESI DR2 cosmology SecIV.2/V adopt joint CMB+BAO analyses; those source targets differ and do not supply a crosscovariance bound for this exact pair.",
+          "remaining_channels": [
+            "Late ISW temperature and the same large-scale structure traced by DESI",
+            "Primary-CMB lensing smoothing and the same foreground matter modes",
+            "Shared sky and possible extragalactic foreground or selection correlations",
+            "BAO reconstruction and Planck-derived fiducial/template ancestry"
+          ],
+          "interpretation": "Real simultaneous shared-state working posterior; no calibrated cross-probe tension, Bayes-factor/evidence, empirical independence, or completed M2 dependence qualification."
+        },
+        "prior_ownership": "Use the normalized primary v2 seven-coordinate prior exactly once. BAO adds no parameters, calibration prior, extractor alpha prior, damping prior, foreground prior or Planck fitted-summary factor.",
+        "state_ownership": "One CLASS solve at each sampled state supplies primary spectra, background distances and predicted r_drag; fixed helium or supplied drag is forbidden.",
+        "sensitivity": [
+          "Refit the same project prior and nuisance ownership with Commander TT omitted; compare cosmological shifts and raw per-factor scores. This diagnoses sensitivity to low-T/late-ISW information and does not measure crosscovariance.",
+          "Compare primary-only, BAO-only and joint posteriors under the same cosmological prior, retaining per-component scores and boundary diagnostics; do not multiply fitted summaries or subtract separately minimized likelihoods as a joint fit.",
+          "Leave out each BAO tracer block using the corresponding principal covariance submatrix; report sensitivity without stacking overlapping releases or superseded rows.",
+          "Retain primary v2 prior-boundary and supported expanded-prior sensitivity. Compression validation at finite fiducial alternatives is not whole-prior or early-physics template certification."
+        ]
+      }
+    },
+    "scope": "Primary+DESI exploratory working posterior only. Relative SN and calibrated compatibility-stress targets are separate source contracts and require separately frozen consumer identities."
+  },
+  "source_contracts": [
+    {
+      "contract_id": "foundation-exploratory-primary-desi-joint-v1",
+      "path": "register/contracts/foundation-exploratory-primary-desi-joint-v1.json",
+      "sha256": "9a50be08dd7deaec5ffe1e95934cefa1918a1aadb2cdbd6cb7220157db88ef11"
+    }
+  ]
+}
