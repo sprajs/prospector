@@ -819,6 +819,78 @@
       "prospect_ids": [
         "inhomogeneity"
       ]
+    },
+    {
+      "paper_id": "arxiv:2112.04456v2",
+      "stage": "read",
+      "reason": "Foundation deferred full reading: Pantheon+ Dust2Dust selection-aware parent dust/colour inference; parameter uncertainty propagation is not model-misspecification coverage.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2401.08755v2",
+      "stage": "read",
+      "reason": "Selected for ordinary full-paper Luna reading followed by Sol source review; shared worker capacity pending. Selected full reading: independent BayeSN SED hierarchy simultaneously separates dust and intrinsic mass effects; null redshift evolution is domain conditioned.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2403.10388v2",
+      "stage": "read",
+      "reason": "Deferred predecessor: calibrator-host extinction transfer proposal; same-author follow-up selected rather than treating papers as independent confirmations.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2506.22150v2",
+      "stage": "read",
+      "reason": "Selected for ordinary full-paper Luna reading followed by Sol source review; shared worker capacity pending. Selected full reading: two-population calibrator versus Hubble-flow matching with prior-sensitive H0 shift; methodological explanation requires independent challenge.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2608.21603v2",
+      "stage": "read",
+      "reason": "Deferred negative environmental challenge: targeted versus untargeted survey selection; abstract gives no H0 shift and no new cosmology.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2607.28725v3",
+      "stage": "read",
+      "reason": "Deferred recent methodological challenge: DES5YR simulation-based population comparison; connects Dust2Dust and BayeSN author teams, not independent team replication.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2105.06236v2",
+      "stage": "read",
+      "reason": "Deferred wavelength discriminator: near-IR and object-specific extinction tests of mass step; compare sample, selection and extinction-fit uncertainty before acceptance.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2512.20834v1",
+      "stage": "read",
+      "reason": "Deferred environmental alternative: host SED mass re-estimation and metallicity; abstract alone cannot settle causal population interpretation.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.30312v1",
+      "stage": "read",
+      "reason": "Deferred representation challenge: FPCA versus SALT summary robustness depends on simulation domain and shared DES sample.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
     }
   ],
   "search_history": [

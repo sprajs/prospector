@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-09-systematics-intake",
+  "status": "completed",
+  "started_utc": "2026-10-09T17:50:14.457541+00:00",
+  "completed_utc": "2026-10-09T17:54:10.208831+00:00",
+  "lane": "measurement-lineage",
+  "work_mode": "bounded_intake_checkpoint_full_read_pipeline_pending",
+  "queries": [
+    {
+      "id": "systematics-window-0",
+      "search_id": "20261009T175102533412Z-85b1eb769f9a",
+      "query": "(cat:astro-ph.CO OR cat:astro-ph.GA) AND (ti:supernova OR abs:\"Type Ia\") AND (ti:dust OR ti:extinction OR ti:\"mass step\")",
+      "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Aastro-ph.GA%29+AND+%28ti%3Asupernova+OR+abs%3A%22Type+Ia%22%29+AND+%28ti%3Adust+OR+ti%3Aextinction+OR+ti%3A%22mass+step%22%29&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+      "order": "relevance",
+      "direction": "descending",
+      "start": 0,
+      "max_results": 10,
+      "retrieved_utc": "2026-10-09T17:51:02.256200+00:00",
+      "sha256": "dc8f21bf69dc3fb30ac70168223fd62348cfb1cef657b39ece0ad15eb070910a",
+      "result_ids": [
+        "arxiv:1507.00417v1",
+        "arxiv:1803.09749v2",
+        "arxiv:2510.20561v2",
+        "arxiv:1901.04103v1",
+        "arxiv:2512.20834v1",
+        "arxiv:2511.15349v3",
+        "arxiv:2105.06236v2",
+        "arxiv:1710.11115v1",
+        "arxiv:1311.0147v1",
+        "arxiv:1111.6627v2"
+      ]
+    },
+    {
+      "id": "systematics-window-1",
+      "search_id": "20261009T175105941361Z-43986d07b156",
+      "query": "(cat:astro-ph.CO OR cat:astro-ph.GA) AND (ti:supernova OR abs:\"Type Ia\") AND (abs:\"population evolution\" OR abs:\"dust\" OR abs:\"selection\") AND submittedDate:[202501010000 TO 202610092359]",
+      "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Aastro-ph.GA%29+AND+%28ti%3Asupernova+OR+abs%3A%22Type+Ia%22%29+AND+%28abs%3A%22population+evolution%22+OR+abs%3A%22dust%22+OR+abs%3A%22selection%22%29+AND+submittedDate%3A%5B202501010000+TO+202610092359%5D&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+      "order": "lastUpdatedDate",
+      "direction": "descending",
+      "start": 0,
+      "max_results": 10,
+      "retrieved_utc": "2026-10-09T17:51:05.629146+00:00",
+      "sha256": "aee680794c07c7d32c2f6938681b21a24629b964b623e3bea04ae15bad6fe8a6",
+      "result_ids": [
+        "arxiv:2610.12100v1",
+        "arxiv:2608.21603v2",
+        "arxiv:2608.07044v2",
+        "arxiv:2609.39804v1",
+        "arxiv:2609.39759v1",
+        "arxiv:2609.30440v1",
+        "arxiv:2606.17550v4",
+        "arxiv:2604.12714v2",
+        "arxiv:2609.30312v1",
+        "arxiv:2607.28725v3"
+      ]
+    }
+  ],
+  "registered_papers": [
+    "arxiv:2112.04456v2",
+    "arxiv:2401.08755v2",
+    "arxiv:2403.10388v2",
+    "arxiv:2506.22150v2",
+    "arxiv:2608.21603v2",
+    "arxiv:2607.28725v3",
+    "arxiv:2105.06236v2",
+    "arxiv:2512.20834v1",
+    "arxiv:2609.30312v1",
+    "arxiv:2607.24443v2"
+  ],
+  "new_versions": [
+    "arxiv:2112.04456v2",
+    "arxiv:2401.08755v2",
+    "arxiv:2403.10388v2",
+    "arxiv:2506.22150v2",
+    "arxiv:2608.21603v2",
+    "arxiv:2607.28725v3",
+    "arxiv:2105.06236v2",
+    "arxiv:2512.20834v1",
+    "arxiv:2609.30312v1"
+  ],
+  "abstract_screens": [
+    "arxiv:2112.04456v2",
+    "arxiv:2401.08755v2",
+    "arxiv:2403.10388v2",
+    "arxiv:2506.22150v2",
+    "arxiv:2608.21603v2",
+    "arxiv:2607.28725v3",
+    "arxiv:2105.06236v2",
+    "arxiv:2512.20834v1",
+    "arxiv:2609.30312v1",
+    "arxiv:2607.24443v2"
+  ],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "targeted_source_reviews": [],
+  "idea_ids": [],
+  "design_ids": [],
+  "prospect_ids": [],
+  "edge_ids": [],
+  "acquisition_failures": [
+    {
+      "operation": "research_storage list --collection papers",
+      "reason": "Invalid collection name; corrected to prospector/papers/2607.24443v2."
+    },
+    {
+      "operation": "research_storage pull legacy declaration",
+      "reason": "research-resource/v1 is a Git/acquisition declaration, not research-named-manifest/v1. Exact S3 version independently downloaded and SHA256 checked; pinned fulltext acquired centrally."
+    },
+    {
+      "paper_id": "arxiv:2506.22150v2",
+      "source": "https://arxiv.org/html/2506.22150v2",
+      "reason": "HTML title/body identity check rejected candidate; pinned PDF retained as reading source."
+    }
+  ],
+  "pending": [
+    {
+      "paper_id": "arxiv:2112.04456v2",
+      "stage": "read",
+      "reason": "Foundation deferred full reading: Pantheon+ Dust2Dust selection-aware parent dust/colour inference; parameter uncertainty propagation is not model-misspecification coverage.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2401.08755v2",
+      "stage": "read",
+      "reason": "Selected for ordinary full-paper Luna reading followed by Sol source review; shared worker capacity pending. Selected full reading: independent BayeSN SED hierarchy simultaneously separates dust and intrinsic mass effects; null redshift evolution is domain conditioned.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2403.10388v2",
+      "stage": "read",
+      "reason": "Deferred predecessor: calibrator-host extinction transfer proposal; same-author follow-up selected rather than treating papers as independent confirmations.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2506.22150v2",
+      "stage": "read",
+      "reason": "Selected for ordinary full-paper Luna reading followed by Sol source review; shared worker capacity pending. Selected full reading: two-population calibrator versus Hubble-flow matching with prior-sensitive H0 shift; methodological explanation requires independent challenge.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2608.21603v2",
+      "stage": "read",
+      "reason": "Deferred negative environmental challenge: targeted versus untargeted survey selection; abstract gives no H0 shift and no new cosmology.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2607.28725v3",
+      "stage": "read",
+      "reason": "Deferred recent methodological challenge: DES5YR simulation-based population comparison; connects Dust2Dust and BayeSN author teams, not independent team replication.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2105.06236v2",
+      "stage": "read",
+      "reason": "Deferred wavelength discriminator: near-IR and object-specific extinction tests of mass step; compare sample, selection and extinction-fit uncertainty before acceptance.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2512.20834v1",
+      "stage": "read",
+      "reason": "Deferred environmental alternative: host SED mass re-estimation and metallicity; abstract alone cannot settle causal population interpretation.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.30312v1",
+      "stage": "read",
+      "reason": "Deferred representation challenge: FPCA versus SALT summary robustness depends on simulation domain and shared DES sample.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2607.24443v2",
+      "stage": "read",
+      "reason": "Resume existing queue first when shared Luna slot opens."
+    }
+  ],
+  "limits": [
+    "Intake only: zero actual Luna readings, zero Sol reviews, no accepted ideas/designs/new cosmology.",
+    "Two 10-result changing Atom windows and one 7-ID metadata lookup; source-led discovery, not exhaustive coverage.",
+    "Nine first admissions counted here; later scientific reading scan must report zero repeated new admissions.",
+    "Three intended full reads: existing corrected-ladder challenge, BayeSN dust/intrinsic decomposition, two-population ladder proposal. All three shared worker slots occupied by earlier scopes.",
+    "INSPIRE snapshot on 2026-10-09: exact BayeSN base-work match53 citations(27 excluding self), Stjornumal2(1 excluding self). Three other snapshots retain unavailable counts due to title-match ambiguity. No h-index observations or evidenced normalization cohort.",
+    "Independent author lists do not prove data independence: proposed readings reuse Pantheon+/Cepheid or Foundation/DES3YR/PS1MD lineage; object crossmatches and crosscovariances remain unexamined.",
+    "Dust2Dust and BayeSN terminology connects in Stjornumal author list; initial-to-full-name mappings and physical equivalence require review. No inferred citation/ancestry edges.",
+    "No numerical execution, consumer acceptance, calibration qualification or Hubble-tension resolution claimed."
+  ]
+}

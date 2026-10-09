@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2608.21603v2",
+  "arxiv_id": "2608.21603",
+  "version": 2,
+  "title": "Supernovae Ia ejecta velocities and host galaxy environments: the role of survey-selection effects",
+  "authors": [
+    "L. V. Barkhudaryan",
+    "A. A. Hakobyan",
+    "M. H. Gevorgyan",
+    "D. Kunth",
+    "G. A. Mamon",
+    "U. Burgaz",
+    "V. Adibekyan",
+    "Zh. R. Martirosyan",
+    "A. G. Karapetyan"
+  ],
+  "categories": [
+    "astro-ph.GA"
+  ],
+  "published_utc": "2026-08-21T20:08:13Z",
+  "updated_utc": "2026-10-02T08:14:28Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2608.21603v2",
+    "html": "https://arxiv.org/html/2608.21603v2",
+    "pdf": "https://arxiv.org/pdf/2608.21603v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public notes and metadata only. Source copies require separate lawful private preservation review."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2607.24443v2%2C2112.04456%2C2401.08755%2C2403.10388%2C2506.22150%2C2608.21603v2%2C2607.28725v3&max_results=7",
+      "retrieved_utc": "2026-10-09T17:51:17.748613+00:00",
+      "sha256": "e2c9507b5e3a392c91e1db26a3f555abb96dd36fcd155d56bb0fd03bd964d3c4",
+      "bytes": 20963
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Deferred negative environmental challenge: targeted versus untargeted survey selection; abstract gives no H0 shift and no new cosmology."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

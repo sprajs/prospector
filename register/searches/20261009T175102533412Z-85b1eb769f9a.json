@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "search_id": "20261009T175102533412Z-85b1eb769f9a",
+  "lane": "measurement-lineage",
+  "work_mode": "systematics_foundation_and_challenge",
+  "status": "completed",
+  "requested_utc": "2026-10-09T17:51:02.256200+00:00",
+  "request": {
+    "query": "(cat:astro-ph.CO OR cat:astro-ph.GA) AND (ti:supernova OR abs:\"Type Ia\") AND (ti:dust OR ti:extinction OR ti:\"mass step\")",
+    "normalized_query": "(cat:astro-ph.CO OR cat:astro-ph.GA) AND (ti:supernova OR abs:\"Type Ia\") AND (ti:dust OR ti:extinction OR ti:\"mass step\")",
+    "order": "relevance",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "85b1eb769f9afac27b5f616b936a372e4a81687c14d633196082179cf1497a39"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Existing SN full-read queue preserved; queued corrected-ladder 2607.24443v2 selected first, awaiting shared reader capacity. This new complementary window seeks dust/population mechanisms and independent challenges missing from register.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Aastro-ph.GA%29+AND+%28ti%3Asupernova+OR+abs%3A%22Type+Ia%22%29+AND+%28ti%3Adust+OR+ti%3Aextinction+OR+ti%3A%22mass+step%22%29&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+    "retrieved_utc": "2026-10-09T17:51:02.256200+00:00",
+    "sha256": "dc8f21bf69dc3fb30ac70168223fd62348cfb1cef657b39ece0ad15eb070910a",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/systematics-20261009/acquisition/objects/dc8f21bf69dc3fb30ac70168223fd62348cfb1cef657b39ece0ad15eb070910a.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:1507.00417v1",
+      "position": 0,
+      "disposition": "excluded",
+      "reason": "Abstract screen: individual-object/remnant/lensing/other transient or cosmological-ansatz topic outside this bounded population-dust calibration-transfer test. Scope exclusion is not scientific rejection.",
+      "title": "Physical Dust Models for the Extinction toward Supernova 2014J in M82",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1803.09749v2",
+      "position": 1,
+      "disposition": "excluded",
+      "reason": "Abstract screen: individual-object/remnant/lensing/other transient or cosmological-ansatz topic outside this bounded population-dust calibration-transfer test. Scope exclusion is not scientific rejection.",
+      "title": "Shedding light on the Type Ia supernova extinction puzzle: dust location found",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2510.20561v2",
+      "position": 2,
+      "disposition": "excluded",
+      "reason": "Abstract screen: individual-object/remnant/lensing/other transient or cosmological-ansatz topic outside this bounded population-dust calibration-transfer test. Scope exclusion is not scientific rejection.",
+      "title": "Strong Lensing Model and Dust Extinction Maps of the Host Galaxy of Type Ia Supernova H0pe",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1901.04103v1",
+      "position": 3,
+      "disposition": "excluded",
+      "reason": "Abstract screen: individual-object/remnant/lensing/other transient or cosmological-ansatz topic outside this bounded population-dust calibration-transfer test. Scope exclusion is not scientific rejection.",
+      "title": "Dust Extinction towards the Type Ia Supernova 2012cu in NGC 4772",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2512.20834v1",
+      "position": 4,
+      "disposition": "deferred",
+      "reason": "Deferred environmental alternative: host SED mass re-estimation and metallicity; abstract alone cannot settle causal population interpretation.",
+      "title": "Revisiting the Mass Step: Environmental Dependence of Type Ia Supernovae in Low-Metallicity Host Galaxies",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2511.15349v3",
+      "position": 5,
+      "disposition": "excluded",
+      "reason": "Abstract screen: individual-object/remnant/lensing/other transient or cosmological-ansatz topic outside this bounded population-dust calibration-transfer test. Scope exclusion is not scientific rejection.",
+      "title": "Type Iax supernovae as a source of iron-rich silicate dust",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2105.06236v2",
+      "position": 6,
+      "disposition": "deferred",
+      "reason": "Deferred wavelength discriminator: near-IR and object-specific extinction tests of mass step; compare sample, selection and extinction-fit uncertainty before acceptance.",
+      "title": "Near-IR Type Ia SN distances: host galaxy extinction and mass-step corrections revisited",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1710.11115v1",
+      "position": 7,
+      "disposition": "excluded",
+      "reason": "Abstract screen: individual-object/remnant/lensing/other transient or cosmological-ansatz topic outside this bounded population-dust calibration-transfer test. Scope exclusion is not scientific rejection.",
+      "title": "On the Time Variation of Dust Extinction and Gas Absorption for Type~Ia Supernovae Observed Through Non-uniform Interstellar Medium",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1311.0147v1",
+      "position": 8,
+      "disposition": "excluded",
+      "reason": "Abstract screen: individual-object/remnant/lensing/other transient or cosmological-ansatz topic outside this bounded population-dust calibration-transfer test. Scope exclusion is not scientific rejection.",
+      "title": "On the Source of the Dust Extinction in Type Ia Supernovae and the Discovery of Anomalously Strong Na I Absorption",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1111.6627v2",
+      "position": 9,
+      "disposition": "excluded",
+      "reason": "Abstract screen: individual-object/remnant/lensing/other transient or cosmological-ansatz topic outside this bounded population-dust calibration-transfer test. Scope exclusion is not scientific rejection.",
+      "title": "Dust in Historical Galactic Type Ia Supernova Remnants with Herschel",
+      "decision_history": []
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": "2026-10-09-systematics-intake",
+    "query_id": "systematics-window-0"
+  },
+  "batch_id": "systematics-20261009"
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "search_id": "20261009T175105941361Z-43986d07b156",
+  "lane": "measurement-lineage",
+  "work_mode": "systematics_foundation_and_challenge",
+  "status": "completed",
+  "requested_utc": "2026-10-09T17:51:05.629146+00:00",
+  "request": {
+    "query": "(cat:astro-ph.CO OR cat:astro-ph.GA) AND (ti:supernova OR abs:\"Type Ia\") AND (abs:\"population evolution\" OR abs:\"dust\" OR abs:\"selection\") AND submittedDate:[202501010000 TO 202610092359]",
+    "normalized_query": "(cat:astro-ph.CO OR cat:astro-ph.GA) AND (ti:supernova OR abs:\"Type Ia\") AND (abs:\"population evolution\" OR abs:\"dust\" OR abs:\"selection\") AND submittedDate:[202501010000 TO 202610092359]",
+    "order": "lastUpdatedDate",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "43986d07b1563a27cfc1e488c902fc24ca5f350c01ea82b0fb3c6990aac0e03a"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Existing SN full-read queue preserved; queued corrected-ladder 2607.24443v2 selected first, awaiting shared reader capacity. This new complementary window seeks dust/population mechanisms and independent challenges missing from register.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Aastro-ph.GA%29+AND+%28ti%3Asupernova+OR+abs%3A%22Type+Ia%22%29+AND+%28abs%3A%22population+evolution%22+OR+abs%3A%22dust%22+OR+abs%3A%22selection%22%29+AND+submittedDate%3A%5B202501010000+TO+202610092359%5D&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+    "retrieved_utc": "2026-10-09T17:51:05.629146+00:00",
+    "sha256": "aee680794c07c7d32c2f6938681b21a24629b964b623e3bea04ae15bad6fe8a6",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/systematics-20261009/acquisition/objects/aee680794c07c7d32c2f6938681b21a24629b964b623e3bea04ae15bad6fe8a6.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:2610.12100v1",
+      "position": 0,
+      "disposition": "excluded",
+      "reason": "Abstract screen: individual-object/remnant/lensing/other transient or cosmological-ansatz topic outside this bounded population-dust calibration-transfer test. Scope exclusion is not scientific rejection.",
+      "title": "A New Era for Supernova Science with the James Webb Space Telescope",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2608.21603v2",
+      "position": 1,
+      "disposition": "deferred",
+      "reason": "Deferred negative environmental challenge: targeted versus untargeted survey selection; abstract gives no H0 shift and no new cosmology.",
+      "title": "Supernovae Ia ejecta velocities and host galaxy environments: the role of survey-selection effects",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2608.07044v2",
+      "position": 2,
+      "disposition": "excluded",
+      "reason": "Abstract screen: individual-object/remnant/lensing/other transient or cosmological-ansatz topic outside this bounded population-dust calibration-transfer test. Scope exclusion is not scientific rejection.",
+      "title": "Revisiting 2D and 3D Dainotti Correlations for GRBs Using Bayesian Neural Networks",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.39804v1",
+      "position": 3,
+      "disposition": "excluded",
+      "reason": "Abstract screen: individual-object/remnant/lensing/other transient or cosmological-ansatz topic outside this bounded population-dust calibration-transfer test. Scope exclusion is not scientific rejection.",
+      "title": "An improved standardization framework for Type II-P supernovae using a hierarchical Bayesian approach",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.39759v1",
+      "position": 4,
+      "disposition": "excluded",
+      "reason": "Abstract screen: individual-object/remnant/lensing/other transient or cosmological-ansatz topic outside this bounded population-dust calibration-transfer test. Scope exclusion is not scientific rejection.",
+      "title": "High velocity dust grains produced by a supernova explosion",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.30440v1",
+      "position": 5,
+      "disposition": "excluded",
+      "reason": "Abstract screen: individual-object/remnant/lensing/other transient or cosmological-ansatz topic outside this bounded population-dust calibration-transfer test. Scope exclusion is not scientific rejection.",
+      "title": "SN Helios: A Multiply Imaged Type II Supernova Opening Time-Delay Cosmography beyond redshift of 3",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2606.17550v4",
+      "position": 6,
+      "disposition": "excluded",
+      "reason": "Abstract screen: individual-object/remnant/lensing/other transient or cosmological-ansatz topic outside this bounded population-dust calibration-transfer test. Scope exclusion is not scientific rejection.",
+      "title": "Does DESI prefer Damped Oscillating Dark Energy over Cosmological constant?",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2604.12714v2",
+      "position": 7,
+      "disposition": "excluded",
+      "reason": "Abstract screen: individual-object/remnant/lensing/other transient or cosmological-ansatz topic outside this bounded population-dust calibration-transfer test. Scope exclusion is not scientific rejection.",
+      "title": "Illuminating the Local Universe: Large-Scale Structure from ZTF Type Ia Supernovae",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.30312v1",
+      "position": 8,
+      "disposition": "deferred",
+      "reason": "Deferred representation challenge: FPCA versus SALT summary robustness depends on simulation domain and shared DES sample.",
+      "title": "FPCA-Enhanced Simulation-Based Inference for Robust Type Ia Supernova Cosmology",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2607.28725v3",
+      "position": 9,
+      "disposition": "deferred",
+      "reason": "Deferred recent methodological challenge: DES5YR simulation-based population comparison; connects Dust2Dust and BayeSN author teams, not independent team replication.",
+      "title": "A Simulation Based Inference Approach to Modelling of Type Ia Supernova Populations",
+      "decision_history": []
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": "2026-10-09-systematics-intake",
+    "query_id": "systematics-window-1"
+  },
+  "batch_id": "systematics-20261009"
+}

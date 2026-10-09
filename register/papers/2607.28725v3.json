@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2607.28725v3",
+  "arxiv_id": "2607.28725",
+  "version": 3,
+  "title": "A Simulation Based Inference Approach to Modelling of Type Ia Supernova Populations",
+  "authors": [
+    "B. Popovic",
+    "M. Grayling",
+    "M. O'Callaghan",
+    "B. M. Boyd",
+    "K. Mandel",
+    "P. Wiseman",
+    "B. Carreres",
+    "N. Shiamtanis",
+    "D. Scolnic",
+    "E. Charleton",
+    "Y. Murakami"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2026-07-30T18:00:01Z",
+  "updated_utc": "2026-09-17T19:38:19Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2607.28725v3",
+    "html": "https://arxiv.org/html/2607.28725v3",
+    "pdf": "https://arxiv.org/pdf/2607.28725v3"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public notes and metadata only. Source copies require separate lawful private preservation review."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2607.24443v2%2C2112.04456%2C2401.08755%2C2403.10388%2C2506.22150%2C2608.21603v2%2C2607.28725v3&max_results=7",
+      "retrieved_utc": "2026-10-09T17:51:17.748613+00:00",
+      "sha256": "e2c9507b5e3a392c91e1db26a3f555abb96dd36fcd155d56bb0fd03bd964d3c4",
+      "bytes": 20963
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Deferred recent methodological challenge: DES5YR simulation-based population comparison; connects Dust2Dust and BayeSN author teams, not independent team replication."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

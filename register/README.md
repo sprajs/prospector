@@ -1,6 +1,6 @@
 # Register
 
-98 paper versions · 24 ideas · 10 topics · 11 candidate prospects.
+107 paper versions · 24 ideas · 10 topics · 11 candidate prospects.
 
 [Open Prospector](https://prospector-cosmology.sprajs.chatgpt.site) · [Local map](map.html)
 
@@ -15,7 +15,7 @@
 | [Interactions, transitions and decays](topics/interacting-sectors.json) | 23 | 9 |
 | [Acceleration and reconstruction](topics/kinematics.json) | 4 | 2 |
 | [Late dark energy and unified histories](topics/late-dark-energy.json) | 20 | 11 |
-| [Measurements and calibration](topics/measurement-lineage.json) | 24 | 4 |
+| [Measurements and calibration](topics/measurement-lineage.json) | 33 | 4 |
 | [Gravity and quantum cosmology](topics/modified-gravity.json) | 19 | 4 |
 | [Stochastic vacuum and spacetime discreteness](topics/stochastic-vacuum.json) | 7 | 0 |
 
@@ -107,12 +107,14 @@ Combined models require compatibility checks before promotion.
 | [Einstein-Cartan Cosmologies](https://arxiv.org/abs/1812.04589v1) | [1812.04589v1](papers/1812.04589v1.json) | screened |
 | [Planck 2018 results. V. CMB power spectra and likelihoods](https://arxiv.org/abs/1907.12875v2) | [1907.12875v2](papers/1907.12875v2.json) | discovered |
 | [New Early Dark Energy](https://arxiv.org/abs/1910.10739v5) | [1910.10739v5](papers/1910.10739v5.json) | reviewed |
+| [Near-IR Type Ia SN distances: host galaxy extinction and mass-step corrections revisited](https://arxiv.org/abs/2105.06236v2) | [2105.06236v2](papers/2105.06236v2.json) | screened |
 | [The Pantheon+ Analysis: Evaluating Peculiar Velocity Corrections in Cosmological Analyses with Nearby Type Ia Supernovae](https://arxiv.org/abs/2110.03487v2) | [2110.03487v2](papers/2110.03487v2.json) | discovered |
 | [Inflaton-driven early dark energy](https://arxiv.org/abs/2111.07288v1) | [2111.07288v1](papers/2111.07288v1.json) | screened |
 | [Hot New Early Dark Energy](https://arxiv.org/abs/2112.00770v2) | [2112.00770v2](papers/2112.00770v2.json) | screened |
 | [The Pantheon+ Analysis: Improving the Redshifts and Peculiar Velocities of Type Ia Supernovae Used in Cosmological Analyses](https://arxiv.org/abs/2112.01471v2) | [2112.01471v2](papers/2112.01471v2.json) | discovered |
 | [The Pantheon+ Analysis: The Full Dataset and Light-Curve Release](https://arxiv.org/abs/2112.03863v2) | [2112.03863v2](papers/2112.03863v2.json) | screened |
 | [The Pantheon+ Analysis: SuperCal-Fragilistic Cross Calibration, Retrained SALT2 Light Curve Model, and Calibration Systematic Uncertainty](https://arxiv.org/abs/2112.03864v2) | [2112.03864v2](papers/2112.03864v2.json) | screened |
+| [The Pantheon+ Analysis: Forward-Modeling the Dust and Intrinsic Colour Distributions of Type Ia Supernovae, and Quantifying their Impact on Cosmological Inferences](https://arxiv.org/abs/2112.04456v2) | [2112.04456v2](papers/2112.04456v2.json) | screened |
 | [A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km/s/Mpc Uncertainty from the Hubble Space Telescope and the SH0ES Team](https://arxiv.org/abs/2112.04510v3) | [2112.04510v3](papers/2112.04510v3.json) | screened |
 | [The Pantheon+ Analysis: Cosmological Constraints](https://arxiv.org/abs/2202.04077v2) | [2202.04077v2](papers/2202.04077v2.json) | screened |
 | [Microphysics of Early Dark Energy](https://arxiv.org/abs/2202.08291v3) | [2202.08291v3](papers/2202.08291v3.json) | screened |
@@ -121,7 +123,9 @@ Combined models require compatibility checks before promotion.
 | [The weak, the strong and the ugly -- A comparative analysis of interacting stepped dark radiation](https://arxiv.org/abs/2306.12469v2) | [2306.12469v2](papers/2306.12469v2.json) | screened |
 | [Aspects of Everpresent $Λ$ (II): Cosmological Tests of Current Models](https://arxiv.org/abs/2307.13743v2) | [2307.13743v2](papers/2307.13743v2.json) | screened |
 | [Cosmological foundations revisited with Pantheon+](https://arxiv.org/abs/2311.01438v2) | [2311.01438v2](papers/2311.01438v2.json) | screened |
+| [Scalable hierarchical BayeSN inference: Investigating dependence of SN Ia host galaxy dust properties on stellar mass and redshift](https://arxiv.org/abs/2401.08755v2) | [2401.08755v2](papers/2401.08755v2.json) | screened |
 | [Trapped early dark energy](https://arxiv.org/abs/2401.08812v1) | [2401.08812v1](papers/2401.08812v1.json) | screened |
+| [Consistent extinction model for type Ia supernovae in Cepheid-based calibration galaxies and its impact on $H_{0}$](https://arxiv.org/abs/2403.10388v2) | [2403.10388v2](papers/2403.10388v2.json) | screened |
 | [Hot New Early Dark Energy bridging cosmic gaps: Supercooled phase transition reconciles (stepped) dark radiation solutions to the Hubble tension with BBN](https://arxiv.org/abs/2404.07256v1) | [2404.07256v1](papers/2404.07256v1.json) | screened |
 | [Cosmological probes of Dark Radiation from Neutrino Mixing](https://arxiv.org/abs/2404.16822v1) | [2404.16822v1](papers/2404.16822v1.json) | screened |
 | [Dark Matter-Radiation Scattering Enhances CMB Phase Shift through Dark Matter-loading](https://arxiv.org/abs/2405.08064v2) | [2405.08064v2](papers/2405.08064v2.json) | screened |
@@ -130,10 +134,12 @@ Combined models require compatibility checks before promotion.
 | [Supernovae evidence for foundational change to cosmological models](https://arxiv.org/abs/2412.15143v1) | [2412.15143v1](papers/2412.15143v1.json) | screened |
 | [Interacting Early Dark Energy](https://arxiv.org/abs/2502.08541v2) | [2502.08541v2](papers/2502.08541v2.json) | screened |
 | [DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints](https://arxiv.org/abs/2503.14738v3) | [2503.14738v3](papers/2503.14738v3.json) | screened |
+| [Stretch to stretch, dust to dust: lower-value local $H_{0}$ measurement from two-population modelling of type Ia supernovae](https://arxiv.org/abs/2506.22150v2) | [2506.22150v2](papers/2506.22150v2.json) | screened |
 | [Hot New Early Dark Energy: Dark Radiation Matter Decoupling](https://arxiv.org/abs/2508.03795v2) | [2508.03795v2](papers/2508.03795v2.json) | screened |
 | [Cosmological perturbations on an averaged background](https://arxiv.org/abs/2511.17160v2) | [2511.17160v2](papers/2511.17160v2.json) | screened |
 | [Interacting scalar field dark matter and stepped dark radiation in an extended Wess-Zumino dark radiation model](https://arxiv.org/abs/2512.06719v4) | [2512.06719v4](papers/2512.06719v4.json) | screened |
 | [InterACTing dark radiation models after ACT](https://arxiv.org/abs/2512.19633v1) | [2512.19633v1](papers/2512.19633v1.json) | screened |
+| [Revisiting the Mass Step: Environmental Dependence of Type Ia Supernovae in Low-Metallicity Host Galaxies](https://arxiv.org/abs/2512.20834v1) | [2512.20834v1](papers/2512.20834v1.json) | screened |
 | [Partial Relief of the Hubble Tension and a Natural Self-Interacting Dark Matter Candidate From Staged Symmetry Breaking](https://arxiv.org/abs/2602.01543v2) | [2602.01543v2](papers/2602.01543v2.json) | reviewed |
 | [Parameterizations of the Hubble Constant from the Binned Type Ia Supernova Master Sample: Logarithmic versus Power-law Forms](https://arxiv.org/abs/2603.00497v3) | [2603.00497v3](papers/2603.00497v3.json) | screened |
 | [Dispersion Measure Distribution of Unlocalized Fast Radio Bursts as a Probe of the Hubble Constant](https://arxiv.org/abs/2604.03769v2) | [2604.03769v2](papers/2604.03769v2.json) | screened |
@@ -146,11 +152,14 @@ Combined models require compatibility checks before promotion.
 | [Interacting dark energy constraints from Fermi GRBs and Pantheon+ SNe Ia with full GRB covariance](https://arxiv.org/abs/2606.00549v2) | [2606.00549v2](papers/2606.00549v2.json) | screened |
 | [Modeling Uncertainties in Modified Gravity Predictions for the Stochastic Gravitational-Wave Background](https://arxiv.org/abs/2607.05331v2) | [2607.05331v2](papers/2607.05331v2.json) | screened |
 | [Updated 1.1% Precision Values of the Hubble Constant with Corrected Pantheon+ and Dark Energy Survey (DES)-DOVEKIE Type Ia Supernovae](https://arxiv.org/abs/2607.24443v2) | [2607.24443v2](papers/2607.24443v2.json) | screened |
+| [A Simulation Based Inference Approach to Modelling of Type Ia Supernova Populations](https://arxiv.org/abs/2607.28725v3) | [2607.28725v3](papers/2607.28725v3.json) | screened |
+| [Supernovae Ia ejecta velocities and host galaxy environments: the role of survey-selection effects](https://arxiv.org/abs/2608.21603v2) | [2608.21603v2](papers/2608.21603v2.json) | screened |
 | [Forecasting Coupled Dark Energy Parameters with the One-Loop Galaxy Power Spectrum](https://arxiv.org/abs/2609.14966v3) | [2609.14966v3](papers/2609.14966v3.json) | screened |
 | [Dark Radiation Sticks Together: Dark QCD and the Hubble Tension](https://arxiv.org/abs/2609.16120v1) | [2609.16120v1](papers/2609.16120v1.json) | screened |
 | [Gauss--Bonnet running and the de Sitter saddle of quadratic gravity inflation](https://arxiv.org/abs/2609.24912v1) | [2609.24912v1](papers/2609.24912v1.json) | screened |
 | [CHASE Spectral Survey I: Measuring Contamination in the Color-selected J-region Asymptotic Giant Branch Distance Indicator](https://arxiv.org/abs/2609.25412v1) | [2609.25412v1](papers/2609.25412v1.json) | screened |
 | [Two-rung ladder: $H_0$ from Tip of the Red Giant Branch and geometric anchors alone](https://arxiv.org/abs/2609.29996v1) | [2609.29996v1](papers/2609.29996v1.json) | screened |
+| [FPCA-Enhanced Simulation-Based Inference for Robust Type Ia Supernova Cosmology](https://arxiv.org/abs/2609.30312v1) | [2609.30312v1](papers/2609.30312v1.json) | screened |
 | [Cosmic Heterogeneity Shapes the Evolution of Dark Energy and Time](https://arxiv.org/abs/2609.31543v1) | [2609.31543v1](papers/2609.31543v1.json) | screened |
 | [Dark energy and negative compressibility of the Universe: A study based on cosmic equations of state](https://arxiv.org/abs/2609.33673v1) | [2609.33673v1](papers/2609.33673v1.json) | screened |
 | [Reconstructing the evolution of deceleration parameter with the Lagrange interpolation method](https://arxiv.org/abs/2609.34239v1) | [2609.34239v1](papers/2609.34239v1.json) | reviewed |
