@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1403.2190v2",
+  "work_identity": {
+    "arxiv_id": "1403.2190",
+    "registered_version": 2,
+    "title": "The Hantzsche-Wendt Manifold in Cosmic Topology",
+    "match_status": "exact",
+    "provider": "INSPIRE-HEP",
+    "provider_record_id": "1285198",
+    "matched_arxiv_ids": [
+      "1403.2190"
+    ],
+    "linked_dois": [
+      "10.1088/0264-9381/31/16/165009"
+    ],
+    "journal_metadata": [
+      {
+        "journal_title": "Class.Quant.Grav.",
+        "year": 2014,
+        "volume": "31",
+        "article_or_page": "165009"
+      }
+    ],
+    "journal_scope": "linked_journal_metadata_returned",
+    "count_scope": "provider_base_work_record",
+    "version_scope": "versions_not_disaggregated",
+    "publication_scope_note": "Citation counts are totals for this provider literature record. They are not split between the registered arXiv version, other arXiv versions, and linked journal publication records.",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A1403.2190&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:52:29.270214+00:00",
+      "http_status": 200,
+      "response_sha256": "91c3f1ae36fb7374d0a9a15dcf58e1147c460cfbca4ed57f880a1903dcc2ff1e",
+      "response_bytes": 2391,
+      "archive_path": ".work/neglected-20261009/bibliometrics/2026-10-09/inspire-1403.2190-91c3f1ae36fb.json"
+    }
+  },
+  "citation_snapshot": {
+    "status": "observed",
+    "count": 13,
+    "count_without_self_citations": 12,
+    "retrieved_utc": "2026-10-09T17:52:29.270214+00:00",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A1403.2190&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:52:29.270214+00:00",
+      "http_status": 200,
+      "response_sha256": "91c3f1ae36fb7374d0a9a15dcf58e1147c460cfbca4ed57f880a1903dcc2ff1e",
+      "response_bytes": 2391,
+      "archive_path": ".work/neglected-20261009/bibliometrics/2026-10-09/inspire-1403.2190-91c3f1ae36fb.json"
+    },
+    "missing_reason": null
+  },
+  "comparison": {
+    "first_publication_utc": "2014-03-10T09:33:02Z",
+    "age_days_at_snapshot": 4596.346843405255,
+    "age_years_at_snapshot": 12.584370229108755,
+    "field_categories": [
+      "astro-ph.CO"
+    ],
+    "cohort": {
+      "provider": "INSPIRE-HEP",
+      "snapshot_batch_id": "neglected-topology-20261009",
+      "field_definition": "arXiv primary category: astro-ph.CO",
+      "age_band_years": {
+        "lower_inclusive": 12.0,
+        "upper_exclusive": 13.0
+      },
+      "population_size": null,
+      "minimum_population_size": 100,
+      "population_evidence": null,
+      "percentile": null,
+      "status": "not_queried",
+      "reason": "No provider population was queried for this provider, snapshot batch, arXiv primary category, and publication-age band. The deliberately selected Prospector sample is not a percentile reference population."
+    }
+  },
+  "authors": [
+    {
+      "paper_author_name": "Ralf Aurich",
+      "source_author_id": "1883903",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "Sven Lustig",
+      "source_author_id": "2245945",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    }
+  ],
+  "team_visibility": {
+    "status": "none",
+    "unique_author_count": 2,
+    "verified_h_index_author_count": 0,
+    "coverage_fraction": 0.0,
+    "h_index_scope": null,
+    "h_index_snapshot_batch_id": null,
+    "max_h_index": null,
+    "median_h_index": null,
+    "missing_reason": "Team maximum and median use verified, observed, same-scope h-indices only; missing author metrics are unknown."
+  },
+  "snapshot_created_utc": "2026-10-09T17:52:29.403536+00:00",
+  "snapshot_id": "20261009T175229403536Z-ca6ffc72bacf"
+}

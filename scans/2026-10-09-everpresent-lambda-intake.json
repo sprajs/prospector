@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "scan_id": "2026-10-09-everpresent-lambda-intake",
+  "status": "completed",
+  "started_utc": "2026-10-09T17:46:50.507513+00:00",
+  "completed_utc": "2026-10-09T17:54:21.968167+00:00",
+  "scope": "Completed intake checkpoint only. Subsequent full readings and review remain a separate bounded science batch.",
+  "lane": "late-dark-energy",
+  "work_mode": "unconventional_foundation_and_challenge",
+  "queries": [
+    {
+      "query": "ti:\"everpresent\" OR ti:\"ever-present\" OR (ti:\"causal set\" AND ti:\"microwave\")",
+      "order": "relevance",
+      "direction": "descending",
+      "start": 0,
+      "limit": 20,
+      "source": {
+        "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22everpresent%22+OR+ti%3A%22ever-present%22+OR+%28ti%3A%22causal+set%22+AND+ti%3A%22microwave%22%29&start=0&max_results=20&sortBy=relevance&sortOrder=descending",
+        "retrieved_utc": "2026-10-09T17:46:50.507513+00:00",
+        "http_status": 200,
+        "bytes": 22040,
+        "sha256": "4cf2e390d3cb31327c105675c25419cecd46c11296fe1813b7a6604b299154ce",
+        "path": ".work/unconventional-20261009/acquisition/objects/4cf2e390d3cb31327c105675c25419cecd46c11296fe1813b7a6604b299154ce.xml"
+      },
+      "result_ids": [
+        "arxiv:gr-qc/0612128v2",
+        "arxiv:astro-ph/0209274v1",
+        "arxiv:2211.08437v2",
+        "arxiv:1703.06265v4",
+        "arxiv:1210.2589v3",
+        "arxiv:2009.08557v2",
+        "arxiv:2307.13743v2",
+        "arxiv:1012.5966v2",
+        "arxiv:2304.03819v2"
+      ]
+    },
+    {
+      "query": "(cat:gr-qc OR cat:astro-ph.CO OR cat:hep-th OR cat:astro-ph) AND (abs:\"fluctuating cosmological constant\" OR abs:\"stochastic dark energy\")",
+      "order": "lastUpdatedDate",
+      "direction": "descending",
+      "start": 0,
+      "limit": 10,
+      "source": {
+        "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Agr-qc+OR+cat%3Aastro-ph.CO+OR+cat%3Ahep-th+OR+cat%3Aastro-ph%29+AND+%28abs%3A%22fluctuating+cosmological+constant%22+OR+abs%3A%22stochastic+dark+energy%22%29&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+        "retrieved_utc": "2026-10-09T17:48:07.206955+00:00",
+        "http_status": 200,
+        "bytes": 13800,
+        "sha256": "c1543b881512031410fdcc791c8a3c1424b3a6a096b1d55c3d6497b9c31150d6",
+        "path": ".work/unconventional-20261009/acquisition/objects/c1543b881512031410fdcc791c8a3c1424b3a6a096b1d55c3d6497b9c31150d6.xml"
+      },
+      "result_ids": [
+        "arxiv:2307.13743v2",
+        "arxiv:2101.00478v1",
+        "arxiv:0904.1057v3",
+        "arxiv:astro-ph/0703375v2",
+        "arxiv:astro-ph/0209274v1",
+        "arxiv:hep-th/9304041v1"
+      ]
+    }
+  ],
+  "registered_papers": [
+    "arxiv:0711.2904v1",
+    "arxiv:1210.2589v3",
+    "arxiv:1703.06265v4",
+    "arxiv:2304.03819v2",
+    "arxiv:2307.13743v2",
+    "arxiv:astro-ph/0209274v1",
+    "arxiv:gr-qc/0612128v2"
+  ],
+  "new_versions": [
+    "arxiv:0711.2904v1",
+    "arxiv:1210.2589v3",
+    "arxiv:1703.06265v4",
+    "arxiv:2304.03819v2",
+    "arxiv:2307.13743v2",
+    "arxiv:astro-ph/0209274v1",
+    "arxiv:gr-qc/0612128v2"
+  ],
+  "full_reads": [],
+  "reviewed_papers": [],
+  "idea_ids": [],
+  "design_ids": [],
+  "abstract_screens": [
+    "arxiv:0711.2904v1",
+    "arxiv:1210.2589v3",
+    "arxiv:1703.06265v4",
+    "arxiv:2304.03819v2",
+    "arxiv:2307.13743v2",
+    "arxiv:astro-ph/0209274v1",
+    "arxiv:gr-qc/0612128v2"
+  ],
+  "search_ids": [
+    "2026-10-09-everpresent-foundation-search",
+    "2026-10-09-stochastic-vacuum-recent-search"
+  ],
+  "preservation": {
+    "manifest_format": "research-named-manifest/v1",
+    "collection": "prospector/reviews/everpresent-lambda-20261009-intake",
+    "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/everpresent-lambda-20261009-intake/versions/54445e55f533db7f945578b2f574f670187eafed48e923b2e13b788c02893cc5/manifest.json",
+    "version_id": "C4XSkxbLU.pi721BTldryGJGpQRJzjCd",
+    "sha256": "ed5e9e34896233e785f3052310462577964b20513c1c931d0f31279a388bc06a",
+    "bytes": 19998
+  },
+  "catalog_pin": {
+    "bytes": 198929,
+    "sha256": "7ee8a1ce4443bf87b58af95e895ab14b02976d2567186ccd4133b384ce528fcb",
+    "uri": "s3://research-data-436908790672-eu-west-2/shared/catalogs/releases/7ee8a1ce4443bf87b58af95e895ab14b02976d2567186ccd4133b384ce528fcb.json",
+    "version_id": "5zhtxcsv0MqKPSUGnkvHAXTcIQ307K2T"
+  },
+  "coverage": [
+    "Two exact bounded Atom windows: 9 and 6 results; selected and deferred hits deduplicated. One extra exact-ID Zuntz lookup plus three follow-up exact-ID confirmations.",
+    "Full-text acquired for foundation, Barrow critique and 2024 reassessment; no accepted scientific idea at this checkpoint.",
+    "No claim of exhaustive coverage, full citation graph, independent data, or low author visibility.",
+    "Existing unrelated queues and active roadmap preserved. Four admitted follow-ups and three cross-field metadata leads await further reading."
+  ],
+  "research_context": {
+    "recorded_utc": "2026-10-09T17:52:19.039083+00:00",
+    "bibliometric_context": {
+      "provider": "INSPIRE-HEP",
+      "date": "2026-10-09",
+      "counts_base_works_not_versions": {
+        "astro-ph/0209274": 146,
+        "gr-qc/0612128": 30,
+        "0711.2904": 12,
+        "1210.2589": 17,
+        "1703.06265": 33,
+        "2304.03819": 18,
+        "2307.13743": 18
+      },
+      "interpretation": "Descriptive selected sample only; no age/field-normalized comparisons. No h-indices collected. Unresolved author visibility is not an exclusion filter. Founding paper is established within this niche, not demonstrated obscure.",
+      "identity_reconciliation": "Exact base IDs plus inspected alternate provider titles after Greek Lambda/TeX/punctuation normalization. Original strict-first-title null snapshots and immutable raw responses retained."
+    },
+    "research_connections": [
+      {
+        "kind": "coauthorship",
+        "evidence": "Exact arXiv Atom metadata for astro-ph/0209274v1,1210.2589v3,1703.06265v4",
+        "statement": "Ahmed and Sorkin recur in foundation/stability work; Sorkin is also a coauthor of the 2017 tests. These papers are not independent author teams."
+      },
+      {
+        "kind": "coauthorship",
+        "evidence": "Exact arXiv Atom metadata for 2304.03819v2 and 2307.13743v2",
+        "statement": "Both Aspects papers have Das, Nasiri and Yazdi as the same team; count as one follow-up programme."
+      },
+      {
+        "kind": "acknowledged_discussion",
+        "evidence": "2307.13743v2 Acknowledgements, printed p27; PDF SHA256 92984c3bc837a2f80629a7c04e80c4e25aed6f425667196e1c490148b7784460",
+        "statement": "Modern reassessment thanks Dowker, Sorkin and Zwane for discussions and Afshordi for detailed discussions on the analysis. Distinct byline does not establish intellectual isolation or independent data."
+      },
+      {
+        "kind": "institutional_context",
+        "evidence": "2307.13743v2 title page; same PDF digest",
+        "statement": "The three 2024 byline authors give Theoretical Physics Group, Blackett Laboratory, Imperial College London. This is source-era affiliation, not a current-employment assertion."
+      },
+      {
+        "kind": "publication_history",
+        "evidence": "Verified first-submission/version timestamps and bylines of seven admitted versions",
+        "statement": "Bounded publication trail spans 2002 foundation, 2006/2007 criticism, 2012 stability, 2017 cosmological tests, and 2023/2024 theoretical and observational reassessment. Not a complete author bibliography or career-length estimate."
+      }
+    ],
+    "visibility_gaps": [
+      "No verified Scholar h-index profiles or career-normalized cohort population.",
+      "No affiliation or standing requirement was used for screening; low-visibility and unaffiliated routes remain open.",
+      "Two Perimeter direct page retrievals returned HTTP403; no retry. Imperial research-group page acquired, but group description alone does not verify individual expertise."
+    ],
+    "cross_field_frontier": [
+      {
+        "paper_id": "arxiv:2101.00478v1",
+        "reason": "2D topology-changing quantum gravity/Coleman mechanism; defer until 4D relevance and observer interpretation are checked."
+      },
+      {
+        "paper_id": "arxiv:0904.1057v3",
+        "reason": "Statistical-fluid membrane analogy for fluctuating vacuum; defer because analogy is not a cosmological covariant closure."
+      },
+      {
+        "paper_id": "arxiv:astro-ph/0703375v2",
+        "reason": "Phenomenological gravitational-slip/ISW constraints; potential observable language, not established equivalence to stochastic Lambda."
+      }
+    ]
+  }
+}

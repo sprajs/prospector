@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2403.10388v2",
+  "arxiv_id": "2403.10388",
+  "version": 2,
+  "title": "Consistent extinction model for type Ia supernovae in Cepheid-based calibration galaxies and its impact on $H_{0}$",
+  "authors": [
+    "Rados\u0142aw Wojtak",
+    "Jens Hjorth"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "astro-ph.GA",
+    "gr-qc"
+  ],
+  "published_utc": "2024-03-15T15:17:21Z",
+  "updated_utc": "2024-08-14T11:20:09Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2403.10388v2",
+    "html": "https://arxiv.org/html/2403.10388v2",
+    "pdf": "https://arxiv.org/pdf/2403.10388v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public notes and metadata only. Source copies require separate lawful private preservation review."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2607.24443v2%2C2112.04456%2C2401.08755%2C2403.10388%2C2506.22150%2C2608.21603v2%2C2607.28725v3&max_results=7",
+      "retrieved_utc": "2026-10-09T17:51:17.748613+00:00",
+      "sha256": "e2c9507b5e3a392c91e1db26a3f555abb96dd36fcd155d56bb0fd03bd964d3c4",
+      "bytes": 20963
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Deferred predecessor: calibrator-host extinction transfer proposal; same-author follow-up selected rather than treating papers as independent confirmations."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

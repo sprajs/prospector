@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:astro-ph/0209274v1",
+  "arxiv_id": "astro-ph/0209274",
+  "version": 1,
+  "title": "Everpresent Lambda",
+  "authors": [
+    "Maqbool Ahmed",
+    "Scott Dodelson",
+    "Patrick B. Greene",
+    "Rafael Sorkin"
+  ],
+  "categories": [
+    "astro-ph",
+    "gr-qc",
+    "hep-th"
+  ],
+  "published_utc": "2002-09-13T19:53:47Z",
+  "updated_utc": "2002-09-13T19:53:47Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/astro-ph/0209274v1",
+    "html": "https://arxiv.org/html/astro-ph/0209274v1",
+    "pdf": "https://arxiv.org/pdf/astro-ph/0209274v1"
+  },
+  "license": {
+    "status": "unresolved; no licence in Atom metadata",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public register contains metadata and original notes. Private research custody only; no public full-source redistribution."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=astro-ph%2F0209274v1%2Cgr-qc%2F0612128v2%2C2307.13743v2&max_results=3",
+      "retrieved_utc": "2026-10-09T17:47:03.848226+00:00",
+      "sha256": "3ab17202af6f180b6e36fd2f6ae4b11346183b28e2460980185d9268c78a381b",
+      "bytes": 7246
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/astro-ph/0209274v1",
+      "retrieved_utc": "2026-10-09T17:48:03.970618+00:00",
+      "sha256": "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+      "bytes": 202126
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/astro-ph/0209274v1",
+      "retrieved_utc": "2026-10-09T17:48:04.171433+00:00",
+      "sha256": "1a5f0e03f77b33afa0efb637a97ebfc7cfdb0da3026eab50975bd69a37f095a1",
+      "bytes": 44631,
+      "derived_from_sha256": "04e0a41586a049fc2be7fb298260c511c2c095ba5c2bda0499c5b67e931e0de4",
+      "tool": "pdftotext -layout"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "abstract",
+    "reason": "Selected for full source reading: foundation, independent criticism, and later observational reassessment."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

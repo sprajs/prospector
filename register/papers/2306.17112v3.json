@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2306.17112v3",
+  "arxiv_id": "2306.17112",
+  "version": 3,
+  "title": "Cosmic topology. Part IIa. Eigenmodes, correlation matrices, and detectability of orientable Euclidean manifolds",
+  "authors": [
+    "Johannes R. Eskilt",
+    "Yashar Akrami",
+    "Stefano Anselmi",
+    "Craig J. Copi",
+    "Andrew H. Jaffe",
+    "Arthur Kosowsky",
+    "Deyan P. Mihaylov",
+    "Glenn D. Starkman",
+    "Andrius Tamosiunas",
+    "James B. Mertens",
+    "Pip Petersen",
+    "Samanta Saha",
+    "Quinn Taylor",
+    "Özenç Güngör"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "gr-qc",
+    "hep-ph",
+    "hep-th"
+  ],
+  "published_utc": "2023-06-29T17:15:18Z",
+  "updated_utc": "2024-04-27T14:36:01Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2306.17112v3",
+    "html": "https://arxiv.org/html/2306.17112v3",
+    "pdf": "https://arxiv.org/pdf/2306.17112v3"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "API did not resolve a public redistribution licence. Only short original notes and metadata published; full sources remain private pending source-specific restriction check."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=astro-ph%2F9801212%2C1403.2190v2%2C2210.11426v4%2C1502.01593%2C2306.17112v3%2C2403.09221v2%2C2608.25033v1&max_results=7",
+      "retrieved_utc": "2026-10-09T17:51:41.460556+00:00",
+      "sha256": "1a818ed7ee3cb63a165ebf3a573fdd6595806ec192958cb1c5b7594b29d21c54",
+      "bytes": 36053
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Foundation, null-result challenge, independent statistical method, or later information forecast retained as bounded frontier; no full reading or reviewed physics yet."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

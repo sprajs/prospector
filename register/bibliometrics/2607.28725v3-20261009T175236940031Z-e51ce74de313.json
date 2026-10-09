@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2607.28725v3",
+  "work_identity": {
+    "arxiv_id": "2607.28725",
+    "registered_version": 3,
+    "title": "A Simulation Based Inference Approach to Modelling of Type Ia Supernova Populations",
+    "match_status": "exact",
+    "provider": "INSPIRE-HEP",
+    "provider_record_id": "3185136",
+    "matched_arxiv_ids": [
+      "2607.28725"
+    ],
+    "linked_dois": [],
+    "journal_metadata": [],
+    "journal_scope": "no_linked_journal_metadata_in_response",
+    "count_scope": "provider_base_work_record",
+    "version_scope": "versions_not_disaggregated",
+    "publication_scope_note": "Citation counts are totals for this provider literature record. They are not split between the registered arXiv version, other arXiv versions, and linked journal publication records.",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A2607.28725&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:52:36.819955+00:00",
+      "http_status": 200,
+      "response_sha256": "10354fde9f7390d666a3577ecd525dd1448b538796f500497b0287ce57ed3419",
+      "response_bytes": 3102,
+      "archive_path": ".work/systematics-20261009/bibliometrics/2026-10-09/inspire-2607.28725-10354fde9f73.json"
+    }
+  },
+  "citation_snapshot": {
+    "status": "observed",
+    "count": 2,
+    "count_without_self_citations": 1,
+    "retrieved_utc": "2026-10-09T17:52:36.819955+00:00",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A2607.28725&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:52:36.819955+00:00",
+      "http_status": 200,
+      "response_sha256": "10354fde9f7390d666a3577ecd525dd1448b538796f500497b0287ce57ed3419",
+      "response_bytes": 3102,
+      "archive_path": ".work/systematics-20261009/bibliometrics/2026-10-09/inspire-2607.28725-10354fde9f73.json"
+    },
+    "missing_reason": null
+  },
+  "comparison": {
+    "first_publication_utc": "2026-07-30T18:00:01Z",
+    "age_days_at_snapshot": 70.99485902725694,
+    "age_years_at_snapshot": 0.19437732199088806,
+    "field_categories": [
+      "astro-ph.CO"
+    ],
+    "cohort": {
+      "provider": "INSPIRE-HEP",
+      "snapshot_batch_id": "systematics-20261009",
+      "field_definition": "arXiv primary category: astro-ph.CO",
+      "age_band_years": {
+        "lower_inclusive": 0.0,
+        "upper_exclusive": 1.0
+      },
+      "population_size": null,
+      "minimum_population_size": 100,
+      "population_evidence": null,
+      "percentile": null,
+      "status": "not_queried",
+      "reason": "No provider population was queried for this provider, snapshot batch, arXiv primary category, and publication-age band. The deliberately selected Prospector sample is not a percentile reference population."
+    }
+  },
+  "authors": [
+    {
+      "paper_author_name": "B. Popovic",
+      "source_author_id": "1978426",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "M. Grayling",
+      "source_author_id": "1900666",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "M. O'Callaghan",
+      "source_author_id": "1933725",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "B. M. Boyd",
+      "source_author_id": "2768725",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "K. Mandel",
+      "source_author_id": "1703385",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "P. Wiseman",
+      "source_author_id": "1671334",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "B. Carreres",
+      "source_author_id": "2826244",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "N. Shiamtanis",
+      "source_author_id": "2160267",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "D. Scolnic",
+      "source_author_id": "1597957",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "E. Charleton",
+      "source_author_id": "3081830",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "Y. Murakami",
+      "source_author_id": "996462",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    }
+  ],
+  "team_visibility": {
+    "status": "none",
+    "unique_author_count": 11,
+    "verified_h_index_author_count": 0,
+    "coverage_fraction": 0.0,
+    "h_index_scope": null,
+    "h_index_snapshot_batch_id": null,
+    "max_h_index": null,
+    "median_h_index": null,
+    "missing_reason": "Team maximum and median use verified, observed, same-scope h-indices only; missing author metrics are unknown."
+  },
+  "snapshot_created_utc": "2026-10-09T17:52:36.940031+00:00",
+  "snapshot_id": "20261009T175236940031Z-e51ce74de313"
+}

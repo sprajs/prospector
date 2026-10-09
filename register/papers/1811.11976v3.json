@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1811.11976v3",
+  "arxiv_id": "1811.11976",
+  "version": 3,
+  "title": "Hubble flow variations as a test for inhomogeneous cosmology",
+  "authors": [
+    "Christoph Saulder",
+    "Steffen Mieske",
+    "Eelco van Kampen",
+    "Werner W. Zeilinger"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2018-11-29T06:04:20Z",
+  "updated_utc": "2018-12-07T11:26:29Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1811.11976v3",
+    "html": "https://arxiv.org/html/1811.11976v3",
+    "pdf": "https://arxiv.org/pdf/1811.11976v3"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "API license not supplied; source terms unresolved; only links and original notes published."
+  },
+  "artifacts": [
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=gr-qc%2F0702082%2C0709.0732%2C0909.0749%2C2412.15143v1%2C2311.01438v2%2C1811.11976v3%2C1812.01586v2%2C1410.3470v3%2C1811.11963v2&max_results=9",
+      "retrieved_utc": "2026-10-09T17:47:17.121175+00:00",
+      "sha256": "b1c5e9cab57effac64776b1b3187c686eab2452a9cbbac8521a58379ea2dbe10",
+      "bytes": 23697,
+      "role": "metadata"
+    },
+    {
+      "url": "https://arxiv.org/html/1811.11976v3",
+      "retrieved_utc": "2026-10-09T17:47:50.094198+00:00",
+      "bytes": 297002,
+      "sha256": "96b5c65db89141c97cfd3685d70f81502e0b6676cd785bfd1e8e50c72dc5109c",
+      "role": "html"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1811.11976v3",
+      "retrieved_utc": "2026-10-09T17:48:00.097758+00:00",
+      "bytes": 1877493,
+      "sha256": "99c7e9ae135514e78e5e6ddd0a3b89308e59b3e3ff19d989f78e624621525070",
+      "role": "pdf"
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/1811.11976v3",
+      "retrieved_utc": "2026-10-09T17:48:01.037027+00:00",
+      "sha256": "1bfd1ee1a467db3ceea3df21ae0dbcf55752f2fb378c3f5bcb3bb7ade971c791",
+      "bytes": 185146,
+      "derived_from_sha256": "99c7e9ae135514e78e5e6ddd0a3b89308e59b3e3ff19d989f78e624621525070",
+      "tool": "pdftotext -layout"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "abstract",
+    "reason": "Focused timescape foundations, conditional support, independent tests or cross-probe compatibility; selection is not acceptance."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

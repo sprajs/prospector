@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "search_id": "2026-10-09-bridges-foundation",
+  "lane": "interacting-sectors",
+  "work_mode": "focused_user_objective",
+  "status": "completed",
+  "requested_utc": "2026-10-09T17:51:31.275264+00:00",
+  "request": {
+    "query": "(ti:\"decomposed Chaplygin\" OR ti:\"non-adiabatic Chaplygin\" OR ti:\"inhomogeneous vacuum\")",
+    "normalized_query": "(ti:\"decomposed Chaplygin\" OR ti:\"non-adiabatic Chaplygin\" OR ti:\"inhomogeneous vacuum\")",
+    "order": "relevance",
+    "direction": "descending",
+    "start": 0,
+    "limit": 20,
+    "window_sha256": "d80ccc1ab17ebaac25b99a1ca01a4e293e6d8f0d4e8feb95e65c63d3bbcee392"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Research-group bridge objective, following roadmap M3/M5 and existing Chaplygin background dossier; no queued source directly covers this closure comparison. Narrow window refines broad terminology contamination; bounded nonexhaustive search.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22decomposed+Chaplygin%22+OR+ti%3A%22non-adiabatic+Chaplygin%22+OR+ti%3A%22inhomogeneous+vacuum%22%29&start=0&max_results=20&sortBy=relevance&sortOrder=descending",
+    "retrieved_utc": "2026-10-09T17:51:31.275264+00:00",
+    "sha256": "7351d27367816c4b4b036a115557945eb916b3ced892bf9e72b64f58b5e7fdbf",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/bridges-20261009/acquisition/objects/7351d27367816c4b4b036a115557945eb916b3ced892bf9e72b64f58b5e7fdbf.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:1306.0917v2",
+      "position": 0,
+      "disposition": "selected",
+      "reason": "Admitted selected full-reading source.",
+      "title": "Non-adiabatic Chaplygin gas",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1407.7812v2",
+      "position": 1,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Observational tests of non-adiabatic Chaplygin gas",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1301.5315v2",
+      "position": 2,
+      "disposition": "selected",
+      "reason": "Admitted selected full-reading source.",
+      "title": "Cosmological constraints on a decomposed Chaplygin gas",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1203.6776v2",
+      "position": 3,
+      "disposition": "selected",
+      "reason": "Admitted selected full-reading source.",
+      "title": "Inhomogeneous vacuum energy",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1101.4238v2",
+      "position": 4,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Inhomogeneous Vacuum States in Nambu-Jona-Lasinio Model",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2501.02500v1",
+      "position": 5,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Effect of Impurity on Inhomogeneous Vacuum and Interacting Vortices",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1811.03594v1",
+      "position": 6,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Nonlocal black hole evaporation and quantum metric fluctuations via inhomogeneous vacuum density",
+      "decision_history": []
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": "2026-10-09-chaplygin-vacuum-bridges-intake",
+    "query_id": "foundation"
+  }
+}

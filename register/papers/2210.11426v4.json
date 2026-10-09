@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2210.11426v4",
+  "arxiv_id": "2210.11426",
+  "version": 4,
+  "title": "Promise of Future Searches for Cosmic Topology",
+  "authors": [
+    "Yashar Akrami",
+    "Stefano Anselmi",
+    "Craig J. Copi",
+    "Johannes R. Eskilt",
+    "Andrew H. Jaffe",
+    "Arthur Kosowsky",
+    "Pip Petersen",
+    "Glenn D. Starkman",
+    "Kevin González-Quesada",
+    "Özenç Güngör",
+    "Deyan P. Mihaylov",
+    "Samanta Saha",
+    "Andrius Tamosiunas",
+    "Quinn Taylor",
+    "Valeri Vardanyan"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "gr-qc",
+    "hep-ph",
+    "hep-th"
+  ],
+  "published_utc": "2022-10-20T17:15:05Z",
+  "updated_utc": "2024-03-30T17:53:29Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2210.11426v4",
+    "html": "https://arxiv.org/html/2210.11426v4",
+    "pdf": "https://arxiv.org/pdf/2210.11426v4"
+  },
+  "license": {
+    "status": "CC BY 4.0",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Licence notice inspected in pinned HTML with source hash 31e231aef6948e95467666053bfaa07447b40f6880bd7bc7374ccd7794fb3ac4. Short original notes and links only in public records; owner-authorized private custody, no explicit private-copy prohibition observed."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=astro-ph%2F9801212%2C1403.2190v2%2C2210.11426v4%2C1502.01593%2C2306.17112v3%2C2403.09221v2%2C2608.25033v1&max_results=7",
+      "retrieved_utc": "2026-10-09T17:51:41.460556+00:00",
+      "sha256": "1a818ed7ee3cb63a165ebf3a573fdd6595806ec192958cb1c5b7594b29d21c54",
+      "bytes": 36053
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/2210.11426v4",
+      "retrieved_utc": "2026-10-09T17:52:09.612552+00:00",
+      "sha256": "31e231aef6948e95467666053bfaa07447b40f6880bd7bc7374ccd7794fb3ac4",
+      "bytes": 146153
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/2210.11426v4",
+      "retrieved_utc": "2026-10-09T17:52:16.067856+00:00",
+      "sha256": "b620c923f7ac38190599dfaacc1db1cbb52be5e37940d1ae953b0089a5432fcb",
+      "bytes": 964064
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/2210.11426v4",
+      "retrieved_utc": "2026-10-09T17:52:16.714308+00:00",
+      "sha256": "1ba063e173925ee5865f41437acd5f9e3442e7d652b72550cd3401f8ec6274e6",
+      "bytes": 54833,
+      "derived_from_sha256": "b620c923f7ac38190599dfaacc1db1cbb52be5e37940d1ae953b0089a5432fcb",
+      "tool": "pdftotext -layout"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "abstract",
+    "reason": "Full reading selected: covariance detectability beyond matched circles; test what changed computationally and distinguish ideal detectability from observed evidence."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

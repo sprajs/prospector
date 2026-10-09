@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1306.0917v2",
+  "arxiv_id": "1306.0917",
+  "version": 2,
+  "title": "Non-adiabatic Chaplygin gas",
+  "authors": [
+    "H. A. Borges",
+    "S. Carneiro",
+    "J. C. Fabris",
+    "W. Zimdahl"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2013-06-04T20:12:21Z",
+  "updated_utc": "2013-10-14T13:22:06Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1306.0917v2",
+    "html": "https://arxiv.org/html/1306.0917v2",
+    "pdf": "https://arxiv.org/pdf/1306.0917v2"
+  },
+  "license": {
+    "status": "arxiv_nonexclusive",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Pinned HTML displays arXiv perpetual non-exclusive license; no public source redistribution. Raw-source cloud copying eligibility unresolved."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=1203.6776v2%2C1301.5315v2%2C1306.0917v2&max_results=3",
+      "retrieved_utc": "2026-10-09T17:51:52.043337+00:00",
+      "sha256": "1206bad51cb33a466f5301e63990483ec6694047bc0e5f37c90a5bc1696c60b1",
+      "bytes": 6994
+    },
+    {
+      "url": "https://arxiv.org/html/1306.0917v2",
+      "retrieved_utc": "2026-10-09T17:52:12.826227+00:00",
+      "bytes": 187377,
+      "sha256": "672ac02ac10f775ad93c3f9ac2763326f609edfed036e31de58603db09cb7056",
+      "role": "html"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1306.0917v2",
+      "retrieved_utc": "2026-10-09T17:52:19.750153+00:00",
+      "bytes": 204686,
+      "sha256": "63bb32af8d0c0bd69c9cf0feb3232e992a4a1e7ff9b4c27f007d39a24630da10",
+      "role": "pdf"
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/1306.0917v2",
+      "retrieved_utc": "2026-10-09T17:52:20.198932+00:00",
+      "sha256": "479aafb5ca36ffc3035ce1c58dc85f363153cde652e2a74af3a4be456b9188b8",
+      "bytes": 46525,
+      "derived_from_sha256": "63bb32af8d0c0bd69c9cf0feb3232e992a4a1e7ff9b4c27f007d39a24630da10",
+      "tool": "pdftotext -layout"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "abstract",
+    "reason": "Selected for full Luna reading and Sol comparison of barotropic and geodesic/nonadiabatic closure; intake is not scientific acceptance."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

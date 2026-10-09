@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2608.25033v1",
+  "arxiv_id": "2608.25033",
+  "version": 1,
+  "title": "Cosmic topology. Part Va. Information content of the observable Universe",
+  "authors": [
+    "Deyan P. Mihaylov",
+    "Mikel Martin Barandiaran",
+    "Stefano Anselmi",
+    "Javier Carron Duque",
+    "Glenn D. Starkman",
+    "Yashar Akrami",
+    "Craig J. Copi",
+    "Andrew H. Jaffe",
+    "Arthur Kosowsky",
+    "James B. Mertens",
+    "Anna Negro",
+    "George Alestas",
+    "Ricardo G. Rodrigues",
+    "Thiago S. Pereira",
+    "Amirhossein Samandar",
+    "Andrius Tamosiunas",
+    "Cynthia Trendafilova"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2026-08-25T18:21:41Z",
+  "updated_utc": "2026-08-25T18:21:41Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2608.25033v1",
+    "html": "https://arxiv.org/html/2608.25033v1",
+    "pdf": "https://arxiv.org/pdf/2608.25033v1"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "API did not resolve a public redistribution licence. Only short original notes and metadata published; full sources remain private pending source-specific restriction check."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=astro-ph%2F9801212%2C1403.2190v2%2C2210.11426v4%2C1502.01593%2C2306.17112v3%2C2403.09221v2%2C2608.25033v1&max_results=7",
+      "retrieved_utc": "2026-10-09T17:51:41.460556+00:00",
+      "sha256": "1a818ed7ee3cb63a165ebf3a573fdd6595806ec192958cb1c5b7594b29d21c54",
+      "bytes": 36053
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Foundation, null-result challenge, independent statistical method, or later information forecast retained as bounded frontier; no full reading or reviewed physics yet."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

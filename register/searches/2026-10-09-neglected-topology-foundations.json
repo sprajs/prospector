@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "search_id": "2026-10-09-neglected-topology-foundations",
+  "lane": "inhomogeneity",
+  "work_mode": "neglected_mechanism_and_historical_challenge",
+  "status": "completed",
+  "requested_utc": "2026-10-09T17:51:38.121010+00:00",
+  "request": {
+    "query": "(cat:astro-ph.CO OR cat:gr-qc OR cat:astro-ph) AND (ti:\"topology\" OR ti:\"circles\") AND submittedDate:[199001010000 TO 201501010000]",
+    "normalized_query": "(cat:astro-ph.CO OR cat:gr-qc OR cat:astro-ph) AND (ti:\"topology\" OR ti:\"circles\") AND submittedDate:[199001010000 TO 201501010000]",
+    "order": "relevance",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "3a10ae73380052278256cdb5efd274199ebccef8651338b34a9be8aa18ed0b67"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Explicit historically neglected mechanism task; topology absent from existing register and saved query windows. Existing unrelated queue assigned to concurrent scope owners or preserved. Scope accepted by sole integration owner; no public mutation here.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Agr-qc+OR+cat%3Aastro-ph%29+AND+%28ti%3A%22topology%22+OR+ti%3A%22circles%22%29+AND+submittedDate%3A%5B199001010000+TO+201501010000%5D&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+    "retrieved_utc": "2026-10-09T17:51:38.121010+00:00",
+    "sha256": "1ce0f0eff72edc12f2e8c7bcc930528916ef8ac699f1d8815af1a86e083495b4",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/neglected-20261009/acquisition/objects/1ce0f0eff72edc12f2e8c7bcc930528916ef8ac699f1d8815af1a86e083495b4.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:astro-ph/9801212v1",
+      "position": 0,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Circles in the Sky: Finding Topology with the Microwave Background Radiation",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.268516+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:gr-qc/9602039v2",
+      "position": 1,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Circles in the Sky: Finding Topology with the Microwave Background Radiation",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.268522+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:0808.1572v2",
+      "position": 2,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Circles-in-the-sky searches and observable cosmic topology in the inflationary limit",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.268525+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1002.0834v3",
+      "position": 3,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Circles-in-the-sky searches and observable cosmic topology in a flat Universe",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.268527+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9910272v1",
+      "position": 4,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "COBE and Global Topology: An Example of the Application of the Identified Circles Principle",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.268528+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0403111v4",
+      "position": 5,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Problems with studying topology of the universe via circles from cosmic microwave background data",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.268530+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1211.4557v2",
+      "position": 6,
+      "disposition": "excluded",
+      "reason": "Outside bounded multiply connected FLRW spatial-topology scope; not a scientific rejection.",
+      "title": "A topological state sum model for fermions on the circle",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.268532+00:00",
+          "disposition": "excluded",
+          "reason": "Outside bounded multiply connected FLRW spatial-topology scope; not a scientific rejection."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0403036v1",
+      "position": 7,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Missing Lorenz-boosted Circles-in-the-sky",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.268533+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1108.2842v3",
+      "position": 8,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "What can the detection of a single pair of circles-in-the-sky tell us about the geometry and topology of the Universe ?",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.268535+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1007.3466v1",
+      "position": 9,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Observable circles-in-the-sky in flat universes",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.268536+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": null,
+    "query_id": null
+  }
+}

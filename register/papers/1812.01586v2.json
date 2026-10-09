@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1812.01586v2",
+  "arxiv_id": "1812.01586",
+  "version": 2,
+  "title": "Comment on \"Hubble flow variations as a test for inhomogeneous cosmology\"",
+  "authors": [
+    "David L. Wiltshire"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "gr-qc"
+  ],
+  "published_utc": "2018-12-04T18:42:49Z",
+  "updated_utc": "2019-04-02T22:13:08Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/1812.01586v2",
+    "html": "https://arxiv.org/html/1812.01586v2",
+    "pdf": "https://arxiv.org/pdf/1812.01586v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "API license not supplied; source terms unresolved; only links and original notes published."
+  },
+  "artifacts": [
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=gr-qc%2F0702082%2C0709.0732%2C0909.0749%2C2412.15143v1%2C2311.01438v2%2C1811.11976v3%2C1812.01586v2%2C1410.3470v3%2C1811.11963v2&max_results=9",
+      "retrieved_utc": "2026-10-09T17:47:17.121175+00:00",
+      "sha256": "b1c5e9cab57effac64776b1b3187c686eab2452a9cbbac8521a58379ea2dbe10",
+      "bytes": 23697,
+      "role": "metadata"
+    },
+    {
+      "url": "https://arxiv.org/html/1812.01586v2",
+      "retrieved_utc": "2026-10-09T17:48:10.640597+00:00",
+      "bytes": 132158,
+      "sha256": "66656c6db6e2ddecb7d56932b7060b1e4fc7b07fd2e3759d50e61e75f94b4ec4",
+      "role": "html"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1812.01586v2",
+      "retrieved_utc": "2026-10-09T17:48:17.732008+00:00",
+      "bytes": 139472,
+      "sha256": "ac3efc9794aeab4b45ae24d7fe868c6a5e4ae482c639318460f9dc24678c5824",
+      "role": "pdf"
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/1812.01586v2",
+      "retrieved_utc": "2026-10-09T17:48:18.155078+00:00",
+      "sha256": "cfb15c84080b1add137c06fd1983cb00b8adc031f510c7da0dd4e520cbc0105b",
+      "bytes": 39442,
+      "derived_from_sha256": "ac3efc9794aeab4b45ae24d7fe868c6a5e4ae482c639318460f9dc24678c5824",
+      "tool": "pdftotext -layout"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "abstract",
+    "reason": "Focused timescape foundations, conditional support, independent tests or cross-probe compatibility; selection is not acceptance."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

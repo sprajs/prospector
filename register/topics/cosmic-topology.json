@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "cosmic-topology",
+  "title": "Cosmic topology and global spatial identifications",
+  "scope": "Multiply connected spatial manifolds, observer-dependent CMB signatures, null-search scope and distinguishability. Local geometry, global topology and observational evidence remain separate.",
+  "membership_basis": "Metadata/abstract navigation in this discovery checkpoint; no theory equivalence or scientific acceptance implied.",
+  "paper_ids": [
+    "arxiv:astro-ph/9801212v1",
+    "arxiv:1502.01593v2",
+    "arxiv:1403.2190v2",
+    "arxiv:2210.11426v4",
+    "arxiv:2306.17112v3",
+    "arxiv:2403.09221v2",
+    "arxiv:2608.25033v1"
+  ],
+  "idea_ids": [],
+  "design_ids": []
+}

@@ -5,12 +5,21 @@
   "scope": "Averaging, backreaction, observer clocks and alternatives to homogeneous expansion.",
   "membership_basis": "Topic navigation from abstracts or reviewed sources; shared membership does not establish physical equivalence.",
   "paper_ids": [
+    "arxiv:0709.0732v2",
+    "arxiv:0909.0749v2",
     "arxiv:1009.5855v2",
     "arxiv:1107.5596v2",
     "arxiv:1306.3208v2",
     "arxiv:1310.3124v1",
     "arxiv:1410.3470v3",
-    "arxiv:2609.31543v1"
+    "arxiv:1811.11963v2",
+    "arxiv:1811.11976v3",
+    "arxiv:1812.01586v2",
+    "arxiv:2311.01438v2",
+    "arxiv:2412.15143v1",
+    "arxiv:2511.17160v2",
+    "arxiv:2609.31543v1",
+    "arxiv:gr-qc/0702082v4"
   ],
   "idea_ids": [
     "supernova-reduction-selection-dependence",

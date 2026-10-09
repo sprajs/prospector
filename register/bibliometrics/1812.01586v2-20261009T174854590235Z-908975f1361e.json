@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1812.01586v2",
+  "work_identity": {
+    "arxiv_id": "1812.01586",
+    "registered_version": 2,
+    "title": "Comment on \"Hubble flow variations as a test for inhomogeneous cosmology\"",
+    "match_status": "ambiguous",
+    "provider": "INSPIRE-HEP",
+    "provider_record_id": null,
+    "matched_arxiv_ids": [],
+    "linked_dois": [],
+    "journal_metadata": [],
+    "journal_scope": "no_linked_journal_metadata_in_response",
+    "count_scope": "unknown",
+    "version_scope": "unknown",
+    "publication_scope_note": "Citation counts are totals for this provider literature record. They are not split between the registered arXiv version, other arXiv versions, and linked journal publication records.",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A1812.01586&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:48:54.468494+00:00",
+      "http_status": 200,
+      "response_sha256": "d38a2afcee51bf570c38b1fee7f977420d40220679eab7d2e4ff58e98d51d098",
+      "response_bytes": 2497,
+      "archive_path": ".work/timescape-20261009/bibliometrics-raw/2026-10-09/inspire-1812.01586-d38a2afcee51.json"
+    }
+  },
+  "citation_snapshot": {
+    "status": "unavailable",
+    "count": null,
+    "count_without_self_citations": null,
+    "retrieved_utc": "2026-10-09T17:48:54.468494+00:00",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A1812.01586&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:48:54.468494+00:00",
+      "http_status": 200,
+      "response_sha256": "d38a2afcee51bf570c38b1fee7f977420d40220679eab7d2e4ff58e98d51d098",
+      "response_bytes": 2497,
+      "archive_path": ".work/timescape-20261009/bibliometrics-raw/2026-10-09/inspire-1812.01586-d38a2afcee51.json"
+    },
+    "missing_reason": "Provider count was absent or the exact arXiv work match was not established."
+  },
+  "comparison": {
+    "first_publication_utc": "2018-12-04T18:42:49Z",
+    "age_days_at_snapshot": 2865.9625632927546,
+    "age_years_at_snapshot": 7.8467389838059765,
+    "field_categories": [
+      "astro-ph.CO",
+      "gr-qc"
+    ],
+    "cohort": {
+      "provider": "INSPIRE-HEP",
+      "snapshot_batch_id": "timescape-2026-10-09",
+      "field_definition": "arXiv primary category: astro-ph.CO",
+      "age_band_years": {
+        "lower_inclusive": 7.0,
+        "upper_exclusive": 8.0
+      },
+      "population_size": null,
+      "minimum_population_size": 100,
+      "population_evidence": null,
+      "percentile": null,
+      "status": "not_queried",
+      "reason": "No provider population was queried for this provider, snapshot batch, arXiv primary category, and publication-age band. The deliberately selected Prospector sample is not a percentile reference population."
+    }
+  },
+  "authors": [
+    {
+      "paper_author_name": "David L. Wiltshire",
+      "source_author_id": null,
+      "author_identity_verified": false,
+      "identity_evidence": "No exact author-record match was established from the provider response.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    }
+  ],
+  "team_visibility": {
+    "status": "none",
+    "unique_author_count": 1,
+    "verified_h_index_author_count": 0,
+    "coverage_fraction": 0.0,
+    "h_index_scope": null,
+    "h_index_snapshot_batch_id": null,
+    "max_h_index": null,
+    "median_h_index": null,
+    "missing_reason": "Team maximum and median use verified, observed, same-scope h-indices only; missing author metrics are unknown."
+  },
+  "snapshot_created_utc": "2026-10-09T17:48:54.590235+00:00",
+  "snapshot_id": "20261009T174854590235Z-908975f1361e"
+}

@@ -32,6 +32,36 @@
       "retrieved_utc": "2026-10-01T00:44:41.451093+00:00",
       "sha256": "7bcba14d2218e1d0ca8eae4772e8faeaf45d38667a7ec837539a7faeda26e3bb",
       "bytes": 10909
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=gr-qc%2F0702082%2C0709.0732%2C0909.0749%2C2412.15143v1%2C2311.01438v2%2C1811.11976v3%2C1812.01586v2%2C1410.3470v3%2C1811.11963v2&max_results=9",
+      "retrieved_utc": "2026-10-09T17:47:17.121175+00:00",
+      "sha256": "b1c5e9cab57effac64776b1b3187c686eab2452a9cbbac8521a58379ea2dbe10",
+      "bytes": 23697,
+      "role": "metadata"
+    },
+    {
+      "url": "https://arxiv.org/html/1410.3470v3",
+      "retrieved_utc": "2026-10-09T17:48:27.652056+00:00",
+      "bytes": 812970,
+      "sha256": "dd8270f1f83460cbe0bc3e5ff847d91431aa4cefeb3442bef9017c594453176e",
+      "role": "html"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1410.3470v3",
+      "retrieved_utc": "2026-10-09T17:48:30.997930+00:00",
+      "bytes": 4029605,
+      "sha256": "e7d695d58b0d6b3c5b3924f07aaaca700d5a387c9d6178cf1a1c5145fff62c93",
+      "role": "pdf"
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/1410.3470v3",
+      "retrieved_utc": "2026-10-09T17:48:33.256683+00:00",
+      "sha256": "b0fe8521138920eefd5442abcae0a64f83ed740cea4adf6318c0f06493d074e4",
+      "bytes": 212043,
+      "derived_from_sha256": "e7d695d58b0d6b3c5b3924f07aaaca700d5a387c9d6178cf1a1c5145fff62c93",
+      "tool": "pdftotext -layout"
     }
   ],
   "screen": {

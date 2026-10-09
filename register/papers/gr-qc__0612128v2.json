@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:gr-qc/0612128v2",
+  "arxiv_id": "gr-qc/0612128",
+  "version": 2,
+  "title": "A Strong Constraint on Ever-Present Lambda",
+  "authors": [
+    "John D. Barrow"
+  ],
+  "categories": [
+    "gr-qc",
+    "astro-ph",
+    "hep-ph",
+    "hep-th"
+  ],
+  "published_utc": "2006-12-20T11:33:50Z",
+  "updated_utc": "2007-03-09T10:19:47Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/gr-qc/0612128v2",
+    "html": "https://arxiv.org/html/gr-qc/0612128v2",
+    "pdf": "https://arxiv.org/pdf/gr-qc/0612128v2"
+  },
+  "license": {
+    "status": "unresolved; no licence in Atom metadata",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public register contains metadata and original notes. Private research custody only; no public full-source redistribution."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=astro-ph%2F0209274v1%2Cgr-qc%2F0612128v2%2C2307.13743v2&max_results=3",
+      "retrieved_utc": "2026-10-09T17:47:03.848226+00:00",
+      "sha256": "3ab17202af6f180b6e36fd2f6ae4b11346183b28e2460980185d9268c78a381b",
+      "bytes": 7246
+    },
+    {
+      "role": "html",
+      "url": "https://arxiv.org/html/gr-qc/0612128v2",
+      "retrieved_utc": "2026-10-09T17:47:10.632315+00:00",
+      "sha256": "d8a104e315d85f98179d2bcb7a26e970fac665952aaa317432206288c1b756fe",
+      "bytes": 72792
+    },
+    {
+      "role": "pdf",
+      "url": "https://arxiv.org/pdf/gr-qc/0612128v2",
+      "retrieved_utc": "2026-10-09T17:47:20.481941+00:00",
+      "sha256": "4ca97c647064a2fa8f167c144f8e9468dbdefd17ea175419db1e64d6fd76d811",
+      "bytes": 89004
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/gr-qc/0612128v2",
+      "retrieved_utc": "2026-10-09T17:47:20.643170+00:00",
+      "sha256": "59989730c3b96870ace5a082fd4e7f6f992f39f878254178028aae815b594950",
+      "bytes": 15423,
+      "derived_from_sha256": "4ca97c647064a2fa8f167c144f8e9468dbdefd17ea175419db1e64d6fd76d811",
+      "tool": "pdftotext -layout"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "abstract",
+    "reason": "Selected for full source reading: foundation, independent criticism, and later observational reassessment."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

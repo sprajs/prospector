@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "search_id": "20261009T174612506208Z-4720d338b815",
+  "lane": "interacting-sectors",
+  "work_mode": "foundational_or_citation_linked",
+  "status": "completed",
+  "requested_utc": "2026-10-09T17:46:12.506140+00:00",
+  "request": {
+    "query": "(cat:astro-ph.CO OR cat:hep-ph) AND (ti:\"stepped dark radiation\" OR abs:\"stepped dark radiation\")",
+    "normalized_query": "(cat:astro-ph.CO OR cat:hep-ph) AND (ti:\"stepped dark radiation\" OR abs:\"stepped dark radiation\")",
+    "order": "relevance",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "4720d338b815ac1ddfd88b078547343f49e5d8bdcbed70fed5927332e1aecf09"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Dedicated interacting-sectors batch; queued thermal NEDE seed selected for acquisition, other lanes explicitly deferred and timescape owned by concurrent chat; search a distinct perturbation/entropy-step mechanism.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Ahep-ph%29+AND+%28ti%3A%22stepped+dark+radiation%22+OR+abs%3A%22stepped+dark+radiation%22%29&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+    "retrieved_utc": "2026-10-09T17:46:12.510946+00:00",
+    "sha256": "46638bda73556e730745ec1bae07045a33e17dbf0436bdaf39896f69c444a211",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/crawl-acquisition/2026-10-09-interacting-radiation/objects/46638bda73556e730745ec1bae07045a33e17dbf0436bdaf39896f69c444a211.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:2512.06719v4",
+      "position": 0,
+      "disposition": "deferred",
+      "reason": "Deferred valuable null: scalar-DM momentum coupling gives marginal S8 relief and poorer combined-prior fit; full conditioning unreviewed.",
+      "title": "Interacting scalar field dark matter and stepped dark radiation in an extended Wess-Zumino dark radiation model",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2306.12469v2",
+      "position": 1,
+      "disposition": "selected",
+      "reason": "Full reading selected: weak versus strong scattering comparison and high-resolution CMB/full-shape challenge.",
+      "title": "The weak, the strong and the ugly -- A comparative analysis of interacting stepped dark radiation",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2404.16822v1",
+      "position": 2,
+      "disposition": "deferred",
+      "reason": "Deferred: independent neutrino-mixing production alternative with explicit background and perturbation implementation.",
+      "title": "Cosmological probes of Dark Radiation from Neutrino Mixing",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2404.07256v1",
+      "position": 3,
+      "disposition": "deferred",
+      "reason": "Deferred full reading: post-BBN reheating and entropy step bridge; original sources centrally acquired but three-paper review ceiling prioritizes current perturbation challenge.",
+      "title": "Hot New Early Dark Energy bridging cosmic gaps: Supercooled phase transition reconciles (stepped) dark radiation solutions to the Hubble tension with BBN",
+      "decision_history": []
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": "2026-10-09-interacting-radiation-intake",
+    "query_id": null
+  },
+  "batch_id": "2026-10-09-interacting-radiation"
+}

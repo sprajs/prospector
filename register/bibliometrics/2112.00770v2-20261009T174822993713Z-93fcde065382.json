@@ -1,0 +1,135 @@
+{
+  "authors": [
+    {
+      "author_identity_verified": true,
+      "google_scholar": {
+        "h_index": null,
+        "h_index_scope": null,
+        "h_index_status": "unavailable",
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero.",
+        "profile_attempt": null,
+        "profile_batch_id": null,
+        "profile_identity_evidence": null,
+        "profile_identity_verified": false,
+        "profile_link_evidence": null,
+        "profile_url": null,
+        "retrieved_utc": null,
+        "status": "unqueried"
+      },
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "paper_author_name": "Florian Niedermann",
+      "source_author_id": "1259406"
+    },
+    {
+      "author_identity_verified": true,
+      "google_scholar": {
+        "h_index": null,
+        "h_index_scope": null,
+        "h_index_status": "unavailable",
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero.",
+        "profile_attempt": null,
+        "profile_batch_id": null,
+        "profile_identity_evidence": null,
+        "profile_identity_verified": false,
+        "profile_link_evidence": null,
+        "profile_url": null,
+        "retrieved_utc": null,
+        "status": "unqueried"
+      },
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "paper_author_name": "Martin S. Sloth",
+      "source_author_id": "1032103"
+    }
+  ],
+  "citation_snapshot": {
+    "count": 87,
+    "count_without_self_citations": 72,
+    "missing_reason": null,
+    "retrieved_utc": "2026-10-09T17:48:22.781067+00:00",
+    "source": {
+      "archive_path": ".work/bibliometrics/2026-10-09/inspire-2112.00770-28928eef9c68.json",
+      "http_status": 200,
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A2112.00770&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "response_bytes": 2663,
+      "response_sha256": "28928eef9c68d49ada9ba4a5bc1ceaea711f5b0c761af7e637f7ab9a8bd67216",
+      "retrieved_utc": "2026-10-09T17:48:22.781067+00:00"
+    },
+    "status": "observed"
+  },
+  "comparison": {
+    "age_days_at_snapshot": 1772.9501826512385,
+    "age_years_at_snapshot": 4.85417272812238,
+    "cohort": {
+      "age_band_years": {
+        "lower_inclusive": 4.0,
+        "upper_exclusive": 5.0
+      },
+      "field_definition": "arXiv primary category: hep-ph",
+      "minimum_population_size": 100,
+      "percentile": null,
+      "population_evidence": null,
+      "population_size": null,
+      "provider": "INSPIRE-HEP",
+      "reason": "No provider population was queried for this provider, snapshot batch, arXiv primary category, and publication-age band. The deliberately selected Prospector sample is not a percentile reference population.",
+      "snapshot_batch_id": "interacting-radiation-20261009",
+      "status": "not_queried"
+    },
+    "field_categories": [
+      "hep-ph",
+      "astro-ph.CO",
+      "hep-th"
+    ],
+    "first_publication_utc": "2021-12-01T19:00:07Z"
+  },
+  "paper_id": "arxiv:2112.00770v2",
+  "schema_version": 1,
+  "snapshot_created_utc": "2026-10-09T17:48:22.993713+00:00",
+  "snapshot_id": "20261009T174822993713Z-93fcde065382",
+  "team_visibility": {
+    "coverage_fraction": 0.0,
+    "h_index_scope": null,
+    "h_index_snapshot_batch_id": null,
+    "max_h_index": null,
+    "median_h_index": null,
+    "missing_reason": "Team maximum and median use verified, observed, same-scope h-indices only; missing author metrics are unknown.",
+    "status": "none",
+    "unique_author_count": 2,
+    "verified_h_index_author_count": 0
+  },
+  "work_identity": {
+    "arxiv_id": "2112.00770",
+    "count_scope": "provider_base_work_record",
+    "journal_metadata": [
+      {
+        "article_or_page": "063509",
+        "journal_title": "Phys.Rev.D",
+        "volume": "105",
+        "year": 2022
+      }
+    ],
+    "journal_scope": "linked_journal_metadata_returned",
+    "linked_dois": [
+      "10.1103/PhysRevD.105.063509"
+    ],
+    "match_status": "exact",
+    "matched_arxiv_ids": [
+      "2112.00770"
+    ],
+    "provider": "INSPIRE-HEP",
+    "provider_record_id": "1984587",
+    "publication_scope_note": "Citation counts are totals for this provider literature record. They are not split between the registered arXiv version, other arXiv versions, and linked journal publication records.",
+    "registered_version": 2,
+    "source": {
+      "archive_path": ".work/bibliometrics/2026-10-09/inspire-2112.00770-28928eef9c68.json",
+      "http_status": 200,
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A2112.00770&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "response_bytes": 2663,
+      "response_sha256": "28928eef9c68d49ada9ba4a5bc1ceaea711f5b0c761af7e637f7ab9a8bd67216",
+      "retrieved_utc": "2026-10-09T17:48:22.781067+00:00"
+    },
+    "title": "Hot New Early Dark Energy",
+    "version_scope": "versions_not_disaggregated"
+  }
+}

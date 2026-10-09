@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "search_id": "2026-10-09-neglected-topology-recent",
+  "lane": "inhomogeneity",
+  "work_mode": "neglected_mechanism_and_historical_challenge",
+  "status": "completed",
+  "requested_utc": "2026-10-09T17:51:11.239959+00:00",
+  "request": {
+    "query": "(cat:astro-ph.CO OR cat:gr-qc OR cat:astro-ph) AND (ti:\"cosmic topology\" OR ti:\"Cosmic Topology\" OR ti:\"matched circles\")",
+    "normalized_query": "(cat:astro-ph.CO OR cat:gr-qc OR cat:astro-ph) AND (ti:\"cosmic topology\" OR ti:\"Cosmic Topology\" OR ti:\"matched circles\")",
+    "order": "lastUpdatedDate",
+    "direction": "descending",
+    "start": 0,
+    "limit": 20,
+    "window_sha256": "217fda1df2629929a4d7f049eeebd85563d638b3e50e9bbfc4331ab7f9ef8fa3"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Explicit historically neglected mechanism task; topology absent from existing register and saved query windows. Existing unrelated queue assigned to concurrent scope owners or preserved. Scope accepted by sole integration owner; no public mutation here.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Agr-qc+OR+cat%3Aastro-ph%29+AND+%28ti%3A%22cosmic+topology%22+OR+ti%3A%22Cosmic+Topology%22+OR+ti%3A%22matched+circles%22%29&start=0&max_results=20&sortBy=lastUpdatedDate&sortOrder=descending",
+    "retrieved_utc": "2026-10-09T17:51:11.239959+00:00",
+    "sha256": "8ff5560f49f8a08f3d87e56db734f2920c98992b2502f97ecddb86b821c61ad7",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/neglected-20261009/acquisition/objects/8ff5560f49f8a08f3d87e56db734f2920c98992b2502f97ecddb86b821c61ad7.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:2610.12418v1",
+      "position": 0,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Cosmic topology. Part IId. Eigenmodes and correlation matrices of lens spaces",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265349+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2610.05960v1",
+      "position": 1,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Limited Impact of CMB B-mode Polarization on Constraints on Cosmic Topology",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265360+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2603.12319v2",
+      "position": 2,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Quantum Signatures of Cosmic Topology: How Casimir Backreaction Transmits Isotropy Violation",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265363+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2608.25033v1",
+      "position": 3,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Cosmic topology. Part Va. Information content of the observable Universe",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265365+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2602.15527v1",
+      "position": 4,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Cosmic topology. Part IIc. Detectability with non-standard primordial power spectrum",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265367+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2510.05030v1",
+      "position": 5,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Cosmic topology. Part IIb. Eigenmodes, correlation matrices, and detectability of non-orientable Euclidean manifolds",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265368+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2503.08671v2",
+      "position": 6,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Cosmic topology. Part IIIb. Eigenmodes and correlation matrices of spin-2 perturbations in orientable Euclidean manifolds",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265370+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2409.02226v2",
+      "position": 7,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Cosmic topology. Part Ic. Limits on lens spaces from circle searches",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265371+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2211.02603v4",
+      "position": 8,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Cosmic topology. Part I. Limits on orientable Euclidean manifolds from circle searches",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265373+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2407.09400v2",
+      "position": 9,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Cosmic topology. Part IIIa. Microwave background parity violation without parity-violating microphysics",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265374+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2404.01236v2",
+      "position": 10,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Cosmic topology. Part IVa. Classification of manifolds using machine learning: a case study with small toroidal universes",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265376+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2306.17112v3",
+      "position": 11,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Cosmic topology. Part IIa. Eigenmodes, correlation matrices, and detectability of orientable Euclidean manifolds",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265377+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2210.11426v4",
+      "position": 12,
+      "disposition": "selected",
+      "reason": "Full reading selected: covariance detectability beyond matched circles; test what changed computationally and distinguish ideal detectability from observed evidence.",
+      "title": "Promise of Future Searches for Cosmic Topology",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265379+00:00",
+          "disposition": "selected",
+          "reason": "Full reading selected: covariance detectability beyond matched circles; test what changed computationally and distinguish ideal detectability from observed evidence."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2403.09221v2",
+      "position": 13,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Betti Functionals as a Probe for Cosmic Topology",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265381+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2110.08878v1",
+      "position": 14,
+      "disposition": "excluded",
+      "reason": "Outside bounded multiply connected FLRW spatial-topology scope; not a scientific rejection.",
+      "title": "Fractality in Cosmic Topology Models with Spectral Action Gravity",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265383+00:00",
+          "disposition": "excluded",
+          "reason": "Outside bounded multiply connected FLRW spatial-topology scope; not a scientific rejection."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1612.04157v1",
+      "position": 15,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Cosmic Topology",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265384+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1608.06540v2",
+      "position": 16,
+      "disposition": "excluded",
+      "reason": "Outside bounded multiply connected FLRW spatial-topology scope; not a scientific rejection.",
+      "title": "An equation of state for purely kinetic k-essence inspired by cosmic topological defects",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265386+00:00",
+          "disposition": "excluded",
+          "reason": "Outside bounded multiply connected FLRW spatial-topology scope; not a scientific rejection."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1604.02179v2",
+      "position": 17,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "Limits of the circles-in-the-sky searches in the determination of cosmic topology of nearly flat universes",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265387+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1601.03884v2",
+      "position": 18,
+      "disposition": "deferred",
+      "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value.",
+      "title": "The Status of Cosmic Topology after Planck Data",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265389+00:00",
+          "disposition": "deferred",
+          "reason": "Potential foundational, constraint, observer-placement, parity or alternative-statistic lead retained in exact snapshot; bounded two-paper reading selection, not evidence of low scientific value."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1403.2190v2",
+      "position": 19,
+      "disposition": "selected",
+      "reason": "Full reading selected: historically restricted circle searches and observer-dependent Hantzsche-Wendt signatures; test feasibility and null-search scope, not presumed anomaly explanation.",
+      "title": "The Hantzsche-Wendt Manifold in Cosmic Topology",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:52:29.265390+00:00",
+          "disposition": "selected",
+          "reason": "Full reading selected: historically restricted circle searches and observer-dependent Hantzsche-Wendt signatures; test feasibility and null-search scope, not presumed anomaly explanation."
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": null,
+    "query_id": null
+  }
+}

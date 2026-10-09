@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2609.30312v1",
+  "arxiv_id": "2609.30312",
+  "version": 1,
+  "title": "FPCA-Enhanced Simulation-Based Inference for Robust Type Ia Supernova Cosmology",
+  "authors": [
+    "Moonzarin Reza",
+    "Lifan Wang"
+  ],
+  "categories": [
+    "astro-ph.IM",
+    "astro-ph.CO"
+  ],
+  "published_utc": "2026-09-23T04:37:16Z",
+  "updated_utc": "2026-09-23T04:37:16Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2609.30312v1",
+    "html": "https://arxiv.org/html/2609.30312v1",
+    "pdf": "https://arxiv.org/pdf/2609.30312v1"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public notes and metadata only. Source copies require separate lawful private preservation review."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Aastro-ph.GA%29+AND+%28ti%3Asupernova+OR+abs%3A%22Type+Ia%22%29+AND+%28abs%3A%22population+evolution%22+OR+abs%3A%22dust%22+OR+abs%3A%22selection%22%29+AND+submittedDate%3A%5B202501010000+TO+202610092359%5D&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+      "retrieved_utc": "2026-10-09T17:51:05.629146+00:00",
+      "sha256": "aee680794c07c7d32c2f6938681b21a24629b964b623e3bea04ae15bad6fe8a6",
+      "bytes": 35288
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Deferred representation challenge: FPCA versus SALT summary robustness depends on simulation domain and shared DES sample."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

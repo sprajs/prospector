@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:0709.0732v2",
+  "work_identity": {
+    "arxiv_id": "0709.0732",
+    "registered_version": 2,
+    "title": "Exact solution to the averaging problem in cosmology",
+    "match_status": "exact",
+    "provider": "INSPIRE-HEP",
+    "provider_record_id": "760005",
+    "matched_arxiv_ids": [
+      "0709.0732"
+    ],
+    "linked_dois": [
+      "10.1103/PhysRevLett.99.251101"
+    ],
+    "journal_metadata": [
+      {
+        "journal_title": "Phys.Rev.Lett.",
+        "year": 2007,
+        "volume": "99",
+        "article_or_page": "251101"
+      }
+    ],
+    "journal_scope": "linked_journal_metadata_returned",
+    "count_scope": "provider_base_work_record",
+    "version_scope": "versions_not_disaggregated",
+    "publication_scope_note": "Citation counts are totals for this provider literature record. They are not split between the registered arXiv version, other arXiv versions, and linked journal publication records.",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A0709.0732&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:48:54.729575+00:00",
+      "http_status": 200,
+      "response_sha256": "41bc45070a20d9360dae3932026ee3dd9bba60551ea6a4442b1fdc1f914d8aa6",
+      "response_bytes": 2335,
+      "archive_path": ".work/timescape-20261009/bibliometrics-raw/2026-10-09/inspire-0709.0732-41bc45070a20.json"
+    }
+  },
+  "citation_snapshot": {
+    "status": "observed",
+    "count": 194,
+    "count_without_self_citations": 162,
+    "retrieved_utc": "2026-10-09T17:48:54.729575+00:00",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A0709.0732&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:48:54.729575+00:00",
+      "http_status": 200,
+      "response_sha256": "41bc45070a20d9360dae3932026ee3dd9bba60551ea6a4442b1fdc1f914d8aa6",
+      "response_bytes": 2335,
+      "archive_path": ".work/timescape-20261009/bibliometrics-raw/2026-10-09/inspire-0709.0732-41bc45070a20.json"
+    },
+    "missing_reason": null
+  },
+  "comparison": {
+    "first_publication_utc": "2007-09-06T11:57:39Z",
+    "age_days_at_snapshot": 6973.243932055267,
+    "age_years_at_snapshot": 19.09209342301421,
+    "field_categories": [
+      "gr-qc",
+      "astro-ph",
+      "hep-ph",
+      "hep-th"
+    ],
+    "cohort": {
+      "provider": "INSPIRE-HEP",
+      "snapshot_batch_id": "timescape-2026-10-09",
+      "field_definition": "arXiv primary category: gr-qc",
+      "age_band_years": {
+        "lower_inclusive": 19.0,
+        "upper_exclusive": 20.0
+      },
+      "population_size": null,
+      "minimum_population_size": 100,
+      "population_evidence": null,
+      "percentile": null,
+      "status": "not_queried",
+      "reason": "No provider population was queried for this provider, snapshot batch, arXiv primary category, and publication-age band. The deliberately selected Prospector sample is not a percentile reference population."
+    }
+  },
+  "authors": [
+    {
+      "paper_author_name": "David L. Wiltshire",
+      "source_author_id": "983425",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    }
+  ],
+  "team_visibility": {
+    "status": "none",
+    "unique_author_count": 1,
+    "verified_h_index_author_count": 0,
+    "coverage_fraction": 0.0,
+    "h_index_scope": null,
+    "h_index_snapshot_batch_id": null,
+    "max_h_index": null,
+    "median_h_index": null,
+    "missing_reason": "Team maximum and median use verified, observed, same-scope h-indices only; missing author metrics are unknown."
+  },
+  "snapshot_created_utc": "2026-10-09T17:48:54.841439+00:00",
+  "snapshot_id": "20261009T174854841439Z-fb79944d0687"
+}

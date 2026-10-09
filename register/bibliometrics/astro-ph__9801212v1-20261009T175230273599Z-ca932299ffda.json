@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:astro-ph/9801212v1",
+  "work_identity": {
+    "arxiv_id": "astro-ph/9801212",
+    "registered_version": 1,
+    "title": "Circles in the Sky: Finding Topology with the Microwave Background Radiation",
+    "match_status": "exact",
+    "provider": "INSPIRE-HEP",
+    "provider_record_id": "453451",
+    "matched_arxiv_ids": [
+      "astro-ph/9801212"
+    ],
+    "linked_dois": [
+      "10.1088/0264-9381/15/9/013"
+    ],
+    "journal_metadata": [
+      {
+        "journal_title": "Class.Quant.Grav.",
+        "year": 1998,
+        "volume": "15",
+        "article_or_page": "2657"
+      }
+    ],
+    "journal_scope": "linked_journal_metadata_returned",
+    "count_scope": "provider_base_work_record",
+    "version_scope": "versions_not_disaggregated",
+    "publication_scope_note": "Citation counts are totals for this provider literature record. They are not split between the registered arXiv version, other arXiv versions, and linked journal publication records.",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3Aastro-ph%2F9801212&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:52:30.166567+00:00",
+      "http_status": 200,
+      "response_sha256": "bb0a7da7052e55adacc34e0d9f7ce99f3dbcb552822635977ab86030038b8fd4",
+      "response_bytes": 2838,
+      "archive_path": ".work/neglected-20261009/bibliometrics/2026-10-09/inspire-astro-ph_9801212-bb0a7da7052e.json"
+    }
+  },
+  "citation_snapshot": {
+    "status": "observed",
+    "count": 236,
+    "count_without_self_citations": 209,
+    "retrieved_utc": "2026-10-09T17:52:30.166567+00:00",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3Aastro-ph%2F9801212&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:52:30.166567+00:00",
+      "http_status": 200,
+      "response_sha256": "bb0a7da7052e55adacc34e0d9f7ce99f3dbcb552822635977ab86030038b8fd4",
+      "response_bytes": 2838,
+      "archive_path": ".work/neglected-20261009/bibliometrics/2026-10-09/inspire-astro-ph_9801212-bb0a7da7052e.json"
+    },
+    "missing_reason": null
+  },
+  "comparison": {
+    "first_publication_utc": "1998-01-22T16:50:54Z",
+    "age_days_at_snapshot": 10487.042779705636,
+    "age_years_at_snapshot": 28.7125479091443,
+    "field_categories": [
+      "astro-ph",
+      "gr-qc",
+      "hep-th"
+    ],
+    "cohort": {
+      "provider": "INSPIRE-HEP",
+      "snapshot_batch_id": "neglected-topology-20261009",
+      "field_definition": "arXiv primary category: astro-ph",
+      "age_band_years": {
+        "lower_inclusive": 28.0,
+        "upper_exclusive": 29.0
+      },
+      "population_size": null,
+      "minimum_population_size": 100,
+      "population_evidence": null,
+      "percentile": null,
+      "status": "not_queried",
+      "reason": "No provider population was queried for this provider, snapshot batch, arXiv primary category, and publication-age band. The deliberately selected Prospector sample is not a percentile reference population."
+    }
+  },
+  "authors": [
+    {
+      "paper_author_name": "Neil Cornish",
+      "source_author_id": null,
+      "author_identity_verified": false,
+      "identity_evidence": "No exact author-record match was established from the provider response.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "David Spergel",
+      "source_author_id": null,
+      "author_identity_verified": false,
+      "identity_evidence": "No exact author-record match was established from the provider response.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "Glenn Starkman",
+      "source_author_id": null,
+      "author_identity_verified": false,
+      "identity_evidence": "No exact author-record match was established from the provider response.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    }
+  ],
+  "team_visibility": {
+    "status": "none",
+    "unique_author_count": 3,
+    "verified_h_index_author_count": 0,
+    "coverage_fraction": 0.0,
+    "h_index_scope": null,
+    "h_index_snapshot_batch_id": null,
+    "max_h_index": null,
+    "median_h_index": null,
+    "missing_reason": "Team maximum and median use verified, observed, same-scope h-indices only; missing author metrics are unknown."
+  },
+  "snapshot_created_utc": "2026-10-09T17:52:30.273599+00:00",
+  "snapshot_id": "20261009T175230273599Z-ca932299ffda"
+}

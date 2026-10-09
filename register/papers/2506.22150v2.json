@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2506.22150v2",
+  "arxiv_id": "2506.22150",
+  "version": 2,
+  "title": "Stretch to stretch, dust to dust: lower-value local $H_{0}$ measurement from two-population modelling of type Ia supernovae",
+  "authors": [
+    "Rados\u0142aw Wojtak",
+    "Jens Hjorth"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "astro-ph.GA"
+  ],
+  "published_utc": "2025-06-27T11:56:58Z",
+  "updated_utc": "2025-09-04T12:51:22Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2506.22150v2",
+    "html": "https://arxiv.org/html/2506.22150v2",
+    "pdf": "https://arxiv.org/pdf/2506.22150v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public notes and metadata only. Source copies require separate lawful private preservation review."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2607.24443v2%2C2112.04456%2C2401.08755%2C2403.10388%2C2506.22150%2C2608.21603v2%2C2607.28725v3&max_results=7",
+      "retrieved_utc": "2026-10-09T17:51:17.748613+00:00",
+      "sha256": "e2c9507b5e3a392c91e1db26a3f555abb96dd36fcd155d56bb0fd03bd964d3c4",
+      "bytes": 20963
+    },
+    {
+      "url": "https://arxiv.org/pdf/2506.22150v2",
+      "retrieved_utc": "2026-10-09T17:52:57.465467+00:00",
+      "bytes": 3564549,
+      "sha256": "eb269b0a99c3362df026936b231d8906cbc39b9d79333ab3a128c5ed80beb493",
+      "role": "pdf"
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/2506.22150v2",
+      "retrieved_utc": "2026-10-09T17:52:59.781582+00:00",
+      "sha256": "ff31a613d6a1a26b394d4da35f85cb359b9fb29cb9bad2a25c357531d187873d",
+      "bytes": 160075,
+      "derived_from_sha256": "eb269b0a99c3362df026936b231d8906cbc39b9d79333ab3a128c5ed80beb493",
+      "tool": "pdftotext -layout"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "abstract",
+    "reason": "Selected for ordinary full-paper Luna reading followed by Sol source review; shared worker capacity pending. Selected full reading: two-population calibrator versus Hubble-flow matching with prior-sensitive H0 shift; methodological explanation requires independent challenge."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

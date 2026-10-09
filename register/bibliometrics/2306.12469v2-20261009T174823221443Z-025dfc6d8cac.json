@@ -1,0 +1,203 @@
+{
+  "authors": [
+    {
+      "author_identity_verified": false,
+      "google_scholar": {
+        "h_index": null,
+        "h_index_scope": null,
+        "h_index_status": "unavailable",
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero.",
+        "profile_attempt": null,
+        "profile_batch_id": null,
+        "profile_identity_evidence": null,
+        "profile_identity_verified": false,
+        "profile_link_evidence": null,
+        "profile_url": null,
+        "retrieved_utc": null,
+        "status": "unqueried"
+      },
+      "identity_evidence": "No exact author-record match was established from the provider response.",
+      "paper_author_name": "Nils Schöneberg",
+      "source_author_id": null
+    },
+    {
+      "author_identity_verified": false,
+      "google_scholar": {
+        "h_index": null,
+        "h_index_scope": null,
+        "h_index_status": "unavailable",
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero.",
+        "profile_attempt": null,
+        "profile_batch_id": null,
+        "profile_identity_evidence": null,
+        "profile_identity_verified": false,
+        "profile_link_evidence": null,
+        "profile_url": null,
+        "retrieved_utc": null,
+        "status": "unqueried"
+      },
+      "identity_evidence": "No exact author-record match was established from the provider response.",
+      "paper_author_name": "Guillermo Franco Abellán",
+      "source_author_id": null
+    },
+    {
+      "author_identity_verified": false,
+      "google_scholar": {
+        "h_index": null,
+        "h_index_scope": null,
+        "h_index_status": "unavailable",
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero.",
+        "profile_attempt": null,
+        "profile_batch_id": null,
+        "profile_identity_evidence": null,
+        "profile_identity_verified": false,
+        "profile_link_evidence": null,
+        "profile_url": null,
+        "retrieved_utc": null,
+        "status": "unqueried"
+      },
+      "identity_evidence": "No exact author-record match was established from the provider response.",
+      "paper_author_name": "Théo Simon",
+      "source_author_id": null
+    },
+    {
+      "author_identity_verified": false,
+      "google_scholar": {
+        "h_index": null,
+        "h_index_scope": null,
+        "h_index_status": "unavailable",
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero.",
+        "profile_attempt": null,
+        "profile_batch_id": null,
+        "profile_identity_evidence": null,
+        "profile_identity_verified": false,
+        "profile_link_evidence": null,
+        "profile_url": null,
+        "retrieved_utc": null,
+        "status": "unqueried"
+      },
+      "identity_evidence": "No exact author-record match was established from the provider response.",
+      "paper_author_name": "Alexa Bartlett",
+      "source_author_id": null
+    },
+    {
+      "author_identity_verified": false,
+      "google_scholar": {
+        "h_index": null,
+        "h_index_scope": null,
+        "h_index_status": "unavailable",
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero.",
+        "profile_attempt": null,
+        "profile_batch_id": null,
+        "profile_identity_evidence": null,
+        "profile_identity_verified": false,
+        "profile_link_evidence": null,
+        "profile_url": null,
+        "retrieved_utc": null,
+        "status": "unqueried"
+      },
+      "identity_evidence": "No exact author-record match was established from the provider response.",
+      "paper_author_name": "Yashvi Patel",
+      "source_author_id": null
+    },
+    {
+      "author_identity_verified": false,
+      "google_scholar": {
+        "h_index": null,
+        "h_index_scope": null,
+        "h_index_status": "unavailable",
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero.",
+        "profile_attempt": null,
+        "profile_batch_id": null,
+        "profile_identity_evidence": null,
+        "profile_identity_verified": false,
+        "profile_link_evidence": null,
+        "profile_url": null,
+        "retrieved_utc": null,
+        "status": "unqueried"
+      },
+      "identity_evidence": "No exact author-record match was established from the provider response.",
+      "paper_author_name": "Tristan L. Smith",
+      "source_author_id": null
+    }
+  ],
+  "citation_snapshot": {
+    "count": null,
+    "count_without_self_citations": null,
+    "missing_reason": "Provider count was absent or the exact arXiv work match was not established.",
+    "retrieved_utc": "2026-10-09T17:48:23.101725+00:00",
+    "source": {
+      "archive_path": ".work/bibliometrics/2026-10-09/inspire-2306.12469-797f317d7507.json",
+      "http_status": 200,
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A2306.12469&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "response_bytes": 3086,
+      "response_sha256": "797f317d750780bfd70afa524bfc5c367f117199b9d347aa985f4171333c53a1",
+      "retrieved_utc": "2026-10-09T17:48:23.101725+00:00"
+    },
+    "status": "unavailable"
+  },
+  "comparison": {
+    "age_days_at_snapshot": 1205.991934047743,
+    "age_years_at_snapshot": 3.3018937666009376,
+    "cohort": {
+      "age_band_years": {
+        "lower_inclusive": 3.0,
+        "upper_exclusive": 4.0
+      },
+      "field_definition": "arXiv primary category: astro-ph.CO",
+      "minimum_population_size": 100,
+      "percentile": null,
+      "population_evidence": null,
+      "population_size": null,
+      "provider": "INSPIRE-HEP",
+      "reason": "No provider population was queried for this provider, snapshot batch, arXiv primary category, and publication-age band. The deliberately selected Prospector sample is not a percentile reference population.",
+      "snapshot_batch_id": "interacting-radiation-20261009",
+      "status": "not_queried"
+    },
+    "field_categories": [
+      "astro-ph.CO",
+      "hep-ph"
+    ],
+    "first_publication_utc": "2023-06-21T18:00:00Z"
+  },
+  "paper_id": "arxiv:2306.12469v2",
+  "schema_version": 1,
+  "snapshot_created_utc": "2026-10-09T17:48:23.221443+00:00",
+  "snapshot_id": "20261009T174823221443Z-025dfc6d8cac",
+  "team_visibility": {
+    "coverage_fraction": 0.0,
+    "h_index_scope": null,
+    "h_index_snapshot_batch_id": null,
+    "max_h_index": null,
+    "median_h_index": null,
+    "missing_reason": "Team maximum and median use verified, observed, same-scope h-indices only; missing author metrics are unknown.",
+    "status": "none",
+    "unique_author_count": 6,
+    "verified_h_index_author_count": 0
+  },
+  "work_identity": {
+    "arxiv_id": "2306.12469",
+    "count_scope": "unknown",
+    "journal_metadata": [],
+    "journal_scope": "no_linked_journal_metadata_in_response",
+    "linked_dois": [],
+    "match_status": "ambiguous",
+    "matched_arxiv_ids": [],
+    "provider": "INSPIRE-HEP",
+    "provider_record_id": null,
+    "publication_scope_note": "Citation counts are totals for this provider literature record. They are not split between the registered arXiv version, other arXiv versions, and linked journal publication records.",
+    "registered_version": 2,
+    "source": {
+      "archive_path": ".work/bibliometrics/2026-10-09/inspire-2306.12469-797f317d7507.json",
+      "http_status": 200,
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A2306.12469&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "response_bytes": 3086,
+      "response_sha256": "797f317d750780bfd70afa524bfc5c367f117199b9d347aa985f4171333c53a1",
+      "retrieved_utc": "2026-10-09T17:48:23.101725+00:00"
+    },
+    "title": "The weak, the strong and the ugly -- A comparative analysis of interacting stepped dark radiation",
+    "version_scope": "unknown"
+  }
+}

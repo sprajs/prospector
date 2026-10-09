@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1703.06265v4",
+  "work_identity": {
+    "arxiv_id": "1703.06265",
+    "registered_version": 4,
+    "title": "Cosmological Tests of Everpresent $Λ$",
+    "match_status": "ambiguous",
+    "provider": "INSPIRE-HEP",
+    "provider_record_id": null,
+    "matched_arxiv_ids": [],
+    "linked_dois": [],
+    "journal_metadata": [],
+    "journal_scope": "no_linked_journal_metadata_in_response",
+    "count_scope": "unknown",
+    "version_scope": "unknown",
+    "publication_scope_note": "Citation counts are totals for this provider literature record. They are not split between the registered arXiv version, other arXiv versions, and linked journal publication records.",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A1703.06265&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:49:03.037707+00:00",
+      "http_status": 200,
+      "response_sha256": "07126baab277f461e71d9819755c6c7743bf557a620b2e95b0bc91384e6d178c",
+      "response_bytes": 2791,
+      "archive_path": ".work/unconventional-20261009/bibliometrics/2026-10-09/inspire-1703.06265-07126baab277.json"
+    }
+  },
+  "citation_snapshot": {
+    "status": "unavailable",
+    "count": null,
+    "count_without_self_citations": null,
+    "retrieved_utc": "2026-10-09T17:49:03.037707+00:00",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A1703.06265&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:49:03.037707+00:00",
+      "http_status": 200,
+      "response_sha256": "07126baab277f461e71d9819755c6c7743bf557a620b2e95b0bc91384e6d178c",
+      "response_bytes": 2791,
+      "archive_path": ".work/unconventional-20261009/bibliometrics/2026-10-09/inspire-1703.06265-07126baab277.json"
+    },
+    "missing_reason": "Provider count was absent or the exact arXiv work match was not established."
+  },
+  "comparison": {
+    "first_publication_utc": "2017-03-18T07:47:23Z",
+    "age_days_at_snapshot": 3492.417824510497,
+    "age_years_at_snapshot": 9.56191523305885,
+    "field_categories": [
+      "gr-qc",
+      "astro-ph.CO"
+    ],
+    "cohort": {
+      "provider": "INSPIRE-HEP",
+      "snapshot_batch_id": "everpresent-20261009",
+      "field_definition": "arXiv primary category: gr-qc",
+      "age_band_years": {
+        "lower_inclusive": 9.0,
+        "upper_exclusive": 10.0
+      },
+      "population_size": null,
+      "minimum_population_size": 100,
+      "population_evidence": null,
+      "percentile": null,
+      "status": "not_queried",
+      "reason": "No provider population was queried for this provider, snapshot batch, arXiv primary category, and publication-age band. The deliberately selected Prospector sample is not a percentile reference population."
+    }
+  },
+  "authors": [
+    {
+      "paper_author_name": "Nosiphiwo Zwane",
+      "source_author_id": null,
+      "author_identity_verified": false,
+      "identity_evidence": "No exact author-record match was established from the provider response.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "Niayesh Afshordi",
+      "source_author_id": null,
+      "author_identity_verified": false,
+      "identity_evidence": "No exact author-record match was established from the provider response.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "Rafael D. Sorkin",
+      "source_author_id": null,
+      "author_identity_verified": false,
+      "identity_evidence": "No exact author-record match was established from the provider response.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    }
+  ],
+  "team_visibility": {
+    "status": "none",
+    "unique_author_count": 3,
+    "verified_h_index_author_count": 0,
+    "coverage_fraction": 0.0,
+    "h_index_scope": null,
+    "h_index_snapshot_batch_id": null,
+    "max_h_index": null,
+    "median_h_index": null,
+    "missing_reason": "Team maximum and median use verified, observed, same-scope h-indices only; missing author metrics are unknown."
+  },
+  "snapshot_created_utc": "2026-10-09T17:49:03.153584+00:00",
+  "snapshot_id": "20261009T174903153584Z-ec9292b70b06"
+}

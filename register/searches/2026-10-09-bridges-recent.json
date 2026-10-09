@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "search_id": "2026-10-09-bridges-recent",
+  "lane": "interacting-sectors",
+  "work_mode": "focused_user_objective",
+  "status": "completed",
+  "requested_utc": "2026-10-09T17:51:34.619002+00:00",
+  "request": {
+    "query": "(ti:\"Chaplygin\" OR ti:\"interacting vacuum\" OR ti:\"quartessence\") AND submittedDate:[202301010000 TO 202610092359]",
+    "normalized_query": "(ti:\"Chaplygin\" OR ti:\"interacting vacuum\" OR ti:\"quartessence\") AND submittedDate:[202301010000 TO 202610092359]",
+    "order": "lastUpdatedDate",
+    "direction": "descending",
+    "start": 0,
+    "limit": 20,
+    "window_sha256": "ba5dd6d833e20c1f480d28399229ede9f76170f8f348259b0852cf89bd0456d3"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Research-group bridge objective, following roadmap M3/M5 and existing Chaplygin background dossier; no queued source directly covers this closure comparison. Narrow window refines broad terminology contamination; bounded nonexhaustive search.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22Chaplygin%22+OR+ti%3A%22interacting+vacuum%22+OR+ti%3A%22quartessence%22%29+AND+submittedDate%3A%5B202301010000+TO+202610092359%5D&start=0&max_results=20&sortBy=lastUpdatedDate&sortOrder=descending",
+    "retrieved_utc": "2026-10-09T17:51:34.619002+00:00",
+    "sha256": "45a2fa1894a3079ecce70d20cde86f88fee0fbeba201ac859d9c6cfb3235d7fb",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/bridges-20261009/acquisition/objects/45a2fa1894a3079ecce70d20cde86f88fee0fbeba201ac859d9c6cfb3235d7fb.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:2610.05361v1",
+      "position": 0,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Thermodynamic Stability of a Viscous Variable Generalised Chaplygin Gas",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2606.09775v2",
+      "position": 1,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Linear Stability of the Lamb-Chaplygin Dipole",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.13897v1",
+      "position": 2,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "A new parametric study of $f(T)$ teleparallel gravity with generalized Chaplygin gas: Confronting observational data",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.00980v1",
+      "position": 3,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Near-extremal asymptotics and strong cosmic censorship for black holes immersed in a Chaplygin-like dark fluid",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2512.06498v3",
+      "position": 4,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Emergent Universe Scenario in the Modified Chaplygin gas : Towards an Exact Solution and Observational Constraints",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2608.13166v1",
+      "position": 5,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Global classical solutions to 3D irrotational compressible Euler equations of Chaplygin gases with weakly decaying initial data",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2503.24239v2",
+      "position": 6,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Higher-Dimensional Cosmology in the Framework of Generalized Chaplygin Gas: An Approximation Method",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2608.04438v1",
+      "position": 7,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Masking Black Hole Spin with a Modified Chaplygin Gas Envelope: Radiative Degeneracies from a Phenomenological Three-Region Spacetime",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2608.01580v1",
+      "position": 8,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "The Riemann Problem for a 3x3 Generalized Chaplygin Gas System with Variable Pressure",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2607.22802v1",
+      "position": 9,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Entropic Chaplygin-Gas cosmology and late-universe tension diagnostics",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.02914v1",
+      "position": 10,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Growth-of-Structure Constraints on the Variable Chaplygin Gas Model",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2607.08343v2",
+      "position": 11,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Chaplygin and Polytropic Kantowski--Sachs Solutions in Teleparallel $F(T)$ Gravity",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2606.10100v2",
+      "position": 12,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Static Spherically Symmetric Chaplygin and Polytropic Fluid Solutions in Teleparallel $F(T)$ Gravity",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2606.23563v1",
+      "position": 13,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Unifying the Dark Sector with the New Generalized Chaplygin Gas: Observational Constraints",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2512.02900v2",
+      "position": 14,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Interacting Generalized Chaplygin-Jacobi gas: Thermodynamics approach",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2605.14541v1",
+      "position": 15,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Particle Creation and Variable Generalized Chaplygin Gas in $\\mathcal{F}(\\mathcal{R},\u03a3,\\mathcal{T})$ Gravity",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2604.26681v2",
+      "position": 16,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Causal structure of black holes immersed in a Chaplygin-like dark fluid environment: Horizons and singularities",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2605.04123v1",
+      "position": 17,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Testing an anisotropic spinor field--based Modified Chaplygin Gas model in Kantowski--Sachs spacetime with observational constraints",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2605.01491v1",
+      "position": 18,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "On the stability of Lamb-Chaplygin dipole for the 2D Euler equation",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2604.21415v1",
+      "position": 19,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "A Study of Non-Singular Bounce in Myrzakulov-type $f(R,T)$ Gravity with Chaplygin Gas",
+      "decision_history": []
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": "2026-10-09-chaplygin-vacuum-bridges-intake",
+    "query_id": "recent"
+  }
+}
