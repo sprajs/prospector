@@ -201,5 +201,22 @@
     "Independent author lists do not prove data independence: proposed readings reuse Pantheon+/Cepheid or Foundation/DES3YR/PS1MD lineage; object crossmatches and crosscovariances remain unexamined.",
     "Dust2Dust and BayeSN terminology connects in Stjornumal author list; initial-to-full-name mappings and physical equivalence require review. No inferred citation/ancestry edges.",
     "No numerical execution, consumer acceptance, calibration qualification or Hubble-tension resolution claimed."
+  ],
+  "evidence_custody": {
+    "manifest_format": "research-named-manifest/v1",
+    "collection": "prospector/reviews/systematics-20261009-intake",
+    "uri": "s3://research-data-436908790672-eu-west-2/prospector/reviews/systematics-20261009-intake/versions/0a10514e9b8b679d1740a283b832f98953bf27503b6bf0a2a060b597da68677a/manifest.json",
+    "version_id": "DdxV12WiW8Xuwp.RIqXuwpKy7lVHKZ8g",
+    "sha256": "95820ba7b4ef1403cedfb574dc3cb17863293425b92682394438162e07818159",
+    "bytes": 29886
+  },
+  "storage_startup_catalog_pin": {
+    "bytes": 198929,
+    "sha256": "7ee8a1ce4443bf87b58af95e895ab14b02976d2567186ccd4133b384ce528fcb",
+    "uri": "s3://research-data-436908790672-eu-west-2/shared/catalogs/releases/7ee8a1ce4443bf87b58af95e895ab14b02976d2567186ccd4133b384ce528fcb.json",
+    "version_id": "5zhtxcsv0MqKPSUGnkvHAXTcIQ307K2T"
+  },
+  "integration_amendments": [
+    "Post-merge scope review identified missing durable custody pointer in the intake scan. Added exact already-published and integrator-readback-verified manifest pin and startup catalog pin; no paper/source/scientific-stage change."
   ]
 }
