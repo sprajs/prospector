@@ -17,8 +17,12 @@ likelihood components remain those of v1. The intended prior now has these bound
 | A_planck | N(1,.0025) in dA_planck, truncated to [.975,1.025] |
 
 The calibration density is normalized by `Phi(10)-Phi(-10)` and applied once.
-Conditioning on nonnegative Lambda couples the cosmological prior; its additional
-evidence normalization remains uncomputed. These bounds are investigator choices
+For this v2 box, max(omega_b+omega_cdm)=.208 and min(h²)=.25 leave a
+.042 margin, while the conservative fixed photon/neutrino density bound is below
+.001. The Lambda predicate is redundant throughout this box: the six uniform
+cosmological densities remain independent and properly normalized, and the extra
+conditioning factor is one. Keep exact runtime background closure verification;
+a violated bound requires refusal and inspection of the implementation. These bounds are investigator choices
 motivated by released table availability, reviewed with Astra and authorized by
 the integration owner. They are not the Planck source prior or recovery of the
 broader v1 posterior. Prior-boundary and supported expanded-prior sensitivity are

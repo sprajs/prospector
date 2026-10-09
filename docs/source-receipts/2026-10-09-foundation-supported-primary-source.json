@@ -141,7 +141,9 @@
     "calibration_normalization": "Phi(10)-Phi(-10) in dA_planck; N(1,.0025), one application",
     "interpretation": "Investigators restrict intended cosmological/calibration prior before production. This is an analysis choice motivated by finite likelihood table support, not Planck source prior or recovered v1 posterior.",
     "scope": "Same reviewed model/species/BBN/HMcode/primary products; changed prior bounds only.",
-    "qualification": "Finite supported diagnostic cases are evidence for attempting qualification, not proof that all prior states are supported or numerically converged."
+    "qualification": "Finite supported diagnostic cases are evidence for attempting qualification, not proof that all prior states are supported or numerically converged.",
+    "physical_indicator": "Redundant across v2: wb+wc<=.208, h²>=.25 and conservative fixed photon/ur/massive-species density bound<.001. Exact runtime closure remains required. The extra prior conditioning normalization is one.",
+    "fixed_density_bound_basis": "Reviewer conservative bound using FD energy inequality sqrt(p²+m²)<=p+m: rest-mass contribution bounded by .00066 (m=.06eV and CLASS93.14eV normalization), plus photons and early-radiation bound<.00005 at Tcmb2.7255K/Neff3.046, hence total<.001; margin .042. This is a model algebra bound, not a data likelihood result."
   },
   "preserved_v1": {
     "candidate_sha256": "2211b45de6876106557e30e0bb7ed1c696e165c5cb98c397f0a34c6e2b15e7d3",

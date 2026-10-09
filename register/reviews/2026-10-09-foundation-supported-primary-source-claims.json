@@ -13,8 +13,8 @@
     "confirmation": "Root explicitly confirmed spawn model gpt-6.1-sol, reasoning_effort high, fork_turns none. Actual backend identity remains independently unattested.",
     "actual_backend_identity": null
   },
-  "reviewed_utc": "2026-10-09T17:52:41.360303+00:00",
-  "packet_sha256": "e012c4df5676b7dfce122d502417ce214698b61bc8634b5681cc9f222156abf2",
+  "reviewed_utc": "2026-10-09T19:06:34.874621+00:00",
+  "packet_sha256": "d25618db93d099628c263ed54f4c2bc18cb1823380267ecb928806bcae322d03",
   "reviewed_papers": [
     "arxiv:1807.06209v4",
     "arxiv:1907.12875v2",
@@ -281,6 +281,7 @@
     "No ordinary full-paper stage promotion; extraction/review IDs and reading queue are unchanged.",
     "Astra scientific advice supports explicit project choices, not numerical or observational qualification.",
     "Primary-CMB/DESI dependence remains unresolved; this source increment does not admit a joint fit.",
+    "Original paper coverage was checked in the inherited source review at 2026-10-09T17:52:41.360303+00:00; reviewed_utc here records the new Commander/prior target source review.",
     "Inherited exact Planck/DESI source claims and source hashes retain prior targeted coverage; new selected code reading checks Commander support, not new full paper stages.",
     "V2 bounds are reviewed investigator analysis choices; no Planck posterior reproduction or unqualified broad-prior inference."
   ]

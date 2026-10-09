@@ -188,7 +188,7 @@
     }
   ],
   "limitations": [
-    "Targeted claims only: zero ordinary full-paper reads;71 registered versions and63 pending stages unchanged.",
+    "Targeted claims only: zero ordinary full-paper reads. At source-review base16b25a9b6bc6f3a80335161ff2e98fc83619f8fe, the inherited audit preserved71 registered versions and63 pending stages; current register owns live counts.",
     "Do not append Planck summaries, theta*, deuterium-BBN priors or reconstructed-lensing factors to this primary likelihood without a separate dependence contract.",
     "DESI DR1/SDSS, superseded rows and full-shape/BAO from shared galaxies cannot be independently stacked.",
     "SN original covariance has389 full/361 selected asymmetric pairs and remains refused. A separately averaged repair needs its own target and producer semantics. SH0ES/Pantheon+ share calibrators; SALT training/calibration products are not independent observations.",
