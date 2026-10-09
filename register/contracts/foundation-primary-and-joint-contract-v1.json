@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "contract_id": "foundation-primary-and-joint-contract-v1",
+  "title": "Primary six-parameter reference and first joint-probe source gates",
+  "review_id": "2026-10-09-foundation-primary-source-claims",
+  "paper_ids": [
+    "arxiv:1807.06209v4",
+    "arxiv:1907.12875v2",
+    "arxiv:2503.14738v3"
+  ],
+  "scopes": [
+    {
+      "scope_id": "M0",
+      "title": "Exact fully varied primary target",
+      "paper_ids": [
+        "arxiv:1807.06209v4",
+        "arxiv:1907.12875v2"
+      ],
+      "checked_claim": "New H0-flat six-cosmology plus A_planck target; sourced physics plus explicit CLASS FD,BBN2017,HyRec2020,HMcode2016 choices. Commander TT2–29,SimAll EE2–29,Plik-lite TT30–2508/TE,EE30–1996. Map-calibration Gaussian1±0.0025 is owned once by the combined inference target; foreground nuisance uncertainty is already marginalized in Plik-lite.",
+      "unresolved": "Executable consumer acceptance, complete prior numerical/likelihood support and independent matched-target posterior reproduction remain unearned. Exact CAMB/BBN1.1 equivalence is unclaimed."
+    },
+    {
+      "scope_id": "M2",
+      "title": "DESI DR2 full13 first joint subset",
+      "paper_ids": [
+        "arxiv:2503.14738v3",
+        "arxiv:1807.06209v4",
+        "arxiv:1907.12875v2"
+      ],
+      "checked_claim": "Reconstructed galaxy/quasar2PCF templates with broadband nuisance marginalization; BGS DV plus six anisotropic pairs, including Lyalpha four-correlation fit. Combined LRG3+ELG1 supersedes individual rows. Exact13 released order and169 covariance entries are retained. Flat LCDM is a source-used model class.",
+      "unresolved": "The checked DESI source uses PR4 CamSpec plus reconstruction. No quantified primary-CMB/BAO cross-covariance justification was located. Numerical fiducial/reconstruction settings and companion validation need further checking. AppendixB interbin-systematic tests do not certify cross-probe independence; joint admission stays blocked."
+    }
+  ],
+  "source_assets": [
+    {
+      "id": "class-explanatory",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/explanatory.ini",
+      "sha256": "49fd6355685adc11dca2f406e23a6535b973e708efe9d3820f3aad46fdd061df",
+      "role": "configuration",
+      "conditioning": "Species, YHe, recombination, reio_camb, pivot and HMcode2016 options"
+    },
+    {
+      "id": "class-input",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/source/input.c",
+      "sha256": "78326f1f557b22491655f0437aa1eb94f152d6c24c896ebde9eccfeebecbe463",
+      "role": "parameter_mapping",
+      "conditioning": "input_read_parameters_species; input_read_parameters_nonlinear; default_params"
+    },
+    {
+      "id": "class-background",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/source/background.c",
+      "sha256": "00275b2c1e864571353745932384aeaa4fb7bf982e786d1aeb9a272cbf3b79df",
+      "role": "species_density",
+      "conditioning": "background_ncdm_init and background_solve Neff definition"
+    },
+    {
+      "id": "class-thermodynamics",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/source/thermodynamics.c",
+      "sha256": "ce2d8e0b490106b002a3fb62561948ded4239db5109efea0ec2d297d458816ce",
+      "role": "BBN_interpolation",
+      "conditioning": "thermodynamics_helium_from_bbn; thermodynamics_init YHe mass-fraction conversion"
+    },
+    {
+      "id": "class-precisions",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/include/precisions.h",
+      "sha256": "962fb9d95118b223b67abf36f9d1a1666408b377d9d0fd2fe5ddf60d20440bea",
+      "role": "configuration",
+      "conditioning": "sBBN_file default is2025 and must be overridden"
+    },
+    {
+      "id": "class-bbn-2017",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/external/bbn/sBBN_2017.dat",
+      "sha256": "b72607a3a2f9134130cb2c09c0140d4f68c5916962e83fc6740a664bd5b69ea5",
+      "role": "BBN_table",
+      "conditioning": "Complete header, grid axes and table format; PArthENoPE1.2/neutron880.2s"
+    },
+    {
+      "id": "clik-lklbs",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/lklbs.c",
+      "sha256": "81e595932c33553ea7fd913dcb0f858123923876ed42d668a6c8b823cb28fd52",
+      "role": "official_likelihood_source",
+      "conditioning": "lklbs_get_cls: calibration1/A_planck^2 on theory; cmblkl_select_cls"
+    },
+    {
+      "id": "clik-helper",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/clik_helper.c",
+      "sha256": "301b457a7c988818a508c4ebee57ebc83a53d7f338baf2947725773d9d227851",
+      "role": "official_likelihood_source",
+      "conditioning": "free_calib metadata creates calibration name and index"
+    },
+    {
+      "id": "clik-cmbonly-c",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/cmbonly/clik_cmbonly.c",
+      "sha256": "e288e7a3bc8008cf09ad23d69c010b93f0d4e74cabad5c87c5a89a9e4b245be4",
+      "role": "official_likelihood_source",
+      "conditioning": "xnames_def A_planck; clik_plik_cmbonly_init"
+    },
+    {
+      "id": "clik-cmbonly-wrapper",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/cmbonly/clik_cmbonly.f90",
+      "sha256": "aadf73644f96315ced77d7a38217914c5f58d197f9438388aa497dd209e0695c",
+      "role": "official_likelihood_source",
+      "conditioning": "plik_cmbonly_extra_LKL: spectral TT/EE/TE blocks then calPlanck"
+    },
+    {
+      "id": "clik-cmbonly-likelihood",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/cmbonly/plik_cmbonly.f90",
+      "sha256": "70630d03e5aae7ab24a08424136043e4ce95967eb75e8212db7462dc15665d6d",
+      "role": "official_likelihood_source",
+      "conditioning": "calc_like_cmbonly: binned model/calPlanck^2; X_data-X_model; half quadratic"
+    },
+    {
+      "id": "clik-simall",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/simall/clik_simall.c",
+      "sha256": "624ffcf6cf8fb86a3cf755c02e119cfc76ce2415229d3c91177cadb2fc381393",
+      "role": "official_likelihood_source",
+      "conditioning": "simall_lkl: calibrated Dl/step finite support, integer table lookup"
+    },
+    {
+      "id": "commander_TT-metadata",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Data-baseline_R3.00.tar.gz#baseline/plc_3.0/low_l/commander/commander_dx12_v3_2_29.clik/clik/lkl_0/_mdb",
+      "sha256": "8055330eefeefb8c31d07fe214029ece36f6893889d7641bf791f09fb31a3334",
+      "role": "official_product_metadata",
+      "conditioning": "free_calib str A_planck; external_dir str .; delta_l int 1000; lmin int 2; lmax int 29; version int 3; lkl_type str gibbs_gauss; pipeid str b13c8fda-1837-41b5-ae2d-78d6b723fcf1; unit int 1; "
+    },
+    {
+      "id": "simall_EE-metadata",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Data-baseline_R3.00.tar.gz#baseline/plc_3.0/low_l/simall/simall_100x143_offlike5_EE_Aplanck_B.clik/clik/lkl_0/_mdb",
+      "sha256": "3aef330d936d68573f8881731cd282b8ef2c66dbf56c7d736755eff43e1e0b00",
+      "role": "official_product_metadata",
+      "conditioning": "free_calib str A_planck; lmin int 2; nell int 28; nstepsEE int 3000; lmax int 29; stepEE float 0.0001; lkl_type str simall; pipeid str simall_EE_BB_TE; unit int 1; "
+    },
+    {
+      "id": "plik_lite_TTTEEE-metadata",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Data-baseline_R3.00.tar.gz#baseline/plc_3.0/hi_l/plik_lite/plik_lite_v22_TTTEEE.clik/clik/lkl_0/_mdb",
+      "sha256": "04198fe177773534c1f6d2673567b69626e581b0affa80ebb17a8ba3da4749f4",
+      "role": "official_product_metadata",
+      "conditioning": "lkl_type str plik_cmbonly; lmax int 2508; cmbonly_version int 22; external_dir str .; lmin int 30; unit int 1; "
+    },
+    {
+      "id": "class-precision-key-parser",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/include/macros_precision.h",
+      "sha256": "14a6887545b0f090bf15d2f70d8329e7d7f582eaa0f9c5d6952da8990890bfd6",
+      "role": "implementation_source",
+      "conditioning": "__PARSE_PRECISION_PARAMETER__: class_read_string(STRING,ppr->NAME); external key is \"sBBN file\", internal member sBBN_file."
+    },
+    {
+      "id": "class-hmcode",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/external/HMcode/hmcode.c",
+      "sha256": "2eb8b59b35db995c093f000dd9cf5c8b6dc06de80570c9b0dee4ad7af8b77162",
+      "role": "implementation_source",
+      "conditioning": "hmcode_version_2015 branch includes Mead2016 neutrino additions to delta_c and Delta_v; 2015/2016 input aliases."
+    }
+  ],
+  "limitations": [
+    "Targeted claims only: zero ordinary full-paper reads;71 registered versions and63 pending stages unchanged.",
+    "Do not append Planck summaries, theta*, deuterium-BBN priors or reconstructed-lensing factors to this primary likelihood without a separate dependence contract.",
+    "DESI DR1/SDSS, superseded rows and full-shape/BAO from shared galaxies cannot be independently stacked.",
+    "SN original covariance has389 full/361 selected asymmetric pairs and remains refused. A separately averaged repair needs its own target and producer semantics. SH0ES/Pantheon+ share calibrators; SALT training/calibration products are not independent observations.",
+    "Custody/readiness for all11 dataset families and broader disciplines is separate from admission of this primary target; the data owner supplies exact pins and restored-byte evidence."
+  ],
+  "qualification": {
+    "numerically_executed": false,
+    "scientifically_qualified": false
+  }
+}

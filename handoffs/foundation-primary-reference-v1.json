@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "kind": "foundation_source_handoff",
+  "programme": "M0/M1/M2",
+  "handoff_id": "foundation-primary-reference-v1",
+  "source_repository": "sprajs/prospector",
+  "source_base_revision": "16b25a9b6bc6f3a80335161ff2e98fc83619f8fe",
+  "candidate": {
+    "id": "candidate-class-planck-primary-six-parameter-v1",
+    "path": "designs/candidate-class-planck-primary-six-parameter-v1.json",
+    "sha256": "2211b45de6876106557e30e0bb7ed1c696e165c5cb98c397f0a34c6e2b15e7d3"
+  },
+  "reference": {
+    "id": "class-planck-primary-six-parameter-v1",
+    "path": "references/lcdm/class-planck-primary-six-parameter-v1.json",
+    "sha256": "0d80fa8cdd93da0ddb4a5bc5d3194af449f162f62e18d82cf65f70625cd1c17c"
+  },
+  "contracts": [
+    {
+      "id": "foundation-primary-and-joint-contract-v1",
+      "path": "register/contracts/foundation-primary-and-joint-contract-v1.json",
+      "sha256": "7a5d873f49781d7c81a2c57485f79fd87c5c2c006e5ddb747de0209b7d3c8695"
+    }
+  ],
+  "source_review": {
+    "id": "2026-10-09-foundation-primary-source-claims",
+    "path": "register/reviews/2026-10-09-foundation-primary-source-claims.json",
+    "sha256": "5d42e93c0e7dbdd019837de943e368565a7f8ee12936678c187f3e28d15cacf9"
+  },
+  "consumer_acceptance": {
+    "owner": "sprajs/reproducible",
+    "status": "pending_exact_bytes",
+    "receipt": null
+  },
+  "rights": "Owned notes and hash receipts are eligible for publication; raw copied papers/code stay excluded from Git/S3 without grants.",
+  "numerical_readiness": "Unqualified; no solver,likelihood or sampling job run here.",
+  "joint_readiness": "Blocked: primary-CMB/BAO cross-probe dependence remains unbounded.",
+  "immutable_preservation": "Existing candidates,references,requests,models,SDKs,receipts,71 paper stages and63 reading-queue entries remain intact. This handoff creates a new identity."
+}

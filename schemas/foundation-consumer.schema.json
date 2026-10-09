@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Frozen primary consumer semantics; numerical policies supplied separately",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "coordinates",
+    "bounds",
+    "measure",
+    "physical_indicator",
+    "class_fixed",
+    "bbn_table",
+    "calibration_prior",
+    "likelihood_components",
+    "lmax"
+  ],
+  "properties": {
+    "coordinates": {
+      "const": [
+        "omega_b",
+        "omega_cdm",
+        "H0",
+        "logA",
+        "n_s",
+        "tau_reio",
+        "A_planck"
+      ]
+    },
+    "bounds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "omega_b",
+        "omega_cdm",
+        "H0",
+        "logA",
+        "n_s",
+        "tau_reio",
+        "A_planck"
+      ],
+      "properties": {
+        "omega_b": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        "omega_cdm": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        "H0": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        "logA": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        "n_s": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        "tau_reio": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        "A_planck": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "measure": {
+      "const": "domega_b domega_cdm dH0 dlogA dn_s dtau_reio dA_planck"
+    },
+    "physical_indicator": {
+      "const": "CLASS_Omega_Lambda_nonnegative"
+    },
+    "class_fixed": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": [
+          "string",
+          "number"
+        ]
+      }
+    },
+    "bbn_table": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "bytes",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "const": "external/bbn/sBBN_2017.dat"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "calibration_prior": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "mean",
+        "sigma",
+        "applications"
+      ],
+      "properties": {
+        "kind": {
+          "const": "truncated_normal_in_dA_planck"
+        },
+        "mean": {
+          "const": 1.0
+        },
+        "sigma": {
+          "const": 0.0025
+        },
+        "applications": {
+          "const": 1
+        }
+      }
+    },
+    "likelihood_components": {
+      "const": [
+        "commander_TT",
+        "simall_EE",
+        "plik_lite_TTTEEE"
+      ]
+    },
+    "lmax": {
+      "const": 2508
+    }
+  }
+}

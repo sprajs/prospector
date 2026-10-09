@@ -204,6 +204,7 @@ Combined models require compatibility checks before promotion.
 | Design | Readiness |
 | --- | --- |
 | [Bounded shared-charge H/He singlet history](../designs/candidate-bounded-shared-charge-hhe.json) | blocked |
+| [Fully varied CLASS primary six-parameter reference with shared calibration](../designs/candidate-class-planck-primary-six-parameter-v1.json) | blocked |
 | [Flat constant-w fluid with CLASS PPF closure](../designs/candidate-constant-w-smooth-fluid-v1.json) | needs_review |
 | [DESI DR2 full compressed-vector contract](../designs/candidate-desi-dr2-full-compression-contract.json) | blocked |
 | [EDE fixed-endpoint sound-horizon response](../designs/candidate-ede-fixed-endpoint-ruler.json) | blocked |
@@ -312,5 +313,9 @@ Source checks and structural validation do not establish independent reproductio
 - [arxiv:2202.04077v2](reviews/2026-10-08-constant-w-sn-targeted-source-claims.json): Printed w=w0+wa(1+z) differs from DESI/CLASS CPL; no repair adopted and wa0 unaffected.
 - [2026-10-08-constant-w-sn-targeted-source-claims](reviews/2026-10-08-constant-w-sn-targeted-source-claims.json): Released SN covariance caller returns raw B; inherited Cosmosis uses runtime-dependent allclose/hermitian pseudoinverse branch with lower-triangle semantics, not pair averaging. Exact original NumPy/Cosmosis options remain unknown; preserve original refusal and S_hat working repair.
 - [2026-10-08-constant-w-sn-targeted-source-claims](reviews/2026-10-08-constant-w-sn-targeted-source-claims.json): 77 denotes calibrator light-curve occurrences in Cepheid hosts, not77 distinct host galaxies; the source describes42 hosts. Prior condensed packet wording retained locally.
+- [arxiv:1907.12875v2](reviews/2026-10-09-foundation-primary-source-claims.json): Fresh pinned Planck V HTML hash8ca952... differs from historical889ccb... by235bytes. Both receipts remain; title and body verified. An exact content diff is unavailable because historical HTML bytes were not restored.
+- [arxiv:1907.12875v2](reviews/2026-10-09-foundation-primary-source-claims.json): Planck V Eq38 and official code divide theory by y_P^2/A_planck^2. Printed Eq54 instead places that division on data. This source/code discrepancy is recorded; the frozen convention follows official code and Eq38, without reciprocal-prior substitution or covariance rescaling.
+- [2026-10-09-foundation-primary-source-claims](reviews/2026-10-09-foundation-primary-source-claims.json): CLASS defaults Neff3.044,BBN2025 and HMcode2020 require explicit overrides. This new effective-thermal target uses Neff3.046,BBN2017 and HMcode2016; historical fixed-helium controls remain unchanged.
+- [arxiv:1807.06209v4](reviews/2026-10-09-foundation-primary-source-claims.json): The Sec7.8 high-redshift reionization corrigendum was read. These bounds and the section-specific Gunn-Peterson cut are not imported into the baseline prior.
 
 [Scan receipts](../scans/) · [Continuation queue](../state.json) · [Record conventions](../docs/records.md)
