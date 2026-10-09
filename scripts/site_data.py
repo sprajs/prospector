@@ -140,7 +140,7 @@ def website_data(papers, ideas, prospects, graph):
     return {
         'prospects': [public_prospect(p) for p in sorted((ROOT / 'register/prospects').glob('*.json'))],
         'groups': [{k: prospects[id][k] for k in ['id', 'title', 'paper_ids', 'idea_ids']}
-                   for id in ORDER],
+                   for id in ORDER + sorted(set(prospects) - set(ORDER))],
         'papers': [{'id': id, 'base_id': p['arxiv_id'], 'title': p['title'],
                     'authors': p['authors'], 'date': p['published_utc'][:10],
                     'updated_date': p['updated_utc'][:10],
