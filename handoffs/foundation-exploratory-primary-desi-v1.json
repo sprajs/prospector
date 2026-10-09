@@ -8,7 +8,7 @@
   "candidate": {
     "id": "candidate-class-planck-primary-desi-exploratory-v1",
     "path": "designs/candidate-class-planck-primary-desi-exploratory-v1.json",
-    "sha256": "ba29a44fcb0b4022bebe3060bb2b2c115852e4e72e40a22ec48e692a9080a6d2"
+    "sha256": "1093a6815c7e54e56ef7309c1f18637e0d1a182c2fa7878fdc1ef8bee728bb15"
   },
   "reference": {
     "id": "class-planck-primary-six-parameter-v2",

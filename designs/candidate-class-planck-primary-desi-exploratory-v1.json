@@ -30,7 +30,7 @@
       "status": "reviewer_derived"
     },
     {
-      "expression": "lnTarget=sum[lnL_Commander,lnL_SimAll,lnL_Pliklite]+lnPrior_project; Cl_effective=Cl_theory/A_planck^2",
+      "expression": "lnTarget_primary=sum[lnL_Commander,lnL_SimAll,lnL_Pliklite]+lnPrior_project; Cl_effective=Cl_theory/A_planck^2",
       "locator": "Planck V Sec3.3.4 Eqs38–39,Sec4; pinned official lklbs/plik_cmbonly",
       "paper_id": "arxiv:1907.12875v2",
       "definitions": "Gaussian map-calibration prior once in dA_planck; foreground marginalization already in Plik-lite.",
