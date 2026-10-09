@@ -1,5 +1,6 @@
 """Exercise integrity failures; these checks do not certify scientific claims."""
 import contextlib
+import hashlib
 import io
 import json
 from pathlib import Path
@@ -21,7 +22,7 @@ class RegisterIntegrity(unittest.TestCase):
         work.mkdir(exist_ok=True)
         self.temp = tempfile.TemporaryDirectory(prefix="integrity-", dir=work)
         self.root = Path(self.temp.name)
-        for folder in ["register", "schemas", "designs", "scans", "requests"]:
+        for folder in ["register", "schemas", "designs", "scans", "requests", "handoffs"]:
             shutil.copytree(registry.ROOT / folder, self.root / folder)
         if (registry.ROOT / 'references').exists():
             shutil.copytree(registry.ROOT / 'references', self.root / 'references')
@@ -49,6 +50,23 @@ class RegisterIntegrity(unittest.TestCase):
 
     def test_current_records(self):
         self.validate()
+
+    def test_handoff_roles_cannot_swap_valid_artifacts(self):
+        path = 'handoffs/foundation-primary-reference-v1.json'
+        original = (self.root / path).read_text()
+        record = json.loads(original)
+        for role in ['candidate', 'reference', 'source_review', 'contracts']:
+            with self.subTest(role=role):
+                changed = json.loads(original)
+                pin = changed[role][0] if role == 'contracts' else changed[role]
+                replacement = record['reference' if role == 'candidate' else 'candidate']
+                pin.update(path=replacement['path'], sha256=replacement['sha256'])
+                self.assertEqual(hashlib.sha256((self.root / pin['path']).read_bytes()).hexdigest(),
+                                 pin['sha256'])
+                (self.root / path).write_text(json.dumps(changed))
+                with self.assertRaisesRegex(ValueError, 'handoff role path does not match registered identity'):
+                    self.validate()
+        (self.root / path).write_text(original)
 
     def test_contract_requires_explicit_acceptance(self):
         self.mutate('register/reviews/2026-10-02-standard-model-source-claims.json',

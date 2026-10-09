@@ -203,6 +203,13 @@
       "retrieved_utc": "2026-10-02T21:49:40.886808+00:00",
       "sha256": "889ccbfd79f5e2e41e84b835e4bd5889a590319eb540dac453cb411db722be54",
       "bytes": 2189082
+    },
+    {
+      "url": "https://arxiv.org/html/1907.12875v2",
+      "retrieved_utc": "2026-10-09T17:42:01.958846+00:00",
+      "sha256": "8ca95248982953c6759a8254907fefae7276a047e0c9dae278bb9262157a960e",
+      "bytes": 2189317,
+      "role": "html"
     }
   ],
   "screen": {

@@ -1,0 +1,192 @@
+{
+  "schema": "foundation-source-evidence/v1",
+  "programme": "M0/M1/M2",
+  "base_commit": "16b25a9b6bc6f3a80335161ff2e98fc83619f8fe",
+  "acquisitions": [
+    {
+      "url": "https://arxiv.org/html/1807.06209v4",
+      "retrieved_utc": "2026-10-09T17:41:58.433629+00:00",
+      "sha256": "622d05fab48d935a2224afeade05b07393ec37e4e0554bb9c416f4298acb7bc0",
+      "bytes": 2184466,
+      "timeout_seconds": 20,
+      "byte_limit": 10485760,
+      "http_status": 200
+    },
+    {
+      "url": "https://arxiv.org/html/1907.12875v2",
+      "retrieved_utc": "2026-10-09T17:42:01.958846+00:00",
+      "sha256": "8ca95248982953c6759a8254907fefae7276a047e0c9dae278bb9262157a960e",
+      "bytes": 2189317,
+      "timeout_seconds": 20,
+      "byte_limit": 10485760,
+      "http_status": 200
+    },
+    {
+      "url": "https://arxiv.org/html/2503.14738v3",
+      "retrieved_utc": "2026-10-09T17:42:05.567372+00:00",
+      "sha256": "782d7b25d5a6d7195e0dc0cfdab029e49a4b05cff8263e18f843e82e9c054c49",
+      "bytes": 1170284,
+      "timeout_seconds": 20,
+      "byte_limit": 10485760,
+      "http_status": 200
+    }
+  ],
+  "local_source_assets": [
+    {
+      "id": "class-explanatory",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/explanatory.ini",
+      "sha256": "49fd6355685adc11dca2f406e23a6535b973e708efe9d3820f3aad46fdd061df",
+      "role": "configuration",
+      "conditioning": "Species, YHe, recombination, reio_camb, pivot and HMcode2016 options"
+    },
+    {
+      "id": "class-input",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/source/input.c",
+      "sha256": "78326f1f557b22491655f0437aa1eb94f152d6c24c896ebde9eccfeebecbe463",
+      "role": "parameter_mapping",
+      "conditioning": "input_read_parameters_species; input_read_parameters_nonlinear; default_params"
+    },
+    {
+      "id": "class-background",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/source/background.c",
+      "sha256": "00275b2c1e864571353745932384aeaa4fb7bf982e786d1aeb9a272cbf3b79df",
+      "role": "species_density",
+      "conditioning": "background_ncdm_init and background_solve Neff definition"
+    },
+    {
+      "id": "class-thermodynamics",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/source/thermodynamics.c",
+      "sha256": "ce2d8e0b490106b002a3fb62561948ded4239db5109efea0ec2d297d458816ce",
+      "role": "BBN_interpolation",
+      "conditioning": "thermodynamics_helium_from_bbn; thermodynamics_init YHe mass-fraction conversion"
+    },
+    {
+      "id": "class-precisions",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/include/precisions.h",
+      "sha256": "962fb9d95118b223b67abf36f9d1a1666408b377d9d0fd2fe5ddf60d20440bea",
+      "role": "configuration",
+      "conditioning": "sBBN_file default is2025 and must be overridden"
+    },
+    {
+      "id": "class-bbn-2017",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/external/bbn/sBBN_2017.dat",
+      "sha256": "b72607a3a2f9134130cb2c09c0140d4f68c5916962e83fc6740a664bd5b69ea5",
+      "role": "BBN_table",
+      "conditioning": "Complete header, grid axes and table format; PArthENoPE1.2/neutron880.2s"
+    },
+    {
+      "id": "clik-lklbs",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/lklbs.c",
+      "sha256": "81e595932c33553ea7fd913dcb0f858123923876ed42d668a6c8b823cb28fd52",
+      "role": "official_likelihood_source",
+      "conditioning": "lklbs_get_cls: calibration1/A_planck^2 on theory; cmblkl_select_cls"
+    },
+    {
+      "id": "clik-helper",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/clik_helper.c",
+      "sha256": "301b457a7c988818a508c4ebee57ebc83a53d7f338baf2947725773d9d227851",
+      "role": "official_likelihood_source",
+      "conditioning": "free_calib metadata creates calibration name and index"
+    },
+    {
+      "id": "clik-cmbonly-c",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/cmbonly/clik_cmbonly.c",
+      "sha256": "e288e7a3bc8008cf09ad23d69c010b93f0d4e74cabad5c87c5a89a9e4b245be4",
+      "role": "official_likelihood_source",
+      "conditioning": "xnames_def A_planck; clik_plik_cmbonly_init"
+    },
+    {
+      "id": "clik-cmbonly-wrapper",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/cmbonly/clik_cmbonly.f90",
+      "sha256": "aadf73644f96315ced77d7a38217914c5f58d197f9438388aa497dd209e0695c",
+      "role": "official_likelihood_source",
+      "conditioning": "plik_cmbonly_extra_LKL: spectral TT/EE/TE blocks then calPlanck"
+    },
+    {
+      "id": "clik-cmbonly-likelihood",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/cmbonly/plik_cmbonly.f90",
+      "sha256": "70630d03e5aae7ab24a08424136043e4ce95967eb75e8212db7462dc15665d6d",
+      "role": "official_likelihood_source",
+      "conditioning": "calc_like_cmbonly: binned model/calPlanck^2; X_data-X_model; half quadratic"
+    },
+    {
+      "id": "clik-simall",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Code-v3.0_R3.01.tar.gz#src/simall/clik_simall.c",
+      "sha256": "624ffcf6cf8fb86a3cf755c02e119cfc76ce2415229d3c91177cadb2fc381393",
+      "role": "official_likelihood_source",
+      "conditioning": "simall_lkl: calibrated Dl/step finite support, integer table lookup"
+    },
+    {
+      "id": "commander_TT-metadata",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Data-baseline_R3.00.tar.gz#baseline/plc_3.0/low_l/commander/commander_dx12_v3_2_29.clik/clik/lkl_0/_mdb",
+      "sha256": "8055330eefeefb8c31d07fe214029ece36f6893889d7641bf791f09fb31a3334",
+      "role": "official_product_metadata",
+      "conditioning": "free_calib str A_planck; external_dir str .; delta_l int 1000; lmin int 2; lmax int 29; version int 3; lkl_type str gibbs_gauss; pipeid str b13c8fda-1837-41b5-ae2d-78d6b723fcf1; unit int 1; "
+    },
+    {
+      "id": "simall_EE-metadata",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Data-baseline_R3.00.tar.gz#baseline/plc_3.0/low_l/simall/simall_100x143_offlike5_EE_Aplanck_B.clik/clik/lkl_0/_mdb",
+      "sha256": "3aef330d936d68573f8881731cd282b8ef2c66dbf56c7d736755eff43e1e0b00",
+      "role": "official_product_metadata",
+      "conditioning": "free_calib str A_planck; lmin int 2; nell int 28; nstepsEE int 3000; lmax int 29; stepEE float 0.0001; lkl_type str simall; pipeid str simall_EE_BB_TE; unit int 1; "
+    },
+    {
+      "id": "plik_lite_TTTEEE-metadata",
+      "url": "https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_Likelihood_Data-baseline_R3.00.tar.gz#baseline/plc_3.0/hi_l/plik_lite/plik_lite_v22_TTTEEE.clik/clik/lkl_0/_mdb",
+      "sha256": "04198fe177773534c1f6d2673567b69626e581b0affa80ebb17a8ba3da4749f4",
+      "role": "official_product_metadata",
+      "conditioning": "lkl_type str plik_cmbonly; lmax int 2508; cmbonly_version int 22; external_dir str .; lmin int 30; unit int 1; "
+    },
+    {
+      "id": "class-precision-key-parser",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/include/macros_precision.h",
+      "sha256": "14a6887545b0f090bf15d2f70d8329e7d7f582eaa0f9c5d6952da8990890bfd6",
+      "role": "implementation_source",
+      "conditioning": "__PARSE_PRECISION_PARAMETER__: class_read_string(STRING,ppr->NAME); external key is \"sBBN file\", internal member sBBN_file."
+    },
+    {
+      "id": "class-hmcode",
+      "url": "https://raw.githubusercontent.com/lesgourg/class_public/0ceb7a9a4c1e444ef5d5d56a8328a0640be91b18/external/HMcode/hmcode.c",
+      "sha256": "2eb8b59b35db995c093f000dd9cf5c8b6dc06de80570c9b0dee4ad7af8b77162",
+      "role": "implementation_source",
+      "conditioning": "hmcode_version_2015 branch includes Mead2016 neutrino additions to delta_c and Delta_v; 2015/2016 input aliases."
+    }
+  ],
+  "coverage": {
+    "1807.06209v4": [
+      "Sec2.1/S2.SS1 complete: physical model, sampling measures, primordial pivot, BBN prescription, HMcode and CLASS comparison",
+      "Sec2.2.1/S2.SS2.SSS1 complete: Plik construction, foreground/calibration choices and multipole ranges",
+      "Sec2.2.3–5/S2.SS2.SSS3–5 complete: lowE, likelihood notation, source conditional error interpretation",
+      "Sec7.8/S7.SS8 complete including corrected high-z optical-depth bounds/corrigendum and Fig44 caption: defaultTANH, Gunn-Peterson cut applied only in this section"
+    ],
+    "1907.12875v2": [
+      "Sec2.1/S2.SS1 complete including validation: Commander Gibbs/Blackwell-Rao, chi-square-like normalization, source masks; figure captions only",
+      "Sec2.2.3/S2.SS2.SSS3 complete Eqs8–12: SimAll table construction, ignored multipole correlations and support",
+      "Sec2.2.6/S2.SS2.SSS6 complete: SimAll limitations, TE exclusion and simulation dependence",
+      "Sec3.3.4/S3.SS3.SSS4 complete Eqs38–47: map calibration yP and Gaussian1±.0025, fixedPE choices and caveats",
+      "Sec3.5.2/S3.SS5.SSS2 complete Eqs50–54: Plik-lite nuisance marginalization, bands and sourcevalidation",
+      "Sec4/S4 complete and Table23: hybrid product dependence approximations and ell30 transition"
+    ],
+    "2503.14738v3": [
+      "SecII.1.2/S2.SS1.SSS2 complete: IterativeFFT reconstruction with DR1 fiducial settings",
+      "SecIII.1–3/S3.SS1–3 complete including Table4: BAO template/nuisance/reconstruction, Lyalpha fourcorrelation model, full13 baseline rows, DR1/SDSS overlap",
+      "SecIV.2/S4.SS2 complete: DESI source baseline is PR4CamSpec plus Planck+ACTreconstruction, CMBcompression alternative",
+      "SecV/S5 complete: sampling coordinates/defaultfixedmass and inference conditioning",
+      "AppendixB/A2 complete: interbinBAOsystematic approximation/test, not CMB–BAOcrosscovariance"
+    ]
+  },
+  "raw_rights": "Unresolved copying rights: raw HTML, derivatives and copied code stay excluded from Git/S3 and retained locally.",
+  "new_full_reads": 0,
+  "new_paper_admissions": 0,
+  "startup": {
+    "failed_receipt_sha256": "8b60aab96c6c31f9079a0a0d991aeb799e13a950ba65df5feb49a58ccb4941ef",
+    "failure": "AWS CLI absent from initial PATH; subsequent prepared CLI startup succeeded.",
+    "successful_receipt_sha256": "8fc240becc0a7e1768ccad62c54ae0053916948f233fd828c5b46ed1c1fa39e3",
+    "catalog_pin": {
+      "bytes": 198929,
+      "sha256": "7ee8a1ce4443bf87b58af95e895ab14b02976d2567186ccd4133b384ce528fcb",
+      "uri": "s3://research-data-436908790672-eu-west-2/shared/catalogs/releases/7ee8a1ce4443bf87b58af95e895ab14b02976d2567186ccd4133b384ce528fcb.json",
+      "version_id": "5zhtxcsv0MqKPSUGnkvHAXTcIQ307K2T"
+    }
+  }
+}
