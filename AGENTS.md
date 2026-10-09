@@ -11,6 +11,18 @@ science. Work in this checkout unless the user asks otherwise.
 
 ## Shared research storage
 
+S3 is the persistent bulk-data store; ignored local directories are temporary
+scratch/cache. Before a handoff or end of useful work, publish eligible inputs,
+full completed/failed/partial evidence and unique unfinished state, and retain
+exact manifest URI/SHA256/VersionId/format in Git or an S3 handoff. Discover and
+restore verified S3 bytes before using old local paths. Use `list --collection`
+for completed uploads not yet curated into the catalog. Git keeps source and
+concise findings. A failed upload or copying restriction is an explicit
+unpreserved blocker: retain the local bytes. Remove local copies only after
+fresh remote byte checks (`push --evict-local` or pinned `evict --apply`); never
+remove unpreserved material or historical remote versions.
+
+
 Use [shared data](docs/shared-data.md), `storage-layout.json` and
 `scripts/research_storage.py` for named shared datasets and evidence. Keep Git
 source references, immutable acquisition/reconstruction pins and exact manifest
@@ -130,8 +142,9 @@ observation lineage. Values need uncertainty interpretation and model/dataset
 conditioning. Missing values are null with reasons, never guessed parameters.
 
 Git holds metadata, links and short original notes. Keep PDFs, TeX, full HTML/text,
-copied abstracts, large tables, chains, credentials and complete worker logs local
-and ignored. Public local paths are relative. Ignore rules do not grant rights
+copied abstracts, large tables, chains and complete worker logs out of Git.
+Use ignored scratch for current work and eligible verified S3 custody for useful
+cross-run state; credentials never belong in an upload. Public local paths are relative. Ignore rules do not grant rights
 or remove previously tracked files.
 
 Group papers under `register/topics/` by question/mechanism. Topics are

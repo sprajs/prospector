@@ -26,7 +26,9 @@ search or batch authorization does not authorize an endless search, numerical
 experiment, scheduled automation or external message.
 
 Downloaded papers, HTML, full-text extractions, screenshots and worker logs stay
-in ignored local storage. Publish descriptive provenance and short original notes.
+out of Git. Use ignored scratch for current work and eligible verified S3
+custody for useful cross-run state. Publish descriptive provenance and short
+original notes; never use local paths as the only persistent handoff.
 Record exact versions, source hashes and reading coverage; access failures and
 unread sections remain visible. Public access does not grant redistribution
 rights. Repeated fits to shared observations are not independent evidence.
