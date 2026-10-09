@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "search_id": "2026-10-09-bridges-narrow",
+  "lane": "interacting-sectors",
+  "work_mode": "focused_user_objective",
+  "status": "completed",
+  "requested_utc": "2026-10-09T17:52:23.216628+00:00",
+  "request": {
+    "query": "(ti:\"interacting vacuum\" OR ti:\"non-adiabatic Chaplygin\" OR ti:\"silent quartessence\") AND (cat:astro-ph.CO OR cat:astro-ph OR cat:gr-qc)",
+    "normalized_query": "(ti:\"interacting vacuum\" OR ti:\"non-adiabatic Chaplygin\" OR ti:\"silent quartessence\") AND (cat:astro-ph.CO OR cat:astro-ph OR cat:gr-qc)",
+    "order": "lastUpdatedDate",
+    "direction": "descending",
+    "start": 0,
+    "limit": 20,
+    "window_sha256": "f177c9345f5365c988c30d8ca0aa2901ea0ec828302000b5808c001f86d9c80a"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Research-group bridge objective, following roadmap M3/M5 and existing Chaplygin background dossier; no queued source directly covers this closure comparison. Narrow window refines broad terminology contamination; bounded nonexhaustive search.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22interacting+vacuum%22+OR+ti%3A%22non-adiabatic+Chaplygin%22+OR+ti%3A%22silent+quartessence%22%29+AND+%28cat%3Aastro-ph.CO+OR+cat%3Aastro-ph+OR+cat%3Agr-qc%29&start=0&max_results=20&sortBy=lastUpdatedDate&sortOrder=descending",
+    "retrieved_utc": "2026-10-09T17:52:23.216628+00:00",
+    "sha256": "9dae994ce20bc9c921f4866a09275ce781fed6abb9e49c173fe884829cc2e35b",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/bridges-20261009/acquisition/objects/9dae994ce20bc9c921f4866a09275ce781fed6abb9e49c173fe884829cc2e35b.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:2604.13011v2",
+      "position": 0,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Buchdahl Limit and TOV Equations in Interacting Vacuum Scenarios",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2603.21675v2",
+      "position": 1,
+      "disposition": "deferred",
+      "reason": "Recent unimodular diffusion correspondence claim; gauge and homogeneous-transfer restrictions need source review.",
+      "title": "Unimodular Diffusion and Interacting Vacuum Cosmology",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2405.10293v3",
+      "position": 2,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Charged Black Holes from Interacting Vacuum",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2312.14123v2",
+      "position": 3,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "The interacting vacuum and tensions: a comparison of theoretical models",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2405.05936v2",
+      "position": 4,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Scalar Perturbations in Nonsingular Universes from Interacting Vacuum",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2303.04793v1",
+      "position": 5,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Testing the growth rate in homogeneous and inhomogeneous interacting vacuum models",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2210.05363v2",
+      "position": 6,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Observational constraints on interacting vacuum energy with linear interactions",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2210.01184v1",
+      "position": 7,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Perturbations in the interacting vacuum",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2108.04911v3",
+      "position": 8,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Yukawa Black Holes from Interacting Vacuum",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2111.01765v2",
+      "position": 9,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Nonsingular Cosmology from an Interacting Vacuum",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2109.08676v2",
+      "position": 10,
+      "disposition": "deferred",
+      "reason": "Lattice kinetic equation-of-state transferred into vacuum interaction; source-reported null tension relief remains unreviewed.",
+      "title": "Shan--Chen interacting vacuum cosmology",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2102.12902v2",
+      "position": 11,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Remedy of some cosmological tensions via effective phantom-like behavior of interacting vacuum energy",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2104.04505v1",
+      "position": 12,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Theoretical and observational bounds on some interacting vacuum energy scenarios",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2102.06417v1",
+      "position": 13,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "J-PAS: forecasts on interacting vacuum energy models",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2007.12181v2",
+      "position": 14,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Qualitative dynamics of interacting vacuum cosmologies",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2010.10785v2",
+      "position": 15,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Manifestly Causal In-In Perturbation Theory about the Interacting Vacuum",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1904.11980v2",
+      "position": 16,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Forecasting Interacting Vacuum-Energy Models using Gravitational Waves",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1709.08933v3",
+      "position": 17,
+      "disposition": "deferred",
+      "reason": "Explicit Borges-Wands coauthorship bridge; growth/velocity observable conventions need full reading.",
+      "title": "Growth of structure in interacting vacuum cosmologies",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1912.01723v2",
+      "position": 18,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Dynamical systems methods and statefinder diagnostic of interacting vacuum energy models",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1902.10694v2",
+      "position": 19,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract-only retained search hit outside bounded dark-fluid closure batch; shared terminology alone supplies no physical bridge.",
+      "title": "Constraints on the interacting vacuum -- geodesic CDM scenario",
+      "decision_history": []
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": "2026-10-09-chaplygin-vacuum-bridges-intake",
+    "query_id": "narrow"
+  }
+}

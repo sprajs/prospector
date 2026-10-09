@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:0711.2904v1",
+  "arxiv_id": "0711.2904",
+  "version": 1,
+  "title": "The CMB in a Causal Set Universe",
+  "authors": [
+    "Joe Zuntz"
+  ],
+  "categories": [
+    "astro-ph"
+  ],
+  "published_utc": "2007-11-19T11:57:00Z",
+  "updated_utc": "2007-11-19T11:57:00Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/0711.2904v1",
+    "html": "https://arxiv.org/html/0711.2904v1",
+    "pdf": "https://arxiv.org/pdf/0711.2904v1"
+  },
+  "license": {
+    "status": "unresolved; no licence in Atom metadata",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public register contains metadata and original notes. Private research custody only; no public full-source redistribution."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=0711.2904v1%2C1210.2589v3%2C1703.06265v4%2C2304.03819v2&max_results=4",
+      "retrieved_utc": "2026-10-09T17:48:14.320588+00:00",
+      "sha256": "8ad8299cbe14072407b669ddaf8a81c2093cb7cf97181d6b12d6e5ca203327bb",
+      "bytes": 8353
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "One-hop mechanism/criticism frontier preserved for later full source acquisition and reading; batch scope limited to three full papers."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

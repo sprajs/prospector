@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "search_id": "2026-10-09-everpresent-foundation-search",
+  "lane": "late-dark-energy",
+  "work_mode": "unconventional_foundation_and_challenge",
+  "status": "completed",
+  "requested_utc": "2026-10-09T17:46:50.507513+00:00",
+  "request": {
+    "query": "ti:\"everpresent\" OR ti:\"ever-present\" OR (ti:\"causal set\" AND ti:\"microwave\")",
+    "normalized_query": "ti:\"everpresent\" OR ti:\"ever-present\" OR (ti:\"causal set\" AND ti:\"microwave\")",
+    "order": "relevance",
+    "direction": "descending",
+    "start": 0,
+    "limit": 20,
+    "window_sha256": "22722e3d107dbaa45235978c8a5600b0466baad6341e64e01ed7101f7a455b34"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Explicit new user search of unconventional prospects; previous queues preserved with separate owners. Scope reserved to causal-set stochastic Lambda, absent in register at initial dedup check. No pending saved search hits in this scope.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22everpresent%22+OR+ti%3A%22ever-present%22+OR+%28ti%3A%22causal+set%22+AND+ti%3A%22microwave%22%29&start=0&max_results=20&sortBy=relevance&sortOrder=descending",
+    "retrieved_utc": "2026-10-09T17:46:50.507513+00:00",
+    "sha256": "4cf2e390d3cb31327c105675c25419cecd46c11296fe1813b7a6604b299154ce",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/unconventional-20261009/acquisition/objects/4cf2e390d3cb31327c105675c25419cecd46c11296fe1813b7a6604b299154ce.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:gr-qc/0612128v2",
+      "position": 0,
+      "disposition": "selected",
+      "reason": "Foundation/independent criticism/recent negative reassessment chosen for full source reading.",
+      "title": "A Strong Constraint on Ever-Present Lambda",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:49:02.770889+00:00",
+          "disposition": "selected",
+          "reason": "Foundation/independent criticism/recent negative reassessment chosen for full source reading."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0209274v1",
+      "position": 1,
+      "disposition": "selected",
+      "reason": "Foundation/independent criticism/recent negative reassessment chosen for full source reading.",
+      "title": "Everpresent Lambda",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:49:02.770900+00:00",
+          "disposition": "selected",
+          "reason": "Foundation/independent criticism/recent negative reassessment chosen for full source reading."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2211.08437v2",
+      "position": 2,
+      "disposition": "excluded",
+      "reason": "Lexical match outside the bounded stochastic-vacuum cosmological mechanism scope; not a scientific falsification.",
+      "title": "An ever-present $Gaia$ snail shell triggered by a dark matter wake",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:49:02.770904+00:00",
+          "disposition": "excluded",
+          "reason": "Lexical match outside the bounded stochastic-vacuum cosmological mechanism scope; not a scientific falsification."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1703.06265v4",
+      "position": 3,
+      "disposition": "deferred",
+      "reason": "Relevant mechanism or critical follow-up; retain as bounded full-reading frontier, not accepted physics.",
+      "title": "Cosmological Tests of Everpresent $\u039b$",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:49:02.770906+00:00",
+          "disposition": "deferred",
+          "reason": "Relevant mechanism or critical follow-up; retain as bounded full-reading frontier, not accepted physics."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1210.2589v3",
+      "position": 4,
+      "disposition": "deferred",
+      "reason": "Relevant mechanism or critical follow-up; retain as bounded full-reading frontier, not accepted physics.",
+      "title": "Everpresent Lambda - II: Structural Stability",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:49:02.770908+00:00",
+          "disposition": "deferred",
+          "reason": "Relevant mechanism or critical follow-up; retain as bounded full-reading frontier, not accepted physics."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2009.08557v2",
+      "position": 5,
+      "disposition": "excluded",
+      "reason": "Lexical match outside the bounded stochastic-vacuum cosmological mechanism scope; not a scientific falsification.",
+      "title": "Ever-present Majorana bound state in a generic one-dimensional superconductor with odd number of Fermi surfaces",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:49:02.770909+00:00",
+          "disposition": "excluded",
+          "reason": "Lexical match outside the bounded stochastic-vacuum cosmological mechanism scope; not a scientific falsification."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2307.13743v2",
+      "position": 6,
+      "disposition": "selected",
+      "reason": "Foundation/independent criticism/recent negative reassessment chosen for full source reading.",
+      "title": "Aspects of Everpresent $\u039b$ (II): Cosmological Tests of Current Models",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:49:02.770911+00:00",
+          "disposition": "selected",
+          "reason": "Foundation/independent criticism/recent negative reassessment chosen for full source reading."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:1012.5966v2",
+      "position": 7,
+      "disposition": "excluded",
+      "reason": "Lexical match outside the bounded stochastic-vacuum cosmological mechanism scope; not a scientific falsification.",
+      "title": "The everpresent eta-problem: knowledge of all hidden sectors required",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:49:02.770913+00:00",
+          "disposition": "excluded",
+          "reason": "Lexical match outside the bounded stochastic-vacuum cosmological mechanism scope; not a scientific falsification."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2304.03819v2",
+      "position": 8,
+      "disposition": "deferred",
+      "reason": "Relevant mechanism or critical follow-up; retain as bounded full-reading frontier, not accepted physics.",
+      "title": "Aspects of Everpresent $\u039b$ (I): A Fluctuating Cosmological Constant from Spacetime Discreteness",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:49:02.770914+00:00",
+          "disposition": "deferred",
+          "reason": "Relevant mechanism or critical follow-up; retain as bounded full-reading frontier, not accepted physics."
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": null,
+    "query_id": null
+  }
+}

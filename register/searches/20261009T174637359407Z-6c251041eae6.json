@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "search_id": "20261009T174637359407Z-6c251041eae6",
+  "lane": "interacting-sectors",
+  "work_mode": "fresh",
+  "status": "completed",
+  "requested_utc": "2026-10-09T17:46:37.359313+00:00",
+  "request": {
+    "query": "(cat:astro-ph.CO OR cat:hep-ph OR cat:hep-th) AND (ti:\"dark radiation\" OR abs:\"Wess-Zumino\")",
+    "normalized_query": "(cat:astro-ph.CO OR cat:hep-ph OR cat:hep-th) AND (ti:\"dark radiation\" OR abs:\"Wess-Zumino\")",
+    "order": "lastUpdatedDate",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "6c251041eae65e7e1397221d1c0ade9e4dae30ccb57d96188610dd59d3bfae38"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "One recent-development window complements the completed mechanism window; pending unrelated lanes remain deferred, queued Hot NEDE is being centrally acquired.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Ahep-ph+OR+cat%3Ahep-th%29+AND+%28ti%3A%22dark+radiation%22+OR+abs%3A%22Wess-Zumino%22%29&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+    "retrieved_utc": "2026-10-09T17:46:37.739185+00:00",
+    "sha256": "c114fe164c9f8b4abac851d1333b13a10491a452fe06673ccc33a48a6f062b2f",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/crawl-acquisition/2026-10-09-interacting-radiation/objects/c114fe164c9f8b4abac851d1333b13a10491a452fe06673ccc33a48a6f062b2f.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:2608.20333v3",
+      "position": 0,
+      "disposition": "excluded",
+      "reason": "Abstract screen: field-theory/WZW result does not propose the selected cosmological dark-radiation mechanism; terminology collision only.",
+      "title": "Maximal Total Quantum Dimension at Bounded Rank in WZW Modular Tensor Categories",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2101.10016v16",
+      "position": 1,
+      "disposition": "excluded",
+      "reason": "Abstract screen: field-theory/WZW result does not propose the selected cosmological dark-radiation mechanism; terminology collision only.",
+      "title": "Unitary coboundary weak quasi-Hopf algebras in the Kazhdan-Lusztig-Finkelberg theorem",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.39760v1",
+      "position": 2,
+      "disposition": "excluded",
+      "reason": "Abstract screen: field-theory/WZW result does not propose the selected cosmological dark-radiation mechanism; terminology collision only.",
+      "title": "Fractional Superfluid Vortices and Worldsheet Wess--Zumino--Witten Models in Two-Color QCD and $Sp(2N)$ Gauge Theories",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.34248v1",
+      "position": 3,
+      "disposition": "excluded",
+      "reason": "Abstract screen: field-theory/WZW result does not propose the selected cosmological dark-radiation mechanism; terminology collision only.",
+      "title": "RG Limit Cycles in BKT Flows $\\equiv$ Periodic Real-Time Dynamics in the Current-Current Perturbed $SU(2)_1$ WZW Model",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.28835v1",
+      "position": 4,
+      "disposition": "excluded",
+      "reason": "Abstract screen: field-theory/WZW result does not propose the selected cosmological dark-radiation mechanism; terminology collision only.",
+      "title": "A Pedagogical Introduction to Anomalies in Quantum Field Theory",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.24472v1",
+      "position": 5,
+      "disposition": "excluded",
+      "reason": "Abstract screen: field-theory/WZW result does not propose the selected cosmological dark-radiation mechanism; terminology collision only.",
+      "title": "Spin-One Secondary Pairing in Two-Flavor Color Superconductivity: Spinful Relativistic Superfluidity and Anomaly Matching",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.18831v1",
+      "position": 6,
+      "disposition": "excluded",
+      "reason": "Abstract screen: field-theory/WZW result does not propose the selected cosmological dark-radiation mechanism; terminology collision only.",
+      "title": "Auxiliary Field Deformations of the Lambda Model",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.16120v1",
+      "position": 7,
+      "disposition": "deferred",
+      "reason": "Deferred: dark-QCD imperfect-fluid viscosity alternative, quoted posterior conditioned on SH0ES; requires full closure/lineage review.",
+      "title": "Dark Radiation Sticks Together: Dark QCD and the Hubble Tension",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.12080v1",
+      "position": 8,
+      "disposition": "excluded",
+      "reason": "Abstract screen: field-theory/WZW result does not propose the selected cosmological dark-radiation mechanism; terminology collision only.",
+      "title": "Emergent Conformal Symmetry on Superfluid Vortices in Two-Color QCD and Pseudoreal Gauge Theories",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2508.03795v2",
+      "position": 9,
+      "disposition": "deferred",
+      "reason": "Deferred: hot-NEDE matter decoupling microphysics; present batch first checks foundation and comparative constraints.",
+      "title": "Hot New Early Dark Energy: Dark Radiation Matter Decoupling",
+      "decision_history": []
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": "2026-10-09-interacting-radiation-intake",
+    "query_id": null
+  },
+  "batch_id": "2026-10-09-interacting-radiation"
+}

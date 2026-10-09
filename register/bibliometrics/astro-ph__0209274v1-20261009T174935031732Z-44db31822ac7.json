@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:astro-ph/0209274v1",
+  "work_identity": {
+    "arxiv_id": "astro-ph/0209274",
+    "registered_version": 1,
+    "title": "Everpresent Lambda",
+    "match_status": "exact",
+    "provider": "INSPIRE-HEP",
+    "provider_record_id": "594916",
+    "matched_arxiv_ids": [
+      "astro-ph/0209274"
+    ],
+    "linked_dois": [
+      "10.1103/PhysRevD.69.103523"
+    ],
+    "journal_metadata": [
+      {
+        "journal_title": "Phys.Rev.D",
+        "year": 2004,
+        "volume": "69",
+        "article_or_page": "103523"
+      }
+    ],
+    "journal_scope": "linked_journal_metadata_returned",
+    "count_scope": "provider_base_work_record",
+    "version_scope": "versions_not_disaggregated",
+    "publication_scope_note": "Citation counts are totals for this provider literature record. They are not split between the registered arXiv version, other arXiv versions, and linked journal publication records. Coordinator identity reconciliation: exact unique base arXiv ID plus provider alternate title 'Everpresent $\\\\Lambda$' matches registered title after Lambda/Greek/TeX/punctuation normalization. Raw response remains unchanged; original strict-first-title snapshot retained. No author identity inferred from a title alone.",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3Aastro-ph%2F0209274&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:49:03.423458+00:00",
+      "http_status": 200,
+      "response_sha256": "2c84a18d69090d458436d0a3478f3d6fe303b8f87b5ccdab10d5d3c9b1a5656d",
+      "response_bytes": 2547,
+      "archive_path": ".work/unconventional-20261009/bibliometrics/2026-10-09/inspire-astro-ph_0209274-2c84a18d6909.json"
+    }
+  },
+  "citation_snapshot": {
+    "status": "observed",
+    "count": 146,
+    "count_without_self_citations": 135,
+    "retrieved_utc": "2026-10-09T17:49:03.423458+00:00",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3Aastro-ph%2F0209274&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:49:03.423458+00:00",
+      "http_status": 200,
+      "response_sha256": "2c84a18d69090d458436d0a3478f3d6fe303b8f87b5ccdab10d5d3c9b1a5656d",
+      "response_bytes": 2547,
+      "archive_path": ".work/unconventional-20261009/bibliometrics/2026-10-09/inspire-astro-ph_0209274-2c84a18d6909.json"
+    },
+    "missing_reason": null
+  },
+  "comparison": {
+    "first_publication_utc": "2002-09-13T19:53:47Z",
+    "age_days_at_snapshot": 8791.913384530764,
+    "age_years_at_snapshot": 24.071441260342823,
+    "field_categories": [
+      "astro-ph",
+      "gr-qc",
+      "hep-th"
+    ],
+    "cohort": {
+      "provider": "INSPIRE-HEP",
+      "snapshot_batch_id": "everpresent-20261009",
+      "field_definition": "arXiv primary category: astro-ph",
+      "age_band_years": {
+        "lower_inclusive": 24.0,
+        "upper_exclusive": 25.0
+      },
+      "population_size": null,
+      "minimum_population_size": 100,
+      "population_evidence": null,
+      "percentile": null,
+      "status": "not_queried",
+      "reason": "No provider population was queried for this provider, snapshot batch, arXiv primary category, and publication-age band. The deliberately selected Prospector sample is not a percentile reference population."
+    }
+  },
+  "authors": [
+    {
+      "paper_author_name": "Maqbool Ahmed",
+      "source_author_id": "1035630",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "Scott Dodelson",
+      "source_author_id": "1011646",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "Patrick B. Greene",
+      "source_author_id": "1019353",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "Rafael Sorkin",
+      "source_author_id": "988029",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    }
+  ],
+  "team_visibility": {
+    "status": "none",
+    "unique_author_count": 4,
+    "verified_h_index_author_count": 0,
+    "coverage_fraction": 0.0,
+    "h_index_scope": null,
+    "h_index_snapshot_batch_id": null,
+    "max_h_index": null,
+    "median_h_index": null,
+    "missing_reason": "Team maximum and median use verified, observed, same-scope h-indices only; missing author metrics are unknown."
+  },
+  "snapshot_created_utc": "2026-10-09T17:49:35.031732+00:00",
+  "snapshot_id": "20261009T174935031732Z-44db31822ac7"
+}

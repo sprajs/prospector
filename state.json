@@ -603,6 +603,431 @@
       "paper_id": "arxiv:1806.10608v1",
       "stage": "read",
       "reason": "Independently identified primary method v1 with cached HTML/PDF. Two targeted source reviews cover selected definitions and printed comparisons only; complete Luna main-text/appendix reading and ordinary full-paper Sol review remain pending. The later letter cites only the base ID."
+    },
+    {
+      "paper_id": "arxiv:2306.12469v2",
+      "stage": "read",
+      "reason": "Useful weak/strong comparative challenge; full reading deferred to prioritize the queued thermal foundation and direct ACT DR6 constraint versus primordial-running comparison within three-paper review ceiling. Sources acquired.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2404.07256v1",
+      "stage": "read",
+      "reason": "Deferred full reading: post-BBN reheating and entropy step bridge; original sources centrally acquired but three-paper review ceiling prioritizes current perturbation challenge.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2404.16822v1",
+      "stage": "read",
+      "reason": "Deferred: independent neutrino-mixing production alternative with explicit background and perturbation implementation.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2512.06719v4",
+      "stage": "read",
+      "reason": "Deferred valuable null: scalar-DM momentum coupling gives marginal S8 relief and poorer combined-prior fit; full conditioning unreviewed.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2508.03795v2",
+      "stage": "read",
+      "reason": "Deferred: hot-NEDE matter decoupling microphysics; present batch first checks foundation and comparative constraints.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.16120v1",
+      "stage": "read",
+      "reason": "Deferred: dark-QCD imperfect-fluid viscosity alternative, quoted posterior conditioned on SH0ES; requires full closure/lineage review.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2604.26541v1",
+      "stage": "read",
+      "reason": "Full reading selected: ACT DR6 dark-radiation limits versus primordial-spectrum running; test degeneracy rather than infer a tension solution.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2605.18716v1",
+      "stage": "read",
+      "reason": "Deferred: neutrino recoupling could distinguish CMB-BAO mismatch from a pure H0 extension; fitted preference is not a measurement.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2604.27954v2",
+      "stage": "read",
+      "reason": "Deferred valuable null: ALP-induced dark radiation does not resolve tensions; distinct production history needs full read.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2512.19633v1",
+      "stage": "read",
+      "reason": "Full reading selected: recent independent ACT DR6 constraint on related WZDR/nuADaM phenomenology; not direct Hot NEDE exclusion.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2405.08064v2",
+      "stage": "read",
+      "reason": "Deferred: acoustic phase shift from dark-matter loading may separate momentum transfer from background radiation density; source scaling domain unreviewed.",
+      "prospect_ids": [
+        "interacting-sectors"
+      ]
+    },
+    {
+      "paper_id": "arxiv:0711.2904v1",
+      "stage": "read",
+      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
+      "prospect_ids": [
+        "stochastic-vacuum"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1210.2589v3",
+      "stage": "read",
+      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
+      "prospect_ids": [
+        "stochastic-vacuum"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1703.06265v4",
+      "stage": "read",
+      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
+      "prospect_ids": [
+        "stochastic-vacuum"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2304.03819v2",
+      "stage": "read",
+      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
+      "prospect_ids": [
+        "stochastic-vacuum"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2307.13743v2",
+      "stage": "read",
+      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
+      "prospect_ids": [
+        "stochastic-vacuum"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0209274v1",
+      "stage": "read",
+      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
+      "prospect_ids": [
+        "stochastic-vacuum"
+      ]
+    },
+    {
+      "paper_id": "arxiv:gr-qc/0612128v2",
+      "stage": "read",
+      "reason": "Everpresent-Lambda scope: full reading/review pending at preserved intake checkpoint; one shared worker slot, serial readings.",
+      "prospect_ids": [
+        "stochastic-vacuum"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1811.11976v3",
+      "stage": "read",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2412.15143v1",
+      "stage": "read",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1812.01586v2",
+      "stage": "read",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:0909.0749v2",
+      "stage": "acquire",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:0709.0732v2",
+      "stage": "read",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1811.11963v2",
+      "stage": "acquire",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2311.01438v2",
+      "stage": "read",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:gr-qc/0702082v4",
+      "stage": "acquire",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2511.17160v2",
+      "stage": "acquire",
+      "reason": "Timescape focused acquisition checkpoint; sources and unfinished fullreading/review retained.",
+      "prospect_ids": [
+        "inhomogeneity"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2112.04456v2",
+      "stage": "read",
+      "reason": "Foundation deferred full reading: Pantheon+ Dust2Dust selection-aware parent dust/colour inference; parameter uncertainty propagation is not model-misspecification coverage.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2401.08755v2",
+      "stage": "read",
+      "reason": "Selected for ordinary full-paper Luna reading followed by Sol source review; shared worker capacity pending. Selected full reading: independent BayeSN SED hierarchy simultaneously separates dust and intrinsic mass effects; null redshift evolution is domain conditioned.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2403.10388v2",
+      "stage": "read",
+      "reason": "Deferred predecessor: calibrator-host extinction transfer proposal; same-author follow-up selected rather than treating papers as independent confirmations.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2506.22150v2",
+      "stage": "read",
+      "reason": "Selected for ordinary full-paper Luna reading followed by Sol source review; shared worker capacity pending. Selected full reading: two-population calibrator versus Hubble-flow matching with prior-sensitive H0 shift; methodological explanation requires independent challenge.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2608.21603v2",
+      "stage": "read",
+      "reason": "Deferred negative environmental challenge: targeted versus untargeted survey selection; abstract gives no H0 shift and no new cosmology.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2607.28725v3",
+      "stage": "read",
+      "reason": "Deferred recent methodological challenge: DES5YR simulation-based population comparison; connects Dust2Dust and BayeSN author teams, not independent team replication.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2105.06236v2",
+      "stage": "read",
+      "reason": "Deferred wavelength discriminator: near-IR and object-specific extinction tests of mass step; compare sample, selection and extinction-fit uncertainty before acceptance.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2512.20834v1",
+      "stage": "read",
+      "reason": "Deferred environmental alternative: host SED mass re-estimation and metallicity; abstract alone cannot settle causal population interpretation.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2609.30312v1",
+      "stage": "read",
+      "reason": "Deferred representation challenge: FPCA versus SALT summary robustness depends on simulation domain and shared DES sample.",
+      "prospect_ids": [
+        "measurement-lineage"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1203.6776v2",
+      "stage": "read",
+      "reason": "Selected for full Luna reading and Sol comparison of barotropic and geodesic/nonadiabatic closure; intake is not scientific acceptance.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1306.0917v2",
+      "stage": "read",
+      "reason": "Selected for full Luna reading and Sol comparison of barotropic and geodesic/nonadiabatic closure; intake is not scientific acceptance.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1301.5315v2",
+      "stage": "read",
+      "reason": "Selected for full Luna reading and Sol comparison of barotropic and geodesic/nonadiabatic closure; intake is not scientific acceptance.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0212114v2",
+      "stage": "read",
+      "reason": "Foundational structure-formation criticism; exact adiabatic/lineage domain needs full read.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2603.21675v2",
+      "stage": "read",
+      "reason": "Recent unimodular diffusion correspondence claim; gauge and homogeneous-transfer restrictions need source review.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0306004v2",
+      "stage": "read",
+      "reason": "Earlier entropy/silent quartessence approach; no equivalence to geodesic interaction claimed.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:gr-qc/0202064v2",
+      "stage": "read",
+      "reason": "Full-paper foundation remains unread; v2 differs from historical v1 selected-equation dossier.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1709.08933v3",
+      "stage": "read",
+      "reason": "Explicit Borges-Wands coauthorship bridge; growth/velocity observable conventions need full reading.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2109.08676v2",
+      "stage": "read",
+      "reason": "Lattice kinetic equation-of-state transferred into vacuum interaction; source-reported null tension relief remains unreviewed.",
+      "prospect_ids": [
+        "interacting-sectors",
+        "late-dark-energy"
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/9801212v1",
+      "stage": "read",
+      "reason": "Deferred foundation, null-result constraint, eigenmode derivation, independent method or forecast; no full reading claimed.",
+      "prospect_ids": [
+        "cosmic-topology"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1502.01593v2",
+      "stage": "read",
+      "reason": "Deferred foundation, null-result constraint, eigenmode derivation, independent method or forecast; no full reading claimed.",
+      "prospect_ids": [
+        "cosmic-topology"
+      ]
+    },
+    {
+      "paper_id": "arxiv:1403.2190v2",
+      "stage": "read",
+      "reason": "Selected Hantzsche-Wendt historical mechanism and later covariance detectability revisit; awaiting shared Luna slot.",
+      "prospect_ids": [
+        "cosmic-topology"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2210.11426v4",
+      "stage": "read",
+      "reason": "Selected Hantzsche-Wendt historical mechanism and later covariance detectability revisit; awaiting shared Luna slot.",
+      "prospect_ids": [
+        "cosmic-topology"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2306.17112v3",
+      "stage": "read",
+      "reason": "Deferred foundation, null-result constraint, eigenmode derivation, independent method or forecast; no full reading claimed.",
+      "prospect_ids": [
+        "cosmic-topology"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2403.09221v2",
+      "stage": "read",
+      "reason": "Deferred foundation, null-result constraint, eigenmode derivation, independent method or forecast; no full reading claimed.",
+      "prospect_ids": [
+        "cosmic-topology"
+      ]
+    },
+    {
+      "paper_id": "arxiv:2608.25033v1",
+      "stage": "read",
+      "reason": "Deferred foundation, null-result constraint, eigenmode derivation, independent method or forecast; no full reading claimed.",
+      "prospect_ids": [
+        "cosmic-topology"
+      ]
     }
   ],
   "search_history": [
@@ -1000,5 +1425,6 @@
     "programme": "coordinated-science-reset",
     "milestone": "M0",
     "scope": "Source-defined reference and likelihood/prior/dependence contract; queue preserved; no automatic execution"
-  }
+  },
+  "last_completed_intake_scan": "2026-10-09-interacting-radiation-intake"
 }

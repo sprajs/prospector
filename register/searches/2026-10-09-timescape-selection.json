@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "search_id": "2026-10-09-timescape-selection",
+  "lane": "inhomogeneity",
+  "work_mode": "focused_user_objective",
+  "status": "completed",
+  "requested_utc": "2026-10-09T17:49:07.269835+00:00",
+  "request": {
+    "query": "(ti:supernova OR abs:supernova) AND (ti:selection OR abs:selection) AND (au:Rubin OR au:Hayden)",
+    "normalized_query": "(ti:supernova OR abs:supernova) AND (ti:selection OR abs:selection) AND (au:Rubin OR au:Hayden)",
+    "order": "relevance",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "2a1493d8cd3dab044df70e75b06330539d081cd5c7487db21e749fa140a25133"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Cross-terminology methodological search requested for timescape assessment; saved relevant methods as future frontier beyond six-paper read ceiling.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Asupernova+OR+abs%3Asupernova%29+AND+%28ti%3Aselection+OR+abs%3Aselection%29+AND+%28au%3ARubin+OR+au%3AHayden%29&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+    "retrieved_utc": "2026-10-09T17:49:07.269835+00:00",
+    "sha256": "a7128f0656b288f196054dd4fa373d95595620526fb9847392355bbebca06f0b",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/timescape-20261009/acquisition/objects/a7128f0656b288f196054dd4fa373d95595620526fb9847392355bbebca06f0b.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:1507.01602v4",
+      "position": 0,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "UNITY: Confronting Supernova Cosmology's Statistical and Systematic Uncertainties in a Unified Bayesian Framework",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1810.09476v1",
+      "position": 1,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "SNEMO: Improved Empirical Models for Type Ia Supernovae",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1008.4797v2",
+      "position": 2,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "Single or Double Degenerate Progenitors? Searching for Shock Emission in the SDSS-II Type Ia Supernovae",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1001.3428v2",
+      "position": 3,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "The Rise and Fall of Type Ia Supernova Light Curves in the SDSS-II Supernova Survey",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1701.01422v1",
+      "position": 4,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "The Extinction Properties of and Distance to the Highly Reddened Type Ia Supernova SN 2012cu",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2609.39804v1",
+      "position": 5,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "An improved standardization framework for Type II-P supernovae using a hierarchical Bayesian approach",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:1412.6501v1",
+      "position": 6,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "Confirmation of a Star Formation Bias in Type Ia Supernova Distances and its Effect on Measurement of the Hubble Constant",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2311.12098v4",
+      "position": 7,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "Union Through UNITY: Cosmology with 2,000 SNe Using a Unified Bayesian Framework",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2403.05620v2",
+      "position": 8,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "Hawai'i Supernova Flows: A Peculiar Velocity Survey Using Over a Thousand Supernovae in the Near-Infrared",
+      "decision_history": []
+    },
+    {
+      "paper_id": "arxiv:2306.17226v1",
+      "position": 9,
+      "disposition": "deferred",
+      "reason": "Metadata/abstract screened as contextual methods or broad backreaction; no direct timescape model conclusion inferred. Retained for subsequent bounded batch.",
+      "title": "Roman CCS White Paper: Considerations for Selecting Fields for the Roman High-latitude Time Domain Core Community Survey",
+      "decision_history": []
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": "2026-10-09-timescape-acquisition",
+    "query_id": "selection"
+  }
+}

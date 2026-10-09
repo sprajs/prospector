@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:1410.3470v3",
+  "work_identity": {
+    "arxiv_id": "1410.3470",
+    "registered_version": 3,
+    "title": "Cosmic microwave background anisotropies in the timescape cosmology",
+    "match_status": "exact",
+    "provider": "INSPIRE-HEP",
+    "provider_record_id": "1322055",
+    "matched_arxiv_ids": [
+      "1410.3470"
+    ],
+    "linked_dois": [
+      "10.1103/PhysRevD.91.063519"
+    ],
+    "journal_metadata": [
+      {
+        "journal_title": "Phys.Rev.D",
+        "year": 2015,
+        "volume": "91",
+        "article_or_page": "063519"
+      }
+    ],
+    "journal_scope": "linked_journal_metadata_returned",
+    "count_scope": "provider_base_work_record",
+    "version_scope": "versions_not_disaggregated",
+    "publication_scope_note": "Citation counts are totals for this provider literature record. They are not split between the registered arXiv version, other arXiv versions, and linked journal publication records.",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A1410.3470&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:48:55.260334+00:00",
+      "http_status": 200,
+      "response_sha256": "1f60a64b35a38c1a1da5780113ef9e259125549e246cec07ff35ba8097acaadf",
+      "response_bytes": 2337,
+      "archive_path": ".work/timescape-20261009/bibliometrics-raw/2026-10-09/inspire-1410.3470-1f60a64b35a3.json"
+    }
+  },
+  "citation_snapshot": {
+    "status": "observed",
+    "count": 18,
+    "count_without_self_citations": 10,
+    "retrieved_utc": "2026-10-09T17:48:55.260334+00:00",
+    "source": {
+      "provider": "INSPIRE-HEP REST API",
+      "request_url": "https://inspirehep.net/api/literature?q=arxiv%3A1410.3470&size=10&fields=arxiv_eprints%2Ctitles%2Cauthors.full_name%2Cauthors.record%2Ccitation_count%2Ccitation_count_without_self_citations%2Cearliest_date%2Cdois%2Cpublication_info",
+      "retrieved_utc": "2026-10-09T17:48:55.260334+00:00",
+      "http_status": 200,
+      "response_sha256": "1f60a64b35a38c1a1da5780113ef9e259125549e246cec07ff35ba8097acaadf",
+      "response_bytes": 2337,
+      "archive_path": ".work/timescape-20261009/bibliometrics-raw/2026-10-09/inspire-1410.3470-1f60a64b35a3.json"
+    },
+    "missing_reason": null
+  },
+  "comparison": {
+    "first_publication_utc": "2014-10-13T20:00:03Z",
+    "age_days_at_snapshot": 4378.90893819831,
+    "age_years_at_snapshot": 11.98904546485776,
+    "field_categories": [
+      "astro-ph.CO",
+      "gr-qc",
+      "hep-ph"
+    ],
+    "cohort": {
+      "provider": "INSPIRE-HEP",
+      "snapshot_batch_id": "timescape-2026-10-09",
+      "field_definition": "arXiv primary category: astro-ph.CO",
+      "age_band_years": {
+        "lower_inclusive": 11.0,
+        "upper_exclusive": 12.0
+      },
+      "population_size": null,
+      "minimum_population_size": 100,
+      "population_evidence": null,
+      "percentile": null,
+      "status": "not_queried",
+      "reason": "No provider population was queried for this provider, snapshot batch, arXiv primary category, and publication-age band. The deliberately selected Prospector sample is not a percentile reference population."
+    }
+  },
+  "authors": [
+    {
+      "paper_author_name": "M. Ahsan Nazer",
+      "source_author_id": "2581272",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    },
+    {
+      "paper_author_name": "David L. Wiltshire",
+      "source_author_id": "983425",
+      "author_identity_verified": true,
+      "identity_evidence": "The normalized author name has one linked INSPIRE author record in the exact base-arXiv-ID provider record.",
+      "google_scholar": {
+        "profile_url": null,
+        "profile_link_evidence": null,
+        "profile_identity_evidence": null,
+        "profile_attempt": null,
+        "status": "unqueried",
+        "profile_identity_verified": false,
+        "h_index_status": "unavailable",
+        "h_index": null,
+        "h_index_scope": null,
+        "profile_batch_id": null,
+        "retrieved_utc": null,
+        "missing_reason": "No Google Scholar profile was checked in this bounded work snapshot; unknown does not mean zero."
+      }
+    }
+  ],
+  "team_visibility": {
+    "status": "none",
+    "unique_author_count": 2,
+    "verified_h_index_author_count": 0,
+    "coverage_fraction": 0.0,
+    "h_index_scope": null,
+    "h_index_snapshot_batch_id": null,
+    "max_h_index": null,
+    "median_h_index": null,
+    "missing_reason": "Team maximum and median use verified, observed, same-scope h-indices only; missing author metrics are unknown."
+  },
+  "snapshot_created_utc": "2026-10-09T17:48:55.375619+00:00",
+  "snapshot_id": "20261009T174855375619Z-226b35dbcedc"
+}

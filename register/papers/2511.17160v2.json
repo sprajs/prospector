@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2511.17160v2",
+  "arxiv_id": "2511.17160",
+  "version": 2,
+  "title": "Cosmological perturbations on an averaged background",
+  "authors": [
+    "Marco Galoppo",
+    "Pierre Mourier"
+  ],
+  "categories": [
+    "gr-qc",
+    "astro-ph.CO"
+  ],
+  "published_utc": "2025-11-21T11:27:14Z",
+  "updated_utc": "2025-12-09T07:01:11Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2511.17160v2",
+    "html": "https://arxiv.org/html/2511.17160v2",
+    "pdf": "https://arxiv.org/pdf/2511.17160v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper terms not yet checked; links and original notes only."
+  },
+  "artifacts": [
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=2511.17160%2C1610.08972&max_results=2",
+      "retrieved_utc": "2026-10-09T17:51:27.939303+00:00",
+      "sha256": "c6c94817b532e583c85e5efa5a4ee874168addaafe64b1a62e500c02e8d15045",
+      "bytes": 6046,
+      "role": "metadata"
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Recent averaged-background perturbation lead found on primary Canterbury group page; preserve distinction from a timescape-specific closure. Full source/reading/review deferred at this batch ceiling."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

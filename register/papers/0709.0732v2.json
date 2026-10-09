@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:0709.0732v2",
+  "arxiv_id": "0709.0732",
+  "version": 2,
+  "title": "Exact solution to the averaging problem in cosmology",
+  "authors": [
+    "David L. Wiltshire"
+  ],
+  "categories": [
+    "gr-qc",
+    "astro-ph",
+    "hep-ph",
+    "hep-th"
+  ],
+  "published_utc": "2007-09-06T11:57:39Z",
+  "updated_utc": "2007-11-01T05:28:14Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/0709.0732v2",
+    "html": "https://arxiv.org/html/0709.0732v2",
+    "pdf": "https://arxiv.org/pdf/0709.0732v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "API license not supplied; source terms unresolved; only links and original notes published."
+  },
+  "artifacts": [
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=gr-qc%2F0702082%2C0709.0732%2C0909.0749%2C2412.15143v1%2C2311.01438v2%2C1811.11976v3%2C1812.01586v2%2C1410.3470v3%2C1811.11963v2&max_results=9",
+      "retrieved_utc": "2026-10-09T17:47:17.121175+00:00",
+      "sha256": "b1c5e9cab57effac64776b1b3187c686eab2452a9cbbac8521a58379ea2dbe10",
+      "bytes": 23697,
+      "role": "metadata"
+    },
+    {
+      "url": "https://arxiv.org/html/0709.0732v2",
+      "retrieved_utc": "2026-10-09T17:48:21.189599+00:00",
+      "bytes": 182903,
+      "sha256": "35b666a8b78a6aae31a6cbba70b63f0f95a8dbf931f2d53741f31c2f1a2c81c5",
+      "role": "html"
+    },
+    {
+      "url": "https://arxiv.org/pdf/0709.0732v2",
+      "retrieved_utc": "2026-10-09T17:48:24.412497+00:00",
+      "bytes": 124612,
+      "sha256": "3abcc64ad95b95cf655f687515c8d85f38d6d0bfcebec1e0133a460b425db04f",
+      "role": "pdf"
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/0709.0732v2",
+      "retrieved_utc": "2026-10-09T17:48:24.584102+00:00",
+      "sha256": "311f0345c0c0c20cf768b3a9a9d967da5c49dcfb8ff9eefe8ef04ea064cb8c4f",
+      "bytes": 34131,
+      "derived_from_sha256": "3abcc64ad95b95cf655f687515c8d85f38d6d0bfcebec1e0133a460b425db04f",
+      "tool": "pdftotext -layout"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "abstract",
+    "reason": "Focused timescape foundations, conditional support, independent tests or cross-probe compatibility; selection is not acceptance."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

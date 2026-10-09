@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2105.06236v2",
+  "arxiv_id": "2105.06236",
+  "version": 2,
+  "title": "Near-IR Type Ia SN distances: host galaxy extinction and mass-step corrections revisited",
+  "authors": [
+    "J. Johansson",
+    "S. B. Cenko",
+    "O. D. Fox",
+    "S. Dhawan",
+    "A. Goobar",
+    "V. Stanishev",
+    "N. Butler",
+    "W. H. Lee",
+    "A. M. Watson",
+    "U. C. Fremling",
+    "M. M. Kasliwal",
+    "P. E. Nugent",
+    "T. Petrushevska",
+    "J. Sollerman",
+    "L. Yan",
+    "J. Burke",
+    "G. Hosseinzadeh",
+    "D. A. Howell",
+    "C. McCully",
+    "S. Valenti"
+  ],
+  "categories": [
+    "astro-ph.GA",
+    "astro-ph.SR"
+  ],
+  "published_utc": "2021-05-13T12:40:23Z",
+  "updated_utc": "2021-05-25T08:20:39Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2105.06236v2",
+    "html": "https://arxiv.org/html/2105.06236v2",
+    "pdf": "https://arxiv.org/pdf/2105.06236v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public notes and metadata only. Source copies require separate lawful private preservation review."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Aastro-ph.GA%29+AND+%28ti%3Asupernova+OR+abs%3A%22Type+Ia%22%29+AND+%28ti%3Adust+OR+ti%3Aextinction+OR+ti%3A%22mass+step%22%29&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+      "retrieved_utc": "2026-10-09T17:51:02.256200+00:00",
+      "sha256": "dc8f21bf69dc3fb30ac70168223fd62348cfb1cef657b39ece0ad15eb070910a",
+      "bytes": 31798
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Deferred wavelength discriminator: near-IR and object-specific extinction tests of mass step; compare sample, selection and extinction-fit uncertainty before acceptance."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

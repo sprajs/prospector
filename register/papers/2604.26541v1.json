@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2604.26541v1",
+  "arxiv_id": "2604.26541",
+  "version": 1,
+  "title": "The End of the First Act: Spectral Running, Interacting Dark Radiation, and the Hubble Tension in Light of ACT DR6 Data",
+  "authors": [
+    "Mathias Garny",
+    "Florian Niedermann",
+    "Martin S. Sloth"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "hep-ph",
+    "hep-th"
+  ],
+  "published_utc": "2026-04-29T11:12:54Z",
+  "updated_utc": "2026-04-29T11:12:54Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2604.26541v1",
+    "html": "https://arxiv.org/html/2604.26541v1",
+    "pdf": "https://arxiv.org/pdf/2604.26541v1"
+  },
+  "license": {
+    "status": "CC BY 4.0",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Explicit license label checked in pinned original HTML #license-tr. Public register contains only descriptive metadata and original notes. Private preservation is separate from public redistribution permission."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2604.26541v1%2C2605.18716v1%2C2604.27954v2&max_results=3",
+      "retrieved_utc": "2026-10-09T17:47:33.840139+00:00",
+      "sha256": "1c33d676f9c01be51193cb6723ae302d2fe4436dc0e61602b8798431448ecee7",
+      "bytes": 7131
+    },
+    {
+      "url": "https://arxiv.org/html/2604.26541v1",
+      "retrieved_utc": "2026-10-09T17:47:46.729450+00:00",
+      "bytes": 463991,
+      "sha256": "7618c2ece44443fd429dd8cb46405488fa16eee162b004032a8d765b553ce2d4",
+      "role": "html"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2604.26541v1",
+      "retrieved_utc": "2026-10-09T17:47:56.518466+00:00",
+      "bytes": 1745351,
+      "sha256": "1413a635ce3e039090527be4fcebb32fb8e29875ddbe913cb965c0589aff7ef4",
+      "role": "pdf"
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/2604.26541v1",
+      "retrieved_utc": "2026-10-09T17:47:57.264722+00:00",
+      "sha256": "4e138b59e1dfb194abb845dafb744c8ec8ed47367493053aeff77b54b3d4273f",
+      "bytes": 99444,
+      "derived_from_sha256": "1413a635ce3e039090527be4fcebb32fb8e29875ddbe913cb965c0589aff7ef4",
+      "tool": "pdftotext -layout"
+    },
+    {
+      "url": "https://arxiv.org/html/2604.26541v1",
+      "retrieved_utc": "2026-10-09T17:47:46.729450+00:00",
+      "bytes": 463991,
+      "sha256": "7618c2ece44443fd429dd8cb46405488fa16eee162b004032a8d765b553ce2d4",
+      "role": "html"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2604.26541v1",
+      "retrieved_utc": "2026-10-09T17:47:56.518466+00:00",
+      "bytes": 1745351,
+      "sha256": "1413a635ce3e039090527be4fcebb32fb8e29875ddbe913cb965c0589aff7ef4",
+      "role": "pdf"
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/2604.26541v1",
+      "retrieved_utc": "2026-10-09T17:47:57.264722+00:00",
+      "sha256": "4e138b59e1dfb194abb845dafb744c8ec8ed47367493053aeff77b54b3d4273f",
+      "bytes": 99444,
+      "derived_from_sha256": "1413a635ce3e039090527be4fcebb32fb8e29875ddbe913cb965c0589aff7ef4",
+      "tool": "pdftotext -layout"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "abstract",
+    "reason": "Full reading selected: ACT DR6 dark-radiation limits versus primordial-spectrum running; test degeneracy rather than infer a tension solution."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2401.08755v2",
+  "arxiv_id": "2401.08755",
+  "version": 2,
+  "title": "Scalable hierarchical BayeSN inference: Investigating dependence of SN Ia host galaxy dust properties on stellar mass and redshift",
+  "authors": [
+    "Matthew Grayling",
+    "Stephen Thorp",
+    "Kaisey S. Mandel",
+    "Suhail Dhawan",
+    "Ana Sofia M. Uzsoy",
+    "Benjamin M. Boyd",
+    "Erin E. Hayes",
+    "Sam M. Ward"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "astro-ph.GA"
+  ],
+  "published_utc": "2024-01-16T19:00:01Z",
+  "updated_utc": "2024-04-29T16:23:21Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2401.08755v2",
+    "html": "https://arxiv.org/html/2401.08755v2",
+    "pdf": "https://arxiv.org/pdf/2401.08755v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public notes and metadata only. Source copies require separate lawful private preservation review."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2607.24443v2%2C2112.04456%2C2401.08755%2C2403.10388%2C2506.22150%2C2608.21603v2%2C2607.28725v3&max_results=7",
+      "retrieved_utc": "2026-10-09T17:51:17.748613+00:00",
+      "sha256": "e2c9507b5e3a392c91e1db26a3f555abb96dd36fcd155d56bb0fd03bd964d3c4",
+      "bytes": 20963
+    },
+    {
+      "url": "https://arxiv.org/html/2401.08755v2",
+      "retrieved_utc": "2026-10-09T17:52:43.375227+00:00",
+      "bytes": 535923,
+      "sha256": "ac2f30d3968b7d6eb1ee9a2ed62b1784e3d34ad9a54b2c103849cbf4d2a56052",
+      "role": "html"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2401.08755v2",
+      "retrieved_utc": "2026-10-09T17:52:46.608891+00:00",
+      "bytes": 2981062,
+      "sha256": "5adb8aface0c5cb5ae8b4ab27220ebf5ae81c2ba359d900850d6cce43abb383e",
+      "role": "pdf"
+    },
+    {
+      "role": "extracted_text",
+      "url": "https://arxiv.org/pdf/2401.08755v2",
+      "retrieved_utc": "2026-10-09T17:52:48.076140+00:00",
+      "sha256": "4298c8140cad4dc0ca3b061fbe09d219fee995ff41c5dad34c0df7a7f99efd1e",
+      "bytes": 192979,
+      "derived_from_sha256": "5adb8aface0c5cb5ae8b4ab27220ebf5ae81c2ba359d900850d6cce43abb383e",
+      "tool": "pdftotext -layout"
+    }
+  ],
+  "screen": {
+    "status": "selected",
+    "basis": "abstract",
+    "reason": "Selected for ordinary full-paper Luna reading followed by Sol source review; shared worker capacity pending. Selected full reading: independent BayeSN SED hierarchy simultaneously separates dust and intrinsic mass effects; null redshift evolution is domain conditioned."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

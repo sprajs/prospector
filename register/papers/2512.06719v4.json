@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2512.06719v4",
+  "arxiv_id": "2512.06719",
+  "version": 4,
+  "title": "Interacting scalar field dark matter and stepped dark radiation in an extended Wess-Zumino dark radiation model",
+  "authors": [
+    "Gang Liu"
+  ],
+  "categories": [
+    "astro-ph.CO"
+  ],
+  "published_utc": "2025-12-07T08:14:04Z",
+  "updated_utc": "2026-09-06T05:41:53Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2512.06719v4",
+    "html": "https://arxiv.org/html/2512.06719v4",
+    "pdf": "https://arxiv.org/pdf/2512.06719v4"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper copying terms not yet checked; public record contains descriptive metadata and original notes only."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2306.12469v2%2C2404.07256v1%2C2404.16822v1%2C2512.06719v4%2C2508.03795v2%2C2609.16120v1&max_results=6",
+      "retrieved_utc": "2026-10-09T17:46:57.210832+00:00",
+      "sha256": "79ce4cb02bc36705176f2e8db2ce5dd967a54f6414e6fa807ab4a880d9b20fd0",
+      "bytes": 15501
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Deferred valuable null: scalar-DM momentum coupling gives marginal S8 relief and poorer combined-prior fit; full conditioning unreviewed."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

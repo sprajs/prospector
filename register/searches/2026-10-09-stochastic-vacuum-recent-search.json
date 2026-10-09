@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "search_id": "2026-10-09-stochastic-vacuum-recent-search",
+  "lane": "late-dark-energy",
+  "work_mode": "unconventional_foundation_and_challenge",
+  "status": "completed",
+  "requested_utc": "2026-10-09T17:48:07.206955+00:00",
+  "request": {
+    "query": "(cat:gr-qc OR cat:astro-ph.CO OR cat:hep-th OR cat:astro-ph) AND (abs:\"fluctuating cosmological constant\" OR abs:\"stochastic dark energy\")",
+    "normalized_query": "(cat:gr-qc OR cat:astro-ph.CO OR cat:hep-th OR cat:astro-ph) AND (abs:\"fluctuating cosmological constant\" OR abs:\"stochastic dark energy\")",
+    "order": "lastUpdatedDate",
+    "direction": "descending",
+    "start": 0,
+    "limit": 10,
+    "window_sha256": "f9d20240c474de378ab17cee0342b1cda69d914418c2abb701997f5e9142eef1"
+  },
+  "refresh": null,
+  "retry_of": null,
+  "retry_reason": null,
+  "discovery_reason": "Explicit new user search of unconventional prospects; previous queues preserved with separate owners. Scope reserved to causal-set stochastic Lambda, absent in register at initial dedup check. No pending saved search hits in this scope.",
+  "source": {
+    "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Agr-qc+OR+cat%3Aastro-ph.CO+OR+cat%3Ahep-th+OR+cat%3Aastro-ph%29+AND+%28abs%3A%22fluctuating+cosmological+constant%22+OR+abs%3A%22stochastic+dark+energy%22%29&start=0&max_results=10&sortBy=lastUpdatedDate&sortOrder=descending",
+    "retrieved_utc": "2026-10-09T17:48:07.206955+00:00",
+    "sha256": "c1543b881512031410fdcc791c8a3c1424b3a6a096b1d55c3d6497b9c31150d6",
+    "http_status": 200,
+    "error": null,
+    "retry_after": null,
+    "local_path": ".work/unconventional-20261009/acquisition/objects/c1543b881512031410fdcc791c8a3c1424b3a6a096b1d55c3d6497b9c31150d6.xml"
+  },
+  "results": [
+    {
+      "paper_id": "arxiv:2307.13743v2",
+      "position": 0,
+      "disposition": "selected",
+      "reason": "Foundation/independent criticism/recent negative reassessment chosen for full source reading.",
+      "title": "Aspects of Everpresent $\u039b$ (II): Cosmological Tests of Current Models",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:49:02.773164+00:00",
+          "disposition": "selected",
+          "reason": "Foundation/independent criticism/recent negative reassessment chosen for full source reading."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:2101.00478v1",
+      "position": 1,
+      "disposition": "deferred",
+      "reason": "Cross-disciplinary mechanism/observational vocabulary lead; source mathematics and 4D cosmological applicability unexamined. No promotion from abstract.",
+      "title": "Wormholes, a fluctuating cosmological constant and the Coleman mechanism",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:49:02.773171+00:00",
+          "disposition": "deferred",
+          "reason": "Cross-disciplinary mechanism/observational vocabulary lead; source mathematics and 4D cosmological applicability unexamined. No promotion from abstract."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:0904.1057v3",
+      "position": 2,
+      "disposition": "deferred",
+      "reason": "Cross-disciplinary mechanism/observational vocabulary lead; source mathematics and 4D cosmological applicability unexamined. No promotion from abstract.",
+      "title": "The Universe in a Soap Film",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:49:02.773174+00:00",
+          "disposition": "deferred",
+          "reason": "Cross-disciplinary mechanism/observational vocabulary lead; source mathematics and 4D cosmological applicability unexamined. No promotion from abstract."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0703375v2",
+      "position": 3,
+      "disposition": "deferred",
+      "reason": "Cross-disciplinary mechanism/observational vocabulary lead; source mathematics and 4D cosmological applicability unexamined. No promotion from abstract.",
+      "title": "Constraints on a New Post-General Relativity Cosmological Parameter",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:49:02.773176+00:00",
+          "disposition": "deferred",
+          "reason": "Cross-disciplinary mechanism/observational vocabulary lead; source mathematics and 4D cosmological applicability unexamined. No promotion from abstract."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:astro-ph/0209274v1",
+      "position": 4,
+      "disposition": "selected",
+      "reason": "Foundation/independent criticism/recent negative reassessment chosen for full source reading.",
+      "title": "Everpresent Lambda",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:49:02.773177+00:00",
+          "disposition": "selected",
+          "reason": "Foundation/independent criticism/recent negative reassessment chosen for full source reading."
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv:hep-th/9304041v1",
+      "position": 5,
+      "disposition": "excluded",
+      "reason": "Lexical match outside the bounded stochastic-vacuum cosmological mechanism scope; not a scientific falsification.",
+      "title": "Affine Strings",
+      "decision_history": [
+        {
+          "utc": "2026-10-09T17:49:02.773179+00:00",
+          "disposition": "excluded",
+          "reason": "Lexical match outside the bounded stochastic-vacuum cosmological mechanism scope; not a scientific falsification."
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "result_ids_complete": true,
+    "dispositions_complete": true,
+    "metadata_complete": true,
+    "limitations": [
+      "One changing API window; no gap-free or exhaustive coverage claim.",
+      "Metadata discovery and duplicate checks establish no scientific usefulness or reading."
+    ]
+  },
+  "provenance": {
+    "kind": "live",
+    "scan_id": null,
+    "query_id": null
+  }
+}

@@ -106,7 +106,59 @@
     "arxiv:0804.2827v3",
     "arxiv:1806.10608v1",
     "constant-w-smooth-fluid-source-subclass",
-    "constant-w-smooth-fluid-comparison"
+    "constant-w-smooth-fluid-comparison",
+    "arxiv:2306.12469v2",
+    "arxiv:2404.07256v1",
+    "arxiv:2404.16822v1",
+    "arxiv:2405.08064v2",
+    "arxiv:2508.03795v2",
+    "arxiv:2512.06719v4",
+    "arxiv:2512.19633v1",
+    "arxiv:2604.26541v1",
+    "arxiv:2604.27954v2",
+    "arxiv:2605.18716v1",
+    "arxiv:2609.16120v1",
+    "arxiv:0711.2904v1",
+    "arxiv:1210.2589v3",
+    "arxiv:1703.06265v4",
+    "arxiv:2304.03819v2",
+    "arxiv:2307.13743v2",
+    "arxiv:astro-ph/0209274v1",
+    "arxiv:gr-qc/0612128v2",
+    "arxiv:1811.11976v3",
+    "arxiv:2412.15143v1",
+    "arxiv:1812.01586v2",
+    "arxiv:0909.0749v2",
+    "arxiv:0709.0732v2",
+    "arxiv:1811.11963v2",
+    "arxiv:2311.01438v2",
+    "arxiv:gr-qc/0702082v4",
+    "arxiv:2511.17160v2",
+    "arxiv:2112.04456v2",
+    "arxiv:2401.08755v2",
+    "arxiv:2403.10388v2",
+    "arxiv:2506.22150v2",
+    "arxiv:2608.21603v2",
+    "arxiv:2607.28725v3",
+    "arxiv:2105.06236v2",
+    "arxiv:2512.20834v1",
+    "arxiv:2609.30312v1",
+    "arxiv:1203.6776v2",
+    "arxiv:1306.0917v2",
+    "arxiv:1301.5315v2",
+    "arxiv:astro-ph/0212114v2",
+    "arxiv:2603.21675v2",
+    "arxiv:astro-ph/0306004v2",
+    "arxiv:gr-qc/0202064v2",
+    "arxiv:1709.08933v3",
+    "arxiv:2109.08676v2",
+    "arxiv:astro-ph/9801212v1",
+    "arxiv:1502.01593v2",
+    "arxiv:1403.2190v2",
+    "arxiv:2210.11426v4",
+    "arxiv:2306.17112v3",
+    "arxiv:2403.09221v2",
+    "arxiv:2608.25033v1"
   ],
   "edges": [
     {
@@ -159,7 +211,7 @@
     },
     {
       "type": "physically_distinct",
-      "rationale": "Finite-n averaged oscillations and the n→infinity kinetic/slow-roll branch use different potential and sound-speed assumptions.",
+      "rationale": "Finite-n averaged oscillations and the n\u2192infinity kinetic/slow-roll branch use different potential and sound-speed assumptions.",
       "evidence": [
         {
           "paper_id": "arxiv:1811.04083v2",
@@ -773,7 +825,7 @@
         },
         {
           "paper_id": "arxiv:1811.04083v2",
-          "locator": "PDF pp.3-5: compensation discussion, Tables I-II; ΛCDM is the model-comparison reference."
+          "locator": "PDF pp.3-5: compensation discussion, Tables I-II; \u039bCDM is the model-comparison reference."
         }
       ],
       "rationale": "This idea informs the candidate investigation. Scope, alternative branches, baseline and unresolved closure are recorded in the prospect; this does not assert a complete or tested combined cosmology."
@@ -792,7 +844,7 @@
         },
         {
           "paper_id": "arxiv:1811.04083v2",
-          "locator": "PDF pp.3-5: compensation discussion, Tables I-II; ΛCDM is the model-comparison reference."
+          "locator": "PDF pp.3-5: compensation discussion, Tables I-II; \u039bCDM is the model-comparison reference."
         }
       ],
       "rationale": "This idea informs the candidate investigation. Scope, alternative branches, baseline and unresolved closure are recorded in the prospect; this does not assert a complete or tested combined cosmology."
@@ -925,7 +977,7 @@
         },
         {
           "paper_id": "arxiv:2602.01543v2",
-          "locator": "Sec.III.B and IV.A, PDF pp.4-5, Eqs.(13)-(16): separate constant-Λ/daughter-EOS branch and explicit lack of perturbation correspondence; Sec.IV.B/Appendix for separate SIDM."
+          "locator": "Sec.III.B and IV.A, PDF pp.4-5, Eqs.(13)-(16): separate constant-\u039b/daughter-EOS branch and explicit lack of perturbation correspondence; Sec.IV.B/Appendix for separate SIDM."
         }
       ],
       "rationale": "This idea informs the candidate investigation. Scope, alternative branches, baseline and unresolved closure are recorded in the prospect; this does not assert a complete or tested combined cosmology."
@@ -944,7 +996,7 @@
         },
         {
           "paper_id": "arxiv:2602.01543v2",
-          "locator": "Sec.III.B and IV.A, PDF pp.4-5, Eqs.(13)-(16): separate constant-Λ/daughter-EOS branch and explicit lack of perturbation correspondence; Sec.IV.B/Appendix for separate SIDM."
+          "locator": "Sec.III.B and IV.A, PDF pp.4-5, Eqs.(13)-(16): separate constant-\u039b/daughter-EOS branch and explicit lack of perturbation correspondence; Sec.IV.B/Appendix for separate SIDM."
         }
       ],
       "rationale": "This idea informs the candidate investigation. Scope, alternative branches, baseline and unresolved closure are recorded in the prospect; this does not assert a complete or tested combined cosmology."
@@ -959,7 +1011,7 @@
       "evidence": [
         {
           "paper_id": "arxiv:2609.34239v1",
-          "locator": "Sec.II, PDF pp.2-3, Eqs.(1)-(4): explicit flat ΛCDM q reference, radiation omission, finite interpolation and cutoff; original HTML q_fid/cutoff text."
+          "locator": "Sec.II, PDF pp.2-3, Eqs.(1)-(4): explicit flat \u039bCDM q reference, radiation omission, finite interpolation and cutoff; original HTML q_fid/cutoff text."
         },
         {
           "paper_id": "arxiv:2609.34239v1",
@@ -978,7 +1030,7 @@
       "evidence": [
         {
           "paper_id": "arxiv:2609.34239v1",
-          "locator": "Sec.II, PDF pp.2-3, Eqs.(1)-(4): explicit flat ΛCDM q reference, radiation omission, finite interpolation and cutoff; original HTML q_fid/cutoff text."
+          "locator": "Sec.II, PDF pp.2-3, Eqs.(1)-(4): explicit flat \u039bCDM q reference, radiation omission, finite interpolation and cutoff; original HTML q_fid/cutoff text."
         },
         {
           "paper_id": "arxiv:2609.34239v1",
@@ -1001,7 +1053,7 @@
         },
         {
           "paper_id": "arxiv:2602.01543v2",
-          "locator": "Sec.III.B and IV.A, PDF pp.4-5, Eqs.(13)-(16): separate constant-Λ/daughter-EOS branch and explicit lack of perturbation correspondence; Sec.IV.B/Appendix for separate SIDM."
+          "locator": "Sec.III.B and IV.A, PDF pp.4-5, Eqs.(13)-(16): separate constant-\u039b/daughter-EOS branch and explicit lack of perturbation correspondence; Sec.IV.B/Appendix for separate SIDM."
         }
       ],
       "rationale": "Related source evidence informs the investigation; this does not add the idea as a physical model component."
@@ -1031,7 +1083,7 @@
       "evidence": [
         {
           "paper_id": "arxiv:2503.14738v3",
-          "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11–12: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test"
+          "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11\u201312: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test"
         }
       ],
       "review_id": "2026-10-01-lcdm-baseline-source-claims"
@@ -1046,7 +1098,7 @@
       "evidence": [
         {
           "paper_id": "arxiv:2202.04077v2",
-          "locator": "HTML S1: 1701 light curves,1550 distinct SNe; SH0ES shares Pantheon+ distances/covariance and42 calibrator hosts; HTML S2.SS2 Eqs5–8: duplicate-light-curve statistical covariance and systematic covariance; rows are light curves; HTML S2.SS3 Eqs9–15: covariance quadratic, residual and modulus, flat luminosity distance, M/H0 degeneracy, calibrated-host residuals plus Cepheid covariance; HTML S3.SS1.SSS2: peculiar-velocity-corrected CMB-frame redshift versus heliocentric fitting redshift; calibrator redshifts not used for Cepheid comparison; HTML S4.SS3: cosmological-fit conditioning context, not accepted as independent H0 data"
+          "locator": "HTML S1: 1701 light curves,1550 distinct SNe; SH0ES shares Pantheon+ distances/covariance and42 calibrator hosts; HTML S2.SS2 Eqs5\u20138: duplicate-light-curve statistical covariance and systematic covariance; rows are light curves; HTML S2.SS3 Eqs9\u201315: covariance quadratic, residual and modulus, flat luminosity distance, M/H0 degeneracy, calibrated-host residuals plus Cepheid covariance; HTML S3.SS1.SSS2: peculiar-velocity-corrected CMB-frame redshift versus heliocentric fitting redshift; calibrator redshifts not used for Cepheid comparison; HTML S4.SS3: cosmological-fit conditioning context, not accepted as independent H0 data"
         }
       ],
       "review_id": "2026-10-01-lcdm-baseline-source-claims"
@@ -1091,7 +1143,7 @@
       "evidence": [
         {
           "paper_id": "arxiv:2112.04510v3",
-          "locator": "PDF/extracted-text title and abstract: pinned v3 identity, baseline73.04±1.04 km/s/Mpc is conditioned ladder inference, not raw observation; PDF Sec2.1 pp9–12 Eqs1–6: Cepheid standardization, geometric anchor constraints, colocated SN calibration, cosmographic intercept, logH0 relation, simultaneous covariance fit; Rendered PDF p10: Eqs2–5 and covariance dependence prose; Rendered PDF p11: calibrator/Hubble-flow SNcov cross blocks; Rendered PDF p12: design matrix/free parameters and Eq6 covariance quadratic"
+          "locator": "PDF/extracted-text title and abstract: pinned v3 identity, baseline73.04\u00b11.04 km/s/Mpc is conditioned ladder inference, not raw observation; PDF Sec2.1 pp9\u201312 Eqs1\u20136: Cepheid standardization, geometric anchor constraints, colocated SN calibration, cosmographic intercept, logH0 relation, simultaneous covariance fit; Rendered PDF p10: Eqs2\u20135 and covariance dependence prose; Rendered PDF p11: calibrator/Hubble-flow SNcov cross blocks; Rendered PDF p12: design matrix/free parameters and Eq6 covariance quadratic"
         }
       ],
       "review_id": "2026-10-01-lcdm-baseline-source-claims"
@@ -1106,7 +1158,7 @@
       "evidence": [
         {
           "paper_id": "arxiv:2503.14738v3",
-          "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11–12: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test"
+          "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11\u201312: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test"
         }
       ],
       "review_id": "2026-10-01-lcdm-baseline-source-claims"
@@ -1125,7 +1177,7 @@
         },
         {
           "paper_id": "arxiv:2503.14738v3",
-          "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11–12: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test"
+          "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11\u201312: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test"
         }
       ],
       "review_id": "2026-10-01-lcdm-baseline-source-claims"
@@ -1140,11 +1192,11 @@
       "evidence": [
         {
           "paper_id": "arxiv:2503.14738v3",
-          "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11–12: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test"
+          "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11\u201312: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test"
         },
         {
           "paper_id": "arxiv:2202.04077v2",
-          "locator": "HTML S1: 1701 light curves,1550 distinct SNe; SH0ES shares Pantheon+ distances/covariance and42 calibrator hosts; HTML S2.SS2 Eqs5–8: duplicate-light-curve statistical covariance and systematic covariance; rows are light curves; HTML S2.SS3 Eqs9–15: covariance quadratic, residual and modulus, flat luminosity distance, M/H0 degeneracy, calibrated-host residuals plus Cepheid covariance; HTML S3.SS1.SSS2: peculiar-velocity-corrected CMB-frame redshift versus heliocentric fitting redshift; calibrator redshifts not used for Cepheid comparison; HTML S4.SS3: cosmological-fit conditioning context, not accepted as independent H0 data"
+          "locator": "HTML S1: 1701 light curves,1550 distinct SNe; SH0ES shares Pantheon+ distances/covariance and42 calibrator hosts; HTML S2.SS2 Eqs5\u20138: duplicate-light-curve statistical covariance and systematic covariance; rows are light curves; HTML S2.SS3 Eqs9\u201315: covariance quadratic, residual and modulus, flat luminosity distance, M/H0 degeneracy, calibrated-host residuals plus Cepheid covariance; HTML S3.SS1.SSS2: peculiar-velocity-corrected CMB-frame redshift versus heliocentric fitting redshift; calibrator redshifts not used for Cepheid comparison; HTML S4.SS3: cosmological-fit conditioning context, not accepted as independent H0 data"
         }
       ],
       "review_id": "2026-10-01-lcdm-baseline-source-claims"
@@ -1174,7 +1226,7 @@
       "evidence": [
         {
           "paper_id": "arxiv:2503.14738v3",
-          "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11–12: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test"
+          "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11\u201312: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test"
         }
       ],
       "review_id": "2026-10-02-standard-model-source-claims"
@@ -1189,7 +1241,7 @@
       "evidence": [
         {
           "paper_id": "arxiv:2202.04077v2",
-          "locator": "HTML S1: 1701 light curves,1550 distinct SNe; SH0ES shares Pantheon+ distances/covariance and42 calibrator hosts; HTML S2.SS2 Eqs5–8: duplicate-light-curve statistical covariance and systematic covariance; rows are light curves; HTML S2.SS3 Eqs9–15: covariance quadratic, residual and modulus, flat luminosity distance, M/H0 degeneracy, calibrated-host residuals plus Cepheid covariance; HTML S3.SS1.SSS2: peculiar-velocity-corrected CMB-frame redshift versus heliocentric fitting redshift; calibrator redshifts not used for Cepheid comparison; HTML S4.SS3: cosmological-fit conditioning context, not accepted as independent H0 data"
+          "locator": "HTML S1: 1701 light curves,1550 distinct SNe; SH0ES shares Pantheon+ distances/covariance and42 calibrator hosts; HTML S2.SS2 Eqs5\u20138: duplicate-light-curve statistical covariance and systematic covariance; rows are light curves; HTML S2.SS3 Eqs9\u201315: covariance quadratic, residual and modulus, flat luminosity distance, M/H0 degeneracy, calibrated-host residuals plus Cepheid covariance; HTML S3.SS1.SSS2: peculiar-velocity-corrected CMB-frame redshift versus heliocentric fitting redshift; calibrator redshifts not used for Cepheid comparison; HTML S4.SS3: cosmological-fit conditioning context, not accepted as independent H0 data"
         },
         {
           "paper_id": "arxiv:2112.03863v2",
@@ -1201,7 +1253,7 @@
         },
         {
           "paper_id": "arxiv:2112.04510v3",
-          "locator": "PDF/extracted-text title and abstract: pinned v3 identity, baseline73.04±1.04 km/s/Mpc is conditioned ladder inference, not raw observation; PDF Sec2.1 pp9–12 Eqs1–6: Cepheid standardization, geometric anchor constraints, colocated SN calibration, cosmographic intercept, logH0 relation, simultaneous covariance fit; Rendered PDF p10: Eqs2–5 and covariance dependence prose; Rendered PDF p11: calibrator/Hubble-flow SNcov cross blocks; Rendered PDF p12: design matrix/free parameters and Eq6 covariance quadratic"
+          "locator": "PDF/extracted-text title and abstract: pinned v3 identity, baseline73.04\u00b11.04 km/s/Mpc is conditioned ladder inference, not raw observation; PDF Sec2.1 pp9\u201312 Eqs1\u20136: Cepheid standardization, geometric anchor constraints, colocated SN calibration, cosmographic intercept, logH0 relation, simultaneous covariance fit; Rendered PDF p10: Eqs2\u20135 and covariance dependence prose; Rendered PDF p11: calibrator/Hubble-flow SNcov cross blocks; Rendered PDF p12: design matrix/free parameters and Eq6 covariance quadratic"
         }
       ],
       "review_id": "2026-10-02-standard-model-source-claims"
@@ -1231,7 +1283,7 @@
       "evidence": [
         {
           "paper_id": "arxiv:2503.14738v3",
-          "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11–12: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test"
+          "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11\u201312: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test"
         }
       ],
       "review_id": "2026-10-01-lcdm-baseline-source-claims"
@@ -1246,7 +1298,7 @@
       "evidence": [
         {
           "paper_id": "arxiv:2503.14738v3",
-          "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11–12: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test"
+          "locator": "HTML S1.E1, S1.E4, S1.E5, S1.EGx2: drag ruler, flat comoving transverse distance, radial distance and full neutrino background; HTML S3.SS1 and Eqs11\u201312: fiducial BAO templates, nuisance marginalization, DV definition and fit conditioning; HTML S3.T4 caption and seven used tracer rows: marginal means/stddev, systematic budget, superseded LRG3/ELG1 excluded; HTML S3.SS3: seven baseline distance measurements; BAO-only Omega_m and H0*r_d dependence; DR1 shares data with DR2; HTML S4.SS3: SN offsets/calibration degeneracy and sample overlap; HTML S5 and S6.E17: BAO-only sampled parameters and conditioned fitted result, not used as executable controls; HTML A2: baseline inter-bin systematic independence assumption and correlated-systematics sensitivity test"
         }
       ],
       "review_id": "2026-10-01-lcdm-baseline-source-claims"
@@ -1324,7 +1376,7 @@
           "locator": "Eqs.(3.4),(4.1), Fig.6; Sec.V"
         }
       ],
-      "rationale": "The exact center/minimum constraint and kinetic/gradient gates challenge the displayed benchmark, not all scalar–GB theories."
+      "rationale": "The exact center/minimum constraint and kinetic/gradient gates challenge the displayed benchmark, not all scalar\u2013GB theories."
     },
     {
       "id": "modified-gravity-6",
@@ -1418,7 +1470,7 @@
           "locator": "Potential PDF p.1 and Eqs.(1)-(2), PDF p.2; original pinned HTML/PDF checked in bounded neighbour comparison."
         }
       ],
-      "rationale": "Both use a Hubble-frozen scalar followed by oscillations near a potential minimum. EDE uses early (1−cos(phi/f))^n dilution and perturbation averaging; this branch adds a late localized curvature coupling and effective phantom exchange. No full theory/equivalence, common fit or transferred EDE solution is accepted."
+      "rationale": "Both use a Hubble-frozen scalar followed by oscillations near a potential minimum. EDE uses early (1\u2212cos(phi/f))^n dilution and perturbation averaging; this branch adds a late localized curvature coupling and effective phantom exchange. No full theory/equivalence, common fit or transferred EDE solution is accepted."
     },
     {
       "id": "modified-gravity-12",
@@ -1437,7 +1489,7 @@
           "locator": "Sec.1 requirements and Sec.3 rolling/tracking sequence; original pinned source checked in bounded neighbour comparison."
         }
       ],
-      "rationale": "Both have one canonical scalar, but late scalar–GB oscillations do not realize the neighbour smooth early-energy/depletion/late-reactivation sequence. The curvature coupling changes the background and perturbation equations without requiring a second scalar. No extension of the neighbour restricted tracking obstruction to modified gravity is accepted."
+      "rationale": "Both have one canonical scalar, but late scalar\u2013GB oscillations do not realize the neighbour smooth early-energy/depletion/late-reactivation sequence. The curvature coupling changes the background and perturbation equations without requiring a second scalar. No extension of the neighbour restricted tracking obstruction to modified gravity is accepted."
     },
     {
       "id": "desi-describes-constant-w-fluid",

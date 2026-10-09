@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2512.20834v1",
+  "arxiv_id": "2512.20834",
+  "version": 1,
+  "title": "Revisiting the Mass Step: Environmental Dependence of Type Ia Supernovae in Low-Metallicity Host Galaxies",
+  "authors": [
+    "Estefania Padilla Gonzalez",
+    "A. Joshi Bhavin",
+    "Louis G. Strolger",
+    "Bhoomika Khatri",
+    "Fae Rest",
+    "Armin Rest",
+    "Benjamin Rose",
+    "Rodrigo Angulo",
+    "David Coulter",
+    "James M. Derkacy",
+    "Ori Fox",
+    "Justin D. R. Pierel",
+    "Koji Shukawa",
+    "Melissa Shahbandeh",
+    "Matthew Siebert",
+    "Conor Larison",
+    "Massimo Griggio"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "astro-ph.HE"
+  ],
+  "published_utc": "2025-12-23T23:22:18Z",
+  "updated_utc": "2025-12-23T23:22:18Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2512.20834v1",
+    "html": "https://arxiv.org/html/2512.20834v1",
+    "pdf": "https://arxiv.org/pdf/2512.20834v1"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Public notes and metadata only. Source copies require separate lawful private preservation review."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?search_query=%28cat%3Aastro-ph.CO+OR+cat%3Aastro-ph.GA%29+AND+%28ti%3Asupernova+OR+abs%3A%22Type+Ia%22%29+AND+%28ti%3Adust+OR+ti%3Aextinction+OR+ti%3A%22mass+step%22%29&start=0&max_results=10&sortBy=relevance&sortOrder=descending",
+      "retrieved_utc": "2026-10-09T17:51:02.256200+00:00",
+      "sha256": "dc8f21bf69dc3fb30ac70168223fd62348cfb1cef657b39ece0ad15eb070910a",
+      "bytes": 31798
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Deferred environmental alternative: host SED mass re-estimation and metallicity; abstract alone cannot settle causal population interpretation."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}

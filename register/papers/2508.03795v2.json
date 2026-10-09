@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "paper_id": "arxiv:2508.03795v2",
+  "arxiv_id": "2508.03795",
+  "version": 2,
+  "title": "Hot New Early Dark Energy: Dark Radiation Matter Decoupling",
+  "authors": [
+    "Mathias Garny",
+    "Florian Niedermann",
+    "Henrique Rubira",
+    "Martin S. Sloth"
+  ],
+  "categories": [
+    "astro-ph.CO",
+    "hep-ph",
+    "hep-th"
+  ],
+  "published_utc": "2025-08-05T18:00:00Z",
+  "updated_utc": "2026-09-10T16:16:02Z",
+  "urls": {
+    "abstract": "https://arxiv.org/abs/2508.03795v2",
+    "html": "https://arxiv.org/html/2508.03795v2",
+    "pdf": "https://arxiv.org/pdf/2508.03795v2"
+  },
+  "license": {
+    "status": "unknown",
+    "redistribution": "links_and_original_notes_only",
+    "reason": "Per-paper copying terms not yet checked; public record contains descriptive metadata and original notes only."
+  },
+  "artifacts": [
+    {
+      "role": "metadata",
+      "url": "https://export.arxiv.org/api/query?id_list=2306.12469v2%2C2404.07256v1%2C2404.16822v1%2C2512.06719v4%2C2508.03795v2%2C2609.16120v1&max_results=6",
+      "retrieved_utc": "2026-10-09T17:46:57.210832+00:00",
+      "sha256": "79ce4cb02bc36705176f2e8db2ce5dd967a54f6414e6fa807ab4a880d9b20fd0",
+      "bytes": 15501
+    }
+  ],
+  "screen": {
+    "status": "deferred",
+    "basis": "abstract",
+    "reason": "Deferred: hot-NEDE matter decoupling microphysics; present batch first checks foundation and comparative constraints."
+  },
+  "extraction": null,
+  "review_id": null,
+  "idea_ids": []
+}
